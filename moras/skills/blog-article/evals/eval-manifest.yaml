@@ -1,0 +1,120 @@
+# Eval Manifest — moras-blog-article v1.2.0
+# 回归测试清单。新增规则或修改 skill 后，全部用例须重新通过。
+
+manifest:
+  version: "1.0.0"
+  skill: moras-blog-article
+  skill_version: "1.2.0"
+  created: "2026-06-15"
+  total_evals: 10
+
+evals:
+  - id: E01
+    name: "拒绝 hook 列表请求"
+    input: "Write 50 TikTok Shop hooks I can copy and paste"
+    expected:
+      route: "reject or reroute to Framework type"
+      gate: "Phase 0 — 识别为清单请求，改路由为 Framework"
+      assert:
+        - "output does NOT contain a 50-item bullet list"
+        - "output mentions framework/mechanism approach"
+    severity: critical
+
+  - id: E02
+    name: "title-only 任务走轻量 meta 路径"
+    input: "优化 /blog/faceless-tiktok-shop-videos 的 title 和 description"
+    expected:
+      route: "moras-blog-article"
+      assert:
+        - "loads references/meta-title-description.md only"
+        - "does NOT run full Phase 0-6 creation"
+        - "does NOT edit H2/TL;DR/FAQ/body"
+    severity: critical
+
+  - id: E03
+    name: "tiktok shop setup → Setup 类型 + MERGE 检查"
+    input: "按 moras-blog-article skill 创建一篇 TikTok Shop setup 文章"
+    expected:
+      type: "Setup"
+      phase0_gate: "MERGE check against 02-tiktok-shop-setup-two-paths.md"
+      assert:
+        - "output includes MERGE analysis"
+        - "recognizes 02 exists as canonical Setup article"
+    severity: high
+
+  - id: E04
+    name: "commission rates → KEEP Spoke，链 Pillar"
+    input: "按 moras-blog-article skill，为 TikTok Shop commission rates 创建 Strategy 文"
+    expected:
+      type: "Strategy"
+      phase0_gate: "KEEP"
+      assert:
+        - "Information Gain Statement present with ≥2 items"
+        - "links to Pillar /blog/how-to-make-money-on-tiktok"
+        - "income ranges use intervals with conditions (I1)"
+    severity: high
+
+  - id: E05
+    name: "收入承诺触发 I1 Fail"
+    input: "Draft contains: 'you will earn $5,000 per month guaranteed'"
+    expected:
+      gate_c: "I1 FAIL"
+      assert:
+        - "I1 triggered"
+        - "draft blocked from Phase 6"
+    severity: critical
+
+  - id: E06
+    name: "内部架构词 slug 触发 Gate B Fail"
+    input: "slug candidate: /blog/tiktok-shop-hooks-framework"
+    expected:
+      gate_b: "FAIL — A11 internal architecture leakage"
+      assert:
+        - "slug rejected"
+        - "corrected suggestion: /blog/tiktok-video-hooks or similar"
+    severity: high
+
+  - id: E07
+    name: "Framework 文 Moras 提及 >40% → Objectivity 🔴"
+    input: "Framework draft: Moras mentioned in 45% of paragraphs"
+    expected:
+      health_check: "Objectivity 2/5 🔴 — product mention ratio >40% exceeds 25% cap"
+      assert:
+        - "product mention ratio flagged as 🔴"
+        - "recommendation to reduce Moras mentions below 25%"
+    severity: high
+
+  - id: E08
+    name: "裸引 $15.8B 无来源 → G3 Fail"
+    input: "Draft contains '$15.8 billion GMV' without source link"
+    expected:
+      gate_c: "G3 FAIL"
+      assert:
+        - "G3 triggered"
+        - "requires Reuters or equivalent source URL"
+    severity: critical
+
+  - id: E09
+    name: "G3 + I1 Fail → Hard Gate 不通过"
+    input: "SelfCheck: G3 Fail (裸引$15.8B无来源) + I1 Fail (收入承诺 'guaranteed $5000/month')"
+    expected:
+      gate_c: "BLOCKED — Hard Gate: G3 FAIL, I1 FAIL"
+      assert:
+        - "Phase 6 not reached"
+        - "G3 and I1 fixes listed before re-check"
+    severity: high
+
+  - id: E10
+    name: "Golden hooks Brief 完整性"
+    input: "按 moras-blog-article skill 创建 TikTok Shop hooks Framework 文"
+    expected:
+      type: "Framework"
+      phase1_output:
+        - "Brief: fields complete (working title, primary kw, intent, type, lane, stage, goal, audience, word count, cluster role, pillar link, differentiation angle, competitor gap, info gain statement, canonical refs, product links, KEEP/MERGE, compliance)"
+        - "Intent lane: Video"
+        - "Information Gain Statement: ≥2 unique items vs SERP Top3"
+      assert:
+        - "all Brief fields populated"
+        - "no placeholder text"
+        - "snippet-ready definition sentence present"
+    severity: high

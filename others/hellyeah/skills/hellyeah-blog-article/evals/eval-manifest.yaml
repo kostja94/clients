@@ -1,0 +1,157 @@
+# Eval Manifest — hellyeah-blog-article v2.0.0
+# 回归测试清单。新增规则或修改 skill 后，全部用例须重新通过。
+
+manifest:
+  version: "2.0.0"
+  skill: hellyeah-blog-article
+  skill_version: "2.0.0"
+  created: "2026-06-15"
+  total_evals: 14
+
+evals:
+  # ===== v1.0.0 原有（保留）=====
+  - id: E01
+    name: "拒绝 GEO checklist 列表请求"
+    input: "Write 50 programmatic GEO checkpoints I can copy and paste for Hellyeah blog"
+    expected:
+      route: "reject or reroute to Framework type"
+      gate: "Phase 0 — 识别为清单请求，改路由为 Framework"
+      assert:
+        - "output does NOT contain a 50-item bullet list"
+        - "output mentions framework/principles approach"
+    severity: critical
+
+  - id: E02
+    name: "title-only 任务不加载 blog skill"
+    input: "优化 /blog/programmatic-geo-vs-seo 的 title 和 description"
+    expected:
+      route: "hellyeah-meta-title-description or manual — NOT blog-article"
+      assert:
+        - "blog-article skill NOT loaded for title-only task"
+    severity: critical
+
+  - id: E03
+    name: "programmatic GEO → Pillar + seo-geo 内链"
+    input: "按 hellyeah-blog-article skill，为关键词 programmatic GEO 创建一篇 Pillar 文章"
+    expected:
+      type: "Pillar"
+      phase0_gate: "KEEP"
+      assert:
+        - "Information Gain Statement present with ≥2 items"
+        - "links to /capabilities/seo-geo at least once (P5)"
+        - "slug candidate /blog/programmatic-geo-vs-seo or similar without framework/guide"
+    severity: high
+
+  - id: E04
+    name: "SOC 2 Type II 触发 P2 Fail"
+    input: "Draft contains: 'Hellyeah is SOC 2 Type II certified'"
+    expected:
+      gate_c: "P2 FAIL"
+      assert:
+        - "P2 triggered"
+        - "draft blocked from Phase 6"
+        - "correct phrasing: SOC 2 in flight"
+    severity: critical
+
+  - id: E05
+    name: "Déjà Vu available now 触发 P3 Fail"
+    input: "Draft contains: 'Déjà Vu is available now for all customers'"
+    expected:
+      gate_c: "P3 FAIL"
+      assert:
+        - "P3 triggered"
+        - "must say private alpha"
+    severity: critical
+
+  - id: E06
+    name: "内部架构词 slug 触发 Gate B Fail"
+    input: "slug candidate: /blog/programmatic-geo-framework-guide"
+    expected:
+      gate_b: "FAIL — A11 internal architecture leakage"
+      assert:
+        - "slug rejected"
+        - "corrected suggestion: /blog/programmatic-geo-vs-seo or similar"
+    severity: high
+
+  - id: E07
+    name: "forbidden-load 阻断 hellyeah-keywords.md"
+    input: "Agent reads hellyeah-keywords.md during hellyeah-blog-article execution"
+    expected:
+      route: "forbidden-load violation"
+      assert:
+        - "skill self-contained rule enforced"
+        - "only references/ inside skill folder loaded"
+    severity: critical
+
+  - id: E08
+    name: "CommercialEducational AIMA 提及 >40% → Objectivity 红线"
+    input: "CommercialEducational draft: Hellyeah/AIMA mentioned in 45% of paragraphs"
+    expected:
+      health_check: "Objectivity dimension ≤4/10 — product mention ratio >30% cap"
+      assert:
+        - "Objectivity dimension flagged"
+        - "Phase 6 blocked or P1 fix required"
+    severity: high
+
+  # ===== v2.0.0 新增 =====
+
+  - id: E09
+    name: "连续 4 短段 → Presentation Fragmentation Fail ⭐v2.0.0"
+    input: "Draft has 4 consecutive paragraphs each ≤2 sentences"
+    expected:
+      health_check: "Presentation & Rhythm dimension ≤4/10"
+      assert:
+        - "fragmentation cluster detected (≥2 clusters → ❌ per presentation-rhythm §3.1)"
+        - "continuous short paragraph cluster flagged"
+        - "Master Checklist item P2 (consecutive short ≤2) triggered"
+    severity: high
+
+  - id: E10
+    name: "列表轰炸（相邻 3 H2 各含列表无分析）→ Fail ⭐v2.0.0"
+    input: "3 consecutive H2 sections each contain a bullet list with no analysis paragraph between"
+    expected:
+      health_check: "Presentation & Rhythm dimension ≤4/10"
+      assert:
+        - "list bombing detected (≥3 consecutive → ❌)"
+        - "each list must have ≥2 sentences of analysis after"
+    severity: high
+
+  - id: E11
+    name: "衔接率 <50% → Presentation Fail ⭐v2.0.0"
+    input: "Draft with <5 out of 10 consecutive paragraph pairs having any transition device"
+    expected:
+      health_check: "Presentation & Rhythm dimension ≤4/10"
+      assert:
+        - "transition rate <50% flagged"
+        - "must suggest adding transition words/sentence bridges/keyword repetition"
+    severity: high
+
+  - id: E12
+    name: "无来源量化 claim → EEAT Fail ⭐v2.0.0"
+    input: "Draft claims 'Hellyeah improves ROAS by 200%' with no source attribution"
+    expected:
+      health_check: "EEAT & Fact dimension ≤4/10"
+      assert:
+        - "G3 triggered (no source for quantified claim)"
+        - "must add source link or remove unsourced claim"
+    severity: critical
+
+  - id: E13
+    name: "空泛句 >3 处 → Voice Fail ⭐v2.0.0"
+    input: "Draft contains 4 generic openers: 'In today's data-driven world' / 'Consider the following' / 'It is important to note that' / 'The reality is that'"
+    expected:
+      health_check: "Writing & Voice dimension ≤5/10"
+      assert:
+        - "at least 3 generic phrases detected (>3 threshold per article-types §8.5)"
+        - "must replace or remove flagged phrases"
+    severity: medium
+
+  - id: E14
+    name: "跨篇叙事模式雷同 → CA1 Fail ⭐v2.0.0"
+    input: "3 articles in batch share same narrative arc: education → neutral overview → 'but Hellyeah changes everything' → product answer"
+    expected:
+      cross_article: "CA1 FAIL — 3+ articles share same narrative pattern"
+      assert:
+        - "CA1 triggered"
+        - "cross-article audit required before batch delivery"
+    severity: high

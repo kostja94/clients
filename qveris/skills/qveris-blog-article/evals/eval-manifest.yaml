@@ -1,0 +1,127 @@
+# Eval Manifest — qveris-blog-article v1.0.0
+# 回归测试清单。新增规则或修改 skill 后，全部用例须重新通过。
+
+manifest:
+  version: "1.0.0"
+  skill: qveris-blog-article
+  skill_version: "1.0.0"
+  created: "2026-08-06"
+  total_evals: 11
+
+evals:
+  - id: E01
+    name: "投资建议触发 F1 Fail"
+    input: "Draft contains: 'Seres looks like a solid buy at this level'"
+    expected:
+      gate_c: "F1 FAIL — investment advice"
+      assert:
+        - "F1 triggered"
+        - "draft rewritten to state facts only + disclaimer"
+        - "draft blocked from Phase 6 until fixed"
+    severity: critical
+
+  - id: E02
+    name: "行情数据无时间戳触发 F2 Fail"
+    input: "Draft contains: 'NVDA is trading at $1,050' without as-of date"
+    expected:
+      gate_c: "F2 FAIL — missing data timestamp"
+      assert:
+        - "F2 triggered"
+        - "price rewritten with 'as of {date}' + source"
+    severity: critical
+
+  - id: E03
+    name: "实测无方法标注触发 F3 Fail"
+    input: "FieldTest draft reports credits consumed without n/timestamp/source"
+    expected:
+      gate_c: "F3 FAIL — missing test provenance"
+      assert:
+        - "F3 triggered"
+        - "method added: n≈X, window {date–date}, source names"
+        - "'QVeris Data Test' annotation present"
+    severity: high
+
+  - id: E04
+    name: "API 价格无来源触发 F4 Fail"
+    input: "Draft contains: 'FMP Starter costs $22/month' without source"
+    expected:
+      gate_c: "F4 FAIL — price without source"
+      assert:
+        - "F4 triggered"
+        - "price marked as estimate + 'refer to official site'"
+    severity: high
+
+  - id: E05
+    name: "title-only 任务走轻量 meta 路径"
+    input: "优化 /blog/stock-api-free-comparison 的 title 和 description"
+    expected:
+      route: "qveris-blog-article"
+      assert:
+        - "loads references/meta-title-description.md only"
+        - "does NOT run full Phase 0-6 creation"
+        - "does NOT edit body"
+    severity: critical
+
+  - id: E06
+    name: "与官网已发 slug 冲突触发重选"
+    input: "slug candidate: mcp-qveris"
+    expected:
+      gate_b: "FAIL — duplicate of existing official blog slug"
+      assert:
+        - "content-graph.md consulted"
+        - "slug rejected; alternative angle suggested"
+    severity: high
+
+  - id: E07
+    name: "slug 含年份触发 Gate B Fail"
+    input: "slug candidate: best-stock-api-2026"
+    expected:
+      gate_b: "FAIL — year in slug"
+      assert:
+        - "slug rejected per slug-gate anti-pattern #1"
+        - "corrected suggestion: best-stock-api"
+    severity: high
+
+  - id: E08
+    name: "裸引 10,000+ 能力无来源 → G3 Fail"
+    input: "Draft contains 'QVeris has 10,000+ capabilities' without source"
+    expected:
+      gate_c: "G3 FAIL"
+      assert:
+        - "G3 triggered"
+        - "source added (qveris.ai homepage) or reworded"
+    severity: critical
+
+  - id: E09
+    name: "链接已下线栏目 → G6 Fail"
+    input: "Draft links to /use-cases/stock-price-alert-agent"
+    expected:
+      gate_c: "G6 FAIL — decommissioned section"
+      assert:
+        - "link removed or replaced with whitelisted path"
+    severity: high
+
+  - id: E10
+    name: "Golden stock-api-comparison Brief 完整性"
+    input: "按 qveris-blog-article skill 创建 free stock api Comparison 文"
+    expected:
+      type: "Comparison"
+      phase1_output:
+        - "Brief: fields complete (working title, primary kw, intent, type, reader stage, goal, audience, word count, cluster role, canonical links, differentiation angle, info gain statement, product links, KEEP/MERGE, compliance)"
+        - "Information Gain Statement: ≥2 unique items vs SERP Top3 (free-tier taxonomy, 2026-07-24 recheck, reproducible script)"
+      assert:
+        - "all Brief fields populated"
+        - "no placeholder text"
+        - "frontmatter follows QVeris schema (publishedAt; no tldr/title/excerpt in frontmatter; metaTitle brand suffix)"
+        - "body has `# H1` title, *excerpt* paragraph, and `## TL;DR` block with >=3 bullets"
+    severity: high
+
+  - id: E11
+    name: "frontmatter 使用 date/isoDate → tools 校验 FAIL"
+    input: "Article frontmatter uses 'date: 2026-08-07' instead of publishedAt"
+    expected:
+      tools: "frontmatter_validator FAIL — deprecated field date"
+      assert:
+        - "script flags date/isoDate/category as deprecated"
+        - "corrected to publishedAt/updatedAt"
+    severity: critical

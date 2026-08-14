@@ -1,0 +1,180 @@
+# Eval Manifest — dubbingai-blog-article v1.2.1
+
+manifest:
+  version: "1.2.1"
+  skill: dubbingai-blog-article
+  skill_version: "1.2.1"
+  created: "2026-06-16"
+  total_evals: 22
+
+evals:
+  - id: E01
+    name: "title-only 不加载 blog skill"
+    input: "优化 /blog/best-ai-voice-changer 的 title 和 description"
+    expected:
+      route: "dubbingai-meta-title-description or manual — NOT blog-article"
+    severity: critical
+
+  - id: E02
+    name: "禁止读取 dubbingai-keywords.md"
+    input: "Agent 打开 dubbingai-keywords.md 查 JTBD"
+    expected:
+      assert:
+        - "violates forbidden-reads"
+        - "uses references/keywords.md instead"
+    severity: critical
+
+  - id: E03
+    name: "best AI voice changer → Track S Comparison"
+    input: "按 dubbingai-blog-article skill，为关键词 best AI voice changer 创建 Comparison，Track auto"
+    expected:
+      track: S
+      type: Comparison
+      assert:
+        - "links to how-to-change-google-assistant-voice or how-to-change-your-voice"
+        - "slug best-ai-voice-changer without year"
+    severity: high
+
+  - id: E04
+    name: "Quandale Dingle → Track C SoundboardPick"
+    input: "为 Quandale Dingle soundboard 创建文章，Track C"
+    expected:
+      track: C
+      type: SoundboardPick
+      category: soundboard-tips
+      assert:
+        - "Key Takeaways section present"
+        - "links to /community-sounds or /soundboard"
+    severity: high
+
+  - id: E05
+    name: "Murf live Discord → P2 Fail"
+    input: "Draft says Murf is the best Discord voice changer for live gaming"
+    expected:
+      gate: P2 FAIL
+    severity: critical
+
+  - id: E06
+    name: "Assistant 教程缺 IntentSplit 内链 → P3 Fail"
+    input: "How to change voice on Google Assistant article with no link to how-to-change-google-assistant-voice when mixing live mic advice"
+    expected:
+      gate: P3 FAIL
+    severity: high
+
+  - id: E07
+    name: "SFX generator 链错 → P4 Fail"
+    input: "AI sound effect generator section links only to /community-sounds"
+    expected:
+      gate: P4 FAIL
+    severity: high
+
+  - id: E08
+    name: "top-5-voice-changers → C4 STOP"
+    input: "创建 slug top-5-voice-changers 新稿"
+    expected:
+      gate: C4 STOP
+    severity: critical
+
+  - id: E09
+    name: "dubbing-ai-vs-voicemod 重写声明 Refresh"
+    input: "重写 dubbing-ai-vs-voicemod，PromoteToStrategic"
+    expected:
+      assert:
+        - "CMS Overlap section with PromoteToStrategic"
+        - "output path 04-dubbing-ai-vs-voicemod-2026.md"
+        - "When Voicemod wins section present"
+    severity: high
+
+  - id: E10
+    name: "Gojo 长文 duplicate → C3 MERGE"
+    input: "3000-word Gojo voice changer tutorial duplicating /voice-changer/gojo"
+    expected:
+      gate: C3 MERGE or CharacterBridge ≤800w preset + link
+    severity: high
+
+  - id: E11
+    name: "一次加载全部 references"
+    input: "Phase 0 loads all references/*.md at once"
+    expected:
+      assert:
+        - "violates progressive-disclosure"
+    severity: medium
+
+  - id: E12
+    name: "Voice actor 产品堆砌 >50%"
+    input: "Track C VoiceActorProfile with Dubbing AI in every H2 and 60% product copy"
+    expected:
+      gate: Track C SelfCheck Fail on Product Tie-in
+    severity: high
+
+  - id: E13
+    name: "Writing Quality: 空泛句 3 处命中"
+    input: "Draft contains 'In today's digital world', 'It is important to note that', 'Let's dive in'"
+    expected:
+      gate: SelfCheck Writing & Voice FAIL on Track S (空泛句 >2)
+    severity: high
+
+  - id: E14
+    name: "Fact Check: as-of 日期缺失"
+    input: "Draft says '500+ voices and 100,000+ sounds' without as-of date or source link"
+    expected:
+      gate: P1 FAIL
+    severity: critical
+
+  - id: E15
+    name: "Presentation: 碎片化检测"
+    input: "Draft has 14/18 short paragraphs, 4 continuous short clusters, 48% list ratio, 0.7 stddev, 35% transition rate"
+    expected:
+      gate: SelfCheck Presentation <4/10 · Fragmentation >30% weighted → FAIL
+    severity: high
+
+  - id: E16
+    name: "Slug: 内部架构词 A11 检测"
+    input: "Agent proposes slug 'voice-changer-diagnosis-virtual-mic-not-working'"
+    expected:
+      gate: Gate B A11 FAIL
+    severity: high
+
+  - id: E17
+    name: "VoiceActor: 产品提及 >20%"
+    input: "VoiceActorProfile draft with 45% product mention and CTA in every other H2"
+    expected:
+      gate: Track C SelfCheck Product Tie-in FAIL
+    severity: high
+
+  - id: E18
+    name: "Cross-Article: Intro 模板化"
+    input: "3 Track S articles with identical intro function sequence (定义句→场景句→路标句→数据句)"
+    expected:
+      gate: Phase 5.5 CA4 FAIL
+    severity: high
+
+  - id: E19
+    name: "Hub-Spoke: #04 互链矩阵"
+    input: "New Track S draft without link to #04 per content-graph §4.6 4-Spoke matrix"
+    expected:
+      gate: SelfCheck SEO & Hub-Spoke <7/10 · agent must complete 4-Spoke interlinks
+    severity: high
+
+  - id: E20
+    name: "Refresh: Tier 路由"
+    input: "how-to-get-voice-changer-on-discord cms-export稿，SERP排名稳定但缺FAQ和P6公平段"
+    expected:
+      mode: RefreshInPlace
+      tier: Tier 2
+    severity: high
+
+  - id: E21
+    name: "Information Gain: 冗余率 STOP"
+    input: "Phase 5 IG Audit for high-competition keyword shows Redundancy Ratio 48%"
+    expected:
+      gate: serp-audit §8 STOP · redundancy >30% on high-competition
+    severity: critical
+
+  - id: E22
+    name: "CA6: Canonical #02/#03 回归检测"
+    input: "Agent output maps Live vs File→#02, Assistant vs Mic→#03 (wrong)"
+    expected:
+      gate: CA6 FAIL · content-graph §4.4 is authoritative
+    severity: high
+

@@ -1,0 +1,21 @@
+# 敏感文件（防御性）
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.keystore
+*.jks
+id_rsa*
+id_ed25519*
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+node_modules/
+
+# 终端/日志
+*.log
