@@ -113,12 +113,15 @@
 | `what-is-minimax-h3` (45) | Standalone | —（按 context） | 51 |
 | `grok-4-6` (51) | Standalone（对照枢纽） | 45, 41, 50 | 50 |
 | `grok-bot` (53) | Standalone（agent 产品） | 51, 52, 41 | 52 |
+| `glm-5-3` (54) | Standalone（Model 单篇） | 55, 50, 41 | 55 |
+| `gemini-3-7-flash` (55) | Standalone（Model 单篇 + Floatboat 接入） | 03, 54 | 54 |
 
 ### 3.10 双模型同日发布对照桥（2026-08-13 事件）
 
 | slug | 集群角色 | 应链向 | 应被链自 |
 |------|---------|-------|---------|
 | `deepseek-v4-pro-0813` (50) ↔ `grok-4-6` (51) | 同日对照桥 | 双向互链（§6/§5 已实现） | 双向互链 |
+| `glm-5-3` (54) ↔ `gemini-3-7-flash` (55) | 24h 内双模型对照桥 | 双向互链（§6/§6 已实现） | 双向互链 |
 
 ---
 

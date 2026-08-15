@@ -151,6 +151,8 @@ Phase 6 — Delivery             (Editor / Auditor)
 | 51 | [51-grok-4-6.md](./51-grok-4-6.md) | `grok-4-6` | Research | ~2.4k | ✅ | Grok 4.6：500K 上下文 + 200K 价格陷阱 + 双模型对照 |
 | 52 | [52-cordis-plugin-framework.md](./deepseek/52-cordis-plugin-framework.md) | `cordis-plugin-framework` | DeepSeek/Research | ~2.4k | ✅ | Cordis 插件内核：时空可组合性范式 + Harness 架构 |
 | 53 | [53-grok-bot.md](./53-grok-bot.md) | `grok-bot` | Research | ~2.3k | ✅ | Grok Bot：云电脑架构 + 安全边界争议 + Cursor 绑定 |
+| 54 | [54-glm-5-3.md](./54-glm-5-3.md) | `glm-5-3` | Research | ~3.1k | ✅ | GLM-5.3：后训练 Scaling + 网安涌现 + 定价/生态 |
+| 55 | [55-gemini-3-7-flash.md](./55-gemini-3-7-flash.md) | `gemini-3-7-flash` | Research | ~3.2k | ✅ | Gemini 3.7 Flash：三周迭代 + 半价促销 + Floatboat 接入 |
 | 41 | [41-what-is-deepseek-agent.md](./deepseek/41-what-is-deepseek-agent.md) | `what-is-deepseek-agent` | DeepSeek/Research | ~3.4k | ✅ | DeepSeek Agent 定义 Hub：四类 Agent 形态 + 选型 |
 | 42 | [42-how-to-build-deepseek-agent.md](./deepseek/42-how-to-build-deepseek-agent.md) | `how-to-build-deepseek-agent` | DeepSeek/Product | ~1.9k | ✅ | API Key 到首个 Agent：loop / tool calling / production 模式 |
 | 43 | [43-deepseek-agent-function-calling.md](./deepseek/43-deepseek-agent-function-calling.md) | `deepseek-agent-function-calling` | DeepSeek/Product | ~2.1k | ✅ | 函数调用实操：schema / strict mode / 并行 / MCP |
@@ -312,8 +314,11 @@ Phase 6 — Delivery             (Editor / Auditor)
 | 45 | `what-is-minimax-h3` | MiniMax H3 | 开源 omni-modal 视频模型（独立单篇） |
 | 51 | `grok-4-6` | Grok 4.6 | xAI agentic frontier model；与 50 同日对照桥 |
 | 53 | `grok-bot` | Grok Bot | xAI agent 产品；云电脑架构 + 安全模型；与 52 双向对照桥 |
+| 54 | `glm-5-3` | GLM-5.3 | 智谱后训练 Scaling 旗舰；开源第一 + 网安涌现；与 55 对照桥 |
+| 55 | `gemini-3-7-flash` | Gemini 3.7 Flash | Google Flash 主力模型；三周迭代 + 半价；Floatboat 内置；与 54 对照桥 |
 
 **2026-08-13 事件**：DeepSeek V4 Pro 0813 GA（50）与 xAI Grok 4.6（51）几乎同时发布，两篇互为对照桥（§6/§5 双向互链）。
+**2026-08-14 事件**：Google Gemini 3.7 Flash（55，08-13 发布）与智谱 GLM-5.3（54，08-14 发布）24 小时内先后发布，两篇互为对照桥（§6/§6 双向互链）；55 为 Research 文但含「Floatboat 内置」章节。
 **2026-08 双形态对照**：Cordis 插件内核文（52，DeepSeek 簇）与 Grok Bot 产品文（53，根目录）互为「开源可组合 vs 托管常驻」的哲学对照桥（§6/§6 双向互链）。
 
 ---

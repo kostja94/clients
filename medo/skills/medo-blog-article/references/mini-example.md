@@ -1,4 +1,4 @@
-# Mini Example — #06 medo-vs-lovable
+# Mini Example — #29 medo-vs-lovable
 
 > Agent 在 Phase 1（Brief）与 Phase 3（Outline）前加载。范例对应下一篇 P0 优先级。
 
@@ -68,9 +68,7 @@ Gate A: KEEP
   - /blog/best-ai-mobile-app-builders
   - /blog/publish-ai-app-app-store
   - /ai-mobile-app-builder
-**正文互链（原 related）**: how-to-build-mobile-app-with-ai, best-ai-mobile-app-builders, publish-ai-app-app-store, native-app-vs-pwa-ai-builder
 **KEEP/MERGE**: KEEP
-**Disclosure needed**: Required
 **Author**: Kostja（默认）
 ```
 
@@ -96,8 +94,7 @@ date: 2026-08-XX       # 发布时间，永不改变（锚点日往前排）
 updated: 2026-08-XX    # 可选；无实质更新可省略
 author: "Kostja"
 category: "Guide"
-secondary_category: "mobile app"
-disclosure: "MeDo is an AI mobile app builder that generates native iOS and Android apps. This article compares MeDo and Lovable honestly — including when Lovable is the better fit."
+secondary_category: "Mobile App"
 ---
 ```
 
@@ -116,7 +113,6 @@ disclosure: "MeDo is an AI mobile app builder that generates native iOS and Andr
 | § | H2 | Answer block ID | Reader mental state | Target words | Links / Notes |
 |---|-----|-----------------|---------------------|-------------|---------------|
 | Open | hook: mobile icon vs website-in-shell | AB-0 | 刚搜进来：两者都叫 AI builder，选谁？ | 180 | link: best-ai-mobile-app-builders |
-| — | Disclosure | — | — | 50 | frontmatter disclosure |
 | TL;DR | 4 bullets | AB-0 | 找对地方了吗？ | 140 | both products named |
 | 1 | What MeDo and Lovable actually are | AB-1 | 两个工具分别解决什么问题？ | 320 | MIAODA + lovable.dev |
 | 2 | Side-by-side comparison table | AB-2 | 一眼看到输出类型差异 | 200 | 8-column table |
@@ -126,7 +122,6 @@ disclosure: "MeDo is an AI mobile app builder that generates native iOS and Andr
 | 6 | When to choose MeDo — and when to choose Lovable | AB-5 | 我该选哪个？ | 400 | A3 core |
 | — | Conclusion | — | 准备行动 / 仍有一个顾虑 | 160 | CTA /ai-mobile-app-builder |
 | — | FAQ | — | 具体异议（App Store 拒审） | 420 | 固定 6 题 |
-| — | Related | — | — | — | 4 slugs |
 
 **Estimated total**: ~2,450 words
 ```
@@ -138,12 +133,6 @@ disclosure: "MeDo is an AI mobile app builder that generates native iOS and Andr
 ```markdown
 # MeDo vs Lovable: Which AI Builder Ships Real Mobile Apps?
 
-You want an app on someone's home screen — not another responsive website in a browser tab. **MeDo** and **Lovable** both show up in every "best AI app builder" list in 2026, but they solve different problems. Lovable is exceptional at turning prompts into deployable web apps with Supabase backends. MeDo targets a narrower promise: native Swift and Kotlin from conversation, tested on your phone via QR code, with a path to TestFlight without opening Xcode.
-
-This comparison is written for the non-developer who has already decided the destination is the App Store, not a shareable URL. If you have not chosen a category yet, start with [best AI mobile app builders](/blog/best-ai-mobile-app-builders) — the three-way split (native, cross-platform, web wrapper) matters more than the brand names.
-
-Disclosure: MeDo is an AI mobile app builder that generates native iOS and Android apps. This article compares MeDo and Lovable honestly — including when Lovable is the better fit.
-
 ## TL;DR
 
 - **Lovable** is the stronger choice for web SaaS, landing pages, and full-stack React + Supabase apps you plan to host on a URL.
@@ -151,6 +140,10 @@ Disclosure: MeDo is an AI mobile app builder that generates native iOS and Andro
 - Lovable's mobile route means exporting a web app and wrapping it (Capacitor/Median.co) — faster to start, higher Guideline 4.2 rejection risk.
 - MeDo generates Swift and Kotlin directly — younger integration catalog, but the binary is what App Store review expects.
 - Neither tool removes store bureaucracy: developer accounts, privacy policies, and reviewer demo logins are still on you.
+
+You want an app on someone's home screen — not another responsive website in a browser tab. **MeDo** and **Lovable** both show up in every "best AI app builder" list in 2026, but they solve different problems. Lovable is exceptional at turning prompts into deployable web apps with Supabase backends. MeDo targets a narrower promise: native Swift and Kotlin from conversation, tested on your phone via QR code, with a path to TestFlight without opening Xcode.
+
+This comparison is written for the non-developer who has already decided the destination is the App Store, not a shareable URL. If you have not chosen a category yet, start with [best AI mobile app builders](/blog/best-ai-mobile-app-builders) — the three-way split (native, cross-platform, web wrapper) matters more than the brand names.
 ```
 
 ---
@@ -171,7 +164,7 @@ Disclosure: MeDo is an AI mobile app builder that generates native iOS and Andro
 ## 7. Phase 6 交付文件名
 
 ```
-medo/blog/06-medo-vs-lovable.md
+medo/blog/26-medo-vs-lovable.md
 ```
 
 交付后提示人类更新 `blog/README.md` 文章表（#06 行）。

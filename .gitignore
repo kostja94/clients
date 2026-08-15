@@ -16,6 +16,8 @@ id_ed25519*
 .DS_Store
 Thumbs.db
 node_modules/
+__pycache__/
+*.pyc
 
 # 终端/日志
 *.log

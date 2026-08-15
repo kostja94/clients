@@ -1,0 +1,62 @@
+# post.meta.yaml 字段说明（Schema 文档，非运行时配置）
+# 每个 Milestone 在 published/Mx-{slug}/post.meta.yaml 存一份实例
+
+milestone: M1              # Milestone ID，如 M1、M2
+slug: first-product        # kebab-case，与文件夹名一致
+title: "第一个产品上线"     # 中文短标题
+theme: build_in_public     # 主题标签：build_in_public | product_update | data_insight | enterprise
+published_at: null         # ISO 日期 YYYY-MM-DD；draft 时为 null
+
+narrative:
+  primary: build_in_public       # 主轴
+  secondary: og_infrastructure   # 支撑叙事
+  client_story: ai_notes_generator_generic  # 或 null
+
+platforms:
+  linkedin:
+    status: draft            # draft | published | skipped
+    url: null
+    language: en
+    format: carousel         # carousel | text | document
+    first_comment_has_link: true
+    published_at: null
+  x:
+    article:
+      status: draft
+      language: zh
+      title: null
+      url: null              # Article 永久链（若有）
+    post:
+      status: draft
+      url: null              # Feed Post（含 Article 自动 Post）
+      note: null             # 如 "Article 发布后自动生成的 Feed Post"
+  jike:
+    status: draft            # draft | published | planned | skipped
+    url: null
+    language: zh
+    format: short            # short | long
+    published_at: null
+
+assets:
+  demo_url: "https://oginify.com"
+  carousel_count: null
+  styles: []                 # on-brand, magazine, terminal, wildcard 等
+  cover_image: null          # 本地路径或描述
+
+metrics:
+  linkedin:
+    impressions: null
+    reactions: null
+    comments: null
+  x:
+    impressions: null
+    likes: null
+    replies: null
+  jike:
+    likes: null
+    comments: null
+
+source_docs:
+  - oginify.md
+  - oginify-build-in-public.md
+  - voice-and-messaging.md

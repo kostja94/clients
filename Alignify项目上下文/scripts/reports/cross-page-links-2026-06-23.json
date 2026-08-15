@@ -1,0 +1,2984 @@
+{
+  "date": "2026-06-24T00:08:03.113292",
+  "scope": "combined_en_zh_tools_and_blog",
+  "total_pages": 113,
+  "min_inbound_threshold": 3,
+  "orphans": [
+    "short-drama",
+    "social-cards-generator",
+    "web-fetch"
+  ],
+  "orphan_count": 3,
+  "inbound_below_threshold": [
+    {
+      "slug": "short-drama",
+      "inbound": 0,
+      "sources": []
+    },
+    {
+      "slug": "social-cards-generator",
+      "inbound": 0,
+      "sources": []
+    },
+    {
+      "slug": "web-fetch",
+      "inbound": 0,
+      "sources": []
+    },
+    {
+      "slug": "canvas-video",
+      "inbound": 1,
+      "sources": [
+        "video-editor"
+      ]
+    },
+    {
+      "slug": "data-engineering-agent",
+      "inbound": 1,
+      "sources": [
+        "inference-infrastructure"
+      ]
+    },
+    {
+      "slug": "filmmaking",
+      "inbound": 1,
+      "sources": [
+        "video-editor"
+      ]
+    },
+    {
+      "slug": "medical-scribe",
+      "inbound": 1,
+      "sources": [
+        "healthcare"
+      ]
+    },
+    {
+      "slug": "agent-sandbox",
+      "inbound": 2,
+      "sources": [
+        "inference-infrastructure",
+        "openclaw-alternatives"
+      ]
+    },
+    {
+      "slug": "ai-training-data",
+      "inbound": 2,
+      "sources": [
+        "data-engineering-agent",
+        "inference-infrastructure"
+      ]
+    },
+    {
+      "slug": "image-relighting",
+      "inbound": 2,
+      "sources": [
+        "background-changer",
+        "headshot-generator"
+      ]
+    },
+    {
+      "slug": "inference-infrastructure",
+      "inbound": 2,
+      "sources": [
+        "agent-sandbox",
+        "ai-training-data"
+      ]
+    },
+    {
+      "slug": "text-translator",
+      "inbound": 2,
+      "sources": [
+        "religion",
+        "text"
+      ]
+    },
+    {
+      "slug": "virtual-staging",
+      "inbound": 2,
+      "sources": [
+        "background-changer",
+        "image-generator"
+      ]
+    }
+  ],
+  "inbound_below_threshold_count": 13,
+  "missing_backlinks": [
+    {
+      "source": "3d",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-model-generator",
+      "target": "healthcare",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-model-generator",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-modelling",
+      "target": "healthcare",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-modelling",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-scanner",
+      "target": "video-to-video",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-scanner",
+      "target": "text-to-video",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-scanner",
+      "target": "animation-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-scanner",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-scanner",
+      "target": "video",
+      "locale": "combined"
+    },
+    {
+      "source": "3d-scanner",
+      "target": "multimodal-llm",
+      "locale": "combined"
+    },
+    {
+      "source": "accent-conversion",
+      "target": "voice",
+      "locale": "combined"
+    },
+    {
+      "source": "affiliate-marketing",
+      "target": "linkedin",
+      "locale": "combined"
+    },
+    {
+      "source": "affiliate-marketing",
+      "target": "b2b",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "headless-browser",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "authentication",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-for-desktop",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-sandbox",
+      "target": "headless-browser",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-sandbox",
+      "target": "authentication",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-sandbox",
+      "target": "agent-for-desktop",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-sandbox",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-sandbox",
+      "target": "cli",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-sandbox",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-skills",
+      "target": "app-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-skills",
+      "target": "vibe-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-skills",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-skills",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-skills",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "agent-skills",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-homework-helper",
+      "target": "healthcare",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-homework-helper",
+      "target": "essay-writer",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-scheduling",
+      "target": "agent-for-desktop",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-scheduling",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-scheduling",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-training-data",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-training-data",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-training-data",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "ai-training-data",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "animation-library",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "animation-library",
+      "target": "website-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "animation-library",
+      "target": "vibe-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "animation-library",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "api",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "api",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "api",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "api",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "app-builder",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "app-builder",
+      "target": "website-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "app-builder",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "audio-translator",
+      "target": "music-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "app-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "authentication",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "avatar",
+      "target": "image",
+      "locale": "combined"
+    },
+    {
+      "source": "avatar",
+      "target": "fashion",
+      "locale": "combined"
+    },
+    {
+      "source": "avatar",
+      "target": "music-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "avatar",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "avatar",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "avatar",
+      "target": "video-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "avatar",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "b2b",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "background-changer",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "background-changer",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "background-changer",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "background-changer",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "browser",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "video-to-video",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "agent-for-desktop",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "canvas-video",
+      "target": "llm-for-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "headshot-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "character-chat",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "chatbot",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "chatbot",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "chatbot",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "cli",
+      "target": "headless-browser",
+      "locale": "combined"
+    },
+    {
+      "source": "cli",
+      "target": "vibe-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "cli",
+      "target": "code-completion",
+      "locale": "combined"
+    },
+    {
+      "source": "cli",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "browser",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "notes-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "code-review",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "community",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "community",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "community",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "community",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "community",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "data-engineering-agent",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "data-engineering-agent",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "data-engineering-agent",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "data-engineering-agent",
+      "target": "cli",
+      "locale": "combined"
+    },
+    {
+      "source": "data-engineering-agent",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "data-engineering-agent",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "data-engineering-agent",
+      "target": "ai-training-data",
+      "locale": "combined"
+    },
+    {
+      "source": "dating",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "dating",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "dating",
+      "target": "character-chat",
+      "locale": "combined"
+    },
+    {
+      "source": "design",
+      "target": "fashion",
+      "locale": "combined"
+    },
+    {
+      "source": "directory",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "directory",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "directory",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "documentation",
+      "target": "app-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "documentation",
+      "target": "vibe-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "documentation",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "documentation",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "documentation",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "documentation",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "documentation",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "education",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "education",
+      "target": "essay-writer",
+      "locale": "combined"
+    },
+    {
+      "source": "education",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "education",
+      "target": "presentation-maker",
+      "locale": "combined"
+    },
+    {
+      "source": "essay-writer",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "essay-writer",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "essay-writer",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "essay-writer",
+      "target": "character-chat",
+      "locale": "combined"
+    },
+    {
+      "source": "essay-writer",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "evaluation",
+      "target": "headless-browser",
+      "locale": "combined"
+    },
+    {
+      "source": "evaluation",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "evaluation",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "family-assistant",
+      "target": "voice-cloning",
+      "locale": "combined"
+    },
+    {
+      "source": "family-assistant",
+      "target": "voice-changer",
+      "locale": "combined"
+    },
+    {
+      "source": "family-assistant",
+      "target": "voice",
+      "locale": "combined"
+    },
+    {
+      "source": "family-assistant",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "family-assistant",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "fashion",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "fashion",
+      "target": "image-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "fashion",
+      "target": "image",
+      "locale": "combined"
+    },
+    {
+      "source": "fashion",
+      "target": "background-changer",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "video-to-video",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "video-translator",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "lip-sync",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "text-to-video",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "animation-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "filmmaking",
+      "target": "video",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "recruiting",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "browser",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "notes-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "geo",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "headless-browser",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "headless-browser",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "headless-browser",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "headless-browser",
+      "target": "vibe-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "headless-browser",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "headless-browser",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "headless-browser",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "headshot-generator",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "headshot-generator",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "headshot-generator",
+      "target": "website-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "headshot-generator",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "headshot-generator",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "healthcare",
+      "target": "legal",
+      "locale": "combined"
+    },
+    {
+      "source": "healthcare",
+      "target": "family-assistant",
+      "locale": "combined"
+    },
+    {
+      "source": "healthcare",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "healthcare",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "image",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "image",
+      "target": "logo-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "image-relighting",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "image-relighting",
+      "target": "image-enhancer",
+      "locale": "combined"
+    },
+    {
+      "source": "image-relighting",
+      "target": "image-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "image-relighting",
+      "target": "image",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "video-to-video",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "video-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "image-enhancer",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "image-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "video-translator",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "image-to-video",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "inference-infrastructure",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "inference-infrastructure",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "inference-infrastructure",
+      "target": "data-engineering-agent",
+      "locale": "combined"
+    },
+    {
+      "source": "inference-infrastructure",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "inference-infrastructure",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "influencer-marketing",
+      "target": "linkedin",
+      "locale": "combined"
+    },
+    {
+      "source": "influencer-marketing",
+      "target": "recruiting",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "b2b",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "lead-generation",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "speech-to-text",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "essay-writer",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "llm-for-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "interview-assistant",
+      "target": "character-chat",
+      "locale": "combined"
+    },
+    {
+      "source": "knowledge-base",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "lead-generation",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "lead-generation",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "lead-generation",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "legal",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "legal",
+      "target": "speech-to-text",
+      "locale": "combined"
+    },
+    {
+      "source": "legal",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "legal",
+      "target": "notes-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "legal",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "linkedin",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "linkedin",
+      "target": "community",
+      "locale": "combined"
+    },
+    {
+      "source": "linkedin",
+      "target": "recruiting",
+      "locale": "combined"
+    },
+    {
+      "source": "lip-sync",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "llm",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "llm",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "llm",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "llm",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "llm",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "llm",
+      "target": "browser",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "vibe-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-coding",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "recruiting",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "browser",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "character-chat",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "multimodal-llm",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-math",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "llm-for-reasoning",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "logo-generator",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "medical-scribe",
+      "target": "legal",
+      "locale": "combined"
+    },
+    {
+      "source": "medical-scribe",
+      "target": "speech-to-text",
+      "locale": "combined"
+    },
+    {
+      "source": "medical-scribe",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "medical-scribe",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "agent-for-desktop",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "memory",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "multimodal-llm",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "music-video-generator",
+      "target": "text-to-speech",
+      "locale": "combined"
+    },
+    {
+      "source": "music-video-generator",
+      "target": "lip-sync",
+      "locale": "combined"
+    },
+    {
+      "source": "music-video-generator",
+      "target": "voice",
+      "locale": "combined"
+    },
+    {
+      "source": "music-video-generator",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "music-video-generator",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "music-video-generator",
+      "target": "animation-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "music-video-generator",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "note-taker",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "notes-generator",
+      "target": "voice-cloning",
+      "locale": "combined"
+    },
+    {
+      "source": "notes-generator",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "ocr",
+      "target": "text-to-speech",
+      "locale": "combined"
+    },
+    {
+      "source": "ocr",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "ocr",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "ocr",
+      "target": "image-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "ocr",
+      "target": "image",
+      "locale": "combined"
+    },
+    {
+      "source": "ocr",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "ocr",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "agent-for-desktop",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "documentation",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "browser",
+      "locale": "combined"
+    },
+    {
+      "source": "openclaw-alternatives",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "poster-generator",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "poster-generator",
+      "target": "image-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "presentation-maker",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "presentation-maker",
+      "target": "essay-writer",
+      "locale": "combined"
+    },
+    {
+      "source": "productivity",
+      "target": "headless-browser",
+      "locale": "combined"
+    },
+    {
+      "source": "productivity",
+      "target": "ocr",
+      "locale": "combined"
+    },
+    {
+      "source": "productivity",
+      "target": "memory",
+      "locale": "combined"
+    },
+    {
+      "source": "productivity",
+      "target": "ai-homework-helper",
+      "locale": "combined"
+    },
+    {
+      "source": "productivity",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "recruiting",
+      "target": "note-taker",
+      "locale": "combined"
+    },
+    {
+      "source": "recruiting",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "referral-program",
+      "target": "linkedin",
+      "locale": "combined"
+    },
+    {
+      "source": "referral-program",
+      "target": "ai-scheduling",
+      "locale": "combined"
+    },
+    {
+      "source": "referral-program",
+      "target": "recruiting",
+      "locale": "combined"
+    },
+    {
+      "source": "referral-program",
+      "target": "fundraising",
+      "locale": "combined"
+    },
+    {
+      "source": "referral-program",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "religion",
+      "target": "community",
+      "locale": "combined"
+    },
+    {
+      "source": "religion",
+      "target": "knowledge-base",
+      "locale": "combined"
+    },
+    {
+      "source": "religion",
+      "target": "essay-writer",
+      "locale": "combined"
+    },
+    {
+      "source": "religion",
+      "target": "presentation-maker",
+      "locale": "combined"
+    },
+    {
+      "source": "search-engine",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "search-engine",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "search-indexing",
+      "target": "website-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "search-indexing",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "short-drama",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "short-drama",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "short-drama",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "short-drama",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "short-drama",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "short-drama",
+      "target": "animation-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "short-drama",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "social-cards-generator",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "social-cards-generator",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "social-cards-generator",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "social-cards-generator",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "social-cards-generator",
+      "target": "logo-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "spreadsheet",
+      "target": "app-builder",
+      "locale": "combined"
+    },
+    {
+      "source": "spreadsheet",
+      "target": "productivity",
+      "locale": "combined"
+    },
+    {
+      "source": "spreadsheet",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "story-generator",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "story-generator",
+      "target": "chatbot",
+      "locale": "combined"
+    },
+    {
+      "source": "story-generator",
+      "target": "essay-writer",
+      "locale": "combined"
+    },
+    {
+      "source": "story-generator",
+      "target": "character-chat",
+      "locale": "combined"
+    },
+    {
+      "source": "tattoo-generator",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "tattoo-generator",
+      "target": "image-enhancer",
+      "locale": "combined"
+    },
+    {
+      "source": "tattoo-generator",
+      "target": "image-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "tattoo-generator",
+      "target": "image",
+      "locale": "combined"
+    },
+    {
+      "source": "text",
+      "target": "text-to-speech",
+      "locale": "combined"
+    },
+    {
+      "source": "text",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "text",
+      "target": "story-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "text",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "text",
+      "target": "presentation-maker",
+      "locale": "combined"
+    },
+    {
+      "source": "text-generator",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "text-translator",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "text-translator",
+      "target": "audio-translator",
+      "locale": "combined"
+    },
+    {
+      "source": "text-translator",
+      "target": "video-translator",
+      "locale": "combined"
+    },
+    {
+      "source": "text-translator",
+      "target": "essay-writer",
+      "locale": "combined"
+    },
+    {
+      "source": "user-research",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "vibe-coding",
+      "target": "ide",
+      "locale": "combined"
+    },
+    {
+      "source": "vibe-coding",
+      "target": "code-completion",
+      "locale": "combined"
+    },
+    {
+      "source": "vibe-coding",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "video",
+      "target": "video-to-video",
+      "locale": "combined"
+    },
+    {
+      "source": "video-clipping",
+      "target": "lip-sync",
+      "locale": "combined"
+    },
+    {
+      "source": "video-clipping",
+      "target": "music-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "video-effects",
+      "target": "video-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "video-effects",
+      "target": "video-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "video-effects",
+      "target": "video",
+      "locale": "combined"
+    },
+    {
+      "source": "video-to-video",
+      "target": "video-clipping",
+      "locale": "combined"
+    },
+    {
+      "source": "video-translator",
+      "target": "video-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "virtual-staging",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "virtual-staging",
+      "target": "headshot-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "virtual-staging",
+      "target": "world-model",
+      "locale": "combined"
+    },
+    {
+      "source": "virtual-staging",
+      "target": "multimodal-llm",
+      "locale": "combined"
+    },
+    {
+      "source": "voice-changer",
+      "target": "avatar",
+      "locale": "combined"
+    },
+    {
+      "source": "voice-cloning",
+      "target": "lip-sync",
+      "locale": "combined"
+    },
+    {
+      "source": "web-fetch",
+      "target": "web-scraping",
+      "locale": "combined"
+    },
+    {
+      "source": "web-fetch",
+      "target": "headless-browser",
+      "locale": "combined"
+    },
+    {
+      "source": "web-fetch",
+      "target": "search-indexing",
+      "locale": "combined"
+    },
+    {
+      "source": "web-fetch",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "web-fetch",
+      "target": "web-search-api",
+      "locale": "combined"
+    },
+    {
+      "source": "web-scraping",
+      "target": "geo",
+      "locale": "combined"
+    },
+    {
+      "source": "web-scraping",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "web-scraping",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "web-scraping",
+      "target": "browser",
+      "locale": "combined"
+    },
+    {
+      "source": "web-search-api",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "web-search-api",
+      "target": "workflow",
+      "locale": "combined"
+    },
+    {
+      "source": "web-search-api",
+      "target": "evaluation",
+      "locale": "combined"
+    },
+    {
+      "source": "web-search-api",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "web-search-api",
+      "target": "api",
+      "locale": "combined"
+    },
+    {
+      "source": "web-search-api",
+      "target": "browser",
+      "locale": "combined"
+    },
+    {
+      "source": "website-builder",
+      "target": "search-engine",
+      "locale": "combined"
+    },
+    {
+      "source": "website-builder",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "website-builder",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "website-builder",
+      "target": "headless-browser",
+      "locale": "combined"
+    },
+    {
+      "source": "website-builder",
+      "target": "vibe-coding",
+      "locale": "combined"
+    },
+    {
+      "source": "website-builder",
+      "target": "code-review",
+      "locale": "combined"
+    },
+    {
+      "source": "website-builder",
+      "target": "logo-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "workflow",
+      "target": "text-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "workflow",
+      "target": "coding",
+      "locale": "combined"
+    },
+    {
+      "source": "workflow",
+      "target": "openclaw-alternatives",
+      "locale": "combined"
+    },
+    {
+      "source": "workflow",
+      "target": "agent-skills",
+      "locale": "combined"
+    },
+    {
+      "source": "world-model",
+      "target": "video-editor",
+      "locale": "combined"
+    },
+    {
+      "source": "world-model",
+      "target": "image-generator",
+      "locale": "combined"
+    },
+    {
+      "source": "world-model",
+      "target": "directory",
+      "locale": "combined"
+    },
+    {
+      "source": "world-model",
+      "target": "llm",
+      "locale": "combined"
+    },
+    {
+      "source": "world-model",
+      "target": "web-search-api",
+      "locale": "combined"
+    }
+  ],
+  "missing_backlink_count": 439,
+  "page_metrics": {
+    "3d": {
+      "out_links": 9,
+      "in_links": 8,
+      "pagerank": 0.006091,
+      "click_depth": 2
+    },
+    "3d-model-generator": {
+      "out_links": 6,
+      "in_links": 4,
+      "pagerank": 0.003248,
+      "click_depth": 3
+    },
+    "3d-modelling": {
+      "out_links": 6,
+      "in_links": 4,
+      "pagerank": 0.003248,
+      "click_depth": 3
+    },
+    "3d-scanner": {
+      "out_links": 9,
+      "in_links": 3,
+      "pagerank": 0.002825,
+      "click_depth": 3
+    },
+    "accent-conversion": {
+      "out_links": 6,
+      "in_links": 5,
+      "pagerank": 0.006469,
+      "click_depth": 3
+    },
+    "affiliate-marketing": {
+      "out_links": 7,
+      "in_links": 5,
+      "pagerank": 0.003921,
+      "click_depth": 2
+    },
+    "agent-for-desktop": {
+      "out_links": 20,
+      "in_links": 16,
+      "pagerank": 0.016509,
+      "click_depth": 1
+    },
+    "agent-sandbox": {
+      "out_links": 8,
+      "in_links": 2,
+      "pagerank": 0.001855,
+      "click_depth": 2
+    },
+    "agent-skills": {
+      "out_links": 25,
+      "in_links": 27,
+      "pagerank": 0.025441,
+      "click_depth": 0
+    },
+    "ai-homework-helper": {
+      "out_links": 5,
+      "in_links": 4,
+      "pagerank": 0.003623,
+      "click_depth": 2
+    },
+    "ai-scheduling": {
+      "out_links": 9,
+      "in_links": 7,
+      "pagerank": 0.005626,
+      "click_depth": 2
+    },
+    "ai-training-data": {
+      "out_links": 5,
+      "in_links": 2,
+      "pagerank": 0.001736,
+      "click_depth": 4
+    },
+    "animation-generator": {
+      "out_links": 8,
+      "in_links": 12,
+      "pagerank": 0.00926,
+      "click_depth": 2
+    },
+    "animation-library": {
+      "out_links": 8,
+      "in_links": 4,
+      "pagerank": 0.004627,
+      "click_depth": 2
+    },
+    "api": {
+      "out_links": 8,
+      "in_links": 24,
+      "pagerank": 0.01598,
+      "click_depth": 0
+    },
+    "app-builder": {
+      "out_links": 6,
+      "in_links": 7,
+      "pagerank": 0.007819,
+      "click_depth": 1
+    },
+    "audio-translator": {
+      "out_links": 7,
+      "in_links": 7,
+      "pagerank": 0.00784,
+      "click_depth": 3
+    },
+    "authentication": {
+      "out_links": 18,
+      "in_links": 8,
+      "pagerank": 0.007048,
+      "click_depth": 2
+    },
+    "avatar": {
+      "out_links": 23,
+      "in_links": 24,
+      "pagerank": 0.021729,
+      "click_depth": 1
+    },
+    "b2b": {
+      "out_links": 9,
+      "in_links": 10,
+      "pagerank": 0.007268,
+      "click_depth": 1
+    },
+    "background-changer": {
+      "out_links": 13,
+      "in_links": 10,
+      "pagerank": 0.011405,
+      "click_depth": 1
+    },
+    "browser": {
+      "out_links": 11,
+      "in_links": 17,
+      "pagerank": 0.014853,
+      "click_depth": 1
+    },
+    "canvas-video": {
+      "out_links": 9,
+      "in_links": 1,
+      "pagerank": 0.002363,
+      "click_depth": 3
+    },
+    "character-chat": {
+      "out_links": 18,
+      "in_links": 15,
+      "pagerank": 0.014215,
+      "click_depth": 1
+    },
+    "chatbot": {
+      "out_links": 11,
+      "in_links": 21,
+      "pagerank": 0.016253,
+      "click_depth": 1
+    },
+    "cli": {
+      "out_links": 9,
+      "in_links": 7,
+      "pagerank": 0.007407,
+      "click_depth": 1
+    },
+    "code-completion": {
+      "out_links": 8,
+      "in_links": 10,
+      "pagerank": 0.0117,
+      "click_depth": 1
+    },
+    "code-review": {
+      "out_links": 12,
+      "in_links": 11,
+      "pagerank": 0.012741,
+      "click_depth": 1
+    },
+    "coding": {
+      "out_links": 9,
+      "in_links": 21,
+      "pagerank": 0.023138,
+      "click_depth": 1
+    },
+    "community": {
+      "out_links": 7,
+      "in_links": 4,
+      "pagerank": 0.004218,
+      "click_depth": 2
+    },
+    "data-engineering-agent": {
+      "out_links": 7,
+      "in_links": 1,
+      "pagerank": 0.001548,
+      "click_depth": 4
+    },
+    "dating": {
+      "out_links": 6,
+      "in_links": 3,
+      "pagerank": 0.003245,
+      "click_depth": 1
+    },
+    "design": {
+      "out_links": 11,
+      "in_links": 10,
+      "pagerank": 0.010385,
+      "click_depth": 1
+    },
+    "directory": {
+      "out_links": 9,
+      "in_links": 16,
+      "pagerank": 0.010906,
+      "click_depth": 1
+    },
+    "documentation": {
+      "out_links": 24,
+      "in_links": 25,
+      "pagerank": 0.02231,
+      "click_depth": 1
+    },
+    "education": {
+      "out_links": 8,
+      "in_links": 4,
+      "pagerank": 0.003197,
+      "click_depth": 3
+    },
+    "essay-writer": {
+      "out_links": 7,
+      "in_links": 9,
+      "pagerank": 0.007569,
+      "click_depth": 2
+    },
+    "evaluation": {
+      "out_links": 10,
+      "in_links": 17,
+      "pagerank": 0.015046,
+      "click_depth": 1
+    },
+    "family-assistant": {
+      "out_links": 8,
+      "in_links": 4,
+      "pagerank": 0.004356,
+      "click_depth": 1
+    },
+    "fashion": {
+      "out_links": 6,
+      "in_links": 4,
+      "pagerank": 0.004632,
+      "click_depth": 2
+    },
+    "filmmaking": {
+      "out_links": 10,
+      "in_links": 1,
+      "pagerank": 0.002363,
+      "click_depth": 3
+    },
+    "fundraising": {
+      "out_links": 6,
+      "in_links": 7,
+      "pagerank": 0.005002,
+      "click_depth": 1
+    },
+    "geo": {
+      "out_links": 16,
+      "in_links": 15,
+      "pagerank": 0.012855,
+      "click_depth": 1
+    },
+    "headless-browser": {
+      "out_links": 10,
+      "in_links": 10,
+      "pagerank": 0.01056,
+      "click_depth": 2
+    },
+    "headshot-generator": {
+      "out_links": 16,
+      "in_links": 13,
+      "pagerank": 0.013793,
+      "click_depth": 1
+    },
+    "healthcare": {
+      "out_links": 6,
+      "in_links": 5,
+      "pagerank": 0.004227,
+      "click_depth": 2
+    },
+    "ide": {
+      "out_links": 9,
+      "in_links": 10,
+      "pagerank": 0.012303,
+      "click_depth": 1
+    },
+    "image": {
+      "out_links": 7,
+      "in_links": 10,
+      "pagerank": 0.00848,
+      "click_depth": 2
+    },
+    "image-editor": {
+      "out_links": 8,
+      "in_links": 14,
+      "pagerank": 0.013083,
+      "click_depth": 1
+    },
+    "image-enhancer": {
+      "out_links": 9,
+      "in_links": 12,
+      "pagerank": 0.011862,
+      "click_depth": 1
+    },
+    "image-generator": {
+      "out_links": 6,
+      "in_links": 24,
+      "pagerank": 0.018407,
+      "click_depth": 0
+    },
+    "image-relighting": {
+      "out_links": 6,
+      "in_links": 2,
+      "pagerank": 0.002808,
+      "click_depth": 2
+    },
+    "image-to-video": {
+      "out_links": 11,
+      "in_links": 3,
+      "pagerank": 0.003944,
+      "click_depth": 3
+    },
+    "inference-infrastructure": {
+      "out_links": 7,
+      "in_links": 2,
+      "pagerank": 0.00182,
+      "click_depth": 3
+    },
+    "influencer-marketing": {
+      "out_links": 6,
+      "in_links": 4,
+      "pagerank": 0.003274,
+      "click_depth": 2
+    },
+    "interview-assistant": {
+      "out_links": 12,
+      "in_links": 3,
+      "pagerank": 0.003197,
+      "click_depth": 2
+    },
+    "knowledge-base": {
+      "out_links": 10,
+      "in_links": 20,
+      "pagerank": 0.016291,
+      "click_depth": 1
+    },
+    "lead-generation": {
+      "out_links": 11,
+      "in_links": 9,
+      "pagerank": 0.005909,
+      "click_depth": 2
+    },
+    "legal": {
+      "out_links": 10,
+      "in_links": 7,
+      "pagerank": 0.004952,
+      "click_depth": 3
+    },
+    "linkedin": {
+      "out_links": 12,
+      "in_links": 12,
+      "pagerank": 0.007353,
+      "click_depth": 2
+    },
+    "lip-sync": {
+      "out_links": 8,
+      "in_links": 11,
+      "pagerank": 0.010748,
+      "click_depth": 2
+    },
+    "llm": {
+      "out_links": 15,
+      "in_links": 28,
+      "pagerank": 0.021747,
+      "click_depth": 0
+    },
+    "llm-for-coding": {
+      "out_links": 19,
+      "in_links": 12,
+      "pagerank": 0.010364,
+      "click_depth": 1
+    },
+    "llm-for-math": {
+      "out_links": 18,
+      "in_links": 3,
+      "pagerank": 0.002263,
+      "click_depth": 2
+    },
+    "llm-for-reasoning": {
+      "out_links": 16,
+      "in_links": 5,
+      "pagerank": 0.004565,
+      "click_depth": 1
+    },
+    "logo-generator": {
+      "out_links": 8,
+      "in_links": 10,
+      "pagerank": 0.009503,
+      "click_depth": 2
+    },
+    "medical-scribe": {
+      "out_links": 5,
+      "in_links": 1,
+      "pagerank": 0.001927,
+      "click_depth": 3
+    },
+    "memory": {
+      "out_links": 12,
+      "in_links": 3,
+      "pagerank": 0.003251,
+      "click_depth": 2
+    },
+    "multimodal-llm": {
+      "out_links": 16,
+      "in_links": 7,
+      "pagerank": 0.005449,
+      "click_depth": 1
+    },
+    "music-generator": {
+      "out_links": 7,
+      "in_links": 10,
+      "pagerank": 0.011338,
+      "click_depth": 2
+    },
+    "music-video-generator": {
+      "out_links": 11,
+      "in_links": 4,
+      "pagerank": 0.005526,
+      "click_depth": 2
+    },
+    "note-taker": {
+      "out_links": 10,
+      "in_links": 26,
+      "pagerank": 0.018894,
+      "click_depth": 1
+    },
+    "notes-generator": {
+      "out_links": 10,
+      "in_links": 11,
+      "pagerank": 0.010433,
+      "click_depth": 1
+    },
+    "ocr": {
+      "out_links": 10,
+      "in_links": 4,
+      "pagerank": 0.004954,
+      "click_depth": 2
+    },
+    "openclaw-alternatives": {
+      "out_links": 13,
+      "in_links": 3,
+      "pagerank": 0.004694,
+      "click_depth": 1
+    },
+    "poster-generator": {
+      "out_links": 7,
+      "in_links": 5,
+      "pagerank": 0.005653,
+      "click_depth": 2
+    },
+    "presentation-maker": {
+      "out_links": 10,
+      "in_links": 11,
+      "pagerank": 0.009681,
+      "click_depth": 2
+    },
+    "productivity": {
+      "out_links": 15,
+      "in_links": 23,
+      "pagerank": 0.018244,
+      "click_depth": 1
+    },
+    "recruiting": {
+      "out_links": 11,
+      "in_links": 14,
+      "pagerank": 0.008243,
+      "click_depth": 2
+    },
+    "referral-program": {
+      "out_links": 9,
+      "in_links": 4,
+      "pagerank": 0.003415,
+      "click_depth": 2
+    },
+    "religion": {
+      "out_links": 8,
+      "in_links": 4,
+      "pagerank": 0.002903,
+      "click_depth": 3
+    },
+    "search-engine": {
+      "out_links": 8,
+      "in_links": 14,
+      "pagerank": 0.0117,
+      "click_depth": 0
+    },
+    "search-indexing": {
+      "out_links": 9,
+      "in_links": 8,
+      "pagerank": 0.008293,
+      "click_depth": 1
+    },
+    "short-drama": {
+      "out_links": 7,
+      "in_links": 0,
+      "pagerank": 0.001327,
+      "click_depth": -1
+    },
+    "social-cards-generator": {
+      "out_links": 5,
+      "in_links": 0,
+      "pagerank": 0.001327,
+      "click_depth": -1
+    },
+    "speech-to-text": {
+      "out_links": 12,
+      "in_links": 15,
+      "pagerank": 0.01372,
+      "click_depth": 2
+    },
+    "spreadsheet": {
+      "out_links": 8,
+      "in_links": 5,
+      "pagerank": 0.004765,
+      "click_depth": 1
+    },
+    "story-generator": {
+      "out_links": 6,
+      "in_links": 3,
+      "pagerank": 0.005159,
+      "click_depth": 2
+    },
+    "tattoo-generator": {
+      "out_links": 7,
+      "in_links": 3,
+      "pagerank": 0.00351,
+      "click_depth": 2
+    },
+    "text": {
+      "out_links": 9,
+      "in_links": 4,
+      "pagerank": 0.004466,
+      "click_depth": 2
+    },
+    "text-generator": {
+      "out_links": 9,
+      "in_links": 31,
+      "pagerank": 0.026275,
+      "click_depth": 1
+    },
+    "text-to-speech": {
+      "out_links": 9,
+      "in_links": 12,
+      "pagerank": 0.011867,
+      "click_depth": 2
+    },
+    "text-to-video": {
+      "out_links": 8,
+      "in_links": 10,
+      "pagerank": 0.008725,
+      "click_depth": 2
+    },
+    "text-translator": {
+      "out_links": 6,
+      "in_links": 2,
+      "pagerank": 0.002058,
+      "click_depth": 3
+    },
+    "user-research": {
+      "out_links": 7,
+      "in_links": 6,
+      "pagerank": 0.005561,
+      "click_depth": 1
+    },
+    "vibe-coding": {
+      "out_links": 5,
+      "in_links": 9,
+      "pagerank": 0.009429,
+      "click_depth": 1
+    },
+    "video": {
+      "out_links": 10,
+      "in_links": 12,
+      "pagerank": 0.010852,
+      "click_depth": 2
+    },
+    "video-clipping": {
+      "out_links": 7,
+      "in_links": 6,
+      "pagerank": 0.007516,
+      "click_depth": 2
+    },
+    "video-editor": {
+      "out_links": 12,
+      "in_links": 17,
+      "pagerank": 0.014593,
+      "click_depth": 2
+    },
+    "video-effects": {
+      "out_links": 6,
+      "in_links": 3,
+      "pagerank": 0.003789,
+      "click_depth": 3
+    },
+    "video-generator": {
+      "out_links": 10,
+      "in_links": 19,
+      "pagerank": 0.016114,
+      "click_depth": 1
+    },
+    "video-to-video": {
+      "out_links": 9,
+      "in_links": 13,
+      "pagerank": 0.010397,
+      "click_depth": 2
+    },
+    "video-translator": {
+      "out_links": 10,
+      "in_links": 12,
+      "pagerank": 0.011116,
+      "click_depth": 2
+    },
+    "virtual-staging": {
+      "out_links": 6,
+      "in_links": 2,
+      "pagerank": 0.004684,
+      "click_depth": 1
+    },
+    "voice": {
+      "out_links": 8,
+      "in_links": 11,
+      "pagerank": 0.012143,
+      "click_depth": 2
+    },
+    "voice-changer": {
+      "out_links": 10,
+      "in_links": 10,
+      "pagerank": 0.011987,
+      "click_depth": 2
+    },
+    "voice-cloning": {
+      "out_links": 10,
+      "in_links": 11,
+      "pagerank": 0.012727,
+      "click_depth": 2
+    },
+    "web-fetch": {
+      "out_links": 5,
+      "in_links": 0,
+      "pagerank": 0.001327,
+      "click_depth": -1
+    },
+    "web-scraping": {
+      "out_links": 10,
+      "in_links": 14,
+      "pagerank": 0.010178,
+      "click_depth": 0
+    },
+    "web-search-api": {
+      "out_links": 11,
+      "in_links": 23,
+      "pagerank": 0.016909,
+      "click_depth": 1
+    },
+    "website-builder": {
+      "out_links": 12,
+      "in_links": 9,
+      "pagerank": 0.008646,
+      "click_depth": 2
+    },
+    "workflow": {
+      "out_links": 7,
+      "in_links": 27,
+      "pagerank": 0.019001,
+      "click_depth": 1
+    },
+    "world-model": {
+      "out_links": 12,
+      "in_links": 15,
+      "pagerank": 0.009904,
+      "click_depth": 2
+    }
+  }
+}

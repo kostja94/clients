@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bypass AI Detection — Features | Humanizer</title>
+  <meta name="description" content="Humanizer lowers AI detection scores while preserving meaning. See multi-mode humanization, built-in detector checks, and support for GPTZero, Turnitin, Originality.ai, and more.">
+  <link rel="canonical" href="https://humanizer.help/features/bypass-ai-detection">
+  <meta property="og:title" content="Bypass AI Detection — Features | Humanizer">
+  <meta property="og:description" content="Turn AI drafts into natural human writing. Real-time processing, multi-mode output, and verification against major AI detectors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://humanizer.help/features/bypass-ai-detection">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Humanizer",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Web",
+    "url": "https://humanizer.help/",
+    "description": "AI text humanization tool that rewrites AI-generated content into natural human writing and helps reduce flags from major AI detectors.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free tier with usage limits; paid plans for advanced modes"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0c0f14;
+      --surface: #141a24;
+      --surface2: #1c2433;
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #e8ecf4;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent2: #a78bfa;
+      --success: #34d399;
+      --radius: 12px;
+      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    header.hero {
+      padding: 3.5rem 0 2.5rem;
+      background: linear-gradient(180deg, #111827 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .eyebrow {
+      font-size: 0.8125rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      line-height: 1.2;
+      font-weight: 700;
+      margin: 0 0 1rem;
+      max-width: 18ch;
+    }
+    .lead {
+      font-size: 1.125rem;
+      color: var(--muted);
+      max-width: 48ch;
+      margin: 0 0 1.5rem;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #0ea5e9);
+      color: #04121a;
+      box-shadow: 0 4px 24px rgba(56, 189, 248, 0.35);
+    }
+    .btn-primary:hover { transform: translateY(-1px); text-decoration: none; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { background: var(--surface2); text-decoration: none; }
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    section:last-of-type { border-bottom: none; }
+    h2 {
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem;
+    }
+    .section-desc {
+      color: var(--muted);
+      margin: 0 0 1.75rem;
+      max-width: 60ch;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.35rem;
+    }
+    .card h3 {
+      font-size: 1.0625rem;
+      margin: 0 0 0.5rem;
+      color: var(--text);
+    }
+    .card p {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--muted);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .tag.pro {
+      background: rgba(167, 139, 250, 0.18);
+      color: #c4b5fd;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      background: var(--surface);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: var(--surface2);
+      color: var(--text);
+      font-weight: 600;
+    }
+    tr:last-child td { border-bottom: none; }
+    td { color: var(--muted); }
+    td:first-child { color: var(--text); font-weight: 500; }
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .pill {
+      font-size: 0.8125rem;
+      padding: 0.35rem 0.75rem;
+      background: var(--surface2);
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+    .link-row a { font-weight: 500; }
+    .disclaimer {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      border-left: 3px solid var(--accent2);
+      padding-left: 1rem;
+      margin: 2rem 0 0;
+      max-width: 65ch;
+    }
+    footer {
+      padding: 2rem 0 3rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+    @media (prefers-reduced-motion: reduce) {
+      .btn-primary:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Capabilities</p>
+      <h1>Bypass AI detection without losing your message</h1>
+      <p class="lead">Humanizer rewrites AI-generated drafts into natural, human-like prose—so you can pass major detector checks while keeping facts, arguments, and tone intact.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://humanizer.help/">Try Humanizer free</a>
+        <a class="btn btn-ghost" href="https://humanizer.help/pricing">See pricing</a>
+      </div>
+      <p class="disclaimer">Use responsibly. Follow your school, employer, and platform policies on AI-assisted work. Humanizer is a writing assistant—not an excuse to misrepresent authorship or violate academic integrity.</p>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="core-capabilities">
+      <div class="wrap">
+        <h2 id="core-capabilities">What makes bypass possible</h2>
+        <p class="section-desc">Five layers work together: style transformation, detector-aware rewriting, meaning lock-in, instant turnaround, and mode choice—so output reads human, not templated.</p>
+        <div class="grid">
+          <article class="card">
+            <span class="tag">Core</span>
+            <h3>AI text humanization</h3>
+            <p>Restructures sentences and vocabulary so copy loses the “machine polish” detectors look for—without turning into generic synonym swaps.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Outcome</span>
+            <h3>Bypass AI detection</h3>
+            <p>Targets lower AI probability scores on GPTZero, Turnitin, Originality.ai, ZeroGPT, Copyleaks, and similar engines used in schools and content QA.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Trust</span>
+            <h3>Preserve original meaning</h3>
+            <p>Keeps claims, data, and conclusions aligned with your source text—ideal for essays, SEO articles, and regulated industries.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Speed</span>
+            <h3>Real-time processing</h3>
+            <p>Paste and get results in seconds—no batch queue for everyday rewrites.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Control</span>
+            <h3>Multi-mode output</h3>
+            <p>Pick depth and writing style—from light touch to deep humanization—so the same engine fits academic, casual, and professional contexts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="humanization-modes">
+      <div class="wrap">
+        <h2 id="humanization-modes">Humanization modes</h2>
+        <p class="section-desc">Each mode tunes burstiness, sentence rhythm, and formality so detector signals look more like human writing distributions.</p>
+        <div class="grid">
+          <article class="card">
+            <span class="tag">Free tier</span>
+            <h3>Standard humanize</h3>
+            <p>Baseline rewrite: adjusts phrasing and replaces high-frequency AI tells while staying close to your original structure.</p>
+          </article>
+          <article class="card">
+            <span class="tag pro">Pro</span>
+            <h3>Advanced / deep humanize</h3>
+            <p>Stronger structural remix, higher burstiness, and irregular cadence—built for tougher detectors and longer passages.</p>
+          </article>
+          <article class="card">
+            <span class="tag pro">Pro</span>
+            <h3>Academic mode</h3>
+            <p>Keeps scholarly register and logical flow while reducing synthetic patterns—suited for papers and research summaries.</p>
+          </article>
+          <article class="card">
+            <span class="tag pro">Pro</span>
+            <h3>Creative / casual mode</h3>
+            <p>Relaxed, conversational tone for blogs, newsletters, and social posts.</p>
+          </article>
+          <article class="card">
+            <span class="tag pro">Pro</span>
+            <h3>Business / professional mode</h3>
+            <p>Clear, formal English for client email, decks, and internal memos.</p>
+          </article>
+          <article class="card">
+            <span class="tag pro">Pro</span>
+            <h3>SEO mode</h3>
+            <p>Balances readability and keyword coverage so humanized copy still ranks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="detector-tools">
+      <div class="wrap">
+        <h2 id="detector-tools">Built-in detector support</h2>
+        <p class="section-desc">Verify impact before you publish: see AI probability before and after humanization, aligned with how third-party checkers score text.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Pre-humanize score</h3>
+            <p>Surface AI likelihood on paste-in so you know baseline risk.</p>
+          </article>
+          <article class="card">
+            <h3>Post-humanize score</h3>
+            <p>Compare the same metrics after rewriting to confirm the drop you need.</p>
+          </article>
+          <article class="card">
+            <h3>Multi-detector coverage</h3>
+            <p>Engineering targets signals seen across GPTZero, Originality.ai, Turnitin, ZeroGPT, Copyleaks, Writer, Sapling, Crossplag, and peers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="supported-detectors">
+      <div class="wrap">
+        <h2 id="supported-detectors">Detectors teams care about</h2>
+        <p class="section-desc">Humanizer is tuned for the stacks reviewers actually run—not theoretical lab models alone.</p>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Detector</th>
+                <th scope="col">Common use</th>
+                <th scope="col">Why it matters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GPTZero</td>
+                <td>Education</td>
+                <td>Widely adopted for classroom AI screening.</td>
+              </tr>
+              <tr>
+                <td>Turnitin</td>
+                <td>Academic integrity</td>
+                <td>Combined similarity + AI checks on submissions.</td>
+              </tr>
+              <tr>
+                <td>Originality.ai</td>
+                <td>Publishers &amp; SEO</td>
+                <td>Strict scoring for commercial content QA.</td>
+              </tr>
+              <tr>
+                <td>ZeroGPT</td>
+                <td>General / free</td>
+                <td>High consumer awareness; frequent ad-hoc checks.</td>
+              </tr>
+              <tr>
+                <td>Copyleaks</td>
+                <td>Enterprise / LMS</td>
+                <td>Dual AI + plagiarism workflows.</td>
+              </tr>
+              <tr>
+                <td>Writer</td>
+                <td>Marketing ops</td>
+                <td>Editorial teams auditing AI usage.</td>
+              </tr>
+              <tr>
+                <td>Sapling</td>
+                <td>Support &amp; email</td>
+                <td>Lighter-weight checks in business writing.</td>
+              </tr>
+              <tr>
+                <td>Crossplag</td>
+                <td>Academic / multilingual</td>
+                <td>Useful when courses cross languages.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="quality-bar">
+      <div class="wrap">
+        <h2 id="quality-bar">Quality bar we optimize for</h2>
+        <p class="section-desc">Beyond “pass/fail” labels, these measurable traits track how natural the rewrite reads.</p>
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Dimension</th>
+                <th scope="col">What it means</th>
+                <th scope="col">Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Human score</td>
+                <td>Model-estimated probability the text looks human-written.</td>
+                <td>Push toward detector “human” bands (e.g. &gt;90% where applicable).</td>
+              </tr>
+              <tr>
+                <td>Burstiness</td>
+                <td>Variation in sentence length and rhythm.</td>
+                <td>Match organic human variance instead of flat AI cadence.</td>
+              </tr>
+              <tr>
+                <td>Perplexity</td>
+                <td>Unpredictability of word choices in context.</td>
+                <td>Elevate where detectors expect human unpredictability.</td>
+              </tr>
+              <tr>
+                <td>Meaning preservation</td>
+                <td>Factual and argumentative alignment with input.</td>
+                <td>High fidelity—typically 95%+ for well-structured sources.</td>
+              </tr>
+              <tr>
+                <td>Grammar</td>
+                <td>Syntactic correctness after rewrite.</td>
+                <td>Publication-ready English.</td>
+              </tr>
+              <tr>
+                <td>Originality</td>
+                <td>Overlap with existing web text.</td>
+                <td>Fresh phrasing; pair with dedicated plagiarism checks when required.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="addons">
+      <div class="wrap">
+        <h2 id="addons">Add-on capabilities</h2>
+        <p class="section-desc">Roadmap-grade extras that extend the core bypass workflow for teams that need scale or compliance extras.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Plagiarism check</h3>
+            <p>After humanization, validate originality against Copyscape-class or Originality.ai integrations where available.</p>
+          </article>
+          <article class="card">
+            <h3>Grammar &amp; readability</h3>
+            <p>Fix surface errors and lift Flesch-style readability while rewriting.</p>
+          </article>
+          <article class="card">
+            <h3>Multi-language</h3>
+            <p>English first with expanding support for Spanish, French, German, Chinese, and more—detector behavior varies by locale.</p>
+          </article>
+          <article class="card">
+            <h3>Batch processing</h3>
+            <p>Queue multiple sections or documents on Pro/Business tiers.</p>
+          </article>
+          <article class="card">
+            <h3>API access</h3>
+            <p>Embed humanization in your CMS, LMS, or custom editor via Enterprise/API plans.</p>
+          </article>
+          <article class="card">
+            <h3>Browser extension</h3>
+            <p>One-click humanize inside Docs, email, or CMS surfaces where offered.</p>
+          </article>
+        </div>
+        <div class="link-row" aria-label="Related pages">
+          <a href="./humanizer-use-cases.md">Personas &amp; journeys</a>
+          <a href="https://humanizer.help/blog">Guides &amp; blog</a>
+          <a href="https://humanizer.help/faq">FAQ</a>
+        </div>
+        <div class="pill-list" aria-hidden="true">
+          <span class="pill">burstiness</span>
+          <span class="pill">perplexity</span>
+          <span class="pill">meaning lock</span>
+          <span class="pill">SEO-safe</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="closing-cta" style="background: linear-gradient(180deg, var(--bg), #111827);">
+      <div class="wrap" style="text-align: center; padding-bottom: 1rem;">
+        <h2 id="closing-cta" style="margin-bottom: 0.75rem;">Ship human-sounding copy today</h2>
+        <p class="section-desc" style="margin-left: auto; margin-right: auto;">Paste your draft, pick a mode, verify the score—then edit with confidence.</p>
+        <div class="cta-row" style="justify-content: center;">
+          <a class="btn btn-primary" href="https://humanizer.help/">Open Humanizer</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Demo page · Content sourced from <a href="https://humanizer.help/">humanizer.help</a> project docs · Not an official site file unless deployed by the product team.
+    </div>
+  </footer>
+</body>
+</html>

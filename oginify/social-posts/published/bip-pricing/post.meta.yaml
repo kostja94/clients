@@ -1,0 +1,57 @@
+milestone: null
+slug: bip-pricing
+title: "Oginify 定价策略"
+theme: build_in_public
+subtype: pricing_bip
+published_at: "2026-06-03"
+
+narrative:
+  primary: build_in_public
+  secondary: pricing_strategy
+  client_story: null
+
+platforms:
+  linkedin:
+    status: skipped
+  x:
+    article:
+      status: skipped
+    post:
+      status: skipped
+  jike:
+    status: archived
+    url: null
+    language: zh
+    format: long
+    published_at: null
+    note: "全文已归档；待发即刻，发布后回填 url 与 published_at"
+
+assets:
+  demo_url: "https://oginify.com/pricing"
+  cover_image: null
+
+metrics:
+  jike:
+    likes: null
+    comments: null
+
+source_docs:
+  - oginify.md
+  - oginify-others.md
+  - oginify-build-in-public.md
+  - voice-and-messaging.md
+
+tags:
+  - build-in-public
+  - pricing
+  - unit-economics
+  - playbook
+
+related_docs:
+  - pricing-playbook.md
+  - cost-and-pricing.md
+
+notes: |
+  叙事：TAM 大 + 用量两极 → Free/PAYG/Pro/Studio/Enterprise·API。
+  v1 线上价与 v2 目标见 oginify-others.md §定价依据。
+  Part 2 为通用 pricing playbook（可收藏向）。

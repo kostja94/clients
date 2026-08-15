@@ -5,7 +5,7 @@ slug: "medo-tanstack-frontend-migration"
 date: 2026-06-15
 author: "Kostja"
 category: "Guide"
-secondary_category: "mobile app"
+secondary_category: "Mobile App"
 ---
 
 # From Empty Shell to Full HTML: How MeDo-Generated Web Apps Now Ship with Server-Side Rendering
@@ -21,7 +21,7 @@ If you have used MeDo — or any AI app builder that outputs web projects — to
 </html>
 ```
 
-That empty `<div id="root">` is the entirety of what the browser — and more importantly, every search engine and AI crawler — received from your server. Everything else: the navigation, the product table, the sign-up form, your carefully vibe-coded dashboard, all of it materialized later, inside the user's browser, after a JavaScript bundle downloaded, parsed, and executed. For a human on a decent connection, this happens fast enough that the delay feels like a loading spinner, not a missing page. For Google, the delay averages nine times longer than server-rendered content to reach full indexability. For AI crawlers — GPTBot, ClaudeBot, PerplexityBot, and the growing fleet of agents that determine whether your app surfaces in an AI-generated answer — the result is even simpler: they see a blank page and move on.
+That empty `<div id="root">` is the entirety of what the browser — and more importantly, every search engine and AI crawler — received from your server. Everything else: the navigation, the product table, the sign-up form, your carefully <a href="/blog/what-is-vibe-coding">vibe-coded</a> dashboard, all of it materialized later, inside the user's browser, after a JavaScript bundle downloaded, parsed, and executed. For a human on a decent connection, this happens fast enough that the delay feels like a loading spinner, not a missing page. For Google, the delay averages nine times longer than server-rendered content to reach full indexability. For AI crawlers — GPTBot, ClaudeBot, PerplexityBot, and the growing fleet of agents that determine whether your app surfaces in an AI-generated answer — the result is even simpler: they see a blank page and move on.
 
 MeDo has now changed the default framework for generated web applications from a pure client-side Vite setup to **TanStack Start**, a full-stack React framework that ships complete HTML on the first request. This article explains what that means, why TanStack Start over the alternatives, and what changes — and does not change — for the apps you build.
 
@@ -101,7 +101,7 @@ New projects generated through MeDo as of June 2026 default to TanStack Start wi
 
 The shift from a Vite-based CSR default to TanStack Start with SSR is not a headline feature. It does not add a new capability to the MeDo builder interface, introduce a new export format, or change how you describe what you want your app to do. What it changes is what happens after you deploy — whether a search engine can find your app, whether an AI crawler can read your content, and whether the first page your users see loads as a complete experience or as a blank shell waiting for JavaScript.
 
-If you are evaluating <a href="/ai-mobile-app-builder">AI mobile app builders</a>, judge them on output — native code, real-device testing, store publishing paths — not on whether they use one JavaScript framework or another. But for the web apps you generate along the way, the difference between an empty `<div>` and a fully rendered page is the difference between being visible to the web and being invisible to the growing share of it that does not run JavaScript at all.
+If you are evaluating <a href="/ai-mobile-app-builder">AI mobile app builders</a>, judge them on output — native code, real-device testing, and store publishing paths, as covered in [how to build a mobile app with AI](/blog/how-to-build-mobile-app-with-ai) — not on whether they use one JavaScript framework or another. But for the web apps you generate along the way, the difference between an empty `<div>` and a fully rendered page is the difference between being visible to the web and being invisible to the growing share of it that does not run JavaScript at all.
 
 ## Frequently asked questions
 
@@ -128,9 +128,3 @@ Pre-rendering generates static HTML files at build time — one snapshot per pag
 ### Why did MeDo choose TanStack Start over the previous Vite setup?
 
 Vite remains the build tool underneath — TanStack Start is an application architecture layered on top. The reason for the change is output, not tooling: pure client-side rendering delivered an empty `<div id="root">` to search engines and AI crawlers. TanStack Start's CSR-first SSR sends complete HTML on the first request while keeping client-side navigation for everything after. That combination solves the indexing gap without slowing down the interactive apps MeDo generates.
-
-## Related articles
-
-- [How to Build a Mobile App with AI](/blog/how-to-build-mobile-app-with-ai) — the complete walkthrough from idea to App Store
-- [What Is Vibe Coding?](/blog/what-is-vibe-coding) — the 2026 guide for non-developers
-- [Best AI Mobile App Builders in 2026](/blog/best-ai-mobile-app-builders) — an honest comparison of native, cross-platform, and web-wrapper tools

@@ -88,18 +88,27 @@
 
 ---
 
-## 6. 规划 slug 预审（#06–#13）
+## 6. 规划 slug 预审（移动簇 #29–#36；Components 簇 #20–#21、AI Frontend Design 簇 #22–#28 已定）
 
 | # | slug | Gate B | 备注 |
 |---|------|--------|------|
-| 06 | `medo-vs-lovable` | ✅ | VS 文可用品牌名 |
-| 07 | `free-ai-app-builder` | ✅ | |
-| 08 | `native-app-vs-pwa-ai-builder` | ✅ | |
-| 09 | `cost-build-app-with-ai` | ✅ | |
-| 10 | `best-vibe-coding-tools-mobile` | ✅ | 移动垂类限定 |
-| 11 | `validate-app-idea-before-ai-build` | ✅ | |
-| 12 | `app-store-rejection-ai-apps` | ✅ | |
-| 13 | `app-ideas-build-with-ai-weekend` | ✅ | |
+| 20 | `best-21st-dev-alternatives` | ✅ | Components 簇；21st.dev 品牌词可用 |
+| 21 | `best-ai-component-generators` | ✅ | Components 簇；P0 词 |
+| 22 | `best-ai-design-skills` | ✅ | AI Frontend Design 簇；P0 词 |
+| 23 | `what-is-frontend-design-skill` | ✅ | AI Frontend Design 簇；品牌 skill 词 |
+| 24 | `figma-design-tokens` | ✅ | AI Frontend Design 簇；P0 词 |
+| 25 | `what-is-design-md` | ✅ | AI Frontend Design 簇；规范词 |
+| 26 | `design-tokens-vs-css-variables` | ✅ | AI Frontend Design 簇；值层选型 |
+| 27 | `why-ai-websites-look-the-same` | ✅ | AI Frontend Design 簇；诊断 |
+| 28 | `how-to-build-design-system-with-ai` | ✅ | AI Frontend Design 簇；教程 |
+| 29 | `medo-vs-lovable` | ✅ | VS 文可用品牌名 |
+| 30 | `free-ai-app-builder` | ✅ | |
+| 31 | `native-app-vs-pwa-ai-builder` | ✅ | |
+| 32 | `cost-build-app-with-ai` | ✅ | |
+| 33 | `best-vibe-coding-tools-mobile` | ✅ | 移动垂类限定 |
+| 34 | `validate-app-idea-before-ai-build` | ✅ | |
+| 35 | `app-store-rejection-ai-apps` | ✅ | |
+| 36 | `app-ideas-build-with-ai-weekend` | ✅ | |
 
 ---
 

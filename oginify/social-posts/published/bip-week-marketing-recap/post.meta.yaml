@@ -1,0 +1,46 @@
+milestone: null
+slug: week-marketing-recap
+title: "Build in Public：两天内的增长、内容与 SEO 进度"
+theme: build_in_public
+subtype: growth_seo_recap
+published_at: null
+
+narrative:
+  primary: build_in_public
+  secondary: growth_content_seo
+  client_story: null
+
+platforms:
+  linkedin:
+    status: published
+    note: "M1 已发，见 M1-first-product"
+  x:
+    article:
+      status: published
+      note: "M1 已发，见 M1-first-product"
+  jike:
+    status: draft
+    url: null
+    language: zh
+    format: long
+    published_at: null
+
+offsite:
+  taaff:
+    amount_usd: 347
+    status: submitted
+  toolify:
+    amount_usd: 99
+    status: submitted
+
+analytics:
+  gsc: connected
+  ga: connected_via_gtm
+  gtm: deployed
+  bing_webmaster: connected
+  indexnow_api: planned_next_week
+
+source_docs:
+  - oginify-features.md
+  - oginify-growth-strategy.md
+  - oginify-site-structure.md

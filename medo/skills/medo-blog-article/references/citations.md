@@ -110,4 +110,4 @@
 | Experience | 真机测试步骤、checklist 来自已发布 publish 文实践 |
 | Expertise | 三分类框架、Native vs PWA 技术准确 |
 | Authoritativeness | P0 官方政策链 |
-| Trustworthiness | Disclosure、诚实竞品优势、as-of 标注 |
+| Trustworthiness | 诚实竞品优势、as-of 标注 |

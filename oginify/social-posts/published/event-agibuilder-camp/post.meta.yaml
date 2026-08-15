@@ -1,0 +1,44 @@
+milestone: null
+slug: event-agibuilder-camp
+title: "AGIBuilder 孵化营 · 现场 SEO / 增长 / vibe coding 交流"
+theme: community_event
+subtype: incubation_camp
+published_at: null
+
+narrative:
+  primary: community_event
+  secondary: seo_growth_vibe_coding
+  client_story: null
+
+platforms:
+  linkedin:
+    status: skipped
+  x:
+    article:
+      status: skipped
+    post:
+      status: skipped
+  jike:
+    status: draft
+    url: null
+    language: zh
+    format: long
+    published_at: null
+
+assets:
+  event: "WaytoAGI × 红杉中国 AGIBuilder 孵化营"
+  dates: "2026-06-15 — 2026-06-28"
+  location: "上海 + 线上"
+  registration_deadline: "2026-06-02"
+  topics:
+    - seo
+    - growth
+    - vibe_coding
+
+metrics:
+  jike:
+    likes: null
+    comments: null
+
+source_docs:
+  - voice-and-messaging.md

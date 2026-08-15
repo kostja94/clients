@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Market Research & Competitor Analysis | SuperMem Research Agent</title>
+  <meta name="description" content="Get strategic market research and competitor analysis from an AI agent trained by top consultants. Expert-in-the-loop. No McKinsey budget required. Join the waitlist.">
+  <link rel="canonical" href="https://www.supermem.io/use-cases/market-research">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0b;
+      --bg-elevated: #141416;
+      --text: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --accent: #22c55e;
+      --accent-hover: #16a34a;
+      --border: #27272a;
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    .container-wide { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav */
+    nav {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 100px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0 0 20px;
+      letter-spacing: -0.02em;
+    }
+    .hero .subheadline {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .cta:hover { background: var(--accent-hover); }
+
+    /* Trust */
+    .trust {
+      padding: 60px 0;
+      background: var(--bg-elevated);
+      border-radius: var(--radius-lg);
+      margin: 0 24px 40px;
+    }
+    .trust .container { text-align: center; }
+    .trust-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .trust-stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 24px;
+    }
+    .trust-stat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      color: var(--accent);
+    }
+    .trust-stat strong { color: var(--text); }
+
+    /* Problem */
+    .section { padding: 60px 0; }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 24px;
+    }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .problem-card {
+      padding: 24px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .problem-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 8px;
+    }
+    .problem-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* Solution */
+    .solution-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px;
+    }
+    .solution-list li {
+      padding: 12px 0;
+      padding-left: 28px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+    .solution-list li:last-child { border-bottom: none; }
+    .solution-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .workflow {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .workflow ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .workflow li { margin-bottom: 8px; }
+    .workflow li:last-child { margin-bottom: 0; }
+
+    /* Testimonial */
+    .testimonial {
+      padding: 48px 0;
+      background: var(--bg-elevated);
+      border-radius: var(--radius-lg);
+      margin: 0 24px 40px;
+    }
+    .testimonial blockquote {
+      max-width: 560px;
+      margin: 0 auto;
+      font-size: 1.125rem;
+      font-style: italic;
+      color: var(--text-muted);
+    }
+    .testimonial blockquote::before { content: '"'; }
+    .testimonial blockquote::after { content: '"'; }
+    .testimonial cite {
+      display: block;
+      margin-top: 16px;
+      font-size: 0.9rem;
+      font-style: normal;
+      color: var(--text-muted);
+    }
+
+    /* FAQ */
+    .faq-list { margin: 0; padding: 0; list-style: none; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .faq-item:first-child { padding-top: 0; }
+    .faq-item summary {
+      font-weight: 600;
+      cursor: pointer;
+      padding-right: 24px;
+      position: relative;
+    }
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.25rem;
+      color: var(--accent);
+    }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p {
+      margin: 12px 0 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Compare */
+    .compare {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .compare-card {
+      padding: 16px;
+      background: var(--bg-elevated);
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+    }
+    .compare-card strong { display: block; margin-bottom: 4px; }
+
+    /* Related */
+    .related {
+      padding: 60px 0 80px;
+      border-top: 1px solid var(--border);
+    }
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .related-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 8px 14px;
+      background: var(--bg-elevated);
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .related-links a:hover {
+      color: var(--accent);
+      background: rgba(34, 197, 94, 0.1);
+    }
+
+    /* Footer CTA */
+    .footer-cta {
+      text-align: center;
+      padding: 48px 0;
+    }
+    .footer-cta .cta { font-size: 1.0625rem; padding: 16px 32px; }
+
+    @media (max-width: 640px) {
+      .hero { padding: 48px 0 64px; }
+      .trust, .testimonial { margin-left: 16px; margin-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="/">SuperMem</a>
+      <a href="https://www.supermem.io/">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>When you need deep market research—without McKinsey's budget</h1>
+        <p class="subheadline">Get competitor analysis, market entry reports, and strategic insights from a Research Agent trained by top consultants. Expert-in-the-loop: AI does the heavy lifting, you keep the judgment.</p>
+        <a href="https://www.supermem.io/" class="cta">Get Early Access</a>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container">
+        <div class="trust-label">Expert-trained by</div>
+        <p>Top consultants from McKinsey, BCG, Bain backgrounds</p>
+        <div class="trust-stats">
+          <span class="trust-stat"><strong>Expert-trained</strong> Research Agent</span>
+          <span class="trust-stat"><strong>Expert-in-the-loop</strong> human approval</span>
+          <span class="trust-stat"><strong>Real output</strong> reports, not just advice</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">The problem</h2>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <h3>Limited budget</h3>
+            <p>Can't afford McKinsey/BCG, but need the same depth of market insight.</p>
+          </div>
+          <div class="problem-card">
+            <h3>Tight timeline</h3>
+            <p>Entering new markets or evaluating competitors—decision window is short.</p>
+          </div>
+          <div class="problem-card">
+            <h3>Inconsistent quality</h3>
+            <p>Outsourced or intern output varies—hard to trust for strategic decisions.</p>
+          </div>
+          <div class="problem-card">
+            <h3>No framework</h3>
+            <p>Unclear which dimensions to analyze competitors or structure market research.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">How SuperMem helps</h2>
+        <p><strong>Research Agent capabilities</strong> (trained by top consultants):</p>
+        <ul class="solution-list">
+          <li>Deep market research: market size, trends, entry barriers</li>
+          <li>Competitor analysis: features, pricing, positioning, SWOT matrix</li>
+          <li>Strategic insights: opportunity identification, risk flags, recommended actions</li>
+          <li>Structured output: reports, tables, actionable recommendations—not generic advice</li>
+        </ul>
+
+        <p><strong>Expert-in-the-loop workflow:</strong></p>
+        <div class="workflow">
+          <ol>
+            <li>You describe the research goal (new market, competitors, strategic question)</li>
+            <li>Research Agent produces a draft (analysis, report, insights)</li>
+            <li>Expert or you approve key conclusions and recommendations</li>
+            <li>After approval, deliver—ensuring quality and accountability</li>
+          </ol>
+        </div>
+
+        <p style="margin-top: 24px;"><a href="/agents/research" style="color: var(--accent);">Research Agent details</a> · <a href="/use-cases" style="color: var(--accent);">All use cases</a></p>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container">
+        <blockquote>We needed to evaluate three new markets in two weeks. The Research Agent delivered structured analysis; our PM reviewed and approved the recommendations. Saved us months and a six-figure consulting fee.</blockquote>
+        <cite>— Founder/PM, early-stage startup</cite>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Frequently asked questions</h2>
+        <ul class="faq-list">
+          <li class="faq-item">
+            <details>
+              <summary>How is this different from ChatGPT or Perplexity?</summary>
+              <p>Research Agent is trained by top consultants—the prompts, frameworks, and analysis dimensions come from real strategic work. You get structured, decision-ready output (reports, competitor matrices) instead of generic answers. Plus, expert-in-the-loop means critical insights are reviewed before delivery.</p>
+            </details>
+          </li>
+          <li class="faq-item">
+            <details>
+              <summary>What if I need human expertise, not just AI?</summary>
+              <p>SuperMem is a marketplace. You can hire the expert who trained the Research Agent for a call, or have them review and refine the Agent's output. AI does the heavy lifting; humans keep the judgment.</p>
+            </details>
+          </li>
+          <li class="faq-item">
+            <details>
+              <summary>How fast can I get a market research report?</summary>
+              <p>Research Agent can produce initial analysis in days, not months. Timeline depends on scope—narrow competitor analysis is faster; full market entry assessment takes longer. You'll see real-time progress as the Agent works.</p>
+            </details>
+          </li>
+          <li class="faq-item">
+            <details>
+              <summary>Is my data secure?</summary>
+              <p>Enterprise sovereignty and privacy are core to SuperMem. Your context stays in your control. See our <a href="/privacy" style="color: var(--accent);">Privacy Policy</a> for details.</p>
+            </details>
+          </li>
+        </ul>
+
+        <div class="compare">
+          <div class="compare-card"><strong>vs Consulting firms</strong> 1/10 cost, days not months</div>
+          <div class="compare-card"><strong>vs Pure AI</strong> Expert-trained + human approval, decision-ready output</div>
+          <div class="compare-card"><strong>vs Outsourcing</strong> Expert-level framework, consistent quality</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-cta">
+      <div class="container">
+        <a href="https://www.supermem.io/" class="cta">Join Waitlist</a>
+      </div>
+    </section>
+
+    <section class="related">
+      <div class="container">
+        <h2 class="section-title">Related</h2>
+        <div class="related-links">
+          <a href="/agents/research">Research Agent</a>
+          <a href="/use-cases/growth-strategy">Growth Strategy</a>
+          <a href="/use-cases/content-strategy">Content Strategy</a>
+          <a href="/use-cases/fundraising">Fundraising</a>
+          <a href="/for/startups">For Startups</a>
+          <a href="/for/builders">For Builders</a>
+          <a href="/">Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

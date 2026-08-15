@@ -1,0 +1,41 @@
+milestone: null
+slug: bip-lovable-og-size
+title: "Build in Public：Lovable 上跑通 OG 图尺寸"
+theme: build_in_public
+subtype: technical_bip
+published_at: null
+
+narrative:
+  primary: build_in_public
+  secondary: og_image_size_pipeline
+  client_story: null
+
+platforms:
+  linkedin:
+    status: skipped
+  x:
+    article:
+      status: skipped
+    post:
+      status: skipped
+  jike:
+    status: draft
+    url: null
+    language: zh
+    format: long
+    published_at: null
+
+assets:
+  demo_url: "https://oginify.com"
+  hosting: "Lovable + custom domain oginify.com"
+  technical_ref: oginify-technical.md#13-尺寸保证
+
+metrics:
+  jike:
+    likes: null
+    comments: null
+
+source_docs:
+  - oginify-technical.md
+  - oginify-build-in-public.md
+  - voice-and-messaging.md

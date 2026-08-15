@@ -1,0 +1,42 @@
+milestone: null
+slug: bip-world-cup-landing
+title: "Build in Public：FIFA World Cup 2026 专题页"
+theme: build_in_public
+subtype: product_vertical_landing
+published_at: null
+
+narrative:
+  primary: build_in_public
+  secondary: event_vertical_seo
+  client_story: null
+
+platforms:
+  linkedin:
+    status: skipped
+  x:
+    article:
+      status: skipped
+    post:
+      status: skipped
+  jike:
+    status: draft
+    url: null
+    language: zh
+    format: long
+    published_at: null
+
+assets:
+  demo_url: "https://oginify.com/fifa-world-cup-image-generator"
+  page_url: "https://oginify.com/fifa-world-cup-image-generator"
+  vertical: fifa-world-cup-2026
+
+metrics:
+  jike:
+    likes: null
+    comments: null
+
+source_docs:
+  - oginify-growth-strategy.md
+  - oginify-site-structure.md
+  - use-cases/by-site-type.md
+  - voice-and-messaging.md

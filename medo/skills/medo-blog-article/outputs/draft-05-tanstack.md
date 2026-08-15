@@ -17,7 +17,7 @@ related:
   - "how-to-build-mobile-app-with-ai"
   - "what-is-vibe-coding"
   - "best-ai-mobile-app-builders"
-secondary_category: "mobile app"
+secondary_category: "Mobile App"
 ---
 
 # MeDo Migrated to TanStack Start: What It Means for Your Apps
@@ -105,9 +105,3 @@ The TanStack migration happened with zero downtime for MeDo users. The engineeri
 ### Does this mean MeDo is moving away from Vite entirely?
 
 TanStack Start uses Vite as its underlying build tool, so Vite is still part of MeDo's stack — it is just no longer the framework layer. Think of it as Vite getting a promotion from "the whole frontend setup" to "the build engine inside a larger system."
-
-## Related articles
-
-- [How to Build a Mobile App with AI](/blog/how-to-build-mobile-app-with-ai) — the complete walkthrough from idea to App Store
-- [What Is Vibe Coding?](/blog/what-is-vibe-coding) — the 2026 guide for non-developers
-- [Best AI Mobile App Builders in 2026](/blog/best-ai-mobile-app-builders) — an honest comparison of native, cross-platform, and web-wrapper tools

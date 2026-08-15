@@ -5,7 +5,7 @@ description: >
   system, Investment Score, Phase 0R research triangle, BLUF, Gate backtracking,
   Phase 3.5/5.5 cross-checks, date strategy, tools/ validators.
 metadata:
-  version: 2.0.1
+  version: 2.0.4
   project: medo.dev
   locale: en
   self-contained: true
@@ -72,7 +72,7 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 |---|--------|:----:|:--------:|:--------:|
 | 1 | Article Brief（含 SuccessMetric、MoatAssetPlanned、AnswerBlocks） | ✅ | ✅ | ✅ |
 | 2 | Research Log（R1–R3 + Synthesis） | 简 | ✅ | ✅ 完整 |
-| 3 | 成稿 `medo/blog/NN-{slug}.md`（NN 见 content-graph，当前 **06**） | ✅ | ✅ | ✅ |
+| 3 | 成稿 `medo/blog/NN-{slug}.md`（NN 见 content-graph，当前 **29**） | ✅ | ✅ | ✅ |
 | 4 | SelfCheck 表（H0–H4 + 12 维 Pass/Fail） | ✅ | ✅ | ✅ |
 | 5 | Source Map | ✅ | ✅ | ✅ |
 | 6 | SERP Fit | 简 | ✅ | ✅ |
@@ -132,7 +132,7 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 | 功能页 | `/features` |
 | 首页 / 广场 | `/` |
 
-**G6 规则**：不链未上线路径（`/pricing`、`/vs/*` 等待建）；forthcoming ≤1 且仅 Related 脚注；正文核心流程不用 forthcoming 链接。
+**G6 规则**：不链未上线路径（`/pricing`、`/vs/*` 等待建）；forthcoming ≤1 且仅脚注；正文核心流程不用 forthcoming 链接。
 
 ### G1–G7 + A1–A4 阻断速查
 
@@ -184,7 +184,7 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 | **GlossaryGuide** | Guide | what is vibe coding | 1800–2800 | ≤20% | flagship | CategoryPOV | `what-is-vibe-coding` |
 | **Comparison** | Guide | best AI mobile app builders | 2200–3200 | ≤40% | flagship | EvaluationComparison | `best-ai-mobile-app-builders` |
 | **PublishGuide** | Tutorial | publish AI app App Store | 2200–3000 | ≤35% | standard | ActivationTutorial | `publish-ai-app-app-store` |
-| **Alternative** | Guide | medo vs lovable / lovable alternative | 2000–2800 | ≤45% | standard | SearchCapture | `medo-vs-lovable`（待写 #06） |
+| **Alternative** | Guide | medo vs lovable / lovable alternative | 2000–2800 | ≤45% | standard | SearchCapture | `medo-vs-lovable`（待写 #29） |
 | **DecisionGuide** | Guide | native vs PWA / cost / free tier | 1800–2600 | ≤30% | standard | EvaluationComparison | `native-app-vs-pwa-ai-builder` |
 | **UseCase** | Tutorial / Case Study | habit tracker / app ideas | 1500–2500 | ≤50% | standard | ActivationTutorial | `build-habit-tracker-app-ai` |
 | **Diagnosis** | Tutorial | app store rejection AI | 2000–2800 | ≤25% | standard | SearchCapture | `app-store-rejection-ai-apps` |
@@ -214,13 +214,12 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 
 | 模块 | 要求 |
 |------|------|
-| **TL;DR** | 3–5 bullet；独立传达 ~80% 价值；bullet 1 为 snippet 定义句（40–60 词） |
-| **H2** | 编号 `## 1.` … `## N.`；Conclusion/FAQ/Related 不编号 |
+| **TL;DR** | 紧跟 H1、正文最上方（开篇 hook 之前）；3–5 bullet；独立传达 ~80% 价值；bullet 1 为 snippet 定义句（40–60 词） |
+| **H2** | 编号 `## 1.` … `## N.`；Conclusion/FAQ 不编号 |
 | **Conclusion** | `## Conclusion`；CTA → `/ai-mobile-app-builder` |
 | **FAQ** | `## Frequently asked questions`；**固定 6 题**；**全部内容相关**（基于本文主题，禁止通用模板题）；≥1 题覆盖边界/异议 |
-| **Related** | 2–4 条；与正文互链一致（frontmatter 不含 `related`） |
 | **CTA** | 单一主行动（`/ai-mobile-app-builder`），正文 ≤2 次 |
-| **内链** | blog ≥2 互链；Spoke 链回 Pillar；产品页 `/ai-mobile-app-builder`、`/features` |
+| **内链** | 全部为**上下文内链**（正文自然嵌入，不设文末 Related articles）；blog ≥2 互链；Spoke 链回 Pillar；产品页 `/ai-mobile-app-builder`、`/features` |
 | **外链** | 权威 2–5；竞品 `rel="nofollow noopener"` |
 | **三分类** | Comparison/Alternative/Decision 须含 Native/Cross-platform/Web wrapper 三分类框架 |
 
@@ -394,14 +393,12 @@ Gate 0R Pass → Phase 1 Brief
 **Word count target**: {见 §2 类型词数}
 **Cluster role**: Hub | Spoke | Standalone
 **Cluster ID**: ai-mobile-app
-**Secondary category**: mobile app
+**Secondary category**: Mobile App
 **Pillar link**: /blog/how-to-build-mobile-app-with-ai（Spoke 必填）
 **Differentiation angle** (vs SERP top 3):
 **Information increment** (≥1 item):
-**Planned internal links** (≥2 blog + ≥1 product):
-**正文互链（原 related，2–4）**:
+**Planned internal links** (≥2 blog + ≥1 product, 全部上下文内链):
 **KEEP/MERGE**: KEEP | MERGE → {target slug}
-**Disclosure needed**: Required | Recommended | Optional
 **Author**: Kostja（默认）
 ```
 
@@ -434,23 +431,22 @@ Gate 0R Pass → Phase 1 Brief
 
 | § | H2 | Answer block ID | Reader mental state | Target words | Links / Notes |
 |---|-----|-----------------|---------------------|-------------|---------------|
-| Open | hook | AB-0 | 刚搜进来：找对地方了吗？ | 120–180 | 痛点 → 2026 转折 → 本文承诺 |
 | TL;DR | 3–5 bullet | AB-0 | 找对地方了吗？ | 120 | bullet 1 = snippet 定义句 |
+| Open | hook | AB-0 | 刚搜进来：找对地方了吗？ | 120–180 | 痛点 → 2026 转折 → 本文承诺（成稿时在 TL;DR 之后） |
 | 1 | … | AB-1 | … | … | link: /blog/... |
 | … | … | … | … | … | … |
 | Conclusion | 无序号 | — | 准备行动 / 仍有一个顾虑 | 150 | CTA → /ai-mobile-app-builder |
 | FAQ | 固定 6 题 | — | 具体异议（来自 R2 PAA） | 400 | ≥1 objection；内容相关 |
-| Related | 2–4 条 | — | — | — | 与正文互链一致 |
 
 **Estimated total**: N words
 ```
 
 **结构硬要求**：
-- `## TL;DR`（3–5 bullet）
+- `## TL;DR`（3–5 bullet，紧跟 H1、正文最上方）
 - 编号主节 `## 1.` … `## N.`
 - `## Conclusion`（无序号）
 - `## Frequently asked questions`（无序号，H3 每题，固定 6 题）
-- `## Related articles`（与正文互链一致）
+- 无 `## Related articles`——所有内链均为上下文内链
 
 ---
 
@@ -509,7 +505,7 @@ Gate 0R Pass → Phase 1 Brief
 | 开篇 | 痛点场景 → 2026 转折 → 本文承诺 |
 | 站外链 | `<a href="URL" rel="nofollow noopener">` |
 | 站内 | `/blog/{slug}`、`/ai-mobile-app-builder`、`/features` |
-| Comparison / Alternative | 开篇后 Disclosure；三分类框架 + 对比表 + ≥1「何时不选 MeDo」（A3） |
+| Comparison / Alternative | 三分类框架 + 对比表 + ≥1「何时不选 MeDo」（A3） |
 | Tutorial | 步骤用祈使句；每大步后接「为什么这步重要」 |
 | Publish / Diagnosis | 加载 `references/app-store-compliance.md`；政策 claim 含 as-of（A2） |
 | 引用 | 按 `references/citations.md` P0/P1/P2 分级；P0 数字必须 `[Source: URL]` |
@@ -517,7 +513,7 @@ Gate 0R Pass → Phase 1 Brief
 | 段落 | ≥3 长段（4–8 句）；连续短段 ≤2；段间衔接率 ≥70%；**伪列表 = 自动 Fail** |
 | 内链 | blog ≥2；Spoke 链回 Pillar；canonical 概念 1–2 句 + link |
 | 竞品 | 每竞品 ≥1 优势；禁 just/merely/only does X |
-| 模块顺序 | YAML → TL;DR → H2 → Conclusion → FAQ → Related |
+| 模块顺序 | YAML → H1 → TL;DR → 开篇 hook → H2 → Conclusion → FAQ |
 
 ---
 
@@ -649,10 +645,10 @@ Fail → 改文或标注差异原因。
 |----|-----|
 | **Hub slug** | `how-to-build-mobile-app-with-ai` |
 | **Cluster ID** | `ai-mobile-app` |
-| **下一文件序号** | **06** |
-| **下一篇 P0 优先级** | `06-medo-vs-lovable.md` |
-| **已发布** | 5 篇（#01–#05） |
-| **规划中** | #06–#13 + Batch 4 候选 |
+| **下一文件序号** | **29**（#12–#21 为 Components 簇缓冲；#22–#28 为 AI Frontend Design 簇） |
+| **下一篇 P0 优先级** | `29-medo-vs-lovable.md`（移动簇）或 AI Frontend Design 簇组件长尾文 |
+| **已发布** | 12 篇（#01–#05 + Components 簇 #06–#11/#20–#21 + AI Frontend Design 簇 #22–#28） |
+| **规划中** | 移动簇 #29–#36 + Batch 4 候选 |
 
 ---
 
@@ -673,12 +669,11 @@ date: 2026-08-XX       # 发布时间，永不改变
 updated: 2026-08-XX    # 可选；最近一次实质性内容更新；无更新则省略
 author: "Kostja"
 category: "Tutorial | Guide | Case Study"
-secondary_category: "mobile app"
-disclosure: "..."      # Comparison/Alternative 必填
+secondary_category: "Mobile App"
 ---
 ```
 
-> **2026-08-11 起废弃**：`image` / `keywords` / `related` 不再写入 frontmatter（image 由 CMS/OG 管理；keywords/related 由正文内链与 CMS 配置承载）。
+> **2026-08-14 起**：正文不设 `## Related articles` 区块；所有内链均为**上下文内链**（正文中自然嵌入）。`image` / `keywords` / `related` 不再写入 frontmatter（image 由 CMS/OG 管理；keywords 由正文与 CMS 配置承载；related 已取消）。
 >
 > **日期最佳实践（2026-08-11 采纳）**：`date` = 发布时间，永不改变；`updated` 仅**实质性更新**（新增数据/章节/修正事实）时更新，错别字/样式不动它。页面**只显示一个日期**（有 `updated` 显示它）——勿同时显示两个日期。JSON-LD 保留 `datePublished` + `dateModified`；sitemap `lastmod` 与 `updated` 一致。
 
@@ -704,7 +699,7 @@ disclosure: "..."      # Comparison/Alternative 必填
 **版本同步**：当 `blog/README.md` 文章表新增已发布稿、或关键词簇排期变更时，人类应同步更新 `references/content-graph.md` 与 `references/keywords.md`，并将 SKILL.md frontmatter `version` patch bump（如 2.0.0 → 2.0.1）。
 
 **发布后必做 checklist**（每发布一篇须人类执行）：
-1. bump 本文件 §0 输出区 + §4 的「下一文件序号」（当前 **06**）
+1. bump 本文件 §0 输出区 + §4 的「下一文件序号」（当前 **29**）
 2. bump `references/content-graph.md` §2 的「下一文件序号」
 3. 更新 `references/content-graph.md` §2 已发布文章登记表（新增行）
 4. 更新 `references/content-graph.md` §3 排期表（标记 ✅）
@@ -717,7 +712,7 @@ disclosure: "..."      # Comparison/Alternative 必填
 
 ## Gotchas — 禁止项（精选）
 
-**结构**：❌ 编号 H2 用于 Conclusion/FAQ/Related · ❌ TL;DR 仅重复 title · ❌ FAQ <6 题 · ❌ FAQ 用通用模板题 · ❌ 连续 3+ 短段 · ❌ 列表占比超类型上限
+**结构**：❌ 编号 H2 用于 Conclusion/FAQ · ❌ 设 `## Related articles` 区块（内链必须上下文内链）· ❌ TL;DR 仅重复 title · ❌ FAQ <6 题 · ❌ FAQ 用通用模板题 · ❌ 连续 3+ 短段 · ❌ 列表占比超类型上限
 **写作**：❌ revolutionary/game-changing/seamless/magic · ❌ just/merely 贬低竞品 · ❌ 假装零工作量 · ❌ 空泛句（generic claims）
 **Slug/链接**：❌ slug 含年份 · ❌ slug 含内部架构词（framework/strategy/diagnosis/complete-guide）· ❌ 链 `/pricing`、`/vs/*`、`/templates/*` 未上线路径 · ❌ forthcoming >1 · ❌ 锚文本 click here/learn more
 **产品/Proof**：❌ 17k+ apps 无来源限定 · ❌ Credits 写死价格（须 as of date）· ❌ 待验证声明用确定性语气（须 "reportedly"/"claims to offer"）
@@ -739,7 +734,7 @@ disclosure: "..."      # Comparison/Alternative 必填
 | `references/app-store-compliance.md` | Phase 4 | 上架、拒审、TestFlight |
 | `references/citations.md` | Phase 4, 5 | P0/P1/P2、Source Map |
 | `references/presentation.md` | Phase 4, 5 | Voice、碎片化、对比表、段落优先协议、FAQ |
-| `references/mini-example.md` | Phase 1, 3 | Brief + Outline 范例（#06） |
+| `references/mini-example.md` | Phase 1, 3 | Brief + Outline 范例（#29 medo-vs-lovable） |
 | `references/portable/research-triangle.md` | Phase 0R | Research 三角流程 |
 | `references/portable/investment-score.md` | Phase 0 | 五因子 Investment Score |
 | `references/portable/gates-master.md` | Phase 0, 5 | Gate 总表速查 |
@@ -762,6 +757,9 @@ disclosure: "..."      # Comparison/Alternative 必填
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| **2.0.4** | 2026-08-14 | AI Frontend Design 簇再增 1 篇：#28 `how-to-build-design-system-with-ai`（Tutorial）。移动簇排期顺延至 #29–#36。同步 content-graph、slug-gate、keywords、blog README |
+| **2.0.3** | 2026-08-14 | AI Frontend Design 簇再增 2 篇：#26 `design-tokens-vs-css-variables`（DecisionGuide）、#27 `why-ai-websites-look-the-same`（Diagnosis）。移动簇排期顺延至 #28–#35。同步 content-graph、slug-gate、keywords、blog README |
+| **2.0.2** | 2026-08-14 | 新增 AI Frontend Design 主题簇（`secondary_category: "AI Frontend Design"`，`design/` 子目录）：#22 `best-ai-design-skills`（Comparison）、#23 `what-is-frontend-design-skill`、#24 `figma-design-tokens`、#25 `what-is-design-md`（GlossaryGuide）。移动簇排期顺延至 #26–#33。同步 content-graph、slug-gate、blog README |
 | **2.0.1** | 2026-08-14 | Frontmatter schema 调整：`cluster` 字段改为 `secondary_category: "mobile app"`；移除 `platform_note` 字段（政策时效改由正文 as-of 引用块承载，A2 Gate 不变）。同步更新 validator F5b、article-types、mini-example、project-config、content-graph、app-store-compliance、README、outputs |
 | **2.0.0** | 2026-08-14 | 对齐 v2 标准模板：9 Phase + 5 Gate；新增 Mode 系统（lite/standard/flagship）+ Investment Score 五因子 + BLUF 三处 + §3.G Gate 回溯 + H0–H4 Hard Gates + Phase 3.5/5.5 交叉检查 + 日期发布策略 + tools/ 验证脚本 + 交付物扩展（Source Map/Internal Link Plan/Excellence/Moat）+ Changelog/Gotchas + 六角色换帽 |
 | **1.1.0** | — | 初代结构：7 Phase + 3 Gate + 8 类路由 + G1–G7 + A1–A4 + references/portable/ |
@@ -778,4 +776,4 @@ disclosure: "..."      # Comparison/Alternative 必填
 
 ---
 
-*medo-blog-article · v2.0.1 · 2026-08-14 · fully self-contained · references/portable/* · tools/* · 8 article types + Mode + Investment Score + Phase 0R + BLUF + Gate Backtracking*
+*medo-blog-article · v2.0.4 · 2026-08-14 · fully self-contained · references/portable/* · tools/* · 8 article types + Mode + Investment Score + Phase 0R + BLUF + Gate Backtracking*

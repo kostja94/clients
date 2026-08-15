@@ -89,17 +89,17 @@ def main() -> int:
     else:
         emit("PASS", f"{gate}-F4", "slug evergreen OK")
 
-    # F5: category must be Tutorial | Guide | Case Study
-    allowed_categories = {"tutorial", "guide", "case study"}
+    # F5: category must be Tutorial | Guide | Case Study | Product
+    allowed_categories = {"tutorial", "guide", "case study", "product"}
     if category.lower() not in allowed_categories:
-        emit("FAIL", f"{gate}-F5", f"category must be Tutorial|Guide|Case Study, got: {category}")
+        emit("FAIL", f"{gate}-F5", f"category must be Tutorial|Guide|Case Study|Product, got: {category}")
         fails += 1
     else:
         emit("PASS", f"{gate}-F5", f"category={category}")
 
     # F5b: secondary_category required (MeDo-specific)
     if not secondary_category:
-        emit("FAIL", f"{gate}-F5", "secondary_category missing (expect mobile app)")
+        emit("FAIL", f"{gate}-F5", "secondary_category missing (expected: Mobile App / Full-stack App / Components)")
         fails += 1
     else:
         emit("PASS", f"{gate}-F5", f"secondary_category={secondary_category}")

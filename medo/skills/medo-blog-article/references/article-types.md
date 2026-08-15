@@ -6,17 +6,17 @@
 
 ## 1. 路由总表
 
-| 类型 | MeDo category | 典型 intent | 词数 | 产品提及 | disclosure | 正文政策 as-of |
-|------|---------------|-------------|------|----------|------------|---------------|
-| **PillarTutorial** | Tutorial | how to build… | 2800–4000 | ≤35% | 推荐 | 可选 |
-| **GlossaryGuide** | Guide | what is… | 1800–2800 | ≤20% | 可选 | 否 |
-| **Comparison** | Guide | best… | 2200–3200 | ≤40% | **必填** | 否 |
-| **PublishGuide** | Tutorial | publish… | 2200–3000 | ≤35% | 推荐 | **必填** |
-| **Alternative** | Guide | vs / alternative | 2000–2800 | ≤45% | **必填** | 否 |
-| **DecisionGuide** | Guide | vs / cost / free | 1800–2600 | ≤30% | 推荐 | 可选 |
-| **UseCase** | Tutorial / Case Study | build X app | 1500–2500 | ≤50% | 推荐 | 否 |
-| **Diagnosis** | Tutorial | rejection / fix | 2000–2800 | ≤25% | 可选 | **必填** |
-| **Announcement** | Guide | 产品发布/更新 | 1200–1800 | 不限 | 可选 | 可选 |
+| 类型 | MeDo category | 典型 intent | 词数 | 产品提及 | 正文政策 as-of |
+|------|---------------|-------------|------|----------|---------------|
+| **PillarTutorial** | Tutorial | how to build… | 2800–4000 | ≤35% | 可选 |
+| **GlossaryGuide** | Guide | what is… | 1800–2800 | ≤20% | 否 |
+| **Comparison** | Guide | best… | 2200–3200 | ≤40% | 否 |
+| **PublishGuide** | Tutorial | publish… | 2200–3000 | ≤35% | **必填** |
+| **Alternative** | Guide | vs / alternative | 2000–2800 | ≤45% | 否 |
+| **DecisionGuide** | Guide | vs / cost / free | 1800–2600 | ≤30% | 可选 |
+| **UseCase** | Tutorial / Case Study | build X app | 1500–2500 | ≤50% | 否 |
+| **Diagnosis** | Tutorial | rejection / fix | 2000–2800 | ≤25% | **必填** |
+| **Announcement** | Guide | 产品发布/更新 | 1200–1800 | 不限 | 可选 |
 
 **产品提及**：正文中 MeDo 名称 + 功能描述 + CTA 合计篇幅占比上限（非严格计数，Phase 5 目测）。
 
@@ -35,12 +35,11 @@ date: 2026-06-XX       # 发布时间，永不改变
 updated: 2026-06-XX    # 可选；最近一次实质性内容更新；无更新则省略
 author: "Kostja"
 category: "Tutorial"
-secondary_category: "mobile app"
-disclosure: "..."
+secondary_category: "Mobile App"
 ---
 ```
 
-> **2026-08-11 起废弃**：`image` / `keywords` / `related` 不再写入 frontmatter（image 由 CMS/OG 管理；keywords/related 由正文内链与 CMS 配置承载）。
+> **2026-08-14 起**：正文不设 `## Related articles` 区块；内链全部为上下文内链。`image` / `keywords` / `related` 不再写入 frontmatter（image 由 CMS/OG 管理；keywords 由正文与 CMS 配置承载；related 已取消）。
 >
 > **日期最佳实践（2026-08-11 采纳）**：`date` = 发布时间，永不改变；`updated` 仅**实质性更新**（新增数据/章节/修正事实）时更新，错别字/样式不动它。页面**只显示一个日期**（有 `updated` 显示它）——勿同时显示两个日期（实证导致 CTR 下跌）。JSON-LD 保留 `datePublished` + `dateModified`；sitemap `lastmod` 与 `updated` 一致。
 
@@ -54,8 +53,7 @@ disclosure: "..."
 | `date` | YYYY-MM-DD |
 | `author` | 默认 Kostja |
 | `category` | Tutorial / Guide / Case Study |
-| `secondary_category` | `mobile app`（品类归属；替代原 cluster 字段） |
-| `disclosure` | Comparison/Alternative 必填 |
+| `secondary_category` | `Mobile App`（默认）/ `Full-stack App`（跨端功能）/ `Components`（组件主题簇）；替代原 cluster 字段 |
 
 ---
 
@@ -64,12 +62,11 @@ disclosure: "..."
 | 模块 | 要求 |
 |------|------|
 | 开篇 hook | 痛点 → 2026 转折 → 本文承诺 |
-| TL;DR | 3–5 bullet |
+| TL;DR | 紧跟 H1（正文最上方）；3–5 bullet |
 | H2 编号 | `## 1.` … `## N.`；Conclusion/FAQ 不编号 |
 | Conclusion | CTA → `/ai-mobile-app-builder` |
 | FAQ | `## Frequently asked questions`；**固定 6 题** H3；≥1 objection；全部内容相关 |
-| Related | 与正文互链一致（2026-08-11 起 frontmatter 不含 `related`） |
-| 内链 | ≥2 blog；Spoke 链 Pillar |
+| 内链 | 全部为**上下文内链**（正文自然嵌入，不设文末 Related articles）；≥2 blog；Spoke 链 Pillar |
 | 外链 | 2–5；`rel="nofollow noopener"` |
 | 三分类 | Comparison/Alternative/Decision 须含 Native/Cross-platform/Web wrapper |
 
@@ -87,7 +84,7 @@ disclosure: "..."
 | 5 | The {N}-step vibe coding workflow | 800 |
 | 6 | What it costs in {year} | 300 |
 | 7 | Five mistakes first-time builders make | 350 |
-| — | Conclusion / FAQ / Related | — |
+| — | Conclusion / FAQ | — |
 
 ---
 
@@ -107,7 +104,6 @@ disclosure: "..."
 
 | § | H2 | Words |
 |---|-----|-------|
-| — | Disclosure | 50 |
 | 1 | Three categories — why the distinction matters | 500 |
 | 2 | Comparison table | 200 |
 | 3–N | Per-tool deep dives | 1200 |
@@ -119,7 +115,6 @@ disclosure: "..."
 
 | § | H2 | Words |
 |---|-----|-------|
-| — | Disclosure | 50 |
 | 1 | What {A} and {B} actually are | 300 |
 | 2 | Side-by-side comparison table | 200 |
 | 3 | Mobile output: native vs web wrapper | 450 |

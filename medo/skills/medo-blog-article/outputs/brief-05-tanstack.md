@@ -21,12 +21,10 @@
   1. AI mobile app builder 做前端基础设施升级的案例——业界罕见
   2. 从终端用户体验反推技术决策的叙事角度（非纯工程视角）
   3. TanStack 为 MeDo 带来的具体用户感知改进：加载速度、页面切换流畅度、构建体验
-**Planned internal links**:
+**Planned internal links** (上下文内链):
   - /blog/how-to-build-mobile-app-with-ai
   - /blog/what-is-vibe-coding
   - /blog/best-ai-mobile-app-builders
   - /ai-mobile-app-builder
-**related** slugs (2–4): how-to-build-mobile-app-with-ai, what-is-vibe-coding, best-ai-mobile-app-builders
 **KEEP/MERGE**: KEEP
-**Disclosure needed**: Optional（非对比文，但可加一句 MeDo 身份说明）
 **Author**: Kostja（默认）

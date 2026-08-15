@@ -25,8 +25,8 @@
 | R4 | 碎片化 | 长段不足、列表堆砌 |
 | R5 | 空泛句 / AI 腔 | hype、模板化开头 |
 | R6 | 列表占比 | 是否超限 |
-| R7 | Frontmatter | title/desc/slug 完整；2026-08-11 起不含 image/keywords/related |
-| R8 | 正文互链双向 | 2026-08-11 起 Related 以正文互链为准（frontmatter 无 related） |
+| R7 | Frontmatter | title/desc/slug 完整；2026-08-14 起不含 image/keywords/related |
+| R8 | 上下文内链 | 不设文末 Related 区块；内链全部为上下文内链（正文自然嵌入）；Spoke 链回 Pillar |
 | R9 | Information Gain | vs SERP 是否仍有增量 |
 | R10 | Slug 合规 | 反模式、年份 in slug 等 |
 | R11 | Meta title/desc | 长度、主词 |

@@ -24,7 +24,7 @@
 | `vibe coding` / `vibe coding meaning` | 110K / 14.8K | `what-is-vibe-coding` | ✅ #02 | 1 |
 | `best AI mobile app builders` | 22K+ (riding) | `best-ai-mobile-app-builders` | ✅ #03 | 2 |
 | `publish AI app app store` | 8K+ | `publish-ai-app-app-store` | ✅ #04 | 3 |
-| `MeDo vs Lovable` | 品牌长尾 | `medo-vs-lovable` | 待写 #06 | C2 |
+| `MeDo vs Lovable` | 品牌长尾 | `medo-vs-lovable` | 待写 #29 | C2 |
 
 ---
 
@@ -32,10 +32,10 @@
 
 | 关键词 | 估月搜 | 目标 slug | 状态 | Cluster |
 |--------|--------|-----------|------|---------|
-| `free AI app builder` | 6.6K–8.1K | `free-ai-app-builder` | #07 | 2 |
-| `native app vs PWA` / `Capacitor mobile app` | 中长尾 | `native-app-vs-pwa-ai-builder` | #08 | 2 |
-| `cost build app with AI` / `AI app builder pricing` | 中长尾 | `cost-build-app-with-ai` | #09 | 5 |
-| `best vibe coding tools` (mobile) | 3.6K+ | `best-vibe-coding-tools-mobile` | #10 | 2 |
+| `free AI app builder` | 6.6K–8.1K | `free-ai-app-builder` | #30 | 2 |
+| `native app vs PWA` / `Capacitor mobile app` | 中长尾 | `native-app-vs-pwa-ai-builder` | #31 | 2 |
+| `cost build app with AI` / `AI app builder pricing` | 中长尾 | `cost-build-app-with-ai` | #32 | 5 |
+| `best vibe coding tools` (mobile) | 3.6K+ | `best-vibe-coding-tools-mobile` | #33 | 2 |
 
 ---
 
@@ -43,13 +43,41 @@
 
 | 关键词 | 估月搜 | 目标 slug | 状态 | Cluster |
 |--------|--------|-----------|------|---------|
-| `validate app idea` | 中长尾 | `validate-app-idea-before-ai-build` | #11 | 4 |
-| `app store rejection AI` / `vibe coded app rejected` | 新兴 | `app-store-rejection-ai-apps` | #12 | 3 |
-| `app ideas AI` / `AI app ideas 2026` | 长尾 | `app-ideas-build-with-ai-weekend` | #13 | 4 |
+| `validate app idea` | 中长尾 | `validate-app-idea-before-ai-build` | #34 | 4 |
+| `app store rejection AI` / `vibe coded app rejected` | 新兴 | `app-store-rejection-ai-apps` | #35 | 3 |
+| `app ideas AI` / `AI app ideas 2026` | 长尾 | `app-ideas-build-with-ai-weekend` | #36 | 4 |
 | `TestFlight non-developer` | 中长尾 | `testflight-non-developers` | Batch 4 | 3 |
 | `how to prompt AI app builder` | 长尾 | `how-to-prompt-ai-mobile-app-builder` | Batch 4 | 5 |
 | `build habit tracker app AI` | 超长尾 | `build-habit-tracker-app-ai` | Batch 4 | 4 |
 | `MeDo vs Replit` | 品牌长尾 | `medo-vs-replit` | Batch 4 | 2 |
+
+---
+
+## 4B. Components 簇关键词（`secondary_category: "Components"`）
+
+| 关键词 | 估月搜 | 目标 slug | 状态 | 备注 |
+|--------|--------|-----------|------|------|
+| `AI component generator` | 中（1K–3K） | `best-ai-component-generators` | ✅ #21 | canonical |
+| `best React component libraries` | 高 | `best-react-component-libraries` | ✅ #07 | canonical（含所有权 + AI 分层两视角；原 #22 `best-ai-component-libraries` 已并入） |
+| `21st.dev alternatives` | 中长尾 | `best-21st-dev-alternatives` | ✅ #20 | canonical |
+| `what is a react component library` | 中长尾 | `what-is-a-react-component-library` | ✅ #08 | Glossary |
+| `what is an ai ui generator` | 中长尾 | `what-is-an-ai-ui-generator` | ✅ #11 | Glossary |
+| `how to create tailwind components` | 中长尾 | `how-to-create-tailwind-components` | ✅ #09 | Tutorial |
+| `are tailwind components free` | 中长尾 | `are-tailwind-components-free` | ✅ #10 | 成本 |
+| `navbar components` / `footer components` / `pricing table components` | 高（5K–10K） | `{组件名}-components`（待写，入 components/） | 规划 | 组件分类长尾页承接 `/components/{category}` |
+| `AI component marketplace` / `components marketplace` | 中 | 待定 | 规划 | 承接 `/components` 工具页 |
+
+### 4C. AI Frontend Design 簇关键词（`secondary_category: "AI Frontend Design"`）
+
+| 关键词 | 估月搜 | 目标 slug | 状态 | 备注 |
+|--------|--------|-----------|------|------|
+| `best AI design skills` / `Claude design skills` | 中长尾 | `best-ai-design-skills` | ✅ #22 | canonical（六层能力框架） |
+| `frontend-design skill` / `Claude frontend design` | 中长尾 | `what-is-frontend-design-skill` | ✅ #23 | canonical |
+| `Figma design tokens` / `design tokens` | 高（持续上升） | `figma-design-tokens` | ✅ #24 | canonical |
+| `what is DESIGN.md` / `Google design.md` | 新兴 | `what-is-design-md` | ✅ #25 | canonical |
+| `design tokens vs CSS variables` | 中长尾 | `design-tokens-vs-css-variables` | ✅ #26 | canonical |
+| `why AI websites look the same` / `AI slop` | 中 | `why-ai-websites-look-the-same` | ✅ #27 | 诊断 |
+| `how to build a design system with AI` | 中长尾 | `how-to-build-design-system-with-ai` | ✅ #28 | 教程 |
 
 ---
 

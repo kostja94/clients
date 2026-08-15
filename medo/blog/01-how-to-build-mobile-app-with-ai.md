@@ -5,7 +5,7 @@ slug: "how-to-build-mobile-app-with-ai"
 date: 2026-06-08
 author: "Kostja"
 category: "Tutorial"
-secondary_category: "mobile app"
+secondary_category: "Mobile App"
 ---
 
 # How to Build a Mobile App with AI: 2026 Non-Developer Guide
@@ -164,9 +164,3 @@ On reputable platforms, yes. The AI generates standard Swift, Kotlin or React Na
 ### Is MeDo only for iOS?
 
 No. MeDo generates native Swift for iOS and Kotlin for Android from the same conversation, and both outputs are tested on real devices via QR code. You ship to both the App Store and Google Play without writing platform-specific code yourself.
-
-## Related articles
-
-- [What is vibe coding?](/blog/what-is-vibe-coding) — definition and 2026 context for non-developers
-- [Best AI mobile app builders in 2026](/blog/best-ai-mobile-app-builders) — honest comparison of native vs web-wrapper tools
-- [How to publish an AI-built app to the App Store](/blog/publish-ai-app-app-store) — submission checklist after your build is ready

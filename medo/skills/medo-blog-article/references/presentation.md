@@ -60,7 +60,7 @@
 
 ## 3. TL;DR 规范
 
-- 位置：开篇后、## 1. 前
+- 位置：紧跟 H1、正文最上方（开篇 hook 之前）；H2 主节前第一块内容
 - 格式：3–5 bullet
 - 内容：独立传达 ~80% 价值；含 primary keyword 自然出现
 - 对比文：每工具一行 honest summary
@@ -183,25 +183,27 @@
 
 ---
 
-## 8. Related articles 格式
+## 8. 上下文内链（不设 Related articles）
+
+内链全部为**上下文内链**——在正文语句中自然嵌入，不设文末 `## Related articles` 区块。
 
 ```markdown
-## Related articles
-
-- [How to Build a Mobile App with AI](/blog/how-to-build-mobile-app-with-ai) — the full walkthrough from idea to phone
-- [Best AI Mobile App Builders in 2026](/blog/best-ai-mobile-app-builders) — honest comparison of native, cross-platform, and web-wrapper tools
+# 正文中自然嵌入（示例）
+If you are new to the workflow, see [what is vibe coding](/blog/what-is-vibe-coding).
+The full walkthrough lives in [how to build a mobile app with AI](/blog/how-to-build-mobile-app-with-ai).
 ```
 
-- 2–4 条
-- 每条：链 + em dash + 5–15 词描述
-- 与正文互链一致（2026-08-11 起 frontmatter 不含 `related`）
+- blog 内链 ≥2 条，Spoke 至少 1 条链回 Pillar `/blog/how-to-build-mobile-app-with-ai`
+- 每条链接必须出现在相关的正文语境中（前后文自然衔接），禁止独立成块
+- 锚文本用描述性短语，禁止 "click here" / "learn more"
+- 2026-08-14 起 frontmatter 不含 `related`，文末不设 Related 区块
 
 ---
 
 ## 9. 编号 H2 规则
 
 - 主节：`## 1.` `## 2.` … `## N.`
-- **不编号**：`## Conclusion`、`## Frequently asked questions`、`## Related articles`
+- **不编号**：`## Conclusion`、`## Frequently asked questions`
 - H3：不编号，描述性标题
 - TL;DR：不编号
 
@@ -215,7 +217,7 @@
 - [ ] 含真机测试 / QR 码步骤（若 Tutorial）？
 - [ ] 上架文覆盖账户删除、隐私、TestFlight（若 Publish）？
 - [ ] 与 Pillar 至少 1 条双向内链？
-- [ ] `related` 与文末一致（正文互链）？
+- [ ] 内链均为上下文内链（正文自然嵌入，无文末 Related 区块）？
 
 ---
 

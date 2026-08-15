@@ -1,0 +1,47 @@
+milestone: null
+slug: bip-clink-payment
+title: "Oginify 接入 Clink 支付"
+theme: build_in_public
+subtype: technical_bip
+published_at: null
+
+narrative:
+  primary: build_in_public
+  secondary: payment_integration
+  client_story: null
+
+platforms:
+  linkedin:
+    status: skipped
+  x:
+    article:
+      status: skipped
+    post:
+      status: skipped
+  jike:
+    status: draft
+    url: null
+    language: zh
+    format: long
+    published_at: null
+
+assets:
+  demo_url: "https://oginify.com/pricing"
+  hosting: "Lovable + custom domain oginify.com"
+  payment_provider: "Clink (clinkbill.com)"
+  technical_ref: "clink integration doc (local)"
+
+metrics:
+  jike:
+    likes: null
+    comments: null
+
+source_docs:
+  - voice-and-messaging.md
+  - oginify-build-in-public.md
+
+tags:
+  - build-in-public
+  - payment
+  - clink
+  - lovable

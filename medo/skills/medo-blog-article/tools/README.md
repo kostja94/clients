@@ -23,8 +23,7 @@ python skills/medo-blog-article/tools/link_checker.py blog/NN-{slug}.md --forbid
 
 | 脚本 | Gate | 检查内容 |
 |------|------|---------|
-| `frontmatter_validator.py` | GateC-SEO-F | title/description/slug/category/secondary_category/author 必填性 + 长度合规 + slug 常青；image/keywords/related 字段已废弃（F6 检查缺失） |
-| `word_count_narrative.py` | H3 | 排除 frontmatter/表格/FAQ 后计算叙事词数，对比 §2 类型下限 |
+| `frontmatter_validator.py` | GateC-SEO-F | title/description/slug/category/secondary_category/author 必填性 + 长度合规 + slug 常青；image/keywords/related 字段已废弃（F6 检查缺失） || `word_count_narrative.py` | H3 | 排除 frontmatter/表格/FAQ 后计算叙事词数，对比 §2 类型下限 |
 | `link_checker.py` | P0-G2, P0-G6 | 扫描所有 Markdown 链接，检查空链/畸形 URL/禁止路径 |
 
 ---

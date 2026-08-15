@@ -45,6 +45,7 @@
 |------|------|------|
 | 博客 | `/blog/{slug}` | 见 content-graph.md |
 | 移动构建工具页 | `/ai-mobile-app-builder` | 主转化 CTA |
+| 组件库页 | `/components` | MeDo Components（Components 簇 CTA） |
 | 功能页 | `/features` | 功能细节 |
 | 首页 / 广场 | `/` | 社会证明、UGC 广场 |
 
@@ -109,9 +110,9 @@ project-config.md §5 和 product-competitors.md 中标记「待验证」的数�
 | 免费无限 / unlimited free | credit-limited free tier（as of date） |
 | click here / learn more（锚文本） | 描述性短语锚文本 |
 
-### Disclosure 模板（Comparison / Alternative 必填）
+### Disclosure 说明（不使用 frontmatter disclosure 字段）
 
-> Disclosure: MeDo is an AI mobile app builder that generates native iOS and Android apps. This article compares tools honestly — including when another product is the better fit.
+**frontmatter 不写 `disclosure` 字段**（2026-08-14 起废弃）。对比/选型文的诚实性由正文内容承载：每个竞品 ≥1 真实优势 + ≥1「何时选竞品」场景（A3 Gate），无需额外的披露声明行。定价/政策时效由正文 `as of {month} {year}` + 官方链接承载（A2/G3 Gate）。
 
 ### 政策时效模板（PublishGuide / Diagnosis 正文必填，A2）
 

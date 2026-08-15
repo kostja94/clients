@@ -35,6 +35,8 @@
 | 51 | 51-grok-4-6.md | grok-4-6 | Research | 可发布 | Grok 4.6 agentic frontier model |
 | 52 | deepseek/52-cordis-plugin-framework.md | cordis-plugin-framework | DeepSeek/Research | 可发布 | Cordis 插件内核 — 时空可组合性范式 |
 | 53 | 53-grok-bot.md | grok-bot | Research | 可发布 | Grok Bot agent 产品 — 云电脑架构 |
+| 54 | 54-glm-5-3.md | glm-5-3 | Research | 可发布 | GLM-5.3 后训练 Scaling + 网安涌现 |
+| 55 | 55-gemini-3-7-flash.md | gemini-3-7-flash | Research | 可发布 | Gemini 3.7 Flash 快迭代 + Floatboat 接入 |
 
 | 09 | worldcup/09-world-cup-2026-guide.md | world-cup-2026-guide | World Cup/Research/Pillar | 可发布 | World Cup 2026 Guide Hub — P01 |
 | 10 | worldcup/10-world-cup-2026-schedule.md | world-cup-2026-schedule | World Cup/Reference/Pillar | 可发布 | Full Schedule + PDF + Calendar — P02 |
@@ -48,7 +50,7 @@
 | 33 | 33-kimi-k3-floatboat.md | kimi-k3-floatboat | Product | 可发布 | Kimi K3 built into Floatboat |
 | 34 | 34-vibe-coding-one-prompt-html-game.md | vibe-coding-one-prompt-html-game | Product | 可发布 | vibe coding, one prompt HTML game |
 
-**下一序号：54**（World Cup 系列 P03–P08/P12–P21 待写，11–16/20–29 预留；41–44/46/50/52 为 DeepSeek 簇（`deepseek/`），45/51/53 为 Model 单篇保留根目录）
+**下一序号：56**（World Cup 系列 P03–P08/P12–P21 待写，11–16/20–29 预留；41–44/46/50/52 为 DeepSeek 簇（`deepseek/`），45/51/53 为 Model 单篇保留根目录）
 
 ---
 

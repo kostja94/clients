@@ -5,7 +5,7 @@ slug: "what-is-vibe-coding"
 date: 2026-06-11
 author: "Kostja"
 category: "Guide"
-secondary_category: "mobile app"
+secondary_category: "Mobile App"
 ---
 
 # What Is Vibe Coding? A 2026 Guide for Non-Developers
@@ -137,9 +137,3 @@ Yes — if you use a mobile-native builder and complete the submission checklist
 ### Is vibe coding only for simple apps?
 
 No — it scales further than most skeptics assume, but there are hard limits. CRUD apps with a clear user flow, auth, and a paywall are comfortably within reach for a solo builder. Where you still need real engineers: hand-tuned performance (3D, real-time video filters), regulatory weight (banking, telemedicine), and undocumented platform internals. If your app's value is in *what it does and for whom*, vibe coding works; if it's in *how efficiently or safely it runs*, traditional engineering carries the weight.
-
-## Related articles
-
-- [How to build a mobile app with AI](/blog/how-to-build-mobile-app-with-ai) — full non-developer walkthrough from idea to App Store
-- [Best AI mobile app builders in 2026](/blog/best-ai-mobile-app-builders) — honest comparison of native vs web-wrapper tools
-- [How to publish an AI-built app to the App Store](/blog/publish-ai-app-app-store) — submission checklist for vibe-coded apps

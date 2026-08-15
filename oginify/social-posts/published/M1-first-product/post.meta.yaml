@@ -1,0 +1,64 @@
+milestone: M1
+slug: first-product
+title: "第一个产品上线"
+theme: build_in_public
+published_at: "2026-05-31"
+
+narrative:
+  primary: build_in_public
+  secondary: og_infrastructure
+  client_story: ai_notes_generator_generic
+
+platforms:
+  linkedin:
+    status: published
+    url: "https://www.linkedin.com/posts/kostja-zhang_buildinpublic-firstproduct-seo-ugcPost-7466792123812687872-l5S2/"
+    language: en
+    format: carousel
+    first_comment_has_link: true
+    published_at: "2026-05-31"
+  x:
+    article:
+      status: published
+      language: zh
+      title: "我发布了第一个产品。这是 Milestone 1。"
+      url: null
+    post:
+      status: published
+      url: "https://x.com/kostjazhang/status/2061034479309729916"
+      note: "Article 发布后自动生成的 Feed Post"
+      published_at: "2026-05-31"
+  jike:
+    status: planned
+    url: null
+    language: zh
+    format: short
+    published_at: null
+
+assets:
+  demo_url: "https://oginify.com"
+  carousel_count: 4
+  styles:
+    - on-brand
+    - magazine
+    - terminal
+    - wildcard
+  cover_image: "oginify.com 生成图 · 任选一张作 Article cover"
+
+metrics:
+  linkedin:
+    impressions: null
+    reactions: null
+    comments: null
+  x:
+    impressions: null
+    likes: null
+    replies: null
+  jike:
+    likes: null
+    comments: null
+
+source_docs:
+  - oginify.md
+  - oginify-build-in-public.md
+  - voice-and-messaging.md

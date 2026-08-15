@@ -1,0 +1,1090 @@
+{
+  "_meta": {
+    "description": "Screenshot URL registry for Tools BestTools product images.",
+    "keyFormat": "{pageSlug}:{productId}",
+    "updated": "2026-06-24"
+  },
+  "3d:3d-modeling": {
+    "screenshotUrl": "/zh/tools/3d-modelling",
+    "outputPath": "tools/3d-modelling/3ds-max.jpg",
+    "reason": "Filename \"3ds-max.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/3d-modelling/3ds-max.jpg"
+  },
+  "3d:3d-scanning": {
+    "screenshotUrl": "/zh/tools/3d-scanner",
+    "outputPath": "tools/3d-scanner/kiri-engine.jpg",
+    "reason": "Filename \"kiri-engine.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/3d-scanner/kiri-engine.jpg"
+  },
+  "3d:ai-3d-generation": {
+    "screenshotUrl": "/zh/tools/3d-model-generator",
+    "outputPath": "tools/3d-model-generator/tripo.jpg",
+    "reason": "Filename \"tripo.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/3d-model-generator/tripo.jpg"
+  },
+  "avatar:d-id": {
+    "screenshotUrl": "https://www.d-id.com",
+    "outputPath": "tools/avatar/d-id.jpg",
+    "reason": "Filename \"d-id.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/avatar/d-id.jpg"
+  },
+  "avatar:d-id-developer-friendly": {
+    "screenshotUrl": "https://www.d-id.com/",
+    "outputPath": "tools/avatar/d-id.jpg",
+    "reason": "Filename \"d-id.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/avatar/d-id.jpg"
+  },
+  "character-chat:character-ai": {
+    "screenshotUrl": "https://character.ai/",
+    "outputPath": "tools/character-chat/cai.jpg",
+    "reason": "Filename \"cai.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/character-chat/cai.jpg"
+  },
+  "design:ai-logo-generator": {
+    "screenshotUrl": "/zh/tools/logo-generator",
+    "outputPath": "tools/website-builder/code-design-ai.jpg",
+    "reason": "Filename \"code-design-ai.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/website-builder/code-design-ai.jpg"
+  },
+  "design:ai-poster-generator": {
+    "screenshotUrl": "/tools/poster-generator",
+    "outputPath": "tools/website-builder/relume.jpg",
+    "reason": "Filename \"relume.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/website-builder/relume.jpg"
+  },
+  "design:ai-poster-maker": {
+    "screenshotUrl": "/zh/tools/poster-generator",
+    "outputPath": "tools/poster-generator/molypix.jpg",
+    "reason": "Filename \"molypix.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/poster-generator/molypix.jpg"
+  },
+  "design:ai-presentation-generator": {
+    "screenshotUrl": "/tools/presentation-maker",
+    "outputPath": "tools/website-builder/durable.jpg",
+    "reason": "Filename \"durable.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/website-builder/durable.jpg"
+  },
+  "design:ai-presentation-maker": {
+    "screenshotUrl": "/zh/tools/presentation-maker",
+    "outputPath": "tools/presentation-maker/canva.jpg",
+    "reason": "Filename \"canva.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/presentation-maker/canva.jpg"
+  },
+  "design:ai-website-builder": {
+    "screenshotUrl": "/zh/tools/website-builder",
+    "outputPath": "tools/website-builder/renderforest.jpg",
+    "reason": "Filename \"renderforest.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/website-builder/renderforest.jpg"
+  },
+  "design:animation-library": {
+    "screenshotUrl": "/zh/tools/animation-library",
+    "outputPath": "tools/animation-library/motion.jpg",
+    "reason": "Filename \"motion.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/animation-library/motion.jpg"
+  },
+  "education:wayground": {
+    "screenshotUrl": "https://wayground.com/",
+    "outputPath": "tools/education/quizizz.jpg",
+    "reason": "Filename \"quizizz.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/education/quizizz.jpg"
+  },
+  "image:ai-headshot-generator": {
+    "screenshotUrl": "/zh/tools/headshot-generator",
+    "outputPath": "tools/headshot-generator/aragon.jpg",
+    "reason": "Filename \"aragon.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/headshot-generator/aragon.jpg"
+  },
+  "image:ai-image-enhancer": {
+    "screenshotUrl": "/zh/tools/image-enhancer",
+    "outputPath": "tools/image-enhancer/magnific.jpg",
+    "reason": "Filename \"magnific.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/image-enhancer/magnific.jpg"
+  },
+  "image:ai-image-generation": {
+    "screenshotUrl": "/zh/tools/image-generator",
+    "outputPath": "tools/image-generator/flux.jpg",
+    "reason": "Filename \"flux.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/image-generator/flux.jpg"
+  },
+  "image:ai-virtual-staging": {
+    "screenshotUrl": "/zh/tools/virtual-staging",
+    "outputPath": "tools/virtual-staging/collov-screenshot.jpg",
+    "reason": "Filename \"collov-screenshot.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/collov-screenshot.jpg"
+  },
+  "search-engine:bing-copilot": {
+    "screenshotUrl": "https://copilot.microsoft.com/",
+    "outputPath": "seo/search-engine/BingCopilot.png",
+    "reason": "bing.com/chat 重定向；用 Copilot 产品页",
+    "priority": "P1"
+  },
+  "search-engine:chatgpt-search": {
+    "screenshotUrl": "https://chatgpt.com/",
+    "outputPath": "seo/search-engine/ChatGPTSearch.png",
+    "reason": "ZH 页使用本地图；EN 为 YouTube，统一截 chat 页",
+    "priority": "P1"
+  },
+  "search-engine:claude-search": {
+    "screenshotUrl": "https://claude.ai",
+    "outputPath": "seo/search-engine/ClaudeSearch.jpg",
+    "skipReason": "login-wall",
+    "reason": "保留 YouTube；Claude 需登录",
+    "priority": "P2"
+  },
+  "search-engine:consensus": {
+    "screenshotUrl": "https://consensus.app",
+    "outputPath": "seo/search-engine/Consensus.png",
+    "jsonImageSrc": "/seo/search-engine/Consensus.png",
+    "reason": "当前 ResearchGate.png 实为 WolframAlpha",
+    "priority": "P0"
+  },
+  "search-engine:deepseek-web-search": {
+    "screenshotUrl": "https://chat.deepseek.com/",
+    "outputPath": "seo/search-engine/Deepseek.png",
+    "reason": "platform.deepseek.com 非搜索 UI",
+    "priority": "P1"
+  },
+  "search-engine:felo-ai": {
+    "screenshotUrl": "https://felo.ai",
+    "outputPath": "seo/search-engine/FeloAI.png",
+    "reason": "当前文件为 You.com 截图，需重截 Felo",
+    "priority": "P0"
+  },
+  "search-engine:gemini-search": {
+    "screenshotUrl": "https://gemini.google.com",
+    "outputPath": "seo/search-engine/GeminiSearch.jpg",
+    "skipReason": "login-wall",
+    "reason": "保留 YouTube；Gemini 需 Google 账号",
+    "priority": "P2"
+  },
+  "search-engine:grok-search": {
+    "screenshotUrl": "https://grok.com/",
+    "outputPath": "seo/search-engine/GrokDeepSearch.png",
+    "reason": "grok.x.ai 重定向至 grok.com",
+    "priority": "P1"
+  },
+  "search-engine:liner": {
+    "screenshotUrl": "https://liner.com/",
+    "outputPath": "seo/search-engine/Liner.jpg",
+    "skipReason": "login-wall",
+    "reason": "保留 YouTube 缩略图；官网需登录",
+    "priority": "P2"
+  },
+  "search-engine:metaso": {
+    "screenshotUrl": "https://metaso.cn/",
+    "outputPath": "seo/search-engine/Metaso.jpg",
+    "jsonImageSrc": "/seo/search-engine/Metaso.jpg",
+    "reason": "秘塔 AI 搜索主页即搜索 UI",
+    "priority": "P0"
+  },
+  "search-engine:perplexity": {
+    "screenshotUrl": "https://www.perplexity.ai",
+    "outputPath": "seo/search-engine/PerplexityAI.png",
+    "reason": "低清小图，重截提升清晰度",
+    "priority": "P1"
+  },
+  "search-engine:you-com": {
+    "screenshotUrl": "https://you.com",
+    "outputPath": "seo/search-engine/Youcom.png",
+    "reason": "当前文件为 Felo 截图，需重截 You.com",
+    "priority": "P0"
+  },
+  "search-indexing:seoclarity-ai-search-indexer": {
+    "screenshotUrl": "https://www.seoclarity.net/ai-seo/ai-search-indexer",
+    "outputPath": "tools/search-indexing/clarityarcai.jpg",
+    "reason": "Filename \"clarityarcai.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/search-indexing/clarityarcai.jpg"
+  },
+  "search-indexing:trysight": {
+    "screenshotUrl": "https://www.trysight.ai/",
+    "outputPath": "tools/search-indexing/sightai.jpg",
+    "reason": "Filename \"sightai.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/search-indexing/sightai.jpg"
+  },
+  "text-to-video:ray": {
+    "screenshotUrl": "https://lumalabs.ai",
+    "outputPath": "tools/text-to-video/luma.jpg",
+    "reason": "Filename \"luma.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/text-to-video/luma.jpg"
+  },
+  "text:ai-chatbot": {
+    "screenshotUrl": "/zh/tools/chatbot",
+    "outputPath": "tools/chatbot/intercom.jpg",
+    "reason": "Filename \"intercom.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/chatbot/intercom.jpg"
+  },
+  "text:ai-essay-writer": {
+    "screenshotUrl": "/zh/tools/essay-writer",
+    "outputPath": "tools/essay-writer/jenni.jpg",
+    "reason": "Filename \"jenni.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/essay-writer/jenni.jpg"
+  },
+  "text:ai-legal-assistant": {
+    "screenshotUrl": "/zh/tools/legal",
+    "outputPath": "tools/legal/supio.jpg",
+    "reason": "Filename \"supio.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/legal/supio.jpg"
+  },
+  "text:ai-meeting-notes": {
+    "screenshotUrl": "/zh/tools/note-taker",
+    "outputPath": "tools/note-taker/otter.jpg",
+    "reason": "Filename \"otter.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/note-taker/otter.jpg"
+  },
+  "text:ai-text-generation": {
+    "screenshotUrl": "/zh/tools/text-generator",
+    "outputPath": "tools/text-generation/copyai.jpg",
+    "reason": "Filename \"copyai.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/text-generation/copyai.jpg"
+  },
+  "video:ai-avatar": {
+    "screenshotUrl": "/zh/tools/avatar",
+    "outputPath": "tools/avatar/topview.jpg",
+    "reason": "Filename \"topview.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/avatar/topview.jpg"
+  },
+  "video:ai-digital-human-generator": {
+    "screenshotUrl": "/tools/avatar",
+    "outputPath": "tools/avatar/topview.jpg",
+    "reason": "Filename \"topview.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/avatar/topview.jpg"
+  },
+  "video:ai-filmmaking": {
+    "screenshotUrl": "/zh/tools/filmmaking",
+    "outputPath": "tools/filmmaking/google-flow.jpg",
+    "reason": "Filename \"google-flow.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/filmmaking/google-flow.jpg"
+  },
+  "video:ai-image-to-video": {
+    "screenshotUrl": "/zh/tools/image-to-video",
+    "outputPath": "tools/image-to-video/pixverse.jpg",
+    "reason": "Filename \"pixverse.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/image-to-video/pixverse.jpg"
+  },
+  "video:ai-lip-sync": {
+    "screenshotUrl": "/zh/tools/lip-sync",
+    "outputPath": "tools/lip-sync/topview.jpg",
+    "reason": "Filename \"topview.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/lip-sync/topview.jpg"
+  },
+  "video:ai-lip-sync-tools": {
+    "screenshotUrl": "/tools/lip-sync",
+    "outputPath": "tools/lip-sync/topview.jpg",
+    "reason": "Filename \"topview.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/lip-sync/topview.jpg"
+  },
+  "video:ai-music-video": {
+    "screenshotUrl": "/zh/tools/music-video-generator",
+    "outputPath": "tools/music-video-generator/mirelo.jpg",
+    "reason": "Filename \"mirelo.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/music-video-generator/mirelo.jpg"
+  },
+  "video:ai-music-video-generator": {
+    "screenshotUrl": "/tools/music-video-generator",
+    "outputPath": "tools/music-video-generator/mirelo.jpg",
+    "reason": "Filename \"mirelo.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/music-video-generator/mirelo.jpg"
+  },
+  "video:ai-story-generator": {
+    "screenshotUrl": "/zh/tools/story-generator",
+    "outputPath": "tools/story-generator/medeo.jpg",
+    "reason": "Filename \"medeo.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/story-generator/medeo.jpg"
+  },
+  "video:ai-text-to-video": {
+    "screenshotUrl": "/zh/tools/text-to-video",
+    "outputPath": "tools/text-to-video/sora.jpg",
+    "reason": "Filename \"sora.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/text-to-video/sora.jpg"
+  },
+  "video:ai-video-effects": {
+    "screenshotUrl": "/zh/tools/video-effects",
+    "outputPath": "tools/video-effects/higgsfield.jpg",
+    "reason": "Filename \"higgsfield.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/video-effects/higgsfield.jpg"
+  },
+  "video:ai-video-to-video": {
+    "screenshotUrl": "/zh/tools/video-to-video",
+    "outputPath": "tools/video-to-video/domo-ai.jpg",
+    "reason": "Filename \"domo-ai.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/video-to-video/domo-ai.jpg"
+  },
+  "video:ai-video-translator": {
+    "screenshotUrl": "/zh/tools/video-translator",
+    "outputPath": "tools/video-translator/rask-ai.jpg",
+    "reason": "Filename \"rask-ai.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/video-translator/rask-ai.jpg"
+  },
+  "voice:ai-avatar": {
+    "screenshotUrl": "/zh/tools/avatar",
+    "outputPath": "tools/avatar/topview.jpg",
+    "reason": "Filename \"topview.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/avatar/topview.jpg"
+  },
+  "voice:ai-lip-sync": {
+    "screenshotUrl": "/zh/tools/lip-sync",
+    "outputPath": "tools/lip-sync/topview.jpg",
+    "reason": "Filename \"topview.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/lip-sync/topview.jpg"
+  },
+  "voice:aitext-to-speech-tts": {
+    "screenshotUrl": "/zh/tools/text-to-speech",
+    "outputPath": "tools/text-to-speech/voispark.jpg",
+    "reason": "Filename \"voispark.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/text-to-speech/voispark.jpg"
+  },
+  "text-to-speech:murf": {
+    "screenshotUrl": "https://murf.ai",
+    "outputPath": "tools/text-to-speech/murf.jpg",
+    "reason": "Tools text-to-speech BestTools — Murf.ai studio homepage",
+    "priority": "P1",
+    "jsonImageSrc": "/tools/text-to-speech/murf.jpg"
+  },
+  "web-search-api:bocha": {
+    "screenshotUrl": "https://bocha.cn/",
+    "outputPath": "seo/search-engine/Bocha.jpg",
+    "reason": "博查 AI 搜索 API 主页",
+    "priority": "P1"
+  },
+  "web-search-api:brave-search-api": {
+    "screenshotUrl": "https://brave.com/search/api/",
+    "outputPath": "seo/search-engine/Brave.jpg",
+    "reason": "Brave Search API 文档/产品页",
+    "priority": "P1"
+  },
+  "web-search-api:bright-data": {
+    "screenshotUrl": "https://brightdata.com/products/serp-api",
+    "outputPath": "tools/web-search-api/brightdata.jpg",
+    "reason": "SERP API 产品页比首页更能展示 API 能力",
+    "priority": "P1"
+  },
+  "web-search-api:exa": {
+    "screenshotUrl": "https://exa.ai/",
+    "outputPath": "seo/search-engine/Exa.jpg",
+    "reason": "语义搜索 API 主页",
+    "priority": "P1"
+  },
+  "web-search-api:nimble": {
+    "screenshotUrl": "https://www.nimbleway.com/",
+    "outputPath": "seo/search-engine/Nimble.jpg",
+    "reason": "Nimble 搜索 Agent 产品页",
+    "priority": "P1"
+  },
+  "web-search-api:parallel": {
+    "screenshotUrl": "https://parallel.ai/",
+    "outputPath": "seo/search-engine/Parallel.jpg",
+    "reason": "Agent 搜索 API 主页",
+    "priority": "P1"
+  },
+  "web-search-api:serpapi": {
+    "screenshotUrl": "https://serpapi.com/",
+    "outputPath": "seo/search-engine/SerpApi.jpg",
+    "reason": "SerpApi 控制台/产品页",
+    "priority": "P1"
+  },
+  "web-search-api:tavily": {
+    "screenshotUrl": "https://www.tavily.com/",
+    "outputPath": "seo/search-engine/Tavily.jpg",
+    "reason": "Agent 搜索 API 产品页",
+    "priority": "P1"
+  },
+  "world-model:1xwm": {
+    "screenshotUrl": "https://1x.tech",
+    "outputPath": "tools/world-model/1x-tech.jpg",
+    "reason": "Filename \"1x-tech.jpg\" does not match product id/name",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/world-model/1x-tech.jpg"
+  },
+  "ai-training-data:scale-ai": {
+    "screenshotUrl": "https://scale.com/data-engine",
+    "outputPath": "blog/ai-training-data/scale-ai.jpg",
+    "reason": "Blog ai-training-data BestTools — Scale AI homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:surge-ai": {
+    "screenshotUrl": "https://www.surgehq.ai",
+    "outputPath": "blog/ai-training-data/surge-ai.jpg",
+    "reason": "Blog ai-training-data BestTools — Surge AI homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:labelbox": {
+    "screenshotUrl": "https://docs.labelbox.com/",
+    "outputPath": "blog/ai-training-data/labelbox.jpg",
+    "reason": "Blog ai-training-data BestTools — Labelbox homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:encord": {
+    "screenshotUrl": "https://encord.com",
+    "outputPath": "blog/ai-training-data/encord.jpg",
+    "reason": "Blog ai-training-data BestTools — Encord homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:wirestock": {
+    "screenshotUrl": "https://wirestock.io",
+    "outputPath": "blog/ai-training-data/wirestock.jpg",
+    "reason": "Blog ai-training-data BestTools — Wirestock homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:luel": {
+    "screenshotUrl": "https://www.luel.ai",
+    "outputPath": "blog/ai-training-data/luel.jpg",
+    "reason": "Blog ai-training-data BestTools — Luel homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:origin-lab": {
+    "screenshotUrl": "https://www.originlab.ai",
+    "outputPath": "blog/ai-training-data/origin-lab.jpg",
+    "reason": "Blog ai-training-data BestTools — Origin Lab homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:snorkel-ai": {
+    "screenshotUrl": "https://snorkel.ai",
+    "outputPath": "blog/ai-training-data/snorkel-ai.jpg",
+    "reason": "Blog ai-training-data BestTools — Snorkel AI homepage",
+    "priority": "P0"
+  },
+  "ai-training-data:hero": {
+    "screenshotUrl": "https://scale.com/data-engine",
+    "outputPath": "blog/ai-training-data/hero.jpg",
+    "reason": "Blog ai-training-data hero — category representative homepage viewport",
+    "priority": "P1"
+  },
+  "multi-agent:langgraph": {
+    "screenshotUrl": "https://www.langchain.com/langgraph",
+    "outputPath": "blog/multi-agent/langgraph.jpg",
+    "reason": "Blog multi-agent BestTools — LangGraph homepage",
+    "priority": "P0"
+  },
+  "multi-agent:crewai": {
+    "screenshotUrl": "https://www.crewai.com",
+    "outputPath": "blog/multi-agent/crewai.jpg",
+    "reason": "Blog multi-agent BestTools — CrewAI homepage",
+    "priority": "P0"
+  },
+  "multi-agent:openai-agents-sdk": {
+    "screenshotUrl": "https://openai.github.io/openai-agents-python/",
+    "outputPath": "blog/multi-agent/openai-agents-sdk.jpg",
+    "reason": "Blog multi-agent BestTools — OpenAI Agents SDK docs",
+    "priority": "P0"
+  },
+  "multi-agent:copilot-studio": {
+    "screenshotUrl": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
+    "outputPath": "blog/multi-agent/copilot-studio.jpg",
+    "reason": "Blog multi-agent BestTools — Microsoft Copilot Studio",
+    "priority": "P0"
+  },
+  "multi-agent:watsonx-orchestrate": {
+    "screenshotUrl": "https://www.ibm.com/products/watsonx-orchestrate",
+    "outputPath": "blog/multi-agent/watsonx-orchestrate.jpg",
+    "reason": "Blog multi-agent BestTools — IBM watsonx Orchestrate",
+    "priority": "P0"
+  },
+  "multi-agent:multica": {
+    "screenshotUrl": "https://www.multica.ai",
+    "outputPath": "blog/multi-agent/multica.jpg",
+    "reason": "Blog multi-agent BestTools — Multica homepage",
+    "priority": "P0"
+  },
+  "multi-agent:clawith": {
+    "screenshotUrl": "https://www.clawith.ai",
+    "outputPath": "blog/multi-agent/clawith.jpg",
+    "reason": "Blog multi-agent BestTools — Clawith homepage",
+    "priority": "P0"
+  },
+  "multi-agent:moxt": {
+    "screenshotUrl": "https://moxt.ai",
+    "outputPath": "blog/multi-agent/moxt.jpg",
+    "reason": "Blog multi-agent BestTools — Moxt homepage",
+    "priority": "P0"
+  },
+  "multi-agent:hero": {
+    "screenshotUrl": "https://www.langchain.com/langgraph",
+    "outputPath": "blog/multi-agent/hero.jpg",
+    "reason": "Blog multi-agent hero — LangGraph category representative",
+    "priority": "P1"
+  },
+  "agent-sandbox:e2b": {
+    "screenshotUrl": "https://e2b.dev",
+    "outputPath": "blog/agent-sandbox/e2b.jpg",
+    "reason": "Blog agent-sandbox BestTools — E2B homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-sandbox/e2b.jpg"
+  },
+  "agent-sandbox:modal": {
+    "screenshotUrl": "https://modal.com",
+    "outputPath": "blog/agent-sandbox/modal.jpg",
+    "reason": "Blog agent-sandbox BestTools — Modal homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-sandbox/modal.jpg"
+  },
+  "agent-sandbox:daytona": {
+    "screenshotUrl": "https://www.daytona.io",
+    "outputPath": "blog/agent-sandbox/daytona.jpg",
+    "reason": "Blog agent-sandbox BestTools — Daytona homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-sandbox/daytona.jpg"
+  },
+  "agent-sandbox:aws-agentcore": {
+    "screenshotUrl": "https://aws.amazon.com/bedrock/agentcore/",
+    "outputPath": "blog/agent-sandbox/aws-agentcore.jpg",
+    "reason": "Blog agent-sandbox BestTools — AWS Bedrock AgentCore product page",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-sandbox/aws-agentcore.jpg"
+  },
+  "agent-sandbox:google-agent-sandbox": {
+    "screenshotUrl": "https://cloud.google.com/kubernetes-engine/docs/concepts/machine-learning/agent-sandbox",
+    "outputPath": "blog/agent-sandbox/google-agent-sandbox.jpg",
+    "reason": "Blog agent-sandbox BestTools — Google GKE Agent Sandbox docs",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-sandbox/google-agent-sandbox.jpg"
+  },
+  "agent-sandbox:nanoclaw": {
+    "screenshotUrl": "https://github.com/qwibitai/NanoClaw",
+    "outputPath": "blog/agent-sandbox/nanoclaw.jpg",
+    "reason": "Blog agent-sandbox BestTools — NanoClaw GitHub repo",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-sandbox/nanoclaw.jpg"
+  },
+  "agent-to-agent:moltbook": {
+    "screenshotUrl": "https://www.moltbook.com/",
+    "outputPath": "blog/agent-to-agent/moltbook.jpg",
+    "reason": "Blog agent-to-agent BestTools — Moltbook homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-to-agent/moltbook.jpg"
+  },
+  "agent-to-agent:second-me": {
+    "screenshotUrl": "https://home.second.me/",
+    "outputPath": "blog/agent-to-agent/second-me.jpg",
+    "reason": "Blog agent-to-agent BestTools — Second Me homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-to-agent/second-me.jpg"
+  },
+  "agent-to-agent:elys": {
+    "screenshotUrl": "https://elys.natureselect.tech/",
+    "outputPath": "blog/agent-to-agent/elys.jpg",
+    "reason": "Blog agent-to-agent BestTools — Elys homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-to-agent/elys.jpg"
+  },
+  "agent-to-agent:eigenflux": {
+    "screenshotUrl": "https://www.eigenflux.ai/",
+    "outputPath": "blog/agent-to-agent/eigenflux.jpg",
+    "reason": "Blog agent-to-agent BestTools — EigenFlux homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-to-agent/eigenflux.jpg"
+  },
+  "agent-to-agent:agentgram": {
+    "screenshotUrl": "https://github.com/agentgram/agentgram",
+    "outputPath": "blog/agent-to-agent/agentgram.jpg",
+    "reason": "Blog agent-to-agent BestTools — AgentGram GitHub repo",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-to-agent/agentgram.jpg"
+  },
+  "agent-to-agent:abund": {
+    "screenshotUrl": "https://abund.ai/",
+    "outputPath": "blog/agent-to-agent/abund.jpg",
+    "reason": "Blog agent-to-agent BestTools — Abund.ai homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agent-to-agent/abund.jpg"
+  },
+  "agent-to-agent:hero": {
+    "screenshotUrl": "https://www.moltbook.com/",
+    "outputPath": "blog/agent-to-agent/hero.jpg",
+    "reason": "Blog agent-to-agent hero — Moltbook category representative",
+    "priority": "P1"
+  },
+  "agentic-commerce:gemini": {
+    "screenshotUrl": "https://gemini.google.com/",
+    "outputPath": "blog/agentic-commerce/gemini.jpg",
+    "reason": "Blog agentic-commerce BestTools — gemini",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-commerce/gemini.jpg"
+  },
+  "agentic-commerce:chatgpt-shopping": {
+    "screenshotUrl": "https://chatgpt.com/",
+    "outputPath": "blog/agentic-commerce/chatgpt-shopping.jpg",
+    "reason": "Blog agentic-commerce BestTools — chatgpt-shopping",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-commerce/chatgpt-shopping.jpg"
+  },
+  "agentic-commerce:perplexity": {
+    "screenshotUrl": "https://www.perplexity.ai/",
+    "outputPath": "blog/agentic-commerce/perplexity.jpg",
+    "reason": "Blog agentic-commerce BestTools — perplexity",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-commerce/perplexity.jpg"
+  },
+  "agentic-commerce:glance": {
+    "screenshotUrl": "https://glance.com/",
+    "outputPath": "blog/agentic-commerce/glance.jpg",
+    "reason": "Blog agentic-commerce BestTools — glance",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-commerce/glance.jpg"
+  },
+  "agentic-commerce:alipay-aifu": {
+    "screenshotUrl": "https://www.alipay.com/",
+    "outputPath": "blog/agentic-commerce/alipay-aifu.jpg",
+    "reason": "Blog agentic-commerce BestTools — alipay-aifu",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-commerce/alipay-aifu.jpg"
+  },
+  "agentic-commerce:qwen-taobao": {
+    "screenshotUrl": "https://qwen.ai/",
+    "outputPath": "blog/agentic-commerce/qwen-taobao.jpg",
+    "reason": "Blog agentic-commerce BestTools — qwen-taobao",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-commerce/qwen-taobao.jpg"
+  },
+  "agentic-payments:x402": {
+    "screenshotUrl": "https://www.x402.org/",
+    "outputPath": "blog/agentic-payments/x402.jpg",
+    "reason": "Blog agentic-payments BestTools — x402",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-payments/x402.jpg"
+  },
+  "agentic-payments:google-ap2": {
+    "screenshotUrl": "https://github.com/google-agentic-commerce/AP2",
+    "outputPath": "blog/agentic-payments/google-ap2.jpg",
+    "reason": "Blog agentic-payments BestTools — google-ap2",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-payments/google-ap2.jpg"
+  },
+  "agentic-payments:stripe-acp": {
+    "screenshotUrl": "https://stripe.com/docs/agentic-commerce",
+    "outputPath": "blog/agentic-payments/stripe-acp.jpg",
+    "reason": "Blog agentic-payments BestTools — stripe-acp",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-payments/stripe-acp.jpg"
+  },
+  "agentic-payments:stripe-mpp": {
+    "screenshotUrl": "https://stripe.com/",
+    "outputPath": "blog/agentic-payments/stripe-mpp.jpg",
+    "reason": "Blog agentic-payments BestTools — stripe-mpp",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-payments/stripe-mpp.jpg"
+  },
+  "agentic-payments:clink": {
+    "screenshotUrl": "https://clinkbill.com/",
+    "outputPath": "blog/agentic-payments/clink.jpg",
+    "reason": "Blog agentic-payments BestTools — clink",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-payments/clink.jpg"
+  },
+  "agentic-payments:fluxa": {
+    "screenshotUrl": "https://fluxapay.xyz/",
+    "outputPath": "blog/agentic-payments/fluxa.jpg",
+    "reason": "Blog agentic-payments BestTools — fluxa",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/agentic-payments/fluxa.jpg"
+  },
+  "agentic-commerce:hero": {
+    "screenshotUrl": "https://gemini.google.com/",
+    "outputPath": "blog/agentic-commerce/hero.jpg",
+    "reason": "Blog agentic-commerce hero",
+    "priority": "P1"
+  },
+  "agentic-payments:hero": {
+    "screenshotUrl": "https://www.x402.org/",
+    "outputPath": "blog/agentic-payments/hero.jpg",
+    "reason": "Blog agentic-payments hero",
+    "priority": "P1"
+  },
+  "web-fetch:jina-reader": {
+    "screenshotUrl": "https://jina.ai/",
+    "outputPath": "blog/web-fetch/jina-reader.jpg",
+    "reason": "Blog web-fetch BestTools — jina-reader",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/web-fetch/jina-reader.jpg"
+  },
+  "web-fetch:firecrawl": {
+    "screenshotUrl": "https://www.firecrawl.dev/",
+    "outputPath": "blog/web-fetch/firecrawl.jpg",
+    "reason": "Blog web-fetch BestTools — firecrawl",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/web-fetch/firecrawl.jpg"
+  },
+  "web-fetch:tinyfish": {
+    "screenshotUrl": "https://www.tinyfish.ai/",
+    "outputPath": "blog/web-fetch/tinyfish.jpg",
+    "reason": "Blog web-fetch BestTools — tinyfish",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/web-fetch/tinyfish.jpg"
+  },
+  "web-fetch:webpeel": {
+    "screenshotUrl": "https://github.com/webpeel/webpeel",
+    "outputPath": "blog/web-fetch/webpeel.jpg",
+    "reason": "Blog web-fetch BestTools — webpeel",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/web-fetch/webpeel.jpg"
+  },
+  "web-fetch:webclaw": {
+    "screenshotUrl": "https://github.com/0xMassi/webclaw",
+    "outputPath": "blog/web-fetch/webclaw.jpg",
+    "reason": "Blog web-fetch BestTools — webclaw",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/web-fetch/webclaw.jpg"
+  },
+  "web-fetch:crawl4ai": {
+    "screenshotUrl": "https://github.com/unclecode/crawl4ai",
+    "outputPath": "blog/web-fetch/crawl4ai.jpg",
+    "reason": "Blog web-fetch BestTools — crawl4ai",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/web-fetch/crawl4ai.jpg"
+  },
+  "web-fetch:hero": {
+    "screenshotUrl": "https://www.firecrawl.dev/",
+    "outputPath": "blog/web-fetch/hero.jpg",
+    "reason": "Blog web-fetch hero",
+    "priority": "P1"
+  },
+  "hr-assistant:wisq": {
+    "screenshotUrl": "https://www.wisq.com/",
+    "outputPath": "tools/hr-assistant/wisq.jpg",
+    "reason": "Tools hr-assistant BestTools — wisq",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/hr-assistant/wisq.jpg"
+  },
+  "hr-assistant:leena-ai": {
+    "screenshotUrl": "https://leena.ai/",
+    "outputPath": "tools/hr-assistant/leena-ai.jpg",
+    "reason": "Tools hr-assistant BestTools — leena-ai",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/hr-assistant/leena-ai.jpg"
+  },
+  "hr-assistant:ibm-watsonx-orchestrate": {
+    "screenshotUrl": "https://www.ibm.com/products/watsonx-orchestrate",
+    "outputPath": "tools/hr-assistant/ibm-watsonx-orchestrate.jpg",
+    "reason": "Tools hr-assistant BestTools — ibm-watsonx-orchestrate",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/hr-assistant/ibm-watsonx-orchestrate.jpg"
+  },
+  "hr-assistant:moveworks": {
+    "screenshotUrl": "https://www.moveworks.com/",
+    "outputPath": "tools/hr-assistant/moveworks.jpg",
+    "reason": "Tools hr-assistant BestTools — moveworks",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/hr-assistant/moveworks.jpg"
+  },
+  "hr-assistant:servicenow-hrsd": {
+    "screenshotUrl": "https://www.servicenow.com/products/hr-service-delivery.html",
+    "outputPath": "tools/hr-assistant/servicenow-hrsd.jpg",
+    "reason": "Tools hr-assistant BestTools — servicenow-hrsd",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/hr-assistant/servicenow-hrsd.jpg"
+  },
+  "hr-assistant:workday-sana": {
+    "screenshotUrl": "https://www.workday.com/",
+    "outputPath": "tools/hr-assistant/workday-sana.jpg",
+    "reason": "Tools hr-assistant BestTools — workday-sana",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/hr-assistant/workday-sana.jpg"
+  },
+  "virtual-staging:collov": {
+    "screenshotUrl": "https://www.collov.com",
+    "outputPath": "tools/virtual-staging/collov-screenshot.jpg",
+    "reason": "Tools virtual-staging BestTools — Collov",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/collov-screenshot.jpg"
+  },
+  "virtual-staging:virtual-staging-ai": {
+    "screenshotUrl": "https://www.virtualstagingai.app",
+    "outputPath": "tools/virtual-staging/virtualstagingai-screenshot.jpg",
+    "reason": "Tools virtual-staging BestTools — Virtual Staging AI",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/virtualstagingai-screenshot.jpg"
+  },
+  "virtual-staging:edensign": {
+    "screenshotUrl": "https://www.edensign.com",
+    "outputPath": "tools/virtual-staging/edensign-screenshot.jpg",
+    "reason": "Tools virtual-staging BestTools — Edensign",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/edensign-screenshot.jpg"
+  },
+  "virtual-staging:apply-design": {
+    "screenshotUrl": "https://www.applydesign.io",
+    "outputPath": "tools/virtual-staging/applydesign-screenshot.jpg",
+    "reason": "Tools virtual-staging BestTools — Apply Design",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/applydesign-screenshot.jpg"
+  },
+  "virtual-staging:brightshot": {
+    "screenshotUrl": "https://bright-shot.com",
+    "outputPath": "tools/virtual-staging/brightshot-screenshot.jpg",
+    "reason": "Tools virtual-staging BestTools — BrightShot",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/brightshot-screenshot.jpg"
+  },
+  "virtual-staging:ai-home-design": {
+    "screenshotUrl": "https://www.aihomedesign.com",
+    "outputPath": "tools/virtual-staging/aihomedesign.jpg",
+    "reason": "Tools virtual-staging BestTools — AI Home Design",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/aihomedesign.jpg"
+  },
+  "virtual-staging:stagehq": {
+    "screenshotUrl": "https://stagehq.com",
+    "outputPath": "tools/virtual-staging/stagehq-screenshot.jpg",
+    "reason": "Tools virtual-staging BestTools — StageHQ",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/stagehq-screenshot.jpg"
+  },
+  "virtual-staging:boxbrownie": {
+    "screenshotUrl": "https://www.boxbrownie.com",
+    "outputPath": "tools/virtual-staging/boxbrownie-screenshot.jpg",
+    "reason": "Tools virtual-staging BestTools — BoxBrownie",
+    "priority": "P0",
+    "jsonImageSrc": "/tools/virtual-staging/boxbrownie-screenshot.jpg"
+  },
+  "interior-design:collov": {
+    "screenshotUrl": "https://www.collov.com",
+    "outputPath": "blog/interior-design/collov.jpg",
+    "reason": "Blog interior-design BestTools — Collov",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/interior-design/collov.jpg"
+  },
+  "interior-design:reimaginehome": {
+    "screenshotUrl": "https://www.reimaginehome.ai",
+    "outputPath": "blog/interior-design/reimaginehome.jpg",
+    "reason": "Blog interior-design BestTools — REimagineHome",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/interior-design/reimaginehome.jpg"
+  },
+  "interior-design:spacely-ai": {
+    "screenshotUrl": "https://www.spacely.ai",
+    "outputPath": "blog/interior-design/spacely.jpg",
+    "reason": "Blog interior-design BestTools — Spacely AI",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/interior-design/spacely.jpg"
+  },
+  "interior-design:planner-5d": {
+    "screenshotUrl": "https://planner5d.com",
+    "outputPath": "blog/interior-design/planner5d.jpg",
+    "reason": "Blog interior-design BestTools — Planner 5D",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/interior-design/planner5d.jpg"
+  },
+  "interior-design:interior-ai": {
+    "screenshotUrl": "https://interiorai.com",
+    "outputPath": "blog/interior-design/interiorai.jpg",
+    "reason": "Blog interior-design BestTools — Interior AI",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/interior-design/interiorai.jpg"
+  },
+  "interior-design:homestyler": {
+    "screenshotUrl": "https://www.homestyler.com",
+    "outputPath": "blog/interior-design/homestyler.jpg",
+    "reason": "Blog interior-design BestTools — Homestyler",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/interior-design/homestyler.jpg"
+  },
+  "interior-design:hero": {
+    "screenshotUrl": "https://www.collov.com",
+    "outputPath": "blog/interior-design/hero.jpg",
+    "reason": "Blog interior-design hero — Collov category representative",
+    "priority": "P1"
+  },
+  "cad:zoo": {
+    "screenshotUrl": "https://zoo.dev",
+    "outputPath": "blog/cad/zoo.jpg",
+    "reason": "Blog cad BestTools — Zoo.dev",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/cad/zoo.jpg"
+  },
+  "cad:adam": {
+    "screenshotUrl": "https://adam.new",
+    "outputPath": "blog/cad/adam.jpg",
+    "reason": "Blog cad BestTools — Adam",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/cad/adam.jpg"
+  },
+  "cad:fusion-360": {
+    "screenshotUrl": "https://www.autodesk.com/products/fusion/overview",
+    "outputPath": "blog/cad/fusion360.jpg",
+    "reason": "Blog cad BestTools — Fusion 360",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/cad/fusion360.jpg"
+  },
+  "cad:rhino": {
+    "screenshotUrl": "https://www.rhino3d.com/",
+    "outputPath": "blog/cad/rhino.jpg",
+    "reason": "Blog cad BestTools — Rhino",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/cad/rhino.jpg"
+  },
+  "cad:freecad": {
+    "screenshotUrl": "https://www.freecad.org",
+    "outputPath": "blog/cad/freecad.jpg",
+    "reason": "Blog cad BestTools — FreeCAD",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/cad/freecad.jpg"
+  },
+  "cad:shapr3d": {
+    "screenshotUrl": "https://www.shapr3d.com/",
+    "outputPath": "blog/cad/shapr3d.jpg",
+    "reason": "Blog cad BestTools — Shapr3D",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/cad/shapr3d.jpg"
+  },
+  "cad:hero": {
+    "screenshotUrl": "https://zoo.dev",
+    "outputPath": "blog/cad/hero.jpg",
+    "reason": "Blog cad hero — Zoo.dev category representative",
+    "priority": "P1"
+  },
+  "ai-flashcards:thetawave": {
+    "screenshotUrl": "https://thetawave.ai/feature/flashcard-maker",
+    "outputPath": "blog/ai-flashcards/thetawave.jpg",
+    "reason": "Blog ai-flashcards BestTools — Thetawave flashcard-maker page",
+    "priority": "P0"
+  },
+  "ai-flashcards:quizlet": {
+    "screenshotUrl": "https://quizlet.com/",
+    "outputPath": "blog/ai-flashcards/quizlet.jpg",
+    "reason": "Blog ai-flashcards BestTools — Quizlet homepage",
+    "priority": "P0"
+  },
+  "ai-flashcards:knowt": {
+    "screenshotUrl": "https://knowt.com/",
+    "outputPath": "blog/ai-flashcards/knowt.jpg",
+    "reason": "Blog ai-flashcards BestTools — Knowt homepage",
+    "priority": "P0"
+  },
+  "ai-flashcards:hero": {
+    "screenshotUrl": "https://thetawave.ai/feature/flashcard-maker",
+    "outputPath": "blog/ai-flashcards/hero.jpg",
+    "reason": "Blog ai-flashcards hero — Thetawave category representative",
+    "priority": "P1"
+  },
+  "ai-visibility:otterly-ai": {
+    "screenshotUrl": "https://otterly.ai/",
+    "outputPath": "blog/ai-visibility/otterly.jpg",
+    "reason": "Blog ai-visibility BestTools — Otterly.AI homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/ai-visibility/otterly.jpg"
+  },
+  "ai-visibility:trakkr": {
+    "screenshotUrl": "https://trakkr.ai/",
+    "outputPath": "blog/ai-visibility/trakkr.jpg",
+    "reason": "Blog ai-visibility BestTools — Trakkr homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/ai-visibility/trakkr.jpg"
+  },
+  "ai-visibility:searchable": {
+    "screenshotUrl": "https://www.searchable.com/",
+    "outputPath": "blog/ai-visibility/searchable.jpg",
+    "reason": "Blog ai-visibility BestTools — Searchable homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/ai-visibility/searchable.jpg"
+  },
+  "ai-visibility:profound": {
+    "screenshotUrl": "https://www.tryprofound.com/",
+    "outputPath": "blog/ai-visibility/profound.jpg",
+    "reason": "Blog ai-visibility BestTools — Profound homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/ai-visibility/profound.jpg"
+  },
+  "ai-visibility:peec-ai": {
+    "screenshotUrl": "https://peec.ai/",
+    "outputPath": "blog/ai-visibility/peec.jpg",
+    "reason": "Blog ai-visibility BestTools — Peec AI homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/ai-visibility/peec.jpg"
+  },
+  "ai-visibility:semrush": {
+    "screenshotUrl": "https://www.semrush.com/ai-seo/overview/",
+    "outputPath": "blog/ai-visibility/semrush.jpg",
+    "reason": "Blog ai-visibility BestTools — Semrush AI Visibility page",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/ai-visibility/semrush.jpg"
+  },
+  "ai-visibility:hero": {
+    "screenshotUrl": "https://otterly.ai/",
+    "outputPath": "blog/ai-visibility/hero.jpg",
+    "reason": "Blog ai-visibility hero — category representative",
+    "priority": "P1"
+  },
+  "ai-language-learning:duolingo": {
+    "screenshotUrl": "https://www.duolingo.com/",
+    "outputPath": "blog/ai-language-learning/duolingo.jpg",
+    "reason": "Blog ai-language-learning BestTools — Duolingo homepage",
+    "priority": "P0"
+  },
+  "ai-language-learning:speak": {
+    "screenshotUrl": "https://www.speak.com/",
+    "outputPath": "blog/ai-language-learning/speak.jpg",
+    "reason": "Blog ai-language-learning BestTools — Speak homepage",
+    "priority": "P0"
+  },
+  "ai-language-learning:boldvoice": {
+    "screenshotUrl": "https://www.boldvoice.com/",
+    "outputPath": "blog/ai-language-learning/boldvoice.jpg",
+    "reason": "Blog ai-language-learning BestTools — BoldVoice homepage",
+    "priority": "P0"
+  },
+  "ai-language-learning:hero": {
+    "screenshotUrl": "https://www.speak.com/",
+    "outputPath": "blog/ai-language-learning/hero.jpg",
+    "reason": "Blog ai-language-learning hero — Speak category representative",
+    "priority": "P1"
+  },
+  "ai-components:jiro-build": {
+    "screenshotUrl": "https://jiro.build/",
+    "outputPath": "blog/ai-components/jiro-build.jpg",
+    "reason": "Blog ai-components BestTools — Jiro.build homepage",
+    "priority": "P0"
+  },
+  "ai-components:21st-dev": {
+    "screenshotUrl": "https://21st.dev/",
+    "outputPath": "blog/ai-components/21st-dev.jpg",
+    "reason": "Blog ai-components BestTools — 21st.dev homepage",
+    "priority": "P0"
+  },
+  "ai-components:shadcn-io": {
+    "screenshotUrl": "https://www.shadcn.io/",
+    "outputPath": "blog/ai-components/shadcn-io.jpg",
+    "reason": "Blog ai-components BestTools — shadcn.io homepage",
+    "priority": "P0"
+  }
+}

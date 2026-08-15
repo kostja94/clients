@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-24",
+  "valid_slug_count": 118,
+  "violation_count": 2,
+  "violations": [
+    {
+      "rule": "R0a",
+      "source_slug": "multi-agent",
+      "source_route": "blog",
+      "locale": "en",
+      "href": "/tools/hr-assistant",
+      "target_slug": "hr-assistant",
+      "desc": "invalid slug 'hr-assistant' (not in registry)",
+      "severity": "high"
+    },
+    {
+      "rule": "R0a",
+      "source_slug": "multi-agent",
+      "source_route": "blog",
+      "locale": "zh",
+      "href": "/zh/tools/hr-assistant",
+      "target_slug": "hr-assistant",
+      "desc": "invalid slug 'hr-assistant' (not in registry)",
+      "severity": "high"
+    }
+  ],
+  "by_source": {
+    "multi-agent:en": [
+      {
+        "rule": "R0a",
+        "source_slug": "multi-agent",
+        "source_route": "blog",
+        "locale": "en",
+        "href": "/tools/hr-assistant",
+        "target_slug": "hr-assistant",
+        "desc": "invalid slug 'hr-assistant' (not in registry)",
+        "severity": "high"
+      }
+    ],
+    "multi-agent:zh": [
+      {
+        "rule": "R0a",
+        "source_slug": "multi-agent",
+        "source_route": "blog",
+        "locale": "zh",
+        "href": "/zh/tools/hr-assistant",
+        "target_slug": "hr-assistant",
+        "desc": "invalid slug 'hr-assistant' (not in registry)",
+        "severity": "high"
+      }
+    ]
+  }
+}
