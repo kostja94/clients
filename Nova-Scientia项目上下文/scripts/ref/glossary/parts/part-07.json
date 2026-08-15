@@ -1,0 +1,40 @@
+[
+  {
+    "id": "agentes-e-tendencias-recentes",
+    "title": "Agentes, protocolos e tendências recentes",
+    "terms": [
+      {
+        "term": "Harness engineering (engenharia de harness)",
+        "definition": "Projeto do sistema em volta do modelo que “segura o arreio”: limites de ação, ferramentas permitidas, políticas, verificação (testes, lint), feedback e correção quando o agente erra. Em produção, o diferencial competitivo passa a ser o harness — não só o modelo bruto."
+      },
+      {
+        "term": "Agent harness (harness de agente)",
+        "definition": "Camada operacional que envolve um agente de IA: orquestração, memória de sessão, chamadas a ferramentas, guardrails e observabilidade. O harness transforma um LLM “solto” em fluxo confiável e repetível."
+      },
+      {
+        "term": "OpenClaw",
+        "definition": "Framework open source (licença permissiva) para rodar agentes autônomos localmente ou na nuvem, com suporte a vários provedores de LLM e execução offline (ex.: via Ollama). Costuma usar arquivos em Markdown para identidade e instruções (padrões como SOUL.md / AGENTS.md em comunidades) e um gateway que roteia canais e sessões."
+      },
+      {
+        "term": "MCP (Model Context Protocol — protocolo de contexto do modelo)",
+        "definition": "Padrão aberto (iniciativa da Anthropic, adotado pelo ecossistema) para conectar modelos a ferramentas, APIs e fontes de dados por servidores MCP: o assistente descobre recursos e chama operações de forma uniforme, sem integração ad hoc para cada app."
+      },
+      {
+        "term": "A2A (Agent2Agent Protocol — protocolo agente a agente)",
+        "definition": "Padrão aberto (2025) para agentes de fornecedores diferentes trocarem mensagens e tarefas como pares (ex.: JSON-RPC sobre HTTP), com “cartões de agente” que descrevem capacidades. Complementa o MCP: MCP liga modelo ↔ ferramentas; A2A liga agente ↔ agente."
+      },
+      {
+        "term": "Engenharia de contexto (Context engineering)",
+        "definition": "Ir além do prompt: decidir o que entra na janela de contexto (documentos, memória, ferramentas, resumos), em que ordem e com qual orçamento de tokens — para maximizar acerto e reduzir alucinação e custo."
+      },
+      {
+        "term": "Computer use / browser use (uso de computador / navegador)",
+        "definition": "Capacidade do modelo de operar interface gráfica ou navegador (cliques, formulários, leitura de página) via ferramentas; exige harness forte (permissões, confirmações) por risco de ações irreversíveis."
+      },
+      {
+        "term": "Skills (pacotes de competência para assistentes)",
+        "definition": "Pacotes declarativos (instruções, scripts, recursos) que estendem um assistente com fluxos específicos — padrão popularizado por IDEs e plataformas de agente; difere de simples prompt único por ser versionável e reutilizável."
+      }
+    ]
+  }
+]
