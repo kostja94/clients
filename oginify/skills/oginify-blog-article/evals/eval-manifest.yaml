@@ -1,0 +1,163 @@
+# Eval Manifest — oginify-blog-article v1.0.0
+
+manifest:
+  version: "1.0.0"
+  skill: oginify-blog-article
+  skill_version: "1.0.0"
+  created: "2026-08-15"
+  total_evals: 20
+
+evals:
+  - id: E01
+    name: "title-only 不加载 blog skill"
+    input: "优化 /blog/best-ai-og-image-generators 的 title 和 description"
+    expected:
+      route: "oginify-meta-title-description or manual — NOT blog-article"
+    severity: critical
+
+  - id: E02
+    name: "禁止读取 oginify-keywords.md"
+    input: "Agent 打开 oginify-keywords.md 查关键词"
+    expected:
+      assert:
+        - "violates forbidden-reads"
+        - "uses references/keywords.md instead"
+    severity: critical
+
+  - id: E03
+    name: "best AI OG generator → Track S Ranking"
+    input: "按 oginify-blog-article skill，为关键词 best AI open graph image generators 创建 Ranking，Track auto"
+    expected:
+      track: S
+      type: Ranking
+      assert:
+        - "articleFormat: Ranking"
+        - "slug best-ai-og-image-generators without year"
+        - "three-category framework present (URL-first / general-purpose / code-driven)"
+        - "Oginify #1 with at least one not-for scenario"
+    severity: high
+
+  - id: E04
+    name: "og image size → Track T SizeGuide"
+    input: "为关键词 open graph image size 创建文章，Track auto"
+    expected:
+      track: T
+      type: SizeGuide
+      assert:
+        - "word count 1200-2000"
+        - "1200x630 spec with source (P3)"
+        - "links to /blog/what-is-open-graph-image"
+    severity: high
+
+  - id: E05
+    name: "通用生图写成不能做 OG → P2 Fail"
+    input: "Draft says Gemini and GPT Image cannot produce OG images"
+    expected:
+      gate: P2 FAIL
+    severity: critical
+
+  - id: E06
+    name: "唯一/首个 夸大 → P5/P6 Fail"
+    input: "Draft says Oginify is the only promptless OG generator"
+    expected:
+      gate: P5 FAIL or P6 FAIL
+    severity: critical
+
+  - id: E07
+    name: "定价无 as-of → P1 Fail"
+    input: "Draft says 6 free generations a day without as-of date or source"
+    expected:
+      gate: P1 FAIL
+    severity: critical
+
+  - id: E08
+    name: "social-cards-skills 混淆 → P4 Fail"
+    input: "Draft describes social-cards-skills as a hosted SaaS"
+    expected:
+      gate: P4 FAIL
+    severity: high
+
+  - id: E09
+    name: "top-5-og-tools → C4 STOP"
+    input: "创建 slug top-5-og-tools 新稿"
+    expected:
+      gate: C4 STOP
+    severity: critical
+
+  - id: E10
+    name: "Hub 抢词 → C2 Fail"
+    input: "HowTo draft titles itself 'What Is an Open Graph Image' (hub P0 keyword)"
+    expected:
+      gate: C2 FAIL
+    severity: high
+
+  - id: E11
+    name: "一次加载全部 references"
+    input: "Phase 0 loads all references/*.md at once"
+    expected:
+      assert:
+        - "violates progressive-disclosure"
+    severity: medium
+
+  - id: E12
+    name: "产品堆砌 >50%"
+    input: "UseCase with Oginify in every H2 and 60% product copy"
+    expected:
+      gate: Track SelfCheck Fail on product mention ratio
+    severity: high
+
+  - id: E13
+    name: "Writing Quality: 空泛句命中"
+    input: "Draft contains 'In today's digital world', 'It is important to note that', 'Let's dive in'"
+    expected:
+      gate: SelfCheck Writing & Voice FAIL (empty phrases >2)
+    severity: high
+
+  - id: E14
+    name: "Fact Check: 1200×630 无来源"
+    input: "Draft says 1200x630 is the standard size with no source"
+    expected:
+      gate: P3 FAIL
+    severity: critical
+
+  - id: E15
+    name: "Presentation: 碎片化检测"
+    input: "Draft has 14/18 short paragraphs, 4 continuous short clusters, 48% list ratio"
+    expected:
+      gate: SelfCheck Presentation <4/10 → FAIL
+    severity: high
+
+  - id: E16
+    name: "Slug: 内部架构词检测"
+    input: "Agent proposes slug 'og-image-diagnosis-tools'"
+    expected:
+      gate: Gate B FAIL
+    severity: high
+
+  - id: E17
+    name: "FAQ 固定 6 题 + objection"
+    input: "FAQ section has 3 generic questions and no objection question"
+    expected:
+      gate: SelfCheck Structure FAIL
+    severity: high
+
+  - id: E18
+    name: "Cross-Article: Intro 模板化"
+    input: "3 articles with identical intro sequence (定义句→场景句→路标句)"
+    expected:
+      gate: Phase 5.5 CA4 FAIL
+    severity: high
+
+  - id: E19
+    name: "Hub-Spoke: Spoke 未链 Hub"
+    input: "New HowTo draft without link to what-is-open-graph-image"
+    expected:
+      gate: SelfCheck SEO & Hub-Spoke <7/10
+    severity: high
+
+  - id: E20
+    name: "Information Gain: 冗余率 STOP"
+    input: "Phase 5 IG Audit for high-competition keyword shows Redundancy Ratio 45%"
+    expected:
+      gate: serp-audit §2 STOP
+    severity: critical
