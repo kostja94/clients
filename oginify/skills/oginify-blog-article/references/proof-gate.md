@@ -18,7 +18,7 @@
 | 1200×630 输出 | `as of {month} {year}` | oginify.com |
 
 **反例**：`Oginify gives you 6 free generations a day`（无 as-of、无来源）→ **FAIL**。
-**正确**：`Oginify gives you up to 6 free generations a day for signed-in accounts, per the Oginify pricing page as of August 2026 [Source: https://oginify.com/pricing]`。
+**正确**：`Oginify gives you up to 6 free generations a day for signed-in accounts, per the <a href="https://oginify.com/pricing" rel="nofollow noopener">Oginify pricing page</a> as of August 2026`。
 
 ---
 
@@ -42,7 +42,7 @@
 
 | 正确 | 反例 |
 |------|------|
-| 「1200×630 at 1.91:1 is the large-card size X, LinkedIn, Slack, Discord, iMessage and Facebook render [Source: https://oginify.com/]」 | 「1200×630 是标准」（无来源） |
+| 「1200×630 at 1.91:1 is the large-card size X, LinkedIn, Slack, Discord, iMessage and Facebook render, per the <a href="https://ogp.me/" rel="nofollow noopener">Open Graph protocol</a>」 | 「1200×630 是标准」（无来源） |
 | 「anything narrower than 600px on the long edge falls back to a small thumbnail」+ 来源 | 无来源的裁剪行为 claim |
 
 ---
@@ -83,7 +83,7 @@
 | magic / magical | 具体机制（读取页面品牌 → 生成变体） |
 | zero-work / zero-effort | 「removes the design step」「the URL is the entire input」 |
 | promptless（作为绝对 claim） | 「no prompt box on the home page」+ as-of |
-| 「自动提升 CTR 300%」 | 无来源 CTR 承诺一律禁；如需写须 `[Source: URL]` + 限定 |
+| 「自动提升 CTR 300%」 | 无来源 CTR 承诺一律禁；如需写须描述性内链 + 限定（见 citations.md §1 P0） |
 | revolutionary / game-changing | 具体改进（native reasoning、文本渲染） |
 
 ---

@@ -79,6 +79,7 @@ def remove_faq_blocks(text: str) -> str:
 
 def count_words(text: str) -> int:
     text = re.sub(r"```[\s\S]*?```", " ", text)
+    text = re.sub(r"<[^>]+>", " ", text)  # strip HTML tags (descriptive inline links)
     text = re.sub(r"`[^`]+`", " ", text)
     text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
     text = re.sub(r"[#>*_\-\|]", " ", text)

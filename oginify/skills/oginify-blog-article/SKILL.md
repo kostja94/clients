@@ -8,7 +8,7 @@ description: >
   Covers Track S (strategic SEO) and Track T (tool/reference long-tail).
   Do NOT load for title/description-only tasks (future oginify-meta-title-description).
 metadata:
-  version: 1.0.0
+  version: 1.0.4
   project: oginify.com
   locale: en
   market: B2B2C founders/marketers/devs (global)
@@ -69,7 +69,7 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 |---|--------|:----:|:--------:|:--------:|
 | 1 | Article Brief（含 SuccessMetric、MoatAssetPlanned、AnswerBlocks） | ✅ | ✅ | ✅ |
 | 2 | Research Log（R1–R3 + Synthesis） | 简 | ✅ | ✅ 完整 |
-| 3 | 成稿 `oginify/blog/NN-{slug}.md`（NN 见 content-graph，当前 **02**） | ✅ | ✅ | ✅ |
+| 3 | 成稿 `oginify/blog/NN-{slug}.md`（NN 见 content-graph，当前 **05**） | ✅ | ✅ | ✅ |
 | 4 | SelfCheck 表（Hard Gates + 12 维加权评分） | ✅ | ✅ | ✅ |
 | 5 | Source Map | ✅ | ✅ | ✅ |
 | 6 | SERP Fit | 简 | ✅ | ✅ |
@@ -504,7 +504,7 @@ Gate 0R Pass → Phase 1 Brief
 | 站内 | `/blog/{slug}`、`/`、`/open-graph-validator`、`/bulk-og-image-generator` 等白名单 |
 | Comparison / Ranking / Alternative | 三分类框架 + 对比表 + ≥1「何时不选 Oginify」（P5） |
 | Tutorial | 步骤用祈使句；每大步后接「为什么这步重要」 |
-| 引用 | 按 `references/citations.md` P0/P1/P2 分级；P0 数字必须 `[Source: URL]` |
+| 引用 | 按 `references/citations.md` P0/P1/P2 分级；P0 数字必须使用**上下文描述性内链**（`<a href="URL" rel="nofollow noopener">描述性锚文本</a>` 或站内 `[锚文本](/path)`），禁 `[Source: URL]` 后缀 |
 | 产品提及 | 不超过 §2 类型上限 |
 | 段落 | ≥3 长段（4–8 句）；连续短段 ≤2；段间衔接率 ≥70%；伪列表 = 自动 Fail |
 | 内链 | blog ≥2；Spoke 链回 Hub；canonical 概念 1–2 句 + link |
@@ -669,9 +669,9 @@ Fail → 改文或标注差异原因。
 |----|-----|
 | **Hub slug** | `what-is-open-graph-image` |
 | **Cluster ID** | `og-image` |
-| **下一文件序号** | **02** |
-| **下一篇 P0 优先级** | `02-what-is-open-graph-image.md`（Hub，Glossary） |
-| **已发布** | 1 篇（#01 `best-ai-og-image-generators`） |
+| **下一文件序号** | **05** |
+| **下一篇 P0 优先级** | `05-open-graph-image-size.md`（Track T SizeGuide） |
+| **已发布** | 4 篇（#01 Ranking + #02 Hub + #03 HowTo + #04 Mission） |
 | **规划中** | Hub #02 + Ranking/HowTo/SizeGuide/MetaGuide/DeveloperGuide/Alternative |
 
 ---
@@ -696,7 +696,7 @@ Oginify URL-first 机制 · 免费额度/定价 as-of · social-cards-skills 开
 
 ## §7 文件命名与 README 同步
 
-- 文件名：`NN-{slug-kebab}.md`，NN 两位递增（当前下一 **02**）
+- 文件名：`NN-{slug-kebab}.md`，NN 两位递增（当前下一 **05**）
 - slug 与 frontmatter 一致；常青；无禁词
 - 图片：frontmatter 不含 `image` 字段（图片由 CMS/OG 单独管理）
 - 成稿后提示人类更新 `blog/README.md`
@@ -779,6 +779,10 @@ Oginify URL-first 机制 · 免费额度/定价 as-of · social-cards-skills 开
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| **1.0.4** | 2026-08-15 | #04 重构：`oginify-mission` → `introducing-oginify`（Mission → Announcement，lite Mode）；content-graph/README 同步 |
+| **1.0.3** | 2026-08-15 | 引用规范修订：P0 改为**上下文描述性内链**（HTML `<a rel="nofollow noopener">` 或站内 markdown），禁 `[Source: URL]` 后缀；同步 4 篇文章全部引用；link_checker 增加 HTML 链接检查，word_count 去除 HTML 标签 |
+| **1.0.2** | 2026-08-18 | dogfood #03 `how-to-create-open-graph-image`（HowTo）+ #04 `oginify-mission`（Announcement）；content-graph 下一序号 05 |
+| **1.0.1** | 2026-08-16 | dogfood #02 `what-is-open-graph-image`（Hub Glossary）；content-graph 下一序号 03 |
 | **1.0.0** | 2026-08-15 | 初版：双轨 Track S/T · 12 类路由 · G1–G7 + P1–P6 + C1–C4 · 9 Phase + 5 Gate · Mode + Investment Score + BLUF · 加权 12 维评分（S/A/B/C/D）· tools/ 验证脚本 · evals 回归套件 · 基于 oginify.com 现网事实（免费 6 张/天、$0.99/$7.90/$29 定价、social-cards-skills 开源） |
 
 ---

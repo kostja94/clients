@@ -72,7 +72,7 @@
 ## 5. 合规红线
 
 - 禁「全球首个」「唯一」「自动提升 CTR 300%」（G5/P6）
-- 竞品定价必须 `as of {month} {year}` + `[Source: URL]`（G3/P1）
+- 竞品定价必须 `as of {month} {year}` + **上下文描述性内链**（G3/P1，见 citations.md §1）
 - 不称竞品 dead/failed；不贬低（G7/P5）
 - AI 生成视觉提及需标注（若文中提到 AI 生成图）
 - 1200×630 规格 claim 链 oginify.com 或 ogp.me（P3）

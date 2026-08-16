@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
+HTML_LINK_RE = re.compile(r'<a\s+href="([^"]+)"[^>]*>(.*?)</a>', re.I)
 RAW_URL_RE = re.compile(r"(?<!\]\()https?://[^\s\)]+")
 
 
@@ -24,6 +25,29 @@ def check_links(text: str, forbidden: list[str]) -> int:
     seen: set[str] = set()
 
     for i, line in enumerate(lines, start=1):
+        # HTML descriptive inline links (e.g. <a href="URL" rel="nofollow noopener">text</a>)
+        for url, _anchor in HTML_LINK_RE.findall(line):
+            url = url.strip()
+            if not url or url in seen:
+                continue
+            seen.add(url)
+            if url.startswith("#"):
+                continue
+            if url in ("", "#", "TODO", "TBD"):
+                emit("FAIL", "P0-G2", f"empty or placeholder link: ({url})", i)
+                fails += 1
+                continue
+            if url.startswith("/"):
+                for prefix in forbidden:
+                    if url.startswith(prefix) or prefix in url:
+                        emit("FAIL", "P0-G6", f"internal link to forbidden path: {url}", i)
+                        fails += 1
+                continue
+            parsed = urlparse(url)
+            if not parsed.scheme or not parsed.netloc:
+                emit("FAIL", "P0-G2", f"malformed URL: {url}", i)
+                fails += 1
+
         for _anchor, url in LINK_RE.findall(line):
             url = url.strip()
             if not url or url in seen:

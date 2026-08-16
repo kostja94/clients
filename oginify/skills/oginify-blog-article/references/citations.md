@@ -9,9 +9,34 @@
 
 | 级别 | 触发条件 | 要求 |
 |------|---------|------|
-| **P0 — 必须引用** | 竞品定价、免费额度、平台尺寸规格、产品机制数字、CTR/统计数字 | HTML 链到原始来源；跨篇重复数字每篇都要链 |
+| **P0 — 必须引用** | 竞品定价、免费额度、平台尺寸规格、产品机制数字、CTR/统计数字 | **上下文描述性内链**链到原始来源；跨篇重复数字每篇都要链 |
 | **P1 — 应当引用** | 行业趋势、竞品版本/GA 状态、产品能力描述、"typically" 类声明 | 链官方 docs/changelog；无法链则 `as of {date}` + "typically" |
 | **P2 — 可不引用** | 原创决策框架、作者测试观察、从已引用数据衍生的分析 | 标注方法论 `based on testing n=X` 或 anecdotal |
+
+### P0 引用格式（硬性）
+
+**禁止 `[Source: URL]` 后缀形式**。P0 来源必须嵌入句子，作为**上下文描述性内链**：
+
+- 站外来源 → `<a href="URL" rel="nofollow noopener">描述性锚文本</a>`
+- 站内来源 → `[描述性锚文本](/path)`
+
+```markdown
+✅ 正确（站外，描述性锚文本）：
+…six generations a day per signed-in account, per the
+<a href="https://oginify.com/pricing" rel="nofollow noopener">Oginify pricing page</a>.
+
+✅ 正确（站内）：
+…which is the size the [Oginify homepage](/) ships by default.
+
+❌ 禁止：
+…six generations a day per signed-in account [Source: https://oginify.com/pricing].
+```
+
+**锚文本要求**：
+- 必须是描述性的（"the Oginify pricing page"、"the Open Graph protocol"、"Gemini API pricing"）
+- 禁 "click here" / "learn more" / "source"
+- 同一 URL 在同一篇内避免重复链接（第二处不再链或换锚文本）
+- Oginify 自有页（首页/工具页/validator）用站内 markdown 链接；`/pricing` 不作正文链接（G6 forbidden），用站外 `https://oginify.com/pricing` 描述性锚文本
 
 ---
 
@@ -97,7 +122,8 @@
 
 | Fail | 修复 |
 |------|------|
-| "6 张/天" 无来源 | 加 "per Oginify pricing (as of {date})" |
-| 竞品定价无链 | 链 pricing 页 + as-of |
+| "6 张/天" 无来源 | 加描述性内链：per the <a href="https://oginify.com/pricing" rel="nofollow noopener">Oginify pricing page</a> (as of {date}) |
+| 竞品定价无链 | 描述性锚文本链 pricing 页 + as-of |
 | "CTR 提升 300%" 无来源 | 标 estimated 或删具体数字 |
-| "1200×630 是标准" 无来源 | 链 ogp.me 或 oginify.com |
+| "1200×630 是标准" 无来源 | 描述性内链 ogp.me 或 oginify.com |
+| `[Source: URL]` 后缀残留 | 改为上下文描述性内链（§1 P0 格式） |

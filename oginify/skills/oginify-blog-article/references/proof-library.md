@@ -36,7 +36,7 @@
 
 ## 3. 使用规则
 
-- P0 数字必须在正文出现时带 `[Source: URL]`（citations.md §1）
+- P0 数字必须在正文出现时带**上下文描述性内链**（citations.md §1）
 - 所有数字 claim 须带 `as of {month} {year}`（P1 Gate）
 - 竞品定价以官方 pricing 页为准；第三方评测数据需交叉验证后使用
 - 本库数字为 R3 基线；每次创作 Phase 0R 须重搜验证（价格可能变动）

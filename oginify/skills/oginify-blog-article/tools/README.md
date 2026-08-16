@@ -30,7 +30,7 @@ python skills/oginify-blog-article/tools/link_checker.py blog/NN-{slug}.md --for
 
 | Check | 规则 |
 |-------|------|
-| G2 | 无空/占位/格式错误链接 |
+| G2 | 无空/占位/格式错误链接（同时检查 markdown `[text](url)` 与 HTML `<a href="url">` 描述性内链） |
 | G6 | 无 forbidden 前缀（默认 /pricing,/vs,/templates） |
 
 ## 依赖

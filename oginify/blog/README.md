@@ -61,6 +61,9 @@ Phase 6 — Delivery             (Editor / Auditor)
 | 序号 | 文件 | Slug | 类型 | 词数 | 状态 | 说明 |
 |:---:|------|------|------|------|:---:|------|
 | 01 | [01-best-ai-og-image-generators.md](./01-best-ai-og-image-generators.md) | `best-ai-og-image-generators` | Ranking | ~3.5k | ✅ | 三分类框架（URL-first / 通用生图 / 代码驱动）+ Oginify #1 + 每竞品优势 |
+| 02 | [02-what-is-open-graph-image.md](./02-what-is-open-graph-image.md) | `what-is-open-graph-image` | Glossary | ~2.1k | ✅ | **Hub** — og:image 唯一视觉元数据论证 + 2026 AI 转折 |
+| 03 | [03-how-to-create-open-graph-image.md](./03-how-to-create-open-graph-image.md) | `how-to-create-open-graph-image` | HowTo | ~2.1k | ✅ | 双路径工作流：手动 vs 2026 AI（paste URL → 4 变体） |
+| 04 | [04-introducing-oginify.md](./04-introducing-oginify.md) | `introducing-oginify` | Announcement | ~1.6k | ✅ | 产品发布公告：URL-first 生成器上线，免费试用 + 按卡付费 + 开源 |
 
 ---
 
@@ -77,15 +80,15 @@ Phase 6 — Delivery             (Editor / Auditor)
         ┌────────────────────────────────┼───────────────────────────────┐
         │                    │                    │             │
   ┌─────▼──────┐   ┌─────────▼───────┐   ┌────────▼───────┐   ┌─────▼──────────┐
-  │ 01 Ranking │   │ 03 HowTo        │   │ 04 SizeGuide   │   │ 05 MetaGuide   │
-  │ best AI    │   │ how to create   │   │ og image size  │   │ og:image tags  │
-  │ OG gens    │   │ OG image        │   │ (Track T)      │   │ + validator    │
+  │ 01 Ranking │   │ 03 HowTo        │   │ 04 Introducing │   │ 05 SizeGuide   │
+  │ best AI    │   │ how to create   │   │ oginify launch  │   │ og image size  │
+  │ OG gens    │   │ OG image        │   │ story           │   │ (Track T)      │
   └────────────┘   └─────────────────┘   └────────────────┘   └────────────────┘
 ```
 
 **P0 关键词覆盖**：best AI open graph image generator · open graph image size · what is open graph image · og image generator。
 
-**发布节奏**：01（08-15）→ 02 Hub → 03 HowTo → 04 SizeGuide（Track T）→ 05 MetaGuide。
+**发布节奏**：01（08-15）→ 02 Hub（08-16）→ 03 HowTo（08-17）→ 04 Mission（08-18）→ 05 SizeGuide（Track T）→ 06 MetaGuide。
 
 ---
 

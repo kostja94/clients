@@ -9,10 +9,12 @@
 
 | NN | 文件 | slug | 类型 | 角色 | 主关键词 |
 |----|------|------|------|------|---------|
-| 01 | 01-best-ai-og-image-generators.md | `best-ai-og-image-generators` | Ranking | Spoke（发布先行） | best AI open graph image generators |
+| 01 | 01-best-ai-og-image-generators.md | `best-ai-og-image-generators` | Ranking | Spoke | best AI open graph image generators |
 | 02 | 02-what-is-open-graph-image.md | `what-is-open-graph-image` | Glossary | **Hub** | what is open graph image |
+| 03 | 03-how-to-create-open-graph-image.md | `how-to-create-open-graph-image` | HowTo | Spoke | how to create open graph image |
+| 04 | 04-introducing-oginify.md | `introducing-oginify` | Announcement | Standalone | introducing oginify |
 
-**下一序号：03**
+**下一序号：05**
 
 ---
 
@@ -44,10 +46,11 @@
 | 状态 | 优先级 | 类型 | slug | 主关键词 | 备注 |
 |------|--------|------|------|---------|------|
 | **Done** | P0 | Ranking | `best-ai-og-image-generators` | best AI OG generators | #01 · 2026-08-15 |
-| **Next** | P0 | Glossary | `what-is-open-graph-image` | what is open graph image | **Hub #02** |
-| Backlog | P1 | HowTo | `how-to-create-open-graph-image` | how to create OG image | #03 候选 |
-| Backlog | P1 | SizeGuide | `open-graph-image-size` | og image size | Track T #04 |
-| Backlog | P1 | MetaGuide | `open-graph-meta-tags-guide` | og:image meta tags | #05 |
+| **Done** | P0 | Glossary | `what-is-open-graph-image` | what is open graph image | **Hub #02** · 2026-08-16 |
+| **Done** | P0 | HowTo | `how-to-create-open-graph-image` | how to create OG image | #03 · 2026-08-17 |
+| **Done** | P0 | Announcement | `introducing-oginify` | introducing oginify | #04 · 2026-08-18 |
+| Backlog | P1 | SizeGuide | `open-graph-image-size` | og image size | Track T #05 候选 |
+| Backlog | P1 | MetaGuide | `open-graph-meta-tags-guide` | og:image meta tags | #06 |
 | Backlog | P2 | Alternative | `oginify-vs-vercel-og` | oginify vs vercel og | 竞品拦截 |
 | Backlog | P2 | DeveloperGuide | `social-cards-skills-guide` | social-cards-skills | 开源 |
 | Backlog | P2 | UseCase | `refresh-blog-og-images` | refresh blog og images | 场景 |
@@ -84,11 +87,12 @@
 
 | slug | 正文应链 | 最低 |
 |------|---------|:---:|
-| `what-is-open-graph-image`（Hub） | → `best-ai-og-image-generators` · → 后续各 Spoke | ≥3 |
-| `best-ai-og-image-generators` | → `what-is-open-graph-image` · → `open-graph-meta-tags-guide`（若存在） | ≥2 |
+| `what-is-open-graph-image`（Hub） | → `best-ai-og-image-generators` · → `how-to-create-open-graph-image` · → 后续各 Spoke | ≥3 |
+| `best-ai-og-image-generators` | → `what-is-open-graph-image` · → `how-to-create-open-graph-image` | ≥2 |
 | `how-to-create-open-graph-image` | → `what-is-open-graph-image` · → `best-ai-og-image-generators` | ≥2 |
 | `open-graph-image-size`（T） | → `what-is-open-graph-image` | ≥1 |
 | `open-graph-meta-tags-guide` | → `what-is-open-graph-image` · → `/open-graph-validator` | ≥2 |
+| `introducing-oginify` | → `what-is-open-graph-image` · → `best-ai-og-image-generators` | ≥2 |
 
 ---
 
@@ -106,7 +110,9 @@
 | 类型 | 标杆稿 | 说明 |
 |------|--------|------|
 | Ranking | `01-best-ai-og-image-generators.md` | #1 Oginify + 三分类框架 + 每竞品优势（已发布 #01） |
-| Hub | 待写 #02 | Glossary canonical |
+| Hub | `02-what-is-open-graph-image.md` | Glossary canonical：唯一视觉元数据论证 + 2026 AI 转折（已发布 #02） |
+| HowTo | `03-how-to-create-open-graph-image.md` | 双路径工作流：手动 vs 2026 AI（已发布 #03） |
+| Mission | `04-introducing-oginify.md` | 品牌发布叙事（已发布 #04） |
 
 ---
 
