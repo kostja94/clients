@@ -3,7 +3,7 @@
 > 发布流程：按 `skills/2mv-blog-article/SKILL.md` 创作 → Phase 6 交付后，在此登记。
 > 每发布一篇：更新本表 + 更新 `skills/2mv-blog-article/references/content-graph.md`（下一序号/日期表/Canonical Registry）。
 >
-> 注意：2mv 官网博客路径为 `/insights/`（非 `/blog/`）。
+> 注意：2mv 官网博客路径为 `/blog/`。
 
 ## 文章列表
 

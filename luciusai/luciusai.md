@@ -118,6 +118,7 @@ Lucius 的独特定位——[社区原生 AI 队友] + [跨平台统一身份] +
 | 社区机器人 | MEE6、Dyno、Carl-bot | Lucius 有真正的 AI 理解和知识库，而非仅有规则/命令触发 |
 | 自定义机器人构建器 | Botpress、Voiceflow | Lucius 零配置上线（5 分钟 vs 数小时搭建），无需对话流设计 |
 | 社区管理平台 | Common Room、Orbit | Lucius 是 AI 执行者（直接回答问题），非仅分析/监控工具 |
+| 相邻赛道（非直接对标） | [Bloome](https://bloome.im/)、[Grok Bot](https://x.ai/news/introducing-grok-bot) | 前者：团队内多 Agent 群聊；后者：个人后端 Agent（云电脑 + 工具登录）。均非 Discord/Telegram 社区 Bot；见 [competitors §3.4](./luciusai-competitors.md#34-相邻赛道多-agent-协作--个人后端-agent) |
 
 **市场背景**：Discord 2 亿+ MAU、Telegram 9 亿+ MAU、Slack 3,850 万+ DAU，社区运营需求激增。企业社区从"nice to have"变为"growth channel"，但运营人力不足，AI 队友成为刚需。
 

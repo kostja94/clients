@@ -1,34 +1,43 @@
 ---
 name: moras-blog-article
 description: >
-  Load when user asks to create, draft, or outline a Moras blog article
-  for moras.ai/blog — any topic (TikTok Shop affiliates, product updates,
-  industry trends, company news, e-commerce guides, etc.).
-  Also load for blog-only title/description optimization
-  (references/meta-title-description.md). Do NOT load for TVG landing pages
-  or non-blog site metadata.
+  Create Moras blog articles (moras.ai/blog) from brief to draft. Self-contained
+  skill for client delivery — 9 Phase workflow, Mode, Investment Score, Phase 0R,
+  I1–I5 Income Claim Gate, 8 TikTok Shop article types, tools/ validators,
+  portable/ audit bundle. Also handles title/description-only tasks via
+  meta-title-description.md.
 metadata:
-  version: 1.3.1
+  version: 2.1.0
   project: moras.ai
   locale: en
   market: US TikTok Shop (default; overridable per article topic)
-  load-rule: progressive-disclosure
-  max-primary-lines: 460
   self-contained: true
+  load-rule: progressive-disclosure
+  max-primary-lines: 580
+  complements: ~
+  forbidden-reads:
+    - ../../moras-*.md
+    - blog/README.md
 ---
 
 # Moras Blog Article Creation
 
-为 **https://moras.ai/blog/** 从选题到英文成稿。**本 skill 文件夹可单独分发**：通用 Research / 终审在 `references/portable/`。**范围**：仅英文 `/blog/{slug}`。
+为 **https://moras.ai/blog/** 从选题到英文成稿。
 
-## 渐进式加载规则（硬性）
+**硬性规则：Agent 只读本 skill 文件夹内文件**（含 `references/`、`references/portable/`、`tools/`、`evals/`），禁止读取 skill 文件夹外的仓库文档（见 `forbidden-reads`）。发布前终审用 `references/portable/final-audit.md`。
 
-```
-Agent 默认只读本文件。
-Phase 需要细节时，按指针读取 references/{file}.md（一次最多 2 个）。
-禁止一次性加载全部 references。
-读完用完即弃——不跨 Phase 保留 reference 上下文。
-```
+**本文件夹自包含**：项目配置、G1–G7 + I1–I5、8 类路由、Topic Scope、内容图谱、引用分级、表现形式、9 Phase 工作流、12 维创作自检、portable/ 通用 bundle、tools/ 验证脚本均可独立分发给客户。
+
+**渐进式加载**：Agent 默认只读本文件。Phase 需要细节时，按指针读取 `references/{file}.md`（一次最多 2 个）。禁止一次性加载全部 references。
+
+**六角色换帽**（Phase 4 与 Phase 5 **分轮**，禁止 Draft 同轮自我放行 Gate C）：
+
+| Phase | 角色 |
+|-------|------|
+| 0 / 0R | Strategist / Researcher |
+| 1–3 | Strategist + SME |
+| 4 | Writer |
+| 5 / audit | Editor / Auditor |
 
 ---
 
@@ -38,412 +47,376 @@ Phase 需要细节时，按指针读取 references/{file}.md（一次最多 2 �
 
 ```
 按 moras-blog-article skill，为关键词 "{primary keyword}" 创建一篇
-{Pillar|Setup|Production|Research|Framework|Strategy|SideHustle|Diagnosis} 文章。
+{Pillar|Setup|Production|Research|Framework|Strategy|SideHustle|Diagnosis|PlatformOps} 文章。
 发布目的：{SEO|品牌|转化}。目标读者：{描述}。
+Mode：{lite|standard|flagship，未指定默认 standard}
+Topic Scope：{tiktok-shop-affiliate|moras-product|ecommerce-industry|other}
+Intent lane：{Video|Research|Both}
 ```
+
+### 输入
+
+| 输入 | 必填 | 说明 |
+|------|:---:|------|
+| 主关键词 | ✅ | 决定 §2 类型路由 |
+| 文章类型 | 可选 | 未给则 Agent 按 §2 推断 |
+| Mode | 可选 | Pillar/Framework/Research→flagship；Platform Ops→lite |
+| Topic Scope | 推荐 | 决定 I1–I5 哪些 Gate 生效 |
+| Intent lane | 推荐 | Video / Research / Both |
+| 竞品参考 URL | 推荐 | Phase 0R |
+
+### 输出（Phase 6 交付物，按 Mode）
+
+| # | 交付物 | lite | standard | flagship |
+|---|--------|:----:|:--------:|:--------:|
+| 1 | Article Brief | ✅ | ✅ | ✅ |
+| 2 | Research Log（R1–R3 + Synthesis） | 简 | ✅ | ✅ |
+| 3 | 成稿 `moras/blog/{folder}/NN-{working-slug}.md`（NN **69**） | ✅ | ✅ | ✅ |
+| 4 | SelfCheck（H0–H4 + I1–I5 + 12 维） | ✅ | ✅ | ✅ |
+| 5 | Source Map | ✅ | ✅ | ✅ |
+| 6 | SERP Fit | 简 | ✅ | ✅ |
+| 7 | Internal Link Plan | — | ✅ | ✅ |
+| 8 | Cannibalization Check（blog + TVG） | ✅ | ✅ | ✅ |
+| 9 | 终审指令（`references/portable/final-audit.md`） | ✅ | ✅ | ✅ |
+| 10 | Post-publish Metric Spec | — | ✅ | ✅ |
+| 11 | 提示人类更新 `blog/README.md` | ✅ | ✅ | ✅ |
+
+与用户沟通可用中文；**正文必须为英文**。
 
 ### 何时不用本 skill
 
 | 场景 | 改用 |
 |------|------|
+| 仅优化 title/description | **`references/meta-title-description.md`**（禁止改正文） |
 | 已有完整稿，仅需发布前终审 | `references/portable/final-audit.md` |
-| TVG 落地页长文（`/tiktok-video-generator/*`） | TVG 模板体系 |
-| 非博客页 metadata（首页 / TVG / 工具 / 法务） | 见 `_archive/meta-title-description/` 历史稿或产品仓 SEO |
-| 非 moras.ai 博客 | 通用 blog skill |
-| 非英文内容 | 另建 ZH skill |
+| TVG 落地页（`/tiktok-video-generator/*`） | TVG 模板体系 |
+| 非 moras.ai 博客 | 其他项目 blog skill |
 
 ### 仅优化 title / description
 
-加载本 skill 后 **只读** `references/meta-title-description.md`，按其中独立任务工作流执行；**禁止**改 H2 / TL;DR / FAQ / 正文，**禁止**跑完整 Phase 0–6。
-
-### Agent 执行顺序
-
-```
-§2 类型路由 → §3 Phase 0–6 顺序执行 → 缺信息时先问 Phase 0 五必问 → Gate 不过则 STOP
-```
-
-与用户沟通可用中文；正文必须为英文。
+加载本 skill 后 **只读** `references/meta-title-description.md`；**禁止**改 H2 / TL;DR / FAQ / 正文；**禁止**跑完整 Phase 0–6。
 
 ---
 
-## §1 项目配置与 Gate 清单
+## §1 项目配置速查
 
-> **完整配置 + G1–G7 + Income Claim Gate + URL 白名单 → `references/project-config.md`**
+> **完整配置 + G1–G7 + I1–I5 → `references/project-config.md`**
+> **产品事实 + TVG 白名单 → `references/product-competitors.md`**
+> **Cluster 文件夹路由 → `references/topic-cluster-layout.md`**
 
-**Phase 0 / Phase 5 前加载。** 核心阻断项速查：
+| 配置项 | Moras 值 |
+|--------|----------|
+| **blogLayout** | cluster-folders（`moras/blog/{folder}/NN-{slug}.md`；Cluster D 在根目录） |
+| **博客前缀** | `/blog/`（**frontmatter `slug` 已含此前缀**） |
+| **Pillar Hub** | `/blog/how-to-make-money-on-tiktok` |
+| **下一序号 NN** | **69**（见 `content-graph.md` §4.1） |
+| **Primary ICP** | US TikTok Shop affiliate creators |
+| **作者默认** | `Kostja` |
+| **日期策略** | `isoDate` 全库唯一；一天一篇；新稿 = 最晚 date +1 天 |
+| **禁止内链** | `/use-cases/*` `/app/*` 等 + forthcoming（G6） |
+| **内链 SSOT** | `references/internal-links.md`（R1–R7 + 分布均质 + 审计） |
 
-| Gate | 项数 | 阻断条件 |
+### G1–G7 + I1–I5 阻断速查
+
+| Gate | 项数 | 说明 |
 |------|:---:|------|
-| **G1–G7** | 7 | 事实错误 / 死链 / 无来源数字 / 竞品状态错误 / 产品夸大 / 内链未上线 / 品牌风险 |
-| **I1–I5** | 5 | 收入承诺 / 证言滥用 / 政策无时效 / Who-How-Why 缺失 / 复述 SERP |
+| **G1–G7** | 7 | 事实 / 死链 / 无来源数字 / 竞品状态 / 夸大 / 内链 / 品牌 |
+| **I1–I5** | 5 | 收入承诺 / 证言 / 政策时效 / Who-How-Why / 复述 SERP |
 
-G1–G7 + I1–I5 全部 Pass 方可进入健康分评估。任一 Fail = 不得交付。
+I1–I5 在 Topic Scope ≠ tiktok-shop-affiliate 时按 project-config 跳过规则。**全部 Pass 方可 Gate C**。
+
+---
+
+## §1B Mode 系统
+
+| Mode | 适用 | Phase 深度 |
+|------|------|-----------|
+| **lite** | Platform Ops、短诊断 | 最小 Research；SERP Fit 简版 |
+| **standard** | Setup / Production / Strategy / Side Hustle / Diagnosis | 完整 0R + Extractability |
+| **flagship** | Pillar / Framework / Research | 全流程 + Moat + Excellence 必须 Yes |
+
+默认：用户未指定 → **standard**。§2 路由表指定各类型默认 Mode。
 
 ---
 
 ## §2 文章类型路由
 
-> **8 类路由表 + H2 模板 + Frontmatter Schema + Voice/合规 + Who/How/Why → `references/article-types.md`**
+> **8 类路由 + H2 模板 + Voice/Who/How/Why → `references/article-types.md`**
 
-**Phase 0 / Phase 3 前加载。** 速查：
+| 类型 | 词数 | 产品上限 | 默认 Mode | `--intent` / `--min` |
+|------|------|:---:|:---:|------|
+| **Pillar** | 3500–5000 | ≤20% | flagship | `pillar` / `--min 3500` |
+| **Setup** | 2500–3500 | ≤25% | standard | `howto` / `--min 2500` |
+| **Production** | 2800–3800 | ≤35% | standard | `product` / `--min 2800` |
+| **Research** | 2800–3500 | ≤30% | flagship | `research` / `--min 2800` |
+| **Framework** | 2500–3200 | ≤25% | flagship | `framework` / `--min 2500` |
+| **Strategy** | 2500–3200 | ≤30% | standard | `howto` / `--min 2500` |
+| **Side Hustle** | 2200–3000 | ≤30% | standard | `howto` / `--min 2200` |
+| **Diagnosis** | 2500–3200 | ≤25% | standard | `diagnosis` / `--min 2500` |
+| **Platform Ops** | 1800–2500 | ≤15% | lite | `announcement` / `--min 1800` |
 
-| 类型 | 词数 | 产品提及上限 | 参考 slug |
-|------|------|-------------|-----------|
-| Pillar | 3500–5000 | ≤20% | `how-to-make-money-on-tiktok` |
-| Setup | 2500–3500 | ≤25% | `tiktok-shop-setup` |
-| Production | 2800–3800 | ≤35% | `faceless-tiktok-shop-videos` |
-| Research | 2800–3500 | ≤30% | `tiktok-product-research` |
-| Framework | 2500–3200 | ≤25% | `tiktok-video-hooks` |
-| Strategy | 2500–3200 | ≤30% | `tiktok-captions-hashtags` |
-| Side Hustle | 2200–3000 | ≤30% | `tiktok-affiliate-side-hustle` |
-| Diagnosis | 2500–3200 | ≤25% | `tiktok-shop-no-sales` |
+**路由规则**：`how to make money` → Pillar；`setup` → Setup；faceless → Production；`product research` → Research；hooks + framework → Framework；captions/hashtags → Strategy；`side hustle` → Side Hustle；`no sales` → Diagnosis；TikTok 平台操作 → Platform Ops。
 
-**路由规则**：`how to make money` / monetization map → Pillar；`setup` / seller vs affiliate → Setup；`without filming` / faceless → Production；`product research` / AI 选品 → Research；`hooks` + framework → Framework；`captions` / `hashtags` → Strategy；`side hustle` / 90-day → Side Hustle；`no sales` / diagnosis → Diagnosis。
+**非 TikTok Shop 话题**：Phase 0 声明 Topic Scope；跳过不适用的 I Gate；保留 G1–G7 + Moras Voice。
 
-**非 TikTok Shop 话题**（产品更新 / 公司动态 / 行业趋势 / 通用电商等）：以上 8 类为 TikTok Shop affiliate 簇专用。若文章主题不属此簇，Agent 在 Phase 0 声明 topic scope ≠ TikTok Shop affiliate，然后按最接近的类型模板创作——跳过 TikTok-Shop-only 约束（如 I3），保持 Moras Voice 和通用规则（G1–G7、引用标准、表现形式）。
-
----
-
-## §3 创作工作流（7 Phase + 3 Gate）
-
-### 流程总览
-
-```
-Phase 0 — Intake & Gate A ─── 不通过 → STOP
-Phase 1 — Article Brief
-Phase 2 — Slug Design & Gate B ─── 不通过 → 重选 slug
-Phase 3 — Outline
-Phase 4 — Draft
-Phase 5 — SelfCheck & Gate C ─── 不通过 → 修复
-Phase 6 — Delivery
-```
+**信息增量**：相对 SERP Top3 须 **≥2 项**独有增量（框架 / 决策表 / 内部观察 / 跨篇边界）。
 
 ---
 
-### Phase 0 — Intake & Gate A（选题门禁）
+## §3 创作工作流（9 Phase + 5 Gate）
+
+```
+Phase 0  ─ Intake & Gate A         (Mode + Topic Scope + Investment Score + 六必问)
+    ↓ PASS
+Phase 0R ─ Research 三角 & Gate 0R  (R1→R2→R3→Synthesis)
+    ↓ PASS / ❌ → §3.G 回溯
+Phase 1  ─ Article Brief
+Phase 2  ─ Slug、Date & Gate B
+    ↓ PASS / ❌ → §3.G 回溯
+Phase 3  ─ Outline
+Phase 3.5─ Outline 交叉检查（同批 ≥2 篇强制）
+    ↓ PASS / ❌ → §3.G 回溯
+Phase 4  ─ Draft
+Phase 5  ─ SelfCheck & Gate C（H0–H4 + I1–I5 + 12 维）
+    ↓ PASS / ❌ → §3.G 回溯
+Phase 5.5─ Cross-Article Audit（同批 ≥2 篇强制）
+Phase 6  ─ Delivery
+```
+
+---
+
+### Phase 0 — Intake & Gate A
+
+> **Investment Score → `references/portable/investment-score.md`**
+> **Gate 细则 → `references/portable/gates-master.md`**
 
 #### 0.0 话题范围判定（先于一切）
 
-Agent 在收到创作任务后，第一步判定话题范围：
+| 话题范围 | 判定信号 | Gate 调整 |
+|---------|---------|-----------|
+| **tiktok-shop-affiliate**（默认） | TikTok Shop / affiliate / 佣金 / 选品 | G1–G7 + I1–I5 全生效 |
+| **moras-product** | Moras update / changelog / company | 跳过 I3/I5 |
+| **ecommerce-industry** | e-commerce / AI trends | 跳过 I1–I3 |
+| **other** | 不匹配以上 | 补问 ICP 与 market |
 
-| 话题范围 | 判定信号 | 适用规则 |
-|---------|---------|---------|
-| **TikTok Shop affiliate**（默认） | 关键词含 TikTok Shop/affiliate/佣金/选品/视频/带货 | 全部规则生效（G1–G7 + I1–I5 + TikTok 2026 事实 + affiliate-first） |
-| **Moras 产品/公司** | 关键词含 Moras update/changelog/company/team | 跳过 I3/I5（非 TikTok 政策）；Who/How/Why 简化；Voice 仍适用 |
-| **通用电商/AI 行业** | 关键词含 e-commerce/AI trends/industry | 跳过 I1–I3（非收入/证言/TikTok 政策）；保留 G1–G7 + 引用标准 + 表现形式 |
-| **其他** | 不匹配以上 | Agent 声明 topic scope；Phase 0 五必问补问 #6「此文的 ICP 和 market 是什么？」 |
+**Phase 0 首行强制输出**：
 
-**硬规则**：Agent 在 Phase 0 第一行输出 `## Topic Scope: {scope}`，后续 Phase 据此决定加载哪些 references 和 Gate。
+```
+## Mode: lite | standard | flagship
+## Topic Scope: tiktok-shop-affiliate | moras-product | ecommerce-industry | other
+## ArticleType: Pillar | Setup | … | PlatformOps
+## InvestmentScore: {1.0–5.0} — {五因子摘要}
+## Intent lane: Video | Research | Both
+## File path: moras/blog/{folder}/NN-{working-slug}.md
+## Gate A: KEEP | MERGE → {slug} | STOP
+```
 
-#### 0.1 快速 Gate：独立成文 + 信息增量
+#### 0.1 六必问
 
-**Step 1 — KEEP/MERGE（3 条件满足 ≥2 → KEEP）**：
+| # | 问题 |
+|---|------|
+| 1 | 目标 SEO 关键词 + search intent？ |
+| 2 | 目标读者？（affiliate / 小达人 / 卖家） |
+| 3 | 发布目的？SEO / 品牌 / 转化 |
+| 4 | 竞品内容 2–3 URL？ |
+| 5 | Intent lane：Video / Research / Both？ |
+| 6 | Cluster role + Pillar link（Spoke 必填）？ |
 
-| 条件 | 判断 |
-|------|------|
-| 搜索意图独立 | 与已有文章关键词重叠 ≤50%（对照 `references/content-graph.md` §4.1 冲突表） |
-| 读者阶段不同 | Awareness / Setup / Production / Optimization / Diagnosis |
-| 深度不可压缩 | 核心论证 >800 词，无法压入他文 ≤3 段 |
+#### 0.2 Investment Score
 
-**Step 2 — 信息增量 Gate（KEEP 后强制）**：
+五因子各 1–5，算术平均。≥4.0 KEEP；3.0–3.9 降级 Mode；<3.0 MERGE/STOP。
 
-相对 SERP Top 3，本篇须至少提供 **2 项** 以下之一，否则 **STOP**：
+#### 0.3 Gate A — KEEP/MERGE
 
-- 独有分析框架（如三机制钩子、五瓶颈诊断）
-- 可执行决策表（persona × lane × 预期区间）
-- 带方法论的内部观察（n + 时间窗 + 限定语）
-- 跨篇 canonical 引用 + 新边界声明（非复制粘贴）
+三条件满足 ≥2 → KEEP（对照 `content-graph.md` §4.1）。
 
-**输出**：KEEP/MERGE 判定 + Information Gain Statement（3 句话：相对 SERP Top3 新增什么）。
+#### 0.4 信息增量 Gate
 
-#### 0.2 五必问（KEEP 通过后）
+KEEP 后：相对 SERP Top3 须 **≥2 项** 独有增量，否则 STOP。
 
-| # | 问题 | 用途 |
-|---|------|------|
-| 1 | 目标 SEO 关键词 + search intent？ | 类型路由确认 |
-| 2 | 目标读者？（无受众 affiliate / 小达人 / 卖家） | 深度与 persona |
-| 3 | 发布目的？SEO / 品牌 / 转化 | 产品提及容忍度 |
-| 4 | 同主题竞品内容 2–3 链接？ | 信息增量交叉验证 |
-| 5 | Intent lane：Video / Research / Both？ | 内链目标 |
+---
+
+### Phase 0R — Research 三角 & Gate 0R
+
+> **完整流程 → `references/portable/research-triangle.md`**
+> **SERP Fit → `references/portable/serp-fit-template.md`**
+
+```
+R1 — project-config + product-competitors + content-graph (+ proof-library 可选)
+    ↓
+R2 — Web 搜索（primary keyword → SERP Top 5 + PAA）
+    ↓
+R3 — Fetch URL（TikTok Shop 文 ≥1 官方源 + SERP Top 3–5）
+    ↓
+Synthesis + Information Gain Statement（≥2 项）
+    ↓
+Research Log + SERP Fit → Gate 0R Pass → Phase 1
+```
+
+**Mode 差异**：lite 可简版 R2/R3；flagship 须完整 R3 Top5 + ≥2 Candidate Examples。
+
+**Degraded**（WebSearch 不可用）：标注 `Research mode: Degraded`；政策/定价 P0 claim 不得写未验证数字。
 
 ---
 
 ### Phase 1 — Article Brief
 
-> **完整模板 → `references/article-types.md` §2.12 / `references/mini-example.md`**
+> **模板 + 范例 → `references/mini-example.md` · `references/article-types.md` §2.12**
 
-```markdown
-## Article Brief
-**Working title**:
-**Primary keyword**:
-**Search intent**: [ ] Informational  [ ] Commercial  [ ] Transactional
-**Article type**: {from §2 route}
-**Intent lane**: Video | Research | Both
-**Reader stage**: Awareness / Setup / Production / Optimization / Diagnosis
-**Publish goal**: SEO / Brand / Conversion
-**Target audience**:
-**Word count target**:
-**Cluster role**: Pillar / Spoke / Standalone
-**Pillar link**: /blog/how-to-make-money-on-tiktok（如适用）
-**Differentiation angle** (vs SERP top 3):
-**Competitor gap**:
-**Information Gain Statement** (from Phase 0):
-**Canonical concepts to reference** (link only, do not redefine):
-**Primary product link(s)**:
-**KEEP/MERGE**: KEEP | MERGE → {target slug}
-**Compliance notes**: {based on topic scope — US-only if TikTok Shop; affiliate-first if TikTok Shop; no TikTok official if references TikTok; testimonial rules if contains GMV claims}
-```
+Brief 必含：Mode · Topic Scope · Article type · Intent lane · Cluster role · Pillar link · Information Gain Statement · KEEP/MERGE · Compliance notes · PostPublishReviewDates（standard/flagship）。
 
 ---
 
-### Phase 2 — Slug Design & Gate B（Slug 门禁）
+### Phase 2 — Slug、Date & Gate B
 
-> **7 原则 + 12 反模式 + 竞品基准 + Design-Time 6 问 → `references/slug-gate.md`**
+> **Slug 规则 → `references/slug-gate.md` §13**
+> **Meta → `references/meta-title-description.md`**
 
-1. 生成 2–3 个 slug 候选（`/blog/...`）+ 推荐项
-2. 跑 §13 Design-Time 决策框架 6 问
-3. 对照 12 项反模式速查
-4. 竞品基准检查（搜 Google → 对比前 5 竞品 slug）
-
-**Gate B**：全部 6 问通过 + 0 项反模式命中 → 定 slug。任一项不通过 → 重选。**禁止 Flag 过关。**
-
-同步：SERP Fit 快速对照 + 完整 frontmatter（title、description、slug、date）；`isoDate` 须与 portfolio 内已有日期不重复（一天一篇，取最晚 date +1 天）。title/description 计字符与自检 → `references/meta-title-description.md`。
+1. Slug 候选 **`/blog/{url-slug}`**（frontmatter 含前缀；文件名不含 `/blog/`）
+2. Gate B：6 问 + 12 反模式零触发
+3. `isoDate`：一天一篇，取 portfolio 最晚 date +1 天
+4. title 45–60 / description 140–160
+5. 复核 Phase 0R SERP Fit
 
 ---
 
 ### Phase 3 — Outline
 
-按 references/article-types.md 对应类型的 H2 模板展开。每节标注：目标词数、关键词位置、内链占位、Moras 出现计划。
+按 `article-types.md` H2 模板；每节标注词数、关键词、内链占位、Moras 出现计划。
+
+---
+
+### Phase 3.5 — Outline 交叉检查
+
+**触发**：同批 ≥2 篇。**详见** `references/portable/outline-cross-check.md`。
+
+检查 H2 重复、Synthesis 冲突、Spoke 是否链回 Pillar。单篇标注 `N/A — single article`。
 
 ---
 
 ### Phase 4 — Draft
 
-> **Voice 正向/禁止 → `references/article-types.md` §8 · 引用分级 → `references/citations.md` · 表现形式 → `references/presentation.md`**
+**加载顺序**（≤2 文件/轮）：
 
-**Phase 4 加载顺序**：article-types.md（Voice）+ citations.md（引用格式）+ presentation.md（节奏标准）。
+1. `references/article-types.md`（Voice §8）
+2. `references/citations.md`
+3. `references/presentation.md`
 
-**核心约束**：
-- Affiliate-first（commission、showcase、product link）；seller 次之
-- P0 数字有来源链接；P1 趋势有官方 docs + as of date
-- 长段落 ≥3 个（≥4 句）；列表占比 ≤ 类型上限；无连续短段集群
-- 漏斗符合类型标准（Pillar: 后 40%+ 出现 Moras；Research: 工具公平对比）
-- CTA ≤2 次；US-only
+flagship 额外 → `references/portable/extractability-checklist.md`
+
+**核心约束**：affiliate-first · P0 数字有来源 · 长段落 ≥3 · 列表占比 ≤ 类型上限 · CTA ≤2 · US-only（TikTok Shop 文）· 无 `## Related articles`
+
+**BLUF 三处**：TL;DR 长描述（60–110 词）+ bullets · 每 major H2 首段先答 · FAQ 首句即答
 
 ---
 
-### Phase 5 — SelfCheck（创作自检）
+### Phase 5 — SelfCheck & Gate C
 
-创作完成后、交付前的自检。**这是写作质量检查，不是独立审核——发布前终审用 `references/portable/final-audit.md`。**
+> **完整 checklist → `references/selfcheck.md`**
+> **Gate 细则 → `references/portable/gates-master.md`**
 
-#### 5.1 Hard Gates（全部 Pass 方可交付）
+#### 工具先跑（从 `moras/` 根目录）
 
-逐项对照 `references/project-config.md`：
-
-| Gate | 项 | Pass? | 任一 Fail → STOP |
-|------|----|:---:|------|
-| **G1–G7** | 事实错误 / 死链 / 无来源数字 / 竞品状态 / 产品夸大 / 内链未上线 / 品牌风险 | | 修复后重检 |
-| **I1–I5** | 收入承诺 / 证言滥用 / 政策无时效 / Who-How-Why / 复述SERP（非 TikTok Shop 话题自动 Pass） | | 修复后重检 |
-| **Slug** | 通过 §13 全部 6 问 + 0 项反模式 | | 重选 slug |
-
-#### 5.2 轻量健康分（1–5，Gate 全部 Pass 后评估）
-
-每个维度快速打分——**这是创作反馈，不是审核等级**。分数含义：
-- **5**: 满足该维度全部标准，无明显瑕疵
-- **4**: 基本满足，有 1–2 处可改进（交付后人工修）
-- **3**: 部分满足，有明显缺口但非阻断（标注 P1）
-- **2**: 不满足核心标准（标注 P1，建议修复后交付）
-- **1**: 严重不满足（等同 Hard Gate Fail，不得交付）
-
-| # | 维度 | 分 | 快速判据 |
-|---|------|:---:|------|
-| 1 | **Fact / E-E-A-T** | /5 | P0 数字全有来源？政策有时效？竞品≥1优势？≥1场景非Moras更合适？ |
-| 2 | **Differentiation** | /5 | 独有框架/表格≥1？句级重复<30%？信息增量2项已验证？ |
-| 3 | **Presentation** | /5 | 长段落≥3？列表占比≤上限？0碎片化集群？表格前后有分析？ |
-| 4 | **Writing / Voice** | /5 | 五正向全满足？禁词0？空泛句≤2？≥1具体scenario？ |
-| 5 | **Objectivity** | /5 | 漏斗符合类型标准？产品≤上限？无贬低措辞？Who/How/Why齐备？ |
-| 6 | **Structure / Links** | /5 | TL;DR 置顶（长描述+bullets）+Conclusion+FAQ？blog互链≥2？forthcoming≤1？锚文本语义化？ |
-| 7 | **SEO** | /5 | title含P1？description 140–160？keywords≥5？snippet-ready定义？ |
-| 8 | **Depth** | /5 | 词数在区间？每~500词≥1例子？FAQ 固定 6 题 + ≥1 题独立？ |
-| 9 | **Moras + Compliance** | /5 | US-only？品牌正确？Cannibalization清晰？无TikTok暗示/GMV承诺？ |
-| 10 | **Conversion** | /5 | CTA≤2？匹配读者阶段？CTA前有独立价值？ |
-
-**整体**: __/5.0（10维平均）　🟢≥4.0 / 🟡3.0–3.9 / 🔴<3.0
-
-**交付标准**：Hard Gates 全部 Pass + 无 🔴 维度（<3.0）。🟡 维度标注 P1 修复项。
-
-#### 5.3 SelfCheck 输出格式
-
-```markdown
-## SelfCheck — {slug}
-
-### Hard Gates
-| Gate | Pass/Fail | Notes |
-|------|-----------|-------|
-| G1–G7 | Pass | |
-| I1–I5 | Pass | (or: I3 skipped — non-TikTok-Shop topic) |
-| Slug | Pass | |
-
-### Health Check
-| # | Dimension | Score | Notes |
-|---|-----------|:---:|-------|
-| 1 | Fact/E-E-A-T | 4/5 | P0数字全有来源；竞品优势已承认；可补1处时效标注 |
-| 2 | Differentiation | 5/5 | 独有三机制框架+品类匹配表 |
-| ... | ... | ... | ... |
-**Overall**: 4.2/5.0 🟢
-
-### Information Gain Statement
-{3 sentences vs SERP Top3}
-
-### Source Map (internal)
-| Claim | § | Source | Checked | Confidence |
-|------|------|------|------|:---:|
-| ... | ... | ... | 2026-06-15 | High/Med/Low |
-
-### Cannibalization Check
-| vs | Boundary | Clear? |
-|----|----------|:---:|
-| /blog/{slug-01} | ... | ✅ |
-| /tiktok-video-generator | blog=教育, TVG=交易 | ✅ |
-
-**🟡 P1 fixes** (from Health Check):
-- [ ] ...
-
-**Human decisions** (⚠️ items):
-- [ ] ...
+```bash
+python skills/blog-article/tools/frontmatter_validator.py blog/{NN-slug}.md --keyword "{kw}" --moras-slug
+python skills/blog-article/tools/word_count_narrative.py blog/{NN-slug}.md --intent {intent} --min {threshold}
+python skills/blog-article/tools/link_checker.py blog/{NN-slug}.md --forbidden "/use-cases/,/app/,/auth/,/admin/"
 ```
+
+**Gate C**：H0–H4 + I1–I5 + 12 维全 Pass → **audit-ready**。终审 → `references/portable/final-audit.md`。
+
+---
+
+### Phase 5.5 — Cross-Article Audit
+
+同批 ≥2 篇：叙事雷同 · 互链完整性 · Intro/Conclusion 互换测试 · TVG cannibalization（见 gotchas #29–#31）。
 
 ---
 
 ### Phase 6 — Delivery
 
-1. **写入文件** `blog/NN-{working-slug}.md`（Agent 据工作目录推断）
-2. **Article Brief 摘要**（Phase 1 最终版）
-3. **SelfCheck 自检表**（Phase 5 完整输出：Hard Gates + Health Check + Info Gain + Source Map + Cannibalization）
-4. **Meta 复核**（可选）：按 `references/meta-title-description.md` 计字符并跑四条自检；只改 frontmatter `title`/`description`。
-5. **Human handoff**：提示更新 `blog/README.md` 文件表 + planned/live 标注。
+1. 写入 `moras/blog/{folder}/NN-{working-slug}.md`（Cluster D 在根目录；folder 见 `topic-cluster-layout.md`）
+2. Article Brief 最终版 + SelfCheck 表
+3. Source Map + SERP Fit + Cannibalization Check + Internal Link Plan（standard/flagship）
+4. **终审指令**：
+
+```
+按 references/portable/final-audit.md 执行发布前终审：
+- 文件：moras/blog/{folder}/NN-{slug}.md
+- 项目：moras.ai / Moras
+- 类型：{Article type}
+- 主关键词：{primary keyword}
+```
+
+5. 提示人类更新 `blog/README.md`
 
 ---
 
-## §4 已有内容图谱
+### §3.G Gate 回溯表
 
-> **文件表 + Hub-Spoke + Cluster B 发布看板 + Canonical Registry + 跨篇边界声明 → `references/content-graph.md`**
-
-**Phase 0 / Phase 5 加载。** 速查：下一序号 **25**（#15/#17/#23/#24 已删/合并）。Pillar: `how-to-make-money-on-tiktok` → Cluster A spoke + Cluster B Platform Ops。
-
----
-
-## §5 关键词速查
-
-> **P0/P1/P2 + 市场策略 → `references/keywords.md`**
-
-**Phase 0 加载。**
+| Fail 于 | 回退至 | 动作 |
+|---------|--------|------|
+| Gate A / Investment | Phase 0 | 改角度 / MERGE / STOP |
+| Gate 0R | Phase 0R | 补 R2/R3 / 降 Degraded claim |
+| Gate B | Phase 2 | 重选 slug |
+| Gate C — H3 | Phase 4 | 扩写至类型下限 |
+| Gate C — I1–I5 | Phase 4 | 改合规表述 |
+| Gate C — 12 维 | Phase 4 | 按维度修复 |
+| Phase 3.5 / 5.5 | Phase 3 / 4 | 改 Outline 或正文差异 |
 
 ---
 
-## §6 产品、竞品与 TikTok Shop 2026 事实
+## §4 创作 vs 审核 vs Meta
 
-> **产品事实 + 竞品公平摘要 + TVG 白名单 + 合规红线 + Cannibalization + TikTok 2026 硬事实 → `references/product-competitors.md`**
-
-**Phase 4 / Phase 5 加载。**
-
----
-
-## §9 创作 vs 审核 vs Meta（严格边界）
-
-| | **moras-blog-article** | **references/portable/final-audit.md** | **references/meta-title-description.md** |
+| | **moras-blog-article** | **portable/final-audit.md** | **meta-title-description.md** |
 |------|:---:|:---:|:---:|
-| 做什么 | **生成**文章 | **审核**文章（打分+报告） | **生成/优化** title/description |
-| 产出 | .md 成稿 + SelfCheck | 审核报告 (S/A/B/C/D 等级) | frontmatter metadata |
-| 时机 | 选题→成稿 | 成稿后，发布前 | Phase 2 或独立任务 |
-| 评分 | 轻量健康分 (1–5, 🟢🟡🔴) | 加权评分 (0–100, S-D) | 计字符 + 四条自检 |
+| 做什么 | **生成**文章 | **终审**（S/A/B/C/D） | **优化** title/description |
+| 时机 | 选题→成稿 | SelfCheck Pass 后 | Phase 2 或独立任务 |
+| 评分 | H0–H4 + 12 维 Pass/Fail | 加权 0–100 | 计字符 + 四条自检 |
 
-**硬规则**：
-- blog-article Phase 5 SelfCheck = **创作质量自检**，健康分供人类快速判断文章状态，不等同审核等级
-- `references/portable/final-audit.md` 的加权评分（S/A/B/C/D）= **独立发布终审**，是最终质量判定
-- 两者不可互相替代
-
-| 任务 | 入口 | 严格边界 |
-|------|-------|---------|
-| 写正文 | **blog-article** Phase 0–6 | 禁止一次加载全部 references |
-| title/description 专项 | 本 skill → **`references/meta-title-description.md`** | 禁止改 H2 / TL;DR / FAQ / 正文 |
-| 博客 metadata 初稿 | Phase 2 + 同上 reference | 45–65 / 140–160；P1 见 content-graph |
-| 发布前终审 | **`references/portable/final-audit.md`** | 十维加权 + P0 Gate |
-| Phase 0R | **`references/portable/research-triangle.md`** | R1–R3 |
+**硬规则**：SelfCheck = audit-ready；终审 ≥70 + P0 Pass = publish-ready。不可互相替代。
 
 ---
 
-## Gotchas — 禁止项清单（34 条）
+## §5 Reference 索引（均在 skill 文件夹内）
 
-创作时逐条对照。任一项触发 = 对应维 Fail。
+| 文件 | 加载时机 |
+|------|----------|
+| `references/project-config.md` | Phase 0, 5 |
+| `references/article-types.md` | Phase 0, 2, 3, 4 |
+| `references/content-graph.md` | Phase 0, 2, 3.5, 5.5 |
+| `references/topic-cluster-layout.md` | Phase 2, 6（文件路径） |
+| `references/slug-gate.md` | Phase 2 |
+| `references/product-competitors.md` | Phase 0R, 4, 5 |
+| `references/presentation.md` | Phase 4 |
+| `references/citations.md` | Phase 4, 5 |
+| `references/keywords.md` | Phase 0, 0R |
+| `references/meta-title-description.md` | Phase 2 / title-only |
+| `references/mini-example.md` | Phase 1, 3 |
+| `references/proof-library.md` | Phase 0R（可选） |
+| `references/selfcheck.md` | Phase 5 |
+| `references/portable/*` | 按 Phase 指针 |
+| `tools/` | Phase 5 |
+| `evals/` | skill 变更后回归 |
 
-**结构与格式**：
-1. ❌ 不要在 `## TL;DR` 前放独立 Lead 段（hook 并入 TL;DR 长描述）
-2. ❌ 不要 TL;DR 仅 bullet、无长描述段（须 60–110 词 BLUF + 3–6 bullets）
-3. ❌ 不要用 `## Related articles` 模块（内链分布在正文）
-4. ❌ 不要两篇共用同一 `isoDate`（发布日期一天一篇，新稿取最晚 date +1 天）
-5. ❌ 不要编号 H2（`## 1.` `## 2.`）——用描述性标题
-6. ❌ 不要把 Framework 文写成 "50 hooks you can copy" 列表
-7. ❌ 不要连续 3+ 短段落（≤2 句）集群
-8. ❌ 不要"表格+一句话然后跳下节"——表格后 ≥2 句分析
-9. ❌ 不要 H2 后直接列表/表格——先写引导段
+**维护者同步 SSOT**（内网维护用，客户包已内置副本）：
 
-**Slug 与链接**：
-10. ❌ 不要 slug 缺 `/blog/` 前缀
-11. ❌ 不要文件名 slug 当 URL slug（`hooks-framework` ≠ `tiktok-video-hooks`）
-12. ❌ 不要 slug 含内部架构词（framework/strategy/diagnosis/guide/two-paths）
-13. ❌ 不要链 `/use-cases/*` `/app/*` `/auth/*` `/admin/*`（G6）
-14. ❌ 不要 forthcoming >1 个
-15. ❌ 不要锚文本 "click here" / "learn more" / "this article"
-16. ❌ 不要为凑内链数量在无关段落硬插 blog 链（自然优先；入链 0 的 spoke 仅在确有语境时补 1 条）
-17. ❌ 不要同篇对同一 slug 链超过 2 次（除非结论段有独立强语境）
-18. ❌ 不要在 `## TL;DR` 或 FAQ 内放内链
-
-**品牌与受众**：
-19. ❌ 不要写 Morris（统一 **Moras**）
-20. ❌ 不要 seller 作 title 主称谓——当文章面向 TikTok Shop affiliate 时（非 TikTok Shop 话题可依实际 ICP 调整）
-21. ❌ 不要声称 TikTok / ByteDance 官方合作或认证（非 TikTok 话题自动跳过）
-22. ❌ 不要用 `| K2 Lab` / `| K2LAB` 作品牌后缀（统一 `| Moras`）
-
-**数据与引用**：
-23. ❌ 不要裸引 $15.8B / 73% creators 无来源 URL（G3）
-24. ❌ 不要 "studies show" / "industry reports indicate" 泛引（I5）
-25. ❌ 不要把证言 GMV 写成普适收入保证（I1 / I2）
-26. ❌ 不要 TikTok Shop 政策无 "as of {date}" + 官方链（I3；非 TikTok Shop 话题自动跳过）
-27. ❌ 不要用 Low confidence 来源支撑核心论证
-28. ❌ 不要内部数据无 "based on internal analysis, n≈X"
-
-**Cannibalization**：
-29. ❌ 不要 Production 文抢 TVG vertical 的 `{category} AI TikTok generator` P1
-30. ❌ 不要 product-research 博客抢 `/product-research` 工具页 P1
-31. ❌ 不要 Vertical vs Vertical 品类词可互换（toiletry-bag ≠ mattress）
-32. ❌ 不要 Pillar 完整展开 Spoke 核心内容（引述 1–2 句 + link）
-
-**流程与合规**：
-33. ❌ 不要 G/I/Slug Gate 未全部 Pass 就交付
-34. ❌ 不要为凑字数写偏离 ICP 的长篇（TikTok Shop 文 ICP = affiliate；其他话题依实际 ICP）
-35. ❌ 不要 "Imagine you're…" 虚构开头
-36. ❌ 不要一次加载全部 references（渐进式加载，一次 ≤2 个）
-37. ❌ 不要混淆创作自检与独立审核——本 skill 的 SelfCheck 是写作质量检查（1–5 健康分），发布前终审用 `references/portable/final-audit.md`
+```powershell
+Copy-Item "E:\Agent执行\blog-create\references\portable\*.md" `
+  "references\portable\" -Force
+```
 
 ---
 
-## Reference Index
+## §6 Gotchas（37 条精选）
 
-创作时按需加载（一次最多 2 个）：
+**结构与 slug**：TL;DR 须长描述+bullets · 无 Related 模块 · slug 须 `/blog/` 前缀 · 禁内部架构词 · Framework 非 hook 清单
 
-| 文件 | 内容 | 加载时机 |
-|------|------|------|
-| `references/project-config.md` | §1 配置 + G1–G7 + I1–I5 + URL 白名单 | Phase 0 / Phase 5 |
-| `references/article-types.md` | §2 八类路由 + H2 模板 + §8 Voice + Who/How/Why | Phase 0 / Phase 3 / Phase 4 |
-| `references/content-graph.md` | §4 Pillar–Spoke + Cluster B Tier/SuccessMetric + Canonical + §7 命名 | Phase 0 / Phase 5 |
-| `references/keywords.md` | §5 P0/P1/P2 关键词 | Phase 0 |
-| `references/product-competitors.md` | §6 产品/竞品/合规/TVG + TikTok 2026 事实 | Phase 4 / Phase 5 |
-| `references/presentation.md` | §11 表现形式与表达节奏 | Phase 4 |
-| `references/citations.md` | §12 证据链 + Source Map 模板 | Phase 4 / Phase 5 |
-| `references/slug-gate.md` | §13 Slug 设计审查（7 原则 + 12 反模式 + 决策框架） | Phase 2 |
-| `references/meta-title-description.md` | 博客 title/description 长度、自检、独立优化工作流 | Phase 2 / title-only 任务 |
-| `references/mini-example.md` | §10 Framework Brief + Outline 范例 | Phase 1 / Phase 3（参考） |
+**链接**：禁 `/use-cases/*` 等 · forthcoming ≤1 · TL;DR/FAQ 无内链 · 同 slug ≤2 · H2 均匀分布 · 详见 `references/internal-links.md`
+
+**品牌与合规**：Moras 非 Morris · 无 TikTok 官方暗示 · 裸引 $15.8B（G3）· 收入承诺（I1）· 政策 as-of（I3）
+
+**流程**：Gate 未 Pass 不交付 · 渐进式加载 · 不读 skill 文件夹外文档 · 混淆 SelfCheck 与终审
 
 ---
 
@@ -451,12 +424,12 @@ Agent 在收到创作任务后，第一步判定话题范围：
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| **1.3.1** | 2026-08-04 | 吸收原 `moras-meta-title-description` 博客规则 → `references/meta-title-description.md`；title-only 任务改走本 skill；全站 meta skill 归档至 `_archive/` |
-| **1.3.0** | 2026-06-15 | 定位修正：Phase 5 从"11维加权评分（S/A/B/C/D）"改为"Hard Gates (Pass/Fail) + 轻量健康分 (1-5, 🟢🟡🔴)"；删除 ≥80 硬线、S-D 等级、权重体系；明确创作skill≠审核skill（§9 角色表）；措辞统一：评分→自检/健康分；evals 改用 Gate 断言；references 清除评分权重残留 |
-| **1.2.0** | 2026-06-15 | 架构重构：1252 行单文件→主文件 ≤450 行 + 9 个 references/；新增 3 Gate 体系（Gate A 选题 / Gate B Slug / Gate C 发布）；新增 Income Claim Gate I1–I5；Phase 0 新增信息增量 Gate（≥2 项独有）；新增 Gotchas 30 条；新增 eval/ 回归套件；TikTok Shop 2026 硬事实表；Who/How/Why 强制模块；渐进式加载规则 |
-| **1.1.0** | 2026-06-15 | +§11 表现形式、§12 证据链、§13 Slug Gate；Phase 6 加权评分；引用格式模板；品牌色 hex；文件表+主站状态列 |
-| **1.0.0** | 2026-06-15 | 初版：8 类路由 + 7 Phase + 13 维自检 + Pillar–Spoke 图谱 + Canonical Registry |
+| **2.1.1** | 2026-08-24 | **`internal-links.md`**：R1–R7 + H2 分布均质 + `link_audit.py` 全库 Gate |
+| **2.1.0** | 2026-08-24 | **客户交付自包含版**：`self-contained: true`；完整 9 Phase 内联；portable/ + tools/ + selfcheck 内置；终审用 portable/final-audit；撤销 L0 外部依赖 |
+| 2.0.0 | 2026-08-24 | 路线 A 试验（L0+L1，已废弃） |
+| 1.3.1 | 2026-08-04 | meta-title-description 并入 |
+| 1.2.0 | 2026-06-15 | references/ 拆分 + I1–I5 + evals |
 
 ---
 
-*moras-blog-article · v1.3.1 · 2026-08-04 · US TikTok Shop*
+*moras-blog-article · v2.1.0 · 2026-08-24 · self-contained · US TikTok Shop*

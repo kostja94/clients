@@ -13,7 +13,7 @@ try:
 except ImportError:
     yaml = None  # type: ignore
 
-ALLOWED_CATEGORIES = {"Product", "Comparison", "Opinion", "Glossary"}
+ALLOWED_CATEGORIES = {"Product", "Comparison", "Opinion", "Glossary", "Industry News", "Stripe Risk", "Agentic Payments"}
 # Removed from schema (do not require): keywords, related, disclosure
 FORBIDDEN_FM_KEYS = {"keywords", "related", "disclosure"}
 

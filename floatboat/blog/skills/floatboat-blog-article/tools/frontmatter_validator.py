@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Validate blog article frontmatter (F1-F6). Gate: Gate C / SEO dimension.
-
-F6 now checks that the deprecated `image` field is ABSENT (removed 2026-08-11).
-"""
+"""Validate blog article frontmatter (F1-F8). Gate: Gate C / SEO dimension."""
 
 from __future__ import annotations
 
@@ -16,6 +13,8 @@ try:
 except ImportError:
     yaml = None  # type: ignore
 
+DEFAULT_CATEGORIES = {"tutorial", "guide", "case study", "product", "glossary", "insights", "news"}
+
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
     if not text.startswith("---"):
@@ -25,7 +24,6 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
         return {}, text
     body = parts[2]
     if yaml is None:
-        # minimal fallback
         fm: dict = {}
         for line in parts[1].strip().splitlines():
             if ":" in line:
@@ -42,10 +40,26 @@ def emit(status: str, gate: str, msg: str, line: int | None = None) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Frontmatter validator for blog articles")
+    parser = argparse.ArgumentParser(description="Frontmatter validator for blog articles (generic)")
     parser.add_argument("path", type=Path)
     parser.add_argument("--keyword", default="", help="Primary keyword for F1 check")
+    parser.add_argument(
+        "--categories",
+        default="",
+        help="Comma-separated allowed categories (default: tutorial,guide,case study,product,glossary,insights,news)",
+    )
+    parser.add_argument(
+        "--require-secondary-category",
+        action="store_true",
+        help="Fail if secondary_category is missing",
+    )
     args = parser.parse_args()
+
+    allowed = (
+        {c.strip().lower() for c in args.categories.split(",") if c.strip()}
+        if args.categories
+        else DEFAULT_CATEGORIES
+    )
 
     text = args.path.read_text(encoding="utf-8")
     fm, _ = parse_frontmatter(text)
@@ -60,9 +74,9 @@ def main() -> int:
     desc = str(fm.get("description") or "")
     slug = str(fm.get("slug") or "")
     category = str(fm.get("category") or "")
+    secondary_category = str(fm.get("secondary_category") or "")
     author = str(fm.get("author") or "")
 
-    # F1
     if args.keyword and args.keyword.lower() not in title.lower():
         emit("FAIL", f"{gate}-F1", f"title missing primary keyword '{args.keyword}'")
         fails += 1
@@ -76,7 +90,6 @@ def main() -> int:
     else:
         emit("PASS", f"{gate}-F1", f"title length {tlen} OK")
 
-    # F2
     dlen = len(desc)
     if dlen < 120 or dlen > 160:
         emit("FAIL", f"{gate}-F2", f"description length {dlen} not in 120-160 chars")
@@ -84,36 +97,45 @@ def main() -> int:
     else:
         emit("PASS", f"{gate}-F2", f"description length {dlen} OK")
 
-    # F4 — year in slug allowed for time-bound event clusters (world-cup-* slugs)
-    slug_has_year = bool(re.search(r"\b20\d{2}\b", slug))
-    event_slug_exception = bool(re.search(r"world-cup-", slug))
-    if slug_has_year and not event_slug_exception:
+    if re.search(r"\b20\d{2}\b", slug):
         emit("FAIL", f"{gate}-F4", f"slug contains year: {slug}")
         fails += 1
-    elif slug_has_year and event_slug_exception:
-        emit("PASS", f"{gate}-F4", f"slug year OK (event exception: {slug})")
     else:
         emit("PASS", f"{gate}-F4", "slug evergreen OK")
 
-    # F5
-    if not category:
-        emit("FAIL", f"{gate}-F5", "category missing")
+    if category.lower() not in allowed:
+        emit("FAIL", f"{gate}-F5", f"category not in allowed set {sorted(allowed)}: {category}")
         fails += 1
     else:
         emit("PASS", f"{gate}-F5", f"category={category}")
 
-    # F6 — image field deprecated since 2026-08-11 (removed from frontmatter)
-    if "image" in fm:
-        emit("FAIL", f"{gate}-F6", "deprecated field 'image' present (removed 2026-08-11)")
+    if args.require_secondary_category and not secondary_category:
+        emit("FAIL", f"{gate}-F5", "secondary_category missing (--require-secondary-category)")
         fails += 1
-    else:
-        emit("PASS", f"{gate}-F6", "no deprecated 'image' field")
+    elif secondary_category:
+        emit("PASS", f"{gate}-F5", f"secondary_category={secondary_category}")
+
+    for banned in ("image", "keywords", "related"):
+        if banned in fm:
+            emit("FAIL", f"{gate}-F6", f"deprecated field '{banned}' present")
+            fails += 1
+        else:
+            emit("PASS", f"{gate}-F6", f"no deprecated '{banned}' field")
 
     if not author:
-        emit("FAIL", f"{gate}-author", "author missing")
+        emit("FAIL", f"{gate}-F7", "author missing")
         fails += 1
     else:
-        emit("PASS", f"{gate}-author", "author present")
+        emit("PASS", f"{gate}-F7", "author present")
+
+    if not slug:
+        emit("FAIL", f"{gate}-F8", "slug missing")
+        fails += 1
+    elif not re.match(r"^[a-z0-9]+(-[a-z0-9]+)*$", slug):
+        emit("FAIL", f"{gate}-F8", f"slug not kebab-case: {slug}")
+        fails += 1
+    else:
+        emit("PASS", f"{gate}-F8", f"slug={slug} OK")
 
     return 1 if fails else 0
 

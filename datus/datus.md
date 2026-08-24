@@ -20,6 +20,7 @@
 | [datus-glossary.md](./datus-glossary.md) | Glossary 策略设计：关键词簇、术语选择逻辑、内容网络位置（7 类 42 词） | [datus-keywords.md](./datus-keywords.md)、[datus-positioning.md](./datus-positioning.md)、[datus-competitors.md](./datus-competitors.md) |
 | [datus-breadcrumb-spec.md](./datus-breadcrumb-spec.md) | 面包屑 UI + BreadcrumbList JSON-LD（除首页外全站） | [datus-site-structure.md](./datus-site-structure.md) |
 | [datus-faq-spec.md](./datus-faq-spec.md) | 全站 FAQ 组件 + 页内 FAQ 内容规则与示例 | [datus-site-structure.md](./datus-site-structure.md)、[blog/README.md](./blog/README.md) |
+| [datus-dosi.md](./datus-dosi.md) | **Dosi** 新产品调研、关键词与候选文章（调研阶段） | [datus-keywords.md](./datus-keywords.md)、[blog/24-open-semantic-interchange-osi-2026.md](./blog/24-open-semantic-interchange-osi-2026.md) |
 | [blog/](./blog/) | Blog 文章目录（Markdown + YAML frontmatter） | [datus-growth-strategy.md](./datus-growth-strategy.md) |
 
 *产品入口*：Web [datus.ai](https://datus.ai/) | GitHub [Datus-ai/Datus-agent](https://github.com/Datus-ai/Datus-agent) | Docs [docs.datus.ai](https://docs.datus.ai)

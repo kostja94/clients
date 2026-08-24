@@ -1,11 +1,5 @@
 # Sparki 剪辑视频类型(多维分类)
 
-> 关联:[sparki.md](./sparki.md) | [sparki-features.md](./sparki-features.md) | [sparki-creators.md](./sparki-creators.md)
-
-**Last updated**: 2026-08-12
-
----
-
 ## 〇、维度说明(可扩展)
 
 本分类采用**多维结构**,每个维度独立、可单独扩展。当前已启用 3 个维度:
@@ -266,4 +260,7 @@
 
 ---
 
-*Demo 文档包 · Sparki · 剪辑视频类型多维分类 · 2026-08-12*
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./sparki.md) | [features](./sparki-features.md) | [creators](./sparki-creators.md)*
+*Last updated: 2026-08-12*
+*Demo 文档包 · Sparki · 剪辑视频类型多维分类*

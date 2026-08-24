@@ -1,11 +1,5 @@
 # Sparki Creators(红人视频页面)
 
-> 关联:[sparki.md](./sparki.md) | [sparki-features.md](./sparki-features.md)
-
-**Last updated**: 2026-08-12
-
----
-
 ## 一、项目目标
 
 - 构建一系列**红人视频页面**用于获取 **SEO 流量**(围绕红人名字、视频内容承接搜索流量)。
@@ -166,4 +160,7 @@
 
 ---
 
-*Demo 文档包 · Sparki · Creators 页面规划 · 2026-08-12*
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./sparki.md) | [features](./sparki-features.md)*
+*Last updated: 2026-08-12*
+*Demo 文档包 · Sparki · Creators 页面规划*

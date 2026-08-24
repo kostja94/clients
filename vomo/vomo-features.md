@@ -1,10 +1,4 @@
-
 # VOMO — 功能分析
-
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[主文档](./vomo.md) | [site-structure](./vomo-site-structure.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md)
-
----
 
 ## 1. 核心功能模块
 
@@ -119,5 +113,7 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./vomo.md) | [site-structure](./vomo-site-structure.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md)*
 *Last updated: 2026-07-16*
 *来源：官网内容分析、定价页、App Store、第三方评测*

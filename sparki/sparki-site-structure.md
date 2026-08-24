@@ -1,11 +1,5 @@
 # Sparki 网站结构（推断）
 
-> 关联：[sparki.md](./sparki.md) | [sparki-features.md](./sparki-features.md)
-
-**说明**：以下基于 [sparki.io](https://sparki.io/) 首页可见模块推断；**非站内爬虫地图**，上线新路由后需人工更新。
-
----
-
 ## 一、首页信息架构（逻辑块）
 
 | 模块（顺序示意） | 内容 | 备注 |
@@ -49,4 +43,7 @@
 
 ---
 
-*文档生成日期：2026-04-08*
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./sparki.md) | [features](./sparki-features.md)*
+*说明：以下基于 [sparki.io](https://sparki.io/) 首页可见模块推断；非站内爬虫地图，上线新路由后需人工更新。*
+*Last updated: 2026-04-08*

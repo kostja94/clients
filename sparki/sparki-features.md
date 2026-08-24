@@ -1,80 +1,128 @@
-# Sparki 功能与能力
+# Sparki Features
 
-> 关联：[sparki.md](./sparki.md) | [sparki-use-cases.md](./sparki-use-cases.md) | [sparki-keywords.md](./sparki-keywords.md)
+> 关联：[sparki.md](./sparki.md) | [sparki-site-structure.md](./sparki-site-structure.md) | [sparki-keywords.md](./sparki-keywords.md)
 
 **产品入口**：[sparki.io](https://sparki.io/)
 
----
-
-## 一、核心能力（官网叙事）
-
-| 能力 | 说明（基于官网） |
-|------|------------------|
-| **AI editor by your side** | Agent 像真人剪辑师一样沟通、规划并执行 |
-| **Chat to make perfect edit** | 用对话下指令完成剪辑，强调效率与新手友好 |
-| **Multi-round revision** | 对结果不满意可通过多轮对话迭代 |
-| **全流程自动化** | 宣称可基于对话完成「大师级」成片流程（营销表述，以实际产品为准） |
+**说明**：本文仅收录 `/features/` 路径下的功能；定价、Solutions 等见其他文档。
 
 ---
 
-## 二、功能标签 / 工具线（首页展示）
+## 功能一览
 
-官网列出的能力入口（命名以英文为准）：
+| 功能 | URL | 一句话 |
+|------|-----|--------|
+| Copy Style | [/features/copy-style](https://sparki.io/features/copy-style) | 分析参考视频的剪辑风格，应用到自有素材 |
+| Long to Short | [/features/long-to-short](https://sparki.io/features/long-to-short) | 长视频自动提取高光，生成 TikTok / Reels / Shorts 短片 |
+| AI Caption | [/features/ai-caption](https://sparki.io/features/ai-caption) | AI 转写并生成可定制样式的字幕 |
+| AI Commentary | [/features/ai-commentary](https://sparki.io/features/ai-commentary) | AI 生成与画面同步的解说旁白 |
+| Video Resizer | [/features/video-resizer](https://sparki.io/features/video-resizer) | 智能裁切与 reframing，适配各平台画幅 |
 
-| 标签 | 推测用途 |
-|------|----------|
-| **Copy Style** | 参考既有风格应用到新素材 |
-| **Long to Short** | 长视频压缩为短视频 / 精华版 |
-| **AI Caption** | 自动生成或优化字幕 |
-| **AI Commentary** | 解说类内容辅助（脚本/配音/节奏等，以产品为准） |
-| **Video Resizer** | 画幅/比例适配（如多平台尺寸） |
-| **Highlight Reels** | 高光片段/集锦生成 |
-
-*若站内存在独立 URL，应在 [sparki-site-structure.md](./sparki-site-structure.md) 中补全。*
+*Footer「FEATURES」仅列前四项；Video Resizer 在 Hub 页展示但 Footer 未列。*
 
 ---
 
-## 三、适用视频类型（官网强调）
+## Copy Style
 
-| 类型 | 备注 |
+**URL**：https://sparki.io/features/copy-style
+
+上传或粘贴参考视频（TikTok、Reels、YouTube Shorts 或本地文件），AI 解析剪辑节奏、切点、转场、文字叠加与 pacing，再将该风格应用到自有素材。克隆的是「剪辑配方」，不复制原片内容。
+
+**能力要点**
+
+- 支持拖拽上传或粘贴链接，跨平台参考源
+- 分析切频、转场类型、调色、文字位置与整体 pacing
+- 分钟级输出可直接发布的成片
+- 内置多种流行风格（如 TikTok · Reels 的 Fast-Paced Jump Cuts：快切跳剪，高留存 signature 风格）
+
+---
+
+## Long to Short
+
+**URL**：https://sparki.io/features/long-to-short
+
+将长视频（播客、webinar、vlog、游戏等，最长约 3 小时）转为适合 TikTok、Instagram Reels、YouTube Shorts 的短视频。AI 分析物体、动作、叙事流、情绪峰值，自动找出社媒高光片段。
+
+**能力要点**
+
+- 可选画幅、目标时长与额外指令（如指定高光主题、BGM、TikTok 风 viral short）
+- Chat-to-Cut：对话调整 intro、hook、pacing、焦点，无需从头重剪
+- 叙事与视觉深度理解：景别、运动、pacing、Hook-aware reframing
+- 自动检测高光并生成 edit markers，减少人工审片
+- Batch clip generation：一条长视频可生成 10–20 条独立 shorts
+- 支持粘贴 YouTube URL 提取转换（需遵守版权）
+- 平台预设：9:16 画幅，Reels 15s / Shorts 60s 等
+
+**典型场景**：播客切片导流、长课 bite-sized 推广、会议/webinar 社媒促销
+
+---
+
+## AI Caption
+
+**URL**：https://sparki.io/features/ai-caption
+
+对含语音/对白/旁白的视频自动转写，生成带动画效果的字幕。支持 50+ 语言、多口音、多说话人，以及跨语言翻译。
+
+**能力要点**
+
+- 宣称 95% 转写准确率；含 BGM + 人声场景
+- 100+ 字幕样式，AI 按内容类型自动匹配（TikTok trending 到专业风）
+- 精确分句，字幕与画面同步
+- 自定义字体、颜色、动画、布局
+- 导出烧录字幕视频或独立 SRT
+
+**典型场景**：社媒静音观看、在线课程、营销广告
+
+---
+
+## AI Commentary
+
+**URL**：https://sparki.io/features/ai-commentary
+
+为视频生成 AI 解说旁白，适用于游戏、反应类、教程、体育集锦等。支持 50+ AI 音色，也可克隆自有声音。
+
+**能力要点**
+
+- 分析场景、动作、上下文与叙事流，生成结构化、相关的解说（非泛化旁白）
+- 时间轴对齐，逐场景跟随画面
+- 可指定旁白 tone、视角、详略等 prompt
+- 支持游戏、产品展示、体育、纪录片、播客、旅行、电影等素材类型
+- 可分析现有音轨（speech、音乐、音效），避免盖过重要声音
+
+**典型场景**：游戏高光/速通/攻略、录屏教程、体育战术拆解与反应类内容
+
+---
+
+## Video Resizer
+
+**URL**：https://sparki.io/features/video-resizer
+
+自动 resize 与 reframing，在横屏、方屏、竖屏之间转换时，AI 跟踪主体保持其在画面内。
+
+**能力要点**
+
+- 支持 MP4、MOV、WebM 等；预设 9:16、1:1、16:9、4:3 或自定义尺寸
+- 自动检测人脸、说话者、屏幕文字等关键元素
+- 智能 crop + auto-reframe，宣称无画质损失
+- 时间轴上可切换 crop 焦点（如跟说话者 vs 产品 demo）
+- 可保存 resize 模板复用
+
+**典型场景**：一支 master 视频多平台分发、横屏 YouTube 库转竖屏 Shorts、播客录屏转社媒 clip
+
+---
+
+## URL 速查
+
+| 路径 | 状态 |
 |------|------|
-| **Vlog** | 生活/记录向 |
-| **Commentary** | 解说、评述类 |
-| **Montage** | 混剪、集锦 |
-| **Talking-head** | 口播、访谈式 |
-
-官网说明：通用编辑工具，**全类型可用**，上述类型为「体验优于传统工具」的侧重宣传点。
-
----
-
-## 四、定价与权益（官网摘录）
-
-> 价格与权益以官网实时页面为准；以下为 2026-04-08 抓取摘要。
-
-### 计费逻辑
-
-- **Credits**：用量与功能消耗挂钩；免费层含 **300 credits**。  
-- **存储**：免费 **3GB**；付费档递增（Starter **10GB**、Plus **100G** 等，以官网为准）。  
-- **年付**：首页展示 **SALE -40%**（相对月付）。
-
-### 档位摘要
-
-| 档位 | 价格示意（官网） | 要点 |
-|------|------------------|------|
-| **Free** | $0/月 | 300 credits、3GB、高级功能、无水印导出、快速队列、可购加量包 |
-| **Starter** | 月 $15 / 年付约 $9/月 | 1500 月 credits、10GB 等 |
-| **Plus** | 月 $35 / 年付约 $21/月 | 4000 月 credits、100G 等 |
-| **Enterprise** | 定制 | **API**、定制条款与 **SLA**、更高并发、优先支持；联系 **enterprise@sparki.io** |
+| `/features` | ✅ 索引页 |
+| `/features/copy-style` | ✅ |
+| `/features/long-to-short` | ✅ |
+| `/features/ai-caption` | ✅ |
+| `/features/ai-commentary` | ✅ |
+| `/features/video-resizer` | ✅ |
+| `/features/highlight-reels` | ❌ 404（属 SOLUTIONS，非 `/features/`） |
 
 ---
 
-## 五、待核实项（站内深度）
-
-- [ ] 各功能是否有独立落地页及 canonical URL  
-- [ ] Credits 具体消耗规则（每分钟/每导出/每 Agent 步）  
-- [ ] 支持格式、分辨率上限、导出规格  
-- [ ] 企业 API 文档入口与认证方式  
-
----
-
-*文档生成日期：2026-04-08*
+*Last updated: 2026-08-23 · 来源：[sparki.io/features](https://sparki.io/features) 及各子页*

@@ -12,7 +12,7 @@
 | [2mv-keywords.md](./2mv-keywords.md) | 关键词映射（Keyword Planner 真实数据）、目标页、意图分类 | [features](./2mv-features.md) |
 | [2mv-features.md](./2mv-features.md) | 功能：五引擎 + Research Lab、定价、差异化 ★ | [use-cases](./2mv-use-cases.md) |
 | [2mv-competitors.md](./2mv-competitors.md) | 竞品分析（Blaze/Arcads/Superscale/Predis） | [features](./2mv-features.md) |
-| [2mv-site-structure.md](./2mv-site-structure.md) | URL 层级、IA、技术栈 | 主文档 |
+| [2mv-site-structure.md](./2mv-site-structure.md) | URL 层级、IA、技术栈、页面构建状态 | 主文档 |
 | [2mv-use-cases.md](./2mv-use-cases.md) | 场景、Persona、映射 | [features](./2mv-features.md) |
 | [2mv-growth-strategy.md](./2mv-growth-strategy.md) | 增长渠道、内容计划 | [keywords](./2mv-keywords.md) |
 | [blog/01-what-is-2mv.md](./blog/01-what-is-2mv.md) | 官方博文归档（what is 2mv?） | — |
@@ -79,7 +79,7 @@
 - **平台词后置**：tik tok analytics（33,100）等平台词量大但不拆平台页，Phase 1 在 `/research` 内作平台覆盖。
 - **明确排除**：paid social、学术网络分析、竞品品牌词、宽泛 AI/SEO 扩展词。
 
-> 数据口径：2,600+ 词、15 大词根、累计月搜索量约 37 万。搜索量/竞争度均来自 Keyword Planner 2026-07-14 导出，页面落位与 [growth-strategy](./2mv-growth-strategy.md) 一致。
+> 数据口径：2,600+ 词、15 大词根、累计月搜索量约 37 万。搜索量/竞争度均来自 Keyword Planner 2026-07-14 导出，页面落位见 [growth-strategy](./2mv-growth-strategy.md)。
 
 ---
 
@@ -97,10 +97,9 @@
 
 ## 5. 站点结构摘要
 
-- **技术栈**：疑似 Next.js SPA（`待验证`）；支付 Stripe；运营主体 Fluxspark Inc.。详见 [site-structure](./2mv-site-structure.md)。
-- **核心路径**：`/`（首页）、`/research`（Research Lab）、`/insights`（博客，仅 1 篇）、`/book-a-demo`、`/privacy-policy`。
-- **SEO 现状**：sitemap.xml 返回 500（待修复）；无独立 /pricing、无独立 service 落地页、无对比页；博客内容量极薄（仅 1 篇）。
-- **多语言**：英文单语，无 hreflang。
+- **已上线**：`/`、`/research`、`/insights`（1 篇）、`/book-a-demo`、`/privacy-policy`；sitemap.xml 返回 500。
+- **规划中**：`/research/social-media-competitor-analysis`、`/tools/*`、`/pricing`、`/service` 等，详见 [site-structure](./2mv-site-structure.md)。
+- **SEO 策略与关键词落位**：见 [growth-strategy](./2mv-growth-strategy.md)。
 
 ---
 
@@ -138,4 +137,4 @@
 
 > 关联：[keywords](./2mv-keywords.md) | [features](./2mv-features.md) | [competitors](./2mv-competitors.md) | [site-structure](./2mv-site-structure.md) | [use-cases](./2mv-use-cases.md) | [growth-strategy](./2mv-growth-strategy.md)
 
-*Last updated: 2026-08-14（关键词数据已用 Keyword Planner 2026-07-14 真实数据补齐）*
+*Last updated: 2026-08-24（站点结构规划迁至 site-structure）*

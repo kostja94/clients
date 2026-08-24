@@ -1,6 +1,6 @@
 ## §1 项目配置与 G1–G7 阻断规则
 
-> **话题范围感知**：以下配置以 **TikTok Shop affiliate** 为默认上下文（覆盖当前 8/8 文章）。若 Phase 0.0 判定话题范围 ≠ TikTok Shop affiliate，Agent 以声明的话题范围为准——跳过不适用的 Gate（如 I3 对非 TikTok 话题自动通过）、调整 ICP 称谓、放宽市场限制。G1–G7 通用阻断规则对所有话题生效。
+> **话题范围感知**：以下配置以 **TikTok Shop affiliate** 为默认上下文（portfolio **64 篇**，见 `content-graph.md` §4.1）。若 Phase 0.0 判定话题范围 ≠ TikTok Shop affiliate，Agent 以声明的话题范围为准——跳过不适用的 Gate（如 I3 对非 TikTok 话题自动通过）、调整 ICP 称谓、放宽市场限制。G1–G7 通用阻断规则对所有话题生效。
 
 ### 1.1 项目配置
 
@@ -9,6 +9,7 @@
 | **品牌/产品名** | Moras、K2 Lab、K2LAB |
 | **产品名大小写** | 正文与 frontmatter 统一 **Moras**；K2 Lab / K2LAB 仅公司/页脚语境 |
 | **主域名** | moras.ai |
+| **blogLayout** | cluster-folders（`moras/blog/{folder}/NN-{slug}.md`；Cluster D 根目录；见 `topic-cluster-layout.md`） |
 | **博客路径前缀** | `/blog/`（frontmatter `slug` 已含此前缀） |
 | **作者** | `Kostja`（默认） |
 | **Primary ICP（默认）** | **TikTok Shop 联盟客**（affiliate creators）、高佣带货达人、副业 side-hustle KOC。**非 TikTok Shop 话题可覆盖**——Agent 在 Phase 0.0 声明 ICP 后，以声明的 ICP 为准 |

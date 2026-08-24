@@ -1,7 +1,8 @@
-﻿# Extractability 检查（Draft 阶段）
+# Extractability 检查（Draft 阶段）
 
-> Phase 4 使用。覆盖 **BLUF · Claim 原子性 · Judgment · Schema**——人类 SEO 与 LLM 摘录共用。  
-> 与 IG-3、SelfCheck 一致。**随 skill 分发。**
+> Phase 4 使用。覆盖 **BLUF · Claim 原子性 · Judgment**——人类 SEO 与 LLM 摘录共用。  
+> **Schema JSON-LD 文件已停用**：不在此清单要求 Agent 产出 `blog/schema/*.json`。  
+> 与 `06-research` §6.1 IG-3、SelfCheck §5.3–§5.4 一致。**随 skill 分发。**
 
 ---
 
@@ -41,6 +42,16 @@ Draft 前对照 Synthesis one-line thesis：是在 **paraphrase Top3**，还是�
 
 ---
 
+## Schema JSON-LD（已停用）
+
+| 层级 | 要求 |
+|------|------|
+| **Agent** | **禁止**写入 `floatboat/blog/schema/{slug}.json` |
+| **正文** | 仍须写好可抽取的 FAQ / 步骤（站点若注入 JSON-LD，可从正文对齐） |
+| **站点** | 结构化数据由 CMS / 站点侧处理 |
+
+---
+
 ## Answer Blocks（standard / flagship）
 
 Brief 声明 3–5 个 `AnswerBlocks`；每个对应 major H2，须可独立成 **40–60 词**段（与 B2 一致）。
@@ -50,4 +61,4 @@ Brief 声明 3–5 个 `AnswerBlocks`；每个对应 major H2，须可独立成 
 
 ---
 
-*extractability-checklist · portable v2.0 · 2026-07-06*
+*extractability-checklist · portable v2.0 · 2026-06-19*

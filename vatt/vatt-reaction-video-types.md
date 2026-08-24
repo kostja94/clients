@@ -1,7 +1,7 @@
 # Vatt — Reaction Video 类型全景
 
 > 遵循 [客户文档规范](../../skills for clients/client-template.md)  
-> **引用**：[vatt.md](./vatt.md) | [vatt-keywords.md](./vatt-keywords.md) | [vatt-use-cases.md](./vatt-use-cases.md) | [vatt-growth-strategy.md](./vatt-growth-strategy.md)
+> **引用**：[vatt.md](./vatt.md) | [vatt-keywords.md](./vatt-keywords.md) | [vatt-use-cases.md](./vatt-use-cases.md) | [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md)
 
 **Last updated**: 2026-07-24（补官方 Niche × Feature Stack；对齐 features）
 
@@ -426,7 +426,7 @@ Reaction Video 是创作者对已有内容（音乐、影视、病毒 clip、游
 | 7 | Music Reaction Videos: YouTube Strategy | music reaction | ~1,190 | §4.5 |
 | 8 | Sports / Trailer Reaction | sports/trailer reaction | 140 | §4.7 + 4.2.1 |
 
-*完整渠道计划* → [vatt-growth-strategy.md](./vatt-growth-strategy.md)
+*渠道与 Blog 计划* → [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) · §11 本页
 
 ---
 

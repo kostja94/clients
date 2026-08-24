@@ -1,6 +1,6 @@
 # Gate 总表（精简 · 自包含）
 
-> 完整版 SSOT：`blog-audit/00-gates-master.md`。随 skill 分发。
+> 完整 Gate 细则：`references/gates.md`；Phase 回溯表：SKILL.md §3.G。随 skill 分发。
 
 ---
 

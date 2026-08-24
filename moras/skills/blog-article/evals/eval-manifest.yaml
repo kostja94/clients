@@ -1,12 +1,13 @@
-# Eval Manifest — moras-blog-article v1.2.0
+# Eval Manifest — moras-blog-article v2.1.0
 # 回归测试清单。新增规则或修改 skill 后，全部用例须重新通过。
 
 manifest:
-  version: "1.0.0"
+  version: "1.1.0"
   skill: moras-blog-article
-  skill_version: "1.2.0"
+  skill_version: "2.1.0"
   created: "2026-06-15"
-  total_evals: 10
+  updated: "2026-08-24"
+  total_evals: 12
 
 evals:
   - id: E01
@@ -75,12 +76,12 @@ evals:
     severity: high
 
   - id: E07
-    name: "Framework 文 Moras 提及 >40% → Objectivity 🔴"
+    name: "Framework 文 Moras 提及 >25% → Objectivity Fail"
     input: "Framework draft: Moras mentioned in 45% of paragraphs"
     expected:
-      health_check: "Objectivity 2/5 🔴 — product mention ratio >40% exceeds 25% cap"
+      gate_c: "Dimension 7 Objectivity FAIL — product mention >25% cap"
       assert:
-        - "product mention ratio flagged as 🔴"
+        - "product mention ratio flagged"
         - "recommendation to reduce Moras mentions below 25%"
     severity: high
 
@@ -117,4 +118,27 @@ evals:
         - "all Brief fields populated"
         - "no placeholder text"
         - "snippet-ready definition sentence present"
+    severity: high
+
+  - id: E11
+    name: "自包含 — 不加载 skill 文件夹外路径"
+    input: "按 moras-blog-article skill 创建 Framework 文"
+    expected:
+      route: "moras-blog-article only"
+      assert:
+        - "does NOT require E:\\Agent执行\\blog-create"
+        - "does NOT require E:\\Agent执行\\blog-audit"
+        - "workflow references only skill folder paths"
+    severity: critical
+
+  - id: E12
+    name: "flagship Mode 强制 Phase 0R Research Log"
+    input: "按 moras-blog-article skill 创建 Pillar 文，Mode flagship"
+    expected:
+      mode: "flagship"
+      phase0r: "Research Log with R1-R3 + Synthesis"
+      assert:
+        - "Phase 0 outputs Mode: flagship"
+        - "Research Log present before Brief finalization"
+        - "SERP Fit table filled"
     severity: high

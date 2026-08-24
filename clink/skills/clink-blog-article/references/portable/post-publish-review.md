@@ -1,4 +1,4 @@
-﻿# 发布后复盘（精简）
+# 发布后复盘（精简）
 
 ---
 
@@ -13,4 +13,4 @@ Brief 必填：`SuccessMetric` · `PostPublishReviewDates`
 
 ---
 
-*post-publish-review · portable v2.0 · 2026-07-06*
+*post-publish-review · portable v2.0 · 2026-06-19*

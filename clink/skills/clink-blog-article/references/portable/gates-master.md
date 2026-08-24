@@ -1,4 +1,4 @@
-﻿# Gate 总表（精简 · 自包含）
+# Gate 总表（精简 · 自包含）
 
 > 完整 Gate 细则：`references/gates.md`；Phase 回溯表：SKILL.md §3.G。随 skill 分发。
 
@@ -34,4 +34,4 @@ G1 事实 · G2 死链 · G3 无来源数字 · G4 竞品状态 · G5 产品夸�
 
 ---
 
-*gates-master · portable v2.0 · 2026-07-06*
+*gates-master · portable v2.0 · 2026-06-19*

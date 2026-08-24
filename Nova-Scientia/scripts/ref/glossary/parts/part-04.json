@@ -1,0 +1,94 @@
+[
+  {
+    "id": "avaliacao-e-desempenho",
+    "title": "Avaliação e desempenho",
+    "terms": [
+      {
+        "term": "Acurácia (Accuracy)",
+        "definition": "Proporção de acertos no total de predições; pode enganar em classes desbalanceadas."
+      },
+      {
+        "term": "Precisão (Precision)",
+        "definition": "Entre os exemplos previstos como positivos, quantos são realmente positivos; mede confiabilidade dos positivos."
+      },
+      {
+        "term": "Revocação / Sensibilidade (Recall)",
+        "definition": "Entre os positivos reais, quantos o modelo encontrou; mede cobertura dos casos positivos."
+      },
+      {
+        "term": "F1-score",
+        "definition": "Média harmônica de precisão e revocação; útil quando se busca equilíbrio entre os dois."
+      },
+      {
+        "term": "Matriz de confusão (Confusion Matrix)",
+        "definition": "Tabela cruzando classes previstas e reais; revela tipos de erro por categoria."
+      },
+      {
+        "term": "Validação cruzada (Cross-Validation)",
+        "definition": "Divide dados em dobras e alterna treino/validação para estimar desempenho com menos viés de divisão."
+      },
+      {
+        "term": "Teste A/B (A/B Testing)",
+        "definition": "Compara duas variantes com usuários aleatorizados; método comum para otimizar produtos de IA."
+      },
+      {
+        "term": "Benchmark",
+        "definition": "Conjunto de tarefas e métricas padronizadas para comparar modelos de forma reproduzível."
+      },
+      {
+        "term": "Avaliação de modelo (Model Evaluation)",
+        "definition": "Processo de medir qualidade, latência, custo e robustez antes e depois do deploy."
+      },
+      {
+        "term": "Otimização de desempenho (Performance Optimization)",
+        "definition": "Compressão, quantização, paralelismo e hardware para acelerar inferência e reduzir custo."
+      }
+    ]
+  },
+  {
+    "id": "dados-e-treinamento",
+    "title": "Dados e rotulagem",
+    "terms": [
+      {
+        "term": "Dados de treino (Training Data)",
+        "definition": "Conjunto usado para ajustar parâmetros; qualidade e diversidade impactam diretamente o resultado."
+      },
+      {
+        "term": "Dados de validação (Validation Data)",
+        "definition": "Usados para escolher hiperparâmetros e parar cedo; não devem ser confundidos com o teste final."
+      },
+      {
+        "term": "Dados de teste (Test Data)",
+        "definition": "Reservados para estimativa final de generalização; não entram no ajuste de pesos."
+      },
+      {
+        "term": "Rotulagem de dados (Data Labeling)",
+        "definition": "Anotação de exemplos (classes, caixas, máscaras); gargalo de custo em aprendizado supervisionado."
+      },
+      {
+        "term": "Aumento de dados (Data Augmentation)",
+        "definition": "Gera variações sintéticas (rotação, ruído, paráfrase) para aumentar diversidade sem coletar tudo de novo."
+      },
+      {
+        "term": "Limpeza de dados (Data Cleaning)",
+        "definition": "Corrigir erros, duplicatas e inconsistências antes do treino."
+      },
+      {
+        "term": "Engenharia de atributos (Feature Engineering)",
+        "definition": "Construir entradas úteis a partir de dados brutos; ainda relevante fora de pipelines puramente end-to-end."
+      },
+      {
+        "term": "Seleção de atributos (Feature Selection)",
+        "definition": "Reduz dimensão e ruído escolhendo subconjunto de variáveis mais informativas."
+      },
+      {
+        "term": "Desbalanceamento de classes (Data Imbalance)",
+        "definition": "Quando uma classe domina; exige reamostragem, pesos ou métricas adequadas."
+      },
+      {
+        "term": "Detecção de anomalias (Anomaly Detection)",
+        "definition": "Identifica desvios em relação ao comportamento normal; usado em fraude e manutenção preditiva."
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-﻿# 发布前终审（自包含）
+# 发布前终审（自包含）
 
 > 成稿 SelfCheck 全 Pass 后，由人类或另一 Agent 做加权终审。**本文件随 skill 分发，不依赖外部 audit 目录。**
 
@@ -20,11 +20,11 @@ SelfCheck Pass = **audit-ready**，**不保证** publish-ready（终审 ≥70 �
 
 | 配置项 | 值 |
 |--------|-----|
-| 品牌/产品 | Clink（Clink Teammate） |
-| 主域名 | clinkbill.com |
+| 品牌/产品 | |
+| 主域名 | |
 | 博客前缀 | /blog/ |
-| Pillar slug | （见 content-graph.md） |
-| 禁止内链路径 | 未上线产品页 |
+| Pillar slug | |
+| 禁止内链路径 | |
 | 待审文件 | |
 
 ---
@@ -56,7 +56,7 @@ SelfCheck Pass = **audit-ready**，**不保证** publish-ready（终审 ≥70 �
 | C Structure | 9% | TL;DR + H2 + Conclusion + FAQ≥3 |
 | D Writing & Voice | 11% | 品牌 voice；无 AI 腔；有具体例子 |
 | E Fact & EEAT | 20% | 全 claim 有来源；竞品准确；见 source-map-template.md |
-| F Links & Graph | 6% | 内链≥2；related 双向；外链 2–6 |
+| F Links & Graph | 6% | 内链≥2；related 双向；外链 2–5 |
 | G Differentiation | 14% | 独有增量；与他文重复 <30% |
 | H Conversion | 6% | CTA≤2；匹配读者阶段 |
 | I Density | 2% | 每 500 词≥1 例子；结论有判断 |
@@ -72,7 +72,7 @@ SelfCheck Pass = **audit-ready**，**不保证** publish-ready（终审 ≥70 �
 
 ## 五、审核步骤
 
-1. 读 `gates-master.md` + `references/project-config.md`
+1. 读 `gates-master.md` + 项目 `references/project-config.md` + `proof-library.md`
 2. P0 Gate 逐项
 3. 十维打分 + Excellence + Moat + Perfect gap
 4. 生成 Source Map（`source-map-template.md`）
@@ -124,4 +124,4 @@ SelfCheck Pass = **audit-ready**，**不保证** publish-ready（终审 ≥70 �
 
 ---
 
-*final-audit · portable v2.0 · 2026-07-06*
+*final-audit · portable v2.0 · 2026-06-19*

@@ -18,6 +18,8 @@
 | 写人群场景 | [floatboat-use-cases.md](./floatboat-use-cases.md) |
 | 建站 / 路由 / SEO 技术 | [floatboat-site-structure.md](./floatboat-site-structure.md) · [floatboat-page-composition-guide.md](./floatboat-page-composition-guide.md) |
 | 写博客 | [blog/README.md](./blog/README.md) |
+| 全站 SEO/GEO 审计 | [site-seo-geo-audit/](./site-seo-geo-audit/)（清单 + Skill + tools，可整包外发） |
+| SEO 周报 | [seo-weekly-report/floatboat-seo-weekly-report-skill.md](./seo-weekly-report/floatboat-seo-weekly-report-skill.md) |
 | 历史归档 | [_archive/README.md](./_archive/README.md) |
 
 **推荐阅读顺序**（详见 [floatboat.md](./floatboat.md)）：主文档 → 功能 → 关键词 → 竞品 → 场景 → 站点结构 → Skills 生态 → 落地页指南。
@@ -38,6 +40,7 @@ floatboat/
 ├── floatboat-obsidian.md              ← Floatboat for Obsidian 落地页 + Integrations 方案
 ├── floatboat-page-composition-guide.md← Landing 页面搭建指南
 ├── floatboat-site-structure.md        ← 正式站路由结构
+├── site-seo-geo-audit/                ← 全站 SEO/GEO 审计包（清单 + Skill + tools，可整包外发）
 ├── floatboat-skills-ecosystem.md      ← Combo Store / Leaderboard 生态
 ├── _archive/                          ← 已停用历史文档（含世界杯规划、目录站提交等）
 │   └── README.md
@@ -62,6 +65,7 @@ floatboat/
 1. 将 [floatboat.md](./floatboat.md) 复制为 `.cursor/product-marketing-context.md` 或 `.claude/product-marketing-context.md`。
 2. 写博客时引用 [blog/skills/floatboat-blog-article/SKILL.md](./blog/skills/floatboat-blog-article/SKILL.md)。
 3. 生成 SEO 周报时使用 [seo-weekly-report/floatboat-seo-weekly-report-skill.md](./seo-weekly-report/floatboat-seo-weekly-report-skill.md)（自包含，无需外部文档）；历史样例见同目录 `floatboat-seo-weekly-report-*.md`。
+4. 全站 SEO/GEO 审计：整包见 [site-seo-geo-audit/](./site-seo-geo-audit/)，入口 [README.md](./site-seo-geo-audit/README.md)。
 
 ---
 
@@ -76,4 +80,4 @@ floatboat/
 
 ---
 
-*Last updated: 2026-07-28*
+*Last updated: 2026-08-20*

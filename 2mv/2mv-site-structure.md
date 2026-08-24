@@ -1,22 +1,76 @@
 # 2mv — 站点结构
 
-> 面向海外市场（英文为主）。本文件为纯事实层：URL、IA、技术栈。产品能力见 [2mv-features.md](./2mv-features.md)。
+> 网站结构规划文档。URL、IA 与页面构建方案。
 
 ---
 
 ## 1. 核心路径表
 
-| 路径 | 页面类型 | 目标关键词 | 优先级 |
-|------|---------|-----------|--------|
-| `/` | 首页（Landing）：五引擎 agency 定位、对比矩阵、病毒案例、Book a demo CTA | 2mv, ai social media marketing agency | P0 |
-| `/research` | Research Lab 产品页（SaaS）：5 大视图、定价、FAQ、证言、niche 列表 | viral video finder, social media analytics tool, social media competitor analysis | P0 |
-| `/insights` | 博客列表页（目前仅 1 篇博文） | viral content guides, tiktok trends | P1 |
-| `/insights/{slug}` | 博文详情页（`how-to-find-viral-content-ideas-before-they-peak` 等） | how to find viral content ideas | P1 |
-| `/book-a-demo` | 预约演示表单（name / work email / brand website / social links） | book a demo, ai marketing agency | P1 |
-| `/privacy-policy` | 隐私政策（Fluxspark Inc.，Last updated 2026-06-25） | — | P2 |
-| `/terms-of-use` | 服务条款（页脚链接「terms of use」，实际路径 `待验证`） | — | P2 |
+### 1.1 基础层
 
-> 站点抓取日期：2026-08-13。`/service`、`/services`、`/research-lab`、`/privacy`、`/terms`、`/terms-of-use` 均返回 404 或未确认，真实 URL 以页脚链接为准，详见 §2。
+| 路径 | 页面类型 |
+|------|---------|
+| `/` | 首页（Landing）：五引擎 agency 定位、对比矩阵、病毒案例、Book a demo CTA |
+| `/studio` | Studio 产品页（SaaS）：5 大视图、定价、FAQ、证言、niche 列表 |
+| `/service` | 代运营服务落地页 |
+| `/book-a-demo` | 预约演示表单 |
+| `/blog` | 博客列表页 |
+| `/blog/{slug}` | 博文详情页（见 §5） |
+| `/privacy-policy` | 隐私政策 |
+| `/terms-of-use` | 服务条款 |
+
+**路径迁移**（旧 → 新）：
+
+| 旧路径 | 新路径 |
+|--------|--------|
+| `/research` | `/studio` |
+| `/insights` | `/blog` |
+
+### 1.2 核心产品（Feature，根域名一级路径）
+
+| 路径 | Feature | 对应能力 |
+|------|---------|---------|
+| `/content-discovery` | Content Discovery | Market Signals / Watch |
+| `/tracking-center` | Tracking Center | Target Tracking |
+| `/profile-analysis` | Profile Analysis | 账号/频道维度分析 |
+| `/ai-video-analyzer` | Viral Video Analysis | Viral Breakdown / Content Patterns |
+
+> 4 个 Feature 能力内嵌于 `/studio`；独立根域名路径为 SEO 拆分规划。
+
+**下级页规则**：
+
+| 核心产品 | 下级页类型 | 路径 |
+|---------|---------|------|
+| `/ai-video-analyzer` | **平台页**（仅此产品） | `/ai-video-analyzer/instagram-reels`、`/tiktok`、`/youtube-shorts` |
+| `/content-discovery` | 任务长尾页 | `/content-discovery/youtube-niche-finder` |
+| `/tracking-center` | 任务长尾页 | `/tracking-center/tiktok-account-tracker` |
+| `/profile-analysis` | 任务长尾页 | `/profile-analysis/youtube-channel-analyzer`、`/instagram-account-analyzer` |
+
+> 已移除 `/ai-video-analyzer/tiktok-video-analyzer`——与 `/ai-video-analyzer/tiktok` 意图重复，统一用平台页承接。
+
+### 1.3 Tools（§6）
+
+| 路径 | 工具 |
+|------|------|
+| `/tools` | Tools Hub 列表页 |
+| `/tools/hook-analyzer` | Hook Analyzer |
+| `/tools/hashtag-generator` | Hashtag Generator |
+| `/tools/video-idea-generator` | Video Idea Generator |
+
+### 1.4 Library & Reports（§7）
+
+| 路径 | 页面类型 |
+|------|---------|
+| `/library` | Library 聚合页 |
+| `/library/{slug}` | Library 详情页 |
+| `/reports` | Reports 聚合页 |
+| `/reports/{slug}` | Reports 详情页 |
+
+### 1.5 其他
+
+| 路径 | 页面类型 |
+|------|---------|
+| `/pricing` | 独立定价页（当前定价内嵌于 `/studio`） |
 
 ---
 
@@ -24,95 +78,172 @@
 
 ```
 2mv.ai
-├── 首页 /                    五引擎 agency 叙事（Watch→Decode→Architect→Produce→Grow）+ 对比矩阵
-├── 产品层
-│   └── /research             Research Lab SaaS：5 视图 + 定价 + FAQ + 证言 + niche
-├── 内容层
-│   ├── /insights             博客列表
-│   └── /insights/{slug}      博文详情（当前仅 1 篇）
-├── 转化层
-│   └── /book-a-demo          预约演示表单
-├── 法务层
-│   ├── /privacy-policy       隐私政策
-│   └── /terms-of-use         服务条款（路径待验证）
-└── API（robots Disallow）
-    └── /api/                 后端接口，禁止爬取
+├── 服务层          /  ·  /service  ·  /book-a-demo
+├── 产品层          /studio  ·  /{product-slug}/
+├── 工具层          /tools/*
+├── 内容层          /blog/*  ·  /library/*  ·  /reports/*
+├── 扩展层          /pricing
+└── 法务层          /privacy-policy  ·  /terms-of-use
 ```
 
-**导航标签 vs 实际 URL 映射**（页脚「explore: service / research lab / insights」）：
+**完整 URL 树**：
 
-| 导航标签 | 实际 URL | 备注 |
-|---------|---------|------|
-| service | 待验证（`/service`、`/services` 均 404，可能指向首页或 `/research`） | 待验证 |
-| research lab | `/research` | 已确认 |
-| insights | `/insights` | 已确认 |
-| book a demo | `/book-a-demo` | 已确认 |
-| privacy policy | `/privacy-policy` | 已确认 |
-| terms of use | 待验证（`/terms`、`/terms-of-use` 均 404） | 待验证 |
-
----
-
-## 3. 技术架构
-
-| 维度 | 识别 | 识别方式 |
-|------|------|---------|
-| 前端框架 | 疑似 Next.js SPA（未确认） | `待验证`（需查看页面 HTML 资源路径） |
-| 支付 | Stripe（隐私政策声明：billing info processed by Stripe） | /privacy-policy 2026-08-13 |
-| 运营主体 | Fluxspark Inc. | /privacy-policy 2026-08-13 |
-| 联系邮箱 | hi@2mv.ai | /privacy-policy + /research 2026-08-13 |
-| 托管 / CDN | 未确认 | `待验证` |
-| 分析 / 埋点 | 未确认 | `待验证` |
-| OAuth 集成 | 支持连接 TikTok / Instagram / YouTube 第三方账号（OAuth 授权） | /privacy-policy §1.c 2026-08-13 |
-
----
-
-## 4. 多语言
-
-- 目前为**英文单语**站点（未发现 hreflang 或多语言路径）。目标市场覆盖 TikTok / Reels / Shorts 三平台全球用户，`待验证：是否有本地化计划`。
-
----
-
-## 5. Sitemap 与 URL 模式
-
-| 来源 | 路径/模式 | 估算量级 | lastmod |
-|------|----------|---------|---------|
-| robots.txt 声明 | `sitemap.xml` | 抓取返回 **500**，无法确认内容 | 待验证 |
-| 已确认路径 | `/`、`/research`、`/insights`、`/book-a-demo`、`/privacy-policy` | 5 个一级路径 | 2026-08-13 |
-| 博文 | `/insights/{slug}` | 1 篇（"How to Find Viral Content Ideas Before They Peak"，2026-07-22） | 2026-08-13 |
-
-> 完整 URL 明细无法获取（sitemap.xml 返回 500）。`⚠️ 待验证：sitemap.xml 是否有效；/terms-of-use 与 service 页真实 URL；博文详情页 URL 模式`。
+```
+/
+├── studio/
+├── content-discovery/
+│   └── youtube-niche-finder/
+├── tracking-center/
+│   └── tiktok-account-tracker/
+├── profile-analysis/
+│   ├── youtube-channel-analyzer/
+│   └── instagram-account-analyzer/
+├── ai-video-analyzer/
+│   ├── instagram-reels/
+│   ├── tiktok/
+│   └── youtube-shorts/
+├── tools/
+│   ├── hook-analyzer/
+│   ├── hashtag-generator/
+│   └── video-idea-generator/
+├── blog/
+│   ├── what-is-2mv
+│   ├── best-social-media-marketing-agencies
+│   └── introducing-2mv-reports
+├── library/
+│   └── {slug}/
+├── reports/
+│   └── {slug}/
+├── pricing/
+└── service/
+```
 
 ---
 
-## 6. 内链枢纽
+## 3. 页面类型与路径规则
 
-| 枢纽页 | 链出类型 | 主要目标 |
-|--------|---------|---------|
-| 首页 `/` | 主导航 CTA：Book a demo / Start research / 五引擎区块 | /book-a-demo、/research、注册转化 |
-| 主导航 | service（待验证）、research lab、insights | 产品页、博客 |
-| 页脚 | explore（service / research lab / insights）、connect（book a demo）、legal（privacy / terms） | 全站核心页 |
-| `/research` | 定价卡 CTA「Start for free」、FAQ「Contact us via hi@2mv.ai」 | 注册转化、邮件线索 |
-| `/insights` | 博文卡片 → 详情页 | 内容阅读 |
+| 层级 | 路径模式 | 适用 | 交互 |
+|------|---------|------|------|
+| 产品总览 | `/studio` | Studio 入口 | 注册/试用 |
+| 核心产品 | `/{product-slug}` | 4 个 Feature | 无，纯营销 |
+| 平台页 | `/ai-video-analyzer/{platform}` | **仅** ai-video-analyzer | 无，纯营销 |
+| 任务长尾页 | `/{product-slug}/{task-slug}` | 其余 3 个 Feature | 无，纯营销 |
+| 工具页 | `/tools/{tool-slug}` | Tools Hub | 有，轻量交互 |
+| 博客 | `/blog/{slug}` | Blog | 无 |
+| Library | `/library/{slug}` | 案例库 | 无 |
+| Reports | `/reports/{slug}` | 研究报告 | 无 |
 
----
+**平台 slug**（仅用于 `/ai-video-analyzer/`）：`instagram-reels` · `tiktok` · `youtube-shorts`
 
-## 7. URL 分阶段规划
+**平台页 vs 任务长尾页**：
 
-| 阶段 | 新增页面 | 对应关键词优先级 | 理由 |
-|------|---------|----------------|------|
-| 短期（0–3 月） | 修复 sitemap.xml（当前 500） | — | 影响抓取与收录，SEO 基建 |
-| 短期 | `/research` 建设 analytics 核心词池 + 主词 viral video finder | P0 商业型词 | 承接 social media analytics tool（8,100 月搜）等 331 词 |
-| 短期 | `/research/social-media-competitor-analysis`（首个下级页） | P0 商业型词 | 意图明确，竞品有真实页面支撑，Phase 1 提前建设 |
-| 短期 | `/insights` 扩容（问题型文章、niche 解码、趋势报告系列） | P0/P1 信息型词 | 当前仅 1 篇博文，内容缺口最大 |
-| 中期（3–6 月） | `/tools/competitor-content-analyzer`、`/tools/post-analysis` 工具页 | P1 工具型词 | 复用工具页模板；跑通后再决定 `/tools` Hub 是否上线 |
-| 中期 | 独立 `/pricing` 页（当前定价内嵌于 `/research`） | P1 商业型词 | 定价透明度影响转化 |
-| 中期 | `/service`（代运营）独立落地页 | P1 导航/商业型词 | 代运营形态目前与首页耦合，无独立 URL |
-| 长期（6–12 月） | 平台页 `/research/tiktok-analytics` 等（Phase 2/3） | P2 平台词 | tik tok analytics（33,100）等词量大但后置 |
-| 长期 | `/resources/social-media-audit`、`social-media-benchmarks` | P2 资源词 | audit 词池（2,900）有 lead magnet 价值 |
-| 长期（观察） | `/niches/{slug}` 各细分领域落地页（500+ niches） | P2 长尾词 | programmatic SEO 机会，量级大 |
+| | 平台页 | 任务长尾页 |
+|--|--------|-----------|
+| 适用范围 | 仅 `/ai-video-analyzer/` | `/content-discovery`、`/tracking-center`、`/profile-analysis` |
+| 路径示例 | `/ai-video-analyzer/tiktok` | `/tracking-center/tiktok-account-tracker` |
+| 命名 | 固定三平台 slug | 平台 + 任务组合 slug |
+| 何时新建 | 不需要新建，仅 3 个 | 搜索意图独立、且不能用平台页表达时 |
 
 ---
 
-> 关联：[主文档](./2mv.md) | [keywords](./2mv-keywords.md) | [features](./2mv-features.md) | [competitors](./2mv-competitors.md) | [use-cases](./2mv-use-cases.md) | [growth-strategy](./2mv-growth-strategy.md)
+## 4. 规划页面清单
 
-*Last updated: 2026-08-14（URL 规划对齐 Keyword Planner 真实词池）*
+| 路径 | 页面类型 |
+|------|---------|
+| `/content-discovery` | 核心产品 |
+| `/content-discovery/youtube-niche-finder` | 任务长尾页 |
+| `/tracking-center` | 核心产品 |
+| `/tracking-center/tiktok-account-tracker` | 任务长尾页 |
+| `/profile-analysis` | 核心产品 |
+| `/profile-analysis/youtube-channel-analyzer` | 任务长尾页 |
+| `/profile-analysis/instagram-account-analyzer` | 任务长尾页 |
+| `/ai-video-analyzer` | 核心产品 |
+| `/ai-video-analyzer/instagram-reels` | 平台页 |
+| `/ai-video-analyzer/tiktok` | 平台页 |
+| `/ai-video-analyzer/youtube-shorts` | 平台页 |
+| `/tools` | Tools Hub |
+| `/tools/hook-analyzer` | 工具页 |
+| `/tools/hashtag-generator` | 工具页 |
+| `/tools/video-idea-generator` | 工具页 |
+| `/library` | Library 聚合页 |
+| `/library/{slug}` | Library 详情页 |
+| `/reports` | Reports 聚合页 |
+| `/reports/{slug}` | Reports 详情页 |
+| `/pricing` | 独立定价页 |
+| `/service` | 代运营服务落地页 |
+
+---
+
+## 5. Blog 路径与文章
+
+**路径前缀**：`/blog/`
+
+| slug | 路径 | 类型 |
+|------|------|------|
+| `what-is-2mv` | `/blog/what-is-2mv` | Research |
+| `best-social-media-marketing-agencies` | `/blog/best-social-media-marketing-agencies` | Comparison |
+| `introducing-2mv-reports` | `/blog/introducing-2mv-reports` | Product |
+
+**Tag 分类**（每篇 2–4 个 Tag；Tag 归档页 `noindex, follow`）：
+
+| 分类 | Tag |
+|------|-----|
+| 平台类 | YouTube Shorts、TikTok、Instagram Reels、Cross-Platform |
+| 内容与研究类 | Video Ideas、Hooks、Outliers、Content Patterns、Viral Research、Competitor Research、Content Strategy、Content Creation、Organic Growth |
+| 行业洞察类 | Expert Opinion、Interview、Podcast、Industry Events、Platform Updates、Creator Economy、AI Content Tools |
+
+> 原创研究报告走 `/reports/*`，不在 `/blog/` 重复建设。
+
+---
+
+## 6. Tools Hub 结构
+
+**Hub 路径**：`/tools`
+
+| 属性 | 说明 |
+|------|------|
+| 主要作用 | 免费获客入口 |
+| 交互 | 页内轻量功能，免注册、免付费 |
+| 边界 | 必须真实可用；不与 Feature 营销页混淆 |
+
+| 路径 | 工具 | 阶段 |
+|------|------|------|
+| `/tools/hook-analyzer` | Hook Analyzer | Analyze |
+| `/tools/video-idea-generator` | Video Idea Generator | Create |
+| `/tools/hashtag-generator` | Hashtag Generator | Create |
+
+**Hub 四阶段分组**：Discover · Analyze · Create · Track & Optimize
+
+---
+
+## 7. Library & Reports 结构
+
+### 7.1 Library
+
+| 属性 | 说明 |
+|------|------|
+| 聚合页 | `/library` |
+| 详情页 | `/library/{slug}` |
+| 主要作用 | 公开的真实研究案例与灵感库 |
+| 交互 | 无，纯内容 |
+
+**内容类型**：Hook 库 · Viral Video 库 · Prompts 库
+
+### 7.2 Reports
+
+| 属性 | 说明 |
+|------|------|
+| 聚合页 | `/reports` |
+| 详情页 | `/reports/{slug}` |
+| 主要作用 | 原创研究与行业权威内容 |
+| 交互 | 无，纯内容 |
+
+**内容类型**：趋势报告 · 行业报告 · 年度/季度报告
+
+---
+
+> 面向海外市场（英文为主）。
+
+> 关联：[主文档](./2mv.md) | [keywords](./2mv-keywords.md) | [features](./2mv-features.md) | [growth-strategy](./2mv-growth-strategy.md) | [competitors](./2mv-competitors.md) | [use-cases](./2mv-use-cases.md) | [blog/](./blog/)
+
+*Last updated: 2026-08-24*

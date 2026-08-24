@@ -1,0 +1,7 @@
+# Generated JSON outputs — do not commit
+*.json
+!package.json
+!package-lock.json
+
+# Scripts
+scripts/node_modules/

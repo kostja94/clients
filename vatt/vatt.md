@@ -14,15 +14,16 @@
 |------|------|------|
 | [主文档](./vatt.md)（本页） | 概览、ICP、文档索引 | — |
 | [vatt-keywords.md](./vatt-keywords.md) | 关键词映射、目标页 | [features](./vatt-features.md) |
-| [vatt-features.md](./vatt-features.md) | 功能分析（全能力 Status 真源） | [motion-graphics](./vatt-motion-graphics.md) |
+| [vatt-features.md](./vatt-features.md) | Feature Universe 审计真源（Status + Claims） | [motion-graphics](./vatt-motion-graphics.md) |
+| [vatt-capabilities.md](./vatt-capabilities.md) | 能力规格：产品模块 × 用户决策路径（问甲方 / 写营销） | [features](./vatt-features.md) |
 | [vatt-motion-graphics.md](./vatt-motion-graphics.md) | Motion Graphics 专文（MG 唯一维护处） | [features §0](./vatt-features.md) |
 | [vatt-competitors.md](./vatt-competitors.md) | 竞品分析、差异化 | [features](./vatt-features.md) |
 | [vatt-site-structure.md](./vatt-site-structure.md) | URL 层级、IA、Sitemap | [others](./vatt-others.md) |
 | [vatt-use-cases.md](./vatt-use-cases.md) | 场景、Persona | [features](./vatt-features.md) |
-| [vatt-growth-strategy.md](./vatt-growth-strategy.md) | 增长渠道、内容计划 | [keywords](./vatt-keywords.md) |
-| [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) | Channel 详情页策略（pSEO / reactor 图谱） | [growth-strategy](./vatt-growth-strategy.md) |
-| [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) | Reaction 类型全景（双轴 + Semrush SEO） | [use-cases](./vatt-use-cases.md) |
-| [vatt-i18n-path-migration.md](./vatt-i18n-path-migration.md) | 多语言迁移：`?lang=` → 路径前缀 `/{locale}` | [site-structure](./vatt-site-structure.md) |
+| [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) | Channel 详情页策略（pSEO / reactor 图谱） | [keywords](./vatt-keywords.md) |
+| [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) | Reaction 类型全景、Blog 队列（Semrush） | [keywords](./vatt-keywords.md) |
+| [archive/vatt-growth-strategy.md](./archive/vatt-growth-strategy.md) | 增长策略（**已归档**） | — |
+| [archive/vatt-i18n-path-migration.md](./archive/vatt-i18n-path-migration.md) | 多语言路径迁移（**已归档**） | [site-structure](./vatt-site-structure.md) |
 | [vatt-others.md](./vatt-others.md) | Sitemap 统计、数据引用 | site-structure |
 
 ---
@@ -229,7 +230,7 @@ Vattention = **视频编辑领域的 Cursor**——Human-AI Cocreation 理念，
 - **P1**：Vs 对比页（vs Revid / vs 手动剪辑）；邀请制裂变（邀请码分享）；Channel 页扩展至 10 页
 - **P2**：Product Hunt 发布；创作者合作 / 大使计划；Channel 页 50–100 页 reactor 图谱
 
-*完整* → [vatt-growth-strategy.md](./vatt-growth-strategy.md) | *Channel 页策略* → [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md)
+*现行* → [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) · [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) §11 | *已归档* → [archive/vatt-growth-strategy.md](./archive/vatt-growth-strategy.md)
 
 ---
 

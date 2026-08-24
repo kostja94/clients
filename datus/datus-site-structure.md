@@ -3,7 +3,7 @@
 > **本文档职责**：三域 URL 层级、信息架构、线上页面清单（datus.ai / docs.datus.ai / studio.datus.ai）。  
 > **引用**：[datus.md](./datus.md) 概览 | [datus-growth-strategy.md](./datus-growth-strategy.md) 增长策略 | [datus-i18n-spec.md](./datus-i18n-spec.md) 主站 `/zh` i18n
 
-**最近更新**：2026-08-04（中文站条目对齐 i18n 规范：非 Blog 营销页 `/zh` 镜像）
+**最近更新**：2026-08-21（新增 dosi.datus.ai、OSI Field Mapping、OSI Playground）
 
 **数据来源**：
 
@@ -22,6 +22,7 @@ datus.ai 采用 **两层 URL 模型**：
 | 层级 | 路径模式 | 用途 | 示例 |
 |------|----------|------|------|
 | **顶层页** | `/`、`/products/*`、`/pricing/`、`/integrations/`、`/faq/` 等 | 产品、定价、集成等营销/功能落地页 | `/products/cli/` |
+| **OSI / 工具页** | `/osi-field-mapping/`、`/tools/*/` | OSI 标准参考、浏览器工具（非 Blog） | `/tools/osi-playground/` |
 | **聚合索引** | `/glossary/`、`/blog/` | 列表/索引页，**不是**单篇内容的 canonical URL | `/glossary/` → 链向各术语文 |
 | **独立内容 URL** | **`/blog/{slug}/`** | 所有可独立访问的长文：Glossary 术语、DE Agent 主簇、对比文、教程、发布说明、专题 hub | `/blog/what-is-semantic-layer/` |
 
@@ -37,6 +38,8 @@ datus.ai/
 ├── /                          首页
 ├── /products/*                产品页（4）
 ├── /pricing/  /integrations/  /faq/
+├── /osi-field-mapping/          OSI 8 产品 → OSI 字段映射参考
+├── /tools/osi-playground/       OSI Playground（MetricFlow→OSI）
 ├── /glossary/                 术语聚合索引（→ 指向 /blog/{slug}）
 └── /blog/
     ├── /                      文章列表
@@ -51,6 +54,7 @@ datus.ai/
 |------|------|------|
 | [datus.ai](https://datus.ai/) | 品牌官网 | 产品主页、Blog、Glossary、Pricing |
 | [docs.datus.ai](https://docs.datus.ai/) | 文档站 | 产品文档（56 EN + 56 `/zh/` 镜像；**不在** datus.ai sitemap 内） |
+| [dosi.datus.ai](https://dosi.datus.ai/) | Dosi 产品文档 | OSI-native 语义层引擎（CLI / MCP / REST）；**独立子域**，见 §3.5 |
 | [studio.datus.ai](https://studio.datus.ai/overview) | 云端产品 | Studio 营销页 + 登录后 Web App（独立 sitemap） |
 | [github.com/Datus-ai/Datus-agent](https://github.com/Datus-ai/Datus-agent) | 开源仓库 | 代码 + Issues + Discussions |
 | 微信公众号「数据杂货铺」 | 中文内容 | 创始人博客 + 中文社区运营 |
@@ -83,11 +87,11 @@ datus.ai/
 
 | 域名 | Sitemap URL 数 | 说明 |
 |------|:---:|------|
-| datus.ai | **70+** | 9 顶层 + 60+ blog（§3.1–3.2） |
+| datus.ai | **70+** | 9+ 顶层 + 60+ blog（§3.1–3.2）；含 OSI 工具页（§3.1.1） |
 | docs.datus.ai | **112** | 56 EN + 56 `/zh/`（§3.3） |
 | studio.datus.ai | **2**（sitemap）+ **5**（路由探测） | 公开 2 + 认证路由（§3.4） |
 
-### 3.1 产品与其他页面（9 页）
+### 3.1 产品与其他页面（9+ 页）
 
 | 路径 | 完整 URL | lastmod | 说明 |
 |------|----------|---------|------|
@@ -100,6 +104,19 @@ datus.ai/
 | `/pricing/` | https://datus.ai/pricing/ | 2026-06-11 | 定价页 |
 | `/glossary/` | https://datus.ai/glossary/ | 2026-06-11 | 术语表**聚合索引**（单篇术语 → `/blog/{slug}/`） |
 | `/faq/` | https://datus.ai/faq/ | 2026-06-11 | 常见问题 |
+
+#### 3.1.1 OSI 生态页（已上线，2026-08 复核）
+
+与 [Dosi](https://dosi.datus.ai/)（OSI 执行引擎）同属 OSI 漏斗：**理解/转换 OSI 在 datus.ai，运行 OSI 在 dosi.datus.ai**。
+
+| 路径 | 完整 URL | 说明 | 与 Dosi 关系 |
+|------|----------|------|--------------|
+| `/osi-field-mapping/` | https://datus.ai/osi-field-mapping/ | **OSI Field Mapping** — 8 个语义层产品（MetricFlow、Cube、LookML、AtScale、Snowflake Semantic Views、GoodData、Power BI、Databricks Metric Views）→ OSI v0.2.0.dev0 逐字段对照（Dataset / Dimensions / Metrics / Relationships / Time / AI Context 六层） | **上游参考**：说明各工具如何映射到 Dosi 消费的 OSI YAML；非 Dosi 产品页 |
+| `/tools/osi-playground/` | https://datus.ai/tools/osi-playground/ | **OSI Playground** — 浏览器内 MetricFlow YAML → OSI 转换、Validator、Diff；Apache 2.0，无上传 | **上游工具**：产出 OSI 文件供 Dosi / `datus-semantic-dosi` 执行；Playground 页 CTA 链 Field Mapping |
+
+**典型路径**：MetricFlow 等作者格式 → [Playground](https://datus.ai/tools/osi-playground/) 转 OSI → [Dosi](https://dosi.datus.ai/) 编译 SQL / MCP 查询。
+
+> sitemap 收录状态待下次 `sitemap-pages.xml` 抓取复核；两页 breadcrumb 已上线（Home → OSI Field Mapping / Tools → OSI Playground）。
 
 > **路径变更说明**：策略文档中曾规划 `/features/*`，线上实际为 **`/products/*`**。内链与 SEO 目标页以 sitemap 为准。
 
@@ -360,6 +377,20 @@ datus.ai/
 
 > datus.ai 营销页 [`/products/studio/`](https://datus.ai/products/studio/) 描述产品能力；实际试用入口为 **`studio.datus.ai`**，非 datus.ai 子路径。
 
+### 3.5 Dosi 文档站（dosi.datus.ai）
+
+独立子域，Datus 旗下 **OSI-native semantic layer** 产品文档（Rust 引擎；非 datus.ai 路径）。
+
+| 路径 | 完整 URL | 说明 |
+|------|----------|------|
+| `/` | https://dosi.datus.ai/ | 首页 — Define once. Use everywhere. |
+| `/get-started/*` | https://dosi.datus.ai/get-started/ | Tutorial、Install、What is OSI & Why Dosi |
+| `/guides/*` | https://dosi.datus.ai/guides/ | 仓库连接、Agent（Claude Code / Codex）、Arrow |
+| `/reference/*` | https://dosi.datus.ai/reference/ | CLI、REST API、MCP、Semantics contract |
+| `/benchmarks/` | https://dosi.datus.ai/benchmarks/ | vs MetricFlow、Arrow IPC 基准 |
+
+与 datus.ai OSI 页分工见 §3.1.1。Agent 集成见 docs [`/adapters/semantic_adapters/`](https://docs.datus.ai/dev/adapters/semantic_adapters/)（`datus-semantic-dosi`）。
+
 ---
 
 ## 四、规划中 / 未出现在 sitemap 的路径
@@ -421,8 +452,8 @@ datus.ai/
 | **Docs 死链** | hub 页 → `/concepts/architecture/` 404，应改为 `/develop/Architecture/` | 中 |
 | **Blog 内链白名单** | 独立内容互链 `/blog/{slug}`；可链 `/glossary/`（索引）、`/products/*`、`/pricing/`；面包屑与 FAQ 见 [datus-breadcrumb-spec.md](./datus-breadcrumb-spec.md)、[datus-faq-spec.md](./datus-faq-spec.md) | 中 |
 | **中文站** | 非 Blog 营销页 `/zh` 镜像（规则见 [datus-i18n-spec.md](./datus-i18n-spec.md)）；Blog/docs 不在该规范范围；公众号可继续中文分发 | 中 |
-| **Studio sitemap** | 认证路由（login/register/dashboard）未收录；sitemap 使用 http 协议 | 低 |
+| **Dosi 交叉链** | `/osi-field-mapping/`、`/tools/osi-playground/` 已上线；Playground footer 已链 Field Mapping；**待补** 双向链至 `dosi.datus.ai` | 中高 |
 
 ---
 
-*站点结构 · Datus · https://datus.ai/ · sitemap 同步于 2026-06-24（datus.ai / docs.datus.ai / studio.datus.ai）*
+*站点结构 · Datus · https://datus.ai/ · OSI 页与 Dosi 子域同步于 2026-08-21*

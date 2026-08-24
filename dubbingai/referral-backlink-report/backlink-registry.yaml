@@ -1,0 +1,102 @@
+# DubbingAI 外链注册表 — referral-backlink-report 主数据源
+# 维护规则：每发布/变更一条外链即更新；status: pending → live → removed
+
+meta:
+  property: dubbingai.io
+  ga4PropertyNote: "主站 dubbingai.io GA4 属性；shop.dubbingai.io 若为独立属性需单独配置"
+  lastUpdated: "2026-08-20"
+  maintainer: growth-team
+
+matching:
+  channelGroups:
+    - Referral
+  mediums:
+    - referral
+    - referral_link
+    - guest_post
+    - backlink
+  sourceNormalization: strip_www
+
+# 已知会干扰 Referral 归因的排除域（self-referral / 支付）
+referralExclusions:
+  domains:
+    - dubbingai.io
+    - dubbing.tech
+    - shop.dubbingai.io
+    - blog.dubbingai.io
+    - meow.dubbingai.io
+    - paypal.com
+    - stripe.com
+
+# 转化事件名（与 GA4 实际配置对齐；若事件名不同请修改）
+conversionEvents:
+  - download_click
+  - file_download
+  - sign_up
+  - purchase
+
+backlinks:
+  - id: BL-001
+    url: "https://aijourn.com/best-soundboard-apps-for-discord/"
+    domain: aijourn.com
+    title: "Best Soundboard Apps for Discord"
+    type: listicle
+    topicCluster: soundboard-discord
+    targetUrl: "https://dubbingai.io/soundboard"
+    anchorText: ""
+    publishedAt: "2026-08-01"
+    status: live
+    campaignBatch: "2026-Q3-wave1"
+    notes: ""
+
+  - id: BL-002
+    url: "https://thedatascientist.com/best-realtime-voice-changer-software/"
+    domain: thedatascientist.com
+    title: "Best Realtime Voice Changer Software"
+    type: listicle
+    topicCluster: voice-changer-core
+    targetUrl: "https://dubbingai.io/"
+    anchorText: ""
+    publishedAt: "2026-08-05"
+    status: live
+    campaignBatch: "2026-Q3-wave1"
+    notes: ""
+
+  - id: BL-003
+    url: "https://waysoverall.com/best-ai-voice-changer-for-gaming/"
+    domain: waysoverall.com
+    title: "Best AI Voice Changer for Gaming"
+    type: listicle
+    topicCluster: voice-changer-gaming
+    targetUrl: "https://dubbingai.io/download-desktop"
+    anchorText: ""
+    publishedAt: "2026-08-10"
+    status: live
+    campaignBatch: "2026-Q3-wave1"
+    notes: ""
+
+  - id: BL-004
+    url: "https://dimensionzhub.com/top-voice-changer-apps-for-streamers/"
+    domain: dimensionzhub.com
+    title: "Top Voice Changer Apps for Streamers"
+    type: listicle
+    topicCluster: voice-changer-streaming
+    targetUrl: "https://dubbingai.io/online-voice-changer"
+    anchorText: ""
+    publishedAt: "2026-08-12"
+    status: live
+    campaignBatch: "2026-Q3-wave1"
+    notes: ""
+
+  - id: BL-005
+    url: "https://ceocolumn.com/tech/the-best-voice-changers-for-discord/"
+    domain: ceocolumn.com
+    title: "The Best Voice Changers for Discord"
+    type: listicle
+    topicCluster: voice-changer-discord
+    targetUrl: "https://dubbingai.io/discord-voice-changer"
+    anchorText: ""
+    publishedAt: "2026-08-15"
+    status: live
+    campaignBatch: "2026-Q3-wave1"
+    notes: ""

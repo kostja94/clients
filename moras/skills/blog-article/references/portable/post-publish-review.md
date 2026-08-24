@@ -1,7 +1,5 @@
 # 发布后复盘（精简）
 
-> SSOT：`blog-audit/15-post-publish-review.md`。随 skill 分发。
-
 ---
 
 | 时间 | 检查 | 动作 |

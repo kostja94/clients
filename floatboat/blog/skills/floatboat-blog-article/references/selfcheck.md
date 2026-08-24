@@ -1,15 +1,14 @@
-# Floatboat SelfCheck — Hard Gates H0–H4 + 12 维 Pass/Fail
+# Floatboat SelfCheck — H0–H4 + 12 维（自包含）
 
-> 加载时机：**Phase 5**（Gate C 对照）
-> 主文件：SKILL.md §3.5 指针
+> Phase 5 使用。**本文件随 skill 分发**，不依赖 skill 文件夹外任何路径。
+> 加载时机：先跑 `tools/` → Hard Gates → 12 维 → Gate C。
+> 终审 → `references/portable/final-audit.md`（publish-ready ≥70 且 P0 Pass）。
 
 ---
 
 ## Gate C — 全部 Pass 方可 audit-ready
 
-> **Gate C（Phase 5）**：**H0–H4** 全部 Pass + **12 维** SelfCheck 全部 Pass → **audit-ready**（≠ publish-ready）。任一 Fail → 标注修复动作，按 SKILL §3.G 回溯表回退修复。
-
-**执行顺序**：先跑 `tools/` 脚本 → 过 Hard Gates H0–H4 → 再过 12 维 Pass/Fail。
+**执行顺序**：`tools/` 脚本 → H0–H3 → **H4 Floatboat** → 12 维 → Gate C。
 
 ---
 
@@ -203,7 +202,7 @@
 | 12 Cross-Article | Pass | N/A — single article |
 | — Date/Publishing | Pass | publishDate 不与已有重叠 |
 
-**Overall**: PASS → audit-ready，进入 Phase 6 Delivery | FAIL → {fixes}，按 §3.G 回溯
+**Overall**: PASS → audit-ready，进入 Phase 6 Delivery | FAIL → {fixes}，按 SKILL.md §3.G 回溯
 ```
 
 ---
@@ -225,3 +224,7 @@
 | 11 | 呈「加粗标签 + 单句」伪列表 | 合并为 ≥4 句分析段；参照 writing-constraints.md §4 |
 | 12 | SelfCheck 未逐段计数即标 Pass | 重做机械计数后再过 Gate C |
 | 13 | publishDate 与已有文章同一天 | 一天一篇规则：从锚点日往前错开至唯一日 |
+
+---
+
+*floatboat selfcheck · v5.1 · 2026-08-24 · self-contained*

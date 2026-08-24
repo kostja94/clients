@@ -2,9 +2,6 @@
 
 > 本目录存放 vomo.ai `/guide/` 博客的本地稿件（`NN-{slug}.md`）。由 `vomo-blog-article` skill 产出。
 > 发布路径：`https://vomo.ai/guide/{slug}`
-> 关联：[SKILL.md](../skills/vomo-blog-article/SKILL.md) · [content-graph](../skills/vomo-blog-article/references/content-graph.md)
-
----
 
 ## 发布规则
 
@@ -92,4 +89,5 @@
 
 ---
 
+*关联：[SKILL.md](../skills/vomo-blog-article/SKILL.md) · [content-graph](../skills/vomo-blog-article/references/content-graph.md)*
 *Last updated: 2026-08-03*

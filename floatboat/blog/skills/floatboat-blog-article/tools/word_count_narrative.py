@@ -10,9 +10,11 @@ from pathlib import Path
 
 THRESHOLDS = {
     "simple_glossary": 1200,
+    "announcement": 1500,
     "deep_glossary": 2000,
     "research": 2000,
     "comparison": 1500,
+    "ranking": 2400,
     "case_study": 1500,
     "product_tutorial": 1500,
 }
@@ -50,10 +52,10 @@ def remove_faq_blocks(text: str) -> str:
     skip_next_answer = False
     for line in lines:
         low = line.lower().strip()
-        if re.match(r"^#{1,3}\s+faq", line, re.I):
+        if re.match(r"^#{1,3}\s+frequently asked questions", line, re.I) or re.match(r"^#{1,3}\s+faq", line, re.I):
             in_faq = True
             continue
-        if in_faq and re.match(r"^#{1,2}\s+", line) and not re.match(r"^#{1,3}\s+faq", line, re.I):
+        if in_faq and re.match(r"^#{1,2}\s+", line) and not re.match(r"^#{1,3}\s+(frequently asked questions|faq)", line, re.I):
             in_faq = False
         if in_faq:
             if re.match(r"^#{3,4}\s+", line):

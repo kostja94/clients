@@ -1,10 +1,4 @@
-
 # VOMO
-
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[keywords](./vomo-keywords.md) | [features](./vomo-features.md) | [competitors](./vomo-competitors.md) | [site-structure](./vomo-site-structure.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md) | [podcast-transcription](./podcast%20transcription/podcast-platforms.md) | [others](./vomo-others.md)
-
----
 
 ## 文档导航
 
@@ -18,7 +12,8 @@
 | [vomo-others.md](./vomo-others.md) | Sitemap 全量明细 | [site-structure](./vomo-site-structure.md) |
 | [vomo-use-cases.md](./vomo-use-cases.md) | 场景、Persona | [features](./vomo-features.md) |
 | [vomo-growth-strategy.md](./vomo-growth-strategy.md) | 增长渠道、内容计划 | [keywords](./vomo-keywords.md) |
-| [podcast transcription/](./podcast%20transcription/podcast-platforms.md) | 播客平台全景、转录机遇 | [use-cases](./vomo-use-cases.md) |
+| [podcast transcription/](./podcast%20transcription/podcast-platforms.md) | 播客平台全景、转录楔子（枢纽+8 平台页） | [use-cases](./vomo-use-cases.md) · [page-playbook](./podcast%20transcription/page-playbook.md) |
+| [youtube transcription/](./youtube%20transcription/youtube-categories.md) | YouTube 分类全景、子页生产 | [growth-strategy](./vomo-growth-strategy.md) |
 
 
 ---
@@ -136,5 +131,7 @@ VOMO.ai 为大规模多页面站点：首页 / 定价 / 关于 / 合规页；博
 
 ---
 
-*Last updated: 2026-07-21*
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[keywords](./vomo-keywords.md) | [features](./vomo-features.md) | [competitors](./vomo-competitors.md) | [site-structure](./vomo-site-structure.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md) | [podcast-transcription](./podcast%20transcription/podcast-platforms.md) | [youtube-transcription](./youtube%20transcription/youtube-categories.md) | [others](./vomo-others.md)*
+*Last updated: 2026-08-23*
 *创建日期: 2026-07-16*

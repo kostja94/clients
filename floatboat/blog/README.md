@@ -11,18 +11,22 @@ blog/
 ├── README.md                          ← 本文件
 ├── blog-live-articles.md              ← 已上线 87 篇博客追踪表（slug、日期、集群、本地覆盖状态）
 │
-├── 01-introducing-floatim-2026.md     ← 本地 Markdown 文章（其他簇）
+├── Updates/                           ← Floatboat 产品更新 / 功能公告
+│   ├── 01-introducing-floatim-2026.md
+│   ├── 31-gpt-5-6-floatboat.md
+│   ├── 33-kimi-k3-floatboat.md
+│   ├── 34-vibe-coding-one-prompt-html-game.md
+│   └── 56-introducing-flow-mode.md
+├── openai/                            ← OpenAI 簇（主分类 OpenAI）
+│   ├── 30-gpt-5-6-sol-terra-luna.md
+│   └── 57-codex-harness-open-source.md
 ├── 02-ai-scheduling-agent.md
 ├── 03-what-is-agentic-calendar.md
 ├── 04-calendar-driven-ai-vs-chat-ai.md
 ├── 05-best-ai-scheduling-assistants.md
 ├── 06-ai-meeting-preparation.md
 ├── 07-ai-follow-up-automation.md
-├── 30-gpt-5-6-sol-terra-luna.md
-├── 31-gpt-5-6-floatboat.md
 ├── 32-kimi-k3-open-frontier-model.md
-├── 33-kimi-k3-floatboat.md
-├── 34-vibe-coding-one-prompt-html-game.md
 ├── 39-what-is-obsidian-vault.md
 ├── 40-how-to-use-obsidian-with-ai-agent.md
 ├── 45-what-is-minimax-h3.md
@@ -55,77 +59,64 @@ blog/
 │   └── 19-world-cup-2026-schedule-usa.md
 │
 └── skills/
-    └── floatboat-blog-article/        ← 博客文章创作 Skill（v3.0.0，自包含）
-        ├── SKILL.md                   ← 主 Skill 文件（9 Phase + 5 Gate 工作流）
-        ├── references/                ← 按需加载的参考规则（渐进式加载，一次 ≤2 个）
-        │   ├── project-config.md      ← 项目配置、品牌、URL 白名单、Topic Scope
-        │   ├── article-types.md       ← 5 类文章路由、H2 模板、Slug/Frontmatter 规则
-        │   ├── gates.md               ← Gate A/B、KEEP/MERGE 判定、信息增量
-        │   ├── writing-constraints.md ← Voice、引用分级、漏斗透明度、段落协议
-        │   ├── selfcheck.md           ← Hard Gates H0–H4 + 12 维 Pass/Fail 清单
-        │   ├── content-graph.md       ← 已发布/草稿文章表、Hub-Spoke 结构、Canonical 注册表
-        │   ├── internal-links.md      ← 内链规则 R1–R7、锚文本标准、集群矩阵
-        │   ├── keywords.md            ← P0/P1/P2 关键词、FloatIM 词表
-        │   ├── product-competitors.md ← 产品事实、四步机制、竞品、四代框架
-        │   ├── mini-example.md        ← Brief/Outline/Conclusion 示例
-        │   ├── floatboat-blog-schema.md      ← 归档：JSON-LD 已停用，禁止再生成 schema/*.json
-        │   ├── floatboat-og-image-prompts.md ← OG 图片 prompt 模板（1200×630）
-        │   ├── proof-library.md       ← 可引用证据库
-        │   └── portable/              ← 自包含、可外分发的便携参考
-        │       ├── README.md                  ← portable 目录说明
-        │       ├── investment-score.md        ← 五因子选题投资分
-        │       ├── research-triangle.md       ← Phase 0R 研究三角（R1→R2→R3→Synthesis）
-        │       ├── serp-fit-template.md       ← SERP Fit 模板
-        │       ├── source-map-template.md     ← Source Map 模板
-        │       ├── extractability-checklist.md← BLUF + Claim 原子性 + Judgment 速查
-        │       ├── outline-cross-check.md     ← Phase 3.5 交叉检查模板
-        │       ├── gates-master.md            ← Gate 总表
-        │       ├── perfect-article-checklist.md← S 级标杆清单（flagship 专用）
-        │       ├── final-audit.md             ← 发布前终审（P0 Gate + 加权评分）
-        │       ├── post-publish-review.md     ← 发布后 7/30/90/180 天复盘
-        │       └── retro-audit.md             ← 已发布稿回溯审计
-        └── tools/                    ← Phase 5 机器检查脚本
+    └── floatboat-blog-article/        ← 自包含 skill（v5.1.0 · 客户可独立分发）
+        ├── SKILL.md                   ← 完整 9 Phase + Topic Scope + 集群路径
+        ├── references/
+        │   ├── project-config.md
+        │   ├── article-types.md
+        │   ├── gates.md
+        │   ├── writing-constraints.md
+        │   ├── selfcheck.md           ← H0–H4 + 12 维（自包含）
+        │   ├── content-graph.md
+        │   ├── topic-cluster-layout.md
+        │   ├── internal-links.md
+        │   ├── keywords.md
+        │   ├── product-competitors.md
+        │   ├── mini-example.md
+        │   ├── proof-library.md
+        │   ├── floatboat-blog-schema.md  ← 归档：禁止加载
+        │   └── portable/              ← 通用 bundle（含 final-audit.md）
+        └── tools/
             ├── README.md
-            ├── frontmatter_validator.py  ← Frontmatter F1–F8 验证
-            ├── word_count_narrative.py   ← 字数硬门槛 H3 检查
-            └── link_checker.py           ← P0 G2/G6 链接检查
+            ├── frontmatter_validator.py
+            ├── word_count_narrative.py
+            └── link_checker.py
 ```
 
 ---
 
 ## 创作 Skill 与工作流
 
-**Skill 入口**：[skills/floatboat-blog-article/SKILL.md](./skills/floatboat-blog-article/SKILL.md)（v3.0.0 · 渐进式加载 · 自包含）
+写作与 Gate：用自包含 skill [`floatboat-blog-article`](./skills/floatboat-blog-article/SKILL.md)（v5.1.0 · 9 Phase + cluster-folders + Ranking 路由 + tools/ + portable/）。
 
 **触发语**：
 
 ```
 按 floatboat-blog-article skill，为关键词 "{primary keyword}" 创建一篇
-{Research|Comparison|Alternative|Product|Announcement} 文章。
-发布目的：{SEO|品牌|转化|社区}。目标读者：{描述}。
-Mode：{lite|standard|flagship，未指定默认 standard}
+{Research|Comparison|Ranking|Alternative|Product|Announcement} 文章。
+Mode：{lite|standard|flagship}。Topic Scope：{scheduling-agent|floatim|combo-skills}。
 ```
 
-**工作流**（9 Phase + 5 Gate + 五角色换帽）：
+**工作流**（9 Phase，均在 skill 文件夹内）：
 
 ```
-Phase 0 — Intake & Gate A      (Strategist)
-Phase 0R — Research 三角       (Researcher)
-Phase 1 — Article Brief        (Strategist + SME)
-Phase 2 — Slug & Gate B        (Strategist + SME)
-Phase 3 — Outline + SERP Fit   (Strategist + SME)
-Phase 3.5 — Outline 交叉检查   (同批 ≥2 篇强制)
-Phase 4 — Draft                (Writer)
-Phase 5 — SelfCheck & Gate C   (Editor / Auditor)
-Phase 5.5 — Cross-Article Audit(同批 ≥2 篇强制)
-Phase 6 — Delivery             (Editor / Auditor)
+Phase 0 — Intake & Gate A      (六必问、Topic Scope、Investment Score)
+Phase 0R — Research 三角       (Proof Library + R1–R3)
+Phase 1 — Article Brief
+Phase 2 — Slug / Date / Path   (cluster-folders + Updates/ openai/ 等)
+Phase 3 — Outline              (internal-links 矩阵)
+Phase 3.5 — Outline 交叉检查
+Phase 4 — Draft                (writing-constraints + BLUF)
+Phase 5 — SelfCheck & Gate C   (tools/ + selfcheck.md)
+Phase 5.5 — Cross-Article Audit
+Phase 6 — Delivery             (portable/final-audit 终审指令)
 ```
 
-**发布前终审**：成稿 audit-ready 后按 [references/portable/final-audit.md](./skills/floatboat-blog-article/references/portable/final-audit.md) 做 P0 Gate + 加权终审（A–J 十维加权 → 100 分 → S/A/B/C/D 评级）。
+**发布前终审**：SelfCheck audit-ready 后按 skill 内 `references/portable/final-audit.md` 做 P0 Gate + 十维加权评分。
 
-**工具先跑**：Gate C 前执行 `tools/` 下三个 Python 脚本做机器检查（frontmatter / 字数 / 链接）。
+**工具先跑**：Gate C 前执行 `tools/` 下三个 Python 脚本（见 [tools/README.md](./skills/floatboat-blog-article/tools/README.md)）。
 
-新文章文件序号：当前下一号为 **39**（见 `references/content-graph.md`）。成稿后请更新下方「博客文章」表。
+新文章文件序号：当前下一号为 **58**（见 `references/content-graph.md` §1）。成稿后请更新下方「博客文章」表。
 
 ---
 
@@ -133,7 +124,7 @@ Phase 6 — Delivery             (Editor / Auditor)
 
 | 序号 | 文件 | Slug | 类型 | 词数 | 状态 | 说明 |
 |:---:|------|------|------|------|:---:|------|
-| 01 | [01-introducing-floatim-2026.md](./01-introducing-floatim-2026.md) | `introducing-floatim` | Product | ~1.6k | ✅ | FloatIM 上线公告：Agent-Native 群聊网络 |
+| 01 | [01-introducing-floatim-2026.md](./Updates/01-introducing-floatim-2026.md) | `introducing-floatim` | Product | ~1.6k | ✅ | FloatIM 上线公告：Agent-Native 群聊网络 |
 | 02 | [02-ai-scheduling-agent.md](./02-ai-scheduling-agent.md) | `ai-scheduling-agent` | Research | ~3.2k | ✅ | AI Scheduling Agent 品类定义：四代演进 + 评估框架 + 竞品全景 |
 | 03 | [03-what-is-agentic-calendar.md](./03-what-is-agentic-calendar.md) | `what-is-agentic-calendar` | Research | ~3.2k | ✅ | Agentic Calendar 品类定义 Hub：定义 + 三属性 + 技术栈 + 邻近概念区分 |
 | 04 | [04-calendar-driven-ai-vs-chat-ai.md](./04-calendar-driven-ai-vs-chat-ai.md) | `calendar-driven-ai-vs-chat-ai` | Research | ~3.0k | ✅ | Calendar-Driven vs Chat-Based 范式对比：同场景行为差异 + 适用指南 |

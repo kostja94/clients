@@ -1,10 +1,5 @@
 # VOMO — 杂项 / Sitemap 明细
 
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[主文档](./vomo.md) | [site-structure](./vomo-site-structure.md)
-
----
-
 ## 1. Sitemap 明细（英文）
 
 > 抓取日期：2026-07-21
@@ -355,5 +350,7 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./vomo.md) | [site-structure](./vomo-site-structure.md)*
 *Last updated: 2026-07-21*
 *来源：英文 sitemap 全量解析 + 首页 withAllLinks + 页面核验*

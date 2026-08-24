@@ -1,10 +1,5 @@
 # VOMO — 站点结构
 
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md) | [others / Sitemap 明细](./vomo-others.md)
-
----
-
 ## 1. 核心路径表
 
 > 本节为**主导航 / 页脚可见**的核心路径。英文 sitemap 另有约 220+ 条 SEO 工具页未进导航，统计与全量清单见 §4 与 [vomo-others.md](./vomo-others.md)。
@@ -16,7 +11,8 @@
 | `/about` | 关于页 | about VOMO, AI meeting notes company | P1 |
 | `/guide` | 博客首页 | AI transcription guide, meeting notes tips | P0 |
 | `/guide/{slug}` | 单篇博文 | 长尾关键词（如 "best AI recorder apps"） | P0 |
-| `/tools/youtube-transcript` | 工具着陆页 | YouTube transcript generator, YouTube to text | P0 |
+| `/tools/youtube-transcript` | 工具着陆页（枢纽） | YouTube transcript generator, YouTube to text | P0 |
+| `/tools/youtube-transcript/{slug}` | YouTube 分类/主题/运动/形态子页 | YouTube news transcript、TED talk transcript 等 | P0 |
 | `/tools/ai-voice-memos` | 工具页 | AI voice memos, voice memo transcription | P1 |
 | `/tools/ai-scribe` | 工具页 | AI scribe, AI dictation | P2 |
 | `/tools/ai-dictation-tool` | 工具页 | AI dictation tool, speech to text dictation | P1 |
@@ -42,7 +38,9 @@
 | `/use-case/marketing` | 解决方案页 | marketing transcription | P1 |
 | `/use-case/education` | 解决方案页 | education transcription, lecture notes | P1 |
 | `/use-case/sales` | 解决方案页 | sales call transcription | P0 |
-| `/use-case/podcast` | 解决方案页 | podcast transcription | P1 |
+| `/podcast-transcription` | 播客转录枢纽（**14** URL 簇） | podcast transcription, podcast to text | P0 |
+| `/podcast-transcription/{slug}` | 平台 ×10 / 体裁 ×3 | Spotify podcast transcript, true crime podcast transcript | P0 |
+| `/use-case/podcast` | 解决方案页（薄） | podcast transcription | P1 |
 | `/use-case/media` | 解决方案页 | media transcription | P2 |
 | `/use-case/legal` | 解决方案页 | legal transcription | P1 |
 | `/use-case/healthcare` | 解决方案页 | healthcare transcription, medical notes | P1 |
@@ -66,8 +64,9 @@
 | `/tools/transcribe-{lang}-audio-to-text` | ~54 语种 | `/tools/transcribe-japanese-audio-to-text` | 语种 × 音频 |
 | `/tools/transcribe-{lang}-video-to-text` | ~55 语种 | `/tools/transcribe-spanish-video-to-text` | 语种 × 视频 |
 | 短路径语种页 | 少量 | `/tools/armenian-to-text`、`/tools/transcribe-zulu` | 与主模式并存 |
+| `/tools/youtube-transcript/{slug}` | 约 38（规划） | `/tools/youtube-transcript/youtube-news`、`/education`、`/shorts` | 枢纽下的分类工厂；详见 [youtube transcription/](./youtube%20transcription/youtube-categories.md) |
 
-> 全量路径见 [vomo-others.md §1](./vomo-others.md#1-sitemap-明细英文)。Tools 合计（en sitemap）**240**；主导航仅展示约 **20** 项。
+> 全量路径见 [vomo-others.md §1](./vomo-others.md#1-sitemap-明细英文)。Tools 合计（en sitemap）**240**；主导航仅展示约 **20** 项。YouTube 子页多数尚未进 2026-07 英文 sitemap，以线上核验为准。
 
 ### 1.2 已上线博文（`/guide/{slug}`，38 篇）
 
@@ -95,6 +94,7 @@
 ├── /tos                       # 服务条款（页脚）
 ├── /tools/                    # 工具集（无独立索引页；导航约 20 项 + sitemap ~220 SEO 页）
 │   ├── [主导航] youtube-transcript, ai-voice-memos, ai-scribe, ai-dictation-tool, …
+│   │       └── youtube-transcript/{slug}   # Category / Topic / Sport / Format，约 38 切片
 │   ├── [扩展格式] *-to-{text|pdf|html|docx|markdown|image}
 │   ├── [场景 SEO] ai-*-summarizer, *-transcription, transcribe-zoom-*, …
 │   └── [语种] transcribe-{lang}-{audio|video}-to-text
@@ -230,5 +230,7 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md) | [youtube-transcription](./youtube%20transcription/youtube-categories.md) | [others / Sitemap 明细](./vomo-others.md)*
 *Last updated: 2026-07-21*
 *来源：robots.txt、sitemap 索引与 en/各语言子 sitemap、首页 withAllLinks、/guide 聚合页、合规页核验*

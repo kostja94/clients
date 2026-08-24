@@ -1,10 +1,6 @@
 # Sparki 竞品分析
 
-> 关联：[sparki.md](./sparki.md) | [sparki-features.md](./sparki-features.md) | [sparki-keywords.md](./sparki-keywords.md)
-
 **Sparki 产品形态**：对话式 **AI Editing Agent**——上传素材、自然语言指令、Agent 规划并执行剪辑，支持多轮修订；含 Long to Short、Caption、Commentary、风格复制、比例调整、高光集锦等；云端处理；个人订阅 + Enterprise API。详见 [sparki.md](./sparki.md)。
-
----
 
 ## 一、竞品类型拆解
 
@@ -40,4 +36,6 @@
 
 ---
 
-*文档生成日期：2026-04-08 · 竞品名为品类代表，非穷尽列表*
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./sparki.md) | [features](./sparki-features.md) | [keywords](./sparki-keywords.md)*
+*Last updated: 2026-04-08 · 竞品名为品类代表，非穷尽列表*

@@ -16,10 +16,11 @@
 | 功能 | [vatt-features.md](./vatt-features.md) |
 | 使用场景 | [vatt-use-cases.md](./vatt-use-cases.md) |
 | 竞品 | [vatt-competitors.md](./vatt-competitors.md) |
-| 增长策略 | [vatt-growth-strategy.md](./vatt-growth-strategy.md) |
+| 增长策略（已归档） | [archive/vatt-growth-strategy.md](./archive/vatt-growth-strategy.md) |
 | Channel 详情页策略 | [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) |
+| Reaction 类型 / Blog 队列 | [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) |
 | Sitemap 明细 | [vatt-others.md](./vatt-others.md) |
-| 多语言迁移 | [vatt-i18n-path-migration.md](./vatt-i18n-path-migration.md) |
+| 多语言迁移（已归档） | [archive/vatt-i18n-path-migration.md](./archive/vatt-i18n-path-migration.md) |
 
 ---
 
@@ -88,7 +89,7 @@ vatt.ai（极简站点，SPA 推测 React/Next.js）
 | 支付 | **待验证**（定价页动态加载，推测 Stripe） |
 | CDN | **待验证** |
 | SEO 状态 | 极差（无 robots.txt、无 sitemap、无 meta description） |
-| 多语言 | `?lang=` 查询参数切换，URL 不变；已验证 **en / it / es / fr / de / zh / pt / ja** 8 种 → 迁移方案 [vatt-i18n-path-migration.md](./vatt-i18n-path-migration.md) |
+| 多语言 | `?lang=` 查询参数切换，URL 不变；已验证 **en / it / es / fr / de / zh / pt / ja** 8 种；路径前缀迁移方案见 [archive/vatt-i18n-path-migration.md](./archive/vatt-i18n-path-migration.md)（已归档） |
 | 移动端 | **待验证**（SPA 推测响应式设计） |
 
 ---

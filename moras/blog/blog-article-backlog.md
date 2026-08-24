@@ -1,149 +1,128 @@
-# Moras Blog — 选题管线（高搜索量主题筛选）
+# Moras Blog — 选题 backlog
 
-> 从《TikTok 平台分类体系》《TikTok 视频类型全维度指南》及 2026 年 TikTok 关键词调研中，筛选适合 moras.ai/blog 的英文文章主题。
->
-> **筛选标准**：① 搜索量高（TikTok/Google 双平台常青或增长中）；② 与 Moras 相关（美区 TikTok Shop、AI 选品、商品视频生成、affiliate/seller/creator 受众）；③ 与既有 22 篇无关键词互斥（对照 `skills/blog-article/references/content-graph.md` §4.1 冲突表）。
->
-> **下一篇序号**：#25，`isoDate` 2026-06-25 起一天一篇（沿用 README 既有编号逻辑；实际发布日期以发布安排为准）。
->
-> **成稿流程**：每篇按 `moras-blog-article` skill 走 Phase 0–6（选题门禁 → Brief → Slug Gate → Outline → Draft → SelfCheck），成稿后人工更新 `blog/README.md` 文件表。
+> **用途**：只记录**尚未成稿**或**下一批计划**的选题与关键词调研。  
+> **不是**成稿索引——已发布/已 planned 文章以 [`README.md`](./README.md) 为准。  
+> **不是**内链 SSOT——结构与互链以 [`blog-structure-internal-links.md`](./blog-structure-internal-links.md) 为准。  
+> **Agent 登记**：成稿时在 [`content-graph.md`](../skills/blog-article/references/content-graph.md) §4.1 追加行；Skill 不自动改 README。
+
+**Portfolio 现状**：**64 篇**（#01–#14、#16、#18–#68；#15/#17/#23/#24 已删/合并）  
+**下一序号**：**#69** · 建议 `isoDate`：`2026-09-16`
 
 ---
 
-## 0. 调研依据速览（2026）
+## 文档分工（避免重复维护）
 
-| 信号 | 数据点 | 来源 |
+| 维护什么 | 唯一/主 SSOT | 同步副本（成稿后人工更新） |
+|----------|-------------|---------------------------|
+| NN / slug / isoDate / 主题 / 状态 | **README.md** 文章表 | — |
+| Agent 用 NN 注册表、Canonical、下一序号 | **content-graph.md** §4.1 / §4.3 | README 文章表 |
+| Cluster 树、内链矩阵、用户旅程、补链优先级 | **blog-structure-internal-links.md** | content-graph Hub-Spoke（策略层） |
+| 文件夹路由 | **topic-cluster-layout.md** | blog-structure 树状图 |
+| **未写选题**、关键词调研、批次规划 | **本文件** | 成稿后移入 README，从本文件删除或标 ✅ |
+| 创作 Gate / Phase / 工具 | **moras-blog-article skill** | — |
+
+**原则**：同一信息只在一处「起草/规划」；成稿后索引进 README + content-graph，内链规则进 blog-structure，**不要**在 backlog 里保留已与 README 重复的完整文章表。
+
+---
+
+## 已完成批次（归档 · 勿再当 backlog）
+
+<details>
+<summary>Cluster C #25–#30（2026-06-25 起 · 已全部 planned）</summary>
+
+| NN | slug | 状态 |
+|----|------|------|
+| 25 | `/blog/tiktok-video-formats` | ✅ planned |
+| 26 | `/blog/how-the-tiktok-algorithm-works` | ✅ planned |
+| 27 | `/blog/tiktok-keyword-research` | ✅ planned |
+| 28 | `/blog/trending-tiktok-sounds` | ✅ planned |
+| 29 | `/blog/tiktok-ai-content-rules` | ✅ planned |
+| 30 | `/blog/how-to-use-tiktok-trends` | ✅ planned |
+
+原 §1 主选 6 篇 Brief 见 git 历史；边界已写入各成稿与 content-graph Canonical。
+</details>
+
+<details>
+<summary>Cluster F #59–#68（Seasonal / Campaign · 2026-09-06 起 · 已全部 planned）</summary>
+
+| NN | slug | 角色 |
+|----|------|------|
+| 59 | `/blog/tiktok-shop-sales-calendar` | Hub（evergreen · 每年更新正文） |
+| 60 | `/blog/tiktok-shop-labor-day` | Spoke |
+| 61 | `/blog/tiktok-shop-september-restock` | Spoke |
+| 62 | `/blog/tiktok-shop-back-to-school` | Spoke |
+| 63 | `/blog/tiktok-shop-black-friday` | Spoke（BFCM 旗舰） |
+| 64 | `/blog/tiktok-shop-holiday-gifts` | Spoke |
+| 65 | `/blog/tiktok-shop-halloween` | Spoke |
+| 66 | `/blog/tiktok-shop-fall-deals` | Spoke |
+| 67 | `/blog/tiktok-shop-jumpstart` | Spoke |
+| 68 | `/blog/tiktok-shop-summer-sale` | Spoke |
+
+Hub ↔ spoke 内链矩阵见 `blog-structure-internal-links.md` §4.6。
+</details>
+
+<details>
+<summary>Cluster A 缺口簇 #49–#58（2026-08-27 起 · 已全部 planned）</summary>
+
+见 [`README.md`](./README.md) #49–#58 行；Reddit/keyword 缺口分析已完成。
+</details>
+
+---
+
+## 待写 backlog（#69+）
+
+优先级按 **搜索缺口 × 与 Moras ICP 重合 × 不与 Canonical 互斥** 排序。
+
+### P1 — Cluster F 延伸（H1 / 文化窗口）
+
+| 优先 | 建议 NN | Working title | slug（evergreen） | 主关键词 | 边界 |
+|------|---------|---------------|---------------------|---------|------|
+| P1 | 69 | TikTok Shop Spring Sale Affiliate Guide | `/blog/tiktok-shop-spring-sale` | tiktok shop spring sale affiliate | Hub #59 摘要 + link；vs April Restock 可合并为一篇 |
+| P2 | 70 | TikTok Shop Memorial Day Deals for Affiliates | `/blog/tiktok-shop-memorial-day` | tiktok shop memorial day deals | 户外 / patio；链 #59 #49 |
+| P2 | 71 | TikTok Shop Valentine's Affiliate Playbook | `/blog/tiktok-shop-valentines` | tiktok shop valentines affiliate | 仅 beauty / gift 垂类；Feb Restock 语境 |
+
+### P2 — 其他 Cluster（需 Phase 0 KEEP）
+
+| 建议 | Working title | slug | 暂缓原因 |
+|------|---------------|------|----------|
+| — | How to Grow a TikTok Shop Account (Without Ads) | `/blog/how-to-grow-on-tiktok-shop` | 与 #26/#27/#05 易 cannibalize；须严格边界 |
+| — | TikTok Shop Creator Account Types (Official / Marketing / Affiliate) | `/blog/tiktok-shop-creator-account-types` | 内部 `tiktok-shop-creator-types.md` 可转化；品牌/affiliate 双受众 |
+| — | Open Collaboration Playbook for Brands | `/blog/tiktok-shop-open-collaboration` | 偏品牌 ICP；与 #09 重叠风险 |
+
+### 明确不写（产品页 / 已有 Canonical）
+
+| 候选 | 处置 |
+|------|------|
+| Promo codes 买家向 | #48 canonical |
+| 全年 sales calendar | #59 Hub（evergreen，改文不改 slug） |
+| link-to-video / UGC ad generator 等工具词 | 产品页 `/tiktok-video-generator` |
+| 第二篇全片 script | #50 + #05 |
+| `tiktok-shop-deals-for-you-days` | 原 #23 已删；若写须 affiliate 视角 + 新 angle |
+
+---
+
+## 调研信号（复用 · 2026）
+
+| 信号 | 数据点 | 用途 |
 |------|--------|------|
-| 平台搜索量 | TikTok 2025 年处理 1400 亿+ 次搜索；查询量同比 **+174%** | TikTapDown / digitalapplied |
-| 搜索行为 | 49% 美国消费者用 TikTok 当搜索引擎（2024 年为 41%）；Gen Z 67% | Adobe / digitalapplied |
-| 信息型关键词 | 高量关键词中 **73% 为信息型**（"怎么做/怎么选"） | Rise at Seven |
-| 搜索 vs FYP | 做 TikTok SEO 的品牌有机曝光是纯 FYP 的 **3.1 倍** | digitalapplied |
-| 趋势周期 | 音频趋势 3–7 天、格式趋势 2–4 周；5K–20K 视频窗口是黄金期 | Publicis Groupe / Shopify |
-| 声音价值 | 88% 用户认为声音是核心体验；热音是趋势传播主力 | Shopify |
-| AI 内容 | AI 生成内容同比 **+340%**；真实感 AI 内容强制打标签（已标 30 亿+ 条） | digitalapplied / TikTok |
-| 共创格式 | Duet/Stitch 参与 19% 平台视频，互动率高 31% | TTS Vibes |
-| 图文格式 | Photo Mode 发布率 2023–2024 增长 5 倍 | TikTok Newsroom |
+| TikTok 搜索量 | 查询 +174% YoY | #27 / 季节 spoke 标题 |
+| 信息型关键词 | 高量词 73% 信息型 | Strategy / Framework 优先 |
+| 趋势窗口 | 5K–20K 视频 band | #30 / Cluster F spoke 引用 |
+| Q4 Shop GMV | BFCM 单周 $500M+（第三方） | #63 / #59 已引用 |
+
+完整历史调研见本文件 git 历史 §0（2026-06 版）。
 
 ---
 
-## 1. 主选 6 篇（Cluster C — Content & Discovery）
+## 成稿后 checklist（每篇）
 
-> 定位：Cluster A（变现/制作主线）与 Cluster B（平台操作）之外的第三簇，覆盖 **内容格式选择、算法与分发、搜索优化、趋势与合规**。与 A/B 弱桥接，不抢既有 P0 关键词。
-
-### #25 · TikTok 带货视频格式框架
-
-| 项 | 内容 |
-|----|------|
-| **Working title** | The TikTok Video Format That Fits Your Product (Not the Other Way Around) |
-| **Primary keyword** | tiktok video types / best tiktok formats for ecommerce / tiktok content ideas |
-| **类型** | Framework（2500–3200 词） |
-| **slug 建议** | `/blog/tiktok-video-formats` |
-| **搜索量依据** | "tiktok video ideas" 双平台常青高量；GRWM（搜索量最高趋势格式）、day in my life、ASMR、storytime、satisfying、POV 等格式词各自巨量；信息型意图占高量词 73% |
-| **去重边界** | vs `tiktok-video-hooks`（#05）：#05 管"开场机制"，本篇管"整条视频的格式选择"（Format ≠ Hook）；vs `faceless-tiktok-shop-videos`（#03）：#03 管"生产路径"，本篇管"按商品类型选内容格式" |
-| **内链建议** | → #05 hooks、#03 production、Pillar #01 |
-| **信息增量** | 将全维度指南的格式维度压缩为"商品类型 × 阶段 × 目标信号"匹配表（可测试而非清单） |
-
-### #26 · TikTok 算法机制（带货向）
-
-| 项 | 内容 |
-|----|------|
-| **Working title** | How the TikTok Algorithm Actually Works for Product Videos |
-| **Primary keyword** | how the tiktok algorithm works / tiktok algorithm 2026 |
-| **类型** | Framework（2500–3200 词） |
-| **slug 建议** | `/blog/how-the-tiktok-algorithm-works` |
-| **搜索量依据** | 算法类主题为平台级常青需求（Shopify / WordStream 等年更专题）；2026 权重排序：完播/观看时长 40–50% > 收藏/分享 25–35% > 重播 > 评论 > 点赞（第三方口径） |
-| **去重边界** | vs `tiktok-video-hooks`（#05）：#05 管开场心理机制；本篇管分发机制全貌（完播/收藏/分享/搜索信号）；vs `tiktok-shop-no-sales`（#08）：#08 管"零销量排查"，本篇管"算法如何决定分发" |
-| **内链建议** | → #05 hooks、#06 captions-hashtags、#08 no-sales |
-| **信息增量** | 把算法信号映射到"带货视频可操作清单"（哪个指标对应哪种商品/阶段），避免泛算法科普 |
-
-### #27 · TikTok 搜索关键词研究（带货向）
-
-| 项 | 内容 |
-|----|------|
-| **Working title** | TikTok Keyword Research for TikTok Shop Sellers in 2026 |
-| **Primary keyword** | tiktok seo / tiktok keyword research / how to rank on tiktok search |
-| **类型** | Strategy（2500–3200 词） |
-| **slug 建议** | `/blog/tiktok-keyword-research` |
-| **搜索量依据** | TikTok SEO 是 2026 增长最快的营销主题之一；搜索查询 +174% YoY；搜索优化品牌曝光 3.1x；search value 成为 Creator Rewards 第四权重因子 |
-| **去重边界** | vs `tiktok-captions-hashtags`（#06）：#06 管"caption 写作 + hashtag 选择"；本篇管"关键词发现流程 + 三索引（caption/on-screen/audio）排名机制"，边界：不展开 caption 句法 |
-| **内链建议** | → #06 captions、#05 hooks（前 3 秒口播关键词）、#04 product research |
-| **信息增量** | 提供"关键词→视频结构"映射（主词进 caption 首句/首屏文字/前 10 秒口播）+ 关键词簇方法（3–5 词簇滚动覆盖），非工具软文 |
-
-### #28 · 热音选择（Trending Sounds）
-
-| 项 | 内容 |
-|----|------|
-| **Working title** | Trending TikTok Sounds That Actually Help Product Videos Convert |
-| **Primary keyword** | trending tiktok sounds / how to find trending tiktok sounds |
-| **类型** | Strategy（2500–3200 词） |
-| **slug 建议** | `/blog/trending-tiktok-sounds` |
-| **搜索量依据** | "trending sounds" 高量常青；88% 用户认为声音关键；音频速度信号（"增长中"音频 > 已饱和热音）为第三方实测（Audio velocity > Audio popularity）；Sound 页为独立聚合入口 |
-| **去重边界** | vs `tiktok-captions-hashtags`（#06）：声音层与文案层正交；本篇唯一系统讲声音的文章 |
-| **内链建议** | → #05 hooks、#06 captions；可桥接 #20 giveaway（音效趋势） |
-| **信息增量** | "音频选品"决策表：商品类型 × 声音情绪基调 × 版权/商用音乐库边界（带货用 Commercial Music Library，避免被静音） |
-
-### #29 · AI 内容合规（用 AI 做带货的边界）
-
-| 项 | 内容 |
-|----|------|
-| **Working title** | AI Content on TikTok Shop: What's Allowed, What Must Be Labeled |
-| **Primary keyword** | tiktok ai content / ai generated content rules / ai disclosure tiktok |
-| **类型** | Strategy（2500–3200 词） |
-| **slug 建议** | `/blog/tiktok-ai-content-rules` |
-| **搜索量依据** | AI 生成内容同比 +340%；真实感 AI 强制打标签（自标 2023-09 起，C2PA 自动读取 2024-05 起，已标 30 亿+ 条）；AI 内容在带货场景是高频疑问（搜索信息型需求大） |
-| **去重边界** | vs `faceless-tiktok-shop-videos`（#03）：#03 已有 disclosure 一节，本篇系统展开 TikTok + FTC 双轨规则（AI 代言、健康/收益声明、虚构证言红线）；vs TVG 落地页：不写"工具合规承诺"，写平台规则 |
-| **内链建议** | → #03 production、#07 affiliate side hustle（佣金/合规）、#08 no-sales |
-| **信息增量** | "哪些 AI 用法合规 / 哪些是红线"三分类表（voiceover+剪辑 ✅ / 虚构真人证言 ❌ / 未标真实感人像 ⚠️）+ 实操披露写法；是 Moras 教育型内容，天然贴合产品但保持客观 |
-| **合规提示** | 本文 topic scope 属"通用 AI 行业/TikTok 政策"，写作时跳过 I3 之外的 TikTok-Shop-only 约束，保留 G1–G7 |
-
-### #30 · 趋势跟风方法论（带货视角）
-
-| 项 | 内容 |
-|----|------|
-| **Working title** | How to Ride TikTok Trends Without Chasing Dead Formats |
-| **Primary keyword** | tiktok trends / how to find tiktok trends / viral tiktok trends |
-| **类型** | Strategy（2500–3200 词） |
-| **slug 建议** | `/blog/how-to-use-tiktok-trends` |
-| **搜索量依据** | "tiktok trends" 常青高量（Shopify 等年更专题）；趋势生命周期数据明确：仅 27% 趋势活过两周、近半数 5 天内消失；黄金窗口 5K–20K 视频数；48 小时内跟进原则 |
-| **去重边界** | vs `tiktok-giveaway`（#20）：#20 管 giveaway 单点；本篇管"识别→判断→切入"趋势方法论；vs `tiktok-product-research`（#04）：#04 管选品数据，本篇管"内容借势" |
-| **内链建议** | → #04 product research、#05 hooks、#28 sounds（声音是趋势载体） |
-| **信息增量** | "趋势雷达"判断框架：速度 vs 体量（velocity > volume）、垂类角度原则、3–7 天生命周期表、饱和信号（品牌广告灌满 = 结束） |
+1. 写入 `moras/blog/{folder}/NN-{slug}.md`
+2. 更新 **README.md** 文章表一行
+3. 更新 **content-graph.md** §4.1（+ Canonical 若新概念）
+4. 更新 **blog-structure-internal-links.md** §4 矩阵（若新 Cluster / 新 spoke）
+5. 从**本 backlog** 删除或标 ✅ 对应行
+6. 跑 `link_checker.py` + `word_count_narrative.py`
 
 ---
 
-## 2. 备选 2 篇（视产能/验证结果排入）
-
-| NN | Working title（建议） | 类型 | slug 建议 | 主关键词 | 与主选/既有边界 | 暂缓原因 |
-|----|----------------------|------|-----------|---------|----------------|----------|
-| 31 | TikTok Photo Posts for Product Demos: The Carousel Playbook | Production | `/blog/tiktok-photo-posts` | tiktok photo mode / tiktok carousel | 图文格式与 #25 formats 有重叠，需明确"图文专属玩法"（前后对比、清单、SKU 组合） | 可并入 #25 先发，若 #25 数据好再独立成文 |
-| 32 | How to Grow a TikTok Shop Account (Without Buying Ads) | Strategy | `/blog/how-to-grow-on-tiktok-shop` | how to grow on tiktok / how to get followers | 增长方法论与 #26 algorithm、#05 hooks、#27 SEO 均有关联，最易互斥，需严格边界声明 | 建议在 #26/#27 上线后评估再排 |
-
----
-
-## 3. 排除项（不单独成文）
-
-| 候选主题 | 排除原因 |
-|----------|----------|
-| How to make money on TikTok | 已覆盖 → `how-to-make-money-on-tiktok`（#01 Pillar） |
-| Faceless TikTok / 不出镜 | 已覆盖 → `faceless-tiktok-shop-videos`（#03） |
-| TikTok hashtags | 已覆盖 → `tiktok-captions-hashtags`（#06），重叠 >50%；标签策略并入 #27 关键词簇部分 |
-| TikTok live / 直播 | 已覆盖 → `tiktok-live-manager`（#11）、`tiktok-live-auction`（#13） |
-| TikTok Series（付费系列） | 与 Moras ICP（affiliate/seller 带货）弱相关；变现全景已含于 #01 |
-| TikTok duet / stitch | 中量搜索 + 与 UGC/Production 重叠；暂缓，可并入 #25 formats 一节 |
-| TikTok challenges | 并入 #30 趋势方法论，不单独成文 |
-| Before & After / Transformation | 作为格式并入 #25 formats（前后对比是带货核心格式之一） |
-| GRWM / POV / ASMR / Storytime 等格式词 | 作为 #25 formats 的分节素材，不逐格式开文 |
-
----
-
-## 4. 执行清单
-
-- [ ] 按序生成 #25 → #26 → #27 → #28 → #29 → #30（一天一篇，`isoDate` 递增）
-- [ ] 每篇跑 `moras-blog-article` skill：Phase 0 选题门禁（KEEP/MERGE + 信息增量 Gate）→ Phase 2 Slug Gate（确认/修订本表 slug）→ Phase 5 SelfCheck
-- [ ] 成稿后人工更新 `blog/README.md` 文章列表（NN / slug / date / 主题 / 类型 / 状态）
-- [ ] 主选 6 篇发布后 T+30 复盘：GSC 查 primary keyword vs top queries；数据差的主题按 `portable/post-publish-review.md` 处理
-- [ ] #27 发布前复核与 `tiktok-captions-hashtags` 的边界声明（避免 cannibalization 落入 G/I Gate）
-
----
-
-*Moras · https://moras.ai/ · 选题管线文档 · 与 `skills/blog-article/references/content-graph.md` 配合使用*
+*Moras · blog-article-backlog · 2026-08-24 · portfolio 64 篇 · 下一篇 #69*

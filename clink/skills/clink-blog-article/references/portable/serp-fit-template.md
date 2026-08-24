@@ -1,4 +1,4 @@
-﻿# SERP Fit 检查表
+# SERP Fit 检查表
 
 > Phase 0R 产出；Phase 5 SelfCheck 复核。**随 skill 分发。**
 

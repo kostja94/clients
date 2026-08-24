@@ -21,10 +21,10 @@
 | [vatt-keywords.md](./vatt-keywords.md) | 关键词策略 |
 | [vatt-competitors.md](./vatt-competitors.md) | 竞品分析 |
 | [vatt-use-cases.md](./vatt-use-cases.md) | 使用场景 |
-| [vatt-growth-strategy.md](./vatt-growth-strategy.md) | 增长策略 |
-| [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) | Channel 详情页策略（pSEO / reactor 图谱） |
-| [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) | Reaction 类型全景（双轴 + Semrush） |
-| [vatt-i18n-path-migration.md](./vatt-i18n-path-migration.md) | 多语言迁移：`?lang=` → 路径前缀 `/{locale}` 技术文档 |
+| [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) | Channel 详情页策略（pSEO） |
+| [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) | Reaction 类型全景、Blog 队列 |
+| [archive/vatt-growth-strategy.md](./archive/vatt-growth-strategy.md) | 增长策略（已归档） |
+| [archive/vatt-i18n-path-migration.md](./archive/vatt-i18n-path-migration.md) | 多语言迁移（已归档） |
 | [blog/README.md](./blog/README.md) | Blog 文章登记表 + 生产队列（按 ROI） |
 | [skills/vatt-blog-article/SKILL.md](./skills/vatt-blog-article/SKILL.md) | Blog 创作 Skill（v2.0：9 Phase + 5 Gate + Mode 系统） |
 

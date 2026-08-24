@@ -1,11 +1,5 @@
 # Sparki
 
-> 遵循 [样式指南](../../client-template.md) | 基于 [客户模板](../../client-template.md) | 基于官网 [sparki.io](https://sparki.io/)
-
-**Last updated**: 2026-04-08
-
----
-
 ## 文档导航
 
 | 文档 | 职责 |
@@ -82,4 +76,7 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[features](./sparki-features.md) | [keywords](./sparki-keywords.md) | [use-cases](./sparki-use-cases.md) | [competitors](./sparki-competitors.md) | [site-structure](./sparki-site-structure.md) | [video-types](./sparki-video-types.md) | [creators](./sparki-creators.md)*
+*Last updated: 2026-04-08*
 *Demo 文档包 · Sparki · https://sparki.io/*

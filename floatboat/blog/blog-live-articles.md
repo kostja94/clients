@@ -139,7 +139,7 @@
 
 | 序号 | slug | 文件 |
 |:---:|------|------|
-| 01 | `introducing-floatim` | [01-introducing-floatim-2026.md](./01-introducing-floatim-2026.md) |
+| 01 | `introducing-floatim` | [01-introducing-floatim-2026.md](./Updates/01-introducing-floatim-2026.md) |
 | 02 | `ai-scheduling-agent` | [02-ai-scheduling-agent.md](./02-ai-scheduling-agent.md) |
 | 03 | `what-is-agentic-calendar` | [03-what-is-agentic-calendar.md](./03-what-is-agentic-calendar.md) |
 | 04 | `calendar-driven-ai-vs-chat-ai` | [04-calendar-driven-ai-vs-chat-ai.md](./04-calendar-driven-ai-vs-chat-ai.md) |

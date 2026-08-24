@@ -14,7 +14,9 @@
 | **Product** | routing / retry / churn / how-to | Product | SearchCapture | 2200–3200 | ≤40% | standard | smart-routing; how-to-add-payments-lovable-app |
 | **Opinion** | agent economy / orchestration POV | Opinion | CategoryPOV | 2000–2800 | ≤35% | standard | agent-payments |
 | **EvaluationComparison** | clink vs stripe / alternative | Comparison | EvaluationComparison | 2500–3500 | ≤45% | flagship | clink-vs-stripe |
-| **GlossaryTerm** | `what is` + 财务/计费指标（burn rate / ARR / MRR / churn / runway） | Glossary | SearchCapture | 2200–3200 | ≤15% | standard | burn-rate; annual-recurring-revenue; monthly-recurring-revenue |
+| **GlossaryTerm** | `what is` + 财务/计费指标术语 | Glossary | SearchCapture | 2200–3200 | ≤15% | standard | burn-rate; annual-recurring-revenue |
+| **IndustryNews** | 行业收购/发布/基础设施事件 | Industry News | CategoryPOV | 2000–2800 | ≤25% | standard | stripe-openrouter-acquisition |
+| **StripeRisk** | Stripe 账户限制/申诉/风控 | Stripe Risk | SearchCapture | 2200–3200 | ≤30% | standard | stripe-account-suspended |
 
 **自动路由**：
 
@@ -24,6 +26,10 @@
 - `vs` / `alternative` + 竞品名 → EvaluationComparison
 - `reduce` / `how to` + payment → Product
 - `orchestration` + category POV → Opinion
+- Stripe + suspended / closed / appeal / risk → **StripeRisk**（`stripe-risk/`）
+- agent payments / guardrails / Cloudflare Wallets → **industry-news/**（15）或 agentic-payments Hub（04）
+- skill marketplace → 根目录 Product（16–17）
+- 行业收购/基础设施发布 → **industry-news/**（如 15, 18）
 
 ---
 

@@ -1,7 +1,19 @@
 # Clink — Project Configuration
 
 > 加载时机：Phase 0R（R1）· Phase 4（Draft）· Phase 5（SelfCheck）
-> 主文件：SKILL.md §1 速查指针
+> 主文件：SKILL.md v2.0 · L0：`E:\Agent执行\blog-create\SKILL.md`
+
+---
+
+## 0. L0 引擎与 SSOT
+
+| 项 | 路径 |
+|----|------|
+| **L0 工作流引擎** | `E:\Agent执行\blog-create\SKILL.md` |
+| **终审 skill** | `E:\Agent执行\blog-audit\SKILL.md` |
+| **portable SSOT** | `E:\Agent执行\blog-create\references\portable\` |
+| **blogLayout** | `cluster-folders`（`agentic-payments/` · `stripe-risk/` · 其余 root） |
+| **子目录规则** | `E:\Agent执行\blog-create\references\topic-cluster-layout.md` |
 
 ---
 

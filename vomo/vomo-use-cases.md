@@ -1,10 +1,4 @@
-
 # VOMO — 使用场景
-
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [site-structure](./vomo-site-structure.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [growth-strategy](./vomo-growth-strategy.md)
-
----
 
 ## 1. Persona 定义
 
@@ -45,7 +39,7 @@
 | 通话复盘 → CRM | P2 | Smart Notes（行动项） | sales call transcription, AI call summary | `/use-case/sales` |
 | 季度客户分析 | P2 | Ask AI + 多文件查询 | conversation intelligence, call analytics | `/use-case/sales` |
 | YouTube→博文 | P3 | YouTube 转录 + Smart Notes | YouTube transcript, YouTube to blog | `/tools/youtube-transcript` |
-| 播客内容提取 | P3 | 转录编辑 + 导出 | podcast transcription, quote extract | `/use-case/podcast` |
+| 播客内容提取 | P3 | 转录编辑 + 导出 | podcast transcription, quote extract | `/podcast-transcription` |
 | 讲座笔记 | P4 | Smart Notes（章节） | lecture transcription, AI study notes | `/use-case/education` |
 | 研究访谈分析 | P4 | Ask AI + 多文件管理 | interview transcription tool | `/tools/speech-to-text` |
 | 医疗记录 | P5 | Bot-free 录音 + 自定义模板 | medical transcription, SOAP note | `/use-case/healthcare` |
@@ -96,5 +90,7 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [site-structure](./vomo-site-structure.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [growth-strategy](./vomo-growth-strategy.md)*
 *Last updated: 2026-07-16*
 *Persona 定义基于官网使用场景描述 + 用户评价分析 + 行业常识推断*

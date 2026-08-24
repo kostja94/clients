@@ -1,7 +1,7 @@
 # Floatboat Content Graph — Published & Draft Articles
 
-> 加载时机：Phase 0（冲突检查）· Phase 1（KEEP/MERGE）· Phase 6（Cross-Article）
-> 主文件：SKILL.md §4 指针
+> 加载时机：Phase 0（冲突检查）· Phase 1（KEEP/MERGE）· Phase 2（路径/日期）· Phase 5.5
+> 主文件：SKILL.md §4 · 下一序号：**58**
 
 ---
 
@@ -9,7 +9,7 @@
 
 | NN | 文件 | slug | 类型 | 状态 | 主关键词 |
 |----|------|------|------|------|---------|
-| 01 | 01-introducing-floatim-2026.md | introducing-floatim | Announcement | 可发布 | FloatIM, agent-native messaging |
+| 01 | Updates/01-introducing-floatim-2026.md | introducing-floatim | Announcement | 可发布 | FloatIM, agent-native messaging |
 | 02 | 02-ai-scheduling-agent.md | ai-scheduling-agent | Research | 可发布 | AI scheduling agent |
 | 03 | 03-what-is-agentic-calendar.md | what-is-agentic-calendar | Research/Glossary | 可发布 | agentic calendar |
 | 04 | 04-calendar-driven-ai-vs-chat-ai.md | calendar-driven-ai-vs-chat-ai | Research | 可发布 | calendar-driven AI vs chat AI |
@@ -44,13 +44,37 @@
 | 18 | worldcup/18-floatcup-world-cup-2026-calendar-subscribe.md | floatcup-world-cup-2026-calendar-subscribe | World Cup/Product/Announcement | 可发布 | FloatCup one-click calendar subscribe — P10 |
 | 19 | worldcup/19-world-cup-2026-schedule-usa.md | world-cup-2026-schedule-usa | World Cup/Reference/Product | 可发布 | USA Schedule & Match Reminders — P11 |
 
-| 30 | 30-gpt-5-6-sol-terra-luna.md | gpt-5-6-sol-terra-luna | Research | 可发布 | GPT-5.6 Sol Terra Luna model family |
-| 31 | 31-gpt-5-6-floatboat.md | gpt-5-6-floatboat | Product | 可发布 | GPT-5.6 built into Floatboat |
+| 30 | openai/30-gpt-5-6-sol-terra-luna.md | gpt-5-6-sol-terra-luna | OpenAI/Research | 可发布 | GPT-5.6 Sol Terra Luna model family |
+| 31 | Updates/31-gpt-5-6-floatboat.md | gpt-5-6-floatboat | Product | 可发布 | GPT-5.6 built into Floatboat |
 | 32 | 32-kimi-k3-open-frontier-model.md | kimi-k3-open-frontier-model | Research | 可发布 | Kimi K3 open frontier model |
-| 33 | 33-kimi-k3-floatboat.md | kimi-k3-floatboat | Product | 可发布 | Kimi K3 built into Floatboat |
-| 34 | 34-vibe-coding-one-prompt-html-game.md | vibe-coding-one-prompt-html-game | Product | 可发布 | vibe coding, one prompt HTML game |
+| 33 | Updates/33-kimi-k3-floatboat.md | kimi-k3-floatboat | Product | 可发布 | Kimi K3 built into Floatboat |
+| 34 | Updates/34-vibe-coding-one-prompt-html-game.md | vibe-coding-one-prompt-html-game | Product | 可发布 | vibe coding, one prompt HTML game |
+| 56 | Updates/56-introducing-flow-mode.md | introducing-flow-mode | Features/Announcement | 草稿 | Floatboat Flow Mode — AI voice dictation |
+| 57 | openai/57-codex-harness-open-source.md | codex-harness-open-source | OpenAI/Research | 草稿 | Codex Harness open platform — Hub |
 
-**下一序号：56**（World Cup 系列 P03–P08/P12–P21 待写，11–16/20–29 预留；41–44/46/50/52 为 DeepSeek 簇（`deepseek/`），45/51/53 为 Model 单篇保留根目录）
+**下一序号：58**（World Cup 系列 P03–P08/P12–P21 待写，11–16/20–29 预留；41–44/46/50/52 为 DeepSeek 簇（`deepseek/`），45/51/53–55 为 Model 单篇保留根目录；Updates/ 为产品公告；openai/ 为 OpenAI 簇）
+
+---
+
+## 1B. Cluster 注册表（文件路径路由）
+
+> Phase 0/2 对照本表决定 `floatboat/blog/[{folder}]NN-{slug}.md`。
+> 公开 URL 始终 `/blog/{slug}`。规则详见 `references/topic-cluster-layout.md`。
+
+| Cluster ID | folder | Hub slug | 主 category | 说明 |
+|------------|--------|----------|-------------|------|
+| scheduling-agent | *(root)* | what-is-agentic-calendar | Research / Product / Comparison | 02–07 等根目录 |
+| updates | `Updates/` | introducing-floatim | Product / Features | 01, 31, 33, 34, 56 产品公告与内置能力 |
+| floatim | `Updates/` | introducing-floatim | Product | 01（FloatIM 公告） |
+| claude | `claude/` | what-is-claude-cowork | Claude + secondaryCategory | 35–38, 47–49 |
+| deepseek | `deepseek/` | what-is-deepseek-agent | DeepSeek + secondaryCategory | 41–44, 46, 50, 52 |
+| openai | `openai/` | codex-harness-open-source | OpenAI + secondaryCategory | 30, 57；GPT-5.6 模型族 + Codex Harness |
+| worldcup | `worldcup/` | world-cup-2026-guide | World Cup + secondaryCategory | 09–10, 17–19 |
+| model-singles | *(root)* | — | Research | 45, 51, 53–55 单篇 |
+| obsidian | *(root)* | what-is-obsidian-vault | Research / Product | 39–40 |
+| model-release | *(root)* | — | Research / Product | 32, 54–55 等（不含 openai/、Updates/） |
+
+**standalone 判定**：不在上表 cluster 内、或仅 1 篇无 spoke 计划 → `folder = (root)`。
 
 ---
 

@@ -1,0 +1,1228 @@
+{
+  "_meta": {
+    "description": "Alignify 中文内容术语对照表 — 用于统一全站中文页面的英文术语翻译",
+    "version": "1.1.0",
+    "updated": "2026-05-20",
+    "usage": "创作中文内容时，遇到这些英文术语应使用统一的推荐译法。首次出现可用「推荐译法（EN）」双语标注，后续统一用推荐译法。"
+  },
+  "categories": {
+    "ai-ml": {
+      "label": "AI / 机器学习",
+      "terms": [
+        {
+          "en": "AI",
+          "zh": "AI",
+          "strategy": "keep",
+          "note": "行业惯例，中文内容中直接使用 AI 更自然；首段可标注「人工智能（AI）」"
+        },
+        {
+          "en": "LLM",
+          "zh": "大语言模型",
+          "strategy": "translate",
+          "note": "首次出现「大语言模型（LLM）」，后续用「大模型」或「LLM」均可"
+        },
+        {
+          "en": "GPT",
+          "zh": "GPT",
+          "strategy": "keep",
+          "note": "产品名/模型系列名，保留原文"
+        },
+        {
+          "en": "RAG",
+          "zh": "检索增强生成",
+          "strategy": "bilingual",
+          "note": "首次「检索增强生成（RAG）」，后续可用 RAG"
+        },
+        {
+          "en": "prompt",
+          "zh": "提示词",
+          "strategy": "translate",
+          "note": "国内行业通用译法为「提示词」，不用「指令」「咒语」"
+        },
+        {
+          "en": "token",
+          "zh": "Token",
+          "strategy": "keep",
+          "note": "技术术语，中文语境下保留 Token 比「令牌」更通用"
+        },
+        {
+          "en": "fine-tuning",
+          "zh": "微调",
+          "strategy": "translate",
+          "note": "统一用「微调」，不用「精调」「fine-tune」"
+        },
+        {
+          "en": "embedding",
+          "zh": "嵌入向量",
+          "strategy": "bilingual",
+          "note": "首次「嵌入向量（embedding）」，后续可用「向量」"
+        },
+        {
+          "en": "diffusion model",
+          "zh": "扩散模型",
+          "strategy": "translate",
+          "note": "技术术语，统一译法"
+        },
+        {
+          "en": "GAN",
+          "zh": "生成对抗网络",
+          "strategy": "bilingual",
+          "note": "首次「生成对抗网络（GAN）」，后续可用 GAN"
+        },
+        {
+          "en": "LoRA",
+          "zh": "LoRA",
+          "strategy": "keep",
+          "note": "技术缩写，保留原文"
+        },
+        {
+          "en": "NLP",
+          "zh": "自然语言处理",
+          "strategy": "bilingual",
+          "note": "首次「自然语言处理（NLP）」，后续可用 NLP"
+        },
+        {
+          "en": "OCR",
+          "zh": "文字识别",
+          "strategy": "bilingual",
+          "note": "首次「文字识别（OCR）」，后续可用 OCR"
+        },
+        {
+          "en": "RLHF",
+          "zh": "人类反馈强化学习",
+          "strategy": "bilingual",
+          "note": "首次完整标注，后续可用 RLHF"
+        },
+        {
+          "en": "transformer",
+          "zh": "Transformer",
+          "strategy": "keep",
+          "note": "模型架构名，保留原文首字母大写"
+        }
+      ]
+    },
+    "business": {
+      "label": "商业 / 增长",
+      "terms": [
+        {
+          "en": "SaaS",
+          "zh": "SaaS",
+          "strategy": "keep",
+          "note": "行业通用缩写，中文内容直接使用；首段可标注「软件即服务（SaaS）」"
+        },
+        {
+          "en": "B2B",
+          "zh": "B2B",
+          "strategy": "keep",
+          "note": "行业通用缩写，保留原文"
+        },
+        {
+          "en": "B2C",
+          "zh": "B2C",
+          "strategy": "keep",
+          "note": "行业通用缩写，保留原文"
+        },
+        {
+          "en": "ROI",
+          "zh": "投资回报率",
+          "strategy": "bilingual",
+          "note": "首次「投资回报率（ROI）」，后续统一用 ROI"
+        },
+        {
+          "en": "KPI",
+          "zh": "关键指标",
+          "strategy": "bilingual",
+          "note": "首次「关键绩效指标（KPI）」，后续可用 KPI"
+        },
+        {
+          "en": "CRM",
+          "zh": "客户管理",
+          "strategy": "bilingual",
+          "note": "首次「客户关系管理（CRM）」，后续可用 CRM"
+        },
+        {
+          "en": "MVP",
+          "zh": "最小可行产品",
+          "strategy": "bilingual",
+          "note": "首次「最小可行产品（MVP）」，后续可用 MVP"
+        },
+        {
+          "en": "CAC",
+          "zh": "获客成本",
+          "strategy": "translate",
+          "note": "统一用「获客成本」，不用「用户获取成本」"
+        },
+        {
+          "en": "ARR",
+          "zh": "年经常性收入",
+          "strategy": "bilingual",
+          "note": "首次「年经常性收入（ARR）」，后续用 ARR"
+        },
+        {
+          "en": "MRR",
+          "zh": "月经常性收入",
+          "strategy": "bilingual",
+          "note": "首次「月经常性收入（MRR）」，后续用 MRR"
+        },
+        {
+          "en": "LTV",
+          "zh": "用户终身价值",
+          "strategy": "bilingual",
+          "note": "首次「用户终身价值（LTV）」，后续用 LTV"
+        },
+        {
+          "en": "churn",
+          "zh": "流失率",
+          "strategy": "translate",
+          "note": "统一用「流失率」，不用「客户流失」「churn rate」"
+        },
+        {
+          "en": "conversion rate",
+          "zh": "转化率",
+          "strategy": "translate",
+          "note": "统一用「转化率」"
+        },
+        {
+          "en": "onboarding",
+          "zh": "上手引导",
+          "strategy": "translate",
+          "note": "统一用「上手引导」，不用「新手引导」「onboarding 流程」"
+        },
+        {
+          "en": "freemium",
+          "zh": "免费增值",
+          "strategy": "translate",
+          "note": "统一用「免费增值模式」"
+        }
+      ]
+    },
+    "marketing-seo": {
+      "label": "营销 / SEO",
+      "terms": [
+        {
+          "en": "SEO",
+          "zh": "SEO",
+          "strategy": "keep",
+          "note": "行业惯例保留；首段可标注「搜索引擎优化（SEO）」，后续用 SEO"
+        },
+        {
+          "en": "SERP",
+          "zh": "搜索结果页",
+          "strategy": "bilingual",
+          "note": "首次「搜索结果页（SERP）」，后续可用 SERP"
+        },
+        {
+          "en": "backlink",
+          "zh": "外链",
+          "strategy": "translate",
+          "note": "统一用「外链」，不用「反向链接」「反链」"
+        },
+        {
+          "en": "keyword",
+          "zh": "关键词",
+          "strategy": "translate",
+          "note": "统一用「关键词」"
+        },
+        {
+          "en": "CTR",
+          "zh": "点击率",
+          "strategy": "bilingual",
+          "note": "首次「点击率（CTR）」，后续可用 CTR"
+        },
+        {
+          "en": "CTA",
+          "zh": "行动号召",
+          "strategy": "bilingual",
+          "note": "首次「行动号召（CTA）」，后续可用 CTA"
+        },
+        {
+          "en": "CPC",
+          "zh": "每次点击成本",
+          "strategy": "bilingual",
+          "note": "首次完整标注，后续可用 CPC"
+        },
+        {
+          "en": "CPA",
+          "zh": "每次获客成本",
+          "strategy": "bilingual",
+          "note": "首次完整标注，后续可用 CPA"
+        },
+        {
+          "en": "KOL",
+          "zh": "KOL",
+          "strategy": "keep",
+          "note": "国内行业通用，直接使用 KOL；不译为「关键意见领袖」"
+        },
+        {
+          "en": "UGC",
+          "zh": "用户生成内容",
+          "strategy": "bilingual",
+          "note": "首次「用户生成内容（UGC）」，后续可用 UGC"
+        },
+        {
+          "en": "sitemap",
+          "zh": "站点地图",
+          "strategy": "translate",
+          "note": "统一用「站点地图」，不用 sitemap"
+        },
+        {
+          "en": "canonical URL",
+          "zh": "规范网址",
+          "strategy": "translate",
+          "note": "统一用「规范网址」或「canonical 标签」"
+        },
+        {
+          "en": "schema markup",
+          "zh": "结构化数据",
+          "strategy": "translate",
+          "note": "统一用「结构化数据」或「Schema 标记」"
+        },
+        {
+          "en": "alt text",
+          "zh": "替代文本",
+          "strategy": "translate",
+          "note": "统一用「替代文本」或「alt 文本」"
+        },
+        {
+          "en": "meta description",
+          "zh": "Meta 描述",
+          "strategy": "keep",
+          "note": "技术性字段名，保留 Meta 描述"
+        },
+        {
+          "en": "organic traffic",
+          "zh": "自然流量",
+          "strategy": "translate",
+          "note": "统一用「自然流量」，不用「有机流量」"
+        },
+        {
+          "en": "domain authority",
+          "zh": "域名权重",
+          "strategy": "translate",
+          "note": "统一用「域名权重」"
+        }
+      ]
+    },
+    "tech-general": {
+      "label": "通用技术",
+      "terms": [
+        {
+          "en": "API",
+          "zh": "API",
+          "strategy": "keep",
+          "note": "行业通用缩写，中文语境下直接使用"
+        },
+        {
+          "en": "SDK",
+          "zh": "SDK",
+          "strategy": "keep",
+          "note": "行业通用缩写，保留原文"
+        },
+        {
+          "en": "UI",
+          "zh": "界面",
+          "strategy": "bilingual",
+          "note": "首次「用户界面（UI）」，后续可用 UI 或「界面」"
+        },
+        {
+          "en": "UX",
+          "zh": "体验",
+          "strategy": "bilingual",
+          "note": "首次「用户体验（UX）」，后续可用 UX 或「体验」"
+        },
+        {
+          "en": "open-source",
+          "zh": "开源",
+          "strategy": "translate",
+          "note": "统一用「开源」"
+        },
+        {
+          "en": "plugin",
+          "zh": "插件",
+          "strategy": "translate",
+          "note": "统一用「插件」"
+        },
+        {
+          "en": "extension",
+          "zh": "扩展",
+          "strategy": "translate",
+          "note": "浏览器场景用「扩展」，软件场景用「插件」"
+        },
+        {
+          "en": "template",
+          "zh": "模板",
+          "strategy": "translate",
+          "note": "统一用「模板」"
+        },
+        {
+          "en": "workflow",
+          "zh": "工作流",
+          "strategy": "translate",
+          "note": "统一用「工作流」，不用 workflow"
+        },
+        {
+          "en": "dashboard",
+          "zh": "仪表盘",
+          "strategy": "translate",
+          "note": "统一用「仪表盘」，不用「控制台」「dashboard」"
+        },
+        {
+          "en": "analytics",
+          "zh": "分析",
+          "strategy": "translate",
+          "note": "统一用「数据分析」或「分析」"
+        },
+        {
+          "en": "integration",
+          "zh": "集成",
+          "strategy": "translate",
+          "note": "统一用「集成」，不用「整合」"
+        },
+        {
+          "en": "deployment",
+          "zh": "部署",
+          "strategy": "translate",
+          "note": "统一用「部署」"
+        },
+        {
+          "en": "real-time",
+          "zh": "实时",
+          "strategy": "translate",
+          "note": "统一用「实时」"
+        },
+        {
+          "en": "cloud-based",
+          "zh": "云端",
+          "strategy": "translate",
+          "note": "统一用「云端」或「基于云的」"
+        },
+        {
+          "en": "cross-platform",
+          "zh": "跨平台",
+          "strategy": "translate",
+          "note": "统一用「跨平台」"
+        },
+        {
+          "en": "drag-and-drop",
+          "zh": "拖拽",
+          "strategy": "translate",
+          "note": "统一用「拖拽」或「拖拽式」"
+        },
+        {
+          "en": "no-code",
+          "zh": "零代码",
+          "strategy": "translate",
+          "note": "统一用「零代码」"
+        },
+        {
+          "en": "low-code",
+          "zh": "低代码",
+          "strategy": "translate",
+          "note": "统一用「低代码」"
+        },
+        {
+          "en": "end-to-end",
+          "zh": "端到端",
+          "strategy": "translate",
+          "note": "统一用「端到端」"
+        },
+        {
+          "en": "one-click",
+          "zh": "一键",
+          "strategy": "translate",
+          "note": "统一用「一键」"
+        },
+        {
+          "en": "user-friendly",
+          "zh": "易用",
+          "strategy": "translate",
+          "note": "统一用「易用」「易于使用」，不用「用户友好」"
+        },
+        {
+          "en": "whitelabel",
+          "zh": "白标",
+          "strategy": "translate",
+          "note": "统一用「白标」或「白标方案」"
+        }
+      ]
+    },
+    "ui-labels": {
+      "label": "UI 标签（messages/zh.json 对照）",
+      "terms": [
+        {
+          "en": "Agent Skills",
+          "zh": "Agent 技能",
+          "strategy": "translate",
+          "note": "已修复：2026-05-20 从 'Agent Skills' 改为 'Agent 技能'"
+        },
+        {
+          "en": "Marketing Skills (product name)",
+          "zh": "Marketing Skills",
+          "strategy": "keep",
+          "note": "GitHub 开源项目名，保留原文；banner 中用 '· 支持 Cursor、Claude Code、OpenClaw ·' 中文句式"
+        },
+        {
+          "en": "Skills (install button)",
+          "zh": "一键安装 160+ 项技能",
+          "strategy": "translate",
+          "note": "已修复：数字从 62 更新为 160+"
+        },
+        {
+          "en": "SEO优化 (nav/footer)",
+          "zh": "SEO优化",
+          "strategy": "keep",
+          "note": "SEO 保留，'SEO优化' 是中文技术圈标准用法，比'搜索引擎优化'更通用"
+        },
+        {
+          "en": "Dark Traffic (in description)",
+          "zh": "无法归因流量",
+          "strategy": "translate",
+          "note": "已修复：description 中统一用中文，与 label 一致"
+        },
+        {
+          "en": "Channels / Platforms (dropdown)",
+          "zh": "渠道 / 平台",
+          "strategy": "translate",
+          "note": "Header 下拉菜单子标题，硬编码在组件中，已正确"
+        },
+        {
+          "en": "Basic SEO / Advanced SEO (dropdown)",
+          "zh": "基础SEO / 高级SEO",
+          "strategy": "translate",
+          "note": "SEO 保留，'基础SEO''高级SEO' 是标准用法"
+        },
+        {
+          "en": "Glossaries / Other Resources",
+          "zh": "词汇表 / 其他资源",
+          "strategy": "translate",
+          "note": "已正确"
+        },
+        {
+          "en": "Home",
+          "zh": "首页",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Blog",
+          "zh": "博客",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "About",
+          "zh": "关于",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Search",
+          "zh": "搜索",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Events",
+          "zh": "活动",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Resources",
+          "zh": "资源",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Growth Strategy",
+          "zh": "增长策略",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "AI Tools (nav/title)",
+          "zh": "AI工具",
+          "strategy": "translate",
+          "note": "AI 保留，'AI工具' 是标准用法 ✓"
+        },
+        {
+          "en": "Glossary",
+          "zh": "词汇表",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Media Kit",
+          "zh": "媒体素材包",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Partners",
+          "zh": "合作伙伴",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Industry Insights",
+          "zh": "行业洞察",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Customer Stories",
+          "zh": "客户案例",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Services",
+          "zh": "服务",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Privacy Policy",
+          "zh": "隐私政策",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Back to Top",
+          "zh": "返回顶部",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "Frequently Asked Questions",
+          "zh": "常见问题",
+          "strategy": "translate",
+          "note": "✓"
+        },
+        {
+          "en": "AI/SaaS Growth Expert (tagline)",
+          "zh": "AI/SaaS增长专家",
+          "strategy": "translate",
+          "note": "AI/SaaS 保留，其余翻译 ✓"
+        },
+        {
+          "en": "Landing Page",
+          "zh": "落地页",
+          "strategy": "translate",
+          "note": "不用'登录页''着陆页'"
+        },
+        {
+          "en": "Case Study",
+          "zh": "案例",
+          "strategy": "translate",
+          "note": "上下文决定用'案例'还是'案例研究'"
+        },
+        {
+          "en": "Use Case",
+          "zh": "使用场景",
+          "strategy": "translate",
+          "note": "或'应用场景'"
+        },
+        {
+          "en": "Best Practice",
+          "zh": "最佳实践",
+          "strategy": "translate",
+          "note": "✓"
+        }
+      ]
+    },
+    "do-not-translate": {
+      "label": "不应翻译（保留原文）",
+      "terms": [
+        {
+          "en": "Cursor",
+          "zh": "Cursor",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Claude Code",
+          "zh": "Claude Code",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "OpenClaw",
+          "zh": "OpenClaw",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "GitHub",
+          "zh": "GitHub",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Reddit",
+          "zh": "Reddit",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "LinkedIn",
+          "zh": "LinkedIn",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Twitter / X",
+          "zh": "X（Twitter）",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Praxis",
+          "zh": "Praxis",
+          "strategy": "keep",
+          "reason": "活动品牌名"
+        },
+        {
+          "en": "Linkloud",
+          "zh": "Linkloud",
+          "strategy": "keep",
+          "reason": "活动品牌名"
+        },
+        {
+          "en": "Founder Park",
+          "zh": "Founder Park",
+          "strategy": "keep",
+          "reason": "活动品牌名"
+        },
+        {
+          "en": "Nova Scientia",
+          "zh": "Nova Scientia",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Grok AI",
+          "zh": "Grok AI",
+          "strategy": "keep",
+          "reason": "产品名（xAI）"
+        },
+        {
+          "en": "robots.txt",
+          "zh": "robots.txt",
+          "strategy": "keep",
+          "reason": "文件名，不应翻译"
+        },
+        {
+          "en": "Google Analytics",
+          "zh": "Google Analytics",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Google Search Console",
+          "zh": "Google Search Console",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Google Tag Manager",
+          "zh": "Google Tag Manager",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Vercel",
+          "zh": "Vercel",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Next.js",
+          "zh": "Next.js",
+          "strategy": "keep",
+          "reason": "框架名"
+        },
+        {
+          "en": "Tailwind CSS",
+          "zh": "Tailwind CSS",
+          "strategy": "keep",
+          "reason": "框架名"
+        },
+        {
+          "en": "TypeScript",
+          "zh": "TypeScript",
+          "strategy": "keep",
+          "reason": "语言名"
+        },
+        {
+          "en": "YouTube",
+          "zh": "YouTube",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Discord",
+          "zh": "Discord",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Slack",
+          "zh": "Slack",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Notion",
+          "zh": "Notion",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Figma",
+          "zh": "Figma",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Canva",
+          "zh": "Canva",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Shopify",
+          "zh": "Shopify",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "WordPress",
+          "zh": "WordPress",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Webflow",
+          "zh": "Webflow",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Zapier",
+          "zh": "Zapier",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Make (Integromat)",
+          "zh": "Make",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Airtable",
+          "zh": "Airtable",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "HubSpot",
+          "zh": "HubSpot",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Salesforce",
+          "zh": "Salesforce",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Stripe",
+          "zh": "Stripe",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Google AdSense",
+          "zh": "Google AdSense",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Google Ads",
+          "zh": "Google Ads",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Meta Ads",
+          "zh": "Meta Ads",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "TikTok",
+          "zh": "TikTok",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Instagram",
+          "zh": "Instagram",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Facebook",
+          "zh": "Facebook",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Pinterest",
+          "zh": "Pinterest",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Product Hunt",
+          "zh": "Product Hunt",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Hacker News",
+          "zh": "Hacker News",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Kaggle",
+          "zh": "Kaggle",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Hugging Face",
+          "zh": "Hugging Face",
+          "strategy": "keep",
+          "reason": "平台名"
+        },
+        {
+          "en": "Replicate",
+          "zh": "Replicate",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "OpenAI",
+          "zh": "OpenAI",
+          "strategy": "keep",
+          "reason": "公司名"
+        },
+        {
+          "en": "Anthropic",
+          "zh": "Anthropic",
+          "strategy": "keep",
+          "reason": "公司名"
+        },
+        {
+          "en": "Google",
+          "zh": "Google",
+          "strategy": "keep",
+          "reason": "公司名"
+        },
+        {
+          "en": "Microsoft",
+          "zh": "微软",
+          "strategy": "translate",
+          "reason": "有标准中文名"
+        },
+        {
+          "en": "Apple",
+          "zh": "Apple",
+          "strategy": "keep",
+          "reason": "品牌名，中文圈通用原文"
+        },
+        {
+          "en": "Meta",
+          "zh": "Meta",
+          "strategy": "keep",
+          "reason": "公司名"
+        },
+        {
+          "en": "Amazon",
+          "zh": "Amazon",
+          "strategy": "keep",
+          "reason": "公司名"
+        },
+        {
+          "en": "AWS",
+          "zh": "AWS",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "ChatGPT",
+          "zh": "ChatGPT",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Claude",
+          "zh": "Claude",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Gemini",
+          "zh": "Gemini",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Midjourney",
+          "zh": "Midjourney",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "DALL-E",
+          "zh": "DALL-E",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "GitHub Copilot",
+          "zh": "GitHub Copilot",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Windows",
+          "zh": "Windows",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "macOS",
+          "zh": "macOS",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Linux",
+          "zh": "Linux",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "iOS",
+          "zh": "iOS",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Android",
+          "zh": "Android",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Chrome",
+          "zh": "Chrome",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Firefox",
+          "zh": "Firefox",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Safari",
+          "zh": "Safari",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Edge",
+          "zh": "Edge",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Docker",
+          "zh": "Docker",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Kubernetes",
+          "zh": "Kubernetes",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "PostgreSQL",
+          "zh": "PostgreSQL",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "MySQL",
+          "zh": "MySQL",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "MongoDB",
+          "zh": "MongoDB",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Redis",
+          "zh": "Redis",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "React",
+          "zh": "React",
+          "strategy": "keep",
+          "reason": "框架名"
+        },
+        {
+          "en": "Vue",
+          "zh": "Vue",
+          "strategy": "keep",
+          "reason": "框架名"
+        },
+        {
+          "en": "Angular",
+          "zh": "Angular",
+          "strategy": "keep",
+          "reason": "框架名"
+        },
+        {
+          "en": "Node.js",
+          "zh": "Node.js",
+          "strategy": "keep",
+          "reason": "技术名"
+        },
+        {
+          "en": "Python",
+          "zh": "Python",
+          "strategy": "keep",
+          "reason": "语言名"
+        },
+        {
+          "en": "JavaScript",
+          "zh": "JavaScript",
+          "strategy": "keep",
+          "reason": "语言名"
+        },
+        {
+          "en": "TensorFlow",
+          "zh": "TensorFlow",
+          "strategy": "keep",
+          "reason": "框架名"
+        },
+        {
+          "en": "PyTorch",
+          "zh": "PyTorch",
+          "strategy": "keep",
+          "reason": "框架名"
+        },
+        {
+          "en": "Jupyter",
+          "zh": "Jupyter",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "VS Code",
+          "zh": "VS Code",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Git",
+          "zh": "Git",
+          "strategy": "keep",
+          "reason": "技术名"
+        },
+        {
+          "en": "GitHub Actions",
+          "zh": "GitHub Actions",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Vercel Analytics",
+          "zh": "Vercel Analytics",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Cloudflare",
+          "zh": "Cloudflare",
+          "strategy": "keep",
+          "reason": "公司/产品名"
+        },
+        {
+          "en": "Netlify",
+          "zh": "Netlify",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Supabase",
+          "zh": "Supabase",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Firebase",
+          "zh": "Firebase",
+          "strategy": "keep",
+          "reason": "产品名"
+        },
+        {
+          "en": "Baidu (百度)",
+          "zh": "百度",
+          "strategy": "translate",
+          "reason": "有标准中文名"
+        },
+        {
+          "en": "Alibaba (阿里巴巴)",
+          "zh": "阿里巴巴",
+          "strategy": "translate",
+          "reason": "有标准中文名"
+        },
+        {
+          "en": "Tencent (腾讯)",
+          "zh": "腾讯",
+          "strategy": "translate",
+          "reason": "有标准中文名"
+        },
+        {
+          "en": "ByteDance (字节跳动)",
+          "zh": "字节跳动",
+          "strategy": "translate",
+          "reason": "有标准中文名"
+        }
+      ]
+    }
+  }
+}

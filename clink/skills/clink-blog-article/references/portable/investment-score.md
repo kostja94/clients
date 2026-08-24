@@ -1,6 +1,6 @@
-﻿# Investment Score（Phase 0）
+# Investment Score（Phase 0）
 
-> 随 skill 分发。
+> 与 `01-intake` §三、`00-content-strategy` 一致。随 skill 分发。
 
 ---
 
@@ -20,8 +20,8 @@
 |------|------|
 | ≥4.0 | KEEP，按 Mode 执行 |
 | 3.0–3.9 | 降级 Mode 或改角度 |
-| <3.0 | MERGE / STOP / 降级 FAQ·短帖 |
+| <3.0 | MERGE / STOP / 降级 FAQ·docs |
 
 ---
 
-*investment-score · portable v2.0 · 2026-07-06*
+*investment-score · portable v2.0 · 2026-06-19*

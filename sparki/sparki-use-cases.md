@@ -1,11 +1,5 @@
 # Sparki 应用场景与 Persona(多维)
 
-> 关联:[sparki.md](./sparki.md) | [sparki-features.md](./sparki-features.md) | [sparki-video-types.md](./sparki-video-types.md) | [sparki-keywords.md](./sparki-keywords.md)
-
-**Last updated**: 2026-08-12
-
----
-
 ## 〇、场景维度说明(可扩展)
 
 应用场景采用**大维度 → 小维度**层级结构,每个大维度独立、可单独扩展。
@@ -180,4 +174,7 @@
 
 ---
 
-*Demo 文档包 · Sparki · 应用场景与 Persona · 2026-08-12*
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./sparki.md) | [features](./sparki-features.md) | [video-types](./sparki-video-types.md) | [keywords](./sparki-keywords.md)*
+*Last updated: 2026-08-12*
+*Demo 文档包 · Sparki · 应用场景与 Persona*

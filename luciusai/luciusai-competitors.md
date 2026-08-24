@@ -188,6 +188,45 @@ Lucius 的独特之处在于同时横跨四个赛道竞争——社区 AI 回答
 | 自建 RAG Bot | 开发者用 LangChain/LlamaIndex 搭建 Discord Bot | 完全自控，但需开发维护；无开箱即用功能 |
 | OpenAI Assistants API | 直接接入 GPT 构建 Bot | 灵活但需自行处理平台适配和多租户 |
 
+### 3.4 相邻赛道：多 Agent 协作 / 个人后端 Agent
+
+> **归类说明**：下列产品与 Lucius **核心购买场景不重叠**——前者是团队内部协作或个人后端自动化（CRM、收件箱、云电脑里跑任务），后者是对外社区（Discord/Telegram/Slack 等）的运营 AI 队友。因共享「AI teammate」「always-on agent」叙事，且社区运营者可能误以为「一个 Agent 包办前后端」，列为**间接竞品**。Lucius 官方对照文见 [blog/05-what-is-grok-bot.md](./blog/05-what-is-grok-bot.md)。
+
+#### Bloome
+
+| 维度 | 详情 |
+|------|------|
+| 公司 | Bloome AI |
+| 网站 | [bloome.im](https://bloome.im/) |
+| 定位 | AI-native 群聊——人类与多个 AI Agent 在同一对话中协作、互相审校 |
+| 核心能力 | 多模型 Agent 同屏（Claude / GPT / DeepSeek 等，支持 BYO）、Agent 互相 push back 与交叉验证、共享对话记忆与工作区、Agent / Skill Marketplace、Cloud Agent、Claude Code / Codex / Gemini CLI 等编码 Agent 集成 |
+| 客户端 | macOS、Windows、iOS、Android（APK）、Google Play |
+| 典型场景 | 深度调研报告、投资组合看板、CEO 周报起草、产品需求讨论（PM + Designer + Engineer Agent）、内容营销协作 |
+| 安全叙事 | 按 Agent / 工具粒度权限控制、沙箱隔离执行、操作审计、宣称 SOC 2 ready / GDPR |
+| 定价 | 官网 Free to try；具体 tier 未在首页公开（2026-08 抓取） |
+| 入选依据 | 相邻赛道代表产品；多平台客户端 + 大量 SEO 内容页，品类认知在「multi-agent group chat」方向较活跃 |
+| vs. Lucius（核心） | Bloome 不接入 Discord/Telegram 社区 Bot、无垃圾信息过滤、无新成员激活、无跨平台**社区成员**记忆；Lucius 不提供多 Agent 辩论式协作或 Agent 市场 |
+| vs. Lucius（重叠） | 「Personal AI Agent」与 Knockin' 在「个人 AI 代表你」叙事上有部分重叠；若买家把需求理解为「小团队 + 群聊 + AI 队友」而非「社区运营」，可能在选型早期被 Bloome 分流 |
+| 威胁等级 | 低–中（社区运营主场景不正面交锋；关键词与品牌叙事可能竞争） |
+
+#### Grok Bot（SpaceXAI / xAI）
+
+| 维度 | 详情 |
+|------|------|
+| 公司 | SpaceXAI（原 xAI） |
+| 网站 | [x.ai/news/introducing-grok-bot](https://x.ai/news/introducing-grok-bot) · [docs.x.ai/grok-bot](https://docs.x.ai/grok-bot/overview) |
+| 定位 | Always-on **个人后端 AI 队友**——每个 Bot 拥有持久云电脑（浏览器 + 文件系统 + 终端），登录你的真实应用完成多步任务 |
+| 核心能力 | 在 CRM / 邮件 / 文档 / 无 API 网站中端到端执行；多 Bot 并行与互发消息；workflow learning（跟做一次 → 保存为可调度 routine）；审批卡点；与 Cursor 订阅捆绑 |
+| 客户端 | Desktop（macOS / Windows / Linux）、iOS；Android / Enterprise 待开放（2026-08） |
+| 典型场景 | 销售外联、营销 campaign、收件箱管理、CRM 同步、Bug 复现、供应商谈判草稿、网店后台客服（**在商家工具里**，非社区频道） |
+| 安全模型 | **同一账户下所有 Bot 共享一台云电脑**——同一 cookie / 文件系统 / 凭证；官方明确「不要把不同 Bot 当安全边界」 |
+| 定价 | Beta，捆绑订阅：SuperGrok Heavy（约 $300/月）、Cursor Ultra（$200/月）、Cursor Teams Premium（$120/座/月）；无独立免费 tier |
+| 发布 | 2026-08-11 公测 |
+| 入选依据 | SpaceXAI 头部品牌 + 「agentic outsourcing」品类标杆；与 Lucius 同属「AI teammate」话语体系，社区运营者易混淆 |
+| vs. Lucius（核心） | **不是 community bot**——不驻留 Discord/Telegram/Slack 频道、不面向成员身份、无垃圾过滤 / 新成员激活 / 跨平台社区成员记忆、无自更新社区知识库 |
+| vs. Lucius（重叠） | 后端互补而非替代：Grok Bot 适合 CRM  hygiene、工单分拣、调研等**社区背后** invisible ops；Lucius 适合频道内 auto-answer、spam judgment、handoff。若买家只买一个「AI 队友」，可能误选 Grok Bot 处理本应由社区 AI 承担的前台工作 |
+| 威胁等级 | 低–中（场景互补为主；品类叙事与「一个 Agent 搞定社区」误解可能分流） |
+
 ---
 
 ## 4. 场景级竞品对比
@@ -335,6 +374,8 @@ Lucius 官网提供了一个简洁的 4 产品对比表：
 | Voice agent（电话客服） | Decagon Voice、Sierra Voice、Intercom Fin Voice |
 | AI Twin / Personal AI | Delphi、Personal.ai、nexos.heartbeat |
 | Cross-app automation teammate | Zapier Agents（9000+ 应用） |
+| Multi-agent group chat workspace | Bloome（人类 + 多 Agent 同对话、互相审校） |
+| Agentic outsourcing / personal backend teammate | Grok Bot（SpaceXAI，持久云电脑 + 工具登录执行） |
 
 ### 8.4 对 Lucius 的战略启示
 
@@ -349,7 +390,7 @@ Lucius 官网提供了一个简洁的 4 产品对比表：
 
 ---
 
-*文档创建：2026-07-01 | Use Case 扫描更新：2026-07-21 | 模式：Mode A 冷启动 — 国际版 | 数据来源：[luciusai.com](https://luciusai.com/) 网站、产品对比页、行业报告 | 标注"预估"的为基于公开信息的合理估算，需进一步验证*
+*文档创建：2026-07-01 | Use Case 扫描更新：2026-07-21 | Bloome / Grok Bot 相邻竞品补充：2026-08-22 | 模式：Mode A 冷启动 — 国际版 | 数据来源：[luciusai.com](https://luciusai.com/) 网站、产品对比页、[bloome.im](https://bloome.im/)、[x.ai Grok Bot](https://x.ai/news/introducing-grok-bot)、行业报告 | 标注"预估"的为基于公开信息的合理估算，需进一步验证*
 
 ---
 

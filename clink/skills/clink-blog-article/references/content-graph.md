@@ -1,18 +1,18 @@
 # Clink Blog — Content Graph
 
-> 加载时机：Phase 0（选题）· Phase 2（日期）· Phase 5（Cross-Article）
-> 主文件：SKILL.md §4 指针
+> 加载时机：Phase 0（选题）· Phase 2（路径/日期）· Phase 5.5
+> 主文件：SKILL.md §4 · 下一序号：**24**（根目录）；agentic-payments 协议 definition 系列 **26–29, 33**
 
 ---
 
-## 文件表
+## 1. 文件表
 
 | NN | 文件 | slug | 类型 | category | 日期 | 主关键词 |
 |----|------|------|------|----------|------|---------|
 | 01 | 01-what-is-clink.md | what-is-clink | BrandIntroduction | Product | 2026-06-23 | Clink, payment infrastructure |
 | 02 | 02-mor-vs-psp.md | mor-vs-psp | Comparison | Comparison | 2026-06-29 | MoR vs PSP |
 | 03 | 03-smart-routing.md | smart-routing | Product | Product | 2026-06-29 | smart payment routing |
-| 04 | 04-agent-payments.md | agent-payments | Opinion | Opinion | 2026-06-29 | agent payments |
+| 04 | agentic-payments/04-agent-payments.md | agent-payments | Opinion | Agentic Payments | 2026-06-29 | agent payments |
 | 05 | 05-how-to-add-payments-lovable-app.md | how-to-add-payments-lovable-app | Product | Product | 2026-07-22 | how to add payments to lovable app |
 | 06 | 06-integrate-stripe-lovable.md | integrate-stripe-lovable | Product | Product | 2026-07-23 | integrate stripe lovable |
 | 07 | 07-how-to-add-payments-bolt-app.md | how-to-add-payments-bolt-app | Product | Product | 2026-07-24 | how to add payments to bolt.new app |
@@ -23,13 +23,52 @@
 | 12 | 12-monthly-recurring-revenue.md | monthly-recurring-revenue | GlossaryTerm | Glossary | 2026-07-29 | what is mrr |
 | 13 | 13-net-revenue-retention.md | net-revenue-retention | GlossaryTerm | Glossary | 2026-07-30 | what is nrr |
 | 14 | 14-runway.md | runway | GlossaryTerm | Glossary | 2026-07-31 | what is runway |
-| 15 | 15-cloudflare-wallets-agent-payments.md | cloudflare-wallets-agent-payments | Opinion | Opinion | 2026-08-04 | Cloudflare Wallets, agent payments |
+| 15 | industry-news/15-cloudflare-wallets-agent-payments.md | cloudflare-wallets-agent-payments | IndustryNews | Industry News | 2026-08-04 | Cloudflare Wallets, agent payments |
+| 26 | agentic-payments/26-what-is-ap2-agent-payments-protocol.md | what-is-ap2-agent-payments-protocol | Research | Agentic Payments | 2026-09-07 | AP2 agent payments protocol |
+| 27 | agentic-payments/27-what-is-x402.md | what-is-x402 | Research | Agentic Payments | 2026-09-08 | x402 agent payments |
+| 28 | agentic-payments/28-what-is-machine-payments-protocol.md | what-is-machine-payments-protocol | Research | Agentic Payments | 2026-09-09 | Machine Payments Protocol MPP |
+| 29 | agentic-payments/29-what-is-agentic-commerce-protocol.md | what-is-agentic-commerce-protocol | Research | Agentic Payments | 2026-09-10 | Agentic Commerce Protocol ACP |
+| 33 | agentic-payments/33-what-is-universal-commerce-protocol.md | what-is-universal-commerce-protocol | Research | Agentic Payments | 2026-09-11 | Universal Commerce Protocol UCP |
+| 31 | agentic-payments/31-how-to-sell-on-chatgpt.md | how-to-sell-on-chatgpt | HowTo | Agentic Payments | 2026-09-12 | how to sell on ChatGPT merchant |
 | 16 | 16-what-is-skill-marketplace.md | what-is-skill-marketplace | Product | Product | 2026-08-05 | what is a skill marketplace |
 | 17 | 17-clink-launches-skill-marketplace.md | clink-launches-skill-marketplace | Product | Product | 2026-08-06 | monetize agent skills |
+| 18 | industry-news/18-stripe-openrouter-acquisition.md | stripe-openrouter-acquisition | IndustryNews | Industry News | 2026-08-18 | Stripe OpenRouter acquisition |
+| 19 | 19-best-ai-companies-by-arr.md | best-ai-companies-by-arr | Comparison | Comparison | 2026-08-19 | AI companies by ARR |
+| 20 | 20-fastest-growing-ai-companies-arr.md | fastest-growing-ai-companies-arr | Comparison | Comparison | 2026-08-20 | fastest growing AI companies ARR |
+| 21 | stripe-risk/21-what-is-stripe-dispute.md | what-is-stripe-dispute | StripeRisk | Stripe Risk | 2026-09-04 | what is a Stripe dispute |
+| 22 | stripe-risk/22-how-to-dispute-stripe-charge.md | how-to-dispute-stripe-charge | StripeRisk | Stripe Risk | 2026-09-05 | how to dispute Stripe charge |
+| 23 | stripe-risk/23-stripe-chargeback-prevention.md | stripe-chargeback-prevention | StripeRisk | Stripe Risk | 2026-09-06 | Stripe chargeback prevention |
+| 25 | stripe-risk/25-stripe-account-suspended.md | stripe-account-suspended | StripeRisk | Stripe Risk | 2026-09-01 | Stripe account suspended |
+| 30 | stripe-risk/30-why-stripe-closes-accounts.md | why-stripe-closes-accounts | StripeRisk | Stripe Risk | 2026-09-02 | why Stripe closed my account |
+| 32 | stripe-risk/32-how-to-appeal-stripe-account-closure.md | how-to-appeal-stripe-account-closure | StripeRisk | Stripe Risk | 2026-09-03 | appeal Stripe account closed |
 
-**下一序号：18**
+**下一序号：24**（根目录 pipeline；stripe-risk 账户子系列保留 25/30/32 跳号）
 
-**S-grade rewrite (2026-07-23)**: Titles normalized to em dash form; slugs unchanged. Anti-clone contract for 05–09: `clink/blog/_series-canonical-ownership.md`.
+**序号规则（2026-08-24）**：
+- **19–20** 根目录 Comparison（AI ARR 双文）
+- **21–23** `stripe-risk/` 争议/拒付子系列（Hub → HowTo → Prevention）
+- **25/30/32** `stripe-risk/` 账户限制子系列（已入库，序号不变）
+
+**S-grade rewrite (2026-07-23)**: Titles normalized to em dash form; slugs unchanged. Anti-clone contract for 05–09: `references/series-canonical-ownership.md`.
+
+---
+
+## 1B. Cluster 注册表（文件路径路由）
+
+> Phase 0/2 对照本表决定 `clink/blog/[{folder}]NN-{slug}.md`。
+> 公开 URL 始终 `/blog/{slug}`。规则详见 `E:\Agent执行\blog-create\references\topic-cluster-layout.md`。
+
+| Cluster ID | folder | Hub slug | 主 category | 说明 |
+|------------|--------|----------|-------------|------|
+| core | *(root)* | what-is-clink | Product / Comparison / Opinion | 01–03, 16–17, 19–20 |
+| glossary-metrics | *(root)* | burn-rate | Glossary | 10–14 |
+| lovable-series | *(root)* | how-to-add-payments-lovable-app | Product | 05–09 |
+| agentic-payments | `agentic-payments/` | agent-payments | Agentic Payments + secondaryCategory | 04, 26–29, 33 |
+| industry-news | `industry-news/` | stripe-openrouter-acquisition | Industry News + secondaryCategory | 15, 18 |
+| stripe-risk-disputes | `stripe-risk/` | what-is-stripe-dispute | Stripe Risk + secondaryCategory | 21–23 争议/拒付 |
+| stripe-risk-accounts | `stripe-risk/` | stripe-account-suspended | Stripe Risk + secondaryCategory | 25, 30, 32 账户限制 |
+
+**standalone 判定**：不在上表 cluster 内 → `folder = (root)`。
 
 ---
 
@@ -52,6 +91,21 @@
 | 2026-08-04 | cloudflare-wallets-agent-payments |
 | 2026-08-05 | what-is-skill-marketplace |
 | 2026-08-06 | clink-launches-skill-marketplace |
+| 2026-08-18 | stripe-openrouter-acquisition |
+| 2026-08-19 | best-ai-companies-by-arr |
+| 2026-08-20 | fastest-growing-ai-companies-arr |
+| 2026-09-01 | stripe-account-suspended |
+| 2026-09-02 | why-stripe-closes-accounts |
+| 2026-09-03 | how-to-appeal-stripe-account-closure |
+| 2026-09-04 | what-is-stripe-dispute |
+| 2026-09-05 | how-to-dispute-stripe-charge |
+| 2026-09-06 | stripe-chargeback-prevention |
+| 2026-09-07 | what-is-ap2-agent-payments-protocol |
+| 2026-09-08 | what-is-x402 |
+| 2026-09-09 | what-is-machine-payments-protocol |
+| 2026-09-10 | what-is-agentic-commerce-protocol |
+| 2026-09-11 | what-is-universal-commerce-protocol |
+| 2026-09-12 | how-to-sell-on-chatgpt |
 
 新文从下一可用日错开，**每自然日 ≤1 篇**。
 
@@ -73,15 +127,29 @@
 Hub: what-is-clink (Brand canon)
  ├── mor-vs-psp (Comparison)
  ├── smart-routing (Product) ↔ mor-vs-psp
- ├── agent-payments (Opinion)
- ├── cloudflare-wallets-agent-payments (Opinion) → agent-payments + smart-routing + hub
- ├── what-is-skill-marketplace (Product) → hub + agent-payments + cloudflare-wallets-agent-payments + clink-launches-skill-marketplace
- ├── clink-launches-skill-marketplace (Product) → hub + agent-payments + what-is-skill-marketplace
+ ├── what-is-skill-marketplace (Product) → hub + agent-payments + clink-launches-skill-marketplace
+ ├── clink-launches-skill-marketplace (Product) → hub + what-is-skill-marketplace
  ├── how-to-add-payments-lovable-app (Product) → hub + mor-vs-psp + smart-routing
  ├── integrate-stripe-lovable (Product) → how-to-add-payments-lovable-app + mor-vs-psp + hub
  ├── how-to-add-payments-bolt-app (Product) → hub + mor-vs-psp + smart-routing + how-to-add-payments-lovable-app
  ├── how-to-add-payments-v0-app (Product) → hub + mor-vs-psp + smart-routing + how-to-add-payments-lovable-app + how-to-add-payments-bolt-app
  ├── how-to-add-payments-replit-app (Product) → hub + mor-vs-psp + smart-routing + how-to-add-payments-lovable-app + how-to-add-payments-bolt-app + how-to-add-payments-v0-app
+
+Agentic Payments cluster (`agentic-payments/`):
+ Hub: agent-payments (04)
+ └── Protocol definition series (Research, secondaryCategory):
+     ├── what-is-ap2-agent-payments-protocol (26) → hub + x402 + mpp + acp + ucp
+     ├── what-is-x402 (27) → hub + ap2 + mpp + cloudflare-wallets
+     ├── what-is-machine-payments-protocol (28) → hub + x402 + ap2 + acp
+     ├── what-is-agentic-commerce-protocol (29) → hub + ucp + mpp + ap2
+     └── what-is-universal-commerce-protocol (33) → hub + acp + ap2 + agent-payments
+ └── Merchant how-to (HowTo, secondaryCategory):
+     └── how-to-sell-on-chatgpt (31) → hub + acp + ucp + mor-vs-psp + agent-payments
+
+Industry News cluster (`industry-news/`):
+ Hub: stripe-openrouter-acquisition (18)
+ ├── cloudflare-wallets-agent-payments (15) → agent-payments + what-is-x402 + hub
+ └── stripe-openrouter-acquisition (18) → agent-payments + cloudflare-wallets + what-is-clink
 
 Pipeline spokes:
  ├── payment-orchestration-single-psp → hub + smart-routing
@@ -107,6 +175,7 @@ Glossary cluster (category: Glossary):
 | MoR vs PSP 选型 | mor-vs-psp | Comparison 文引用框架，不重复五维表全文 |
 | Smart routing / multi-PSP | smart-routing | Product 文引用 3-5% 论证，不重复案例全文 |
 | Agent-native payments | agent-payments | Opinion 文引用 Harness 模型摘要 |
+| AP2 / x402 / MPP / ACP / UCP 协议定义 | what-is-ap2-agent-payments-protocol 等 26–29, 33 | Research 文互链；禁止重复 stack 表全文 |
 | Skill marketplace 概念/生命周期 | what-is-skill-marketplace | Product 文引用类型学摘要，不重写状态机全文 |
 | Skill 变现机制 | clink-launches-skill-marketplace | Product 文引用 webhook 结算摘要 |
 
@@ -134,8 +203,22 @@ Glossary cluster (category: Glossary):
 | what-is-clink | mor-vs-psp, smart-routing, agent-payments, how-to-add-payments-lovable-app |
 | mor-vs-psp | what-is-clink, smart-routing |
 | smart-routing | what-is-clink, mor-vs-psp |
-| agent-payments | what-is-clink |
-| cloudflare-wallets-agent-payments | agent-payments, smart-routing, what-is-clink |
+| agent-payments | what-is-clink, what-is-ap2-agent-payments-protocol, what-is-x402 |
+| cloudflare-wallets-agent-payments | agent-payments, smart-routing, what-is-clink, what-is-x402, stripe-openrouter-acquisition |
+| what-is-ap2-agent-payments-protocol | agent-payments, what-is-x402, what-is-machine-payments-protocol, what-is-agentic-commerce-protocol, what-is-universal-commerce-protocol |
+| what-is-x402 | agent-payments, what-is-ap2-agent-payments-protocol, what-is-machine-payments-protocol, cloudflare-wallets-agent-payments |
+| what-is-machine-payments-protocol | agent-payments, what-is-x402, what-is-ap2-agent-payments-protocol, what-is-agentic-commerce-protocol |
+| what-is-agentic-commerce-protocol | agent-payments, what-is-universal-commerce-protocol, what-is-machine-payments-protocol, what-is-ap2-agent-payments-protocol |
+| what-is-universal-commerce-protocol | agent-payments, what-is-agentic-commerce-protocol, what-is-ap2-agent-payments-protocol, what-is-clink |
+| stripe-openrouter-acquisition | agent-payments, what-is-clink, cloudflare-wallets-agent-payments, mor-vs-psp |
+| best-ai-companies-by-arr | annual-recurring-revenue, fastest-growing-ai-companies-arr, what-is-clink, agent-payments |
+| fastest-growing-ai-companies-arr | best-ai-companies-by-arr, annual-recurring-revenue, burn-rate, what-is-clink |
+| what-is-stripe-dispute | how-to-dispute-stripe-charge, stripe-chargeback-prevention, smart-routing, mor-vs-psp |
+| how-to-dispute-stripe-charge | what-is-stripe-dispute, stripe-chargeback-prevention |
+| stripe-chargeback-prevention | what-is-stripe-dispute, smart-routing, how-to-dispute-stripe-charge, why-stripe-closes-accounts |
+| stripe-account-suspended | why-stripe-closes-accounts, how-to-appeal-stripe-account-closure, what-is-stripe-dispute, smart-routing |
+| why-stripe-closes-accounts | stripe-account-suspended, how-to-appeal-stripe-account-closure, smart-routing |
+| how-to-appeal-stripe-account-closure | stripe-account-suspended, why-stripe-closes-accounts, smart-routing |
 | how-to-add-payments-lovable-app | what-is-clink, mor-vs-psp, smart-routing |
 | integrate-stripe-lovable | how-to-add-payments-lovable-app, what-is-clink, mor-vs-psp |
 | how-to-add-payments-bolt-app | what-is-clink, mor-vs-psp, smart-routing, how-to-add-payments-lovable-app |
@@ -153,4 +236,4 @@ Glossary cluster (category: Glossary):
 
 ---
 
-*content-graph · v1.0.0 · 2026-07-21*
+*content-graph · v2.2.0 · 2026-08-24*

@@ -1,10 +1,4 @@
-
 # VOMO — 竞品分析
-
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [site-structure](./vomo-site-structure.md) | [keywords](./vomo-keywords.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md)
-
----
 
 ## 1. 竞品总览
 
@@ -128,6 +122,8 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [site-structure](./vomo-site-structure.md) | [keywords](./vomo-keywords.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md)*
 *Last updated: 2026-07-16*
 *来源：官网内容分析、第三方评测（conversiongems.com, psbios.com, mopoga.net）、App Store*
 *⚠️ 流量/排名数据标注为「待验证」的需用 Semrush/Similarweb 补充*

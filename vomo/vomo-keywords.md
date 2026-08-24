@@ -1,10 +1,4 @@
-
 # VOMO — 关键词策略
-
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [site-structure](./vomo-site-structure.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md)
-
----
 
 ## 1. 核心关键词
 
@@ -27,7 +21,7 @@
 | sales call transcription | ⚠️ 待验证 | ⚠️ 待验证 | 交易 | `/use-case/sales` | P1 |
 | AI summary generator | ⚠️ 待验证 | ⚠️ 待验证 | 信息 | `/` | P1 |
 | lecture transcription | ⚠️ 待验证 | ⚠️ 待验证 | 信息/交易 | `/use-case/education` | P1 |
-| podcast transcription | ⚠️ 待验证 | ⚠️ 待验证 | 交易 | `/use-case/podcast` | P1 |
+| podcast transcription | ⚠️ 待验证 | ⚠️ 待验证 | 交易 | `/podcast-transcription` | P0 |
 | AI dictation tool | ⚠️ 待验证 | ⚠️ 待验证 | 交易 | `/tools/ai-dictation-tool` | P2 |
 | M4A to text | ⚠️ 待验证 | ⚠️ 待验证 | 交易 | `/tools/m4a-to-text` | P2 |
 
@@ -106,6 +100,27 @@
 - Claude Code meeting notes
 - AI agent transcription workflow
 
+### 簇 7：YouTube 分类子页（枢纽下的 L3）
+> 承接约定见 [youtube transcription/](./youtube%20transcription/youtube-categories.md)。主词一律落在 `/tools/youtube-transcript/{slug}`，不要另开平行 Tools。
+
+- YouTube news transcript / transcribe YouTube news
+- YouTube lecture transcript / education video transcript
+- YouTube interview transcript
+- YouTube Shorts transcript
+- TED talk transcript / TEDx transcript
+- YouTube livestream transcript
+- YouTube sports transcript / football press conference transcript
+- YouTube business video transcript / earnings call YouTube transcript
+
+### 簇 8：播客平台/体裁子页（楔子下的 L3）
+> 全量 14 URL 见 [podcast transcription/](./podcast%20transcription/podcast-platforms.md) §4.2。
+
+**平台（10）**
+- Spotify / Apple / YouTube podcast / Amazon / iHeart / Castbox / Podbean / Overcast / Pocket Casts / RSS
+
+**体裁（3）**
+- business podcast transcript / true crime podcast transcript / christian podcast transcript / sermon transcript
+
 ---
 
 ## 4. 意图分类与承接映射
@@ -165,5 +180,7 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./vomo.md) | [features](./vomo-features.md) | [site-structure](./vomo-site-structure.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [growth-strategy](./vomo-growth-strategy.md)*
 *Last updated: 2026-07-16*
 *⚠️ 搜索量与难度数据均需用 Semrush/Ahrefs 验证，当前仅基于意图推断和 Google 搜索结果观察*

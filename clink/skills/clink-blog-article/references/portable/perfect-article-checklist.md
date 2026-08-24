@@ -1,4 +1,4 @@
-﻿# Perfect Article 检查（S 级速查）
+# Perfect Article 检查（S 级速查）
 
 > Flagship 追求 S 级时使用。Gate C = audit-ready；S 级 = publish 标杆。随 skill 分发。
 
@@ -29,4 +29,4 @@
 
 ---
 
-*perfect-article-checklist · portable v2.0 · 2026-07-06*
+*perfect-article-checklist · portable v2.0 · 2026-06-19*

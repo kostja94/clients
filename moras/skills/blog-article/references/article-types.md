@@ -4,16 +4,17 @@
 
 ### 2.1 路由表
 
-| 类型 | 典型 intent | 词数 | 产品提及上限 | 参考 slug |
-|------|------------|------|-------------|-----------|
-| **Pillar** | 变现全景 / 收入地图 | 3500–5000 | ≤20% | `how-to-make-money-on-tiktok` |
-| **Setup** | 入驻路径对比 | 2500–3500 | ≤25% | `tiktok-shop-setup` |
-| **Production** | 不出镜 / 成片路径 | 2800–3800 | ≤35% | `faceless-tiktok-shop-videos` |
-| **Research** | AI 选品框架 | 2800–3500 | ≤30% | `tiktok-product-research` |
-| **Framework** | 钩子/机制框架（非清单） | 2500–3200 | ≤25% | `tiktok-video-hooks` |
-| **Strategy** | 文案/标签/描述策略 | 2500–3200 | ≤30% | `tiktok-captions-hashtags` |
-| **Side Hustle** | 副业时间线/收入预期 | 2200–3000 | ≤30% | `tiktok-affiliate-side-hustle` |
-| **Diagnosis** | 零销量/低转化排查 | 2500–3200 | ≤25% | `tiktok-shop-no-sales` |
+| 类型 | 典型 intent | 词数 | 产品提及上限 | 默认 Mode | 参考 slug |
+|------|------------|------|-------------|:---:|-----------|
+| **Pillar** | 变现全景 / 收入地图 | 3500–5000 | ≤20% | flagship | `how-to-make-money-on-tiktok` |
+| **Setup** | 入驻路径对比 | 2500–3500 | ≤25% | standard | `tiktok-shop-setup` |
+| **Production** | 不出镜 / 成片路径 | 2800–3800 | ≤35% | standard | `faceless-tiktok-shop-videos` |
+| **Research** | AI 选品框架 | 2800–3500 | ≤30% | flagship | `tiktok-product-research` |
+| **Framework** | 钩子/机制框架（非清单） | 2500–3200 | ≤25% | flagship | `tiktok-video-hooks` |
+| **Strategy** | 文案/标签/描述策略 | 2500–3200 | ≤30% | standard | `tiktok-captions-hashtags` |
+| **Side Hustle** | 副业时间线/收入预期 | 2200–3000 | ≤30% | standard | `tiktok-affiliate-side-hustle` |
+| **Diagnosis** | 零销量/低转化排查 | 2500–3200 | ≤25% | standard | `tiktok-shop-no-sales` |
+| **Platform Ops** | TikTok 平台操作/工具 | 1800–2500 | ≤15% | lite | `tiktok-shop-toolkit` |
 
 **路由规则**：
 
@@ -35,7 +36,7 @@
 | **H2** | 英文描述性 `##` 标题；**不强制编号**（与 floatboat/vofy 不同） |
 | **Conclusion** | `## Conclusion`（FAQ 之上） |
 | **FAQ** | `## Frequently asked questions`；每题 `### 问题` + 段落回答；≥3 题 |
-| **内链** | 正文 ≥2 其他 blog slug；Pillar/Spoke 互链；**自然优先**——语境不通不强链；同 slug 同篇通常 ≤2 次；TL;DR/FAQ 无内链；禁 G6（`/use-cases/*` 等） |
+| **内链** | 正文 ≥2 其他 blog slug；Pillar/Spoke 互链；**自然优先**——语境不通不强链；同 slug 同篇 ≤2 次；TL;DR/FAQ 无内链；H2 均匀分布 · 详见 `internal-links.md`；禁 G6 |
 | **外链** | 权威 2–8；竞品/TikTok 政策 `rel="nofollow noopener"` HTML |
 | **列表比例** | Pillar/Setup ≤25%；Framework/Research ≤30%；Production/Strategy ≤35% |
 | **长段落** | ≥3 段 4–8 句（80–200 words）；避免连续 3+ 短段簇 |
@@ -219,8 +220,20 @@ date: "June 15, 2026"       # 人类可读；与 isoDate 同一天
 isoDate: "2026-06-15"        # YYYY-MM-DD；portfolio 内唯一，一天一篇
 updated: "2026-06-15"        # 末次实质修订；无修订则与 date 相同
 author: "Kostja"
+category: "Creator & Affiliate"   # 必填；枚举见 §2.12b
+secondaryCategory: "Guide"         # 可选；如 Guide / HowTo / Framework
 ---
 ```
+
+### 2.12b category 枚举
+
+| category | folder | 适用 NN |
+|----------|--------|---------|
+| Creator & Affiliate | `creator-affiliate/` | #01–02, #04, #06–09, #44 |
+| TikTok Video | `tiktok-video/` | #03, #05, #25–#42 |
+| Content & Discovery | `content-discovery/` | #26–#30, #47 |
+| Platform Ops | `platform-ops/` | #10–#14, #16, #18–#22, #43, #45–#46, #48 |
+| E-commerce AI | *(root)* | #31–#34 |
 
 ## §8 Voice 与合规
 

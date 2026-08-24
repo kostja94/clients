@@ -53,10 +53,10 @@ SelfCheck Pass = **audit-ready**，**不保证** publish-ready（终审 ≥70 �
 |----|:---:|----------|
 | A Strategy & Intent | 10% | 搜索意图正确；hub-spoke 清晰 |
 | B SEO & SERP | 10% | title/desc 合规；SERP Fit 完整；snippet 定义 |
-| C Structure | 9% | TL;DR 置顶（长描述 + bullets）+ H2 + Conclusion + FAQ≥3 |
+| C Structure | 9% | TL;DR + H2 + Conclusion + FAQ≥3 |
 | D Writing & Voice | 11% | 品牌 voice；无 AI 腔；有具体例子 |
 | E Fact & EEAT | 20% | 全 claim 有来源；竞品准确；见 source-map-template.md |
-| F Links & Graph | 6% | 内链≥2；外链 2–5 |
+| F Links & Graph | 6% | 内链≥2；related 双向；外链 2–5 |
 | G Differentiation | 14% | 独有增量；与他文重复 <30% |
 | H Conversion | 6% | CTA≤2；匹配读者阶段 |
 | I Density | 2% | 每 500 词≥1 例子；结论有判断 |

@@ -1,13 +1,8 @@
 # VOMO — 增长策略
 
-> 遵循 [客户文档规范](../../client-template.md)
-> 关联：[主文档](./vomo.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [site-structure](./vomo-site-structure.md) | [others](./vomo-others.md)
-
 > **文档范围**：一个月 SEO 计划，分三部分。  
 > ① 治理并批量更新现有 `/tools` · ② 楔子式**新建** Tools · ③ 博客（约 10 篇/周）  
 > **Tools 产能硬指标**：**每周「更新老页 + 创建新页」合计 30**（月约 **120**）
-
----
 
 ## 0. 一个月 SEO 计划总览
 
@@ -268,9 +263,10 @@
 
 | 角色  | 原型 / 建议                                                                    | 主词（L2/L3）                                                          | 用户需求逻辑                          |
 | --- | -------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------- |
-| 枢纽  | [podcast-transcription](https://vomo-ai.lovable.app/podcast-transcription) | podcast transcription、podcast to text、podcast transcript generator | 「声音转文字」里很常见的内容形态：多说话人、超长、要章节/摘要 |
-| 长尾  | [spotify-…](https://vomo-ai.lovable.app/spotify-podcast-transcription)     | Spotify podcast transcript、download Spotify transcript             | 应用内能看不能复制/导出                    |
-| 长尾  | [apple-…](https://vomo-ai.lovable.app/apple-podcast-transcription)         | Apple Podcasts transcript download、export Apple podcast transcript | 只读、旧集常缺、非 Apple 设备难用            |
+| 枢纽  | [podcast-transcription](https://vomo.ai/podcast-transcription) | podcast transcription、podcast to text、podcast transcript generator | 「声音转文字」里很常见的内容形态：多说话人、超长、要章节/摘要 |
+| 长尾  | [spotify-podcast](https://vomo.ai/podcast-transcription/spotify-podcast) | Spotify podcast transcript、download Spotify transcript | 应用内能看不能复制/导出 |
+| 长尾  | [apple-podcast](https://vomo.ai/podcast-transcription/apple-podcast) | Apple Podcasts transcript download、export Apple podcast transcript | 只读、旧集常缺、非 Apple 设备难用 |
+| 长尾  | [amazon-music](https://vomo.ai/podcast-transcription/amazon-music) 等 **13 子页** | 平台 ×10 + 体裁 ×3 | 见 [podcast transcription/](./podcast%20transcription/podcast-platforms.md) §4.2 |
 
 
 **同楔子可继续加的长尾（本月不做完，列入 backlog）**：
@@ -330,9 +326,10 @@
 | -------- | --------------------------------------------------------------- |
 | 用户逻辑     | L1 `video to text` 大量落到 YouTube；要的是「链接进、文稿/章节/文章出」              |
 | L2 枢纽    | 已有 `/tools/youtube-transcript`（Part1 深优对象）                      |
-| L3/L4 长尾 | YouTube to blog、YouTube chapters、YouTube to SRT、无字幕视频怎么办、直播回放转录 |
-| 存量       | `youtube-video-summarizer`、多篇 Guide how-to-youtube*             |
-| 优先级      | **本月深优枢纽 + 博客喂长尾**；独立长尾页可放 M2，避免与 Part2 播客抢工程                   |
+| L3/L4 长尾 | Category/Topic/Sport/Format 子页（如 `youtube-news`、`education`、`shorts`）；任务长尾 YouTube to blog / SRT / 直播回放 |
+| 存量       | 枢纽 + 已上线约 17 个子页；`youtube-video-summarizer`；多篇 Guide how-to-youtube* |
+| 工厂文档   | [youtube transcription/](./youtube%20transcription/youtube-categories.md)（分类全景）· [page-playbook](./youtube%20transcription/page-playbook.md) |
+| 优先级      | **深优枢纽 + 按 playbook 补 404/缺口子页**（P0：`business`）；博客只喂 L4，避免与播客楔子抢 `youtube transcript` |
 
 
 #### 楔子 D — 讲座 / 网课（Lecture）
@@ -403,9 +400,11 @@
 
 | 建议路径                                   | 角色                                    |
 | -------------------------------------- | ------------------------------------- |
-| `/tools/podcast-transcription`         | 枢纽（合并 `podcast-transcript-generator`） |
-| `/tools/spotify-podcast-transcription` | L3                                    |
-| `/tools/apple-podcast-transcription`   | L3                                    |
+| `/podcast-transcription`               | 枢纽（已上线；合并旧 `podcast-transcript-generator`） |
+| `/podcast-transcription/spotify-podcast` | L3（已上线）                              |
+| `/podcast-transcription/apple-podcast`   | L3（已上线）                              |
+| `/podcast-transcription/{platform}`      | L3 平台（10） |
+| `/podcast-transcription/{genre}`         | L3 体裁（business / christian / true-crime） |
 | `/use-case/podcast`                    | 导流或 canonical → 枢纽                    |
 
 
@@ -575,5 +574,7 @@
 
 ---
 
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./vomo.md) | [keywords](./vomo-keywords.md) | [competitors](./vomo-competitors.md) | [use-cases](./vomo-use-cases.md) | [site-structure](./vomo-site-structure.md) | [others](./vomo-others.md)*
 *Last updated: 2026-07-23*
 *来源：任务基准「Tools 更新+新建 30/周」；楔子与博客节奏据此重算；Pricing 三档口径按官网 `/pricing` 复核*

@@ -1,7 +1,7 @@
 # Floatboat Project Configuration & G1–G7
 
 > 加载时机：Phase 0R（首次）· Phase 4（事实核查）· Phase 5（Gate C 对照）
-> 主文件：SKILL.md §1 指针
+> 主文件：SKILL.md v5.1.0（自包含完整版）
 
 ---
 
@@ -26,6 +26,9 @@
 | **署名默认** | `author: "Floatboat"`；Research 优先真实人名（创始人/研究员） |
 | **作者池** | 每次创作时提问选择：① `Kostja`（增长顾问）② `Floatboat Team`（品牌署名）③ 指定团队成员（如 `Tan Shaoqing`） |
 | **未上线页面前缀（禁止内链）** | 任何 404 或标记 forthcoming 的路径 |
+| **blogLayout** | **cluster-folders**（`claude/`、`deepseek/`、`openai/`、`worldcup/`、`Updates/` + 根目录 standalone） |
+| **终审** | `references/portable/final-audit.md`（skill 内置） |
+| **portable/** | `references/portable/`（skill 内置，含 final-audit） |
 
 ---
 

@@ -9,7 +9,7 @@ AI-Native Social Media Marketing Agency / Agentic Growth Agency — [2mv.ai](htt
 | 文档 | 说明 |
 |------|------|
 | [2mv.md](./2mv.md) | 主文档：概览、定位、ICP、文档导航 |
-| [2mv-site-structure.md](./2mv-site-structure.md) | 站点结构、URL 层级、技术栈 |
+| [2mv-site-structure.md](./2mv-site-structure.md) | 站点结构、URL 层级、技术栈、页面构建状态 |
 | [2mv-features.md](./2mv-features.md) | 功能（五引擎 + Research Lab）、定价、差异化 ★ |
 | [2mv-keywords.md](./2mv-keywords.md) | 关键词策略、意图映射、内容缺口 |
 | [2mv-competitors.md](./2mv-competitors.md) | 竞品分析（Blaze/Arcads/Superscale/Predis） |

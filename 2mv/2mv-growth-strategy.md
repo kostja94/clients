@@ -1,6 +1,6 @@
 # 2mv — 增长策略
 
-> 本策略基于 **Google Keyword Planner 真实数据**（2026-07-14 导出 CSV）+ **Reddit 用户语言调研**（r/SaaS、r/digital_marketing 等真实需求帖）+ **Features 版块规划**。与 [keywords](./2mv-keywords.md) 意图分类、[features](./2mv-features.md) 产品能力、[competitors](./2mv-competitors.md) 差异化对齐。
+> 本策略基于 **Google Keyword Planner 真实数据**（2026-07-14 导出 CSV）+ **Reddit 用户语言调研**（r/SaaS、r/digital_marketing 等真实需求帖）。与 [keywords](./2mv-keywords.md) 意图分类、[features](./2mv-features.md) 产品能力、[competitors](./2mv-competitors.md) 差异化对齐。站点 URL 与构建状态见 [site-structure](./2mv-site-structure.md)。
 
 ---
 
@@ -113,7 +113,7 @@
 **三层架构**：`Research Lab → Feature Hub → 高价值 Keyword Landing Page`
 
 - `/research` 承接 Research 产品本身和泛类目大词
-- **Feature Hub 收敛为 4 个核心**：
+- **Feature Hub 收敛为 4 个核心**（结构见 [site-structure](./2mv-site-structure.md) §9）：
 
 | Feature Hub | 对应能力 |
 |-------------|---------|
@@ -128,55 +128,34 @@
 
 ---
 
-## 5. Blog & Tools 内容架构
+## 5. 意图分类与承接映射
 
-### 5.1 Blog Tag 分类
-
-| 分类 | Tag |
-|------|-----|
-| **平台类** | YouTube Shorts、TikTok、Instagram Reels、Cross-Platform |
-| **内容与研究类** | Video Ideas、Hooks、Outliers、Content Patterns、Viral Research、Competitor Research、Content Strategy、Content Creation、Organic Growth |
-| **行业洞察类** | Expert Opinion、Interview、Podcast、Industry Events、Platform Updates、Creator Economy、AI Content Tools |
-
-**使用规则**：每篇 2–4 个 Tag；初期 Tag 归档页统一 `noindex, follow`。
-
-### 5.2 Tools Hub 四阶段
-
-| 阶段 | 用户价值 |
-|------|---------|
-| **Discover** | Find breakout content and signals worth studying |
-| **Analyze** | Understand why content works and where it can improve |
-| **Create** | Turn research and ideas into original short-form content |
-| **Track & Optimize** | Measure results and improve the next content cycle |
-
-### 5.3 目标 URL 架构
-
-```
-/
-├── research/
-│   └── social-media-competitor-analysis/   （Phase 1 首个下级页）
-├── tools/
-│   ├── competitor-content-analyzer/
-│   ├── post-analysis/           （候选）
-│   ├── outlier-finder/          （规划）
-│   ├── hook-analyzer/           （观察）
-│   ├── video-idea-generator/    （规划）
-│   └── 具体工具页/
-├── insights/
-│   ├── guides/
-│   ├── trending/
-│   ├── industry-insights/
-│   ├── research-reports/
-│   ├── how-to-find-viral-content-ideas/
-│   └── 具体文章页/
-└── resources/
-    ├── social-media-audit/       （Phase 2 候选）
-    └── social-media-benchmarks/  （Phase 2/3 候选）
-```
+| 意图类型 | 关键词示例（真实数据） | 建议承接页 | 状态 |
+|----------|----------------------|------------|------|
+| 导航型 | 2mv, 2mv research lab, 2mv demo | 首页 `/`、`/research`、`/book-a-demo` | 已承接 |
+| 信息型（产品核心） | viral video finder, how to find viral videos, viral video analysis | `/research`、Blog（问题型文章） | `/research` 主词就绪；Blog 文章待建 |
+| 信息型（宽泛语义） | viral video（14,800）, short form content, trending video | `/research` 正文语义 | 只作语义覆盖，不作主词 |
+| 商业型 | social media competitor analysis（390）, social media analytics tool（8,100） | `/research`、`/research/social-media-competitor-analysis` | 部分承接（首个下级页 Phase 1 提前建设） |
+| 工具型 | social media competitor analysis tools, social media engagement metrics | `/tools/competitor-content-analyzer`、`/tools/post-analysis` | 待建（Phase 1.5/2） |
+| 平台型 | tik tok analytics（33,100）, instagram reels analytics, youtube shorts analytics | `/research` 平台覆盖（不拆平台页） | Phase 2/3 后置 |
+| 排除型 | ai social media post generator, social media report, ads insights facebook | 不建设 | 暂缓 / 排除 |
 
 ---
 
-## 6. 增长渠道规划
+## 6. 内容缺口与页面建设优先级
+
+| 缺口关键词 | 月搜索量 | 意图 | 现状 | 建议 |
+|-----------|---------|------|------|------|
+| social media analytics / analytics tool 词池 | 8,100 | 商业/工具 | `/research` 未作系统级 Research 定位 | 建设 `/research` 核心词池（analytics + research + organic growth 语义） |
+| social media competitor analysis | 390 | 商业 | 站内无竞品分析场景页 | Phase 1 提前建设 `/research/social-media-competitor-analysis` |
+| social media competitor analysis tools | 210 | 工具 | 无工具页 | Phase 1.5/2 上线 `/tools/competitor-content-analyzer` |
+| how to find viral videos | 30 | 信息 | 博客无问题型内容 | 首批 Blog 文章（内链至 `/research`） |
+| viral video finder | 70（+1.33） | 商业/产品 | 产品能力已有但页面主词未强化 | 作为 `/research` 主关键词，独占使用 |
+| tiktok trends analytics（趋势类） | 260 | 工具 | 无趋势工具 | 等 Research / Post Analysis 模板跑通后再上（Phase 2） |
+
+---
+
+## 7. 增长渠道规划
 
 | 渠道方向 | 目标 Persona | 内容类型 | 优先级 | 承接页 |
 |----------|-------------|---------|--------|--------|
@@ -189,7 +168,7 @@
 
 ---
 
-## 7. 战役节奏
+## 8. 战役节奏
 
 **短期（0–3 个月）**
 - 建设 `/research` 核心词池（analytics / analysis / research 主词），定位为系统级 Research，而非普通 dashboard
@@ -202,14 +181,31 @@
 - 独立 `/pricing` 页 + `/service` 代运营落地页，打通「研究→试用→代运营」转化漏斗
 - 启动三平台自有账号，用自身引擎产出案例，形成「用 2mv 证明 2mv」的增长飞轮
 
-**长期（6–12 个月）**
-- 在 4 个 Feature Hub（Content Discovery / Tracking Center / Profile & Channel Analysis / Viral Video Analysis）下，为高价值 Keyword Cluster 独立建 Landing Page
+**长期（6–12 月）**
+- 在 4 个 Feature Hub 下，为高价值 Keyword Cluster 独立建 Landing Page
 - 平台页（TikTok/Instagram Reels/YouTube Shorts）按 Phase 2/3 规划落地
 - 发布年度病毒内容趋势报告，建立品类定义权
 
+**URL 分阶段时间线**：
+
+| 阶段 | 新增页面 | 对应关键词优先级 | 理由 |
+|------|---------|----------------|------|
+| 短期（0–3 月） | 修复 sitemap.xml（当前 500） | — | 影响抓取与收录，SEO 基建 |
+| 短期 | `/research` 建设 analytics 核心词池 + 主词 viral video finder | P0 商业型词 | 承接 social media analytics tool（8,100 月搜）等 331 词 |
+| 短期 | `/research/social-media-competitor-analysis`（首个下级页） | P0 商业型词 | 意图明确，竞品有真实页面支撑，Phase 1 提前建设 |
+| 短期 | `/insights` 扩容（问题型文章、niche 解码、趋势报告系列） | P0/P1 信息型词 | 当前仅 1 篇博文，内容缺口最大 |
+| 中期（3–6 月） | `/tools/competitor-content-analyzer`、`/tools/post-analysis` 工具页 | P1 工具型词 | 复用工具页模板；跑通后再决定 `/tools` Hub 是否上线 |
+| 中期 | 独立 `/pricing` 页（当前定价内嵌于 `/research`） | P1 商业型词 | 定价透明度影响转化 |
+| 中期 | `/service`（代运营）独立落地页 | P1 导航/商业型词 | 代运营形态目前与首页耦合，无独立 URL |
+| 长期（6–12 月） | 平台页 `/research/tiktok-analytics` 等（Phase 2/3） | P2 平台词 | tik tok analytics（33,100）等词量大但后置 |
+| 长期 | `/resources/social-media-audit`、`social-media-benchmarks` | P2 资源词 | audit 词池（2,900）有 lead magnet 价值 |
+| 长期（观察） | `/niches/{slug}` 各细分领域落地页（500+ niches） | P2 长尾词 | programmatic SEO 机会，量级大 |
+
+> 规划 URL 树与页面构建状态见 [site-structure](./2mv-site-structure.md) §7–§8。
+
 ---
 
-## 8. 竞品差异化方向
+## 9. 竞品差异化方向
 
 > 基于 [competitors](./2mv-competitors.md) 的 SWOT 差距。
 
@@ -219,7 +215,7 @@
 
 ---
 
-## 9. 度量指标
+## 10. 度量指标
 
 | KPI | 说明 | 建议工具 |
 |-----|------|---------|
@@ -236,4 +232,4 @@
 
 > 关联：[主文档](./2mv.md) | [keywords](./2mv-keywords.md) | [features](./2mv-features.md) | [competitors](./2mv-competitors.md) | [use-cases](./2mv-use-cases.md) | [site-structure](./2mv-site-structure.md)
 
-*Last updated: 2026-08-14（基于 Keyword Planner 2026-07-14 真实数据重构）*
+*Last updated: 2026-08-24（SEO/关键词分析自 site-structure 迁回）*

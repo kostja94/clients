@@ -1,0 +1,17 @@
+{
+  "name": "dubbingai-referral-report-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fetch GA4 Referral data and merge with backlink registry for DubbingAI weekly report",
+  "scripts": {
+    "fetch-referral": "node fetch-ga4-referral.mjs",
+    "merge-referral": "node merge-referral-weekly.mjs",
+    "fetch-all": "npm run fetch-referral && npm run merge-referral"
+  },
+  "dependencies": {
+    "@google-analytics/data": "^4.12.0",
+    "dotenv": "^16.4.7",
+    "yaml": "^2.7.0"
+  }
+}

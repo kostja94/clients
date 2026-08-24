@@ -1,11 +1,5 @@
 # VOMO 文章发布流程（Runbook）
 
-> 记录日期：2026-08-11
-> 目的：**完整固化 VOMO 文章发布流程**，即使原发布包 `vomo-article-publisher-preview-handoff` 被删除，也能凭本文档 + 本地脚本独立完成发布。
-> 关联：[发布排障记录](./PUBLISH-TROUBLESHOOTING.md) · [README](./README.md)
-
----
-
 ## 0. 快速结论（当前状态）
 
 - ✅ Preview 环境 API 已恢复（8/9 曾部分故障，8/11 复测 validate 可用）
@@ -237,4 +231,7 @@ curl.exe -x http://localhost:15236 -s -X POST "$env:VOMO_CONTENT_API_URL/api/int
 
 ---
 
-*Runbook v1.0 · 2026-08-11 · AI agent 应 @vomo/blog 要求记录*
+*记录日期：2026-08-11*
+*目的：完整固化 VOMO 文章发布流程，即使原发布包 `vomo-article-publisher-preview-handoff` 被删除，也能凭本文档 + 本地脚本独立完成发布。*
+*关联：[发布排障记录](./PUBLISH-TROUBLESHOOTING.md) · [README](./README.md)*
+*Runbook v1.0 · AI agent 应 @vomo/blog 要求记录*

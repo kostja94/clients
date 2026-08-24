@@ -1,0 +1,94 @@
+[
+  {
+    "id": "aplicacoes",
+    "title": "Aplicações",
+    "terms": [
+      {
+        "term": "Sistema de diálogo (Dialogue System)",
+        "definition": "Mantém conversa com o usuário; combina compreensão de linguagem, política de resposta e memória de sessão.",
+        "relatedHref": "/chatbot",
+        "relatedLabel": "Chatbots"
+      },
+      {
+        "term": "Sistema de recomendação (Recommendation System)",
+        "definition": "Sugere itens com base em histórico e similares; comum em e-commerce e streaming."
+      },
+      {
+        "term": "SEO (Search Engine Optimization — otimização para mecanismos de busca)",
+        "definition": "Melhorar visibilidade orgânica; IA auxilia em conteúdo, intenção de busca e análise técnica."
+      },
+      {
+        "term": "Geração de conteúdo (Content Generation)",
+        "definition": "Automatiza texto, imagem ou vídeo para marketing, suporte e documentação."
+      },
+      {
+        "term": "Geração de código (Code Generation)",
+        "definition": "Produz ou completa código a partir de descrição em linguagem natural; acelera desenvolvimento com revisão humana.",
+        "relatedHref": "/cli",
+        "relatedLabel": "Ferramentas CLI e código"
+      },
+      {
+        "term": "Testes automatizados (Automated Testing)",
+        "definition": "Gera ou executa casos de teste com apoio de IA para aumentar cobertura e velocidade."
+      },
+      {
+        "term": "Atendimento inteligente (Intelligent Customer Service)",
+        "definition": "Respostas automáticas e roteamento com NLP; reduz fila e padroniza primeiro nível."
+      },
+      {
+        "term": "Recomendação personalizada (Personalized Recommendation)",
+        "definition": "Ajusta sugestões ao perfil e contexto do usuário para aumentar engajamento e conversão."
+      },
+      {
+        "term": "Análise preditiva (Predictive Analytics)",
+        "definition": "Prevê tendências ou eventos a partir de dados históricos para apoiar decisões."
+      },
+      {
+        "term": "Monitoramento de anomalias (Anomaly Monitoring)",
+        "definition": "Detecta desvios em tempo real em métricas de sistema, transações ou sensores."
+      }
+    ]
+  },
+  {
+    "id": "otimizacao-de-modelos",
+    "title": "Otimização de modelos",
+    "terms": [
+      {
+        "term": "Compressão de modelo (Model Compression)",
+        "definition": "Reduz tamanho e custo computacional via poda, quantização e destilação."
+      },
+      {
+        "term": "Quantização (Model Quantization)",
+        "definition": "Representa pesos em menor precisão (ex.: int8) para acelerar inferência e caber em dispositivos limitados."
+      },
+      {
+        "term": "Poda de modelo (Model Pruning)",
+        "definition": "Remove pesos ou neurônios pouco importantes mantendo acurácia aceitável."
+      },
+      {
+        "term": "Destilação de conhecimento (Knowledge Distillation)",
+        "definition": "Transfere comportamento de um modelo grande (professor) para um menor (aluno)."
+      },
+      {
+        "term": "Ensemble de modelos (Model Ensemble)",
+        "definition": "Combina vários modelos (média, votação) para ganhar robustez e precisão."
+      },
+      {
+        "term": "Treinamento progressivo (Progressive Training)",
+        "definition": "Aumenta gradualmente a dificuldade das tarefas para estabilizar o aprendizado."
+      },
+      {
+        "term": "Aprendizado por currículo (Curriculum Learning)",
+        "definition": "Ordena exemplos do mais fácil ao mais difícil, inspirado na pedagogia humana."
+      },
+      {
+        "term": "Treinamento adversarial (Adversarial Training)",
+        "definition": "Inclui exemplos adversariais no treino para melhorar robustez a perturbações."
+      },
+      {
+        "term": "Aprendizado multitarefa (Multi-task Learning)",
+        "definition": "Treina várias tarefas relacionadas com representações compartilhadas para melhor aproveitamento dos dados."
+      }
+    ]
+  }
+]

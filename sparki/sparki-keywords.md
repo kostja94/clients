@@ -1,9 +1,5 @@
 # Sparki 关键词映射
 
-> 关联：[sparki.md](./sparki.md) | [sparki-use-cases.md](./sparki-use-cases.md) | [sparki-competitors.md](./sparki-competitors.md)
-
----
-
 ## 一、关键词分类
 
 ### Primary（核心）
@@ -90,4 +86,6 @@
 
 ---
 
-*文档生成日期：2026-04-08*
+*遵循 [客户文档规范](../demo/client-template.md)*
+*关联：[主文档](./sparki.md) | [use-cases](./sparki-use-cases.md) | [competitors](./sparki-competitors.md)*
+*Last updated: 2026-04-08*

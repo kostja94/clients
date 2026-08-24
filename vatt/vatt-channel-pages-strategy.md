@@ -2,7 +2,7 @@
 
 > 面向内部同事：讲清楚 `/channel/{slug}`（xQc、小Lin说 等 reactor 频道页）为什么值得投入，以及应该怎么执行。  
 > 遵循 [客户文档规范](../../client-template.md)  
-> **引用**：[vatt.md](./vatt.md) | [vatt-growth-strategy.md](./vatt-growth-strategy.md) | [vatt-site-structure.md](./vatt-site-structure.md) | [vatt-keywords.md](./vatt-keywords.md)
+> **引用**：[vatt.md](./vatt.md) | [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) | [vatt-site-structure.md](./vatt-site-structure.md) | [vatt-keywords.md](./vatt-keywords.md)
 
 **Last updated**: 2026-07-27
 
@@ -13,7 +13,7 @@
 | 文档 | 链接 |
 |------|------|
 | 主文档 | [vatt.md](./vatt.md) |
-| 增长策略 | [vatt-growth-strategy.md](./vatt-growth-strategy.md) |
+| Reaction 类型 / Blog 队列 | [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) |
 | 站点结构 | [vatt-site-structure.md](./vatt-site-structure.md) |
 | 关键词 | [vatt-keywords.md](./vatt-keywords.md) |
 | Reaction 类型 | [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) |
@@ -31,7 +31,7 @@ Channel 详情页不是「介绍某个 YouTuber」，而是 Vatt 增长飞轮里
 
 一句话：**用别人的名字带流量，用 Vatt 的价值主张接住流量。**
 
-*与 Hub-Spoke Blog 策略互补* → [vatt-growth-strategy.md §1](./vatt-growth-strategy.md)
+*与 Hub-Spoke Blog 策略互补* → [vatt-reaction-video-types.md §11](./vatt-reaction-video-types.md)
 
 ---
 
