@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "rate-limit-reset",
+  "analyzed_at": "2026-08-26T00:00:00+00:00",
+  "model": "cursor-manual-v2",
+  "page_topic_one_liner": "Usage limits reset growth strategy — dual time-window agent quotas (5h + weekly), reset types (global/banked/compensation), five-product benchmark, sustainable GTM vs campaign reset",
+  "differentiator_vs_generic": "Dual-window architecture + usage limits reset terminology + sustainability grading — NOT generic referral program or milestone-only case study. Hero: dual-layer quota meter (5h + weekly) snapping to full via RESET.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Dual-layer usage meter — 5h rolling bar + weekly bar depleted, RESET burst restores both to 100%",
+    "Secondary: generic social announcement card (no vendor logos) with blurred limits-reset headline",
+    "Tertiary: abstract five-column cap comparison grid (no product logos)"
+  ],
+  "anti_patterns": [
+    "Generic MRR/revenue chart without quota meter",
+    "Real OpenAI, Anthropic, or Cursor logos",
+    "Affiliate commission dashboard",
+    "SERP or SEO imagery"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "USAGE LIMITS RESET",
+      "headline_line2": "(2026)",
+      "subtitle": "Dual-Window Agent GTM",
+      "tagline": "5h + Weekly · Credits · Banked",
+      "composition": "Visual-only editorial collage. HERO: dual-layer quota meter — 5h and weekly bars depleted then RESET burst to full. Secondary: generic social card. Tertiary: abstract five-product cap grid. Title top-left. Paper collage. NO vendor logos."
+    },
+    "zh": {
+      "headline": "用量限额重置",
+      "headline_line2": "（2026）",
+      "subtitle": "双窗限额增长策略",
+      "composition": "Same as EN: dual 5h+weekly meter RESET HERO + social card + abstract grid. Title top-left. NO vendor logos."
+    }
+  }
+}
