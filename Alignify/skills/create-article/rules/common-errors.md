@@ -55,6 +55,7 @@
 | E19 | Meta 注册位置错误 | `blog-meta.ts` / `tools-meta.ts`；无需改 page.tsx |
 | E20 | publishDate 被修改 | 已上线 slug 的 publishDate 永不改 |
 | E26 | 新 slug publishDate 与已有 slug 同日 | 跑 `next-publish-date.mjs --check`；全站 `*-meta.ts` 日历日唯一 |
+| E27 | 标题行使用空锚点 `{#}` | 须写 `{#kebab-id}` 或省略；空 `{#}` 会泄漏到线上标题 |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |
