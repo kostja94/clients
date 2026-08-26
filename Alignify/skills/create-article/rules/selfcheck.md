@@ -10,7 +10,7 @@
 | # | 检查项 | Pass 条件 |
 |---|--------|----------|
 | **H0** | Gate 0R | Research Log + SERP Fit + Synthesis + IG 三问 |
-| **H1** | P0 | G1–G7 + `quality-checklist` P0-1–P0-11 零触发 |
+| **H1** | P0 | G1–G7 + `quality-checklist` P0-1–P0-13 零触发 |
 | **H2** | Brief | Moat ≥1；Answer Blocks 3–5；Brief 与大纲一致 |
 | **H3** | 双语 parity | ZH/EN section 类型、顺序、锚点 id 一致 |
 | **H4** | Flagship 深度 | 叙事字数 ≥ `word-counts.md` 该类型 flagship 下限 |
@@ -28,7 +28,7 @@
 | 5 | **Presentation** | BLUF 三处（H2 首段 ≥3 句）；长段≥3；伪列表 0；**E40–E42 Pass**（`audit-marketing-md-render.py`）；见 `presentation.md` |
 | 6 | **Writing / Voice** | 术语统一；无 hype 套话 |
 | 7 | **Objectivity** | Tools：≥1 竞品优势 + ≥1 非榜首场景 |
-| 8 | **Structure / Links** | 内链自然嵌入任务句；同 URL 1 次；Hub/Spoke 合规；A 层结构 |
+| 8 | **Structure / Links** | 内链自然嵌入任务句；同 URL 1 次（含首节 BLUF，M3）；Hub/Spoke 合规；A 层结构；frontmatter E44–E48 Pass |
 | 9 | **SEO / SERP** | Meta/H1 规则；SERP Fit 复核 Pass |
 | 10 | **Bilingual parity** | EN 非机翻腔；信息对等 |
 | 11 | **Architecture** | 内容驱动大纲 intentional；主体节完整 |
@@ -45,6 +45,8 @@ npm run verify:content-json
 npm run build
 node ../../clients/Alignify/scripts/ops/audit-tools-meta-titles.mjs
 node ../../clients/Alignify/scripts/ops/check-tools-en-content.mjs
+python ../../clients/Alignify/scripts/audit/audit-frontmatter.py
+# 部署仓根：npm run verify:content-json
 python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --source both --locale both --violations-only
 ```
 

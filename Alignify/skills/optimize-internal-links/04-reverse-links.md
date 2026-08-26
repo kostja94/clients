@@ -13,7 +13,7 @@ Phase 4 专批；不在单页 Wave 内同步做，避免改动面过大。
 1. 筛选 P0/P1 页 ↔ 执行链 / Web 数据链双向对
 2. 在**目标源页**增加 1 条指向已优化页的链
 3. 遵守全文 href 唯一（R4）
-4. 优先 howItWorks、useCases 或 FAQ（不与现有 slug 重复）
+4. 优先正文 **section**（工作原理 / use cases / 如何选择）或 FAQ 段（不与现有 slug 重复）；**勿**引用已删 JSON block 名 `howItWorks` / `useCases`
 
 ## 批量执行
 

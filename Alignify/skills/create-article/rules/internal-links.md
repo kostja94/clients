@@ -431,7 +431,7 @@
 5. **锚文本覆盖率**：覆盖目标页核心语义 + 自然融入上下文句子 + 与其他锚文本不雷同
 6. **最小锚文本长度**：≥1 个英文词（且 ≥2 字符）或 ≥2 个汉字；中文页面中锚文本可为英文产品名，不强制中文字符数要求
 7. **FAQ 内链**：Tools/Blog JSON 允许 FAQ 内放站内链（≤3 个不同 slug，与正文去重）；FAQ 内链与正文内链同等对待
-8. **R-LINK-ONLY（内容保全）**：存量内链修复 **只允许改 `<a>` 标签**（增/删 `href`、保留锚文本为纯文本）。**禁止**整段替换 FAQ/结论/useCases、删非链接字段、用短句覆盖长段以满足 R1/R4。验收：`（已废弃 audit:text-regression）`（部署仓）— 去 HTML 标签后字段长度不得异常缩水。
+8. **R-LINK-ONLY（内容保全）**：存量内链修复 **只允许改 `<a>` 标签**（增/删 `href`、保留锚文本为纯文本）。**禁止**整段替换 FAQ/结论、删非链接字段、用短句覆盖长段以满足 R1/R4。验收：改链前后去 HTML 后字段长度不得异常缩水（人工 spot-check）。
 
 **R-LINK-ONLY 按违规类型的唯一合法操作**：
 
@@ -2563,7 +2563,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | **BreadcrumbNav** | 回「SEO」频道上级 |
 | **Header / Footer** | 频道入口；非正文计数范围 |
 | **JSON 内 `<a>`** | 站内相对路径 + `class="text-primary hover:underline"` |
-| **md `#faq` section** | 仅纯文本答案；不放站内链 |
+| **faq-data.json** | 仅纯文本答案；不放站内链 |
 
 ---
 
@@ -3166,8 +3166,8 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 - **源文件**：`alignify-by-kostja/content/{tools|seo|blog|marketing|insights|events}/en|zh/{slug}.md`
 - **内链语法**：Markdown `[锚文本](/zh/tools/slug)` 或 `childrenHtml` 内 `<a href="/zh/tools/slug">`
-- **计数范围**：TLDR intro（md `#article-intro` section）、`section` 段落、应用场景/如何选择 section、结论、`html`/`childrenHtml` 列表/表格中的 `<a>`；**不计** References、外链产品 URL、Header/Footer/Breadcrumb
-- **FAQ**：md `#faq` section 全局渲染；**7 问**；答案 **plain text 无内链**
+- **计数范围**：TLDR intro（`tldr-data.json` · 不计 md）、`section` 段落、应用场景/如何选择 section、结论、`html`/`childrenHtml` 列表/表格中的 `<a>`；**不计** References、外链产品 URL、Header/Footer/Breadcrumb
+- **FAQ**：`faq-data.json` 全局渲染；**7 问**；答案 **plain text 无内链**
 - **验收**：`npm run verify:content-json`（即 `verify-content-md.py`）；内链审计 `audit-tools-internal-links.py --format md`（上下文仓 `scripts/audit/`）
 - **编辑方式**：少量改动 StrReplace；批量 UTF-8 脚本写入；存量优化默认 **R-QUALITY-REWRITE**（可改 surrounding copy，禁止机械句凑数）；JSON 批量 patch 仍 **R-LINK-ONLY**
 

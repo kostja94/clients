@@ -112,7 +112,7 @@
 3. **表格当导航** — ugc-marketing 对比表 4 链；lifetime-deal 渠道表内嵌 affiliate  
 4. **零出链孤岛** — affiliate、creator-program、influencer、reddit（EN）等 0 正文链  
 5. **结论重复开篇** — lifetime-deal 结论再链 pricing-strategy（正文已链）  
-6. **hero + 正文双链同目标** — rate-limit-reset hero 链 pricing，正文再链 pricing  
+6. **首节 BLUF + 正文双链同目标** — 如 rate-limit-reset 首节链 pricing，正文再链 pricing（M3 违规，须合并为 1 次）  
 7. **机械指路链（M8 变体）** — 「对照 / 详见 / 见 XXX 指南 / 见 XXX 文章 / 系统方法见 / 可配合 XXX」单独成句；结论段为凑数堆「选题对接 A、并借 B」；Hub 自指或「访问 / 查看 XXX 页」。**改法**：链必须嵌在读者正在执行的任务句里——删掉链接后句子仍通顺，且读者点过去 10 秒内感到「来对了」。
 
 **机械 ❌ → 自然 ✅ 示例**

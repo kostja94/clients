@@ -11,7 +11,7 @@
 - **Kostja 第一人称**：*I* / *my read* 与 ZH「我」判断对齐
 - **BLUF 三处**：各 major H2 首段 **≥3 句**；若采用 TL;DR 则 EN intro 40–60 words；若采用 FAQ 则首句即答
 - **结构 parity 含呈现**：ZH 若有表前短桥接 / 孤立标签，EN **不得**镜像；Step 09 应一并修复为长段
-- TL;DR / FAQ / References **若 ZH 有则 EN 须有**，inline 在 en md（禁止 JSON 注入）
+- TL;DR / FAQ / References **若 ZH 有则 EN 须有**；Step 08 注册 JSON 侧车（E10；见 `anatomy.md` §二·一）
 
 ---
 
@@ -33,7 +33,7 @@ Marketing 叙事须**饱满**（见 `word-counts.md` 建议区间）；Best 产�
 ### A 层
 
 - [ ] ZH/EN section 顺序与锚点 id 一致（含省略 TL;DR/FAQ 的对称省略）
-- [ ] 结论在 FAQ 前（若两者皆有）
+- [ ] 结论收束 md 正文（FAQ 在页底全局组件，不在 md 流内）
 - [ ] FAQ：**若采用**则 7 问，与 ZH 条数一致，无内链
 - [ ] Moat + Author POV 在 EN 侧**同等深度**兑现（非摘要版）
 - [ ] EN 非翻译腔（09b Pass）

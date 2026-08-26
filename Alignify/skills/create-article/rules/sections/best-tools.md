@@ -35,21 +35,22 @@
 
 **A 层硬底线**：Tools 页面的产品展示 **必须** 使用 Markdown section（H3 产品标题 + 段落 + 可选图片），禁止依赖已删除的 `BestTools.tsx`。
 
-**组件 Props**：
-- `id`：章节锚点 ID
-- `title`：H2 标题
-- `introduction`：介绍段落
-- `locale`：`"zh"` 或 `"en"`（影响按钮文案「试试」/「Try」）
-- `tools`：`{ id, name, shortDescription, imageSrc?, imageAlt?, linkUrl, youtubeUrl?, description }[]`
+```markdown
+<!-- block:section -->
+## 2026 年最好的 {分类} {#best-{slug}-2026}
 
-**图片格式（三选一，推荐 imageSrc）**：
-- **imageSrc + imageAlt**（推荐）：`imageSrc: "/tools/xxx/foo.jpg"` 或 YouTube 缩略图 URL，`imageAlt` 用于 SEO
-- **image**（兼容）：`image: { src, alt }`，组件内部会转换为 imageSrc/imageAlt
-- **video**（兼容）：`video: { videoId, videoUrl, title }`，组件自动生成 YouTube 缩略图；video 时需提供 videoUrl 以支持点击跳转
+### 产品名 {#product-slug}
+
+![产品截图](/tools/{slug}/product.jpg)
+
+段落描述（ZH ≥100 字 / EN ≥280 字符）…
+```
+
+**图片**：`public/` 下路径；`loading="lazy"` 由组件层处理；YouTube 缩略图可用外链 URL。
 
 ### 2.2 产品数量
 
-**A 层硬底线**：每个 BestTools 块至少包含 **2 个产品**。单产品无法构成「排名/推荐」。
+**A 层硬底线**：每个产品 H3 区块至少包含 **2 个产品**。单产品无法构成「排名/推荐」。
 
 ### 2.3 篇幅
 
@@ -198,27 +199,17 @@ shortDescription 渲染为 `[序号]. [产品名]：[shortDescription]` 中冒�
 
 ---
 
-## 六、实现示例
+## 六、Markdown 产品块示例
 
-```tsx
-<BestTools
-  id="ai-image-tool-details"
-  title="各类型AI图片工具详细介绍"
-  introduction="我们为不同类型的AI图片工具创建了详细的指南页面..."
-  tools={[
-    {
-      id: "ai-image-generation",
-      name: "AI图片生成（文生图+图生图）",
-      shortDescription: "文字或图像生成图片",
-      imageSrc: "/tools/image-generator/flux.jpg",
-      imageAlt: "AI图片生成工具界面展示...",
-      linkUrl: "/zh/tools/image-generator",
-      youtubeUrl: "https://www.youtube.com/watch?v=xxx", // 可选
-      description: "AI图片生成工具根据文本描述自动生成新图像，支持文生图和图生图两种模式..."
-    },
-    // ...
-  ]}
-/>
+```markdown
+<!-- block:section -->
+## 2026 年最好的 [工具类型] {#best-tools}
+
+### 1. [产品名]：[核心优势] {#product-slug}
+
+[100–400 字中文 / 280–800 字符英文描述。核心定位 + 关键差异 + 最佳场景。]
+
+![alt 文本](/tools/{page-slug}/{product-slug}.jpg)
 ```
 
 ---
@@ -244,7 +235,7 @@ shortDescription 渲染为 `[序号]. [产品名]：[shortDescription]` 中冒�
 - ❌ 产品描述仍含内链
 - ❌ 按钮文案使用「访问官网」而非「试试 XXX」
 - ❌ H3 标题在卡片外
-- ❌ **图片不显示**：若使用 `image` 或 `video` 格式，需确保 BestTools 为最新版本（已支持自动转换）；**应迁移为 `imageSrc`/`imageAlt`/`youtubeUrl` 规范格式**
+- ❌ **图片不显示**：检查 `public/tools/{page-slug}/` 路径与 `imageSrc` 文件名
 - ❌ 使用原始 HTML 替代 md Best 榜单 section
 - ❌ shortDescription 与产品名重复
 - ❌ shortDescription 为纯形容词堆砌（"Powerful Professional Platform"）
@@ -254,18 +245,9 @@ shortDescription 渲染为 `[序号]. [产品名]：[shortDescription]` 中冒�
 
 ---
 
-## 九、格式迁移（image/video → imageSrc/imageAlt/youtubeUrl）
+## 九、图片字段（md 产品块）
 
-**背景**：组件已兼容 `image`、`video` 旧格式，但新内容应统一使用规范格式。
-
-**迁移规则**：
-
-| 原格式 | 迁移为 |
-|--------|--------|
-| `image: { src: "...", alt: "..." }` | `imageSrc: "..."`，`imageAlt: "..."` |
-| `video: { videoId: "xxx", videoUrl: "https://...", title: "..." }` | `imageSrc: "https://img.youtube.com/vi/xxx/maxresdefault.jpg"`，`imageAlt: "..."`（title），`youtubeUrl: "https://..."` |
-
-**批量迁移已全部完成**（2026-02-11）：全站 JSON 文件中的 `image`/`video` 旧格式已统一迁移为 `imageSrc`/`imageAlt`/`youtubeUrl` 规范格式。
+正文产品块使用 Markdown 图片语法 `![alt](/tools/{page-slug}/{product}.jpg)`；YouTube 预览见 [product-screenshots.md](../product-screenshots.md)。
 
 ---
 

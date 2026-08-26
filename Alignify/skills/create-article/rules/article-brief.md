@@ -41,7 +41,7 @@
 **Planned H2 architecture**（**内容驱动**；可选节采用/省略及理由）:
 | H2 / 锚点 | 目标 | Answer block |
 |-----------|------|--------------|
-| **Optional sections** | TL;DR: ☐ 采用 ☐ 省略 — 理由：… · FAQ: ☐ 采用 ☐ 省略 — 理由：… · How To: ☐ 采用 ☐ 省略 |
+| **Optional sections** | TL;DR: ☐ 采用 ☐ 省略 — 理由：… · FAQ: ☐ 采用 ☐ 省略 — 理由：… · How To: ☐ 采用 ☐ 省略 · **若采用 TL;DR/FAQ/Refs → Step 08 注册三 JSON（E10）；省略 → JSON 不得留键** |
 
 **Word count target**（叙事正文，见 word-counts.md）:
 **Planned internal links**（点击意图；无硬性条数，记录目标 slug + 段落 + 理由）:

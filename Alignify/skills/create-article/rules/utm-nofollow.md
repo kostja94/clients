@@ -39,7 +39,7 @@ If the URL cannot be parsed, default to `nofollow` for safety.
 
 ## Related code
 - `src/lib/utils.ts` — function definitions
-- `src/components/BestTools.tsx` — tool card external links
+- Markdown 正文产品 H3 块 / legacy `BestTools.tsx`（已删）— tool card external links
 - `src/components/CustomerCaseCard.tsx` — customer case website links
 - `src/components/Footer.tsx` — social icons + Nova Scientia link
 - `src/components/GlossaryViewer.tsx` — glossary reference links

@@ -15,7 +15,7 @@
 | H4 深度 / BLUF | Step 05–06 | TL;DR 弱、FAQ 复制正文、伪列表 |
 | 维度 8 内链 | Step 07 | 同 URL 重复、FAQ 含链、硬插锚文本、结论清单式堆链 |
 | 维度 9 SEO/Meta | Step 08 | title 无 Best/最佳、H1 含年份 |
-| 维度 11 结构 | Step 05 大纲 | 结论在 FAQ 后、缺主体节 |
+| 维度 11 结构 | Step 05 大纲 | md 未以 `#conclusion` 收束、缺主体节 |
 | 脚本 audit 红 | 对应 Step | meta-titles、en-content、internal-links |
 
 ---

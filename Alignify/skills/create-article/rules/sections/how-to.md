@@ -193,7 +193,7 @@
 
 ## 二、frontmatter 不再需要 howTo 字段
 
-- **Markdown 版**：如何选择内容全部在正文（H2 + intro + H3 步骤），**frontmatter 不需要 `howTo:` 块**。历史遗留的 `howTo:` frontmatter 字段不再被读取（schema 生成已删），可在改版时顺带清理。
+- **Markdown 版**：如何选择内容全部在正文（H2 + intro + H3 步骤），**frontmatter 禁止 `howTo:`**（E44）。历史遗留须清理；跑 `audit-frontmatter.py` Fail。
 - **JSON 版（已废弃）**：`howToChoose` block 与 `HowToChoose.tsx` 组件仅存在于旧 JSON 体系；Markdown 内容不使用。
 
 ## 三、步骤标题格式
@@ -258,7 +258,7 @@ npm run build
 
 | 编号 | 症状 | 修复 |
 |------|------|------|
-| H1 | frontmatter 仍保留 `howTo:` 块 | schema 已删，正文（H2+intro+H3 步骤）是唯一真相源；`howTo:` frontmatter 可清理 |
+| H1 | frontmatter 仍保留 `howTo:` 块 | E44 禁止；须删除并跑 `audit-frontmatter.py`；正文（H2+intro+H3 步骤）是唯一真相源 |
 | H2 | 步骤过短（stub） | 每步段落有实质判断信号；勿写 `A→B` 一句箭头式 |
 | H3 | H2 id 泛化 | 用 `how-to-choose-{slug}`，勿全站 `how-to-choose` |
 | H4 | intro 泛模板 | `Select the right X based on…` / `Follow these N steps` → 首句给分叉 |

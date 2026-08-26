@@ -139,7 +139,7 @@
 | **growth-case-studies** | competitive-analysis | geo | blog/coding-plan 或 rate-limit-reset（二选一） | — |
 | **referral-program** | 已有 coding-plan | affiliate | tools/referral-program | — |
 
-**affiliate / creator-program / influencer EN**：当前仅 heroHtml 有链 — hero 算 1 条则正文再 **3 条**。
+**affiliate / creator-program / influencer EN**：若首节 BLUF 已有 1 条姊妹链，正文主体再补 **3 条**（M3：同 URL 全页 1 次）。
 
 ---
 

@@ -29,7 +29,7 @@
 | **G6** | 内链指向未上线页 |
 | **G7** | 合规/贬低风险 |
 
-**Alignify 结构 P0**（与 create-article P0-1–P0-11 一致）：结论在 FAQ 前、FAQ 7 问无内链、Meta Best/最佳、无 `howTo:` frontmatter 等。
+**Alignify 结构 P0**（与 create-article P0-1–P0-13 一致）：md 以 `#conclusion` 收束、FAQ JSON 7 问无内链、Meta Best/最佳、无 `howTo:`/`heroHtml:` frontmatter（E44）、Brief 与 TL;DR/FAQ/Refs JSON 一致（E10）等。
 
 输出：`P0 Gate: PASS / BLOCKED by G?`
 

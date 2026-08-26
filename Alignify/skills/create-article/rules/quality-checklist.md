@@ -26,6 +26,7 @@ npm run build
 node ../../clients/Alignify/scripts/ops/merge-cta-slugs.mjs --check
 node ../../clients/Alignify/scripts/ops/audit-tools-meta-titles.mjs
 node ../../clients/Alignify/scripts/ops/check-tools-en-content.mjs
+python ../../clients/Alignify/scripts/audit/audit-frontmatter.py   # E44–E48；0 issues
 python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --source both --locale both --violations-only
 ```
 
@@ -41,7 +42,7 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 
 | # | 检查项 | 通过标准 |
 |---|--------|---------|
-| P0-1 | 结论在 FAQ 之前 | **若** 同时有结论与 FAQ |
+| P0-1 | 结论收束 md 正文 | md 以 `#conclusion` 结尾；FAQ 在页底全局组件 |
 | P0-2 | FAQ 数量 | **若** 有 FAQ：中英文各 **7 问** |
 | P0-3 | FAQ 内链 | **若** 有 FAQ：答案无内链 |
 | P0-4 | 图片 | `public/` 存在 |
@@ -49,7 +50,9 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 | P0-7 | Meta title | best-ranking：含「最佳」/ `Best` |
 | P0-8 | Meta description | ≥2 产品名（Tools） |
 | P0-9 | Meta 格式 | 年份 + 冒号副线 |
-| P0-10 | HowTo | 无 frontmatter `howTo:` |
+| P0-10 | HowTo | 无 frontmatter `howTo:` / `heroHtml:` / `heroContent:`（E44） |
+| P0-11 | Frontmatter schema | `audit-frontmatter.py` 0 issues（E44–E48）；ZH/EN 键 parity |
+| P0-11b | TL;DR/FAQ/Refs JSON | Brief 采用时：`tldr-data.json` / `faq-data.json` / `references-data.json` 已注册 pathname 键（E10）；Brief 省略时无键 |
 | P0-12 | Gate 0R | Research + Brief + Moat 已完成 |
 | P0-13 | 双语 parity | ZH/EN section 对齐 |
 

@@ -1,7 +1,7 @@
 # 文章结构 × Inline Markdown 映射
 
-> **版本**：v2.0 · 2026-08-26  
-> **格式**：`content/{channel}/{locale}/{slug}.md` — 全部章节 inline，无集中 JSON。
+> **版本**：v2.1 · 2026-08-27  
+> **格式**：`content/{channel}/{locale}/{slug}.md` 正文 + JSON 侧车（TL;DR / FAQ / References **线上只读 JSON**）。
 
 ---
 
@@ -11,7 +11,7 @@
 
 | 层级 | 含义 | 示例 |
 |------|------|------|
-| **A 硬底线** | 违反即结构/SEO 错误，必须修复 | 结论在 FAQ 前；禁止 frontmatter `howTo:`；FAQ 若存在则 7 问且无内链 |
+| **A 硬底线** | 违反即结构/SEO 错误，必须修复 | md 以 `#conclusion` 收束；禁止 frontmatter `howTo:`；Brief 采用 FAQ 则 JSON 7 问且无内链 |
 | **B 类型惯例** | 某 `articleType` 的常见做法，可因题材调整 | Best-ranking 通常有产品 H3 榜单；SEO 文通常有操作步骤节 |
 | **C 参考模板** | 新建页时的起点，可增删改顺序 | 下文「参考菜单」10 节；`templates/best-ranking.md` 等 |
 
@@ -34,7 +34,7 @@
 
 | 序号 | 章节 | Markdown | 常见度 |
 |------|------|----------|--------|
-| 1 | 核心要点 / Key Takeaways | `## 核心要点 {#article-intro}` | 常用；可省略（Brief 写理由） |
+| 1 | 核心要点 / Key Takeaways | `tldr-data.json`（**不写 md**） | 常用；可省略（Brief 写理由） |
 | 2 | 什么是 XXX | md section | 几乎总是 |
 | 3 | 如何工作 / 概念 | md section | 常出现在 Tools |
 | 4 | 主体（Best 榜单 / 策略节 / 分析节） | md section + H3 | **主体节几乎总是** |
@@ -42,16 +42,17 @@
 | 6 | 应用场景 | md section + H3 | 视题材 |
 | 7 | 如何选择 | md section + H3 步骤 | 选型类常用；纯概念文可省 |
 | 8 | 结论 | `## 结论 {#conclusion}` | 几乎总是 |
-| 9 | 常见问题 | `## 常见问题 {#faq}` + `###` 7 问 | 常用；可省略（Brief 写理由） |
-| 10 | 参考文献 | `## 参考文献 {#references}` | 有外部引用时建议 |
+| 9 | 常见问题 | `faq-data.json`（**不写 md**；页底全局组件） | 常用；可省略（Brief 写理由） |
+| 10 | 参考文献 | `references-data.json`（**不写 md**） | 有外部引用时建议 |
 
 **A 层硬底线**（与是否采用上表每一行无关）：
 
-- 若同时有 **结论** 与 **FAQ** → 结论必须在 FAQ **之前**
-- 若有 **FAQ** → **7 问**，答案 plain text、无内链；中英文条数一致
-- **禁止** frontmatter `howTo:`；HowTo 内容仅写在正文 `## 如何选择…` section
-- **禁止** frontmatter `heroHtml:` / `heroContent:` 及任何 HTML 行（E44）；Hero 导语、姊妹篇内链写在首段 BLUF
-- **禁止** 独立 JSON / 全局组件注入 TL;DR、FAQ、References（须 inline 在 md）
+- md 正文以 **`## 结论 {#conclusion}`** 收束；FAQ 由页底 `FAQ.tsx` 全局渲染（**不在 md 流内**）
+- Brief **采用** FAQ → `faq-data.json` 中英文各 **7 问**，答案 plain text、无内链
+- Brief **省略** TL;DR/FAQ/Refs → 三 JSON **不得**留对应 pathname 键（否则页面上仍会显示）
+- **禁止** frontmatter `howTo:` / `heroHtml:` / `heroContent:`（E44）；Hero 导语写在首段 BLUF
+- **禁止** 在 md 写 `#article-intro` / `#faq` / `#references` 指望线上渲染（408 篇 md **均无**此写法；写了也不显示）
+- **禁止** 使用已删 JSON block 类型（`howToChoose` / `howItWorks` / `useCases`）及 `BestTools.tsx` 等组件
 
 ---
 
@@ -76,7 +77,34 @@ heroImageAlt: "…"
 
 **允许键（仅此）**：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `category` · `categorySecondary` · `heroImage` · `heroImageAlt`
 
-**禁止键（E44）**：`heroHtml` · `howTo` · `heroContent` — 全站 md **不得**出现在 frontmatter；HTML 误入 YAML 区同样 Fail（E45）。送审跑 `scripts/audit/audit-frontmatter.py`。
+**禁止键（E44）**：`heroHtml` · `howTo` · `heroContent` — 全站 md **不得**出现在 frontmatter；HTML 误入 YAML 区同样 Fail（E45）。区内首尾空行 Fail（E48）。送审跑 `scripts/audit/audit-frontmatter.py`；批量 normalize 跑 `scripts/ops/normalize-frontmatter.py`。
+
+### 二·一 TL;DR / FAQ / References（JSON 侧车 · 线上 SSOT · 2026-08）
+
+| 层 | SSOT | 说明 |
+|----|------|------|
+| **线上渲染** | JSON 侧车 | `src/data/tldr-data.json` · `faq-data.json` · `references-data.json` |
+| **创作流程** | Brief + Step 08 | Brief 决定采用/省略；**采用 → Step 08 注册 JSON**；内容规范见 `sections/tldr.md` · `faq.md` · `references.md` |
+
+**键格式**（= frontmatter `pageUrl` 去域路径）：
+
+| 频道 | EN 键 | ZH 键 |
+|------|-------|-------|
+| blog 新文 | `/blog/{slug}` | `/zh/blog/{slug}` |
+| tools 存量 | `/tools/{slug}` | `/zh/tools/{slug}` |
+| marketing 存量 | `/marketing/{slug}` | `/zh/marketing/{slug}` |
+| seo 存量 | `/seo/{slug}` | `/zh/seo/{slug}` |
+| insights 存量 | `/insights/{slug}` | `/zh/insights/{slug}` |
+
+**渲染链（部署仓）**：
+
+- `markdown-doc.ts` → 解析 md 为 blocks；`block:tldr|faq|references` **跳过**
+- `ArticleFromJson.tsx` → TL;DR / References 从 JSON 注入（`Tldr.tsx` · `References.tsx` **活跃**）
+- `FAQ.tsx`（`ConditionalChrome`）→ 按 pathname 读 `faq-data.json`，渲染在**正文之后**
+
+**Step 08 规则（E10）**：Brief 采用 TL;DR/FAQ/Refs → 注册对应 JSON（中英 pathname 键）；Brief 省略 → JSON **不得**留键。**勿**在 md 写这三节正文。
+
+md 内可留 `<!-- references injected from references-data.json -->` 占位（editorial 提示），**不能**代替 JSON 注册。
 - `category` → Hub 归属（经 `ARTICLE_CATEGORY_MAP` 推导）
 
 ### H2/H3 锚点语法
@@ -94,25 +122,24 @@ heroImageAlt: "…"
 
 ---
 
-## 三、Inline 章节示例
+## 三、章节示例
 
 各节**写法**见 `sections/`；**是否采用**见 §〇 与 Step 01 大纲。
 
-### 1. 核心要点
+### 1. 核心要点（JSON · 不写 md）
 
-```markdown
-<!-- block:section -->
-## 核心要点 {#article-intro}
+Brief 采用时，Step 08 注册 `tldr-data.json`：
 
-40–80 字 intro，直接回答页面核心问题…
-
-- 要点 1（25–60 字）
-- 要点 2
-- 要点 3
-- 要点 4
+```json
+"/zh/blog/{slug}": {
+  "id": "article-intro",
+  "title": "核心要点",
+  "introduction": "40–80 字 intro，直接回答页面核心问题…",
+  "items": ["要点 1（25–60 字）", "要点 2", "要点 3", "要点 4"]
+}
 ```
 
-英文：`## Key Takeaways {#article-intro}`。规则见 [sections/tldr.md](./sections/tldr.md)。
+英文键 `/blog/{slug}`，`title`: `"Key Takeaways"`。规则见 [sections/tldr.md](./sections/tldr.md)。
 
 ### 2–7. 正文章节
 
@@ -139,28 +166,30 @@ heroImageAlt: "…"
 
 见 [conclusion.md](./conclusion.md)。
 
-### 9. FAQ（7 问）
+### 9. FAQ（JSON · 页底全局组件）
 
-```markdown
-<!-- block:section -->
-## 常见问题 {#faq}
+Brief 采用时，Step 08 注册 `faq-data.json`（**7 问**）：
 
-### 问题 1 {#faq-1}
-答案（60–120 字，plain text，无内链）…
-
-### 问题 2 {#faq-2}
-…
+```json
+"/zh/blog/{slug}": {
+  "items": [
+    { "question": "问题 1", "answer": "答案（60–120 字，plain text，无内链）…" }
+  ]
+}
 ```
 
-英文：`## FAQ {#faq}` / `## Frequently Asked Questions {#faq}`。规则见 [sections/faq.md](./sections/faq.md)。
+FAQ 由 `FAQ.tsx` 渲染在正文之后；md **不写** `#faq`。规则见 [sections/faq.md](./sections/faq.md)。
 
-### 10. References
+### 10. References（JSON · 不写 md）
 
-```markdown
-<!-- block:section -->
-## 参考文献 {#references}
+Brief 采用时，Step 08 注册 `references-data.json`：
 
-- [Title](https://…) — 描述
+```json
+"/zh/blog/{slug}": {
+  "items": [
+    { "title": "文章标题", "url": "https://…", "source": "出版方", "date": "2026", "description": "一句说明" }
+  ]
+}
 ```
 
 规则见 [sections/references.md](./sections/references.md)。
@@ -233,7 +262,7 @@ Co-Authored-By: Cursor &lt;cursoragent@cursor.com&gt;</code></pre></div>
 
 ### 禁止 inline Tailwind（E35 · 2026-08 全站统一）
 
-**禁止** 在 `heroHtml` / `childrenHtml` / `html-block` / section 内联 HTML 中写 Tailwind utility（`text-base md:text-lg`、`grid grid-cols-2`、`bg-card`、`list-disc pl-6` 等）。
+**禁止** 在 `childrenHtml` / `html-block` / section 内联 HTML 中写 Tailwind utility（`text-base md:text-lg`、`grid grid-cols-2`、`bg-card`、`list-disc pl-6` 等）。
 
 | 元素 | 正确写法 |
 |------|----------|
@@ -253,12 +282,19 @@ Co-Authored-By: Cursor &lt;cursoragent@cursor.com&gt;</code></pre></div>
 
 ## 五、已废弃
 
-- 独立 `tldr-data.json` / `faq-data.json` 注入（目标：md inline）
-- `<!-- block:tldr -->` / `<!-- block:faq -->` / `<!-- block:references -->`
-- frontmatter `howTo:`
-- JSON block：`howItWorks` / `bestTools` / `useCases` / `howToChoose`
-- React 组件：`BestTools.tsx` / `HowToChoose.tsx` 等已删组件
+**frontmatter / 旧 block（禁止新写）**
+
+- frontmatter `heroHtml:` / `heroContent:` / `howTo:`（E44）
+- `<!-- block:howToChoose -->` / `howItWorks` / `useCases` 等已删 JSON block 类型
+- React 组件：`BestTools.tsx` / `HowToChoose.tsx` 已删；`Tldr.tsx` / `References.tsx` **活跃**（读 JSON）
+
+**TL;DR / FAQ / References（生产现实 · 勿误解）**
+
+- ✅ **线上 SSOT = JSON 侧车**；Brief 采用 → Step 08 注册；Brief 省略 → JSON 不得留键
+- ✅ `Tldr.tsx` · `References.tsx` · `FAQ.tsx` **均为活跃组件**，读三份 JSON
+- ❌ **不是**「md `#article-intro` / `#faq` 会渲染」——408 篇 md **均无**此写法；写了也不显示
+- ❌ `<!-- block:tldr|faq|references -->` 会被 parser **跳过**；内容须进 JSON
 
 ---
 
-*anatomy · v2.0 · 2026-08-26*
+*anatomy · v2.1 · 2026-08-27*

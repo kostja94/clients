@@ -2,9 +2,9 @@
 
 本文档定义参考文献章节的规范，适用于 Tools、SEO、Marketing 等使用 md `#references` section的所有页面。
 
-**数据源（SSOT）**：Markdown 正文 `## 参考文献 {#references}`（英文 `## References {#references}`），使用 markdown 列表或段落。位于 FAQ 之后。见 [anatomy.md](../anatomy.md)。
+**线上 SSOT（2026-08）**：`references-data.json` + `ArticleFromJson` → `References.tsx`；`block:references` 被 parser 跳过。**Brief 采用 → Step 08 注册 JSON**。
 
-**已废弃**：md `#references` section、`References.tsx` 从 JSON 注入。
+**勿新写**：md `#references` section（写了也不渲染）；仅留 `<!-- references injected … -->` 而无 JSON 注册。
 
 ---
 ## 一、定位与作用
@@ -19,15 +19,16 @@
 
 ## 二、通用规范
 
-### 2.1 使用 md `#references` section
+### 2.1 Markdown 列表写法
 
-**组件 Props**（来源：`src/components/References.tsx`，`"use client"` 组件）：
-- `items`：`{ title, url, source?, date?, description? }[]`
-- `title`：可选，默认「参考文献」（中文）或「References」（英文）
-- `locale`：`'zh' | 'en'`
-- `showDivider`：是否显示顶部分割线，默认 `false`
+```markdown
+<!-- block:section -->
+## 参考文献 {#references}
 
-**导入**：`import References from "@/components/References";`
+- [文章标题](https://example.com/article) — 出版方，2026年。一句说明本条参考价值。
+```
+
+**Step 08 注册**：同步写入 `references-data.json`（`items[]` 字段：`title`, `url`, `source?`, `date?`, `description?`）。见 [`anatomy.md`](../anatomy.md) §二·一。
 
 ### 2.2 引用添加规则（正文中）
 
@@ -58,32 +59,24 @@ import { addUtmToExternalLink } from "@/lib/utils";
 - [ ] 引用内容准确、不歪曲原文意思
 - [ ] 链接 URL 正确且可访问
 
-### 2.3 md `#references` section数据结构
+### 2.3 references-data.json 字段
 
-```tsx
-referencesItems = [
-  {
-    title: "文章标题",
-    url: "https://example.com/article",
-    source: "出版方或站点名称", // 可选；建议与原文署名一致
-    date: "2026年1月15日", // 可选；见 2.5
-    description: "可选：一句说明本条参考价值或内容侧重", // 见 2.4
-  }
-];
-```
+| 字段 | 约定 |
+|------|------|
+| `title` | 原文标题或与页面一致的译名 |
+| `url` | 稳定可访问的原文链接 |
+| `source` | 出版方/站点名（可选） |
+| `date` | 出版或改版日期（可选） |
+| `description` | 一句客观说明（可选，20–60 字） |
 
 ### 2.4 列表展示规则（中英一致）
 
-组件对 `locale: "zh" | "en"` 使用**同一结构**，避免英文版「裸 URL + 斜体标题」与中文版不对称：
+1. **主链**：`title` 链至 `url`（经 `addUtmToExternalLink`）。
+2. **来源行**：`source` / `date` 用括号展示（中文全角括号 + `，`；英文半角 + ` · `）。
+3. **描述**：有 `description` 时用 ` — ` 连接。
+4. **Schema**：JSON 条目映射为 Article `citation`。
 
-1. **主链**：`title` 为可点击链接（`text-primary hover:underline`），指向 `url`（经 `addUtmToExternalLink`）。
-2. **来源行**：若 `source` 与 `date` 至少填一项，则在标题后以次要色展示括号内信息：
-   - 中文：全角括号，两项之间用全角逗号 `，`，例如 `（Search Engine Journal，2026年）`；仅一项时 `（2026年）` 或 `（Search Engine Journal）`。
-   - 英文：半角括号，两项之间用间隔号 ` · `，例如 `(Search Engine Journal · 2026)`。
-3. **描述**：若填写 `description`，与前面内容之间使用 **em dash** ` — `（前后有空格），再接描述正文；描述内允许 `**粗体**`（经 `applyMarkdownBoldToHtml`），**不要用** `&ldquo;` 等 HTML 实体，中文引号请用 `「」`。
-4. **Schema**：`citation` 中 `source` 映射为 `author`，类型为 `Organization`（出版方/站点）。
-
-### 2.5 字段填写约定
+### 2.5 字段填写细则
 
 | 字段 | 约定 |
 |------|------|
@@ -133,31 +126,6 @@ referencesItems = [
 
 ---
 
-## 四、实现示例
-
-```tsx
-<References
-  items={[
-    {
-      title: "Schema.org 官方文档",
-      url: "https://schema.org/",
-      source: "Schema.org",
-      date: "2024年",
-      description: "结构化数据词汇表"
-    },
-    {
-      title: "Google 结构化数据指南",
-      url: "https://developers.google.com/search/docs/appearance/structured-data",
-      source: "Google",
-      date: "2025年",
-      description: "官方对站内结构化数据类型的说明入口。",
-    },
-  ]}
-  locale="zh"
-  showDivider={true}
-/>
-```
-
 ---
 
 ## 五、批量规范化（仓库脚本）
@@ -176,7 +144,7 @@ node scripts/ops/normalize-references-in-json.mjs
 
 - **SEO**：技术说明、指南类页面常见
 - **Marketing / Blog 策略文**：**仅事件相关引用**（§3.2）；勿用 References 堆砌同题增长文或对照用官方 docs
-- **Tools**：JSON 中通过 `references` block type 使用，ArticleFromJson 自动提取为 Article Schema 的 `citation` 属性
+- **Tools**：`references-data.json` 注册 + Article Schema `citation`
 
 ---
 

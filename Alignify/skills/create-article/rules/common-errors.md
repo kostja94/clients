@@ -22,10 +22,10 @@
 
 | # | 错误 | 正确做法 |
 |---|------|---------|
-| E7 | 结论在 FAQ 之后 | **若** 同时有结论与 FAQ → 结论 section 必须在 FAQ 之前 |
-| E8 | FAQ 不是 7 问 | **若** 有 FAQ：中英文各 **7 问**（md inline） |
+| E7 | 结论不在 md 末段收束 | md 正文以 `## 结论 {#conclusion}` 收束；FAQ 由页底 `FAQ.tsx` 全局渲染（不在 md 流内） |
+| E8 | FAQ 不是 7 问 | **若** Brief 采用 FAQ：`faq-data.json` 中英文各 **7** 问 |
 | E9 | FAQ 答案含内链 | FAQ 答案 plain text，无 `](` / `<a` |
-| E10 | FAQ/TL;DR 用 JSON 注入 | 须 inline 在 md（`#article-intro` / `#faq` / `#references` section） |
+| E10 | Brief 与 JSON 不一致 | **采用** → Step 08 注册 `tldr-data.json` / `faq-data.json` / `references-data.json`（pathname 键 = `pageUrl` 路径，中英各一）；**省略** → JSON 不得留键。**勿**在 md 写 `#article-intro` / `#faq` / `#references` 指望渲染 |
 | E11 | 缺主体节或架构与大纲不符 | 勿为凑 10 节加空章；对照 Step 01 大纲，主体须覆盖题材 |
 | E12 | frontmatter 含 `howTo:` | **禁止**；HowTo 仅正文 section |
 | E13 | 跳过 Step 02 / 无 Brief | flagship 须 Gate 0R + Brief |
@@ -63,7 +63,7 @@
 | E32 | 个人知识库 SSOT 重复到 knowledge/marketing | campaign 类只在 `E:\个人知识库\营销campaign\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
 | E33 | blog md 使用 GFM 管道表格 | 须 `childrenHtml` + `<div class="content-html"><table>…`；见 `anatomy.md` §四·一 |
 | E34 | blog md 使用 Markdown 列表（`-` / `1.`） | 须 `childrenHtml` + `<ul>` / `<ol class="list-disc…">`；见 `anatomy.md` §四·一 |
-| E35 | `heroHtml` / `childrenHtml` / `html-block` 内 inline Tailwind（`text-base md:text-lg`、`grid grid-cols-*`、`bg-card` 等） | 仅用 `content-html` + `article-*` 语义 class；段落/列表/表格优先裸标签，样式在 `index.css`；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |
+| E35 | `childrenHtml` / `html-block` 内 inline Tailwind（`text-base md:text-lg`、`grid grid-cols-*`、`bg-card` 等） | 仅用 `content-html` + `article-*` 语义 class；段落/列表/表格优先裸标签，样式在 `index.css`；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |
 | E36 | blog md 使用 Markdown fenced code（`` ``` ``） | 须 prose 或 `childrenHtml` `<pre><code>`；见 `anatomy.md` §四·一 |
 | E37 | 伪列表 / 碎片段（`**第一，**` + 单句 × N；全文缺长段） | 违反 [`presentation.md`](./presentation.md) §段落优先；SelfCheck 维度 5 Fail |
 | E38 | 策略文 HTML 表格过多（全文 ≥6 张且无 Brief 豁免） | 案例改 prose；仅保留术语别名 / 决策矩阵 / 合规对照等**必表**；见 [`templates/marketing.md`](./templates/marketing.md) §5.1 |
@@ -76,6 +76,7 @@
 | E45 | frontmatter 区 HTML 行 | 遗留 hero 剥离不净；跑 `strip-hero-html-frontmatter.py` |
 | E46 | frontmatter 未知键 | 仅 `anatomy.md` §二 白名单 |
 | E47 | 缺少必填 frontmatter 键 | 见 `audit-frontmatter.py` REQUIRED |
+| E48 | frontmatter 区内首尾空行 | `---` 与首键 / 末键之间不得留空行；跑 `normalize-frontmatter.py` |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |

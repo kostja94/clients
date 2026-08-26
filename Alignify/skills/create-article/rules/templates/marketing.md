@@ -22,7 +22,7 @@
 
 **EN/ZH 结构同步（必读）**：创建或优化任一语言版本后，**必须**同步另一语言版本的 section 顺序与锚点 id（`## … {#id}`）。内容语言不同，但 md 章节结构须一一对应。
 
-**语言硬约束**：EN md 文件中所有面向用户的文本（H2、H3、段落）**必须**是英文。若采用 FAQ 节 → md `#faq` section，**7 问**（见 [faq.md](../sections/faq.md)）。
+**语言硬约束**：EN md 文件中所有面向用户的文本（H2、H3、段落）**必须**是英文。若 Brief 采用 FAQ → Step 08 注册 `faq-data.json` **7 问**（见 [faq.md](../sections/faq.md)）。
 
 ---
 
@@ -40,7 +40,7 @@
 7. References（可选）← [references.md](../sections/references.md)
 ```
 
-**A 层**：若同时有结论与 FAQ → 结论在 FAQ 之前；FAQ 答案无内链。
+**A 层**：md 以 `#conclusion` 收束；Brief 采用 FAQ 则 JSON 7 问、答案无内链。
 
 **常见组合**（非强制五节清单）：核心要点 + 什么是 + 主体方法论 + [如何实施] + 结论 + FAQ。Hub 索引页（如 `marketing-types`）可大幅简化。
 
@@ -61,7 +61,7 @@
 | **结论** | 几乎总是 | — |
 | **References** | 有事件相关一手源 | 无合格引用时可省 |
 
-**已发布范例（仅作对照，非模板）**：`keyword-research`（TL;DR + FAQ）· `rate-limit-reset`（无 TL;DR/FAQ，分析节 + 作者判断）· `coding-plan`（同上）。**新文照内容画大纲，不照抄任一范例的节清单。**
+**已发布范例（仅作对照，非模板）**：`keyword-research`（TL;DR + FAQ JSON）· `rate-limit-reset`（正文无 TL;DR/FAQ section，**JSON 侧车仍有** — 页面上会显示）· `coding-plan`（同上）。**新文照内容画大纲，Brief 与 JSON 须一致（E10）。**
 
 **Step 04 截图**：仅 `best-ranking` / `best-ranking-legacy` 走 [`04-screenshots.md`](../../04-screenshots.md)。Marketing / Blog / Insights **跳过 Step 04**；OG 封面见 [`ops/og-covers.md`](../../../ops/og-covers.md)。
 
@@ -77,7 +77,7 @@
 
 创建新页面时，先判断**题材倾向**再画 H2 大纲——**不**预设 TL;DR/FAQ/How To 必有；采用或省略各可选节须在 Brief 说明理由。
 
-**与 Tools 的差异**：Marketing 无 BestTools、md 应用场景 section、对比表格等产品展示；正文以方法论、步骤、框架为主，可含工具参考表（加 UTM 外链）。
+**与 Tools 的差异**：Marketing 无产品 H3 榜单、应用场景专节；正文以方法论为主，可含工具参考表（UTM 外链）。
 
 **Marketing 页面字数速查**：
 
@@ -121,43 +121,12 @@
 
 **送审前**：`python scripts/audit/audit-frontmatter.py` — 0 issues。
 
-**已废弃**（勿再写）：
+**已废弃**（E44）：
 
 ```yaml
-# ❌ E44
+# ❌ 勿写
 heroHtml: |
-  <h3>…</h3><p>…</p>
-```
-
-**存量 TSX 参考**（legacy BlogLayout 页维护用，**勿**写入 md frontmatter）：
-
-```tsx
-heroContent={<div></div>}
-```
-
-**形式 B：工具推荐卡片**（legacy TSX；md 正文首节 prose + 内链至 `/tools/{slug}`，**勿**写 frontmatter HTML）
-
-```tsx
-heroContent={
-  <div className="bg-card/95 backdrop-blur-sm border border-border rounded-lg p-6 shadow-sm">
-    <div className="flex flex-col items-center justify-center space-y-4 w-full">
-      <h3 className="text-lg font-semibold text-foreground text-center mb-2">
-        [策略名称]工具推荐
-      </h3>
-      <p className="text-sm md:text-base text-muted-foreground text-center max-w-3xl mb-4 px-4">
-        [简短描述]
-      </p>
-      <div className="w-full max-w-md">
-        <img src="/[路径]/[图片].jpg" alt="[描述]" className="w-full rounded-lg shadow-lg" loading="lazy" />
-      </div>
-      <div className="text-center mt-4">
-        <Link href="/zh/tools/[tool-slug]" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium text-sm">
-          查看X款最佳[策略名称]工具 →
-        </Link>
-      </div>
-    </div>
-  </div>
-}
+  <h3>…</h3>
 ```
 
 ### 2.5 中英文页面差异
@@ -177,14 +146,14 @@ heroContent={
 
 | 章节 | 写法 | 规范 |
 |------|------|------|
-| 核心要点 | `## 核心要点 {#article-intro}` | [tldr.md](../sections/tldr.md) |
+| 核心要点 | `tldr-data.json`（Step 08） | [tldr.md](../sections/tldr.md) |
 | 什么是 XXX | `## … {#id}` + 段落 | [what-is.md](../sections/what-is.md) |
 | 方法论/步骤 | `##` / `###`；列表/表格 → `childrenHtml` | [anatomy.md](../anatomy.md) §四·一 |
 | 如何实施 | `## 如何实施…` + `###`（可选） | [how-to.md](../sections/how-to.md) |
 | 结论 | `## 结论 {#conclusion}` | [conclusion.md](../conclusion.md) |
-| FAQ | `## 常见问题 {#faq}` + 7× `###` | [faq.md](../sections/faq.md) |
-| References | `## 参考文献 {#references}` | [references.md](../sections/references.md) |
-| Hero | **新文无** frontmatter hero；首段 BLUF + 正文内链 | E44 · `anatomy.md` §二 |
+| FAQ | `faq-data.json`（Step 08 · 页底全局组件） | [faq.md](../sections/faq.md) |
+| References | `references-data.json`（Step 08） | [references.md](../sections/references.md) |
+| Hero | **全站无** frontmatter hero；首段 BLUF + 正文内链 | E44 · `anatomy.md` §二 |
 
 **H2 间距**：容器 `space-y-12`；正文 H2 之间不加 divider。
 
@@ -194,7 +163,7 @@ heroContent={
 
 ### 4.1 核心要点（Tldr）
 
-- **统一使用 md `#article-intro` section**：参见 [tldr.md](../sections/tldr.md) § 4.2 Marketing 页面
+- **JSON 注册**：`tldr-data.json`；参见 [tldr.md](../sections/tldr.md) § 4.2 Marketing 页面
 - **introduction**：40–80 字，含 [策略名称]、[方法关键词]、[受众]；直答式
 - **items**：4–5 条，每条 25–40 字，同组长度相近
 - **内容方向**：核心价值+数据、完整方法论、工具+案例、适用受众
@@ -242,7 +211,7 @@ heroContent={
 
 ### 4.6 FAQ
 
-- **数量**：**7 问**（md `#faq`）
+- **数量**：**7 问**（`faq-data.json`）
 - **禁止**：内链、手动 H2
 - **答案**：见 [faq.md](../sections/faq.md) 与 [section-consistency §二](../consistency.md#二通用字数与篇幅建议区间)
 
@@ -319,31 +288,13 @@ export const BLOG_META = {
 
 正文路径：`content/blog/{locale}/{slug}.md`（见 [`anatomy.md`](../anatomy.md) · [`bloglayout.md`](./bloglayout.md)）。
 
-<details>
-<summary>存量 JSON / React 页（legacy · 仅维护存量 <code>content/marketing/</code>）</summary>
-
-**常用 import**（legacy TSX 页面）：
-
-```tsx
-import BlogLayout from "@/components/BlogLayout";
-import Tldr from "@/components/Tldr";
-import FAQ from "@/components/FAQ";
-import Section from "@/components/Section";
-import Link from "next/link";
-import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
-```
-
-**按需**：`References`、`YouTubeVideo`。
-
-</details>
-
 ---
 
 ## 七、标准 H2 标题格式与示例
 
 | 章节 | H2 标题格式 | 示例 |
 |------|-------------|------|
-| 核心要点 | 核心要点（md `#article-intro` section title） | 固定 |
+| 核心要点 | 核心要点（`tldr-data.json` · `title` 字段） | 固定 |
 | 介绍 | 什么是 [策略名称] | 什么是关键词调研 |
 | 方法论 | [主题] 的 [方法] 步骤 / [主题] 框架 | 关键词调研与 Topical Map 的四步法 |
 | 实施 | 如何实施 [策略名称] | 如何实施关键词调研 |
@@ -371,9 +322,9 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 - [ ] 如何实施（若设置）3–5 个 `###` 步骤（见 [how-to.md](../sections/how-to.md)）
 - [ ] How To 步骤中禁止链接、产品名、工具名
 - [ ] Conclusion 在 FAQ 之前；结论可含 0–2 内链，非清单式
-- [ ] FAQ：**若采用**则 **7 问**；FAQ 无内链
+- [ ] FAQ：**若采用**则 JSON **7 问**（E10）；FAQ 无内链
 - [ ] 内链：见 [`marketing-internal-links.md`](../marketing-internal-links.md)（M1–M11）；点击意图优先，无机械指路链（M8）
-- [ ] 锚文本描述性（策略名/任务名）；同 URL 全页 1 次（含 heroHtml，M3）
+- [ ] 锚文本描述性（策略名/任务名）；同 URL 全页 1 次（含首节 BLUF，M3）
 - [ ] 每条链过「三问」：删链后句通顺 · 10 秒感到来对了 · 本段不抢注意力
 - [ ] EN md 所有用户面文本为英文
 - [ ] EN 与 ZH section 顺序与锚点一致
@@ -409,8 +360,9 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 - ❌ 策略文 HTML 表 ≥6 且无 Brief 豁免（E38）
 - ❌ `childrenHtml` 内 legacy `<h3 class="text-lg…">` / `<p class="text-base md:text-lg…">`（E35）
 - ❌ BlogLayout 缺失（存量 TSX 页）
-- ❌ frontmatter `heroHtml:`（新文；E44 — 导语写首段 BLUF）
-- ❌ blog md 在 frontmatter 外使用 `heroContent`；hero 区放 H1
+- ❌ frontmatter `heroHtml:` / `heroContent:` / `howTo:`（E44 — 全站禁止；导语写首段 BLUF）
+- ❌ frontmatter 区内 HTML 行（E45）
+- ❌ frontmatter 未知键 / 缺必填键（E46–E47）；须 `audit-frontmatter.py` Pass
 - ❌ 正文使用遗留 JSON `"type": "html"` 裸块 → 须 `<!-- block:section -->` + Markdown
 - ❌ Section 块带 `showDivider: true`（存量 JSON 页）
 - ❌ 结论位置错误（必须在 FAQ 之前）

@@ -198,7 +198,7 @@
 
 ## 4.4 R-LINK-ONLY 内容保全
 
-存量内链修复**只允许改 `<a>` 标签**（增/删 `href`、保留锚文本为纯文本）。**禁止**整段替换结论、用短句覆盖长段以满足内链规则。验收：`（已废弃 audit:text-regression）`（部署仓）——去 HTML 标签后字段长度不得异常缩水。
+存量内链修复**只允许改 `<a>` 标签**（增/删 `href`、保留锚文本为纯文本）。**禁止**整段替换结论、用短句覆盖长段以满足内链规则。验收：改链前后结论/FAQ 字段去 HTML 后长度不得异常缩水（人工 spot-check）。
 
 ---
 
@@ -259,7 +259,7 @@ Insights 页面结论若在 `childrenHtml` 内，需保留 `id="conclusion"`；�
 
 | # | 检查项 | 通过标准 |
 |---|--------|---------|
-| P0-1 | Conclusion 在 FAQ 之前 | md 正文中 `## 结论 {#conclusion}` 出现在 `## 常见问题 {#faq}` 之前 |
+| P0-1 | Conclusion 收束 md 正文 | md 以 `## 结论 {#conclusion}` 结尾；FAQ 由页底 `FAQ.tsx` 全局渲染（不在 md 流内） |
 | P0-2 | 锚点 id | 固定为 `conclusion`，无变体 |
 | P0-3 | 段落数 | ≥2 段，否则仓促（spoke 例外见 §2.3.3） |
 
@@ -276,7 +276,7 @@ Insights 页面结论若在 `childrenHtml` 内，需保留 `id="conclusion"`；�
 ## 6.3 验收命令
 
 ```bash
-npm run verify:content-json   # 部署仓：全量 md/json 校验
+npm run verify:content-json   # 实际 = verify-content-md.py（md 结构；不验 JSON）
 npm run build                 # 部署仓：全量构建
 ```
 

@@ -56,7 +56,7 @@
 | [internal-links.md](./internal-links.md) | 内链 SSOT（Part 1–2 优先读） |
 | [marketing-internal-links.md](./marketing-internal-links.md) | Marketing M1–M11 |
 | [quality-checklist.md](./quality-checklist.md) | P0/P1 汇总 |
-| [common-errors.md](./common-errors.md) | 常见错误 E1–E42 |
+| [common-errors.md](./common-errors.md) | 常见错误 E1–E48 |
 
 ## 章节规范（sections/）
 
@@ -65,6 +65,15 @@
 ## 页面模板（参考）
 
 [templates/best-ranking.md](./templates/best-ranking.md) · [seo.md](./templates/seo.md) · [marketing.md](./templates/marketing.md) · [insights.md](./templates/insights.md)
+
+## 自动化脚本（Step 10）
+
+| 脚本 | 用途 |
+|------|------|
+| `scripts/audit/audit-frontmatter.py` | E44–E48 frontmatter |
+| `npm run verify:content-json` | 实际 = `verify-content-md.py`（md 结构；**不验 JSON/E10**） |
+| `scripts/ops/normalize-frontmatter.py` | 批量去除 frontmatter 区内首尾空行（E48） |
+| `scripts/ops/strip-hero-html-frontmatter.py` | 剥离遗留 `heroHtml:`（一次性） |
 
 ---
 

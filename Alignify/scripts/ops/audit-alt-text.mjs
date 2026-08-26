@@ -111,11 +111,11 @@ for (const file of files) {
     }
   }
 
-  // --- Check HTML <img> tags in childrenHtml and heroHtml ---
+  // --- Check HTML <img> tags in childrenHtml (and legacy JSON heroHtml) ---
   const heroHtml = j.blogLayout?.heroHtml || "";
   for (const block of j.blocks) {
     for (const field of ["childrenHtml", "heroHtml"]) {
-      const html = block[field] || "";
+      const html = (field === "heroHtml" ? heroHtml : block[field]) || "";
       if (typeof html !== "string" || !html) continue;
 
       const imgMatches = html.match(/<img[^>]*>/gi) || [];

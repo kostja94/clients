@@ -2,9 +2,9 @@
 
 本文档定义 TL;DR 章节的规范，**替代原「文章简介」**，适用于 Tools、SEO、Marketing 等所有文章页面。专为 **GEO（生成式引擎优化）** 设计，提升 AI Overview、ChatGPT、Perplexity 等 AI 引擎的引用与抽取效果。
 
-**数据源（SSOT）**：Markdown 正文第一节 `## 核心要点 {#article-intro}`（英文 `## Key Takeaways {#article-intro}`），位于所有其他章节之前。见 [anatomy.md](../anatomy.md)。
+**线上 SSOT（2026-08）**：`tldr-data.json` + `ArticleFromJson` → `Tldr.tsx`；md 内 `block:tldr` 被 parser 跳过。**Brief 采用 → Step 08 注册 JSON**（键 = `pageUrl` 路径）。
 
-**已废弃**：md `#article-intro` section、`<!-- block:tldr -->`、`Tldr.tsx` 从 JSON 注入。
+**勿新写**：md `#article-intro` section（写了也不渲染）；`<!-- block:tldr -->` 空壳占位。
 
 **参考**：[templates/best-ranking.md](../templates/best-ranking.md)
 
@@ -101,83 +101,30 @@
 
 ### 2.3.1 items 中 HTML / Markdown 使用规范
 
-md `#article-intro` section通过 `dangerouslySetInnerHTML(applyMarkdownBoldToHtml(item))` 渲染 items，允许有限的 inline 标记：
+items 内允许 `**粗体**` 与 `[锚文本](/path)`（每 item 最多 1–2 内链）。计字数前 strip HTML/Markdown 标记。
 
-| 用途 | 允许 | 禁止 | 说明 |
-|------|------|------|------|
-| **产品名加粗** | `<strong>Auth0</strong>` 或 `**Auth0**` | 整句加粗 | 仅加粗关键实体名，非整段强调 |
-| **交叉引用内链** | `<a href="/zh/tools/design">AI 设计工具</a>` | 用 `<a>` 替代正文段落；单 item 中 3 个以上链接 | 每 item 最多 1–2 个内链，锚文本精简 |
-| **块级元素** | — | `<div>`、`<p>`、`<br>`、`<ul>` 等 | items 是行内文本，不可嵌套块 |
-| **图片 / 非文本** | — | `<img>`、`<svg>`、`<iframe>` | items 仅文本 |
+### 2.4 Markdown 写法与 items 内链
 
-**审计注意事项**：统计字数时必须先用 `stripHtmlTags()` 去除所有 HTML 标签和 Markdown 标记（`**bold**` → `bold`，`[text](url)` → `text`），仅对纯文本内容计数。`<strong>` 和 `<a>` 中的文字计入字数，标签本身不计。
+`introduction` + `- ` 列表 items；items 内允许 `**粗体**` 与 `[锚文本](/path)`（每 item 最多 1–2 内链）。计字数前 strip HTML/Markdown 标记。
 
-### 2.4 格式要求
+**Step 08 注册**：同步写入 `tldr-data.json`（键 = `pageUrl` 路径，如 `/zh/blog/{slug}` 或 `/tools/{slug}`）。见 [`anatomy.md`](../anatomy.md) §二·一。
 
-- **统一导入**：使用 Tldr 专用组件，禁止裸 `<div>` + `<h2>` + `<ul>` 混用
-- **与如何选择 section 一致**：Prop 命名使用 `introduction`
+```markdown
+<!-- block:section -->
+## 核心要点 {#article-intro}
 
-### 2.5 样式与 CSS 最佳实践
+开篇直答 30–100 字（中文）或 25–70 词（英文）。
 
-| 原则 | 要求 | 说明 |
-|------|------|------|
-| **商务** | 纯色、清晰边界、无渐变 | 使用 solid 背景与边框，避免渐变、阴影过度 |
-| **简洁** | 单一强调元素（左侧 accent） | 左侧黑色竖条作为唯一视觉焦点，无装饰图标，纯文字列表 |
-| **干净** | 充足留白、统一圆角 | `rounded-md`、`pl-6 md:pl-8`、`space-y-3.5` |
-| **显眼** | 左侧黑色 accent 条（`bg-foreground`）、`bg-card` | 与正文背景形成对比，便于快速定位 |
-
-**实现要点**：
-
-- **左侧 accent**：`w-1.5 bg-foreground` 独立块，不依赖 `border-l`，近黑色与卡片形成视觉锚点
-- **背景**：`bg-card` 纯色，适配浅色/深色模式
-- **边框**：`border border-border` 全框，`rounded-md` 适度圆角
-- **阴影**：无投影（纯 `border` 已够区分），保持扁平商务感
-- **禁止**：`gradient`、`blur`、`backdrop`、`shadow`、装饰性图标（如 ✓）
-
----
-
-## 三、统一导入方式
-
-### 3.1 组件导入
-
-```tsx
-import Tldr from "@/components/Tldr";
-```
-
-### 3.2 用法（与如何选择 section 类比）
-
-```tsx
-<Tldr
-  id="article-intro"
-  title="核心要点"
-  introduction="本文介绍 2026 年最佳 AI 口音消除工具，帮助呼叫中心、企业会议和内容创作者选择合适方案。"
-  items={[
-    "AI 口音消除工具支持实时口音转换、语音清晰度提升，适用于呼叫中心、企业会议、内容创作等场景。",
-    "比较 Utell AI、Krisp、Tomato.ai 等主流工具的功能、定价与适用场景。",
-    "掌握选择标准：实时性、自然度、集成能力与商业授权。",
-  ]}
-/>
-```
-
-### 3.3 结构中位置
-
-```tsx
-<div className="space-y-12 blog-post-content">
-  <Tldr id="article-intro" title="核心要点" introduction="..." items={[...]} />
-  <Section id="what-is-xxx" ... />
-  {/* 其他章节 */}
-</div>
+- 要点 1：独立可抽取的句子。
+- 要点 2：…
+- 要点 3–5 条（推荐 4–5 条）
 ```
 
 ---
 
-## 四、结构模板（按页面类型内容适配）
+## 三、按页面类型的 introduction / items 模式
 
-### 4.1 Tools 页面
-
-**页面特征**：工具推荐、产品对比、排名列举；含 Best 榜单、如何工作、应用场景、如何选择等 Markdown section。
-
-**introduction 建议模式**（30–100 字，含实体+范围+受众三信号；以下为参考变体，非强制套用）：
+### 3.1 Tools 页面（30–100 字，含实体+范围+受众三信号；以下为参考变体，非强制套用）：
 
 | 语言 | 变体 A（标准） | 变体 B（技术导向） | 变体 C（对比/替代品导向） |
 |------|---------------|---------------------|---------------------------|
@@ -199,25 +146,11 @@ import Tldr from "@/components/Tldr";
 | 4 | 技术/工作流（可选） | 了解技术原理与实时处理能力，可搭配 [关联工具] 等工作流。 | 有强关联工具时加入 |
 | 5 | 应用场景/延伸（可选） | 涵盖 [场景A]、[场景B] 等应用，支持选择指南与常见问题。 | 补充页面范围 |
 
-**完整示例**（AI 口音消除，4–5 条）：
-
-```tsx
-<Tldr
-  id="article-intro"
-  title="核心要点"
-  introduction="本文介绍 2026 年最佳 AI 口音消除工具，帮助呼叫中心、企业会议和内容创作者选择合适方案。"
-  items={[
-    "AI 口音消除支持实时转换、语音清晰度提升，适用于呼叫中心、会议与内容创作。",
-    "比较 Utell AI、Krisp、Tomato.ai 等主流工具的功能、定价与适用场景。",
-    "掌握选择标准：实时性、自然度、集成能力与商业授权。",
-    "了解技术原理与工作流，可搭配语音转文字、视频翻译等工具。",
-  ]}
-/>
-```
+**完整示例**（AI 口音消除）见 §2.4 Markdown 块；introduction + 4 条 bullet 对应上表 items 方向。
 
 ---
 
-### 4.2 Marketing 页面
+### 3.2 Marketing 页面
 
 **页面特征**：营销策略指南、方法论；含什么是、核心方法论、如何实施 section、References
 
@@ -238,41 +171,9 @@ import Tldr from "@/components/Tldr";
 | 方法论类 | 定义 + 价值 | 关键词调研是系统性发现用户搜索词汇的过程，是内容营销和 SEO 的基础。 |
 | 适用受众 | 受众与输出 | 适用于 SEO、内容营销和独立开发者，帮助搭建优质 Topical Map。 |
 
-**完整示例**（红人营销，4–5 条）：
-
-```tsx
-<Tldr
-  id="article-intro"
-  title="核心要点"
-  introduction="本文介绍红人营销（KOL 信任建设）的核心价值、红人筛选方法、合作管理和效果追踪，帮助 AI 和 SaaS 产品建立有效策略。"
-  items={[
-    "红人营销通过 KOL 合作提升品牌信任，转化率比传统广告高 2–3 倍，获客成本低 40%–60%。",
-    "掌握红人发现、筛选、合作谈判与效果追踪的完整方法论。",
-    "推荐 Lessie AI、Stormy.ai 等工具，配合 Jackery、Candy AI 等成功案例。",
-    "适用于 AI/SaaS 产品建立品牌信任，需建立品牌信任和精准触达的团队。",
-  ]}
-/>
-```
-
-**完整示例**（关键词调研，4–5 条）：
-
-```tsx
-<Tldr
-  id="article-intro"
-  title="核心要点"
-  introduction="本文介绍关键词调研与内容话题调研方法论，帮助 SEO、内容营销和独立开发者搭建优质 Topical Map。"
-  items={[
-    "关键词调研是系统性发现用户搜索词汇、问题和话题的过程，是内容营销和 SEO 的基础。",
-    "掌握用户视角、工具辅助、竞品逆向与 Google PAA 等关键词发现方法。",
-    "结合关键词分类、意图识别与筛选优先级，形成完整内容策略。",
-    "适用于 SEO、内容营销和独立开发者，帮助搭建优质 Topical Map。",
-  ]}
-/>
-```
-
 ---
 
-### 4.3 SEO 页面
+### 3.3 SEO 页面
 
 **页面特征**：SEO 技术指南、概念说明；含什么是、如何工作、实施要点、References；可选如何选择 section
 
@@ -292,41 +193,9 @@ import Tldr from "@/components/Tldr";
 | 技术配置类 | 扩展类型 | 涵盖图片、视频、新闻等扩展类型，配合 Search Console 提交与验证。 |
 | 实施要点 | 最佳实践与排错 | 提供创建与提交指南、最佳实践与常见错误解决方案。 |
 
-**完整示例**（站点地图，4–5 条）：
-
-```tsx
-<Tldr
-  id="article-intro"
-  title="核心要点"
-  introduction="本文介绍站点地图的概念、XML/HTML 创建与提交方法，帮助读者提升网站索引效率和 SEO 表现。"
-  items={[
-    "站点地图是向搜索引擎提供网站页面与元数据的文件，加速发现与抓取。",
-    "掌握 XML、HTML 站点地图及站点地图索引的创建、提交与验证方法。",
-    "涵盖图片、视频、新闻等扩展类型，配合 Search Console 和最佳实践。",
-    "提供创建提交指南、最佳实践、验证方法与常见错误解决方案。",
-  ]}
-/>
-```
-
-**完整示例**（Schema 指南，4–5 条）：
-
-```tsx
-<Tldr
-  id="article-intro"
-  title="核心要点"
-  introduction="本文介绍 Schema.org 结构化数据的概念、常见类型与实施要点，帮助读者提升富结果与 AI 搜索可见性。"
-  items={[
-    "Schema 是一种机器可读的语义标记，帮助搜索引擎理解页面内容与实体。",
-    "掌握 Article、FAQPage、HowTo、Product 等常见类型的选用与配置。",
-    "结合 JSON-LD 格式与验证工具，确保结构化数据与页面内容一致。",
-    "涵盖富结果与 AI 搜索可见性优化，配合最佳实践与常见错误解决方案。",
-  ]}
-/>
-```
-
 ---
 
-### 4.4 占位符速查表
+### 3.4 占位符速查表
 
 | 页面类型 | introduction 关键占位符 | items 常见方向 |
 |----------|-------------------------|----------------|
@@ -358,7 +227,7 @@ AI 引擎从开篇提取三类信息：
 
 ### 5.3 Schema 支持
 
-md `#article-intro` section内嵌 **ItemList** Schema，便于搜索引擎与 AI 理解要点结构。详见组件实现。
+Step 08 注册 `tldr-data.json` 后，线上 `Tldr.tsx` 输出 ItemList Schema。
 
 ### 5.4 语义完整性（Island Test）
 

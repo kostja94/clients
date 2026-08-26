@@ -2,9 +2,9 @@
 
 本文档定义 FAQ 章节的规范，适用于 Tools、SEO、Marketing、Insights 等所有文章页面。
 
-**数据源（SSOT）**：Markdown 正文 `## 常见问题 {#faq}`（英文 `## FAQ {#faq}`），使用 `### 问题 N {#faq-N}` 作为每条问答。位于结论之后、参考文献之前。见 [anatomy.md](../anatomy.md)。
+**线上 SSOT（2026-08）**：全局 `FAQ.tsx` 读 `faq-data.json`（pathname 键）；`block:faq` 被 parser 跳过。**Brief 采用 → Step 08 注册 JSON**（7 问）。
 
-**已废弃**：md `#faq` section、全局 `FAQ.tsx` 从 JSON 注入。
+**勿新写**：md `#faq` section（写了也不渲染）；`<!-- block:faq -->` 空壳占位。
 
 ---
 
@@ -94,40 +94,27 @@ FAQ 由 `FAQ` 组件渲染，**不要**在内容里再手工加一层「区块�
 
 ---
 
-## 四、实现规范
+## 四、Markdown 写法（创作 SSOT）
 
-### 4.1 使用 md `#faq` section
+```markdown
+<!-- block:section -->
+## 常见问题 {#faq}
 
-```tsx
-<FAQ
-  items={[
-    {
-      question: "问题标题（12-22字 / 6-12词）",
-      answer: "70-100字（中文）或 40-60词（英文）的回答。首句直接回答，同一页面内答案字数相近。"
-    },
-    // ... 中英文各 6–8 个（转化 hub 默认 6）
-  ]}
-/>
+### 问题 1 {#faq-1}
+首句直接回答。70–100 字（中文）或 40–60 词（英文）。plain text，**禁止内链**。
+
+### 问题 2 {#faq-2}
+…
+（共 7 问，中英文条数一致）
 ```
 
-### 4.2 禁止手动添加 H2
+**Step 08 注册**：同步写入 `faq-data.json`（键 = `pageUrl` 路径，如 `/zh/blog/{slug}`），否则线上 FAQ 组件不渲染。见 [`anatomy.md`](../anatomy.md) §二·一。
 
-md `#faq` section会自动渲染 H2 标题（中文「常见问题」/ 英文「Frequently Asked Questions」），**禁止**在组件前手动添加：
+**禁止**：在 `## 常见问题 {#faq}` 前再写一层 H2；FAQ 答案含 `](` 或 `<a`。
 
-```tsx
-// ❌ 错误：会导致重复 H2
-<h2 id="faq">常见问题</h2>
-<FAQ items={...} />
+### 4.1 Schema
 
-// ✅ 正确：直接使用组件
-<FAQ items={...} />
-```
-
-**注意**：组件内的 `<section>` 和 `<h2>` 均无 `id` 属性，锚点 `#faq` 不会生效。
-
-### 4.3 结构化数据
-
-md `#faq` section自动生成 FAQPage Schema（JSON-LD），无需额外配置。
+FAQ 组件从 `faq-data.json` 生成 FAQPage JSON-LD；Brief 采用时 Step 08 注册 JSON。
 
 ---
 
@@ -152,12 +139,11 @@ md `#faq` section自动生成 FAQPage Schema（JSON-LD），无需额外配置�
 
 ## 七、常见错误
 
-- ❌ 在 md `#faq` section前添加 H2 标题
-- ❌ FAQ 答案含内链（md `#faq` 须 plain text）
+- ❌ FAQ 答案含内链（JSON 内须 plain text）
 - ❌ 问题或答案过长（超出推荐范围影响 Featured Snippet 提取）
 - ❌ 同一页面内答案字数差异过大（±10 字/词）
 - ❌ 答案过短（无法满足搜索意图）
-- ✅ 使用 md `#faq` section，纯文本答案，首句直接回答，40-60 词（英文）/ 70-100 字（中文）
+- ✅ Step 08 注册 `faq-data.json`，纯文本答案，首句直接回答，40-60 词（英文）/ 70-100 字（中文）
 - ❌ 跨页复用「这些工具是否免费？」等模板问句（须绑定本页实体）
 
 ---

@@ -186,10 +186,9 @@ Alignify 每个内容页有四个关键文案要素，分属两个导向：
 
 ### 3.4 技术实现
 
-- Tools/Marketing/SEO 页面：通过 `BlogLayout` 的 `title` prop 生成（来自 md frontmatter `title`，解析为内部 `blogLayout.title`）
-- 使用硬编码字面量，避免引用变量导致构建失败
-- heroContent 禁止放置 H1
-- 详见 [sections/generic.md](./sections/generic.md) § 〇、§ 二
+- H1 来自 md frontmatter `title`（动态路由渲染）
+- **禁止** frontmatter `heroHtml` / `heroContent`（E44）
+- 详见 [sections/generic.md](./sections/generic.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # Alignify OG 封面图生成流程
 
-> 为 alignify.co 各频道页面生成 **1200×630** 专属 OG 图，与正文 BestTools **产品截图**分离。  
+> 为 alignify.co 各频道页面生成 **1200×630** 专属 OG 图，与正文**产品截图**分离。  
 > **EN / ZH 分开出图**：英文页只用英文画布，中文页只用中文画布。
 
 ---
@@ -56,7 +56,7 @@
 
 **规则**
 - 不再把 `flux.jpg` 等产品截图当 OG
-- 产品截图仍放 `public/tools/{slug}/{product}.jpg`，仅用于正文 BestTools
+- 产品截图仍放 `public/tools/{slug}/{product}.jpg`，用于正文产品 H3 块
 
 ---
 

@@ -41,11 +41,7 @@ def main() -> None:
     for locale, tkey in [("zh", f"/zh/blog/{slug}"), ("en", f"/blog/{slug}")]:
         md = (root / f"content/blog/{locale}/{slug}.md").read_text(encoding="utf-8")
         fm, body = strip_frontmatter(md)
-        hero = ""
-        if "heroHtml:" in fm:
-            m = re.search(r"heroHtml:\s*\|\s*\n((?:  .*\n?)*)", fm)
-            if m:
-                hero = re.sub(r"^  ", "", m.group(1), flags=re.MULTILINE)
+        hero = ""  # legacy: frontmatter heroHtml removed (E44); count body only
 
         t = tldr[tkey]
         t_text = t.get("introduction", "") + " " + " ".join(t.get("items", []))

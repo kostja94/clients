@@ -31,8 +31,8 @@
 1. 按 Brief **Answer Blocks** 顺序写 major H2；每节首段 **BLUF**（先答后背景）
 2. Moat Asset **至少 1 项**须在正文显式兑现（非 footnote）
 3. **Author POV**（Brief）至少 1 处 **第一人称**判断段（建议独立 H2 或结论前）
-4. **若 Brief 采用 TL;DR**：intro 40–80 字直接回答 primary keyword
-5. **若 Brief 采用 FAQ**：**7 问** — 首句即答，与正文相似度 <30%；若省略 FAQ，Brief 须已写理由
+4. **若 Brief 采用 TL;DR**：Step 08 注册 `tldr-data.json`（intro 40–80 字直接回答 primary keyword）
+5. **若 Brief 采用 FAQ**：Step 08 注册 `faq-data.json` **7 问** — 首句即答，与正文相似度 <30%；若省略 FAQ，Brief 须已写理由且 JSON 无键
 6. 段落优先 — 禁伪列表（见 `presentation.md`）
 7. **含表 H2 须按生成顺序协议** — 先 ≥3 句 BLUF，再 `childrenHtml`，再表后 ≥2 句；禁止冒号独断（E40–E41）
 8. 节规范按**实际采用的节**查阅 `rules/sections/`（勿为凑模板节加空章）
@@ -56,17 +56,17 @@
 
 - 偏离 Brief One-line thesis / Moat
 - 从知识块整段复制
-- frontmatter `howTo:`
-- frontmatter `heroHtml:` / `heroContent:` / `howTo:`（E44 — **全站**禁止；见 `anatomy.md` §二）
-- JSON 注入 TL;DR / FAQ / References
+- frontmatter `howTo:` / `heroHtml:` / `heroContent:`（E44 — **全站**禁止；见 `anatomy.md` §二）
+- 在 md 写 `#article-intro` / `#faq` / `#references` 指望线上渲染（JSON 才是 SSOT；见 `anatomy.md` §二·一）
+- Brief 省略 TL;DR/FAQ/Refs 但 JSON 仍留键（页面上仍会显示 — E10）
 
 ---
 
 ## A 层检查
 
 - [ ] 主体节覆盖 Brief
-- [ ] 若有结论 + FAQ → 结论在 FAQ 前
-- [ ] TL;DR / FAQ：与 Brief 一致（采用则 FAQ 7 问、无内链；省略则全文无 `#faq` / `#article-intro`）
+- [ ] TL;DR / FAQ：与 Brief 一致（采用则 JSON 注册；省略则三 JSON 无对应键）
+- [ ] TL;DR / FAQ：与 Brief 一致（采用则 JSON 注册 + FAQ 7 问、无内链；省略则三 JSON 无对应键）
 - [ ] Moat 已兑现
 
 下一步：[06-localize-zh.md](./06-localize-zh.md)

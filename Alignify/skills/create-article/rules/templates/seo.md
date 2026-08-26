@@ -35,43 +35,17 @@
 
 ---
 
-## 二、Metadata 与 BlogLayout 配置
+## 二、Metadata 与 frontmatter
 
-> **字数与文案模板**：Meta title、meta description、H1、excerpt 的统一字数规范、文案模板、按页面类型差异，以 [meta.md](../meta.md) 为**唯一来源**。本节仅列 SEO 类型特有约束（如不含「指南」、不含年份等），通用规则不在此重复。
+> Meta title/description：[meta.md](../meta.md) §一–二。H1/excerpt：md frontmatter `title` / `description`。
 
-**meta 配置详见**：[meta.md](../meta.md) §一–二（字数、模板、CTA）、[meta.md](../meta.md)（像素值、截断机制）。
+**SEO 特有约束**：中文 meta 不含「指南」，英文不含 `Guide`；常青内容 meta 不含年份。
 
-**SEO 特有约束**：
-- 中文不含「指南」，英文不含 "Guide"
-- 常青内容不含年份
-- 主动语态：探索/掌握…比较…立即学习/开始实践
-
-```tsx
-export const metadata = {
-  title: "[主题]：[核心价值/卖点] | Alignify",
-  description: "60-80字/120-158字符，主动语态：探索/掌握XXX，比较核心方法，引导行动（如「立即学习」）",
-  publishDate: "2026年X月X日",
-  modifiedDate: "2026年X月X日",
-};
-
-<BlogLayout
-  title="[主题]：副标题"
-  excerpt="100-150字，说明页面价值"
-  publishDate="2026年X月X日"
-  modifiedDate="2026年X月X日"
-  readTime="XX 分钟阅读"
-  pageUrl="https://alignify.co/zh/seo/[page-slug]"
-  heroContent={<div></div>}
-/>
-```
-
-**H1 与 excerpt 文案构建形式**：须符合 [meta.md](../meta.md) §三–四 和 [sections/generic.md](../sections/generic.md) § 2.3、§ 3.3（跨类型统一）。
-
-### 2.1 中英文页面差异
+**新文路径**：`content/blog/{locale}/{slug}.md` + `blog-meta.ts`（见 §六）。
 
 | 项目 | 中文 | 英文 |
 |------|------|------|
-| pageUrl | `/zh/seo/[slug]` | `/seo/[slug]` |
+| pageUrl | `/zh/blog/[slug]` | `/blog/[slug]` |
 | readTime | `XX 分钟阅读` | `XX min read` |
 | 日期格式 | `2026年1月15日` | `January 15, 2026` |
 | 核心要点标题 | 核心要点 | Key Takeaways |
@@ -94,11 +68,10 @@ export const metadata = {
 
 ## 四、SEO 页面特点
 
-- **无 md section**：技术说明用 Section 编写，标题如「XXX 如何工作」
-- **无 BestTools / md 应用场景 section**：多为纯文字指南
-- **可含 References**：引用 Google、Schema.org 等权威来源
-- **可含如何选择 section**：如「如何优化 URL」→ 正文 `## 如何选择…` + H3 步骤
-- **内链**：可自然融入内链到其他 SEO 页面；**专册**（Hub/Spoke、§1.5 分布、跨频道节制）见 [internal-links.md Part 4](../internal-links.md#part-4-seo-频道内链)
+- **正文**：`<!-- block:section -->` + Markdown `##`/`###`；列表/表格 → `childrenHtml`
+- **无产品 H3 榜单**：多为纯文字指南
+- **TL;DR / FAQ / References**：**仅 JSON 侧车**（E10）；Brief 采用 → Step 08 注册
+- **内链**：见 [internal-links.md Part 4](../internal-links.md#part-4-seo-频道内链)
 
 ---
 
@@ -108,7 +81,7 @@ export const metadata = {
 
 ### 5.1 核心要点（Tldr）
 
-- **统一使用 md `#article-intro` section**：参见 [tldr.md](../sections/tldr.md) § 4.3 SEO 页面
+- **JSON 注册**：`tldr-data.json` 键 `/seo/{slug}` · `/zh/seo/{slug}`；参见 [tldr.md](../sections/tldr.md) §3.3
 - **introduction**：40–80 字，含 [主题]、[核心要点]、[目标]；直答式
 - **items**：4–5 条，每条 25–40 字，同组长度相近
 - **内容方向**：概念+作用、类型/格式、扩展类型、实施要点
@@ -120,63 +93,30 @@ export const metadata = {
 
 ### 5.3 正文章节
 
-- **新文**：`<!-- block:section -->` + Markdown `##`/`###`（见 [`anatomy.md`](../anatomy.md) §四·一）；列表/表格用 `childrenHtml`
-- **存量 JSON/React 页**：纯文字章节可用 [sections/generic.md](../sections/generic.md) 的 Section 组件
+`<!-- block:section -->` + Markdown（[`anatomy.md`](../anatomy.md) §四·一）；见 [generic.md](../sections/generic.md)。
 
 ---
 
-## 六、Meta 注册（新文 · Markdown）
+## 六、Meta 注册
 
-**新文**（含 SEO 题材）默认 `content/blog/{locale}/{slug}.md` + `/blog/{slug}`；Meta 注册到 `blog-meta.ts`，由动态路由 `generateMetadata()` 读取（见 [`bloglayout.md`](./bloglayout.md)）。
+**生产现状（2026-08）**：38 篇 SEO 均在 `content/seo/{locale}/{slug}.md` + `seo-meta.ts` + `/seo/{slug}`。
 
-<details>
-<summary>存量 SEO JSON / React 页（legacy · <code>content/seo/</code>）</summary>
-
-**必需 import**：
-
-```tsx
-import BlogLayout from "@/components/BlogLayout";
-import Tldr from "@/components/Tldr";
-import FAQ from "@/components/FAQ";
-import Section from "@/components/Section";
-```
-
-**按需**：`References`、`YouTubeThumbnail`、`Link`、`addUtmToExternalLink` 等。
-
-</details>
+**新 slug 政策**（尚未有落地范例）：`content/blog/` + `blog-meta.ts` + `/blog/{slug}`。
 
 ---
 
-## 七、路由与渲染（新文）
+## 七、路由与渲染
 
-- **正文**：`content/blog/{locale}/{slug}.md`
-- **Meta**：`blog-meta.ts`（无需 per-slug `page.tsx`）
-- **URL**：`/blog/{slug}` · `/zh/blog/{slug}`
-
-<details>
-<summary>存量 SEO 页（legacy）</summary>
-
-```tsx
-export const metadata: Metadata = LearnSEO.metadata;
-
-export default function LearnSEOPage() {
-  return <LearnSEO />;
-}
-```
-
-</details>
+| 项 | 存量（生产） | 新文（政策） |
+|----|-------------|-------------|
+| 正文 | `content/seo/{locale}/{slug}.md` | `content/blog/{locale}/{slug}.md` |
+| Meta | `seo-meta.ts` | `blog-meta.ts` |
+| URL | `/seo/{slug}` · `/zh/seo/{slug}` | `/blog/{slug}` · `/zh/blog/{slug}` |
+| JSON 键 | `/seo/{slug}` · `/zh/seo/{slug}` | `/blog/{slug}` · `/zh/blog/{slug}` |
 
 ---
 
-## 八、示例页面
+## 八、示例 slug
 
-- LearnSEO、SchemaGuide、URLOptimization、InternalLinks、LandingPage、SearchEngine 等
+`learn-seo` · `schema-guide` · `url-optimization` · `internal-links` 等（**均在 `/seo/`**，非 blog）。
 
----
-
-## 九、页面专用组件
-
-| 页面 | 组件 | 说明 |
-|------|------|------|
-| **SearchEngine** | StatCounterEmbed | 嵌入 StatCounter 搜索引擎市场份额图表 |
-| 其他 | 按需 | YouTubeThumbnail、Section、Table 等，参见 [section](../README.md) |

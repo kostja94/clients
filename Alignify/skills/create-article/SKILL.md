@@ -15,8 +15,9 @@
 3. **先中文后英文** — ZH/EN section 类型、顺序、锚点 id 对齐；**双语均为 flagship 质量**——EN 独立重写，非降格翻译。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
-6. **素材源可外置** — 个人知识库（尤其 `E:\个人知识库\营销campaign\`）为 campaign 类 **唯一 SSOT**；**禁止**再复制到 `knowledge/marketing/{slug}.md`；Brief 登记绝对路径即可。  
-7. **不清楚就问用户** — 对主叙事、中文主称、slug、结构、是否写 Author POV 等**任何不确定项**，在聊天中问用户后再继续；禁止静默假设。见 [`rules/intake-questions.md`](./rules/intake-questions.md)。
+6. **素材源可外置** — 个人知识库为 campaign SSOT；Brief 登记路径即可。  
+7. **TL;DR/FAQ/Refs → JSON** — Brief 采用则 Step 08 注册三 JSON 侧车（E10）；**不写 md**；见 `anatomy.md` §二·一。  
+8. **不清楚就问用户** — 对主叙事、中文主称、slug、结构、是否写 Author POV 等**任何不确定项**，在聊天中问用户后再继续；禁止静默假设。见 [`rules/intake-questions.md`](./rules/intake-questions.md)。
 
 ---
 
@@ -131,6 +132,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ Gate 未 Pass 交付 · ❌ 跳过 Step 02 Research · ❌ 无 Moat 动笔 · ❌ FAQ 复制正文  
 - ❌ blog md 用 GFM 表格或 `-`/`1.` 列表（须 `childrenHtml` HTML；见 `anatomy.md` §四·一 · E33/E34）
 - ❌ frontmatter `heroHtml:` / `heroContent:` / `howTo:`（E44 — 全站禁止）
+- ❌ Brief 采用 TL;DR/FAQ/Refs 但未注册 JSON，或 Brief 省略但 JSON 仍留键（E10）
 - ❌ 表前短桥接 / 孤立标签 / 免责声明独段（E40–E42；须跑 `audit-marketing-md-render.py`）
 - ❌ 自审后直接发布（须 audit-article）· ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章

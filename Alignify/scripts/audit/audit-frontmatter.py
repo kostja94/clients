@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit content/*.md YAML frontmatter consistency (E44 + schema).
+"""Audit content/*.md YAML frontmatter consistency (E44–E48 + schema).
 
 Required keys (all locales):
   title, description, slug, date, updated, readingMinutes, pageUrl, locale, category
@@ -47,8 +47,14 @@ def parse_keys(text: str) -> tuple[dict[str, str], list[str]]:
     issues: list[str] = []
     data: dict[str, str] = {}
     in_hero = False
+    head_lines = m.group(1).splitlines()
 
-    for line in m.group(1).splitlines():
+    if head_lines and not head_lines[0].strip():
+        issues.append("E48: leading blank line in frontmatter")
+    if head_lines and not head_lines[-1].strip():
+        issues.append("E48: trailing blank line in frontmatter")
+
+    for line in head_lines:
         if in_hero:
             if re.match(r"^\s+", line):
                 continue

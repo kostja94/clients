@@ -53,9 +53,7 @@ def audit_en(text: str, glossary: dict) -> list[str]:
     wc = en_word_count(text)
     if wc < 900:
         issues.append(f"EN word count low ({wc}); check depth not padding")
-    # Ignore heroHtml link arrows in frontmatter; check body blocks only
-    body_no_hero = re.sub(r"heroHtml:[\s\S]*?(?=\n---|\n<!--)", "", body if not text.startswith("---") else strip_frontmatter(text))
-    if body_no_hero.count("→") >= 2:
+    if body.count("→") >= 2:
         issues.append("EN body uses →; rewrite as full sentences")
     if not re.search(r"\bI\b|\bmy read\b|\bI think\b", body, re.I):
         issues.append("EN missing first-person author voice (I / my read)")

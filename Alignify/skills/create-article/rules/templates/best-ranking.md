@@ -23,19 +23,19 @@
 > **内容优先**：下列 10 步为 Tools 类**高频结构**，实际顺序与取舍由 Step 01/05 大纲决定。硬底线见 [`anatomy.md`](../anatomy.md) §〇 A 层。
 
 ```
-1. 核心要点（TL;DR）← md `## 核心要点 {#article-intro}`，[tldr.md](../sections/tldr.md)
+1. 核心要点（TL;DR）← `tldr-data.json`，[tldr.md](../sections/tldr.md)
 2. 什么是 XXX 工具 ← md `<!-- block:section -->`
 3. XXX 技术如何工作 ← md section（可并入 §2 或省略）
 4. 各类型工具详细介绍 ← md section + 产品 H3（[best-tools.md](../sections/best-tools.md)）— 主体节，几乎总是
 5. 工具对比表格（可选）← html block 或 section 内 table
 6. 应用场景 ← md section + H3（视题材）
 7. 如何选择 ← md section + H3 步骤（[how-to.md](../sections/how-to.md)）（选型类常用）
-8. 结论 ← md section
-9. FAQ ← md `## 常见问题 {#faq}`（**7 问**）
-10. References ← md `## 参考文献 {#references}`
+8. 结论 ← md `## 结论 {#conclusion}`
+9. FAQ ← `faq-data.json`（**7 问** · 页底全局组件）
+10. References ← `references-data.json`
 ```
 
-**A 层**：若同时有结论与 FAQ → 结论在 FAQ 之前；FAQ 答案 **plain text，无内链**。
+**A 层**：md 以 `#conclusion` 收束；FAQ 答案 **plain text，无内链**（JSON 内）。
 
 **不推荐**：以下 section 对选工具决策价值有限，易与 How to Choose 重复，不建议作为独立章节：
 - Workflow（工作流程）
@@ -124,9 +124,9 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 **Next.js `metadata` 与社交预览**：`generateMetadata()` 自动从 `BLOG_META[slug]`（或 `TOOLS_META[slug]`）读取并输出到 `<meta>`、OG、Twitter 标签——**无需手写在 page.tsx 中**。Meta 的唯一维护位置为 `blog-meta.ts`（或 `tools-meta.ts`）。
 
-#### 2.1.1.0 Meta 硬约束（与 JSON 内 H1 分离）
+#### 2.1.1.0 Meta 硬约束（与 md frontmatter H1 分离）
 
-以下规则针对 `blog-meta.ts`（或 `tools-meta.ts`）中注册的 meta 字段——**不替代** JSON 里的 `blogLayout.title`（H1 仍按 §2.1.2）。
+以下规则针对 `blog-meta.ts`（或 `tools-meta.ts`）中注册的 meta 字段——**不替代** md frontmatter `title`（H1）/ `description`（excerpt）。
 
 | 项目 | 中文（`/zh/tools/...`） | 英文（`/tools/...`） |
 |------|-------------------------|----------------------|
@@ -141,7 +141,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 **内容与文案一致性（Tools）**：
 - **完整句与标点**：`description` 须为完整英文句（或规范中文），**禁止**因字数上限被截成半词（如 `Cura`、`Curate`、`Fre`、`gu`）。若超长，应改写缩短而非硬截断。
 - **语气模板**：英文 meta description 宜统一为「Discover… Compare… + CTA（Curated. Free guide. / Step-by-step guide. Free. / Explore.）」一类节奏，避免一句缺句号、缺连词（如 `scaling Curated` 应改为 `scaling. Curated.`）。
-- **与正文**：`blogLayout.excerpt` 应能由 TL;DR / 首段支撑，避免 meta 写 A 类产品而 H1/excerpt 只谈 B 类；产品名以正文 `bestTools` 为准时，meta 仅列 2–3 个代表即可。
+- **与正文**：frontmatter `description` 应能由 TL;DR / 首段支撑；meta 列举 2–3 个代表产品须出现在正文产品 H3 段中。
 
 ### 2.1.2 用户可读性导向（H1、excerpt）
 
@@ -149,25 +149,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 > **字数与模板**：以 [meta.md](../meta.md) §三–四为准。以下仅标注 Tools 特有约束。
 
-**导入方式**：使用硬编码字面量（`title="..."`、`excerpt="..."`），避免引用 pageConfig 导致构建失败。
-
-**内容原则**：
-- **H1**：格式「[工具类型]：核心价值/卖点」，含关键词；以用户可读性为首要考量。**H1 不写年份**；新鲜度用 **meta title** 中的 `(2026)` 以及 **publishDate / modifiedDate** 表达。
-- **excerpt**：聚焦工具价值、适用场景、用户收益；**避免通用结尾**。
-
-**文案构建形式**：H1 与 excerpt 的句式、结构须符合 [sections/generic.md](../sections/generic.md) § 2.3、§ 3.3（跨类型统一）和 [meta.md](../meta.md) §三–四。
-
-```tsx
-<BlogLayout
-  title="[工具类型]：核心价值描述"
-  excerpt="[100-150 字 / 200-250 字符的摘要]"
-  heroContent={<div></div>}
-  publishDate={pageConfig.meta.publishDate}
-  modifiedDate={pageConfig.meta.modifiedDate}
-  readTime={pageConfig.content.readTime}
-  pageUrl="https://alignify.co/zh/tools/[page-slug]"
-/>
-```
+**H1 / excerpt**：见 md frontmatter `title` / `description`（[`anatomy.md`](../anatomy.md) §二）。禁止 frontmatter `heroHtml`（E44）。
 
 ### 2.1.3 H1 与 Excerpt 生成示例（供 AI 生成新页面参考）
 
@@ -198,7 +180,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 | 章节 | 组件 | 规范文档 |
 |------|------|----------|
-| 核心要点 | md `#article-intro` section | [tldr.md](../sections/tldr.md) |
+| 核心要点 | `tldr-data.json`（Step 08） | [tldr.md](../sections/tldr.md) |
 | 什么是 XXX | Section 或 div | [what-is.md](../sections/what-is.md) |
 | 技术概述 | md section | [what-is.md](../sections/what-is.md) |
 | 产品展示 | Best 榜单 section | [best-tools.md](../sections/best-tools.md) |
@@ -295,22 +277,9 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 ---
 
-## 六、导入清单
+## 六、正文块标记（无 React import）
 
-**常用**：
-
-```tsx
-import BlogLayout from "@/components/BlogLayout";
-import Tldr from "@/components/Tldr";
-import FAQ from "@/components/FAQ";
-import md section from "@/components/md section";
-import BestTools from "@/components/BestTools";
-import md 应用场景 section from "@/components/md 应用场景 section";
-<!-- 如何选择：正文 section -->
-import Table from "@/components/Table";
-import Link from "next/link";
-import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
-```
+新文仅用 `content/tools/` 或 `content/blog/` 的 md + `<!-- block:section -->`。章节规范见 [`anatomy.md`](../anatomy.md) §四·一及各 `sections/*.md`。
 
 ---
 
@@ -367,7 +336,7 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 | 3 | FAQ 数量 **7 问**（中英文各 7 问，与线上一致） | 非 7 问视为未对齐 | [faq.md](../sections/faq.md) |
 | 4 | FAQ 禁止内链（MDX），Tools JSON FAQ 内链按 §3.2 试点规则 | Schema/渲染冲突 | [faq.md §3](../sections/faq.md) |
 | 5 | Conclusion 必须在 FAQ 之前 | 页面结构错误 | §一 |
-| 6 | BestTools 描述硬底线：ZH 100–400 字 / EN 280–800 字符；同页 max/min < 3x | 内容质量不达标 | §5.3 |
+| 6 | 产品 H3 描述硬底线：ZH 100–400 字 / EN 280–800 字符；同页 max/min < 3x | 内容质量不达标 | §5.3 |
 | 7 | comparisonSection：bestFor/pricing 不得为空，coreFeatures 2–4 个关键词，items ≥ 2 条 | 对比表格不可用 | [comparison-table.md §三](../sections/comparison-table.md) |
 | 8 | page.tsx 中 metadata、OG、Twitter 标题/描述必须完全相同 | 社交预览漂移 | §2.1.1 |
 | 9 | 必须使用 BlogLayout + 垂直大图布局，禁止 Grid 左右 | 设计一致性破坏 | §四 |
@@ -419,11 +388,9 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 };
 ```
 
-路由使用单个动态路由文件（`app/[locale]/blog/[slug]/page.tsx`），`generateMetadata()` 自动读取 Meta。**无需创建新的 page.tsx 文件**。正文由 `getPageData("blog"|"tools", slug, locale)` 加载 JSON。
+路由使用 `app/[locale]/blog/[slug]/page.tsx`（或 tools 等价路由），`generateMetadata()` 读 Meta；正文由 `getMarkdownDoc()` 加载 md。
 
-### BestTools 迁移
-
-若页面仍使用旧 HTML 格式，优先迁移到 md Best 榜单 section。参见 [best-tools.md](../sections/best-tools.md)。
+产品展示使用 Markdown `###` 产品 H3 块，见 [best-tools.md](../sections/best-tools.md)。
 
 ---
 
@@ -434,7 +401,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 - ❌ BlogLayout 缺失
 - ❌ 标题语法错误（如「如何变声器工作」→ ✅「变声器如何工作」）
 - ❌ 结论位置错误（必须在 FAQ 之前）
-- ❌ FAQ 重复 H2（不在 md `#faq` section前手动添加 H2）
+- ❌ FAQ 重复 H2（FAQ 由页底 `FAQ.tsx` 渲染，md 不写 `#faq`）
 - ❌ 日期遗漏（**例外**：格式迁移不更新）
 - ❌ 组件导入缺失、图片文件不存在于 `public/tools/`
 

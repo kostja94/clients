@@ -45,7 +45,7 @@
 | **G6** | 内链指向未上线页面 | 含 Brief「Planned links」中的规划 slug；未发布姊妹篇仅可文字提及 |
 | **G7** | 贬低竞品、unsupported superlative、合规风险 |
 
-Alignify 专属 P0 见 [`quality-checklist.md`](./quality-checklist.md) P0-1–P0-11（结构/Meta/FAQ 等）。
+Alignify 专属 P0 见 [`quality-checklist.md`](./quality-checklist.md) P0-1–P0-13（结构/Meta/FAQ/frontmatter 等）。
 
 ---
 

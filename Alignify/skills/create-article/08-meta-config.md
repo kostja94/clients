@@ -11,9 +11,29 @@
 |-------------|------|--------|------|
 | best-ranking | `blog-meta.ts` | `blog-pages-config.ts` | `blog-article-images.ts` |
 | best-ranking-legacy | `tools-meta.ts` | `tools-pages-config.ts` | tools 映射 |
-| seo-guide | `seo-meta.ts` | `seo-pages-config.ts` | `seo-article-images.ts` |
-| marketing-strategy | `marketing-meta.ts` | `marketing-pages-config.ts` | — |
-| insights-analysis | `insights-meta.ts` | `insights-pages-config.ts` | `insights-article-images.ts` |
+| seo-guide | `blog-meta.ts`（**新文**） | `blog-pages-config.ts` | `blog-article-images.ts` |
+| marketing-strategy | `blog-meta.ts`（**新文**） | `blog-pages-config.ts` | — |
+| insights-analysis | `blog-meta.ts`（**新文**） | `blog-pages-config.ts` | `insights-article-images.ts` |
+
+> **存量不重迁**：仍挂在 `content/marketing/`、`content/seo/` 等的 slug 继续用对应 `*-meta.ts`；**新 slug 一律** `blog-meta.ts` + `blog-pages-config.ts`。详见 [`article-types.md`](./rules/article-types.md)。
+
+---
+
+## TL;DR / FAQ / References JSON（Step 08 · 与 meta 同批）
+
+**线上 SSOT = JSON 侧车**（见 [`anatomy.md`](./rules/anatomy.md) §二·一）。**Brief 采用 FAQ/TL;DR/References 时**，Step 08 注册（**不写 md**）：
+
+| 文件 | 键 | 内容 |
+|------|-----|------|
+| `src/data/tldr-data.json` | `pages["{pageUrl路径}"]` | `introduction` + `items[]` |
+| `src/data/faq-data.json` | 同上 pathname | `items[]` × **7** |
+| `src/data/references-data.json` | 同上 pathname | `items[]` |
+
+**键示例**：blog 新文 EN `/blog/{slug}` · ZH `/zh/blog/{slug}`；tools 存量 `/tools/{slug}` · `/zh/tools/{slug}`；seo `/seo/{slug}` · `/zh/seo/{slug}`。
+
+**Brief 省略** TL;DR/FAQ/Refs → 三 JSON **不得**留对应键（否则页面上仍会显示）。
+
+验收：人工核对 JSON 键与 Brief；`npm run verify:content-json` 实际跑 `verify-content-md.py`（**不验 JSON/E10**）。
 
 ---
 
