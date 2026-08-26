@@ -50,6 +50,7 @@
 - 若同时有 **结论** 与 **FAQ** → 结论必须在 FAQ **之前**
 - 若有 **FAQ** → **7 问**，答案 plain text、无内链；中英文条数一致
 - **禁止** frontmatter `howTo:`；HowTo 内容仅写在正文 `## 如何选择…` section
+- **禁止** frontmatter `heroHtml:` / `heroContent:` 及任何 HTML 行（E44）；Hero 导语、姊妹篇内链写在首段 BLUF
 - **禁止** 独立 JSON / 全局组件注入 TL;DR、FAQ、References（须 inline 在 md）
 
 ---
@@ -73,7 +74,9 @@ heroImageAlt: "…"
 ---
 ```
 
-- SEO title/description → `*-meta.ts`（与 frontmatter 主题一致、不必同文）
+**允许键（仅此）**：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `category` · `categorySecondary` · `heroImage` · `heroImageAlt`
+
+**禁止键（E44）**：`heroHtml` · `howTo` · `heroContent` — 全站 md **不得**出现在 frontmatter；HTML 误入 YAML 区同样 Fail（E45）。送审跑 `scripts/audit/audit-frontmatter.py`。
 - `category` → Hub 归属（经 `ARTICLE_CATEGORY_MAP` 推导）
 
 ### H2/H3 锚点语法
@@ -240,7 +243,7 @@ Co-Authored-By: Cursor &lt;cursoragent@cursor.com&gt;</code></pre></div>
 | 代码块 | `<pre><code>…</code></pre>` 或 `.article-code-block` |
 | 行内 code | `<code class="article-inline-code">…</code>` |
 | 图片网格 / 案例卡 | `.article-card-grid` / `.article-figure-grid` / `.article-feature-grid` / `.article-image-grid` + 子元素 `.article-card__*` / `.article-figure__*` / `.article-image-cell` |
-| Hero 策略卡片 | frontmatter `heroHtml`（内层 markup；见 [`marketing.md` §2.4](./templates/marketing.md#24-hero-区域)） |
+| Hero 策略卡片 | **禁止** frontmatter HTML（E44）；首节 BLUF + 正文内链 |
 
 **允许的 class 前缀**：`content-html`、`article-*`（完整列表见部署仓 `src/index.css` §content-html 与 `scripts/ref/inventory-content-classes.py`）。
 

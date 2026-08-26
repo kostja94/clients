@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "platform-subdomain-gating",
+  "analyzed_at": "2026-08-27T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Platform subdomain growth — default xxx.platform.tld URLs drive address-bar distribution, 2026 Lovable/WordPress/Carrd cases, custom domain upsell stacking with Powered-by badges",
+  "differentiator_vs_generic": "Browser address bar with platform TLD subdomain + share-preview card — NOT webpage footer badge (embedded-virality), NOT export watermark on MP4 (watermark-growth), NOT generic SaaS growth funnel",
+  "visual_anchors": [
+    "HERO (~55% canvas): Browser chrome mockup showing address bar with slug.platform.tld URL highlighted + share-preview card beside it",
+    "Secondary: Free vs Pro pricing tear-out — Free shows .platform.tld subdomain, Pro shows custom yourbrand.com with checkmark",
+    "Tertiary: Stacked chips showing URL badge + footer Powered-by badge compound loop (dual gating)"
+  ],
+  "anti_patterns": [
+    "Webpage footer Powered-by badge as sole hero (embedded-virality article)",
+    "Export watermark on video/image file (watermark-growth article)",
+    "Real Lovable/WordPress/Carrd/Notion logos — generic browser mock only",
+    "DNS architecture diagram (subdomain-vs-subfolder SEO article)",
+    "Git commit attribution UI"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "PLATFORM SUBDOMAIN",
+      "headline_line2": "GROWTH",
+      "subtitle": "Address-Bar Distribution",
+      "tagline": "2026 · Custom Domain Upsell",
+      "composition": "Editorial collage for platform subdomain growth guide. HERO: browser address bar with xxx.platform.tld URL + share card. Secondary: Free subdomain vs Pro custom domain tear-out. Tertiary: URL + footer badge stack chips. Title top-left. NO real vendor logos. NO footer-only badge hero."
+    },
+    "zh": {
+      "headline": "平台子域增长",
+      "headline_line2": "地址栏换分发",
+      "subtitle": "SaaS 默认子域策略",
+      "composition": "Same layout as EN: browser address bar HERO with platform TLD + share preview + Free/Pro domain tear-out + dual-gating chips. Title top-left Chinese headline. NO vendor logos. NO footer badge as sole hero."
+    }
+  }
+}

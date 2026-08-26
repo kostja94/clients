@@ -130,6 +130,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 
 - ❌ Gate 未 Pass 交付 · ❌ 跳过 Step 02 Research · ❌ 无 Moat 动笔 · ❌ FAQ 复制正文  
 - ❌ blog md 用 GFM 表格或 `-`/`1.` 列表（须 `childrenHtml` HTML；见 `anatomy.md` §四·一 · E33/E34）
+- ❌ frontmatter `heroHtml:` / `heroContent:` / `howTo:`（E44 — 全站禁止）
 - ❌ 表前短桥接 / 孤立标签 / 免责声明独段（E40–E42；须跑 `audit-marketing-md-render.py`）
 - ❌ 自审后直接发布（须 audit-article）· ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章

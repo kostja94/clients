@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "git-commit-attribution",
+  "analyzed_at": "2026-08-27T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI commit attribution — Co-Authored-By trailers in git history, Cursor/Copilot 2026 controversy, Assisted-by compliance alternatives",
+  "differentiator_vs_generic": "GitHub commit page with co-author avatars + terminal trailer block — NOT Powered-by webpage badge, NOT generic AI coding hero",
+  "visual_anchors": [
+    "HERO (~55% canvas): GitHub-style commit detail mockup with dual avatar row (human + bot) and Co-Authored-By trailer snippet",
+    "Secondary: Terminal window showing commit message footer with Made-with trailer",
+    "Tertiary: Timeline tear-out 2026-01 Cursor forum vs 2026-05 Copilot revert"
+  ],
+  "anti_patterns": [
+    "Webpage footer Powered-by badge (embedded-virality)",
+    "Generic IDE screenshot without commit metadata",
+    "Real Cursor/Copilot/GitHub logos",
+    "Export watermark on MP4 (watermark-growth article)"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "AI COMMIT",
+      "headline_line2": "ATTRIBUTION",
+      "subtitle": "Co-Authored-By Trailers",
+      "tagline": "2026 Cursor · Copilot",
+      "composition": "Editorial collage for git commit attribution guide. HERO: GitHub commit page mock with dual avatars and Co-Authored-By trailer. Secondary: terminal commit footer. Tertiary: 2026 timeline tear-out. Title top-left. NO real vendor logos. NO webpage badge."
+    },
+    "zh": {
+      "headline": "AI 提交署名",
+      "headline_line2": "Commit Trailer",
+      "subtitle": "Co-Authored-By 争议",
+      "composition": "Same layout as EN: GitHub commit dual-avatar HERO + terminal trailer + 2026 timeline chip. Title top-left Chinese headline. NO vendor logos."
+    }
+  }
+}

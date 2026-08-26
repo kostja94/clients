@@ -12,6 +12,7 @@ npm run verify:content-json
 npm run build
 node ../../clients/Alignify/scripts/ops/next-publish-date.mjs --check YYYY-MM-DD   # 新 slug 必跑
 node ../../clients/Alignify/scripts/ops/merge-cta-slugs.mjs --check   # Final CTA 覆盖（E43）
+python ../../clients/Alignify/scripts/audit/audit-frontmatter.py   # 全 content md 必跑（E44–E47）
 python ../../clients/Alignify/scripts/audit/audit-marketing-md-render.py   # Marketing/Blog 策略文必跑（E33–E36 + E40–E42）
 python ../../clients/Alignify/scripts/audit/audit-locale-voice.py --slug {slug} --channel blog   # Marketing/Blog 必跑
 node ../../clients/Alignify/scripts/ops/audit-tools-meta-titles.mjs

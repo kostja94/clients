@@ -57,6 +57,7 @@
 - 偏离 Brief One-line thesis / Moat
 - 从知识块整段复制
 - frontmatter `howTo:`
+- frontmatter `heroHtml:` / `heroContent:` / `howTo:`（E44 — **全站**禁止；见 `anatomy.md` §二）
 - JSON 注入 TL;DR / FAQ / References
 
 ---

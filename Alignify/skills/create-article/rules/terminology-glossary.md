@@ -191,6 +191,41 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态。
 | `git-commit-attribution` | **AI 提交署名** | 勿用「Git 提交归因」 |
 | `embedded-virality` | **Powered-by Badge 与付费去标** | H1/正文主称；框架名 embedded virality 正文解释一次 |
 | `watermark-growth` | **免费导出带 logo：AI 产品用水印做增长** | 主线=增长；「付费去水印」仅作变现节，不作 H1 |
+| `platform-subdomain-gating` | **平台子域增长** | H1 可带副题「SaaS 用地址栏换分发」；框架名 Platform Subdomain Gating 正文一次 |
+
+---
+
+## 八、平台子域增长 · 自定义域名升级（2026-08 起）
+
+> **题材**：`platform-subdomain-gating` 及同类 GTM 文。完整映射见 [marketing-glossary.json](./marketing-glossary.json) `localize_required`。
+
+### 8.1 中文主称与叙事优先级
+
+| 英文 | 推荐译法 | 叙事角色 |
+|------|----------|----------|
+| platform subdomain gating / growth | **平台子域增长** | **文章主线（H1）** |
+| default tenant subdomain | **默认平台子域** | 基础设施描述 |
+| URL-level platform attribution | **地址栏带平台域名** | 增长机制描述 |
+| custom domain upsell / gating | **自定义域名升级** / **付费绑自定义域名** | **变现轴**（独立节，非 H1） |
+
+### 8.2 与 embedded-virality / watermark-growth 分流（「什么是」节必写）
+
+| 维度 | Powered-by Badge | 平台子域增长 | Export 水印增长 |
+|------|------------------|--------------|-----------------|
+| 载体 | 页脚 / widget | **地址栏、分享 preview** | MP4 / PNG / WAV |
+| 增长逻辑 | 访客打开 URL | **每次分享链带 platform TLD** | 带标文件流转 |
+| 可否绕过 | 部分 CSS 隐藏 | **不能（URL 层）** | 第三方 remover |
+| 变现 SKU | 付费去标 | **付费绑自定义域名** | 付费去水印 |
+
+**首段模板（可改写）**：「**平台子域增长**指用户 publish 后默认落在 `{slug}.lovable.app` 这类**平台子域**——访客从地址栏看到平台名，每次外链都是零成本分发；框架英文名 Platform Subdomain Gating。**自定义域名升级**是 freemium 变现轴，下文单独讲。」
+
+### 8.3 禁止译法
+
+| 禁止 | 原因 | 改用 |
+|------|------|------|
+| 平台子域名门控 | 直译框架名，中文读者不说 | 平台子域增长 |
+| 子域名门控 | 同上 | 平台子域增长 |
+| Vanity subdomain（作 universal 主称） | Qualtrics / Supabase 定义冲突 | 引厂商时标注产品 |
 
 ---
 

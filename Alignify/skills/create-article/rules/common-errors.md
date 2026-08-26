@@ -72,6 +72,10 @@
 | E41 | 孤立标签行（`**标签：**` 单独成段） | 标签与正文**同段**；见 `presentation.md` §E41 |
 | E42 | 单句独立段过多、套话免责声明独段、表后单句 | **blog 策略文**：全文单句段 **≤2**；**任何文**：免责声明须并入结论末句；**表后**禁止仅 1 句展开；见 `presentation.md` §单句段预算 |
 | E43 | 页底 Final CTA 落入 fallback 通用文案 | 新 slug **Step 08** 必写 `cta-config.json` → `slugs.{slug}`（ZH+EN）；Brief 含 Final CTA 四字段；跑 `merge-cta-slugs.mjs --check`；见 `final-cta.md` |
+| E44 | frontmatter 含 `heroHtml:` / `heroContent:` / `howTo:` | **全站 md 禁止**（E44）；导语与姊妹链写首段 BLUF；见 `anatomy.md` §二 · `audit-frontmatter.py` |
+| E45 | frontmatter 区 HTML 行 | 遗留 hero 剥离不净；跑 `strip-hero-html-frontmatter.py` |
+| E46 | frontmatter 未知键 | 仅 `anatomy.md` §二 白名单 |
+| E47 | 缺少必填 frontmatter 键 | 见 `audit-frontmatter.py` REQUIRED |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |

@@ -115,26 +115,27 @@
 
 ### 2.4 Hero 区域
 
-**新文 blog md**：写在 frontmatter **`heroHtml`**（见 §三 Hero 行）。**只写内层 markup**（`<h3>`、`<p>`、可选 `<div class="article-hero-cta"><a>…</a></div>`）；**禁止**写外层卡片 Tailwind（`bg-card/95 backdrop-blur-sm…`）——外壳由 `ArticleHeroCard` + `index.css` 统一渲染。
+**全站 blog / marketing / tools md**：**禁止** frontmatter `heroHtml:` / `heroContent:`（E44）。导语、框架名、姊妹篇内链写在 **`## 什么是…`（或等价首节）首段 BLUF**（≥3 句）；EN 同理。`description` 承担 excerpt 级摘要。
+
+**可选** OG 配图：`heroImage` + `heroImageAlt`（见 `anatomy.md` §二）。
+
+**送审前**：`python scripts/audit/audit-frontmatter.py` — 0 issues。
+
+**已废弃**（勿再写）：
 
 ```yaml
+# ❌ E44
 heroHtml: |
-  <h3>增长策略深度拆解</h3>
-  <p>简短导语…</p>
-  <div class="article-hero-cta"><a href="/zh/blog/sibling-slug">姊妹篇：… →</a></div>
+  <h3>…</h3><p>…</p>
 ```
 
-**允许的语义 class**（样式在 `index.css` / `ArticleHeroCard`）：`article-hero-cta`、`article-hero-cta--button`、`article-hero-media`、`article-hero-links`、`article-hero-footnote`、`article-hero-emoji`、`article-hero-gradient`（及 `__title` / `__subtitle` / `__meta` 子元素）。**禁止**其他 Tailwind utility class。
-
-**勿**在 md 中使用 `heroContent` prop——下列 TSX 仅 **存量 BlogLayout 页**维护参考。
-
-**形式 A：无工具卡片**（适用于无对应 /tools 页面的策略）
+**存量 TSX 参考**（legacy BlogLayout 页维护用，**勿**写入 md frontmatter）：
 
 ```tsx
 heroContent={<div></div>}
 ```
 
-**形式 B：工具推荐卡片**（适用于有对应 /tools 页面时；blog md 等价写法见 frontmatter `heroHtml`）
+**形式 B：工具推荐卡片**（legacy TSX；md 正文首节 prose + 内链至 `/tools/{slug}`，**勿**写 frontmatter HTML）
 
 ```tsx
 heroContent={
@@ -183,7 +184,7 @@ heroContent={
 | 结论 | `## 结论 {#conclusion}` | [conclusion.md](../conclusion.md) |
 | FAQ | `## 常见问题 {#faq}` + 7× `###` | [faq.md](../sections/faq.md) |
 | References | `## 参考文献 {#references}` | [references.md](../sections/references.md) |
-| Hero | frontmatter `heroHtml`（内层 markup；勿写 wrapper CSS） | `ArticleHeroCard` 统一渲染 |
+| Hero | **新文无** frontmatter hero；首段 BLUF + 正文内链 | E44 · `anatomy.md` §二 |
 
 **H2 间距**：容器 `space-y-12`；正文 H2 之间不加 divider。
 
@@ -408,7 +409,8 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 - ❌ 策略文 HTML 表 ≥6 且无 Brief 豁免（E38）
 - ❌ `childrenHtml` 内 legacy `<h3 class="text-lg…">` / `<p class="text-base md:text-lg…">`（E35）
 - ❌ BlogLayout 缺失（存量 TSX 页）
-- ❌ blog md 在 frontmatter 外使用 `heroContent`；或 `heroHtml` / hero 区放 H1
+- ❌ frontmatter `heroHtml:`（新文；E44 — 导语写首段 BLUF）
+- ❌ blog md 在 frontmatter 外使用 `heroContent`；hero 区放 H1
 - ❌ 正文使用遗留 JSON `"type": "html"` 裸块 → 须 `<!-- block:section -->` + Markdown
 - ❌ Section 块带 `showDivider: true`（存量 JSON 页）
 - ❌ 结论位置错误（必须在 FAQ 之前）
