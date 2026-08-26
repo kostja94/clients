@@ -54,7 +54,7 @@
 | [internal-links.md](./internal-links.md) | 内链 SSOT（Part 1–2 优先读） |
 | [marketing-internal-links.md](./marketing-internal-links.md) | Marketing M1–M11 |
 | [quality-checklist.md](./quality-checklist.md) | P0/P1 汇总 |
-| [common-errors.md](./common-errors.md) | 常见错误 E1–E36 |
+| [common-errors.md](./common-errors.md) | 常见错误 E1–E39 |
 
 ## 章节规范（sections/）
 

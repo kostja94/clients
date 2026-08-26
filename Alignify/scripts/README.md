@@ -50,6 +50,7 @@ node ../../clients/Alignify/scripts/ops/check-deploy.mjs
 | `apply-product-url-fixes.py` | **已迁至** 同上 `scripts/` |
 | `audit-tools-internal-links.py` | Tools + Blog（`routeCategory: tools`）内链合规；`--source tools\|blog\|both` |
 | `audit-md-internal-links.py` | **Markdown 版全站内链快照**：扫描 `content/**/*.md`，输出 JSON 报告（`scripts/reports/`）与文档（`scripts/reports/md-internal-links-status-*.json`） |
+| `audit-marketing-md-render.py` | **Marketing 正文渲染 + 呈现债**：E33/E34/E36（P0 阻断）与 E37/E38 告警；报告见 [`knowledge/marketing/marketing-md-audit-2026-08-27.md`](../knowledge/marketing/marketing-md-audit-2026-08-27.md) |
 | `audit-internal-href-registry.py` | **R0** 无效 slug / 错误 `/tools` vs `/blog` 路由（404 阻断） |
 | `audit-link-distribution.py` | 每页区块分布、FAQ 堆链、单区块过稀疏 |
 | `run-tools-internal-links-baseline.py` | 一键 baseline（internal-links + anchor + cross-page） |

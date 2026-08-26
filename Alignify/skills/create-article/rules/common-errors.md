@@ -63,8 +63,11 @@
 | E32 | 个人知识库 SSOT 重复到 knowledge/marketing | campaign 类只在 `E:\个人知识库\营销campaign\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
 | E33 | blog md 使用 GFM 管道表格 | 须 `childrenHtml` + `<div class="content-html"><table>…`；见 `anatomy.md` §四·一 |
 | E34 | blog md 使用 Markdown 列表（`-` / `1.`） | 须 `childrenHtml` + `<ul>` / `<ol class="list-disc…">`；见 `anatomy.md` §四·一 |
-| E35 | childrenHtml 内 legacy `<h3 class="text-lg…">` / `<p class="text-base md:text-lg…">` | H3/H4/段落须 Markdown；childrenHtml 仅列表/表格/布局 HTML；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |
-| E36 | `git commit attribution` 译成「Git 提交归因 / 提交归因」 | 用 **AI 提交署名**；见 `terminology-glossary.md` §六 · `marketing-glossary.json` |
+| E35 | `heroHtml` / `childrenHtml` / `html-block` 内 inline Tailwind（`text-base md:text-lg`、`grid grid-cols-*`、`bg-card` 等） | 仅用 `content-html` + `article-*` 语义 class；段落/列表/表格优先裸标签，样式在 `index.css`；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |
+| E36 | blog md 使用 Markdown fenced code（`` ``` ``） | 须 prose 或 `childrenHtml` `<pre><code>`；见 `anatomy.md` §四·一 |
+| E37 | 伪列表 / 碎片段（`**第一，**` + 单句 × N；全文缺长段） | 违反 [`presentation.md`](./presentation.md) §段落优先；SelfCheck 维度 5 Fail |
+| E38 | 策略文 HTML 表格过多（全文 ≥6 张且无 Brief 豁免） | 案例改 prose；仅保留术语别名 / 决策矩阵 / 合规对照等**必表**；见 [`templates/marketing.md`](./templates/marketing.md) §5.1 |
+| E39 | `git commit attribution` 译成「Git 提交归因 / 提交归因」 | 用 **AI 提交署名**；见 `terminology-glossary.md` §六 · `marketing-glossary.json` |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |

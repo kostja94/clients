@@ -31,10 +31,10 @@
 1. 按 Brief **Answer Blocks** 顺序写 major H2；每节首段 **BLUF**（先答后背景）
 2. Moat Asset **至少 1 项**须在正文显式兑现（非 footnote）
 3. **Author POV**（Brief）至少 1 处 **第一人称**判断段（建议独立 H2 或结论前）
-4. TL;DR intro 40–80 字直接回答 primary keyword
-5. FAQ **7 问** — 首句即答，与正文相似度 <30%
+4. **若 Brief 采用 TL;DR**：intro 40–80 字直接回答 primary keyword
+5. **若 Brief 采用 FAQ**：**7 问** — 首句即答，与正文相似度 <30%；若省略 FAQ，Brief 须已写理由
 6. 段落优先 — 禁伪列表（见 `presentation.md`）
-7. 节规范按实际采用的节查阅 `rules/sections/`
+7. 节规范按**实际采用的节**查阅 `rules/sections/`（勿为凑模板节加空章）
 
 ### 05b 深度扩写（动笔后、Step 06 前）
 
@@ -59,7 +59,7 @@
 
 - [ ] 主体节覆盖 Brief
 - [ ] 若有结论 + FAQ → 结论在 FAQ 前
-- [ ] FAQ 7 问、无内链
+- [ ] TL;DR / FAQ：与 Brief 一致（采用则 FAQ 7 问、无内链；省略则全文无 `#faq` / `#article-intro`）
 - [ ] Moat 已兑现
 
 下一步：[06-localize-zh.md](./06-localize-zh.md)

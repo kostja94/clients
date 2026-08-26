@@ -8,7 +8,7 @@
 
 **Author POV**: Kostja 第一人称；Coding Plan 是国内缺 Chat 基本盘厂商的主增长路径；首月低价是入场券不是 moat；reset 是可选加速器非主轴。
 
-**姊妹篇**: `/blog/rate-limit-reset`（结构对齐，无 FAQ/TL;DR 独立节）
+**姊妹篇**: `/blog/rate-limit-reset`（结构对齐参考，非强制模板）
 
 **部署仓正文**: `E:\自有部署项目\alignify production\content\blog\{zh,en}\coding-plan.md`  
 **updated**: 2026-08-26 重构 v2

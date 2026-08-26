@@ -22,7 +22,7 @@
 
 **EN/ZH 结构同步（必读）**：创建或优化任一语言版本后，**必须**同步另一语言版本的 section 顺序与锚点 id（`## … {#id}`）。内容语言不同，但 md 章节结构须一一对应。
 
-**语言硬约束**：EN md 文件中所有面向用户的文本（H2、H3、段落）**必须**是英文。FAQ 在 md `#faq` section。**7 问**。
+**语言硬约束**：EN md 文件中所有面向用户的文本（H2、H3、段落）**必须**是英文。若采用 FAQ 节 → md `#faq` section，**7 问**（见 [faq.md](../sections/faq.md)）。
 
 ---
 
@@ -48,20 +48,26 @@
 
 例外：`marketing-types` 等 Hub 索引页可不含如何选择/如何实施 section。
 
-### 1.1 两种正文骨架（勿与下文 A/B/C「页面类型」混淆）
+### 1.1 可选章节（参考，非骨架）
 
-| 骨架 | 适用 | 章节 |
-|------|------|------|
-| **标准 Marketing 结构** | 方法论/平台/运营类（keyword-research、affiliate、geo…） | TL;DR → 什么是 → 主体 → [How To] → 结论 → **FAQ 7 问** → [References] |
-| **增长模式 Cluster 结构** | 个人知识库 `营销campaign/增长模式/` 专题（rate-limit-reset、coding-plan、**git-commit-attribution**…） | **无**独立 TL;DR / FAQ；frontmatter 后直接 `## 什么是…` → 分析节 → `## 我的判断` → 组合拳 → 结论 → [References] |
+**结构纯粹由内容决定**——Step 01/05 根据读者任务与 SSOT 定 H2，**不**套用固定「A/B 骨架」。下表仅为**何时常用 / 何时可省**的参考；省略须在 Brief 写一句理由。
 
-**增长模式 Cluster 为何省略 TL;DR/FAQ**：已有 `rate-limit-reset`、`coding-plan` 落地范例——长文叙事 + 作者判断即开篇，FAQ 易与正文重复；**不是**质量降级。
+| 章节 | 常用场景 | 可省略时 |
+|------|----------|----------|
+| **TL;DR** | 搜索意图需 10 秒内直答；方法论入门 | 长文叙事已开篇即答（如 `rate-limit-reset`）；省略不降级 |
+| **什么是** | 几乎总是 | 极短 Hub 索引 |
+| **How To** | 方法/操作驱动（keyword-research） | 策略判断/观点文；见 [how-to.md](../sections/how-to.md) |
+| **FAQ** | PAA 有独立决策点、正文未覆盖 | 正文已穷尽问答、FAQ 会重复（如部分 campaign 长文） |
+| **结论** | 几乎总是 | — |
+| **References** | 有事件相关一手源 | 无合格引用时可省 |
 
-**Step 04 截图**：仅 `best-ranking` / `best-ranking-legacy` 走 [`04-screenshots.md`](../../04-screenshots.md)。Marketing / Blog / Insights **跳过 Step 04**；无需产品截图，OG 封面见 [`ops/og-covers.md`](../../../ops/og-covers.md)。
+**已发布范例（仅作对照，非模板）**：`keyword-research`（TL;DR + FAQ）· `rate-limit-reset`（无 TL;DR/FAQ，分析节 + 作者判断）· `coding-plan`（同上）。**新文照内容画大纲，不照抄任一范例的节清单。**
 
-**内链（增长模式文）**：Brief 的 Planned internal links **只列已上线 slug**（部署仓 `content/**/{slug}.md` 可访问）。SSOT 姊妹篇、OSS 维护者计划等**未发布**主题：正文可文字提及，**禁止**站内 `href`（Gate **G6**）。
+**Step 04 截图**：仅 `best-ranking` / `best-ranking-legacy` 走 [`04-screenshots.md`](../../04-screenshots.md)。Marketing / Blog / Insights **跳过 Step 04**；OG 封面见 [`ops/og-covers.md`](../../../ops/og-covers.md)。
 
-**Marketing 页面三种结构模式**（按题材分类，与上表「骨架」正交）：
+**内链**：Brief 的 Planned internal links **只列已上线 slug**。未发布主题可文字提及，**禁止** `href`（Gate **G6** · [marketing-internal-links.md §M11](../marketing-internal-links.md)）。
+
+**Marketing 页面三种题材倾向**（帮助选题，**不**决定必有章节）：
 
 | 类型 | 代表页面 | 正文特征 |
 |------|----------|----------|
@@ -69,7 +75,7 @@
 | **B 类 — 平台战术型** | reddit、x-formerly-twitter、geo、email-marketing | 围绕特定平台展开，含平台机制解析 + 操作指南 |
 | **C 类 — 项目运营型** | creator-program、influencer、referral-program、lifetime-deal、localization-strategy | 以「如何搭建/运营一个项目」为主线，含激励机制、招募、平台分析 |
 
-创建新页面时，先判断类型再确定正文 H2 结构。首尾章节（TL;DR、What Is、如何实施 section、Conclusion、FAQ）跨类型一致。
+创建新页面时，先判断**题材倾向**再画 H2 大纲——**不**预设 TL;DR/FAQ/How To 必有；采用或省略各可选节须在 Brief 说明理由。
 
 **与 Tools 的差异**：Marketing 无 BestTools、md 应用场景 section、对比表格等产品展示；正文以方法论、步骤、框架为主，可含工具参考表（加 UTM 外链）。
 
@@ -109,7 +115,18 @@
 
 ### 2.4 Hero 区域
 
-**新文 blog md**：工具推荐卡片写在 frontmatter **`heroHtml`**（见 §三 Hero 行；`heroHtml` 内 `<h3>` 例外见 [`anatomy.md`](../anatomy.md) §四·一）。**勿**在 md 中使用 `heroContent` prop——下列 TSX 仅 **存量 BlogLayout 页**维护参考。
+**新文 blog md**：写在 frontmatter **`heroHtml`**（见 §三 Hero 行）。**只写内层 markup**（`<h3>`、`<p>`、可选 `<div class="article-hero-cta"><a>…</a></div>`）；**禁止**写外层卡片 Tailwind（`bg-card/95 backdrop-blur-sm…`）——外壳由 `ArticleHeroCard` + `index.css` 统一渲染。
+
+```yaml
+heroHtml: |
+  <h3>增长策略深度拆解</h3>
+  <p>简短导语…</p>
+  <div class="article-hero-cta"><a href="/zh/blog/sibling-slug">姊妹篇：… →</a></div>
+```
+
+**允许的语义 class**（样式在 `index.css` / `ArticleHeroCard`）：`article-hero-cta`、`article-hero-cta--button`、`article-hero-media`、`article-hero-links`、`article-hero-footnote`、`article-hero-emoji`、`article-hero-gradient`（及 `__title` / `__subtitle` / `__meta` 子元素）。**禁止**其他 Tailwind utility class。
+
+**勿**在 md 中使用 `heroContent` prop——下列 TSX 仅 **存量 BlogLayout 页**维护参考。
 
 **形式 A：无工具卡片**（适用于无对应 /tools 页面的策略）
 
@@ -166,7 +183,7 @@ heroContent={
 | 结论 | `## 结论 {#conclusion}` | [conclusion.md](../conclusion.md) |
 | FAQ | `## 常见问题 {#faq}` + 7× `###` | [faq.md](../sections/faq.md) |
 | References | `## 参考文献 {#references}` | [references.md](../sections/references.md) |
-| Hero | frontmatter `heroHtml` | 工具卡片 UI |
+| Hero | frontmatter `heroHtml`（内层 markup；勿写 wrapper CSS） | `ArticleHeroCard` 统一渲染 |
 
 **H2 间距**：容器 `space-y-12`；正文 H2 之间不加 divider。
 
@@ -235,18 +252,33 @@ heroContent={
 
 ---
 
-## 五、内容最佳实践（参考 SEO / AI 搜索）
+## 五、内容最佳实践（Blog md · 策略文）
+
+> **呈现 SSOT**：段落节奏以 [`presentation.md`](../presentation.md) 为准；本表 SEO/GEO 实践与其**不冲突**——BLUF 与 Answer Block 用**长段首段**表达，不用伪列表替代正文。
 
 | 实践 | 说明 |
 |------|------|
 | **意图映射** | 先诊断搜索意图：informational vs transactional；内容与意图匹配 |
 | **E-E-A-T** | 展示 Expertise、Experience、Authoritativeness、Trust；数据和引用可增强可信度 |
-| **内容分块** | 每 H2 为独立可回答块；短段落、列表、表格；便于 AI 提取与 Featured Snippets |
+| **内容分块** | 每 major H2 为独立可回答块：**首段 BLUF（≥3 句 prose）** → 展开分析 → **按需**列表/表格（非默认堆结构） |
+| **段落优先** | 全文 **≥3 处长段（≥4 句）**；连续短段（≤2 句）**≤2 处**；禁 `**第一，**` + 单句 × N（E37） |
+| **表格预算** | 策略/GTM 长文默认 **≤5 张** HTML 表；≥6 须 Brief 说明「必表理由」；案例数据优先 **prose**（E38） |
 | **TOC** | 长文可加目录（Table of Contents） |
 | **关键词布局** | 自然融入，避免堆砌；Title、H1、intro、H2 含核心词 |
 | **Topic Cluster** | 方法论类可考虑 Hub & Spoke：主文 + 衍生专题 |
 | **内链** | 见 [`marketing-internal-links.md`](../marketing-internal-links.md)（M1–M11）；**点击意图**优先，无硬性条数 |
 | **更新** | 定期更新 modifiedDate 与内容 |
+
+### 5.1 表格 vs prose（策略文）
+
+| 适合表格 | 适合长段落 |
+|----------|------------|
+| 术语别名对照（Wrapped 名称族） | 案例叙事（Cluely/Wispr 时间线） |
+| 决策 go/no-go 矩阵 | 「我的判断」三节合并为 1–2 段 |
+| 工具默认行为 benchmark（列多、需扫读） | 跨行业对照（Duolingo/Gymshark 一条链写清） |
+| 合规义务清单（FTC 行项） | 单行流程箭头链（勿用 `` ``` ``） |
+
+**范例**：`rate-limit-reset`（长段 + 少量必表）· `keyword-research`（方法论表 + How To prose）
 
 ---
 
@@ -313,13 +345,13 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 ## 九、质量检查清单
 
 - [ ] **H1 与 excerpt**：符合 [sections/generic.md](../sections/generic.md)
-- [ ] 章节完整（核心要点、What Is、正文方法论、Conclusion、FAQ）
+- [ ] 章节完整：至少 **什么是 + 主体 + 结论**；TL;DR / How To / FAQ 按 Brief 采用或已说明省略理由
 - [ ] 正文使用 `<!-- block:section -->` + Markdown `##`/`###`
 - [ ] childrenHtml 仅用于列表/表格/布局 HTML（E33–E35）
 - [ ] 如何实施（若设置）3–5 个 `###` 步骤（见 [how-to.md](../sections/how-to.md)）
 - [ ] How To 步骤中禁止链接、产品名、工具名
 - [ ] Conclusion 在 FAQ 之前；结论可含 0–2 内链，非清单式
-- [ ] FAQ 数量为 **7 问**；FAQ 无内链
+- [ ] FAQ：**若采用**则 **7 问**；FAQ 无内链
 - [ ] 内链：见 [`marketing-internal-links.md`](../marketing-internal-links.md)（M1–M11）；点击意图优先，无机械指路链（M8）
 - [ ] 锚文本描述性（策略名/任务名）；同 URL 全页 1 次（含 heroHtml，M3）
 - [ ] 每条链过「三问」：删链后句通顺 · 10 秒感到来对了 · 本段不抢注意力
@@ -351,6 +383,9 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 
 - ❌ 新文写入 `content/marketing/` 或注册 `/marketing/{slug}`（应 `content/blog/` + `/blog/{slug}`）
 - ❌ blog md 用 GFM 表格或 Markdown 列表（须 `childrenHtml`；E33–E35）
+- ❌ blog md 用 Markdown fenced code `` ``` ``（须 prose 或 `<pre><code>`；E36）
+- ❌ 伪列表 / 全文碎片短段（E37；须过 [`presentation.md`](../presentation.md)）
+- ❌ 策略文 HTML 表 ≥6 且无 Brief 豁免（E38）
 - ❌ `childrenHtml` 内 legacy `<h3 class="text-lg…">` / `<p class="text-base md:text-lg…">`（E35）
 - ❌ BlogLayout 缺失（存量 TSX 页）
 - ❌ blog md 在 frontmatter 外使用 `heroContent`；或 `heroHtml` / hero 区放 H1

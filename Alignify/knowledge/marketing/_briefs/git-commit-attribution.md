@@ -14,7 +14,13 @@
 **姊妹篇（已上线）**: `/blog/rate-limit-reset`、`/blog/coding-plan`  
 **未上线（正文可提、禁止内链）**: embedded-virality、OSS 维护者计划等
 
-**结构**: 增长模式 Cluster — **无 TL;DR / FAQ**（见 `marketing.md` §1.1）
+**未上线（正文可提、禁止内链）**: embedded-virality、OSS 维护者计划等  
+**发布批次**: 与 embedded-virality **不同批**；ZH/EN **均为 flagship 质量**（EN 独立重写，非降格翻译）
+
+**Planned optional sections**（内容驱动，Step 02 可调整）:
+- TL;DR: **省略** — 开篇「什么是」即 BLUF；长文叙事 + 作者判断
+- FAQ: **省略** — 争议/政策点已在正文与「我的判断」覆盖；避免与正文重复
+- How To: **省略** — 策略判断文，非操作教程
 
 **部署仓正文**: `E:\自有部署项目\alignify production\content\blog\{zh,en}\git-commit-attribution.md`
 

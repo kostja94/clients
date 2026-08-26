@@ -34,9 +34,10 @@
   1. {block-id} — …
   2. …
 
-**Planned H2 architecture**（内容驱动，见 Step 01 表）:
+**Planned H2 architecture**（**内容驱动**；可选节采用/省略及理由）:
 | H2 / 锚点 | 目标 | Answer block |
 |-----------|------|--------------|
+| **Optional sections** | TL;DR: ☐ 采用 ☐ 省略 — 理由：… · FAQ: ☐ 采用 ☐ 省略 — 理由：… · How To: ☐ 采用 ☐ 省略 |
 
 **Word count target**（叙事正文，见 word-counts.md）:
 **Planned internal links**（点击意图；无硬性条数，记录目标 slug + 段落 + 理由）:
@@ -58,7 +59,7 @@
 | Answer Blocks | 3–5 个；Outline 中每个有对应 H2 |
 | One-line thesis | 通过「SERP 同句测试」 |
 | SuccessMetric | 可量化（排名、CTR、内链点击、转化路径之一） |
-| Planned H2 | 主体节不可省略；可选节须注明省略理由 |
+| Planned H2 | 主体节不可省略；TL;DR/FAQ/How To 若省略须在 Brief 写理由 |
 
 ---
 

@@ -54,7 +54,7 @@
 | **B 平台战术型** | geo, reddit, x-formerly-twitter, email-marketing | 什么是：平台机制 0 · 战术节：相邻渠道 1 · 测量/合规：SEO/blog 1 · 案例：0–1 |
 | **C 项目运营型** | creator-program, referral-program, ugc-marketing, lifetime-deal | 什么是：与邻近策略区分 1 · 激励/招募：相关运营文 1–2 · 合规/定价：1 · 结论：0 |
 
-**Blog 增长模式文**（`coding-plan`, `rate-limit-reset`, `ugc-marketing` 等）：按 A 类执行；组合拳节 **零内链**，链分布在架构/案例/风险节。
+**Blog GTM / campaign 长文**（`coding-plan`, `rate-limit-reset`, `git-commit-attribution` 等）：内链按 M1–M10；**组合拳节零内链**为常见做法（非强制），链分布在架构/案例/风险节。**结构不套用固定骨架**，见 [`templates/marketing.md` §1.1](./templates/marketing.md#11-可选章节参考非骨架)。
 
 ---
 

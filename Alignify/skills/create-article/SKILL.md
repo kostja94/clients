@@ -11,8 +11,8 @@
 ## 核心原则
 
 1. **Flagship 固定** — 每篇须 Moat、Answer Blocks、完整 Research、BLUF、12 维 SelfCheck；发布线终审 **≥80**，目标 **S 级 ≥90**。  
-2. **内容决定架构** — 章节由题材决定；`anatomy.md` / `templates/` 为参考菜单。A 层硬底线不变。  
-3. **先中文后英文** — ZH/EN section 类型、顺序、锚点 id 对齐。  
+2. **内容决定架构** — 章节**纯粹由题材与读者任务决定**；`anatomy.md` / `templates/` 仅为**参考菜单**，非骨架清单。A 层硬底线不变。  
+3. **先中文后英文** — ZH/EN section 类型、顺序、锚点 id 对齐；**双语均为 flagship 质量**——EN 独立重写，非降格翻译。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
 6. **素材源可外置** — 个人知识库（尤其 `E:\个人知识库\营销campaign\`）为 campaign 类 **唯一 SSOT**；**禁止**再复制到 `knowledge/marketing/{slug}.md`；Brief 登记绝对路径即可。
@@ -135,7 +135,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ 中文英译腔 / 英文逐句翻译 ZH（须 `localization-quality.md` Pass）
 - ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV**）
 - ❌ 个人知识库已有 SSOT 仍创建 `knowledge/marketing/{slug}.md` 副本（E32）
-- ❌ `git commit attribution` 中文译成「Git 提交归因 / 提交归因」（须 **AI 提交署名**；E36 · `terminology-glossary.md` §六）
+- ❌ `git commit attribution` 中文译成「Git 提交归因 / 提交归因」（须 **AI 提交署名**；E39 · `terminology-glossary.md` §六）
 
 ---
 

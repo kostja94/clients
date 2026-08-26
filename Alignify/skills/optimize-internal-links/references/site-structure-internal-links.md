@@ -508,7 +508,7 @@ alignify.co
 | `multi-agent` | en | 5 | 6 | `blog/agent-sandbox`、`tools/agent-for-desktop`、`tools/hr-assistant`、`tools/llm`、`tools/workflow` |
 | `rate-limit-reset` | en | 5 | 10 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/pricing-strategy`、`marketing/x-formerly-twitter` ⚠重复 |
 | `web-fetch` | en | 6 | 2 | `blog/data-engineering-agent`、`tools/headless-browser`、`tools/llm`、`tools/search-indexing`、`tools/web-scraping`、`tools/web-search-api` |
-| `wrapped-marketing` | en | 4 | 0 | `blog/rate-limit-reset`、`marketing/creator-challenge-program`、`marketing/pricing-strategy`、`marketing/ugc-marketing` ⚠重复 |
+| `wrapped-marketing` | en | 4 | 0 | `blog/rate-limit-reset`、`marketing/creator-challenge-program`、`marketing/pricing-strategy`、`blog/ugc-marketing` ⚠重复 |
 | `agent-memory` | zh | 5 | 3 | `blog/agent-sandbox`、`blog/ai-training-data`、`tools/agent-skills`、`tools/knowledge-base`、`tools/openclaw-alternatives` |
 | `agent-sandbox` | zh | 5 | 10 | `blog/agent-to-agent`、`blog/inference-infrastructure`、`tools/agent-for-desktop`、`tools/authentication`、`tools/headless-browser` |
 | `agent-to-agent` | zh | 6 | 4 | `blog/agent-sandbox`、`blog/multi-agent`、`tools/agent-skills`、`tools/character-chat`、`tools/community`、`tools/workflow` |
@@ -534,7 +534,7 @@ alignify.co
 | `multi-agent` | zh | 8 | 6 | `blog/agent-sandbox`、`blog/agent-to-agent`、`tools/agent-for-desktop`、`tools/agent-skills`、`tools/hr-assistant`、`tools/llm`、`tools/openclaw-alternatives`、`tools/workflow` |
 | `rate-limit-reset` | zh | 5 | 10 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/pricing-strategy`、`marketing/x-formerly-twitter` ⚠重复 |
 | `web-fetch` | zh | 6 | 2 | `blog/data-engineering-agent`、`tools/headless-browser`、`tools/llm`、`tools/search-indexing`、`tools/web-scraping`、`tools/web-search-api` |
-| `wrapped-marketing` | zh | 4 | 0 | `blog/rate-limit-reset`、`marketing/creator-challenge-program`、`marketing/pricing-strategy`、`marketing/ugc-marketing` ⚠重复 |
+| `wrapped-marketing` | zh | 4 | 0 | `blog/rate-limit-reset`、`marketing/creator-challenge-program`、`marketing/pricing-strategy`、`blog/ugc-marketing` ⚠重复 |
 
 ### marketing
 
@@ -557,14 +557,14 @@ alignify.co
 | `referral-program` | en | 2 | 9 | `blog/coding-plan`、`tools/referral-program` ⚠重复 |
 | `ugc-marketing` | en | 7 | 8 | `blog/rate-limit-reset`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`marketing/lifetime-deal`、`seo/landing-page` |
 | `x-formerly-twitter` | en | 2 | 9 | `insights/indie-hackers`、`marketing/influencer` |
-| `affiliate` | zh | 8 | 23 | `marketing/competitive-analysis`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`marketing/pricing-strategy`、`marketing/referral-program`、`marketing/ugc-marketing`、`tools/affiliate-marketing` |
+| `affiliate` | zh | 8 | 23 | `marketing/competitive-analysis`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`marketing/pricing-strategy`、`marketing/referral-program`、`blog/ugc-marketing`、`tools/affiliate-marketing` |
 | `competitive-analysis` | zh | 6 | 16 | `blog/coding-plan`、`marketing/email-marketing`、`marketing/geo`、`marketing/influencer`、`marketing/keyword-research`、`marketing/pricing-strategy` ⚠重复 |
-| `creator-challenge-program` | zh | 3 | 6 | `marketing/affiliate`、`marketing/creator-program`、`marketing/ugc-marketing` |
-| `creator-program` | zh | 4 | 13 | `marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/influencer`、`marketing/ugc-marketing` |
+| `creator-challenge-program` | zh | 3 | 6 | `marketing/affiliate`、`marketing/creator-program`、`blog/ugc-marketing` |
+| `creator-program` | zh | 4 | 13 | `marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/influencer`、`blog/ugc-marketing` |
 | `email-marketing` | zh | 1 | 6 | `marketing/keyword-research` |
 | `geo` | zh | 9 | 27 | `blog/ai-traffic-and-citation-sources`、`blog/ai-visibility`、`marketing/affiliate`、`marketing/creator-program`、`marketing/influencer`、`marketing/keyword-research`、`seo/how-search-engine-works`、`seo/search-engine`、`tools/geo` |
 | `growth-case-studies` | zh | 3 | 2 | `marketing/affiliate`、`marketing/keyword-research`、`marketing/referral-program` |
-| `influencer` | zh | 4 | 10 | `marketing/affiliate`、`marketing/creator-program`、`marketing/ugc-marketing`、`tools/influencer-marketing` ⚠重复 |
+| `influencer` | zh | 4 | 10 | `marketing/affiliate`、`marketing/creator-program`、`blog/ugc-marketing`、`tools/influencer-marketing` ⚠重复 |
 | `keyword-research` | zh | 2 | 21 | `marketing/competitive-analysis`、`marketing/geo` |
 | `lifetime-deal` | zh | 7 | 9 | `blog/coding-plan`、`blog/rate-limit-reset`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/creator-program`、`marketing/pricing-strategy`、`marketing/referral-program` |
 | `localization-strategy` | zh | 2 | 4 | `marketing/keyword-research`、`seo/navigation-menu` |

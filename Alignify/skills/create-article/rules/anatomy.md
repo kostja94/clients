@@ -34,7 +34,7 @@
 
 | 序号 | 章节 | Markdown | 常见度 |
 |------|------|----------|--------|
-| 1 | 核心要点 / Key Takeaways | `## 核心要点 {#article-intro}` | 几乎总是 |
+| 1 | 核心要点 / Key Takeaways | `## 核心要点 {#article-intro}` | 常用；可省略（Brief 写理由） |
 | 2 | 什么是 XXX | md section | 几乎总是 |
 | 3 | 如何工作 / 概念 | md section | 常出现在 Tools |
 | 4 | 主体（Best 榜单 / 策略节 / 分析节） | md section + H3 | **主体节几乎总是** |
@@ -42,7 +42,7 @@
 | 6 | 应用场景 | md section + H3 | 视题材 |
 | 7 | 如何选择 | md section + H3 步骤 | 选型类常用；纯概念文可省 |
 | 8 | 结论 | `## 结论 {#conclusion}` | 几乎总是 |
-| 9 | 常见问题 | `## 常见问题 {#faq}` + `###` 7 问 | 几乎总是 |
+| 9 | 常见问题 | `## 常见问题 {#faq}` + `###` 7 问 | 常用；可省略（Brief 写理由） |
 | 10 | 参考文献 | `## 参考文献 {#references}` | 有外部引用时建议 |
 
 **A 层硬底线**（与是否采用上表每一行无关）：
@@ -184,7 +184,27 @@ heroImageAlt: "…"
 
 **禁止** Markdown 无序/有序列表（`- item` / `1. item`）——同样不解析，会与相邻段落或表格行**合并成一行**。
 
-**必须** 使用 `<!-- childrenHtml:start -->` + HTML：
+**禁止** Markdown fenced code block（`` ```lang `` … `` ``` ``）——`markdown-doc.ts` 不解析；fence 行与内容会变成**多个裸 `<p>`**，页面上出现字面量 `` ```text ``（**E36**）。
+
+**代码/流程展示**须用下列之一：
+
+| 场景 | 写法 |
+|------|------|
+| 单行流程（箭头链） | 并入 Markdown **长段落** prose |
+| 多行示例（commit、CLI） | `childrenHtml` + `<pre><code>…</code></pre>`（见下） |
+| 行内命令/字段 | Markdown 内 `` `command` ``（渲染为普通文本，组件层可加样式） |
+
+多行示例：
+
+```markdown
+<!-- childrenHtml:start -->
+<div class="content-html"><pre><code>fix: refactor auth middleware
+
+Co-Authored-By: Cursor &lt;cursoragent@cursor.com&gt;</code></pre></div>
+<!-- childrenHtml:end -->
+```
+
+**必须** 使用 `<!-- childrenHtml:start -->` + HTML（列表/表格/卡片网格）：
 
 ```markdown
 <!-- childrenHtml:start -->
@@ -192,31 +212,39 @@ heroImageAlt: "…"
 <!-- childrenHtml:end -->
 ```
 
-列表示例：
+列表示例（**禁止** Tailwind utility class）：
 
 ```markdown
 <!-- childrenHtml:start -->
-<div class="content-html"><ul class="list-disc pl-6 space-y-3 text-base md:text-lg leading-relaxed"><li>…</li></ul></div>
+<div class="content-html"><ul><li>…</li></ul></div>
 <!-- childrenHtml:end -->
 ```
 
-或独立 `<!-- block:section -->` 内单行 `<div class="content-html">…</div>`（见 `web-fetch` 对比表、`lifetime-deal` 清单）。
+产品卡片网格：
 
-### 禁止在 childrenHtml 内写 H3/H4/正文段落（E35）
+```markdown
+<!-- childrenHtml:start -->
+<div class="content-html"><div class="article-card-grid article-card-grid--3"><div class="article-card article-card--compact"><div class="article-card__media"><img src="…" alt="…" loading="lazy"/></div><div class="article-card__body"><div class="article-card__title">名称</div><p class="article-card__desc">描述</p><a class="article-card__link" href="…">链接 →</a></div></div></div></div>
+<!-- childrenHtml:end -->
+```
 
-**禁止** 在 `childrenHtml` 内使用带 Tailwind 的 `<h3 class="text-lg font-semibold…">`、`<h4 …>`、`<p class="text-base md:text-lg leading-relaxed">` 充当章节标题或正文——这些是 JSON→md 迁移遗留，与 Section 组件双轨。见 [`common-errors.md`](./common-errors.md) **E35**。
+### 禁止 inline Tailwind（E35 · 2026-08 全站统一）
+
+**禁止** 在 `heroHtml` / `childrenHtml` / `html-block` / section 内联 HTML 中写 Tailwind utility（`text-base md:text-lg`、`grid grid-cols-2`、`bg-card`、`list-disc pl-6` 等）。
 
 | 元素 | 正确写法 |
 |------|----------|
-| H2 / H3 / H4 | Markdown `##` / `###` / `####` + `{#kebab-id}`（见 §二） |
-| 正文段落 | Markdown 段落（`**术语**——说明` 或普通句） |
-| 无序/有序列表 | `childrenHtml` + `<ul>` / `<ol class="list-disc…">` |
-| 表格 | `childrenHtml` + `<div class="content-html"><table>…` 或 section 内单行 table div |
-| 图片网格 / hero 卡片 | `childrenHtml` 或 frontmatter `heroHtml`（hero 内 h3 除外） |
+| H2 / H3 / H4 / 正文段落 | Markdown `##` / `###` / 段落；insights `html-block` 内可用裸 `<h2>`/`<p>`（样式由 `index.css` `.content-html` 统一） |
+| 无序/有序列表 | `childrenHtml` + `<div class="content-html"><ul><li>…</li></ul></div>` |
+| 表格 | `childrenHtml` + `<div class="content-html"><table>…</table></div>` 或 `<div class="article-scroll-wrap"><table>…</table></div>` |
+| 代码块 | `<pre><code>…</code></pre>` 或 `.article-code-block` |
+| 行内 code | `<code class="article-inline-code">…</code>` |
+| 图片网格 / 案例卡 | `.article-card-grid` / `.article-figure-grid` / `.article-feature-grid` / `.article-image-grid` + 子元素 `.article-card__*` / `.article-figure__*` / `.article-image-cell` |
+| Hero 策略卡片 | frontmatter `heroHtml`（内层 markup；见 [`marketing.md` §2.4](./templates/marketing.md#24-hero-区域)） |
 
-**例外**：`heroHtml` 工具推荐卡片内的 `<h3 class="text-lg font-semibold text-foreground…">` 保留（React 卡片 UI，非正文章节）。
+**允许的 class 前缀**：`content-html`、`article-*`（完整列表见部署仓 `src/index.css` §content-html 与 `scripts/ref/inventory-content-classes.py`）。
 
-批量修复遗留页：`python scripts/ref/migrate-childrenhtml-headings.py`
+批量迁移遗留页：`python scripts/ref/migrate-content-html.py`；Hero 专项：`python scripts/ref/migrate-hero-html.py`；语义 grid 对齐：`python scripts/ref/fix-semantic-grids.py`；审计：`python scripts/ref/inventory-content-classes.py` + `python scripts/ref/audit-semantic-html.py`（均应输出 clean）。
 
 ---
 

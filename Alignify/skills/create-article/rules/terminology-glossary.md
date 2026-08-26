@@ -182,11 +182,11 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态。
 
 **首段模板（可改写）**：「**AI 提交署名**指编码 Agent 在 `git commit` 时于 message 末尾追加 Co-Authored-By、Made-with 等**提交尾注**——这和**广告归因**（UTM、SKAN）不是同一套机制。」
 
-### 6.4 增长模式 Cluster 标题对照
+### 6.4 已发布范例标题（对照用，非结构模板）
 
-| slug | 中文 H1 主称 | 勿用 |
+| slug | 中文 H1 主称 | 备注 |
 |------|-------------|------|
-| `rate-limit-reset` | 用量限额重置 | rate limit reset（裸用） |
-| `coding-plan` | Coding Plan 开发者订阅 | 编程套餐（泛称） |
-| `git-commit-attribution` | **AI 提交署名** | Git 提交归因 |
-| `embedded-virality`（规划） | 嵌入式病毒传播 / Powered-by 去标 | 病毒营销（泛称） |
+| `rate-limit-reset` | 用量限额重置 | 无 TL;DR/FAQ 范例之一 |
+| `coding-plan` | Coding Plan 开发者订阅 | 同上 |
+| `git-commit-attribution` | **AI 提交署名** | 勿用「Git 提交归因」 |
+| `embedded-virality`（规划） | 嵌入式病毒传播 | 未上线 |

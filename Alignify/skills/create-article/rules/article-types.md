@@ -34,15 +34,16 @@
 
 ## Marketing 型
 
-**常见顺序**（可合并/调整）：
+**常见顺序**（**参考 only**；节数与是否含 TL;DR/FAQ/How To **由内容决定**，见 [`templates/marketing.md`](./templates/marketing.md) §1.1）：
 
 ```
-核心要点(md) → 概念 section → 策略 sections×N → [场景] → 结论 → FAQ(7, md) → [References(md)]
+[核心要点] → 概念 section → 策略/分析 sections×N → [场景] → [作者判断] → 结论 → [FAQ] → [References]
 ```
 
 - 可选 frontmatter `heroHtml`
 - Meta：策略型规则组
 - 内链专规：[`marketing-internal-links.md`](./marketing-internal-links.md)
+- **ZH/EN**：同等 flagship 深度；EN 独立重写
 
 ---
 

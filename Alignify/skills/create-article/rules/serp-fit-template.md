@@ -39,7 +39,7 @@
 - [ ] 比 SERP 前 5 多至少 **一个** Alignify 独有角度（Moat）
 - [ ] Meta title 匹配 search intent（Tools：含最佳/Best）
 - [ ] TL;DR intro 让读者 10 秒内确认「来对地方了」
-- [ ] FAQ 7 问覆盖 PAA / 正文未展开的决策点
+- [ ] SERP Fit：**若**采用 FAQ，7 问覆盖 PAA / 正文未展开的决策点
 - [ ] Snippet-ready 定义与 TL;DR intro 信息一致、非重复堆砌
 
 ---
