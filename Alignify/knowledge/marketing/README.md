@@ -15,7 +15,14 @@
 
 **正式文章创作**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
-**外部 SSOT**：若素材已在个人知识库（如 `E:\个人知识库\…`），可直接作为 Step 01/02 输入，**不必**复制到本目录；Brief 登记绝对路径即可。本目录条目仅在有 Alignify 侧知识块或已上线 `/marketing/[slug]` 时维护。
+**外部 SSOT（个人知识库 · 唯一维护处）**：营销 campaign 类素材**只在** `E:\个人知识库\营销campaign\` 维护，**禁止**在 `knowledge/marketing/` 再建同名 `{slug}.md` 副本。Brief 与 Step 02 登记绝对路径即可。
+
+| slug（Alignify 文章） | 外部 SSOT 路径 |
+|------------------------|----------------|
+| `rate-limit-reset` | `E:\个人知识库\营销campaign\增长模式\Agent限额与Reset促销.md` |
+| `coding-plan` | `E:\个人知识库\营销campaign\增长模式\Coding-Plan-开发者订阅.md` |
+
+**Alignify 本目录**：仅保留**无外部 SSOT**、或已与 `/marketing/[slug]` 长期对齐的 legacy 知识块（下表 13 篇）。新建 campaign 主题 → 个人知识库 + `_briefs/{slug}.md` 登记路径，**不**复制正文到本目录。
 
 ---
 

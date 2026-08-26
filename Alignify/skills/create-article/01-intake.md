@@ -23,9 +23,11 @@
 | 类型 | 路径示例 | Brief 登记 |
 |------|----------|------------|
 | Alignify 知识块 | `knowledge/marketing/{slug}.md` | `SSOT: knowledge/…` |
-| **外部个人知识库** | `E:\个人知识库\…\{主题}.md` | `SSOT: {绝对路径}` |
+| **外部个人知识库** | `E:\个人知识库\营销campaign\…`（campaign 类**唯一 SSOT**） | `SSOT: {绝对路径}` |
 
-外部 SSOT 仍须：主题完整、可检索来源、与 slug 意图对齐。**禁止**为「对齐目录」而整份复制到 `knowledge/`。
+外部 SSOT 仍须：主题完整、可检索来源、与 slug 意图对齐。
+
+**Hard rule（campaign / 营销专题）**：素材已在 `E:\个人知识库\营销campaign\` 维护时，**禁止**在 `knowledge/marketing/{slug}.md` 再建副本或同步粘贴；仅允许 `knowledge/marketing/_briefs/{slug}.md` 登记路径与 Moat（不复制 SSOT 正文）。
 
 ---
 

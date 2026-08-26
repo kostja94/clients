@@ -60,6 +60,7 @@
 | E29 | 中文英译腔 / 箭头链正文 | Step 06：`localization-quality.md` + `marketing-glossary.json` |
 | E30 | 英文翻译腔 / telegraphic | Step 09b：禁止逐句译 ZH；改完整句 |
 | E31 | Marketing/Blog 缺 Author POV | Brief 必填；正文第一人称判断须显式出现 |
+| E32 | 个人知识库 SSOT 重复到 knowledge/marketing | campaign 类只在 `E:\个人知识库\营销campaign\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |

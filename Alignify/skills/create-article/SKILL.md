@@ -15,7 +15,7 @@
 3. **先中文后英文** — ZH/EN section 类型、顺序、锚点 id 对齐。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
-6. **素材源可外置** — 个人知识库等外部 SSOT **可直接引用**，**不必**复制/同步到 `knowledge/{dir}/{slug}.md`；Brief 与 Research Log 须记录**绝对路径**。
+6. **素材源可外置** — 个人知识库（尤其 `E:\个人知识库\营销campaign\`）为 campaign 类 **唯一 SSOT**；**禁止**再复制到 `knowledge/marketing/{slug}.md`；Brief 登记绝对路径即可。
 
 ---
 
@@ -131,6 +131,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ References 收录与本文类似的第三方策略文；策略/Blog 文仅 **事件相关**引用（`sections/references.md` §3.2）
 - ❌ 中文英译腔 / 英文逐句翻译 ZH（须 `localization-quality.md` Pass）
 - ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV**）
+- ❌ 个人知识库已有 SSOT 仍创建 `knowledge/marketing/{slug}.md` 副本（E32）
 
 ---
 
