@@ -1,6 +1,7 @@
 # Article Brief 模板（Flagship 必填）
 
 > **锁定时机**：Step 02 Gate 0R Pass 后定稿；Step 05 动笔前不得偏离 Brief 中的 One-line thesis 与 Moat。  
+> **用户确认**：Brief 中与用户决策相关的字段，须来自用户明示或聊天确认；角度、禁忌、结构等**不清楚时先问**（见 [`intake-questions.md`](./intake-questions.md)）。
 > **存放**：创作过程写入 `knowledge/{dir}/_briefs/{slug}.md` 或对话输出（不发布）。**外部 SSOT**（如个人知识库）时在 Brief 顶部写 `**SSOT**: {绝对路径}`，**不必**迁入 `knowledge/`。
 
 ---
@@ -14,6 +15,9 @@
 **ArticleType**: {best-ranking | seo-guide | …}
 **InvestmentScore**: {1.0–5.0} — {五因子一行摘要}
 **Gate A**: KEEP | MERGE → {target}
+
+**User confirmed**（可选摘要，YYYY-MM-DD）:
+- …
 
 **Primary keyword**（ZH / EN）:
 **Search intent**: Definition | Comparison | Tutorial | Alternative | Commercial | …
@@ -46,6 +50,13 @@
 
 **Excellence type**（择一标注）: Depth | Objectivity | Freshness | Workflow | Proof
 **Post-publish metric**（T+7 / T+30 / T+90）:
+
+**Final CTA**（Step 08 写入 `cta-config.json` · 见 [`final-cta.md`](./final-cta.md)）:
+- ZH title:
+- ZH description:
+- EN title:（Step 09 定稿；Step 02 可留 TBD）
+- EN description:
+- cta 按钮: zh「开始合作」/ en「Work with us」（或 `final-cta.md` 备选表）
 ```
 
 ---
@@ -60,7 +71,8 @@
 | One-line thesis | 通过「SERP 同句测试」 |
 | SuccessMetric | 可量化（排名、CTR、内链点击、转化路径之一） |
 | Planned H2 | 主体节不可省略；TL;DR/FAQ/How To 若省略须在 Brief 写理由 |
+| Final CTA | ZH title + description **Step 02 必填**；EN Step 09 定稿；Step 08 写入 deploy 仓 |
 
 ---
 
-*article-brief · v1.0 · 2026-08-26*
+*article-brief · v1.1 · 2026-08-27*

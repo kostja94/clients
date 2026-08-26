@@ -1,6 +1,6 @@
 # Create Article — Alignify 统一文章创建 Skill
 
-> **版本**：v2.0 · 2026-08-26  
+> **版本**：v2.1 · 2026-08-27  
 > **质量档位**：**每篇均为 flagship** — 无 lite/standard 降级；Research、Moat、BLUF、SelfCheck、终审全链路必过。  
 > **部署仓**：`E:\自有部署项目\alignify production`  
 > **上下文仓**：`E:\clients\Alignify`  
@@ -15,7 +15,8 @@
 3. **先中文后英文** — ZH/EN section 类型、顺序、锚点 id 对齐；**双语均为 flagship 质量**——EN 独立重写，非降格翻译。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
-6. **素材源可外置** — 个人知识库（尤其 `E:\个人知识库\营销campaign\`）为 campaign 类 **唯一 SSOT**；**禁止**再复制到 `knowledge/marketing/{slug}.md`；Brief 登记绝对路径即可。
+6. **素材源可外置** — 个人知识库（尤其 `E:\个人知识库\营销campaign\`）为 campaign 类 **唯一 SSOT**；**禁止**再复制到 `knowledge/marketing/{slug}.md`；Brief 登记绝对路径即可。  
+7. **不清楚就问用户** — 对主叙事、中文主称、slug、结构、是否写 Author POV 等**任何不确定项**，在聊天中问用户后再继续；禁止静默假设。见 [`rules/intake-questions.md`](./rules/intake-questions.md)。
 
 ---
 
@@ -46,7 +47,7 @@
 ## 流程总览（Flagship）
 
 ```
-01 Intake — Gate A（KEEP/MERGE/STOP）+ 大纲草案
+01 Intake — Gate A（KEEP/MERGE/STOP）+ 大纲草案（有不确定项 → 先聊天问用户）
     ↓ PASS
 02 Research — Gate 0R（全类型必做）+ Article Brief 定稿
     ↓ PASS
@@ -55,8 +56,8 @@
 05 中文 md
 06 中文润色 — BLUF + Extractability
 07 内链 + Internal Link Plan
-08 Meta + Config
-09 英文 md — 双语 parity
+08 Meta + Config + Final CTA（`cta-config.json` · [`rules/final-cta.md`](./rules/final-cta.md)）
+09 英文 md — 双语 parity（EN CTA 定稿）
 10 SelfCheck — Gate C → audit-ready + 5.5（同批≥2）
     ↓
 audit-article — Final ≥80 → publish-ready
@@ -88,7 +89,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 05 | [`05-zh-content.md`](./05-zh-content.md) | ZH md |
 | 06 | [`06-localize-zh.md`](./06-localize-zh.md) | 润色 + BLUF |
 | 07 | [`07-internal-links.md`](./07-internal-links.md) | 内链 + Link Plan |
-| 08 | [`08-meta-config.md`](./08-meta-config.md) | Meta + config |
+| 08 | [`08-meta-config.md`](./08-meta-config.md) | Meta + config + **Final CTA** |
 | 09 | [`09-en-content.md`](./09-en-content.md) | EN md |
 | 10 | [`10-quality-gates.md`](./10-quality-gates.md) | Gate C → audit-ready |
 | — | [`../audit-article/SKILL.md`](../audit-article/SKILL.md) | publish-ready |
@@ -103,6 +104,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 |------|------|
 | Gate 语义 | [`rules/gates.md`](./rules/gates.md) |
 | Gate 回溯 | [`rules/gate-rollback.md`](./rules/gate-rollback.md) |
+| Intake 问答 | [`rules/intake-questions.md`](./rules/intake-questions.md) |
 | Article Brief | [`rules/article-brief.md`](./rules/article-brief.md) |
 | Research 三角 | [`rules/research-triangle.md`](./rules/research-triangle.md) |
 | SelfCheck 12 维 | [`rules/selfcheck.md`](./rules/selfcheck.md) |
@@ -111,6 +113,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | S 级清单 | [`rules/perfect-article-checklist.md`](./rules/perfect-article-checklist.md) |
 | 结构原则 | [`rules/anatomy.md`](./rules/anatomy.md) |
 | 质量检查 | [`rules/quality-checklist.md`](./rules/quality-checklist.md) |
+| Final CTA | [`rules/final-cta.md`](./rules/final-cta.md) |
 | 内链 | [`rules/internal-links.md`](./rules/internal-links.md) · [`rules/marketing-internal-links.md`](./rules/marketing-internal-links.md) |
 
 完整索引：[`rules/README.md`](./rules/README.md)
@@ -127,6 +130,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 
 - ❌ Gate 未 Pass 交付 · ❌ 跳过 Step 02 Research · ❌ 无 Moat 动笔 · ❌ FAQ 复制正文  
 - ❌ blog md 用 GFM 表格或 `-`/`1.` 列表（须 `childrenHtml` HTML；见 `anatomy.md` §四·一 · E33/E34）
+- ❌ 表前短桥接 / 孤立标签 / 免责声明独段（E40–E42；须跑 `audit-marketing-md-render.py`）
 - ❌ 自审后直接发布（须 audit-article）· ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章
 - ❌ **新 slug** publishDate 与全站已有 slug 重复（须 `next-publish-date.mjs --check`）
@@ -136,7 +140,11 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV**）
 - ❌ 个人知识库已有 SSOT 仍创建 `knowledge/marketing/{slug}.md` 副本（E32）
 - ❌ `git commit attribution` 中文译成「Git 提交归因 / 提交归因」（须 **AI 提交署名**；E39 · `terminology-glossary.md` §六）
+- ❌ 未在聊天中确认用户已明示的禁忌或主叙事就动笔（见 [`intake-questions.md`](./rules/intake-questions.md)）
+- ❌ 把 SSOT 文件名默认当文章主线（角度不清楚时必须问用户）
+- ❌ 新 slug 未写 `cta-config.json` 的 `slugs.{slug}`（页底落入 fallback 通用文案；E43）
+- ❌ Final CTA 复制 Meta description 或结论整段粘贴（须 punchline + 行动理由；见 `final-cta.md`）
 
 ---
 
-*create-article · v2.0 · 2026-08-26 · complements audit-article*
+*create-article · v2.2 · 2026-08-27 · complements audit-article*

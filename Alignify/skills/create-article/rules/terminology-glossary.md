@@ -3,7 +3,7 @@
 本对照表用于统一 Alignify 全站中文页面的英文术语翻译。**创作或优化中文内容时，遇到这些英文术语应使用统一的推荐译法。**
 
 > **配套 JSON**：[marketing-glossary.json](./marketing-glossary.json) — Marketing / Blog 增长文术语；全站通用见下文各节。
-> **最后更新**：2026-08-27，v1.2.0
+> **最后更新**：2026-08-27，v1.3.0
 
 ## 使用规则
 
@@ -190,3 +190,29 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态。
 | `coding-plan` | Coding Plan 开发者订阅 | 同上 |
 | `git-commit-attribution` | **AI 提交署名** | 勿用「Git 提交归因」 |
 | `embedded-virality` | **Powered-by Badge 与付费去标** | H1/正文主称；框架名 embedded virality 正文解释一次 |
+| `watermark-growth` | **免费导出带 logo：AI 产品用水印做增长** | 主线=增长；「付费去水印」仅作变现节，不作 H1 |
+
+---
+
+## 七、Export 水印增长 · 付费去标（2026-08 起）
+
+> **题材**：`watermark-growth` 及同类 GTM 文。完整映射见 [marketing-glossary.json](./marketing-glossary.json) `localize_required`。
+
+### 7.1 中文主称与叙事优先级
+
+| 英文 | 推荐译法 | 叙事角色 |
+|------|----------|----------|
+| watermark growth / watermark-as-payment | **水印增长** / **带标换使用权** | **文章主线** |
+| export watermark / visible watermark | **导出物水印** / **可见水印** | 战术层 |
+| pay to remove watermark | **付费去水印** | **变现轴**（次要节，非 H1） |
+| pay to remove branding | **付费去标** | `embedded-virality` 专用；与 export 水印勿混 H1 |
+
+### 7.2 与 embedded-virality 分流（「什么是」节必写）
+
+| 维度 | Powered-by Badge | Export 水印增长 |
+|------|------------------|-----------------|
+| 载体 | 页脚 / widget / 邮件 footer | MP4 / PNG / WAV 交付物 |
+| 增长逻辑 | 陌生人访问 live URL | 带标内容被投放、转发、交付给甲方 |
+| 变现 | 付费去标 | 付费去水印（同族 freemium 交换） |
+
+**首段模板（可改写）**：「**水印增长**指 AI 媒体 SaaS 让免费导出默认带 logo——用户用**带标交付物**换使用权，品牌在社媒与广告里被动曝光；**付费去水印**卖的是可投放、可交付，不是本文唯一主题。」

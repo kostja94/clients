@@ -22,6 +22,7 @@
 | 主题 | 规则 |
 |------|------|
 | **新文路由** | 任意类型 → `content/blog/` + `/blog/{slug}`（中文 `/zh/blog/{slug}`） |
+| **Intake** | 对文章不清楚时在**聊天中问用户** — [`intake-questions.md`](./create-article/rules/intake-questions.md) |
 | **存量** | `/marketing/`、`/tools/`、`/seo/`、`/insights/` **不重迁**，仅维护 |
 | **内链** | 点击意图优先；**无硬性条数**；同 URL 全页 1 次 |
 | **结论内链** | 全类型允许 **0–2** 条（非清单式）— [`conclusion.md`](./create-article/rules/conclusion.md) |
@@ -33,6 +34,7 @@
 | 主题 | SSOT |
 |------|------|
 | 结构原则 | [`anatomy.md`](./create-article/rules/anatomy.md) |
+| Intake 问答 | [`intake-questions.md`](./create-article/rules/intake-questions.md) |
 | 类型 / 路径 | [`article-types.md`](./create-article/rules/article-types.md) |
 | 内链（全站） | [`internal-links.md`](./create-article/rules/internal-links.md) Part 1–2 |
 | 内链（Marketing） | [`marketing-internal-links.md`](./create-article/rules/marketing-internal-links.md) |

@@ -1,6 +1,7 @@
 # Step 1 — Intake & Gate A
 
 > **产出**：Gate A 判定 + 大纲草案 + Investment Score  
+> **不确定时**：见 [`rules/intake-questions.md`](./rules/intake-questions.md) — 在聊天中问用户，勿静默假设  
 > **下一步必过**：Step 02 Research（**全类型**，含 best-ranking）
 
 ---
@@ -37,7 +38,7 @@
 - [ ] slug 未在 `*-pages-config.ts` 注册
 - [ ] 部署仓无 cannibalization
 - [ ] Investment Score **≥3.0**（<3.0 → MERGE 或 STOP，**无急稿例外**）
-- [ ] 主关键词 + 搜索意图已明确（未给则必问）
+- [ ] 主关键词 + 搜索意图已明确（不清楚则在聊天中问用户）
 - [ ] 与已有文章关系已确认（Hub / Spoke / 新 cluster）
 - [ ] 竞品 SERP Top 3 URL 已收集（供 Step 02）
 

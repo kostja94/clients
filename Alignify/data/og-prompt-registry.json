@@ -13006,6 +13006,59 @@
       ],
       "status": "approved",
       "notes": "Manual brief 2026-08-30 — embedded virality AI builders"
+    },
+    {
+      "section": "blog",
+      "slug": "watermark-growth",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "EXPORT WATERMARK",
+      "headline_line2": "GROWTH",
+      "subtitle": "Free Branded Exports",
+      "tagline": "AI Media · Pay to Remove",
+      "composition": "Visual-only editorial collage for export watermark growth guide. HERO: MP4 preview with corner burned-in logo watermark + social thumbnail with Sparkle. Secondary: audio waveform export with dubbing mark. Tertiary: visible vs invisible layer split (corner logo vs faint provenance ghost). Title top-left. Paper collage zine. NO real vendor logos. NO footer badge UI.",
+      "accent": "klein-blue",
+      "visual_anchors": [
+        "HERO (~55% canvas): Video export frame mockup with tri-color corner watermark logo on MP4 preview; adjacent PNG social post thumbnail with small Sparkle mark",
+        "Secondary: Waveform strip with subtle dubbing watermark badge on audio export",
+        "Tertiary: Split layer diagram — visible corner logo (growth) vs faint SynthID/C2PA layer ghost (compliance, not removable)"
+      ],
+      "anti_patterns": [
+        "DeWatermark / watermark remover SaaS UI",
+        "Webpage footer Powered-by badge (embedded-virality article)",
+        "Generic referral or viral loop infographic",
+        "Real Runway/HeyGen/Midjourney logos — generic mockups only",
+        "SEO SERP imagery"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-27 — export watermark growth"
+    },
+    {
+      "section": "blog",
+      "slug": "watermark-growth",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "免费导出带 logo",
+      "headline_line2": "水印做增长",
+      "subtitle": "AI 媒体 export 传播",
+      "composition": "Same layout as EN: video frame corner watermark HERO + social thumbnail + audio waveform mark + visible/invisible layer split. Title top-left Chinese headline. NO vendor logos. NO webpage footer badge.",
+      "accent": "klein-blue",
+      "visual_anchors": [
+        "HERO (~55% canvas): Video export frame mockup with tri-color corner watermark logo on MP4 preview; adjacent PNG social post thumbnail with small Sparkle mark",
+        "Secondary: Waveform strip with subtle dubbing watermark badge on audio export",
+        "Tertiary: Split layer diagram — visible corner logo (growth) vs faint SynthID/C2PA layer ghost (compliance, not removable)"
+      ],
+      "anti_patterns": [
+        "DeWatermark / watermark remover SaaS UI",
+        "Webpage footer Powered-by badge (embedded-virality article)",
+        "Generic referral or viral loop infographic",
+        "Real Runway/HeyGen/Midjourney logos — generic mockups only",
+        "SEO SERP imagery"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-27 — export watermark growth"
     }
   ]
 }

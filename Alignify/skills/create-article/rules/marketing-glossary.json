@@ -42,6 +42,10 @@
     "commit vandalism": "未经同意的提交标记",
     "attribution pollution": "署名污染",
     "pay to remove branding": "付费去标",
+    "watermark-as-payment": "带标换使用权",
+    "watermark growth": "水印增长",
+    "export watermark": "导出物水印",
+    "pay to remove watermark": "付费去水印",
     "embedded virality": "嵌入式病毒传播",
     "workflow-native branding": "工作流级品牌植入",
     "commit-level brand imprint": "提交级品牌印记"
@@ -49,7 +53,9 @@
   "disambiguation_zh": {
     "AI 提交署名": "Git commit 末尾 Co-Authored-By / Made-with 等 trailer；≠ 广告归因 / UTM / SKAN",
     "提交署名": "作者/协作者 credit；≠ 营销 campaign 归因",
-    "广告归因": "Paid Ads / UTM / 转化追踪；≠ AI 提交署名"
+    "广告归因": "Paid Ads / UTM / 转化追踪；≠ AI 提交署名",
+    "水印增长": "export 带 logo 换曝光；≠ 仅写付费去水印定价",
+    "付费去标": "embedded-virality / 页脚 badge；≠ export 付费去水印（除非对照节）"
   },
   "forbidden_in_zh": [
     "该 X 用于",

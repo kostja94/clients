@@ -23,6 +23,7 @@
 | `coding-plan` | `E:\个人知识库\营销campaign\增长模式\Coding-Plan-开发者订阅.md` |
 | `git-commit-attribution` | `E:\个人知识库\营销campaign\增长模式\Git-Commit-Attribution-提交归因.md`（中文主称：**AI 提交署名**） |
 | `embedded-virality` | `E:\个人知识库\营销campaign\增长模式\Embedded-Virality-嵌入式病毒传播.md`（中文主称：**Powered-by Badge 与付费去标**） |
+| `watermark-growth` | `E:\个人知识库\营销campaign\增长模式\Pay-to-Remove-Watermark-付费去水印.md`（中文主称：**免费导出带 logo：AI 产品用水印做增长**；SSOT 文件名偏变现，文章主线=增长） |
 | `ugc-marketing` | `E:\个人知识库\营销campaign\增长模式\矩阵UGC-创作者网络.md` |
 | `wrapped-marketing` | `E:\个人知识库\营销campaign\年度节奏\Wrapped-参考.md` |
 

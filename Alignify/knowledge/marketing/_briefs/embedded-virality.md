@@ -23,7 +23,9 @@
 
 **Planned internal links（仅已上线）**: git-commit-attribution, pricing-strategy, lifetime-deal, how-to-add-payments-to-vibe-coded-app, tools/social-cards-generator
 
-**发布后存量回链**: `git-commit-attribution` §gtm-combo → href `/blog/embedded-virality`
+**姊妹篇（规划）**: `watermark-growth` — export 像素/帧/音频带 logo 增长；本文=页脚/widget badge
+
+**发布后存量回链**: `git-commit-attribution` §gtm-combo → href `/blog/embedded-virality`；`watermark-growth` 上线后互链 §pay-to-remove ↔ §vs-embedded-virality
 
 **publishDate**: 2026-08-30  
 **OG**: `public/blog/embedded-virality/embedded-virality-og-{en,zh}.webp` — approved 2026-08-30  
