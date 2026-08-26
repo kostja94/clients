@@ -3,7 +3,7 @@
   "slug": "ai",
   "analyzed_at": "2026-08-25T04:14:00+00:00",
   "model": "cursor-manual-v1",
-  "page_topic_one_liner": "AI glossary reference — 140+ terms covering ML, LLMs, vision, generative AI, and AI tools",
+  "page_topic_one_liner": "AI glossary reference — 155+ terms covering ML, LLMs, vision, generative AI, and AI tools",
   "differentiator_vs_generic": "This is a single-domain AI term index / dictionary page, NOT the three-pillar glossary hub, NOT a single term definition, NOT SEO strategy or LLM chat. Hero must be an A–Z glossary index dense with AI-specific term rows and chip cloud — NOT generic book icon or chat panel.",
   "visual_anchors": [
     "HERO (~55% canvas): AI glossary index mockup — vertical A–Z alphabet sidebar (letter pills), main column with 6–8 stacked term rows (blurred AI term titles like LLM, transformer, embedding + one-line definition blur), one row accent-highlighted",
@@ -22,14 +22,14 @@
   "locales": {
     "en": {
       "headline": "AI GLOSSARY",
-      "headline_line2": "140+ TERMS",
+      "headline_line2": "155+ TERMS",
       "subtitle": "Key Terms & Definitions",
       "tagline": "ML · LLMs · Generative AI · Vision",
       "composition": "Visual-only editorial collage for AI glossary reference page (140+ terms). HERO: A–Z glossary index mockup occupying right two-thirds — left alphabet letter rail (A–Z pills), right column stacked AI term entry rows with blurred titles and definition snippets, one row with accent klein-blue left border. Secondary: open dictionary spread vignette with highlighted term block. Tertiary: floating AI term chip cloud (blurred chips for LLM, transformer, embedding, diffusion, RAG, fine-tuning). Title block top-left. Paper collage torn edges, halftone. NO three-pillar hub, NO single-term hero, NO LLM chat UI, NO knowledge-graph nodes, NO real brand/model names as text, NO extra UI labels."
     },
     "zh": {
       "headline": "AI词汇表",
-      "headline_line2": "140+术语",
+      "headline_line2": "155+术语",
       "subtitle": "核心术语与定义",
       "composition": "Same layout as EN: AI A–Z glossary index HERO + dictionary spread + AI term chip cloud. Title top-left, NO three-pillar hub, NO LLM chat, NO extra Chinese UI labels, NO blank term rows."
     }

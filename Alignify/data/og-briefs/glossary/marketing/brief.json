@@ -3,7 +3,7 @@
   "slug": "marketing",
   "analyzed_at": "2026-08-25T04:14:00+00:00",
   "model": "cursor-manual-v1",
-  "page_topic_one_liner": "Marketing glossary reference — 160+ terms covering growth, conversion, channels, B2B, and content marketing",
+  "page_topic_one_liner": "Marketing glossary reference — 170+ terms covering growth, conversion, channels, B2B, and content marketing",
   "differentiator_vs_generic": "This is a single-domain marketing term index / dictionary page, NOT the three-pillar glossary hub, NOT a growth-strategy guide or affiliate dashboard, NOT a single term definition. Hero must be an A–Z glossary index dense with marketing-specific term rows and chip cloud — NOT generic funnel chart alone or empty cards.",
   "visual_anchors": [
     "HERO (~55% canvas): Marketing glossary index mockup — vertical A–Z alphabet sidebar (letter pills), main column with 6–8 stacked term rows (blurred marketing term titles like CAC, funnel, attribution + one-line definition blur), one row accent-highlighted",
@@ -22,14 +22,14 @@
   "locales": {
     "en": {
       "headline": "MARKETING GLOSSARY",
-      "headline_line2": "160+ TERMS",
+      "headline_line2": "170+ TERMS",
       "subtitle": "Terms & Definitions",
       "tagline": "Growth · Conversion · Channels · B2B",
       "composition": "Visual-only editorial collage for Marketing glossary reference page (160+ terms). HERO: A–Z glossary index mockup occupying right two-thirds — left alphabet letter rail (A–Z pills), right column stacked marketing term entry rows with blurred titles and definition snippets, one row with accent titian-red left border. Secondary: open dictionary spread vignette with highlighted term block. Tertiary: floating marketing term chip cloud (blurred chips for CAC, LTV, MQL, funnel, attribution, ROAS). Title block top-left. Paper collage torn edges, halftone. NO three-pillar hub, NO affiliate dashboard, NO funnel chart as sole hero, NO single-term hero, NO real brand logos, NO extra UI labels."
     },
     "zh": {
       "headline": "营销词汇表",
-      "headline_line2": "160+术语",
+      "headline_line2": "170+术语",
       "subtitle": "术语与定义",
       "composition": "Same layout as EN: Marketing A–Z glossary index HERO + dictionary spread + marketing term chip cloud. Title top-left, NO three-pillar hub, NO affiliate dashboard, NO extra Chinese UI labels, NO blank term rows."
     }

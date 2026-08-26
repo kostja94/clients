@@ -3,7 +3,7 @@
   "slug": "seo",
   "analyzed_at": "2026-08-25T04:14:00+00:00",
   "model": "cursor-manual-v1",
-  "page_topic_one_liner": "SEO glossary reference — 240+ terms covering keyword research, technical SEO, link building, and on-page optimization",
+  "page_topic_one_liner": "SEO glossary reference — 290+ terms covering keyword research, technical SEO, link building, and on-page optimization",
   "differentiator_vs_generic": "This is a single-domain SEO term index / dictionary page, NOT the three-pillar glossary hub, NOT SEO content-strategy guide (no knowledge-graph moat or traffic curve), NOT a SERP tutorial or LLM chat. Hero must be an A–Z glossary index dense with SEO-specific term rows — NOT magnifying glass alone or generic dictionary app.",
   "visual_anchors": [
     "HERO (~55% canvas): SEO glossary index mockup — vertical A–Z alphabet sidebar (letter pills), main column with 6–8 stacked term rows (blurred SEO term titles like crawl budget, canonical, backlink + one-line definition blur), one row accent-highlighted",
@@ -22,14 +22,14 @@
   "locales": {
     "en": {
       "headline": "SEO GLOSSARY",
-      "headline_line2": "240+ TERMS",
+      "headline_line2": "290+ TERMS",
       "subtitle": "Terms & Definitions",
       "tagline": "Keywords · Technical SEO · Link Building",
       "composition": "Visual-only editorial collage for SEO glossary reference page (240+ terms). HERO: A–Z glossary index mockup occupying right two-thirds — left alphabet letter rail (A–Z pills), right column stacked SEO term entry rows with blurred titles and definition snippets, one row with accent mars-green left border. Secondary: open dictionary spread vignette with highlighted term block. Tertiary: floating SEO term chip cloud (blurred chips for SERP, schema, sitemap, canonical, backlink, crawl budget). Title block top-left. Paper collage torn edges, halftone. NO three-pillar hub, NO knowledge-graph nodes, NO traffic chart, NO SERP mockup hero, NO LLM chat, NO real tool logos, NO extra UI labels."
     },
     "zh": {
       "headline": "SEO词汇表",
-      "headline_line2": "240+术语",
+      "headline_line2": "300+术语",
       "subtitle": "术语与定义",
       "composition": "Same layout as EN: SEO A–Z glossary index HERO + dictionary spread + SEO term chip cloud. Title top-left, NO three-pillar hub, NO knowledge-graph, NO SERP hero, NO extra Chinese UI labels, NO blank term rows."
     }
