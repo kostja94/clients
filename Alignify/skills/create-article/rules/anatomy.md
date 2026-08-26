@@ -178,6 +178,22 @@ heroImageAlt: "…"
 
 ---
 
+## 四·一、正文表格（blog md）
+
+**禁止** GFM 管道表格（`| col |`）——`markdownToHtml` 不解析，会渲染成一行纯文本。
+
+**必须** 使用 `<!-- childrenHtml:start -->` + HTML：
+
+```markdown
+<!-- childrenHtml:start -->
+<div class="content-html"><table><thead>…</thead><tbody>…</tbody></table></div>
+<!-- childrenHtml:end -->
+```
+
+或独立 `<!-- block:section -->` 内单行 `<div class="content-html">…</div>`（见 `web-fetch` 对比表）。
+
+---
+
 ## 五、已废弃
 
 - 独立 `tldr-data.json` / `faq-data.json` 注入（目标：md inline）
