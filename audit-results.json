@@ -1,0 +1,2678 @@
+{
+  "totals": {
+    "total": 225,
+    "delete": 195,
+    "keep": 28,
+    "review": 2
+  },
+  "pageSummaries": {
+    "/blog/agent-memory": {
+      "total": 3,
+      "delete": 3,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/agent-sandbox": {
+      "total": 4,
+      "delete": 4,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/agent-to-agent": {
+      "total": 4,
+      "delete": 2,
+      "keep": 2,
+      "review": 0,
+      "afterCleanup": 2,
+      "over6": false
+    },
+    "/blog/agentic-commerce": {
+      "total": 4,
+      "delete": 4,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/agentic-payments": {
+      "total": 4,
+      "delete": 4,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/ai-flashcards": {
+      "total": 6,
+      "delete": 6,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/ai-language-learning": {
+      "total": 5,
+      "delete": 4,
+      "keep": 0,
+      "review": 1,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/blog/ai-traffic-and-citation-sources": {
+      "total": 7,
+      "delete": 7,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": true
+    },
+    "/blog/ai-training-data": {
+      "total": 3,
+      "delete": 3,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/ai-visibility": {
+      "total": 7,
+      "delete": 7,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": true
+    },
+    "/blog/cad": {
+      "total": 1,
+      "delete": 1,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/coding-plan": {
+      "total": 9,
+      "delete": 8,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": true
+    },
+    "/blog/data-engineering-agent": {
+      "total": 5,
+      "delete": 4,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/blog/git-hosting": {
+      "total": 5,
+      "delete": 2,
+      "keep": 3,
+      "review": 0,
+      "afterCleanup": 3,
+      "over6": false
+    },
+    "/blog/github-for-marketing": {
+      "total": 7,
+      "delete": 7,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": true
+    },
+    "/blog/how-to-add-payments-to-vibe-coded-app": {
+      "total": 10,
+      "delete": 10,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": true
+    },
+    "/blog/how-to-name-ai-products": {
+      "total": 3,
+      "delete": 3,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/how-to-write-github-readme": {
+      "total": 5,
+      "delete": 5,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/inference-infrastructure": {
+      "total": 5,
+      "delete": 5,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/interior-design": {
+      "total": 1,
+      "delete": 1,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/blog/medical-scribe": {
+      "total": 3,
+      "delete": 2,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/blog/multi-agent": {
+      "total": 3,
+      "delete": 2,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/blog/rate-limit-reset": {
+      "total": 4,
+      "delete": 0,
+      "keep": 4,
+      "review": 0,
+      "afterCleanup": 4,
+      "over6": false
+    },
+    "/blog/web-fetch": {
+      "total": 5,
+      "delete": 4,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/zh/blog/agent-memory": {
+      "total": 3,
+      "delete": 3,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/agent-sandbox": {
+      "total": 4,
+      "delete": 4,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/agent-to-agent": {
+      "total": 4,
+      "delete": 2,
+      "keep": 2,
+      "review": 0,
+      "afterCleanup": 2,
+      "over6": false
+    },
+    "/zh/blog/agentic-commerce": {
+      "total": 4,
+      "delete": 4,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/agentic-payments": {
+      "total": 4,
+      "delete": 4,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/ai-flashcards": {
+      "total": 6,
+      "delete": 6,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/ai-language-learning": {
+      "total": 5,
+      "delete": 4,
+      "keep": 0,
+      "review": 1,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/zh/blog/ai-traffic-and-citation-sources": {
+      "total": 7,
+      "delete": 7,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": true
+    },
+    "/zh/blog/ai-training-data": {
+      "total": 3,
+      "delete": 3,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/ai-visibility": {
+      "total": 6,
+      "delete": 6,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/cad": {
+      "total": 1,
+      "delete": 1,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/coding-plan": {
+      "total": 9,
+      "delete": 8,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": true
+    },
+    "/zh/blog/data-engineering-agent": {
+      "total": 5,
+      "delete": 4,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/zh/blog/git-hosting": {
+      "total": 5,
+      "delete": 2,
+      "keep": 3,
+      "review": 0,
+      "afterCleanup": 3,
+      "over6": false
+    },
+    "/zh/blog/github-for-marketing": {
+      "total": 7,
+      "delete": 7,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": true
+    },
+    "/zh/blog/how-to-add-payments-to-vibe-coded-app": {
+      "total": 10,
+      "delete": 10,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": true
+    },
+    "/zh/blog/how-to-name-ai-products": {
+      "total": 3,
+      "delete": 3,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/how-to-write-github-readme": {
+      "total": 5,
+      "delete": 5,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/inference-infrastructure": {
+      "total": 5,
+      "delete": 5,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/interior-design": {
+      "total": 1,
+      "delete": 1,
+      "keep": 0,
+      "review": 0,
+      "afterCleanup": 0,
+      "over6": false
+    },
+    "/zh/blog/medical-scribe": {
+      "total": 3,
+      "delete": 2,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/zh/blog/multi-agent": {
+      "total": 3,
+      "delete": 2,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    },
+    "/zh/blog/rate-limit-reset": {
+      "total": 4,
+      "delete": 0,
+      "keep": 4,
+      "review": 0,
+      "afterCleanup": 4,
+      "over6": false
+    },
+    "/zh/blog/web-fetch": {
+      "total": 5,
+      "delete": 4,
+      "keep": 1,
+      "review": 0,
+      "afterCleanup": 1,
+      "over6": false
+    }
+  },
+  "rows": [
+    {
+      "num": 1,
+      "pageKey": "/blog/agent-memory",
+      "title": "Mem0: ECAI 2025 Memory Layer Benchmarks",
+      "url": "https://arxiv.org/abs/2504.19413",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Agent Memory Layer: Persistent Cross-Session Middleware"
+    },
+    {
+      "num": 2,
+      "pageKey": "/blog/agent-memory",
+      "title": "Zep: Temporal Knowledge Graph",
+      "url": "https://arxiv.org/abs/2501.13956",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Agent Memory Layer: Persistent Cross-Session Middleware"
+    },
+    {
+      "num": 3,
+      "pageKey": "/blog/agent-memory",
+      "title": "LongMemEval Benchmark",
+      "url": "https://arxiv.org/abs/2410.10813",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Agent Memory Layer: Persistent Cross-Session Middleware"
+    },
+    {
+      "num": 4,
+      "pageKey": "/blog/agent-sandbox",
+      "title": "AI Agent Sandboxes Compared",
+      "url": "https://rywalker.com/research/ai-agent-sandboxes",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"compared\"",
+      "articleTitle": "AI Agent Sandbox: Secure Isolated Execution for Production Agents"
+    },
+    {
+      "num": 5,
+      "pageKey": "/blog/agent-sandbox",
+      "title": "The Rise of the Agent Runtime",
+      "url": "https://www.work-bench.com/post/the-rise-of-the-agent-runtime",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"work-bench.com\"",
+      "articleTitle": "AI Agent Sandbox: Secure Isolated Execution for Production Agents"
+    },
+    {
+      "num": 6,
+      "pageKey": "/blog/agent-sandbox",
+      "title": "About GKE Agent Sandbox",
+      "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/machine-learning/agent-sandbox",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "AI Agent Sandbox: Secure Isolated Execution for Production Agents"
+    },
+    {
+      "num": 7,
+      "pageKey": "/blog/agent-sandbox",
+      "title": "Amazon Bedrock AgentCore Runtime",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.aws.amazon.com",
+      "articleTitle": "AI Agent Sandbox: Secure Isolated Execution for Production Agents"
+    },
+    {
+      "num": 8,
+      "pageKey": "/blog/agent-to-agent",
+      "title": "Meta acquires Moltbook",
+      "url": "https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "TechCrunch: Meta acquires Moltbook (2026-03-10)",
+      "articleTitle": "Agent-To-Agent Networks: Agent-Only Social, Identity Proxies, and Broadcast Discovery"
+    },
+    {
+      "num": 9,
+      "pageKey": "/blog/agent-to-agent",
+      "title": "OpenClaw AI Agents at Moltbook",
+      "url": "https://arxiv.org/abs/2602.18832",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "Agent-To-Agent Networks: Agent-Only Social, Identity Proxies, and Broadcast Discovery"
+    },
+    {
+      "num": 10,
+      "pageKey": "/blog/agent-to-agent",
+      "title": "Molt Dynamics: Emergent Social Phenomena in Agent Populations",
+      "url": "https://arxiv.org/abs/2603.03555",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "Agent-To-Agent Networks: Agent-Only Social, Identity Proxies, and Broadcast Discovery"
+    },
+    {
+      "num": 11,
+      "pageKey": "/blog/agent-to-agent",
+      "title": "A2A: A New Era of Agent Interoperability",
+      "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Google A2A protocol launch announcement (2025)",
+      "articleTitle": "Agent-To-Agent Networks: Agent-Only Social, Identity Proxies, and Broadcast Discovery"
+    },
+    {
+      "num": 12,
+      "pageKey": "/blog/agentic-commerce",
+      "title": "a16z Open Agentic Commerce",
+      "url": "https://a16z.com/ai-shopping-online/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"a16z.com\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 13,
+      "pageKey": "/blog/agentic-commerce",
+      "title": "Rye landscape",
+      "url": "https://rye.com/blog/agentic-commerce-startups",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"landscape\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 14,
+      "pageKey": "/blog/agentic-commerce",
+      "title": "Forrester",
+      "url": "https://www.forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"forrester.com\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 15,
+      "pageKey": "/blog/agentic-commerce",
+      "title": "SEO Turtle trend",
+      "url": "https://seoturtle.com/seo-insights/agentic-commerce-ai-shopping-agents-seo",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"seoturtle.com\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 16,
+      "pageKey": "/blog/agentic-payments",
+      "title": "x402 Foundation",
+      "url": "https://www.x402.org/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.x402.org",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 17,
+      "pageKey": "/blog/agentic-payments",
+      "title": "Google AP2",
+      "url": "https://github.com/google-agentic-commerce/AP2",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: github.com/google-agentic-commerce/ap2",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 18,
+      "pageKey": "/blog/agentic-payments",
+      "title": "Crossmint protocol comparison",
+      "url": "https://www.crossmint.com/learn/agentic-payments-protocols-compared",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: crossmint.com/learn",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 19,
+      "pageKey": "/blog/agentic-payments",
+      "title": "Forrester agentic payments",
+      "url": "https://www.forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"forrester.com\"",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 20,
+      "pageKey": "/blog/ai-flashcards",
+      "title": "Thetawave AI Flashcard Maker — Official Page",
+      "url": "https://thetawave.ai/feature/flashcard-maker",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: thetawave.ai/feature",
+      "articleTitle": "Best AI Flashcard Makers (2026): Spaced Repetition, Active Recall & Science-Backed Memory | Alignify"
+    },
+    {
+      "num": 21,
+      "pageKey": "/blog/ai-flashcards",
+      "title": "Roediger & Karpicke (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science.",
+      "url": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "Best AI Flashcard Makers (2026): Spaced Repetition, Active Recall & Science-Backed Memory | Alignify"
+    },
+    {
+      "num": 22,
+      "pageKey": "/blog/ai-flashcards",
+      "title": "Dunlosky et al. (2013). Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology. Psychological Science in the Public Interest.",
+      "url": "https://journals.sagepub.com/doi/10.1177/1529100612453266",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "Best AI Flashcard Makers (2026): Spaced Repetition, Active Recall & Science-Backed Memory | Alignify"
+    },
+    {
+      "num": 23,
+      "pageKey": "/blog/ai-flashcards",
+      "title": "Cepeda et al. (2008). Spacing Effects in Learning: A Temporal Ridgeline of Optimal Retention. Psychological Science.",
+      "url": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02209.x",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "Best AI Flashcard Makers (2026): Spaced Repetition, Active Recall & Science-Backed Memory | Alignify"
+    },
+    {
+      "num": 24,
+      "pageKey": "/blog/ai-flashcards",
+      "title": "FSRS (Free Spaced Repetition Scheduler) Algorithm Documentation",
+      "url": "https://github.com/open-spaced-repetition/fsrs4anki/wiki",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: github.com/open-spaced-repetition/fsrs",
+      "articleTitle": "Best AI Flashcard Makers (2026): Spaced Repetition, Active Recall & Science-Backed Memory | Alignify"
+    },
+    {
+      "num": 25,
+      "pageKey": "/blog/ai-flashcards",
+      "title": "Bjork & Bjork (2011). Making Things Hard on Yourself, But in a Good Way: Creating Desirable Difficulties to Enhance Learning. UCLA Bjork Learning & Forgetting Lab.",
+      "url": "https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/07/EBjork_RBjork_2011.pdf",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "Best AI Flashcard Makers (2026): Spaced Repetition, Active Recall & Science-Backed Memory | Alignify"
+    },
+    {
+      "num": 26,
+      "pageKey": "/blog/ai-language-learning",
+      "title": "Swain, M. (2005). The Output Hypothesis: Theory and Research. In E. Hinkel (Ed.), Handbook of Research in Second Language Teaching and Learning.",
+      "url": "https://www.routledge.com/Handbook-of-Research-in-Second-Language-Teaching-and-Learning/Hinkel/p/book/9780805841817",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "Best AI Language Learning Tools (2026): Speaking, Accent Training & Conversation | Alignify"
+    },
+    {
+      "num": 27,
+      "pageKey": "/blog/ai-language-learning",
+      "title": "Audio Language Models Show Bias From Voice Alone (arXiv 2503.16833)",
+      "url": "https://arxiv.org/html/2503.16833v2",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "Best AI Language Learning Tools (2026): Speaking, Accent Training & Conversation | Alignify"
+    },
+    {
+      "num": 28,
+      "pageKey": "/blog/ai-language-learning",
+      "title": "Italian Garante per la Protezione dei Dati Personali — Replika AI GDPR Fine (€5M, May 2025)",
+      "url": "https://www.garanteprivacy.it/",
+      "verdict": "REVIEW",
+      "type": "A",
+      "reason": "Description cites Replika GDPR fine (May 2025) but URL is org homepage, not dated enforcement decision; replace with primary decision URL or move inline",
+      "articleTitle": "Best AI Language Learning Tools (2026): Speaking, Accent Training & Conversation | Alignify"
+    },
+    {
+      "num": 29,
+      "pageKey": "/blog/ai-language-learning",
+      "title": "Common European Framework of Reference for Languages (CEFR) — Council of Europe",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.coe.int",
+      "articleTitle": "Best AI Language Learning Tools (2026): Speaking, Accent Training & Conversation | Alignify"
+    },
+    {
+      "num": 30,
+      "pageKey": "/blog/ai-language-learning",
+      "title": "Vygotsky, L.S. (1978). Mind in Society: The Development of Higher Psychological Processes. Harvard University Press.",
+      "url": "https://www.hup.harvard.edu/books/9780674576292",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "Best AI Language Learning Tools (2026): Speaking, Accent Training & Conversation | Alignify"
+    },
+    {
+      "num": 31,
+      "pageKey": "/blog/ai-traffic-and-citation-sources",
+      "title": "5WPR AI Search Citation Report 2026",
+      "url": "https://www.5wpr.com/ai-search-citation-report-2026",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"5wpr.com\"",
+      "articleTitle": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibility"
+    },
+    {
+      "num": 32,
+      "pageKey": "/blog/ai-traffic-and-citation-sources",
+      "title": "Goodie AI Wave 2: AI Search Traffic & Behavior Report",
+      "url": "https://goodie.digital/ai-wave-2-report",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"goodie.digital\"",
+      "articleTitle": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibility"
+    },
+    {
+      "num": 33,
+      "pageKey": "/blog/ai-traffic-and-citation-sources",
+      "title": "Conductor AI Overviews & AI Mode Source Analysis",
+      "url": "https://www.conductor.com/academy/ai-overviews/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"overview\"",
+      "articleTitle": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibility"
+    },
+    {
+      "num": 34,
+      "pageKey": "/blog/ai-traffic-and-citation-sources",
+      "title": "DA Correlation with AI Citations: Multi-Study Analysis",
+      "url": "https://detailed.com/geo/domain-authority-ai-citations/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"detailed.com\"",
+      "articleTitle": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibility"
+    },
+    {
+      "num": 35,
+      "pageKey": "/blog/ai-traffic-and-citation-sources",
+      "title": "OpenAI GPTBot & Search Documentation",
+      "url": "https://platform.openai.com/docs/bots",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibility"
+    },
+    {
+      "num": 36,
+      "pageKey": "/blog/ai-traffic-and-citation-sources",
+      "title": "PerplexityBot Crawler Documentation",
+      "url": "https://docs.perplexity.ai/guides/perplexitybot",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"guide\"",
+      "articleTitle": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibility"
+    },
+    {
+      "num": 37,
+      "pageKey": "/blog/ai-traffic-and-citation-sources",
+      "title": "Princeton GEO: Generative Engine Optimization (KDD 2024)",
+      "url": "https://arxiv.org/abs/2311.09735",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibility"
+    },
+    {
+      "num": 38,
+      "pageKey": "/blog/ai-training-data",
+      "title": "What is RLHF?",
+      "url": "https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: aws.amazon.com/what-is",
+      "articleTitle": "AI Training Data Platforms: Labeling, Licensing, and Multimodal Pipelines"
+    },
+    {
+      "num": 39,
+      "pageKey": "/blog/ai-training-data",
+      "title": "Training language models to follow instructions with human feedback",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Training Data Platforms: Labeling, Licensing, and Multimodal Pipelines"
+    },
+    {
+      "num": 40,
+      "pageKey": "/blog/ai-training-data",
+      "title": "EU AI Act",
+      "url": "https://artificialintelligenceact.eu/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: artificialintelligenceact.eu",
+      "articleTitle": "AI Training Data Platforms: Labeling, Licensing, and Multimodal Pipelines"
+    },
+    {
+      "num": 41,
+      "pageKey": "/blog/ai-visibility",
+      "title": "Princeton GEO: Generative Engine Optimization",
+      "url": "https://arxiv.org/abs/2311.09735",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Answers"
+    },
+    {
+      "num": 42,
+      "pageKey": "/blog/ai-visibility",
+      "title": "AI Visibility Tools: Category Map + 12-Tool Comparison",
+      "url": "https://trakkr.ai/ai-visibility-tools",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: trakkr.ai",
+      "articleTitle": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Answers"
+    },
+    {
+      "num": 43,
+      "pageKey": "/blog/ai-visibility",
+      "title": "Best AI Search Monitoring Tools for 2026",
+      "url": "https://technologyadvice.com/blog/information-technology/ai-software/best-ai-search-monitoring-tools/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"comparison\"",
+      "articleTitle": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Answers"
+    },
+    {
+      "num": 44,
+      "pageKey": "/blog/ai-visibility",
+      "title": "60+ AI Search Visibility Tools Compared",
+      "url": "https://ibrahimfurkanozcelik.com/writing/complete-guide-ai-search-visibility-tools-2026",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"compared\"",
+      "articleTitle": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Answers"
+    },
+    {
+      "num": 45,
+      "pageKey": "/blog/ai-visibility",
+      "title": "Ahrefs AI Visibility Checker",
+      "url": "https://ahrefs.com/ai-visibility-checker",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: ahrefs.com/ai-visibility-checker",
+      "articleTitle": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Answers"
+    },
+    {
+      "num": 46,
+      "pageKey": "/blog/ai-visibility",
+      "title": "OpenAI GPTBot Documentation",
+      "url": "https://platform.openai.com/docs/bots",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Answers"
+    },
+    {
+      "num": 47,
+      "pageKey": "/blog/ai-visibility",
+      "title": "AI Search Optimization Guide: SEO vs AEO vs GEO",
+      "url": "https://hashmeta.com/ai-search-optimisation-guide/seo-vs-aeo-vs-geo-explained/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: hashmeta.com",
+      "articleTitle": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Answers"
+    },
+    {
+      "num": 48,
+      "pageKey": "/blog/cad",
+      "title": "Autodesk. Fusion product overview. 2026.",
+      "url": "https://www.autodesk.com/products/fusion/overview",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /overview",
+      "articleTitle": "CAD Software and AI CAD: From Parametric Modeling to Text-To-CAD"
+    },
+    {
+      "num": 49,
+      "pageKey": "/blog/coding-plan",
+      "title": "Zhipu GLM Coding Plan Official Documentation",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/overview",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /overview",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 50,
+      "pageKey": "/blog/coding-plan",
+      "title": "MiniMax Token Plan Official Documentation",
+      "url": "https://platform.minimaxi.com/docs/token-plan/intro",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 51,
+      "pageKey": "/blog/coding-plan",
+      "title": "Alibaba Cloud Bailian Coding Plan Documentation",
+      "url": "https://help.aliyun.com/zh/model-studio/coding-plan",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: help.aliyun.com",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 52,
+      "pageKey": "/blog/coding-plan",
+      "title": "Baidu Qianfan Coding Plan Upgrade Announcement",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Emqsyd7yj",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Baidu Coding Plan discontinuation/migration announcement (2026-06-25)",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 53,
+      "pageKey": "/blog/coding-plan",
+      "title": "China Coding API Roundup 2026",
+      "url": "https://codepick.dev/zh/guides/china-coding-api-roundup-2026/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: codepick.dev",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 54,
+      "pageKey": "/blog/coding-plan",
+      "title": "GLM Coding Plan vs Claude/Copilot Review",
+      "url": "https://hyscaler.com/insights/glm-coding-plan-review/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: hyscaler.com",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 55,
+      "pageKey": "/blog/coding-plan",
+      "title": "A Guide to AI SaaS Pricing Frameworks",
+      "url": "https://stripe.com/resources/more/ai-saas-pricing-models",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: stripe.com/resources",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 56,
+      "pageKey": "/blog/coding-plan",
+      "title": "Heroku Eco Dyno Hours Official Documentation",
+      "url": "https://devcenter.heroku.com/articles/eco-dyno-hours",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: devcenter.heroku.com",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 57,
+      "pageKey": "/blog/coding-plan",
+      "title": "Intercom AI Agent Pricing Comparison",
+      "url": "https://www.intercom.com/learning-center/ai-customer-service-agent-pricing-comparison",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: intercom.com/learning-center",
+      "articleTitle": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "num": 58,
+      "pageKey": "/blog/data-engineering-agent",
+      "title": "What Is Agentic AI Data Engineering?",
+      "url": "https://www.ibm.com/think/topics/agentic-ai-data-engineering",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: ibm.com/think/topics",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 59,
+      "pageKey": "/blog/data-engineering-agent",
+      "title": "AI Agents for Data Engineering: 2026 Guide",
+      "url": "https://atlan.com/know/ai-agents-for-data-engineering/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"comparison\"",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 60,
+      "pageKey": "/blog/data-engineering-agent",
+      "title": "Agentic Data Pipelines: All You Need to Know",
+      "url": "https://peliqan.io/blog/agentic-data-pipelines/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"peliqan.io\"",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 61,
+      "pageKey": "/blog/data-engineering-agent",
+      "title": "Introducing dltHub Pro: Claude/Codex/Cursor-Native Data Engineering",
+      "url": "https://dlthub.com/blog/introducing-dlthub-pro",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "dltHub Pro product launch announcement",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 62,
+      "pageKey": "/blog/data-engineering-agent",
+      "title": "$1.2T Data Market by 2031: Agentic AI Replaces Data Pipelines",
+      "url": "https://futurumgroup.com/press-release/1-2t-data-market-by-2031-agentic-ai-replaces-data-pipelines/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"futurumgroup.com\"",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 63,
+      "pageKey": "/blog/git-hosting",
+      "title": "Cursor Origin documentation",
+      "url": "https://cursor.com/docs/origin",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "Agent-Native Git Hosting: Agent-Scale Forge and Collaboration Boundaries"
+    },
+    {
+      "num": 64,
+      "pageKey": "/blog/git-hosting",
+      "title": "Git at any scale",
+      "url": "https://cursor.com/blog/git-at-any-scale",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"vs \"",
+      "articleTitle": "Agent-Native Git Hosting: Agent-Scale Forge and Collaboration Boundaries"
+    },
+    {
+      "num": 65,
+      "pageKey": "/blog/git-hosting",
+      "title": "Welcome home, agents",
+      "url": "https://github.blog/news-insights/company-news/welcome-home-agents/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "GitHub Agent HQ official announcement (2025)",
+      "articleTitle": "Agent-Native Git Hosting: Agent-Scale Forge and Collaboration Boundaries"
+    },
+    {
+      "num": 66,
+      "pageKey": "/blog/git-hosting",
+      "title": "GitLab Transcend announcements",
+      "url": "https://about.gitlab.com/blog/gitlab-transcend-announcements/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "GitLab Transcend product announcements (2026)",
+      "articleTitle": "Agent-Native Git Hosting: Agent-Scale Forge and Collaboration Boundaries"
+    },
+    {
+      "num": 67,
+      "pageKey": "/blog/git-hosting",
+      "title": "Introducing Delta",
+      "url": "https://zed.dev/blog/introducing-delta",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Zed Delta product launch announcement",
+      "articleTitle": "Agent-Native Git Hosting: Agent-Scale Forge and Collaboration Boundaries"
+    },
+    {
+      "num": 68,
+      "pageKey": "/blog/github-for-marketing",
+      "title": "About repositories",
+      "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization & Developer Ecosystem Strategy"
+    },
+    {
+      "num": 69,
+      "pageKey": "/blog/github-for-marketing",
+      "title": "About READMEs",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization & Developer Ecosystem Strategy"
+    },
+    {
+      "num": 70,
+      "pageKey": "/blog/github-for-marketing",
+      "title": "Classifying your repository with topics",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization & Developer Ecosystem Strategy"
+    },
+    {
+      "num": 71,
+      "pageKey": "/blog/github-for-marketing",
+      "title": "Saving repositories with stars",
+      "url": "https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization & Developer Ecosystem Strategy"
+    },
+    {
+      "num": 72,
+      "pageKey": "/blog/github-for-marketing",
+      "title": "Fake Stars, Real Damage: Characterizing GitHub Star Abuse Mechanisms",
+      "url": "https://arxiv.org/abs/2412.13459",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization & Developer Ecosystem Strategy"
+    },
+    {
+      "num": 73,
+      "pageKey": "/blog/github-for-marketing",
+      "title": "GitHub Pages documentation",
+      "url": "https://docs.github.com/en/pages",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization & Developer Ecosystem Strategy"
+    },
+    {
+      "num": 74,
+      "pageKey": "/blog/github-for-marketing",
+      "title": "GitLab vs GitHub: Platform comparison",
+      "url": "https://about.gitlab.com/compare/gitlab-vs-github/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: gitlab.com/compare",
+      "articleTitle": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization & Developer Ecosystem Strategy"
+    },
+    {
+      "num": 75,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Fungies · How Vibe Coders Should Set Up Payments: Stripe vs Merchant of Record (2026 Guide)",
+      "url": "https://fungies.io/vibe-coding-payments-stripe-vs-merchant-of-record/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"comparison\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 76,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Vibe Coder Blog · Payment Integration With Stripe, Lemon Squeezy, and Paddle",
+      "url": "https://blog.vibecoder.me/payment-integration-stripe-lemon-squeezy-paddle",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"comparison\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 77,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Creem · Vibe Coding to Revenue",
+      "url": "https://www.creem.io/blog/vibe-coding-to-revenue",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"creem.io/blog\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 78,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "xploitscan · The $10,000 Stripe Webhook Bug in AI-Generated Code",
+      "url": "https://xploitscan.com/blog/stripe-webhook-spoofing",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"xploitscan.com\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 79,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "VibeDoctor · Stripe Integration Security in AI-Generated Code",
+      "url": "https://vibedoctor.io/blog/stripe-integration-security-ai-generated-code",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"vibedoctor.io\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 80,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Cybersecify · Vibe-Coded SaaS Pentest 2026: Cursor and Lovable Gaps",
+      "url": "https://cybersecify.com/blog/vibe-coded-app-pentest-india-2026/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"cybersecify.com\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 81,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Youngju · Payment Infrastructure for Solo Developers and Micro-SaaS in 2026",
+      "url": "https://www.youngju.dev/blog/culture/2026-05-14-payment-infra-solo-devs-2026-stripe-lemon-squeezy-polar-paddle-creem-comparison-deep-dive.en",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"comparison\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 82,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Stripe · Webhook Signature Verification Official Docs",
+      "url": "https://docs.stripe.com/webhooks#verify-official-libraries",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.stripe.com",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 83,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "kostja94/vibe-coding · AI App Builder Tech Stack Reference",
+      "url": "https://github.com/kostja94/vibe-coding",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"comparison\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 84,
+      "pageKey": "/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "VibeUsers · How to Monetize a Vibe Coded App",
+      "url": "https://vibeusers.io/blog/how-to-monetize-vibe-coded-app",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"how-to\"",
+      "articleTitle": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compared"
+    },
+    {
+      "num": 85,
+      "pageKey": "/blog/how-to-name-ai-products",
+      "title": "Lexicon Branding — Naming for AI",
+      "url": "https://www.lexiconbranding.com/service/brand-naming-for-ai/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.lexiconbranding.com/service",
+      "articleTitle": "AI Product Naming: Strategies, Case Studies, and a Complete Framework"
+    },
+    {
+      "num": 86,
+      "pageKey": "/blog/how-to-name-ai-products",
+      "title": "AI Sucks at Naming",
+      "url": "https://www.ahundredmonkeys.com/resources/ai-sucks-at-naming-there-i-said-it/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"ahundredmonkeys.com\"",
+      "articleTitle": "AI Product Naming: Strategies, Case Studies, and a Complete Framework"
+    },
+    {
+      "num": 87,
+      "pageKey": "/blog/how-to-name-ai-products",
+      "title": "USPTO — Trademark Basics",
+      "url": "https://www.uspto.gov/trademarks/basics",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.uspto.gov/trademarks/basics",
+      "articleTitle": "AI Product Naming: Strategies, Case Studies, and a Complete Framework"
+    },
+    {
+      "num": 88,
+      "pageKey": "/blog/how-to-write-github-readme",
+      "title": "About READMEs",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "How to Write a GitHub README: Best Practices for SEO, Growth & Developer Adoption"
+    },
+    {
+      "num": 89,
+      "pageKey": "/blog/how-to-write-github-readme",
+      "title": "Basic writing and formatting syntax",
+      "url": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "How to Write a GitHub README: Best Practices for SEO, Growth & Developer Adoption"
+    },
+    {
+      "num": 90,
+      "pageKey": "/blog/how-to-write-github-readme",
+      "title": "Customizing your repository's social media preview",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/customizing-your-repositorys-social-media-preview",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "How to Write a GitHub README: Best Practices for SEO, Growth & Developer Adoption"
+    },
+    {
+      "num": 91,
+      "pageKey": "/blog/how-to-write-github-readme",
+      "title": "Classifying your repository with topics",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "How to Write a GitHub README: Best Practices for SEO, Growth & Developer Adoption"
+    },
+    {
+      "num": 92,
+      "pageKey": "/blog/how-to-write-github-readme",
+      "title": "SkillsBench: Measuring Skill Effectiveness in AI Agents",
+      "url": "https://arxiv.org/abs/2602.12670",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "How to Write a GitHub README: Best Practices for SEO, Growth & Developer Adoption"
+    },
+    {
+      "num": 93,
+      "pageKey": "/blog/inference-infrastructure",
+      "title": "AI Inferencing Will Define 2026, and the Market's Wide Open",
+      "url": "https://www.sdxcentral.com/analysis/ai-inferencing-will-define-2026-and-the-markets-wide-open/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"sdxcentral.com\"",
+      "articleTitle": "AI Inference Platforms: From Deployment to Production at Scale"
+    },
+    {
+      "num": 94,
+      "pageKey": "/blog/inference-infrastructure",
+      "title": "The AI Infrastructure Solutions Landscape, Q3 2025",
+      "url": "https://www.forrester.com/report/the-ai-infrastructure-solutions-landscape-q3-2025",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"landscape\"",
+      "articleTitle": "AI Inference Platforms: From Deployment to Production at Scale"
+    },
+    {
+      "num": 95,
+      "pageKey": "/blog/inference-infrastructure",
+      "title": "vLLM Documentation",
+      "url": "https://docs.vllm.ai/en/latest/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.vllm.ai",
+      "articleTitle": "AI Inference Platforms: From Deployment to Production at Scale"
+    },
+    {
+      "num": 96,
+      "pageKey": "/blog/inference-infrastructure",
+      "title": "The State of Open Source AI Models in 2025",
+      "url": "https://developers.redhat.com/articles/2026/01/07/state-open-source-ai-models-2025",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"overview\"",
+      "articleTitle": "AI Inference Platforms: From Deployment to Production at Scale"
+    },
+    {
+      "num": 97,
+      "pageKey": "/blog/inference-infrastructure",
+      "title": "Amazon Bedrock — Model inference",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.aws.amazon.com",
+      "articleTitle": "AI Inference Platforms: From Deployment to Production at Scale"
+    },
+    {
+      "num": 98,
+      "pageKey": "/blog/interior-design",
+      "title": "National Association of Realtors. 2025 Profile of Home Staging. 2025.",
+      "url": "https://www.nar.realtor/research-and-statistics/research-reports/profile-of-home-staging",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"nar.realtor\"",
+      "articleTitle": "AI Interior Design: Room Redesign and Virtual Renovation"
+    },
+    {
+      "num": 99,
+      "pageKey": "/blog/medical-scribe",
+      "title": "Best in KLAS 2026: Ambient Scribing",
+      "url": "https://klasresearch.com/report/best-in-klas-2026/3438",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: klasresearch.com/report/best-in",
+      "articleTitle": "AI Medical Scribe: From Encounter to SOAP Notes in EHR"
+    },
+    {
+      "num": 100,
+      "pageKey": "/blog/medical-scribe",
+      "title": "Ambient AI Scribes in Clinical Practice: A Review",
+      "url": "https://www.nature.com/articles/s41746-025-02272-z",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Nature review article (Type D academic review)",
+      "articleTitle": "AI Medical Scribe: From Encounter to SOAP Notes in EHR"
+    },
+    {
+      "num": 101,
+      "pageKey": "/blog/medical-scribe",
+      "title": "Ambient Scribe Startups vs Epic",
+      "url": "https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "MedCity News: ambient scribe startups vs Epic (2026-02)",
+      "articleTitle": "AI Medical Scribe: From Encounter to SOAP Notes in EHR"
+    },
+    {
+      "num": 102,
+      "pageKey": "/blog/multi-agent",
+      "title": "LangGraph documentation",
+      "url": "https://langchain-ai.github.io/langgraph/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: langchain-ai.github.io",
+      "articleTitle": "Multi-Agent Systems: From Agent Orchestration to Team Collaboration"
+    },
+    {
+      "num": 103,
+      "pageKey": "/blog/multi-agent",
+      "title": "OpenAI Agents SDK",
+      "url": "https://openai.github.io/openai-agents-python/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: openai.github.io/openai-agents",
+      "articleTitle": "Multi-Agent Systems: From Agent Orchestration to Team Collaboration"
+    },
+    {
+      "num": 104,
+      "pageKey": "/blog/multi-agent",
+      "title": "A2A: A New Era of Agent Interoperability",
+      "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Google A2A protocol launch announcement (2025)",
+      "articleTitle": "Multi-Agent Systems: From Agent Orchestration to Team Collaboration"
+    },
+    {
+      "num": 105,
+      "pageKey": "/blog/rate-limit-reset",
+      "title": "OpenAI Codex Pricing — Usage limits, banked resets, credits",
+      "url": "https://developers.openai.com/codex/pricing",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "OpenAI Codex official pricing/reset policy page",
+      "articleTitle": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas"
+    },
+    {
+      "num": 106,
+      "pageKey": "/blog/rate-limit-reset",
+      "title": "Using Codex with your ChatGPT plan — Usage limits reset",
+      "url": "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "OpenAI Help Center Codex usage limits reset policy",
+      "articleTitle": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas"
+    },
+    {
+      "num": 107,
+      "pageKey": "/blog/rate-limit-reset",
+      "title": "TechCrunch — Anthropic unveils weekly rate limits for Claude Code",
+      "url": "https://techcrunch.com/2025/07/28/anthropic-unveils-new-rate-limits-to-curb-claude-code-power-users/",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "TechCrunch: Anthropic weekly rate limits announcement (2025-07-28)",
+      "articleTitle": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas"
+    },
+    {
+      "num": 108,
+      "pageKey": "/blog/rate-limit-reset",
+      "title": "Business Insider — Codex usage limit warroom fix",
+      "url": "https://www.businessinsider.com/openai-codex-usage-limit-warroom-fix-issue-2026-6",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "Business Insider: Codex quota incident & warroom fix (2026-06)",
+      "articleTitle": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas"
+    },
+    {
+      "num": 109,
+      "pageKey": "/blog/web-fetch",
+      "title": "Production-Grade Web Fetching for AI Agents",
+      "url": "https://www.tinyfish.ai/blog/production-grade-web-fetching-for-ai-agents",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"tinyfish.ai/blog\"",
+      "articleTitle": "Web Fetch: Turn Any URL into LLM-Ready Content"
+    },
+    {
+      "num": 110,
+      "pageKey": "/blog/web-fetch",
+      "title": "Firecrawl Glossary",
+      "url": "https://www.firecrawl.dev/glossary",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: firecrawl.dev/glossary",
+      "articleTitle": "Web Fetch: Turn Any URL into LLM-Ready Content"
+    },
+    {
+      "num": 111,
+      "pageKey": "/blog/web-fetch",
+      "title": "Jina Reader Documentation",
+      "url": "https://jina.ai/reader/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: jina.ai/reader",
+      "articleTitle": "Web Fetch: Turn Any URL into LLM-Ready Content"
+    },
+    {
+      "num": 112,
+      "pageKey": "/blog/web-fetch",
+      "title": "Cloudflare Markdown for AI Bots",
+      "url": "https://blog.cloudflare.com/markdown-for-agents/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Cloudflare Markdown-for-agents feature announcement (2026)",
+      "articleTitle": "Web Fetch: Turn Any URL into LLM-Ready Content"
+    },
+    {
+      "num": 113,
+      "pageKey": "/blog/web-fetch",
+      "title": "Model Context Protocol Specification",
+      "url": "https://modelcontextprotocol.io/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: modelcontextprotocol.io",
+      "articleTitle": "Web Fetch: Turn Any URL into LLM-Ready Content"
+    },
+    {
+      "num": 114,
+      "pageKey": "/zh/blog/agent-memory",
+      "title": "Mem0: ECAI 2025 — Memory Layer Benchmarks",
+      "url": "https://arxiv.org/abs/2504.19413",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Agent 记忆层：跨会话持久化与检索中间件选型"
+    },
+    {
+      "num": 115,
+      "pageKey": "/zh/blog/agent-memory",
+      "title": "Zep: Temporal Knowledge Graph",
+      "url": "https://arxiv.org/abs/2501.13956",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Agent 记忆层：跨会话持久化与检索中间件选型"
+    },
+    {
+      "num": 116,
+      "pageKey": "/zh/blog/agent-memory",
+      "title": "LongMemEval Benchmark",
+      "url": "https://arxiv.org/abs/2410.10813",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI Agent 记忆层：跨会话持久化与检索中间件选型"
+    },
+    {
+      "num": 117,
+      "pageKey": "/zh/blog/agent-sandbox",
+      "title": "AI Agent Sandboxes Compared",
+      "url": "https://rywalker.com/research/ai-agent-sandboxes",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"compared\"",
+      "articleTitle": "AI Agent 沙箱：安全隔离执行环境选型指南"
+    },
+    {
+      "num": 118,
+      "pageKey": "/zh/blog/agent-sandbox",
+      "title": "The Rise of the Agent Runtime",
+      "url": "https://www.work-bench.com/post/the-rise-of-the-agent-runtime",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"work-bench.com\"",
+      "articleTitle": "AI Agent 沙箱：安全隔离执行环境选型指南"
+    },
+    {
+      "num": 119,
+      "pageKey": "/zh/blog/agent-sandbox",
+      "title": "About GKE Agent Sandbox",
+      "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/machine-learning/agent-sandbox",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "AI Agent 沙箱：安全隔离执行环境选型指南"
+    },
+    {
+      "num": 120,
+      "pageKey": "/zh/blog/agent-sandbox",
+      "title": "Amazon Bedrock AgentCore Runtime",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.aws.amazon.com",
+      "articleTitle": "AI Agent 沙箱：安全隔离执行环境选型指南"
+    },
+    {
+      "num": 121,
+      "pageKey": "/zh/blog/agent-to-agent",
+      "title": "Meta acquires Moltbook",
+      "url": "https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "TechCrunch: Meta acquires Moltbook (2026-03-10)",
+      "articleTitle": "Agent互联网络：Agent-only社交、分身代理与广播发现"
+    },
+    {
+      "num": 122,
+      "pageKey": "/zh/blog/agent-to-agent",
+      "title": "OpenClaw AI Agents at Moltbook",
+      "url": "https://arxiv.org/abs/2602.18832",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "Agent互联网络：Agent-only社交、分身代理与广播发现"
+    },
+    {
+      "num": 123,
+      "pageKey": "/zh/blog/agent-to-agent",
+      "title": "Molt Dynamics: Emergent Social Phenomena in Agent Populations",
+      "url": "https://arxiv.org/abs/2603.03555",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "Agent互联网络：Agent-only社交、分身代理与广播发现"
+    },
+    {
+      "num": 124,
+      "pageKey": "/zh/blog/agent-to-agent",
+      "title": "A2A: A New Era of Agent Interoperability",
+      "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Google A2A protocol launch announcement (2025)",
+      "articleTitle": "Agent互联网络：Agent-only社交、分身代理与广播发现"
+    },
+    {
+      "num": 125,
+      "pageKey": "/zh/blog/agentic-commerce",
+      "title": "a16z · Open Agentic Commerce",
+      "url": "https://a16z.com/ai-shopping-online/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"a16z.com\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 126,
+      "pageKey": "/zh/blog/agentic-commerce",
+      "title": "Rye · Agentic commerce landscape",
+      "url": "https://rye.com/blog/agentic-commerce-startups",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"landscape\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 127,
+      "pageKey": "/zh/blog/agentic-commerce",
+      "title": "Forrester · Agentic payments/commerce",
+      "url": "https://www.forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"forrester.com\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 128,
+      "pageKey": "/zh/blog/agentic-commerce",
+      "title": "SEO Turtle · agentic commerce search trend",
+      "url": "https://seoturtle.com/seo-insights/agentic-commerce-ai-shopping-agents-seo",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"seoturtle.com\"",
+      "articleTitle": "agentic-commerce"
+    },
+    {
+      "num": 129,
+      "pageKey": "/zh/blog/agentic-payments",
+      "title": "x402 Foundation",
+      "url": "https://www.x402.org/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.x402.org",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 130,
+      "pageKey": "/zh/blog/agentic-payments",
+      "title": "Google AP2 Specification",
+      "url": "https://github.com/google-agentic-commerce/AP2",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: github.com/google-agentic-commerce/ap2",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 131,
+      "pageKey": "/zh/blog/agentic-payments",
+      "title": "Crossmint · Agentic payments protocols compared",
+      "url": "https://www.crossmint.com/learn/agentic-payments-protocols-compared",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: crossmint.com/learn",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 132,
+      "pageKey": "/zh/blog/agentic-payments",
+      "title": "Forrester · Agentic Payments in B2C",
+      "url": "https://www.forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"forrester.com\"",
+      "articleTitle": "agentic-payments"
+    },
+    {
+      "num": 133,
+      "pageKey": "/zh/blog/ai-flashcards",
+      "title": "Thetawave AI Flashcard Maker — Official Page",
+      "url": "https://thetawave.ai/feature/flashcard-maker",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: thetawave.ai/feature",
+      "articleTitle": "最佳AI闪卡生成器（2026）：间隔重复、主动提取与科学记忆 | Alignify"
+    },
+    {
+      "num": 134,
+      "pageKey": "/zh/blog/ai-flashcards",
+      "title": "Roediger & Karpicke (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science.",
+      "url": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "最佳AI闪卡生成器（2026）：间隔重复、主动提取与科学记忆 | Alignify"
+    },
+    {
+      "num": 135,
+      "pageKey": "/zh/blog/ai-flashcards",
+      "title": "Dunlosky et al. (2013). Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology. Psychological Science in the Public Interest.",
+      "url": "https://journals.sagepub.com/doi/10.1177/1529100612453266",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "最佳AI闪卡生成器（2026）：间隔重复、主动提取与科学记忆 | Alignify"
+    },
+    {
+      "num": 136,
+      "pageKey": "/zh/blog/ai-flashcards",
+      "title": "Cepeda et al. (2008). Spacing Effects in Learning: A Temporal Ridgeline of Optimal Retention. Psychological Science.",
+      "url": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02209.x",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "最佳AI闪卡生成器（2026）：间隔重复、主动提取与科学记忆 | Alignify"
+    },
+    {
+      "num": 137,
+      "pageKey": "/zh/blog/ai-flashcards",
+      "title": "FSRS (Free Spaced Repetition Scheduler) Algorithm Documentation",
+      "url": "https://github.com/open-spaced-repetition/fsrs4anki/wiki",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: github.com/open-spaced-repetition/fsrs",
+      "articleTitle": "最佳AI闪卡生成器（2026）：间隔重复、主动提取与科学记忆 | Alignify"
+    },
+    {
+      "num": 138,
+      "pageKey": "/zh/blog/ai-flashcards",
+      "title": "Bjork & Bjork (2011). Making Things Hard on Yourself, But in a Good Way: Creating Desirable Difficulties to Enhance Learning. UCLA Bjork Learning & Forgetting Lab.",
+      "url": "https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/07/EBjork_RBjork_2011.pdf",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "最佳AI闪卡生成器（2026）：间隔重复、主动提取与科学记忆 | Alignify"
+    },
+    {
+      "num": 139,
+      "pageKey": "/zh/blog/ai-language-learning",
+      "title": "Swain, M. (2005). The Output Hypothesis: Theory and Research. In E. Hinkel (Ed.), Handbook of Research in Second Language Teaching and Learning.",
+      "url": "https://www.routledge.com/Handbook-of-Research-in-Second-Language-Teaching-and-Learning/Hinkel/p/book/9780805841817",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "最佳AI语言学习工具（2026）：AI口语训练、发音纠正与对话练习 | Alignify"
+    },
+    {
+      "num": 140,
+      "pageKey": "/zh/blog/ai-language-learning",
+      "title": "Audio Language Models Show Bias From Voice Alone (arXiv 2503.16833)",
+      "url": "https://arxiv.org/html/2503.16833v2",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "最佳AI语言学习工具（2026）：AI口语训练、发音纠正与对话练习 | Alignify"
+    },
+    {
+      "num": 141,
+      "pageKey": "/zh/blog/ai-language-learning",
+      "title": "Italian Garante per la Protezione dei Dati Personali — Replika AI GDPR Fine (€5M, May 2025)",
+      "url": "https://www.garanteprivacy.it/",
+      "verdict": "REVIEW",
+      "type": "A",
+      "reason": "Description cites Replika GDPR fine (May 2025) but URL is org homepage, not dated enforcement decision; replace with primary decision URL or move inline",
+      "articleTitle": "最佳AI语言学习工具（2026）：AI口语训练、发音纠正与对话练习 | Alignify"
+    },
+    {
+      "num": 142,
+      "pageKey": "/zh/blog/ai-language-learning",
+      "title": "Common European Framework of Reference for Languages (CEFR) — Council of Europe",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.coe.int",
+      "articleTitle": "最佳AI语言学习工具（2026）：AI口语训练、发音纠正与对话练习 | Alignify"
+    },
+    {
+      "num": 143,
+      "pageKey": "/zh/blog/ai-language-learning",
+      "title": "Vygotsky, L.S. (1978). Mind in Society: The Development of Higher Psychological Processes. Harvard University Press.",
+      "url": "https://www.hup.harvard.edu/books/9780674576292",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Academic theory/framework citation (Type D)",
+      "articleTitle": "最佳AI语言学习工具（2026）：AI口语训练、发音纠正与对话练习 | Alignify"
+    },
+    {
+      "num": 144,
+      "pageKey": "/zh/blog/ai-traffic-and-citation-sources",
+      "title": "5WPR AI搜索引用报告2026",
+      "url": "https://www.5wpr.com/ai-search-citation-report-2026",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"5wpr.com\"",
+      "articleTitle": "AI流量与引用来源：哪些平台推动你的品牌可见度"
+    },
+    {
+      "num": 145,
+      "pageKey": "/zh/blog/ai-traffic-and-citation-sources",
+      "title": "Goodie AI Wave 2：AI搜索流量与行为报告",
+      "url": "https://goodie.digital/ai-wave-2-report",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"goodie.digital\"",
+      "articleTitle": "AI流量与引用来源：哪些平台推动你的品牌可见度"
+    },
+    {
+      "num": 146,
+      "pageKey": "/zh/blog/ai-traffic-and-citation-sources",
+      "title": "Conductor AI Overviews与AI Mode来源分析",
+      "url": "https://www.conductor.com/academy/ai-overviews/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"overview\"",
+      "articleTitle": "AI流量与引用来源：哪些平台推动你的品牌可见度"
+    },
+    {
+      "num": 147,
+      "pageKey": "/zh/blog/ai-traffic-and-citation-sources",
+      "title": "DA与AI引用相关性：多研究分析",
+      "url": "https://detailed.com/geo/domain-authority-ai-citations/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"detailed.com\"",
+      "articleTitle": "AI流量与引用来源：哪些平台推动你的品牌可见度"
+    },
+    {
+      "num": 148,
+      "pageKey": "/zh/blog/ai-traffic-and-citation-sources",
+      "title": "OpenAI GPTBot与搜索文档",
+      "url": "https://platform.openai.com/docs/bots",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "AI流量与引用来源：哪些平台推动你的品牌可见度"
+    },
+    {
+      "num": 149,
+      "pageKey": "/zh/blog/ai-traffic-and-citation-sources",
+      "title": "PerplexityBot爬虫文档",
+      "url": "https://docs.perplexity.ai/guides/perplexitybot",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"guide\"",
+      "articleTitle": "AI流量与引用来源：哪些平台推动你的品牌可见度"
+    },
+    {
+      "num": 150,
+      "pageKey": "/zh/blog/ai-traffic-and-citation-sources",
+      "title": "Princeton GEO：生成引擎优化（KDD 2024）",
+      "url": "https://arxiv.org/abs/2311.09735",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI流量与引用来源：哪些平台推动你的品牌可见度"
+    },
+    {
+      "num": 151,
+      "pageKey": "/zh/blog/ai-training-data",
+      "title": "What is RLHF?",
+      "url": "https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: aws.amazon.com/what-is",
+      "articleTitle": "大模型训练数据平台：从标注到授权交付的训练数据基础设施"
+    },
+    {
+      "num": 152,
+      "pageKey": "/zh/blog/ai-training-data",
+      "title": "Reinforcement Learning from Human Feedback",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "大模型训练数据平台：从标注到授权交付的训练数据基础设施"
+    },
+    {
+      "num": 153,
+      "pageKey": "/zh/blog/ai-training-data",
+      "title": "EU AI Act — data governance",
+      "url": "https://artificialintelligenceact.eu/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: artificialintelligenceact.eu",
+      "articleTitle": "大模型训练数据平台：从标注到授权交付的训练数据基础设施"
+    },
+    {
+      "num": 154,
+      "pageKey": "/zh/blog/ai-visibility",
+      "title": "Princeton GEO: Generative Engine Optimization",
+      "url": "https://arxiv.org/abs/2311.09735",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "AI 可见度：追踪品牌在 AI 答案中的引用与提及"
+    },
+    {
+      "num": 155,
+      "pageKey": "/zh/blog/ai-visibility",
+      "title": "AI Visibility Tools: Category Map + 12-Tool Comparison",
+      "url": "https://trakkr.ai/ai-visibility-tools",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: trakkr.ai",
+      "articleTitle": "AI 可见度：追踪品牌在 AI 答案中的引用与提及"
+    },
+    {
+      "num": 156,
+      "pageKey": "/zh/blog/ai-visibility",
+      "title": "Best AI Search Monitoring Tools for 2026",
+      "url": "https://technologyadvice.com/blog/information-technology/ai-software/best-ai-search-monitoring-tools/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"best \"",
+      "articleTitle": "AI 可见度：追踪品牌在 AI 答案中的引用与提及"
+    },
+    {
+      "num": 157,
+      "pageKey": "/zh/blog/ai-visibility",
+      "title": "60+ AI Search Visibility Tools Compared",
+      "url": "https://ibrahimfurkanozcelik.com/writing/complete-guide-ai-search-visibility-tools-2026",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"compared\"",
+      "articleTitle": "AI 可见度：追踪品牌在 AI 答案中的引用与提及"
+    },
+    {
+      "num": 158,
+      "pageKey": "/zh/blog/ai-visibility",
+      "title": "Ahrefs AI Visibility Checker",
+      "url": "https://ahrefs.com/ai-visibility-checker",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: ahrefs.com/ai-visibility-checker",
+      "articleTitle": "AI 可见度：追踪品牌在 AI 答案中的引用与提及"
+    },
+    {
+      "num": 159,
+      "pageKey": "/zh/blog/ai-visibility",
+      "title": "OpenAI GPTBot 文档",
+      "url": "https://platform.openai.com/docs/bots",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "AI 可见度：追踪品牌在 AI 答案中的引用与提及"
+    },
+    {
+      "num": 160,
+      "pageKey": "/zh/blog/cad",
+      "title": "Autodesk. Fusion 产品概览. 2026.",
+      "url": "https://www.autodesk.com/products/fusion/overview",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /overview",
+      "articleTitle": "CAD 软件与 AI CAD：从参数建模到 Text-to-CAD"
+    },
+    {
+      "num": 161,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "智谱 GLM Coding Plan 官方文档",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/overview",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /overview",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 162,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "MiniMax Token Plan 官方文档",
+      "url": "https://platform.minimaxi.com/docs/token-plan/intro",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 163,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "阿里云百炼 Coding Plan 文档",
+      "url": "https://help.aliyun.com/zh/model-studio/coding-plan",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: help.aliyun.com",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 164,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "百度千帆 Coding Plan 产品升级公告",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Emqsyd7yj",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Baidu Coding Plan discontinuation/migration announcement (2026-06-25)",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 165,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "国内 Coding API 横评 2026",
+      "url": "https://codepick.dev/zh/guides/china-coding-api-roundup-2026/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: codepick.dev",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 166,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "GLM Coding Plan vs Claude/Copilot Review",
+      "url": "https://hyscaler.com/insights/glm-coding-plan-review/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: hyscaler.com",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 167,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "A Guide to AI SaaS Pricing Frameworks",
+      "url": "https://stripe.com/resources/more/ai-saas-pricing-models",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: stripe.com/resources",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 168,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "Heroku Eco Dyno Hours 官方文档",
+      "url": "https://devcenter.heroku.com/articles/eco-dyno-hours",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: devcenter.heroku.com",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 169,
+      "pageKey": "/zh/blog/coding-plan",
+      "title": "Intercom AI Agent Pricing Comparison",
+      "url": "https://www.intercom.com/learning-center/ai-customer-service-agent-pricing-comparison",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: intercom.com/learning-center",
+      "articleTitle": "Coding Plan 开发者订阅：中国 AI 编程的主增长路径"
+    },
+    {
+      "num": 170,
+      "pageKey": "/zh/blog/data-engineering-agent",
+      "title": "什么是 Agentic AI 数据工程？",
+      "url": "https://www.ibm.com/think/topics/agentic-ai-data-engineering",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: ibm.com/think/topics",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 171,
+      "pageKey": "/zh/blog/data-engineering-agent",
+      "title": "数据工程 AI Agent 指南（2026）",
+      "url": "https://atlan.com/know/ai-agents-for-data-engineering/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"atlan.com\"",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 172,
+      "pageKey": "/zh/blog/data-engineering-agent",
+      "title": "Agentic 数据管道：你需要了解的一切",
+      "url": "https://peliqan.io/blog/agentic-data-pipelines/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"peliqan.io\"",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 173,
+      "pageKey": "/zh/blog/data-engineering-agent",
+      "title": "推出 dltHub Pro：面向 Claude/Codex/Cursor 的数据工程",
+      "url": "https://dlthub.com/blog/introducing-dlthub-pro",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "dltHub Pro product launch announcement",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 174,
+      "pageKey": "/zh/blog/data-engineering-agent",
+      "title": "2031 年 1.2 万亿美元数据市场：Agentic AI 取代传统 Pipeline",
+      "url": "https://futurumgroup.com/press-release/1-2t-data-market-by-2031-agentic-ai-replaces-data-pipelines/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"futurumgroup.com\"",
+      "articleTitle": "data-engineering-agent"
+    },
+    {
+      "num": 175,
+      "pageKey": "/zh/blog/git-hosting",
+      "title": "Cursor Origin 文档",
+      "url": "https://cursor.com/docs/origin",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: /docs/",
+      "articleTitle": "Agent 时代 Git 托管：Agent-scale Forge 与协作边界"
+    },
+    {
+      "num": 176,
+      "pageKey": "/zh/blog/git-hosting",
+      "title": "Git at any scale 工程博客",
+      "url": "https://cursor.com/blog/git-at-any-scale",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"cursor.com/blog/git-at-any-scale\"",
+      "articleTitle": "Agent 时代 Git 托管：Agent-scale Forge 与协作边界"
+    },
+    {
+      "num": 177,
+      "pageKey": "/zh/blog/git-hosting",
+      "title": "Welcome home, agents",
+      "url": "https://github.blog/news-insights/company-news/welcome-home-agents/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "GitHub Agent HQ official announcement (2025)",
+      "articleTitle": "Agent 时代 Git 托管：Agent-scale Forge 与协作边界"
+    },
+    {
+      "num": 178,
+      "pageKey": "/zh/blog/git-hosting",
+      "title": "GitLab Transcend 发布",
+      "url": "https://about.gitlab.com/blog/gitlab-transcend-announcements/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "GitLab Transcend product announcements (2026)",
+      "articleTitle": "Agent 时代 Git 托管：Agent-scale Forge 与协作边界"
+    },
+    {
+      "num": 179,
+      "pageKey": "/zh/blog/git-hosting",
+      "title": "Introducing Delta",
+      "url": "https://zed.dev/blog/introducing-delta",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Zed Delta product launch announcement",
+      "articleTitle": "Agent 时代 Git 托管：Agent-scale Forge 与协作边界"
+    },
+    {
+      "num": 180,
+      "pageKey": "/zh/blog/github-for-marketing",
+      "title": "关于仓库",
+      "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub增长攻略：仓库营销、README优化与开发者生态完整指南"
+    },
+    {
+      "num": 181,
+      "pageKey": "/zh/blog/github-for-marketing",
+      "title": "关于 README",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub增长攻略：仓库营销、README优化与开发者生态完整指南"
+    },
+    {
+      "num": 182,
+      "pageKey": "/zh/blog/github-for-marketing",
+      "title": "使用 Topics 分类仓库",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub增长攻略：仓库营销、README优化与开发者生态完整指南"
+    },
+    {
+      "num": 183,
+      "pageKey": "/zh/blog/github-for-marketing",
+      "title": "使用 Stars 收藏仓库",
+      "url": "https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub增长攻略：仓库营销、README优化与开发者生态完整指南"
+    },
+    {
+      "num": 184,
+      "pageKey": "/zh/blog/github-for-marketing",
+      "title": "Fake Stars, Real Damage：GitHub Star 滥用机制研究",
+      "url": "https://arxiv.org/abs/2412.13459",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "GitHub增长攻略：仓库营销、README优化与开发者生态完整指南"
+    },
+    {
+      "num": 185,
+      "pageKey": "/zh/blog/github-for-marketing",
+      "title": "GitHub Pages 文档",
+      "url": "https://docs.github.com/en/pages",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "GitHub增长攻略：仓库营销、README优化与开发者生态完整指南"
+    },
+    {
+      "num": 186,
+      "pageKey": "/zh/blog/github-for-marketing",
+      "title": "GitLab 与 GitHub 平台对比",
+      "url": "https://about.gitlab.com/compare/gitlab-vs-github/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: gitlab.com/compare",
+      "articleTitle": "GitHub增长攻略：仓库营销、README优化与开发者生态完整指南"
+    },
+    {
+      "num": 187,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Fungies · How Vibe Coders Should Set Up Payments: Stripe vs Merchant of Record（2026 指南）",
+      "url": "https://fungies.io/vibe-coding-payments-stripe-vs-merchant-of-record/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"vs \"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 188,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Vibe Coder Blog · Payment Integration With Stripe, Lemon Squeezy, and Paddle",
+      "url": "https://blog.vibecoder.me/payment-integration-stripe-lemon-squeezy-paddle",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"vibecoder.me\"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 189,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Creem · Vibe Coding to Revenue",
+      "url": "https://www.creem.io/blog/vibe-coding-to-revenue",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"creem.io/blog\"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 190,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "xploitscan · The $10,000 Stripe Webhook Bug in AI-Generated Code",
+      "url": "https://xploitscan.com/blog/stripe-webhook-spoofing",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"xploitscan.com\"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 191,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "VibeDoctor · Stripe Integration Security in AI-Generated Code",
+      "url": "https://vibedoctor.io/blog/stripe-integration-security-ai-generated-code",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"vibedoctor.io\"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 192,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Cybersecify · Vibe-Coded SaaS Pentest 2026: Cursor and Lovable Gaps",
+      "url": "https://cybersecify.com/blog/vibe-coded-app-pentest-india-2026/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"cybersecify.com\"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 193,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Youngju · Payment Infrastructure for Solo Developers and Micro-SaaS in 2026",
+      "url": "https://www.youngju.dev/blog/culture/2026-05-14-payment-infra-solo-devs-2026-stripe-lemon-squeezy-polar-paddle-creem-comparison-deep-dive.en",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"comparison\"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 194,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "Stripe · Webhook 签名验证官方文档",
+      "url": "https://docs.stripe.com/webhooks#verify-official-libraries",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.stripe.com",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 195,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "kostja94/vibe-coding · AI App Builder 技术栈参考",
+      "url": "https://github.com/kostja94/vibe-coding",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "No specific dated event/policy narrative; default aggressive DELETE",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 196,
+      "pageKey": "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+      "title": "VibeUsers · How to Monetize a Vibe Coded App",
+      "url": "https://vibeusers.io/blog/how-to-monetize-vibe-coded-app",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"how-to\"",
+      "articleTitle": "如何给 Vibe Coding 产品加入支付：从周末项目到赚钱的生意"
+    },
+    {
+      "num": 197,
+      "pageKey": "/zh/blog/how-to-name-ai-products",
+      "title": "Lexicon Branding — Naming for AI",
+      "url": "https://www.lexiconbranding.com/service/brand-naming-for-ai/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.lexiconbranding.com/service",
+      "articleTitle": "AI产品命名：从策略选择到全球落地的完整方法"
+    },
+    {
+      "num": 198,
+      "pageKey": "/zh/blog/how-to-name-ai-products",
+      "title": "AI Sucks at Naming",
+      "url": "https://www.ahundredmonkeys.com/resources/ai-sucks-at-naming-there-i-said-it/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"ahundredmonkeys.com\"",
+      "articleTitle": "AI产品命名：从策略选择到全球落地的完整方法"
+    },
+    {
+      "num": 199,
+      "pageKey": "/zh/blog/how-to-name-ai-products",
+      "title": "USPTO — Trademark Basics",
+      "url": "https://www.uspto.gov/trademarks/basics",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: www.uspto.gov/trademarks/basics",
+      "articleTitle": "AI产品命名：从策略选择到全球落地的完整方法"
+    },
+    {
+      "num": 200,
+      "pageKey": "/zh/blog/how-to-write-github-readme",
+      "title": "关于 README",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "如何写GitHub README：SEO与增长最佳实践指南"
+    },
+    {
+      "num": 201,
+      "pageKey": "/zh/blog/how-to-write-github-readme",
+      "title": "基础写作与格式化语法",
+      "url": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "如何写GitHub README：SEO与增长最佳实践指南"
+    },
+    {
+      "num": 202,
+      "pageKey": "/zh/blog/how-to-write-github-readme",
+      "title": "自定义仓库社交媒体预览",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/customizing-your-repositorys-social-media-preview",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "如何写GitHub README：SEO与增长最佳实践指南"
+    },
+    {
+      "num": 203,
+      "pageKey": "/zh/blog/how-to-write-github-readme",
+      "title": "使用 Topics 分类仓库",
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.github.com",
+      "articleTitle": "如何写GitHub README：SEO与增长最佳实践指南"
+    },
+    {
+      "num": 204,
+      "pageKey": "/zh/blog/how-to-write-github-readme",
+      "title": "SkillsBench：衡量 AI Agent 中 Skill 的有效性",
+      "url": "https://arxiv.org/abs/2602.12670",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "arXiv paper used as methodology/benchmark, not event source",
+      "articleTitle": "如何写GitHub README：SEO与增长最佳实践指南"
+    },
+    {
+      "num": 205,
+      "pageKey": "/zh/blog/inference-infrastructure",
+      "title": "AI 推理将定义 2026，市场仍远未饱和",
+      "url": "https://www.sdxcentral.com/analysis/ai-inferencing-will-define-2026-and-the-markets-wide-open/",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"sdxcentral.com\"",
+      "articleTitle": "AI推理平台：从部署到运维的一站式模型推理基础设施"
+    },
+    {
+      "num": 206,
+      "pageKey": "/zh/blog/inference-infrastructure",
+      "title": "AI 基础设施解决方案格局（2025 Q3）",
+      "url": "https://www.forrester.com/report/the-ai-infrastructure-solutions-landscape-q3-2025",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"landscape\"",
+      "articleTitle": "AI推理平台：从部署到运维的一站式模型推理基础设施"
+    },
+    {
+      "num": 207,
+      "pageKey": "/zh/blog/inference-infrastructure",
+      "title": "vLLM 官方文档",
+      "url": "https://docs.vllm.ai/en/latest/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.vllm.ai",
+      "articleTitle": "AI推理平台：从部署到运维的一站式模型推理基础设施"
+    },
+    {
+      "num": 208,
+      "pageKey": "/zh/blog/inference-infrastructure",
+      "title": "2025 年开源 AI 模型格局",
+      "url": "https://developers.redhat.com/articles/2026/01/07/state-open-source-ai-models-2025",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"developers.redhat.com/articles\"",
+      "articleTitle": "AI推理平台：从部署到运维的一站式模型推理基础设施"
+    },
+    {
+      "num": 209,
+      "pageKey": "/zh/blog/inference-infrastructure",
+      "title": "Amazon Bedrock — 模型推理",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: docs.aws.amazon.com",
+      "articleTitle": "AI推理平台：从部署到运维的一站式模型推理基础设施"
+    },
+    {
+      "num": 210,
+      "pageKey": "/zh/blog/interior-design",
+      "title": "全美房地产经纪人协会（NAR）.《2025 年家居陈设概况》. 2025.",
+      "url": "https://www.nar.realtor/research-and-statistics/research-reports/profile-of-home-staging",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"nar.realtor\"",
+      "articleTitle": "AI 室内设计：自住改造与全屋风格重塑"
+    },
+    {
+      "num": 211,
+      "pageKey": "/zh/blog/medical-scribe",
+      "title": "KLAS 2026 最佳环境文书排名",
+      "url": "https://klasresearch.com/report/best-in-klas-2026/3438",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Forbidden URL pattern: klasresearch.com/report/best-in",
+      "articleTitle": "AI医疗文书：诊室对话到SOAP病历的自动化管道"
+    },
+    {
+      "num": 212,
+      "pageKey": "/zh/blog/medical-scribe",
+      "title": "临床实践中环境 AI 文书系统综述",
+      "url": "https://www.nature.com/articles/s41746-025-02272-z",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Nature review article (Type D academic review)",
+      "articleTitle": "AI医疗文书：诊室对话到SOAP病历的自动化管道"
+    },
+    {
+      "num": 213,
+      "pageKey": "/zh/blog/medical-scribe",
+      "title": "环境文书初创公司 vs Epic",
+      "url": "https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "MedCity News: ambient scribe startups vs Epic (2026-02)",
+      "articleTitle": "AI医疗文书：诊室对话到SOAP病历的自动化管道"
+    },
+    {
+      "num": 214,
+      "pageKey": "/zh/blog/multi-agent",
+      "title": "LangGraph documentation",
+      "url": "https://langchain-ai.github.io/langgraph/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: langchain-ai.github.io",
+      "articleTitle": "多智能体系统：从 Agent 编排到团队协作架构"
+    },
+    {
+      "num": 215,
+      "pageKey": "/zh/blog/multi-agent",
+      "title": "OpenAI Agents SDK",
+      "url": "https://openai.github.io/openai-agents-python/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: openai.github.io/openai-agents",
+      "articleTitle": "多智能体系统：从 Agent 编排到团队协作架构"
+    },
+    {
+      "num": 216,
+      "pageKey": "/zh/blog/multi-agent",
+      "title": "A2A: A New Era of Agent Interoperability",
+      "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Google A2A protocol launch announcement (2025)",
+      "articleTitle": "多智能体系统：从 Agent 编排到团队协作架构"
+    },
+    {
+      "num": 217,
+      "pageKey": "/zh/blog/rate-limit-reset",
+      "title": "OpenAI Codex Pricing — 用量限额、banked reset、credits",
+      "url": "https://developers.openai.com/codex/pricing",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "OpenAI Codex official pricing/reset policy page",
+      "articleTitle": "用量限额重置：AI Agent 双窗限额下的增长促销策略"
+    },
+    {
+      "num": 218,
+      "pageKey": "/zh/blog/rate-limit-reset",
+      "title": "Using Codex with your ChatGPT plan — Usage limits reset",
+      "url": "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "OpenAI Help Center Codex usage limits reset policy",
+      "articleTitle": "用量限额重置：AI Agent 双窗限额下的增长促销策略"
+    },
+    {
+      "num": 219,
+      "pageKey": "/zh/blog/rate-limit-reset",
+      "title": "TechCrunch — Anthropic 为 Claude Code 增加 weekly rate limits",
+      "url": "https://techcrunch.com/2025/07/28/anthropic-unveils-new-rate-limits-to-curb-claude-code-power-users/",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "TechCrunch: Anthropic weekly rate limits announcement (2025-07-28)",
+      "articleTitle": "用量限额重置：AI Agent 双窗限额下的增长促销策略"
+    },
+    {
+      "num": 220,
+      "pageKey": "/zh/blog/rate-limit-reset",
+      "title": "Business Insider — Codex usage limit warroom fix",
+      "url": "https://www.businessinsider.com/openai-codex-usage-limit-warroom-fix-issue-2026-6",
+      "verdict": "KEEP",
+      "type": "B",
+      "reason": "Business Insider: Codex quota incident & warroom fix (2026-06)",
+      "articleTitle": "用量限额重置：AI Agent 双窗限额下的增长促销策略"
+    },
+    {
+      "num": 221,
+      "pageKey": "/zh/blog/web-fetch",
+      "title": "面向 AI Agent 的生产级 Web Fetch",
+      "url": "https://www.tinyfish.ai/blog/production-grade-web-fetching-for-ai-agents",
+      "verdict": "DELETE",
+      "type": "D",
+      "reason": "Third-party strategy/guide/roundup/benchmark: matches \"tinyfish.ai/blog\"",
+      "articleTitle": "Web Fetch：把任意 URL 变成 LLM 可读内容"
+    },
+    {
+      "num": 222,
+      "pageKey": "/zh/blog/web-fetch",
+      "title": "Firecrawl 术语表",
+      "url": "https://www.firecrawl.dev/glossary",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: firecrawl.dev/glossary",
+      "articleTitle": "Web Fetch：把任意 URL 变成 LLM 可读内容"
+    },
+    {
+      "num": 223,
+      "pageKey": "/zh/blog/web-fetch",
+      "title": "Jina Reader 文档",
+      "url": "https://jina.ai/reader/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: jina.ai/reader",
+      "articleTitle": "Web Fetch：把任意 URL 变成 LLM 可读内容"
+    },
+    {
+      "num": 224,
+      "pageKey": "/zh/blog/web-fetch",
+      "title": "Cloudflare：面向 AI 爬虫的 Markdown",
+      "url": "https://blog.cloudflare.com/markdown-for-agents/",
+      "verdict": "KEEP",
+      "type": "A",
+      "reason": "Cloudflare Markdown-for-agents feature announcement (2026)",
+      "articleTitle": "Web Fetch：把任意 URL 变成 LLM 可读内容"
+    },
+    {
+      "num": 225,
+      "pageKey": "/zh/blog/web-fetch",
+      "title": "Model Context Protocol 规范",
+      "url": "https://modelcontextprotocol.io/",
+      "verdict": "DELETE",
+      "type": "C",
+      "reason": "Static docs/overview/help: modelcontextprotocol.io",
+      "articleTitle": "Web Fetch：把任意 URL 变成 LLM 可读内容"
+    }
+  ],
+  "zeroAfter": [
+    "/blog/agent-memory",
+    "/blog/agent-sandbox",
+    "/blog/agentic-commerce",
+    "/blog/agentic-payments",
+    "/blog/ai-flashcards",
+    "/blog/ai-traffic-and-citation-sources",
+    "/blog/ai-training-data",
+    "/blog/ai-visibility",
+    "/blog/cad",
+    "/blog/github-for-marketing",
+    "/blog/how-to-add-payments-to-vibe-coded-app",
+    "/blog/how-to-name-ai-products",
+    "/blog/how-to-write-github-readme",
+    "/blog/inference-infrastructure",
+    "/blog/interior-design",
+    "/zh/blog/agent-memory",
+    "/zh/blog/agent-sandbox",
+    "/zh/blog/agentic-commerce",
+    "/zh/blog/agentic-payments",
+    "/zh/blog/ai-flashcards",
+    "/zh/blog/ai-traffic-and-citation-sources",
+    "/zh/blog/ai-training-data",
+    "/zh/blog/ai-visibility",
+    "/zh/blog/cad",
+    "/zh/blog/github-for-marketing",
+    "/zh/blog/how-to-add-payments-to-vibe-coded-app",
+    "/zh/blog/how-to-name-ai-products",
+    "/zh/blog/how-to-write-github-readme",
+    "/zh/blog/inference-infrastructure",
+    "/zh/blog/interior-design"
+  ]
+}
