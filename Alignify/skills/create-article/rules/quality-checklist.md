@@ -11,7 +11,7 @@
 | 状态 | 达成 |
 |------|------|
 | audit-ready | [`selfcheck.md`](./selfcheck.md) H0–H4 + 12 维全 Pass + 脚本绿 |
-| publish-ready | [`../audit-article/rules/final-audit.md`](../audit-article/rules/final-audit.md) P0 Pass + 十维 ≥**80** |
+| publish-ready | [`../../audit-article/rules/final-audit.md`](../../audit-article/rules/final-audit.md) P0 Pass + 十维 ≥**80** |
 | S 级 | 十维 ≥**90** + Moat + Excellence + 零 P1 |
 
 ---
@@ -61,7 +61,7 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 | P1-1 | Moat 在正文兑现（非仅 Brief） |
 | P1-2 | BLUF 三处 Pass |
 | P1-3 | FAQ 与正文非复制（相似度 <30%） |
-| P1-4 | 内链 distinct ≥5（Tools） |
+| P1-4 | 内链：点击意图 + 同 URL 1 次；无机械指路链/结论堆链 |
 | P1-5 | Extractability / Answer Blocks Pass |
 | P1-6 | 对照参考菜单 intentional |
 | P1-7 | Presentation 节奏（长段、无伪列表） |

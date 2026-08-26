@@ -32,13 +32,14 @@
 
 ## 类型决策
 
-| 知识块目录 | `articleType` | 路由 | 正文路径 |
-|-----------|---------------|------|---------|
-| `knowledge/tools/` | `best-ranking` | `/blog/{slug}` | `content/blog/` |
-| `knowledge/tools/`（存量） | `best-ranking-legacy` | `/tools/{slug}` | `content/tools/` |
-| `knowledge/seo/` | `seo-guide` | `/seo/{slug}` | `content/seo/` |
-| `knowledge/marketing/` | `marketing-strategy` | `/marketing/{slug}` | `content/marketing/` |
-| `knowledge/insights/` | `insights-analysis` | `/insights/{slug}` | `content/insights/` |
+| 知识块目录 | `articleType` | **新文** 路由 | **新文** 正文路径 | **存量**（不重迁） |
+|-----------|---------------|-------------|-----------------|-------------------|
+| `knowledge/tools/` | `best-ranking` | `/blog/{slug}` | `content/blog/` | `/tools/{slug}` · `content/tools/` |
+| `knowledge/seo/` | `seo-guide` | `/blog/{slug}` | `content/blog/` | `/seo/{slug}` · `content/seo/` |
+| `knowledge/marketing/` | `marketing-strategy` | `/blog/{slug}` | `content/blog/` | `/marketing/{slug}` · `content/marketing/` |
+| `knowledge/insights/` | `insights-analysis` | `/blog/{slug}` | `content/blog/` | `/insights/{slug}` · `content/insights/` |
+
+> **路由约定（2026-08-28）**：**所有新文章**（任意类型）统一 **`content/blog/` + `/blog/{slug}`**（中文 `/zh/blog/{slug}`）。存量旧路径**仅维护更新，不重迁 URL**。详见 [`rules/article-types.md`](./rules/article-types.md)。
 
 ---
 
@@ -50,8 +51,8 @@
 02 Research — Gate 0R（全类型必做）+ Article Brief 定稿
     ↓ PASS
 03 Keywords + README
-04 Screenshots（best-ranking / legacy）
-05 中文 md — Outline 3.5（同批≥2）→ Gate B → 起草
+04 Screenshots — **仅** best-ranking / legacy；marketing · seo · insights **跳过**
+05 中文 md
 06 中文润色 — BLUF + Extractability
 07 内链 + Internal Link Plan
 08 Meta + Config
@@ -83,7 +84,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 01 | [`01-intake.md`](./01-intake.md) | Gate A + 大纲草案 |
 | 02 | [`02-research.md`](./02-research.md) | Research Log + Brief + Gate 0R |
 | 03 | [`03-keywords.md`](./03-keywords.md) | 关键词 + README |
-| 04 | [`04-screenshots.md`](./04-screenshots.md) | 截图 |
+| 04 | [`04-screenshots.md`](./04-screenshots.md) | 截图（**仅** best-ranking / legacy） |
 | 05 | [`05-zh-content.md`](./05-zh-content.md) | ZH md |
 | 06 | [`06-localize-zh.md`](./06-localize-zh.md) | 润色 + BLUF |
 | 07 | [`07-internal-links.md`](./07-internal-links.md) | 内链 + Link Plan |
@@ -110,6 +111,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | S 级清单 | [`rules/perfect-article-checklist.md`](./rules/perfect-article-checklist.md) |
 | 结构原则 | [`rules/anatomy.md`](./rules/anatomy.md) |
 | 质量检查 | [`rules/quality-checklist.md`](./rules/quality-checklist.md) |
+| 内链 | [`rules/internal-links.md`](./rules/internal-links.md) · [`rules/marketing-internal-links.md`](./rules/marketing-internal-links.md) |
 
 完整索引：[`rules/README.md`](./rules/README.md)
 
@@ -124,6 +126,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 ## Gotchas
 
 - ❌ Gate 未 Pass 交付 · ❌ 跳过 Step 02 Research · ❌ 无 Moat 动笔 · ❌ FAQ 复制正文  
+- ❌ blog md 用 GFM 表格或 `-`/`1.` 列表（须 `childrenHtml` HTML；见 `anatomy.md` §四·一 · E33/E34）
 - ❌ 自审后直接发布（须 audit-article）· ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章
 - ❌ **新 slug** publishDate 与全站已有 slug 重复（须 `next-publish-date.mjs --check`）
@@ -132,6 +135,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ 中文英译腔 / 英文逐句翻译 ZH（须 `localization-quality.md` Pass）
 - ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV**）
 - ❌ 个人知识库已有 SSOT 仍创建 `knowledge/marketing/{slug}.md` 副本（E32）
+- ❌ `git commit attribution` 中文译成「Git 提交归因 / 提交归因」（须 **AI 提交署名**；E36 · `terminology-glossary.md` §六）
 
 ---
 

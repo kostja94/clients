@@ -43,7 +43,7 @@
 
 ### 1.5 禁止规则注意
 
-- **勿禁止渲染所需资源**：CSS、JS、图片等被禁止会导致 Google 无法正确渲染，损害索引（见 [technical-indexing](./technical-indexing.md#51-nextjs--vercel_nextstaticcsscssdpl)）
+- **勿禁止渲染所需资源**：CSS、JS、图片等被禁止会导致 Google 无法正确渲染，损害索引（见 [technical-indexing](./seo-fundamentals.md#51-nextjs--vercel_nextstaticcsscssdpl)）
 - 仅禁止不需要抓取的路径：后台、API、临时文件等
 
 ### 1.6 常见模式
@@ -259,5 +259,5 @@ async headers() {
 ## 六、相关文档
 
 - **SEO 指南**：`/seo/robots-txt` 页面提供 robots.txt 语法与最佳实践
-- **Sitemap**：参见 [technical-sitemap](./technical-sitemap.md)
-- **索引（含 _next 静态资源说明）**：参见 [technical-indexing](./technical-indexing.md#51-nextjs--vercel_nextstaticcsscssdpl)
+- **Sitemap**：参见 [technical-sitemap](./sitemap.md)
+- **索引（含 _next 静态资源说明）**：参见 [technical-indexing](./seo-fundamentals.md#51-nextjs--vercel_nextstaticcsscssdpl)

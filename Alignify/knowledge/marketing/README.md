@@ -21,6 +21,10 @@
 |------------------------|----------------|
 | `rate-limit-reset` | `E:\个人知识库\营销campaign\增长模式\Agent限额与Reset促销.md` |
 | `coding-plan` | `E:\个人知识库\营销campaign\增长模式\Coding-Plan-开发者订阅.md` |
+| `git-commit-attribution` | `E:\个人知识库\营销campaign\增长模式\Git-Commit-Attribution-提交归因.md`（中文主称：**AI 提交署名**） |
+| `wrapped-marketing` | `E:\个人知识库\营销campaign\年度节奏\Wrapped-参考.md` |
+
+**路由（2026-08-28）**：上表 campaign 专题及所有**新 marketing 文**统一发布于 **`/blog/{slug}`**（正文 `content/blog/`）；存量 `/marketing/[slug]` 仅维护不重迁。
 
 **Alignify 本目录**：仅保留**无外部 SSOT**、或已与 `/marketing/[slug]` 长期对齐的 legacy 知识块（下表 13 篇）。新建 campaign 主题 → 个人知识库 + `_briefs/{slug}.md` 登记路径，**不**复制正文到本目录。
 

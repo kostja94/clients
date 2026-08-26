@@ -1,5 +1,7 @@
 # Generic Section（普通段落）使用最佳实践
 
+> **新文（2026-08+）**：Marketing / Blog 策略文用 **`content/blog/{locale}/{slug}.md`** + `<!-- block:section -->` + Markdown `##`/`###`（见 [`anatomy.md`](../anatomy.md) §四·一）。**本节 Section 组件规范仅适用于存量 JSON/React 页或 SEO legacy 维护。**
+
 本文档定义 SEO、Marketing 等页面中纯文字章节的规范，使用 `Section` 组件作为 **Generic Section**（普通段落）统一管理标题+段落结构。
 
 **参考**：Section 组件（`src/components/Section.tsx`）
@@ -31,7 +33,7 @@
 
 ### 2.2 样式
 
-标题、段落、分割线样式遵循 [brand-visual.md §2.2 文本层级定义](../alignify-project-context/brand-visual.md#22-文本层级-l1l6)，由 Section 组件统一实现；本节**不重复声明**具体 Tailwind 类。
+标题、段落、分割线样式遵循 [aesthetic-references.md](../../../../knowledge/design/aesthetic-references.md#22-文本层级-l1l6)，由 Section 组件统一实现；本节**不重复声明**具体 Tailwind 类。
 
 ---
 

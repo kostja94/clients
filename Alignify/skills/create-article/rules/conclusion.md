@@ -3,7 +3,7 @@
 > **站点**：[alignify.co](https://alignify.co)
 > **部署仓正文**：`alignify-by-kostja/content/**/*.md`（Markdown + frontmatter + block 标记）
 > **Last updated**: 2026-08-08
-> **说明**：Alignify 所有 Conclusion 章节的规则、写法、篇幅、内链、实现与验收流程**仅在本文件维护**。原 `content/sections/content-rules/section-conclusion.md`、`section-consistency.md` 结论行、`section-optimization-playbook.md` 结论节、templates 中结论小节、`skills/*/references/*` 中结论规则均已迁入或改为指向本文件。
+> **说明**：Alignify 所有 Conclusion 章节的规则、写法、篇幅、内链、实现与验收流程**仅在本文件维护**。原 `content/sections/content-rules/section-conclusion.md`、`consistency.md` 结论行、`section-optimization-playbook.md` 结论节、templates 中结论小节、`skills/*/references/*` 中结论规则均已迁入或改为指向本文件。
 
 ---
 
@@ -60,7 +60,7 @@
 
 ## 2.3 篇幅（软约束 · 内容优先）
 
-> **定位说明**：篇幅区间是 **C 层软建议**（见 [section-consistency §〇](../consistency.md)），**不是硬性红线**。审校与生成时**优先看内容**：论证完整、信息对等、无注水 > 字数达标。**切勿为贴数字删补句式**；跨页优先对齐语气与结构，正文字数允许随主题难度浮动，不强制逐字相等。
+> **定位说明**：篇幅区间是 **C 层软建议**（见 [section-consistency §〇](./consistency.md)），**不是硬性红线**。审校与生成时**优先看内容**：论证完整、信息对等、无注水 > 字数达标。**切勿为贴数字删补句式**；跨页优先对齐语气与结构，正文字数允许随主题难度浮动，不强制逐字相等。
 
 | 语言 | 参考区间 | 结构 |
 |------|---------|------|
@@ -133,9 +133,10 @@
 
 ## 3.2 Marketing（营销策略页）
 
-- **禁止**：任何内链、外链；具体产品名、工具名、平台名
-- **可保留**：策略类型名称（红人营销、联盟营销、创作者计划、Lifetime Deal、创作竞赛等）为纯文本
-- **重点**：归纳方法论和策略价值，不提及具体产品
+- **可包含**：内链（见 §4.1，**0–2** 条；承接上文未覆盖的相邻 GTM 任务，非清单式）
+- **禁止**：外链；结论段堆产品名清单或「延伸阅读 A、B、C」
+- **可保留**：策略类型名称（红人营销、联盟营销、创作者计划等）为纯文本或链至对应策略页
+- **重点**：归纳方法论和策略价值
 - 篇幅：见 §2.3
 
 ## 3.3 SEO（SEO 指南页）
@@ -245,7 +246,7 @@ Insights 页面结论若在 `childrenHtml` 内，需保留 `id="conclusion"`；�
 
 | # | 检查项 | 通过标准 |
 |---|--------|---------|
-| P0-1 | Conclusion 在 FAQ 之前 | JSON blocks 中 conclusion section 出现在 faq 之前；是 FAQ 前倒数第 2 个非 References section |
+| P0-1 | Conclusion 在 FAQ 之前 | md 正文中 `## 结论 {#conclusion}` 出现在 `## 常见问题 {#faq}` 之前 |
 | P0-2 | 锚点 id | 固定为 `conclusion`，无变体 |
 | P0-3 | 段落数 | ≥2 段，否则仓促（spoke 例外见 §2.3.3） |
 
@@ -277,9 +278,9 @@ npm run build                 # 部署仓：全量构建
 | 原文件 | 迁移状态 |
 |--------|---------|
 | `content/sections/content-rules/section-conclusion.md` | 已迁入本文件（原文件改指针） |
-| `content/sections/content-rules/section-consistency.md` §二「结论」行 | 篇幅区间以本文件 §2.3 为准；一致性定位（C 层软建议）仍以该文件 §〇 为准 |
+| `content/sections/content-rules/consistency.md` §二「结论」行 | 篇幅区间以本文件 §2.3 为准；一致性定位（C 层软建议）仍以该文件 §〇 为准 |
 | `content/sections/content-rules/section-optimization-playbook.md` | 结论的段落数/顺序规则见本文件 §2.1/§2.5 |
-| `content/sections/content-rules/section-seo.md` | Conclusion 在 FAQ 前（见本文件 §2.1） |
+| `content/sections/content-rules/meta.md.md` | Conclusion 在 FAQ 前（见本文件 §2.1） |
 | `skills/create-article/rules/templates/best-ranking.md` / `template-seo.md` / `template-marketing.md` | 结论位置/篇幅/内链见本文件 §2/§3/§4 |
 | `skills/create-article/rules/internal-links.md` | 结论内链 0–2 见本文件 §4 |
 | `skills/create-article/*` | 结论顺序/段落数/篇幅见本文件 §2/§6 |
@@ -299,7 +300,7 @@ npm run build                 # 部署仓：全量构建
 - ❌ 字数过少，缺乏总结价值（视频 spoke 例外见 §2.3.3）
 - ❌ 字数过多且无论证（高密度页例外见 §2.3.1）
 - ❌ 中英信息不对等：一处有具体论据、另一处只有模糊概括（见 §2.3.2）
-- ❌ Marketing 中使用了内链或产品名
+- ❌ Marketing 结论内链堆叠成「延伸阅读」清单，或链与正文重复同一 URL
 - ❌ 裸断言：删掉支撑论据只剩结论（$0.035/图 → 「中文优先 Qwen」）
 - ❌ 模板腔：革命性 / 前所未有 / 协作伙伴 / Choose the right tool based on…
 - ❌ 结论内链堆叠成「感兴趣」清单

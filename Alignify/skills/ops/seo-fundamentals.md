@@ -15,7 +15,7 @@
 - **位置**：`public/robots.txt`
 - **作用**：指导爬虫哪些路径可抓取、哪些排除
 - **要求**：不阻塞重要页面；声明 Sitemap
-- 详见 [technical-robots](./technical-robots.md)
+- 详见 [technical-robots](./robots.md)
 
 ### 1.2 X-Robots-Tag
 
@@ -94,13 +94,13 @@ alternates: {
 
 - **作用**：主动通知 Bing 等搜索引擎新页面或更新，加快索引
 - **实现**：`scripts/permanent/submit-all-pages-to-indexnow.ts`、`src/lib/indexnow.ts`
-- 详见 [technical-indexnow](./technical-indexnow.md)
+- 详见 [technical-indexnow](./indexnow.md)
 
 ### 3.3 Sitemap
 
 - **作用**：帮助搜索引擎发现所有可索引 URL
 - **提交**：在 Search Console 提交 sitemap URL
-- 详见 [technical-sitemap](./technical-sitemap.md)
+- 详见 [technical-sitemap](./sitemap.md)
 
 ### 3.4 Noindex 使用
 
@@ -145,7 +145,7 @@ Vercel 每次部署为静态资源附加唯一 `dpl=` 参数，产生大量「�
 
 适用场景：JobPosting、BroadcastEvent 等含结构化数据的页面。配额默认 200 URL/天，需服务账号 + Search Console 所有者验证。
 
-实现指南参见 [technical-google-indexing](./technical-google-indexing.md)。
+实现指南参见 [technical-google-indexing](./google-indexing.md)。
 
 ---
 
@@ -155,6 +155,6 @@ Vercel 每次部署为静态资源附加唯一 `dpl=` 参数，产生大量「�
 |------|------|
 | [Page indexing report](https://support.google.com/webmasters/answer/7440203) | GSC 页面索引报告官方说明 |
 | [Crawled – Currently not indexed 修复](https://searchengineland.com/fix-crawled-currently-not-indexed-error-google-search-console-445344) | Search Engine Land 修复指南 |
-| [technical-robots](./technical-robots.md) | 本站 robots 配置 |
-| [technical-sitemap](./technical-sitemap.md) | Sitemap 配置 |
-| [technical-indexnow](./technical-indexnow.md) | IndexNow 集成 |
+| [technical-robots](./robots.md) | 本站 robots 配置 |
+| [technical-sitemap](./sitemap.md) | Sitemap 配置 |
+| [technical-indexnow](./indexnow.md) | IndexNow 集成 |

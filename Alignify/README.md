@@ -20,16 +20,11 @@
 
 ```
 Alignify/
-├── README.md
-├── knowledge/
 ├── skills/
-│   ├── create-article/       ← ★ 创作（flagship 全链路）
-│   ├── audit-article/        ← ★ 终审 → publish-ready
-│   ├── optimize-internal-links/
+│   ├── create-article/
+│   ├── audit-article/
+│   ├── optimize-internal-links/   ← 含 references/site-structure-internal-links.md
 │   └── ops/
-├── scripts/
-├── data/
-└── ppt/
 ```
 
 **已合并/移除**：`content/` · `technical/` · `create-tools-article/` · `create-blog-article/` · `localize-content-zh/` → 并入 `skills/create-article/`。
@@ -43,6 +38,7 @@ Alignify/
 | 新建任意频道文章 | [`skills/create-article/SKILL.md`](skills/create-article/SKILL.md) |
 | 发布前终审 | [`skills/audit-article/SKILL.md`](skills/audit-article/SKILL.md) |
 | 存量内链优化 | [`skills/optimize-internal-links/SKILL.md`](skills/optimize-internal-links/SKILL.md) |
+| **全站内链快照** | [`skills/optimize-internal-links/references/site-structure-internal-links.md`](skills/optimize-internal-links/references/site-structure-internal-links.md)（根目录 [`site-structure-internal-links.md`](site-structure-internal-links.md) 为指针） |
 | 发布后 SEO | [`skills/ops/README.md`](skills/ops/README.md) |
 | 规范 SSOT | [`skills/create-article/rules/README.md`](skills/create-article/rules/README.md) |
 | 路径修复脚本 | [`scripts/ref/fix-rules-section-links.py`](scripts/ref/fix-rules-section-links.py) |

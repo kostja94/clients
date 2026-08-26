@@ -63,12 +63,13 @@
 
 ## 类型判定
 
-| 知识块目录 | articleType | 路由 |
-|-----------|-------------|------|
-| `knowledge/tools/` | `best-ranking` | `/blog/{slug}` |
-| `knowledge/seo/` | `seo-guide` | `/seo/{slug}` |
-| `knowledge/marketing/` | `marketing-strategy` | `/marketing/{slug}` |
-| `knowledge/insights/` | `insights-analysis` | `/insights/{slug}` |
+| 知识块目录 | articleType | **新文** 路由 · 正文路径 | **存量**（不重迁） |
+|-----------|-------------|------------------------|-------------------|
+| `knowledge/tools/` | `best-ranking` | `/blog/{slug}` · `content/blog/` | `/tools/{slug}` · `content/tools/` |
+| `knowledge/tools/`（存量维护） | `best-ranking-legacy` | — | `/tools/{slug}` · `content/tools/` |
+| `knowledge/seo/` | `seo-guide` | `/blog/{slug}` · `content/blog/` | `/seo/{slug}` · `content/seo/` |
+| `knowledge/marketing/` | `marketing-strategy` | `/blog/{slug}` · `content/blog/` | `/marketing/{slug}` · `content/marketing/` |
+| `knowledge/insights/` | `insights-analysis` | `/blog/{slug}` · `content/blog/` | `/insights/{slug}` · `content/insights/` |
 
 存量 `/tools/` → `best-ranking-legacy`，见 Step 12。
 

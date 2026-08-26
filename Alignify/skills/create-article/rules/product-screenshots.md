@@ -99,7 +99,7 @@ resp = app.scrape(
 
 ## 五、Best Ranking 文章 Meta 硬约束（与本步骤同步）
 
-Ranking / Best 型文章 **Meta title / description 必须含「最佳」/ `Best`**（见 [`meta-requirements.md`](./meta-requirements.md)）：
+Ranking / Best 型文章 **Meta title / description 必须含「最佳」/ `Best`**（见 [`meta-requirements.md`](./meta.md)）：
 
 | 要素 | 中文 | 英文 |
 |------|------|------|

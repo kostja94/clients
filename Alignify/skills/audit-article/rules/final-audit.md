@@ -46,7 +46,7 @@
 | C Structure | 9% | 内容驱动架构合理；TL;DR + 主体 + 结论 + FAQ |
 | D Writing & Voice | 11% | 中英地道；无 AI 腔；具体例子 |
 | E Fact & EEAT | 20% | Source Map；E1–E6 |
-| F Links & Graph | 6% | distinct ≥5；Hub/Spoke；无硬插 |
+| F Links & Graph | 6% | 点击意图；同 URL 1 次；Hub/Spoke；无硬插/机械指路 |
 | G Differentiation | 14% | Moat 兑现；非 SERP paraphrase |
 | H Bilingual parity | 6% | ZH/EN 信息对等、结构对齐 |
 | I Depth & FAQ | 12% | 主体完整；FAQ 独立；Best 段达标 |

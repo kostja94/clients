@@ -178,9 +178,11 @@ heroImageAlt: "…"
 
 ---
 
-## 四·一、正文表格（blog md）
+## 四·一、正文表格与列表（blog md）
 
-**禁止** GFM 管道表格（`| col |`）——`markdownToHtml` 不解析，会渲染成一行纯文本。
+**禁止** GFM 管道表格（`| col |`）——`markdownToHtml` 不解析，会渲染成一行纯文本（`|` 全部挤在同一行）。
+
+**禁止** Markdown 无序/有序列表（`- item` / `1. item`）——同样不解析，会与相邻段落或表格行**合并成一行**。
 
 **必须** 使用 `<!-- childrenHtml:start -->` + HTML：
 
@@ -190,7 +192,31 @@ heroImageAlt: "…"
 <!-- childrenHtml:end -->
 ```
 
-或独立 `<!-- block:section -->` 内单行 `<div class="content-html">…</div>`（见 `web-fetch` 对比表）。
+列表示例：
+
+```markdown
+<!-- childrenHtml:start -->
+<div class="content-html"><ul class="list-disc pl-6 space-y-3 text-base md:text-lg leading-relaxed"><li>…</li></ul></div>
+<!-- childrenHtml:end -->
+```
+
+或独立 `<!-- block:section -->` 内单行 `<div class="content-html">…</div>`（见 `web-fetch` 对比表、`lifetime-deal` 清单）。
+
+### 禁止在 childrenHtml 内写 H3/H4/正文段落（E35）
+
+**禁止** 在 `childrenHtml` 内使用带 Tailwind 的 `<h3 class="text-lg font-semibold…">`、`<h4 …>`、`<p class="text-base md:text-lg leading-relaxed">` 充当章节标题或正文——这些是 JSON→md 迁移遗留，与 Section 组件双轨。见 [`common-errors.md`](./common-errors.md) **E35**。
+
+| 元素 | 正确写法 |
+|------|----------|
+| H2 / H3 / H4 | Markdown `##` / `###` / `####` + `{#kebab-id}`（见 §二） |
+| 正文段落 | Markdown 段落（`**术语**——说明` 或普通句） |
+| 无序/有序列表 | `childrenHtml` + `<ul>` / `<ol class="list-disc…">` |
+| 表格 | `childrenHtml` + `<div class="content-html"><table>…` 或 section 内单行 table div |
+| 图片网格 / hero 卡片 | `childrenHtml` 或 frontmatter `heroHtml`（hero 内 h3 除外） |
+
+**例外**：`heroHtml` 工具推荐卡片内的 `<h3 class="text-lg font-semibold text-foreground…">` 保留（React 卡片 UI，非正文章节）。
+
+批量修复遗留页：`python scripts/ref/migrate-childrenhtml-headings.py`
 
 ---
 

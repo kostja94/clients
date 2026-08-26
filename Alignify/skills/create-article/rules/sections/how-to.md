@@ -3,7 +3,7 @@
 > **站点**：[alignify.co](https://alignify.co)
 > **部署仓正文**：`E:\自有部署项目\alignify production\content/**/*.md`（Markdown + frontmatter + block 标记；**禁止** frontmatter `howTo:`）
 > **Last updated**: 2026-08-26
-> **说明**：Alignify 所有「How To / 如何选择」章节的**定位、结构、写作规则、正文渲染、验收与常见错误仅在本文件维护**。HowTo JSON-LD Schema 已于 2026-08-08 移除；`template-tools.md §5.1`、`template-marketing.md §4.4`、`SKILL.md`、`common-errors.md` 中与本文件重叠的条目均已改为指向本文件或仅保留精简引用。
+> **说明**：Alignify 所有「How To / 如何选择」章节的**定位、结构、写作规则、正文渲染、验收与常见错误仅在本文件维护**。HowTo JSON-LD Schema 已于 2026-08-08 移除；`best-ranking.md §5.1`、`template-marketing.md §4.4`、`SKILL.md`、`common-errors.md` 中与本文件重叠的条目均已改为指向本文件或仅保留精简引用。
 
 ---
 
@@ -73,7 +73,7 @@
 
 ## 一、位置
 
-正文末尾，**结论之前**（Tools 页面顺序见 [template-tools](../templates/template-tools.md) 一、页面结构）：
+正文末尾，**结论之前**（Tools 页面顺序见 [template-tools](../templates/best-ranking.md) 一、页面结构）：
 
 ```
 … 应用场景 → 如何选择 → 结论 → FAQ
@@ -212,9 +212,9 @@
 |----------|---------|
 | **Tools** | 可点名具体工具与选择建议（Intercom、OpusClip、Toolify…）；步骤覆盖选型分叉、核验与落地 |
 | **SEO** | 偏实施步骤（怎么配置、怎么验证），可含 HowTo 但不重述技术正文；纯文字 |
-| **Marketing** | **仅方法驱动型设置**（keyword-research、localization-strategy 等）；策略判断/观点文（rate-limit-reset 类）**不设**，落地用分析节表达。设置时禁止链接、产品名、工具名，用通用表述——见 [template-marketing §4.4](../templates/template-marketing.md#44-how-to如何实施) |
+| **Marketing** | **仅方法驱动型设置**（keyword-research、localization-strategy 等）；策略判断/观点文（rate-limit-reset 类）**不设**，落地用分析节表达。设置时禁止链接、产品名、工具名，用通用表述——见 [template-marketing §4.4](../templates/marketing.md#44-how-to如何实施) |
 
-页面类型的 section 顺序与内链分布细则见 [template-tools](../templates/template-tools.md) 与 [internal-links.md §3.1.5](../alignify-internal-links.md#135-tools-内链均衡分布阅读体验优先--锚文本规范--跨板块预留)。
+页面类型的 section 顺序与内链分布细则见 [template-tools](../templates/best-ranking.md) 与 [internal-links.md §3.1.5](../internal-links.md#135-tools-内链均衡分布阅读体验优先--锚文本规范--跨板块预留)。
 
 ---
 
@@ -271,7 +271,7 @@ npm run build
 
 ## 与其他文档的关系
 
-- **[template-tools §5.1](../templates/template-tools.md#51-how-to如何选择)**：Tools 特有规则仅保留「可含工具名 + 标题示例」，其余指向本文件。
-- **[template-marketing §4.4](../templates/template-marketing.md#44-how-to如何实施)**：Marketing 特有规则（禁产品名/链接）指向本文件 Part 5。
-- **[sections/README.md](./README.md)**：组件索引表指向本文件。
+- **[template-tools §5.1](../templates/best-ranking.md#51-how-to如何选择)**：Tools 特有规则仅保留「可含工具名 + 标题示例」，其余指向本文件。
+- **[template-marketing §4.4](../templates/marketing.md#44-how-to如何实施)**：Marketing 特有规则（禁产品名/链接）指向本文件 Part 5。
+- **[rules/README.md](../README.md)**：组件索引表指向本文件。
 - **common-errors.md**：howTo 相关条目指向本文件，长期以本文为准。

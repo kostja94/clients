@@ -1,6 +1,6 @@
 # Meta 文案统一规范：Title、Description、H1、Excerpt
 
-> **定位**：本文档是 Alignify 全站 meta title、meta description、H1、excerpt 的**唯一文案规范来源**。其余文档（template、section-seo、section-heading-best-practices）中相关规则均**引用本文档**，不得独立维护副本。
+> **定位**：本文档是 Alignify 全站 meta title、meta description、H1、excerpt 的**唯一文案规范来源**。其余文档（template、meta.md、sections/generic.md）中相关规则均**引用本文档**，不得独立维护副本。
 >
 > **规则来源**：Google 官方文档、Moz/SEMrush/Ahrefs 2025–2026 最佳实践、Alignify 项目内部分析。
 > **最后验证**：2026-05-08（Web 搜索验证通过）。
@@ -189,7 +189,7 @@ Alignify 每个内容页有四个关键文案要素，分属两个导向：
 - Tools/Marketing/SEO 页面：通过 `BlogLayout` 的 `title` prop 生成（来自 md frontmatter `title`，解析为内部 `blogLayout.title`）
 - 使用硬编码字面量，避免引用变量导致构建失败
 - heroContent 禁止放置 H1
-- 详见 [section-heading-best-practices](./section-heading-best-practices.md) § 〇、§ 二
+- 详见 [sections/generic.md](./sections/generic.md) § 〇、§ 二
 
 ---
 
@@ -237,7 +237,7 @@ Unlock infinite potential in voices and create unique audio experiences. AI voic
 
 - 通过 `BlogLayout` 的 `excerpt` prop 生成（md frontmatter `description`）
 - 使用硬编码字面量
-- 详见 [section-heading-best-practices](./section-heading-best-practices.md) § 三
+- 详见 [sections/generic.md](./sections/generic.md) § 三
 
 ---
 
@@ -315,9 +315,9 @@ Meta 不再写在独立 `page.tsx` 中。当前架构：
 
 ## 九、相关文档
 
-- [section-heading-best-practices](./section-heading-best-practices.md) — H1-H6 层级、可访问性、SEO 收益（完整规范）
-- [section-seo](./section-seo.md) — SEO 速查入口（像素值、中英文差异、截断机制）
-- [template-tools](../templates/template-tools.md) — Tools 页面完整模板（引用本文档 § 一–四）
-- [template-marketing](../templates/template-marketing.md) — Marketing 页面完整模板（引用本文档 § 一–四）
-- [template-seo](../templates/template-seo.md) — SEO 页面完整模板（引用本文档 § 一–四）
-- [meta-description-optimization](../alignify-project-context/meta-description-optimization.md) — P1 优化方案（历史分析，以本文档字数规则为准）
+- [sections/generic.md](./sections/generic.md) — H1-H6 层级、可访问性、SEO 收益（完整规范）
+- [meta.md](./meta.md) — SEO 速查入口（像素值、中英文差异、截断机制）
+- [template-tools](./templates/best-ranking.md) — Tools 页面完整模板（引用本文档 § 一–四）
+- [template-marketing](./templates/marketing.md) — Marketing 页面完整模板（引用本文档 § 一–四）
+- [template-seo](./templates/seo.md) — SEO 页面完整模板（引用本文档 § 一–四）
+- [meta-description-optimization](./meta.md) — P1 优化方案（历史分析，以本文档字数规则为准）

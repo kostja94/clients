@@ -37,11 +37,12 @@
 
 ## 三、中文 Pass 清单
 
-### 3.1 术语（见 `marketing-glossary.json`）
+### 3.1 术语（见 `marketing-glossary.json` · `terminology-glossary.md` §六）
 
-- 正文叙述用 **中文主称**（用量限额重置、可储备重置、双时间窗限额）
+- 正文叙述用 **中文主称**（用量限额重置、可储备重置、双时间窗限额、**AI 提交署名**）
 - 英文术语 **首次** 括号标注即可，勿每句重复
 - `keep_english` 内词（Codex、Credits、CLI、Agent）保留
+- **attribution 分流**：Git/Co-Author 语境 → **提交署名 / AI 提交署名**；Paid Ads/UTM 语境 → **广告归因**；禁止把 `git commit attribution` 译成「Git 提交归因」
 
 ### 3.2 禁直译 / 禁腔调（`forbidden_in_zh`）
 
@@ -53,6 +54,7 @@
 | 与 X 同构 | 和 X 是同一套逻辑 |
 | 抢份额 / 留人（裸用） | 抢用户、提高留存（或具体说法） |
 | H2 以英文短语开头 | 中文 H2 为主，英文放括号 |
+| Git 提交归因 / 提交归因（Co-Author 语境） | **AI 提交署名** / **提交署名** | 见 `terminology-glossary.md` §6.2 |
 | 英文 slogan/比喻直译（如 `copy the mechanism, not the fireworks` → **抄机制，别抄烟花**） | 重写成中文读者能直读的说法：`学机制，别学排场`。比喻若中文不成立，弃比喻取语义 |
 
 ### 3.3 饱满度（非机械字数）

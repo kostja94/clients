@@ -1,20 +1,21 @@
 # 四种文章类型 × Markdown 结构
 
-> **版本**：v3.1 · 2026-08-26  
+> **版本**：v3.2 · 2026-08-27  
 > **格式**：`.md` frontmatter + `<!-- block:section -->` — TL;DR / FAQ / References 均在正文内  
-> **原则**：类型决定路径、Meta、Hub；**正文架构由内容决定**，下文为各类型**常见结构（建议）**。
+> **原则**：类型决定 Meta、Hub、知识块目录；**正文架构由内容决定**，下文为各类型**常见结构（建议）**。
 
 ---
 
 ## 类型速查
 
-| 类型 | 知识块 | 内容路径 | 路由 | Hub 推导 |
-|------|--------|---------|------|---------|
-| Tools（新） | `knowledge/tools/` | `content/blog/` | `/blog/` | frontmatter `category` |
-| Marketing | `knowledge/marketing/` | `content/marketing/` | `/marketing/` | 独立 Hub |
-| SEO | `knowledge/seo/` | `content/seo/` | `/seo/` | 独立 Hub |
-| Insights | `knowledge/insights/` | `content/insights/` | `/insights/` | 独立 Hub |
+| 类型 | 知识块 | **新文** 内容路径 | **新文** 路由 | **存量**（不重迁） | Hub 推导 |
+|------|--------|------------------|--------------|-------------------|----------|
+| Tools | `knowledge/tools/` | `content/blog/` | `/blog/{slug}` | `content/tools/` · `/tools/{slug}` | frontmatter `category` |
+| Marketing | `knowledge/marketing/` | `content/blog/` | `/blog/{slug}` | `content/marketing/` · `/marketing/{slug}` | 独立 Hub |
+| SEO | `knowledge/seo/` | `content/blog/` | `/blog/{slug}` | `content/seo/` · `/seo/{slug}` | 独立 Hub |
+| Insights | `knowledge/insights/` | `content/blog/` | `/blog/{slug}` | `content/insights/` · `/insights/{slug}` | 独立 Hub |
 
+> **路由约定（2026-08-28）**：**所有新文章**（任意类型）统一 **`content/blog/` + `/blog/{slug}`**（中文 `/zh/blog/{slug}`）。存量旧路径**仅维护更新，不重迁 URL**。  
 > **已废弃**：JSON block 类型 `howToChoose` / `bestTools` / `howItWorks` / `useCases`；对应 React 组件已删除。
 
 ---
@@ -41,6 +42,7 @@
 
 - 可选 frontmatter `heroHtml`
 - Meta：策略型规则组
+- 内链专规：[`marketing-internal-links.md`](./marketing-internal-links.md)
 
 ---
 
@@ -52,7 +54,7 @@
 核心要点 → 概念 → 操作 sections（H3）→ [场景] → 结论 → FAQ(7) → [References]
 ```
 
-- 代码/表格：`<!-- block:html -->`
+- 列表/表格：`<!-- childrenHtml:start -->` + HTML（见 `anatomy.md` §四·一）
 - Meta：指南型规则组
 
 ---
@@ -62,7 +64,7 @@
 **常见顺序**：
 
 ```
-核心要点 → html 长文 block 或 sections → 结论 → FAQ(7) → [References]
+核心要点 → sections 或 html 长文 → 结论 → FAQ(7) → [References]
 ```
 
 - Meta：分析型规则组
@@ -90,4 +92,4 @@ H1 / excerpt 始终在 md frontmatter `title` / `description`。
 
 ---
 
-*article-types · v3.1 · 2026-08-26*
+*article-types · v3.2 · 2026-08-27*

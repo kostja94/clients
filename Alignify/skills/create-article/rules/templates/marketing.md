@@ -2,11 +2,11 @@
 
 本文档为 Alignify Marketing 类页面的标准模板，用于创建或优化营销策略指南、方法论指南（如关键词调研、竞品调研、联盟营销、红人营销、GEO、外链建设等）。
 
-**参考**：content-rules、[section 文档](../README.md)、[section-content-import](../README.md)、[template-tools](./best-ranking.md)、[template-bloglayout](./bloglayout.md)、[section-consistency](../consistency.md)（字数与表达一致性）
+**参考**：content-rules、[section 文档](../README.md)、[README.md](../README.md)、[template-tools](./best-ranking.md)、[bloglayout](./bloglayout.md)、[section-consistency](../consistency.md)（字数与表达一致性）
 
-**内容格式（2026-08）**：`content/marketing/{locale}/{slug}.md` + 集中 JSON（TL;DR/FAQ/References）。正文用 `<!-- block:section -->` / `Section.tsx`；如何选择 = 正文 H2 + H3 步骤（**无** HowToChoose 组件）。
+**内容格式（2026-08）**：**新文** `content/blog/{locale}/{slug}.md` + `/blog/{slug}`；**存量** `content/marketing/` 不重迁。正文用 `<!-- block:section -->` + Markdown `##`/`###`；列表/表格用 `childrenHtml`（见 [`anatomy.md`](../anatomy.md) §四·一）。
 
-**首篇落地**：关键词调研（`content/marketing/zh/keyword-research.md`）
+**首篇落地**：关键词调研（存量 `content/marketing/zh/keyword-research.md`）；blog 路由范例：`content/blog/zh/rate-limit-reset.md`、`wrapped-marketing.md`
 
 ---
 
@@ -20,7 +20,7 @@
 
 **统一篇幅**：见 [section-consistency](../consistency.md) + 下文「Marketing 页面字数速查」。
 
-**EN/ZH 结构同步（必读）**：创建或优化任一语言版本的页面后，**必须**同步另一语言版本的块结构（类型和顺序一致）。不允许 EN 和 ZH 出现不同的 block type 序列。内容语言不同，但 JSON 结构须一一对应。
+**EN/ZH 结构同步（必读）**：创建或优化任一语言版本后，**必须**同步另一语言版本的 section 顺序与锚点 id（`## … {#id}`）。内容语言不同，但 md 章节结构须一一对应。
 
 **语言硬约束**：EN md 文件中所有面向用户的文本（H2、H3、段落）**必须**是英文。FAQ 在 md `#faq` section。**7 问**。
 
@@ -48,7 +48,20 @@
 
 例外：`marketing-types` 等 Hub 索引页可不含如何选择/如何实施 section。
 
-**Marketing 页面三种结构模式**：不同主题的 Marketing 页面正文结构不同，可分为三类：
+### 1.1 两种正文骨架（勿与下文 A/B/C「页面类型」混淆）
+
+| 骨架 | 适用 | 章节 |
+|------|------|------|
+| **标准 Marketing 结构** | 方法论/平台/运营类（keyword-research、affiliate、geo…） | TL;DR → 什么是 → 主体 → [How To] → 结论 → **FAQ 7 问** → [References] |
+| **增长模式 Cluster 结构** | 个人知识库 `营销campaign/增长模式/` 专题（rate-limit-reset、coding-plan、**git-commit-attribution**…） | **无**独立 TL;DR / FAQ；frontmatter 后直接 `## 什么是…` → 分析节 → `## 我的判断` → 组合拳 → 结论 → [References] |
+
+**增长模式 Cluster 为何省略 TL;DR/FAQ**：已有 `rate-limit-reset`、`coding-plan` 落地范例——长文叙事 + 作者判断即开篇，FAQ 易与正文重复；**不是**质量降级。
+
+**Step 04 截图**：仅 `best-ranking` / `best-ranking-legacy` 走 [`04-screenshots.md`](../../04-screenshots.md)。Marketing / Blog / Insights **跳过 Step 04**；无需产品截图，OG 封面见 [`ops/og-covers.md`](../../../ops/og-covers.md)。
+
+**内链（增长模式文）**：Brief 的 Planned internal links **只列已上线 slug**（部署仓 `content/**/{slug}.md` 可访问）。SSOT 姊妹篇、OSS 维护者计划等**未发布**主题：正文可文字提及，**禁止**站内 `href`（Gate **G6**）。
+
+**Marketing 页面三种结构模式**（按题材分类，与上表「骨架」正交）：
 
 | 类型 | 代表页面 | 正文特征 |
 |------|----------|----------|
@@ -70,20 +83,20 @@
 | **excerpt** | 100-150 字 | 200-250 字符 | 用户可读性 |
 | 核心要点 intro | 40–80 字 | 40–70 词 | GEO |
 | 核心要点 items | 4–5 条，每条 25–40 字，同组长度相近 | 4–5 条，每条 18–28 词，同组长度相近 | GEO |
-| 什么是 | 约 **180–380 字** | 约 **150–280 词** | 与 section-what-is 一致 |
+| 什么是 | 约 **180–380 字** | 约 **150–280 词** | 与 [what-is.md](../sections/what-is.md) 一致 |
 | How To 每步骤 | 约 **60–140 字** | 约 **50–120 词** | 步骤间不宜悬殊 |
-| 结论 | 见 [alignify-conclusion.md §2.3](../alignify-conclusion.md) | 见 [alignify-conclusion.md §2.3](../alignify-conclusion.md) | - |
+| 结论 | 见 [conclusion.md §2.3](../conclusion.md) | 见 [conclusion.md §2.3](../conclusion.md) | - |
 | FAQ 答案 | 约 **60–120 字** | 约 **40–80 词** | - |
 
 ---
 
 ## 二、Metadata 与 Frontmatter
 
-> Meta title/description → `marketing-meta.ts`；H1/excerpt → md frontmatter `title`/`description`。
+> Meta title/description → **`blog-meta.ts`**（新文）；存量 `content/marketing/` 页仍可能用 `marketing-meta.ts`。H1/excerpt → md frontmatter `title`/`description`。
 
 ### 2.2 SEO 导向（meta title、meta description）
 
-**详见**：[section-meta-copy](../meta.md) §一–二（字数、模板、CTA）、[section-seo](../meta.md)（像素值、截断机制）。
+**详见**：[meta.md](../meta.md) §一–二（字数、模板、CTA）、[meta.md](../meta.md)（像素值、截断机制）。
 
 **Marketing 特有约束**：
 - 中文不含「指南」，英文不含 "Guide"
@@ -92,9 +105,11 @@
 
 ### 2.3 用户可读性导向（H1、excerpt）
 
-**完整规范**：见 [section-meta-copy](../meta.md) §三–四（字数、三段式结构）、[section-heading-best-practices](../sections/generic.md)（H1-H6 层级与可访问性）。H1 与 excerpt 的**文案构建形式**须符合跨类型统一格式（`[策略]：[价值]`；excerpt 三段式首句→中段→收尾）。
+**完整规范**：见 [meta.md](../meta.md) §三–四（字数、三段式结构）、[sections/generic.md](../sections/generic.md)（H1-H6 层级与可访问性）。H1 与 excerpt 的**文案构建形式**须符合跨类型统一格式（`[策略]：[价值]`；excerpt 三段式首句→中段→收尾）。
 
-### 2.4 heroContent 两种形式
+### 2.4 Hero 区域
+
+**新文 blog md**：工具推荐卡片写在 frontmatter **`heroHtml`**（见 §三 Hero 行；`heroHtml` 内 `<h3>` 例外见 [`anatomy.md`](../anatomy.md) §四·一）。**勿**在 md 中使用 `heroContent` prop——下列 TSX 仅 **存量 BlogLayout 页**维护参考。
 
 **形式 A：无工具卡片**（适用于无对应 /tools 页面的策略）
 
@@ -102,7 +117,7 @@
 heroContent={<div></div>}
 ```
 
-**形式 B：工具推荐卡片**（适用于有对应 /tools 页面时）
+**形式 B：工具推荐卡片**（适用于有对应 /tools 页面时；blog md 等价写法见 frontmatter `heroHtml`）
 
 ```tsx
 heroContent={
@@ -131,7 +146,7 @@ heroContent={
 
 | 项目 | 中文 | 英文 |
 |------|------|------|
-| pageUrl | `/zh/marketing/[slug]` | `/marketing/[slug]` |
+| pageUrl | `/zh/blog/[slug]` | `/blog/[slug]` |
 | readTime | `XX 分钟阅读` | `XX min read` |
 | 日期格式 | `2026年1月15日` | `January 15, 2026` |
 | Introduction 标题 | 文章简介 | Introduction |
@@ -140,23 +155,20 @@ heroContent={
 
 ---
 
-## 三、内容导入方式（专用组件 + Generic Section）
+## 三、正文写法（Markdown）
 
-**要求**：正文章节使用**专用组件**或 **Generic Section**（Section 组件），禁止裸 `<div>` + `<h2>` + `<p>` 混用。详见 [section-content-import](../README.md)。
+| 章节 | 写法 | 规范 |
+|------|------|------|
+| 核心要点 | `## 核心要点 {#article-intro}` | [tldr.md](../sections/tldr.md) |
+| 什么是 XXX | `## … {#id}` + 段落 | [what-is.md](../sections/what-is.md) |
+| 方法论/步骤 | `##` / `###`；列表/表格 → `childrenHtml` | [anatomy.md](../anatomy.md) §四·一 |
+| 如何实施 | `## 如何实施…` + `###`（可选） | [how-to.md](../sections/how-to.md) |
+| 结论 | `## 结论 {#conclusion}` | [conclusion.md](../conclusion.md) |
+| FAQ | `## 常见问题 {#faq}` + 7× `###` | [faq.md](../sections/faq.md) |
+| References | `## 参考文献 {#references}` | [references.md](../sections/references.md) |
+| Hero | frontmatter `heroHtml` | 工具卡片 UI |
 
-| 章节 | 导入方式 | 组件/用法 | 规范文档 |
-|------|----------|-----------|----------|
-| 核心要点 | md `#article-intro` section | Tldr + introduction + items | [section-tldr](../sections/tldr.md) |
-| 什么是 XXX | Generic Section | Section + paragraphs | [section-what-is](../sections/what-is.md) |
-| 方法论/步骤 | Generic Section | Section + subSections、children | [section-generic](../sections/generic.md) |
-| 如何实施 | 正文 section | `## 如何实施…` + H3 | [section-how-to](../sections/section-how-to.md) |
-| 结论 | Generic Section | Section + paragraphs | [alignify-conclusion](../alignify-conclusion.md) |
-| FAQ | 专用组件 | FAQ | [section-faq](../sections/faq.md) |
-| References | 专用组件 | References | [section-references](../sections/references.md) |
-
-**Generic Section** = Section 组件用于普通段落（标题+段落），支持 paragraphs、subSections、children。详见 [section-generic](../sections/generic.md)。
-
-**H2 章节间距**：Marketing 正文 H2 章节之间**不使用** Section 的 `showDivider`，统一由容器 `space-y-12` 控制间距，保持简洁视觉节奏。
+**H2 间距**：容器 `space-y-12`；正文 H2 之间不加 divider。
 
 ---
 
@@ -164,43 +176,51 @@ heroContent={
 
 ### 4.1 核心要点（Tldr）
 
-- **统一使用 md `#article-intro` section**：参见 [section-tldr](../sections/tldr.md) § 4.2 Marketing 页面
+- **统一使用 md `#article-intro` section**：参见 [tldr.md](../sections/tldr.md) § 4.2 Marketing 页面
 - **introduction**：40–80 字，含 [策略名称]、[方法关键词]、[受众]；直答式
 - **items**：4–5 条，每条 25–40 字，同组长度相近
 - **内容方向**：核心价值+数据、完整方法论、工具+案例、适用受众
 
 ### 4.2 什么是 XXX
 
-- **结构**：常见 **2–4 段**；首段定义+价值+适用人群；后续段可写边界与分流；内链按 [section-what-is](../sections/what-is.md)
+- **结构**：常见 **2–4 段**；首段定义+价值+适用人群；后续段可写边界与分流；内链按 [what-is.md](../sections/what-is.md)
+- **术语密集型主题**（如 Wrapped / 年终回顾、**AI 提交署名**）：须在「什么是」节列出**全部行业别名**（表格或并列段），并写清与易混概念（如平台聚合报告、**广告归因**）的边界。译法 SSOT：`terminology-glossary.md` §六 · `marketing-glossary.json`
 - **篇幅**：见 [section-consistency §二](../consistency.md#二通用字数与篇幅建议区间)
 - **内链**：与主题有强功能/工作流关联
+
+### 4.2b 策略适用性节（campaign / GTM 专题）
+
+当题材回答「什么产品该用这个营销策略」时，正文须设独立 H2（如「哪些产品适合…」），含 **go / no-go 决策矩阵** + 按产品形态的分流建议。目标读者为 founder 时，案例节优先 **AI / Agent** 垂直，不必铺全量 C 端（音乐、外卖等）案例表。
 
 ### 4.3 正文章节（方法论、步骤、框架）
 
 - **结构**：按主题分 H2/H3，每节聚焦一个子问题
+- **H3/H4 写法**：用 Markdown `### 小节 {#anchor}` / `#### …`，**禁止**在 `childrenHtml` 内写 `<h3 class="text-lg font-semibold…">`（遗留格式，见 [anatomy.md §四·一](../anatomy.md)）
+- **childrenHtml 范围**：仅 **列表**（`<ul>`/`<ol>`）、**表格**（`<div class="content-html"><table>`）、**图片网格**；正文段落用 Markdown
 - **可含**：表格、列表、工具参考表
 - **外链**：使用 `addUtmToExternalLink()` 添加 UTM
 - **内容分块**：每块可独立回答一个子查询，利于 AI 提取与 Featured Snippets
 
 ### 4.4 How To（如何实施）
 
-**仅方法驱动型设置**（判据见 [section-how-to](../sections/how-to.md) 适用范围）；策略判断/观点文**不设**此节。
+**仅方法驱动型设置**（判据见 [sections/how-to.md](../sections/how-to.md) 适用范围）；策略判断/观点文**不设**此节。
 
 - **禁止**：链接、具体产品名、工具名、平台名
 - **使用通用表述**：如「趋势类工具」「问题汇总工具」「关键词挖掘工具」
-- **步骤数**：3–5 步（按主题复杂度，见 [section-how-to](../sections/how-to.md) Part 2）
-- **每步骤**：动词开头 + 分叉短语；内容优先，字数仅质检参考（建议约 **60–140 字**，见 [section-how-to](../sections/how-to.md) Part 3）
+- **步骤数**：3–5 步（按主题复杂度，见 [sections/how-to.md](../sections/how-to.md) Part 2）
+- **每步骤**：动词开头 + 分叉短语；内容优先，字数仅质检参考（建议约 **60–140 字**，见 [sections/how-to.md](../sections/how-to.md) Part 3）
 
 ### 4.5 结论
 
-- **禁止**：内链、外链、产品名
-- **篇幅**：见 [alignify-conclusion](../alignify-conclusion.md)
+- **可含**：**0–2** 条内链（见 [conclusion.md](../conclusion.md) §3.2、§4）
+- **禁止**：外链；清单式延伸阅读
+- **篇幅**：见 [conclusion.md](../conclusion.md) §2.3
 
 ### 4.6 FAQ
 
 - **数量**：**7 问**（md `#faq`）
 - **禁止**：内链、手动 H2
-- **答案**：见 [section-faq](../sections/faq.md) 与 [section-consistency §二](../consistency.md#二通用字数与篇幅建议区间)
+- **答案**：见 [faq.md](../sections/faq.md) 与 [section-consistency §二](../consistency.md#二通用字数与篇幅建议区间)
 
 ### 4.7 References
 
@@ -225,31 +245,45 @@ heroContent={
 | **TOC** | 长文可加目录（Table of Contents） |
 | **关键词布局** | 自然融入，避免堆砌；Title、H1、intro、H2 含核心词 |
 | **Topic Cluster** | 方法论类可考虑 Hub & Spoke：主文 + 衍生专题 |
-| **内链** | 相关策略内链（工作流/场景关联） |
+| **内链** | 见 [`marketing-internal-links.md`](../marketing-internal-links.md)（M1–M11）；**点击意图**优先，无硬性条数 |
 | **更新** | 定期更新 modifiedDate 与内容 |
 
 ---
 
-## 六、导入清单
+## 六、Meta 注册（新文 · Markdown）
 
-**常用**：
+**新文**不写 per-slug `page.tsx`。Meta 注册到 `blog-meta.ts`（或项目约定的 `*-meta.ts`），由动态路由 `app/[locale]/blog/[slug]/page.tsx` 的 `generateMetadata()` 读取。
+
+```ts
+// blog-meta.ts 示例键
+export const BLOG_META = {
+  "rate-limit-reset": {
+    title: "…",
+    description: "…",
+    // …
+  },
+};
+```
+
+正文路径：`content/blog/{locale}/{slug}.md`（见 [`anatomy.md`](../anatomy.md) · [`bloglayout.md`](./bloglayout.md)）。
+
+<details>
+<summary>存量 JSON / React 页（legacy · 仅维护存量 <code>content/marketing/</code>）</summary>
+
+**常用 import**（legacy TSX 页面）：
 
 ```tsx
 import BlogLayout from "@/components/BlogLayout";
 import Tldr from "@/components/Tldr";
 import FAQ from "@/components/FAQ";
-<!-- 如何实施：正文 section，见 section-how-to.md -->
 import Section from "@/components/Section";
 import Link from "next/link";
 import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 ```
 
-**按需**：
+**按需**：`References`、`YouTubeVideo`。
 
-```tsx
-import References from "@/components/References";  // 有引用时
-import YouTubeVideo from "@/components/YouTubeVideo";  // 有视频时
-```
+</details>
 
 ---
 
@@ -266,28 +300,29 @@ import YouTubeVideo from "@/components/YouTubeVideo";  // 有视频时
 
 ---
 
-## 八、page.tsx 要求
+## 八、路由与渲染（新文）
 
-```tsx
-export const metadata: Metadata = KeywordResearch.metadata;
+- **正文**：`content/blog/{locale}/{slug}.md` + frontmatter + `<!-- block:section -->`
+- **Meta**：`blog-meta.ts`（无需新建 `page.tsx`）
+- **URL**：`/blog/{slug}` · `/zh/blog/{slug}`
 
-export default function KeywordResearchPage() {
-  return <KeywordResearch />;
-}
-```
+详见 [`bloglayout.md`](./bloglayout.md) §Meta 注册。
 
 ---
 
 ## 九、质量检查清单
 
-- [ ] **H1 与 excerpt**：符合 [section-heading-best-practices](../sections/generic.md)
+- [ ] **H1 与 excerpt**：符合 [sections/generic.md](../sections/generic.md)
 - [ ] 章节完整（核心要点、What Is、正文方法论、Conclusion、FAQ）
-- [ ] 正文使用 `<!-- block:section -->` / `Section.tsx`
-- [ ] 如何实施（若设置）3–5 个 H3 步骤（见 [section-how-to](../sections/section-how-to.md)）
+- [ ] 正文使用 `<!-- block:section -->` + Markdown `##`/`###`
+- [ ] childrenHtml 仅用于列表/表格/布局 HTML（E33–E35）
+- [ ] 如何实施（若设置）3–5 个 `###` 步骤（见 [how-to.md](../sections/how-to.md)）
 - [ ] How To 步骤中禁止链接、产品名、工具名
-- [ ] Conclusion 在 FAQ 之前
-- [ ] FAQ 数量为 **7 问**
-- [ ] FAQ 无内链
+- [ ] Conclusion 在 FAQ 之前；结论可含 0–2 内链，非清单式
+- [ ] FAQ 数量为 **7 问**；FAQ 无内链
+- [ ] 内链：见 [`marketing-internal-links.md`](../marketing-internal-links.md)（M1–M11）；点击意图优先，无机械指路链（M8）
+- [ ] 锚文本描述性（策略名/任务名）；同 URL 全页 1 次（含 heroHtml，M3）
+- [ ] 每条链过「三问」：删链后句通顺 · 10 秒感到来对了 · 本段不抢注意力
 - [ ] EN md 所有用户面文本为英文
 - [ ] EN 与 ZH section 顺序与锚点一致
 
@@ -314,17 +349,20 @@ export default function KeywordResearchPage() {
 
 ### 11.1 常见错误
 
-- ❌ BlogLayout 缺失
-- ❌ heroContent 内放 H1
-- ❌ 正文使用 HTML 裸块（`"type": "html"`）→ 必须用 Section 组件
-- ❌ Section 块带 `showDivider: true`
+- ❌ 新文写入 `content/marketing/` 或注册 `/marketing/{slug}`（应 `content/blog/` + `/blog/{slug}`）
+- ❌ blog md 用 GFM 表格或 Markdown 列表（须 `childrenHtml`；E33–E35）
+- ❌ `childrenHtml` 内 legacy `<h3 class="text-lg…">` / `<p class="text-base md:text-lg…">`（E35）
+- ❌ BlogLayout 缺失（存量 TSX 页）
+- ❌ blog md 在 frontmatter 外使用 `heroContent`；或 `heroHtml` / hero 区放 H1
+- ❌ 正文使用遗留 JSON `"type": "html"` 裸块 → 须 `<!-- block:section -->` + Markdown
+- ❌ Section 块带 `showDivider: true`（存量 JSON 页）
 - ❌ 结论位置错误（必须在 FAQ 之前）
 - ❌ FAQ 重复 H2
 - ❌ 如何实施步骤数 < 3
 - ❌ 如何实施步骤中含产品名、链接
 - ❌ 外链未加 UTM
 - ❌ EN 文件出现中文标题或段落
-- ❌ EN 与 ZH 的 block type 序列不一致
+- ❌ EN 与 ZH 的 section 顺序或锚点 id 不一致
 - ❌ EN 文件有中文 H2 但 H1 是英文（半翻译状态）
 
 ### 11.2 日期更新规则

@@ -43,7 +43,7 @@
 | E14 | 产品描述空洞 | 核心定位 + 关键差异 + 最佳适用场景 |
 | E15 | Excerpt 通用结尾句 | 禁止模板化结尾 |
 | E16 | 同页产品 description max/min > 3× | 扩充最短条目 |
-| E17 | HowTo 步骤过短 | 每步 ≥80 字；见 `section-how-to.md` |
+| E17 | HowTo 步骤过短 | 每步 ≥80 字；见 `sections/how-to.md` |
 
 ---
 
@@ -62,11 +62,14 @@
 | E31 | Marketing/Blog 缺 Author POV | Brief 必填；正文第一人称判断须显式出现 |
 | E32 | 个人知识库 SSOT 重复到 knowledge/marketing | campaign 类只在 `E:\个人知识库\营销campaign\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
 | E33 | blog md 使用 GFM 管道表格 | 须 `childrenHtml` + `<div class="content-html"><table>…`；见 `anatomy.md` §四·一 |
+| E34 | blog md 使用 Markdown 列表（`-` / `1.`） | 须 `childrenHtml` + `<ul>` / `<ol class="list-disc…">`；见 `anatomy.md` §四·一 |
+| E35 | childrenHtml 内 legacy `<h3 class="text-lg…">` / `<p class="text-base md:text-lg…">` | H3/H4/段落须 Markdown；childrenHtml 仅列表/表格/布局 HTML；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |
+| E36 | `git commit attribution` 译成「Git 提交归因 / 提交归因」 | 用 **AI 提交署名**；见 `terminology-glossary.md` §六 · `marketing-glossary.json` |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |
 | E24 | 使用 JSON howToChoose block | **已废弃**；改用正文 section |
-| E25 | 使用 `npm run audit:howto-choose` | **已废弃**；用 `verify-content-md.py` + `section-how-to.md` |
+| E25 | 使用 `npm run audit:howto-choose` | **已废弃**；用 `verify-content-md.py` + `sections/how-to.md` |
 
 ---
 

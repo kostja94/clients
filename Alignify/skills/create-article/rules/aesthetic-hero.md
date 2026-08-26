@@ -59,7 +59,7 @@ SSOT 见 KB **§视觉风格**：
 使用 $tait-crt-interface-skill 生成图片，极客02色卡，16:9比例
 ```
 
-**不适用**：Best 榜单产品截图（用 [product-screenshot-pages.md](./product-screenshot-pages.md)）；含大量可读文字的 OG（见 [social-cards-generator KB](../../../knowledge/tools/social-cards-generator.md)）。
+**不适用**：Best 榜单产品截图（用 [product-screenshot-pages.md](./product-screenshots.md)）；含大量可读文字的 OG（见 [social-cards-generator KB](../../../knowledge/tools/social-cards-generator.md)）。
 
 ## 平面设计手法（空间 · 层次）
 

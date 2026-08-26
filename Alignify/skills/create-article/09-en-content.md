@@ -10,7 +10,7 @@
 - **禁止逐句翻译 ZH**：从 Brief **Answer Blocks + Author POV** 用英文 **重写**；信息对等，句序与段落可不同
 - **Kostja 第一人称**：*I* / *my read* 与 ZH「我」判断对齐
 - **BLUF 三处**：EN 40–60 words intro；FAQ 首句即答
-- TL;DR / FAQ / References **inline 在 en md**（或 JSON 若项目约定）
+- TL;DR / FAQ / References **inline 在 en md**（`#article-intro` / `#faq` / `#references` section；禁止 JSON 注入）
 
 ---
 

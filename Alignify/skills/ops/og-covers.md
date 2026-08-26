@@ -62,7 +62,7 @@
 
 ## 3. 视觉风格（v3）
 
-完整规则见 **[data/og-cover-rules.md](./data/og-cover-rules.md)**。
+完整规则见 **[data/og-cover-rules.md](../../data/og-cover-rules.md)**。
 
 ### 3.1 editorial-collage（默认）
 
@@ -227,6 +227,6 @@ OG 解析优先级：
 
 ## 10. 关联文档
 
-- [scripts/README.md](./scripts/README.md)
-- [knowledge/design/aesthetic-references.md](./knowledge/design/aesthetic-references.md)
+- [scripts/README.md](../../scripts/README.md)
+- [knowledge/design/aesthetic-references.md](../../knowledge/design/aesthetic-references.md)
 - 2mv 参考流程：`../2mv/blog/images/skills/ops/og-covers.md`

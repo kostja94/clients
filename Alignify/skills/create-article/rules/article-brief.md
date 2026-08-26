@@ -39,7 +39,7 @@
 |-----------|------|--------------|
 
 **Word count target**（叙事正文，见 word-counts.md）:
-**Planned internal links**（≥5 distinct slug）:
+**Planned internal links**（点击意图；无硬性条数，记录目标 slug + 段落 + 理由）:
 **Synthesis Statement**（链 Step 02）:
 **SERP Fit 摘要**（链 Step 02）:
 

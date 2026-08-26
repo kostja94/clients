@@ -33,7 +33,7 @@
 
 ### 2.2 字数控制（搜索与 Featured Snippet 最佳实践）
 
-全文篇幅层级见 [section-consistency §〇、§二](../content-rules/section-consistency.md#〇字数层级硬底线-vs-建议必读)；下表为 **FAQ 答案**的常用目标，**非**刚性上限。
+全文篇幅层级见 [consistency.md §〇、§二](../consistency.md#〇字数层级硬底线-vs-建议必读)；下表为 **FAQ 答案**的常用目标，**非**刚性上限。
 
 | 语言 | 问题长度 | 答案长度 | 统一性 | 依据 |
 |------|----------|----------|--------|------|

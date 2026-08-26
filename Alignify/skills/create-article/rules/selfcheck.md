@@ -28,7 +28,7 @@
 | 5 | **Presentation** | BLUF 三处；长段≥3；伪列表 0；见 `presentation.md` |
 | 6 | **Writing / Voice** | 术语统一；无 hype 套话 |
 | 7 | **Objectivity** | Tools：≥1 竞品优势 + ≥1 非榜首场景 |
-| 8 | **Structure / Links** | distinct 内链 ≥5；Hub/Spoke 合规；A 层结构 |
+| 8 | **Structure / Links** | 内链自然嵌入任务句；同 URL 1 次；Hub/Spoke 合规；A 层结构 |
 | 9 | **SEO / SERP** | Meta/H1 规则；SERP Fit 复核 Pass |
 | 10 | **Bilingual parity** | EN 非机翻腔；信息对等 |
 | 11 | **Architecture** | 内容驱动大纲 intentional；主体节完整 |

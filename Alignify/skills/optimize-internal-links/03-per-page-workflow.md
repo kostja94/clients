@@ -1,65 +1,46 @@
 # 单页优化 Checklist
 
-参照 `apply-agent-sandbox-links.py` 模式。**必须遵守 R-LINK-ONLY**（§1.5.4 第 8 条）。
+> 入口：[`SKILL.md`](SKILL.md) · 审计 baseline：[`02-audit-and-baseline.md`](02-audit-and-baseline.md) · 规则速查：[`references/rules-quickref.md`](references/rules-quickref.md) · **R-LINK-ONLY** 必读 · Phase 4：[`04-reverse-links.md`](04-reverse-links.md)
 
-## 禁止清单（Agent 必读）
+## 禁止
 
-- 禁止删除「Related tools include…」整段
-- 禁止 FAQ 答案从长段缩成 2 句
-- 禁止用「Next steps: …」一句替换结论第三段
-- 禁止未读 `git show HEAD:` 就对应用场景 / 如何选择 section 做 StrReplace
-- 禁止为满足 R1 用短 description 替换 useCases 全文
+- 删结论/FAQ 整段以满足「条数」
+- 未读 `git show HEAD:` 就 StrReplace 大段 prose
+- 机械指路链（详见 / 见 XXX 指南）
 
-## 1. 审计现状
+## 流程
 
-```bash
-python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --locale both
-```
-
-记录：违规规则编号 + md 区块位置。
-
-## 2. 建立 baseline
-
-```bash
-git show HEAD:content/tools/en/{slug}.md   # 对将改段落核对原文
-```
-
-## 3. 选链
-
-- [ ] 读附录 B 邻居行 + keywords 表
-- [ ] 正文目标 5–8 distinct；FAQ 0–3（不与正文 slug 重复）
-- [ ] Blog 邻居可能是 `/tools/` 或 `/blog/`
-- [ ] EN/ZH 目标 slug 集合对称
-
-## 4. 分配区块（只改 `<a>`）
-
-| 区块 | 动作 |
-|------|------|
-| TL;DR introduction | **0–1 链**；违规时删/移 `<a>`，**不重写 intro  prose** |
-| 什么是 · 第二段 | Hub 辐条首次链；Spoke 邻居；与 TLDR 零交集 |
-| 应用场景 / 如何选择 section | R1 不足时在**现有句**外包链或段末加 1 句 |
-| 如何工作 / 如何选择 section | 0–1 链；禁止重复已链 slug |
-| 结论 | 重复 slug **unwrap**；保留叙述；可保留 `/tools` 目录 |
-| FAQ | 重复 slug unwrap；≤3 新 slug |
-
-## 5. 写入 Markdown
-
-对 md 正文 **StrReplace 只改 `<a>`**（unwrap 重复 slug / 补 R1 链）。
-
-**禁止** Agent 无 baseline 对大型 md 整文件 Write。
-
-## 6. 台账
-
-- [ ] 更新附录 C（§blog-* 或 §tools-*）
-- [ ] 专册修订日志一行
-
-## 7. 验收（顺序固定）
+### 1. 审计
 
 ```bash
 python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --locale both --violations-only
-npm run verify:content-json
-npm run build
 ```
 
-- [ ] high = 0
-- [ ] spot-check：结论/FAQ 仍含实质内容
+### 2. Baseline
+
+```bash
+git show HEAD:content/{channel}/{locale}/{slug}.md
+```
+
+### 3. 选链
+
+- [ ] 附录 B / [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) Hub / [`knowledge/tools/territory-map.md`](../../knowledge/tools/territory-map.md)
+- [ ] 点击意图三问（marketing-internal-links §一）
+- [ ] EN/ZH 目标 slug 对称
+
+### 4. 写入（只改 `<a>`）
+
+| 区块 | 动作 |
+|------|------|
+| TL;DR | 0–1 链；违规 unwrap |
+| 主体 | 任务句内链；每段 ≤1 |
+| 结论 | 0–2 链；重复 slug unwrap |
+| FAQ | **无链** |
+
+### 5. 验收
+
+```bash
+python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --locale both --violations-only
+npm run verify:content-json && npm run build
+python ../../clients/Alignify/scripts/audit/build-site-internal-links-doc.py
+```

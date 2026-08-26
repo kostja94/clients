@@ -2,7 +2,7 @@
 
 本文档为 Alignify SEO 类页面的标准模板，用于创建或优化 SEO 指南页面（如 Schema、链接建设、Landing Page、搜索引擎、SERP 等）。
 
-**参考**：content-rules、[section 文档](../README.md)、[template-bloglayout](./bloglayout.md)、[section-consistency](../consistency.md)（字数与表达一致性）· **SEO 关键词与 slug 意图**：[alignify-keywords-seo.md](../keywords/alignify-keywords-seo.md)
+**参考**：content-rules、[section 文档](../README.md)、[bloglayout](./bloglayout.md)、[section-consistency](../consistency.md)（字数与表达一致性）· **SEO 关键词与 slug 意图**：`alignify-keywords-seo.md`
 
 ---
 
@@ -21,14 +21,14 @@
 ## 一、页面结构
 
 ```
-1. 核心要点（TL;DR，40–80字 intro + 4–5 条 items）← [section-tldr](../sections/tldr.md)
-2. 什么是 XXX（建议篇幅见 section-consistency）← section-what-is
+1. 核心要点（TL;DR，40–80字 intro + 4–5 条 items）← [tldr.md](../sections/tldr.md)
+2. 什么是 XXX（建议篇幅见 [consistency.md](../consistency.md)）← [what-is.md](../sections/what-is.md)
 3. XXX 如何工作 / 核心原理
-4. ... 正文内容（按主题展开，使用 Section 组件）...
-5. How To（可选，如「如何优化面包屑」）← section-how-to
-6. Conclusion（总结）← [alignify-conclusion](../alignify-conclusion.md)
-7. FAQ（常见问题）← section-faq
-8. References（引用，如有）← section-references
+4. ... 正文内容（按主题展开，`<!-- block:section -->` + Markdown）...
+5. How To（可选，如「如何优化面包屑」）← [how-to.md](../sections/how-to.md)
+6. Conclusion（总结）← [conclusion.md](../conclusion.md)
+7. FAQ（常见问题）← [faq.md](../sections/faq.md)
+8. References（引用，如有）← [references.md](../sections/references.md)
 ```
 
 **标准顺序**：How To → Conclusion → FAQ → References
@@ -37,9 +37,9 @@
 
 ## 二、Metadata 与 BlogLayout 配置
 
-> **字数与文案模板**：Meta title、meta description、H1、excerpt 的统一字数规范、文案模板、按页面类型差异，以 [section-meta-copy](../meta.md) 为**唯一来源**。本节仅列 SEO 类型特有约束（如不含「指南」、不含年份等），通用规则不在此重复。
+> **字数与文案模板**：Meta title、meta description、H1、excerpt 的统一字数规范、文案模板、按页面类型差异，以 [meta.md](../meta.md) 为**唯一来源**。本节仅列 SEO 类型特有约束（如不含「指南」、不含年份等），通用规则不在此重复。
 
-**meta 配置详见**：[section-meta-copy](../meta.md) §一–二（字数、模板、CTA）、[section-seo](../meta.md)（像素值、截断机制）。
+**meta 配置详见**：[meta.md](../meta.md) §一–二（字数、模板、CTA）、[meta.md](../meta.md)（像素值、截断机制）。
 
 **SEO 特有约束**：
 - 中文不含「指南」，英文不含 "Guide"
@@ -65,7 +65,7 @@ export const metadata = {
 />
 ```
 
-**H1 与 excerpt 文案构建形式**：须符合 [section-meta-copy](../meta.md) §三–四 和 [section-heading-best-practices](../sections/generic.md) § 2.3、§ 3.3（跨类型统一）。
+**H1 与 excerpt 文案构建形式**：须符合 [meta.md](../meta.md) §三–四 和 [sections/generic.md](../sections/generic.md) § 2.3、§ 3.3（跨类型统一）。
 
 ### 2.1 中英文页面差异
 
@@ -82,13 +82,13 @@ export const metadata = {
 
 ## 三、正文章节
 
-- **核心要点**：参见 [section-tldr](../sections/tldr.md)
-- **什么是 XXX**：参见 [section-what-is](../sections/what-is.md)
-- **Generic Section（普通段落）**：参见 [section-generic](../sections/generic.md)、[section-content-import](../README.md)
-- **How To**：参见 [section-how-to](../sections/how-to.md)（SEO 可含内链）
-- **Conclusion**：参见 [alignify-conclusion](../alignify-conclusion.md)
-- **FAQ**：参见 [section-faq](../sections/faq.md)
-- **References**：参见 [section-references](../sections/references.md)
+- **核心要点**：参见 [tldr.md](../sections/tldr.md)
+- **什么是 XXX**：参见 [what-is.md](../sections/what-is.md)
+- **Generic Section（普通段落）**：参见 [sections/generic.md](../sections/generic.md)、[README.md](../README.md)
+- **How To**：参见 [sections/how-to.md](../sections/how-to.md)（SEO 可含内链）
+- **Conclusion**：参见 [conclusion.md](../conclusion.md)
+- **FAQ**：参见 [faq.md](../sections/faq.md)
+- **References**：参见 [references.md](../sections/references.md)
 
 ---
 
@@ -98,7 +98,7 @@ export const metadata = {
 - **无 BestTools / md 应用场景 section**：多为纯文字指南
 - **可含 References**：引用 Google、Schema.org 等权威来源
 - **可含如何选择 section**：如「如何优化 URL」→ 正文 `## 如何选择…` + H3 步骤
-- **内链**：可自然融入内链到其他 SEO 页面；**专册**（Hub/Spoke、§1.5 分布、跨频道节制）见 [seo-articles-internal-links.md](../internal-links/seo-articles-internal-links.md)
+- **内链**：可自然融入内链到其他 SEO 页面；**专册**（Hub/Spoke、§1.5 分布、跨频道节制）见 [internal-links.md Part 4](../internal-links.md#part-4-seo-频道内链)
 
 ---
 
@@ -108,7 +108,7 @@ export const metadata = {
 
 ### 5.1 核心要点（Tldr）
 
-- **统一使用 md `#article-intro` section**：参见 [section-tldr](../sections/tldr.md) § 4.3 SEO 页面
+- **统一使用 md `#article-intro` section**：参见 [tldr.md](../sections/tldr.md) § 4.3 SEO 页面
 - **introduction**：40–80 字，含 [主题]、[核心要点]、[目标]；直答式
 - **items**：4–5 条，每条 25–40 字，同组长度相近
 - **内容方向**：概念+作用、类型/格式、扩展类型、实施要点
@@ -120,14 +120,19 @@ export const metadata = {
 
 ### 5.3 正文章节
 
-- **主要使用 Section 组件**：纯文字章节用 [section-generic](../sections/generic.md)
-- **md section 不适用**：技术说明用 Section，标题如「XXX 如何工作」
+- **新文**：`<!-- block:section -->` + Markdown `##`/`###`（见 [`anatomy.md`](../anatomy.md) §四·一）；列表/表格用 `childrenHtml`
+- **存量 JSON/React 页**：纯文字章节可用 [sections/generic.md](../sections/generic.md) 的 Section 组件
 
 ---
 
-## 六、导入清单
+## 六、Meta 注册（新文 · Markdown）
 
-**必需**：
+**新文**（含 SEO 题材）默认 `content/blog/{locale}/{slug}.md` + `/blog/{slug}`；Meta 注册到 `blog-meta.ts`，由动态路由 `generateMetadata()` 读取（见 [`bloglayout.md`](./bloglayout.md)）。
+
+<details>
+<summary>存量 SEO JSON / React 页（legacy · <code>content/seo/</code>）</summary>
+
+**必需 import**：
 
 ```tsx
 import BlogLayout from "@/components/BlogLayout";
@@ -136,19 +141,20 @@ import FAQ from "@/components/FAQ";
 import Section from "@/components/Section";
 ```
 
-**按需**：
+**按需**：`References`、`YouTubeThumbnail`、`Link`、`addUtmToExternalLink` 等。
 
-```tsx
-<!-- 如何选择：正文 section，见 section-how-to.md；HowToChoose 组件已删除 -->
-import References from "@/components/References";  // 有引用时
-import YouTubeThumbnail from "@/components/YouTubeThumbnail";  // 有视频时
-import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";  // 有外链时
-import Link from "next/link";  // 有内链时
-```
+</details>
 
 ---
 
-## 七、page.tsx 要求
+## 七、路由与渲染（新文）
+
+- **正文**：`content/blog/{locale}/{slug}.md`
+- **Meta**：`blog-meta.ts`（无需 per-slug `page.tsx`）
+- **URL**：`/blog/{slug}` · `/zh/blog/{slug}`
+
+<details>
+<summary>存量 SEO 页（legacy）</summary>
 
 ```tsx
 export const metadata: Metadata = LearnSEO.metadata;
@@ -158,8 +164,7 @@ export default function LearnSEOPage() {
 }
 ```
 
-- **直接返回 MDX 组件**：不需要额外布局包装
-- **metadata 导出**：从 MDX 的 metadata 导出
+</details>
 
 ---
 

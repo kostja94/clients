@@ -1,6 +1,9 @@
 # 01 — 术语与文风
 
-## 术语对照（正文优先用左栏）
+> **术语对照 SSOT**：[`terminology-glossary.md`](./terminology-glossary.md) · Marketing：[`marketing-glossary.json`](./marketing-glossary.json)  
+> 下文仅保留**文风示例**与高频易错项；完整对照表勿在本文件重复维护。
+
+## 术语速查（易错项）
 
 | 避免（直译/缩写） | 推荐（中文） | 备注 |
 |------------------|-------------|------|
@@ -13,6 +16,8 @@
 | SERP | 搜索结果页 | 或保留 SERP 并括号解释 |
 | headline 数字 | 标题里的单一数字 | |
 | 该 X 用于…（连续 3 段） | 交替用「用于」「可」「适合」 | 减少说明书腔 |
+| Git commit attribution → Git 提交归因 | **AI 提交署名** | 勿用「归因」，易与广告归因混淆；见 `terminology-glossary.md` §六 |
+| attribution（Git/Co-Author 语境） | 提交署名 / AI 提交署名 | 广告语境才用「归因」 |
 
 **保留英文**：Google Search Console、Open Graph、Twitter Cards、robots、viewport、hreflang、JSON-LD、A/B 测试（可加括号说明）。
 

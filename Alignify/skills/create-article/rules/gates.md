@@ -42,7 +42,7 @@
 | **G3** | 量化 claim（准确率、ROI、用户数）无 attribution |
 | **G4** | 竞品 GA/Preview/Archived/被收购 标注错误 |
 | **G5** | 自有或推荐产品能力夸大 |
-| **G6** | 内链指向未上线页面 |
+| **G6** | 内链指向未上线页面 | 含 Brief「Planned links」中的规划 slug；未发布姊妹篇仅可文字提及 |
 | **G7** | 贬低竞品、unsupported superlative、合规风险 |
 
 Alignify 专属 P0 见 [`quality-checklist.md`](./quality-checklist.md) P0-1–P0-11（结构/Meta/FAQ 等）。

@@ -2,7 +2,7 @@
 
 本文档定义 Tools、SEO、Marketing 等**同类型页面**之间的表达、结构与**篇幅节奏**规范，旨在提升读者阅读体验，并在不牺牲自然表达的前提下保持可预期性。
 
-**参考**：[section-tldr](./section-tldr.md)、[section-what-is](./section-what-is.md)、[alignify-conclusion](../alignify-conclusion.md)、[section-faq](./section-faq.md)、各 template
+**参考**：[tldr.md](./sections/tldr.md)、[what-is.md](./sections/what-is.md)、[conclusion.md](./conclusion.md)、[faq.md](./sections/faq.md)、各 template
 
 ---
 
@@ -11,7 +11,7 @@
 | 层级 | 适用 | 说明 |
 |------|------|------|
 | **A 硬底线** | 事实准确、合规披露、内链唯一性、可访问性、Schema 与可见内容一致、构建通过 | 不因「博客化」放宽 |
-| **B 强建议（多为 SERP / 首屏）** | `meta title`、`meta description`、`H1`、`excerpt` | 仍用较窄区间或像素导向，见 [section-seo](./section-seo.md)、[section-heading-best-practices](./section-heading-best-practices.md) |
+| **B 强建议（多为 SERP / 首屏）** | `meta title`、`meta description`、`H1`、`excerpt` | 仍用较窄区间或像素导向，见 [meta.md](./meta.md)、[sections/generic.md](./sections/generic.md) |
 | **C 软建议（正文各 H2 与 JSON 块）** | 「什么是」「如何工作」、场景、步骤、结论、FAQ 等 | **以下为建议区间**，以**说清意图、段落自然**为先；勿为贴数字删补句式 |
 
 **一致性重新定义**：跨页优先对齐 **H2 语气、信息顺序、组件用法**；正文字数允许在建议区间内随主题难度浮动。章内并列块避免 **约 3 倍以上** 长短悬殊即可，**不**要求逐项字数几乎相等。
@@ -41,11 +41,11 @@
 | **H1 (title)** | 14-22 字 | 40-60 字符 | B 层 |
 | **excerpt** | 100-150 字 | 200-250 字符 | B 层 |
 | **什么是 XXX** | 约 **180–380 字** | 约 **150–280 词** | **常见 2–4 段**；段数服从厘清边界，不服务凑段 |
-| **结论** | 约 **180–320 字** | 约 **120–220 词** | **常见 2–4 段**；**软约束·内容优先**，完整规则见 [alignify-conclusion.md](../alignify-conclusion.md) §2.3 |
+| **结论** | 约 **180–320 字** | 约 **120–220 词** | **常见 2–4 段**；**软约束·内容优先**，完整规则见 [conclusion.md](./conclusion.md) §2.3 |
 | **FAQ 问题** | 12-22 字 | 6-12 词 | 同页问题长度宜相近 |
 | **FAQ 答案** | 约 **60–120 字** | 约 **40–80 词** | 首句直答；允许个别条略长（合规/例外） |
 
-**「什么是」**：历史目标曾写 220–230 字、2 段；现以**建议区间**为准，与 [section-what-is](./section-what-is.md)、[template-tools](../templates/template-tools.md) 一致。
+**「什么是」**：历史目标曾写 220–230 字、2 段；现以**建议区间**为准，与 [what-is.md](./sections/what-is.md)、[template-tools](./templates/best-ranking.md) 一致。
 
 ---
 
@@ -75,7 +75,7 @@
 |------|------|
 | **如何选择 section 步骤** | 中文每步约 **60–140 字**；英文约 **50–120 词/步** |
 | **md 应用场景 section 场景** | 中文每场景约 **120–320 字**；英文约 **100–260 词** |
-| **BestTools 产品描述** | 中文：硬底线 100–400 字，建议 180–260 字；英文：硬底线 280–800 字符，建议 350–650 字符；同页 max/min < 3x。shortDescription 硬底线 EN 10–50 字符 / ZH 4–25 字，建议 EN 15–35 字符 / ZH 6–18 字。详见 [section-best-tools](./section-best-tools.md) |
+| **BestTools 产品描述** | 中文：硬底线 100–400 字，建议 180–260 字；英文：硬底线 280–800 字符，建议 350–650 字符；同页 max/min < 3x。shortDescription 硬底线 EN 10–50 字符 / ZH 4–25 字，建议 EN 15–35 字符 / ZH 6–18 字。详见 [best-tools.md](./sections/best-tools.md) |
 | **FAQ items** | 同页答案宜首句直答；总长见 §二 |
 
 ---
@@ -84,7 +84,7 @@
 
 ### 4.1 H2 标题格式
 
-**完整规范**：见 [section-heading-best-practices](./section-heading-best-practices.md) § 四（H2）、§ 五（H3）。
+**完整规范**：见 [sections/generic.md](./sections/generic.md) § 四（H2）、§ 五（H3）。
 
 | 页面类型 | 格式模式 | 示例 |
 |----------|----------|------|
@@ -96,7 +96,7 @@
 
 ### 4.2 段落开篇
 
-- **什么是**：首段定义 + 价值 + 适用人群；后续段可写边界、工作流、与相邻品类分流；内链见 [section-what-is](./section-what-is.md)
+- **什么是**：首段定义 + 价值 + 适用人群；后续段可写边界、工作流、与相邻品类分流；内链见 [what-is.md](./sections/what-is.md)
 - **结论**：归纳正文要点；末段可含 CTA
 
 **同一类型页面**：开篇语气宜相似，便于读者形成预期。
@@ -117,7 +117,7 @@
 | **Tools** | 如何工作 technologyBase | 约 **220–420 字** / 硬下限 ≥ 100 字 | 约 **140–280 词** / 硬下限 ≥ 50 词 |
 | **Tools** | 如何工作 architectureDifferences | 约 **120–280 字** / 硬下限 ≥ 60 字 | 约 **90–200 词** / 硬下限 ≥ 30 词 |
 | **Tools** | advantages 单项 | 约 **35–80 字/项**；数量硬限 3–5 条 | 以可读为准；数量硬限 3–5 条 |
-| **Marketing** | How To 每步骤 | 约 **60–140 字**（质检参考，见 [section-how-to](../section-how-to.md) Part 3「内容优先」） | 约 **50–120 词**（质检参考，同上） |
+| **Marketing** | How To 每步骤 | 约 **60–140 字**（质检参考，见 [sections/how-to.md](./sections/how-to.md) Part 3「内容优先」） | 约 **50–120 词**（质检参考，同上） |
 
 ---
 

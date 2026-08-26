@@ -4,7 +4,7 @@
 
 本文档定义产品展示章节的**通用规范**（格式、字数、布局、内容质量）。
 
-**参考**：[section-consistency](../content-rules/section-consistency.md)
+**参考**：[consistency.md](../consistency.md)
 
 ---
 
@@ -194,7 +194,7 @@ shortDescription 渲染为 `[序号]. [产品名]：[shortDescription]` 中冒�
 | 命名规则 | `{product-slug}.jpg` | 小写、连字符分隔、无 vendor 前缀 |
 | 存放路径 | `public/tools/{page-slug}/{product-slug}.jpg` | 按页面分组 |
 
-**独立使用视频预览**（非 BestTools）：参见 [section-youtube-thumbnail](./section-youtube-thumbnail.md)
+**独立使用视频预览**（非 BestTools）：参见 [product-screenshots.md](../product-screenshots.md)
 
 ---
 

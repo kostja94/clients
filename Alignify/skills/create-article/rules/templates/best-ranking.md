@@ -2,7 +2,7 @@
 
 本文档为 Alignify Tools 类页面的标准模板，用于创建或优化工具推荐、产品对比、排名列举类页面（如 AI 图片工具、AI 视频工具、招聘工具等）。
 
-**参考**：[rules/README.md](../README.md)、[template-bloglayout](./bloglayout.md)、[consistency.md](../consistency.md)
+**参考**：[rules/README.md](../README.md)、[bloglayout](./bloglayout.md)、[consistency.md](../consistency.md)
 
 ---
 
@@ -58,7 +58,7 @@
 | 如何工作 architectureDifferences | 约 **120–280 字** | 约 **90–200 词** | |
 | 产品描述 | 硬底线 100–400 字，建议 180–260 字 | 硬底线 280–800 字符，建议 350–650 字符 | 差异优先；同页 max/min < 3x |
 | FAQ 答案 | 约 **60–120 字** | 约 **40–80 词** | 首句直答 |
-| 结论 | 见 [alignify-conclusion.md §2.3](../alignify-conclusion.md) | 见 [alignify-conclusion.md §2.3](../alignify-conclusion.md) | |
+| 结论 | 见 [conclusion.md §2.3](../conclusion.md) | 见 [conclusion.md §2.3](../conclusion.md) | |
 
 ---
 
@@ -66,16 +66,16 @@
 
 **单篇 Tools 长文**依赖：① `src/data/blog-meta.ts`（或 `tools-meta.ts`）的 **meta**；② `content/{blog|tools}/{zh,en}/{slug}.md` frontmatter 的 **`title`（H1）** 与 **`description`（excerpt）**。
 
-> **字数与文案模板**：Meta title、meta description、H1、excerpt 的统一字数规范、文案模板、按页面类型差异，以 [section-meta-copy](../meta.md) 为**唯一来源**。本节仅列出 **Tools 页面特有的硬约束**（如「最佳」/ `Best`、年份格式、冒号副线等），通用规则（字数区间、CTA 要求、OG/Twitter 三处同文等）不在此重复。
+> **字数与文案模板**：Meta title、meta description、H1、excerpt 的统一字数规范、文案模板、按页面类型差异，以 [meta.md](../meta.md) 为**唯一来源**。本节仅列出 **Tools 页面特有的硬约束**（如「最佳」/ `Best`、年份格式、冒号副线等），通用规则（字数区间、CTA 要求、OG/Twitter 三处同文等）不在此重复。
 
 ### 2.0 四要素速查：Tools 类型硬约束
 
 | 要素 | Tools 特有约束 | 通用规则 |
 |------|---------------|----------|
-| **Meta title** | **必须含「最佳」/ `Best`**；中文 `（2026）` + `：` + 副线；英文 `(2026)` + `:` + 副线；**禁止** `（2026）\| Alignify` 无副线直连 | [section-meta-copy §一](../meta.md#一meta-title) |
-| **Meta description** | 列举 2–3 个代表产品；须由 TL;DR 与 Best 榜单支撑 | [section-meta-copy §二](../meta.md#二meta-description) |
-| **H1** | **不写年份**；推荐「类型：核心价值」格式；不强制含「最佳」 | [section-meta-copy §三](../meta.md#三h1页面主标题) |
-| **Excerpt** | 三段式；避免通用结尾 | [section-meta-copy §四](../meta.md#四excerpthero-摘要) |
+| **Meta title** | **必须含「最佳」/ `Best`**；中文 `（2026）` + `：` + 副线；英文 `(2026)` + `:` + 副线；**禁止** `（2026）\| Alignify` 无副线直连 | [meta.md §一](../meta.md#一meta-title) |
+| **Meta description** | 列举 2–3 个代表产品；须由 TL;DR 与 Best 榜单支撑 | [meta.md §二](../meta.md#二meta-description) |
+| **H1** | **不写年份**；推荐「类型：核心价值」格式；不强制含「最佳」 | [meta.md §三](../meta.md#三h1页面主标题) |
+| **Excerpt** | 三段式；避免通用结尾 | [meta.md §四](../meta.md#四excerpthero-摘要) |
 
 **工具中心首页**（`/zh/tools`、`/tools`）仅有 `page.tsx` 的 **meta**，无 `blogLayout` H1/ excerpt（页面结构为索引列表）。
 
@@ -112,15 +112,15 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 };
 ```
 
-**新文章默认走 `/blog/` 路由**，注册到 `blog-meta.ts` + `blog-pages-config.ts`。旧 `/tools/` 文章保持不变。详见 [`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)。
+**新文章默认走 `/blog/` 路由**，注册到 `blog-meta.ts` + `blog-pages-config.ts`。旧 `/tools/` 文章保持不变。详见 [`create-article/SKILL.md`](../../SKILL.md)。
 
 ### 2.1.1 SEO 导向（meta title、meta description）
 
 **用途**：搜索结果展示、爬虫、点击率。面向搜索引擎与 SERP。
 
-> **字数与模板**：以 [section-meta-copy](../meta.md) §一–二为准。以下仅标注 Tools 特有约束。
+> **字数与模板**：以 [meta.md](../meta.md) §一–二为准。以下仅标注 Tools 特有约束。
 
-**详见**：[section-seo](../meta.md)（像素值、截断机制）、[section-meta-copy](../meta.md)（文案规范）。
+**详见**：[meta.md](../meta.md)（像素值、截断机制）、[meta.md](../meta.md)（文案规范）。
 
 **Next.js `metadata` 与社交预览**：`generateMetadata()` 自动从 `BLOG_META[slug]`（或 `TOOLS_META[slug]`）读取并输出到 `<meta>`、OG、Twitter 标签——**无需手写在 page.tsx 中**。Meta 的唯一维护位置为 `blog-meta.ts`（或 `tools-meta.ts`）。
 
@@ -147,7 +147,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 **用途**：页面可见内容，面向进入页面的用户。兼顾可读性与首屏信息架构。
 
-> **字数与模板**：以 [section-meta-copy](../meta.md) §三–四为准。以下仅标注 Tools 特有约束。
+> **字数与模板**：以 [meta.md](../meta.md) §三–四为准。以下仅标注 Tools 特有约束。
 
 **导入方式**：使用硬编码字面量（`title="..."`、`excerpt="..."`），避免引用 pageConfig 导致构建失败。
 
@@ -155,7 +155,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 - **H1**：格式「[工具类型]：核心价值/卖点」，含关键词；以用户可读性为首要考量。**H1 不写年份**；新鲜度用 **meta title** 中的 `(2026)` 以及 **publishDate / modifiedDate** 表达。
 - **excerpt**：聚焦工具价值、适用场景、用户收益；**避免通用结尾**。
 
-**文案构建形式**：H1 与 excerpt 的句式、结构须符合 [section-heading-best-practices](../sections/generic.md) § 2.3、§ 3.3（跨类型统一）和 [section-meta-copy](../meta.md) §三–四。
+**文案构建形式**：H1 与 excerpt 的句式、结构须符合 [sections/generic.md](../sections/generic.md) § 2.3、§ 3.3（跨类型统一）和 [meta.md](../meta.md) §三–四。
 
 ```tsx
 <BlogLayout
@@ -171,7 +171,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 ### 2.1.3 H1 与 Excerpt 生成示例（供 AI 生成新页面参考）
 
-**完整规范**：见 [section-heading-best-practices](../sections/generic.md) § 2.3（H1 文案构建形式）、§ 3.3（Excerpt 文案构建形式）。以下为 Tools 类型示例。
+**完整规范**：见 [sections/generic.md](../sections/generic.md) § 2.3（H1 文案构建形式）、§ 3.3（Excerpt 文案构建形式）。以下为 Tools 类型示例。
 
 **H1 示例**：AI变声器：改变声音，创造无限可能 | AI Voice Changers: Transform Your Voice Experience
 
@@ -188,7 +188,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 | pageUrl | `/zh/tools/[slug]` | `/tools/[slug]` |
 | readTime | `X 分钟阅读`（数字后有空格） | `X min read` |
 | 日期格式 | `2026年1月15日` | `January 15, 2026` |
-| 日期/readTime 导入 | `{pageConfig.meta.publishDate}` 等 | 与 pageConfig 同步，见 [section-hero](./bloglayout.md) §5.1 |
+| 日期/readTime 导入 | `{pageConfig.meta.publishDate}` 等 | 与 pageConfig 同步，见 [bloglayout.md](./bloglayout.md) §5.1 |
 | 产品描述 | 约 220 字 | 400-600 字符 |
 | FAQ 数量 | **7 问** | **7 问** |
 
@@ -198,15 +198,15 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 | 章节 | 组件 | 规范文档 |
 |------|------|----------|
-| 核心要点 | md `#article-intro` section | [section-tldr](../sections/tldr.md) |
-| 什么是 XXX | Section 或 div | [section-what-is](../sections/what-is.md) |
-| 技术概述 | md section | [section-how-it-works](../sections/what-is.md) |
-| 产品展示 | BestTools | [section-best-tools](../sections/best-tools.md) |
-| 对比表格 | Table | [section-comparison-table](../sections/comparison-table.md) |
-| 应用场景 | md 应用场景 section | [section-use-cases](../sections/generic.md) |
-| 如何选择 | 正文 section | [section-how-to](../sections/section-how-to.md) |
-| 结论 | Section 或 div | [alignify-conclusion](../alignify-conclusion.md) |
-| FAQ | FAQ | [section-faq](../sections/faq.md) |
+| 核心要点 | md `#article-intro` section | [tldr.md](../sections/tldr.md) |
+| 什么是 XXX | Section 或 div | [what-is.md](../sections/what-is.md) |
+| 技术概述 | md section | [what-is.md](../sections/what-is.md) |
+| 产品展示 | Best 榜单 section | [best-tools.md](../sections/best-tools.md) |
+| 对比表格 | Table | [comparison-table.md](../sections/comparison-table.md) |
+| 应用场景 | md 应用场景 section | [generic.md](../sections/generic.md) |
+| 如何选择 | 正文 section | [sections/how-to.md](../sections/how-to.md) |
+| 结论 | Section 或 div | [conclusion.md](../conclusion.md) |
+| FAQ | FAQ | [faq.md](../sections/faq.md) |
 
 ---
 
@@ -230,7 +230,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 | 章节 | 中文（建议） | 英文（建议） | 内容聚焦 | 避免 |
 |------|-------------|-------------|----------|------|
-| 什么是 | 约 **180–380 字**，常见 **2–4 段** | 约 **130–320 词** | 定义、价值、适用人群、边界/分流、内链（按 section-what-is） | 技术细节堆在首章 |
+| 什么是 | 约 **180–380 字**，常见 **2–4 段** | 约 **130–320 词** | 定义、价值、适用人群、边界/分流、内链（按 [what-is.md](../sections/what-is.md)） | 技术细节堆在首章 |
 | 如何工作 technologyBase | 约 **220–420 字** | 约 **140–280 词** | 技术原理、建模方式、生成流程 | 与「什么是」重复卖点 |
 | 如何工作 architectureDifferences | 约 **120–280 字** | 约 **90–200 词** | 架构类型与技术差异 | 列举具体产品名 |
 
@@ -238,25 +238,25 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 **英文内容原则**：与中文**信息深度**相当，意译优先。
 
-**内链相关性**：内链目标必须与当前主题有强功能/工作流关联。✅ 音乐生成 → 视频编辑、MV 生成；❌ 音乐生成 → 文字转语音、声音克隆（虽同属音频但功能边界不同）。详见 [section-what-is](../sections/what-is.md#34-内链相关性原则)、[section-links](../internal-links.md#13-内链相关性原则)。
+**内链相关性**：内链目标必须与当前主题有强功能/工作流关联。✅ 音乐生成 → 视频编辑、MV 生成；❌ 音乐生成 → 文字转语音、声音克隆（虽同属音频但功能边界不同）。详见 [what-is.md](../sections/what-is.md#34-内链相关性原则)、[internal-links.md](../internal-links.md#13-内链相关性原则)。
 
-**Tools 内链拓扑、邻居矩阵、产品外链验证**：见 [alignify-internal-links.md](../alignify-internal-links.md)（附录 B、附录 C 与 §五）。
+**Tools 内链拓扑、邻居矩阵、产品外链验证**：见 [alignify-internal-links.md](../internal-links.md)（附录 B、附录 C 与 §五）。
 
-**文案描述**：首段定义+价值+适用人群；含内链段落按 [section-what-is 四](../sections/what-is.md#四文案描述原则) 自然融入。
+**文案描述**：首段定义+价值+适用人群；含内链段落按 [what-is.md §四](../sections/what-is.md#四文案描述原则) 自然融入。
 
 **生成时检查清单**（创建或翻译 Tools 页面时逐项核对）：
 
-- [ ] 什么是：段数与内链符合 [section-what-is](../sections/what-is.md)；篇幅落在 [section-consistency §二](../consistency.md#二通用字数与篇幅建议区间) 建议区间或能说明理由
+- [ ] 什么是：段数与内链符合 [what-is.md](../sections/what-is.md)；篇幅落在 [section-consistency §二](../consistency.md#二通用字数与篇幅建议区间) 建议区间或能说明理由
 - [ ] 如何工作 technologyBase / architectureDifferences：篇幅建议见 §二；advantages **3–5** 项，每项 name + description
 - [ ] 内链目标与主题有强功能/工作流关联（参见 3.4）
-- [ ] **均衡分布**：在 TLDR / 如何工作 / 场景 / 如何选择 / 对比 intro / 结论等区块中安排**多个不同** Tools 内链（全文每个 href 仍只出现一次）；细则见 [internal-links.md §3.1.5](../alignify-internal-links.md#135-tools-内链均衡分布阅读体验优先--锚文本规范--跨板块预留)
+- [ ] **均衡分布**：在 TLDR / 如何工作 / 场景 / 如何选择 / 对比 intro / 结论等区块中安排**多个不同** Tools 内链（全文每个 href 仍只出现一次）；细则见 [internal-links.md §3.1.5](../internal-links.md#135-tools-内链均衡分布阅读体验优先--锚文本规范--跨板块预留)
 - [ ] 英文意译、与中文深度相当，禁止 mid-word 截断
 
-**示例（音乐生成）**：见 [internal-links.md §附录 A](../alignify-internal-links.md#附录-a什么是--第二段内链示例音乐生成)。
+**示例（音乐生成）**：见 [internal-links.md §附录 A](../internal-links.md#附录-a什么是--第二段内链示例音乐生成)。
 
 ### 5.1 How To（如何选择）
 
-- **完整规范（唯一真相源）**：见 [section-how-to](../sections/how-to.md)——含定位分工、步骤数量 3–5、去模板黑名单、决策分叉写法、组件与 Schema、验收审计。
+- **完整规范（唯一真相源）**：见 [sections/how-to.md](../sections/how-to.md)——含定位分工、步骤数量 3–5、去模板黑名单、决策分叉写法、组件与 Schema、验收审计。
 - **可包含**：具体工具推荐和选择建议
 - **标题示例**：如何选择 AI 图片工具、如何选择最适合的 XXX
 
@@ -283,7 +283,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 - **篇幅**：shortDescription 硬底线 EN 10–50 字符 / ZH 4–25 字，建议 EN 15–35 字符 / ZH 6–18 字；描述硬底线 EN 280–800 字符 / ZH 100–400 字，建议 EN 350–650 字符 / ZH 180–260 字；同页 max/min < 3x
 - **内容质量**：每款描述需包含核心定位 + 关键差异 + 最佳适用场景；禁止空洞副词和万能结尾
 - **迁移**：若仍用旧 HTML 格式，优先迁移到 md Best 榜单 section
-- **完整规范**：参见 [section-best-tools](../sections/best-tools.md)
+- **完整规范**：参见 [best-tools.md](../sections/best-tools.md)
 
 ### 5.4 对比表格
 
@@ -291,7 +291,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 - **列结构**：标准 4 列（工具名称、核心特点、主要应用场景、定价模式），可选第 5 列（扩展列须语义明确）
 - **内容规范**：bestFor 必填；pricing 必填（无则「待定」）；coreFeatures 2–4 个关键词，顿号分隔
 - **文案规范**：H2 为「[工具类型]工具对比」（可加「选择最适合你的」）；intro 为「以下是主流[工具类型]工具的对比，帮助您快速了解各工具的特点、应用场景和适用性：」
-- **详细规范**：参见 [section-comparison-table](../sections/comparison-table.md)
+- **详细规范**：参见 [comparison-table.md](../sections/comparison-table.md)
 
 ---
 
@@ -364,11 +364,11 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 |---|------|------|------|
 | 1 | Meta title 必须含「最佳」/ `Best`，年份格式 `（2026）：` / `(2026):` 后接副线 | SEO 点击率下降 | §2.1.1 |
 | 2 | H1 不写年份 | 与 meta title 冗余、降低可读性 | §2.1.2 |
-| 3 | FAQ 数量 **7 问**（中英文各 7 问，与线上一致） | 非 7 问视为未对齐 | section-faq |
-| 4 | FAQ 禁止内链（MDX），Tools JSON FAQ 内链按 §3.2 试点规则 | Schema/渲染冲突 | section-faq §3 |
+| 3 | FAQ 数量 **7 问**（中英文各 7 问，与线上一致） | 非 7 问视为未对齐 | [faq.md](../sections/faq.md) |
+| 4 | FAQ 禁止内链（MDX），Tools JSON FAQ 内链按 §3.2 试点规则 | Schema/渲染冲突 | [faq.md §3](../sections/faq.md) |
 | 5 | Conclusion 必须在 FAQ 之前 | 页面结构错误 | §一 |
 | 6 | BestTools 描述硬底线：ZH 100–400 字 / EN 280–800 字符；同页 max/min < 3x | 内容质量不达标 | §5.3 |
-| 7 | comparisonSection：bestFor/pricing 不得为空，coreFeatures 2–4 个关键词，items ≥ 2 条 | 对比表格不可用 | section-comparison-table §三 |
+| 7 | comparisonSection：bestFor/pricing 不得为空，coreFeatures 2–4 个关键词，items ≥ 2 条 | 对比表格不可用 | [comparison-table.md §三](../sections/comparison-table.md) |
 | 8 | page.tsx 中 metadata、OG、Twitter 标题/描述必须完全相同 | 社交预览漂移 | §2.1.1 |
 | 9 | 必须使用 BlogLayout + 垂直大图布局，禁止 Grid 左右 | 设计一致性破坏 | §四 |
 | 10 | 所有图片必须存在于 `public/tools/[slug]/` | 图片 404 | §四 |
@@ -377,18 +377,18 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 
 ## 十一、质量检查清单
 
-- [ ] **H1 与 excerpt**：符合 [section-heading-best-practices](../sections/generic.md)；使用硬编码字面量防止构建失败
+- [ ] **H1 与 excerpt**：符合 [sections/generic.md](../sections/generic.md)；使用硬编码字面量防止构建失败
 - [ ] 章节完整（核心要点、介绍、技术、产品、对比、场景、选择、结论、FAQ）
 - [ ] 字数符合 section 规范（±10% 容差可接受；英文内容验证脚本位于上下文仓 `scripts/ops/check-tools-en-content.mjs`）
 - [ ] 内链目标与主题有强功能/工作流关联（参见 5.0）
-- [ ] Meta 符合 [section-seo](../meta.md)（中文 desc 60-80 字）
+- [ ] Meta 符合 [meta.md](../meta.md)（中文 desc 60-80 字）
 - [ ] Tools 四要素（§2.0、§2.1.1 / §2.1.2）：`npm run audit:tools-meta` 与 `npm run audit:tools-page-fields` 在默认模式下无 **error**（`--strict` 可按 CI 需约束 warning）
 - [ ] 垂直大图布局、禁止 Grid 左右
 - [ ] 组件正确导入、图片存在于 `public/tools/`
 - [ ] Conclusion 在 FAQ 之前
 - [ ] FAQ 数量为 **7 问**（中英文各 7 问）
 - [ ] FAQ 内链符合专册 §1.5（Tools/Blog JSON：≤3 distinct slug，与正文去重；MDX FAQ 仍禁链）
-- [ ] BlogLayout 与 page.tsx 符合 [template-bloglayout](./bloglayout.md)
+- [ ] BlogLayout 与 page.tsx 符合 [bloglayout](./bloglayout.md)
 
 ### 图片存在性检查
 
@@ -400,7 +400,7 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 
 - [ ] 对比表格列数与同类型页面一致（4 列或 5 列）
 - [ ] bestFor、pricing 无空值
-- [ ] H2、intro 文案符合 [section-comparison-table](../sections/comparison-table.md) 规范
+- [ ] H2、intro 文案符合 [comparison-table.md](../sections/comparison-table.md) 规范
 
 ---
 
@@ -423,7 +423,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 
 ### BestTools 迁移
 
-若页面仍使用旧 HTML 格式，优先迁移到 md Best 榜单 section。参见 [section-best-tools](../sections/best-tools.md)。
+若页面仍使用旧 HTML 格式，优先迁移到 md Best 榜单 section。参见 [best-tools.md](../sections/best-tools.md)。
 
 ---
 
@@ -478,7 +478,7 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 | 产品描述 | 硬底线 280–800 字符，建议 350–650 字符 |
 | FAQ 答案 | 约 **40–80 词** |
 | 应用场景 | 约 **100–260 词/场景** |
-| 结论 | 见 [alignify-conclusion.md §2.3](../alignify-conclusion.md) |
+| 结论 | 见 [conclusion.md §2.3](../conclusion.md) |
 
 **注意**：英文与中文**深度**相当即可，不必字符数机械对齐。
 
@@ -504,4 +504,4 @@ export const BLOG_META: Record<string, BlogPageMeta> = {
 - **颜色方案**：`data-locale="en"`（深色背景、浅色文字）
 - **H2 分割线**：英文仅 `pt-8`，无分割线
 - **Hero**：左对齐；更新日期显示 "Updated on [日期]"
-- 参见 [section-hero](./bloglayout.md)、[section-nav](./bloglayout.md)
+- 参见 [bloglayout.md](./bloglayout.md)

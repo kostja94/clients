@@ -31,14 +31,36 @@
     "K-factor": "病毒系数（K-factor）",
     "land-grab": "抢用户窗口期",
     "workflow embed": "工作流嵌入",
-    "metered overflow": "按量溢出计费"
+    "metered overflow": "按量溢出计费",
+    "git commit attribution": "AI 提交署名",
+    "AI commit attribution": "AI 提交署名",
+    "commit attribution": "提交署名",
+    "co-authored attribution": "共著署名",
+    "commit trailer": "提交尾注（trailer）",
+    "git trailer": "Git 尾注（trailer）",
+    "made-with trailer": "Made-with 标记",
+    "commit vandalism": "未经同意的提交标记",
+    "attribution pollution": "署名污染",
+    "pay to remove branding": "付费去标",
+    "embedded virality": "嵌入式病毒传播",
+    "workflow-native branding": "工作流级品牌植入",
+    "commit-level brand imprint": "提交级品牌印记"
+  },
+  "disambiguation_zh": {
+    "AI 提交署名": "Git commit 末尾 Co-Authored-By / Made-with 等 trailer；≠ 广告归因 / UTM / SKAN",
+    "提交署名": "作者/协作者 credit；≠ 营销 campaign 归因",
+    "广告归因": "Paid Ads / UTM / 转化追踪；≠ AI 提交署名"
   },
   "forbidden_in_zh": [
     "该 X 用于",
     "与 X 同构",
     "campaign 性",
     "留人",
-    "抢份额"
+    "抢份额",
+    "Git 提交归因",
+    "提交归因（指 Co-Author trailer 时）",
+    "Commit 归因",
+    "AI 提交归因"
   ],
   "forbidden_in_en": [
     "→",

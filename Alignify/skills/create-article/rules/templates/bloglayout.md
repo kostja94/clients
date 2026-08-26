@@ -2,13 +2,13 @@
 
 本文档定义 BlogLayout 组件的通用使用规范，适用于 Tools、SEO、Marketing 等使用 BlogLayout 的页面。
 
-**参考**：content-rules-common、[section-content-import](../README.md)（统一内容导入）、[section-consistency](../consistency.md)（字数与表达一致性）
+**参考**：content-rules-common、[README.md](../README.md)（统一内容导入）、[section-consistency](../consistency.md)（字数与表达一致性）
 
 ---
 
 ## 〇、一致性规范
 
-**布局层**：BlogLayout 的 title、excerpt、heroContent、readTime 等字段格式需与同类型页面对齐；H1/Excerpt 规范见 [section-heading-best-practices](../sections/generic.md)。**内容层**：正文章节字数与表达见 [section-consistency](../consistency.md) 及各 content template（tools、marketing、seo）。
+**布局层**：BlogLayout 的 title、excerpt、heroContent、readTime 等字段格式需与同类型页面对齐；H1/Excerpt 规范见 [sections/generic.md](../sections/generic.md)。**内容层**：正文章节字数与表达见 [section-consistency](../consistency.md) 及各 content template（tools、marketing、seo）。
 
 ---
 
@@ -104,7 +104,7 @@ export const metadata = {
 | Tools | `space-y-12 blog-post-content` | 通常无 |
 | SEO / Marketing | `space-y-12 blog-post-content`（与 Tools 统一） | 可用 `id` 作锚点（如 `id="introduction"`） |
 
-**统一**：新建 Marketing/SEO 页面使用 `space-y-12 blog-post-content`，与 Tools 保持一致。详见 [section-content-import](../README.md)。
+**统一**：新建 Marketing/SEO 页面使用 `space-y-12 blog-post-content`，与 Tools 保持一致。详见 [README.md](../README.md)。
 
 ---
 

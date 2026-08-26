@@ -2,8 +2,8 @@
 
 本对照表用于统一 Alignify 全站中文页面的英文术语翻译。**创作或优化中文内容时，遇到这些英文术语应使用统一的推荐译法。**
 
-> **配套 JSON**：[technical-glossary.json](./technical-glossary.json) — 供脚本批量检查术语一致性。
-> **最后更新**：2026-05-20，v1.1.0
+> **配套 JSON**：[marketing-glossary.json](./marketing-glossary.json) — Marketing / Blog 增长文术语；全站通用见下文各节。
+> **最后更新**：2026-08-27，v1.2.0
 
 ## 使用规则
 
@@ -12,6 +12,7 @@
 3. **产品名不可翻译**：Cursor、Claude Code、Reddit、Stripe 等产品/平台名保留原文（见第六章完整列表），否则读者无法搜索和识别
 4. **技术缩写保留**：AI、SEO、API、SaaS、HTML 等中文技术圈通用的缩写保留原文，翻译反而生僻
 5. **搜索引擎友好**：中文页面优先使用中文术语，有助于百度/Google 对中文内容的语义理解
+6. **易混概念须分流**：同一英文词在不同域有不同中文主称（如 attribution → 广告归因 vs AI 提交署名）；「什么是」节须写清边界，见 **§六**
 
 ---
 
@@ -136,4 +137,56 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态。
 
 | 键 | 修复前 | 修复后 |
 |----|--------|--------|
-| `nav.skills` | `Agent Skills`（
+| `nav.skills` | `Agent Skills`（已修复为中文） | Agent Skills 保留 |
+
+---
+
+## 六、Git / DevTools · AI 提交署名（2026-08 起）
+
+> **题材**：`git-commit-attribution` 及同类 GTM 文。完整映射见 [marketing-glossary.json](./marketing-glossary.json) `localize_required` + `disambiguation_zh`。
+
+### 6.1 中文主称（正文叙述）
+
+| 英文 | 推荐译法 | 策略 | 说明 |
+|------|----------|------|------|
+| Git commit attribution | **AI 提交署名** | 翻译 | 文章 H1/H2/正文主称；slug 仍用 `git-commit-attribution` |
+| AI commit attribution | AI 提交署名 | 翻译 | 与上行同义 |
+| commit attribution | 提交署名 | 翻译 | 语境已明确指 Git 时可用简称 |
+| Co-authored attribution | 共著署名 | 翻译 | 特指 `Co-Authored-By:` trailer |
+| Co-Authored-By | Co-Authored-By | 保留 | Git/GitHub 固定字段；正文可写「共著标记」 |
+| commit trailer / Git trailer | 提交尾注（trailer） | 双语 | 首次双语，后续「提交尾注」 |
+| Made-with trailer | Made-with 标记 | 双语 | Cursor 等弱于 co-author 的 trailer |
+| commit vandalism | 未经同意的提交标记 | 翻译 | 社区贬称；正文可括号保留英文 |
+| attribution pollution | 署名污染 | 翻译 | 无实质 AI 贡献仍加 trailer |
+| Assisted-by | Assisted-by | 保留 | Linux 内核推荐字段；正文写「Assisted-by 披露」 |
+| Git AI notes | Git AI 注释 | 双语 | 行级 `refs/notes/ai` |
+| embedded virality（本文变体） | 工作流级品牌植入 | 翻译 | 与 Powered-by Badge 对照时用 |
+| commit-level brand imprint | 提交级品牌印记 | 翻译 | GTM 副作用描述 |
+| Commit Attribution（设置项） | Attribution | 保留 | 与 Cursor/IDE UI 一致 |
+
+### 6.2 禁止译法（易与广告归因混淆）
+
+| 禁止 | 原因 | 改用 |
+|------|------|------|
+| Git 提交归因 | 读者会联想到 UTM/SKAN | AI 提交署名 |
+| 提交归因（指 Co-Author 时） | 同上 | 提交署名 / AI 提交署名 |
+| AI 提交归因 | 「归因」仍带广告语义 | AI 提交署名 |
+| Commit 归因 | 中英混杂 + 歧义 | 提交署名 |
+
+### 6.3 与「广告归因」分流（「什么是」节必写）
+
+| 概念 | 中文 | 层级 | 典型字段 |
+|------|------|------|----------|
+| **AI 提交署名** | 本文 | 产品 workflow metadata | `Co-Authored-By:`、`Made-with:` |
+| **广告归因** | Paid Ads 专题 | 营销 campaign | UTM、SKAN、转化路径 |
+
+**首段模板（可改写）**：「**AI 提交署名**指编码 Agent 在 `git commit` 时于 message 末尾追加 Co-Authored-By、Made-with 等**提交尾注**——这和**广告归因**（UTM、SKAN）不是同一套机制。」
+
+### 6.4 增长模式 Cluster 标题对照
+
+| slug | 中文 H1 主称 | 勿用 |
+|------|-------------|------|
+| `rate-limit-reset` | 用量限额重置 | rate limit reset（裸用） |
+| `coding-plan` | Coding Plan 开发者订阅 | 编程套餐（泛称） |
+| `git-commit-attribution` | **AI 提交署名** | Git 提交归因 |
+| `embedded-virality`（规划） | 嵌入式病毒传播 / Powered-by 去标 | 病毒营销（泛称） |

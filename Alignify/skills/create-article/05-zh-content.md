@@ -20,9 +20,9 @@
 |-------------|------|
 | best-ranking | `content/blog/zh/{slug}.md` |
 | best-ranking-legacy | `content/tools/zh/{slug}.md` |
-| seo-guide | `content/seo/zh/{slug}.md` |
-| marketing-strategy | `content/marketing/zh/{slug}.md` |
-| insights-analysis | `content/insights/zh/{slug}.md` |
+| seo-guide | `content/blog/zh/{slug}.md`（新文）；存量 `content/seo/zh/{slug}.md` |
+| marketing-strategy | `content/blog/zh/{slug}.md`（新文）；存量 `content/marketing/zh/{slug}.md` |
+| insights-analysis | `content/blog/zh/{slug}.md`（新文）；存量 `content/insights/zh/{slug}.md` |
 
 ---
 
