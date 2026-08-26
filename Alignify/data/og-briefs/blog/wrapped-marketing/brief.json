@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "wrapped-marketing",
+  "analyzed_at": "2026-08-28T00:00:00+08:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Year in review marketing for AI products — Wrapped aliases, product-fit matrix, December 2025 AI agent recap cases, reusable five-screen playbook",
+  "differentiator_vs_generic": "Vertical Story cards with personal stats (tokens, agent runs, archetype tags) — NOT generic Spotify vinyl or music notes. HERO: stacked 9:16 share cards with percentile badge and persona label.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Stack of three vertical phone Story cards — token count, Top 1% badge, Night Owl archetype tag",
+    "Secondary: abstract December calendar page with week-2 highlight (no vendor logos)",
+    "Tertiary: paper collage share-arrow looping back to product icon silhouette"
+  ],
+  "anti_patterns": [
+    "Spotify green vinyl or headphone cliché",
+    "Real OpenAI, Cursor, or ChatGPT logos",
+    "Generic bar chart without Story card format",
+    "Music waveform or playlist UI"
+  ],
+  "accent_suggestion": "coral-pink",
+  "locales": {
+    "en": {
+      "headline": "YEAR IN REVIEW",
+      "headline_line2": "MARKETING",
+      "subtitle": "AI Wrapped Playbook",
+      "tagline": "Retention · UGC · Q4 Ritual",
+      "composition": "Visual-only editorial collage. HERO: three stacked vertical 9:16 Story share cards showing abstract stats and Top 1% badge—no vendor logos. Secondary: December calendar week highlight. Tertiary: share loop arrow. Title top-left. Paper collage zine. NO music imagery."
+    },
+    "zh": {
+      "headline": "年终回顾营销",
+      "headline_line2": "",
+      "subtitle": "AI Wrapped 策略",
+      "composition": "Same as EN: stacked vertical Story cards HERO + December calendar + share loop. Title top-left Chinese headline. NO vendor logos. NO music imagery."
+    }
+  }
+}

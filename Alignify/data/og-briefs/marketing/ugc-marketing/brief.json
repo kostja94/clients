@@ -1,0 +1,36 @@
+{
+  "section": "marketing",
+  "slug": "ugc-marketing",
+  "analyzed_at": "2026-08-27T00:00:00+08:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Matrix UGC / creator network marketing — industrial short-video pipeline, flat fee + commission + whitelisting for AI products",
+  "differentiator_vs_generic": "3×3 phone matrix of amateur vertical clips (NOT polished brand ads or single influencer hero). Stack of payment layers ($/clip, commission %, whitelisting boost arrow). Distinct from creator-program portal or affiliate dashboard.",
+  "visual_anchors": [
+    "HERO (~55% canvas): 3×3 grid of vertical phone screens showing amateur UGC clips — review face-cam, unboxing hands, quick tutorial — raw TikTok/Reels feel, blurred usernames",
+    "Secondary: three stacked torn-paper payment chips — flat fee $35–500, 30% commission badge, whitelisting megaphone boost icon",
+    "Tertiary: pipeline arrow showing 100 clips → 1 winner → redeploy to 100 accounts loop"
+  ],
+  "anti_patterns": [
+    "Single polished KOL portrait as hero",
+    "Affiliate dashboard referral link UI (that's affiliate article)",
+    "Partner portal roster (that's creator-program)",
+    "Real TikTok/Meta/Instagram logos",
+    "Generic billboard or TV commercial aesthetic"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "UGC MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "Creator Network Strategy",
+      "tagline": "Matrix · Whitelisting · FTC",
+      "composition": "Visual-only editorial collage for matrix UGC marketing guide. HERO: 3×3 grid of vertical phone screens with amateur short-video thumbnails (face-cam review, unboxing, tutorial) — matrix/farm feel, no platform logos. Secondary: three payment layer chips (flat fee, commission %, whitelisting boost). Tertiary: funnel loop arrow 100→1→100. Title top-left. Paper collage zine. NO polished brand ad, NO single influencer hero."
+    },
+    "zh": {
+      "headline": "UGC营销策略",
+      "headline_line2": "（2026）",
+      "subtitle": "矩阵创作者网络",
+      "composition": "Same as EN: phone matrix HERO + payment layer chips + pipeline loop. Title top-left Chinese headline. NO platform logos. NO polished brand ad hero. Fill canvas with torn-paper red accents."
+    }
+  }
+}

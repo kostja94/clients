@@ -12850,6 +12850,109 @@
       ],
       "status": "pending",
       "notes": "LLM brief 2026-08-25"
+    },
+    {
+      "section": "blog",
+      "slug": "wrapped-marketing",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "YEAR IN REVIEW",
+      "headline_line2": "MARKETING",
+      "subtitle": "AI Wrapped Playbook",
+      "tagline": "Retention · UGC · Q4 Ritual",
+      "composition": "Visual-only editorial collage. HERO: three stacked vertical 9:16 Story share cards showing abstract stats and Top 1% badge—no vendor logos. Secondary: December calendar week highlight. Tertiary: share loop arrow. Title top-left. Paper collage zine. NO music imagery.",
+      "accent": "coral-pink",
+      "visual_anchors": [
+        "HERO (~55% canvas): Stack of three vertical phone Story cards — token count, Top 1% badge, Night Owl archetype tag",
+        "Secondary: abstract December calendar page with week-2 highlight (no vendor logos)",
+        "Tertiary: paper collage share-arrow looping back to product icon silhouette"
+      ],
+      "anti_patterns": [
+        "Spotify green vinyl or headphone cliché",
+        "Real OpenAI, Cursor, or ChatGPT logos",
+        "Generic bar chart without Story card format",
+        "Music waveform or playlist UI"
+      ],
+      "status": "pending",
+      "notes": "LLM brief 2026-08-28"
+    },
+    {
+      "section": "blog",
+      "slug": "wrapped-marketing",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "年终回顾营销",
+      "subtitle": "AI Wrapped 策略",
+      "composition": "Same as EN: stacked vertical Story cards HERO + December calendar + share loop. Title top-left Chinese headline. NO vendor logos. NO music imagery.",
+      "accent": "coral-pink",
+      "visual_anchors": [
+        "HERO (~55% canvas): Stack of three vertical phone Story cards — token count, Top 1% badge, Night Owl archetype tag",
+        "Secondary: abstract December calendar page with week-2 highlight (no vendor logos)",
+        "Tertiary: paper collage share-arrow looping back to product icon silhouette"
+      ],
+      "anti_patterns": [
+        "Spotify green vinyl or headphone cliché",
+        "Real OpenAI, Cursor, or ChatGPT logos",
+        "Generic bar chart without Story card format",
+        "Music waveform or playlist UI"
+      ],
+      "status": "pending",
+      "notes": "LLM brief 2026-08-28"
+    },
+    {
+      "section": "marketing",
+      "slug": "ugc-marketing",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "UGC MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "Creator Network Strategy",
+      "tagline": "Matrix · Whitelisting · FTC",
+      "composition": "Visual-only editorial collage for matrix UGC marketing guide. HERO: 3×3 grid of vertical phone screens with amateur short-video thumbnails (face-cam review, unboxing, tutorial) — matrix/farm feel, no platform logos. Secondary: three payment layer chips (flat fee, commission %, whitelisting boost). Tertiary: funnel loop arrow 100→1→100. Title top-left. Paper collage zine. NO polished brand ad, NO single influencer hero.",
+      "accent": "titian-red",
+      "visual_anchors": [
+        "HERO (~55% canvas): 3×3 grid of vertical phone screens showing amateur UGC clips — review face-cam, unboxing hands, quick tutorial — raw TikTok/Reels feel, blurred usernames",
+        "Secondary: three stacked torn-paper payment chips — flat fee $35–500, 30% commission badge, whitelisting megaphone boost icon",
+        "Tertiary: pipeline arrow showing 100 clips → 1 winner → redeploy to 100 accounts loop"
+      ],
+      "anti_patterns": [
+        "Single polished KOL portrait as hero",
+        "Affiliate dashboard referral link UI (that's affiliate article)",
+        "Partner portal roster (that's creator-program)",
+        "Real TikTok/Meta/Instagram logos",
+        "Generic billboard or TV commercial aesthetic"
+      ],
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
+    },
+    {
+      "section": "marketing",
+      "slug": "ugc-marketing",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "UGC营销策略",
+      "headline_line2": "（2026）",
+      "subtitle": "矩阵创作者网络",
+      "composition": "Same as EN: phone matrix HERO + payment layer chips + pipeline loop. Title top-left Chinese headline. NO platform logos. NO polished brand ad hero. Fill canvas with torn-paper red accents.",
+      "accent": "titian-red",
+      "visual_anchors": [
+        "HERO (~55% canvas): 3×3 grid of vertical phone screens showing amateur UGC clips — review face-cam, unboxing hands, quick tutorial — raw TikTok/Reels feel, blurred usernames",
+        "Secondary: three stacked torn-paper payment chips — flat fee $35–500, 30% commission badge, whitelisting megaphone boost icon",
+        "Tertiary: pipeline arrow showing 100 clips → 1 winner → redeploy to 100 accounts loop"
+      ],
+      "anti_patterns": [
+        "Single polished KOL portrait as hero",
+        "Affiliate dashboard referral link UI (that's affiliate article)",
+        "Partner portal roster (that's creator-program)",
+        "Real TikTok/Meta/Instagram logos",
+        "Generic billboard or TV commercial aesthetic"
+      ],
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
     }
   ]
 }
