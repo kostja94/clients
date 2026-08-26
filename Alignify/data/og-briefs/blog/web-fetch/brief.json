@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "web-fetch",
+  "analyzed_at": "2026-08-25T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Web Fetch — URL to LLM-ready Markdown, stripping ads/nav chrome for 60–98% token savings in agent and RAG pipelines",
+  "differentiator_vs_generic": "This is the 'read' primitive for agents (URL → clean Markdown), NOT web search (find URLs) or bulk scraping (ETL crawl). Hero must show noisy HTML page transforming into clean Markdown with token-savings badge — NOT a search results page or spider crawl map.",
+  "visual_anchors": [
+    "HERO (~55% canvas): URL-to-Markdown pipeline — left: messy HTML page mockup with ad banners, nav bar, cookie banner overlays (grey noise blocks); center: accent filter/funnel arrow; right: clean Markdown document with heading/list/code structure; token savings badge '60–98%' on arrow",
+    "Secondary: URL prefix bar motif — blurred 'r.jina.ai/' prepended to generic URL (no Jina logo)",
+    "Tertiary: agent pipeline strip — Search → Fetch → Read → Answer with Fetch step accent-highlighted"
+  ],
+  "anti_patterns": [
+    "Search engine results page as hero (page is fetch not search)",
+    "Bulk crawl sitemap spider web (page is single-URL read)",
+    "Real vendor logos (Jina, Firecrawl, TinyFish)",
+    "Headless browser interaction UI (page is read-only fetch)"
+  ],
+  "accent_suggestion": "olive-green",
+  "locales": {
+    "en": {
+      "headline": "WEB FETCH",
+      "headline_line2": "(2026)",
+      "subtitle": "URL to LLM-Ready Markdown",
+      "tagline": "Clean Text · Token Savings · MCP",
+      "composition": "Visual-only editorial collage for Web Fetch guide. HERO: URL→Markdown pipeline occupying right two-thirds — noisy HTML page left, accent funnel arrow with 60–98% badge center, clean Markdown doc right. Secondary: URL prefix bar with r.jina.ai/ blur. Tertiary: Search→Fetch→Read→Answer pipeline strip with Fetch highlighted. Title block top-left only. Paper collage torn edges, halftone. NO SERP mockup, NO crawl spider map, NO vendor logos, NO extra text labels."
+    },
+    "zh": {
+      "headline": "Web Fetch网页抓取",
+      "headline_line2": "（2026）",
+      "subtitle": "URL转LLM可读Markdown",
+      "composition": "Same layout as EN: HTML→Markdown pipeline HERO + URL prefix bar + agent pipeline strip. Title top-left, NO SERP, NO vendor logos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "sitemap",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Sitemap creation and optimization — XML, HTML, sitemap index, GSC submission, and crawl discovery",
+  "differentiator_vs_generic": "This is traditional technical SEO sitemap education, NOT GEO/LLM chat. Hero must show an XML sitemap file tree with url/loc entries feeding a crawler discovery path — NOT an AI chat panel or analytics dashboard unrelated to sitemaps.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Layered XML sitemap document stack — top file sitemap_index.xml branching to sitemap-pages.xml and sitemap-blog.xml, each showing blurred <url><loc> tag rows in monospace with accent-highlighted closing tags",
+    "Secondary: crawler bot icon following dotted arrow path from sitemap file into 4 mini page tiles (representing discovered URLs)",
+    "Tertiary: small robots.txt + sitemap cross-reference badge showing Sitemap: declaration line"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is sitemap XML not GEO)",
+    "Generic folder tree without XML sitemap syntax",
+    "Marketing dashboard or affiliate UI",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "SITEMAP GUIDE",
+      "headline_line2": "(2026)",
+      "subtitle": "XML, HTML & Index Files",
+      "tagline": "GSC Submit · Crawl Discovery",
+      "composition": "Visual-only editorial collage for sitemap SEO guide. HERO: stacked XML sitemap documents occupying right two-thirds — sitemap_index.xml at top branching to two child sitemap files, each showing blurred <urlset> with <loc> URL rows in accent emerald monospace highlights. Dotted crawler path arrow flows from sitemap into 4 discovered page tiles. Secondary: robots.txt Sitemap: declaration snippet. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real Google logo, NO analytics dashboard UI."
+    },
+    "zh": {
+      "headline": "站点地图指南",
+      "headline_line2": "（2026）",
+      "subtitle": "XML与索引文件",
+      "composition": "Same layout as EN: XML sitemap tree HERO with url/loc tags + crawler discovery path + robots.txt badge. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

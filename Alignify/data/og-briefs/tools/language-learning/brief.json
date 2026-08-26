@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "language-learning",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI language learning tools — speaking practice, pronunciation feedback, gamified courses, conversation drills",
+  "differentiator_vs_generic": "Split panel contrasting gamified streak leaderboard vs live speaking waveform with microphone, NOT globe/flags hero or homework solver.",
+  "visual_anchors": [
+    "HERO: Vertical split comparison — left gamified streak flame + XP bar + leaderboard silhouette, right microphone + animated voice waveform + conversation bubble stack, navy divider line between halves",
+    "Phoneme pronunciation feedback vignette — mouth diagram with green/red accent markers on sound pairs",
+    "2x2 grid of learning mode tiles (speaking drill, flashcard review, live tutor chat, listening quiz) — UI fragments only"
+  ],
+  "anti_patterns": [
+    "Generic world globe with flags as hero",
+    "LLM translation chat panel hero",
+    "Homework photo-to-answer UI",
+    "Textbook grammar page as primary visual"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI LANGUAGE LEARNING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Speaking · Pronunciation · Drills",
+      "tagline": "Practice Out Loud, Not Just Tap",
+      "composition": "Visual-only collage for AI language learning tools comparison: (1) HERO split gamified streak vs speaking waveform panel on right two-thirds. (2) Phoneme mouth diagram vignette. (3) 2x2 grid of four learning mode UI tiles. (4) Magnifying glass on waveform peak detail. Paper collage, halftone. No globe hero, no translation chat hero, no homework camera."
+    },
+    "zh": {
+      "headline": "最佳AI语言学习工具",
+      "headline_line2": "（2026）",
+      "subtitle": "口语 · 发音 · 练习",
+      "composition": "Same layout as EN: streak-vs-speaking split HERO + phoneme diagram + 2x2 learning grid + magnifying glass on waveform. Title top-left only, NO extra Chinese UI labels, NO globe hero, NO blank cards. Navy accents."
+    }
+  }
+}

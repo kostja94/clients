@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "tattoo-generator",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI tattoo generators — design prompts to stencil-ready art with virtual try-on on skin",
+  "differentiator_vs_generic": "Tattoo stencil line art with virtual try-on overlay on arm silhouette and style tag chips, NOT generic illustration grid or logo marks.",
+  "visual_anchors": [
+    "HERO: Tattoo design board — black ink stencil line art with style tag chips (traditional, fine-line, geometric) and virtual try-on overlay on arm silhouette photo",
+    "Compact prompt card arrow into stencil variant strip",
+    "2x2 grid of tattoo outputs (sleeve concept, minimalist wrist, floral back piece, tribal band) — line art only"
+  ],
+  "anti_patterns": [
+    "Generic T2I photo grid hero",
+    "Logo vector marks",
+    "Fashion lookbook hero",
+    "Empty stencil outline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TATTOO GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Design · Stencil · Try-On",
+      "tagline": "Ink Before You Commit",
+      "composition": "Visual-only collage for AI tattoo generator tools comparison: (1) HERO stencil line art with virtual try-on on arm silhouette on right two-thirds. (2) Prompt card arrow into stencil variants. (3) 2x2 grid of four tattoo design outputs. (4) Magnifying glass on line detail. Paper collage, halftone. No generic photo grid hero, no logo marks, no blank stencil."
+    },
+    "zh": {
+      "headline": "最佳AI纹身生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "设计 · 线稿 · 试穿",
+      "composition": "Same layout as EN: tattoo stencil HERO + prompt flow + 2x2 design grid + magnifying glass on line detail. Title top-left only, NO extra Chinese UI labels, NO generic photo grid hero, NO blank stencil. Mars-green accents."
+    }
+  }
+}

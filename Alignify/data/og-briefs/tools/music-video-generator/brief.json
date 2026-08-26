@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "music-video-generator",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI music video generators — audio waveform to synchronized visual scenes and lyric sync",
+  "differentiator_vs_generic": "Waveform timeline with beat markers morphing into synchronized video scene frames, NOT standalone music generator or video editor NLE.",
+  "visual_anchors": [
+    "HERO: Music video board — horizontal waveform with beat markers arrow into 3-panel synchronized video scene strip with play button overlay",
+    "Compact audio upload card with lyric sync chip arrow into scene thumbnails",
+    "2x2 grid of MV outputs (performance clip, abstract visualizer, lyric kinetic type, story montage) — frames only"
+  ],
+  "anti_patterns": [
+    "Standalone music waveform hero only",
+    "Offline NLE timeline",
+    "T2V prompt card without audio",
+    "Empty scene panels"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI MUSIC VIDEO GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Audio · Beats · Scenes",
+      "tagline": "Sound Becomes Motion",
+      "composition": "Visual-only collage for AI music video generator tools comparison: (1) HERO waveform with beat markers arrow into scene strip on right two-thirds. (2) Audio upload arrow into lyric sync thumbnails. (3) 2x2 grid of four MV output frames. (4) Magnifying glass on beat marker row. Paper collage, halftone. No music-only waveform hero, no NLE timeline, no blank panels."
+    },
+    "zh": {
+      "headline": "最佳AI音乐视频生成工具",
+      "headline_line2": "（2026）",
+      "subtitle": "音频 · 节拍 · 画面",
+      "composition": "Same layout as EN: music video HERO + audio upload flow + 2x2 scene grid + magnifying glass on beat markers. Title top-left only, NO extra Chinese UI labels, NO music-only hero, NO blank panels. Titian-red accents."
+    }
+  }
+}

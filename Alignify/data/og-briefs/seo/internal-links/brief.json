@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "internal-links",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Internal linking SEO — site architecture, PageRank flow, pillar pages, topic clusters, anchor text, and crawl budget",
+  "differentiator_vs_generic": "This is internal link architecture SEO, NOT GEO/LLM chat. Hero must show same-domain site tree with internal link arrows and authority flow — NOT outbound links leaving the site or AI chat panels.",
+  "visual_anchors": [
+    "HERO (~55% canvas): pyramid site architecture diagram — homepage node at top, 3 category nodes mid-tier, 6 content page nodes at base, all on same domain boundary, internal link arrows flowing downward and cross-linking with accent-highlighted authority path",
+    "Secondary: pillar page hub-spoke topic cluster — central pillar node with 5 cluster pages connected bidirectionally",
+    "Tertiary: in-article contextual link mockup — blurred paragraph with one blue internal anchor link underline highlighted"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is internal linking SEO not GEO)",
+    "External/outbound link diagram as primary visual",
+    "Generic sitemap XML without internal link arrows",
+    "Empty node graph with no hierarchy"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "INTERNAL LINKS",
+      "headline_line2": "(2026)",
+      "subtitle": "Site Structure & PageRank",
+      "tagline": "Pillar Pages · Topic Clusters",
+      "composition": "Visual-only editorial collage for internal linking SEO guide. HERO: pyramid site architecture diagram occupying right two-thirds — homepage at apex, category nodes, content page nodes all within same-domain boundary box, internal link arrows connecting levels with one accent mars-green authority-flow path highlighted. Secondary: pillar page hub-spoke cluster with bidirectional spokes. Tertiary: article snippet with one highlighted internal anchor link in body text. Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO outbound arrows leaving domain, NO Screaming Frog logo, NO extra text labels on canvas."
+    },
+    "zh": {
+      "headline": "内部链接SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "网站结构与权重",
+      "composition": "Same layout as EN: pyramid site architecture HERO with internal link arrows + pillar hub-spoke cluster + in-article internal link highlight. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

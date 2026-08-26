@@ -476,4 +476,4 @@ Reaction Video 是创作者对已有内容（音乐、影视、病毒 clip、游
 
 ---
 
-*双轴分类文档 · 产品功能以 [vatt-features.md](./vatt-features.md) 为准 · 待验证项见 [vatt-others.md](./vatt-others.md)*
+*双轴分类文档 · 产品功能以 [vatt-features.md](./vatt-features.md) 为准 · 待验证项见 [archive/vatt-others.md](./archive/vatt-others.md)*

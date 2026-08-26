@@ -4,7 +4,7 @@
 > **替代**：[vatt-site-structure.md](.../vatt-site-structure.md) §3–§4（多语言现状与 SEO 观测）
 
 > **本文档职责**：将 [vatt.ai](https://vatt.ai/) 当前的查询参数多语言方案（`?lang=xx`）迁移为 URL 路径前缀方案（`/it`、`/es`、`/fr`、`/de`、`/zh`、`/pt`、`/ja`）的技术栈、URL 约定、迁移步骤与验收。  
-> **引用**：[vatt.md](../vatt.md) 概览 | [vatt-site-structure.md](.../vatt-site-structure.md) 站点结构 | [vatt-others.md](.../vatt-others.md) 站点观测 | [vatt-features.md](.../vatt-features.md) 功能 Status
+> **引用**：[vatt.md](../vatt.md) 概览 | [vatt-site-structure.md](.../vatt-site-structure.md) 站点结构 | [archive/vatt-others.md](./vatt-others.md) 站点观测 | [vatt-features.md](.../vatt-features.md) 功能 Status
 > **技术栈假定**：Next.js App Router + [next-intl](https://next-intl.dev/docs/routing/configuration)（若官网非 Next，则映射等价 i18n，**公开 URL 约定不变**——见 §3.4）
 
 **最近更新**：2026-08-06
@@ -662,7 +662,7 @@ curl -s https://vatt.ai/sitemap.xml | grep -c "<url>"             # ≥ 路径×
 | 文档 | 关系 |
 |------|------|
 | [vatt-site-structure.md](../vatt-site-structure.md) | 主站 IA；§6 页面规划的多语言策略承接本文档 §4.5 |
-| [vatt-others.md](../vatt-others.md) | 站点观测（SEO 现状、`?lang=` 相关数据引用） |
+| [vatt-others.md](./vatt-others.md) | 站点观测（SEO 现状、`?lang=` 相关数据引用） |
 | [vatt-features.md](../vatt-features.md) | 功能 Status（与 i18n 无关，但影响 `/features` 页面上线节奏） |
 
 ---

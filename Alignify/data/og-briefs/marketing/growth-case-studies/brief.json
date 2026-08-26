@@ -1,0 +1,24 @@
+{
+  "section": "marketing",
+  "slug": "growth-case-studies",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Growth case studies — dissect SaaS/AI startup growth metrics and playbooks",
+  "visual_anchors": ["HERO: case study card with company icon + upward MRR/ARR chart", "Annotated growth funnel diagram", "Playbook checklist strip (blurred items)"],
+  "anti_patterns": ["Generic stock chart without case-study framing", "SERP"],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "GROWTH CASE STUDIES",
+      "headline_line2": "(2026)",
+      "subtitle": "SaaS · AI · Startups",
+      "tagline": "Metrics · Playbooks · Lessons",
+      "composition": "Visual-only collage for growth case studies hub. HERO: case study profile card with generic SaaS app icon + steep upward revenue line chart. Secondary: annotated funnel (Awareness→Signup→Paid). Tertiary: playbook checklist strip. Paper collage."
+    },
+    "zh": {
+      "headline": "增长案例研究",
+      "headline_line2": "（2026）",
+      "subtitle": "SaaS · AI · 创业",
+      "composition": "Same: case study card HERO + funnel + checklist. Title top-left, NO extra text, NO blank cards."
+    }
+  }
+}

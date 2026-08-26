@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "text",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI text tools hub — category map across generation, translation, paraphrasing, and writing",
+  "differentiator_vs_generic": "Text tools category hub mosaic with four workflow tiles (generate, translate, paraphrase, summarize), NOT single text generator doc alone.",
+  "visual_anchors": [
+    "HERO: Text tools category hub — 2x2 mosaic of workflow tiles (text generator doc, bilingual translator columns, paraphrase before/after, summary bullet doc) connected by torn-paper arrows",
+    "Compact category picker strip morphing into dominant text workflow tile",
+    "Magnifying glass zooming on one tile detail (alignment connector or tone slider)"
+  ],
+  "anti_patterns": [
+    "Single text generator doc as sole hero",
+    "Code editor diff hero",
+    "Spreadsheet grid",
+    "Empty text tiles"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TEXT TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Write · Translate · Rewrite",
+      "tagline": "Pick the Right Text Stack",
+      "composition": "Visual-only collage for AI text tools category hub: (1) HERO 2x2 text workflow mosaic on right two-thirds. (2) Category picker strip arrow into dominant tile. (3) Magnifying glass on one tile detail. Title top-left only. Paper collage, halftone. No single-generator-only hero, no code editor, no blank tiles."
+    },
+    "zh": {
+      "headline": "最佳AI文本工具",
+      "headline_line2": "（2026）",
+      "subtitle": "写作 · 翻译 · 改写",
+      "composition": "Same layout as EN: text category hub mosaic HERO + picker strip + magnifying glass on tile detail. Title top-left only, NO extra Chinese UI labels, NO single doc hero, NO blank tiles. Navy accents."
+    }
+  }
+}

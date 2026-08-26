@@ -1,0 +1,33 @@
+{
+  "section": "marketing",
+  "slug": "marketing-types",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Marketing channels, platforms & programs hub — SEO, email, social, affiliate, referral, creator programs",
+  "visual_anchors": [
+    "HERO: hub-and-spoke channel map — central 'Marketing Mix' node with 6-8 channel icon spokes (search, email envelope, social feed, affiliate link, influencer avatar, paid ads)",
+    "Three-layer stack diagram: Channels → Platforms → Programs (blurred labels OK)",
+    "Small integrated loop arrow showing cross-channel coordination"
+  ],
+  "anti_patterns": [
+    "Single channel hero only (must show multi-channel hub)",
+    "Generic growth chart without channel icons",
+    "LLM chat hero (not GEO page)",
+    "empty white cards"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "MARKETING TYPES",
+      "headline_line2": "(2026)",
+      "subtitle": "Channels · Platforms · Programs",
+      "tagline": "SEO · Email · Social · Affiliate",
+      "composition": "Visual-only collage for marketing types hub page. HERO: hub-and-spoke diagram with central node and 6-8 channel icon spokes (search, email, social, affiliate, influencer, paid). Secondary: three-layer stack (Channels / Platforms / Programs). Tertiary: circular integration loop arrow. Paper collage. NO single-channel focus, NO LLM chat."
+    },
+    "zh": {
+      "headline": "营销类型指南",
+      "headline_line2": "（2026）",
+      "subtitle": "渠道 · 平台 · 计划",
+      "composition": "Same: multi-channel hub-spoke HERO + three-layer stack + integration loop. Title top-left, NO extra labels, NO blank cards, NO LLM chat."
+    }
+  }
+}

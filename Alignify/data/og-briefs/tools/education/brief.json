@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "education",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI education tools — adaptive learning paths, tutoring dashboards, and interactive study modules",
+  "differentiator_vs_generic": "Learning dashboard with adaptive progress path and quiz flashcard stack, NOT essay writer document or homework photo scan.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Student learning dashboard — winding progress path with completed nodes, current lesson card with video thumbnail, and adaptive difficulty meter bar",
+    "Subject chip row: four torn-paper mini icons (math, science, language, history) — blurred labels only",
+    "2x2 grid of education vignettes (flashcard drill, interactive quiz, teacher analytics, study plan calendar) — UI fragments only",
+    "Magnifying glass zooming on one quiz question card with multiple-choice options blurred"
+  ],
+  "anti_patterns": [
+    "Essay document with citation sidebar hero",
+    "Phone camera homework scan panel",
+    "Generic graduation cap on gradient",
+    "Empty course catalog white grid"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI EDUCATION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Learn · Adapt · Assess",
+      "tagline": "Personalized Paths for Every Learner",
+      "composition": "Visual-only collage for AI education tools comparison: (1) HERO learning dashboard with progress path and lesson card on right two-thirds. (2) Subject chip row. (3) 2x2 grid of four education vignettes. (4) Magnifying glass on quiz question card. Title top-left only. Paper collage, halftone. No essay writer hero, no homework scan hero, no ranking text, no blank catalog."
+    },
+    "zh": {
+      "headline": "最佳AI教育工具",
+      "headline_line2": "（2026）",
+      "subtitle": "学习 · 自适应 · 测评",
+      "composition": "Same layout as EN: learning dashboard HERO + subject chips + 2x2 vignette grid + magnifying glass on quiz card. Title top-left only, NO extra Chinese UI labels, NO essay or homework scan hero, NO blank catalog."
+    }
+  }
+}

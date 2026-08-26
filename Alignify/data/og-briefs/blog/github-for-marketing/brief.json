@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "github-for-marketing",
+  "analyzed_at": "2026-08-24T18:30:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "GitHub as AI/SaaS growth channel — README-as-landing-page, star credibility, Trending/Topics discovery, and developer ecosystem strategy",
+  "differentiator_vs_generic": "This is repository marketing and GitHub discovery mechanics, NOT git hosting infrastructure, NOT README writing tutorial alone. Hero must be a GitHub repo page mockup with rendered README, star/fork counts, badges row, and Trending upward arrow.",
+  "visual_anchors": [
+    "HERO (~55% canvas): GitHub repository page mockup — top bar with Star/Fork/Watch count blur badges, main README rendered area with badge row and Quick Start code block blur, sidebar Topics tag chips",
+    "Trending upward arrow badge with star-velocity blur sparkline",
+    "Secondary: social preview card thumbnail (1280x640 blur rectangle) beside README"
+  ],
+  "anti_patterns": [
+    "Git hosting forge branch graph (wrong topic — that's git-hosting slug)",
+    "Generic marketing funnel unrelated to developer platform",
+    "Code editor without repo page layout",
+    "Trademark GitHub logo — use generic repo page archetype only",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "GITHUB FOR GROWTH",
+      "headline_line2": "(2026)",
+      "subtitle": "README, Stars & Discovery",
+      "tagline": "Trending · Topics · Profile",
+      "composition": "Visual-only editorial collage for GitHub marketing strategy guide. HERO: generic GitHub-style repo page mockup on right two-thirds — top action bar with Star/Fork blur counts, README body with horizontal badge row and code-block blur, right sidebar with 4-5 Topics tag chips. Mars-green accent on star count badge. Secondary: small Trending arrow with star-velocity sparkline. Tertiary: social preview card blur rectangle. Title top-left. Paper torn edges, halftone. NO official GitHub logo, NO forge branch graph, NO blank cards."
+    },
+    "zh": {
+      "headline": "GitHub增长攻略",
+      "headline_line2": "（2026）",
+      "subtitle": "仓库营销与开发者生态",
+      "composition": "Same layout as EN: repo page mockup HERO with README + badges + Topics + Trending arrow. Title top-left, NO extra Chinese repo labels, NO forge graph, NO GitHub logo, NO blank cards."
+    }
+  }
+}

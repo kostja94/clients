@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "about",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "About Alignify — growth research studio for AI startups that refuse obscurity; three alignments craft",
+  "differentiator_vs_generic": "Studio manifesto page, NOT generic About Us team photo grid. HERO must visualize three alignments (Product↔Demand, Story↔Search, Channel↔Compounding) as connected pairs.",
+  "visual_anchors": [
+    "HERO: Three alignment pair cards linked by klein-blue double-arrow bridges — product/demand, story/search, channel/compounding — blurred body lines only",
+    "Secondary: obscurity vs visibility contrast split — dim product tile vs highlighted discovery path",
+    "Tertiary: studio stats row (3yr, 100+, alignments) as minimal number blocks without readable captions"
+  ],
+  "anti_patterns": [
+    "Generic team headshot grid",
+    "Office stock photo hero",
+    "Channel index link columns",
+    "Empty manifesto white box"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "ABOUT ALIGNIFY",
+      "headline_line2": "",
+      "subtitle": "Growth Research Studio",
+      "tagline": "Three Alignments · One Craft",
+      "composition": "Visual-only collage for About page. HERO: three alignment bridge cards on right two-thirds connected by double arrows (product-demand, story-search, channel-compounding). Secondary: obscurity-to-visibility split vignette. Tertiary: minimal stat blocks. Title top-left. Paper collage, halftone. NO team photos, NO hub lists, NO blank cards."
+    },
+    "zh": {
+      "headline": "关于Alignify",
+      "headline_line2": "",
+      "subtitle": "增长研究工作室",
+      "composition": "Same layout as EN: three alignment bridge cards HERO + visibility split + stat blocks. Title top-left, NO team photos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "video-clipping",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI video clipping tools — long-form to viral short highlights",
+  "differentiator_vs_generic": "Long video timeline with AI highlight markers extracting vertical short clips, NOT full NLE editor or text-to-video.",
+  "visual_anchors": [
+    "HERO: Clipping workspace — horizontal long-form timeline with AI highlight sparkle markers and vertical short clip previews popping out",
+    "Compact source URL/upload card arrow into auto-detected hook moments list",
+    "2x2 grid of clip outputs (9:16 reel, captioned short, thumbnail options, batch export queue) — UI only"
+  ],
+  "anti_patterns": [
+    "Full video NLE timeline hero",
+    "Text-to-video storyboard",
+    "Podcast waveform only",
+    "Empty scissors icon"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIDEO CLIPPING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Long-Form · Highlights · Shorts",
+      "tagline": "Find Viral Moments Fast",
+      "composition": "Visual-only collage for AI video clipping tools comparison: (1) HERO long timeline with highlight markers and vertical clips on right two-thirds. (2) Upload card arrow into hook moments list. (3) 2x2 grid of four clip output UI tiles. (4) Magnifying glass on highlight marker. Paper collage, halftone. No NLE hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI视频切片工具",
+      "headline_line2": "（2026）",
+      "subtitle": "长视频 · 高光 · 短视频",
+      "composition": "Same layout as EN: clipping timeline HERO + upload hooks flow + 2x2 output grid + magnifying glass on highlight marker. Title top-left only, NO extra Chinese UI labels, NO NLE hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "model-training",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI model training platforms — datasets, fine-tune jobs, and loss curves",
+  "differentiator_vs_generic": "Training dashboard with loss curve descending and dataset upload card, NOT inference chat or API gateway.",
+  "visual_anchors": [
+    "HERO: Fine-tune job dashboard with descending loss curve chart, epoch progress bar, and GPU utilization strip",
+    "Compact dataset upload card (CSV/JSON icons) arrow into training job status tile",
+    "2x2 grid of training workflow tiles (LoRA adapter, eval metrics, hyperparameter panel, model export) — UI only"
+  ],
+  "anti_patterns": [
+    "LLM chat panel hero",
+    "Code IDE without metrics",
+    "Empty server rack",
+    "Blank white dashboard"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI MODEL TRAINING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Fine-Tune · Datasets · Metrics",
+      "tagline": "Train Models on Your Data",
+      "composition": "Visual-only collage for AI model training tools comparison: (1) HERO fine-tune dashboard with loss curve on right two-thirds. (2) Dataset upload card arrow into job status tile. (3) 2x2 grid of four training workflow UI tiles. (4) Magnifying glass on loss curve dip. Paper collage, halftone. No chat panel hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI模型训练工具",
+      "headline_line2": "（2026）",
+      "subtitle": "微调 · 数据集 · 指标",
+      "composition": "Same layout as EN: training dashboard HERO + dataset upload flow + 2x2 workflow grid + magnifying glass on loss curve. Title top-left only, NO extra Chinese UI labels, NO chat hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "section": "insights",
+  "slug": "directory-submission-sites",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Directory and listing submission for AI/SaaS — history from Yahoo to AI tool hubs, Google spam policy, GEO rules, cold start playbooks",
+  "differentiator_vs_generic": "This is AI/SaaS directory ecosystem analysis with policy timeline and cold-start strategy, NOT a generic link-building list or affiliate directory screenshot. Hero must be a directory hub network map with submission kit card and policy timeline strip.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Directory hub network map — central AI/SaaS product node with radiating spokes to blurred directory hub icons (tool listings, review marketplaces, vertical niches)",
+    "Policy timeline strip: Yahoo era → Google spam update → GEO citation era as three connected milestone dots with accent highlight on current era",
+    "Secondary: submission kit card — logo blur, one-liner blur, screenshot blur, pricing blur as four checklist rows"
+  ],
+  "anti_patterns": [
+    "Generic link-building backlink diagram alone",
+    "SERP ranking page as hero",
+    "Affiliate dashboard screenshot",
+    "Random directory logo collage without network structure",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "DIRECTORY SUBMISSION",
+      "headline_line2": "(2026)",
+      "subtitle": "History, Policy & Cold Start",
+      "tagline": "AI Hubs · GEO Rules · Submission Kits",
+      "composition": "Visual-only editorial collage for AI/SaaS directory submission insights. HERO: hub-and-spoke directory network map on right two-thirds — central product node with radiating lines to blurred directory hub icons (AI tool listings, review sites, vertical directories). Secondary: horizontal three-milestone policy timeline (Yahoo → Google spam → GEO era) with klein-blue accent on current node. Tertiary: submission kit checklist card with four blurred asset rows. Title top-left. Paper torn edges, halftone. NO SERP hero, NO affiliate UI, NO real directory logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "导航站与目录提交",
+      "headline_line2": "（2026）",
+      "subtitle": "历史、政策与冷启动",
+      "composition": "Same layout as EN: directory hub network HERO + policy timeline + submission kit card. Title top-left, NO extra Chinese hub labels, NO SERP, NO blank cards."
+    }
+  }
+}

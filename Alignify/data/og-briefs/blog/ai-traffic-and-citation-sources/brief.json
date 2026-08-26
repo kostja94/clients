@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "ai-traffic-and-citation-sources",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI traffic and citation sources — ChatGPT/Gemini/Perplexity/Claude referral share (~99%), Reddit ~40% citation dominance, and cross-platform GEO monitoring framework",
+  "differentiator_vs_generic": "This is GEO analytics — platform traffic mix plus citation source landscape — NOT traditional SEO SERP. Article is GEO category so LLM answer with citations is allowed, but hero must lead with platform traffic donut AND citation source breakdown, not generic magnifying glass or ranking list.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Dual analytics panel — left: donut chart of four AI platform traffic shares (largest ~63% slice ChatGPT-colored generic, ~19% Gemini, ~11% Perplexity, ~7% Claude, no logos), right: horizontal citation source bar chart with one dominant Reddit-height bar (~40%) plus Wikipedia/media bars, klein-blue accent on chart edges",
+    "Secondary: ChatGPT-style dark LLM answer bubble with 3 numbered citation chips [1][2][3] and link icons at bottom (GEO retrieval cue, blurred answer text)",
+    "Tertiary: cross-platform overlap visual — two platform circles with tiny ~10% intersection sliver (low domain overlap finding)"
+  ],
+  "anti_patterns": [
+    "Google SERP blue link ranking list as hero",
+    "Magnifying glass over search results",
+    "SEO #1 ranking badge or DA score chart as primary visual",
+    "LLM chat alone without traffic/citation data viz",
+    "Generic growth line chart unrelated to platform mix"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "AI TRAFFIC & CITATIONS",
+      "headline_line2": "(2026)",
+      "subtitle": "Platform Mix & Citation Sources",
+      "tagline": "ChatGPT · Gemini · Perplexity · Claude",
+      "composition": "Visual-only editorial collage for AI traffic & citation sources GEO guide. HERO: right two-thirds — analytics dashboard collage: klein-blue-accented donut chart showing four AI platform traffic slices (largest dominant slice, no brand logos or readable percentages as text labels), adjacent horizontal bar chart of citation sources with one very tall Reddit-class bar and shorter Wikipedia/media bars. Secondary: smaller dark LLM assistant answer panel with blurred text and three numbered citation chips [1][2][3] with chain-link icons (GEO not SEO). Tertiary: two overlapping circles with minimal intersection area. Title block top-left only. Paper torn edges, halftone. NO SERP ranking list, NO magnifying glass hero, NO search bar hero, NO real platform logos, NO readable stat numbers on canvas, NO empty white cards."
+    },
+    "zh": {
+      "headline": "AI流量与引用来源",
+      "headline_line2": "（2026）",
+      "subtitle": "平台组合与引用格局",
+      "composition": "Same layout as EN: HERO platform traffic donut + citation source bar chart + LLM answer with citation chips + low-overlap circles. Title top-left, NO SERP list, NO magnifying glass hero, NO extra Chinese UI labels on charts, NO blank cards."
+    }
+  }
+}

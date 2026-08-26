@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "task-management",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI task management tools — smart lists, priorities, and due-date assist",
+  "differentiator_vs_generic": "Prioritized task inbox with AI sort badges and calendar due-date chips, NOT full Gantt project board or CRM.",
+  "visual_anchors": [
+    "HERO: Smart task inbox — grouped Today/Upcoming lists with AI priority badges, due-date chips, and quick-complete checkmarks",
+    "Compact voice/text capture bubble arrow into categorized task card",
+    "2x2 grid of task views (kanban mini, focus mode, delegated tasks, recurring rules) — UI only"
+  ],
+  "anti_patterns": [
+    "Full project Gantt hero",
+    "CRM pipeline",
+    "Email inbox",
+    "Empty sticky notes"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TASK MANAGEMENT TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prioritize · Schedule · Focus",
+      "tagline": "Tasks That Sort Themselves",
+      "composition": "Visual-only collage for AI task management tools comparison: (1) HERO smart task inbox with priority badges on right two-thirds. (2) Capture bubble arrow into task card. (3) 2x2 grid of four task view UI tiles. (4) Magnifying glass on priority badge. Paper collage, halftone. No Gantt hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI任务管理工具",
+      "headline_line2": "（2026）",
+      "subtitle": "优先级 · 日程 · 专注",
+      "composition": "Same layout as EN: task inbox HERO + capture flow + 2x2 view grid + magnifying glass on priority badge. Title top-left only, NO extra Chinese UI labels, NO Gantt hero, NO blank cards."
+    }
+  }
+}

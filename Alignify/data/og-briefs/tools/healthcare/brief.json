@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "healthcare",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI healthcare tools — medical imaging, clinical decision support, patient engagement, regulatory-grade diagnostics",
+  "differentiator_vs_generic": "Radiology viewer with AI lesion annotation overlay and HIPAA shield badge, NOT generic wellness chatbot or homework helper.",
+  "visual_anchors": [
+    "HERO: Medical imaging viewer — chest X-ray or CT slice with semi-transparent AI bounding-box annotations and confidence heat overlay, small HIPAA shield badge corner",
+    "Clinical workflow strip: EHR chart snippet, CDS alert chip, patient portal message bubble (blurred text)",
+    "2x2 grid of healthcare AI tiles (imaging triage, ambient scribe waveform, patient chat, population dashboard) — UI fragments only"
+  ],
+  "anti_patterns": [
+    "Generic wellness coach chat hero",
+    "Consumer fitness tracker ring",
+    "Homework or tutoring UI",
+    "Empty hospital white card"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI HEALTHCARE TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Imaging · CDS · Patient Care",
+      "tagline": "Clinical-Grade AI Assist",
+      "composition": "Visual-only collage for AI healthcare tools comparison: (1) HERO radiology viewer with AI annotation overlay and HIPAA badge on right two-thirds. (2) Clinical workflow strip vignette. (3) 2x2 grid of four healthcare UI tiles. (4) Magnifying glass on lesion annotation box edge. Paper collage, halftone. No wellness chat hero, no fitness tracker, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI医疗工具",
+      "headline_line2": "（2026）",
+      "subtitle": "影像 · 决策 · 患者",
+      "composition": "Same layout as EN: radiology annotation HERO + clinical workflow strip + 2x2 healthcare grid + magnifying glass on lesion box. Title top-left only, NO extra Chinese UI labels, NO wellness chat hero, NO blank cards. Klein-blue accents."
+    }
+  }
+}

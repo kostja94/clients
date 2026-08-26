@@ -59,7 +59,7 @@ SEO 知识块**不绑定** `tools-pages-config.ts`，因此元数据块做如下
 |-----------|----------|------|
 | 站内对照（`alignify.co/tools/{slug}`） | 站内文章对照（`alignify.co/seo/{slug}` 或 `/zh/seo/{slug}`） | SEO 页面对应 `/seo/[slug]` 路由 |
 | Tools 关键词与 slug 映射 | **删除**；替换为 **本分册说明** | SEO 不在 tools-pages-config 中 |
-| （无） | 规范对照（`content/sections/` / `technical/`） | SEO 文章需与站内技术规范、section 写作规范对齐 |
+| （无） | 规范对照（`skills/create-article/rules/sections/` / `technical/`） | SEO 文章需与站内技术规范、section 写作规范对齐 |
 
 ---
 
@@ -78,7 +78,7 @@ SEO 知识块**不绑定** `tools-pages-config.ts`，因此元数据块做如下
 ### 2. 规范对照（必需）
 链到站内技术规范与写作规范。格式：
 ```
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md)
 ```
 若该主题有专门的 section 或 technical 文档，按需增链。至少保留 `section-seo.md` 链。
 

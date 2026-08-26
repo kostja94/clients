@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "html-a-tag",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "HTML anchor tag SEO — href, rel, target attributes, link equity transfer, and crawlable vs JavaScript navigation",
+  "differentiator_vs_generic": "This is technical SEO anchor-tag implementation, NOT GEO/LLM chat. Hero must foreground an annotated <a> tag code block with href/rel/target callouts — NOT generic hyperlink icons or AI panels.",
+  "visual_anchors": [
+    "HERO (~55% canvas): code editor card showing anchor tag snippet — visible angle-bracket syntax with href, rel, and target attributes color-coded, three callout arrows pointing to each attribute (blurred anchor text between tags)",
+    "Secondary: link equity flow — Page A box → accent arrow through <a> tag pill → Page B box (ranking signal passing visualization)",
+    "Tertiary: split comparison — left proper <a href> checkmark green, right JavaScript location.href crossed out red (crawler-invisible warning)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is HTML anchor SEO not GEO)",
+    "Generic chain-link icon without code snippet",
+    "Backlink outreach dashboard",
+    "Empty code block with no attribute annotations"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "HTML A TAG",
+      "headline_line2": "(2026)",
+      "subtitle": "Href · Rel · Target",
+      "tagline": "Link Equity · Crawlability",
+      "composition": "Visual-only editorial collage for HTML anchor tag SEO guide. HERO: syntax-highlighted code card occupying right two-thirds showing anchor element with href, rel, and target attributes — three accent titian-red callout arrows labeling each attribute, blurred anchor text inside tags. Secondary: link equity flow diagram Page A → anchor tag pill → Page B with passing signal arrow. Tertiary: side-by-side crawlability comparison — HTML anchor with green check vs JavaScript redirect with red X. Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO readable long code comments as text labels, NO ranking lists, NO extra UI labels."
+    },
+    "zh": {
+      "headline": "HTML a标签",
+      "headline_line2": "（2026）",
+      "subtitle": "属性与权重传递",
+      "composition": "Same layout as EN: annotated anchor tag code HERO + link equity flow + crawlable vs JS comparison. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

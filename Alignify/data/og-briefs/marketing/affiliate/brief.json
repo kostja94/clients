@@ -1,0 +1,30 @@
+{
+  "section": "marketing",
+  "slug": "affiliate",
+  "analyzed_at": "2026-08-24T16:10:00+00:00",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "CPS affiliate marketing — partners earn commission via unique referral links",
+  "differentiator_vs_generic": "Hero must show affiliate link tracking + commission flow between partner and product, NOT generic ads or SEO.",
+  "visual_anchors": [
+    "HERO: Affiliate dashboard card showing unique referral link bar + commission percentage badge (blurred numbers OK)",
+    "Network diagram: 3 partner avatar nodes connected by link-chain arrows to central SaaS product icon",
+    "Small CPS label chip — pay only on conversion"
+  ],
+  "anti_patterns": ["Google SERP", "magnifying glass hero", "generic billboard ad", "empty white cards"],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "AFFILIATE MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "CPS Commission Strategy",
+      "tagline": "Pay Only When Users Convert",
+      "composition": "Visual-only collage for affiliate marketing CPS guide. HERO: affiliate dashboard mockup with referral link field and 30% commission badge (blurred text). Secondary: 3 creator/partner avatar circles with chain-link arrows pointing to central app icon. Tertiary: torn-paper CPS tag. Paper collage, halftone. NO search bar, NO SERP, NO empty cards."
+    },
+    "zh": {
+      "headline": "联盟营销策略",
+      "headline_line2": "（2026）",
+      "subtitle": "CPS佣金制获客",
+      "composition": "Same layout as EN. HERO: referral link dashboard + commission badge. Partner network arrows to product icon. Title top-left only, NO extra Chinese UI labels, NO search hero, NO blank cards. Fill canvas with navy torn-paper accents."
+    }
+  }
+}

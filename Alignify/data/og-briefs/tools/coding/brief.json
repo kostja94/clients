@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "coding",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI coding agents — autonomous multi-step planning, file edits, and feature implementation",
+  "differentiator_vs_generic": "Agent task panel with numbered plan checklist and live file edit diffs, NOT passive inline completion or no-code drag-drop builder.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Coding agent workspace — left task plan checklist with checked steps, right split editor showing multi-file diff patches applying in sequence",
+    "Compact prompt card with blurred feature request arrow into agent plan header",
+    "2x2 grid of agent output vignettes (bug fix patch, new API route, test suite, refactor diff) — diff fragments only",
+    "Magnifying glass zooming on one applied file change block in the agent editor"
+  ],
+  "anti_patterns": [
+    "Inline ghost-text completion only",
+    "No-code drag-drop app builder canvas",
+    "PR review comment panel as sole hero",
+    "Empty agent plan list"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI CODING AGENTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Plan · Edit · Ship",
+      "tagline": "Agents That Own the Feature",
+      "composition": "Visual-only collage for AI coding agent tools comparison: (1) HERO agent workspace with task checklist and multi-file diffs on right two-thirds. (2) Prompt card arrow into plan header. (3) 2x2 grid of four agent output vignettes. (4) Magnifying glass on one diff hunk. Title top-left only. Paper collage, halftone. No inline completion hero, no no-code builder, no ranking text, no blank workspace."
+    },
+    "zh": {
+      "headline": "最佳AI编程Agent",
+      "headline_line2": "（2026）",
+      "subtitle": "规划 · 编辑 · 交付",
+      "composition": "Same layout as EN: coding agent HERO with plan checklist + diffs + 2x2 output grid + magnifying glass on diff block. Title top-left only, NO extra Chinese UI labels, NO completion or no-code hero, NO blank workspace."
+    }
+  }
+}

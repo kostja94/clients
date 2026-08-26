@@ -1,0 +1,36 @@
+{
+  "section": "events",
+  "slug": "praxis-2025-09-27",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Praxis event recap — Generative Engine Optimization strategies: GEO principles, SEO comparison, RAG fundamentals, implementation steps, and AI visibility tools",
+  "differentiator_vs_generic": "This is a GEO/AEO conference talk recap, NOT traditional SEO SERP education. Hero must be talk/slide collage with LLM chat panel slide thumbnails showing citation footnotes and RAG retrieval — NOT Google-style blue-link SERP as the dominant visual.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Slide deck thumbnail collage — dominant slide showing ChatGPT-style dark LLM chat panel with assistant answer and numbered citation chips [1][2][3], second slide showing RAG retrieval flow (web/PDF icons → answer bubble)",
+    "Stage photo strip — blurred speaker at tech conference podium with projector showing LLM panel slide glow",
+    "Secondary: GEO vs SEO contrast strip — small faded SERP icon subordinate to large LLM citation slide, visual 'GEO not SEO' cue"
+  ],
+  "anti_patterns": [
+    "Google-style SERP with blue links as hero (this is GEO/AEO not SEO)",
+    "Magnifying glass or search bar as main visual",
+    "Generic conference crowd without slide context",
+    "Real Praxis or platform logos (OpenAI/Anthropic)",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "PRAXIS TALK",
+      "headline_line2": "(Sep 2025)",
+      "subtitle": "GEO/AEO Strategy",
+      "tagline": "Citations · RAG · AI Visibility",
+      "composition": "Visual-only editorial collage for Praxis GEO/AEO event recap (NOT SEO). HERO: slide thumbnail collage on right half — dominant LLM chat panel slide (dark UI, user bubble, assistant answer with [1][2][3] citation chips and link icons, blurred text) over RAG retrieval slide (web/PDF icons with titian-red arrows into answer). Secondary: blurred stage photo strip with projector glow. Tertiary: GEO vs SEO contrast — tiny faded SERP icon subordinate to LLM slide. Title top-left. Paper torn edges, halftone. NO SERP hero, NO magnifying glass, NO platform logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "Praxis GEO/AEO分享",
+      "headline_line2": "（2025.09）",
+      "subtitle": "生成式引擎优化策略",
+      "composition": "Same layout as EN: LLM citation slide collage HERO + stage strip + GEO-not-SEO contrast. Title top-left, NO SERP hero, NO platform logos, NO extra Chinese chat labels, NO blank cards."
+    }
+  }
+}

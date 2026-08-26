@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "interior-design",
+  "analyzed_at": "2026-08-25T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI interior design — room redesign, virtual renovation, floor-plan planning, and how it differs from MLS virtual staging",
+  "differentiator_vs_generic": "This is owner/designer remodel visualization, NOT real-estate listing staging. Hero must be a before/after room style-transfer split with visible wall/floor/cabinet changes — NOT furniture-only staging on empty listing photos.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Vertical before/after room split — left half original living room photo (neutral, dated), right half AI-redesigned version (Scandinavian/modern palette, new flooring, cabinet swap) with accent dashed divider and style-transfer arrow overlay",
+    "Secondary: style preset chip row — Scandinavian, Industrial, Japandi, Modern (blurred labels, one chip accent-highlighted)",
+    "Tertiary: 2D floor-plan sketch fragment with furniture placement dots and wall-move annotation arrows"
+  ],
+  "anti_patterns": [
+    "MLS listing staging only (furniture on empty room, no finish changes)",
+    "Generic home exterior or landscape photo",
+    "Real estate 'For Sale' sign overlay",
+    "CAD/BIM technical blueprint as hero (page is AI redesign not engineering)"
+  ],
+  "accent_suggestion": "olive-green",
+  "locales": {
+    "en": {
+      "headline": "AI INTERIOR DESIGN",
+      "headline_line2": "(2026)",
+      "subtitle": "Room Redesign & Virtual Renovation",
+      "tagline": "Style Transfer · Floor Plans · Remodel",
+      "composition": "Visual-only editorial collage for AI interior design guide. HERO: before/after room split occupying right two-thirds — left original room, right AI-redesigned with new flooring/walls/cabinets, accent divider with style-transfer arrow. Secondary: style preset chips (Scandinavian, Industrial, Japandi, Modern). Tertiary: floor-plan sketch with furniture dots. Title block top-left only. Paper collage torn edges, halftone. NO MLS staging framing, NO real estate signs, NO CAD blueprints, NO extra text labels."
+    },
+    "zh": {
+      "headline": "AI室内设计",
+      "headline_line2": "（2026）",
+      "subtitle": "房间改造与虚拟装修",
+      "composition": "Same layout as EN: before/after room HERO with style chips + floor-plan sketch. Title top-left, NO MLS staging, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

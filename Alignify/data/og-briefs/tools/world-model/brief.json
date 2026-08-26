@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "world-model",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI world models — physics simulation, spatial reasoning, and future-state prediction from video",
+  "differentiator_vs_generic": "3D scene voxel/grid with predicted future frame ghost overlay and physics trajectory arrows, NOT generic T2V film strip or robotics arm alone.",
+  "visual_anchors": [
+    "HERO: World model viewport — 3D scene grid/voxel with predicted future frame ghost overlay, physics trajectory arrows, and confidence heatmap corner",
+    "Compact video input frame arrow into multi-step future prediction strip (t+1, t+2, t+3)",
+    "2x2 grid of world model outputs (object interaction, fluid pour, robot path plan, room navigation) — simulation frames only"
+  ],
+  "anti_patterns": [
+    "T2V cinematic film strip hero",
+    "Generic LLM chat panel",
+    "Single robotics arm photo",
+    "Empty 3D viewport"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI WORLD MODELS",
+      "headline_line2": "(2026)",
+      "subtitle": "Physics · Predict · Simulate",
+      "tagline": "Models That See Ahead",
+      "composition": "Visual-only collage for AI world model tools comparison: (1) HERO 3D scene with future-frame ghost overlay and trajectory arrows on right two-thirds. (2) Video input arrow into prediction strip. (3) 2x2 grid of four simulation output frames. (4) Magnifying glass on trajectory arrow detail. Paper collage, halftone. No T2V film strip hero, no generic chat, no blank viewport."
+    },
+    "zh": {
+      "headline": "最佳AI世界模型",
+      "headline_line2": "（2026）",
+      "subtitle": "物理 · 预测 · 仿真",
+      "composition": "Same layout as EN: world model simulation HERO + video input flow + 2x2 output grid + magnifying glass on trajectory detail. Title top-left only, NO extra Chinese UI labels, NO T2V film strip hero, NO blank viewport."
+    }
+  }
+}

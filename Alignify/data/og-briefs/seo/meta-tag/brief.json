@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "meta-tag",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Meta tags — title, description, robots, viewport, Open Graph, and 18 core HTML head tags for SEO and social sharing",
+  "differentiator_vs_generic": "This is HTML head metadata and SERP snippet control, NOT GEO/LLM chat. Hero must be a syntax-highlighted `<head>` code panel with title, description, and robots tags, NOT an AI content generator or chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): DevTools-style HTML `<head>` snippet — monospace panel with syntax-colored lines for `<title>`, `<meta name=\"description\">`, `<meta name=\"robots\">`, `<meta property=\"og:*\">`, klein-blue highlight on description line",
+    "Secondary: mini SERP preview card showing blurred blue title link + grey description snippet beneath (meta-to-SERP mapping)",
+    "Tertiary: tag-type legend chips (SEO / Social / Technical) as torn stickers"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is meta tag SEO not GEO)",
+    "Generic `<>` brackets alone without head tag content",
+    "Empty white cards below headline",
+    "Social media feed UI unrelated to HTML metadata"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "META TAGS",
+      "headline_line2": "(2026)",
+      "subtitle": "Title, Description & Head Tags",
+      "tagline": "Robots · OG · Viewport · Charset",
+      "composition": "Visual-only editorial collage for meta tag guide. HERO: syntax-highlighted HTML head code panel occupying right two-thirds — visible title, description, robots, og:title/og:description lines with klein-blue accent on meta description row. Secondary: small SERP snippet preview mirroring the title/description. Tertiary: 3 tag-category sticker chips. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic logos, NO real browser brand chrome, NO line numbers as dominant text."
+    },
+    "zh": {
+      "headline": "Meta Tag 配置",
+      "headline_line2": "（2026）",
+      "subtitle": "Title、Description 与 Head 标签",
+      "composition": "Same layout as EN: HTML head code panel HERO + SERP snippet preview + tag chips. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

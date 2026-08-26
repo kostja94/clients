@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "family-assistant",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI family assistants — shared calendars, chore lists, meal plans, and household coordination",
+  "differentiator_vs_generic": "Shared family calendar with multi-member color lanes, chore checklist, and meal plan strip, NOT personal productivity inbox or customer chatbot.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Family hub dashboard — week calendar with color-coded member lanes (parent, kids blurred), shared chore checklist with checkboxes, and meal plan row beneath",
+    "Member avatar cluster: four circular avatars with sync pulse ring connecting to calendar events",
+    "2x2 grid of family scenario tiles (school pickup reminder, grocery list, chore rotation, family chat thread) — UI fragments only",
+    "Magnifying glass zooming on one calendar event block with location pin and reminder bell icon"
+  ],
+  "anti_patterns": [
+    "Solo personal task manager hero",
+    "Customer support chat widget",
+    "Dating swipe card stack",
+    "Empty calendar white grid"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI FAMILY ASSISTANTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Calendar · Chores · Meals",
+      "tagline": "Keep the Whole Household in Sync",
+      "composition": "Visual-only collage for AI family assistant tools comparison: (1) HERO family hub with shared calendar lanes, chore checklist, and meal strip on right two-thirds. (2) Member avatar sync cluster. (3) 2x2 grid of four family scenario tiles. (4) Magnifying glass on calendar event detail block. Title top-left only. Paper collage, halftone. No personal productivity hero, no support widget, no ranking text, no blank calendar."
+    },
+    "zh": {
+      "headline": "最佳AI家庭助手",
+      "headline_line2": "（2026）",
+      "subtitle": "日历 · 家务 · 餐食",
+      "composition": "Same layout as EN: family hub HERO with calendar + chores + meal strip + 2x2 scenario grid + magnifying glass on event block. Title top-left only, NO extra Chinese UI labels, NO personal productivity or support hero, NO blank calendar."
+    }
+  }
+}

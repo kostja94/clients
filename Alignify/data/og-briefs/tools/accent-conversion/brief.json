@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "accent-conversion",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI accent conversion — neutralize accents and enhance speech clarity in real time",
+  "differentiator_vs_generic": "Dual audio waveform A/B compare with accent-neutral output, NOT text translation or generic microphone icon.",
+  "visual_anchors": [
+    "HERO: Audio editor panel with stacked before/after waveforms — top waveform jagged/irregular, bottom smoother with accent-neutral glow and klein-blue accent bar",
+    "Horizontal A/B compare slider motif splitting two waveform lanes",
+    "2x2 grid of use-case vignettes (video call tile, podcast mic, support headset, presentation speaker) — iconographic, no text"
+  ],
+  "anti_patterns": [
+    "Text translation subtitle strips",
+    "Language flag grid",
+    "Music DAW mixer unrelated to speech",
+    "Empty audio card"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST ACCENT CONVERSION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Real-Time Speech Clarity",
+      "tagline": "Before & After Voice Waveforms",
+      "composition": "Visual-only collage for AI accent conversion tools comparison: (1) HERO audio panel with before/after dual waveforms and A/B compare slider on right two-thirds. (2) Torn-paper split emphasizing smoother neutralized waveform below. (3) 2x2 grid of four speech use-case tiles (call, podcast, support, presentation). (4) Small magnifying glass over waveform peak detail. Paper collage, halftone. No language text labels, no ranking lists, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳口音转换工具",
+      "headline_line2": "（2026）",
+      "subtitle": "实时语音清晰化",
+      "composition": "Same layout as EN: before/after waveform HERO + A/B slider + 2x2 use-case grid + magnifying glass on waveform. Title top-left only, NO extra Chinese UI labels, NO translation subtitles hero, NO blank cards."
+    }
+  }
+}

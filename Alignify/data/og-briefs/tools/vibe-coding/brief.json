@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "vibe-coding",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Vibe coding tools — natural language to full app builds with live preview and iterative chat",
+  "differentiator_vs_generic": "Chat prompt morphing into live app preview iframe with component tree sidebar, NOT terminal CLI or passive code completion ghost text.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Vibe coding workspace — natural-language chat prompt arrow into live app preview iframe (dashboard UI) with component tree sidebar thumbnail",
+    "Iterative edit loop ribbon: prompt → preview → tweak icons with torn-paper connectors",
+    "2x2 grid of vibe-coded outputs (landing page, CRUD admin, mobile shell, auth flow) — preview thumbnails only",
+    "Magnifying glass zooming on preview UI component detail"
+  ],
+  "anti_patterns": [
+    "Terminal CLI command hero",
+    "Inline ghost-text completion only",
+    "PR review comment panel",
+    "Empty preview iframe"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST VIBE CODING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prompt · Preview · Ship",
+      "tagline": "Describe It, Deploy It",
+      "composition": "Visual-only collage for vibe coding tools comparison: (1) HERO chat-to-live-preview workspace on right two-thirds. (2) Iterative edit loop ribbon. (3) 2x2 grid of four app preview vignettes. (4) Magnifying glass on preview component detail. Title top-left only. Paper collage, halftone. No terminal CLI hero, no inline completion, no blank preview."
+    },
+    "zh": {
+      "headline": "最佳自然语言编程工具",
+      "headline_line2": "（2026）",
+      "subtitle": "对话 · 预览 · 交付",
+      "composition": "Same layout as EN: vibe coding HERO + edit loop ribbon + 2x2 preview grid + magnifying glass on component detail. Title top-left only, NO extra Chinese UI labels, NO terminal CLI hero, NO blank preview."
+    }
+  }
+}

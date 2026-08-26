@@ -34,7 +34,7 @@
 1. 核心要点（TL;DR，40–80字 intro + 4–5 条 items）← [tldr.md](../sections/tldr.md)
 2. 什么是 XXX ← [what-is.md](../sections/what-is.md)
 3. 核心方法论 / 步骤 / 框架（按主题展开，可含表格、列表）— 主体节
-4. 如何实施（How To）← 正文 section，[how-to.md](../sections/how-to.md)（方法论文常用）
+4. 如何实施（How To）← **可选**，正文 section，[how-to.md](../sections/how-to.md)（**仅方法驱动型采用**；策略分析/观点文不设，见 how-to.md「适用范围」）
 5. 结论 ← [conclusion.md](../conclusion.md)
 6. FAQ ← [faq.md](../sections/faq.md)（**7 问**）
 7. References（可选）← [references.md](../sections/references.md)
@@ -43,6 +43,8 @@
 **A 层**：若同时有结论与 FAQ → 结论在 FAQ 之前；FAQ 答案无内链。
 
 **常见组合**（非强制五节清单）：核心要点 + 什么是 + 主体方法论 + [如何实施] + 结论 + FAQ。Hub 索引页（如 `marketing-types`）可大幅简化。
+
+> **如何实施非默认章节（2026-08 修订）**：只有「方法论/操作驱动」的 Marketing 文（如 keyword-research、localization-strategy）才有决策路径可走；「策略判断/观点」文（如 rate-limit-reset、competitive-analysis 的判断型正文）用分析节表达落地，**禁止**套 step-1~N 步骤。判据见 [how-to.md](../sections/how-to.md)「适用范围」。
 
 例外：`marketing-types` 等 Hub 索引页可不含如何选择/如何实施 section。
 
@@ -182,6 +184,8 @@ heroContent={
 
 ### 4.4 How To（如何实施）
 
+**仅方法驱动型设置**（判据见 [section-how-to](../sections/how-to.md) 适用范围）；策略判断/观点文**不设**此节。
+
 - **禁止**：链接、具体产品名、工具名、平台名
 - **使用通用表述**：如「趋势类工具」「问题汇总工具」「关键词挖掘工具」
 - **步骤数**：3–5 步（按主题复杂度，见 [section-how-to](../sections/how-to.md) Part 2）
@@ -277,9 +281,9 @@ export default function KeywordResearchPage() {
 ## 九、质量检查清单
 
 - [ ] **H1 与 excerpt**：符合 [section-heading-best-practices](../sections/generic.md)
-- [ ] 章节完整（核心要点、What Is、正文方法论、如何实施 section、Conclusion、FAQ）
+- [ ] 章节完整（核心要点、What Is、正文方法论、Conclusion、FAQ）
 - [ ] 正文使用 `<!-- block:section -->` / `Section.tsx`
-- [ ] 如何实施 3–5 个 H3 步骤（见 [section-how-to](../sections/section-how-to.md)）
+- [ ] 如何实施（若设置）3–5 个 H3 步骤（见 [section-how-to](../sections/section-how-to.md)）
 - [ ] How To 步骤中禁止链接、产品名、工具名
 - [ ] Conclusion 在 FAQ 之前
 - [ ] FAQ 数量为 **7 问**

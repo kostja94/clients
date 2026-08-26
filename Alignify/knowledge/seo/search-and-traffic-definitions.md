@@ -2,7 +2,7 @@
 
 本文为编辑部笔记，供内容与设计搜索/增长主题时对齐**词汇与仪器**：何谓「搜索流量」、站点分析工具里的 **渠道** 从何而来、**Google Search Console（GSC）** 与 **Google Analytics 4（GA4）** 各自回答什么问题，以及为何两处的数字往往对不上。阅读顺序自上而下即可；深度教程与清单见文内链与文末参考。
 
-**规范与分册**：[section-seo.md](../../section/section-seo.md) · [seo/README.md](./README.md) · [alignify-internal-links.md](../../content/alignify-internal-links.md)（站内链拓扑与密度约定）
+**规范与分册**：[section-seo.md](../../skills/create-article/rules/meta.md) · [seo/README.md](./README.md) · [alignify-internal-links.md](../../skills/create-article/rules/internal-links.md)（站内链拓扑与密度约定）
 
 ---
 
@@ -28,7 +28,7 @@
 
 ### 3.1 与《七大类型》《无法归因流量》长文的分工
 
-为避免与站上已发布教程**撞车**，边界如下。本节**不重复**主链 URL（七大类型见 **§3**，无法归因流量见 **§6**），以符合 [alignify-internal-links.md](../../content/alignify-internal-links.md) 的全文去重习惯。
+为避免与站上已发布教程**撞车**，边界如下。本节**不重复**主链 URL（七大类型见 **§3**，无法归因流量见 **§6**），以符合 [alignify-internal-links.md](../../skills/create-article/rules/internal-links.md) 的全文去重习惯。
 
 - **网站流量来源：7 大类型**（主链见 **§3**）：面向**业务与运营**的七种流量叙事、对比表、`source/medium` 样例与「Direct / Referral」漫谈，并含广义异常流量讨论。**不**承担 GA4 **Default channel grouping** 的条文级说明，也**不**以 GSC×GA4 **仪器对照**为主线——那是本文 **§4～§7** 与 Google 官方帮助的任务。
 - **无法归因流量**：**概念、成因谱系与近年轻量政策语境**见编辑部 [dark-traffic.md](./dark-traffic.md)；**工单化教程**（识别步骤、UTM/GTM/HTTPS/SPA 等）主链见 **§6** 所链站上长文。**不**在本文复述暗流量百科。
@@ -81,7 +81,7 @@ GSC 测量的是 **搜索结果页上的曝光与出站点击**；GA4 测量的�
 
 ## 8. 与站内长文的分工
 
-上列主题在正文 **§3～§6** 已各给 **一条** 主链（避免全文重复 `href`，与 [alignify-internal-links.md](../../content/alignify-internal-links.md) 专册习惯一致）。若需英文版页面，将路径中的 `/zh` 前缀去掉即可（例：`/zh/seo/website-traffic` → `/seo/website-traffic`）。速查：
+上列主题在正文 **§3～§6** 已各给 **一条** 主链（避免全文重复 `href`，与 [alignify-internal-links.md](../../skills/create-article/rules/internal-links.md) 专册习惯一致）。若需英文版页面，将路径中的 `/zh` 前缀去掉即可（例：`/zh/seo/website-traffic` → `/seo/website-traffic`）。速查：
 
 | 需求 | 建议主读（中文路由） |
 |------|----------------------|

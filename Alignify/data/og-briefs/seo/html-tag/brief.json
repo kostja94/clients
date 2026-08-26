@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "html-tag",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "HTML tags for SEO — semantic structure, H1–H6 hierarchy, article/nav/main landmarks, image alt, and validation",
+  "differentiator_vs_generic": "This is semantic HTML structure for SEO, NOT GEO/LLM chat. Hero must show a nested semantic DOM tree (html → body → header/main/article/section/nav) — NOT a flat div soup or AI chat interface.",
+  "visual_anchors": [
+    "HERO (~55% canvas): semantic HTML structure tree diagram — nested tag pills from html/head/body down through header, main, article, section, nav, footer with indent levels and accent border on main+article nodes",
+    "Secondary: heading hierarchy stack — H1 bar (widest, accent fill) → H2 → H3 nested bars showing proper outline (no skipped levels)",
+    "Tertiary: img element tile with alt attribute callout bubble (blurred alt text, no readable keyword stuffing)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is semantic HTML SEO not GEO)",
+    "Flat div-only structure without semantic landmarks",
+    "Generic code brackets without page structure tree",
+    "W3C validator screenshot with readable error lists as text"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "HTML TAGS",
+      "headline_line2": "(2026)",
+      "subtitle": "Semantic Structure & SEO",
+      "tagline": "Headings · Landmarks · Alt Text",
+      "composition": "Visual-only editorial collage for HTML tags SEO guide. HERO: nested semantic DOM tree occupying right two-thirds — tag pills html > body > header/main/article/section/nav/footer with indentation lines, main and article nodes accent alignify-navy highlighted. Secondary: H1→H2→H3 heading hierarchy bars decreasing in width with proper nesting. Tertiary: img tag tile with alt attribute callout bubble. Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO readable validator error text, NO div-soup flat layout as hero, NO extra text labels on canvas."
+    },
+    "zh": {
+      "headline": "HTML标签SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "语义化结构",
+      "composition": "Same layout as EN: semantic DOM tree HERO + heading hierarchy stack + img alt callout. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -2,10 +2,10 @@
 """
 Tools 页面内链全面审计脚本
 ============================
-对照 alignify-internal-links.md §1.5 底线规则，扫描 tools + Blog Tools 型 JSON（默认 both，~106 slug），
+对照 internal-links.md §1.5 底线规则，扫描 tools + Blog Tools 型 JSON（默认 both，~106 slug），
 输出违规清单与分布摘要。
 
-规则来源：alignify-internal-links.md §3.1.5
+规则来源：internal-links.md §3.1.5
   R1: 每页 distinct 站内链接 ≥ 5 条
   R2: 单屏密度 ≤ 3 条（连续 400 英文词 / 250 中文字内不堆链）
   R3: 每页 tools↔tools 实际使用 ≤ 总配额的 70%（预留跨板块）

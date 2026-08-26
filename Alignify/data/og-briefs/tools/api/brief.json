@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "api",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Unified AI API platforms — LLM, generative media, model routing and deployment",
+  "differentiator_vs_generic": "API gateway hub routing to multiple model endpoints with code snippet card, NOT single chat app or DAW.",
+  "visual_anchors": [
+    "HERO: API gateway diagram — central hub node with routed arrows to LLM, image, video, and embedding endpoint chips (generic icons, no logos)",
+    "Code snippet card with blurred API key header and JSON response block",
+    "2x2 grid of API response type tiles (chat completion JSON, image URL, embedding vector viz, usage meter chart)"
+  ],
+  "anti_patterns": [
+    "Single LLM chat window hero",
+    "Mobile app builder canvas",
+    "Affiliate dashboard",
+    "Empty JSON card"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST UNIFIED AI API PLATFORMS",
+      "headline_line2": "(2026)",
+      "subtitle": "LLM · Media · Model Routing",
+      "tagline": "One Gateway, Many Models",
+      "composition": "Visual-only collage for unified AI API platform tools comparison: (1) HERO API gateway hub diagram with routed arrows to model endpoint chips on right two-thirds. (2) Code snippet card with blurred JSON request/response. (3) 2x2 grid of four response type tiles. (4) Magnifying glass on routing arrow junction. Paper collage, halftone. No chat UI hero, no vendor logos, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳统一AI API平台",
+      "headline_line2": "（2026）",
+      "subtitle": "LLM · 媒体 · 路由",
+      "composition": "Same layout as EN: API gateway hub HERO + code snippet + 2x2 response grid + magnifying glass on route node. Title top-left only, NO extra Chinese UI labels, NO chat panel hero, NO blank cards. Navy accents."
+    }
+  }
+}

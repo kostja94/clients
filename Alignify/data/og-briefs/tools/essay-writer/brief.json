@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "essay-writer",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI essay writer tools — outlines, citations, argument structure, and academic drafting",
+  "differentiator_vs_generic": "Essay editor with outline sidebar, numbered paragraph blocks, and citation chips, NOT generic text generator or adaptive learning dashboard.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Academic essay editor — left outline tree (intro, thesis, body sections blurred), main pane with numbered paragraph blocks and inline citation chips [1][2]",
+    "Research source strip: three mini document/PDF icons feeding citations via torn arrows — titles blurred only",
+    "2x2 grid of essay output vignettes (argument outline, bibliography list, paraphrase block, detection-score gauge blurred) — UI fragments only",
+    "Magnifying glass zooming on citation chip row and thesis statement highlight bar"
+  ],
+  "anti_patterns": [
+    "Generic marketing copy prompt card",
+    "Learning progress path dashboard",
+    "Homework photo scan panel",
+    "Empty document page"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI ESSAY WRITERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Outline · Cite · Draft",
+      "tagline": "Structured Academic Writing Assist",
+      "composition": "Visual-only collage for AI essay writer tools comparison: (1) HERO essay editor with outline sidebar and citation paragraph blocks on right two-thirds. (2) Research source strip feeding citations. (3) 2x2 grid of four essay vignettes. (4) Magnifying glass on citation chip row. Title top-left only. Paper collage, halftone. No generic text prompt hero, no learning dashboard hero, no ranking text, no blank document."
+    },
+    "zh": {
+      "headline": "最佳AI论文写作工具",
+      "headline_line2": "（2026）",
+      "subtitle": "大纲 · 引用 · 成稿",
+      "composition": "Same layout as EN: essay editor HERO with outline + citations + 2x2 vignette grid + magnifying glass on citation chips. Title top-left only, NO extra Chinese UI labels, NO generic prompt or learning hero, NO blank document."
+    }
+  }
+}

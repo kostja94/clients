@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "chatbot",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI chatbot platforms — customer support, resolution flows, and omnichannel widgets",
+  "differentiator_vs_generic": "Embedded support widget with ticket resolution and handoff badge, NOT anime character RP or generic LLM chat playground.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Website corner chat widget expanded — customer question bubble, AI resolution answer with checkmark, and human handoff badge when escalated",
+    "Omnichannel strip: four blurred channel icons (web chat, email, Messenger, WhatsApp) linked to one inbox dashboard tile",
+    "2x2 grid of support scenario tiles (refund request, order lookup, FAQ deflection, appointment booking) — UI fragments only",
+    "Magnifying glass zooming on resolution checkmark and CSAT thumbs-up chip"
+  ],
+  "anti_patterns": [
+    "Anime character RP chat hero",
+    "Generic ChatGPT dark sidebar",
+    "Character persona card grid",
+    "Empty chat widget white box"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI CHATBOT PLATFORMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Support · Resolve · Handoff",
+      "tagline": "Customer Service That Actually Closes Tickets",
+      "composition": "Visual-only collage for AI chatbot platform tools comparison: (1) HERO expanded support widget with resolution flow and handoff badge on right two-thirds. (2) Omnichannel icon strip feeding inbox tile. (3) 2x2 grid of four support scenario UI fragments. (4) Magnifying glass on resolution checkmark row. Title top-left only. Paper collage, halftone. No character RP hero, no generic LLM playground, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI聊天机器人平台",
+      "headline_line2": "（2026）",
+      "subtitle": "客服 · 解决 · 转人工",
+      "composition": "Same layout as EN: support widget HERO + omnichannel strip + 2x2 scenario grid + magnifying glass on resolution badge. Title top-left only, NO extra Chinese UI labels, NO character RP hero, NO blank cards."
+    }
+  }
+}

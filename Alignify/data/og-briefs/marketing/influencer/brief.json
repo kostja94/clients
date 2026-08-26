@@ -1,0 +1,30 @@
+{
+  "section": "marketing",
+  "slug": "influencer",
+  "analyzed_at": "2026-08-24T16:10:00+00:00",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Influencer/KOL marketing — creators promote SaaS via trust and reach",
+  "differentiator_vs_generic": "Hero must show creator + brand collaboration, NOT affiliate links or email.",
+  "visual_anchors": [
+    "HERO: Creator profile card with avatar, follower count blur, and play-button video thumbnail",
+    "Handshake or collab arrow between creator card and SaaS product mockup",
+    "2x2 grid of short-form video stills (tech review, demo, unboxing style)"
+  ],
+  "anti_patterns": ["Affiliate link dashboard", "email inbox hero", "SERP", "empty profile card"],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "INFLUENCER MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "KOL Trust & Growth",
+      "tagline": "YouTube · TikTok · Creators",
+      "composition": "Visual-only collage for influencer marketing guide. HERO: creator profile card with circular avatar, blurred follower stat, video thumbnail with play button. Secondary: red accent collab arrow connecting creator to SaaS app icon. Tertiary: 2x2 grid of creator video stills. Paper collage. NO affiliate dashboard, NO email inbox."
+    },
+    "zh": {
+      "headline": "红人营销策略",
+      "headline_line2": "（2026）",
+      "subtitle": "KOL信任建设",
+      "composition": "Same layout: creator profile HERO + collab arrow to product + video still grid. Title top-left, NO extra text labels, NO blank cards."
+    }
+  }
+}

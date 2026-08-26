@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "medical-scribe",
+  "analyzed_at": "2026-08-25T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Ambient AI medical scribes — encounter audio to SOAP notes, EHR write-back, ICD-10/CPT coding, and enterprise vs solo-practice tiers",
+  "differentiator_vs_generic": "This is HIPAA clinical documentation automation, NOT generic meeting note-takers. Hero must show encounter audio waveform → structured SOAP note card (S/O/A/P sections) with EHR write-back arrow — NOT Zoom summary bullets or generic transcription UI.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Clinical documentation pipeline — left: ambient audio waveform with physician/patient speaker diarization color bands; right: structured SOAP note card with four labeled sections (Subjective, Objective, Assessment, Plan) as blurred text blocks, accent border on Assessment section",
+    "Secondary: EHR write-back arrow from SOAP card into generic EHR chart panel shape (no Epic/Nuance logos)",
+    "Tertiary: ICD-10 and CPT code suggestion chips floating below SOAP card"
+  ],
+  "anti_patterns": [
+    "Zoom/meeting note-taker UI (page is clinical not corporate)",
+    "Generic microphone icon without SOAP structure",
+    "Real EHR vendor logos (Epic, Nuance, Abridge)",
+    "Patient faces or identifiable PHI imagery"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "AI MEDICAL SCRIBE",
+      "headline_line2": "(2026)",
+      "subtitle": "Encounter to SOAP in EHR",
+      "tagline": "Ambient · SOAP · ICD-10 · EHR",
+      "composition": "Visual-only editorial collage for AI medical scribe guide. HERO: clinical pipeline occupying right two-thirds — audio waveform with speaker bands on left, SOAP note card (S/O/A/P sections) on right with accent Assessment border. Secondary: EHR write-back arrow into generic chart panel. Tertiary: ICD-10/CPT code chips. Title block top-left only. Paper collage torn edges, halftone. NO meeting note UI, NO real EHR logos, NO patient photos, NO extra text labels."
+    },
+    "zh": {
+      "headline": "AI医疗记录员",
+      "headline_line2": "（2026）",
+      "subtitle": "就诊录音到SOAP病历",
+      "composition": "Same layout as EN: waveform→SOAP HERO with EHR write-back + coding chips. Title top-left, NO meeting notes UI, NO EHR logos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

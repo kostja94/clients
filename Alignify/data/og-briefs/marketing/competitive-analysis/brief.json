@@ -1,0 +1,24 @@
+{
+  "section": "marketing",
+  "slug": "competitive-analysis",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Competitive analysis — spy on rivals' keywords, backlinks, content gaps",
+  "visual_anchors": ["HERO: comparison matrix — two competitor columns vs your brand column with checkmarks", "Keyword gap chart with red/green bars", "Backlink network nodes"],
+  "anti_patterns": ["SERP hero alone", "generic growth chart without comparison"],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "COMPETITIVE ANALYSIS",
+      "headline_line2": "(2026)",
+      "subtitle": "Keywords · Backlinks · Content Gaps",
+      "tagline": "Frameworks & SEO Methods",
+      "composition": "Visual-only collage for competitive analysis guide. HERO: 3-column comparison card — Competitor A vs Competitor B vs You, with blurred metrics and green/red gap indicators. Secondary: keyword gap bar chart. Tertiary: backlink node diagram. Paper collage. NO generic search SERP as hero."
+    },
+    "zh": {
+      "headline": "竞品分析策略",
+      "headline_line2": "（2026）",
+      "subtitle": "关键词 · 外链 · 内容差距",
+      "composition": "Same: 3-column competitor comparison HERO + keyword gap chart + backlink nodes. Title top-left, NO extra labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "url-optimization",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "URL optimization — canonical tags, 301 redirects, hreflang, parameter handling, and duplicate URL consolidation",
+  "differentiator_vs_generic": "This is traditional URL canonicalization SEO education, NOT GEO/LLM chat. Hero must show duplicate URL variants merging into one canonical path via 301 arrows and rel=canonical tag — NOT an AI citation-ID chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Fan-in merge diagram — 4 duplicate URL variant bars (www/non-www, trailing slash, HTTP/HTTPS, ?param= variants) converging via accent 301 redirect arrows into single clean canonical URL bar /seo/url-optimization with rel=canonical link tag snippet floating above",
+    "Secondary: tier signal strength ladder — 301 redirect (strongest, solid), canonical tag (medium, dashed), robots block (weakest, dotted)",
+    "Tertiary: before/after URL bar comparison showing messy query-string URL vs clean readable slug"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is URL canonicalization not GEO)",
+    "Generic link chain without duplicate-merge concept",
+    "AI citation ID or Perplexity source panel",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "URL OPTIMIZATION",
+      "headline_line2": "(2026)",
+      "subtitle": "Canonical Tags & Redirects",
+      "tagline": "301 · rel=canonical · hreflang",
+      "composition": "Visual-only editorial collage for URL optimization guide. HERO: fan-in merge diagram occupying right two-thirds — 4 duplicate URL variant bars (www, slash, http, ?params) converging via accent violet 301 arrows into one clean /seo/url-optimization canonical bar with floating rel=canonical tag snippet. Secondary: 3-tier signal strength ladder (301/canonical/robots). Tertiary: messy vs clean URL bar pair. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO AI citation panels, NO real brand URLs."
+    },
+    "zh": {
+      "headline": "URL优化指南",
+      "headline_line2": "（2026）",
+      "subtitle": "Canonical与301重定向",
+      "composition": "Same layout as EN: duplicate URL merge HERO with 301 arrows + canonical tag + signal tier ladder. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

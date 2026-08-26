@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "fashion",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI fashion tools — virtual try-on, AI model photography, style recommendations, shoppable discovery",
+  "differentiator_vs_generic": "Virtual try-on merge panel with garment-on-model output, NOT generic image generator grid or interior staging.",
+  "visual_anchors": [
+    "HERO: Virtual try-on canvas — left user photo silhouette + garment thumbnail chip, torn arrow into right panel showing same figure wearing outfit with fabric drape preserved",
+    "2x2 grid of fashion workflow tiles (AI model swap, style feed, size-fit badge, shoppable tag) — UI fragments only",
+    "Magnifying glass over fabric texture/print detail on try-on output hem"
+  ],
+  "anti_patterns": [
+    "Generic T2I animal or landscape grid",
+    "Interior room staging hero",
+    "Talking avatar lip-sync video",
+    "Empty e-commerce white card"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI FASHION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Try-On · AI Models · Styling",
+      "tagline": "Wear It Before You Buy",
+      "composition": "Visual-only collage for AI fashion tools comparison: (1) HERO virtual try-on merge panel — user photo + garment chip arrow into dressed model output on right two-thirds. (2) 2x2 grid of four fashion UI tiles. (3) Magnifying glass on fabric texture detail. Paper collage, halftone. No generic image generator hero, no interior staging, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI时尚工具",
+      "headline_line2": "（2026）",
+      "subtitle": "虚拟试穿 · AI模特 · 造型",
+      "composition": "Same layout as EN: virtual try-on merge HERO + 2x2 fashion UI grid + magnifying glass on fabric detail. Title top-left only, NO extra Chinese UI labels, NO generic image generator hero, NO blank cards. Titian-red accents."
+    }
+  }
+}

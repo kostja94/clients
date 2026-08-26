@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "note-taker",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI note taker tools — meeting audio to structured notes and action items",
+  "differentiator_vs_generic": "Meeting waveform with live transcript pane splitting into summary bullets and action checkboxes, NOT blank doc editor.",
+  "visual_anchors": [
+    "HERO: Meeting recording waveform with dual-pane split — live transcript left, AI summary with action-item checkboxes right",
+    "Compact calendar meeting card with mic icon arrow into structured notes doc",
+    "2x2 grid of note output modes (bullet summary, speaker labels, action items, shared workspace) — UI only"
+  ],
+  "anti_patterns": [
+    "Empty Notion page hero",
+    "Generic voice memo app",
+    "Spreadsheet grid",
+    "Blank document card"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI NOTE TAKERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Meetings · Transcripts · Actions",
+      "tagline": "Never Miss a Decision",
+      "composition": "Visual-only collage for AI note taker tools comparison: (1) HERO meeting waveform with transcript/summary split on right two-thirds. (2) Calendar meeting card arrow into notes doc. (3) 2x2 grid of four note output UI modes. (4) Magnifying glass on action-item row. Paper collage, halftone. No blank doc hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI会议笔记工具",
+      "headline_line2": "（2026）",
+      "subtitle": "会议 · 转录 · 待办",
+      "composition": "Same layout as EN: meeting notes HERO + calendar card flow + 2x2 output grid + magnifying glass on action items. Title top-left only, NO extra Chinese UI labels, NO blank doc hero, NO blank cards."
+    }
+  }
+}

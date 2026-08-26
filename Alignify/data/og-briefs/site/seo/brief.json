@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "seo",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "SEO Optimization hub — categorized index of keyword research, technical SEO, link building, and structure guides",
+  "differentiator_vs_generic": "Channel index cover for /seo hub, NOT a single SERP tutorial. HERO must show grouped SEO guide link columns like the live hub page.",
+  "visual_anchors": [
+    "HERO: SEO hub index layout — intro blur block + three grouped link-list columns (Technical / Content / Structure) with blurred child links and klein-blue hub spokes",
+    "Secondary: mini SERP snippet strip as category motif (blue links, grey URLs) tucked beside columns",
+    "Tertiary: sitemap tree with SEO category nodes"
+  ],
+  "anti_patterns": [
+    "LLM chat panel hero",
+    "Single SERP tutorial as entire canvas",
+    "Generic magnifying glass alone",
+    "Empty link columns"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "SEO OPTIMIZATION",
+      "headline_line2": "HUB",
+      "subtitle": "Guides · Tutorials · Best Practices",
+      "tagline": "Keyword · Technical · Links",
+      "composition": "Visual-only collage for SEO channel hub index. HERO: hub page with intro block + three grouped link columns on right two-thirds, hub-and-spoke connectors in klein-blue. Secondary: compact SERP snippet strip. Tertiary: sitemap tree. Title top-left. Paper collage, halftone. NO LLM chat, NO single-topic SERP hero, NO blank cards."
+    },
+    "zh": {
+      "headline": "SEO优化",
+      "headline_line2": "指南索引",
+      "subtitle": "教程与最佳实践",
+      "composition": "Same layout as EN: SEO hub columns HERO + SERP strip + sitemap tree. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

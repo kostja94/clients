@@ -1,0 +1,1986 @@
+{
+  "alignifyCtx": "e:\\clients\\Alignify",
+  "deployRoot": "E:\\自有部署项目\\alignify production",
+  "rows": [
+    {
+      "section": "tools",
+      "slug": "3d",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/3d/autodesk-maya.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "3d-model-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/3d-model-generator/alpha3d.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "3d-modelling",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/3d-modelling/3ds-max.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "3d-scanner",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/3d-scanner/dot3d.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "accent-conversion",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/accent-conversion/krisp.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "affiliate-marketing",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/affiliate-marketing/cello.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "agent-for-desktop",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/agent-for-desktop/floatboat.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "agent-skills",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/agent-skills/skills.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "ai-homework-helper",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/ai-homework-helper/upstudy.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "ai-scheduling",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/ai-scheduling/reclaim.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "animation-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/animation-generator/anijam.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "animation-library",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/animation-library/anime-js.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "api",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/api/aws-bedrock.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "app-builder",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/app-builder/base44.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "audio-translator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/audio-translator/maestra.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "authentication",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/authentication/arcade.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "avatar",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/avatar/topview.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "b2b",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/b2b/apollo.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "background-changer",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/background-changer/canva.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "browser",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/browser/arc.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "canvas-video",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/canvas-video/weave-figma.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "character-chat",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/character-chat/cai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "chatbot",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/chatbot/chatbot-com.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "cli",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/cli/groq-code-cli.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "code-completion",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/code-completion/amazon-codewhisperer.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "code-review",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/code-completion/amazon-codewhisperer.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "coding",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/ide/windsurf.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "community",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/community/civitai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "dating",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/dating/heysoda.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "design",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/image-generator/flux.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "directory",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/directory/ai-mojo.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "documentation",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/documentation/mintlify.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "education",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/education/answerai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "essay-writer",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/essay-writer/aithor.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "evaluation",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/evaluation/artificial-analysis.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "family-assistant",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/family-assistant/nori.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "fashion",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/fashion/botika.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "filmmaking",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/filmmaking/escape-ai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "fundraising",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/fundraising/affinity.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "geo",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/geo/karis.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "headless-browser",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/headless-browser/browserbase.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "headshot-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/headshot-generator/aragon.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "healthcare",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/healthcare/aidoc.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "hr-assistant",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/hr-assistant/wisq.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "ide",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/ide/clacky-ai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "image",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/image-generator/flux.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "image-editor",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/image-editor/adobe-firefly.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "image-enhancer",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/image-enhancer/krea.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "image-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "/tools/image-generator/flux.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "image-relighting",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/image-relighting/clipdrop-relight.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "image-to-video",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/image-to-video/pixverse.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "influencer-marketing",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/influencer-marketing/aha.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "interview-assistant",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/interview-assistant/finalround-ai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "knowledge-base",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/knowledge-base/feishu.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "lead-generation",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/lead-generation/openmart.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "legal",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/legal/casetext.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "linkedin",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/linkedin/dynal.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "lip-sync",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/lip-sync/creatify.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "llm",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/llm/chatgpt.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "llm-for-coding",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/llm/chatgpt.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "llm-for-math",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/llm/chatgpt.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "llm-for-reasoning",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/llm/chatgpt.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "logo-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/logo-generator/adobe-firefly.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "memory",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/memory/mem.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "multimodal-llm",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/llm/chatgpt.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "music-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/music/tempolor.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "music-video-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/music-video-generator/1-more-shot.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "note-taker",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/note-taker/fireflies.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "notes-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/notes-generator/thetawave.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "ocr",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/image-enhancer/krea.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "openclaw-alternatives",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/openclaw-alternatives/openclaw-hero.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "poster-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/poster-generator/design-com.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "presentation-maker",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/presentation-maker/beautifulai.png",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "productivity",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/productivity/asana.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "recruiting",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/recruiting/carv.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "referral-program",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/referral-program/cello.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "religion",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/religion/bible-chat.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "search-engine",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/search-engine/PerplexityAI.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "tools",
+      "slug": "search-indexing",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/search-indexing/bing-indexing-api.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "short-drama",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/short-drama/skyreels.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "social-cards-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/social-cards/oginify.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "speech-to-text",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/speech-to-text/voxtral.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "spreadsheet",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/spreadsheet/claude-in-excel.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "story-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/story-generator/easemate.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "tattoo-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/tattoo-generator/adobe-firefly-tattoo.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "text",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/text-generation/copyai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "text-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/text-generation/copyai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "text-to-speech",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/text-to-speech/cartesia.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "text-to-video",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/text-to-video/hailuo.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "text-translator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/text-translator/chatgpt-translate.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "user-research",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/user-research/aaru.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "vibe-coding",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/vibe-coding/antigravity.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "video",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/text-to-video/sora.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "video-clipping",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/video-clipping/klap.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "video-editor",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/video-editor/mirage.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "video-effects",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/video-effects/goenhance.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "video-generator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "/tools/video-generator/oiioii.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "video-to-video",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/video-to-video/domo-ai.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "video-translator",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/video-editor/mirage.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "virtual-staging",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/virtual-staging/aihomedesign.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "voice",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/voice-cloning/kits-voice-cloning.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "voice-changer",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/voice-changer/dubbing-ai-voice.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "voice-cloning",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/voice-cloning/kits-voice-cloning.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "web-scraping",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/web-scraping/bright-data.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "web-search-api",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/search-engine/Exa.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "tools",
+      "slug": "website-builder",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/website-builder/bolt.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "workflow",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/productivity/asana.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "tools",
+      "slug": "world-model",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/tools/world-model/1x.jpg",
+      "legacyIsProduct": true
+    },
+    {
+      "section": "blog",
+      "slug": "agent-memory",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/agent-memory/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "agent-sandbox",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/agent-sandbox/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "agent-to-agent",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/agent-to-agent/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "agentic-commerce",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/agentic-commerce/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "agentic-payments",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/agentic-payments/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "ai-components",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/ai-components/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "ai-flashcards",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/ai-flashcards/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "ai-language-learning",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/ai-language-learning/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "ai-traffic-and-citation-sources",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/ai-traffic-and-citation-sources/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "ai-training-data",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/ai-training-data/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "ai-visibility",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/ai-visibility/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "cad",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/cad/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "coding-plan",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "data-engineering-agent",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/data-engineering-agent/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "git-hosting",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/git-hosting/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "github-for-marketing",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/github-for-marketing/github-growth-strategy.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "how-to-add-payments-to-vibe-coded-app",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/how-to-add-payments-to-vibe-coded-app/oginify-clink.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "how-to-name-ai-products",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "how-to-write-github-readme",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/how-to-write-github-readme/github-readme-guide.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "inference-infrastructure",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/inference-infrastructure/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "interior-design",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/interior-design/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "medical-scribe",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/medical-scribe/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "multi-agent",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/multi-agent/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "rate-limit-reset",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "blog",
+      "slug": "web-fetch",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/blog/web-fetch/hero.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "best-tools",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "branded-queries-filter-google-search-console",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/branded-queries/branded-queries-filter-dialog.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "breadcrumbs",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "category-pages",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "checklist",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "crawler",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "create-blog",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "dark-traffic",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "domain",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/domain/brevo.webp",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "example-article",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "external-links",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "glossary",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "google-tag-manager",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/google-tag-manager/amplitude.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "how-search-engine-works",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/search-engine/Google.webp",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "html-a-tag",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "html-tag",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "internal-links",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "landing-page",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "learn-seo",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "link-building",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "local-search-engines",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/search-engine/Google.webp",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "meta-tag",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/meta-tag/blog-seo-featured.webp",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "navigation-menu",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "new-domains-tld",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "programmatic-seo",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "redirect-chain",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "robots-txt",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "schema",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "search-engine",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/search-engine/Google.webp",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "serp",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/serp/youtube-anatomy-of-search-result.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "sitemap",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "subdomain-vs-subfolder",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "submit-website",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "/seo/submit-website/image-36.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "url-optimization",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "website-indexing",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "website-rendering",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "website-structure",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "seo",
+      "slug": "website-traffic",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "affiliate",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "/marketing/affiliate/affiliate-find-creators.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "competitive-analysis",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "creator-challenge-program",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "creator-program",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "/marketing/creator-program/runway-creative-partner-spotlights.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "email-marketing",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "geo",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "growth-case-studies",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "influencer",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "/marketing/influencer/Advanced%20search.png",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "keyword-research",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "lifetime-deal",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "/marketing/lifetime-deal/appsumo-checkout.webp",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "localization-strategy",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "marketing-types",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "pricing-strategy",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "reddit",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "referral-program",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "/marketing/referral-program/builderio-referral-program.jpg",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "marketing",
+      "slug": "x-formerly-twitter",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": true,
+      "deployZh": true,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "insights",
+      "slug": "ai-logo-design",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "insights",
+      "slug": "directory-submission-sites",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "insights",
+      "slug": "generative-ai-landscape",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "insights",
+      "slug": "google",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "insights",
+      "slug": "indie-hackers",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "insights",
+      "slug": "openai",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "insights",
+      "slug": "reasons-you-need-seo",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "events",
+      "slug": "founder-park-2024-11-06",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "events",
+      "slug": "linkloud-2025-02-23",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "events",
+      "slug": "linkloud-2026-01-24",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    },
+    {
+      "section": "events",
+      "slug": "praxis-2025-09-27",
+      "stagingEn": false,
+      "stagingZh": false,
+      "deployEn": false,
+      "deployZh": false,
+      "legacyMap": "(none)",
+      "legacyIsProduct": false
+    }
+  ]
+}

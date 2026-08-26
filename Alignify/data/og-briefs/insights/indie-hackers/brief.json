@@ -1,0 +1,36 @@
+{
+  "section": "insights",
+  "slug": "indie-hackers",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Indie hackers bootstrapping playbook — MVP principles, Build in Public tactics, and revenue milestones from solo founder success stories",
+  "differentiator_vs_generic": "This is solo founder bootstrapping strategy analysis, NOT generic startup motivation or VC pitch deck imagery. Hero must be a Build in Public timeline with MRR milestone markers, MVP launch node, and public-building social feed strip.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Build in Public timeline — horizontal journey line from MVP launch dot through public updates to revenue milestone markers ($1K, $10K, $100K blur labels)",
+    "Solo founder workstation motif — laptop with blurred dashboard + small audience growth curve beside timeline",
+    "Secondary: three-strategy card strip — ship fast / talk publicly / iterate on feedback as annotated playbook blocks"
+  ],
+  "anti_patterns": [
+    "Generic handshake or team meeting stock photo",
+    "VC funding announcement imagery",
+    "Unrelated corporate org chart",
+    "SERP or SEO dashboard as hero",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "INDIE HACKERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Bootstrapping Success Stories",
+      "tagline": "MVP · Build in Public · Revenue",
+      "composition": "Visual-only editorial collage for indie hacker bootstrapping insights. HERO: Build in Public timeline on right two-thirds — horizontal journey from MVP launch through public update nodes to blurred MRR milestone markers ($1K/$10K/$100K). Beside timeline: solo laptop workstation with blurred revenue dashboard and small audience growth curve. Secondary: three-strategy playbook strip (ship fast / talk publicly / iterate). Title top-left. Paper torn edges, halftone. mars-green accent on milestone markers. NO team stock photos, NO VC imagery, NO SERP hero, NO blank cards."
+    },
+    "zh": {
+      "headline": "独立开发者",
+      "headline_line2": "（2026）",
+      "subtitle": "自主创业成功故事",
+      "composition": "Same layout as EN: Build in Public timeline HERO + laptop dashboard + three-strategy strip. Title top-left, NO extra Chinese milestone text on timeline, NO stock photos, NO blank cards."
+    }
+  }
+}

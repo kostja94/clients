@@ -1,0 +1,6 @@
+scripts/node_modules/
+scripts/.env
+data/*.json
+!data/.gitkeep
+reports/*.md
+!reports/.gitkeep

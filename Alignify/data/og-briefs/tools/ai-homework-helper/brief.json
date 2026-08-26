@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "ai-homework-helper",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI homework helpers — photo solve, step-by-step answers across subjects",
+  "differentiator_vs_generic": "Phone camera capture of math problem flowing into step-by-step solution panel, NOT generic chat tutor.",
+  "visual_anchors": [
+    "HERO: Phone camera frame capturing handwritten math equation photo with scan corners, arrow into solution panel showing numbered step blocks (blurred equations only)",
+    "2x2 grid of subject outputs (algebra steps, geometry diagram, chemistry formula, essay outline) — visual fragments only",
+    "Magnifying glass zooming on one solution step line"
+  ],
+  "anti_patterns": [
+    "Generic LLM chat bubbles",
+    "Empty notebook page",
+    "Video lecture player",
+    "Ranking scoreboard"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI HOMEWORK HELPERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Photo Solve · Step-by-Step",
+      "tagline": "Pocket Tutor for Every Subject",
+      "composition": "Visual-only collage for AI homework helper tools comparison: (1) HERO phone scan of math problem morphing via torn arrow into step-by-step solution panel with numbered blocks on right two-thirds. (2) 2x2 grid of four subject solution vignettes (algebra, geometry, chemistry, essay). (3) Magnifying glass on one equation step. Paper collage, halftone. No chat bubbles hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI作业助手",
+      "headline_line2": "（2026）",
+      "subtitle": "拍照解题 · 分步解析",
+      "composition": "Same layout as EN: photo scan to step panel HERO + 2x2 subject grid + magnifying glass on step. Title top-left only, NO extra Chinese UI labels, NO chat bubble hero, NO blank cards."
+    }
+  }
+}

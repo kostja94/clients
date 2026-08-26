@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "workflow",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI workflow automation tools — trigger nodes connecting apps and AI steps",
+  "differentiator_vs_generic": "Automation flowchart with trigger, AI action, and app connector nodes on dotted canvas, NOT single chatbot or spreadsheet alone.",
+  "visual_anchors": [
+    "HERO: Workflow automation canvas — trigger node (webhook/email/schedule) chaining through AI action block to app connector nodes (Slack, Sheets, CRM icons as generic glyphs)",
+    "Compact natural-language automation prompt card arrow into generated flowchart",
+    "2x2 grid of workflow patterns (lead routing, content publish, support triage, data sync) — diagrams only"
+  ],
+  "anti_patterns": [
+    "Single chatbot hero",
+    "Spreadsheet grid alone",
+    "Empty flowchart box",
+    "CRM kanban unrelated"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI WORKFLOW TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Triggers · AI Steps · Connect",
+      "tagline": "Automate with Intelligence",
+      "composition": "Visual-only collage for AI workflow automation tools comparison: (1) HERO automation flowchart with trigger-AI-app nodes on right two-thirds. (2) NL prompt arrow into generated flow. (3) 2x2 grid of four workflow pattern diagrams. (4) Magnifying glass on AI action node. Paper collage, halftone. No chatbot hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI工作流工具",
+      "headline_line2": "（2026）",
+      "subtitle": "触发 · AI步骤 · 连接",
+      "composition": "Same layout as EN: workflow flowchart HERO + NL prompt flow + 2x2 pattern grid + magnifying glass on AI node. Title top-left only, NO extra Chinese UI labels, NO chatbot hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "spreadsheet",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI spreadsheet tools — natural language to formulas, charts, and analysis",
+  "differentiator_vs_generic": "Spreadsheet grid with AI formula suggestion bubble and auto-generated chart, NOT word doc or database admin panel.",
+  "visual_anchors": [
+    "HERO: Spreadsheet canvas with highlighted cell range, AI formula suggestion chip, and emerging bar chart from selected data",
+    "Compact natural-language query card arrow into populated pivot table vignette",
+    "2x2 grid of sheet AI modes (clean data, forecast column, explain formula, export report) — UI only"
+  ],
+  "anti_patterns": [
+    "Word document hero",
+    "SQL database console",
+    "Blank grid cells",
+    "Presentation slide"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI SPREADSHEET TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Formulas · Charts · Analysis",
+      "tagline": "Ask Data in Plain English",
+      "composition": "Visual-only collage for AI spreadsheet tools comparison: (1) HERO sheet grid with formula chip and chart on right two-thirds. (2) NL query card arrow into pivot table. (3) 2x2 grid of four sheet AI UI modes. (4) Magnifying glass on formula cell. Paper collage, halftone. No word doc hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI表格工具",
+      "headline_line2": "（2026）",
+      "subtitle": "公式 · 图表 · 分析",
+      "composition": "Same layout as EN: spreadsheet HERO + NL query flow + 2x2 mode grid + magnifying glass on formula cell. Title top-left only, NO extra Chinese UI labels, NO word doc hero, NO blank cards."
+    }
+  }
+}

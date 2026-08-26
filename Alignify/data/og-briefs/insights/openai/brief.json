@@ -1,0 +1,36 @@
+{
+  "section": "insights",
+  "slug": "openai",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "OpenAI deep analysis — multimodal technology evolution from GPT to Sora, commercialization path, industry penetration, and AGI roadmap",
+  "differentiator_vs_generic": "This is OpenAI business and technology ecosystem analysis, NOT a generic ChatGPT tutorial or API docs screenshot. Hero must be a layered empire map — model stack tiers, product surface nodes, and industry penetration rings showing the full commercial footprint.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Layered ecosystem empire map — vertical model stack (text → vision → audio → video) as ascending tiers with blurred product nodes at each level",
+    "Product surface ring — API, consumer app, enterprise, developer tools as orbiting nodes around the stack",
+    "Secondary: industry penetration radar — five sector spokes (code, creative, enterprise, education, media) with blurred adoption depth indicators"
+  ],
+  "anti_patterns": [
+    "Real OpenAI logo or ChatGPT branding",
+    "Single chat panel as sole hero",
+    "Generic AI brain stock imagery",
+    "API documentation screenshot",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "OPENAI ANALYSIS",
+      "headline_line2": "(2026)",
+      "subtitle": "Multimodal Tech & Business Empire",
+      "tagline": "GPT · Sora · Commercialization",
+      "composition": "Visual-only editorial collage for OpenAI ecosystem deep analysis. HERO: layered empire map on right two-thirds — ascending model stack tiers (text, vision, audio, video) with blurred product nodes, surrounded by product surface ring (API, consumer, enterprise, dev tools). Secondary: industry penetration radar with five sector spokes and blurred adoption indicators, alignify-navy accent on top tier. Title top-left. Paper torn edges, halftone. NO OpenAI/ChatGPT logos, NO chat UI as sole hero, NO API docs screenshot, NO blank cards."
+    },
+    "zh": {
+      "headline": "OpenAI深度分析",
+      "headline_line2": "（2026）",
+      "subtitle": "多模态技术与商业版图",
+      "composition": "Same layout as EN: layered model stack + product ring + industry radar HERO. Title top-left, NO OpenAI logos, NO chat panel hero, NO extra Chinese tier labels, NO blank cards."
+    }
+  }
+}

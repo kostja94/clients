@@ -1,0 +1,17 @@
+{
+  "name": "sparki-ai-traffic-report-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fetch GA4 AI assistant + all-page traffic for Sparki weekly report",
+  "scripts": {
+    "fetch-traffic": "node fetch-ga4-traffic.mjs",
+    "merge-traffic": "node merge-traffic-weekly.mjs",
+    "fetch-all": "npm run fetch-traffic && npm run merge-traffic"
+  },
+  "dependencies": {
+    "@google-analytics/data": "^4.12.0",
+    "dotenv": "^16.4.7",
+    "yaml": "^2.7.0"
+  }
+}

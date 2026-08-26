@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "how-search-engine-works",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "How search engines work — crawling, indexing, serving/ranking pipeline, Googlebot, inverted index, and Search Console diagnostics",
+  "differentiator_vs_generic": "This is traditional search-engine mechanics education, NOT GEO/LLM chat. Hero must show the three-stage Crawl → Index → Serve pipeline with crawler bot and index library — NOT an AI chat answering queries.",
+  "visual_anchors": [
+    "HERO (~55% canvas): horizontal three-stage pipeline — Crawling (spider bot on webpage with link arrows), Indexing (database/library shelves storing page cards), Serving (mini SERP results panel with blue links blur), connected by accent arrows",
+    "Secondary: Googlebot-style crawler discovering URLs via sitemap XML tile + backlink arrow + internal link chain on simplified site map",
+    "Tertiary: inverted index visualization — keyword column mapping to stacked page document icons (blurred keywords)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is crawl/index/rank SEO not GEO)",
+    "Generic magnifying glass alone without pipeline stages",
+    "Real Google logo or Googlebot trademark",
+    "Affiliate dashboard unrelated to search infrastructure"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "SEARCH ENGINES",
+      "headline_line2": "(2026)",
+      "subtitle": "Crawl · Index · Rank",
+      "tagline": "Googlebot · Inverted Index · SERP",
+      "composition": "Visual-only editorial collage for how search engines work guide. HERO: three-stage pipeline mockup occupying right two-thirds — Stage 1 Crawling with spider bot on webpage extracting links, Stage 2 Indexing with library/database storing page cards, Stage 3 Serving with mini SERP panel showing blue result links, stages linked by accent klein-blue arrows. Secondary: URL discovery sources — sitemap XML icon, backlink arrow, internal link chain on tiny site diagram. Tertiary: inverted index grid mapping blurred keyword tokens to page document stacks. Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO real Google logo, NO AI assistant panels, NO extra stage text labels beyond blurred UI chrome."
+    },
+    "zh": {
+      "headline": "搜索引擎原理",
+      "headline_line2": "（2026）",
+      "subtitle": "爬取·索引·排名",
+      "composition": "Same layout as EN: Crawl→Index→Serve pipeline HERO + URL discovery sources + inverted index grid. Title top-left, NO LLM chat, NO real Google logo, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

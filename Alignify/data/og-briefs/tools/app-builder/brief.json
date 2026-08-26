@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "app-builder",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "No-code app builder platforms — drag-drop to deployed mobile/web apps",
+  "differentiator_vs_generic": "Drag-drop canvas with component blocks and live mobile preview, NOT raw code IDE or API gateway.",
+  "visual_anchors": [
+    "HERO: No-code builder canvas with draggable UI component blocks (button, form, list, chart) and wireframe grid snapping",
+    "Mobile phone preview frame showing finished app screen emerging from canvas via torn-paper arrow",
+    "2x2 grid of built app preview types (dashboard, booking form, e-commerce list, onboarding flow) — UI screenshots only"
+  ],
+  "anti_patterns": [
+    "Raw code editor hero",
+    "API gateway diagram",
+    "3D viewport",
+    "Empty builder canvas"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST NO-CODE APP BUILDERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Drag-Drop · Generate · Deploy",
+      "tagline": "Ideas to Live Apps Fast",
+      "composition": "Visual-only collage for no-code app builder tools comparison: (1) HERO drag-drop builder canvas with component blocks on right two-thirds. (2) Phone preview frame with finished app emerging via torn arrow. (3) 2x2 grid of four app preview screens. (4) Compare/zoom lens on one component block detail. Paper collage, halftone. No code IDE hero, no ranking text, no blank canvas."
+    },
+    "zh": {
+      "headline": "最佳无代码应用构建器",
+      "headline_line2": "（2026）",
+      "subtitle": "拖拽 · 生成 · 部署",
+      "composition": "Same layout as EN: drag-drop canvas HERO + phone preview arrow + 2x2 app screen grid + zoom on component. Title top-left only, NO extra Chinese UI labels, NO code editor hero, NO blank cards."
+    }
+  }
+}

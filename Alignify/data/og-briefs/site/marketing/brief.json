@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "marketing",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Growth Strategy hub — affiliate, creator programs, influencer, Reddit, GEO/AEO, and LTD channel guides index",
+  "differentiator_vs_generic": "Marketing channel index cover, NOT one strategy deep-dive. HERO must show growth channel category tiles (affiliate, GEO chat, Reddit, creator).",
+  "visual_anchors": [
+    "HERO: Marketing hub mosaic — 2x3 channel tiles (affiliate dashboard blur, LLM chat chip for GEO, Reddit alien silhouette, creator camera, LTD badge, localization globe) with category header blur",
+    "Secondary: hub intro paragraph block above tile grid",
+    "Tertiary: funnel arrow connecting tiles to single conversion dot"
+  ],
+  "anti_patterns": [
+    "Single GEO article as entire hero",
+    "Generic upward chart only",
+    "SEO SERP layout",
+    "Empty channel tiles"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "GROWTH STRATEGY",
+      "headline_line2": "HUB",
+      "subtitle": "Channels · Programs · Playbooks",
+      "tagline": "Affiliate · GEO · Creator · Reddit",
+      "composition": "Visual-only collage for marketing channel hub. HERO: 2x3 growth channel tile mosaic on right two-thirds with blurred UI hints per channel + intro block above. Secondary: subtle funnel arrow. Title top-left. Paper collage, halftone. NO single-strategy-only hero, NO generic chart alone, NO blank tiles."
+    },
+    "zh": {
+      "headline": "增长策略",
+      "headline_line2": "指南索引",
+      "subtitle": "渠道与计划 playbook",
+      "composition": "Same layout as EN: marketing channel tile mosaic HERO + intro block + funnel arrow. Title top-left, NO extra Chinese UI labels, NO blank tiles."
+    }
+  }
+}

@@ -8,7 +8,7 @@
 
 **站内对照**：[alignify.co/tools/web-scraping](https://alignify.co/tools/web-scraping) · `/zh/tools/web-scraping` · `content/tools/en/web-scraping.md`、`content/tools/zh/web-scraping.md` · **`slug`: `web-scraping`
 
-**知识块文件名**：`web-scraping.md` 与站内 Tools **`slug`：`web-scraping`**、`content/tools/*/web-scraping.md` 对齐（本文为网摘专册，正文 SSOT 以 Tools JSON 为准）。
+**知识块文件名**：`web-scraping.md` 与站内 Tools **`slug`：`web-scraping`**、`content/tools/*/web-scraping.md` 对齐（本文为网摘专册，正文 SSOT 以 Tools Markdown 为准）。
 
 以下条目可任意顺序阅读；**不是**文章体例，无叙事主线。
 

@@ -126,9 +126,8 @@ evals:
     expected:
       route: "moras-blog-article only"
       assert:
-        - "does NOT require E:\\Agent执行\\blog-create"
-        - "does NOT require E:\\Agent执行\\blog-audit"
-        - "workflow references only skill folder paths"
+        - "does NOT load files outside skill folder"
+        - "workflow references only paths under moras/skills/blog-article/"
     severity: critical
 
   - id: E12

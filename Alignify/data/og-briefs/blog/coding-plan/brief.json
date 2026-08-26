@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "coding-plan",
+  "analyzed_at": "2026-08-24T18:15:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Coding Plan — China's hybrid AI developer subscription model between flat SaaS and pure token billing, with tier caps and structural contradictions",
+  "differentiator_vs_generic": "This is a pricing/business-model analysis of Chinese AI coding subscriptions (¥ tiers, quota meters, aggregator API keys), NOT a product tutorial, NOT Western Claude/Cursor subscription comparison alone. Hero must show three-tier pricing cards with fixed monthly fee + usage-cap gauge — the intermediate billing model visual.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Three-tier Coding Plan pricing cards — Lite/Pro/Max blur labels with ¥ price blur, each card has a circular usage-cap gauge (partial fill at different levels)",
+    "Spectrum bar: Notion-style flat SaaS icon on left, DeepSeek token-meter icon on right, Coding Plan highlighted in center wedge",
+    "Secondary: API key chip flowing into IDE icons (Cursor, Cline blur silhouettes)"
+  ],
+  "anti_patterns": [
+    "Generic SaaS dashboard unrelated to pricing",
+    "Pure token billing receipt as sole hero",
+    "Code editor screenshot without pricing metaphor",
+    "Western-only $20/month subscription cards without ¥ tier structure",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "CODING PLAN",
+      "headline_line2": "(2026)",
+      "subtitle": "China's AI Dev Subscription Model",
+      "tagline": "GLM · MiniMax · Bailian",
+      "composition": "Visual-only editorial collage for Coding Plan business-model deep dive. HERO: three pricing tier cards on right two-thirds — Lite/Pro/Max blur headers, ¥ price blur, each with circular quota gauge at different fill levels (alignify-navy accent on Pro tier border). Below cards: horizontal spectrum strip — flat SaaS icon left, token meter right, center wedge labeled blur-only as intermediate model. Secondary: small API key chip with arrows to IDE tool silhouettes. Title top-left. Paper torn edges, halftone. NO code editor hero, NO generic growth chart, NO vendor logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "Coding Plan解读",
+      "headline_line2": "（2026）",
+      "subtitle": "中国AI编程订阅商业模式",
+      "composition": "Same layout as EN: three-tier ¥ pricing cards HERO with quota gauges + SaaS-vs-token spectrum bar + API key flow. Title top-left, NO extra Chinese price text on cards, NO code editor hero, NO blank cards."
+    }
+  }
+}

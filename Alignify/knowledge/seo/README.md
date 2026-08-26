@@ -10,9 +10,12 @@
 |------|------|
 | **`knowledge/tools/`** | 与 **`src/data/tools-pages-config.ts`** 中 **`slug` 同名**的 `*.md` 知识块，便于与 **`/tools/[slug]`**、`product/alignify-keywords-tools.md` 对照（如 [`tools/geo.md`](../tools/geo.md)、[`tools/note-taker.md`](../tools/note-taker.md)）。 |
 | **`knowledge/seo/`（本目录）** | **不绑定** Tools slug 的 SEO 专册；**已对应站上长文**的条目，文件名 **与 `content/seo/*/[slug].md` 的 `slug` 段同名**（kebab-case），便于与 **`/seo/[slug]`** 对照；尚无正式页的主题可暂用描述性文件名，上线后改为 slug 同名。**不要求**在 `tools-pages-config` 中存在对应项。 |
-| **`technical/`** | 站点技术实现的**规范级**说明（构建、配置、组件）；本目录为**网摘与概念整理**，二者互补，本目录**不作为**实现 SSOT。 |
+| **`skills/ops/`** | 发布后 SEO 运维（sitemap、IndexNow、GSC）；本目录为**网摘与概念整理**，二者互补。 |
+| **`skills/create-article/rules/`** | 文章创作与 section 写作规范 SSOT。 |
 
 **边界提示**：**GEO / AEO / LLMO** 等「生成式答案可见度」若需与 Tools 页 **`geo`** 对齐，知识块正文仍放在 [`tools/geo.md`](../tools/geo.md)，避免同一主题在两条路径重复维护。本目录侧重**经典 Web 搜索**与站内 technical SEO 工作流相关的笔记。
+
+**正式文章创作**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
 ---
 
@@ -20,7 +23,7 @@
 
 新建 `*.md` 时，章节骨架与文首声明沿用 [`../README.md`](../README.md) 中「知识块文档结构」；若某篇**无** Tools 对照，可省略「站内对照」「Tools 关键词与 slug 映射」两行，改为：
 
-- `**规范对照**：…`（链到 `technical/*.md` 或 `content/sections/section-seo.md` 等，按需）
+- `**规范对照**：…`（链到 [`skills/create-article/rules/meta.md`](../../skills/create-article/rules/meta.md) 或 [`skills/ops/`](../../skills/ops/)，按需）
 
 ---
 
@@ -108,8 +111,8 @@
 
 共 38 个文件，其中 9 篇完整、29 篇待补充。
 
-- 全站 SEO 规范入口：[section-seo.md](../../section/section-seo.md)
-- Technical SEO 索引：[technical/README.md](../../technical/README.md)
+- 全站 SEO 规范入口：[section-seo.md](../../skills/create-article/rules/meta.md)
+- Technical SEO 索引：[technical/README.md](../../skills/ops/README.md)
 - 关键词总表：[alignify-keywords.md](../../keywords/alignify-keywords.md) · [alignify-keywords-seo.md](../../keywords/alignify-keywords-seo.md)
 - 全站知识块总说明：[knowledgehub/README.md](../README.md)
 

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "transcription",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI transcription tools — recordings to searchable timestamped text",
+  "differentiator_vs_generic": "Long-form recording timeline with synchronized transcript scroll and chapter markers, NOT live STT mic-only or TTS.",
+  "visual_anchors": [
+    "HERO: Transcription editor — audio timeline scrubber with synchronized transcript pane, chapter markers, and search highlight",
+    "Compact upload recording card arrow into diarized speaker transcript",
+    "2x2 grid of transcript exports (SRT subtitles, summary bullets, keyword index, team comments) — UI only"
+  ],
+  "anti_patterns": [
+    "Live mic waveform only hero",
+    "TTS script panel",
+    "Blank audio icon",
+    "Generic chat summary"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TRANSCRIPTION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Recordings · Timestamps · Search",
+      "tagline": "Search Every Spoken Word",
+      "composition": "Visual-only collage for AI transcription tools comparison: (1) HERO transcription editor with timeline and sync transcript on right two-thirds. (2) Upload card arrow into diarized transcript. (3) 2x2 grid of four export UI tiles. (4) Magnifying glass on chapter marker. Paper collage, halftone. No live mic-only hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI转录工具",
+      "headline_line2": "（2026）",
+      "subtitle": "录音 · 时间戳 · 检索",
+      "composition": "Same layout as EN: transcription editor HERO + upload flow + 2x2 export grid + magnifying glass on chapter marker. Title top-left only, NO extra Chinese UI labels, NO mic-only hero, NO blank cards."
+    }
+  }
+}

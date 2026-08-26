@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "schema",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Schema.org structured data — JSON-LD types, validation, rich results, and entity markup for SEO",
+  "differentiator_vs_generic": "This is traditional structured-data SEO education, NOT GEO/LLM chat. Hero must show JSON-LD markup connecting to rich-result SERP elements (stars, breadcrumbs, FAQ accordion) — NOT an AI chat panel or LLM citation UI.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split panel — left: stylized JSON-LD script block with @type Article, headline, author, publisher keys in monospace; right: mini SERP rich-result preview showing breadcrumb trail, 5-star rating row, and FAQ accordion snippet emerging from the code via dotted connector lines",
+    "Secondary: entity relationship mini-graph — Organization node linked to Person (author) and WebSite nodes with small type labels",
+    "Tertiary: validation checkmark badge overlay (Rich Results Test style) with green pass indicator, no real Google branding"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is Schema markup not GEO)",
+    "Generic code editor without rich-result payoff",
+    "OpenAI/Anthropic logos or AI Overview chat bubbles",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "SCHEMA.ORG",
+      "headline_line2": "(2026)",
+      "subtitle": "Structured Data & Rich Results",
+      "tagline": "JSON-LD · Article · FAQPage",
+      "composition": "Visual-only editorial collage for Schema.org SEO guide. HERO: split composition occupying right two-thirds — left half shows blurred JSON-LD script with @context schema.org, @type Article, headline, author Person, publisher Organization keys in accent klein-blue syntax highlights; dotted connector lines flow right into a compact rich-result preview card with breadcrumb chevrons, 5 gold stars + review count blur, and one FAQ accordion row. Secondary: small entity graph with 3 connected nodes (Organization, Person, WebSite). Tertiary: validation pass badge. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real Google logo, NO OpenAI branding."
+    },
+    "zh": {
+      "headline": "Schema结构化数据",
+      "headline_line2": "（2026）",
+      "subtitle": "JSON-LD与富结果",
+      "composition": "Same layout as EN: JSON-LD code block HERO flowing into rich-result preview (breadcrumbs + stars + FAQ row) + entity graph nodes. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

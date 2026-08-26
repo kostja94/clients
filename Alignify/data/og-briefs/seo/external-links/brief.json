@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "external-links",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "External (outbound) links SEO — authority signals, E-E-A-T citations, rel attribute management, and UX best practices",
+  "differentiator_vs_generic": "This is traditional SEO outbound-link strategy, NOT GEO/LLM chat. Hero must show an article page with a visible outbound link arrow leaving the site to an external authoritative domain — NOT a backlink acquisition dashboard or AI panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): article page mockup on current domain (example.com) with one highlighted outbound hyperlink in body text — accent-colored arrow or dashed line exiting page boundary toward external domain box (authority-site blur)",
+    "Secondary: three-domain link-type diagram — same-site internal arrows, outbound arrow leaving center site, inbound arrow entering from third site (minimal blurred domain labels)",
+    "Tertiary: rel attribute chip row — nofollow / sponsored / ugc as small colored badges (blurred, no readable attribute text labels on canvas)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is outbound link SEO not GEO)",
+    "Backlink builder or link-exchange spam dashboard",
+    "Generic chain-link icon without page context",
+    "Affiliate commission UI unrelated to citation strategy"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "EXTERNAL LINKS",
+      "headline_line2": "(2026)",
+      "subtitle": "Outbound Links & Authority",
+      "tagline": "E-E-A-T · Rel Attributes · UX",
+      "composition": "Visual-only editorial collage for external/outbound link SEO guide. HERO: blog article page mockup on example.com occupying right two-thirds — blurred paragraph with one blue underlined outbound link highlighted, dashed accent klein-blue arrow leaving page edge to external authority domain box. Secondary: three-site link ecosystem mini-diagram showing internal, outbound, and inbound arrow directions. Tertiary: three small rel badge chips (nofollow, sponsored, ugc) as color blocks only. Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO Ahrefs/Moz logos, NO link spam tools, NO extra text labels."
+    },
+    "zh": {
+      "headline": "外部链接SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "出站链接与权威性",
+      "composition": "Same layout as EN: article page HERO with outbound link arrow to external domain + three-type link diagram + rel badge chips. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

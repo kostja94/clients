@@ -1,0 +1,62 @@
+# Datus 品牌词注册表 — seo-weekly-report 主数据源
+# 维护规则：发现新品牌变体 / 子品牌词时追加 patterns
+
+meta:
+  property: datus.ai
+  gscSiteUrl: "https://datus.ai/"
+  lastUpdated: "2026-08-24"
+  maintainer: growth-team
+
+matching:
+  matchMode: contains
+  caseInsensitive: true
+  stripPunctuation: true
+
+brandGroups:
+  - id: datus-core
+    label: Datus 核心品牌
+    patterns:
+      - datus
+      - datus.ai
+      - datus agent
+      - datus-agent
+      - datus ai
+      - datusagent
+
+  - id: dosi
+    label: Dosi 子品牌
+    patterns:
+      - dosi
+      - dosi datus
+      - datus dosi
+
+  - id: typo
+    label: 拼写变体
+    patterns:
+      - datu s
+      - datuss
+      - datus-io
+
+# 出现在 query 中但属于竞品 — 标注 competitorQuery，不计入 Datus 品牌
+competitorBrandTerms:
+  - wren ai
+  - vanna ai
+  - vanna
+  - db-gpt
+  - dbgpt
+  - dataherald
+  - numbers station
+  - claude code
+  - metricflow
+  - cube dev
+
+# 品类词（非品牌，但属于战略核心 query cluster）
+categoryTerms:
+  - data engineering agent
+  - data agent
+  - contextual data engineering
+  - nl2sql agent
+  - text to sql
+  - semantic layer
+  - open semantic interchange
+  - osi semantic

@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "cli",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI CLI tools — natural language to shell commands and agentic terminal workflows",
+  "differentiator_vs_generic": "Terminal window with NL prompt morphing into executed shell commands, NOT IDE code editor or browser chat.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Dark terminal panel — blurred natural-language prompt line at top, arrow into highlighted shell command block with cursor blink, file tree sidebar thumbnail",
+    "Agent step checklist ribbon: plan → run → verify icons with torn-paper connectors (blurred labels only)",
+    "2x2 grid of CLI task vignettes (deploy script, log grep, git commit, env setup) — terminal output fragments only",
+    "Magnifying glass zooming on one command flag and output line pair"
+  ],
+  "anti_patterns": [
+    "IDE code editor with inline completion hero",
+    "Browser copilot sidebar",
+    "Generic chat bubbles without terminal chrome",
+    "Empty terminal window"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI CLI TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prompt · Command · Execute",
+      "tagline": "Natural Language in Your Terminal",
+      "composition": "Visual-only collage for AI CLI tools comparison: (1) HERO dark terminal with NL prompt arrow into shell command block on right two-thirds. (2) Agent step ribbon (plan, run, verify). (3) 2x2 grid of four terminal task vignettes. (4) Magnifying glass on command flag detail. Title top-left only. Paper collage, halftone. No IDE editor hero, no browser chat, no ranking text, no blank terminal."
+    },
+    "zh": {
+      "headline": "最佳AI命令行工具",
+      "headline_line2": "（2026）",
+      "subtitle": "自然语言 · 命令 · 执行",
+      "composition": "Same layout as EN: terminal NL-to-command HERO + agent step ribbon + 2x2 task grid + magnifying glass on command detail. Title top-left only, NO extra Chinese UI labels, NO IDE editor hero, NO blank terminal."
+    }
+  }
+}

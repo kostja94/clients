@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "ai-language-learning",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI language learning tools — three tiers: gamification-first (Duolingo), speaking-first conversation (Speak), and phoneme-level accent coaching (BoldVoice)",
+  "differentiator_vs_generic": "This is speaking-first vs gamified streak learning split with pronunciation feedback — NOT generic globe/flags, NOT homework helper. Hero must contrast voice waveform speaking practice against gamified streak/leaderboard UI in a split composition.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split comparison — left half: gamified streak flame + leaderboard bar (Duolingo-tier metaphor), right half: live voice waveform + microphone with speaking practice bubbles (Speak-tier), alignify-navy divider line between halves",
+    "Secondary: phoneme pronunciation feedback — mouth/phoneme diagram with green/red accent markers on /θ/ vs /s/ sounds",
+    "Tertiary: three-tier label strip — gamified platform / speaking-first / accent coach icons in a row (depth not breadth)"
+  ],
+  "anti_patterns": [
+    "Generic world globe with flags as hero",
+    "LLM chat translation panel as hero",
+    "Homework photo-to-answer UI",
+    "Single-tier app screenshot without comparison split",
+    "Textbook grammar page as primary visual"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "AI LANGUAGE LEARNING",
+      "headline_line2": "(2026)",
+      "subtitle": "Speaking · Accent · Conversation",
+      "tagline": "Gamified · Speaking-First · Phoneme Coach",
+      "composition": "Visual-only editorial collage for AI language learning guide. HERO: right two-thirds — vertical split panel: left side gamified streak flame icon + XP bar + leaderboard silhouette (blurred), right side microphone + animated voice waveform + conversation bubble stack, alignify-navy center divider. Secondary: phoneme mouth diagram with two sound markers (correct vs error color dots, no readable IPA text). Tertiary: three small tier icons in bottom strip. Title block top-left only. Paper torn edges, halftone. NO globe/flags hero, NO LLM chat hero, NO real Duolingo/Speak logos, NO readable lesson text, NO homework camera."
+    },
+    "zh": {
+      "headline": "AI语言学习工具",
+      "headline_line2": "（2026）",
+      "subtitle": "口语·发音·对话练习",
+      "composition": "Same layout as EN: HERO split gamified streak vs speaking waveform + phoneme feedback diagram + three-tier strip. Title top-left, NO globe hero, NO LLM chat panel, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

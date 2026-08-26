@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "website-traffic",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Website traffic sources — 7 channel types (direct, dark, referral, organic, paid, social, email), UTM tracking, and analytics",
+  "differentiator_vs_generic": "This is traditional traffic analytics SEO education, NOT GEO/LLM chat. Hero must show a 7-segment traffic source breakdown chart (donut or stacked bar) with channel color coding — NOT an AI chat panel or generic visitor counter alone.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Donut chart with 7 colored segments representing traffic channels — Organic Search (largest, accent), Direct, Referral, Paid, Social, Email, Dark/Unknown (smallest, hatched pattern); legend row with blurred channel labels and percentage blurs",
+    "Secondary: UTM parameter tag chips — utm_source, utm_medium, utm_campaign floating above chart",
+    "Tertiary: mini analytics line graph showing session trend upward with channel filter dropdown shape"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is traffic analytics not GEO)",
+    "Generic visitor counter without channel breakdown",
+    "Real Google Analytics screenshot with branding",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "WEBSITE TRAFFIC",
+      "headline_line2": "(2026)",
+      "subtitle": "7 Source Types Explained",
+      "tagline": "Organic · Direct · Referral · Paid",
+      "composition": "Visual-only editorial collage for website traffic guide. HERO: 7-segment donut chart occupying right two-thirds — Organic Search largest segment in accent coral, plus Direct, Referral, Paid, Social, Email, Dark/Unknown (hatched) segments with blurred legend percentages. Secondary: UTM tag chips (utm_source, utm_medium, utm_campaign). Tertiary: mini session trend line graph with channel filter dropdown. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real GA logo, NO generic single-metric counter."
+    },
+    "zh": {
+      "headline": "网站流量来源",
+      "headline_line2": "（2026）",
+      "subtitle": "7种渠道类型详解",
+      "composition": "Same layout as EN: 7-channel donut chart HERO with legend + UTM chips + session trend mini-graph. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

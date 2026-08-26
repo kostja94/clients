@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "productivity",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI productivity tools — focus, automation, and daily workflow boost",
+  "differentiator_vs_generic": "Focus timer ring beside smart task stack and AI daily plan card, NOT generic project kanban or email inbox.",
+  "visual_anchors": [
+    "HERO: Productivity cockpit — Pomodoro focus ring, prioritized task stack, and AI-generated daily plan card with time blocks",
+    "Compact habit streak chip arrow into completed task celebration confetti",
+    "2x2 grid of productivity modes (deep work block, inbox zero assist, meeting prep, energy map) — UI tiles only"
+  ],
+  "anti_patterns": [
+    "Full kanban board hero",
+    "CRM pipeline",
+    "Social media scheduler",
+    "Empty checklist"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI PRODUCTIVITY TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Focus · Tasks · Daily Plan",
+      "tagline": "Work Smarter Every Day",
+      "composition": "Visual-only collage for AI productivity tools comparison: (1) HERO focus ring with task stack and daily plan on right two-thirds. (2) Habit streak chip arrow into completed tasks. (3) 2x2 grid of four productivity UI modes. (4) Magnifying glass on daily plan block. Paper collage, halftone. No kanban hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI效率工具",
+      "headline_line2": "（2026）",
+      "subtitle": "专注 · 任务 · 日计划",
+      "composition": "Same layout as EN: productivity cockpit HERO + habit streak flow + 2x2 mode grid + magnifying glass on plan block. Title top-left only, NO extra Chinese UI labels, NO kanban hero, NO blank cards."
+    }
+  }
+}

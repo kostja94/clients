@@ -86,7 +86,7 @@ Hub ↔ spoke 内链矩阵见 `blog-structure-internal-links.md` §4.6。
 | 建议 | Working title | slug | 暂缓原因 |
 |------|---------------|------|----------|
 | — | How to Grow a TikTok Shop Account (Without Ads) | `/blog/how-to-grow-on-tiktok-shop` | 与 #26/#27/#05 易 cannibalize；须严格边界 |
-| — | TikTok Shop Creator Account Types (Official / Marketing / Affiliate) | `/blog/tiktok-shop-creator-account-types` | 内部 `tiktok-shop-creator-types.md` 可转化；品牌/affiliate 双受众 |
+| — | TikTok Shop Creator Account Types (Official / Marketing / Affiliate) | `/blog/tiktok-shop-creator-account-types` | 内部 [use-cases/platform-taxonomy.md](./use-cases/platform-taxonomy.md) 可转化；品牌/affiliate 双受众 |
 | — | Open Collaboration Playbook for Brands | `/blog/tiktok-shop-open-collaboration` | 偏品牌 ICP；与 #09 重叠风险 |
 
 ### 明确不写（产品页 / 已有 Canonical）

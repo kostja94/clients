@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "robots-txt",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "robots.txt — crawl budget control, Disallow/Allow syntax, sitemap reference, and AI crawler management",
+  "differentiator_vs_generic": "This is robots.txt crawl directives and bot management, NOT GEO/LLM chat. Hero must be a monospace robots.txt file panel with User-agent, Disallow, and Sitemap lines, NOT an AI chat or LLM interface.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Plain-text robots.txt editor panel — monospace block with User-agent: *, Disallow: /cart/, /checkout/, Allow: /blog/, Sitemap: line, mars-green accent on Disallow rows",
+    "Secondary: crawler bot icons at path gates — one bot blocked (red X) at /admin/, one allowed (green check) at /blog/",
+    "Tertiary: crawl budget funnel tear-out (wide crawl arrow narrowing to priority pages blur)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is robots.txt SEO not GEO)",
+    "AI chatbot managing crawlers visually",
+    "Generic robot mascot alone without robots.txt syntax",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "ROBOTS.TXT",
+      "headline_line2": "(2026)",
+      "subtitle": "Syntax, Crawl Budget & Bots",
+      "tagline": "Disallow · Allow · Sitemap · AI Crawlers",
+      "composition": "Visual-only editorial collage for robots.txt guide. HERO: robots.txt monospace file panel occupying right two-thirds — visible User-agent, Disallow, Allow, Sitemap directives with mars-green accent on Disallow lines. Secondary: bot icons at blocked vs allowed path gates. Tertiary: crawl budget funnel diagram. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic/GPTBot branding, NO real Googlebot logo, NO readable domain names in Sitemap line."
+    },
+    "zh": {
+      "headline": "robots.txt 指南",
+      "headline_line2": "（2026）",
+      "subtitle": "语法、抓取预算与爬虫",
+      "composition": "Same layout as EN: robots.txt file panel HERO + bot gate icons + crawl funnel. Title top-left, NO LLM chat, NO AI chat UI, NO blank cards."
+    }
+  }
+}

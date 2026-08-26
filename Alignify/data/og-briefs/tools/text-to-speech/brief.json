@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "text-to-speech",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI text-to-speech tools — scripts to natural voice audio with controls",
+  "differentiator_vs_generic": "Script editor with voice picker and playback waveform preview, NOT speech-to-text transcript or lip-sync face video.",
+  "visual_anchors": [
+    "HERO: TTS studio — script text panel, voice avatar picker strip, and audio waveform player with speed/emotion sliders",
+    "Compact paste-text card arrow into generated audio waveform with download chip",
+    "2x2 grid of TTS outputs (multilingual voice, SSML tags, audiobook chapter, API stream tile) — UI only"
+  ],
+  "anti_patterns": [
+    "STT transcript hero",
+    "Lip-sync face video",
+    "Music DAW",
+    "Blank speaker icon"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TEXT-TO-SPEECH TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Voices · Script · Audio",
+      "tagline": "Natural Speech from Text",
+      "composition": "Visual-only collage for AI text-to-speech tools comparison: (1) HERO TTS studio with script, voice picker, and waveform on right two-thirds. (2) Paste text arrow into audio output. (3) 2x2 grid of four TTS output UI tiles. (4) Magnifying glass on waveform segment. Paper collage, halftone. No STT hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI文字转语音工具",
+      "headline_line2": "（2026）",
+      "subtitle": "音色 · 脚本 · 音频",
+      "composition": "Same layout as EN: TTS studio HERO + paste text flow + 2x2 output grid + magnifying glass on waveform. Title top-left only, NO extra Chinese UI labels, NO STT hero, NO blank cards."
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 **材料范围**：Google Search Central《How Google Search works》《A guide to Google Search ranking systems》等官方文档要点；公开检索中对「三阶段」与「算法/系统」关系的归纳。**未**将 Alignify 站内页面 JSON 当作事实来源复述。网摘整理日期 **2026-04-20**。
 
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md) · 本分册说明：[seo/README.md](./README.md) · 工作流向量：[checklist.md](./checklist.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 工作流向量：[checklist.md](./checklist.md)
 
 以下条目可任意顺序阅读；**不是**文章体例。文中「Google」阶段命名以官方为准；业界口语常把第三阶段统称「排名（Ranking）」——与官方「Serving search results（向用户呈现结果）」大致同一段流水线，但**不等同于**「单一排名公式」。
 
@@ -108,7 +108,7 @@
 
 - **本分册**：[checklist.md](./checklist.md)
 - **互补（谁访问站点）**：[crawler.md](./crawler.md) — 搜索蜘蛛 / AI / Agent / 第三方 / 恶意流量谱系与治理；本文不展开 UA 长名单与验真细节，避免与 `crawler` 页重复维护。
-- **规范级**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md)
+- **规范级**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md)
 
 ---
 

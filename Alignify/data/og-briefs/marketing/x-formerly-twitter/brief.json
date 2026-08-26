@@ -1,0 +1,33 @@
+{
+  "section": "marketing",
+  "slug": "x-formerly-twitter",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "X (Twitter) marketing — Grok AI algorithm, TweepCred, engagement ranking signals",
+  "visual_anchors": [
+    "HERO: X-style post card — bold text post with reply/repost/like/bookmark icon row and high reply count accent",
+    "TweepCred credibility gauge meter (0-100 arc, blurred score)",
+    "7 ranking signal chips in a row (recency, engagement, media, etc. — blurred text OK)"
+  ],
+  "anti_patterns": [
+    "Official X/Twitter bird logo",
+    "Reddit post card (different platform)",
+    "Email inbox hero",
+    "Generic social media collage without X post layout"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "X MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "Grok AI & TweepCred",
+      "tagline": "Algorithm · Engagement · Growth",
+      "composition": "Visual-only collage for X marketing strategy guide. HERO: X-style post card with left avatar, post text blur, bottom engagement row (reply highest accent). Secondary: TweepCred score gauge arc. Tertiary: row of 7 small ranking signal chips. Paper collage. NO official X logo, NO Reddit UI."
+    },
+    "zh": {
+      "headline": "X营销策略",
+      "headline_line2": "（2026）",
+      "subtitle": "Grok算法与信誉",
+      "composition": "Same: X post card HERO + TweepCred gauge + signal chips. Title top-left, NO X logo, NO extra labels, NO blank cards."
+    }
+  }
+}

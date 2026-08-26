@@ -1,0 +1,138 @@
+# Sparki AI Assistant 流量来源注册表 — ai-traffic-report 主数据源
+# 维护规则：发现新 AI 引荐源时追加；GA4 中 sessionSource 变化时更新 matchPatterns
+
+meta:
+  property: sparki.io
+  ga4PropertyNote: "sparki.io 主站 GA4 属性；Enterprise / 子域若为独立属性需单独配置"
+  lastUpdated: "2026-08-24"
+  maintainer: growth-team
+
+# GA4 Data API / Explore 共用的 sessionSource 正则（PARTIAL_REGEXP）
+# 维护：发现新 AI 引荐域时同步更新 sourceRegex 与 aiSources[]
+sourceRegex: >-
+  chatgpt\.com|openai\.com|perplexity\.ai|copilot\.microsoft\.com|gemini\.google|bard\.google\.com|claude\.ai|anthropic\.com|edgeservices\.bing\.com|poe\.com|chat\.deepseek\.com|you\.com|phind\.com|meta\.ai|mistral\.ai|pi\.ai|character\.ai
+
+matching:
+  # AI 流量常见 channel；不限于 Referral（部分助手会记为 Unassigned / Organic Social）
+  channelGroups:
+    - Referral
+    - Unassigned
+    - Organic Social
+  sourceNormalization: strip_www
+
+# 自有域排除（self-referral）
+trafficExclusions:
+  domains:
+    - sparki.io
+    - app.sparki.io
+
+# 转化事件名（与 GA4 实际配置对齐；若事件名不同请修改）
+conversionEvents:
+  - sign_up
+  - login
+  - purchase
+  - begin_checkout
+
+# 按 AI 助手分类；matchPatterns 用于 sessionSource / pageReferrer 域名匹配
+aiSources:
+  - id: chatgpt
+    label: ChatGPT
+    category: chat-assistant
+    matchPatterns:
+      - chatgpt.com
+      - openai.com
+
+  - id: claude
+    label: Claude
+    category: chat-assistant
+    matchPatterns:
+      - claude.ai
+      - anthropic.com
+
+  - id: perplexity
+    label: Perplexity
+    category: search-assistant
+    matchPatterns:
+      - perplexity.ai
+
+  - id: copilot
+    label: Microsoft Copilot
+    category: search-assistant
+    matchPatterns:
+      - copilot.microsoft.com
+      - edgeservices.bing.com
+
+  - id: gemini
+    label: Google Gemini
+    category: chat-assistant
+    matchPatterns:
+      - gemini.google
+      - bard.google.com
+
+  - id: deepseek
+    label: DeepSeek
+    category: chat-assistant
+    matchPatterns:
+      - chat.deepseek.com
+      - deepseek.com
+
+  - id: poe
+    label: Poe
+    category: aggregator
+    matchPatterns:
+      - poe.com
+
+  - id: you
+    label: You.com
+    category: search-assistant
+    matchPatterns:
+      - you.com
+
+  - id: phind
+    label: Phind
+    category: search-assistant
+    matchPatterns:
+      - phind.com
+
+  - id: meta-ai
+    label: Meta AI
+    category: chat-assistant
+    matchPatterns:
+      - meta.ai
+
+  - id: mistral
+    label: Mistral / Le Chat
+    category: chat-assistant
+    matchPatterns:
+      - mistral.ai
+      - chat.mistral.ai
+
+  - id: pi
+    label: Pi
+    category: chat-assistant
+    matchPatterns:
+      - pi.ai
+
+  - id: character
+    label: Character.ai
+    category: chat-assistant
+    matchPatterns:
+      - character.ai
+
+# GEO 内容集群 — 用于报告 §5 落地页 × 内容策略对照（非 GA4 必填）
+geoContentClusters:
+  - id: agent-positioning
+    label: AI editing agent / conversational editing
+    priorityPaths:
+      - /
+      - /features/copy-style
+      - /features/long-to-short
+  - id: video-types
+    label: Vlog / Commentary / Montage / Talking-head
+    priorityPaths: []
+    notes: "场景页待建时可留空"
+  - id: pricing-conversion
+    label: Pricing & signup
+    priorityPaths:
+      - /
+      - /pricing

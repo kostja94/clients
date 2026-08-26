@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "branded-queries-filter-google-search-console",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Google Search Console branded vs non-branded query filter — separating brand navigation traffic from organic topic discovery for accurate SEO measurement",
+  "differentiator_vs_generic": "This is GSC Performance report filtering education, NOT brand marketing creative. Hero must show Search Console with an active Branded queries / Non-branded queries filter chip and split metric bars — NOT an AI chat panel or generic analytics pie chart.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Google Search Console Performance report mockup — date-range header, active filter pill labeled 'Branded queries' with accent border, clicks/impressions/CTR metric row below, query table with blurred brand vs generic query rows split visually (left column warmer tone, right cooler)",
+    "Secondary: Insights report branded-traffic card — two horizontal bars comparing branded vs non-branded click share (no numeric labels, proportional widths only)",
+    "Tertiary: filter dropdown UI fragment showing Query > Branded / Non-branded options with one option highlighted"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "Generic Google Analytics acquisition pie without GSC context",
+    "Brand logo wall or PR campaign imagery unrelated to query filtering",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "GSC BRANDED FILTER",
+      "headline_line2": "(2026)",
+      "subtitle": "Brand vs Non-Brand Queries",
+      "tagline": "Search Console · Performance Split",
+      "composition": "Visual-only editorial collage for GSC branded query filter guide. HERO: realistic but generic Search Console Performance report occupying right two-thirds — active 'Branded queries' filter chip with titian-red accent border, metric summary row (clicks/impressions/CTR blur), query table with visually split branded vs non-branded rows. Secondary: Insights branded-traffic comparison card with two proportional bars. Tertiary: Query filter dropdown fragment. Title block top-left only. Paper torn edges, halftone. NO LLM chat UI, NO real Google logo, NO readable query strings, NO extra filter labels as body text."
+    },
+    "zh": {
+      "headline": "GSC品牌查询过滤",
+      "headline_line2": "（2026）",
+      "subtitle": "品牌与非品牌流量拆分",
+      "composition": "Same layout as EN: GSC Performance HERO with branded filter chip + split query table + Insights card bars. Title top-left, NO LLM chat, NO real Google logo, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

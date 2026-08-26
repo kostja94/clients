@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "website-builder",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI website builder tools — sections, copy, and publish from prompt",
+  "differentiator_vs_generic": "Section-based page builder with drag blocks and live site preview browser frame, NOT mobile app builder or logo generator.",
+  "visual_anchors": [
+    "HERO: Website builder canvas — draggable section blocks (hero, features, pricing, footer) with live browser preview frame updating",
+    "Compact site prompt card arrow into generated multi-section landing page preview",
+    "2x2 grid of built site types (SaaS landing, portfolio, blog, ecommerce storefront) — browser frames only"
+  ],
+  "anti_patterns": [
+    "Mobile app builder phone hero",
+    "Logo mark grid",
+    "Code IDE",
+    "Empty browser window"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI WEBSITE BUILDERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Sections · Copy · Publish",
+      "tagline": "Sites Live in Minutes",
+      "composition": "Visual-only collage for AI website builder tools comparison: (1) HERO section builder with live browser preview on right two-thirds. (2) Site prompt arrow into landing page preview. (3) 2x2 grid of four site type browser frames. (4) Magnifying glass on section block detail. Paper collage, halftone. No app builder hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI建站工具",
+      "headline_line2": "（2026）",
+      "subtitle": "区块 · 文案 · 发布",
+      "composition": "Same layout as EN: website builder HERO + site prompt flow + 2x2 site grid + magnifying glass on section block. Title top-left only, NO extra Chinese UI labels, NO app builder hero, NO blank cards."
+    }
+  }
+}

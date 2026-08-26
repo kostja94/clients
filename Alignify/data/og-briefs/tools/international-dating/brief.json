@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "international-dating",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "International dating apps — cross-border matching, translation, cultural filters, long-distance connection tools",
+  "differentiator_vs_generic": "Globe with connection arcs between timezone-staggered profile cards and live translation ribbon, NOT generic local swiping UI or AI character chat.",
+  "visual_anchors": [
+    "HERO: World map vignette with curved connection arcs linking three profile cards at different longitudes, small timezone clock chips and auto-translate ribbon between chat bubbles",
+    "Match stack card with country/culture filter chips and verified passport badge icon",
+    "2x2 grid of international dating tiles (video date scheduler, translation chat, culture quiz, safety verify row) — UI only"
+  ],
+  "anti_patterns": [
+    "Generic local Tinder-style swipe stack hero",
+    "AI fictional character chat companion",
+    "Family calendar assistant hero",
+    "Empty profile card placeholder"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST INTERNATIONAL DATING APPS",
+      "headline_line2": "(2026)",
+      "subtitle": "Match · Translate · Connect",
+      "tagline": "Love Across Time Zones",
+      "composition": "Visual-only collage for international dating tools comparison: (1) HERO globe map with profile arc connections and translation ribbon on right two-thirds. (2) Match card with culture filter chips. (3) 2x2 grid of four dating UI tiles. (4) Magnifying glass on translation bubble detail. Paper collage, halftone. No local swipe hero, no AI character chat, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳国际交友应用",
+      "headline_line2": "（2026）",
+      "subtitle": "匹配 · 翻译 · 跨国",
+      "composition": "Same layout as EN: globe arc connection HERO + culture filter match card + 2x2 dating grid + magnifying glass on translation bubble. Title top-left only, NO extra Chinese UI labels, NO swipe-stack hero, NO blank cards. Titian-red accents."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "website-structure",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Website structure SEO — IA hierarchy, flat architecture, internal linking, navigation, and crawl depth optimization",
+  "differentiator_vs_generic": "This is traditional information architecture SEO education, NOT GEO/LLM chat. Hero must show a site hierarchy tree with hub-and-spoke internal link flow and shallow click depth — NOT an AI chat panel or generic sitemap XML file.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Site IA tree diagram — root Homepage node branching to 4 first-level hubs (Blog, Products, Docs, About), each with 2-3 child page nodes; accent internal-link arrows flowing from homepage through hubs to deep pages; click-depth counter showing ≤3 clicks badge on leaf nodes",
+    "Secondary: flat vs deep hierarchy contrast — wide shallow tree (good, highlighted) vs narrow deep ladder (dimmed, crossed)",
+    "Tertiary: breadcrumb trail mockup Home > Category > Page beneath tree root"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is site architecture not GEO)",
+    "XML sitemap file as hero (that belongs to sitemap page)",
+    "Generic wireframe without hierarchy depth concept",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "SITE STRUCTURE",
+      "headline_line2": "(2026)",
+      "subtitle": "IA, Navigation & Crawl Depth",
+      "tagline": "Flat Hierarchy · Internal Links",
+      "composition": "Visual-only editorial collage for website structure SEO guide. HERO: site IA tree diagram occupying right two-thirds — Homepage root branching to Blog/Products/Docs/About hubs with child page nodes, accent klein-blue internal-link arrows flowing hub-to-spoke, ≤3 clicks badge on leaves. Secondary: flat wide tree (highlighted) vs deep narrow ladder (dimmed) contrast inset. Tertiary: breadcrumb Home > Category > Page trail. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO XML sitemap syntax, NO real brand site names."
+    },
+    "zh": {
+      "headline": "网站结构SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "架构·导航·爬取深度",
+      "composition": "Same layout as EN: IA tree HERO with hub-spoke links + flat vs deep contrast + breadcrumb trail. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

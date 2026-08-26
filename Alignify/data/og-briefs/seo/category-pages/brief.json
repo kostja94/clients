@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "category-pages",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Category, Hub, Directory, and Explore pages — topical aggregation, internal linking hubs, and SEO best practices for large sites",
+  "differentiator_vs_generic": "This is information-architecture category/hub page design, NOT e-commerce product grids alone. Hero must show a hub page layout — intro copy block plus grouped link clusters radiating to spoke URLs — NOT an LLM chat panel or empty card grid.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Hub/category page wireframe — top: short intro text block blur; middle: 3-column grouped link sections (Topic A / Topic B / Topic C headers blurred) each with 4-5 child link rows; bottom: pagination or 'load more' bar — hub-and-spoke feel with accent arrows from center intro to columns",
+    "Secondary: small sitemap tree diagram — root node branching to category parent nodes then leaf URLs (minimal labels, node dots only)",
+    "Tertiary: breadcrumb + category URL slug bar aligned above hub (Home > Tools > Category pattern, blurred)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "Pure e-commerce product tile grid without hub intro copy",
+    "Generic sitemap XML text dump as hero",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "CATEGORY PAGES",
+      "headline_line2": "(2026)",
+      "subtitle": "Hub · Directory · Explore SEO",
+      "tagline": "Internal Links · Topical Authority",
+      "composition": "Visual-only editorial collage for category/hub page SEO guide. HERO: hub page layout occupying right two-thirds — intro paragraph block at top, three grouped link-list columns below with blurred section headers and child links, subtle hub-and-spoke connector lines in klein-blue from intro to columns. Secondary: compact sitemap tree with root and category nodes. Tertiary: breadcrumb slug bar above hub. Title top-left only. Paper torn edges, halftone. NO LLM chat UI, NO real site names, NO ranking numbers, NO faceted filter explosion UI."
+    },
+    "zh": {
+      "headline": "分类页面SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "Hub与内链枢纽优化",
+      "composition": "Same layout as EN: hub page with intro + grouped link columns HERO, sitemap tree + breadcrumb secondary. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

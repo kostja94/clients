@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "virtual-staging",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI virtual staging tools — empty rooms to furnished listing photos",
+  "differentiator_vs_generic": "Before/after room photo split with furniture overlay and style picker, NOT real-estate comp map or 3D CAD floor plan.",
+  "visual_anchors": [
+    "HERO: Virtual staging split — empty room photo tearing into furnished listing photo with style picker strip (modern, coastal, luxury)",
+    "Compact upload empty-room card arrow into staged hero image with furniture layer toggles",
+    "2x2 grid of staged styles (living room, bedroom, kitchen, exterior twilight) — photos only"
+  ],
+  "anti_patterns": [
+    "Real estate comp map hero",
+    "3D CAD floor plan viewport",
+    "Interior design moodboard unrelated",
+    "Empty room white box"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIRTUAL STAGING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Empty · Furnished · Listings",
+      "tagline": "Stage Homes in Seconds",
+      "composition": "Visual-only collage for AI virtual staging tools comparison: (1) HERO empty-to-furnished room split with style picker on right two-thirds. (2) Upload card arrow into staged photo with layer toggles. (3) 2x2 grid of four staged room photo outputs. (4) Magnifying glass on furniture overlay edge. Paper collage, halftone. No comp map hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI虚拟软装工具",
+      "headline_line2": "（2026）",
+      "subtitle": "空房 · 软装 · 房源",
+      "composition": "Same layout as EN: virtual staging HERO + upload flow + 2x2 room grid + magnifying glass on overlay edge. Title top-left only, NO extra Chinese UI labels, NO comp map hero, NO blank cards."
+    }
+  }
+}

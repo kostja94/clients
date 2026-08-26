@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "ai-components",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI components — Prompt-as-Component marketplaces and Registry+MCP platforms that inject differentiated UI into Vibe Coding tools (Bolt, Lovable, v0, Cursor)",
+  "differentiator_vs_generic": "This is browse gallery → copy prompt → paste into AI builder → unique UI output — NOT generic code editor, NOT Figma design files. Hero must show component gallery feeding a vibe-coding chat with visibly different landing page output vs cookie-cutter template.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split workflow — left: categorized component gallery grid (Hero/Pricing/FAQ section thumbnails), center: copied prompt clipboard arrow, right: vibe-coding tool chat panel generating a distinctive landing page preview (bold layout, not generic SaaS template)",
+    "Secondary: before/after de-homogenization — two landing previews side by side, left grey identical template, right mars-green-accent custom branded page",
+    "Tertiary: MCP registry connection — small server node with manifest.json tile linking to AI IDE agent icon"
+  ],
+  "anti_patterns": [
+    "Generic IDE without component gallery",
+    "Figma/design-file canvas as hero",
+    "LLM chat alone without component source or UI output",
+    "npm package install terminal as primary visual",
+    "Homogeneous identical SaaS pages with no contrast"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "AI COMPONENTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Differentiated UI for Vibe Coding",
+      "tagline": "Prompt-as-Component · Registry MCP",
+      "composition": "Visual-only editorial collage for AI components guide. HERO: right two-thirds — three-panel flow: component gallery strip with blurred UI block thumbnails (header/pricing/FAQ categories), arrow into vibe-coding chat window, emerging landing page preview with mars-green accent hero section clearly distinct from template aesthetic. Secondary: before/after twin previews — cookie-cutter grey SaaS vs custom branded page. Tertiary: MCP registry node connecting to coding agent avatar. Title block top-left only. Paper torn edges, halftone. NO Figma UI, NO LLM-only hero, NO real Jiro/shadcn logos, NO readable prompt text, NO npm CLI terminal focus."
+    },
+    "zh": {
+      "headline": "AI组件",
+      "headline_line2": "（2026）",
+      "subtitle": "Vibe Coding差异化UI",
+      "composition": "Same layout as EN: HERO gallery→prompt→vibe-coding output flow + before/after de-homogenization + MCP registry link. Title top-left, NO Figma hero, NO LLM-only panel, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

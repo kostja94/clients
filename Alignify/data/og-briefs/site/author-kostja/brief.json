@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "author-kostja",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Kostja Zhang founder profile — growth operator turned indie builder; 100+ AI products, Oginify shipped 2026",
+  "differentiator_vs_generic": "Personal brand / founder profile, NOT company About page or channel index. HERO must show portrait silhouette + operator-to-builder arc timeline.",
+  "visual_anchors": [
+    "HERO: Founder profile card — portrait silhouette in circular frame + arc timeline (Linguistics → Operator 2022 → Builder 2025 → Oginify 2026) with milestone dots",
+    "Secondary: stats row blur (100+ products, 3 years, shipped 2026)",
+    "Tertiary: dual-hand loop sketch (operate + build) as personal brand motif"
+  ],
+  "anti_patterns": [
+    "Company three-alignments About hero",
+    "Channel hub columns",
+    "Generic avatar stock photo face",
+    "Empty timeline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "KOSTJA ZHANG",
+      "headline_line2": "",
+      "subtitle": "Growth Operator · Indie Builder",
+      "tagline": "100+ AI Products · Now Shipping My Own",
+      "composition": "Visual-only collage for founder profile page. HERO: portrait silhouette + operator-to-builder arc timeline on right two-thirds. Secondary: stats blur row. Tertiary: dual-hand loop sketch. Title top-left. Paper collage, halftone. NO company About motifs, NO hub columns, NO stock face photo, NO blank timeline."
+    },
+    "zh": {
+      "headline": "Kostja Zhang",
+      "headline_line2": "",
+      "subtitle": "增长运营 · 独立构建者",
+      "composition": "Same layout as EN: portrait + arc timeline HERO + stats + dual-hand loop. Title top-left, NO About page motifs, NO extra Chinese UI labels, NO blank timeline."
+    }
+  }
+}

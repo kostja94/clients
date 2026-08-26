@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "inference-infrastructure",
+  "analyzed_at": "2026-08-25T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI inference platforms — GPU scheduling, vLLM/SGLang engines, serverless vs dedicated deployment, and multi-cloud orchestration at production scale",
+  "differentiator_vs_generic": "This is production inference infrastructure comparison, NOT model training or generic cloud hosting. Hero must show an inference pipeline — API request → GPU cluster → token stream with latency/throughput metrics — NOT a chat UI or training loss curve.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Inference pipeline diagram — incoming API request chip on left, GPU rack cluster block in center with vLLM/SGLang engine label blur, streaming token output on right with tok/s and TTFT metric badges (50–150ms, 840 tok/s blurs)",
+    "Secondary: multi-cloud node constellation — 4 provider cloud icons (generic, no real logos) connected by routing arrows to single endpoint",
+    "Tertiary: serverless vs dedicated tier split bar — elastic scale-to-zero left half vs fixed GPU instance right half"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is infra not conversation)",
+    "Training loss curve or fine-tuning UI",
+    "Real vendor logos (Baseten, Together, Fireworks)",
+    "Generic server rack without token-stream output"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "AI INFERENCE",
+      "headline_line2": "(2026)",
+      "subtitle": "Platforms & Production Scale",
+      "tagline": "vLLM · Serverless · Multi-Cloud",
+      "composition": "Visual-only editorial collage for AI inference infrastructure guide. HERO: inference pipeline occupying right two-thirds — API request chip → GPU cluster block with engine label → streaming token output with tok/s and TTFT metric badges. Secondary: 4 generic cloud provider nodes with routing arrows. Tertiary: serverless vs dedicated deployment split bar. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real vendor logos, NO training charts, NO extra text labels."
+    },
+    "zh": {
+      "headline": "AI推理基础设施",
+      "headline_line2": "（2026）",
+      "subtitle": "平台与生产级部署",
+      "composition": "Same layout as EN: inference pipeline HERO with GPU cluster + token stream + multi-cloud nodes + serverless/dedicated split. Title top-left, NO LLM chat, NO vendor logos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

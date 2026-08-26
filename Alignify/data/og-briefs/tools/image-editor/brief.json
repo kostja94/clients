@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "image-editor",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI image editors — generative fill, inpaint, object remove/replace, compositing on existing photos",
+  "differentiator_vs_generic": "Inpaint lasso selection with generative fill ghost preview overlay, NOT resolution upscaler before/after or T2I prompt grid.",
+  "visual_anchors": [
+    "HERO: Image editor canvas with marching-ants lasso around removed object zone and semi-transparent AI generative fill preview ghost replacing the selection",
+    "Tool rail vignette: brush, erase, generative fill, sky replace icons (generic, no logos)",
+    "2x2 grid of edit result stills (object removed, background swapped, element added, composite blend) — before/after pairs as small tiles"
+  ],
+  "anti_patterns": [
+    "Resolution upscaler before/after hero",
+    "Text-to-image prompt grid hero",
+    "Relighting light-orb hero",
+    "Empty canvas white square"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI IMAGE EDITORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Inpaint · Remove · Replace",
+      "tagline": "Edit What's Already There",
+      "composition": "Visual-only collage for AI image editor tools comparison: (1) HERO inpaint lasso with generative fill ghost preview on right two-thirds. (2) Tool rail icon vignette. (3) 2x2 grid of four edit result tiles. (4) Magnifying glass on fill blend edge detail. Paper collage, halftone. No upscaler hero, no T2I grid, no blank canvas."
+    },
+    "zh": {
+      "headline": "最佳AI图片编辑器",
+      "headline_line2": "（2026）",
+      "subtitle": "填充 · 移除 · 替换",
+      "composition": "Same layout as EN: inpaint generative fill HERO + tool rail + 2x2 edit grid + magnifying glass on blend edge. Title top-left only, NO extra Chinese UI labels, NO upscaler hero, NO blank cards. Mars-green accents."
+    }
+  }
+}

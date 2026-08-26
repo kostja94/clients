@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "agentic-commerce",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Agentic commerce — AI agents execute shopping tasks (discovery, comparison, delegated checkout) within user-authorized budgets, bridging the discovery–transaction gap",
+  "differentiator_vs_generic": "This is delegated agent shopping journey in chat — product comparison and in-chat checkout — NOT payment protocol rails (that's agentic-payments), NOT generic e-commerce homepage. Hero must show conversational shopping with product cards and cart inside a chat delegate flow.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Shopping-in-chat panel — user mandate bubble at top ('boots under $200' blurred), assistant area below with 3 product comparison cards in a row (image thumbnails, price blur, checkmark on one selected), small in-chat cart icon with accent alignify-navy checkout arrow",
+    "Secondary: delegated budget envelope badge — spending cap ring around cart (authorized scope visual)",
+    "Tertiary: discovery-to-transaction gap strip — many product tabs faded on left collapsing into one chat checkout action on right"
+  ],
+  "anti_patterns": [
+    "Payment protocol stack diagram as hero (wrong article — see agentic-payments)",
+    "Generic Amazon-style storefront homepage",
+    "LLM chat with no product/commerce visuals",
+    "Credit card / x402 settlement rails as primary visual",
+    "Empty chat bubbles without product grid"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "AGENTIC COMMERCE",
+      "headline_line2": "(2026)",
+      "subtitle": "When AI Agents Shop for You",
+      "tagline": "Discovery · Compare · Checkout",
+      "composition": "Visual-only editorial collage for agentic commerce guide. HERO: right two-thirds — warm chat-style commerce panel (NOT dark GEO chat) with blurred user goal bubble, three horizontal product comparison cards with generic product silhouettes and price blurs, one card highlighted with alignify-navy accent border, mini cart + checkout chevron at bottom of panel. Secondary: circular budget cap ring around spend zone. Tertiary: collapsed multi-tab browser strip fading into single chat action. Title block top-left only. Paper torn edges, halftone. NO payment protocol layers, NO x402/AP2 text, NO real merchant logos, NO LLM-only hero without products, NO extra price text labels."
+    },
+    "zh": {
+      "headline": "代理式商务",
+      "headline_line2": "（2026）",
+      "subtitle": "AI智能体替你购物",
+      "composition": "Same layout as EN: HERO chat commerce panel with product comparison cards + in-chat cart + budget cap ring. Secondary: discovery-to-checkout collapse strip. Title top-left, NO payment protocol diagram, NO storefront homepage, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

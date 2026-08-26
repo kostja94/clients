@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "agent-for-desktop",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Desktop-native AI agents — local folder access, cowork loops, computer use",
+  "differentiator_vs_generic": "Desktop file explorer + agent cowork panel with local disk access, NOT cloud-only chat bubble or browser sandbox.",
+  "visual_anchors": [
+    "HERO: Split desktop UI — left file explorer sidebar with folder tree and local disk icon, right agent cowork panel with multi-step task checklist and blurred action lines",
+    "2x2 grid of desktop agent capabilities (file rename batch, spreadsheet edit, browser automation, terminal command) — mini UI vignettes",
+    "Compare motif: faded cloud-only chat bubble crossed out vs bold local folder access arrow"
+  ],
+  "anti_patterns": [
+    "Mobile chat app hero",
+    "Generic LLM chat without file tree",
+    "Virtual desktop screenshot with no local files",
+    "Empty agent panel"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST DESKTOP AI AGENTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Local Files · Cowork · Computer Use",
+      "tagline": "Agents That Touch Your Disk",
+      "composition": "Visual-only collage for desktop AI agent tools comparison: (1) HERO split view — file explorer folder tree left, agent cowork task panel right occupying two-thirds canvas. (2) 2x2 grid of four desktop action vignettes (files, spreadsheet, browser, terminal). (3) Subtle compare: small faded cloud chat vs local folder arrow accent. Paper collage, halftone. No mobile UI, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳桌面AI智能体",
+      "headline_line2": "（2026）",
+      "subtitle": "本机文件 · Cowork",
+      "composition": "Same layout as EN: file explorer + agent cowork HERO + 2x2 action grid + cloud vs local compare cue. Title top-left only, NO extra Chinese UI labels, NO blank agent panel, NO mobile chat hero."
+    }
+  }
+}

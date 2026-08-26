@@ -2,7 +2,7 @@
 
 本文为编辑部笔记，写给要在周报里解释「为什么 Direct 又高了」的增长与 SEO 同学：先把 **暗流量** 放在 **GA4 的分类规则**里理解，再决定是品牌真的变强，还是 **引荐与标记**在流失。文中展开成因框架与阅读顺序；**逐步排查、UTM 模板与截图级教程**仍以站上长文为准，不在此重复工单。
 
-**规范与分册**：[section-seo.md](../../section/section-seo.md) · [seo/README.md](./README.md) · [alignify-internal-links.md](../../content/alignify-internal-links.md)（正文内 **同一 Alignify 路径只链一次**，与专册 §1.4、§五 的节制一致）
+**规范与分册**：[section-seo.md](../../skills/create-article/rules/meta.md) · [seo/README.md](./README.md) · [alignify-internal-links.md](../../skills/create-article/rules/internal-links.md)（正文内 **同一 Alignify 路径只链一次**，与专册 §1.4、§五 的节制一致）
 
 ---
 

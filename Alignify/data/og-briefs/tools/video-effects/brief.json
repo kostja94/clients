@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "video-effects",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI video effects tools — template-driven VFX, style transfer, and cinematic filters on footage",
+  "differentiator_vs_generic": "Before/after video frame pair with effects template picker ribbon and VFX badge overlay, NOT raw T2V generator or offline NLE timeline alone.",
+  "visual_anchors": [
+    "HERO: Video effects board — before/after frame pair with dramatic VFX overlay (particles, anime style, slow-mo) and template picker ribbon below",
+    "Compact footage upload card arrow into effects preview thumbnail with slider scrubber",
+    "2x2 grid of effect outputs (anime style, particle burst, background replace, cinematic grade) — frame pairs only"
+  ],
+  "anti_patterns": [
+    "T2V prompt-to-clip hero",
+    "Empty NLE multi-track timeline",
+    "Image style transfer grid only",
+    "Blank before/after frames"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIDEO EFFECTS TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Templates · VFX · Style",
+      "tagline": "Pro Effects in One Click",
+      "composition": "Visual-only collage for AI video effects tools comparison: (1) HERO before/after VFX frame pair with template ribbon on right two-thirds. (2) Footage upload arrow into effects preview. (3) 2x2 grid of four effect output frame pairs. (4) Magnifying glass on VFX overlay detail. Paper collage, halftone. No T2V prompt hero, no empty timeline, no blank frames."
+    },
+    "zh": {
+      "headline": "最佳AI视频特效工具",
+      "headline_line2": "（2026）",
+      "subtitle": "模板 · 特效 · 风格",
+      "composition": "Same layout as EN: video effects HERO + upload flow + 2x2 effect grid + magnifying glass on VFX detail. Title top-left only, NO extra Chinese UI labels, NO T2V prompt hero, NO blank frames. Titian-red accents."
+    }
+  }
+}

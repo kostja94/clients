@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "b2b",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "B2B marketing tools — ICP targeting, outreach automation, sales pipeline growth",
+  "differentiator_vs_generic": "Sales pipeline CRM funnel with lead enrichment cards, NOT consumer social ads or affiliate dashboard.",
+  "visual_anchors": [
+    "HERO: B2B sales pipeline board — kanban/funnel stages (prospect, qualified, meeting, closed) with blurred company logo placeholders as dots not real brands",
+    "ICP targeting radar/map vignette with firmographic filter chips",
+    "2x2 grid of B2B workflow tiles (email sequence, LinkedIn outreach, account map, enrichment data card) — UI only"
+  ],
+  "anti_patterns": [
+    "Consumer Instagram ad creative",
+    "Affiliate referral link dashboard",
+    "Generic SEO SERP",
+    "Empty CRM white card"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST B2B MARKETING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "ICP · Outreach · Pipeline",
+      "tagline": "Enterprise Growth Automation",
+      "composition": "Visual-only collage for B2B marketing tools comparison: (1) HERO sales pipeline kanban/funnel with stage columns on right two-thirds. (2) ICP targeting radar vignette with filter chips. (3) 2x2 grid of four B2B workflow UI tiles. (4) Magnifying glass on lead enrichment row. Paper collage, halftone. No consumer social ads, no affiliate dashboard hero, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳B2B营销工具",
+      "headline_line2": "（2026）",
+      "subtitle": "ICP · 外展 · 销售管线",
+      "composition": "Same layout as EN: pipeline kanban HERO + ICP radar + 2x2 workflow grid + magnifying glass on lead row. Title top-left only, NO extra Chinese UI labels, NO consumer ad creative, NO blank cards. Titian-red accents."
+    }
+  }
+}

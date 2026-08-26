@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "animation-library",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Web animation libraries — React/Vue motion, easing curves, micro-interactions",
+  "differentiator_vs_generic": "Code editor with animation timeline/easing curve plus live UI micro-interaction demos, NOT anime storyboard or video generation.",
+  "visual_anchors": [
+    "HERO: Code editor panel showing animation keyframe timeline and bezier easing curve graph with accent highlight",
+    "2x2 grid of micro-interaction demo tiles (button hover bounce, card flip, page transition swipe, loading spinner morph) — motion implied visually",
+    "Magnifying glass over easing curve control point detail"
+  ],
+  "anti_patterns": [
+    "Anime storyboard strip hero",
+    "AI video film strip",
+    "3D viewport",
+    "Empty code editor"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST ANIMATION LIBRARIES",
+      "headline_line2": "(2026)",
+      "subtitle": "React · Vue · Micro-Interactions",
+      "tagline": "Smooth Web Motion APIs",
+      "composition": "Visual-only collage for web animation library tools comparison: (1) HERO code editor with keyframe timeline and easing curve graph on right two-thirds. (2) 2x2 grid of four UI micro-interaction demo tiles (hover, flip, swipe, loader). (3) Magnifying glass on bezier curve handle. Paper collage, halftone. No anime frames, no video strip, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳动画库",
+      "headline_line2": "（2026）",
+      "subtitle": "React · Vue · 微交互",
+      "composition": "Same layout as EN: code timeline + easing curve HERO + 2x2 micro-interaction grid + magnifying glass on curve. Title top-left only, NO extra Chinese UI labels, NO anime storyboard hero, NO blank cards."
+    }
+  }
+}

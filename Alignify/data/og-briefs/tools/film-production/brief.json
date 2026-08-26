@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "film-production",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI film production tools — script-to-screen pipeline, pre-vis, VFX, sound, editorial coordination",
+  "differentiator_vs_generic": "Multi-track production timeline with clapperboard header spanning script through post, NOT single anime storyboard strip or generic video generator prompt card.",
+  "visual_anchors": [
+    "HERO: Horizontal film production timeline — clapperboard header above five labeled tracks (script, storyboard, shoot, VFX, sound/edit) with colored blocks and dependency arrows",
+    "Compact script page vignette with blurred dialogue lines feeding into storyboard thumbnail strip",
+    "2x2 grid of production output frames (pre-vis frame, VFX comp, color grade still, final wide shot) — cinematic aspect only"
+  ],
+  "anti_patterns": [
+    "Anime storyboard-to-frame hero only",
+    "Single prompt-to-video card",
+    "Social media vertical reel grid",
+    "Empty timeline tracks"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI FILM PRODUCTION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Script · Pre-Vis · Post",
+      "tagline": "Full Pipeline to Picture Lock",
+      "composition": "Visual-only collage for AI film production tools comparison: (1) HERO multi-track production timeline with clapperboard header on right two-thirds. (2) Script vignette arrow into storyboard strip. (3) 2x2 grid of four cinematic output frames. (4) Magnifying glass on VFX layer detail. Paper collage, halftone. No anime-only storyboard hero, no T2V prompt card, no blank tracks."
+    },
+    "zh": {
+      "headline": "最佳AI电影制作工具",
+      "headline_line2": "（2026）",
+      "subtitle": "剧本 · 预演 · 后期",
+      "composition": "Same layout as EN: production timeline HERO + script-to-storyboard vignette + 2x2 cinematic grid + magnifying glass on VFX layer. Title top-left only, NO extra Chinese UI labels, NO anime storyboard-only hero, NO blank cards. Navy accents."
+    }
+  }
+}

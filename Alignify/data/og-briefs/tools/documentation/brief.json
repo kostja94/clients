@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "documentation",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Developer documentation tools — docs sites, auto-sync from code, and agent-ready API references",
+  "differentiator_vs_generic": "Docs site with sidebar nav and live sync arrow from Git repo commits, NOT generic note-taking app or customer support KB widget.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Documentation site frame — left sidebar nav tree (API, SDK, Guides blurred), main content with code sample block and version badge, sync pulse arrow from Git commit icon",
+    "Auto-update ribbon: code change → docs PR → publish icons linked by torn-paper arrows (blurred labels only)",
+    "2x2 grid of docs output tiles (API reference page, changelog, interactive playground, search results) — UI fragments only",
+    "Magnifying glass zooming on code sample block and parameter table row"
+  ],
+  "anti_patterns": [
+    "Generic notebook or Notion page hero",
+    "Customer support chat widget",
+    "Marketing landing page builder",
+    "Empty docs sidebar with blank content"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST DEV DOCUMENTATION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Docs · Sync · API",
+      "tagline": "Docs That Stay in Sync With Code",
+      "composition": "Visual-only collage for developer documentation tools comparison: (1) HERO docs site with sidebar nav, code sample, and Git sync arrow on right two-thirds. (2) Auto-update ribbon (code, PR, publish). (3) 2x2 grid of four docs page tiles. (4) Magnifying glass on code sample parameter row. Title top-left only. Paper collage, halftone. No notebook hero, no support widget, no ranking text, no blank docs page."
+    },
+    "zh": {
+      "headline": "最佳开发者文档工具",
+      "headline_line2": "（2026）",
+      "subtitle": "文档 · 同步 · API",
+      "composition": "Same layout as EN: docs site HERO with nav + sync arrow + 2x2 page grid + magnifying glass on code sample. Title top-left only, NO extra Chinese UI labels, NO notebook or support hero, NO blank docs page."
+    }
+  }
+}

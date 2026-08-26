@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "lead-generation",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI lead generation tools — prospect discovery, waterfall enrichment, scoring, and automated outreach sequences",
+  "differentiator_vs_generic": "Waterfall enrichment flow diagram routing prospect card through stacked data provider chips to verified email badge, NOT full B2B marketing kanban or investor CRM.",
+  "visual_anchors": [
+    "HERO: Waterfall enrichment pipeline — prospect company card enters top, cascades through four stacked provider chips (A→B→C→D arrows), exits with green verified email/phone badge",
+    "ICP filter chip row: industry, headcount, tech stack, intent signal (blurred values)",
+    "2x2 grid of lead-gen workflow tiles (prospect search, enrichment waterfall, lead score meter, email sequence row) — UI only"
+  ],
+  "anti_patterns": [
+    "Investor fundraising CRM kanban hero",
+    "Full B2B marketing funnel billboard",
+    "Recruiting candidate pipeline hero",
+    "Empty CRM white card"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI LEAD GENERATION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prospects · Enrich · Outreach",
+      "tagline": "Find the Right Buyer Faster",
+      "composition": "Visual-only collage for AI lead generation tools comparison: (1) HERO waterfall enrichment pipeline with verified badge exit on right two-thirds. (2) ICP filter chip row. (3) 2x2 grid of four lead-gen UI tiles. (4) Magnifying glass on verified email badge detail. Paper collage, halftone. No investor CRM hero, no recruiting ATS, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI线索生成工具",
+      "headline_line2": "（2026）",
+      "subtitle": "潜客 · 充实 · 外展",
+      "composition": "Same layout as EN: waterfall enrichment HERO + ICP chip row + 2x2 lead-gen grid + magnifying glass on verified badge. Title top-left only, NO extra Chinese UI labels, NO investor CRM hero, NO blank cards. Navy accents."
+    }
+  }
+}

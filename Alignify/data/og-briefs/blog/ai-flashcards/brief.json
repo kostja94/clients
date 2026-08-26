@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "ai-flashcards",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI flashcard tools — active recall and FSRS spaced repetition with AI-generated Q&A from PDFs, lectures, and videos",
+  "differentiator_vs_generic": "This is science-backed retrieval practice with algorithmic review scheduling — NOT homework photo-to-answer rescue, NOT generic study desk. Hero must be a flashcard flip moment plus spaced repetition timeline on a forgetting curve.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Large tilted flashcard mid-flip — question side visible, answer side peeking, titian-red accent edge; below card: FSRS spaced repetition timeline with 4-5 review dots at expanding intervals along a decay curve",
+    "Secondary: source-to-cards pipeline — PDF/lecture doc icon → arrow → stack of auto-generated Q&A card pairs (blurred text)",
+    "Tertiary: active recall vs re-read contrast — highlighted textbook faded/X'd vs retrieval checkmark on flashcard"
+  ],
+  "anti_patterns": [
+    "Homework photo-to-answer camera UI",
+    "Generic notebook/highlighter study scene as hero",
+    "LLM chat tutor panel as hero",
+    "Quiz game leaderboard without flashcard or schedule",
+    "Empty card grid with no spacing algorithm visual"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "AI FLASHCARD MAKERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Spaced Repetition & Active Recall",
+      "tagline": "FSRS · Source-to-Cards · Retrieval",
+      "composition": "Visual-only editorial collage for AI flashcard tools guide. HERO: right two-thirds — oversized flashcard at flip angle with blurred Q on front and partial A on back, titian-red card edge; beneath it a forgetting-curve graph with spaced review dots at widening intervals (FSRS schedule visual). Secondary: PDF icon feeding into vertical stack of 3 mini flashcards. Tertiary: faded highlighted notes crossed out vs flashcard with retrieval checkmark. Title block top-left only. Paper torn edges, halftone. NO homework camera UI, NO LLM chat hero, NO real Quizlet branding, NO readable question text on cards, NO leaderboard gamification focus."
+    },
+    "zh": {
+      "headline": "AI闪卡生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "间隔重复与主动提取",
+      "composition": "Same layout as EN: HERO flipping flashcard + FSRS spaced timeline on forgetting curve + source-to-cards pipeline + active-recall contrast. Title top-left, NO homework photo UI, NO LLM chat hero, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

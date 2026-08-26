@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "data-engineering-agent",
+  "analyzed_at": "2026-08-24T18:20:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Data engineering agents — autonomous pipeline generation, schema drift detection, and self-healing data ops via Observe→Reason→Act→Remember loops",
+  "differentiator_vs_generic": "This is DE agent orchestration atop dbt/Airflow/Snowflake (Datus, Genie Code, BigQuery DE Agent), NOT ChatBI for analysts, NOT generic AI chat. Hero must be a pipeline DAG with schema-drift alert and agent auto-remediation loop.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Data pipeline DAG canvas — 5-6 connected nodes (source table, transform, warehouse blur labels) with one broken edge highlighted mars-green and agent wrench icon patching it",
+    "Observe→Reason→Act→Remember loop ring with 4 segment blur labels around the DAG",
+    "Secondary: schema drift diff panel — two column headers with added/deprecated column blur rows and red/green diff markers"
+  ],
+  "anti_patterns": [
+    "Business analyst ChatBI bar chart as hero",
+    "Generic LLM chat bubble without pipeline context",
+    "Empty database cylinder icon alone",
+    "Unrelated BI dashboard screenshot",
+    "Blank white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "DATA ENGINEERING",
+      "headline_line2": "AGENTS (2026)",
+      "subtitle": "Pipeline Auto-Heal & Schema Drift",
+      "tagline": "Datus · Genie Code · dltHub",
+      "composition": "Visual-only editorial collage for data engineering agent guide. HERO: pipeline DAG on right two-thirds — 5-6 rounded nodes connected by arrows (source, transform, warehouse blur), one edge broken with mars-green highlight and small agent wrench badge auto-patching. Circular Observe→Reason→Act→Remember ring overlays corner. Secondary: compact schema drift diff panel — two columns with added/removed row blur and green/red markers. Title top-left. Paper torn edges, halftone. NO ChatBI chart hero, NO standalone chat bubble, NO vendor logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "数据工程智能体",
+      "headline_line2": "（2026）",
+      "subtitle": "Pipeline自动化与Schema自愈",
+      "composition": "Same layout as EN: pipeline DAG HERO with drift alert + 4-stage agent loop ring + schema diff panel. Title top-left, NO extra Chinese node labels, NO ChatBI hero, NO blank cards."
+    }
+  }
+}

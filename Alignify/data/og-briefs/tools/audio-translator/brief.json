@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "audio-translator",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI audio translators — real-time multilingual speech translation",
+  "differentiator_vs_generic": "Dual-language live waveform lanes with translated subtitle strip, NOT accent conversion A/B or text-only translation.",
+  "visual_anchors": [
+    "HERO: Live audio translation panel — dual waveform lanes (source language top, target language bottom) with synchronized translated subtitle blur strip between",
+    "Headset/meeting tile showing two participant flags as color dots (not readable text) with audio bridge arrow",
+    "2x2 grid of translation scenario outputs (conference call, training lecture, podcast dub, customer support) — vignettes only"
+  ],
+  "anti_patterns": [
+    "Accent neutralization before/after only",
+    "Text document translation page",
+    "Music production DAW",
+    "Empty waveform card"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI AUDIO TRANSLATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Real-Time Multilingual Speech",
+      "tagline": "Hear It in Any Language",
+      "composition": "Visual-only collage for AI audio translator tools comparison: (1) HERO dual waveform lanes with live translated subtitle strip on right two-thirds. (2) Meeting headset vignette with audio bridge arrow. (3) 2x2 grid of four translation scenario tiles. (4) Magnifying glass on synchronized waveform peak pair. Paper collage, halftone. No accent A/B hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI音频翻译工具",
+      "headline_line2": "（2026）",
+      "subtitle": "实时多语言语音",
+      "composition": "Same layout as EN: dual waveform + subtitle HERO + meeting vignette + 2x2 scenario grid + magnifying glass on wave sync. Title top-left only, NO extra Chinese UI labels, NO accent conversion hero, NO blank cards."
+    }
+  }
+}

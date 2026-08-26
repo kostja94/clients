@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "how-to-add-payments-to-vibe-coded-app",
+  "analyzed_at": "2026-08-24T18:35:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Add payments to vibe-coded SaaS — Payment Processor vs Merchant of Record vs PCI layer (Stripe, Paddle, Clink) with tax compliance and security pitfalls",
+  "differentiator_vs_generic": "This is indie developer payment route selection for AI-built apps, NOT agentic payments protocol, NOT crypto checkout. Hero must be a three-path fork — PSP (you handle tax), MoR (platform handles tax), PCI middle layer — with checkout UI and subscription pricing blur.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Three-path payment fork diagram — left path PSP card with tax-form stack blur, center path MoR card with VAT-checkmark shield, right path PCI layer card with SAQ-A badge, all converging on hosted checkout mockup with credit card fields blur and $/month price blur",
+    "Vibe-coded app → payment gap visual: small deployed app window with $0 badge crossed, arrow to live checkout",
+    "Secondary: security warning triangle on AI-generated webhook code snippet blur (3 flaws motif)"
+  ],
+  "anti_patterns": [
+    "Crypto wallet or x402 agent payments (different article)",
+    "Generic shopping cart without PSP/MoR fork",
+    "Stripe logo or trademark payment brand marks",
+    "Tax form paperwork as sole hero without checkout context",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "PAYMENTS FOR",
+      "headline_line2": "VIBE CODED APPS",
+      "subtitle": "Stripe vs MoR vs Clink",
+      "tagline": "Tax · PCI · Hosted Checkout",
+      "composition": "Visual-only editorial collage for vibe-coded app payments guide. HERO: three-path fork on right two-thirds — PSP path (tax stack blur), MoR path (shield + VAT check blur), PCI path (SAQ-A badge blur), titian-red accent on selected MoR path, all arrows down to hosted checkout mockup with card fields and subscription price blur. Left strip: tiny deployed app with $0 crossed → arrow to checkout. Secondary: warning triangle on blurred webhook code snippet. Title top-left. Paper torn edges, halftone. NO Stripe/Paddle logos, NO crypto wallet, NO agent payments motif, NO blank cards."
+    },
+    "zh": {
+      "headline": "Vibe Coding加支付",
+      "headline_line2": "（2026）",
+      "subtitle": "Stripe·MoR·Clink路线对比",
+      "composition": "Same layout as EN: PSP/MoR/PCI three-path fork HERO + checkout mockup + vibe-app-to-revenue arrow + webhook warning. Title top-left, NO extra Chinese payment brand text, NO crypto hero, NO blank cards."
+    }
+  }
+}

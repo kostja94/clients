@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "audit-website",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI website marketing audit tool — URL input, fetch engine toggles (Jina/Firecrawl), model picker, 8-section markdown report tabs",
+  "differentiator_vs_generic": "Interactive audit tool UI, NOT SEO tutorial or channel index. HERO must show the audit generator interface with URL bar and report tabs.",
+  "visual_anchors": [
+    "HERO: Audit tool UI mockup — URL input bar + Analyze button, pill toggles for Jina/Firecrawl and DeepSeek model, tab row (Brand / Structure / Keywords / Competitors…) with blurred markdown report panel",
+    "Secondary: streaming progress timer + section checklist icons",
+    "Tertiary: copy-to-clipboard icon on report corner"
+  ],
+  "anti_patterns": [
+    "SERP or SEO tutorial layout",
+    "Channel hub link columns",
+    "Generic magnifying glass over website",
+    "Empty report tabs"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "WEBSITE AUDIT",
+      "headline_line2": "GENERATOR",
+      "subtitle": "AI Marketing Analysis Reports",
+      "tagline": "URL In · 8-Section Report Out",
+      "composition": "Visual-only collage for audit-website tool page. HERO: audit UI mockup on right two-thirds — URL input, engine/model pill toggles, horizontal report tabs, blurred markdown body. Secondary: progress timer + checklist. Tertiary: copy icon. Title top-left. Paper collage, halftone. NO SERP hero, NO hub columns, NO blank report panel."
+    },
+    "zh": {
+      "headline": "网站营销",
+      "headline_line2": "分析报告",
+      "subtitle": "AI自动生成审计报告",
+      "composition": "Same layout as EN: audit tool UI HERO + progress checklist + copy icon. Title top-left, NO SERP hero, NO extra Chinese UI labels, NO blank tabs."
+    }
+  }
+}

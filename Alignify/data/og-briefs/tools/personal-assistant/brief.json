@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "personal-assistant",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI personal assistant tools — calendar, email, and task orchestration",
+  "differentiator_vs_generic": "Unified assistant inbox merging calendar events, email triage, and task stack, NOT single-purpose scheduler alone.",
+  "visual_anchors": [
+    "HERO: Assistant command center with today calendar strip, prioritized email cards, and task checklist in one dashboard",
+    "Compact natural-language command bubble arrow into executed multi-app actions (schedule, draft, remind)",
+    "2x2 grid of assistant capabilities (travel booking, inbox summarize, smart reminders, cross-app search) — UI only"
+  ],
+  "anti_patterns": [
+    "Single calendar app hero",
+    "Email client alone",
+    "Todo list only",
+    "Empty chat bubble"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI PERSONAL ASSISTANTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Calendar · Email · Tasks",
+      "tagline": "Your Day, Orchestrated",
+      "composition": "Visual-only collage for AI personal assistant tools comparison: (1) HERO unified dashboard with calendar, email, tasks on right two-thirds. (2) NL command bubble arrow into executed actions. (3) 2x2 grid of four assistant capability UI tiles. (4) Magnifying glass on priority email card. Paper collage, halftone. No single-app hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI个人助理",
+      "headline_line2": "（2026）",
+      "subtitle": "日程 · 邮件 · 任务",
+      "composition": "Same layout as EN: assistant dashboard HERO + command flow + 2x2 capability grid + magnifying glass on email. Title top-left only, NO extra Chinese UI labels, NO single-app hero, NO blank cards."
+    }
+  }
+}

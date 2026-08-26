@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "authentication",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Authentication and IAM tools — CIAM, OAuth, agent authorization",
+  "differentiator_vs_generic": "OAuth login flow diagram with lock/shield and human vs agent auth split, NOT generic password field or API gateway alone.",
+  "visual_anchors": [
+    "HERO: OAuth authorization flow diagram — user avatar, lock shield, permission scope checklist, and token arrow to app icon (blurred labels)",
+    "Split compare panel: human SSO sign-in flow left vs agent tool delegation flow right",
+    "2x2 grid of auth pattern tiles (social login, MFA prompt, API key vault, webhook consent) — UI fragments only"
+  ],
+  "anti_patterns": [
+    "Generic padlock on gradient",
+    "API gateway routing hero",
+    "Email inbox verification",
+    "Empty login form white card"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AUTH & IAM TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "CIAM · OAuth · Agent Auth",
+      "tagline": "Human Sign-In vs Agent Delegation",
+      "composition": "Visual-only collage for authentication and IAM tools comparison: (1) HERO OAuth flow diagram with user avatar, shield, scope list, token arrow on right two-thirds. (2) Split compare: human SSO left vs agent delegation right. (3) 2x2 grid of four auth UI fragments. (4) Magnifying glass on scope permission row. Paper collage, halftone. No generic padlock alone, no API gateway hero, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳身份认证工具",
+      "headline_line2": "（2026）",
+      "subtitle": "CIAM · OAuth · 智能体授权",
+      "composition": "Same layout as EN: OAuth flow HERO + human vs agent split + 2x2 auth tiles + magnifying glass on scope row. Title top-left only, NO extra Chinese UI labels, NO generic lock icon hero, NO blank cards. Navy accents."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "rag",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "RAG tools — document chunks retrieved into grounded LLM answers",
+  "differentiator_vs_generic": "LLM chat with numbered citation chips and document chunk arrows feeding the answer, NOT generic chat without sources or SEO SERP.",
+  "visual_anchors": [
+    "HERO: Chat panel with assistant answer showing numbered citation chips [1][2][3] and arrows from PDF/web chunk cards into the reply",
+    "Compact document upload stack (PDF, Notion, web URL icons) arrow into vector index vignette",
+    "2x2 grid of RAG workflow tiles (chunk preview, hybrid search, eval score, knowledge base sync) — UI only"
+  ],
+  "anti_patterns": [
+    "Search bar SERP hero",
+    "Text-only chat without citations",
+    "Empty database icon",
+    "Magnifying glass over Google links"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST RAG TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Retrieve · Cite · Ground",
+      "tagline": "Answers Backed by Your Data",
+      "composition": "Visual-only collage for RAG tools comparison: (1) HERO LLM chat with citation chips and chunk arrows on right two-thirds. (2) Document upload stack arrow into vector index. (3) 2x2 grid of four RAG workflow UI tiles. (4) Magnifying glass on citation chip detail. Paper collage, halftone. No SERP hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳RAG工具",
+      "headline_line2": "（2026）",
+      "subtitle": "检索 · 引用 · 落地",
+      "composition": "Same layout as EN: RAG chat HERO + document upload flow + 2x2 workflow grid + magnifying glass on citation. Title top-left only, NO extra Chinese UI labels, NO SERP hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "website-indexing",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Website indexing — check status, diagnose coverage issues, fix robots/noindex/canonical blockers in GSC",
+  "differentiator_vs_generic": "This is traditional index coverage SEO education, NOT GEO/LLM chat. Hero must show GSC-style index coverage status breakdown (indexed vs excluded vs error) — NOT an AI chat panel or generic database icon alone.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Index coverage status dashboard — stacked horizontal bar segments: green Indexed (largest), grey Excluded, red Error (smallest), with blurred reason-code rows beneath (Crawled not indexed, Blocked by robots.txt, Duplicate without canonical)",
+    "Secondary: site:yourdomain.com search operator bar with blurred indexed result count",
+    "Tertiary: URL Inspection magnifier icon on single page tile showing Valid / Indexed status badge"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is index coverage not GEO)",
+    "Generic database cylinder without coverage status breakdown",
+    "Real Google Search Console screenshot with branding",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "WEBSITE INDEXING",
+      "headline_line2": "(2026)",
+      "subtitle": "Check, Diagnose & Fix Coverage",
+      "tagline": "GSC · site: · URL Inspection",
+      "composition": "Visual-only editorial collage for website indexing guide. HERO: index coverage status bar occupying right two-thirds — segmented horizontal bar (green Indexed, grey Excluded, red Error) with blurred reason-code list rows beneath each segment in accent emerald highlights. Secondary: site: search operator bar with result count blur. Tertiary: URL Inspection icon on page tile with Valid badge. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real Google logo, NO generic empty dashboard."
+    },
+    "zh": {
+      "headline": "网站索引指南",
+      "headline_line2": "（2026）",
+      "subtitle": "检查·诊断·修复收录",
+      "composition": "Same layout as EN: index coverage status bar HERO with reason codes + site: operator + URL Inspection badge. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

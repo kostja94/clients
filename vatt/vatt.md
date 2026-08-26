@@ -18,13 +18,13 @@
 | [vatt-capabilities.md](./vatt-capabilities.md) | 能力规格：产品模块 × 用户决策路径（问甲方 / 写营销） | [features](./vatt-features.md) |
 | [vatt-motion-graphics.md](./vatt-motion-graphics.md) | Motion Graphics 专文（MG 唯一维护处） | [features §0](./vatt-features.md) |
 | [vatt-competitors.md](./vatt-competitors.md) | 竞品分析、差异化 | [features](./vatt-features.md) |
-| [vatt-site-structure.md](./vatt-site-structure.md) | URL 层级、IA、Sitemap | [others](./vatt-others.md) |
+| [vatt-site-structure.md](./vatt-site-structure.md) | URL 层级、IA、Sitemap | [archive/others](./archive/vatt-others.md) |
 | [vatt-use-cases.md](./vatt-use-cases.md) | 场景、Persona | [features](./vatt-features.md) |
 | [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) | Channel 详情页策略（pSEO / reactor 图谱） | [keywords](./vatt-keywords.md) |
 | [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) | Reaction 类型全景、Blog 队列（Semrush） | [keywords](./vatt-keywords.md) |
 | [archive/vatt-growth-strategy.md](./archive/vatt-growth-strategy.md) | 增长策略（**已归档**） | — |
 | [archive/vatt-i18n-path-migration.md](./archive/vatt-i18n-path-migration.md) | 多语言路径迁移（**已归档**） | [site-structure](./vatt-site-structure.md) |
-| [vatt-others.md](./vatt-others.md) | Sitemap 统计、数据引用 | site-structure |
+| [archive/vatt-others.md](./archive/vatt-others.md) | Sitemap 统计、数据引用（**已归档**） | site-structure |
 
 ---
 
@@ -110,7 +110,7 @@ Vatt 差异化：**不替代真人、不做不可改黑盒、不只做双画面�
 | Pro | $24–$39/月 | 对标 Descript Pro / Kapwing Pro |
 | Team | $49–$99/月 | Flexible tier expansion 指向团队需求 |
 
-*定价页原文抓取 → [vatt-others.md §4](./vatt-others.md)*
+*定价页原文抓取 → [archive/vatt-others.md §4](./archive/vatt-others.md)*
 
 ### 公司背景
 

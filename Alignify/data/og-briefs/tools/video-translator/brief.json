@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "video-translator",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI video translator tools — dubbing, subtitles, and lip-sync localization pipeline",
+  "differentiator_vs_generic": "Video player with dual subtitle tracks, dubbed audio waveform, and lip-sync mouth overlay, NOT plain text translation columns alone.",
+  "visual_anchors": [
+    "HERO: Video localization pipeline — player frame with target-language subtitle track, dubbed audio waveform, and lip-sync mouth alignment overlay",
+    "Compact source language video card arrow into translated output with subtitle+dub badges",
+    "2x2 grid of localization steps (auto translate, voice select, lip-sync pass, SRT export) — UI tiles only"
+  ],
+  "anti_patterns": [
+    "Bilingual text columns hero",
+    "Standalone lip-sync face only",
+    "TTS script panel alone",
+    "Empty globe icon"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIDEO TRANSLATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Dub · Subtitles · Lip-Sync",
+      "tagline": "Localize Video End-to-End",
+      "composition": "Visual-only collage for AI video translator tools comparison: (1) HERO localization player with subs, dub, and lip-sync on right two-thirds. (2) Source video arrow into translated output badges. (3) 2x2 grid of four pipeline step UI tiles. (4) Magnifying glass on subtitle track row. Paper collage, halftone. No text-only translation hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI视频翻译工具",
+      "headline_line2": "（2026）",
+      "subtitle": "配音 · 字幕 · 口型",
+      "composition": "Same layout as EN: video localization HERO + source output flow + 2x2 pipeline grid + magnifying glass on subtitle track. Title top-left only, NO extra Chinese UI labels, NO text translation hero, NO blank cards."
+    }
+  }
+}

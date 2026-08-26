@@ -12,7 +12,7 @@
 | **`knowledge/seo/`** | **不绑定** Tools slug 的 SEO 专册（经典 Web 搜索、technical SEO 等）。 |
 | **`knowledge/marketing/`** | 增长与 GTM 专册；与已上线的 `/marketing/[slug]` 配套。 |
 | **`knowledge/insights/`（本目录）** | 与 **`content/insights/en|zh/[slug].md`** → **`/insights/[slug]`**、**`/zh/insights/[slug]`** 配套；basename **必须**等于 Insights 文章 `slug`（全小写 kebab-case）。 |
-| **`content/sections/`、`content/templates/`** | 站点内容与模板规范；本目录为**网摘与概念整理**，二者互补。 |
+| **`skills/create-article/rules/`** | 站点内容与模板规范；本目录为**网摘与概念整理**，二者互补。 |
 
 ---
 
@@ -22,7 +22,9 @@
 
 - `**文件名与 slug**：…`（声明 basename 与 `content/insights/{locale}/[slug].md` 的对齐关系）
 - `**站内对照**：…`（链到已发布的 Insight 长文 URL 与仓库 JSON 路径）
-- `**规范对照**：…`（链到 `section/`、`technical/` 或其他分册知识块，按需）
+- `**规范对照**：…`（链到 [`skills/create-article/rules/`](../../skills/create-article/rules/) 或其他分册知识块，按需）
+
+**正式文章创作**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
 若某主题**尚无**独立 Insights JSON/路由（如 web-directories-and-portals），可暂用描述性 kebab 名，并在文首明确声明路由状态，上线长文后**重命名**为 slug 同名。
 

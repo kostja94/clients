@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "best-tools",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "SEO tool stack guide — free essentials, all-in-one platforms, rank trackers, browser extensions, desktop crawlers, and enterprise log analysis",
+  "differentiator_vs_generic": "This is a curated SEO tooling workflow guide, NOT a single-product affiliate page. Hero must show a layered tool-stack collage (GSC + crawler + rank tracker panels) representing how teams assemble diagnostics, suites, and point tools — NOT an AI chat panel or one vendor dashboard.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Three stacked SEO tool UI panels as editorial collage — top: Google Search Console performance mini-dashboard with clicks/impressions line chart blur; middle: desktop crawler sitemap tree view with URL rows and status dots; bottom-right: rank tracker grid with position trend sparklines — panels overlap with torn-paper edges",
+    "Secondary: Chrome browser extension overlay strip showing on-page meta/title audit fields (blurred text, no real brand logos)",
+    "Tertiary: small free-tool badge cluster — broken-link scan icon + meta-length preview bar (visual icons only, no tool names as text)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "Single Semrush/Ahrefs logo or affiliate pricing card as hero",
+    "Generic magnifying glass alone without tool UI panels",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST SEO TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Free Essentials · Stacks & Platforms",
+      "tagline": "GSC · Crawlers · Rank Trackers",
+      "composition": "Visual-only editorial collage for SEO tools stack guide. HERO: overlapping trio of generic SEO tool UI panels occupying right two-thirds — Search Console-style performance chart at top, desktop crawler URL tree in middle, rank-tracking sparkline grid at bottom — all with blurred metrics, no vendor logos, no readable product names. Secondary: browser extension on-page audit overlay on a faint webpage silhouette. Tertiary: two small utility icons (link-check + snippet preview). Title block top-left only. Paper collage torn edges, halftone, mars-green accent on one panel border. NO LLM chat UI, NO OpenAI/Anthropic logos, NO real Google logo, NO pricing tables as text."
+    },
+    "zh": {
+      "headline": "最好用的SEO工具",
+      "headline_line2": "（2026）",
+      "subtitle": "免费与付费工具栈",
+      "composition": "Same layout as EN: stacked GSC + crawler + rank-tracker UI panels as HERO, extension overlay + utility icons secondary. Title top-left, NO LLM chat, NO vendor logos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

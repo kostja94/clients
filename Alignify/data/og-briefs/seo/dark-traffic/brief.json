@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "dark-traffic",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Dark traffic attribution — referrer loss from messengers, email, in-app browsers, and fixing mislabeled (direct)/(none) sessions with UTM discipline",
+  "differentiator_vs_generic": "This is analytics attribution hygiene, NOT cybersecurity dark web imagery. Hero must show GA4 acquisition chart with an oversized (direct)/(none) bucket leaking from messenger/email icons — NOT an LLM chat panel or hacker-themed visuals.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Analytics acquisition bar chart mockup — channel bars with one dominant (direct)/(none) bar highlighted in accent, dashed leak arrows from WhatsApp/email/PDF icons on the left flowing into the direct bar (icons only, no platform logos)",
+    "Secondary: UTM parameter strip — utm_source / utm_medium / utm_campaign fields on a link tag card with one field glowing accent (blurred example values)",
+    "Tertiary: before/after mini comparison — wide direct slice shrinking when UTM tags applied (two small pie silhouettes, no percentages as text)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "Dark web / hacker hooded figure metaphor unrelated to referrer attribution",
+    "Generic traffic growth chart without direct/none misattribution story",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "DARK TRAFFIC",
+      "headline_line2": "(2026)",
+      "subtitle": "Attribution & UTM Fixes",
+      "tagline": "Direct · None · Referrer Loss",
+      "composition": "Visual-only editorial collage for dark traffic attribution guide. HERO: GA4-style acquisition bar chart occupying right two-thirds — oversized (direct)/(none) bar with klein-blue accent, dashed leak arrows from messenger/email/PDF icons into direct bucket. Secondary: UTM parameter link card with highlighted fields. Tertiary: before/after pie silhouettes showing direct share shrinking. Title top-left only. Paper torn edges, halftone. NO LLM chat UI, NO real GA logo, NO readable UTM values as labels, NO dark-web imagery."
+    },
+    "zh": {
+      "headline": "Dark Traffic归因",
+      "headline_line2": "（2026）",
+      "subtitle": "暗流量识别与UTM规范",
+      "composition": "Same layout as EN: acquisition chart with direct leak HERO, UTM strip + before/after pies secondary. Title top-left, NO LLM chat, NO dark-web imagery, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

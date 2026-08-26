@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "llm",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Large language model platforms — chat, benchmarks, and model comparison",
+  "differentiator_vs_generic": "Benchmark leaderboard tiles beside LLM chat panel with blurred assistant reply, NOT API gateway or code IDE.",
+  "visual_anchors": [
+    "HERO: Chat panel with user prompt bubble and assistant answer plus adjacent mini benchmark score bars (reasoning, coding, math, multilingual)",
+    "Compact model picker dropdown card morphing into ranked capability tiles",
+    "2x2 grid of LLM use-case chat snippets (summarize doc, code help, reasoning chain, creative writing) — UI only"
+  ],
+  "anti_patterns": [
+    "Raw API endpoint diagram",
+    "Code editor hero",
+    "GPU server rack alone",
+    "Empty chat bubble"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST LARGE LANGUAGE MODELS",
+      "headline_line2": "(2026)",
+      "subtitle": "Chat · Benchmarks · Compare",
+      "tagline": "Pick the Right LLM",
+      "composition": "Visual-only collage for LLM tools comparison: (1) HERO chat panel with benchmark score bars on right two-thirds. (2) Model picker card arrow into capability tiles. (3) 2x2 grid of four chat use-case UI snippets. (4) Compare lens on one benchmark bar. Paper collage, halftone. No API diagram hero, no ranking lists, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳大语言模型",
+      "headline_line2": "（2026）",
+      "subtitle": "对话 · 基准 · 对比",
+      "composition": "Same layout as EN: LLM chat HERO + model picker flow + 2x2 use-case grid + compare lens on benchmark. Title top-left only, NO extra Chinese UI labels, NO API diagram, NO blank cards."
+    }
+  }
+}

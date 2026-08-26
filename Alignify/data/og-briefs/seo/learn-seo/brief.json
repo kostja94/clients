@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "learn-seo",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "SEO learning path — resources, courses, official docs, expert blogs, and step-by-step skill progression",
+  "differentiator_vs_generic": "This is traditional SEO education and learning-roadmap content, NOT GEO/LLM chat. Hero must be a visual learning-path / curriculum board with milestone modules (keywords → technical → content → links), NOT an AI tutor or chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Vertical SEO learning roadmap — 4 stepped milestone cards connected by dotted path (Keyword Research → Technical SEO → Content → Link Building), each card torn-paper with blurred module labels and small book/tool icons",
+    "Secondary: stacked resource bookmark tabs (Moz, Ahrefs, Search Central style generic blog favicon blurs, no real logos)",
+    "Tertiary: checklist notepad with 3 checked learning tasks and pencil mark"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is SEO learning not GEO)",
+    "Generic graduation cap alone without SEO module roadmap",
+    "Empty white cards below headline",
+    "Affiliate dashboard or course checkout UI unrelated to SEO learning path"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "LEARN SEO",
+      "headline_line2": "(2026)",
+      "subtitle": "Resources, Tools & Best Practices",
+      "tagline": "Roadmap · Courses · Expert Blogs",
+      "composition": "Visual-only editorial collage for SEO learning guide. HERO: vertical stepped learning roadmap occupying right two-thirds — four milestone cards (Keywords, Technical, Content, Links) linked by dotted ascent path, klein-blue accent on active step. Secondary: 3–4 generic SEO resource bookmark tabs with blurred site names. Tertiary: handwritten checklist with checkmarks. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic logos, NO real brand logos, NO extra step numbers as text labels."
+    },
+    "zh": {
+      "headline": "SEO学习指南",
+      "headline_line2": "（2026）",
+      "subtitle": "资源、工具与最佳实践",
+      "composition": "Same layout as EN: vertical SEO learning roadmap HERO with 4 milestone cards + resource bookmarks + checklist. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

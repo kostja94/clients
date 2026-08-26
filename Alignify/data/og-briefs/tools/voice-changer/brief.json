@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "voice-changer",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI voice changer tools — realtime voice morph and character presets",
+  "differentiator_vs_generic": "Before/after voice waveform morph with character preset slider and realtime mic meter, NOT voice cloning training or TTS script editor.",
+  "visual_anchors": [
+    "HERO: Voice changer panel — input/output waveform morph with character preset slider (robot, narrator, whisper) and live mic level meter",
+    "Compact preset picker card arrow into transformed audio preview waveform",
+    "2x2 grid of changer modes (realtime stream, pitch shift, gender swap, gaming chat filter) — UI only"
+  ],
+  "anti_patterns": [
+    "Voice clone training sample hero",
+    "TTS script editor",
+    "Lip-sync video face",
+    "Empty mic icon"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VOICE CHANGERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Realtime · Presets · Morph",
+      "tagline": "Sound Like Anyone",
+      "composition": "Visual-only collage for AI voice changer tools comparison: (1) HERO waveform morph with preset slider and mic meter on right two-thirds. (2) Preset picker arrow into preview waveform. (3) 2x2 grid of four changer mode UI tiles. (4) Magnifying glass on morph transition point. Paper collage, halftone. No clone training hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI变声工具",
+      "headline_line2": "（2026）",
+      "subtitle": "实时 · 预设 · 变调",
+      "composition": "Same layout as EN: voice changer HERO + preset preview flow + 2x2 mode grid + magnifying glass on morph point. Title top-left only, NO extra Chinese UI labels, NO clone training hero, NO blank cards."
+    }
+  }
+}

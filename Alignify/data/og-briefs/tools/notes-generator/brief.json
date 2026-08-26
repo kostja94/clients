@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "notes-generator",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI notes generators — slides and PDFs to structured study notes with headings and bullets",
+  "differentiator_vs_generic": "PDF/slide deck upload morphing into structured outline with heading hierarchy and highlight spans, NOT meeting transcript waveform.",
+  "visual_anchors": [
+    "HERO: Notes generator split — left PDF/slide page thumbnail stack, right structured outline doc with H2/H3 hierarchy, bullet clusters, and yellow highlight spans",
+    "Compact upload card arrow into auto-generated summary outline panel",
+    "2x2 grid of note output modes (flashcard stack, mind-map radial, Q&A pairs, export to Notion chip) — UI only"
+  ],
+  "anti_patterns": [
+    "Meeting waveform transcript hero",
+    "Blank doc editor",
+    "Generic chat without doc input",
+    "Empty slide thumbnail"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI NOTES GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Slides · PDFs · Outlines",
+      "tagline": "Lectures Become Notes",
+      "composition": "Visual-only collage for AI notes generator tools comparison: (1) HERO PDF-to-outline split on right two-thirds. (2) Upload card arrow into summary panel. (3) 2x2 grid of four note output mode UI tiles. (4) Magnifying glass on heading hierarchy row. Paper collage, halftone. No meeting transcript hero, no blank editor, no empty upload."
+    },
+    "zh": {
+      "headline": "最佳AI笔记生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "讲义 · PDF · 大纲",
+      "composition": "Same layout as EN: notes generator HERO + upload flow + 2x2 output grid + magnifying glass on heading row. Title top-left only, NO extra Chinese UI labels, NO meeting transcript hero, NO blank cards."
+    }
+  }
+}

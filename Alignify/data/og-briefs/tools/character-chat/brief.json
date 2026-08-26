@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "character-chat",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Character chat platforms — persona cards, roleplay threads, and UGC character libraries",
+  "differentiator_vs_generic": "Anime/game character persona card feeding multi-turn RP chat bubbles, NOT customer support widget or talking avatar video.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Mobile chat UI with large character portrait avatar, persona trait chips blurred, and alternating user/character speech bubbles with typing indicator dots",
+    "Horizontal scroll of three mini character persona cards (fantasy warrior, anime companion, game NPC) — avatar art only, no names",
+    "2x2 grid of chat mood vignettes (casual RP, adventure scene, emotional support, group chat) — bubble fragments only",
+    "Magnifying glass zooming on persona memory/traits chip row above chat input"
+  ],
+  "anti_patterns": [
+    "Customer support chatbot widget hero",
+    "Talking avatar lip-sync video frame",
+    "Generic LLM dark sidebar without character portrait",
+    "Empty chat thread"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST CHARACTER CHAT APPS",
+      "headline_line2": "(2026)",
+      "subtitle": "Personas · Roleplay · Memory",
+      "tagline": "Chat With AI Characters You Create",
+      "composition": "Visual-only collage for character chat platform tools comparison: (1) HERO mobile chat UI with character portrait and RP bubbles on right two-thirds. (2) Row of three blurred persona cards with avatar art. (3) 2x2 grid of four chat mood vignettes. (4) Magnifying glass on persona trait chips. Title top-left only. Paper collage, halftone. No support widget hero, no avatar video, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI角色对话平台",
+      "headline_line2": "（2026）",
+      "subtitle": "人设 · 角色扮演 · 记忆",
+      "composition": "Same layout as EN: character chat HERO with persona card + bubbles + 2x2 mood grid + magnifying glass on trait chips. Title top-left only, NO extra Chinese UI labels, NO support widget hero, NO blank cards."
+    }
+  }
+}

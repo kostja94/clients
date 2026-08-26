@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "seo",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI SEO tools — audits, content optimization, and rank tracking",
+  "differentiator_vs_generic": "SEO audit score ring with issue checklist and keyword position chart, NOT GEO LLM chat citations or generic search bar.",
+  "visual_anchors": [
+    "HERO: SEO audit dashboard — site health score ring, prioritized issue checklist (meta, links, speed), and keyword rank trend mini chart",
+    "Compact page analyzer card arrow into optimized title/meta suggestion diff",
+    "2x2 grid of SEO modules (content brief, backlink monitor, SERP feature tracker, internal link map) — UI only"
+  ],
+  "anti_patterns": [
+    "LLM chat with citations hero (GEO)",
+    "Empty magnifying glass clipart",
+    "Ad campaign dashboard",
+    "Blank website icon"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI SEO TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Audit · Optimize · Track",
+      "tagline": "Rank Higher with AI",
+      "composition": "Visual-only collage for AI SEO tools comparison: (1) HERO audit dashboard with health ring and issue list on right two-thirds. (2) Page analyzer arrow into meta diff suggestions. (3) 2x2 grid of four SEO module UI tiles. (4) Magnifying glass on issue checklist row. Paper collage, halftone. No GEO chat hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI SEO工具",
+      "headline_line2": "（2026）",
+      "subtitle": "审计 · 优化 · 追踪",
+      "composition": "Same layout as EN: SEO audit HERO + page analyzer flow + 2x2 module grid + magnifying glass on issue row. Title top-left only, NO extra Chinese UI labels, NO GEO chat hero, NO blank cards."
+    }
+  }
+}

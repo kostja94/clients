@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "image-relighting",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI image relighting tools — change light direction, intensity, and color temperature without altering scene content",
+  "differentiator_vs_generic": "Same photo split with draggable light-source orb casting opposite shadow directions, NOT generative inpaint or resolution upscale.",
+  "visual_anchors": [
+    "HERO: Relighting compare panel — single portrait/scene duplicated left/right with opposite shadow angles, floating draggable light orb and direction arrow between halves",
+    "Light control sliders vignette: intensity, color temperature, softness (blurred labels)",
+    "2x2 grid of relit variants (golden hour, studio key, rim light, overcast soft) — same subject, different lighting only"
+  ],
+  "anti_patterns": [
+    "Generative inpaint/object remove hero",
+    "Resolution upscaler before/after",
+    "Sky replacement-only hero",
+    "Empty photo frame"
+  ],
+  "accent_suggestion": "olive-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI IMAGE RELIGHTING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Direction · Intensity · Temperature",
+      "tagline": "Change the Light, Not the Scene",
+      "composition": "Visual-only collage for AI image relighting tools comparison: (1) HERO same-photo lighting split with draggable light orb on right two-thirds. (2) Light control slider vignette. (3) 2x2 grid of four relit lighting variants. (4) Magnifying glass on shadow edge transition. Paper collage, halftone. No inpaint hero, no upscale hero, no blank frames."
+    },
+    "zh": {
+      "headline": "最佳AI图像重打光工具",
+      "headline_line2": "（2026）",
+      "subtitle": "方向 · 强度 · 色温",
+      "composition": "Same layout as EN: relighting split HERO + slider vignette + 2x2 lighting variant grid + magnifying glass on shadow edge. Title top-left only, NO extra Chinese UI labels, NO inpaint hero, NO blank cards. Olive-green accents."
+    }
+  }
+}

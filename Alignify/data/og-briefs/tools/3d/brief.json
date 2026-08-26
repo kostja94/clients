@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "3d",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI 3D tools hub — generation, modelling, scanning, and rendering categories",
+  "differentiator_vs_generic": "Category navigation hub for the full 3D pipeline, NOT a single DCC viewport or generic cube icon alone.",
+  "visual_anchors": [
+    "HERO (~50% canvas): 3D viewport panel with wireframe mesh rotating on turntable grid floor — accent klein-blue edge glow",
+    "Hub navigation row: 3 torn-paper category chips with mini icons (spark prompt for generator, sculpt brush for modelling, phone scan ring for scanner) — blurred labels only",
+    "2x2 grid of distinct 3D output thumbnails (game character, product bottle, architectural massing, stylized creature) — images only",
+    "Hand with magnifying glass zooming into mesh wireframe detail on one viewport corner"
+  ],
+  "anti_patterns": [
+    "Flat 2D image generator prompt card",
+    "Single generic gray cube without pipeline context",
+    "Video film strip",
+    "Empty white placeholder cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI 3D TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Generate · Model · Scan · Render",
+      "tagline": "Full 3D Creation Pipeline",
+      "composition": "Visual-only collage for AI 3D tools category hub page: (1) HERO 3D viewport with wireframe mesh on turntable grid occupying right two-thirds. (2) Row of three mini category workflow chips (text-to-3D spark, sculpt brush, phone scan ring) linking hub to sub-tools — blurred icon-only. (3) 2x2 grid of four distinct 3D asset thumbnails (character, product, architecture, creature). (4) Magnifying glass hand inspecting mesh edge detail. Title block top-left only. Paper torn edges, halftone. No ranking lists, no tool name text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI 3D工具",
+      "headline_line2": "（2026）",
+      "subtitle": "生成 · 建模 · 扫描",
+      "composition": "Same layout as EN: HERO 3D wireframe viewport + three category chips + 2x2 3D asset grid + magnifying glass on mesh detail. Title top-left only, NO extra Chinese UI labels, NO blank white cards under headline. Fill canvas with klein-blue torn-paper accents."
+    }
+  }
+}

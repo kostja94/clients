@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "animation-generator",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI anime and animation generators — storyboard to finished animated shorts",
+  "differentiator_vs_generic": "Storyboard strip to anime frame outputs with play button, NOT code animation library or live-action video film strip alone.",
+  "visual_anchors": [
+    "HERO: Horizontal storyboard strip (4 sketch panels) morphing via torn arrow into polished anime frame with large play-button triangle overlay",
+    "2x2 grid of four distinct anime output stills (character action, scenic background, dialogue scene, effects shot) — images only",
+    "Magnifying glass over character line art detail on one frame"
+  ],
+  "anti_patterns": [
+    "Code editor with easing curves",
+    "Live-action film strip only",
+    "2D static image generator grid",
+    "Empty storyboard panels"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI ANIMATION GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Storyboard · Anime · Shorts",
+      "tagline": "From Prompt to Animated Scene",
+      "composition": "Visual-only collage for AI animation generator tools comparison: (1) HERO storyboard strip morphing into anime frame with play-button overlay on right two-thirds. (2) 2x2 grid of four anime output stills. (3) Magnifying glass on character line detail. Paper collage, halftone. No code editor, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI动画生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "分镜 · 动漫 · 短片",
+      "composition": "Same layout as EN: storyboard to anime HERO + 2x2 still grid + magnifying glass on line art. Title top-left only, NO extra Chinese UI labels, NO code timeline hero, NO blank cards. Mars-green accents."
+    }
+  }
+}

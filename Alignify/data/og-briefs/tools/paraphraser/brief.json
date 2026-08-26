@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "paraphraser",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI paraphraser tools — rewrite text while preserving meaning",
+  "differentiator_vs_generic": "Before/after text columns with highlighted changed phrases and tone slider, NOT translation flags or generic chat.",
+  "visual_anchors": [
+    "HERO: Side-by-side before/after text panels with yellow highlight on rewritten phrases and tone slider (formal/casual/academic)",
+    "Compact paste-input card with rewrite sparkle arrow into polished output column",
+    "2x2 grid of paraphrase modes (shorten, expand, simplify, plagiarism-safe) — UI tiles only"
+  ],
+  "anti_patterns": [
+    "Bilingual translation columns hero",
+    "Generic chatbot window",
+    "Blank text area",
+    "SEO keyword list"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI PARAPHRASERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Rewrite · Tone · Clarity",
+      "tagline": "Same Meaning, Fresh Words",
+      "composition": "Visual-only collage for AI paraphraser tools comparison: (1) HERO before/after text panels with tone slider on right two-thirds. (2) Paste input card arrow into rewritten output. (3) 2x2 grid of four paraphrase mode UI tiles. (4) Magnifying glass on highlighted phrase change. Paper collage, halftone. No translation hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI改写工具",
+      "headline_line2": "（2026）",
+      "subtitle": "改写 · 语气 · 润色",
+      "composition": "Same layout as EN: before/after HERO + paste input flow + 2x2 mode grid + magnifying glass on phrase highlight. Title top-left only, NO extra Chinese UI labels, NO translation hero, NO blank cards."
+    }
+  }
+}

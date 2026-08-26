@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "live-streaming",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI live streaming tools — real-time captions, highlights, and stream assist",
+  "differentiator_vs_generic": "Live stream preview with LIVE badge, chat overlay, and AI caption ribbon, NOT pre-recorded video editor timeline.",
+  "visual_anchors": [
+    "HERO: Stream preview frame with red LIVE badge, viewer chat sidebar, and AI auto-caption ribbon scrolling beneath video",
+    "Compact highlight-clip detector card with sparkle markers on replay timeline",
+    "2x2 grid of stream assist tiles (auto captions, clip export, moderation flag, multistream dashboard) — UI only"
+  ],
+  "anti_patterns": [
+    "Offline video editor timeline hero",
+    "Podcast waveform only",
+    "Empty OBS panel",
+    "Static thumbnail grid"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI LIVE STREAMING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Captions · Clips · Assist",
+      "tagline": "Smarter Streams in Real Time",
+      "composition": "Visual-only collage for AI live streaming tools comparison: (1) HERO live preview with LIVE badge, chat, and AI captions on right two-thirds. (2) Highlight detector card with timeline sparkle markers. (3) 2x2 grid of four stream assist UI tiles. (4) Magnifying glass on caption ribbon detail. Paper collage, halftone. No offline editor hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI直播工具",
+      "headline_line2": "（2026）",
+      "subtitle": "字幕 · 切片 · 辅助",
+      "composition": "Same layout as EN: live stream HERO + highlight detector + 2x2 assist grid + magnifying glass on captions. Title top-left only, NO extra Chinese UI labels, NO offline editor hero, NO blank cards."
+    }
+  }
+}

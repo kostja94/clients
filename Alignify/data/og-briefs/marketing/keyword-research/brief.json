@@ -1,0 +1,24 @@
+{
+  "section": "marketing",
+  "slug": "keyword-research",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Keyword research — find topics, long-tail keywords, topical map planning",
+  "visual_anchors": ["HERO: keyword research tool panel — seed keyword bar + long-tail keyword list with volume bars", "Topical map cluster diagram (hub + spokes)", "Search intent icons (info/commercial/transactional)"],
+  "anti_patterns": ["LLM chat hero (this is SEO not GEO)", "empty keyword list"],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "KEYWORD RESEARCH",
+      "headline_line2": "(2026)",
+      "subtitle": "Topics & Long-Tail Keywords",
+      "tagline": "Topical Map · Search Intent",
+      "composition": "Visual-only collage for keyword research guide. HERO: SEO keyword tool UI — seed term input + list of long-tail keywords with green volume bars (blurred text). Secondary: topical map hub-spoke cluster. Tertiary: 3 intent icon chips. Paper collage. This is SEO keyword research NOT LLM chat."
+    },
+    "zh": {
+      "headline": "关键词调研",
+      "headline_line2": "（2026）",
+      "subtitle": "话题与长尾词",
+      "composition": "Same: keyword tool panel HERO + topical map + intent icons. Title top-left, NO LLM chat UI, NO blank cards."
+    }
+  }
+}

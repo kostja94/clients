@@ -1,0 +1,36 @@
+{
+  "section": "events",
+  "slug": "linkloud-2025-02-23",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "LinkLoud Feb 23 offline meetup recap — AI/SaaS growth metrics, product positioning, SEO, multilingual pSEO, and monetization strategies for founders",
+  "differentiator_vs_generic": "This is an AI/SaaS growth community meetup recap, NOT a generic networking stock photo or corporate conference. Hero must be a talk/slide collage — community meetup stage strip, slide thumbnails on growth metrics and monetization, and founder networking motif.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Slide deck thumbnail stack — top slide showing AI/SaaS growth metrics dashboard blur (MRR, activation, retention bars), second slide showing monetization funnel blur, torn-paper collage edges",
+    "Meetup stage strip — intimate venue setup with blurred presenter and small audience rows, casual community vibe not large conference hall",
+    "Secondary: founder networking motif — small group silhouettes with chat bubble and handshake connection lines"
+  ],
+  "anti_patterns": [
+    "Large corporate conference hall stock photo",
+    "Generic LinkedIn networking cliché",
+    "SERP or LLM chat as hero",
+    "Real LinkLoud logo or sponsor branding",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "LINKLOUD RECAP",
+      "headline_line2": "(Feb 2025)",
+      "subtitle": "Growth & Monetization",
+      "tagline": "AI/SaaS · Metrics · pSEO",
+      "composition": "Visual-only editorial collage for LinkLoud community meetup recap. HERO: stacked slide thumbnails on right half — growth metrics dashboard slide (blurred MRR/activation/retention bars) over monetization funnel slide, mars-green accent on metric bars. Secondary: intimate meetup stage strip — blurred presenter, small audience rows, casual venue lighting. Tertiary: founder networking cluster — group silhouettes with chat/connection lines. Title top-left. Paper torn edges, halftone. NO corporate conference stock, NO real LinkLoud logos, NO SERP/LLM hero, NO blank cards."
+    },
+    "zh": {
+      "headline": "LinkLoud活动回顾",
+      "headline_line2": "（2025.02）",
+      "subtitle": "增长与商业化",
+      "composition": "Same layout as EN: growth metrics slide stack HERO + meetup stage strip + networking motif. Title top-left, NO real logos, NO extra Chinese slide labels, NO blank cards."
+    }
+  }
+}

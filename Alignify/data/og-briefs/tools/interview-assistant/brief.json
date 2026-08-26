@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "interview-assistant",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI interview assistants — mock prep, live copilot hints, and coding interview support",
+  "differentiator_vs_generic": "Split-screen mock interview with live copilot hint panel and STAR answer scaffold, NOT generic note taker or recruiting ATS.",
+  "visual_anchors": [
+    "HERO: Mock interview split — left video call frame with blurred interviewer, right copilot panel with STAR answer scaffold bullets and discreet hint chips",
+    "Compact job description card arrow into practice question queue",
+    "2x2 grid of interview modes (behavioral prep, coding whiteboard, live copilot, feedback scorecard) — UI only",
+    "Magnifying glass zooming on copilot hint chip row"
+  ],
+  "anti_patterns": [
+    "Meeting note taker waveform hero",
+    "Recruiting ATS pipeline",
+    "Generic LLM chat",
+    "Empty video call frame"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI INTERVIEW ASSISTANTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prep · Copilot · Coding",
+      "tagline": "Ace Every Round",
+      "composition": "Visual-only collage for AI interview assistant tools comparison: (1) HERO mock interview split with copilot hints on right two-thirds. (2) Job description arrow into question queue. (3) 2x2 grid of four interview mode UI tiles. (4) Magnifying glass on hint chip row. Title top-left only. Paper collage, halftone. No note taker hero, no ATS pipeline, no blank call frame."
+    },
+    "zh": {
+      "headline": "最佳AI面试助手",
+      "headline_line2": "（2026）",
+      "subtitle": "准备 · 辅助 · 编程",
+      "composition": "Same layout as EN: interview copilot HERO + job description flow + 2x2 mode grid + magnifying glass on hints. Title top-left only, NO extra Chinese UI labels, NO note taker hero, NO blank cards."
+    }
+  }
+}

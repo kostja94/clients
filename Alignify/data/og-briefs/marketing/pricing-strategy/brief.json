@@ -1,0 +1,33 @@
+{
+  "section": "marketing",
+  "slug": "pricing-strategy",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "GenAI pricing & packaging — Core / Upgrade / Add-on tiers, subscription vs usage",
+  "visual_anchors": [
+    "HERO: 3-tier pricing card stack — Free / Pro / Enterprise with GenAI sparkle badge on middle tier",
+    "Core vs Upgrade vs Add-on packaging pills with accent arrows",
+    "Cost-to-value triangle diagram (Cost · Value · Willingness-to-pay)"
+  ],
+  "anti_patterns": [
+    "Generic shopping cart without SaaS tiers",
+    "Affiliate/referral UI",
+    "LLM chat hero",
+    "empty pricing cards"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "GENAI PRICING",
+      "headline_line2": "(2026)",
+      "subtitle": "Packaging & Monetization",
+      "tagline": "Core · Upgrade · Add-on",
+      "composition": "Visual-only collage for GenAI pricing strategy guide. HERO: 3-column SaaS pricing cards with monthly prices (blurred), middle tier highlighted with AI sparkle badge. Secondary: Core/Upgrade/Add-on packaging label pills. Tertiary: cost-value-willingness triangle. Paper collage. NO affiliate UI, NO search SERP."
+    },
+    "zh": {
+      "headline": "AI定价策略",
+      "headline_line2": "（2026）",
+      "subtitle": "包装与变现",
+      "composition": "Same: 3-tier pricing card HERO + Core/Upgrade/Add-on pills + value triangle. Title top-left, NO extra labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "section": "marketing",
+  "slug": "referral-program",
+  "analyzed_at": "2026-08-24T16:10:00+00:00",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Referral program — existing users invite new users with share links and rewards",
+  "differentiator_vs_generic": "Hero must show user→user referral chain with share link, NOT affiliate partner network.",
+  "visual_anchors": [
+    "HERO: Referral share card with copy-link button and gift/reward badge",
+    "User→user→user chain of 3 avatar circles with curved share arrows",
+    "Small +1 new user counter chip"
+  ],
+  "anti_patterns": ["Affiliate commission dashboard as hero", "SERP", "magnifying glass", "empty share card"],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "REFERRAL PROGRAM",
+      "headline_line2": "(2026)",
+      "subtitle": "User-Driven Growth",
+      "tagline": "Share Link · Invite · Reward",
+      "composition": "Visual-only collage for referral program strategy. HERO: referral invite card with share-link icon and gift reward badge (blurred link text). Secondary: 3 user avatars in chain with green share arrows user-to-user. Tertiary: +1 signup counter chip. Paper collage. NO affiliate CPS dashboard, NO search UI."
+    },
+    "zh": {
+      "headline": "推荐奖励计划",
+      "headline_line2": "（2026）",
+      "subtitle": "用户裂变增长",
+      "composition": "Same: share-link card HERO + user chain arrows + reward badge. Title top-left, NO extra labels, NO blank cards."
+    }
+  }
+}

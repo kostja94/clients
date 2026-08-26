@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "subdomain-vs-subfolder",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Subdomain vs subdirectory — SEO authority inheritance, link equity, and URL architecture comparison",
+  "differentiator_vs_generic": "This is traditional site architecture SEO education, NOT GEO/LLM chat. Hero must be a side-by-side URL structure comparison showing authority flow differences — NOT an AI chat panel or generic domain registrar UI.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split comparison panel — LEFT: subdomain layout blog.example.com on isolated island with broken/dim authority arrow from main example.com root; RIGHT: subdirectory layout example.com/blog with solid accent authority arrow flowing from root domain block into /blog folder",
+    "Secondary: URL bar mockups showing blog.example.com vs example.com/blog with accent underline on subdirectory path",
+    "Tertiary: small link-equity flow diagram — internal links within same domain (strong) vs cross-subdomain links (weaker, dashed)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is URL architecture not GEO)",
+    "Generic website mockup without subdomain/subfolder contrast",
+    "DNS registrar or hosting control panel UI",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "SUBDOMAIN VS",
+      "headline_line2": "SUBFOLDER (2026)",
+      "subtitle": "SEO Authority & Link Equity",
+      "tagline": "blog.example.com · /blog",
+      "composition": "Visual-only editorial collage for subdomain vs subdirectory guide. HERO: split comparison occupying right two-thirds — left panel shows blog.example.com subdomain on separate block with weak dashed authority arrow from example.com root; right panel shows example.com/blog subdirectory with strong solid accent amber authority arrow from root into /blog. URL bar mockups beneath each panel. Secondary: link-equity diagram contrasting same-domain internal links (solid) vs cross-subdomain (dashed). Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real brand logos, NO hosting dashboard UI."
+    },
+    "zh": {
+      "headline": "子域名vs子目录",
+      "headline_line2": "（2026）",
+      "subtitle": "SEO权威与链接传递",
+      "composition": "Same layout as EN: split subdomain vs subdirectory HERO with authority flow arrows + URL bar mockups + link-equity diagram. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

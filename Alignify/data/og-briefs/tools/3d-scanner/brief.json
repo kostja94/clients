@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "3d-scanner",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "3D scanners — photogrammetry, LiDAR, Gaussian Splatting capture from reality",
+  "differentiator_vs_generic": "Phone/camera scanning ring around physical object with point-cloud-to-mesh reconstruction, NOT text prompt 3D generation.",
+  "visual_anchors": [
+    "HERO: Smartphone held over physical vase/object with circular scan progress ring and floating point-cloud particles converging to mesh",
+    "2x2 grid of scan output types (photogrammetry mesh, Gaussian splat preview, LiDAR room plan, textured object capture) — images only",
+    "Magnifying glass comparing captured surface detail vs original object photo inset"
+  ],
+  "anti_patterns": [
+    "Text-to-3D prompt card hero",
+    "DCC sculpt brush viewport",
+    "2D image generator outputs",
+    "Generic magnifying glass without scan context"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST 3D SCANNERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Photogrammetry · LiDAR · Gaussian Splat",
+      "tagline": "Reality to Digital Twin",
+      "composition": "Visual-only collage for 3D scanner tools comparison: (1) HERO phone scan ring around physical object with point cloud particles merging into mesh on right two-thirds. (2) 2x2 grid of four scan outputs (mesh, splat scene, room LiDAR, textured object). (3) Magnifying glass zoom comparing captured texture detail to photo inset. Paper torn edges, halftone. No prompt cards, no tool names, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳3D扫描工具",
+      "headline_line2": "（2026）",
+      "subtitle": "摄影测量 · 激光雷达",
+      "composition": "Same layout as EN: phone scan ring HERO + 2x2 scan output grid + magnifying glass detail compare. Title top-left only, NO extra Chinese UI labels, NO text-to-3D prompt, NO blank cards. Mars-green accents."
+    }
+  }
+}

@@ -1,0 +1,90 @@
+# Datus 内容簇注册表 — 与 datus/blog category + 站点路径对齐
+# 维护规则：新增 blog category 或 OSI 工具页时更新 clusters
+
+meta:
+  property: datus.ai
+  blogCanonicalPrefix: "/blog/"
+  lastUpdated: "2026-08-24"
+
+# blog frontmatter category → cluster id 映射
+blogCategoryMap:
+  Glossary: glossary
+  "Data Engineering Agent": de-agent
+  "Semantic Layer": semantic-layer
+  Comparison: comparison
+  "Case Study": case-study
+
+clusters:
+  - id: glossary
+    label: Glossary 术语簇
+    pathPatterns:
+      - "/blog/what-is-*"
+      - "/blog/*-vs-*"
+    blogCategories: ["Glossary"]
+    priorityKeywords:
+      - semantic layer
+      - text to sql
+      - data catalog
+      - lakehouse
+      - metric layer
+      - data mesh
+
+  - id: de-agent
+    label: Data Engineering Agent 主簇
+    pathPatterns:
+      - "/blog/data-engineering-agent/*"
+      - "/blog/best-data-engineering-agents"
+      - "/blog/open-source-data-engineering-agents"
+      - "/blog/build-your-first-data-engineering-agent"
+      - "/blog/contextual-data-engineering"
+      - "/blog/one-person-data-team"
+      - "/blog/mcp-data-engineering"
+    blogCategories: ["Data Engineering Agent"]
+
+  - id: semantic-layer
+    label: Semantic Layer / OSI 生态
+    pathPatterns:
+      - "/blog/*osi*"
+      - "/blog/*metricflow*"
+      - "/blog/*semantic-layer*"
+      - "/blog/semantic-layer-tools-list-osi"
+      - "/osi-field-mapping/"
+      - "/tools/osi-playground/"
+    blogCategories: ["Semantic Layer", "Data Engineering Agent"]
+
+  - id: comparison
+    label: 对比 / vs 文
+    pathPatterns:
+      - "/blog/*-vs-*"
+      - "/blog/*compared*"
+    blogCategories: ["Comparison"]
+
+  - id: product
+    label: 产品转化页
+    pathPatterns:
+      - "/products/*"
+      - "/pricing/"
+      - "/integrations/"
+      - "/faq/"
+
+  - id: osi-tools
+    label: OSI 工具页（非 blog）
+    pathPatterns:
+      - "/osi-field-mapping/"
+      - "/tools/osi-playground/"
+
+# GA4 转化事件（与 GA4 实际配置对齐；若不同请修改）
+conversionEvents:
+  - github_click
+  - file_download
+  - sign_up
+  - login
+  - generate_lead
+
+# 外链 / 自有域排除
+trafficExclusions:
+  domains:
+    - datus.ai
+    - docs.datus.ai
+    - studio.datus.ai
+    - dosi.datus.ai

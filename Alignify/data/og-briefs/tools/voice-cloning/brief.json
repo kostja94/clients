@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "voice-cloning",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI voice cloning tools — short samples to reusable voice profiles",
+  "differentiator_vs_generic": "Sample audio waveform feeding into voice profile fingerprint card with similarity meter, NOT realtime voice changer presets or TTS generic voices.",
+  "visual_anchors": [
+    "HERO: Voice clone studio — 30-second sample waveform arrow into voice profile fingerprint card with similarity score meter and test phrase playback",
+    "Compact upload sample clips card arrow into cloned voice synthesis preview",
+    "2x2 grid of clone outputs (audiobook voice, multilingual clone, emotion transfer, API voice ID) — UI only"
+  ],
+  "anti_patterns": [
+    "Realtime voice changer morph hero",
+    "Generic TTS voice picker",
+    "Lip-sync face",
+    "Empty waveform"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VOICE CLONING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Sample · Profile · Synthesize",
+      "tagline": "Clone a Voice from Seconds",
+      "composition": "Visual-only collage for AI voice cloning tools comparison: (1) HERO sample-to-profile clone studio with similarity meter on right two-thirds. (2) Upload samples arrow into synthesis preview. (3) 2x2 grid of four clone output UI tiles. (4) Magnifying glass on fingerprint card detail. Paper collage, halftone. No voice changer hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI声音克隆工具",
+      "headline_line2": "（2026）",
+      "subtitle": "样本 · 声纹 · 合成",
+      "composition": "Same layout as EN: voice clone HERO + upload synthesis flow + 2x2 output grid + magnifying glass on profile card. Title top-left only, NO extra Chinese UI labels, NO changer hero, NO blank cards."
+    }
+  }
+}

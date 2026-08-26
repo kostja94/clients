@@ -2,7 +2,7 @@
 
 **材料范围**：公开网络检索中对「自学路径、课程/博客/社群、官方文档优先级」的归纳；Google Search Central、Bing Webmaster Guidelines 等**官方入口**；Ahrefs Academy、Semrush Academy、Moz《Beginner's Guide》等**常见教育产品**的公开介绍页；Coursera 等平台对「SEO 学习路线图」类内容的概述。已与生产站 SEO 长文 `content/seo/zh|en/learn-seo.md`（2026-04-20 改版）做主题对齐：**未**将 Alignify 站内页面 JSON 当作事实来源复述。网摘整理日期 **2026-04-20**。
 
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md) · 本分册说明：[seo/README.md](./README.md) · 引擎流水线导览：[how-search-engine-works.md](./how-search-engine-works.md) · 工作流向量：[checklist.md](./checklist.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 引擎流水线导览：[how-search-engine-works.md](./how-search-engine-works.md) · 工作流向量：[checklist.md](./checklist.md)
 
 以下条目可任意顺序阅读；**不是**文章体例。文末外链为**检索整理**，用于建立个人信源分层，**不**替代你在具体站点上的日志与 GSC 个案验证。
 
@@ -52,8 +52,8 @@
 - **读懂官方语义**：区分 Crawling / Indexing / Serving、**ranking systems** 与营销话术中模糊的「算法」。
 - **建立最小度量闭环**：GSC（展现、点击、索引覆盖）+ 关键着陆页抽样爬虫 +（可选）CWV Lab/Field。
 - **关键词与意图**：从 head term 到长尾、从信息型到交易型的映射；工具仅加速抽样，**不**替代 SERP 人工阅读。
-- **On-page 与结构化**：title、摘要、标题层级、内链、结构化数据与可见内容一致性（参见 [section-seo.md](../../section/section-seo.md)）。
-- **技术 SEO 基础**：robots、noindex、canonical、sitemap、重定向与状态码、国际化信号；与 [technical/README.md](../../technical/README.md) 对齐。
+- **On-page 与结构化**：title、摘要、标题层级、内链、结构化数据与可见内容一致性（参见 [section-seo.md](../../skills/create-article/rules/meta.md)）。
+- **技术 SEO 基础**：robots、noindex、canonical、sitemap、重定向与状态码、国际化信号；与 [technical/README.md](../../skills/ops/README.md) 对齐。
 - **批判性阅读**：对「因子列表」问证据层级（官方、复现实验、个案、传言）。
 
 ---
@@ -124,7 +124,7 @@
 ### 站内索引（Alignify 仓库）
 
 - [how-search-engine-works.md](./how-search-engine-works.md) · [checklist.md](./checklist.md) · [seo/README.md](./README.md)
-- [section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md)
+- [section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md)
 - 全库知识块结构说明：[knowledgehub/README.md](../README.md)
 - **生产站 SEO 学习页（与上文互补）**：[alignify.co/zh/seo/learn-seo](https://alignify.co/zh/seo/learn-seo) · [alignify.co/seo/learn-seo](https://alignify.co/seo/learn-seo) · 正文源 `content/seo/zh/learn-seo.md`、`content/seo/en/learn-seo.md` · 内链专册 [seo-articles-internal-links.md](../../internal-links/seo-articles-internal-links.md)（附录 B.5 / B.6）
 

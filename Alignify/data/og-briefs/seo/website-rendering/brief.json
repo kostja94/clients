@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "website-rendering",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Website rendering strategies — static (SSG/ISR) vs dynamic (SSR/CSR), crawler-visible HTML, and Core Web Vitals",
+  "differentiator_vs_generic": "This is traditional rendering-strategy SEO education, NOT GEO/LLM chat. Hero must show split timeline: server pre-rendered HTML delivered to crawler vs client-side JS blank-then-render — NOT an AI chat panel or code IDE alone.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split vertical timeline comparison — LEFT (Static/SSG): server box → pre-built HTML document → crawler sees full content immediately (green check); RIGHT (CSR): browser box → empty shell → JS execution → content appears (delayed, amber warning on crawler step)",
+    "Secondary: CDN edge cache icon on static path with fast response arrow",
+    "Tertiary: rendering mode label chips — SSG, SSR, ISR, CSR as small badges below timeline"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is rendering strategy not GEO)",
+    "Generic React/Next.js logo collage without crawler visibility contrast",
+    "Code editor screenshot as sole hero element",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "WEBSITE RENDERING",
+      "headline_line2": "(2026)",
+      "subtitle": "Static vs Dynamic for SEO",
+      "tagline": "SSG · SSR · ISR · CSR",
+      "composition": "Visual-only editorial collage for website rendering guide. HERO: split timeline occupying right two-thirds — left path shows server pre-render → full HTML → crawler green check (Static/SSG); right path shows browser → empty DOM → JS render → delayed content with amber crawler warning (CSR). Accent teal highlights on HTML document tiles. Secondary: CDN edge cache on static path. Tertiary: SSG/SSR/ISR/CSR mode chips. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO framework trademark logos, NO code IDE as sole hero."
+    },
+    "zh": {
+      "headline": "网站渲染指南",
+      "headline_line2": "（2026）",
+      "subtitle": "静态vs动态与SEO",
+      "composition": "Same layout as EN: split static vs CSR timeline HERO with crawler visibility contrast + CDN cache + mode chips. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

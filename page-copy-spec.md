@@ -25,21 +25,21 @@
 
 ### 0.3 不适用场景
 
-- 博客长文、案例研究（走各客户 `blog/` 规范）
+- 博客长文、案例研究（走各站点独立的博客规范）
 - 枢纽页 / 首页（单页，无「同模具批量」问题）
-- 纯 UI 微文案（按钮、Toast）——除非客户另有组件规范
+- 纯 UI 微文案（按钮、Toast）——除非项目另有组件规范
 
-### 0.4 与客户 Playbook 的关系
+### 0.4 与站点 Playbook 的关系
 
 ```
-page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
+页面文案生产规范（本文件）    ← 跨项目通用原则、验收框架
         ↓ 引用
-{name}/page-playbook.md         ← 该站点的模具顺序、SEO 规则、示例 brief
+站点 page-playbook            ← 该站点的模具顺序、SEO 规则、示例 brief
         ↓ 引用
-{name}/{topic}-categories.md    ← 页面清单、slug、优先级
+页面清单 / categories 文档    ← 页面清单、slug、优先级
 ```
 
-**原则**：本规范写「怎么才算好文案」；客户 Playbook 写「这个站有哪些节、顺序是什么、Title 格式是什么」。
+**原则**：本规范写「怎么才算好文案」；站点 Playbook 写「这个站有哪些节、顺序是什么、Title 格式是什么」。
 
 ---
 
@@ -128,7 +128,7 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 
 ### 1.4 去模板化（De-templating）
 
-**目标**：消灭「只换 `{keyword}` 的壳」——这是 SEO 薄内容与客户信任的头号敌人。
+**目标**：消灭「只换 `{keyword}` 的壳」——这是 SEO 薄内容与用户信任的头号敌人。
 
 #### 核心验收：替换测试（Swap Test）
 
@@ -154,7 +154,7 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 | FAQ 复制 | 6 页共用同一套「Is it free?」排第一 | 首问必须是本类最高异议 |
 | 数字/形容词空泛 | `99% accurate`「powerful AI」当主句 | 换具体名词、边界、场景 |
 
-完整黑名单可随客户 Playbook 追加；本表为跨客户最低线。
+完整黑名单可随站点 Playbook 追加；本表为跨项目最低线。
 
 ---
 
@@ -186,7 +186,7 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 
 ## §2 字数与篇幅层级
 
-沿用 Alignify 三级体系，跨客户通用：
+沿用三级体系（硬底线 / 强建议 / 软建议），跨项目通用：
 
 | 层级 | 含义 | 违规后果 |
 |------|------|----------|
@@ -220,7 +220,7 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 ## §3 生产流程（6 步）
 
 ```
-① 读模具      打开客户 page-playbook，确认节顺序、卡片数、SEO 格式
+① 读模具      打开站点 page-playbook，确认节顺序、卡片数、SEO 格式
 ② 读 brief    从 categories / keywords 文档取本页：故障、交付物、Persona、示例方向
 ③ 先写差异位  优先写英雄段、利益卡、Persona、FAQ 首问——这些最容易模板化
 ④ Swap Test   每节写完后对每句做替换测试；不过则改
@@ -232,7 +232,7 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 
 - **先 brief 后正文**：无 brief 不批量生产；brief 至少含：主词、英雄故障、交付物、Persona×4、示例方向、FAQ 首问、边界
 - **一页一交付**：一次 agent 任务只做 1 页，避免十条 brief 塞进一次改动
-- **产品事实单一来源**：功能、限额、格式以 `{name}-features.md` 或 Playbook 为准，子页不发明套餐
+- **产品事实单一来源**：功能、限额、格式以站点 features 文档或 Playbook 为准，子页不发明套餐
 - **示例必须真实**：公开 URL / 公认作品类型；禁止编造片名、频道、数据
 
 ---
@@ -292,23 +292,23 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 ### 5.1 人类 / 协调方
 
 ```
-按 page-copy-spec，为 {客户} 写 {slug} 页文案：
-- 模具：{page-playbook 路径}
-- brief：{categories/keywords 中的该页条目}
+按页面文案生产规范，为 {站点} 写 {slug} 页文案：
+- 模具：{page-playbook}
+- brief：{categories / keywords 中的该页条目}
 - 语言：{EN / ZH}
 - 交付：按模具顺序输出各模块正文 + Swap Test 记录
 ```
 
 ### 5.2 Agent 执行
 
-1. 读取本规范 + 客户 Playbook + 该页 brief
+1. 读取本规范 + 站点 Playbook + 该页 brief
 2. 按 §3 流程产出
 3. 输出时附 **Swap Test 抽样**（至少英雄段 + 1 个 H2 + FAQ 首问）
 4. 对照 §6 验收清单自勾
 
-### 5.3 与客户 Task Brief 的关系
+### 5.3 与 Task Brief 的关系
 
-- 若任务交给**对方 agent 改代码/落盘**：再套 [agent-task-brief-spec.md](./agent-task-brief-spec.md) 生成任务单
+- 若任务交给**对方 agent 改代码/落盘**：再套独立的 agent 任务单规范生成任务单
 - 本规范管**写什么**；Task Brief 管**怎么交接、怎么验收部署**
 
 ---
@@ -356,21 +356,23 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 
 | 项 | 规则 |
 |----|------|
-| 本元文档 | `clients/page-copy-spec.md`（仅此一份） |
-| 客户 Playbook | `clients/{name}/page-playbook.md` 或 `{name}/{topic}/page-playbook.md` |
-| 页面 brief | 写在 Playbook §待建 或 `{name}-{topic}-categories.md` |
-| 标杆样例 | 客户文档内链到已上线 URL；不复制全文到本文件 |
+| 本元文档 | 工作区根目录保留一份通用规范（即本文件） |
+| 站点 Playbook | 各站点目录下的 `page-playbook.md` |
+| 页面 brief | 写在 Playbook §待建 或站点 categories 文档 |
+| 标杆样例 | 站点文档内链到已上线 URL；不复制全文到本文件 |
 
 ---
 
 ## §9 参考实例
 
-| 实例 | 位置 | 说明 |
-|------|------|------|
-| VOMO YouTube 分类页 | [page-playbook.md](./vomo/youtube%20transcription/page-playbook.md) | 英雄段公式、Swap 原则、模具顺序、brief 表 |
-| VOMO 播客平台页 | [page-playbook.md](./vomo/podcast%20transcription/page-playbook.md) | 平台缺口叙事、体裁变体 |
-| Alignify 一致性 | [section-consistency.md](./Alignify/content/sections/content-rules/section-consistency.md) | 字数三级、章内节奏 |
-| Alignify 去模板 | [section-how-to.md §三](./Alignify/content/sections/section-how-to.md) | 黑名单与分叉写法 |
+以下为典型应用方向，具体 Playbook 与样例由各站点自行维护：
+
+| 方向 | 说明 |
+|------|------|
+| 视频/音频分类页 | 英雄段公式、Swap 原则、模具顺序、brief 表 |
+| 平台 × 能力页 | 平台缺口叙事、体裁变体 |
+| 篇幅与一致性 | 字数三级、章内节奏 |
+| 去模板写法 | 黑名单与分叉写法 |
 
 ---
 
@@ -379,10 +381,9 @@ page-copy-spec.md（本文件）     ← 跨客户通用原则、验收框架
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | v1.0 | 2026-08-23 | 初版：五维定义、Swap Test、篇幅层级、生产流程、验收清单、反模式 |
+| v1.1 | 2026-08-25 | 脱敏：移除客户名称、本地路径与内部文档引用 |
 
 ---
 
-> **定位**：跨客户通用的「模板页文案」生产标准。当一批页面共用同一模具（如 Pop Music Generator / Rap Music Generator / Classic Music Generator）时，按本规范产出文案，确保**一致性、差异性、相关性、去模板化、独特性**五维达标。
-> **位置**：`clients/page-copy-spec.md`（根目录）。各客户的页面模具与 brief 存放在 `{name}/` 下，见 §8。
-> **版本**：v1.0 · 2026-08-23（变更记录见 §10）
-> **参考**：[客户文档规范](./demo/client-template.md)（客户文档总纲，本规范是其补充）；实例见 [VOMO YouTube 分类页手册](./vomo/youtube%20transcription/page-playbook.md)
+> **定位**：跨项目通用的「模板页文案」生产标准。当一批页面共用同一模具（如 Pop Music Generator / Rap Music Generator / Classic Music Generator）时，按本规范产出文案，确保**一致性、差异性、相关性、去模板化、独特性**五维达标。
+> **版本**：v1.1 · 2026-08-25（变更记录见 §10）

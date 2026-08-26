@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "breadcrumbs",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Breadcrumb navigation — location-based trails, BreadcrumbList JSON-LD schema, HTML semantics, and Search Console validation",
+  "differentiator_vs_generic": "This is site-structure breadcrumb implementation, NOT site navigation mega-menus. Hero must show a visible breadcrumb trail on a webpage (Home > Category > Page) paired with a BreadcrumbList schema snippet — NOT an LLM chat panel or generic folder icons alone.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Webpage header zone with prominent location-based breadcrumb trail — Home > Blog > SEO > Current Page — chevron separators, last crumb non-linked with accent underline on prior links; faint page title block below",
+    "Secondary: torn-paper JSON-LD code card showing BreadcrumbList itemListElement structure with position numbers 1-2-3 (blurred URLs, schema braces visible)",
+    "Tertiary: Rich Results Test pass badge silhouette + small SERP snippet row where breadcrumb path appears inline under a blue title link (generic, no Google logo)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "Generic folder tree without visible breadcrumb trail on a page",
+    "Path-based browsing history UI unrelated to hierarchy",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BREADCRUMBS GUIDE",
+      "headline_line2": "(2026)",
+      "subtitle": "Navigation & BreadcrumbList Schema",
+      "tagline": "HTML · JSON-LD · Rich Results",
+      "composition": "Visual-only editorial collage for breadcrumb SEO guide. HERO: webpage mockup occupying right two-thirds with location-based breadcrumb trail prominently below nav bar — Home > Blog > SEO > Page, chevron separators, accent alignify-navy on link crumbs, current page plain text. Secondary: BreadcrumbList JSON-LD card with itemListElement positions. Tertiary: generic SERP result row showing inline breadcrumb path under title. Title top-left only. Paper torn edges, halftone. NO LLM chat UI, NO real Google logo, NO readable page URLs as labels, NO WordPress/plugin logos."
+    },
+    "zh": {
+      "headline": "面包屑导航指南",
+      "headline_line2": "（2026）",
+      "subtitle": "结构化数据与SEO优化",
+      "composition": "Same layout as EN: visible breadcrumb trail HERO + BreadcrumbList JSON-LD card + SERP breadcrumb row. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "section": "insights",
+  "slug": "generative-ai-landscape",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Generative AI landscape map — companies, verticals, agents, enterprise adoption, and funding trends from VC, consulting, and research sources",
+  "differentiator_vs_generic": "This is a curated industry landscape map for competitive research, NOT a generic AI stock image or chatbot screenshot. Hero must be a multi-layer market map with vertical swim lanes, company logo blur nodes, and agent/enterprise tier bands.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Multi-layer AI landscape map — horizontal swim lanes for verticals (text, image, video, code, enterprise) with blurred company logo nodes placed in lanes and connecting dotted lines",
+    "Agent tier band across bottom — autonomous agent, copilot, workflow automation as three connected blocks with accent border",
+    "Secondary: funding heat strip — VC/consulting/research source icons with blurred bar heights indicating activity level"
+  ],
+  "anti_patterns": [
+    "Generic robot or brain stock photo",
+    "Single LLM chat panel as hero",
+    "Unstructured logo cloud without lane taxonomy",
+    "Growth chart without landscape framing",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "GENERATIVE AI LANDSCAPE",
+      "headline_line2": "(2026)",
+      "subtitle": "Companies · Verticals · Enterprise",
+      "tagline": "Agents · Funding · Market Map",
+      "composition": "Visual-only editorial collage for generative AI industry landscape insights. HERO: multi-layer market map on right two-thirds — horizontal swim lanes (text, image, video, code, enterprise) with blurred generic company logo nodes and dotted interconnections. Secondary: agent tier band at bottom (autonomous agent / copilot / workflow) with klein-blue accent border on agent block. Tertiary: funding heat strip with VC, consulting, research source icons and blurred activity bars. Title top-left. Paper torn edges, halftone. NO robot stock photo, NO chat UI hero, NO real company logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "生成式AI行业格局",
+      "headline_line2": "（2026）",
+      "subtitle": "公司、赛道与企业应用",
+      "composition": "Same layout as EN: multi-layer landscape map HERO + agent tier band + funding heat strip. Title top-left, NO extra Chinese lane labels, NO stock AI imagery, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "video-editor",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI video editor tools — timeline cuts, effects, and auto-editing assist",
+  "differentiator_vs_generic": "Multi-track NLE timeline with razor cuts, effect stack, and AI auto-edit suggestion ribbon, NOT clipping shorts-only or text-to-video.",
+  "visual_anchors": [
+    "HERO: Video editor timeline — multi-track clips with razor cut points, transition tiles, and AI auto-edit suggestion ribbon above playhead",
+    "Compact raw footage bin card arrow into assembled sequence on timeline",
+    "2x2 grid of editor panels (color grade, caption track, audio ducking, export presets) — UI only"
+  ],
+  "anti_patterns": [
+    "Vertical shorts clipping hero",
+    "Text-to-video prompt board",
+    "3D render viewport",
+    "Empty timeline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIDEO EDITORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Timeline · Effects · Auto-Edit",
+      "tagline": "Edit Faster with AI",
+      "composition": "Visual-only collage for AI video editor tools comparison: (1) HERO multi-track timeline with AI edit ribbon on right two-thirds. (2) Footage bin arrow into assembled sequence. (3) 2x2 grid of four editor panel UI tiles. (4) Magnifying glass on cut point detail. Paper collage, halftone. No clipping-only hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI视频编辑器",
+      "headline_line2": "（2026）",
+      "subtitle": "时间线 · 特效 · 智能剪辑",
+      "composition": "Same layout as EN: NLE timeline HERO + footage bin flow + 2x2 panel grid + magnifying glass on cut point. Title top-left only, NO extra Chinese UI labels, NO clipping-only hero, NO blank cards."
+    }
+  }
+}

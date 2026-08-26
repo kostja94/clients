@@ -2,7 +2,7 @@
 
 > 基于 [moras.ai](https://moras.ai/)、[k2lab.ai](https://k2lab.ai/)、应用商店与公开报道整理。
 
-**Last updated**: 2026-05-26
+**Last updated**: 2026-08-26
 
 ---
 
@@ -13,14 +13,15 @@
 | [moras.md](./moras.md)（本文） | 公司与产品概览、TikTok Shop 生态对照、信源、索引 |
 | [moras-features.md](./moras-features.md) | 多代理、Harness、能力矩阵、定价摘要 |
 | [moras-keywords.md](./moras-keywords.md) | 关键词、目标 URL、待办 |
-| [moras-use-cases.md](./moras-use-cases.md) | 人群、场景、内容角度 |
 | [moras-competitors.md](./moras-competitors.md) | 竞品与差异化 |
 | [moras-site-structure.md](./moras-site-structure.md) | 站点 IA 与页面 |
-| [tiktok-video-generator/moras-tiktok-video-generator.md](./tiktok-video-generator/moras-tiktok-video-generator.md) | TikTok Video Generator（合并主文档）：模板、Vertical 登记、词表、找词方法、生产流程 |
-| [tiktok-video-generator/moras-tiktok-video-generator-video-types.md](./tiktok-video-generator/moras-tiktok-video-generator-video-types.md) | 带货视频类型：类型清单、算法信号、类型 × Vertical 映射 |
-| [tiktok-shop-creator-types.md](./tiktok-shop-creator-types.md) | TikTok Shop 带货红人类型（Official / Marketing / Affiliate 等）+ 真实例子 |
-| [tiktok-shop-influencer-marketing-guide-2026.md](./tiktok-shop-influencer-marketing-guide-2026.md) | 中文内部：TTS × 达人营销；英文博客 → [blog/09](./blog/09-tiktok-shop-influencer-marketing.md) |
-| [tiktok-shop-creator-types.md](./tiktok-shop-creator-types.md) | 带货红人类型：Official / Marketing / Affiliate、合作模型、真实案例 |
+| [use-cases/README.md](./use-cases/README.md) | **Use Cases 文档集**（索引 + 分类原则 + 已上线/规划 slug） |
+| [use-cases/icp.md](./use-cases/icp.md) | 核心 ICP、场景矩阵、风险 |
+| [use-cases/labor-models.md](./use-cases/labor-models.md) | 劳动模型 → slug 映射 |
+| [use-cases/pages.md](./use-cases/pages.md) | `/use-cases/*` 页面规格与 rollout |
+| [use-cases/platform-taxonomy.md](./use-cases/platform-taxonomy.md) | TikTok Shop 平台 taxonomy 与案例 |
+| [tiktok-video-generator/moras-tiktok-video-generator.md](./tiktok-video-generator/moras-tiktok-video-generator.md) | TikTok Video Generator：模板、Vertical、词表 |
+| [tiktok-video-generator/moras-tiktok-video-generator-video-types.md](./tiktok-video-generator/moras-tiktok-video-generator-video-types.md) | 带货视频类型与 Vertical 映射 |
 
 ---
 
@@ -96,9 +97,9 @@
 | 网经社报道（融资与 Moras，中文） | [网经社 — K2 Lab 融资与 Moras](http://www.ec100.cn/detail--6658535.html) |
 | 东方财富转载（融资，中文） | [东方财富 — K2 Lab 天使轮融资](https://finance.eastmoney.com/a/202604163706888115.html) |
 | 达人营销 × TikTok Shop 参考长文 | [Modash — TikTok Shop: A Guide for Influencer Marketers](https://www.modash.io/blog/tiktok-shop-guide) |
-| TikTok Shop × 达人营销（中文内部） | [tiktok-shop-influencer-marketing-guide-2026.md](./tiktok-shop-influencer-marketing-guide-2026.md) |
 | TikTok Shop influencer marketing（英文博客） | [blog/09-tiktok-shop-influencer-marketing.md](./blog/09-tiktok-shop-influencer-marketing.md) |
-| TikTok Shop 带货红人类型与案例（中文） | [tiktok-shop-creator-types.md](./tiktok-shop-creator-types.md) |
+| TikTok Shop × 达人营销（中文内部，已归档） | [_archive/tiktok-shop-influencer-marketing-guide-2026.md](./_archive/tiktok-shop-influencer-marketing-guide-2026.md) |
+| TikTok Shop 带货红人与 Use Cases | [use-cases/platform-taxonomy.md](./use-cases/platform-taxonomy.md) · [use-cases/README.md](./use-cases/README.md) |
 
 *说明*：不同时间抓取的落地页在**标题层级、定价档、英文口号**上可能存在差异，协作时请固定「抓取日期 + URL」并交叉核对 [moras-features.md](./moras-features.md) 中的定价注记。
 

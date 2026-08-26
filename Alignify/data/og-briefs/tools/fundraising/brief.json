@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "fundraising",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Fundraising software — investor CRM, pipeline tracking, data rooms, cap table management",
+  "differentiator_vs_generic": "Investor pipeline CRM with cap table mini-card and data room folder row, NOT B2B sales lead enrichment or recruiting ATS.",
+  "visual_anchors": [
+    "HERO: Fundraising CRM board — kanban columns (research, intro, meeting, term sheet, closed) with investor avatar dots and round-size badge",
+    "Cap table pie mini-chart card and secure data room folder icons with lock shield",
+    "2x2 grid of fundraising workflow tiles (investor search, intro email, diligence checklist, SAFE note row) — UI only"
+  ],
+  "anti_patterns": [
+    "B2B sales lead waterfall diagram",
+    "Recruiting ATS pipeline",
+    "Generic marketing funnel chart",
+    "Empty CRM white card"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST FUNDRAISING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Investors · Pipeline · Data Room",
+      "tagline": "From Intro to Term Sheet",
+      "composition": "Visual-only collage for fundraising tools comparison: (1) HERO investor CRM kanban with round badge on right two-thirds. (2) Cap table mini-card + data room folder row. (3) 2x2 grid of four fundraising UI tiles. (4) Magnifying glass on term-sheet stage column. Paper collage, halftone. No B2B sales hero, no recruiting ATS, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳融资工具",
+      "headline_line2": "（2026）",
+      "subtitle": "投资人 · 管线 · 数据室",
+      "composition": "Same layout as EN: investor CRM kanban HERO + cap table/data room vignette + 2x2 workflow grid + magnifying glass on term-sheet column. Title top-left only, NO extra Chinese UI labels, NO B2B sales hero, NO blank cards. Mars-green accents."
+    }
+  }
+}

@@ -4,7 +4,7 @@
 
 **材料范围**：公开网络检索（StatCounter 市场份额数据、各搜索引擎官方文档与站长指南、行业分析报告、技术社区讨论摘要）；**未**将 Alignify 站内页面 JSON 当作事实来源复述。网摘整理日期 2026-05-20。
 
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md)
 
 **站内文章对照**：[alignify.co/seo/local-search-engines](https://alignify.co/seo/local-search-engines)（[中文](https://alignify.co/zh/seo/local-search-engines)） · `content/seo/en|zh/local-search-engines.md`
 

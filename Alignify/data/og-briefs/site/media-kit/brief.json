@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "media-kit",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Media Kit — downloadable Alignify brand logos, icons, guidelines, PNG/SVG marketing assets",
+  "differentiator_vs_generic": "Brand asset download page, NOT channel index. HERO must show logo variant sheet + download format chips.",
+  "visual_anchors": [
+    "HERO: Brand asset sheet — primary logo, icon mark, wordmark lockups on grid with PNG/SVG format chips and download arrow",
+    "Secondary: brand color swatch strip (navy, klein-blue, off-white) with torn-paper samples",
+    "Tertiary: press usage guideline doc corner with blurred bullet rules"
+  ],
+  "anti_patterns": [
+    "Channel hub link columns",
+    "Generic camera/media icon alone",
+    "Misleading product screenshot grid",
+    "Empty logo placeholders"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "MEDIA KIT",
+      "headline_line2": "",
+      "subtitle": "Logos · Icons · Brand Guidelines",
+      "tagline": "Free PNG & SVG Downloads",
+      "composition": "Visual-only collage for media kit page. HERO: logo variant grid with format download chips on right two-thirds. Secondary: brand color swatches. Tertiary: guideline doc corner. Title top-left. Paper collage, halftone. NO hub columns, NO stock photos, NO blank logo boxes."
+    },
+    "zh": {
+      "headline": "媒体素材包",
+      "headline_line2": "",
+      "subtitle": "Logo · 图标 · 品牌指南",
+      "composition": "Same layout as EN: logo variant grid HERO + color swatches + guideline corner. Title top-left, NO extra Chinese UI labels, NO blank boxes."
+    }
+  }
+}

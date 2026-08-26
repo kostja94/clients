@@ -4,7 +4,7 @@
 
 **材料范围**：公开网络检索（Google Search Central 官方文档、Search Engine Land、Ahrefs、Semrush、Siteimprove 技术博客、社区讨论与独立测评）；归纳 URL 结构设计、规范化处理、国际化 URL、参数管理与重定向策略的最佳实践。**未**把 Alignify 站内 Tools 正文 JSON 当作独立事实来源复述。**具体参数、定价与工具版本以各官网为准**。网摘整理日期 **2026-06-30**（补充 AI 引用信号、跨索引 canonical 一致性相关内容）。
 
-**规范对照**：[section-hero](../../content/sections/section-hero.md) · [section-meta-copy](../../content/sections/section-meta-copy.md) · [template-seo](../../content/templates/template-seo.md) · [section-heading-best-practices](../../content/sections/section-heading-best-practices.md)
+**规范对照**：[section-hero](../../skills/create-article/rules/templates/bloglayout.md) · [section-meta-copy](../../skills/create-article/rules/meta.md) · [template-seo](../../skills/create-article/rules/templates/seo.md) · [section-heading-best-practices](../../skills/create-article/rules/sections/generic.md)
 
 **SEO 关键词与 slug 映射**：[alignify-keywords-seo.md](../../product/alignify-keywords-seo.md)（锚点 `url-optimization`）
 

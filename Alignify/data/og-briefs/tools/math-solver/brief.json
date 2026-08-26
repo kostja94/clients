@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "math-solver",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI math solver tools — photo or typed equations to step-by-step solutions",
+  "differentiator_vs_generic": "Handwritten equation photo with step-by-step solution ladder and graph sketch, NOT generic chatbot or spreadsheet.",
+  "visual_anchors": [
+    "HERO: Handwritten calculus equation on notebook photo with numbered step-by-step solution cards unfolding downward",
+    "Compact camera-capture input card arrow into solved steps panel",
+    "2x2 grid of math output modes (algebra steps, graph plot, geometry diagram, word-problem breakdown) — UI/math only"
+  ],
+  "anti_patterns": [
+    "Generic LLM chat hero",
+    "Spreadsheet formula grid",
+    "Blank whiteboard",
+    "Calculator app alone"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI MATH SOLVERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Photo · Steps · Graphs",
+      "tagline": "Show Your Work, Instantly",
+      "composition": "Visual-only collage for AI math solver tools comparison: (1) HERO handwritten equation with step-by-step solution ladder on right two-thirds. (2) Camera input card arrow into solved steps. (3) 2x2 grid of four math output modes. (4) Magnifying glass on one solution step. Paper collage, halftone. No generic chat hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI数学解题工具",
+      "headline_line2": "（2026）",
+      "subtitle": "拍照 · 步骤 · 图表",
+      "composition": "Same layout as EN: equation steps HERO + camera input arrow + 2x2 output grid + magnifying glass on step. Title top-left only, NO extra Chinese UI labels, NO generic chat hero, NO blank cards."
+    }
+  }
+}

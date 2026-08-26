@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "headless-browser",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Headless browser tools — BaaS cloud browsers, Playwright automation, and agent web control",
+  "differentiator_vs_generic": "Cloud browser viewport with automation script overlay and DOM node highlight, NOT generic web scraper data table or SEO crawler alone.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Headless browser viewport — rendered web page with Playwright-style DOM node highlight box and automation step ribbon (navigate, click, scrape) along the bottom",
+    "Compact API endpoint card arrow into live browser session thumbnail with cursor ghost click",
+    "2x2 grid of automation vignettes (form fill, screenshot capture, PDF print, agent loop) — UI fragments only",
+    "Magnifying glass zooming on highlighted DOM selector chip"
+  ],
+  "anti_patterns": [
+    "Spreadsheet data export grid hero",
+    "SEO audit checklist",
+    "Generic proxy globe clipart",
+    "Empty browser window"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST HEADLESS BROWSER TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "BaaS · Playwright · Agents",
+      "tagline": "Browsers in the Cloud",
+      "composition": "Visual-only collage for headless browser tools comparison: (1) HERO cloud browser viewport with DOM highlight and automation ribbon on right two-thirds. (2) API card arrow into live session. (3) 2x2 grid of four automation vignettes. (4) Magnifying glass on DOM selector chip. Title top-left only. Paper collage, halftone. No scraper spreadsheet hero, no SEO audit, no blank browser."
+    },
+    "zh": {
+      "headline": "最佳无头浏览器工具",
+      "headline_line2": "（2026）",
+      "subtitle": "托管 · Playwright · Agent",
+      "composition": "Same layout as EN: headless browser HERO + API session flow + 2x2 automation grid + magnifying glass on DOM chip. Title top-left only, NO extra Chinese UI labels, NO scraper spreadsheet hero, NO blank browser. Navy accents."
+    }
+  }
+}

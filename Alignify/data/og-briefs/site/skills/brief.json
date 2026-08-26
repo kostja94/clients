@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "skills",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Marketing Skills for AI Agents — 172 curated Markdown skills (SEO, GEO, content, paid ads) from GitHub repo",
+  "differentiator_vs_generic": "Skills terminal landing, NOT generic course page. HERO must show terminal window + skill category grid + GitHub star motif.",
+  "visual_anchors": [
+    "HERO: Dark terminal window with green prompt cursor and blurred skill install command lines occupying right two-thirds",
+    "Secondary: Skills category grid chips (SEO, GEO, Content, Paid) arranged below terminal",
+    "Tertiary: GitHub star badge silhouette with fork icon — no readable repo name"
+  ],
+  "anti_patterns": [
+    "Light-mode SaaS dashboard",
+    "Channel hub link columns",
+    "Generic graduation cap stock art",
+    "Empty terminal window"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "MARKETING SKILLS",
+      "headline_line2": "FOR AI AGENTS",
+      "subtitle": "172 Curated Markdown Skills",
+      "tagline": "SEO · GEO · Content · Paid Ads",
+      "composition": "Visual-only collage for skills landing. HERO: dark terminal with prompt lines on right two-thirds. Secondary: four category skill chips grid. Tertiary: GitHub star badge. Title top-left on light paper contrasting terminal. Paper collage edge, halftone. NO hub columns, NO course stock art, NO blank terminal."
+    },
+    "zh": {
+      "headline": "营销Skills",
+      "headline_line2": "AI Agent专用",
+      "subtitle": "172个人工精选技能",
+      "composition": "Same layout as EN: terminal HERO + category chips + star badge. Title top-left, NO extra Chinese UI labels, NO blank terminal."
+    }
+  }
+}

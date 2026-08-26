@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "blog",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Blog channel index — deep-dive articles on AI infrastructure, multi-agent systems, vibe coding, and GTM engineering",
+  "differentiator_vs_generic": "Blog channel index cover, NOT a single article hero. HERO must show stacked article card covers with infra/agent/coding motifs.",
+  "visual_anchors": [
+    "HERO: Blog index card stack — 3 angled article cover cards (agent network diagram, training data pipeline, GitHub growth schematic) with date/author blur lines",
+    "Secondary: category rail tabs (Agents · Infra · GTM) morphing into card stack",
+    "Tertiary: long-form scroll silhouette with section markers"
+  ],
+  "anti_patterns": [
+    "Single article topic as entire canvas",
+    "Generic blog RSS icon alone",
+    "Hub link columns like /seo",
+    "Empty white article cards"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BLOG",
+      "headline_line2": "DEEP DIVES",
+      "subtitle": "Agents · Infra · GTM Engineering",
+      "tagline": "Long-Form AI/SaaS Guides",
+      "composition": "Visual-only collage for blog channel index. HERO: three stacked article cover cards on right two-thirds (multi-agent graph, data pipeline, GitHub marketing schematic) with blurred metadata lines. Secondary: category tab rail. Tertiary: scroll silhouette. Title top-left. Paper collage, halftone. NO single-article-only hero, NO hub columns, NO blank cards."
+    },
+    "zh": {
+      "headline": "博客",
+      "headline_line2": "深度文章",
+      "subtitle": "Agent · 基础设施 · GTM",
+      "composition": "Same layout as EN: stacked article cover cards HERO + category tabs + scroll silhouette. Title top-left, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

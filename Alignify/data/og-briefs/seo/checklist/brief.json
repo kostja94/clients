@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "checklist",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "SEO checklist with P0-P3 priority matrix — tracking setup, technical SEO, on-page, links, content modules, and release QA cadence",
+  "differentiator_vs_generic": "This is an evidence-driven SEO audit checklist with priority tiers, NOT a generic todo app screenshot. Hero must show a P0-P3 priority board with checked rows spanning technical + GSC items — NOT an LLM chat panel or abstract checkbox wallpaper.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Priority matrix checklist board — four horizontal bands labeled P0/P1/P2/P3 (band labels as minimal UI chrome only within the visual, not extra headline text), P0 band highlighted with accent border and 3 checked rows (robots/sitemap/canonical icons as tiny glyphs), P1-P3 bands with mixed check/empty states, faint GSC coverage icon in P0 row",
+    "Secondary: monthly cadence calendar strip with recurring audit markers (dots, no dates as readable text)",
+    "Tertiary: small URL Inspection rendered-screenshot frame silhouette paired with Core Web Vitals gauge arcs (blurred scores)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "Generic notepad with illegible scribbles unrelated to SEO tasks",
+    "Third-party audit score widget (green/yellow/red) as hero without checklist context",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "SEO CHECKLIST",
+      "headline_line2": "(2026)",
+      "subtitle": "Technical · Content · Links",
+      "tagline": "P0-P3 Priority Matrix · GSC Cadence",
+      "composition": "Visual-only editorial collage for SEO checklist guide. HERO: P0-P3 priority checklist board occupying right two-thirds — four stacked priority bands, P0 band with mars-green accent left border and checked rows showing tiny SEO glyphs (sitemap, canonical, HTTPS), P1-P3 with partial checks. Secondary: cadence timeline strip with audit dots. Tertiary: URL Inspection frame + CWV gauge silhouettes. Title top-left only. Paper torn edges, halftone. NO LLM chat UI, NO readable checklist item sentences on canvas, NO vendor audit logos, NO ranking promises as text."
+    },
+    "zh": {
+      "headline": "SEO检查清单",
+      "headline_line2": "（2026）",
+      "subtitle": "技术、内容与链接执行",
+      "composition": "Same layout as EN: P0-P3 checklist board HERO with accent P0 band + cadence strip + inspection/CWV tertiary. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

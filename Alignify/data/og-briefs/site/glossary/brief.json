@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "glossary",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Glossary index — SEO 240+, Marketing 160+, AI 140+ term collections hub",
+  "differentiator_vs_generic": "Glossary channel index, NOT a single term definition. HERO must show A–Z term chips clustered under three glossary pillars.",
+  "visual_anchors": [
+    "HERO: Glossary hub — three pillar cards (SEO / Marketing / AI) each sprouting A–Z term chip cloud with blurred term text",
+    "Secondary: dictionary page spread with highlighted term + definition blur lines",
+    "Tertiary: alphabetical index sidebar with scroll highlight"
+  ],
+  "anti_patterns": [
+    "Single term definition page hero",
+    "Generic book icon alone",
+    "Hub link columns unrelated to terms",
+    "Empty term chips"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "GLOSSARY",
+      "headline_line2": "INDEX",
+      "subtitle": "SEO · Marketing · AI Terms",
+      "tagline": "440+ Definitions · Free Reference",
+      "composition": "Visual-only collage for glossary channel hub. HERO: three pillar cards with A–Z term chip clouds on right two-thirds. Secondary: dictionary spread vignette. Tertiary: A–Z sidebar index. Title top-left. Paper collage, halftone. NO single-term hero, NO blank chips, NO unrelated hub UI."
+    },
+    "zh": {
+      "headline": "词汇表",
+      "headline_line2": "索引",
+      "subtitle": "SEO · 营销 · AI术语",
+      "composition": "Same layout as EN: three pillar term-chip HERO + dictionary spread + A–Z sidebar. Title top-left, NO extra Chinese UI labels, NO blank chips."
+    }
+  }
+}

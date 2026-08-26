@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "services",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Services page — overseas growth retainer for AI/SaaS: on-page, new pages, content, off-page, 3-month minimum",
+  "differentiator_vs_generic": "Services offer page, NOT channel index. HERO must show four service pillar cards + retainer timeline.",
+  "visual_anchors": [
+    "HERO: Four service pillar cards in row (On-page, New pages, Content, Off-page) with klein-blue top borders and blurred bullet lines",
+    "Secondary: 3-month retainer timeline bar with milestone ticks",
+    "Tertiary: handshake-to-dashboard handoff arrow (consulting + hands-on motif)"
+  ],
+  "anti_patterns": [
+    "Channel hub link columns",
+    "Generic pricing table only",
+    "Stock team meeting photo",
+    "Empty service cards"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "GROWTH SERVICES",
+      "headline_line2": "",
+      "subtitle": "Overseas Retainer for AI/SaaS",
+      "tagline": "On-Page · Content · Off-Page",
+      "composition": "Visual-only collage for services page. HERO: four service pillar cards on right two-thirds with accent borders. Secondary: 3-month timeline bar. Tertiary: consulting handoff arrow. Title top-left. Paper collage, halftone. NO hub index columns, NO stock photos, NO blank cards."
+    },
+    "zh": {
+      "headline": "增长服务",
+      "headline_line2": "",
+      "subtitle": "AI/SaaS海外月费",
+      "composition": "Same layout as EN: four service pillar cards HERO + timeline + handoff arrow. Title top-left, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

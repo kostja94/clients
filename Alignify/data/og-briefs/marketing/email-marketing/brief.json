@@ -1,0 +1,30 @@
+{
+  "section": "marketing",
+  "slug": "email-marketing",
+  "analyzed_at": "2026-08-24T16:10:00+00:00",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Email marketing content types — onboarding, campaigns, newsletters across user journey",
+  "differentiator_vs_generic": "Hero must be email inbox / newsletter layout, NOT social feed or search.",
+  "visual_anchors": [
+    "HERO: Email inbox UI with 3 stacked message rows — onboarding, campaign, newsletter icons (blurred subject lines)",
+    "Open-rate mini bar chart as accent",
+    "Envelope + sparkle send icon"
+  ],
+  "anti_patterns": ["Social media feed hero", "SERP", "magnifying glass hero", "empty inbox"],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "EMAIL MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "Content Types & Delivery",
+      "tagline": "Onboarding · Campaigns · Newsletters",
+      "composition": "Visual-only collage for email marketing strategy guide. HERO: clean email inbox panel with 3 message rows showing different email types (welcome, promo, newsletter) — blurred subjects, colored left accent bars. Secondary: small open-rate bar chart. Tertiary: flying envelope icon. Paper collage. NO social media UI, NO search bar."
+    },
+    "zh": {
+      "headline": "邮件营销策略",
+      "headline_line2": "（2026）",
+      "subtitle": "内容类型与投送",
+      "composition": "Same as EN: inbox HERO with 3 email type rows, open-rate chart accent, envelope icon. Title top-left, NO extra captions, NO blank cards, NO search UI."
+    }
+  }
+}

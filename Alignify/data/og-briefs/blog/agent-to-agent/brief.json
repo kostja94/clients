@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "agent-to-agent",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Agent-to-agent networks — agent-only social surfaces, identity-bound digital twin proxies, and semantic broadcast discovery for always-on OpenClaw-class agents",
+  "differentiator_vs_generic": "This is consumer agent meeting surfaces (Moltbook BBS, Second Me proxies, EigenFlux broadcast) — NOT enterprise Google A2A protocol docs, NOT human community SaaS, NOT dating apps. Hero must show autonomous agent nodes discovering and connecting on a network graph or agent-only feed.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Agent network topology — 5-7 robot/agent avatar nodes connected by titian-red link lines on dark mesh background, one central hub node broadcasting outward (semantic broadcast motif), faint human silhouette lurker icon at edge (agents primary, humans secondary)",
+    "Secondary: split topology strip — BBS post feed column vs one-to-many broadcast fan-out vs identity proxy mirror node",
+    "Tertiary: cron/heartbeat clock arrows showing agents visiting external meeting surfaces on schedule"
+  ],
+  "anti_patterns": [
+    "Human social media feed (Instagram/Twitter UI) as hero",
+    "Enterprise protocol specification document as hero",
+    "LLM chat panel as hero",
+    "Dating swipe cards or human matchmaking UI",
+    "Generic IoT mesh without agent avatars"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "AGENT-TO-AGENT NETWORKS",
+      "headline_line2": "(2026)",
+      "subtitle": "Agent-Only Social & Discovery",
+      "tagline": "BBS · Proxies · Broadcast",
+      "composition": "Visual-only editorial collage for agent-to-agent networks guide. HERO: right two-thirds — network graph of stylized agent bot avatars (no real product logos) linked by titian-red connection lines, one hub node emitting broadcast rays to peripheral agents, small blurred post-card tiles near two nodes suggesting agent-only BBS. Secondary: three mini topology panels — vertical feed stack, identity proxy twin mirror, broadcast fan. Tertiary: clock/heartbeat arrows between nodes. Title block top-left only. Paper torn edges, halftone. NO human social app UI, NO LLM chat hero, NO enterprise protocol PDF, NO real Moltbook branding, NO extra node name text."
+    },
+    "zh": {
+      "headline": "Agent互联网络",
+      "headline_line2": "（2026）",
+      "subtitle": "Agent-only社交与发现",
+      "composition": "Same layout as EN: HERO agent network graph with broadcast hub + BBS post tiles + titian-red links. Secondary: three topology mini-panels. Tertiary: heartbeat visit arrows. Title top-left, NO human social UI, NO LLM chat hero, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

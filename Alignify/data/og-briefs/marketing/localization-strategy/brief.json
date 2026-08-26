@@ -1,0 +1,24 @@
+{
+  "section": "marketing",
+  "slug": "localization-strategy",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Localization strategy — multilingual sites, global market expansion",
+  "visual_anchors": ["HERO: globe with language toggle dropdown (EN/中文/日本語 flags as generic pills)", "Side-by-side localized page mockups (LTR vs localized)", "World map with market pin markers"],
+  "anti_patterns": ["Single-language UI only", "generic translation icon without globe/market context"],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "LOCALIZATION STRATEGY",
+      "headline_line2": "(2026)",
+      "subtitle": "Multilingual & Global Growth",
+      "tagline": "i18n · Markets · Content",
+      "composition": "Visual-only collage for localization strategy guide. HERO: world globe illustration + language selector dropdown with 3 locale pills (blurred). Secondary: two side-by-side webpage mockups showing EN vs localized layout. Tertiary: map pins on 3 continents. Paper collage."
+    },
+    "zh": {
+      "headline": "本地化策略",
+      "headline_line2": "（2026）",
+      "subtitle": "多语种与全球化",
+      "composition": "Same: globe + language selector HERO + dual page mockups + map pins. Title top-left, NO extra labels, NO blank cards."
+    }
+  }
+}

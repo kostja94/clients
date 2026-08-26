@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "headshot-generator",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI headshot generators — casual selfie to professional studio portraits for LinkedIn and corporate profiles",
+  "differentiator_vs_generic": "Selfie-to-studio headshot before/after with 2x2 style variant grid, NOT talking avatar video or generic T2I character grid.",
+  "visual_anchors": [
+    "HERO: Before/after portrait transform — casual phone selfie on left via torn arrow into polished studio headshot on right with soft key light and neutral backdrop",
+    "2x2 grid of four headshot style variants (corporate navy, creative gray, outdoor bokeh, executive black) — face crops only, no names",
+    "Magnifying glass over likeness/skin texture detail comparing before and after cheek zone"
+  ],
+  "anti_patterns": [
+    "Talking avatar lip-sync video hero",
+    "Generic anime PFP generator grid",
+    "Passport ID photo spec ruler overlay as sole hero",
+    "Empty portrait frame"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI HEADSHOT GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Selfie · Studio · LinkedIn",
+      "tagline": "Professional Portraits From Selfies",
+      "composition": "Visual-only collage for AI headshot generator tools comparison: (1) HERO selfie-to-studio before/after transform on right two-thirds. (2) 2x2 grid of four headshot style variants. (3) Magnifying glass on likeness detail zone. Paper collage, halftone. No talking avatar hero, no anime PFP grid, no blank frames."
+    },
+    "zh": {
+      "headline": "最佳AI职业形象照生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "自拍 · 棚拍 · 领英",
+      "composition": "Same layout as EN: selfie-to-studio HERO + 2x2 style variant grid + magnifying glass on likeness detail. Title top-left only, NO extra Chinese UI labels, NO talking avatar hero, NO blank cards. Klein-blue accents."
+    }
+  }
+}

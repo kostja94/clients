@@ -1,6 +1,6 @@
 # Character Chat / AI 角色对话 · 知识块（非线性笔记）
 
-**材料范围**：公开网络检索（产品官网与社区准则、第三方评测与榜单、行业综述、开发者向文档）；并结合与前序会话一致的检索摘要（Talkie / Janitor AI / Character.AI / PolyBuzz / SpicyChat / Candy AI / Replika / Emochi / Tolan 等）；**未**把 Alignify 站内 Tools JSON 正文当作独立事实来源。网摘整理日期 **2026-05-10**；**与站内长文对齐**：正文主力对比仍为 **`content/tools/*/*character-chat.json`** 所列 **六款产品**（Talkie、Janitor AI、Character.AI、PolyBuzz、SpicyChat、Candy AI），本知识块补充概念分层与外链索引（共收录 **9 款产品**）；表格与定价以 JSON / 上线页为准。Emochi、Tolan 为 **2026-05-10 增补**。
+**材料范围**：公开网络检索（产品官网与社区准则、第三方评测与榜单、行业综述、开发者向文档）；并结合与前序会话一致的检索摘要（Talkie / Janitor AI / Character.AI / PolyBuzz / SpicyChat / Candy AI / Replika / Emochi / Tolan 等）；**未**把 Alignify 站内 Tools Markdown 正文当作独立事实来源。网摘整理日期 **2026-05-10**；**与站内长文对齐**：正文主力对比仍为 **`content/tools/*/*character-chat.json`** 所列 **六款产品**（Talkie、Janitor AI、Character.AI、PolyBuzz、SpicyChat、Candy AI），本知识块补充概念分层与外链索引（共收录 **9 款产品**）；表格与定价以 JSON / 上线页为准。Emochi、Tolan 为 **2026-05-10 增补**。
 
 **站内对照**：Alignify Tools · slug **`character-chat`** → [`/tools/character-chat`](https://alignify.co/tools/character-chat) · [`/zh/tools/character-chat`](https://alignify.co/zh/tools/character-chat)；`src/data/tools-pages-config.ts` 已收录 · `keywordZh`：**角色对话** · `keywordEn`：**Character Chat**
 

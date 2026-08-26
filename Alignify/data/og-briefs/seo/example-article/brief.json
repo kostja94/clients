@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "example-article",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "MDX content authoring — Markdown + React components in Next.js, mdx-components mapping, and static generation workflow",
+  "differentiator_vs_generic": "This is a developer content-stack tutorial (MDX/Markdown → React), NOT GEO/LLM chat. Hero must show Markdown source beside rendered article output with embedded React components — NOT an AI chat panel or generic code editor.",
+  "visual_anchors": [
+    "HERO (~55% canvas): split-pane MDX authoring mockup — left pane shows Markdown source with # heading and **bold** syntax (blurred prose), right pane shows styled rendered article with one embedded React component card (FAQ accordion or callout box with accent border)",
+    "Secondary: mdx-components.tsx mapping diagram — HTML element pills (h2, p, a, img) arrowing to styled React component blocks",
+    "Tertiary: small .mdx file icon with Next.js build/static badge blur"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is MDX authoring not GEO)",
+    "Generic IDE screenshot without Markdown-to-rendered split view",
+    "CMS dashboard or affiliate UI unrelated to content authoring",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "MDX GUIDE",
+      "headline_line2": "(2026)",
+      "subtitle": "Markdown + React in Next.js",
+      "tagline": "Component Mapping · Static Generation",
+      "composition": "Visual-only editorial collage for MDX/Next.js content authoring guide. HERO: split-screen mockup occupying right two-thirds — left Markdown source editor with visible # and ** syntax (blurred body text), right rendered article preview with one styled React component card embedded mid-paragraph (accordion or callout with accent alignify-navy border). Secondary: mdx-components mapping flow — semantic HTML tag pills connecting to React component blocks. Tertiary: small .mdx file tile. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI logos, NO ranking lists, NO extra UI labels as text."
+    },
+    "zh": {
+      "headline": "MDX使用教程",
+      "headline_line2": "（2026）",
+      "subtitle": "Markdown+React组件",
+      "composition": "Same layout as EN: MDX split-pane HERO (Markdown source + rendered article with React component) + component mapping diagram + .mdx file tile. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

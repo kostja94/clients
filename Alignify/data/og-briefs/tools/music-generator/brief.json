@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "music-generator",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI music generators — text prompts to full tracks, stems, and genre control",
+  "differentiator_vs_generic": "Prompt card morphing into waveform with stem lanes (drums, bass, melody) and genre tag chips, NOT video film strip or podcast mic.",
+  "visual_anchors": [
+    "HERO: Music generator board — text prompt card arrow into multi-track waveform with colored stem lanes and playhead scrubber",
+    "Compact genre/mood tag chip strip beside duration bar",
+    "2x2 grid of music outputs (pop hook, cinematic score, lo-fi beat, vocal stem) — waveform tiles only"
+  ],
+  "anti_patterns": [
+    "Video film strip hero",
+    "Podcast microphone waveform",
+    "Music video visualizer hero",
+    "Empty waveform flatline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI MUSIC GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prompt · Stems · Genres",
+      "tagline": "Describe It, Hear It",
+      "composition": "Visual-only collage for AI music generator tools comparison: (1) HERO prompt-to-waveform with stem lanes on right two-thirds. (2) Genre tag chip strip vignette. (3) 2x2 grid of four music output waveform tiles. (4) Magnifying glass on stem lane detail. Paper collage, halftone. No video strip hero, no podcast mic, no blank waveform."
+    },
+    "zh": {
+      "headline": "最佳AI音乐生成工具",
+      "headline_line2": "（2026）",
+      "subtitle": "提示词 · 分轨 · 风格",
+      "composition": "Same layout as EN: music prompt HERO + genre chips + 2x2 waveform grid + magnifying glass on stem lane. Title top-left only, NO extra Chinese UI labels, NO video strip hero, NO blank cards. Titian-red accents."
+    }
+  }
+}

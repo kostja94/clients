@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "fundraising-ai",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI fundraising tools — pitch deck analysis, investor matching, warm intro intelligence, round forecasting",
+  "differentiator_vs_generic": "AI pitch deck slide strip with investor match score badges and thesis-fit tags, NOT manual CRM kanban or generic LLM chat.",
+  "visual_anchors": [
+    "HERO: Pitch deck analyzer panel — horizontal slide thumbnail strip with AI highlight markers and floating investor match score badges (percentage rings, blurred firm names)",
+    "Investor thesis-fit tag chips (sector, stage, check size) clustered beside match scores",
+    "2x2 grid of AI fundraising tiles (deck critique notes, warm intro graph, round timeline forecast, competitor comp row) — UI fragments only"
+  ],
+  "anti_patterns": [
+    "Manual investor CRM kanban hero",
+    "Generic LLM chat bubble panel",
+    "B2B sales lead enrichment waterfall",
+    "Empty slide deck placeholder"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI FUNDRAISING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Deck · Match · Intro",
+      "tagline": "AI-Powered Raise Intelligence",
+      "composition": "Visual-only collage for AI fundraising tools comparison: (1) HERO pitch deck slide strip with AI highlights and investor match score badges on right two-thirds. (2) Thesis-fit tag chip cluster. (3) 2x2 grid of four AI fundraising UI tiles. (4) Magnifying glass on highest match score ring. Paper collage, halftone. No manual CRM kanban hero, no generic chat, no blank slides."
+    },
+    "zh": {
+      "headline": "最佳AI融资工具",
+      "headline_line2": "（2026）",
+      "subtitle": "路演 · 匹配 · 引荐",
+      "composition": "Same layout as EN: pitch deck analyzer HERO + thesis-fit chips + 2x2 AI fundraising grid + magnifying glass on match score. Title top-left only, NO extra Chinese UI labels, NO CRM kanban hero, NO blank cards. Mars-green accents."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "prospecting",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI sales prospecting tools — lead search, enrichment, and outreach lists",
+  "differentiator_vs_generic": "Lead search results table with enrichment data cards and ICP filter chips, NOT B2B pipeline kanban or CRM closed-won view.",
+  "visual_anchors": [
+    "HERO: Prospecting search panel with ICP filter chips and results table rows showing enriched company/person data cards",
+    "Compact LinkedIn-style profile vignette arrow into verified email/phone enrichment tile",
+    "2x2 grid of prospecting outputs (lead list export, intent signal, sequence queue, account map) — UI only"
+  ],
+  "anti_patterns": [
+    "Closed-won CRM pipeline hero",
+    "Affiliate dashboard",
+    "Generic SEO SERP",
+    "Empty spreadsheet"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI PROSPECTING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Leads · Enrichment · ICP",
+      "tagline": "Find Buyers Faster",
+      "composition": "Visual-only collage for AI sales prospecting tools comparison: (1) HERO prospect search with ICP filters and enrichment table on right two-thirds. (2) Profile vignette arrow into contact enrichment tile. (3) 2x2 grid of four prospecting output UI tiles. (4) Magnifying glass on enrichment data row. Paper collage, halftone. No CRM pipeline hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI潜客开发工具",
+      "headline_line2": "（2026）",
+      "subtitle": "潜客 · 数据补全 · 筛选",
+      "composition": "Same layout as EN: prospect search HERO + profile enrichment flow + 2x2 output grid + magnifying glass on data row. Title top-left only, NO extra Chinese UI labels, NO CRM pipeline hero, NO blank cards."
+    }
+  }
+}

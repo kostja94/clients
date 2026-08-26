@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "directory",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI tools directories — curated discovery grids, category filters, and comparison listings",
+  "differentiator_vs_generic": "Directory browse UI with search bar, category folder chips, and mosaic tool card grid, NOT a single product workflow or generic abstract network.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Directory homepage — prominent search bar with sparkle icon, horizontal category folder chips (image, video, coding, writing blurred), and masonry grid of tool cards with icon thumbnails only",
+    "Filter sidebar thumbnail: rating stars, pricing toggle, category tree — blurred labels only",
+    "2x2 grid of directory listing styles (featured pick, comparison table fragment, new arrivals row, alternatives cluster) — UI tiles only",
+    "Magnifying glass zooming on one tool card row showing icon, star rating dots, and tag chips"
+  ],
+  "anti_patterns": [
+    "Single product prompt workflow hero",
+    "Generic constellation/network abstract background",
+    "SERP ranking list",
+    "Empty search results white page"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TOOL DIRECTORIES",
+      "headline_line2": "(2026)",
+      "subtitle": "Discover · Compare · Curate",
+      "tagline": "Find the Right AI Tool Faster",
+      "composition": "Visual-only collage for AI tools directory platform comparison: (1) HERO directory browse UI with search bar, category chips, and tool card mosaic on right two-thirds. (2) Filter sidebar thumbnail. (3) 2x2 grid of four listing style tiles. (4) Magnifying glass on one tool card detail row. Title top-left only. Paper collage, halftone. No single-product workflow hero, no abstract network bg, no ranking text, no blank grid."
+    },
+    "zh": {
+      "headline": "最佳AI工具导航站",
+      "headline_line2": "（2026）",
+      "subtitle": "发现 · 对比 · 精选",
+      "composition": "Same layout as EN: directory browse HERO + filter sidebar + 2x2 listing grid + magnifying glass on tool card row. Title top-left only, NO extra Chinese UI labels, NO single-product workflow hero, NO blank grid."
+    }
+  }
+}

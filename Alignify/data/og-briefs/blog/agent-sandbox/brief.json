@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "agent-sandbox",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI agent sandbox — secure isolated execution for agent-generated code, shells, and browser actions via microVM boundaries, not production servers",
+  "differentiator_vs_generic": "This is execution isolation and blast-radius containment — NOT generic cloud hosting, NOT LLM chat. Hero must be a visibly bounded sandbox/microVM with terminal code running inside a security perimeter while the host stays outside.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Firecracker-style microVM container — dashed mars-green security boundary box with terminal prompt + Python/shell code lines inside, small agent icon orchestrating from outside, host/production server icon clearly separated outside the boundary",
+    "Secondary: blast-radius visual — red impact burst fully contained inside sandbox, zero leakage to host layer",
+    "Tertiary: snapshot/checkpoint restore timeline — pause icon and rewind arrow on sandbox lifecycle strip"
+  ],
+  "anti_patterns": [
+    "Generic cloud server rack as hero",
+    "LLM chat panel as hero",
+    "Docker whale logo or real vendor branding",
+    "Unbounded code editor without isolation boundary",
+    "Production laptop/server shown running untrusted agent code directly"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "AI AGENT SANDBOX",
+      "headline_line2": "(2026)",
+      "subtitle": "Secure Isolated Execution",
+      "tagline": "microVM · Devbox · Blast Radius",
+      "composition": "Visual-only editorial collage for AI agent sandbox guide. HERO: right two-thirds — rounded microVM sandbox box with mars-green dashed perimeter, dark terminal inside showing blurred shell/code lines and file I/O icons, tiny agent avatar outside sending exec commands inward through one API port. Secondary: contained explosion/alert glyph trapped inside box boundary. Tertiary: snapshot checkpoint strip with pause/restore icons. Title block top-left only. Paper torn edges, halftone. NO LLM chat hero, NO generic datacenter, NO real E2B/AWS logos, NO readable command text, NO extra security label captions."
+    },
+    "zh": {
+      "headline": "Agent沙箱",
+      "headline_line2": "（2026）",
+      "subtitle": "安全隔离执行环境",
+      "composition": "Same layout as EN: HERO bounded microVM sandbox with terminal inside + agent outside + mars-green perimeter. Secondary: contained blast-radius burst. Tertiary: snapshot lifecycle strip. Title top-left, NO LLM chat hero, NO datacenter cliché, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

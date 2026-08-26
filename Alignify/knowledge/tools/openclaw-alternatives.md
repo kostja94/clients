@@ -1,6 +1,6 @@
 # OpenClaw 系谱与变体对照 · 知识块（非线性笔记）
 
-**材料范围**：开源仓库自述（[openclaw/openclaw](https://github.com/openclaw/openclaw)）、官方 Gateway 安全文档、维基与科技媒体报道摘要、Moonshot/Kimi、MiniMax、Kilo、Nous Hermes、Pamir AI、PicoCluster Claw、Mac mini 载体叙事等公开发布物料、开发者社区讨论（HN、DEV、OpenClawsome 等）；归纳「网关型个人助理 / 托管发行版 / 硬件宿主 / 轻量化实现」等与 **OpenClaw** 同主题检索下同现的条线。**未**把 Alignify 站内 Tools JSON 正文当作独立事实来源。网摘整理日期 **2026-06-23**，若与站内正式页不一致，以 **`content/tools/*/*openclaw-alternatives.md`** 为准。
+**材料范围**：开源仓库自述（[openclaw/openclaw](https://github.com/openclaw/openclaw)）、官方 Gateway 安全文档、维基与科技媒体报道摘要、Moonshot/Kimi、MiniMax、Kilo、Nous Hermes、Pamir AI、PicoCluster Claw、Mac mini 载体叙事等公开发布物料、开发者社区讨论（HN、DEV、OpenClawsome 等）；归纳「网关型个人助理 / 托管发行版 / 硬件宿主 / 轻量化实现」等与 **OpenClaw** 同主题检索下同现的条线。**未**把 Alignify 站内 Tools Markdown 正文当作独立事实来源。网摘整理日期 **2026-06-23**，若与站内正式页不一致，以 **`content/tools/*/*openclaw-alternatives.md`** 为准。
 
 **站内对照**：**已上线** Alignify Tools · slug **`openclaw-alternatives`** → [`/tools/openclaw-alternatives`](https://alignify.co/tools/openclaw-alternatives) · [`/zh/tools/openclaw-alternatives`](https://alignify.co/zh/tools/openclaw-alternatives)；`src/data/tools-pages-config.ts` 已收录关键词 **OpenClaw 龙虾 智能体** / **OpenClaw & always-on AI agents**。
 

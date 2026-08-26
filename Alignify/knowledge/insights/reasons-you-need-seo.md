@@ -4,7 +4,7 @@
 
 **站内对照**：Alignify 已发布 [SEO核心价值与挑战：AI搜索时代的持续增长（ZH）](https://alignify.co/zh/insights/reasons-you-need-seo)（正文源：`content/insights/zh/reasons-you-need-seo.md`；英文：`content/insights/en/reasons-you-need-seo.md`）。该文是**叙事体**洞察：堆叠第三方数据（如 BrightEdge、Think with Google、HubSpot、Semrush、Backlinko、Ahrefs、Moz、AWR、SparkToro、Statcounter 等）、阐述 **「实务上 SEO≈Google 优化」**、展开 **当前挑战**（零点击与 Google 自有产品分流、SGE/AI 摘要与 TOFU、算法与平台虹吸、UGC 与「公平性」讨论、首位有机 CTR 与波动）、**整合营销**（SEO×广告/红人/社媒/插件）、**是否建专职 SEO 团队**与**冷启动优先**等；正文以段落与站内链为主，**已移除**历史碎裂配图。**本知识块**不重述长文论证链，而补：**多口径基准对照**（如 Conductor 企业样本 vs 营销口径「约半数」）、**内部知识库**与 **IMC** 的结构性条目、**归因与治理**碎片、以及指向长文与官方文档的索引。
 
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [knowledgehub/seo/README.md](../seo/README.md) · 搜索引擎机制导览：[how-search-engine-works.md](../seo/how-search-engine-works.md) · 学习路径与资源索引：[learn-seo.md](../seo/learn-seo.md) · GEO 与经典 Web 搜索边界：[tools/geo.md](../tools/geo.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [knowledgehub/seo/README.md](../seo/README.md) · 搜索引擎机制导览：[how-search-engine-works.md](../seo/how-search-engine-works.md) · 学习路径与资源索引：[learn-seo.md](../seo/learn-seo.md) · GEO 与经典 Web 搜索边界：[tools/geo.md](../tools/geo.md)
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。文中比例与调研结论为**第三方摘要**，请以原报告全文与自家 **GSC / Analytics** 为准。
 

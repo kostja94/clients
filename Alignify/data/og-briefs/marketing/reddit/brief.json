@@ -1,0 +1,30 @@
+{
+  "section": "marketing",
+  "slug": "reddit",
+  "analyzed_at": "2026-08-24T16:10:00+00:00",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Reddit marketing — subreddit posts, upvotes, karma, community engagement",
+  "differentiator_vs_generic": "Hero must be Reddit-style post card with upvote column, NOT Twitter/X or generic forum.",
+  "visual_anchors": [
+    "HERO: Reddit-style post card — left upvote/downvote arrow column, post title blur, comment count",
+    "Subreddit pill badge (r/SaaS style, generic text blur)",
+    "Upvote arrow trending line or karma score accent"
+  ],
+  "anti_patterns": ["Twitter/X bird logo", "affiliate dashboard", "email inbox", "Reddit official logo", "empty post card"],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "REDDIT MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "Algorithm & Community",
+      "tagline": "Subreddits · Upvotes · Karma",
+      "composition": "Visual-only collage for Reddit marketing strategy. HERO: Reddit-style post layout — vertical upvote/downvote arrows on left, blurred post title and body, comment bubble count. Secondary: subreddit pill tag (blurred r/name). Tertiary: rising upvote trend arrow. Paper collage. NO Reddit Snoo logo, NO Twitter UI, NO search SERP."
+    },
+    "zh": {
+      "headline": "Reddit营销策略",
+      "headline_line2": "（2026）",
+      "subtitle": "算法与社区运营",
+      "composition": "Same: Reddit post card HERO with upvote column + subreddit pill + comment count. Title top-left, NO Reddit logo, NO extra labels, NO blank cards."
+    }
+  }
+}

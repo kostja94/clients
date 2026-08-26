@@ -1,0 +1,55 @@
+{
+  "tools-best": {
+    "sections": ["tools"],
+    "description": "Product comparison / Best Tools pages",
+    "must_show": [
+      "Primary workflow UI metaphor (prompt card, timeline, editor canvas, etc.)",
+      "Output samples grid or before/after",
+      "One inspection/zoom or compare motif"
+    ],
+    "avoid": ["Generic abstract tech background", "Unrelated stock photos"]
+  },
+  "marketing-guide": {
+    "sections": ["marketing"],
+    "description": "Marketing strategy / growth guides",
+    "must_show": [
+      "Strategy-specific metaphor tied to H1 (not generic growth chart alone)",
+      "Channel-native UI if applicable (email inbox, affiliate dashboard, LLM chat for GEO)"
+    ],
+    "avoid": ["Generic SEO magnifying glass unless page is literally about SEO"]
+  },
+  "geo-aeo": {
+    "slugs": ["geo"],
+    "description": "Generative Engine Optimization — NOT traditional SEO",
+    "must_show": [
+      "HERO: LLM chat panel (ChatGPT-style dark sidebar OR Claude-style warm chat) occupying ~50% of canvas",
+      "User question bubble + assistant answer bubble",
+      "Numbered citation chips [1][2][3] with link icons at bottom of assistant answer (blurred text OK)",
+      "Optional: RAG arrows from web/PDF icons into the answer"
+    ],
+    "avoid": [
+      "Search bar as hero",
+      "Magnifying glass over SERP",
+      "Google-style blue link ranking list",
+      "Browser window showing search results page",
+      "SEO #1 ranking badge"
+    ]
+  },
+  "seo-guide": {
+    "sections": ["seo"],
+    "description": "Traditional SEO tutorials",
+    "must_show": [
+      "Search/SERP, sitemap, meta tags, GSC — whatever matches the slug"
+    ],
+    "avoid": ["LLM chat as hero unless slug is about AI search"]
+  },
+  "blog-insights": {
+    "sections": ["blog", "insights"],
+    "description": "Blog posts and insight articles",
+    "must_show": [
+      "Topic-specific metaphor from article thesis",
+      "Comparison split or data viz if it's a comparison post"
+    ],
+    "avoid": ["Generic decoration unrelated to thesis"]
+  }
+}

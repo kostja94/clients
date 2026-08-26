@@ -1,0 +1,38 @@
+{
+  "section": "marketing",
+  "slug": "geo",
+  "analyzed_at": "2026-08-24T16:00:00+00:00",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Get your brand cited inside ChatGPT, Claude, and Perplexity AI answers — not ranked on Google SERP",
+  "differentiator_vs_generic": "GEO is LLM answer citation optimization via RAG retrieval. The hero visual must be an AI chat assistant reply with numbered source citations — NOT a search engine results page, magnifying glass, or SEO ranking chart.",
+  "visual_anchors": [
+    "HERO (~50% canvas): ChatGPT-style dark LLM chat panel — user question bubble at top, large assistant answer below with 3 numbered citation chips [1][2][3] and chain-link icons under the answer (blurred illegible text only, NO OpenAI/Anthropic logos)",
+    "RAG retrieval flow: small web page and PDF document icons with accent arrows feeding INTO the assistant answer bubble",
+    "Subtle contrast strip: faded traditional search bar icon crossed out or smaller in background — visual 'GEO not SEO' cue without readable text"
+  ],
+  "anti_patterns": [
+    "Magnifying glass as hero element",
+    "Google-style SERP with blue ranked links",
+    "Search bar as the largest visual",
+    "Browser window showing search results page",
+    "SEO #1 ranking badge or position numbers",
+    "Generic growth chart as the main visual instead of LLM chat",
+    "Empty white placeholder cards below headline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "GEO & AEO STRATEGY",
+      "headline_line2": "(2026)",
+      "subtitle": "Get Cited in AI Answers",
+      "tagline": "ChatGPT · Claude · Perplexity",
+      "composition": "Visual-only editorial collage for GEO/AEO strategy (NOT SEO). HERO: Large ChatGPT-style dark LLM chat window on the right half — charcoal sidebar strip, user message bubble at top, assistant reply bubble below filling most of the panel. Inside assistant reply: blurred paragraph lines PLUS three prominent numbered citation footnote chips [1][2][3] with small chain-link icons in a row at the bottom of the answer (no readable answer text). Secondary: 2-3 small web page and PDF icons with red accent arrows pointing into the assistant bubble (RAG retrieval). Tertiary: tiny faded generic search bar in background, visually subordinate, NOT the focus. Paper torn edges, halftone grain. NO magnifying glass hero, NO SERP list, NO ranking numbers, NO empty cards."
+    },
+    "zh": {
+      "headline": "GEO/AEO策略指南",
+      "headline_line2": "（2026）",
+      "subtitle": "让品牌在AI回答中被引用",
+      "composition": "Same layout as EN version. HERO: Large ChatGPT-style dark LLM chat panel (~50% canvas right side) — user bubble + assistant answer with numbered citation chips [1][2][3] and link icons at bottom of answer (blurred text only, no platform logos). Secondary: web/PDF icons with red arrows into answer (RAG). Title block top-left only — NO extra Chinese captions on chat UI, NO search bar hero, NO magnifying glass, NO SERP, NO ranking text, NO blank white cards. Fill canvas with torn-paper accents."
+    }
+  }
+}

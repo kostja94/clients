@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "canvas-video",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Node-based AI video canvas tools — visual DAG workflows chaining models into clips",
+  "differentiator_vs_generic": "Infinite canvas with connected video nodes (prompt, image, clip) wired in a DAG, NOT single prompt-to-video bar or linear film strip alone.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Infinite node canvas with four linked nodes — text prompt block, reference image, video frame output, audio waveform — connected by curved wires on dotted grid",
+    "Mini playback preview window floating off the final node with play triangle overlay",
+    "2x2 grid of distinct canvas workflow outputs (product ad clip, animated character, city drone, stylized b-roll) — frame stills only",
+    "Magnifying glass zooming on one node connection port and wire junction"
+  ],
+  "anti_patterns": [
+    "Single linear film strip hero",
+    "One-shot text-to-video prompt bar only",
+    "n8n business automation flow unrelated to video",
+    "Empty infinite canvas"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIDEO CANVAS TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Nodes · Chain · Render",
+      "tagline": "Wire Models Into Video Pipelines",
+      "composition": "Visual-only collage for node-based AI video canvas tools comparison: (1) HERO infinite canvas with wired video nodes (prompt, image, clip, audio) occupying right two-thirds. (2) Floating preview window with play overlay off final node. (3) 2x2 grid of four output frame stills. (4) Magnifying glass on node wire junction. Title top-left only. Paper collage, halftone. No linear film strip hero, no ranking lists, no tool name text, no blank canvas."
+    },
+    "zh": {
+      "headline": "最佳AI视频画布工具",
+      "headline_line2": "（2026）",
+      "subtitle": "节点 · 串联 · 渲染",
+      "composition": "Same layout as EN: node canvas DAG HERO + preview play window + 2x2 output grid + magnifying glass on wire junction. Title top-left only, NO extra Chinese UI labels, NO linear film strip hero, NO blank canvas."
+    }
+  }
+}

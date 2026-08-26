@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "llm-for-coding",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI coding LLMs — code generation, debugging, and repo-aware completion benchmarks",
+  "differentiator_vs_generic": "Code editor panel with multi-file diff hunks and benchmark score bars for coding tasks, NOT generic chat or no-code builder.",
+  "visual_anchors": [
+    "HERO: Coding LLM workspace — split editor with syntax-highlighted diff hunks and adjacent mini benchmark bars (HumanEval, SWE-bench, debug pass rate)",
+    "Compact repo-aware prompt card arrow into generated function patch block",
+    "2x2 grid of coding LLM outputs (bug fix diff, unit test scaffold, refactor patch, API stub) — code fragments only"
+  ],
+  "anti_patterns": [
+    "Generic LLM chat without code hero",
+    "No-code drag-drop builder",
+    "Terminal CLI alone",
+    "Empty editor pane"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI CODING LLMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Generate · Debug · Benchmark",
+      "tagline": "Models Built for Code",
+      "composition": "Visual-only collage for AI coding LLM tools comparison: (1) HERO code editor with diff hunks and benchmark bars on right two-thirds. (2) Repo prompt arrow into patch block. (3) 2x2 grid of four coding output vignettes. (4) Magnifying glass on one diff hunk. Paper collage, halftone. No generic chat hero, no no-code builder, no blank editor."
+    },
+    "zh": {
+      "headline": "最佳AI编程大模型",
+      "headline_line2": "（2026）",
+      "subtitle": "生成 · 调试 · 基准",
+      "composition": "Same layout as EN: coding LLM editor HERO + repo prompt flow + 2x2 code grid + magnifying glass on diff hunk. Title top-left only, NO extra Chinese UI labels, NO generic chat hero, NO blank editor."
+    }
+  }
+}

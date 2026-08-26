@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "openclaw-alternatives",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "OpenClaw alternatives — gateway agents, hosted Claw stacks, Mac mini hosts, and deployment choices",
+  "differentiator_vs_generic": "Gateway agent topology diagram with IM channel adapters, tool plane, and memory layer nodes, NOT generic IDE or customer chatbot widget.",
+  "visual_anchors": [
+    "HERO (~50% canvas): OpenClaw-style gateway topology — central gateway node with spokes to IM channel icons (Telegram, Slack, Discord), tool plane block (browser, shell, cron), and memory file stack",
+    "Compact Mac mini host vignette beside managed cloud VM tile showing self-host vs hosted fork",
+    "2x2 grid of deployment modes (upstream self-host, KiloClaw managed, Kimi Claw cloud, Hermes parallel stack) — architecture tiles only",
+    "Magnifying glass zooming on gateway WebSocket control plane node"
+  ],
+  "anti_patterns": [
+    "IDE code editor hero",
+    "Customer support chat widget",
+    "Generic LLM chat sidebar",
+    "Empty architecture diagram"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "OPENCLAW ALTERNATIVES",
+      "headline_line2": "(2026)",
+      "subtitle": "Gateway · Hosts · Managed",
+      "tagline": "Pick Your Agent Stack",
+      "composition": "Visual-only collage for OpenClaw alternatives guide: (1) HERO gateway topology with IM channels, tool plane, memory layer on right two-thirds. (2) Mac mini vs cloud host vignette. (3) 2x2 grid of four deployment architecture tiles. (4) Magnifying glass on gateway node. Title top-left only. Paper collage, halftone. No IDE editor hero, no support widget, no blank diagram."
+    },
+    "zh": {
+      "headline": "OpenClaw替代方案",
+      "headline_line2": "（2026）",
+      "subtitle": "网关 · 载体 · 托管",
+      "composition": "Same layout as EN: gateway topology HERO + host vignette + 2x2 deployment grid + magnifying glass on gateway node. Title top-left only, NO extra Chinese UI labels, NO IDE hero, NO blank diagram. Navy accents."
+    }
+  }
+}

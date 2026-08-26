@@ -50,6 +50,7 @@
 |--------|---------|-----------|
 | **Current** | 可写进 Landing（仍建议 release-scope 确认） | 邀请用户是否默认可用 |
 | **Conditional** | 写「支持，但取决于…」并列出条件 | credits / 云分析 / 素材质量等 |
+| **开发中** | **不得写已上线**；可写「正在开发 / 即将推出」，不承诺发布日期 | 上线范围与验收状态 |
 | **Opportunity** | **不得写已上线**；可作 roadmap / Blog 方向 | 是否改 Status |
 | **Claim-Restricted** | 仅教育话题；**禁止产品承诺** | 合规审阅 |
 
@@ -79,18 +80,18 @@
 |---|---------|--------|----------|--------|------|
 | M1.1 | 能录屏幕吗？ | screen record reaction video | 全屏/窗口/区域录制 | Current | Features |
 | M1.2 | 能同时录摄像头（Face-Cam）吗？ | record facecam reaction | 同步录创作者画面 | Current | Features |
-| M1.3 | 能录麦克风和电脑里的原片声音吗？ | record system audio reaction | 🔲 系统音频 Conditional 条件 | Conditional | FAQ |
-| M1.4 | 一次性能录屏+摄像头+麦克风吗？ | multi-source reaction recording | 🔲 Multi-Source 条件 | Conditional | Features |
+| M1.3 | 能录麦克风和电脑里的原片声音吗？ | record system audio reaction | 支持录制麦克风和电脑系统音频 | Current | FAQ |
+| M1.4 | 一次性能录屏+摄像头+麦克风吗？ | multi-source reaction recording | 支持同时录制屏幕、摄像头和麦克风 | Current | Features |
 | M1.5 | 能导入本地视频吗？ | import video ai editor | 本地视频/音频/图片/文件夹 | Current | 首页 |
 | M1.6 | 能批量导入多段素材吗？ | batch import video editor | 支持 | Current | FAQ |
-| M1.7 | 能用 YouTube 链接导入吗？ | import youtube video editor | 🔲 若未上线写「暂不支持」 | Opportunity | Blog |
-| M1.8 | 录完后原片和 Face-Cam 是分开的轨道吗？ | separate source facecam tracks | 🔲 Editable Source Separation | Conditional | M3 联动 |
+| M1.7 | 能用 YouTube 链接导入吗？ | import youtube video editor | 开发中；目前不支持 YouTube 链接导入，URL 录制入口用于录制网页，不等同于下载/导入视频 | 开发中 | Blog |
+| M1.8 | 录完后原片和 Face-Cam 是分开的轨道吗？ | separate source facecam tracks | 原片和 Face-Cam 保持为独立可编辑轨道 | Current | M3 联动 |
 
 ### 分部门待确认
 
 | 部门 | 问题 |
 |------|------|
-| **产品** | M1.3–M1.4 Conditional 的**用户可见条件**是什么（浏览器、权限、credits）？ |
+| **产品** | M1.3–M1.4 已确认 Current；补充浏览器和权限细节即可 |
 | **客户端** | Web 录制支持哪些浏览器/OS？与 Desktop 录制 roadmap？ |
 
 ---
@@ -115,18 +116,18 @@
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M2.1 | 能处理多长的视频？ | ai long video editor | 🔲 时长上限、credits 关系 | 🔲 | Features P0 |
-| M2.2 | AI 能「看懂」素材讲什么吗？ | understand long reaction footage | 长素材地图 + 镜头/语音/情绪信号 | Conditional | 核心差异化 ★ |
-| M2.3 | 能按内容搜片段吗？ | semantic video search ai | 语义搜索，非只靠时间码 | Conditional | Blog |
-| M2.4 | 能识别说话内容吗？ | ai speech recognition video | 语音转文字 | Conditional | FAQ |
-| M2.5 | 能识别笑/惊讶等表情吗？ | ai emotion detection video | 情绪信号检测 | Conditional | M5 联动 |
-| M2.6 | 能分清哪条是原片、哪条是我吗？ | source vs creator track | Source-vs-Creator 角色识别 | Conditional | Movie Reaction |
+| M2.1 | 能处理多长的视频？ | ai long video editor | 最长支持 3 小时视频 | Current | Features P0 |
+| M2.2 | AI 能「看懂」素材讲什么吗？ | understand long reaction footage | 长素材地图 + 镜头/语音/情绪信号 | Current | 核心差异化 ★ |
+| M2.3 | 能按内容搜片段吗？ | search video by transcript and signals | 开发中；目标是按 ASR 文本及情绪、视觉、镜头信号搜索片段，当前底层仅有正则/子串匹配，不是完整语义搜索 | 开发中 | Blog |
+| M2.4 | 能识别说话内容吗？ | ai speech recognition video | 语音转文字 | Current | FAQ |
+| M2.5 | 能识别笑/惊讶等表情吗？ | ai emotion detection video | 情绪信号检测 | Current | M5 联动 |
+| M2.6 | 能分清哪条是原片、哪条是我吗？ | source vs creator track | Source-vs-Creator 角色识别 | Current | Movie Reaction |
 
 ### 分部门待确认
 
 | 部门 | 问题 |
 |------|------|
-| **AI/ML** | 长素材上限；分析完成前用户看到什么；Conditional 依赖项清单 |
+| **AI/ML** | 最长 3 小时（已确认）；分析完成前用户看到什么；其他 Conditional 依赖项清单 |
 | **产品** | 对外如何说「理解」而不 over-promise（vs 100% 准确禁令） |
 
 ---
@@ -151,10 +152,10 @@
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M3.1 | 原片和 Face-Cam 能自动对齐吗？ | sync facecam with source video | 音频/时间线自动对齐 | Conditional | P0 差异化 ★ |
-| M3.2 | 还要手动对波形吗？ | align reaction video audio | 🔲 自动对齐程度 | Conditional | FAQ |
-| M3.3 | 删一段会自动保持轨道对齐吗？ | ripple delete multi track | Automatic Gap Handling | Current | Features |
-| M3.4 | 多机位能 sync 吗？ | multi camera sync video | Multi-Camera Sync | Conditional | Blog |
+| M3.1 | 原片和 Face-Cam 能自动对齐吗？ | sync facecam with source video | 选择两条含音频的 Clip 后可一键自动计算并对齐；不会在导入后自动发生 | Current（需主动触发） | P0 差异化 ★ |
+| M3.2 | 还要手动对波形吗？ | align reaction video audio | 无需手动匹配波形；选择两条含音频 Clip 并触发 Audio Align 后自动计算偏移 | Current（需主动触发） | FAQ |
+| M3.3 | 删一段会自动保持轨道对齐吗？ | ripple delete multi track | Ripple Delete 可以对指定时间范围全轨联动删减；普通单 Clip 删除不会全轨联动 | Current（Ripple Delete 工作流） | Features |
+| M3.4 | 多机位能 sync 吗？ | multi camera sync video | 多机位批量同步开发中；当前只支持两条含音频 Clip 成对对齐 | 开发中 | Blog |
 
 ### 分部门待确认
 
@@ -185,12 +186,12 @@
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M4.1 | 能自动删 silence / dead air 吗？ | remove dead air reaction video | 支持；**不过度拍扁反应节奏** | Conditional | P0 |
-| M4.2 | 会删掉反应里重要的停顿吗？ | ai rough cut reaction | Remove dead air **without flattening the reaction** | ✅ 原则 | FAQ 信任 |
-| M4.3 | 能去 um uh 吗？ | filler word removal video | Filler Word Removal | Conditional | Blog |
+| M4.1 | 能自动删 silence / dead air 吗？ | remove dead air reaction video | 开发中；计划基于 speech/silence 信号执行 Ripple Delete，并保留用户复核 | 开发中 | P0 |
+| M4.2 | 会删掉反应里重要的停顿吗？ | ai rough cut reaction | 开发中；无法保证不会误删，必须允许用户预览、调整和 Undo | 开发中（仍不得保证不会误删） | FAQ 信任 |
+| M4.3 | 能去 um uh 吗？ | filler word removal video | 开发中；计划结合 ASR 与编辑操作移除已识别的 filler words，准确性取决于转写 | 开发中 | Blog |
 | M4.4 | 能降噪、统一音量吗？ | normalize audio reaction video | 降噪 + 响度标准化 | Current | Features |
 | M4.5 | 说话时能自动压低原片声吗？ | audio ducking reaction | Automatic Ducking | Current | M7 联动 |
-| M4.6 | 能用一句话描述生成粗剪吗？ | ai rough cut from prompt | Rough Cut from Prompt | Conditional | Demo |
+| M4.6 | 能用一句话描述生成粗剪吗？ | ai rough cut from prompt | Rough Cut from Prompt | Current | Demo |
 
 ### 分部门待确认
 
@@ -221,11 +222,11 @@ Shorts：能从长视频里摘竖屏高光吗？                     → M8 联�
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M5.1 | 能自动找 strong reaction 时刻吗？ | ai reaction highlight finder | 笑/惊讶/震惊/兴奋等 | Conditional | P0 ★ |
-| M5.2 | 能按情绪强度排序吗？ | find best reaction moments | Emotional Peak Ranking | Conditional | Features |
-| M5.3 | 能把高能 moment 放到视频开头吗？ | reaction video hook generator | Cold-Open Hook | Conditional | Blog |
-| M5.4 | AI 会建议几个开场 hook 吗？ | ai hook suggestions video | AI Hook Suggestions | Conditional | FAQ |
-| M5.5 | 能在时间线上看到标记吗？ | reaction timeline markers | Reaction Timeline Markers | Conditional | Demo |
+| M5.1 | 能自动找 strong reaction 时刻吗？ | ai reaction highlight finder | 笑/惊讶/震惊/兴奋等 | Current | P0 ★ |
+| M5.2 | 能按情绪强度排序吗？ | find best reaction moments | Emotional Peak Ranking | Current（按 emotion confidence/score 排序） | Features |
+| M5.3 | 能把高能 moment 放到视频开头吗？ | reaction video hook generator | Cold-Open Hook | Current | Blog |
+| M5.4 | AI 会建议几个开场 hook 吗？ | ai hook suggestions video | AI Hook Suggestions | Current | FAQ |
+| M5.5 | 能在时间线上看到标记吗？ | reaction timeline markers | Reaction Timeline Markers | Current（选中 Clip 时显示） | Demo |
 
 ### 分部门待确认
 
@@ -261,10 +262,10 @@ Shorts：竖屏双画面、字幕安全区？                        → TikTok/
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
 | M6.1 | 原片+脸 cam 有哪些布局？ | reaction video layout pip split | PIP / 分屏 / 竖屏堆叠等可编辑 | Current | P0 |
-| M6.2 | 布局会自动切换吗？ | smart layout reaction video | Smart Layout Switching | Conditional | Features |
-| M6.3 | 有自动字幕吗？ | auto captions reaction video | Captions / Kinetic Typography | 见 MG §2.3 | Features |
-| M6.4 | 强反应能自动 zoom/震屏吗？ | reaction zoom shake effect | Reaction Close-Up / Shake 等 | Current/Cond. | Demo |
-| M6.5 | 竖屏 Shorts 字幕不会被挡吗？ | shorts safe zone captions | Platform Safe-Zone | 见 MG §2.9 | Blog |
+| M6.2 | 布局会自动切换吗？ | smart layout reaction video | Smart Layout Switching | Current | Features |
+| M6.3 | 有自动字幕吗？ | auto captions reaction video | Captions / Kinetic Typography | Current | Features |
+| M6.4 | 强反应能自动 zoom/震屏吗？ | reaction zoom shake effect | Reaction Close-Up / Shake 等 | Current | Demo |
+| M6.5 | 竖屏 Shorts 字幕不会被挡吗？ | shorts safe zone captions | 平台专属字幕安全区尚未实现 | Opportunity | Blog |
 
 ### 分部门待确认
 
@@ -301,9 +302,9 @@ Shorts：竖屏双画面、字幕安全区？                        → TikTok/
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M8.1 | 几小时的 movie/live 能剪吗？ | ai edit long reaction video | Long-Footage Indexing / Overview | Conditional | P0 |
-| M8.2 | 能从长视频做 Shorts/Reels/TikTok 吗？ | turn long reaction into shorts | Long-to-Short Repurposing | Current | P0 |
-| M8.3 | 能自动分章节吗？ | ai video chapters | Chapter Suggestions | Opportunity | Blog |
+| M8.1 | 几小时的 movie/live 能剪吗？ | ai edit long reaction video | Long-Footage Indexing / Overview | Current（已确认可处理数小时素材） | P0 |
+| M8.2 | 能从长视频做 Shorts/Reels/TikTok 吗？ | turn long reaction into shorts | 长视频自动生成 Shorts/Reels/TikTok 尚未实现 | Opportunity | P0 |
+| M8.3 | 能自动分章节吗？ | ai video chapters | 目前不支持自动章节建议；语义分段信号仍为预留能力 | Opportunity（当前不支持） | Blog |
 
 ---
 
@@ -318,8 +319,8 @@ Shorts：竖屏双画面、字幕安全区？                        → TikTok/
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
 | M9.1 | 支持 YouTube 横屏和 Shorts 竖屏吗？ | reaction video aspect ratio | 16:9 / 9:16 / 1:1 画布 | Current | Features |
-| M9.2 | 有平台导出预设吗？ | export youtube tiktok preset | Export Presets | Current | FAQ |
-| M9.3 | 同一项目能导出长片+多个 Shorts 吗？ | multi version export video | Multi-Version Export | Opportunity | 🔲 |
+| M9.2 | 有平台导出预设吗？ | export youtube tiktok preset | 支持分辨率、帧率、格式、编码器等通用导出设置；暂无平台专属预设 | Opportunity（平台预设） | FAQ |
+| M9.3 | 同一项目能导出长片+多个 Shorts 吗？ | multi version export video | 开发中；目前不支持从同一项目批量导出长片和多个 Shorts，当前一次导出一个时间线版本 | 开发中 | 🔲 |
 
 ---
 
@@ -349,8 +350,8 @@ Shorts：竖屏双画面、字幕安全区？                        → TikTok/
 |---|---------|--------|----------|--------|------|
 | M10.1 | AI 剪完我还能手动改吗？ | editable ai timeline | 剪切/布局/字幕/音频均为可编辑对象 | Current | P0 ★ |
 | M10.2 | 能撤销某次 AI 操作吗？ | undo ai video edits | Undo an AI Edit | Current | FAQ P0 |
-| M10.3 | 是一键生成不能改的 AI 吗？ | ai video editor vs generator | **不是**黑盒；真人素材 + 可编辑时间线 | ✅ 定位 | 对比页 P0 |
-| M10.4 | 能用自然语言描述怎么剪吗？ | natural language video editing | Natural-Language Editing | Conditional | Demo |
+| M10.3 | 是一键生成不能改的 AI 吗？ | ai video editor vs generator | 不是一键生成后不可修改；AI 完成初剪，人类可在时间线上继续编辑，体现人机协作 | ✅ 定位 | 对比页 P0 |
+| M10.4 | 能用自然语言描述怎么剪吗？ | natural language video editing | Natural-Language Editing | Current | Demo |
 | M10.5 | 能看到 AI 改了什么吗？ | ai edit history video | Editing History and Explanation | Current | 信任 |
 | M10.6 | 能只让 AI 改选中一段吗？ | partial range ai edit | Partial-Range Editing | Current | FAQ |
 
@@ -359,7 +360,7 @@ Shorts：竖屏双画面、字幕安全区？                        → TikTok/
 | 部门 | 问题 |
 |------|------|
 | **产品** | 首页 FAQ Q4「Manual edit?」官方答案是否与 M10 一致 |
-| **客户端** | NL editing Conditional 条件；Preview Before Commitment roadmap |
+| **客户端** | NL editing 已确认 Current；Preview Before Commitment roadmap |
 
 ---
 
@@ -387,10 +388,10 @@ Movie 创作者：能帮我少播原片、多留解说吗？              → Co
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M11.1 | 能做 commentary-first movie reaction 吗？ | commentary first movie reaction | AI Commentary-First Edit | Opportunity | Blog P0 |
-| M11.2 | 能保证 fair use / 不被 claim 吗？ | fair use reaction video ai | **不能**；见 Required Disclaimer | Claim-Restricted | FAQ 必写 |
-| M11.3 | 能看成片里用了多少原片吗？ | source usage review video | Source-Usage Overview | Opportunity | 教育文 |
-| M11.4 | 能做 source-free watch-along 吗？ | watch along without video | Source-Free Watch-Along | Opportunity | 不得写「绝对安全」 |
+| M11.1 | 能做 commentary-first movie reaction 吗？ | commentary first movie reaction | AI Commentary-First Edit | Current | Blog P0 |
+| M11.2 | 能保证 fair use / 不被 claim 吗？ | fair use reaction video ai | **不能保证**；见 Required Disclaimer | Claim-Restricted（永久合规边界） | FAQ 必写 |
+| M11.3 | 能看成片里用了多少原片吗？ | source usage review video | Source-Usage Overview | Current | 教育文 |
+| M11.4 | 能做 source-free watch-along 吗？ | watch along without video | Source-Free Watch-Along | Current | 不得写「绝对安全」 |
 
 ### 分部门待确认
 
@@ -411,14 +412,14 @@ Movie 创作者：能帮我少播原片、多留解说吗？              → Co
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M12.1 | 能导入 YouTube 评论做回应视频吗？ | youtube comment reaction video | YouTube Comment Import | Opportunity | Blog |
-| M12.2 | 能自动排「展示评论→回应」结构吗？ | comment reply video editor | Comment Reply Sequence | Opportunity | 路线图 |
+| M12.1 | 能导入 YouTube 评论做回应视频吗？ | youtube comment reaction video | 目前不支持 YouTube 评论导入 | Opportunity（已确认未实现） | Blog |
+| M12.2 | 能自动排「展示评论→回应」结构吗？ | comment reply video editor | 目前不支持自动生成「展示评论→回应」结构 | Opportunity（已确认未实现） | 路线图 |
 
 ---
 
 ## M13 · 信任与获取（Trust & Access）
 
-**模块说明**：邀请制、定价、credits、隐私页缺失——用户决策最后一环。
+**模块说明**：邀请制、定价、credits、隐私政策可访问性——用户决策最后一环。
 
 **对口部门**：增长（主）· 合规 · 产品
 
@@ -426,18 +427,18 @@ Movie 创作者：能帮我少播原片、多留解说吗？              → Co
 
 | # | 用户问题 | 搜索词 | Vatt 答案 | Status | 营销 |
 |---|---------|--------|----------|--------|------|
-| M13.1 | 免费吗？怎么收费？ | vatt pricing | 一次性 free credits + 订阅档 | ⚠️ 价格动态加载 | `/pricing` |
+| M13.1 | 免费吗？怎么收费？ | vatt pricing | 提供 Free Trial；采用分阶梯收费模式 | Current（具体价格以 `/pricing` 为准） | `/pricing` |
 | M13.2 | 需要邀请码吗？ | vatt invite code | 邀请制 | ✅ 站点 | 首页 CTA |
-| M13.3 | 是纯 Web 还是要下载？ | vatt ai editor online | Web 编辑器 | ✅ | FAQ |
-| M13.4 | 比 Descript / Revid 好在哪？ | vatt vs descript, vs revid | 理解素材 + 真实剪辑 + 可编辑时间线（非生成器） | ⚠️ | 对比页 P0 |
-| M13.5 | 数据隐私政策在哪？ | vatt privacy | 🔲 站点暂无 /privacy | 🔲 | 信任缺口 |
+| M13.3 | 是纯 Web 还是要下载？ | vatt desktop editor | macOS / Windows 桌面编辑器，需下载安装 | ✅ | FAQ |
+| M13.4 | 比 Descript / Revid 好在哪？ | vatt vs descript, vs revid | 显著差异在于专为 Reaction 设计：Source-vs-Creator 角色识别、反应高光与情绪峰值排序、Hook 建议、Smart Layout、Reaction Close-Up / Shake、Commentary-First、Auto Duck、Source-Usage Overview、Source-Free Watch-Along，以及 AI 初剪后仍可由人类继续编辑的时间线 | ✅ 定位（描述差异，不宣称绝对更好） | 对比页 P0 |
+| M13.5 | 数据隐私政策在哪？ | vatt privacy | 已上线：[vatt.ai/privacy](https://vatt.ai/privacy) | ✅ 站点 | Privacy / 信任 |
 
 ### 分部门待确认
 
 | 部门 | 问题 |
 |------|------|
 | **增长** | 定价页完整套餐与 credits 规则（动态加载内容固化） |
-| **合规** | Privacy / Terms 上线时间与 URL |
+| **合规** | Privacy 已上线；确认 Terms 状态与 URL |
 | **产品** | 「10x faster」「first AI reaction editor」有无可引用方法论 |
 
 ---
@@ -459,21 +460,21 @@ Movie 创作者：能帮我少播原片、多留解说吗？              → Co
 
 ### 发给「产品」
 
-- M1 Conditional 用户可见条件；M4 粗剪默认行为  
+- M1 M1.3–M1.4 已确认 Current，补充浏览器/权限细节；M4 粗剪默认行为  
 - M5/M6 Tier 1 哪些可写进 Hero  
 - M10 FAQ 与定位一致性；M11 Movie stack Status  
 - M13 对比 Revid/Descript 官方话术  
 
 ### 发给「AI/ML」
 
-- M2 长素材上限与分析依赖；M3 同步失败 fallback  
+- M2 最长 3 小时（已确认）与分析依赖；M3 同步失败 fallback  
 - M5 highlight 检测范围与 Conditional 条件  
 - M8 长切短 pipeline  
 
 ### 发给「Web 客户端 / 工程」
 
 - M1 录制浏览器/OS 支持；M9 导出格式清单  
-- M10 NL editing、Partial-Range 实际上线状态  
+- M10 NL editing 已确认 Current、Partial-Range 实际上线状态  
 
 ### 发给「设计 / MG」
 
@@ -483,7 +484,7 @@ Movie 创作者：能帮我少播原片、多留解说吗？              → Co
 ### 发给「合规 / 法务」
 
 - M11 全部对外表述 + features §6 Claims 禁令  
-- M13 Privacy/Terms；copyright 教育文边界  
+- M13 Privacy 已上线；Terms 状态待确认；copyright 教育文边界  
 
 ### 发给「增长」
 
@@ -521,14 +522,14 @@ Movie 创作者：能帮我少播原片、多留解说吗？              → Co
 
 | # | 模块 | 问题 |
 |---|------|------|
-| 1 | M3 | Source/Facecam 自动同步：已上线？Conditional 条件？ |
-| 2 | M5 | Reaction Highlight：邀请用户默认可用吗？ |
-| 3 | M10 | Editable Timeline + Undo：release-scope 确认 |
-| 4 | M2 | 最长素材时长 / credits 消耗规则 |
-| 5 | M1 | 系统音频 + Multi-Source 录制：条件与浏览器 |
+| 1 | M3 | Source/Facecam 对齐：Current（需主动触发 Audio Align）；多机位批量同步仍为开发中 |
+| 2 | M5 | Reaction Highlight：已确认 Current |
+| 3 | M10 | Editable Timeline + Undo + NL editing：已确认 Current |
+| 4 | M2 | 最长 3 小时（已确认）/ credits 消耗规则 |
+| 5 | M1 | 系统音频 + Multi-Source 录制：已确认 Current；补充支持的浏览器 |
 | 6 | M6 | Tier 1 Layout/Captions 哪些 Current 可上 Hero |
-| 7 | M13 | 完整定价 + credits；Privacy/Terms 何时上线 |
-| 8 | M11 | Movie Reaction 功能有无任一 Conditional 可演示 |
+| 7 | M13 | 已确认 Free Trial + 阶梯收费；具体档位、价格及 credits 规则待固化；Privacy 已上线；Terms 状态待确认 |
+| 8 | M11 | Movie Reaction 栈（Commentary-First / Source-Usage / Watch-Along）已确认 Current |
 | 9 | 全局 | 「10x faster」「first AI reaction editor」可否继续用 |
 
 ---
@@ -541,6 +542,6 @@ Movie 创作者：能帮我少播原片、多留解说吗？              → Co
 
 **范围**：首页 / 待建 Features / Blog / 对比页 / FAQ；场景 → [use-cases](./vatt-use-cases.md)。
 
-*Last updated: 2026-08-24*
+*Last updated: 2026-08-26（团队审阅同步）*
 
 *关联：[vatt.md](./vatt.md) | [vatt-features.md](./vatt-features.md) | [vatt-motion-graphics.md](./vatt-motion-graphics.md) | [vatt-keywords.md](./vatt-keywords.md) | [vatt-competitors.md](./vatt-competitors.md)*

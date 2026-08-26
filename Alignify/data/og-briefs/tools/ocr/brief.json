@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "ocr",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "OCR tools — extract text from images, scans, and documents with layout preservation",
+  "differentiator_vs_generic": "Scanned document photo with bounding-box text regions and extracted text column beside it, NOT image enhancer or generic translation split.",
+  "visual_anchors": [
+    "HERO: OCR workspace — scanned invoice/receipt photo with colored bounding-box regions overlay and extracted text column with preserved layout lines",
+    "Compact camera-capture input card arrow into OCR result panel with confidence badges",
+    "2x2 grid of OCR modes (handwriting, table extract, multi-language, batch PDF) — UI only"
+  ],
+  "anti_patterns": [
+    "Image upscaler before/after hero",
+    "Translation bilingual columns hero",
+    "Generic chat without scan input",
+    "Empty scan photo"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST OCR TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Scan · Extract · Layout",
+      "tagline": "Images Become Text",
+      "composition": "Visual-only collage for OCR tools comparison: (1) HERO scanned doc with bounding boxes and extracted text column on right two-thirds. (2) Camera input arrow into OCR result. (3) 2x2 grid of four OCR mode UI tiles. (4) Magnifying glass on one bounding box region. Paper collage, halftone. No upscaler hero, no translation split, no blank scan."
+    },
+    "zh": {
+      "headline": "最佳OCR工具",
+      "headline_line2": "（2026）",
+      "subtitle": "扫描 · 提取 · 版式",
+      "composition": "Same layout as EN: OCR bounding-box HERO + camera input flow + 2x2 mode grid + magnifying glass on text region. Title top-left only, NO extra Chinese UI labels, NO upscaler hero, NO blank cards. Mars-green accents."
+    }
+  }
+}

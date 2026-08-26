@@ -1,7 +1,6 @@
 # Proof Library — Moras
 
-> 维护说明见 SSOT `blog-create/07-proof-library-pattern.md`  
-> **最后全量验证**：2026-08-04 · **维护人**：blog-audit batch #10–#24
+> **最后全量验证**：2026-08-04
 
 ---
 

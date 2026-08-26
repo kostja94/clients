@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "betalist",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Beta List — curated AI products in public beta (Lessie AI agent search) with early access promo codes",
+  "differentiator_vs_generic": "Beta product showcase list, NOT generic startup directory. HERO must show beta badge cards + promo code reveal motif.",
+  "visual_anchors": [
+    "HERO: Beta list cards — 2–3 product cards with BETA ribbon, agent search UI blur (Lessie-style), and early-access key icon",
+    "Secondary: expandable promo code chip with copy icon (blurred code text)",
+    "Tertiary: waitlist queue silhouette with sparkles"
+  ],
+  "anti_patterns": [
+    "YouTube thumbnail as literal hero photo",
+    "Generic Product Hunt clone grid",
+    "Channel hub columns",
+    "Empty product cards"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BETA LIST",
+      "headline_line2": "",
+      "subtitle": "Curated AI Products in Public Beta",
+      "tagline": "Early Access · Promo Codes",
+      "composition": "Visual-only collage for betalist page. HERO: beta product cards with BETA ribbons and agent-search UI blur on right two-thirds. Secondary: promo code chip with copy icon. Tertiary: waitlist sparkles. Title top-left. Paper collage, halftone. NO literal video thumbnail, NO PH clone alone, NO blank cards."
+    },
+    "zh": {
+      "headline": "公测列表",
+      "headline_line2": "",
+      "subtitle": "精选AI产品公测",
+      "composition": "Same layout as EN: beta product cards HERO + promo chip + waitlist sparkles. Title top-left, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "events",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Events hub — LinkLoud, Praxis, Founder Park offline AI/SaaS growth and SEO meetups index",
+  "differentiator_vs_generic": "Events channel index, NOT one event recap poster. HERO must show stacked event card covers with venue/date blur.",
+  "visual_anchors": [
+    "HERO: Event index card fan — 3 overlapping event cover cards (stage photo silhouette, workshop room, founder meetup) with date badges blurred",
+    "Secondary: calendar month strip with highlighted event dots",
+    "Tertiary: map pin + city skyline minimal line art"
+  ],
+  "anti_patterns": [
+    "Single LinkLoud recap as entire hero",
+    "Generic conference crowd stock photo",
+    "Webinar laptop hero",
+    "Empty event cards"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "EVENTS",
+      "headline_line2": "HUB",
+      "subtitle": "Offline AI/SaaS Growth Meetups",
+      "tagline": "LinkLoud · Praxis · Founder Park",
+      "composition": "Visual-only collage for events channel hub. HERO: three overlapping event cover cards on right two-thirds with blurred date badges. Secondary: calendar strip with dots. Tertiary: map pin skyline line. Title top-left. Paper collage, halftone. NO single-event-only hero, NO stock crowd photo, NO blank cards."
+    },
+    "zh": {
+      "headline": "活动",
+      "headline_line2": "索引",
+      "subtitle": "线下增长与SEO分享",
+      "composition": "Same layout as EN: event card fan HERO + calendar strip + map pin. Title top-left, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

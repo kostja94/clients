@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "user-research",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI user research tools — interviews to insights, themes, and affinity maps",
+  "differentiator_vs_generic": "Interview clip cards clustering into affinity map themes with insight quotes, NOT generic survey bar chart or CRM.",
+  "visual_anchors": [
+    "HERO: Research synthesis board — interview video/audio clip cards clustering into affinity map theme columns with highlighted insight quote sticky notes",
+    "Compact interview transcript card arrow into auto-generated theme tags",
+    "2x2 grid of research outputs (persona card, journey map, highlight reel, share report) — UI only"
+  ],
+  "anti_patterns": [
+    "Generic survey bar chart hero",
+    "Sales CRM pipeline",
+    "Empty sticky wall",
+    "Analytics funnel unrelated"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI USER RESEARCH TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Interviews · Themes · Insights",
+      "tagline": "From Conversations to Clarity",
+      "composition": "Visual-only collage for AI user research tools comparison: (1) HERO affinity map with interview clips and insight notes on right two-thirds. (2) Transcript card arrow into theme tags. (3) 2x2 grid of four research output UI tiles. (4) Magnifying glass on insight quote sticky. Paper collage, halftone. No survey chart hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI用户研究工具",
+      "headline_line2": "（2026）",
+      "subtitle": "访谈 · 主题 · 洞察",
+      "composition": "Same layout as EN: affinity map HERO + transcript theme flow + 2x2 output grid + magnifying glass on insight note. Title top-left only, NO extra Chinese UI labels, NO survey chart hero, NO blank cards."
+    }
+  }
+}

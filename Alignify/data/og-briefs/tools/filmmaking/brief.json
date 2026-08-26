@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "filmmaking",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI filmmaking tools — script-to-screen production for indie and pro workflows",
+  "differentiator_vs_generic": "Director viewfinder storyboard strip with shot list and clapperboard header, NOT single T2V prompt card or anime-only frame grid.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Filmmaking workspace — clapperboard header above horizontal storyboard strip with shot numbers, lens notes, and one hero cinematic frame with director viewfinder overlay",
+    "Compact script page vignette with blurred dialogue lines arrow into storyboard thumbnails",
+    "2x2 grid of filmmaking outputs (location pre-vis, character blocking, color grade still, final wide shot) — cinematic frames only",
+    "Magnifying glass zooming on shot list annotation row"
+  ],
+  "anti_patterns": [
+    "Single prompt-to-video card hero",
+    "Anime-only storyboard strip",
+    "Social vertical reel grid",
+    "Empty storyboard panels"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI FILMMAKING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Script · Storyboard · Shoot",
+      "tagline": "From Idea to Picture Lock",
+      "composition": "Visual-only collage for AI filmmaking tools comparison: (1) HERO clapperboard + storyboard strip with viewfinder frame on right two-thirds. (2) Script vignette arrow into storyboard. (3) 2x2 grid of four cinematic output frames. (4) Magnifying glass on shot list row. Title top-left only. Paper collage, halftone. No T2V prompt hero, no anime-only grid, no blank panels."
+    },
+    "zh": {
+      "headline": "最佳AI电影制作工具",
+      "headline_line2": "（2026）",
+      "subtitle": "剧本 · 分镜 · 拍摄",
+      "composition": "Same layout as EN: storyboard HERO + script flow + 2x2 cinematic grid + magnifying glass on shot list. Title top-left only, NO extra Chinese UI labels, NO T2V prompt hero, NO blank panels. Navy accents."
+    }
+  }
+}

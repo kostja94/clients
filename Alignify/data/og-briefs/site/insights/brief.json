@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "insights",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Industry Insights hub — OpenAI ecosystem, Google AI landscape, generative AI map, and SEO strategic value analyses",
+  "differentiator_vs_generic": "Insights channel index, NOT one company profile. HERO must show landscape/map + trend card cluster.",
+  "visual_anchors": [
+    "HERO: Insights hub collage — central generative AI landscape map blob with satellite trend cards (OpenAI orbit, Google product grid blur, indie hacker chart)",
+    "Secondary: magazine-style index column listing blurred insight titles",
+    "Tertiary: magnifying glass over one trend card detail"
+  ],
+  "anti_patterns": [
+    "Single OpenAI article as entire hero",
+    "Generic stock market ticker",
+    "Tools comparison grid",
+    "Empty map silhouette"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "INDUSTRY INSIGHTS",
+      "headline_line2": "(2026)",
+      "subtitle": "AI/SaaS Trends & Analysis",
+      "tagline": "OpenAI · Google · Landscape",
+      "composition": "Visual-only collage for insights channel hub. HERO: AI landscape map with orbiting trend cards on right two-thirds. Secondary: blurred insight index column. Tertiary: magnifying glass on one card. Title top-left. Paper collage, halftone. NO single-company-only hero, NO tools grid, NO blank cards."
+    },
+    "zh": {
+      "headline": "行业洞察",
+      "headline_line2": "（2026）",
+      "subtitle": "AI/SaaS趋势分析",
+      "composition": "Same layout as EN: landscape map HERO + insight index column + magnifying glass. Title top-left, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -7,14 +7,12 @@
 | [moras.md](./moras.md) | 主文档：公司、产品定位、**TikTok Shop 与 Moras 对照**、信源、索引 |
 | [moras-features.md](./moras-features.md) | 能力、代理架构、定价摘要 |
 | [moras-keywords.md](./moras-keywords.md) | 关键词与目标 URL 映射（待办） |
-| [moras-use-cases.md](./moras-use-cases.md) | 人群与使用场景 |
 | [moras-competitors.md](./moras-competitors.md) | 竞品与差异化 |
 | [moras-site-structure.md](./moras-site-structure.md) | 站信息架构与页面清单 |
-| [tiktok-video-generator/moras-tiktok-video-generator.md](./tiktok-video-generator/moras-tiktok-video-generator.md) | **TikTok Video Generator**（合并主文档）：概览、模板、Vertical 登记、词表、找词方法 |
-| [tiktok-video-generator/moras-tiktok-video-generator-video-types.md](./tiktok-video-generator/moras-tiktok-video-generator-video-types.md) | 带货视频类型：类型清单、算法信号、类型 × Vertical 映射 |
-| [tiktok-shop-creator-types.md](./tiktok-shop-creator-types.md) | **TikTok Shop 带货红人类型全景**：平台身份 / 合作关系 / 内容形态 + `@based` 等真实例子 |
-| [tiktok-shop-influencer-marketing-guide-2026.md](./tiktok-shop-influencer-marketing-guide-2026.md) | 中文内部：TikTok Shop × 达人营销（Modash + Moras）；英文博客见 [blog/09](./blog/09-tiktok-shop-influencer-marketing.md) |
-| [tiktok-shop-creator-types.md](./tiktok-shop-creator-types.md) | TikTok Shop 带货红人类型全景（平台身份 / 合作关系 / 内容形态 + 真实案例） |
+| [use-cases/README.md](./use-cases/README.md) | **Use Cases 文档集**（ICP · 劳动模型 · 页面规格 · 平台 taxonomy） |
+| [tiktok-video-generator/moras-tiktok-video-generator.md](./tiktok-video-generator/moras-tiktok-video-generator.md) | TikTok Video Generator（合并主文档） |
+| [tiktok-video-generator/moras-tiktok-video-generator-video-types.md](./tiktok-video-generator/moras-tiktok-video-generator-video-types.md) | 带货视频类型与 Vertical 映射 |
+| [_archive/ARCHIVED.md](./_archive/ARCHIVED.md) | 已归档工程/内容稿 |
 
 *产品*：[moras.ai](https://moras.ai/) · *公司*：[K2 Lab](https://k2lab.ai/)（Powered by K2 lab，页脚为 K2LAB）
 

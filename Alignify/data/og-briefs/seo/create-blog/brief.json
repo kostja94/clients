@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "create-blog",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Blog creation from zero — tech stack (WordPress/SSG), editorial workflow, SEO template config, content clusters, and promotion",
+  "differentiator_vs_generic": "This is blog launch + SEO foundation guide, NOT social media growth hacks. Hero must show blog CMS editor with Article schema + sitemap/GSC submission flow — NOT an LLM writing assistant chat as hero.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Blog post editor mockup — title field, H1/H2 outline sidebar, featured image placeholder, publish button — overlapped with XML sitemap submit card and Search Console property verification checkmark (generic UI, no WordPress logo)",
+    "Secondary: topic cluster diagram — one pillar node center with 4 spoke article nodes connected by internal link arrows",
+    "Tertiary: Core Web Vitals pass strip (LCP/INP/CLS gauge silhouettes) hinting at SSG performance ceiling"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "AI writing assistant prompt box dominating canvas",
+    "Social media follower counter or viral post imagery unrelated to blog SEO",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "CREATE A BLOG",
+      "headline_line2": "(2026)",
+      "subtitle": "Tech Stack · Content · SEO",
+      "tagline": "CMS · Sitemap · Topic Clusters",
+      "composition": "Visual-only editorial collage for blog creation SEO guide. HERO: blog editor UI occupying right two-thirds — post title block, heading outline rail, image placeholder, publish control — overlapped by XML sitemap submit card and GSC verification tick, alignify-navy accent on publish/sitemap connector. Secondary: hub-and-spoke topic cluster with pillar center and four spokes. Tertiary: CWV gauge silhouettes. Title top-left only. Paper torn edges, halftone. NO LLM chat UI, NO WordPress/CMS logos, NO real Google logo, NO newsletter subscriber counts as text."
+    },
+    "zh": {
+      "headline": "从0到1创建博客",
+      "headline_line2": "（2026）",
+      "subtitle": "技术栈与SEO配置",
+      "composition": "Same layout as EN: blog editor + sitemap/GSC HERO, topic cluster + CWV tertiary. Title top-left, NO LLM chat, NO CMS logos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

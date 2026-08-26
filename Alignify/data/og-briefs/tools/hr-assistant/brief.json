@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "hr-assistant",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI HR assistants — employee self-service, policy Q&A, and benefits lookup",
+  "differentiator_vs_generic": "Employee portal chat with policy handbook citation chips and PTO balance card, NOT recruiting ATS pipeline or payroll spreadsheet.",
+  "visual_anchors": [
+    "HERO: HR self-service chat — employee question bubble, assistant answer with policy handbook citation chips [1][2] and PTO balance mini-card",
+    "Compact org directory search card arrow into policy FAQ answer panel",
+    "2x2 grid of HR assistant modes (benefits lookup, leave request, handbook search, onboarding checklist) — UI only"
+  ],
+  "anti_patterns": [
+    "Recruiting ATS pipeline hero",
+    "Payroll spreadsheet grid",
+    "Generic customer support widget",
+    "Empty HR portal"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI HR ASSISTANTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Policy · Benefits · Self-Service",
+      "tagline": "Answers for Every Employee",
+      "composition": "Visual-only collage for AI HR assistant tools comparison: (1) HERO employee self-service chat with policy citations and PTO card on right two-thirds. (2) Directory search arrow into FAQ panel. (3) 2x2 grid of four HR mode UI tiles. (4) Magnifying glass on handbook citation chip. Paper collage, halftone. No ATS recruiting hero, no payroll grid, no blank portal."
+    },
+    "zh": {
+      "headline": "最佳AI HR助手",
+      "headline_line2": "（2026）",
+      "subtitle": "政策 · 福利 · 自助",
+      "composition": "Same layout as EN: HR self-service chat HERO + directory flow + 2x2 mode grid + magnifying glass on citation chip. Title top-left only, NO extra Chinese UI labels, NO recruiting ATS hero, NO blank cards. Navy accents."
+    }
+  }
+}

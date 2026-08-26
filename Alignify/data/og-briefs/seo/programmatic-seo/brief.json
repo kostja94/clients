@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "programmatic-seo",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Programmatic SEO — template + data + automation layers, keyword patterns, data-trust tiers, and scaled landing pages without spam",
+  "differentiator_vs_generic": "This is template-times-data programmatic page generation for SEO scale, NOT GEO/LLM chat. Hero must show one page template fanning out from database rows into many landing pages, NOT an AI content generator or chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split programmatic pipeline — left: single page template wireframe skeleton; center: spreadsheet/database rows (city, product, integration blurs); right: 5+ generated landing page thumbnails fanning out with variable fields highlighted, mars-green accent on data row connector",
+    "Secondary: keyword pattern formula tear-out ([City] + [Service] blur template)",
+    "Tertiary: quality-tier ladder sticker (Tier 1 official data → Tier 4 scraped blur)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is programmatic SEO not GEO)",
+    "AI writing assistant or ChatGPT interface",
+    "Generic factory icon alone without template-to-pages pipeline",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "PROGRAMMATIC SEO",
+      "headline_line2": "(2026)",
+      "subtitle": "Templates, Data & Scale",
+      "tagline": "Keyword Patterns · Data Trust · Quality Bar",
+      "composition": "Visual-only editorial collage for programmatic SEO guide. HERO: template-to-pages pipeline occupying right two-thirds — one wireframe template + spreadsheet rows feeding 5+ landing page thumbnails with highlighted variable slots, mars-green accent on data connectors. Secondary: keyword pattern formula card. Tertiary: data-trust tier ladder. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic logos, NO AI writing tool UI, NO URL count numbers as text labels."
+    },
+    "zh": {
+      "headline": "程序化 SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "模板、数据与规模化",
+      "composition": "Same layout as EN: template-to-pages pipeline HERO + keyword pattern + data tier ladder. Title top-left, NO LLM chat, NO AI generator UI, NO blank cards."
+    }
+  }
+}

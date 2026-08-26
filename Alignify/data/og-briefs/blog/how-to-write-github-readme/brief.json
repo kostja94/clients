@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "how-to-write-github-readme",
+  "analyzed_at": "2026-08-25T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "GitHub README as growth asset — Answer-First titles, badge trust signals, Quick Start conversion, and SEO/GEO optimization",
+  "differentiator_vs_generic": "This is a README-as-landing-page guide for developer adoption, NOT generic documentation tips. Hero must be a GitHub repo README preview mockup with badge row + Quick Start code block — NOT a magnifying glass SEO graphic or generic code editor.",
+  "visual_anchors": [
+    "HERO (~55% canvas): GitHub-style README preview panel — Answer-First H1 title blur, 3 shields.io-style badge chips (License MIT, ★ stars, Last commit), highlighted Quick Start bash code block with copy icon, blurred file-tree sidebar strip on left edge",
+    "Secondary: conversion funnel strip — Visitor → Quick Start → Star/Fork with arrow connectors",
+    "Tertiary: scannable use-cases table row blur (2-column table fragment)"
+  ],
+  "anti_patterns": [
+    "Generic SEO magnifying glass (page is README marketing not SERP)",
+    "Blank markdown editor without badge/code structure",
+    "Real GitHub logo or real repo screenshots with usernames",
+    "LLM chat panel as hero"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "GITHUB README",
+      "headline_line2": "(2026)",
+      "subtitle": "Growth & Developer Adoption",
+      "tagline": "Answer-First · Badges · Quick Start",
+      "composition": "Visual-only editorial collage for GitHub README guide. HERO: GitHub repo README preview occupying right two-thirds — Answer-First title blur, 3 badge chips (MIT, stars, last commit), accent-bordered Quick Start code block with terminal prompt. Left edge: blurred file-tree sidebar strip. Secondary: visitor→Quick Start→star conversion funnel arrows. Tertiary: scannable use-cases table fragment. Title block top-left only. Paper collage torn edges, halftone. NO real GitHub logo, NO SERP mockup, NO LLM chat, NO extra UI text labels."
+    },
+    "zh": {
+      "headline": "GitHub README指南",
+      "headline_line2": "（2026）",
+      "subtitle": "增长与开发者采纳",
+      "composition": "Same layout as EN: README preview HERO with badges + Quick Start code block + conversion funnel + table fragment. Title top-left, NO real GitHub logo, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

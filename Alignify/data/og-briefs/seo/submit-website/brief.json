@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "submit-website",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Website submission to search engines — crawling, indexing, GSC verification, sitemap submit, and IndexNow",
+  "differentiator_vs_generic": "This is traditional webmaster-tool submission SEO education, NOT GEO/LLM chat. Hero must show the Crawl → Index → Rank pipeline with GSC-style submission UI — NOT an AI chat panel or LLM citation workflow.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Three-stage horizontal pipeline — CRAWL (spider icon entering site) → INDEX (database cylinder storing page tiles) → RANK (SERP snippet with position indicator), connected by accent arrows; GSC-style URL Inspection panel overlay showing Request Indexing button shape",
+    "Secondary: sitemap.xml upload arrow feeding into pipeline stage 1",
+    "Tertiary: webmaster tool icon row — generic console tiles (no real Google/Bing logos) representing multi-engine submission"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is GSC submission not GEO)",
+    "Generic upload form without crawl-index-rank context",
+    "Real Google Search Console screenshot with branding",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "SUBMIT WEBSITE",
+      "headline_line2": "(2026)",
+      "subtitle": "Crawl, Index & Rank Pipeline",
+      "tagline": "GSC · Sitemap · IndexNow",
+      "composition": "Visual-only editorial collage for website submission guide. HERO: horizontal 3-stage pipeline occupying right two-thirds — CRAWL spider icon → INDEX database cylinder with page tiles → RANK SERP snippet, connected by accent klein-blue arrows. Overlay: generic webmaster URL Inspection panel with blurred Request Indexing button. Secondary: sitemap.xml file arrow into crawl stage. Tertiary: row of generic webmaster tool tiles. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real Google logo, NO OpenAI branding."
+    },
+    "zh": {
+      "headline": "提交网站指南",
+      "headline_line2": "（2026）",
+      "subtitle": "抓取·索引·排名流程",
+      "composition": "Same layout as EN: Crawl→Index→Rank pipeline HERO with GSC-style inspection overlay + sitemap upload arrow. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

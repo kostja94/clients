@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "glossary",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Glossary-driven growth — A–Z term pages, topical authority, evergreen traffic, and knowledge-graph internal linking",
+  "differentiator_vs_generic": "This is SEO glossary content strategy, NOT GEO/LLM chat. Hero must be a recognizable A–Z glossary index with alphabet nav and interconnected term entries — NOT a generic dictionary app or AI definition chat.",
+  "visual_anchors": [
+    "HERO (~55% canvas): glossary index page mockup — vertical A–Z alphabet sidebar (letters as pills), main column with 5–6 term rows (blurred term titles + one-line definition blur), one row accent-highlighted",
+    "Secondary: knowledge-graph hub — central glossary node with 6–8 spoke lines to related term nodes (entity SEO topical map)",
+    "Tertiary: evergreen traffic growth curve ascending gently (line chart blur, no axis labels)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is glossary SEO strategy not GEO)",
+    "Generic pocket dictionary without A–Z index layout",
+    "Empty term list or placeholder lorem cards",
+    "Paid ads dashboard unrelated to content moat"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "GLOSSARY SEO",
+      "headline_line2": "(2026)",
+      "subtitle": "Term Pages & Topical Authority",
+      "tagline": "Evergreen Traffic · Knowledge Graph",
+      "composition": "Visual-only editorial collage for glossary-driven SEO growth guide. HERO: A–Z glossary index mockup occupying right two-thirds — left alphabet letter rail (A–Z pills), right column stacked term entry rows with blurred titles and snippets, one row with accent mars-green left border. Secondary: knowledge-graph node cluster — center glossary hub with spoke connections to related term nodes. Tertiary: small ascending traffic curve chart (blurred axes). Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO Ahrefs/Shopify/HubSpot logos, NO real brand names as text, NO extra UI labels."
+    },
+    "zh": {
+      "headline": "词汇表SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "术语页与主题权威",
+      "composition": "Same layout as EN: A–Z glossary index HERO + knowledge-graph hub-spoke + evergreen traffic curve. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "local-search-engines",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Local and specialized search engines — Baidu, Yandex, Naver, privacy engines, and multi-engine international SEO strategy",
+  "differentiator_vs_generic": "This is regional/multi-engine SEO strategy, NOT GEO/LLM chat. Hero must be a world-map collage with distinct regional search UI mini-mocks pinned to China, Russia, Korea, and Europe, NOT an AI search or chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Stylized world map with 4 regional search-engine UI chips pinned to China, Russia, South Korea, Europe — each chip shows generic search bar + 2 blurred result lines, klein-blue accent border on active region",
+    "Secondary: comparison table tear-out with blurred engine names and market-share bar blurs (no real logos)",
+    "Tertiary: webmaster-tools registration stamp cluster (generic wrench + globe icons)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is multi-engine SEO not GEO)",
+    "Single Google SERP only (page covers regional engines)",
+    "Real Baidu/Yandex/Naver brand logos",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "LOCAL SEARCH ENGINES",
+      "headline_line2": "(2026)",
+      "subtitle": "Baidu, Yandex, Naver & Niche",
+      "tagline": "Regional SEO · Privacy Engines · Multi-Market",
+      "composition": "Visual-only editorial collage for local/specialized search engine guide. HERO: world map occupying right two-thirds with 4 pinned regional search UI mini-mocks (China, Russia, Korea, Europe), each with generic search input and blurred blue result links, klein-blue accent on one active pin. Secondary: torn comparison table fragment with blurred engine rows. Tertiary: webmaster registration icon cluster. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO real search engine logos, NO OpenAI/Anthropic logos, NO country flags as dominant hero element."
+    },
+    "zh": {
+      "headline": "本地搜索引擎",
+      "headline_line2": "（2026）",
+      "subtitle": "百度、Yandex、Naver 与特色引擎",
+      "composition": "Same layout as EN: world map HERO with 4 regional search UI pins + comparison table tear + webmaster icons. Title top-left, NO LLM chat, NO real logos, NO blank cards."
+    }
+  }
+}

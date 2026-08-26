@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "audit-website-by-lovable",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Lovable-hosted embed of AI website audit tool — full-screen iframe wrapper for external audit UI",
+  "differentiator_vs_generic": "Embedded Lovable audit app frame, NOT native audit UI clone alone. HERO must show browser/iframe chrome wrapping audit tool canvas with loading spinner motif.",
+  "visual_anchors": [
+    "HERO: Full-screen iframe browser chrome wrapping blurred audit tool interior (URL bar visible in inner frame, report tabs hint)",
+    "Secondary: Lovable-style loading spinner overlay fading out at corner",
+    "Tertiary: embed arrow from outer Alignify frame into inner app canvas"
+  ],
+  "anti_patterns": [
+    "Identical static mock to audit-website with no iframe motif",
+    "SEO tutorial layout",
+    "Channel hub columns",
+    "Empty iframe white box"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "AI WEBSITE AUDIT",
+      "headline_line2": "BY LOVABLE",
+      "subtitle": "Embedded Marketing Audit Tool",
+      "tagline": "Full-Screen App Experience",
+      "composition": "Visual-only collage for Lovable embed audit page. HERO: browser iframe chrome wrapping inner audit UI blur on right two-thirds. Secondary: loading spinner overlay. Tertiary: embed arrow motif. Title top-left. Paper collage, halftone. NO duplicate static UI without iframe, NO SERP hero, NO blank frame."
+    },
+    "zh": {
+      "headline": "AI网站审计",
+      "headline_line2": "Lovable版",
+      "subtitle": "嵌入式营销分析工具",
+      "composition": "Same layout as EN: iframe-wrapped audit HERO + spinner + embed arrow. Title top-left, NO static-only UI, NO extra Chinese UI labels, NO blank frame."
+    }
+  }
+}

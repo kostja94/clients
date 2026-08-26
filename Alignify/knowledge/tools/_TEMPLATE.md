@@ -4,7 +4,8 @@
 
 **注**：本模板为 Alignify 知识库内部写作工具，**非**面向读者的输出页面。
 
-> **使用前必读**：方法论硬约束见 [`../README.md`](../README.md) 第一章；当前 slug 对应关系与缺口跟踪见 [`README.md`](./README.md)。
+> **使用前必读**：方法论硬约束见 [`../README.md`](../README.md) 第一章；当前 slug 对应关系与缺口跟踪见 [`README.md`](./README.md)。  
+> **知识块 → 正式文章**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
 ---
 

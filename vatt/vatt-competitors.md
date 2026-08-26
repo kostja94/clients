@@ -1,9 +1,9 @@
 # Vatt — 竞品分析
 
 > 遵循 [客户文档规范](../../client-template.md)  
-> **引用**：[vatt.md](./vatt.md) | [vatt-features.md](./vatt-features.md) | [vatt-keywords.md](./vatt-keywords.md)
+> **引用**：[vatt.md](./vatt.md) | [vatt-features.md](./vatt-features.md) | [vatt-capabilities.md](./vatt-capabilities.md) | [vatt-keywords.md](./vatt-keywords.md)
 
-**Last updated**: 2026-07-06（公司调研补充：Sparki/Nemo 竞品）
+**Last updated**: 2026-08-26（能力 Status 与 [vatt-capabilities.md](./vatt-capabilities.md) 团队审阅版同步）
 
 ---
 
@@ -65,7 +65,7 @@ Reaction 视频赛道存在两条核心路线：
 
 - **定位**：AI 驱动的视频/音频编辑器，"edit video like a doc"
 - **优势**：品牌知名度高；文本编辑视频功能成熟；去口癖（filler word removal）强；播客+视频双覆盖
-- **劣势**：不做 Reaction 专属情感高光检测；价格偏高；学习曲线存在
+- **劣势**：不做 Reaction 专属情感高光检测；价格偏高；学习曲线存在；Vatt M4.3 filler word removal 仍为开发中，Descript 去口癖更成熟
 - **Vatt 胜出**：垂直 Reaction 赛道的情感识别是 Descript 没有的能力
 
 ---
@@ -76,11 +76,14 @@ Reaction 视频赛道存在两条核心路线：
 
 | 场景 | Vatt | Descript | Premiere Pro | 本品优势 |
 |------|------|---------|-------------|---------|
-| Reaction Highlight / 长素材理解 | ★★★ Conditional（专属方向） | — | — | Reaction beachhead 能力栈 |
-| Editable AI Timeline | ★★★ Current | ★★ 文本驱动 | ★ 全手动 | AI 结果可继续改，非锁定成片 |
-| Smart Layout（Source/Creator） | ★★★ Current + Conditional 切换 | ★ 通用 | ★★ 手动 | Layout 为可编辑时间线对象 |
+| Reaction Highlight / 长素材理解 | ★★★ Current（Reaction 专属；最长 3h） | — | — | 情感高光 + 长素材地图 |
+| Editable AI Timeline | ★★★ Current | ★★ 文本驱动 | ★ 全手动 | AI 初剪后人类可继续编辑 |
+| Smart Layout（Source/Creator） | ★★★ Current | ★ 通用 | ★★ 手动 | Layout 为可编辑时间线对象 |
+| Source/Facecam 同步 | ★★★ Current（需主动触发 Audio Align） | ★★ | ★ 手动 | 成对 Clip 一键对齐，非导入后自动 |
+| Dead air / filler 粗剪 | ★ 开发中 | ★★★ 去口癖成熟 | ★★ 手动 | Vatt 粗剪自动化仍在开发 |
+| 交付形态 | ★★ macOS / Windows 桌面端 | ★★★ Web + 桌面 | 桌面安装 | Vatt 需下载安装 |
 | 学习成本 | ★★ 仍需理解时间线 | ★★ 文本编辑逻辑 | ★ 专业软件 | 强调控制权，非「零门槛黑盒」 |
-| 价格 | ★★ 待验证 | ★★ Free-$24/月 | $22.99/月 | 待验证 |
+| 价格 | ★★ Free Trial + 阶梯收费 | ★★ Free–$24/月 | $22.99/月 | 具体档位见 `/pricing` |
 
 ### 场景 B：Faceless 创作者需要 reaction 内容
 
@@ -104,8 +107,8 @@ Reaction 视频赛道存在两条核心路线：
 
 | | 分析 |
 |---|------|
-| **S** | Reaction beachhead + **editable timeline** 信任机制；长素材理解 / Highlight / Sync / Smart Layout 能力栈；Human-AI Cocreation（Turn-Based → Real-Time）；三大引擎叙事（MACE/ACE/PACE）；创始人阿里产品背景 + USTC；种子轮资金。站点 “first” 仅为营销用语，不作无证据品类断言 |
-| **W** | 品牌知名度极低；产品早期（邀请制）；团队规模极小（融资后扩招中）；网站极简（无 SEO 基建、无信任页面）；Sparki 同期融资竞争 |
+| **S** | Reaction beachhead + **editable timeline** 信任机制；Reaction Highlight / Smart Layout / Hook / Commentary-First 等已确认 Current；Human-AI Cocreation；三大引擎叙事（MACE/ACE/PACE）；创始人背景 + 种子轮资金。站点 “first” / “10x” 仅为营销用语，不作无证据品类断言 |
+| **W** | 品牌知名度极低；产品早期（邀请制）；团队规模极小；网站 SEO 基建薄弱（Privacy 已上线，Terms 待确认）；Sparki 同期 A 轮竞争；Dead air / filler / 长切短 Shorts 等仍为开发中或 Opportunity |
 | **O** | Reaction 视频是 TikTok/YouTube 最高互动率格式，创作者基数庞大；"编辑 vs 生成"路线之争可做内容营销；「视频编辑领域 Cursor」定位清晰对标成熟赛道；全球化视野（出生即全球化）|
 | **T** | Sparki 同赛道同期 A 轮竞争；Descript/Adobe 等通用工具可能加 Reaction 专属功能；AI 生成器抢占创作心智上游；TikTok/YouTube 平台可能内建 AI 剪辑 |
 
@@ -113,9 +116,9 @@ Reaction 视频赛道存在两条核心路线：
 1. **understands footage + real edits + editable timeline** — 对抗「双画面模板」与「AI 黑盒成片」两端
 2. **「视频编辑领域的 Cursor」定位** — 对标 Code-Editing Agent 范式
 3. **Real > Fake 叙事** — vs AI avatar 生成器，强调真人情感
-4. **Reaction 垂直深耕** — vs Sparki 泛品类；Tier 1 Beachhead 能力栈见 [vatt-features.md](./vatt-features.md)
-5. **Copyright-conscious Movie Reaction（教育 + 可审阅剪辑，不作 Fair Use 保证）**
+4. **Reaction 垂直深耕** — vs Sparki 泛品类；已确认 Current 能力见 [vatt-capabilities.md M13.4](./vatt-capabilities.md)
+5. **Copyright-conscious Movie Reaction** — Commentary-First / Source-Usage / Watch-Along 已 Current；不作 Fair Use 保证
 
 ---
 
-*竞品信息来自公开官网、融资报道（腾讯新闻/36氪）、品类检索 2026-07-06*
+*竞品信息来自公开官网、融资报道（腾讯新闻/36氪）、品类检索 2026-07-06；Vatt 能力 Status 以 [vatt-capabilities.md](./vatt-capabilities.md) 2026-08-26 团队审阅版为准*

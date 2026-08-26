@@ -1,84 +1,99 @@
 /**
- * FAQ 答案长度审计：检测 answer 是否符合 40-60 词(EN)/70-100 字(ZH)
- * 依据：content/sections/section-faq.md
+ * FAQ 答案长度审计：扫描 md 内 `## 常见问题 {#faq}` / `## FAQ {#faq}`
+ * 依据：skills/create-article/rules/sections/faq.md §2.2
  *
- * 运行：node scripts/permanent/audit-faq-length.mjs
+ * 用法（部署仓根目录）：
+ *   node ../../clients/Alignify/scripts/ops/audit-faq-length.mjs
  */
-
 import fs from "fs";
 import path from "path";
 
-const SRC_DIRS = [
-  path.join(process.cwd(), "src/tools"),
-  path.join(process.cwd(), "src/seo"),
-  path.join(process.cwd(), "src/marketing"),
-  path.join(process.cwd(), "src/insights"),
-];
+const DEPLOY_CANDIDATES = [
+  process.env.ALIGNIFY_DEPLOY_ROOT,
+  process.cwd(),
+  "E:/自有部署项目/alignify production",
+].filter(Boolean);
 
-const ZH_MIN = 70;
-const ZH_MAX = 100;
+function findDeployRoot() {
+  for (const root of DEPLOY_CANDIDATES) {
+    const full = path.resolve(root);
+    if (fs.existsSync(path.join(full, "content"))) return full;
+  }
+  console.error("Deploy repo not found. Set ALIGNIFY_DEPLOY_ROOT.");
+  process.exit(1);
+}
+
+const deployRoot = findDeployRoot();
+
+const ZH_MIN = 60;
+const ZH_MAX = 120;
 const EN_MIN = 40;
-const EN_MAX = 60;
+const EN_MAX = 80;
+
+function walk(dir, acc = []) {
+  if (!fs.existsSync(dir)) return acc;
+  for (const name of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, name.name);
+    if (name.isDirectory()) walk(p, acc);
+    else if (name.name.endsWith(".md")) acc.push(p);
+  }
+  return acc;
+}
+
+function stripHtml(s) {
+  return s.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
 
 function countWords(str) {
-  return str.trim().split(/\s+/).filter(Boolean).length;
+  return stripHtml(str).split(/\s+/).filter(Boolean).length;
 }
 
 function countChars(str) {
-  return str.replace(/\s+/g, " ").trim().length;
+  return stripHtml(str).replace(/\s/g, "").length;
 }
 
 function isChinese(str) {
   const cjk = (str.match(/[\u4e00-\u9fff]/g) || []).length;
-  return cjk / str.length > 0.3;
+  return cjk / Math.max(stripHtml(str).length, 1) > 0.3;
 }
 
-function walkDir(dir, files = []) {
-  if (!fs.existsSync(dir)) return files;
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-  for (const e of entries) {
-    const full = path.join(dir, e.name);
-    if (e.isDirectory()) walkDir(full, files);
-    else if (e.name.endsWith(".mdx")) files.push(full);
-  }
-  return files;
+const FAQ_HEADING = /^##\s+(常见问题|FAQ|Frequently Asked Questions)\s+\{#faq\}/m;
+
+function extractFaqItems(text) {
+  const m = text.match(FAQ_HEADING);
+  if (!m || m.index === undefined) return [];
+  const start = m.index + m[0].length;
+  const rest = text.slice(start);
+  const next = rest.search(/^##\s+/m);
+  const body = next >= 0 ? rest.slice(0, next) : rest;
+  const parts = body.split(/^###\s+/m).slice(1);
+  return parts.map((chunk) => {
+    const lines = chunk.split(/\r?\n/);
+    const question = lines[0]?.replace(/\s*\{#faq-\d+\}\s*$/, "").trim() || "";
+    const answer = lines.slice(1).join("\n").trim();
+    return { question, answer };
+  });
 }
 
-function extractFaqItems(content) {
-  const items = [];
-  const answerRe = /answer:\s*"((?:[^"\\]|\\.)*)"/g;
-  const questionRe = /question:\s*"((?:[^"\\]|\\.)*)"/g;
-  const faqStart = content.indexOf("<FAQ");
-  if (faqStart < 0) return items;
-  const faqEnd = content.indexOf("/>", faqStart);
-  if (faqEnd < 0) return items;
-  const faqBlock = content.slice(faqStart, faqEnd + 2);
-  const questions = [...faqBlock.matchAll(questionRe)].map((m) => m[1]);
-  const answers = [...faqBlock.matchAll(answerRe)].map((m) => m[1]);
-  for (let i = 0; i < Math.min(questions.length, answers.length); i++) {
-    items.push({ question: questions[i], answer: answers[i] });
-  }
-  return items;
-}
+const roots = ["content/tools", "content/seo", "content/blog", "content/marketing", "content/insights"];
+const files = roots.flatMap((r) => walk(path.join(deployRoot, r)));
 
-const allFiles = SRC_DIRS.flatMap((d) => walkDir(d));
 const results = [];
 
-for (const filePath of allFiles) {
-  const content = fs.readFileSync(filePath, "utf-8");
+for (const filePath of files) {
+  const content = fs.readFileSync(filePath, "utf8");
   const items = extractFaqItems(content);
   if (items.length === 0) continue;
 
-  const relPath = filePath.replace(process.cwd(), "").replace(/\\/g, "/");
-  const sampleAnswer = items[0].answer;
-  const isZh = isChinese(sampleAnswer);
+  const relPath = path.relative(deployRoot, filePath).replace(/\\/g, "/");
 
   for (let i = 0; i < items.length; i++) {
     const a = items[i].answer;
-    const stripped = a.replace(/<[^>]*>/g, "").replace(/&nbsp;/g, " ").trim();
+    if (!a) continue;
+    const stripped = stripHtml(a);
     const charCount = countChars(stripped);
     const wordCount = countWords(stripped);
-    const zh = isChinese(a);
+    const zh = isChinese(stripped);
     let status = "ok";
     if (zh) {
       if (charCount < ZH_MIN) status = "short";
@@ -87,11 +102,11 @@ for (const filePath of allFiles) {
       if (wordCount < EN_MIN) status = "short";
       else if (wordCount > EN_MAX) status = "long";
     }
+    if (/\]\(|<a\s/i.test(a)) status = "has-link";
     results.push({
-      file: path.basename(filePath),
       path: relPath,
       index: i + 1,
-      question: items[i].question.slice(0, 30) + "...",
+      question: items[i].question.slice(0, 40),
       chars: charCount,
       words: wordCount,
       lang: zh ? "zh" : "en",
@@ -102,29 +117,26 @@ for (const filePath of allFiles) {
 
 const short = results.filter((r) => r.status === "short");
 const long = results.filter((r) => r.status === "long");
+const links = results.filter((r) => r.status === "has-link");
 const ok = results.filter((r) => r.status === "ok");
 
-console.log("=== FAQ Answer Length Audit ===\n");
+console.log("=== FAQ Answer Length Audit (inline md) ===\n");
+console.log("Deploy:", deployRoot);
 console.log("Total FAQ answers:", results.length);
-console.log("OK:", ok.length, "| Short:", short.length, "| Long:", long.length);
-console.log("\nTarget: ZH 70-100 字, EN 40-60 词\n");
+console.log("OK:", ok.length, "| Short:", short.length, "| Long:", long.length, "| Has link:", links.length);
+console.log("\nTarget: ZH 60-120 字, EN 40-80 词, no internal links\n");
 
-if (short.length > 0) {
-  console.log("--- Short (需补充) ---");
-  short.forEach((r) => {
+for (const group of [
+  ["Short", short],
+  ["Long", long],
+  ["Has link (P0 violation)", links],
+]) {
+  if (group[1].length === 0) continue;
+  console.log(`--- ${group[0]} ---`);
+  group[1].slice(0, 30).forEach((r) => {
     const val = r.lang === "zh" ? `${r.chars}字` : `${r.words}词`;
     console.log(`${r.path} #${r.index}: ${val} - ${r.question}`);
   });
 }
 
-if (long.length > 0) {
-  console.log("\n--- Long (需精简) ---");
-  long.forEach((r) => {
-    const val = r.lang === "zh" ? `${r.chars}字` : `${r.words}词`;
-    console.log(`${r.path} #${r.index}: ${val} - ${r.question}`);
-  });
-}
-
-if (short.length === 0 && long.length === 0) {
-  console.log("✓ All FAQ answers within target range.");
-}
+process.exit(short.length + long.length + links.length ? 1 : 0);

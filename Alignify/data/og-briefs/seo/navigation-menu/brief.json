@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "navigation-menu",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Navigation menu SEO — header/footer/mobile nav types, hierarchy, internal linking, and crawlability best practices",
+  "differentiator_vs_generic": "This is site navigation structure and internal linking UX, NOT GEO/LLM chat. Hero must be a website header wireframe with horizontal nav bar and dropdown sitemap tree, NOT an AI site builder or chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Website header wireframe — horizontal nav bar with 5 items (Home, Products▾, Blog, Docs, Contact), expanded dropdown panel showing 3 sub-links, mars-green accent on active nav item",
+    "Secondary: site hierarchy tree diagram (root → category → page nodes) showing internal link equity flow",
+    "Tertiary: mobile hamburger menu tear-out (3-line icon + stacked vertical links blur)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is navigation SEO not GEO)",
+    "Generic compass icon alone without nav wireframe",
+    "Empty white cards below headline",
+    "App store or dashboard sidebar unrelated to website navigation"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "NAVIGATION MENU SEO",
+      "headline_line2": "(2026)",
+      "subtitle": "Structure, UX & Internal Links",
+      "tagline": "Header · Footer · Mobile · Crawlability",
+      "composition": "Visual-only editorial collage for navigation menu SEO guide. HERO: website header wireframe occupying right two-thirds — horizontal nav with one open dropdown, blurred link labels, mars-green accent on active item. Secondary: sitemap tree hierarchy with root-to-page nodes and connecting lines. Tertiary: mobile hamburger menu fragment. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic logos, NO real CMS logos, NO URL paths as readable text labels."
+    },
+    "zh": {
+      "headline": "导航菜单 SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "结构、体验与内链",
+      "composition": "Same layout as EN: header nav wireframe HERO with dropdown + sitemap tree + mobile menu. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

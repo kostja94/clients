@@ -1,0 +1,36 @@
+{
+  "section": "insights",
+  "slug": "reasons-you-need-seo",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "SEO core strategic value in the AI search era — elevating SEO to Search Experience Optimization for sustained traffic and algorithm resilience",
+  "differentiator_vs_generic": "This is SEO strategic value and Search Experience Optimization framing, NOT a generic ranking tutorial or LLM chat panel. Hero must be a dual-channel growth diagram — traditional organic search funnel PLUS AI-era search experience touchpoints — showing SEO as sustained growth engine.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Dual-channel SEO value diagram — left arc: organic search funnel (discover → click → convert) with upward traffic curve; right arc: search experience touchpoints (SERP, rich results, AI overview citation blur) connected by accent bridge labeled visually as SXO",
+    "Sustained growth loop — content → rankings → traffic → data → optimization as circular flywheel with klein-blue accent arrows",
+    "Secondary: algorithm resilience shield motif — small timeline of update waves with stable baseline traffic line holding steady"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is SEO value not GEO)",
+    "Generic magnifying glass alone",
+    "Short-term paid ads dashboard",
+    "Empty ranking #1 badge without strategic framing",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "SEO CORE VALUE",
+      "headline_line2": "(2026)",
+      "subtitle": "Sustained Growth in AI Search Era",
+      "tagline": "Traffic · SXO · Algorithm Resilience",
+      "composition": "Visual-only editorial collage for SEO strategic value insights. HERO: dual-channel diagram on right two-thirds — organic search funnel arc with upward traffic curve on left, search experience touchpoints arc (SERP snippet, rich result, AI overview blur) on right, connected by SXO bridge. Secondary: circular SEO flywheel (content → rankings → traffic → data → optimization) with klein-blue accent arrows. Tertiary: algorithm resilience strip — update wave timeline with stable traffic baseline. Title top-left. Paper torn edges, halftone. NO LLM chat hero, NO magnifying glass alone, NO blank cards."
+    },
+    "zh": {
+      "headline": "SEO核心价值",
+      "headline_line2": "（2026）",
+      "subtitle": "AI搜索时代的持续增长策略",
+      "composition": "Same layout as EN: dual-channel SEO/SXO diagram HERO + growth flywheel + algorithm resilience strip. Title top-left, NO LLM chat hero, NO extra Chinese funnel labels, NO blank cards."
+    }
+  }
+}

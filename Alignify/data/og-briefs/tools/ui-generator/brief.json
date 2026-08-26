@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "ui-generator",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI UI generator tools — prompts and wireframes to app screen mockups",
+  "differentiator_vs_generic": "Wireframe sketch morphing into polished mobile/web UI mockup with component library strip, NOT logo marks or 3D viewport.",
+  "visual_anchors": [
+    "HERO: UI generator canvas — low-fi wireframe on left tearing into hi-fi mobile screen mockup with component library strip below",
+    "Compact text prompt card arrow into responsive desktop/tablet/mobile preview trio",
+    "2x2 grid of UI outputs (dashboard, onboarding flow, settings page, dark mode variant) — screens only"
+  ],
+  "anti_patterns": [
+    "Logo mark grid hero",
+    "3D scene viewport",
+    "Code IDE without UI",
+    "Empty artboard"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI UI GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Wireframe · Mockup · Components",
+      "tagline": "Screens from a Prompt",
+      "composition": "Visual-only collage for AI UI generator tools comparison: (1) HERO wireframe-to-mockup morph on right two-thirds. (2) Prompt card arrow into responsive preview trio. (3) 2x2 grid of four UI screen outputs. (4) Magnifying glass on component library chip. Paper collage, halftone. No logo hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI界面生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "线框 · 高保真 · 组件",
+      "composition": "Same layout as EN: UI generator HERO + prompt preview flow + 2x2 screen grid + magnifying glass on component chip. Title top-left only, NO extra Chinese UI labels, NO logo hero, NO blank cards."
+    }
+  }
+}

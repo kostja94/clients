@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "search-indexing",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI search indexing tools — crawl, index, and site discovery for AI/search",
+  "differentiator_vs_generic": "Sitemap crawl spider diagram with indexed page nodes and GSC-style coverage chart, NOT AI chat answer or keyword research.",
+  "visual_anchors": [
+    "HERO: Indexing dashboard — crawl spider map from root URL to indexed page nodes plus coverage status chart (indexed/excluded/error)",
+    "Compact robots.txt and sitemap XML card arrow into live crawl queue progress bar",
+    "2x2 grid of indexing tasks (URL inspection, render queue, log analysis, instant indexing ping) — UI only"
+  ],
+  "anti_patterns": [
+    "AI search answer panel hero",
+    "Keyword volume chart unrelated",
+    "Empty globe icon",
+    "LLM chat window"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI SEARCH INDEXING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Crawl · Index · Coverage",
+      "tagline": "Get Pages Discovered",
+      "composition": "Visual-only collage for AI search indexing tools comparison: (1) HERO crawl spider map with coverage chart on right two-thirds. (2) Sitemap card arrow into crawl queue bar. (3) 2x2 grid of four indexing task UI tiles. (4) Magnifying glass on excluded URL node. Paper collage, halftone. No AI chat hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI搜索索引工具",
+      "headline_line2": "（2026）",
+      "subtitle": "抓取 · 索引 · 覆盖",
+      "composition": "Same layout as EN: indexing spider HERO + sitemap crawl flow + 2x2 task grid + magnifying glass on URL node. Title top-left only, NO extra Chinese UI labels, NO chat hero, NO blank cards."
+    }
+  }
+}

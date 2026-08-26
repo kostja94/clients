@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "customer-stories",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Customer Stories — 100+ AI/SaaS clients, 6 featured deep case studies across voice, video, agent, and vertical plays",
+  "differentiator_vs_generic": "Case study showcase, NOT generic testimonial quotes. HERO must show featured case card stack + client logo grid blur.",
+  "visual_anchors": [
+    "HERO: Featured case study card fan — 3 case cards with product screenshot silhouettes (music hub, video tool, agent app) and outcome metric blur",
+    "Secondary: 3×2 greyscale client logo grid mosaic",
+    "Tertiary: category tab strip (Voice · Video · Agent · Vertical)"
+  ],
+  "anti_patterns": [
+    "Generic 5-star review bubbles",
+    "Channel hub link columns",
+    "Empty screenshot cards",
+    "Unrelated affiliate dashboard"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "CUSTOMER STORIES",
+      "headline_line2": "",
+      "subtitle": "100+ AI/SaaS Growth Plays",
+      "tagline": "6 Featured Deep Cases",
+      "composition": "Visual-only collage for customer stories page. HERO: three featured case cards with screenshot silhouettes on right two-thirds. Secondary: greyscale logo grid. Tertiary: category tabs. Title top-left. Paper collage, halftone. NO generic testimonials, NO hub columns, NO blank cards."
+    },
+    "zh": {
+      "headline": "客户案例",
+      "headline_line2": "",
+      "subtitle": "100+ AI/SaaS增长复盘",
+      "composition": "Same layout as EN: case card fan HERO + logo grid + category tabs. Title top-left, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

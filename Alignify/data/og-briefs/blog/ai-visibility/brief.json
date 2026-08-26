@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "ai-visibility",
+  "analyzed_at": "2026-08-24T18:05:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI visibility monitoring — track brand mentions, citation rates, and share of voice across ChatGPT, Perplexity, Gemini, and other AI answer engines",
+  "differentiator_vs_generic": "This is a monitoring/analytics layer for brand presence IN AI answers, NOT traditional SEO rank tracking, NOT a GEO strategy guide alone. Hero must be a multi-engine visibility dashboard with answer snapshots and brand-mention detection highlights — NOT a Google SERP or magnifying glass.",
+  "visual_anchors": [
+    "HERO (~55% canvas): AI visibility monitoring dashboard — 3 stacked mini LLM answer panels (ChatGPT-style dark, Perplexity-style light, generic warm chat) each with blurred answer text and one brand-name chip highlighted in titian-red accent",
+    "Mention-rate trend sparkline with upward arrow and percentage blur badge",
+    "Secondary: prompt library sidebar with 3 blurred question rows and checkmark icons"
+  ],
+  "anti_patterns": [
+    "Google SERP with blue ranked links as hero",
+    "Magnifying glass over search results",
+    "SEO position #1 badge",
+    "Generic growth chart without AI answer panels",
+    "Empty white placeholder cards"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "AI VISIBILITY",
+      "headline_line2": "(2026)",
+      "subtitle": "Brand Mentions in AI Answers",
+      "tagline": "Otterly · Trakkr · Semrush",
+      "composition": "Visual-only editorial collage for AI visibility monitoring guide. HERO: monitoring dashboard on right two-thirds — three mini LLM answer snapshot panels stacked vertically (dark chat, light chat, warm chat archetypes only, NO logos), each with blurred paragraph lines and one highlighted brand-mention chip in titian-red. Beside panels: small mention-rate sparkline with upward trend arrow. Secondary: narrow prompt-library column with 3 blurred question rows. Title block top-left. Paper torn edges, halftone. NO SERP list, NO magnifying glass hero, NO ranking numbers, NO blank cards."
+    },
+    "zh": {
+      "headline": "AI可见度监测",
+      "headline_line2": "（2026）",
+      "subtitle": "追踪品牌在AI答案中的提及",
+      "composition": "Same layout as EN: multi-engine answer snapshot dashboard HERO with brand-mention chips + mention-rate sparkline + prompt sidebar. Title top-left, NO extra Chinese captions on panels, NO SERP, NO magnifying glass, NO blank cards."
+    }
+  }
+}

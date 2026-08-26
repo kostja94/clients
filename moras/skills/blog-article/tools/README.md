@@ -1,6 +1,6 @@
 # Moras Blog Tools（Phase 5 · 自包含）
 
-基于通用 SSOT，含 Moras `/blog/` slug overlay（`--moras-slug`）。**随 skill 文件夹分发**，无需外部依赖。
+Moras 博客 Phase 5 验证工具，含 `/blog/` slug overlay（`--moras-slug`）。**随 skill 文件夹分发**，无需外部依赖。
 
 ## 用法（从 `moras/` 项目根目录）
 
@@ -35,12 +35,5 @@ python skills/blog-article/tools/link_audit.py   # 在 moras/blog/ 目录运行�
 | `--moras-slug` | frontmatter `slug` 格式 `/blog/{kebab}`；`category` 可选 |
 | `--forbidden` | 默认禁链前缀见 project-config G6 |
 | title/description | 45–60 / 140–160（见 meta-title-description.md） |
-
-## 同步 SSOT（维护者内网用）
-
-```powershell
-Copy-Item "E:\Agent执行\blog-create\tools\*.py" "e:\clients\moras\skills\blog-article\tools\" -Force
-# 重新应用 Moras frontmatter_validator overlay（--moras-slug 块）
-```
 
 *moras tools · v2.1 · 2026-08-24 · self-contained*

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "video-generator-3d",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI 3D video generators — text and images to navigable 3D scenes and renders",
+  "differentiator_vs_generic": "3D viewport with camera path keyframes and rendered scene preview, NOT flat 2D text-to-video frames or mesh modeling CAD.",
+  "visual_anchors": [
+    "HERO: 3D scene viewport — navigable environment with camera path keyframe arc and rendered cinematic preview inset",
+    "Compact text/image prompt card arrow into voxel/mesh scene building progress bar",
+    "2x2 grid of 3D outputs (product spin, architectural flythrough, character scene, depth map) — renders only"
+  ],
+  "anti_patterns": [
+    "Flat 2D video frame grid hero",
+    "CAD mesh wireframe only",
+    "Image generator samples",
+    "Empty cube icon"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI 3D VIDEO GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Scenes · Camera · Render",
+      "tagline": "Dimension from a Prompt",
+      "composition": "Visual-only collage for AI 3D video generator tools comparison: (1) HERO 3D viewport with camera path and render inset on right two-thirds. (2) Prompt card arrow into scene build progress. (3) 2x2 grid of four 3D render outputs. (4) Magnifying glass on camera keyframe. Paper collage, halftone. No flat 2D hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI 3D视频生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "场景 · 镜头 · 渲染",
+      "composition": "Same layout as EN: 3D viewport HERO + prompt build flow + 2x2 render grid + magnifying glass on keyframe. Title top-left only, NO extra Chinese UI labels, NO flat 2D hero, NO blank cards."
+    }
+  }
+}

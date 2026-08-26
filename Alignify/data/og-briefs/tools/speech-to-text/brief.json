@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "speech-to-text",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI speech-to-text tools — live audio to transcript with speaker labels",
+  "differentiator_vs_generic": "Live microphone waveform streaming into timestamped transcript with speaker color tags, NOT text-to-speech reverse or music DAW.",
+  "visual_anchors": [
+    "HERO: Live STT panel — pulsing mic waveform feeding timestamped transcript lines with colored speaker labels",
+    "Compact audio upload card arrow into searchable transcript with keyword highlight",
+    "2x2 grid of STT outputs (meeting transcript, subtitle export, vocabulary boost, multilingual detect) — UI only"
+  ],
+  "anti_patterns": [
+    "TTS text-to-speech player hero",
+    "Music production DAW",
+    "Blank mic icon",
+    "Generic chat without audio"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI SPEECH-TO-TEXT TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Live · Transcript · Speakers",
+      "tagline": "Every Word Captured",
+      "composition": "Visual-only collage for AI speech-to-text tools comparison: (1) HERO live waveform with timestamped transcript on right two-thirds. (2) Audio upload arrow into searchable transcript. (3) 2x2 grid of four STT output UI tiles. (4) Magnifying glass on speaker label row. Paper collage, halftone. No TTS hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI语音转文字工具",
+      "headline_line2": "（2026）",
+      "subtitle": "实时 · 转录 · 说话人",
+      "composition": "Same layout as EN: STT waveform HERO + upload transcript flow + 2x2 output grid + magnifying glass on speaker label. Title top-left only, NO extra Chinese UI labels, NO TTS hero, NO blank cards."
+    }
+  }
+}

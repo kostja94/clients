@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "explore",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Explore hub — cross-site finder for SEO guides, growth strategies, AI tools, events, and resources",
+  "differentiator_vs_generic": "Site-wide explore index, NOT one channel. HERO must show multi-channel sitemap mosaic linking SEO, tools, marketing, events quadrants.",
+  "visual_anchors": [
+    "HERO: Explore compass mosaic — four quadrant tiles (SEO links, tools grid, marketing channels, events cards) radiating from central compass/search icon with klein-blue spokes",
+    "Secondary: breadcrumb trail across quadrants",
+    "Tertiary: quick-link pill row blur above mosaic"
+  ],
+  "anti_patterns": [
+    "Single channel hub only",
+    "Generic site map XML text",
+    "LLM chat hero",
+    "Empty quadrant tiles"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "EXPLORE",
+      "headline_line2": "ALIGNIFY",
+      "subtitle": "Find SEO · Growth · Tools · Events",
+      "tagline": "Cross-Site Content Finder",
+      "composition": "Visual-only collage for site explore hub. HERO: four-quadrant channel mosaic with compass center on right two-thirds — SEO, tools, marketing, events mini previews connected by spokes. Secondary: breadcrumb trail. Tertiary: quick-link pills. Title top-left. Paper collage, halftone. NO single-channel-only hero, NO XML dump, NO blank quadrants."
+    },
+    "zh": {
+      "headline": "探索",
+      "headline_line2": "Alignify",
+      "subtitle": "SEO · 增长 · 工具 · 活动",
+      "composition": "Same layout as EN: four-quadrant explore mosaic HERO + breadcrumb + quick links. Title top-left, NO extra Chinese UI labels, NO blank quadrants."
+    }
+  }
+}

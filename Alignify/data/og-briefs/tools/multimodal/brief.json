@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "multimodal",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Multimodal LLM tools — image, audio, and text in one model chat",
+  "differentiator_vs_generic": "Chat panel accepting image upload with vision analysis reply, NOT text-only LLM or single-modality TTS.",
+  "visual_anchors": [
+    "HERO: Multimodal chat panel with image attachment thumbnail, audio waveform chip, and assistant reply describing visual details",
+    "Compact input tray showing photo + text prompt merging via torn-paper arrow",
+    "2x2 grid of multimodal tasks (chart reading, photo QA, document scan, video frame ask) — UI snippets only"
+  ],
+  "anti_patterns": [
+    "Text-only chat hero",
+    "Standalone image generator grid",
+    "Audio player alone",
+    "Empty attachment tray"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST MULTIMODAL LLM TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Vision · Audio · Text",
+      "tagline": "One Model, Every Input",
+      "composition": "Visual-only collage for multimodal LLM tools comparison: (1) HERO chat with image/audio inputs and vision reply on right two-thirds. (2) Input tray merge arrow into multimodal prompt. (3) 2x2 grid of four multimodal task UI snippets. (4) Compare lens on image attachment detail. Paper collage, halftone. No text-only chat hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳多模态大模型",
+      "headline_line2": "（2026）",
+      "subtitle": "视觉 · 音频 · 文本",
+      "composition": "Same layout as EN: multimodal chat HERO + input merge arrow + 2x2 task grid + compare lens on attachment. Title top-left only, NO extra Chinese UI labels, NO text-only chat hero, NO blank cards."
+    }
+  }
+}

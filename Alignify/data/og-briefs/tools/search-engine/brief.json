@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "search-engine",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI search engine tools — answer-first search with sources and follow-ups",
+  "differentiator_vs_generic": "AI answer panel with source link chips and follow-up question bar, NOT traditional blue-link SERP ranking list as hero.",
+  "visual_anchors": [
+    "HERO: AI search results panel — synthesized answer block with source citation chips and follow-up query bar beneath",
+    "Compact query input card arrow into multi-source synthesis with web page favicon dots",
+    "2x2 grid of search modes (deep research, image-aware search, news digest, compare sources split) — UI only"
+  ],
+  "anti_patterns": [
+    "Classic Google SERP ranking list hero",
+    "Empty search bar alone",
+    "SEO audit checklist",
+    "LLM chat without sources"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI SEARCH ENGINES",
+      "headline_line2": "(2026)",
+      "subtitle": "Answers · Sources · Follow-Up",
+      "tagline": "Search That Explains",
+      "composition": "Visual-only collage for AI search engine tools comparison: (1) HERO answer panel with source chips on right two-thirds. (2) Query input arrow into multi-source synthesis. (3) 2x2 grid of four search mode UI tiles. (4) Compare lens on source chip row. Paper collage, halftone. No classic SERP hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI搜索引擎",
+      "headline_line2": "（2026）",
+      "subtitle": "答案 · 来源 · 追问",
+      "composition": "Same layout as EN: AI search answer HERO + query synthesis flow + 2x2 mode grid + compare lens on sources. Title top-left only, NO extra Chinese UI labels, NO classic SERP hero, NO blank cards."
+    }
+  }
+}

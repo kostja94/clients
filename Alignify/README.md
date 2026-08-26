@@ -1,85 +1,73 @@
 # Alignify 项目上下文 / Project Context
 
-> 本文件是 Alignify 项目上下文仓库的唯一入口文档，整合了原 README.md、INDEX.md、NAMING.md 的全部内容。
-> 最后更新：2026-07-12
+> 本文件是 Alignify 上下文仓库的唯一入口。  
+> 最后更新：2026-08-26
 
 ---
 
-## 一、双仓模型 / Two-Repo Model
-
-Alignify 采用「部署仓 + 上下文仓」分离架构（2026-05 迁移完成）。
+## 一、双仓模型
 
 | | 部署仓 | 上下文仓 |
 |---|--------|----------|
-| **路径** | `E:\自有部署项目\alignify production` | `E:\clients\Alignify`（本目录） |
-| **Git** | `github.com/kostja94/alignify-by-kostja` | 本地目录（clients 工作区） |
-| **职责** | 站点源码、396 Markdown + 8 JSON、`public/`、IndexNow 脚本 | 规范、模板、knowledgehub、审计脚本 |
-| **入口** | `CLAUDE.md`、`README.md` | 本文件 |
-
-**判定口诀**：「删掉它，Vercel 上的站点还能正常 build 和运行吗？」若 **能**，且不是 Agent 入口，则放上下文仓。
+| **路径** | `E:\自有部署项目\alignify production` | `E:\clients\Alignify` |
+| **Git** | `github.com/kostja94/alignify-by-kostja` | clients 工作区 |
+| **职责** | 站点源码、Markdown 正文、`public/` | 知识块、创作规范、Skills、审计脚本 |
+| **入口** | 部署仓 `README.md` | 本文件 |
 
 ---
 
-## 二、站点规模 / Site Scale
-
-> 更新于 2026-08-23
-
-| 类别 | EN | ZH | 路由 |
-|------|----|----|------|
-| Hub / 静态页 | 16 | 17 | `/[locale]/...` |
-| Tools | 108 | 108 | `/[locale]/tools/[slug]` |
-| Blog | 25 | 25 | `/[locale]/blog/[slug]` |
-| SEO | 38 | 38 | `/[locale]/seo/[slug]` |
-| Marketing | 16 | 16 | `/[locale]/marketing/[slug]` |
-| Insights | 7 | 7 | `/[locale]/insights/[slug]` |
-| Events | 4 | 4 | `/[locale]/events/[slug]` |
-| Glossary (JSON) | 3 | 3 | `/[locale]/glossary/[slug]` |
-| **正文合计** | **~198** | **~198** | ~396 md + 8 json |
-
-技术栈：Next.js 15 · TypeScript · Tailwind CSS · shadcn/ui · next-intl
-EN 在根路径（`/tools/...`），ZH 在 `/zh/tools/...`。Skills 页面使用 `(landing)` route group（无 Header/Footer chrome）。
-
----
-
-## 三、目录结构 / Directory Structure
+## 二、目录结构（2026-08-26 重组）
 
 ```
-Alignify项目上下文/
-├── README.md                  ← 本文件（项目唯一入口）
-├── product/                   ← 产品策略：定位、关键词、站点结构、竞品、品牌
-├── knowledge/                 ← 知识块：tools(145) / seo(42) / marketing(14) / insights(10)
-├── content/                   ← 内容规范：sections(28) / templates(11) / links(7)
-├── technical/                 ← 技术 SEO：sitemap、robots、canonical、IndexNow、GSC
-├── scripts/                   ← 运维 & 审计脚本：ops / audit / reports
-├── skills/                    ← 技能工作流：创建文章、本地化、内链优化、质量审查
-└── ppt/                       ← 演示文稿文件（空目录——待整理）
+Alignify/
+├── README.md
+├── knowledge/
+├── skills/
+│   ├── create-article/       ← ★ 创作（flagship 全链路）
+│   ├── audit-article/        ← ★ 终审 → publish-ready
+│   ├── optimize-internal-links/
+│   └── ops/
+├── scripts/
+├── data/
+└── ppt/
 ```
+
+**已合并/移除**：`content/` · `technical/` · `create-tools-article/` · `create-blog-article/` · `localize-content-zh/` → 并入 `skills/create-article/`。
 
 ---
 
-## 四、状态仪表盘 / Status Dashboard
+## 三、创作入口
 
-| 区域 Area | 位置 Location | 文件数 Files | 完成度 | 待办 |
-|---|---|---|---|---|
-| [产品策略](#五产品策略-product) Product | `product/` | 14 | ✅ 90%+ | P0 关键词待办 |
-| [知识块](#六知识块-knowledge) Knowledge | `knowledge/` | 211 | 🔶 ~65% | 见 Knowledge 细分 |
-| [内容规范](#七内容规范-content) Content | `content/` | ~49 | ✅ 90%+ | use-cases 6 批次 |
-| [技术实现](#八技术实现-technical) Technical | `technical/` | 19 | ✅ 90%+ | GSC 监控阶段 4-6 |
-| [工作流技能](skills/) Skills | `skills/` | 25 | ✅ 就绪 | — |
-| [脚本](scripts/) Scripts | `scripts/` | 68 | ✅ 就绪 | — |
+| 任务 | 入口 |
+|------|------|
+| 新建任意频道文章 | [`skills/create-article/SKILL.md`](skills/create-article/SKILL.md) |
+| 发布前终审 | [`skills/audit-article/SKILL.md`](skills/audit-article/SKILL.md) |
+| 存量内链优化 | [`skills/optimize-internal-links/SKILL.md`](skills/optimize-internal-links/SKILL.md) |
+| 发布后 SEO | [`skills/ops/README.md`](skills/ops/README.md) |
+| 规范 SSOT | [`skills/create-article/rules/README.md`](skills/create-article/rules/README.md) |
+| 路径修复脚本 | [`scripts/ref/fix-rules-section-links.py`](scripts/ref/fix-rules-section-links.py) |
 
-### Knowledge 细分 / Knowledge Detail
+**质量档位**：Alignify **每篇均为 flagship** — Research + Moat + SelfCheck + 终审（≥80 发布，≥90 标杆）。
 
-| 子目录 | 文件数 | 完成 | 骨架 | 完成度 |
-|---|---|---|---|---|
-| `knowledge/insights/` | 10 | 3 | 7 | 30% |
-| `knowledge/marketing/` | 14 | 1 | 13 | 7% |
-| `knowledge/seo/` | 42 | 8 | 30+ | 21% |
-| `knowledge/tools/` | 145 | 145 | 0 | 100% |
+**流程**：create-article Step 10 → **audit-ready** → audit-article → **publish-ready** → Step 11 日期 → 发布。
 
-### 全局待办 / Global TODO
+**正文格式**：`content/{channel}/{locale}/{slug}.md` — TL;DR / FAQ / References **inline**，不再使用集中 JSON。
 
-| 优先级 | 事项 | 涉及范围 |
-|---|---|---|
-| P0 | 添加 4 个缺失页面到 sitemap（pricing-strategy, email-marketing, competitive-analysis, growth-case-studies） | 部署仓库（需确认是否已完成） |
-| 
+**架构原则**：正文节数与顺序由**内容**决定；`rules/anatomy.md` 与 `templates/` 为参考菜单，A 层硬底线（结论在 FAQ 前、FAQ 7 问等）见 [`anatomy.md`](skills/create-article/rules/anatomy.md) §〇。
+
+**部署仓说明**：渲染层若仍从 `tldr-data.json` / `faq-data.json` 注入，需单独在部署仓迁移；上下文规范与审计脚本已按 inline md 对齐。
+
+---
+
+## 四、Knowledge 细分
+
+| 子目录 | 文件数 | 完成度 |
+|--------|--------|--------|
+| `knowledge/tools/` | 145 | 100% |
+| `knowledge/seo/` | 42 | ~21% |
+| `knowledge/marketing/` | 14 | ~7% |
+| `knowledge/insights/` | 10 | ~30% |
+
+---
+
+*Alignify README · v2.0 · 2026-08-26*

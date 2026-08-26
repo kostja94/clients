@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "affiliate-marketing",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Affiliate marketing software — commission tracking, partner management, referral links",
+  "differentiator_vs_generic": "SaaS affiliate dashboard with referral link + commission ledger, NOT generic marketing strategy charts alone.",
+  "visual_anchors": [
+    "HERO: Affiliate program dashboard card with referral URL field, commission percentage badge, and blurred payout table rows",
+    "2x2 grid of partner workflow tiles (link generator, commission chart, partner CRM avatars, payout invoice) — UI fragments only",
+    "Magnifying glass over commission percentage badge or conversion metric row"
+  ],
+  "anti_patterns": [
+    "Generic SEO SERP",
+    "Billboard ad creative",
+    "Email inbox hero",
+    "Empty dashboard white card"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AFFILIATE MARKETING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Commissions · Partners · Tracking",
+      "tagline": "Automate Referral Revenue",
+      "composition": "Visual-only collage for affiliate marketing tools comparison page: (1) HERO affiliate dashboard with referral link bar, commission badge, and blurred ledger rows on right two-thirds. (2) 2x2 grid of four dashboard UI fragments (link copy, commission chart, partner avatars, payout row). (3) Magnifying glass inspecting commission metric. Paper collage, halftone. No SERP, no ranking lists, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳联盟营销工具",
+      "headline_line2": "（2026）",
+      "subtitle": "佣金 · 伙伴 · 追踪",
+      "composition": "Same layout as EN: affiliate dashboard HERO + 2x2 UI fragment grid + magnifying glass on commission badge. Title top-left only, NO extra Chinese UI labels, NO search bar hero, NO blank cards. Navy torn-paper accents."
+    }
+  }
+}

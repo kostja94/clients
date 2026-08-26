@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "voice",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI voice tools hub — TTS, STT, cloning, and audio workflows compared",
+  "differentiator_vs_generic": "Voice toolkit hub collage connecting TTS waveform, STT transcript, and clone profile tiles, NOT single-modality hero only.",
+  "visual_anchors": [
+    "HERO: Voice tools hub dashboard — central waveform hub with spokes to TTS script panel, STT transcript pane, and voice clone profile card",
+    "Compact mic/text dual input card arrow into unified audio pipeline strip",
+    "2x2 grid of voice capabilities (realtime STT, multilingual TTS, emotion control, API stream) — UI tiles only"
+  ],
+  "anti_patterns": [
+    "Single TTS-only hero",
+    "Lip-sync face video",
+    "Music DAW",
+    "Empty speaker clipart"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VOICE TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "TTS · STT · Clone",
+      "tagline": "Complete Voice AI Stack",
+      "composition": "Visual-only collage for AI voice tools hub comparison: (1) HERO voice hub dashboard with TTS/STT/clone spokes on right two-thirds. (2) Dual input card arrow into audio pipeline strip. (3) 2x2 grid of four voice capability UI tiles. (4) Magnifying glass on waveform hub detail. Paper collage, halftone. No single-modality hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI语音工具",
+      "headline_line2": "（2026）",
+      "subtitle": "合成 · 识别 · 克隆",
+      "composition": "Same layout as EN: voice hub HERO + dual input pipeline + 2x2 capability grid + magnifying glass on waveform. Title top-left only, NO extra Chinese UI labels, NO single-modality hero, NO blank cards."
+    }
+  }
+}

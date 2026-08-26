@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "code-completion",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI code completion tools — inline ghost text, FIM, and multi-line predictive suggestions in IDE",
+  "differentiator_vs_generic": "IDE editor with inline ghost-text completion and multi-line suggestion highlight at cursor, NOT agent task planner or PR diff review.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Code editor pane with syntax-highlighted function, gray ghost-text multi-line completion trailing the cursor, and accept-tab hint chip blurred",
+    "Context file tabs ribbon: three mini open files (utils, types, test) feeding into editor via torn arrows — filenames blurred only",
+    "2x2 grid of completion vignettes (function body, import block, test stub, refactor edit) — code fragments only, no readable source",
+    "Magnifying glass zooming on ghost-text suggestion line where FIM fills middle of function"
+  ],
+  "anti_patterns": [
+    "Agent multi-step task checklist hero",
+    "PR diff review panel",
+    "Terminal shell command block",
+    "Empty code editor"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI CODE COMPLETION",
+      "headline_line2": "(2026)",
+      "subtitle": "Inline · Multi-Line · Context",
+      "tagline": "Ghost Text That Keeps Up With You",
+      "composition": "Visual-only collage for AI code completion tools comparison: (1) HERO IDE editor with inline ghost-text completion at cursor on right two-thirds. (2) Context file tabs ribbon feeding editor. (3) 2x2 grid of four completion vignettes. (4) Magnifying glass on FIM ghost-text line. Title top-left only. Paper collage, halftone. No agent planner hero, no PR diff hero, no ranking text, no blank editor."
+    },
+    "zh": {
+      "headline": "最佳AI代码补全工具",
+      "headline_line2": "（2026）",
+      "subtitle": "行内 · 多行 · 上下文",
+      "composition": "Same layout as EN: inline ghost-text completion HERO + context tabs ribbon + 2x2 vignette grid + magnifying glass on FIM line. Title top-left only, NO extra Chinese UI labels, NO agent or PR diff hero, NO blank editor."
+    }
+  }
+}

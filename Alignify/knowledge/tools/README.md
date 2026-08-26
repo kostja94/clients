@@ -1,6 +1,8 @@
 # knowledgehub / tools · Alignify Tools slug 知识块分册
 
-本目录存放与 Alignify **Tools slug**（kebab-case 文件名）同名的 `*.md` 知识块，便于与历史 **`/tools/[slug]`**、新文 **`/blog/[slug]`**（2026-06 起）及 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点对照。**路由策略**见 §路由与发布策略。**命名速查**：[README.md](../../../README.md) §十一（命名规范）。
+本目录存放与 Alignify **Tools slug**（kebab-case 文件名）同名的 `*.md` 知识块，便于与历史 **`/tools/[slug]`**、新文 **`/blog/[slug]`**（2026-06 起）及关键词表锚点对照。**路由策略**见 §路由与发布策略。
+
+**正式文章创作流程**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md) · 规范 [`skills/create-article/rules/`](../../skills/create-article/rules/)
 
 ---
 

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "llm-for-math",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Math LLMs — equation solving, proof steps, and theorem reasoning benchmarks",
+  "differentiator_vs_generic": "LaTeX equation ladder with numbered proof steps and graph sketch, NOT generic chat or calculator app.",
+  "visual_anchors": [
+    "HERO: Math LLM panel — multi-line LaTeX integral/equation with numbered proof step cards unfolding downward and small graph plot inset",
+    "Compact problem input card arrow into step-by-step solution ladder",
+    "2x2 grid of math outputs (algebra steps, geometry diagram, proof chain, word-problem breakdown) — math UI only"
+  ],
+  "anti_patterns": [
+    "Generic LLM chat hero",
+    "Calculator app alone",
+    "Spreadsheet formula grid",
+    "Blank whiteboard"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST MATH LLMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Equations · Proofs · Graphs",
+      "tagline": "Reason Through the Steps",
+      "composition": "Visual-only collage for math LLM tools comparison: (1) HERO LaTeX equation with proof step ladder and graph inset on right two-thirds. (2) Problem input arrow into solution steps. (3) 2x2 grid of four math output modes. (4) Magnifying glass on one proof step. Paper collage, halftone. No generic chat hero, no calculator alone, no blank whiteboard."
+    },
+    "zh": {
+      "headline": "最佳数学大模型",
+      "headline_line2": "（2026）",
+      "subtitle": "方程 · 证明 · 图表",
+      "composition": "Same layout as EN: math LLM proof ladder HERO + problem input flow + 2x2 output grid + magnifying glass on proof step. Title top-left only, NO extra Chinese UI labels, NO generic chat hero, NO blank cards."
+    }
+  }
+}

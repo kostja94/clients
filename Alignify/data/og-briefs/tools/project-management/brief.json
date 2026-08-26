@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "project-management",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI project management tools — kanban, timelines, and risk alerts",
+  "differentiator_vs_generic": "Kanban board with dependency arrows, Gantt timeline strip, and AI risk alert badge, NOT simple todo list.",
+  "visual_anchors": [
+    "HERO: Project kanban with linked dependency arrows between cards plus mini Gantt timeline strip and AI risk alert flag",
+    "Compact sprint planning card with story points arrow into burndown chart vignette",
+    "2x2 grid of PM views (roadmap timeline, resource load, milestone tracker, standup summary) — UI only"
+  ],
+  "anti_patterns": [
+    "Simple todo checklist hero",
+    "CRM sales pipeline",
+    "Empty white board",
+    "Spreadsheet rows"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI PROJECT MANAGEMENT TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Kanban · Timeline · Risk",
+      "tagline": "Ship on Schedule",
+      "composition": "Visual-only collage for AI project management tools comparison: (1) HERO kanban with dependencies and Gantt strip on right two-thirds. (2) Sprint planning card arrow into burndown vignette. (3) 2x2 grid of four PM view UI tiles. (4) Magnifying glass on risk alert badge. Paper collage, halftone. No todo list hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI项目管理工具",
+      "headline_line2": "（2026）",
+      "subtitle": "看板 · 时间线 · 风险",
+      "composition": "Same layout as EN: kanban HERO + sprint planning flow + 2x2 view grid + magnifying glass on risk alert. Title top-left only, NO extra Chinese UI labels, NO todo hero, NO blank cards."
+    }
+  }
+}

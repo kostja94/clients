@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "image-enhancer",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI image enhancers — upscaling, denoise, deblur, face recovery without changing image content",
+  "differentiator_vs_generic": "Split before/after resolution panel with pixel-grid zoom inset and sharpness meter bar, NOT generative inpaint or relighting.",
+  "visual_anchors": [
+    "HERO: Before/after enhancement split — left soft/blurry photo half, vertical torn divider, right crisp upscaled half with subtle pixel-grid zoom inset in corner",
+    "Sharpness/noise meter bars beneath split showing improvement delta (generic labels blurred)",
+    "2x2 grid of enhancement types (2x upscale, face recovery, denoise, color restore) — paired thumbnails only"
+  ],
+  "anti_patterns": [
+    "Generative inpaint lasso hero",
+    "Relighting light-source orb hero",
+    "Text-to-image generation grid",
+    "Single image with no compare split"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI IMAGE ENHANCERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Upscale · Denoise · Sharpen",
+      "tagline": "Same Photo, Better Pixels",
+      "composition": "Visual-only collage for AI image enhancer tools comparison: (1) HERO before/after resolution split with pixel-grid zoom inset on right two-thirds. (2) Sharpness meter bars below. (3) 2x2 grid of four enhancement type pairs. (4) Magnifying glass on sharpened edge detail. Paper collage, halftone. No inpaint hero, no relighting hero, no T2I grid."
+    },
+    "zh": {
+      "headline": "最佳AI图片增强工具",
+      "headline_line2": "（2026）",
+      "subtitle": "超分 · 降噪 · 锐化",
+      "composition": "Same layout as EN: before/after upscale HERO + meter bars + 2x2 enhancement grid + magnifying glass on edge detail. Title top-left only, NO extra Chinese UI labels, NO inpaint hero, NO blank cards. Klein-blue accents."
+    }
+  }
+}

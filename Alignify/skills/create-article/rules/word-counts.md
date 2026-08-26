@@ -21,8 +21,8 @@
 | BestTools description | 100 字 | 180–260 字 | <100 字内容质量不达标 |
 | 应用场景 cases | ×3 个 | 4–6 个 | 按工具类型调整 |
 | 应用场景 description | — | 100–260 字/场景 | — |
-| 如何选择 introduction | 40 字 | 40–120 字 | 空 intro 导致章节无引导段 |
-| 如何选择 steps | ×5 步 | 5 步 | 每步 `id` + `title` + description |
+| 如何选择 introduction | 40 字 | 40–120 字 | **仅选型/操作类**（tools、seo 视题材）采用；Marketing/Blog 策略文默认不设此节 |
+| 如何选择 steps | ×3–5 步 | 3–5 步 | 每步 `id` + `title` + description；按主题复杂度定，**不硬性 5 步** |
 | 如何选择 description/步 | 80 字 | 120–200 字 | <80 字视为 stub，不达标 |
 | 结论 | 2 段 | 2–3 段（**约 180–320 字**） | ≥2 段否则仓促；**软约束·内容优先**，非硬性红线；篇幅与例外见 [alignify-conclusion.md §2.3](../../skills/create-article/rules/conclusion.md) |
 | FAQ items | ×8 问 | 8 问 | 中英文各 ≥8 问 |
@@ -44,8 +44,8 @@
 | BestTools description | 280 字符 | 350–650 字符 | <280 字符内容质量不达标 |
 | 应用场景 cases | ×3 个 | 4–6 个 | — |
 | 应用场景 description | — | 100–260 词/场景 | — |
-| 如何选择 introduction | 40 词 | 40–80 词 | — |
-| 如何选择 steps | ×5 步 | 5 步 | 每步 `id` + `title` + description |
+| 如何选择 introduction | 40 词 | 40–80 词 | **仅选型/操作类**采用；Marketing/Blog 策略文默认不设此节 |
+| 如何选择 steps | ×3–5 步 | 3–5 步 | 每步 `id` + `title` + description；按主题复杂度定 |
 | 如何选择 description/步 | 80 词/字符 | 100–180 词 | — |
 | 结论 | 2 段 | 2–3 段（约 120–220 词） | 软约束·内容优先，见 [alignify-conclusion.md §2.3](../../skills/create-article/rules/conclusion.md) |
 | FAQ items | ×8 问 | 8 问 | — |

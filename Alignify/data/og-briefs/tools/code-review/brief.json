@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "code-review",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI code review tools — PR diff analysis, security flags, and CI-integrated quality checks",
+  "differentiator_vs_generic": "Pull-request diff panel with inline AI comment flags and security severity badges, NOT inline code completion or terminal CLI.",
+  "visual_anchors": [
+    "HERO (~50% canvas): PR diff view with green/red hunks, floating AI review comment pins on changed lines, and security shield badge with severity dot",
+    "CI pipeline strip: commit → scan → approve icons linked by torn-paper arrows (blurred labels only)",
+    "2x2 grid of review finding tiles (SQL injection flag, style nit, missing test, performance hint) — UI fragments only",
+    "Magnifying glass zooming on one inline AI comment bubble attached to a diff hunk"
+  ],
+  "anti_patterns": [
+    "Inline ghost-text completion hero",
+    "Terminal command execution panel",
+    "Generic padlock on gradient",
+    "Empty diff view"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI CODE REVIEW TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Diff · Security · CI",
+      "tagline": "Catch Issues Before Merge",
+      "composition": "Visual-only collage for AI code review tools comparison: (1) HERO PR diff panel with AI comment pins and security badge on right two-thirds. (2) CI pipeline strip (commit, scan, approve). (3) 2x2 grid of four review finding tiles. (4) Magnifying glass on inline comment bubble. Title top-left only. Paper collage, halftone. No completion ghost-text hero, no terminal hero, no ranking text, no blank diff."
+    },
+    "zh": {
+      "headline": "最佳AI代码审查工具",
+      "headline_line2": "（2026）",
+      "subtitle": "Diff · 安全 · CI",
+      "composition": "Same layout as EN: PR diff HERO with AI pins + CI strip + 2x2 finding grid + magnifying glass on comment bubble. Title top-left only, NO extra Chinese UI labels, NO completion or terminal hero, NO blank diff."
+    }
+  }
+}

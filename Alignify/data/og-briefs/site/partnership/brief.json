@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "partnership",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Partnership page — growth collaborators and featured projects including Growth Tools directory (100+ launch tools)",
+  "differentiator_vs_generic": "Partners showcase, NOT services pricing. HERO must show partner cards + featured project directory tile.",
+  "visual_anchors": [
+    "HERO: Partner card cluster — 2–3 collaborator cards with avatar silhouettes and project blur + featured Growth Tools directory tile (100+ tools grid hint)",
+    "Secondary: handshake/link chain motif connecting cards",
+    "Tertiary: globe launch arrow for global growth partners"
+  ],
+  "anti_patterns": [
+    "Channel hub link columns",
+    "Generic sponsorship dollar signs",
+    "Empty partner cards",
+    "Services pricing table hero"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "PARTNERS",
+      "headline_line2": "",
+      "subtitle": "Growth Collaborators & Projects",
+      "tagline": "Featured Directories · Co-Marketing",
+      "composition": "Visual-only collage for partnership page. HERO: partner card cluster + featured directory tile on right two-thirds. Secondary: link chain motif. Tertiary: globe launch arrow. Title top-left. Paper collage, halftone. NO hub columns, NO pricing table hero, NO blank cards."
+    },
+    "zh": {
+      "headline": "合作伙伴",
+      "headline_line2": "",
+      "subtitle": "增长协作者与特色项目",
+      "composition": "Same layout as EN: partner card cluster HERO + link chain + globe arrow. Title top-left, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

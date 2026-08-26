@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "avatar",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI talking avatar generators — speaking digital-human video with lip-sync",
+  "differentiator_vs_generic": "Talking avatar video frame with lip-sync waveform and speech bubble motion, NOT static headshot photo grid alone.",
+  "visual_anchors": [
+    "HERO: Video player frame with realistic talking digital human mid-speech, visible lip-sync waveform ribbon beneath chin",
+    "Compact script/prompt card with blurred lines feeding into avatar frame",
+    "2x2 grid of four avatar output stills (presenter, support agent, multilingual speaker, cartoon host) — faces only, no names"
+  ],
+  "anti_patterns": [
+    "Static passport headshot grid hero",
+    "2D image generator fox samples",
+    "3D mesh viewport",
+    "Empty video frame"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TALKING AVATARS",
+      "headline_line2": "(2026)",
+      "subtitle": "Lip-Sync · Script-to-Video",
+      "tagline": "Digital Humans That Speak",
+      "composition": "Visual-only collage for AI talking avatar generator tools comparison: (1) HERO video frame with speaking digital human and lip-sync waveform ribbon on right two-thirds. (2) Script prompt card with blurred lines arrow into avatar. (3) 2x2 grid of four avatar output stills. (4) Magnifying glass on lip-sync mouth detail. Paper collage, halftone. No static headshot hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI数字人头像",
+      "headline_line2": "（2026）",
+      "subtitle": "口型同步 · 脚本成片",
+      "composition": "Same layout as EN: talking avatar video HERO + script card + 2x2 avatar grid + magnifying glass on lip-sync. Title top-left only, NO extra Chinese UI labels, NO static headshot grid hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "video",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI video tools hub — category map across generation, editing, effects, clipping, and translation",
+  "differentiator_vs_generic": "Video tools category hub mosaic with four workflow tiles (T2V generator, NLE editor timeline, effects template, clip highlight reel), NOT single film strip alone.",
+  "visual_anchors": [
+    "HERO: Video tools category hub — 2x2 mosaic (T2V film strip tile, editor timeline tile, effects template tile, clip highlight reel tile) connected by torn-paper arrows",
+    "Compact category picker strip morphing into dominant video workflow tile",
+    "Magnifying glass zooming on one tile detail (play button or timeline scrubber)"
+  ],
+  "anti_patterns": [
+    "Single T2V film strip as sole hero",
+    "Image generator grid mixed in",
+    "Music waveform hero",
+    "Empty video tiles"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIDEO TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Generate · Edit · Effects",
+      "tagline": "Pick the Right Video Stack",
+      "composition": "Visual-only collage for AI video tools category hub: (1) HERO 2x2 video workflow mosaic on right two-thirds. (2) Category picker strip arrow into dominant tile. (3) Magnifying glass on one tile detail. Title top-left only. Paper collage, halftone. No single-generator-only hero, no image grid, no blank tiles."
+    },
+    "zh": {
+      "headline": "最佳AI视频工具",
+      "headline_line2": "（2026）",
+      "subtitle": "生成 · 编辑 · 特效",
+      "composition": "Same layout as EN: video category hub mosaic HERO + picker strip + magnifying glass on tile detail. Title top-left only, NO extra Chinese UI labels, NO single film strip hero, NO blank tiles. Mars-green accents."
+    }
+  }
+}

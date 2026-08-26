@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "text-to-video",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI text-to-video tools — prompts to short cinematic clips and storyboards",
+  "differentiator_vs_generic": "Text prompt card with storyboard strip morphing into generated video frame sequence, NOT 3D scene viewport or video editor timeline.",
+  "visual_anchors": [
+    "HERO: Text-to-video board — prompt card, 4-panel storyboard strip, and hero generated video frame with play button overlay",
+    "Compact scene description card arrow into motion preview clip thumbnail",
+    "2x2 grid of video outputs (cinematic wide, product demo, character action, aspect ratio variants) — frames only"
+  ],
+  "anti_patterns": [
+    "3D viewport render hero",
+    "Offline NLE timeline",
+    "Image generator grid only",
+    "Empty clapperboard"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TEXT-TO-VIDEO TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prompt · Storyboard · Clip",
+      "tagline": "Words Become Motion",
+      "composition": "Visual-only collage for AI text-to-video tools comparison: (1) HERO prompt-to-storyboard-to-video frame on right two-thirds. (2) Scene description arrow into motion preview thumbnail. (3) 2x2 grid of four generated video frame outputs. (4) Magnifying glass on storyboard panel. Paper collage, halftone. No 3D viewport hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI文生视频工具",
+      "headline_line2": "（2026）",
+      "subtitle": "提示词 · 分镜 · 成片",
+      "composition": "Same layout as EN: text-to-video HERO + scene prompt flow + 2x2 frame grid + magnifying glass on storyboard. Title top-left only, NO extra Chinese UI labels, NO 3D hero, NO blank cards."
+    }
+  }
+}

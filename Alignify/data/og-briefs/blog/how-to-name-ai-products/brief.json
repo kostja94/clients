@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "how-to-name-ai-products",
+  "analyzed_at": "2026-08-24T18:40:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI product naming framework — four-tier architecture (company, product, model, feature), six strategies, sound symbolism, and trademark pre-screening",
+  "differentiator_vs_generic": "This is systematic AI brand naming methodology, NOT generic branding inspiration, NOT domain selection alone. Hero must be a four-tier naming pyramid with phoneme waveform and trademark check motif — the layered naming architecture visual.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Four-tier naming pyramid — Company (top), Product, Model, Feature (base) as stacked blocks with blur example names per tier and alignify-navy accent border on Product tier",
+    "Sound symbolism waveform strip beneath pyramid — phoneme curve with v/i/plosive blur markers",
+    "Secondary: trademark pre-screen checklist with 3 rows (globe icon, TM symbol blur, green/red status dots)"
+  ],
+  "anti_patterns": [
+    "Lightbulb inspiration cliché as hero",
+    "Random word cloud without tier structure",
+    "Domain registrar screenshot as sole visual",
+    "Generic logo design mockup unrelated to naming framework",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "AI PRODUCT NAMING",
+      "headline_line2": "(2026)",
+      "subtitle": "Four-Tier Brand Architecture",
+      "tagline": "Sound · Trademark · Strategy",
+      "composition": "Visual-only editorial collage for AI product naming framework guide. HERO: four-tier naming pyramid on right two-thirds — stacked blocks labeled Company/Product/Model/Feature blur with example-name blur per tier, Product tier with alignify-navy accent border. Below pyramid: horizontal phoneme waveform strip with small v/i/plosive blur markers. Secondary: compact trademark checklist — 3 rows with globe, TM blur, green/red dots. Title top-left. Paper torn edges, halftone. NO lightbulb hero, NO word cloud, NO agency logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "AI产品命名",
+      "headline_line2": "（2026）",
+      "subtitle": "四层架构与命名策略",
+      "composition": "Same layout as EN: four-tier naming pyramid HERO + phoneme waveform + trademark checklist. Title top-left, NO extra Chinese tier labels on blocks, NO lightbulb, NO blank cards."
+    }
+  }
+}

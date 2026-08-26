@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "home",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Alignify homepage — growth is a research loop; playbook from 100+ AI products for teams that refuse to be silent",
+  "differentiator_vs_generic": "Brand hero about the growth research loop, NOT a generic SaaS landing or channel index. HERO must show a circular research flywheel (observe → hypothesize → ship → measure) with chapter motifs from the homepage narrative.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Growth research loop diagram — four nodes in a circular arrow flywheel (Problem / Shift / Levers / Receipts) with klein-blue accent connectors and blurred metric ticks",
+    "Secondary: stacked chapter index cards (01–05) peeling like torn paper tabs along the loop edge",
+    "Tertiary: subtle 100+ product constellation dots orbiting one loop node — no readable brand names"
+  ],
+  "anti_patterns": [
+    "Generic SaaS dashboard hero",
+    "Channel hub link columns (this is brand home not index)",
+    "Empty white cards below headline",
+    "Stock handshake or rocket clipart"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "GROWTH IS A",
+      "headline_line2": "RESEARCH LOOP",
+      "subtitle": "Playbook from 100+ AI Products",
+      "tagline": "For Products That Refuse Silence",
+      "composition": "Visual-only editorial collage for Alignify brand homepage. HERO: circular growth research loop flywheel occupying right two-thirds — four labeled nodes (Problem, Shift, Levers, Receipts) connected by accent arrows, halftone grain. Secondary: five chapter tab cards fanning from loop. Tertiary: dot constellation suggesting 100+ products. Title block top-left only. Paper torn edges, klein-blue accents. NO hub link columns, NO generic dashboard, NO extra slogans as text labels."
+    },
+    "zh": {
+      "headline": "增长是一场",
+      "headline_line2": "研究循环",
+      "subtitle": "100+ AI产品实战手册",
+      "composition": "Same layout as EN: research loop flywheel HERO + chapter tabs + product dot constellation. Title top-left only, NO hub columns, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "agent-memory",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI agent memory layer — persistent cross-session middleware with write/store/retrieve, vectors, temporal graphs, and scoped retrieval beyond million-token context windows",
+  "differentiator_vs_generic": "This is developer infrastructure for agent persistence and selective recall — NOT consumer PKM, NOT platform chat memory, NOT generic brain icon. Hero must show external memory store feeding a slim context window via retrieval arrows.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Agent runtime diagram — compact context window on left, external memory substrate on right (vector nodes + temporal graph edges), accent klein-blue arrows for write path (dialogue → store) and retrieve path (store → injected context chips)",
+    "Secondary: bloated full-history context bar crossed out vs lean working-set with 3-4 retrieved memory chips highlighted",
+    "Tertiary: scoped tenant bubbles (user/session/agent/team) around memory partitions — governance visual"
+  ],
+  "anti_patterns": [
+    "Generic brain or lightbulb as hero",
+    "LLM chat panel as hero (this is memory middleware not conversation UI)",
+    "Consumer note-taking app (Notion/Evernote style) as main visual",
+    "Empty database icon without retrieval flow",
+    "Platform-native chat memory toggle UI"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "AGENT MEMORY LAYER",
+      "headline_line2": "(2026)",
+      "subtitle": "Persistent Cross-Session Middleware",
+      "tagline": "Vectors · Graphs · Scoped Retrieval",
+      "composition": "Visual-only editorial collage for AI agent memory layer guide. HERO: right two-thirds shows agent memory architecture — small context window card on left side of hero, large external memory plane on right with vector dots and graph node connections, klein-blue bidirectional arrows labeled only by flow direction (write in, retrieve out) with blurred fact chips returning to context. Secondary: contrast strip — overstuffed context bar faded/reduced vs selective 3-chip injection. Tertiary: four scope partition circles around memory store. Title block top-left only. Paper torn edges, halftone. NO LLM chat hero, NO brain clipart, NO PKM notebook UI, NO real vendor logos, NO extra text labels on memory chips."
+    },
+    "zh": {
+      "headline": "Agent记忆层",
+      "headline_line2": "（2026）",
+      "subtitle": "跨会话持久化中间件",
+      "composition": "Same layout as EN: HERO memory architecture with context window + external vector/graph store + write/retrieve arrows. Secondary: bloated vs selective context contrast. Tertiary: scoped partition bubbles. Title top-left, NO LLM chat hero, NO brain icon, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

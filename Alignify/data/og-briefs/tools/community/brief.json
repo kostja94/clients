@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "community",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI community platforms — member hubs, courses, forums, and UGC engagement spaces",
+  "differentiator_vs_generic": "Community hub dashboard with member avatar ring, forum threads, and course module tiles, NOT influencer campaign dashboard or social media scheduler.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Community hub home — circular member avatar ring, active forum thread list with reply counts blurred, and featured course module card with progress bar",
+    "Engagement metric ribbon: posts, members, retention icons as torn-paper chips (blurred numbers only)",
+    "2x2 grid of community scene tiles (live Q&A, member directory, event calendar, UGC showcase) — UI fragments only",
+    "Magnifying glass zooming on one forum thread reply stack with reaction emoji row"
+  ],
+  "anti_patterns": [
+    "Influencer ROI dashboard hero",
+    "Social media content calendar grid",
+    "Customer support chat widget",
+    "Empty community feed"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI COMMUNITY PLATFORMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Members · Forums · Courses",
+      "tagline": "Build Spaces People Return To",
+      "composition": "Visual-only collage for AI community platform tools comparison: (1) HERO community hub with avatar ring, forum threads, and course card on right two-thirds. (2) Engagement metric chip ribbon. (3) 2x2 grid of four community scene tiles. (4) Magnifying glass on forum reply stack. Title top-left only. Paper collage, halftone. No influencer dashboard hero, no social scheduler, no ranking text, no blank feed."
+    },
+    "zh": {
+      "headline": "最佳AI社区平台",
+      "headline_line2": "（2026）",
+      "subtitle": "成员 · 论坛 · 课程",
+      "composition": "Same layout as EN: community hub HERO + metric ribbon + 2x2 scene grid + magnifying glass on thread replies. Title top-left only, NO extra Chinese UI labels, NO influencer or scheduler hero, NO blank feed."
+    }
+  }
+}

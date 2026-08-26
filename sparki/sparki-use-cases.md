@@ -17,7 +17,7 @@
 
 ## 大维度 1:内容形态场景(Format,U1)
 
-**「拍什么」**——复用 [sparki-video-types.md](./sparki-video-types.md) 的 21 种形态,按使用者视角展开成场景。
+**「拍什么」**——复用 [video-types-taxonomy.md](./video-types/video-types-taxonomy.md) 的 21 种形态,按使用者视角展开成场景。
 
 ### 小维度 A:产品与带货类
 
@@ -66,7 +66,7 @@
 
 **「为谁服务」**——按行业展开典型场景。**P0/P1** 为制作优先级。
 
-> 口径同步(2026-08-12):本大维度仅对应 [sparki-video-types.md](./sparki-video-types.md) 维度 2 的 **子域 2-B 本地商户服务(B1–B7)**;下文「小维度 1–7」即 B1–B7。**消费品牌品类(C01–C06,子域 2-A)** 的场景另行规划,不列于此。
+> 口径同步(2026-08-12):本大维度仅对应 [video-types-taxonomy.md](./video-types/video-types-taxonomy.md) 维度 2 的 **子域 2-B 本地商户服务(B1–B7)**;下文「小维度 1–7」即 B1–B7。**消费品牌品类(C01–C06,子域 2-A)** 的场景另行规划,不列于此。已上线行业页见 [industries-pages.md](./video-types/industries-pages.md)。
 
 ### 小维度 1:餐饮【P0】
 
@@ -169,12 +169,12 @@
 ## 备注
 
 - 场景 = **U1 形态 × U2 行业 × U3 目标 × U4 角色** 的组合;页面/模板/SEO 建议以 U1 形态为主键建页,行业作长尾。
-- 红人联动:U1-B5 Copy Style 与 [sparki-creators.md](./sparki-creators.md) 打通,「Edit Like {红人}」即核心 SEO 页形态。
+- 红人联动:U1-B5 Copy Style 与 [creators/creators-roster.md](./creators/creators-roster.md) 打通,「Edit Like {红人}」即核心 SEO 页形态。
 - 后续新增维度直接补充到「〇、场景维度说明」并相应建章。
 
 ---
 
 *遵循 [客户文档规范](../demo/client-template.md)*
-*关联：[主文档](./sparki.md) | [features](./sparki-features.md) | [video-types](./sparki-video-types.md) | [keywords](./sparki-keywords.md)*
+*关联：[主文档](./sparki.md) | [features](./sparki-features.md) | [video-types/](./video-types/) | [keywords](./sparki-keywords.md)*
 *Last updated: 2026-08-12*
 *Demo 文档包 · Sparki · 应用场景与 Persona*

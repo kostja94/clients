@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "referral-program",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI referral program tools — invite links, rewards, and growth loops",
+  "differentiator_vs_generic": "Referral dashboard with invite link tree, reward tier ladder, and conversion funnel, NOT affiliate coupon grid or CRM pipeline.",
+  "visual_anchors": [
+    "HERO: Referral program dashboard — shareable invite link card, branching referral tree, and reward tier ladder with conversion counts",
+    "Compact signup flow vignette arrow into credited reward notification badge",
+    "2x2 grid of referral widgets (leaderboard, email invite template, fraud check, payout ledger) — UI only"
+  ],
+  "anti_patterns": [
+    "Affiliate marketing coupon hero",
+    "B2B sales pipeline",
+    "Generic email blast",
+    "Empty gift box icon"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI REFERRAL PROGRAM TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Invites · Rewards · Loops",
+      "tagline": "Turn Users into Advocates",
+      "composition": "Visual-only collage for AI referral program tools comparison: (1) HERO referral dashboard with invite tree and reward ladder on right two-thirds. (2) Signup flow arrow into reward badge. (3) 2x2 grid of four referral widget UI tiles. (4) Magnifying glass on conversion funnel step. Paper collage, halftone. No affiliate coupon hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI推荐计划工具",
+      "headline_line2": "（2026）",
+      "subtitle": "邀请 · 奖励 · 增长",
+      "composition": "Same layout as EN: referral dashboard HERO + signup reward flow + 2x2 widget grid + magnifying glass on funnel. Title top-left only, NO extra Chinese UI labels, NO affiliate hero, NO blank cards."
+    }
+  }
+}

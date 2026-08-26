@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "llm-for-reasoning",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI reasoning LLMs — chain-of-thought, logic puzzles, and multi-step problem solving",
+  "differentiator_vs_generic": "Reasoning trace panel with branching thought nodes and verification checkmarks, NOT generic single-bubble chat reply.",
+  "visual_anchors": [
+    "HERO: Reasoning LLM trace — vertical chain-of-thought node ladder with branching sub-steps, verification checkmarks, and final answer chip at bottom",
+    "Compact logic puzzle card arrow into expanded reasoning tree",
+    "2x2 grid of reasoning tasks (syllogism, planning graph, math word chain, code logic trace) — UI nodes only"
+  ],
+  "anti_patterns": [
+    "Single chat bubble answer hero",
+    "Benchmark bar chart alone",
+    "Generic LLM picker dropdown",
+    "Empty thought tree"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI REASONING LLMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Chain · Verify · Solve",
+      "tagline": "Think Step by Step",
+      "composition": "Visual-only collage for AI reasoning LLM tools comparison: (1) HERO chain-of-thought trace tree with checkmarks on right two-thirds. (2) Logic puzzle arrow into reasoning nodes. (3) 2x2 grid of four reasoning task UI tiles. (4) Magnifying glass on verification checkmark row. Paper collage, halftone. No single-bubble chat hero, no benchmark-only chart, no blank tree."
+    },
+    "zh": {
+      "headline": "最佳AI推理大模型",
+      "headline_line2": "（2026）",
+      "subtitle": "链条 · 验证 · 求解",
+      "composition": "Same layout as EN: reasoning trace HERO + puzzle flow + 2x2 task grid + magnifying glass on checkmarks. Title top-left only, NO extra Chinese UI labels, NO single-bubble chat hero, NO blank cards."
+    }
+  }
+}

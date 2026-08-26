@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "video-generator",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI video generators — text and images to cinematic clips with native audio",
+  "differentiator_vs_generic": "Film strip with cinematic frames and play-button overlay morphing from prompt bar, NOT video editor timeline or effects template picker.",
+  "visual_anchors": [
+    "HERO: Horizontal film strip with 4 cinematic video frames (city night, product ad, animated character, ocean drone) — images only, no captions",
+    "Large play-button triangle overlay on one frame suggesting playback",
+    "Compact prompt bar with sparkle icon and blurred placeholder lines morphing into the film strip via torn-paper arrow"
+  ],
+  "anti_patterns": [
+    "Offline NLE timeline hero",
+    "Video effects before/after pair",
+    "3D viewport render",
+    "Empty film strip slots"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VIDEO GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Text-to-Video · Image-to-Video · Native Audio",
+      "tagline": "From Prompt to Polished Clips",
+      "composition": "Visual-only collage for AI video generator tools comparison page: (1) Horizontal film strip with 4 cinematic video frames (city night, product ad, animated character, ocean drone) — images only, no captions. (2) Large play-button triangle overlay on one frame suggesting playback. (3) Compact prompt bar with sparkle icon and blurred placeholder lines (NOT empty white card) morphing into the film strip via torn-paper arrow. Paper collage, halftone. No ranking lists, no model names, no timeline labels, no footer slogans."
+    },
+    "zh": {
+      "headline": "最佳AI视频生成工具",
+      "headline_line2": "（2026）",
+      "subtitle": "文生视频 · 图生视频",
+      "composition": "Visual-only collage for AI video generator tools comparison page: NO prompt input bar, NO UI window, NO blank card below headline — title block top-left only. (1) 2x2 grid of four video stills filling right two-thirds (night city, product ad, ink-style animation, ocean aerial) — pure images, no text labels. (2) Film strip ribbon with play-button triangle overlapping lower-left of grid. (3) Mars green torn-paper accents and halftone filling gaps. Entire canvas visually filled — zero empty white rectangles."
+    }
+  }
+}

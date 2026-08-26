@@ -4,7 +4,7 @@
 
 **材料范围**：公开网络检索（Google Search Central 官方文档、ICANN/IANA 根区数据库、DomainTools/NameBio 二级市场数据、Anguilla 政府公开报告、Saipx/dotappraisals/TLDFYI 独立域名估值报告、行业投融资与 YC/YC 批次统计、Hostinger 全球 TLD 市场份额数据 2026、Visionary Marketing 2026 10 万页 SEO 排名相关性研究、Archivarix/SpamZilla/NamePros 域名历史检查方法、WhoAPI 域名过期案例记录）；**未**将 Alignify 站内页面 JSON 当作事实来源复述。网摘整理日期 **2026-07-09**。
 
-**规范对照**：[section-seo.md](../../content/sections/section-seo.md) · [technical/README.md](../../technical/README.md) · [knowledgehub/README.md](../README.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · [knowledgehub/README.md](../README.md)
 
 **本分册说明**：[seo/README.md](./README.md) · 分类：网站架构与导航
 

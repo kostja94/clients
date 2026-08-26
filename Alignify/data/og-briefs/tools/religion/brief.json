@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "religion",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI religion and faith study tools — scripture search, reflection, and guided study",
+  "differentiator_vs_generic": "Sacred text reader with verse highlight and reflective study prompt panel, NOT generic chatbot or meditation app wave alone.",
+  "visual_anchors": [
+    "HERO: Scripture study panel — open text reader with highlighted verse, cross-reference sidebar, and AI reflection prompt card",
+    "Compact question card arrow into sourced verse citation with chapter reference chips",
+    "2x2 grid of faith study modes (daily verse, commentary summary, prayer journal, multilingual text) — UI only"
+  ],
+  "anti_patterns": [
+    "Generic meditation wave hero",
+    "Horoscope/zodiac graphics",
+    "Empty chat bubble",
+    "Stock church photo unrelated to UI"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI FAITH STUDY TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Scripture · Reflect · Study",
+      "tagline": "Guided Spiritual Learning",
+      "composition": "Visual-only collage for AI faith study tools comparison: (1) HERO scripture reader with highlights and reflection card on right two-thirds. (2) Question card arrow into verse citation chips. (3) 2x2 grid of four study mode UI tiles. (4) Magnifying glass on highlighted verse. Paper collage, halftone. No meditation app hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI信仰学习工具",
+      "headline_line2": "（2026）",
+      "subtitle": "经文 · 默想 · 学习",
+      "composition": "Same layout as EN: scripture study HERO + question-to-verse flow + 2x2 mode grid + magnifying glass on verse. Title top-left only, NO extra Chinese UI labels, NO meditation hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "domain",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Domain SEO — brand vs partial-match vs exact-match domains, TLD selection (.com/.ai/.io), modifier domains, rebranding with 301 migrations",
+  "differentiator_vs_generic": "This is domain strategy for SEO and brand trust, NOT domain registrar checkout ads. Hero must show browser address bar comparing brand domain vs EMD with TLD badges and a 301 redirect migration arrow — NOT an LLM chat panel or keyword-stuffed domain list.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Browser chrome address bar collage — three domain variants side by side: brand.example.com (clean, accent check), partial-match brand+keyword.com (neutral), exact-match cheapkeyword.com (muted/red X) — TLD pills .com / .ai / .io below bars, no real brand names",
+    "Secondary: modifier-domain upgrade arrow — getbrand.com → brand.com with 301 redirect loop icon (Dropbox-style migration metaphor, no company names)",
+    "Tertiary: domain renewal calendar reminder strip with 90/60/30-day markers (dots only, no date text)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "Domain marketplace price screenshot or GoDaddy checkout as hero",
+    "Generic globe icon without address-bar domain comparison",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "DOMAIN SEO",
+      "headline_line2": "(2026)",
+      "subtitle": "Brand · PMD · EMD · TLD Choice",
+      "tagline": ".com · .ai · 301 Migration",
+      "composition": "Visual-only editorial collage for domain SEO guide. HERO: three browser address bars occupying right two-thirds — brand domain with mars-green check, partial-match neutral, exact-match with subtle negative mark — TLD badge row (.com/.ai/.io) beneath. Secondary: modifier-to-brand 301 upgrade arrow (get→clean domain silhouettes). Tertiary: renewal reminder dot strip. Title top-left only. Paper torn edges, halftone. NO LLM chat UI, NO registrar logos, NO readable company names (Dropbox/Tesla etc.), NO price tables as text."
+    },
+    "zh": {
+      "headline": "域名SEO指南",
+      "headline_line2": "（2026）",
+      "subtitle": "品牌域名与TLD选择",
+      "composition": "Same layout as EN: address-bar domain comparison HERO with TLD badges, 301 upgrade arrow + renewal strip secondary. Title top-left, NO LLM chat, NO registrar ads, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "landing-page",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Landing page creation — hero section, single CTA focus, conversion elements, SEO optimization, and CRO best practices",
+  "differentiator_vs_generic": "This is landing page design and CRO SEO, NOT GEO/LLM chat. Hero must show a focused single-page conversion layout with hero headline + CTA button — NOT a multi-page site map, blog index, or AI chat interface.",
+  "visual_anchors": [
+    "HERO (~55% canvas): landing page above-the-fold wireframe — large H1 headline blur, subheadline line blur, prominent accent CTA button (solid fill, no readable button copy), hero image placeholder on right, minimal nav (logo blur only, no menu clutter)",
+    "Secondary: single-focus conversion layout — full page wireframe showing hero → benefits icons row → testimonial stars → bottom CTA (no sidebar, no blog feed)",
+    "Tertiary: conversion funnel silhouette — ad/email click icon → landing page → form/checkmark (3-step blur icons)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is landing page CRO not GEO)",
+    "Multi-page website sitemap or blog archive layout",
+    "Generic homepage with full navigation mega-menu",
+    "Affiliate dashboard unrelated to conversion pages"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "LANDING PAGES",
+      "headline_line2": "(2026)",
+      "subtitle": "Conversion & SEO",
+      "tagline": "Hero · CTA · CRO",
+      "composition": "Visual-only editorial collage for landing page creation guide. HERO: above-the-fold landing page wireframe occupying right two-thirds — blurred H1 headline, subheadline lines, large accent titian-red CTA button center-left, hero image placeholder right, stripped nav with logo blur only. Secondary: vertical single-focus page wireframe — hero, 3 benefit icon blocks, star testimonial row, repeat CTA at bottom, no sidebar. Tertiary: tiny 3-step conversion funnel icons ad→page→checkmark. Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO full website nav menus, NO readable CTA copy text, NO extra UI labels on canvas."
+    },
+    "zh": {
+      "headline": "落地页创建",
+      "headline_line2": "（2026）",
+      "subtitle": "转化与SEO优化",
+      "composition": "Same layout as EN: landing page hero wireframe HERO with CTA button + single-focus page wireframe + conversion funnel icons. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

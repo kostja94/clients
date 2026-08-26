@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "redirect-chain",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Redirect chains — multi-hop 301/302 sequences, SEO authority loss, detection with crawlers, and direct-redirect fixes",
+  "differentiator_vs_generic": "This is technical SEO redirect chain diagnosis, NOT GEO/LLM chat. Hero must be a horizontal URL hop flow diagram (A → 301 → B → 301 → C) with status badges, NOT an AI assistant or chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Horizontal redirect chain flow — URL A box → 301 arrow → URL B box → 301 arrow → URL C box, klein-blue accent on broken/long chain warning badge at 3rd hop",
+    "Secondary: crawler audit report tear-out showing \"Redirect Chains\" filter row with hop count blur",
+    "Tertiary: fixed direct redirect comparison (A → single 301 → C dashed shortcut overlay)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is redirect chain SEO not GEO)",
+    "Generic arrow icon alone without multi-hop chain",
+    "Empty white cards below headline",
+    "Server rack or DevOps dashboard unrelated to redirect flow"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "REDIRECT CHAINS",
+      "headline_line2": "(2026)",
+      "subtitle": "Detect, Fix & Prevent",
+      "tagline": "301/302 · Crawl Budget · Link Equity",
+      "composition": "Visual-only editorial collage for redirect chain guide. HERO: horizontal multi-hop redirect flow occupying right two-thirds — three URL nodes connected by 301-labeled arrows, klein-blue warning badge on chain length. Secondary: SEO crawler redirect-chain report fragment. Tertiary: direct A→C fix overlay with single arrow. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic logos, NO readable full URLs, NO hop count numbers as dominant text labels."
+    },
+    "zh": {
+      "headline": "重定向链 SEO",
+      "headline_line2": "（2026）",
+      "subtitle": "检测、修复与预防",
+      "composition": "Same layout as EN: redirect chain flow HERO + crawler report + direct fix overlay. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

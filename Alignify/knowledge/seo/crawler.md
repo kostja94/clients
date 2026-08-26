@@ -2,7 +2,7 @@
 
 **材料范围**：Google / Bing / Yandex / Baidu / Apple / OpenAI / Anthropic 等公开文档中对 **User-Agent、robots、爬虫用途、验真方法** 的说明；IETF **RFC 9421**（HTTP Message Signatures）、**RFC 9309**（Robots Exclusion Protocol）等标准页；OpenAI Help（**ChatGPT agent** 验签与 CDN 放行）；Cloudflare、F5 Labs、Imperva 等对 **自动化流量、坏机器人、抓取类威胁** 的公开材料；独立开发者博客与 SEO 行业对 **AI 爬虫、robots.txt、流量识别** 的讨论。**未**将 Alignify 站内页面 JSON 当作事实来源复述。网摘整理 **2026-04-21**；**2026-04-21** 起做「全网摘」扩写，仍**非**穷尽清单——新 UA/新产品会持续出现，以各运营方最新文档为准。
 
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md) · 本分册说明：[seo/README.md](./README.md) · 经典三阶段流水线：[how-search-engine-works.md](./how-search-engine-works.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 经典三阶段流水线：[how-search-engine-works.md](./how-search-engine-works.md)
 
 **与 `/seo/crawler`、Tools 页的分工**：用户向的 **站长指南** 正文在 **`/seo/crawler`**（及中文）；本知识块为**网摘笔记**（UA 表、外链、碎片），**不**与 `content/seo/*/crawler.md` 逐段同步。若读者站在**数据采集方**（代理、Playwright、托管 API），请参阅 Tools **`/tools/web-scraping`** 与知识块 **[`web-scraping.md`](../tools/web-scraping.md)**；本文件**不**展开厂商选型八条。
 

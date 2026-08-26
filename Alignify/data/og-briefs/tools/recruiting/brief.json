@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "recruiting",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI recruiting tools — resume screening, candidate ranking, and outreach",
+  "differentiator_vs_generic": "Applicant pipeline with AI match score bars and resume highlight scan, NOT generic HR calendar or job board logo grid.",
+  "visual_anchors": [
+    "HERO: Recruiting ATS pipeline — candidate cards with AI match score bars, resume highlight scan overlay, and stage columns",
+    "Compact job description card arrow into ranked applicant shortlist",
+    "2x2 grid of recruiting modes (screening rubric, interview questions, diversity mask, offer letter draft) — UI only"
+  ],
+  "anti_patterns": [
+    "Job board search results hero",
+    "Payroll spreadsheet",
+    "Empty inbox",
+    "Generic chatbot"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI RECRUITING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Screen · Rank · Outreach",
+      "tagline": "Hire Faster with AI",
+      "composition": "Visual-only collage for AI recruiting tools comparison: (1) HERO ATS pipeline with match scores and resume scan on right two-thirds. (2) Job description card arrow into shortlist. (3) 2x2 grid of four recruiting UI modes. (4) Magnifying glass on match score bar. Paper collage, halftone. No job board hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI招聘工具",
+      "headline_line2": "（2026）",
+      "subtitle": "筛选 · 排序 · 外联",
+      "composition": "Same layout as EN: ATS pipeline HERO + job description flow + 2x2 mode grid + magnifying glass on match score. Title top-left only, NO extra Chinese UI labels, NO job board hero, NO blank cards."
+    }
+  }
+}

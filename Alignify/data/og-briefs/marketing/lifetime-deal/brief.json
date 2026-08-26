@@ -1,0 +1,30 @@
+{
+  "section": "marketing",
+  "slug": "lifetime-deal",
+  "analyzed_at": "2026-08-24T16:10:00+00:00",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Lifetime Deal — one-time payment for permanent SaaS access via AppSumo-style platforms",
+  "differentiator_vs_generic": "Hero must show LTD deal card vs subscription contrast, NOT referral or affiliate.",
+  "visual_anchors": [
+    "HERO: Lifetime Deal product card — crossed-out monthly price, bold one-time price, LTD badge ribbon",
+    "AppSumo-style deal marketplace grid (2 product tiles, no real logos)",
+    "Clock/calendar crossed out vs infinity symbol for lifetime access"
+  ],
+  "anti_patterns": ["Referral share link hero", "affiliate dashboard", "SERP", "empty deal card"],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "LIFETIME DEAL",
+      "headline_line2": "(2026)",
+      "subtitle": "One-Time Payment Growth",
+      "tagline": "LTD · AppSumo · Fast Acquisition",
+      "composition": "Visual-only collage for Lifetime Deal marketing guide. HERO: deal card with strikethrough $99/mo and bold $199 lifetime price, blue LTD ribbon badge. Secondary: 2 marketplace product tiles in grid (generic SaaS icons, no AppSumo logo). Tertiary: infinity symbol vs crossed monthly calendar. Paper collage. NO referral links, NO affiliate UI."
+    },
+    "zh": {
+      "headline": "Lifetime Deal策略",
+      "headline_line2": "（2026）",
+      "subtitle": "一次性支付获客",
+      "composition": "Same: LTD deal card HERO with price contrast + marketplace tiles + lifetime symbol. Title top-left, NO extra text, NO blank cards."
+    }
+  }
+}

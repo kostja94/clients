@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "serp",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "SERP anatomy — organic results, rich snippets, featured snippets, PAA, and SERP feature optimization",
+  "differentiator_vs_generic": "This is traditional SEO SERP education, NOT GEO/LLM chat. Hero must be a recognizable Google-style results page layout with blue links, featured snippet box, and rich result elements — NOT an AI chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Google-style SERP mockup — search bar at top, 3-4 organic blue title links with grey URL lines and snippet blur, one featured snippet 'position zero' box highlighted with accent border",
+    "Rich snippet row: one result with 5 gold star rating + review count blur beneath a title link",
+    "Secondary: People Also Ask accordion stack (3 collapsed question rows with chevrons, blurred text)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is SEO SERP not GEO)",
+    "Generic magnifying glass alone without SERP layout",
+    "Empty white cards below headline",
+    "Affiliate dashboard or marketing UI unrelated to search results"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "SERP GUIDE",
+      "headline_line2": "(2026)",
+      "subtitle": "Results Pages & Rich Snippets",
+      "tagline": "Featured Snippets · PAA · Schema",
+      "composition": "Visual-only editorial collage for SERP SEO guide. HERO: realistic but generic search engine results page mockup occupying right two-thirds — top search input bar, stacked organic results with blue title links, grey URL/breadcrumb lines, blurred snippet paragraphs. One featured snippet answer box at top with accent klein-blue left border (position zero). Secondary: one organic result showing 5-star rich snippet rating row. Tertiary: People Also Ask accordion with 3 question rows. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic logos, NO real Google logo, NO extra ranking numbers as text labels."
+    },
+    "zh": {
+      "headline": "SERP搜索结果页",
+      "headline_line2": "（2026）",
+      "subtitle": "富摘要与SERP特性",
+      "composition": "Same layout as EN: SERP mockup HERO with blue links + featured snippet box + star rich snippet + PAA accordion. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

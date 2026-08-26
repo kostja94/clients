@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "agent-skills",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Agent Skills directories — discover, install, and ship repeatable SKILL.md workflows",
+  "differentiator_vs_generic": "Skills directory browser + SKILL.md document card with install arrow, NOT generic code IDE or chat panel.",
+  "visual_anchors": [
+    "HERO: Skills marketplace/directory panel with searchable list rows and package icons (blurred titles) plus highlighted SKILL.md document card with markdown header lines",
+    "Install flow arrow from directory row into coding agent sidebar slot",
+    "2x2 grid of skill category tiles (SEO workflow, social post, influencer outreach, paid ads playbook) — iconographic folders only"
+  ],
+  "anti_patterns": [
+    "Generic IDE code editor hero",
+    "LLM chat without skills docs",
+    "App store game icons",
+    "Empty directory list"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AGENT SKILLS DIRECTORIES",
+      "headline_line2": "(2026)",
+      "subtitle": "Discover · Install · Ship Faster",
+      "tagline": "Portable SKILL.md Playbooks",
+      "composition": "Visual-only collage for agent skills directory tools comparison: (1) HERO skills directory panel with list rows and prominent SKILL.md card with blurred markdown lines on right two-thirds. (2) Torn-paper install arrow from directory into agent sidebar slot. (3) 2x2 grid of four workflow folder tiles. (4) Magnifying glass over SKILL.md header section. Paper collage, halftone. No ranking lists, no repo names, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳Agent Skills目录",
+      "headline_line2": "（2026）",
+      "subtitle": "发现 · 安装 · 加速交付",
+      "composition": "Same layout as EN: skills directory + SKILL.md card HERO + install arrow + 2x2 workflow tiles + magnifying glass. Title top-left only, NO extra Chinese UI labels, NO generic chat hero, NO blank list."
+    }
+  }
+}

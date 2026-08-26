@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "cad",
+  "analyzed_at": "2026-08-24T18:10:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "CAD and AI CAD — parametric B-Rep solids, text-to-CAD APIs, and Copilot-in-CAD for manufacturable engineering geometry",
+  "differentiator_vs_generic": "This is engineering CAD (STEP, feature trees, tolerances), NOT DCC mesh sculpting, NOT text-to-3D showcase mesh generators, NOT interior design renders. Hero must be a parametric CAD viewport with wireframe B-Rep solid, feature tree, and text-to-CAD prompt bar.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Parametric CAD viewport — isometric wireframe B-Rep bracket solid with dimension lines, klein-blue accent on selected edge",
+    "Feature tree panel: vertical stack of 4-5 feature nodes (Extrude, Fillet, Hole blur labels) with expand chevrons",
+    "Secondary: text-to-CAD prompt bar at top with natural-language blur input and arrow into geometry"
+  ],
+  "anti_patterns": [
+    "Polygon mesh sculpt (Blender/ZBrush style) as hero",
+    "Interior design room render",
+    "Generic abstract 3D blob",
+    "Game asset glTF preview",
+    "LLM chat panel unrelated to geometry"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "CAD & AI CAD",
+      "headline_line2": "(2026)",
+      "subtitle": "Parametric Solids to Text-to-CAD",
+      "tagline": "Zoo.dev · Fusion · Rhino",
+      "composition": "Visual-only editorial collage for CAD/AI CAD tools guide. HERO: engineering CAD viewport on right two-thirds — isometric wireframe B-Rep bracket with dimension tick marks, one edge highlighted klein-blue. Left strip: vertical feature tree with 4-5 nodes (Extrude, Fillet, Hole blur). Top: slim NL prompt bar with blur text and arrow pointing into solid. Secondary: small STEP export icon corner badge. Title top-left. Paper torn edges, halftone. NO mesh sculpt, NO room render, NO game asset, NO vendor logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "CAD与AI CAD",
+      "headline_line2": "（2026）",
+      "subtitle": "参数建模到Text-to-CAD",
+      "composition": "Same layout as EN: parametric CAD viewport HERO with B-Rep wireframe + feature tree + text-to-CAD prompt bar. Title top-left, NO extra Chinese UI labels, NO mesh sculpt hero, NO blank cards."
+    }
+  }
+}

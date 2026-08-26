@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "presentation-maker",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI presentation makers — outline to slide deck with layouts",
+  "differentiator_vs_generic": "Slide sorter strip with AI-generated title slide and content layouts emerging from outline, NOT word doc or video.",
+  "visual_anchors": [
+    "HERO: Presentation slide sorter with thumbnail strip and hero title slide plus bullet layout being auto-generated from outline card",
+    "Compact bullet outline card with torn arrow into polished slide canvas",
+    "2x2 grid of slide styles (pitch deck, data chart slide, image hero slide, speaker notes panel) — UI only"
+  ],
+  "anti_patterns": [
+    "Word document page hero",
+    "Video editor timeline",
+    "Blank white slide",
+    "Spreadsheet chart alone"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI PRESENTATION MAKERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Outline · Slides · Layouts",
+      "tagline": "Decks in Minutes",
+      "composition": "Visual-only collage for AI presentation maker tools comparison: (1) HERO slide sorter with auto-generated deck on right two-thirds. (2) Outline card arrow into slide canvas. (3) 2x2 grid of four slide style UI tiles. (4) Magnifying glass on title slide layout. Paper collage, halftone. No word doc hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI演示文稿工具",
+      "headline_line2": "（2026）",
+      "subtitle": "大纲 · 幻灯片 · 版式",
+      "composition": "Same layout as EN: slide sorter HERO + outline flow + 2x2 style grid + magnifying glass on title slide. Title top-left only, NO extra Chinese UI labels, NO word doc hero, NO blank cards."
+    }
+  }
+}

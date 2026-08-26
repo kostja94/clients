@@ -65,7 +65,7 @@
 
 ### §2 规范对照（必需）
 ```
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md)
 ```
 
 ### §3 站内文章对照（slug 已上线，必需）

@@ -1,7 +1,7 @@
 # Vatt — 站点结构
 
 > 遵循 [客户文档规范](../../client-template.md)  
-> **引用**：[vatt.md](./vatt.md) | [vatt-keywords.md](./vatt-keywords.md) | [vatt-features.md](./vatt-features.md) | [vatt-others.md](./vatt-others.md)
+> **引用**：[vatt.md](./vatt.md) | [vatt-keywords.md](./vatt-keywords.md) | [vatt-features.md](./vatt-features.md) | [archive/vatt-others.md](./archive/vatt-others.md)
 
 **Last updated**: 2026-08-06 | 识别方式：首页 + 定价页抓取 + [vatt-reaction-video-types.md §11](./vatt-reaction-video-types.md)
 
@@ -19,7 +19,7 @@
 | 增长策略（已归档） | [archive/vatt-growth-strategy.md](./archive/vatt-growth-strategy.md) |
 | Channel 详情页策略 | [vatt-channel-pages-strategy.md](./vatt-channel-pages-strategy.md) |
 | Reaction 类型 / Blog 队列 | [vatt-reaction-video-types.md](./vatt-reaction-video-types.md) |
-| Sitemap 明细 | [vatt-others.md](./vatt-others.md) |
+| Sitemap 明细（已归档） | [archive/vatt-others.md](./archive/vatt-others.md) |
 | 多语言迁移（已归档） | [archive/vatt-i18n-path-migration.md](./archive/vatt-i18n-path-migration.md) |
 
 ---

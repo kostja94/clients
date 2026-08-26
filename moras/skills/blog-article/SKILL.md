@@ -399,13 +399,6 @@ python skills/blog-article/tools/link_checker.py blog/{NN-slug}.md --forbidden "
 | `tools/` | Phase 5 |
 | `evals/` | skill 变更后回归 |
 
-**维护者同步 SSOT**（内网维护用，客户包已内置副本）：
-
-```powershell
-Copy-Item "E:\Agent执行\blog-create\references\portable\*.md" `
-  "references\portable\" -Force
-```
-
 ---
 
 ## §6 Gotchas（37 条精选）
@@ -424,9 +417,10 @@ Copy-Item "E:\Agent执行\blog-create\references\portable\*.md" `
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| **2.1.2** | 2026-08-26 | 移除 skill 文件夹外路径引用；portable/ 与 tools/ 文档改为纯自包含说明 |
 | **2.1.1** | 2026-08-24 | **`internal-links.md`**：R1–R7 + H2 分布均质 + `link_audit.py` 全库 Gate |
-| **2.1.0** | 2026-08-24 | **客户交付自包含版**：`self-contained: true`；完整 9 Phase 内联；portable/ + tools/ + selfcheck 内置；终审用 portable/final-audit；撤销 L0 外部依赖 |
-| 2.0.0 | 2026-08-24 | 路线 A 试验（L0+L1，已废弃） |
+| **2.1.0** | 2026-08-24 | **客户交付自包含版**：`self-contained: true`；完整 9 Phase 内联；portable/ + tools/ + selfcheck 内置；终审用 portable/final-audit |
+| 2.0.0 | 2026-08-24 | 早期分层加载试验（已废弃） |
 | 1.3.1 | 2026-08-04 | meta-title-description 并入 |
 | 1.2.0 | 2026-06-15 | references/ 拆分 + I1–I5 + evals |
 

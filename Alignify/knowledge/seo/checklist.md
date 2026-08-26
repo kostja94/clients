@@ -2,7 +2,7 @@
 
 **材料范围**：公开网络检索（2025–2026 常见「Technical SEO checklist」类文章对爬取、收录、CWV、HTTPS、移动与国际化的归纳）；本地 **Agent Skills** 中 **seo-audit** 的分阶段框架与核对行；本地客户笔记中与**站点级 SEO**直接相关的《SEO 页面代码规范》《多语言网站 SEO 实践指南》及**脱敏**后的「交付执行清单」技术项（仅保留与任意商业站点可复用的条目，**不**迁入客户专有信息）。**未**将 Alignify 站内页面 JSON 当作事实来源复述。网摘整理日期 **2026-04-19**。
 
-**规范对照**：[section-seo.md](../../section/section-seo.md) · [technical/README.md](../../technical/README.md) · 本分册说明：[seo/README.md](./README.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md)
 
 以下条目可任意顺序阅读；**不是**文章体例。文末 **「一页核对表」** 可直接当工单用。
 
@@ -119,9 +119,9 @@
 
 ### 站内索引（Alignify 仓库）
 
-- [section-seo.md](../../section/section-seo.md)
-- [technical/README.md](../../technical/README.md)
-- [technical-sitemap.md](../../technical/technical-sitemap.md)、[technical-robots.md](../../technical/technical-robots.md)（若项目已文档化）
+- [section-seo.md](../../skills/create-article/rules/meta.md)
+- [technical/README.md](../../skills/ops/README.md)
+- [technical-sitemap.md](../../skills/ops/sitemap.md)、[technical-robots.md](../../skills/ops/robots.md)（若项目已文档化）
 - [knowledgehub/seo/README.md](./README.md)
 
 ---

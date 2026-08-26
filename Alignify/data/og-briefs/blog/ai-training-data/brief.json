@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "ai-training-data",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI training data platforms — labeling, RLHF preference pairs, licensed marketplaces, and multimodal dataset pipelines for model weights",
+  "differentiator_vs_generic": "This is training-data procurement infrastructure (Scale, Labelbox, Wirestock lanes), NOT inference hosting, NOT web scraping APIs, NOT post-training evaluation dashboards. Hero must show annotation/RLHF dataset production — bounding boxes, A-vs-B preference rows, and versioned dataset stacks.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Multimodal labeling workbench — split panel with image bounding-box annotations on left, side-by-side RLHF preference pair cards (A vs B with thumbs-up/down blur icons) on right, accent border on selected preference",
+    "Dataset versioning stack: 3 layered dataset snapshot cards with version hash blur labels and provenance chain icon",
+    "Secondary: small pipeline flow arrow from raw media icons (image/video/doc) into labeled export crate labeled blur only"
+  ],
+  "anti_patterns": [
+    "Generic cloud server rack as hero",
+    "LLM chat panel (this is data labeling not GEO)",
+    "Web scraping spider/crawler motif",
+    "Inference GPU cluster unrelated to dataset QA",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "AI TRAINING DATA",
+      "headline_line2": "(2026)",
+      "subtitle": "Labeling, RLHF & Licensed Datasets",
+      "tagline": "Scale · Labelbox · Wirestock",
+      "composition": "Visual-only editorial collage for AI training data platform guide. HERO: multimodal annotation workbench occupying right two-thirds — left half shows image with 2-3 colored bounding-box overlays and class-tag blur chips; right half shows stacked A-vs-B RLHF preference cards with one card highlighted by mars-green accent border and subtle thumbs icons. Secondary: three layered dataset version cards with hash blur and small provenance-link chain icon. Tertiary: thin arrow flow from raw media icons into export crate. Title block top-left only. Paper torn edges, halftone. NO LLM chat UI, NO scraping spider, NO GPU rack hero, NO vendor logos."
+    },
+    "zh": {
+      "headline": "大模型训练数据",
+      "headline_line2": "（2026）",
+      "subtitle": "标注·RLHF·授权数据集",
+      "composition": "Same layout as EN: annotation workbench HERO with bounding boxes + A/B preference cards + dataset version stack + provenance arrow. Title top-left, NO extra Chinese UI labels on workbench, NO LLM chat, NO blank cards."
+    }
+  }
+}

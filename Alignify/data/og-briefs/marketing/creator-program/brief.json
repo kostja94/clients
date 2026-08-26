@@ -1,0 +1,24 @@
+{
+  "section": "marketing",
+  "slug": "creator-program",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Creator programs — long-term brand partnerships with creators, not one-off ads",
+  "visual_anchors": ["HERO: partner portal dashboard — creator roster list with avatars and status badges", "Handshake/partnership icon between brand and creator", "Calendar timeline strip for ongoing collab"],
+  "anti_patterns": ["One-off contest trophy as only visual", "affiliate link UI"],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "CREATOR PROGRAMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Long-Term Co-Creation",
+      "tagline": "Partners · Content · Brand",
+      "composition": "Visual-only collage for creator program strategy. HERO: partner portal card with 3 creator avatar rows and Active/Partner badges (blurred names). Secondary: handshake icon linking brand logo shape to creator avatar. Tertiary: horizontal timeline strip. Paper collage."
+    },
+    "zh": {
+      "headline": "创作者计划",
+      "headline_line2": "（2026）",
+      "subtitle": "长期内容共创",
+      "composition": "Same: partner portal HERO + handshake + timeline. Title top-left, NO extra labels, NO blank cards."
+    }
+  }
+}

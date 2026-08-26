@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "link-building",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Link building — backlink acquisition channels, content-led natural links, outreach quality, and anchor-text best practices",
+  "differentiator_vs_generic": "This is off-page SEO backlink strategy, NOT GEO/LLM chat. Hero must be a backlink authority network graph showing inbound links to a central domain, NOT an AI outreach assistant or chat panel.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Backlink network diagram — central domain node (your-site.com blur) with 5–6 inbound curved arrows from external site nodes of varying sizes (authority signal), mars-green accent on strongest link",
+    "Secondary: one torn outreach email snippet card with blurred subject line and link-highlight underline",
+    "Tertiary: anchor-text distribution mini bar (brand / naked URL / generic blur segments)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is link building not GEO)",
+    "Generic chain-link icon alone without network graph",
+    "Empty white cards below headline",
+    "CRM pipeline or sales funnel UI unrelated to backlinks"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "LINK BUILDING",
+      "headline_line2": "(2026)",
+      "subtitle": "Quality Backlinks & Outreach",
+      "tagline": "Acquisition · Anchor Text · Quality",
+      "composition": "Visual-only editorial collage for link building guide. HERO: backlink authority network graph occupying right two-thirds — central domain hub with inbound arrows from 5–6 external nodes, node size implying authority, mars-green accent on top link. Secondary: torn outreach email card with blurred text and one underlined link. Tertiary: small anchor-text mix bar chart. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic logos, NO real Ahrefs/Moz logos, NO PageRank numbers as text labels."
+    },
+    "zh": {
+      "headline": "外链建设指南",
+      "headline_line2": "（2026）",
+      "subtitle": "高质量链接与 outreach",
+      "composition": "Same layout as EN: backlink network graph HERO + outreach email card + anchor-text bar. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "section": "insights",
+  "slug": "google",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Google AI products ecosystem — Labs experiments from Pomelli marketing to CC Gmail assistant, Mixboard creative board, and AISOMA productivity tools",
+  "differentiator_vs_generic": "This is Google AI product ecosystem analysis, NOT a generic search engine tutorial or real Google logo showcase. Hero must be a product constellation map with Labs experiment nodes orbiting a central innovation hub — creative and productivity tool clusters.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Product constellation map — central 'Labs' hub node with orbiting blurred product nodes (marketing tool, email assistant, creative board, productivity experiment) connected by accent lines",
+    "Two cluster bands: Creative Tools (left arc) and Productivity Assistants (right arc) with distinct icon silhouettes per node",
+    "Secondary: innovation pipeline strip — experiment → beta → launch as three stage blocks with blurred timeline dots"
+  ],
+  "anti_patterns": [
+    "Real Google multicolor logo as hero",
+    "SERP or search bar as main visual",
+    "Generic cloud computing stock photo",
+    "Unrelated Android or Chrome branding",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "GOOGLE AI PRODUCTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Labs Experiments & Innovation",
+      "tagline": "Creative Tools · Productivity · Search",
+      "composition": "Visual-only editorial collage for Google AI product ecosystem analysis. HERO: product constellation map on right two-thirds — central Labs hub with orbiting blurred experiment nodes (marketing, email assistant, creative board, productivity) in Creative Tools and Productivity Assistants arc clusters, klein-blue accent connection lines. Secondary: three-stage innovation pipeline strip (experiment → beta → launch). Title top-left. Paper torn edges, halftone. NO real Google logo, NO SERP hero, NO search bar focus, NO blank cards."
+    },
+    "zh": {
+      "headline": "Google Labs AI实验",
+      "headline_line2": "（2026）",
+      "subtitle": "创意工具与生产力助手",
+      "composition": "Same layout as EN: Labs product constellation HERO + innovation pipeline strip. Title top-left, NO real Google logo, NO SERP, NO extra Chinese product labels, NO blank cards."
+    }
+  }
+}

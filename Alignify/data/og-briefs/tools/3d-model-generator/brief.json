@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "3d-model-generator",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI text/image-to-3D model generators — prompt to mesh in minutes",
+  "differentiator_vs_generic": "Text-or-image prompt card morphing into textured 3D mesh output, NOT 2D image grids or manual sculpting UI.",
+  "visual_anchors": [
+    "HERO: Compact prompt card with sparkle icon and blurred lines feeding via torn-paper arrow into 3D viewport showing shaded mesh emerging from flat sketch",
+    "2x2 grid of four generated 3D models (character bust, product mockup, architectural block, stylized animal) — pure renders, no captions",
+    "Magnifying glass over mesh topology/detail on one grid tile"
+  ],
+  "anti_patterns": [
+    "2x2 flat AI image outputs only",
+    "Photogrammetry phone scan ring as hero",
+    "DCC sculpt brush timeline",
+    "Empty prompt white card"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI 3D GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Text-to-3D · Image-to-3D · Mesh Export",
+      "tagline": "Prompt to Production Mesh",
+      "composition": "Visual-only collage for AI 3D model generator tools comparison: (1) Prompt input card with sparkle icon and blurred placeholder lines morphing via torn arrow into 3D viewport with shaded mesh on turntable. (2) 2x2 grid of four distinct generated 3D outputs (character, product, architecture, creature). (3) Hand with magnifying glass inspecting mesh wireframe on lower-left tile. Paper collage, halftone. No ranking lists, no model names, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI 3D生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "文生3D · 图生3D",
+      "composition": "Same layout as EN: prompt card to 3D viewport HERO + 2x2 generated mesh grid + magnifying glass on topology. Title top-left only, NO extra Chinese UI labels, NO blank cards. Klein-blue torn-paper fill gaps."
+    }
+  }
+}

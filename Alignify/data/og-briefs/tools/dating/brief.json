@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "dating",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI dating apps — smart matching, profile optimization, and conversation icebreakers for real people",
+  "differentiator_vs_generic": "Swipe card stack with AI compatibility ring and icebreaker suggestion chip, NOT virtual character RP chat or family calendar.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Mobile dating swipe stack — top profile card with blurred portrait, circular AI match-score ring overlay, and suggested icebreaker bubble beneath",
+    "Compare split: AI-optimized profile bio panel left vs generic profile right — torn-paper divider",
+    "2x2 grid of dating scenario tiles (match notification, date scheduler, photo picker, conversation coach) — UI fragments only",
+    "Magnifying glass zooming on compatibility score ring and shared-interest chip row"
+  ],
+  "anti_patterns": [
+    "Anime character RP chat hero",
+    "Family shared calendar",
+    "Generic heart icon on gradient alone",
+    "Empty swipe card"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI DATING APPS",
+      "headline_line2": "(2026)",
+      "subtitle": "Match · Profile · Chat",
+      "tagline": "Smarter Swipes, Better Dates",
+      "composition": "Visual-only collage for AI dating app tools comparison: (1) HERO swipe card stack with AI match ring and icebreaker bubble on right two-thirds. (2) Split compare: optimized profile vs generic profile. (3) 2x2 grid of four dating scenario tiles. (4) Magnifying glass on compatibility ring detail. Title top-left only. Paper collage, halftone. No character RP hero, no family calendar, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI约会应用",
+      "headline_line2": "（2026）",
+      "subtitle": "匹配 · 资料 · 聊天",
+      "composition": "Same layout as EN: swipe stack HERO with match ring + profile compare split + 2x2 scenario grid + magnifying glass on compatibility ring. Title top-left only, NO extra Chinese UI labels, NO character RP hero, NO blank cards."
+    }
+  }
+}

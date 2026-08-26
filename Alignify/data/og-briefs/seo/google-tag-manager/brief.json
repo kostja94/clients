@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "google-tag-manager",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Google Tag Manager — container setup, tags, triggers, variables, data layer, and analytics/marketing tag deployment",
+  "differentiator_vs_generic": "This is GTM tag-management education, NOT GEO/LLM chat. Hero must show GTM's container workspace UI with Tags/Triggers/Variables sidebar — NOT a generic analytics dashboard or AI assistant.",
+  "visual_anchors": [
+    "HERO (~55% canvas): GTM-style admin workspace mockup — left nav with Tags / Triggers / Variables tabs (icon + blur labels), main panel showing tag list rows with status dots and one highlighted tag row with accent border, container ID blur GTM-XXXXXXX at top",
+    "Secondary: data layer flow diagram — website page box → dataLayer.push event arrow → tag firing icons (GA4, pixel blurs as generic colored squares, no real logos)",
+    "Tertiary: preview/debug mode panel overlay — connected status indicator and event log rows (blurred)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is GTM not GEO)",
+    "Real Google Tag Manager or Google logo",
+    "Generic Google Analytics dashboard without container/trigger/variable structure",
+    "Affiliate or CRM UI unrelated to tag management"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "TAG MANAGER",
+      "headline_line2": "(2026)",
+      "subtitle": "Tags · Triggers · Data Layer",
+      "tagline": "Container Setup · Event Tracking",
+      "composition": "Visual-only editorial collage for Google Tag Manager guide. HERO: GTM container workspace mockup occupying right two-thirds — left sidebar with Tags/Triggers/Variables nav items, main workspace tag list with 4–5 rows and status pills, one row accent klein-blue highlighted, blurred container ID header. Secondary: data layer event flow — webpage → dataLayer.push → tag execution nodes as generic colored squares. Tertiary: preview/debug panel snippet with green connected dot. Title block top-left. Paper collage torn edges, halftone. NO LLM chat UI, NO real Google/GTM logos, NO Facebook/Meta logos, NO extra text labels on canvas."
+    },
+    "zh": {
+      "headline": "GTM标签管理",
+      "headline_line2": "（2026）",
+      "subtitle": "标签·触发器·数据层",
+      "composition": "Same layout as EN: GTM workspace HERO with Tags/Triggers/Variables sidebar + data layer flow + preview panel. Title top-left, NO LLM chat, NO real Google logo, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

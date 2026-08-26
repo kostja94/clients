@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "ai-scheduling",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI scheduling tools — smart calendar, focus blocks, automated meeting coordination",
+  "differentiator_vs_generic": "Week calendar with AI-protected focus blocks and booking link flow, NOT generic to-do list or email inbox.",
+  "visual_anchors": [
+    "HERO: Weekly calendar grid with colored focus blocks, meeting slots, and AI auto-schedule sparkle on empty gaps",
+    "Compact booking link card with time-slot picker morphing into confirmed calendar event",
+    "2x2 grid of scheduling modes (team round-robin, focus protection, timezone merge, AI negotiate chat bubble) — UI tiles only"
+  ],
+  "anti_patterns": [
+    "Generic todo checklist",
+    "Email inbox hero",
+    "Spreadsheet grid unrelated to time",
+    "Empty calendar white card"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI SCHEDULING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Focus Blocks · Smart Booking",
+      "tagline": "Reclaim Your Calendar",
+      "composition": "Visual-only collage for AI scheduling tools comparison: (1) HERO week calendar with focus blocks, meetings, and AI sparkle auto-fill on right two-thirds. (2) Booking link card with slot picker arrow into confirmed event tile. (3) 2x2 grid of four scheduling UI modes. (4) Small compare/zoom lens on one focus block detail. Paper collage, halftone. No email inbox, no ranking lists, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI日程工具",
+      "headline_line2": "（2026）",
+      "subtitle": "专注时段 · 智能预约",
+      "composition": "Same layout as EN: calendar HERO + booking link flow + 2x2 mode grid + zoom on focus block. Title top-left only, NO extra Chinese UI labels, NO todo list hero, NO blank cards."
+    }
+  }
+}

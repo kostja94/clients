@@ -1,0 +1,36 @@
+{
+  "section": "events",
+  "slug": "linkloud-2026-01-24",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "LinkLoud January 2026 event — AI and global growth methodology, SEO, multilingual localization, and commercialization for AI/SaaS products",
+  "differentiator_vs_generic": "This is an AI/SaaS global growth community meetup, NOT generic international business stock imagery. Hero must be a talk/slide collage — global growth methodology slide, multilingual localization map thumbnail, and community networking motif.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Slide deck thumbnail collage — dominant slide showing global growth methodology framework (market expansion nodes on simplified world map blur), secondary slide with multilingual pSEO lane diagram",
+    "Meetup stage strip — presenter at casual community venue with projection screen showing growth framework blur",
+    "Secondary: global network motif — dotted connection lines between regional nodes with small founder silhouette clusters at each node"
+  ],
+  "anti_patterns": [
+    "Generic globe stock photo without growth framework",
+    "Airplane/travel cliché imagery",
+    "SERP or LLM chat as hero",
+    "Real LinkLoud logo or sponsor branding",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "LINKLOUD EVENT",
+      "headline_line2": "(Jan 2026)",
+      "subtitle": "AI & Global Growth",
+      "tagline": "Methodology · Localization · pSEO",
+      "composition": "Visual-only editorial collage for LinkLoud Jan 2026 community event recap. HERO: slide collage on right half — global growth methodology slide with simplified world map blur and expansion nodes, overlaid multilingual pSEO lane diagram slide, mars-green accent on connection lines. Secondary: casual meetup stage strip with blurred presenter and projection glow. Tertiary: global network motif — regional nodes with founder silhouette clusters and dotted lines. Title top-left. Paper torn edges, halftone. NO travel stock photos, NO real LinkLoud logos, NO SERP/LLM hero, NO blank cards."
+    },
+    "zh": {
+      "headline": "LinkLoud 2026活动",
+      "headline_line2": "（2026.01）",
+      "subtitle": "AI与全球化增长",
+      "composition": "Same layout as EN: global growth slide collage HERO + meetup stage strip + global network motif. Title top-left, NO real logos, NO extra Chinese map labels, NO blank cards."
+    }
+  }
+}

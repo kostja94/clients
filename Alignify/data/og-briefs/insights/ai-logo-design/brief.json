@@ -1,0 +1,36 @@
+{
+  "section": "insights",
+  "slug": "ai-logo-design",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI product logo design founder guide — four product types, five symbol categories, three creation paths, trademark clearance",
+  "differentiator_vs_generic": "This is a systematic AI brand identity guide for founders, NOT generic logo inspiration or stock design mockups. Hero must show a four-quadrant product positioning grid with logo symbol variants and a trademark check strip — the founder decision framework visual.",
+  "visual_anchors": [
+    "HERO (~55% canvas): 2×2 product positioning quadrant grid — four blurred AI product archetypes (chatbot, dev tool, creative, enterprise) each with a distinct abstract logo mark variant in the corner",
+    "Five symbol category strip below grid — abstract, lettermark, mascot, geometric, wordmark icons in a horizontal row with accent border on selected category",
+    "Secondary: three-path fork diagram — DIY template / AI generator / agency route with blurred cost-time tradeoff dots"
+  ],
+  "anti_patterns": [
+    "Generic stock photo of designer at desk",
+    "Random logo gallery without positioning framework",
+    "Figma screenshot as sole hero",
+    "Unrelated brand identity mood board",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "AI LOGO DESIGN",
+      "headline_line2": "(2026)",
+      "subtitle": "Founder's Guide: Position to Launch",
+      "tagline": "Product Types · Symbols · Paths",
+      "composition": "Visual-only editorial collage for AI product logo design founder guide. HERO: 2×2 product positioning quadrant on right two-thirds — four blurred AI product archetype cells each with a small distinct abstract logo mark. Below: horizontal five-symbol category strip (abstract, lettermark, mascot, geometric, wordmark) with mars-green accent on one selected icon. Secondary: three-path fork (DIY / AI gen / agency) with blurred tradeoff dots. Tertiary: compact trademark clearance checklist with globe + TM blur + green/red status dots. Title block top-left. Paper torn edges, halftone. NO stock designer photo, NO random logo grid, NO agency logos, NO blank cards."
+    },
+    "zh": {
+      "headline": "AI产品Logo设计",
+      "headline_line2": "（2026）",
+      "subtitle": "创始人实操：从定位到落地",
+      "composition": "Same layout as EN: 2×2 positioning quadrant HERO + five-symbol strip + three-path fork + trademark checklist. Title top-left, NO extra Chinese labels on grid cells, NO stock photos, NO blank cards."
+    }
+  }
+}

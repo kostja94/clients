@@ -1,0 +1,35 @@
+{
+  "section": "blog",
+  "slug": "multi-agent",
+  "analyzed_at": "2026-08-25T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Multi-agent systems — L1 frameworks, L2 enterprise platforms, L3 agent workspaces, orchestration topologies, and MCP/A2A protocols",
+  "differentiator_vs_generic": "This is agent orchestration and team coordination, NOT workflow automation or solo desktop agents. Hero must be a supervisor/worker agent topology graph with handoff arrows and shared state layer — NOT a linear Zapier-style workflow or single chat bubble.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Multi-agent orchestration graph — supervisor agent node at top (accent ring), three worker agent nodes below (Researcher, Coder, Reviewer role labels blurred), directed handoff arrows between nodes, shared state/memory bar connecting all nodes at bottom",
+    "Secondary: L1/L2/L3 lane stack — three horizontal tiers labeled Framework / Platform / Workspace (blurred) with ascending governance lock icons",
+    "Tertiary: MCP tool connector lines + A2A protocol handshake icon between two agent nodes"
+  ],
+  "anti_patterns": [
+    "Linear workflow automation chain (Zapier/n8n style)",
+    "Single chat agent bubble as hero",
+    "Real vendor logos (LangGraph, Copilot Studio, Multica)",
+    "Desktop file/GUI agent metaphor (page is team orchestration)"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "MULTI-AGENT",
+      "headline_line2": "(2026)",
+      "subtitle": "Orchestration & Team Collaboration",
+      "tagline": "LangGraph · MCP · A2A · Workspaces",
+      "composition": "Visual-only editorial collage for multi-agent systems guide. HERO: orchestration graph occupying right two-thirds — supervisor node on top, three worker nodes with handoff arrows, shared state bar at bottom. Secondary: L1/L2/L3 tier stack with governance icons. Tertiary: MCP/A2A connector lines between agents. Title block top-left only. Paper collage torn edges, halftone. NO workflow automation chain, NO single chat bubble, NO vendor logos, NO extra text labels."
+    },
+    "zh": {
+      "headline": "多智能体系统",
+      "headline_line2": "（2026）",
+      "subtitle": "编排与团队协作",
+      "composition": "Same layout as EN: supervisor/worker graph HERO + L1/L2/L3 stack + MCP/A2A connectors. Title top-left, NO workflow chain, NO vendor logos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "search-engine",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Global search engine landscape — Google, Bing, Baidu, Yandex, DuckDuckGo market share and webmaster tools",
+  "differentiator_vs_generic": "This is traditional search engine comparison SEO education, NOT GEO/LLM chat. Hero must be a global market-share bar chart with generic search-engine icon tiles — NOT Perplexity/ChatGPT chat panels or AI answer engines as the focal point.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Horizontal market-share bar chart on a subtle globe silhouette — 5 generic search-engine icon tiles (colored circles with magnifying-glass glyph, no real logos) with proportional bars: dominant 91% bar highlighted in accent, smaller bars for Bing, Baidu, Yandex, DuckDuckGo",
+    "Secondary: world map dot cluster showing regional engine dominance (Asia dot for Baidu, Russia dot for Yandex, global dot for Google)",
+    "Tertiary: small classic search input bar with blue-link result snippet beneath — traditional ten-blue-links motif, not AI summary"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is search engine rankings not GEO)",
+    "Perplexity/ChatGPT/Claude logos or AI answer bubbles dominating canvas",
+    "Generic magnifying glass alone without market context",
+    "Real Google/Bing/Baidu trademark logos"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "SEARCH ENGINES",
+      "headline_line2": "(2026)",
+      "subtitle": "Global Rankings & Market Share",
+      "tagline": "Google · Bing · Baidu · Yandex",
+      "composition": "Visual-only editorial collage for search engine guide. HERO: market-share horizontal bar chart on faint globe outline occupying right two-thirds — 5 generic engine icon tiles (no real logos) with proportional bars, dominant bar in accent coral. Secondary: regional dominance dots on simplified world map. Tertiary: classic search bar + one blue-link organic snippet below. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO Perplexity/ChatGPT branding, NO real trademark logos."
+    },
+    "zh": {
+      "headline": "全球搜索引擎",
+      "headline_line2": "（2026）",
+      "subtitle": "排名与市场份额",
+      "composition": "Same layout as EN: market-share bar chart HERO on globe + regional dots + classic search snippet. Title top-left, NO LLM chat, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

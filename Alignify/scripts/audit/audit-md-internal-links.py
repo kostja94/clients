@@ -4,7 +4,7 @@
 Scans every article Markdown file, extracts site-internal links (Markdown
 [text](href) and <a href="...">), normalises targets, and writes:
   - scripts/reports/md-internal-links-status-YYYY-MM-DD.json  (raw data)
-  - content/alignify-internal-links-status.md                 (human doc)
+  - scripts/reports/md-internal-links-status-YYYY-MM-DD.md    (human doc)
 """
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ DEPLOY_CANDIDATES = [
     CTX.parents[1] / "部署项目" / "alignify-by-kostja",
     CTX.parents[0] / "alignify-by-kostja",
     Path(r"D:\部署项目\个人部署项目\alignify-by-kostja"),
+    Path(r"E:\自有部署项目\alignify production"),
 ]
 DEPLOY = next((p for p in DEPLOY_CANDIDATES if (p / "content").is_dir()), None)
 if DEPLOY is None:
@@ -150,7 +151,7 @@ def audit_file(path: Path) -> dict | None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out-doc", type=Path, default=CTX / "content" / "alignify-internal-links-status.md")
+    ap.add_argument("--out-doc", type=Path, default=CTX / "scripts" / "reports" / f"md-internal-links-status-{date.today().isoformat()}.md")
     ap.add_argument("--out-json", type=Path, default=None)
     args = ap.parse_args()
 
@@ -185,7 +186,7 @@ def main() -> None:
     lines.append("> 归一化目标为 `route/slug`（忽略 `/zh` 前缀）；外链、锚点、图片与静态资源不计。")
     lines.append("> 完整数据见 `scripts/reports/md-internal-links-status-YYYY-MM-DD.json`。")
     lines.append("")
-    lines.append("> **口径说明**：`≥5 distinct` 为 SSOT 中 **Tools 长文**的硬性 R1 底线（`alignify-internal-links.md §3.1.5`）；")
+    lines.append("> **口径说明**：`≥5 distinct` 为 SSOT 中 **Tools 长文**的硬性 R1 底线（`internal-links.md §3.1.5`）；")
     lines.append("> SEO 频道遵循「少而准」与学习页节制原则（§4.1.6），**不适用** R1 硬标准；")
     lines.append("> 因此「≥5 distinct」对其他类目仅为**观察性指标**，不构成违规判断。")
     lines.append("")

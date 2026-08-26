@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "memory",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI memory tools — persistent context graphs and long-term agent recall",
+  "differentiator_vs_generic": "Memory graph nodes linking user facts with recall chips feeding chat, NOT generic note list or database table.",
+  "visual_anchors": [
+    "HERO: Radial memory graph with user fact nodes (preferences, projects, contacts) connected by glowing edges into chat recall chips",
+    "Compact conversation snippet card with pinned memory badge injecting into new thread",
+    "2x2 grid of memory UI modes (auto capture, manual pin, timeline recall, cross-session search) — UI tiles only"
+  ],
+  "anti_patterns": [
+    "Flat todo checklist",
+    "Spreadsheet rows hero",
+    "Empty database table",
+    "Generic chat without memory"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI MEMORY TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Context · Recall · Graph",
+      "tagline": "Agents That Remember You",
+      "composition": "Visual-only collage for AI memory tools comparison: (1) HERO memory graph with fact nodes and chat recall chips on right two-thirds. (2) Conversation card with pinned memory badge arrow into new thread. (3) 2x2 grid of four memory UI modes. (4) Magnifying glass on one graph node. Paper collage, halftone. No todo list hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI记忆工具",
+      "headline_line2": "（2026）",
+      "subtitle": "上下文 · 召回 · 图谱",
+      "composition": "Same layout as EN: memory graph HERO + pinned recall flow + 2x2 mode grid + magnifying glass on node. Title top-left only, NO extra Chinese UI labels, NO todo list hero, NO blank cards."
+    }
+  }
+}

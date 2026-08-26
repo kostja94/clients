@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "web-scraping",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Web scraping tools — proxies, APIs, Playwright crawlers, and structured data extraction",
+  "differentiator_vs_generic": "Crawler diagram with proxy rotation ring, DOM extract schema table, and export JSON snippet, NOT headless browser viewport alone or SEO audit.",
+  "visual_anchors": [
+    "HERO: Web scraping pipeline — target URL node with proxy rotation ring, Playwright crawler arrow into structured JSON/table extract panel",
+    "Compact API endpoint card with rate-limit badge arrow into scraped data preview rows",
+    "2x2 grid of scraping modes (e-commerce prices, news articles, job listings, anti-bot bypass) — data UI only"
+  ],
+  "anti_patterns": [
+    "Headless browser viewport as sole hero",
+    "SEO audit checklist",
+    "Generic globe proxy clipart",
+    "Empty data table"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST WEB SCRAPING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Proxies · APIs · Crawlers",
+      "tagline": "Structured Data at Scale",
+      "composition": "Visual-only collage for web scraping tools comparison: (1) HERO crawler pipeline with proxy ring and JSON extract on right two-thirds. (2) API card arrow into data preview. (3) 2x2 grid of four scraping mode UI tiles. (4) Magnifying glass on schema field row. Paper collage, halftone. No browser-only hero, no SEO audit, no blank table."
+    },
+    "zh": {
+      "headline": "最佳网页抓取工具",
+      "headline_line2": "（2026）",
+      "subtitle": "代理 · API · 爬虫",
+      "composition": "Same layout as EN: scraping pipeline HERO + API flow + 2x2 mode grid + magnifying glass on schema row. Title top-left only, NO extra Chinese UI labels, NO browser-only hero, NO blank table. Navy accents."
+    }
+  }
+}

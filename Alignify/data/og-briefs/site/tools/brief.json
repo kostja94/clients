@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "tools",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Best AI Tools hub — 100+ curated guides by category: image, video, LLMs, coding, marketing GEO, vertical picks",
+  "differentiator_vs_generic": "AI tools channel index, NOT single tool comparison. HERO must show category grid mosaic with tool-type tiles (image, video, LLM, code).",
+  "visual_anchors": [
+    "HERO: Tools hub category grid — 2×3 mosaic tiles (image gen thumbnail, video film strip, LLM chat bubble, code bracket, GEO citation chip, productivity checklist) with blurred tool names",
+    "Secondary: hub intro block + category count badge blur",
+    "Tertiary: magnifying glass over one tile corner detail"
+  ],
+  "anti_patterns": [
+    "Single tool comparison as entire hero",
+    "Generic app store icon grid without category motifs",
+    "Marketing channel tiles",
+    "Empty category tiles"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI TOOLS",
+      "headline_line2": "HUB (2026)",
+      "subtitle": "Creative · Dev · LLMs · GTM",
+      "tagline": "100+ Curated Guides · No Paid Placements",
+      "composition": "Visual-only collage for AI tools channel hub. HERO: 2×3 category mosaic on right two-thirds — image, video, LLM, code, GEO, productivity tiles with distinct UI hints. Secondary: intro block + count badge. Tertiary: magnifying glass on tile. Title top-left. Paper collage, halftone. NO single-tool hero, NO marketing tiles, NO blank grid cells."
+    },
+    "zh": {
+      "headline": "最佳AI工具",
+      "headline_line2": "中心（2026）",
+      "subtitle": "创意 · 开发 · 大模型 · GTM",
+      "composition": "Same layout as EN: 2×3 category mosaic HERO + intro badge + magnifying glass. Title top-left, NO extra Chinese UI labels, NO blank tiles."
+    }
+  }
+}

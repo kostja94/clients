@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "agentic-payments",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Agentic payments — AP2 authorization mandates, ACP checkout, and x402/MPP settlement rails for programmatic agent-initiated payments within scoped budgets",
+  "differentiator_vs_generic": "This is the money-movement protocol stack for non-human payers — NOT shopping product discovery (that's agentic-commerce), NOT generic fintech dashboard. Hero must show layered payment flow: mandate → checkout → settlement with HTTP 402 micropayment cue.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Six-layer payment stack diagram stacked vertically — discovery → communication → trust → authorization (AP2 mandate doc icon) → checkout (ACP cart handshake) → settlement (x402 coin/402 badge), klein-blue accent arrows flowing downward through layers",
+    "Secondary: HTTP 402 response tile — server returns 402 + price, agent wallet pays USDC, retry arrow with payment header",
+    "Tertiary: scoped mandate envelope — signed spend cap document with agent identity seal, no PAN exposure"
+  ],
+  "anti_patterns": [
+    "Product comparison shopping grid as hero",
+    "LLM chat panel as hero",
+    "Generic credit card swipe without mandate/settlement layers",
+    "Human 3DS OTP flow as primary visual",
+    "Single-protocol logo wall without stack narrative"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "AGENTIC PAYMENTS",
+      "headline_line2": "(2026)",
+      "subtitle": "Authorization · Checkout · Settlement",
+      "tagline": "AP2 · ACP · x402",
+      "composition": "Visual-only editorial collage for agentic payments guide. HERO: right two-thirds — vertical protocol stack of six blurred layer bands with icon glyphs (mandate document, cart handshake, 402 badge, wallet), klein-blue downward flow arrows connecting layers, agent avatar initiating at top. Secondary: HTTP 402 request/response loop — API block, 402 status tile, micropayment coin, retry arrow. Tertiary: signed mandate envelope with spend cap ring. Title block top-left only. Paper torn edges, halftone. NO product shopping cards, NO LLM chat hero, NO real Stripe/Google logos, NO readable protocol spec text, NO human OTP screens."
+    },
+    "zh": {
+      "headline": "智能体支付",
+      "headline_line2": "（2026）",
+      "subtitle": "授权·结账·结算协议栈",
+      "composition": "Same layout as EN: HERO six-layer payment stack with mandate→checkout→settlement flow + 402 micropayment loop + mandate envelope. Title top-left, NO shopping product grid, NO LLM chat hero, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

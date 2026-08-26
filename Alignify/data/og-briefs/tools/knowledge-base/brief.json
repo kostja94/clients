@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "knowledge-base",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI knowledge base tools — document ingestion, semantic search, and grounded Q&A",
+  "differentiator_vs_generic": "Document upload funnel into vector search results with grounded answer and source page chips, NOT blank wiki editor or generic chat.",
+  "visual_anchors": [
+    "HERO: Knowledge base workspace — document upload stack (PDF, Notion, Slack icons) arrow into semantic search results panel with grounded answer and source page chips [1][2][3]",
+    "Compact folder tree sidebar vignette feeding into highlighted search hit row",
+    "2x2 grid of KB modes (doc Q&A, team wiki sync, access control badge, analytics heatmap) — UI only"
+  ],
+  "anti_patterns": [
+    "Blank Notion page hero",
+    "Generic LLM chat without sources",
+    "Spreadsheet grid",
+    "Empty upload dropzone"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI KNOWLEDGE BASES",
+      "headline_line2": "(2026)",
+      "subtitle": "Ingest · Search · Ground",
+      "tagline": "Docs That Answer Back",
+      "composition": "Visual-only collage for AI knowledge base tools comparison: (1) HERO document upload funnel into grounded search answer on right two-thirds. (2) Folder tree arrow into search hit. (3) 2x2 grid of four KB mode UI tiles. (4) Magnifying glass on source chip [2]. Paper collage, halftone. No blank wiki hero, no sourceless chat, no empty dropzone."
+    },
+    "zh": {
+      "headline": "最佳AI知识库工具",
+      "headline_line2": "（2026）",
+      "subtitle": "导入 · 检索 · 问答",
+      "composition": "Same layout as EN: knowledge base HERO + folder flow + 2x2 mode grid + magnifying glass on source chip. Title top-left only, NO extra Chinese UI labels, NO blank wiki hero, NO blank cards."
+    }
+  }
+}

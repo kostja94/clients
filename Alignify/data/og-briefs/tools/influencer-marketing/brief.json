@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "influencer-marketing",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Influencer marketing platforms — creator discovery, campaign briefs, audience analytics, brand-creator matching",
+  "differentiator_vs_generic": "Creator discovery dashboard with follower-tier badges and campaign brief cards, NOT affiliate commission ledger or UGC factory grid.",
+  "visual_anchors": [
+    "HERO: Influencer discovery panel — searchable creator rows with avatar circles, follower-tier badges (nano/micro/macro), and engagement sparkline chips",
+    "Campaign brief card with deliverable checklist and brand-fit score ring",
+    "2x2 grid of influencer workflow tiles (creator search, outreach DM, content approval, ROI dashboard) — UI fragments only"
+  ],
+  "anti_patterns": [
+    "Affiliate referral commission dashboard hero",
+    "UGC video factory conveyor hero",
+    "Generic social media post grid without creator CRM",
+    "Empty influencer white card"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST INFLUENCER MARKETING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Discovery · Campaigns · ROI",
+      "tagline": "Find Creators Who Convert",
+      "composition": "Visual-only collage for influencer marketing tools comparison: (1) HERO creator discovery panel with tier badges on right two-thirds. (2) Campaign brief card with fit score ring. (3) 2x2 grid of four influencer UI tiles. (4) Magnifying glass on engagement sparkline row. Paper collage, halftone. No affiliate dashboard hero, no UGC factory, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳达人营销工具",
+      "headline_line2": "（2026）",
+      "subtitle": "发现 · 活动 · 回报",
+      "composition": "Same layout as EN: creator discovery HERO + campaign brief card + 2x2 influencer grid + magnifying glass on engagement row. Title top-left only, NO extra Chinese UI labels, NO affiliate dashboard hero, NO blank cards. Titian-red accents."
+    }
+  }
+}

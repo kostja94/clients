@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "crawler",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Web crawlers — search bots vs AI bots, robots.txt tokens, crawl vs index vs train vs retrieve, and bot traffic management",
+  "differentiator_vs_generic": "This is crawler infrastructure and robots.txt policy education. Hero must show robots.txt user-agent lanes feeding into a site map crawl diagram (Googlebot path vs GPTBot path) — NOT an LLM chat panel as the primary visual even though AI crawlers are discussed.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split crawl-path diagram — left: robots.txt snippet card with User-agent lines (Googlebot / GPTBot / Bingbot blurred), center: website node graph with URL nodes, right: two diverging bot lanes — search crawler lane (JS render icon) vs AI training crawler lane (HTML-only icon) — accent highlights the policy fork",
+    "Secondary: server log tail fragment showing bot hit frequency bars by user-agent (blurred labels, bar heights only)",
+    "Tertiary: small noindex vs Disallow warning badge — crossed misconfiguration arrow (visual metaphor only, no explanatory text block)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero",
+    "OpenAI/Anthropic product UI or chat window dominating canvas",
+    "Generic spider mascot cartoon without robots.txt or crawl graph",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "WEB CRAWLER GUIDE",
+      "headline_line2": "(2026)",
+      "subtitle": "Search Bots · AI Bots · robots.txt",
+      "tagline": "Crawl · Index · Train · Retrieve",
+      "composition": "Visual-only editorial collage for web crawler SEO guide. HERO: robots.txt card plus site URL node graph occupying right two-thirds — two diverging bot lanes from robots rules to site nodes, search bot lane with render icon, AI bot lane with HTML-only icon, titian-red accent on policy fork arrow. Secondary: server log bot-frequency bar strip. Tertiary: Disallow/noindex misconfiguration warning glyph. Title top-left only. Paper torn edges, halftone. NO LLM chat UI as hero, NO OpenAI/Anthropic logos, NO real company bot names as readable labels, NO WAF dashboard screenshots."
+    },
+    "zh": {
+      "headline": "网络爬虫指南",
+      "headline_line2": "（2026）",
+      "subtitle": "搜索与AI爬虫管控",
+      "composition": "Same layout as EN: robots.txt + crawl-path fork diagram HERO, log bars + misconfiguration glyph secondary. Title top-left, NO LLM chat as hero, NO vendor logos, NO extra Chinese UI labels, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "seo",
+  "slug": "new-domains-tld",
+  "analyzed_at": "2026-08-24T17:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": ".new gTLD ecosystem — instant-creation shortcuts (docs.new, figma.new), Google registry policies, and indirect SEO benefits",
+  "differentiator_vs_generic": "This is .new domain shortcuts and TLD strategy, NOT GEO/LLM chat. Hero must be a browser address bar typing a .new URL with instant-create redirect to a blank document, NOT an AI chat interface (even though some .new domains point to AI tools).",
+  "visual_anchors": [
+    "HERO (~55% canvas): Browser address bar showing \"docs.new\" with curved redirect arrow to blank document/spreadsheet creation icon — instant-action flow, klein-blue accent on .new TLD suffix",
+    "Secondary: grid of .new shortcut sticker chips (docs.new, figma.new, github.new, notion.new — blurred, generic icons only)",
+    "Tertiary: TLD comparison tear-out (.com vs .new vs .io blur labels with checkmark on .new for action-use)"
+  ],
+  "anti_patterns": [
+    "LLM chat panel as hero (this is .new domain TLD not GEO)",
+    "ChatGPT/Claude chat UI even though page mentions AI .new domains",
+    "Real Google or platform logos",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": ".NEW DOMAINS",
+      "headline_line2": "(2026)",
+      "subtitle": "Instant Creation Shortcuts",
+      "tagline": "gTLD · Action URLs · Brand Shortcuts",
+      "composition": "Visual-only editorial collage for .new domain guide. HERO: browser address bar with docs.new occupying right two-thirds — redirect arrow to blank document icon signaling instant create, klein-blue accent on .new suffix. Secondary: 4 .new shortcut sticker chips in grid. Tertiary: small TLD comparison tear-out. Title block top-left only. Paper collage torn edges, halftone. NO LLM chat UI, NO OpenAI/Anthropic/ChatGPT logos, NO real Google logo, NO readable platform brand names beyond blurred .new suffixes."
+    },
+    "zh": {
+      "headline": ".new 域名",
+      "headline_line2": "（2026）",
+      "subtitle": "即时创建快捷入口",
+      "composition": "Same layout as EN: address bar .new redirect HERO + shortcut chips + TLD comparison. Title top-left, NO LLM chat, NO AI chat UI, NO blank cards."
+    }
+  }
+}

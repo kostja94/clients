@@ -1,0 +1,35 @@
+{
+  "section": "site",
+  "slug": "privacy-policy",
+  "analyzed_at": "2026-08-25T12:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Privacy Policy — how Alignify collects, uses, and protects visitor data (Analytics, cookies, third-party services)",
+  "differentiator_vs_generic": "Legal document page, NOT brand poster or channel index. HERO must show minimal policy document layout with privacy shield motif.",
+  "visual_anchors": [
+    "HERO: Privacy policy document spread — titled doc page with blurred paragraph blocks and shield/lock icon stamp in margin",
+    "Secondary: cookie + analytics icon row (minimal, generic)",
+    "Tertiary: contact email line blur at doc footer"
+  ],
+  "anti_patterns": [
+    "Brand research loop hero",
+    "Channel hub columns",
+    "Marketing collage motifs",
+    "Empty white document"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "PRIVACY POLICY",
+      "headline_line2": "",
+      "subtitle": "Data · Cookies · Analytics",
+      "tagline": "How We Protect Your Information",
+      "composition": "Visual-only collage for privacy policy page. HERO: document spread with shield stamp on right two-thirds — blurred policy paragraphs, minimal legal tone. Secondary: cookie/analytics icon row. Tertiary: footer contact blur. Title top-left. Paper collage, subdued halftone. NO brand flywheel, NO hub columns, NO marketing motifs, NO blank page."
+    },
+    "zh": {
+      "headline": "隐私政策",
+      "headline_line2": "",
+      "subtitle": "数据 · Cookie · 第三方服务",
+      "composition": "Same layout as EN: policy document HERO + icon row + footer blur. Title top-left, NO brand hero motifs, NO extra Chinese UI labels, NO blank page."
+    }
+  }
+}

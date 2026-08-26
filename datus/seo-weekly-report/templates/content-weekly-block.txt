@@ -1,0 +1,24 @@
+===CONTENT===
+week_of,YYYY-MM-DD~YYYY-MM-DD
+monthly_target_posts,4
+published_this_week,2
+published_slugs,what-is-lakehouse|osi-vs-dbt-metricflow
+updated_slugs,semantic-layer-tools-list-osi
+sitemap_changed,no
+notes,OSI Field Mapping 页 breadcrumb 已上线
+
+===PROJECT_STATUS===
+osi-playground,live
+osi-field-mapping,live
+zh-i18n,planned
+pricing-refresh,in-progress
+
+===OBSERVATIONS===
+positive,OSI 对比文开始获曝光
+negative,品牌词点击基数仍低
+risk,docs.datus.ai 不在同一 GA4 属性
+next_week,补 2 篇 Glossary + 1 篇 OSI vs
+
+===CONVERSION_NOTES===
+github_click,确认 CTA 埋点事件名
+sign_up,studio.datus.ai 注册流

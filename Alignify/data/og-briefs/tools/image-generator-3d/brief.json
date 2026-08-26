@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "image-generator-3d",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI 3D image and model generators — text/image to mesh, multi-view orthographic previews, textured GLB output",
+  "differentiator_vs_generic": "Prompt card feeding multi-view orthographic previews converging into shaded mesh turntable, NOT 2D T2I grid or LiDAR phone scan.",
+  "visual_anchors": [
+    "HERO: Generation funnel — compact prompt card top-left, four orthographic view thumbnails (front/side/top/perspective) mid-row, torn arrow into shaded 3D mesh turntable with wireframe ghost",
+    "Texture/material swatch chips beside mesh (matte, metallic, vertex-color)",
+    "2x2 grid of 3D output types (character mesh, product prop, environment blockout, rig-ready asset) — viewport captures only"
+  ],
+  "anti_patterns": [
+    "Flat 2D image generator sample grid",
+    "Phone LiDAR scan hero",
+    "CAD B-Rep engineering viewport",
+    "Empty 3D viewport grid"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI 3D IMAGE GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Text · Multi-View · Mesh",
+      "tagline": "From Prompt to Shaded Model",
+      "composition": "Visual-only collage for AI 3D image generator tools comparison: (1) HERO prompt-to-orthographic-views-to-mesh turntable funnel on right two-thirds. (2) Material swatch chips beside mesh. (3) 2x2 grid of four 3D output viewports. (4) Magnifying glass on mesh topology edge. Paper collage, halftone. No 2D T2I grid, no phone scan hero, no blank viewport."
+    },
+    "zh": {
+      "headline": "最佳AI三维图像生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "文本 · 多视图 · 网格",
+      "composition": "Same layout as EN: prompt-to-mesh funnel HERO + material swatches + 2x2 3D grid + magnifying glass on topology. Title top-left only, NO extra Chinese UI labels, NO 2D generator hero, NO blank cards. Klein-blue accents."
+    }
+  }
+}

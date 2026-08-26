@@ -1,0 +1,79 @@
+# 综合质量检查表
+
+> **版本**：v3.0 · 2026-08-26  
+> **质量档位**：Alignify **每篇 flagship**  
+> **Gate 语义**：Step 10 SelfCheck → **audit-ready** → audit-article → **publish-ready**
+
+---
+
+## 状态与 Gate 对应
+
+| 状态 | 达成 |
+|------|------|
+| audit-ready | [`selfcheck.md`](./selfcheck.md) H0–H4 + 12 维全 Pass + 脚本绿 |
+| publish-ready | [`../audit-article/rules/final-audit.md`](../audit-article/rules/final-audit.md) P0 Pass + 十维 ≥**80** |
+| S 级 | 十维 ≥**90** + Moat + Excellence + 零 P1 |
+
+---
+
+## 一、自动化检查
+
+**部署仓** `E:\自有部署项目\alignify production`：
+
+```bash
+npm run verify:content-json
+npm run build
+node ../../clients/Alignify/scripts/ops/audit-tools-meta-titles.mjs
+node ../../clients/Alignify/scripts/ops/check-tools-en-content.mjs
+python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --source both --locale both --violations-only
+```
+
+---
+
+## 二、P0（阻断 audit-ready / publish-ready）
+
+### 事实 G1–G7
+
+见 [`gates.md`](./gates.md)。量化 claim 须有 Source Map 行。
+
+### Alignify 结构 / Meta P0
+
+| # | 检查项 | 通过标准 |
+|---|--------|---------|
+| P0-1 | 结论在 FAQ 之前 | **若** 同时有结论与 FAQ |
+| P0-2 | FAQ 数量 | **若** 有 FAQ：中英文各 **7 问** |
+| P0-3 | FAQ 内链 | **若** 有 FAQ：答案无内链 |
+| P0-4 | 图片 | `public/` 存在 |
+| P0-5 | Best 产品段 | **若** 有 Best H3：ZH ≥100 字 / EN ≥280 字符 |
+| P0-7 | Meta title | best-ranking：含「最佳」/ `Best` |
+| P0-8 | Meta description | ≥2 产品名（Tools） |
+| P0-9 | Meta 格式 | 年份 + 冒号副线 |
+| P0-10 | HowTo | 无 frontmatter `howTo:` |
+| P0-12 | Gate 0R | Research + Brief + Moat 已完成 |
+| P0-13 | 双语 parity | ZH/EN section 对齐 |
+
+---
+
+## 三、P1（Flagship 须清零方可 publish-ready）
+
+| # | 检查项 |
+|---|--------|
+| P1-1 | Moat 在正文兑现（非仅 Brief） |
+| P1-2 | BLUF 三处 Pass |
+| P1-3 | FAQ 与正文非复制（相似度 <30%） |
+| P1-4 | 内链 distinct ≥5（Tools） |
+| P1-5 | Extractability / Answer Blocks Pass |
+| P1-6 | 对照参考菜单 intentional |
+| P1-7 | Presentation 节奏（长段、无伪列表） |
+| P1-8 | Source Map 完整 |
+
+---
+
+## 四、Build 后验证
+
+- [ ] 对应 channel URL 可访问
+- [ ] 无 HowTo JSON-LD
+
+---
+
+*quality-checklist · v3.0 · 2026-08-26*

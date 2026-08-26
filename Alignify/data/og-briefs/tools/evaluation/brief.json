@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "evaluation",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI evaluation platforms — offline test suites, online monitoring, and LLM output quality scoring",
+  "differentiator_vs_generic": "Evaluation dashboard with pass/fail test grid and metric score bars, NOT public model leaderboard or generic chat playground.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Eval dashboard — horizontal metric bars (accuracy, latency, safety blurred), test-case grid with green pass and red fail badges, and run-history sparkline",
+    "Pipeline ribbon: dataset → prompt → score → deploy icons linked by torn-paper arrows (blurred labels only)",
+    "2x2 grid of eval vignettes (A/B compare split, human review queue, regression alert, trace waterfall) — UI fragments only",
+    "Magnifying glass zooming on one failed test row with diff snippet and score delta"
+  ],
+  "anti_patterns": [
+    "Public LLM Arena Elo leaderboard hero",
+    "Generic ChatGPT chat sidebar",
+    "SEO ranking list",
+    "Empty metrics dashboard"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI EVALUATION TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Test · Score · Monitor",
+      "tagline": "Measure Your AI Before Ship",
+      "composition": "Visual-only collage for AI evaluation platform tools comparison: (1) HERO eval dashboard with metric bars and pass/fail test grid on right two-thirds. (2) Pipeline ribbon (dataset, prompt, score, deploy). (3) 2x2 grid of four eval vignettes. (4) Magnifying glass on failed test row detail. Title top-left only. Paper collage, halftone. No public leaderboard hero, no chat playground, no ranking text, no blank dashboard."
+    },
+    "zh": {
+      "headline": "最佳AI评测工具",
+      "headline_line2": "（2026）",
+      "subtitle": "测试 · 评分 · 监控",
+      "composition": "Same layout as EN: eval dashboard HERO + pipeline ribbon + 2x2 vignette grid + magnifying glass on failed test row. Title top-left only, NO extra Chinese UI labels, NO leaderboard or chat hero, NO blank dashboard."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "web-search-api",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Web search APIs — RAG retrieval, LLM grounding, and agent web search endpoints",
+  "differentiator_vs_generic": "API request/response panel with search result snippets feeding into LLM answer bubble, NOT classic SERP ranking list or scraper data table alone.",
+  "visual_anchors": [
+    "HERO: Search API flow — REST endpoint card with JSON request arrow into ranked snippet results panel feeding into LLM answer bubble with source chips [1][2][3]",
+    "Compact agent loop vignette: query → search API → grounded reply nodes",
+    "2x2 grid of API use cases (RAG retrieval, news digest, site-restricted search, real-time agent browse) — UI only"
+  ],
+  "anti_patterns": [
+    "Classic Google SERP ranking list hero",
+    "Web scraper bulk table hero",
+    "Magnifying glass over browser",
+    "Empty API response box"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST WEB SEARCH APIS",
+      "headline_line2": "(2026)",
+      "subtitle": "RAG · LLMs · Agents",
+      "tagline": "Search Built for AI",
+      "composition": "Visual-only collage for web search API tools comparison: (1) HERO API request-to-snippets-to-LLM answer flow on right two-thirds. (2) Agent loop vignette. (3) 2x2 grid of four API use-case UI tiles. (4) Magnifying glass on source chip row. Paper collage, halftone. No classic SERP hero, no scraper table, no blank response."
+    },
+    "zh": {
+      "headline": "最佳网页检索API",
+      "headline_line2": "（2026）",
+      "subtitle": "RAG · 大模型 · Agent",
+      "composition": "Same layout as EN: search API flow HERO + agent loop + 2x2 use-case grid + magnifying glass on source chips. Title top-left only, NO extra Chinese UI labels, NO classic SERP hero, NO blank response."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "story-generator",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI story generator tools — plot prompts to chapters and narrative arcs",
+  "differentiator_vs_generic": "Story outline tree branching into chapter draft pages with character card sidebar, NOT generic blog post editor.",
+  "visual_anchors": [
+    "HERO: Story workspace — plot beat outline tree, chapter draft page with narrative text, and character profile cards sidebar",
+    "Compact genre prompt card arrow into generated story opening paragraph",
+    "2x2 grid of story outputs (dialogue scene, world bible, twist suggestion, export manuscript) — UI only"
+  ],
+  "anti_patterns": [
+    "Blog CMS hero",
+    "Presentation slides",
+    "Empty notebook",
+    "Social media caption grid"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI STORY GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Plot · Chapters · Characters",
+      "tagline": "From Prompt to Narrative",
+      "composition": "Visual-only collage for AI story generator tools comparison: (1) HERO story workspace with outline tree and chapter draft on right two-thirds. (2) Genre prompt card arrow into opening paragraph. (3) 2x2 grid of four story output UI tiles. (4) Magnifying glass on character card. Paper collage, halftone. No blog CMS hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI故事生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "情节 · 章节 · 角色",
+      "composition": "Same layout as EN: story workspace HERO + genre prompt flow + 2x2 output grid + magnifying glass on character card. Title top-left only, NO extra Chinese UI labels, NO blog hero, NO blank cards."
+    }
+  }
+}

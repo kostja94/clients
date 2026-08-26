@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "ide",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI IDE tools — agentic coding environments, multi-agent task queues, copilot autocomplete in VS Code-style editors",
+  "differentiator_vs_generic": "Split code editor with AI agent task queue and inline diff review, NOT no-code drag-drop builder or terminal-only CLI.",
+  "visual_anchors": [
+    "HERO: Agentic IDE split view — left code editor with syntax-colored lines and inline ghost suggestion, right agent panel with numbered multi-step task checklist and running status dots",
+    "Inline diff hunk strip showing accept/reject chips beneath editor gutter",
+    "2x2 grid of IDE workflow tiles (autocomplete ghost, refactor diff, test runner badge, multi-file edit tree) — UI only"
+  ],
+  "anti_patterns": [
+    "No-code drag-drop app builder canvas",
+    "Terminal-only CLI prompt hero",
+    "API gateway diagram",
+    "Empty code editor pane"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "BEST AI IDES",
+      "headline_line2": "(2026)",
+      "subtitle": "Agents · Copilot · Diff Review",
+      "tagline": "Orchestrate Code, Not Just Write It",
+      "composition": "Visual-only collage for AI IDE tools comparison: (1) HERO split code editor + agent task queue on right two-thirds. (2) Inline diff hunk strip below editor. (3) 2x2 grid of four IDE UI tiles. (4) Magnifying glass on agent checklist step detail. Paper collage, halftone. No no-code builder hero, no terminal CLI hero, no blank panes."
+    },
+    "zh": {
+      "headline": "最佳AI编程IDE",
+      "headline_line2": "（2026）",
+      "subtitle": "智能体 · 补全 · 差异审查",
+      "composition": "Same layout as EN: agentic IDE split HERO + diff hunk strip + 2x2 IDE grid + magnifying glass on agent step. Title top-left only, NO extra Chinese UI labels, NO no-code builder hero, NO blank cards. Navy accents."
+    }
+  }
+}

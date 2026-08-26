@@ -10,6 +10,9 @@
 | [sparki-use-cases.md](./sparki-use-cases.md) | Persona、场景（Vlog / Commentary / Montage / Talking-head） |
 | [sparki-competitors.md](./sparki-competitors.md) | 竞品与差异化 |
 | [sparki-site-structure.md](./sparki-site-structure.md) | 首页模块、IA 推断、内容机会 |
+| [creators/](./creators/) | 红人 SEO 页面:聚合页/详情页结构、14 位已上线红人 |
+| [video-types/](./video-types/) | 剪辑视频类型多维分类 + Industries / Product Video / Gaming / Platforms 落地页 |
+| [ai-traffic-report/](./ai-traffic-report/) | **AI 助手引荐流量 + 全站页面流量** GA4 周报 Skill |
 
 *产品入口*：[sparki.io](https://sparki.io/) · Try For Free / Sign In（官网 CTA）
 
@@ -72,11 +75,12 @@
 
 - 强化 **「AI editing agent」「conversational video editing」** 等差异化词与落地页/博客对齐。  
 - 按 **Vlog / Commentary / Montage / Talking-head** 做场景页或系列文章，承接长尾。  
-- FAQ 已覆盖基础问题；可扩展 **教程、对比页（vs 传统 NLE / vs 其他 AI 剪辑）** 以提升信息增量与引用价值。
+- FAQ 已覆盖基础问题；可扩展 **教程、对比页（vs 传统 NLE / vs 其他 AI 剪辑）** 以提升信息增量与引用价值。  
+- **AI 引荐流量监测**：每周用 [ai-traffic-report](./ai-traffic-report/) 从 GA4 拉 ChatGPT / Claude / Perplexity 等来源 sessions、落地页，并对照全站页面流量（GEO click-through，区别于 Prompt citation 抽样）。
 
 ---
 
 *遵循 [客户文档规范](../demo/client-template.md)*
-*关联：[features](./sparki-features.md) | [keywords](./sparki-keywords.md) | [use-cases](./sparki-use-cases.md) | [competitors](./sparki-competitors.md) | [site-structure](./sparki-site-structure.md) | [video-types](./sparki-video-types.md) | [creators](./sparki-creators.md)*
+*关联：[features](./sparki-features.md) | [keywords](./sparki-keywords.md) | [use-cases](./sparki-use-cases.md) | [competitors](./sparki-competitors.md) | [site-structure](./sparki-site-structure.md) | [video-types](./video-types/) | [creators](./creators/)*
 *Last updated: 2026-04-08*
 *Demo 文档包 · Sparki · https://sparki.io/*

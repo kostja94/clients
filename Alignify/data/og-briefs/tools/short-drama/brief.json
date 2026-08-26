@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "short-drama",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI short drama platforms — script to vertical episodic video with distribution pipeline",
+  "differentiator_vs_generic": "Vertical episode strip with script beats, character cards, and platform publish queue, NOT horizontal film production timeline or single T2V clip.",
+  "visual_anchors": [
+    "HERO: Short drama pipeline — vertical 9:16 episode thumbnail strip with script beat markers, character avatar row, and platform publish queue chip",
+    "Compact script scene card arrow into episodic storyboard frames",
+    "2x2 grid of drama outputs (romance cliffhanger, thriller hook, comedy skit, dubbing sync frame) — vertical frames only"
+  ],
+  "anti_patterns": [
+    "Horizontal cinema timeline hero",
+    "Single T2V prompt card",
+    "Anime film production clapperboard only",
+    "Empty vertical reel slots"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI SHORT DRAMA PLATFORMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Script · Episodes · Publish",
+      "tagline": "Vertical Stories at Scale",
+      "composition": "Visual-only collage for AI short drama platform tools comparison: (1) HERO vertical episode strip with script beats and publish queue on right two-thirds. (2) Script scene arrow into storyboard frames. (3) 2x2 grid of four vertical drama output frames. (4) Magnifying glass on episode beat marker. Paper collage, halftone. No horizontal cinema timeline, no T2V prompt hero, no blank reels."
+    },
+    "zh": {
+      "headline": "最佳AI短剧平台",
+      "headline_line2": "（2026）",
+      "subtitle": "剧本 · 分集 · 分发",
+      "composition": "Same layout as EN: short drama vertical strip HERO + script flow + 2x2 episode grid + magnifying glass on beat marker. Title top-left only, NO extra Chinese UI labels, NO horizontal timeline hero, NO blank reels. Titian-red accents."
+    }
+  }
+}

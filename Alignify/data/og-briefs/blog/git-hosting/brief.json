@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "git-hosting",
+  "analyzed_at": "2026-08-24T18:25:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Agent-native git hosting — agent-scale forges, high-frequency PR throughput, mirror/migration, and collaboration boundaries for AI coding agents",
+  "differentiator_vs_generic": "This is code forge infrastructure for agent-scale commits and PRs (Origin, GitLab next-gen, Agent HQ), NOT an AI coding assistant tutorial, NOT code review tool comparison alone. Hero must show parallel agent branches, burst commit graph, and forge mirror sync — the hosting layer bottleneck visual.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Agent-scale git forge — dense parallel branch lanes with many small commit dots (high frequency), 3 stacked PR cards with merge-queue blur status badges",
+    "Mirror sync arrows between two forge silhouettes (incumbent ↔ agent-scale beta)",
+    "Secondary: commit velocity spike graph showing agent load vs human baseline dotted line"
+  ],
+  "anti_patterns": [
+    "Single-developer IDE screenshot as hero",
+    "Generic GitHub Octocat or trademark logo",
+    "Code review comment thread without forge/branch context",
+    "AI chat panel unrelated to repository hosting",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "AGENT GIT HOSTING",
+      "headline_line2": "(2026)",
+      "subtitle": "Agent-Scale Forge & PR Throughput",
+      "tagline": "Origin · GitLab · Agent HQ",
+      "composition": "Visual-only editorial collage for agent-native git hosting guide. HERO: forge branch canvas on right two-thirds — 6-8 parallel branch lanes with dense small commit dots, klein-blue accent on busiest lane. Below: 3 stacked PR cards with merge-queue blur badges. Secondary: bidirectional mirror arrows between two generic forge silhouettes. Tertiary: small velocity chart — solid agent spike vs dotted human baseline. Title top-left. Paper torn edges, halftone. NO Octocat, NO IDE hero, NO chat panel, NO blank cards."
+    },
+    "zh": {
+      "headline": "Agent时代Git托管",
+      "headline_line2": "（2026）",
+      "subtitle": "Agent-scale Forge与协作边界",
+      "composition": "Same layout as EN: parallel branch/PR forge HERO + mirror sync arrows + velocity spike chart. Title top-left, NO extra Chinese branch labels, NO Octocat, NO IDE hero, NO blank cards."
+    }
+  }
+}

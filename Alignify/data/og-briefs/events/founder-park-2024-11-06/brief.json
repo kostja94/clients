@@ -1,0 +1,36 @@
+{
+  "section": "events",
+  "slug": "founder-park-2024-11-06",
+  "analyzed_at": "2026-08-25T03:44:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Founder Park talk recap — SEO-powered growth flywheel covering AI-era SEO strategy, technical fixes, and channel integration with content and social",
+  "differentiator_vs_generic": "This is a conference talk recap on SEO growth flywheels, NOT generic event photography or LLM chat panels. Hero must be a talk/slide collage — stage photo strip, slide thumbnail showing circular SEO flywheel diagram, and audience network motif.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Slide deck thumbnail collage — dominant slide showing circular SEO growth flywheel (content → rankings → traffic → links → content) with klein-blue accent arrows, torn-paper edge treatment",
+    "Stage photo strip — blurred speaker at podium with projector screen glow, warm venue lighting, no identifiable faces",
+    "Secondary: audience network motif — small cluster of silhouetted heads with connection lines suggesting founder community"
+  ],
+  "anti_patterns": [
+    "LLM chat panel (this is SEO flywheel talk not GEO)",
+    "Generic stock conference crowd without slide context",
+    "SERP screenshot as sole hero without flywheel framing",
+    "Real Founder Park or sponsor logos",
+    "Empty white cards below headline"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "FOUNDER PARK TALK",
+      "headline_line2": "(Nov 2024)",
+      "subtitle": "SEO-Powered Growth Flywheel",
+      "tagline": "AI-Era SEO · Channels · Integration",
+      "composition": "Visual-only editorial collage for Founder Park event recap. HERO: slide deck thumbnail collage on right half — dominant slide with circular SEO growth flywheel diagram (content → rankings → traffic → links) and klein-blue accent arrows, halftone on slide surface. Secondary: blurred stage photo strip — speaker silhouette at podium with projector glow. Tertiary: audience network cluster — small head silhouettes with connection lines. Title block top-left. Paper torn edges, conference recap aesthetic. NO LLM chat UI, NO real event logos, NO SERP-only hero, NO blank cards."
+    },
+    "zh": {
+      "headline": "Founder Park分享",
+      "headline_line2": "（2024.11）",
+      "subtitle": "SEO驱动的增长飞轮",
+      "composition": "Same layout as EN: SEO flywheel slide HERO + stage photo strip + audience network motif. Title top-left, NO LLM chat, NO real logos, NO extra Chinese slide text, NO blank cards."
+    }
+  }
+}

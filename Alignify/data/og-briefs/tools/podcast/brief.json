@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "podcast",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI podcast tools — script, voice, edit, and publish workflow",
+  "differentiator_vs_generic": "Podcast episode timeline with AI script blocks, waveform, and cover art tile, NOT generic TTS or video editor.",
+  "visual_anchors": [
+    "HERO: Podcast production board — script outline blocks, dual-host waveform tracks, and episode cover art preview in one frame",
+    "Compact topic prompt card arrow into generated script segments with speaker tags",
+    "2x2 grid of podcast outputs (show notes, audiogram clip, chapter markers, RSS publish panel) — UI only"
+  ],
+  "anti_patterns": [
+    "Standalone TTS text box hero",
+    "Video timeline editor",
+    "Music DAW alone",
+    "Empty mic icon"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BEST AI PODCAST TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Script · Voice · Publish",
+      "tagline": "From Idea to Episode",
+      "composition": "Visual-only collage for AI podcast tools comparison: (1) HERO podcast production board with script and waveform on right two-thirds. (2) Topic prompt card arrow into script segments. (3) 2x2 grid of four podcast output UI tiles. (4) Magnifying glass on waveform segment. Paper collage, halftone. No TTS-only hero, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI播客工具",
+      "headline_line2": "（2026）",
+      "subtitle": "脚本 · 配音 · 发布",
+      "composition": "Same layout as EN: podcast board HERO + topic prompt flow + 2x2 output grid + magnifying glass on waveform. Title top-left only, NO extra Chinese UI labels, NO TTS-only hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "section": "marketing",
+  "slug": "creator-challenge-program",
+  "model": "manual-expert-v1",
+  "page_topic_one_liner": "Creator contests — UGC campaigns with prizes, hashtags, submission gallery",
+  "visual_anchors": ["HERO: contest trophy badge + submission gallery grid of user creations", "Hashtag pill tags (blurred)", "Prize ribbon banner"],
+  "anti_patterns": ["Affiliate dashboard", "email inbox hero"],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "CREATOR CONTESTS",
+      "headline_line2": "(2026)",
+      "subtitle": "UGC Topic Marketing",
+      "tagline": "Prizes · Hashtags · Submissions",
+      "composition": "Visual-only collage for creator contest marketing. HERO: golden trophy icon + 2x2 grid of user-submitted creative thumbnails. Secondary: blurred hashtag pills. Tertiary: prize ribbon. Paper collage. NO affiliate UI."
+    },
+    "zh": {
+      "headline": "创作竞赛营销",
+      "headline_line2": "（2026）",
+      "subtitle": "UGC话题营销",
+      "composition": "Same: trophy HERO + submission grid + hashtag pills. Title top-left, NO extra text, NO blank cards."
+    }
+  }
+}

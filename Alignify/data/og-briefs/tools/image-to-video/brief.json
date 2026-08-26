@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "image-to-video",
+  "analyzed_at": "2026-08-25T05:52:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI image-to-video generators — animate static photos with motion brush, camera moves, and brand-safe I2V output",
+  "differentiator_vs_generic": "Static photo frame with motion brush stroke paths and emerging video strip with play button, NOT text-to-video prompt card or anime storyboard.",
+  "visual_anchors": [
+    "HERO: Image-to-video canvas — top still photo with colored motion brush stroke trails, torn arrow into bottom horizontal video filmstrip frames with large play-button triangle overlay",
+    "Motion control vignette: brush size slider, camera pan arrow, subject lock pin (blurred labels)",
+    "2x2 grid of I2V output clips (product spin, portrait blink, landscape parallax, logo reveal) — frame stills only"
+  ],
+  "anti_patterns": [
+    "Text-to-video prompt card hero",
+    "Anime storyboard strip hero",
+    "Full film production timeline",
+    "Empty video player frame"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI IMAGE-TO-VIDEO TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Motion Brush · Camera · Animate",
+      "tagline": "Make Still Photos Move",
+      "composition": "Visual-only collage for AI image-to-video tools comparison: (1) HERO still photo with motion brush trails arrow into video filmstrip + play button on right two-thirds. (2) Motion control vignette. (3) 2x2 grid of four I2V frame stills. (4) Magnifying glass on motion brush path detail. Paper collage, halftone. No T2V prompt hero, no storyboard hero, no blank player."
+    },
+    "zh": {
+      "headline": "最佳AI图生视频工具",
+      "headline_line2": "（2026）",
+      "subtitle": "运动笔刷 · 镜头 · 动画",
+      "composition": "Same layout as EN: I2V motion brush HERO + control vignette + 2x2 clip grid + magnifying glass on brush path. Title top-left only, NO extra Chinese UI labels, NO T2V prompt hero, NO blank cards. Titian-red accents."
+    }
+  }
+}

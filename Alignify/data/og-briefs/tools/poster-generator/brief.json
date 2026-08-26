@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "poster-generator",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI poster generators — prompt to print-ready poster layouts with typography and imagery",
+  "differentiator_vs_generic": "Poster artboard with bold headline typography, hero image bleed, and print crop marks, NOT logo mark grid or social card OG size.",
+  "visual_anchors": [
+    "HERO: Poster artboard — vertical print layout with bold headline type, hero illustration bleed, and crop/bleed mark corners",
+    "Compact prompt card arrow into poster template variant strip (event, sale, movie, conference)",
+    "2x2 grid of poster outputs (concert flyer, product promo, movie one-sheet, conference banner) — layouts only"
+  ],
+  "anti_patterns": [
+    "Logo vector mark grid hero",
+    "1200x630 social OG card size hero",
+    "Website builder canvas",
+    "Empty artboard"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "BEST AI POSTER GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Prompt · Layout · Print",
+      "tagline": "Ideas Become Posters",
+      "composition": "Visual-only collage for AI poster generator tools comparison: (1) HERO poster artboard with typography and bleed marks on right two-thirds. (2) Prompt card arrow into template variants. (3) 2x2 grid of four poster layout outputs. (4) Magnifying glass on headline type detail. Paper collage, halftone. No logo grid hero, no OG card size, no blank artboard."
+    },
+    "zh": {
+      "headline": "最佳AI海报生成器",
+      "headline_line2": "（2026）",
+      "subtitle": "提示词 · 排版 · 印刷",
+      "composition": "Same layout as EN: poster artboard HERO + prompt flow + 2x2 layout grid + magnifying glass on typography. Title top-left only, NO extra Chinese UI labels, NO logo grid hero, NO blank artboard. Titian-red accents."
+    }
+  }
+}

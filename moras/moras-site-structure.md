@@ -92,15 +92,17 @@ Hero · Features · Showcase · Feedback / Wall of Love · Pricing · 底部 CTA
 
 ### Use Cases（Hub + 6 Vertical）
 
+店铺角色页（已上线）。劳动模型子页与 rollout 见 [use-cases/pages.md](./use-cases/pages.md)（P0：`deal-hunters`、`credentialed-creators`；P1：`family-creators`、`niche-hobbyists`）。**未上线路径不要写进产品页 `to`。**
+
 | 路径 | 人群 |
 |------|------|
-| `/use-cases` | Hub |
-| `/use-cases/affiliates` | 联盟客 |
+| `/use-cases` | Hub（规划：By shop role + By posting style） |
+| `/use-cases/affiliates` | 联盟客（父页，将链到劳动模型子人设） |
 | `/use-cases/agencies` | 机构 |
-| `/use-cases/creators` | 创作者 |
+| `/use-cases/creators` | 创作者（出镜 / 品牌 deal / UGC） |
 | `/use-cases/dropship` | 代发 |
-| `/use-cases/side-hustlers` | 副业者 **（新增）** |
-| `/use-cases/tiktok-sellers` | TikTok 卖家 |
+| `/use-cases/side-hustlers` | 副业者 |
+| `/use-cases/tiktok-sellers` | TikTok 卖家（Official / Marketing） |
 
 ### TikTok Video Generator（Hub + 15 Vertical）
 

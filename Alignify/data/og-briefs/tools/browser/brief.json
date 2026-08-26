@@ -1,0 +1,36 @@
+{
+  "section": "tools",
+  "slug": "browser",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI browsers — copilot sidebar, agentic browsing, and in-browser task automation",
+  "differentiator_vs_generic": "Browser window with AI copilot sidebar summarizing the active tab, NOT headless remote browser or search-engine results page.",
+  "visual_anchors": [
+    "HERO (~50% canvas): Desktop browser frame with address bar, live webpage content blurred, and right-side AI copilot panel showing user question bubble plus summarized answer with action chips",
+    "Compact multi-step agent ribbon: browse → summarize → click/fill icons linked by torn-paper arrows (blurred labels only)",
+    "2x2 grid of browser task vignettes (research digest, form autofill, tab compare, shopping compare) — UI fragments only",
+    "Magnifying glass zooming on copilot citation chip row beneath assistant answer"
+  ],
+  "anti_patterns": [
+    "Headless browser CDP diagram",
+    "Google SERP ranking list hero",
+    "Generic search bar alone",
+    "Empty browser white page"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI BROWSERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Copilot · Summarize · Automate",
+      "tagline": "Browse the Web With an AI Agent",
+      "composition": "Visual-only collage for AI browser tools comparison: (1) HERO browser frame with webpage plus AI copilot sidebar on right two-thirds. (2) Multi-step agent ribbon (browse, summarize, act) with torn arrows. (3) 2x2 grid of four browsing task UI vignettes. (4) Magnifying glass on copilot citation chips. Title top-left only. Paper collage, halftone. No SERP hero, no headless diagram, no ranking text, no blank cards."
+    },
+    "zh": {
+      "headline": "最佳AI浏览器",
+      "headline_line2": "（2026）",
+      "subtitle": "Copilot · 摘要 · 自动化",
+      "composition": "Same layout as EN: browser + copilot sidebar HERO + agent step ribbon + 2x2 task vignettes + magnifying glass on citations. Title top-left only, NO extra Chinese UI labels, NO SERP or headless hero, NO blank cards."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "3d-modelling",
+  "analyzed_at": "2026-08-24T18:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Professional 3D modelling DCC tools — sculpt, retopo, UV, rigging",
+  "differentiator_vs_generic": "DCC editor viewport with polygon mesh and sculpt brush, NOT automatic text-to-3D prompt cards.",
+  "visual_anchors": [
+    "HERO (~55% canvas): 3D DCC viewport with shaded character mesh, visible edge loops, and active sculpt brush cursor ring",
+    "Before/after split panel: messy AI-generated triangle soup on left vs clean quad topology on right — visual compare only, no text labels",
+    "Mini UV unwrap island preview tile and rig bone skeleton overlay as tertiary accents"
+  ],
+  "anti_patterns": [
+    "Text prompt to 3D magic arrow",
+    "Phone photogrammetry scan",
+    "2D image generator grid",
+    "Generic untextured cube"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST 3D MODELLING TOOLS",
+      "headline_line2": "(2026)",
+      "subtitle": "Sculpt · Retopo · UV · Rigging",
+      "tagline": "Refine AI Meshes for Production",
+      "composition": "Visual-only collage for 3D modelling tools comparison page: (1) HERO DCC viewport with detailed mesh, edge loops, and sculpt brush cursor on right two-thirds. (2) Before/after torn-paper split — chaotic tri mesh left, clean quad topology right. (3) Small UV island preview + faint bone rig overlay. Title top-left. Paper collage, halftone. No prompt cards, no ranking text, no blank panels."
+    },
+    "zh": {
+      "headline": "最佳3D建模工具",
+      "headline_line2": "（2026）",
+      "subtitle": "雕刻 · 重拓扑 · UV",
+      "composition": "Same layout as EN: DCC viewport HERO + before/after topology split + UV/rig accents. Title top-left only, NO extra Chinese UI labels, NO text-to-3D prompt card, NO blank cards."
+    }
+  }
+}

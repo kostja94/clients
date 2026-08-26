@@ -1,0 +1,35 @@
+{
+  "section": "tools",
+  "slug": "image-generator",
+  "analyzed_at": "2026-08-25T06:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "AI image generators — text-to-image and image-to-image creative outputs",
+  "differentiator_vs_generic": "Prompt card with 2x2 distinct AI output grid and magnifying glass on sample, NOT inpaint editor or upscaler before/after.",
+  "visual_anchors": [
+    "HERO: Prompt input card with small generated fox watercolor thumbnail emerging — no readable prompt body text",
+    "2x2 grid of four distinct AI outputs (portrait photo, fox landscape, product bottle, abstract swirl) — images only, no captions",
+    "Hand with magnifying glass over the fox sample"
+  ],
+  "anti_patterns": [
+    "Inpaint lasso editor hero",
+    "Resolution upscaler before/after",
+    "Logo vector marks grid",
+    "Empty prompt card white box"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "BEST AI IMAGE GENERATORS",
+      "headline_line2": "(2026)",
+      "subtitle": "Text-to-Image · Image-to-Image · Style Control",
+      "tagline": "Compare Top Models Side by Side",
+      "composition": "Visual-only collage for AI image generator tools comparison page: (1) One prompt input card with a small generated fox watercolor thumbnail emerging from it — no readable prompt body text. (2) 2x2 grid of four distinct AI outputs (portrait photo, fox landscape, product bottle, abstract swirl) — images only, no captions or category labels. (3) Hand with magnifying glass over the fox sample. Paper torn edges, halftone. No ranking lists, no model name text, no arrow labels, no footer slogans."
+    },
+    "zh": {
+      "headline": "最佳AI图片生成工具",
+      "headline_line2": "（2026）",
+      "subtitle": "文生图 · 图生图",
+      "composition": "Visual-only collage for AI image generator tools comparison page: NO prompt input bar, NO UI window, NO blank card below the headline — title block stays top-left only. (1) 2x2 grid of four AI outputs filling the right two-thirds (portrait, ink landscape, product bottle, abstract art) — pure images, no text labels. (2) Hand with magnifying glass over fox watercolor sample, overlapping the grid lower-left edge. (3) Klein blue torn-paper accents and halftone grain filling any gaps. Entire canvas must be visually filled — zero empty white rectangles or placeholder panels."
+    }
+  }
+}
