@@ -1,0 +1,338 @@
+{
+  "agent-memory": {
+    "zh": {
+      "title": "窗口再大，也替不了记忆层。",
+      "description": "Agent 的质量瓶颈常是「记不住」或「记错了」。选对 Mem0、Zep、Letta 或 IDE harness，比堆 context 更可持续。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "A Million Tokens Won't Replace a Memory Layer.",
+      "description": "Agent quality often fails on recall, not reasoning. Pick Mem0, Zep, Letta, or an IDE harness—more durable than stuffing context.",
+      "cta": "Work with us"
+    }
+  },
+  "agent-sandbox": {
+    "zh": {
+      "title": "Agent 能跑代码了，边界要先画好。",
+      "description": "写 Terminal、调 SaaS 的错误不再是「答错」——是泄露与越权。E2B、Modal、Daytona 帮你选对隔离执行环境。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "Agents Run Code Now. Draw the Boundary First.",
+      "description": "Terminal access and SaaS calls aren't wrong answers—they're leaks and privilege escapes. E2B, Modal, Daytona help you pick the right sandbox.",
+      "cta": "Get help"
+    }
+  },
+  "agent-to-agent": {
+    "zh": {
+      "title": "Agent 也需要「相遇面」。",
+      "description": "Moltbook、Second Me、EigenFlux 在验证 agent-only 社交与广播发现——与企业 A2A 协议、人类社区是不同赛道。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Agents Need Places to Meet, Too.",
+      "description": "Moltbook, Second Me, EigenFlux test agent-only social and broadcast discovery—a different lane from enterprise A2A and human communities.",
+      "cta": "Get started"
+    }
+  },
+  "agentic-commerce": {
+    "zh": {
+      "title": "零售入口正在被 Agent 改写。",
+      "description": "从发现、比价到部分结账——委托预算与发现–交易鸿沟，比堆功能清单更决定 UX。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Retail's Front Door Is Being Rewritten by Agents.",
+      "description": "Discovery, comparison, partial checkout—mandate budgets and the discovery–transaction gap matter more than feature lists.",
+      "cta": "Work with us"
+    }
+  },
+  "agentic-payments": {
+    "zh": {
+      "title": "Agent 代你花钱，协议栈得先对齐。",
+      "description": "AP2 授权、ACP 结账、x402 结算三层配合——工程师视角下，选型比追热点更重要。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "When Agents Spend for You, Align the Protocol Stack.",
+      "description": "AP2 authorization, ACP checkout, x402 settlement—engineers should pick the stack, not chase headlines.",
+      "cta": "Get help"
+    }
+  },
+  "ai-components": {
+    "zh": {
+      "title": "同一款 AI 工具，组件决定第一眼。",
+      "description": "不同的组件 Prompt，输出从「平庸」变成「一眼不一样」。Jiro、21st.dev、shadcn.io 三条供给路线，选对比堆模型更省迭代。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Same AI Builder, Different Components, Different First Impression.",
+      "description": "Component prompts turn generic UI into something unmistakable. Jiro, 21st.dev, shadcn.io—pick the supply route, not another model.",
+      "cta": "Get started"
+    }
+  },
+  "ai-flashcards": {
+    "zh": {
+      "title": "抄笔记是幻觉，主动提取才有效。",
+      "description": "AI 闪卡把 6–10 小时制卡压到分钟级，FSRS 按遗忘曲线安排复习——选对工具比堆资料更重要。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "Highlighting Feels Like Learning. Retrieval Actually Is.",
+      "description": "AI flashcards compress hours of card-making into minutes; FSRS schedules by your forgetting curve—tool choice beats more notes.",
+      "cta": "Get help"
+    }
+  },
+  "ai-language-learning": {
+    "zh": {
+      "title": "口语优先正在改写语言学习。",
+      "description": "Duolingo 市值震荡、Speak 十亿估值——AI 语言学习的分层比「哪个 App 更好」更值得先看清楚。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Speaking-First Is Reshaping Language Learning.",
+      "description": "Duolingo's market swing, Speak's unicorn run—the tiers of AI language learning matter before picking an app.",
+      "cta": "Get started"
+    }
+  },
+  "ai-traffic-and-citation-sources": {
+    "zh": {
+      "title": "四个平台瓜分 AI 引荐流量。",
+      "description": "ChatGPT、Gemini、Perplexity、Claude 各走不同检索机制——GEO 平台组合要先读懂引用来源，再谈内容策略。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Four Platforms Split Almost All AI Referral Traffic.",
+      "description": "ChatGPT, Gemini, Perplexity, Claude each retrieve differently—read citation sources before writing your GEO playbook.",
+      "cta": "Work with us"
+    }
+  },
+  "ai-training-data": {
+    "zh": {
+      "title": "对齐需求把训练数据推上采购清单。",
+      "description": "Scale AI、Surge、Labelbox、Wirestock 分属 Lab、平台与授权市场——Lane 选对，比比价更重要。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "Alignment Needs Are Putting Training Data on the Buy List.",
+      "description": "Scale AI, Surge, Labelbox, Wirestock span lab, platform, and licensed markets—pick the lane before haggling price.",
+      "cta": "Get help"
+    }
+  },
+  "ai-visibility": {
+    "zh": {
+      "title": "AI 答案里没你，就等于不存在。",
+      "description": "用户在 ChatGPT、Perplexity 问「最好用的 XX」——监测提及率与声量份额，是 GEO 的第一块仪表盘。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "If AI Answers Don't Mention You, You Don't Exist.",
+      "description": "Users ask ChatGPT and Perplexity for the best option—mention rate and share of voice are GEO's first dashboard.",
+      "cta": "Get started"
+    }
+  },
+  "cad": {
+    "zh": {
+      "title": "CAD 要可制造，不是只要好看。",
+      "description": "参数建模、工程出图与 BIM 数据——text-to-CAD 与 Copilot 嵌入传统 CAD 是两条选型路径，别与 DCC 展示 mesh 混谈。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "CAD Has to Be Manufacturable, Not Just Pretty.",
+      "description": "Parametric modeling, drawings, BIM—text-to-CAD and Copilot-in-CAD are different paths. Don't confuse them with DCC showcase meshes.",
+      "cta": "Get help"
+    }
+  },
+  "data-engineering-agent": {
+    "zh": {
+      "title": "Pipeline 生成与 Schema 自愈，Agent 正在进场。",
+      "description": "Datus、Databricks Genie、BigQuery DE Agent——数据工程是工具栈里迭代最快的品类，选型看架构与自主级别。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "Agents Are Entering Pipeline Generation and Schema Healing.",
+      "description": "Datus, Databricks Genie, BigQuery DE Agent—data engineering moves fastest; pick by architecture and autonomy level.",
+      "cta": "Get help"
+    }
+  },
+  "git-hosting": {
+    "zh": {
+      "title": "Coding Agent 把 Forge 推到 human-scale 极限。",
+      "description": "Cursor Origin、GitHub Agent HQ、GitLab 下一代 SCM——平台工程要在 mirror、迁移与治理之间选对 Agent-scale 托管。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Coding Agents Are Stress-Testing Human-Scale Forges.",
+      "description": "Cursor Origin, GitHub Agent HQ, GitLab next-gen SCM—platform teams must pick agent-scale hosting across mirror, migration, and governance.",
+      "cta": "Work with us"
+    }
+  },
+  "how-to-add-payments-to-vibe-coded-app": {
+    "zh": {
+      "title": "搭出来了，还要能收钱。",
+      "description": "Payment Processor 与 Merchant of Record 是两条路——vibe coding 产品接入支付，安全与合规不能 vibe 出来。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "You Built It. Now Make It Pay.",
+      "description": "Processor vs Merchant of Record are different roads—payments and compliance for vibe-coded apps can't be vibe-coded.",
+      "cta": "Work with us"
+    }
+  },
+  "inference-infrastructure": {
+    "zh": {
+      "title": "推理基础设施，正在从幕后走到台前。",
+      "description": "Baseten、Together、Fireworks 合计估值超 300 亿美元——部署、扩缩与可观测性，选型比追模型名更重要。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "Inference Infrastructure Is Moving Front and Center.",
+      "description": "Baseten, Together, Fireworks—deploy, scale, observe. Infrastructure choice beats chasing model names.",
+      "cta": "Get help"
+    }
+  },
+  "interior-design": {
+    "zh": {
+      "title": "自住改造，先看清验收标准。",
+      "description": "AI 室内设计面向业主与设计师——与 MLS 虚拟置景的 disclosure 要求不同，别混验收标准。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Renovating for Yourself? Know the Acceptance Bar.",
+      "description": "AI interior design serves owners and designers—different disclosure rules than MLS virtual staging. Don't mix the bars.",
+      "cta": "Get started"
+    }
+  },
+  "medical-scribe": {
+    "zh": {
+      "title": "诊室对话到 SOAP，分钟级完成。",
+      "description": "环境 AI 文书把 EHR 负担压到分钟级——Abridge、DAX、Suki 选型看 EHR 集成与专科深度，不是只看准确率。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Exam Room to SOAP Note in Minutes.",
+      "description": "Ambient scribes shrink EHR burden—pick Abridge, DAX, or Suki by EHR integration and specialty depth, not accuracy alone.",
+      "cta": "Work with us"
+    }
+  },
+  "multi-agent": {
+    "zh": {
+      "title": "复杂任务，单 Agent 上下文不够。",
+      "description": "LangGraph、CrewAI、Copilot Studio 与 Multica 分属框架、企业平台与 Agent 工作空间——先选 Lane，再谈编排细节。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Complex Tasks Outgrow a Single Agent's Context.",
+      "description": "LangGraph, CrewAI, Copilot Studio, Multica—framework, enterprise platform, or agent workspace. Pick the lane before the orchestration details.",
+      "cta": "Work with us"
+    }
+  },
+  "watermark-growth": {
+    "zh": {
+      "title": "免费带标换曝光，但要算清楚账。",
+      "description": "Runway、HeyGen、ElevenLabs 的 export 水印是慢渗透增长——付费去标定价与 EU AI Act 双轨，五步再决定是否上 visible logo。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Free Exports with a Logo—Run the Numbers First.",
+      "description": "Runway, HeyGen, ElevenLabs use export watermarks for slow exposure—price remove-brand SKUs and EU AI Act rails before flipping the switch.",
+      "cta": "Work with us"
+    }
+  },
+  "web-fetch": {
+    "zh": {
+      "title": "LLM 不擅长读 HTML，Fetch 管道先清洗。",
+      "description": "Jina Reader、Firecrawl、Crawl4AI 把任意 URL 变成干净 Markdown——token 通常省 60–98%，Agent/RAG 选型从这里开始。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "LLMs Can't Read HTML. Clean It First.",
+      "description": "Jina Reader, Firecrawl, Crawl4AI turn any URL into clean Markdown—often 60–98% fewer tokens. Start agent/RAG picks here.",
+      "cta": "Get help"
+    }
+  },
+  "growth-case-studies": {
+    "zh": {
+      "title": "案例读成实验清单，不是收藏夹。",
+      "description": "Copy.ai、Heygen、Perplexity、Deel 的增长故事——五步框架把 founder 访谈变成可复用的假设。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Turn Case Studies into Experiments, Not Bookmarks.",
+      "description": "Copy.ai, Heygen, Perplexity, Deel—use a five-step frame to convert founder stories into testable hypotheses.",
+      "cta": "Get started"
+    }
+  },
+  "hr-assistant": {
+    "zh": {
+      "title": "HR 重复工单，AI 先答再升级。",
+      "description": "年假、福利、请假政策用自然语言自助——Wisq、Leena、Moveworks 选型看集成深度与合规护栏。",
+      "cta": "获取帮助"
+    },
+    "en": {
+      "title": "Let AI Answer HR Tickets Before Humans Do.",
+      "description": "PTO, benefits, leave policies in plain language—pick Wisq, Leena, or Moveworks by integration depth and compliance guardrails.",
+      "cta": "Get help"
+    }
+  },
+  "short-drama": {
+    "zh": {
+      "title": "5 人团队，3 周做完传统 2 个月的量。",
+      "description": "AI 短剧从剧本到分镜到续写——平台选型看产能链路，不是只看单个生成能力。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Five People, Three Weeks, Two Months of Output.",
+      "description": "AI short drama from script to storyboard to sequels—pick platforms by production chain, not one generation trick.",
+      "cta": "Get started"
+    }
+  },
+  "founder-park-2024-11-06": {
+    "zh": {
+      "title": "全球化增长飞轮，从 SEO 开始转。",
+      "description": "AI 时代 SEO 仍是复利渠道——技术坑规避、与其他增长渠道叠加，是这场分享的核心 takeaway。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "The Global Growth Flywheel Starts with SEO.",
+      "description": "SEO still compounds in the AI era—avoid the technical traps, then stack other channels on top.",
+      "cta": "Get started"
+    }
+  },
+  "linkloud-2025-02-23": {
+    "zh": {
+      "title": "增长指标对了，商业化才接得上。",
+      "description": "Linkloud 2 月活动：产品定位、pSEO、多语种——AI/SaaS 创业者把案例读成自己的实验假设。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "Get the Metrics Right, Then Monetize.",
+      "description": "Linkloud Feb session—positioning, pSEO, multilingual growth. Turn the cases into your own hypotheses.",
+      "cta": "Work with us"
+    }
+  },
+  "linkloud-2026-01-24": {
+    "zh": {
+      "title": "AI 与全球化，增长要一起设计。",
+      "description": "产品定位、多语种本地化、流量获取——2026 年 1 月 Linkloud 的方法论，适合增长负责人当场对照。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "AI and Global Growth Need One Design.",
+      "description": "Positioning, multilingual localization, acquisition—Linkloud Jan 2026 methods for growth leads to stress-test live.",
+      "cta": "Get started"
+    }
+  },
+  "praxis-2025-09-27": {
+    "zh": {
+      "title": "GEO 不是 SEO 换个名字。",
+      "description": "Generative Engine Optimization 有自己的原理与检测方法——让内容在 AI 搜索时代被引用，而不是只被收录。",
+      "cta": "开始合作"
+    },
+    "en": {
+      "title": "GEO Isn't SEO with a New Label.",
+      "description": "Generative Engine Optimization has its own mechanics and measurement—get cited in AI answers, not just indexed.",
+      "cta": "Get started"
+    }
+  }
+}

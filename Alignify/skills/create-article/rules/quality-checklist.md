@@ -23,6 +23,7 @@
 ```bash
 npm run verify:content-json
 npm run build
+node ../../clients/Alignify/scripts/ops/merge-cta-slugs.mjs --check
 node ../../clients/Alignify/scripts/ops/audit-tools-meta-titles.mjs
 node ../../clients/Alignify/scripts/ops/check-tools-en-content.mjs
 python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --source both --locale both --violations-only

@@ -101,6 +101,19 @@
 
 路由型 spoke（`video`、`filmmaking`、`animation-generator` 等）职责是**路由而非总结**，允许短于 180 字下限，但不得低于 **100 字 / 80 词**，且必须包含「选型分流 + 相邻环节」两个实质点。
 
+## 2.4 时效核对句（策略 / 事件文）
+
+涉及厂商政策、限额、Attribution 默认、定价的案例文，**可以**提醒读者核对官方源，但须遵守 [`presentation.md`](./presentation.md) **E42**：
+
+- **禁止**在 `#conclusion` **之后**或结论 section **内单独成段**写「政策随产品更新；请核对 FAQ / Changelog / Usage 页」
+- **须**并入结论**最后一段**末句，与 actionable 收束同段
+
+**中文示例（并入末句）**：「…比硬凑一个空 wrap 更安全；政策与案例随产品更新，launch 前请核对各官方 FAQ 与 Changelog。」
+
+**英文示例**：「…rather than forcing an empty wrap—policies and case details change by vendor, so verify official FAQ and changelogs before you ship.」
+
+**禁止**结论只有套话核对句、无论证收束。
+
 ## 2.4 内容要求
 
 - **总结核心观点**：不引入新信息，只归纳正文要点

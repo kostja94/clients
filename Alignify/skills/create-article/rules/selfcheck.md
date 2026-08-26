@@ -25,7 +25,7 @@
 | 2 | **Fact / E-E-A-T** | Source Map 完整；P0 数字有来源（E1–E6） |
 | 3 | **Differentiation** | Moat 在正文兑现；Synthesis 非 paraphrase |
 | 4 | **Depth** | 主体节覆盖 Brief；**若**有 FAQ 则 7 问独立（非复制） |
-| 5 | **Presentation** | BLUF 三处；长段≥3；伪列表 0；见 `presentation.md` |
+| 5 | **Presentation** | BLUF 三处（H2 首段 ≥3 句）；长段≥3；伪列表 0；**E40–E42 Pass**（`audit-marketing-md-render.py`）；见 `presentation.md` |
 | 6 | **Writing / Voice** | 术语统一；无 hype 套话 |
 | 7 | **Objectivity** | Tools：≥1 竞品优势 + ≥1 非榜首场景 |
 | 8 | **Structure / Links** | 内链自然嵌入任务句；同 URL 1 次；Hub/Spoke 合规；A 层结构 |

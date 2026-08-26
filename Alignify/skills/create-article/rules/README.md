@@ -11,6 +11,7 @@
 | Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) |
 | Step 05–06 成稿 | [`presentation.md`](./presentation.md) · [`extractability-checklist.md`](./extractability-checklist.md) |
 | Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md) · [`marketing-internal-links.md`](./marketing-internal-links.md) · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
+| Step 08 注册 | [`meta.md`](./meta.md) · [`final-cta.md`](./final-cta.md) |
 | Step 10 自审 | [`selfcheck.md`](./selfcheck.md) · [`quality-checklist.md`](./quality-checklist.md) · [`common-errors.md`](./common-errors.md) |
 | 终审 | [`../../audit-article/SKILL.md`](../../audit-article/SKILL.md) · [`perfect-article-checklist.md`](./perfect-article-checklist.md)（S 级） |
 | 同批 ≥2 篇 | [`outline-cross-check.md`](./outline-cross-check.md) · [`cross-article-audit.md`](./cross-article-audit.md) |
@@ -48,13 +49,14 @@
 | [anatomy.md](./anatomy.md) | 内容优先 + 参考菜单（§四·一 childrenHtml · **E35**） |
 | [article-types.md](./article-types.md) | 类型 / 新文 `/blog` vs 存量路径 |
 | [meta.md](./meta.md) | Meta 四要素 |
+| [final-cta.md](./final-cta.md) | 页底 SecondaryCta · `cta-config.json` |
 | [word-counts.md](./word-counts.md) | 字数底线 |
 | [consistency.md](./consistency.md) | 跨页一致性 |
 | [conclusion.md](./conclusion.md) | 结论（含内链 0–2） |
 | [internal-links.md](./internal-links.md) | 内链 SSOT（Part 1–2 优先读） |
 | [marketing-internal-links.md](./marketing-internal-links.md) | Marketing M1–M11 |
 | [quality-checklist.md](./quality-checklist.md) | P0/P1 汇总 |
-| [common-errors.md](./common-errors.md) | 常见错误 E1–E39 |
+| [common-errors.md](./common-errors.md) | 常见错误 E1–E42 |
 
 ## 章节规范（sections/）
 

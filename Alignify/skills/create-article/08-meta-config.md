@@ -1,7 +1,7 @@
-# Step 8 — Meta + Config 注册
+# Step 8 — Meta + Config + Final CTA 注册
 
-> **规范**：[`rules/meta.md`](./rules/meta.md)  
-> **部署仓**：`src/data/*-meta.ts` · `*-pages-config.ts` · `*-article-images.ts`
+> **规范**：[`rules/meta.md`](./rules/meta.md) · [`rules/final-cta.md`](./rules/final-cta.md)  
+> **部署仓**：`src/data/*-meta.ts` · `*-pages-config.ts` · `*-article-images.ts` · **`src/data/cta-config.json`**
 
 ---
 
@@ -58,12 +58,40 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --check YYYY-MM-DD
 
 ---
 
+## Final CTA（页底 SecondaryCta）
+
+与 meta **同批**写入 `src/data/cta-config.json` → `slugs.{slug}`：
+
+```json
+"{slug}": {
+  "zh": {
+    "title": "一句 punchline（Brief Final CTA 草案）",
+    "description": "1–2 句，承接结论或 Author POV",
+    "cta": "开始合作"
+  },
+  "en": {
+    "title": "English punchline (draft OK; finalize after Step 09)",
+    "description": "1–2 sentences tied to EN conclusion",
+    "cta": "Work with us"
+  }
+}
+```
+
+- Brief **Step 02** 须含 **Final CTA** 四字段（见 [`rules/article-brief.md`](./rules/article-brief.md)）
+- Step 09 EN 完稿后更新 `en.title` / `en.description`
+- 验收：`node E:\clients\Alignify\scripts\ops\merge-cta-slugs.mjs --check` → `Missing: 0`
+
+细则：[`rules/final-cta.md`](./rules/final-cta.md)
+
+---
+
 ## 检查
 
 - [ ] Meta title/description 符合 [`rules/meta.md`](./rules/meta.md)
 - [ ] **新 slug**：`next-publish-date.mjs --check` Pass；publishDate 全站唯一
 - [ ] **改版 slug**：publishDate 未改；modifiedDate = 锚定日
 - [ ] `*-pages-config.ts` 已注册
+- [ ] **`cta-config.json`** 已注册 `slugs.{slug}`（ZH + EN；非 fallback）
 - [ ] frontmatter `pageUrl` 与频道一致
 - [ ] sitemap 自动从 config 生成，无需手改
 

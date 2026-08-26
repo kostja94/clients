@@ -68,6 +68,10 @@
 | E37 | 伪列表 / 碎片段（`**第一，**` + 单句 × N；全文缺长段） | 违反 [`presentation.md`](./presentation.md) §段落优先；SelfCheck 维度 5 Fail |
 | E38 | 策略文 HTML 表格过多（全文 ≥6 张且无 Brief 豁免） | 案例改 prose；仅保留术语别名 / 决策矩阵 / 合规对照等**必表**；见 [`templates/marketing.md`](./templates/marketing.md) §5.1 |
 | E39 | `git commit attribution` 译成「Git 提交归因 / 提交归因」 | 用 **AI 提交署名**；见 `terminology-glossary.md` §六 · `marketing-glossary.json` |
+| E40 | 表前桥接过短或行末冒号引表 | `childrenHtml` 紧上一段须 **≥3 句**且**不以** `：`/`:` 结尾；见 [`presentation.md`](./presentation.md) §表格邻接 |
+| E41 | 孤立标签行（`**标签：**` 单独成段） | 标签与正文**同段**；见 `presentation.md` §E41 |
+| E42 | 单句独立段过多、套话免责声明独段、表后单句 | **blog 策略文**：全文单句段 **≤2**；**任何文**：免责声明须并入结论末句；**表后**禁止仅 1 句展开；见 `presentation.md` §单句段预算 |
+| E43 | 页底 Final CTA 落入 fallback 通用文案 | 新 slug **Step 08** 必写 `cta-config.json` → `slugs.{slug}`（ZH+EN）；Brief 含 Final CTA 四字段；跑 `merge-cta-slugs.mjs --check`；见 `final-cta.md` |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |
@@ -87,4 +91,4 @@
 
 ---
 
-*common-errors · v3.1 · 2026-08-26*
+*common-errors · v3.2 · 2026-08-27*

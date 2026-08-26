@@ -207,7 +207,13 @@ heroContent={
 
 ### 4.2b 策略适用性节（campaign / GTM 专题）
 
-当题材回答「什么产品该用这个营销策略」时，正文须设独立 H2（如「哪些产品适合…」），含 **go / no-go 决策矩阵** + 按产品形态的分流建议。目标读者为 founder 时，案例节优先 **AI / Agent** 垂直，不必铺全量 C 端（音乐、外卖等）案例表。
+当题材回答「什么产品该用这个营销策略」时，正文须设独立 H2（如「哪些产品适合…」），含 **go / no-go 决策矩阵** + **按产品形态的分流**——二者均用 **prose** 表达，遵守 [`presentation.md`](../presentation.md) **生成顺序协议**：
+
+1. H2 首段 BLUF **≥3 句**（含为何要做 go/no-go，末句自然引出矩阵表，**禁止**「…如下：」独段）
+2. `childrenHtml` 决策矩阵表
+3. 表后 **≥2 句** prose 写形态分流（Cursor / Lovable / 垂直 copilot 等写在**同一段或连续长段**，**禁止**表后单句案例收尾）
+
+目标读者为 founder 时，案例节优先 **AI / Agent** 垂直，不必铺全量 C 端（音乐、外卖等）案例表。
 
 ### 4.3 正文章节（方法论、步骤、框架）
 
@@ -261,7 +267,8 @@ heroContent={
 | **意图映射** | 先诊断搜索意图：informational vs transactional；内容与意图匹配 |
 | **E-E-A-T** | 展示 Expertise、Experience、Authoritativeness、Trust；数据和引用可增强可信度 |
 | **内容分块** | 每 major H2 为独立可回答块：**首段 BLUF（≥3 句 prose）** → 展开分析 → **按需**列表/表格（非默认堆结构） |
-| **段落优先** | 全文 **≥3 处长段（≥4 句）**；连续短段（≤2 句）**≤2 处**；禁 `**第一，**` + 单句 × N（E37） |
+| **生成顺序** | 见 [`presentation.md`](../presentation.md) §生成顺序协议 — **先写 BLUF，再 childrenHtml，再表后长段**；禁止表前冒号桥接 |
+| **段落优先** | 全文 **≥3 处长段（≥4 句）**；连续短段（≤2 句）**≤2 处**；单句独立段 **≤2 处**（E42）；禁 `**第一，**` + 单句 × N（E37） |
 | **表格预算** | 策略/GTM 长文默认 **≤5 张** HTML 表；≥6 须 Brief 说明「必表理由」；案例数据优先 **prose**（E38） |
 | **TOC** | 长文可加目录（Table of Contents） |
 | **关键词布局** | 自然融入，避免堆砌；Title、H1、intro、H2 含核心词 |
@@ -279,6 +286,18 @@ heroContent={
 | 合规义务清单（FTC 行项） | 单行流程箭头链（勿用 `` ``` ``） |
 
 **范例**：`rate-limit-reset`（长段 + 少量必表）· `keyword-research`（方法论表 + How To prose）
+
+### 5.2 禁止呈现债（生成时 Gate · E40–E42）
+
+| 债类型 | 典型坏例 | 正确做法 |
+|--------|----------|----------|
+| 表前冒号桥接 | 「…载体完全不同：」+ 表 | 扩成 ≥3 句 BLUF，末句「…对照见下表。」 |
+| 孤立标签 | `**按 AI 产品形态：**` 单独一行 | `矩阵过关后，我会再按 AI 产品形态分流：…` |
+| 表后单句 | 表 + 「Lovable 分轨：…」一句结束 | 表后 ≥2 句，含判断与 founder 建议 |
+| 套话免责声明 | 结论后另起一段「请核对 FAQ…」 | 并入结论最后一段末句（`conclusion.md` §2.4） |
+| 列表改 prose 残留 | 删 `<ul>` 留标签行 | Step 06 专门扫 E41 |
+
+**送审前必跑**：`audit-marketing-md-render.py` — E40–E42 **Fail 即不可 audit-ready**。
 
 ---
 
@@ -385,6 +404,7 @@ import { addUtmToExternalLink, getExternalLinkRel } from "@/lib/utils";
 - ❌ blog md 用 GFM 表格或 Markdown 列表（须 `childrenHtml`；E33–E35）
 - ❌ blog md 用 Markdown fenced code `` ``` ``（须 prose 或 `<pre><code>`；E36）
 - ❌ 伪列表 / 全文碎片短段（E37；须过 [`presentation.md`](../presentation.md)）
+- ❌ 表前冒号桥接 / 孤立标签 / 单句段超标（E40–E42；须跑 `audit-marketing-md-render.py`）
 - ❌ 策略文 HTML 表 ≥6 且无 Brief 豁免（E38）
 - ❌ `childrenHtml` 内 legacy `<h3 class="text-lg…">` / `<p class="text-base md:text-lg…">`（E35）
 - ❌ BlogLayout 缺失（存量 TSX 页）
