@@ -60,7 +60,7 @@
     ↓
 audit-article — Final ≥80 → publish-ready
     ↓
-11 publishDate
+11 publishDate — 全站唯一日历日 → [`11-publish-dates.md`](./11-publish-dates.md) + `scripts/ops/next-publish-date.mjs`
 OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [`../ops/og-covers.md`](../ops/og-covers.md)
 （12 legacy modifiedDate）
 ```
@@ -126,6 +126,8 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ Gate 未 Pass 交付 · ❌ 跳过 Step 02 Research · ❌ 无 Moat 动笔 · ❌ FAQ 复制正文  
 - ❌ 自审后直接发布（须 audit-article）· ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章
+- ❌ **新 slug** publishDate 与全站已有 slug 重复（须 `next-publish-date.mjs --check`）
+- ❌ 把 skill 示例日期当「今天」——以执行 Step 08/11 的实际 UTC+8 日历日为准
 
 ---
 

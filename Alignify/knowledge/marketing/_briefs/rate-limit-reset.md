@@ -16,3 +16,5 @@
 3. Tibo/X 发布节奏作为跟踪信号（非权威源）
 
 **Built**: 2026-08-26 — ZH/EN md + tldr/faq/references JSON + OG en/zh
+
+**日期**：改版 slug — `publishDate`/`date` 保持 **2026-07-16**；`modifiedDate`/`updated` = **2026-08-26**（锚定日）。新 slug 须跑 `next-publish-date.mjs` 取全站唯一 publishDate。

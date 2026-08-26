@@ -1,6 +1,6 @@
 # Scripts
 
-可执行脚本集中在此目录。**部署仓库** `alignify-by-kostja/` 仅保留 IndexNow 相关脚本；其余运维、审计、内容检查脚本均在此。
+可执行脚本集中在此目录。**创作规范**已迁至 [`skills/create-article/`](../skills/create-article/SKILL.md)。
 
 ## 目录结构
 
@@ -49,7 +49,7 @@ node ../../clients/Alignify/scripts/ops/check-deploy.mjs
 | `audit-product-urls.mjs` | **已迁至** `C:\Users\zyjst\Downloads\alignify-product-url-audit\` |
 | `apply-product-url-fixes.py` | **已迁至** 同上 `scripts/` |
 | `audit-tools-internal-links.py` | Tools + Blog（`routeCategory: tools`）内链合规；`--source tools\|blog\|both` |
-| `audit-md-internal-links.py` | **Markdown 版全站内链快照**：扫描 `content/**/*.md`，输出 JSON 报告（`scripts/reports/`）与文档（`content/alignify-internal-links-status.md`） |
+| `audit-md-internal-links.py` | **Markdown 版全站内链快照**：扫描 `content/**/*.md`，输出 JSON 报告（`scripts/reports/`）与文档（`scripts/reports/md-internal-links-status-*.json`） |
 | `audit-internal-href-registry.py` | **R0** 无效 slug / 错误 `/tools` vs `/blog` 路由（404 阻断） |
 | `audit-link-distribution.py` | 每页区块分布、FAQ 堆链、单区块过稀疏 |
 | `run-tools-internal-links-baseline.py` | 一键 baseline（internal-links + anchor + cross-page） |
@@ -58,7 +58,7 @@ node ../../clients/Alignify/scripts/ops/check-deploy.mjs
 | `audit-cross-page-links.py` | 跨页链接图（合并 EN+ZH）：孤页、入链<3、PageRank |
 | `audit-anchor-text-diversity.py` | 锚文本多样性 |
 | `audit-article-optimization.py` | 文章 vs knowledgehub 优化信号（自 `public/` 迁入） |
-| `file-inventory-audit.py` | 部署仓库文件清单审计（报告见 `technical/file-inventory-audit.md`） |
+| `file-inventory-audit.py` | 部署仓库文件清单审计 |
 | `sync-skills-catalog.py` | 生成 `src/data/skills-catalog.json`（在部署仓库运行，脚本存于此） |
 | `check_urls.py` | URL 可访问性批量检查（旧版硬编码列表，建议改用 `audit-product-urls.mjs`） |
 | `validate-tools-llm-json-links.mjs` | Tools LLM JSON 链接验证 |
@@ -93,10 +93,15 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 | `generate-registry-from-audit.py` | 从审计 JSON 生成/合并 `tools-screenshot-registry.json` |
 | `screenshot-customer-products.py` | 客户故事精选产品截图 |
 | `screenshot-social-cards.py` | Social Cards 工具页截图 + JSON 更新 |
+| `generate-og-cover.py` | fal GPT Image 2 生成 OG → **默认直写部署仓** `public/`（`--to-staging` 仅预览） |
+| `batch-generate-og-covers.py` | 批量生图；`--workers 8` 并行（对齐 fal 并发）；`--skip-existing` 断点续跑 |
+| `migrate-og-covers.py` | 历史 staging → deploy **move**（非 copy）+ 可选注册 `OG_LOCALE_READY` |
+| `audit-og-coverage.mjs` | deploy OG 覆盖审计（`--staging` 查遗留副本） |
+| `next-publish-date.mjs` | **新 slug** 分配全站唯一 `publishDate`（`--check` / `--from` / `--list`） |
 | `audit-alt-text.mjs` | BestTools / HTML 图片 alt 质量审计 |
 | `screenshot-tools-images.py` | **已废弃** — 仅 12 条硬编码 backlog，请用 `screenshot-tools-products.py` |
 
-规范见 `content/sections/section-best-tools.md` §5.1–5.3。
+规范见 `skills/create-article/rules/sections/best-tools.md` §5.1–5.3。
 
 #### 产品 URL 审计
 
@@ -106,15 +111,10 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 
 ### ref/
 
-一次性修复脚本，包括自部署仓库 `public/` 迁入的：
+可重复使用的维护脚本：
 
-- `fix-format-mismatches.py`
-- `fix-fullpage-screenshots.py`
-
-以及历史归档：`final_supplement.py`、`fix_all_dupes.py`、`sync_en_zh_links.py` 等。
-
-### 根目录其他文件
-
-| 文件 | 说明 |
+| 脚本 | 用途 |
 |------|------|
-| `skills-lock.json` | Cursor
+| `fix-rules-section-links.py` | 修复 `skills/create-article/rules/` 内 `../section/` 等断链 |
+
+历史一次性脚本（已归档或移除）：`migrate-doc-paths.py`、`fix-format-mismatches.py`、`fix-fullpage-screenshots.py` 等。
