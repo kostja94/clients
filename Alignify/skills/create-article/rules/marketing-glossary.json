@@ -1,0 +1,48 @@
+{
+  "policy": "chinese_first_in_zh_body — 叙述用中文主称；keep_english 仅保留行业/产品固定写法",
+  "keep_english": [
+    "Codex",
+    "ChatGPT",
+    "Claude",
+    "Copilot",
+    "Cursor",
+    "Credits",
+    "CLI",
+    "Agent",
+    "IDE",
+    "API",
+    "Pro",
+    "Plus",
+    "GitHub",
+    "OpenAI",
+    "Anthropic",
+    "banked reset",
+    "Usage"
+  ],
+  "localize_required": {
+    "usage limits reset": "用量限额重置",
+    "usage limit reset": "用量限额重置",
+    "rate-limit reset": "用量限额重置",
+    "dual time-window": "双时间窗限额",
+    "global reset": "全员重置",
+    "compensation reset": "补偿性重置",
+    "natural reset": "自然滚动刷新",
+    "constraint-to-conversion": "触顶后的付费转化率",
+    "K-factor": "病毒系数（K-factor）",
+    "land-grab": "抢用户窗口期",
+    "workflow embed": "工作流嵌入",
+    "metered overflow": "按量溢出计费"
+  },
+  "forbidden_in_zh": [
+    "该 X 用于",
+    "与 X 同构",
+    "campaign 性",
+    "留人",
+    "抢份额"
+  ],
+  "forbidden_in_en": [
+    "→",
+    "land-grab moat",
+    "same as ZH sentence count"
+  ]
+}

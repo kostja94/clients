@@ -26,6 +26,10 @@
 **Moat Asset**（≥1，Alignify 独有增量）:
   1. …
 
+**Author POV**（Marketing/Blog 必填，1–3 条可证伪判断；正文须第一人称兑现）:
+  1. …
+  **Voice**: Kostja 第一人称 | 编辑部（Insights 可选）
+
 **Answer Blocks**（3–5，各对应一个 major H2）:
   1. {block-id} — …
   2. …
@@ -50,6 +54,7 @@
 | 字段 | 要求 |
 |------|------|
 | Moat Asset | ≥1 项；正文必须兑现（Step 10 / audit 复核） |
+| Author POV | Marketing/Blog ≥1 条；正文第一人称显式写出（见 `presentation.md`） |
 | Answer Blocks | 3–5 个；Outline 中每个有对应 H2 |
 | One-line thesis | 通过「SERP 同句测试」 |
 | SuccessMetric | 可量化（排名、CTR、内链点击、转化路径之一） |

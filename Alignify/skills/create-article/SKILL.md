@@ -128,6 +128,9 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章
 - ❌ **新 slug** publishDate 与全站已有 slug 重复（须 `next-publish-date.mjs --check`）
 - ❌ 把 skill 示例日期当「今天」——以执行 Step 08/11 的实际 UTC+8 日历日为准
+- ❌ References 收录与本文类似的第三方策略文；策略/Blog 文仅 **事件相关**引用（`sections/references.md` §3.2）
+- ❌ 中文英译腔 / 英文逐句翻译 ZH（须 `localization-quality.md` Pass）
+- ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV**）
 
 ---
 

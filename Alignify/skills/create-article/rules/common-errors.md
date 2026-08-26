@@ -56,6 +56,10 @@
 | E20 | publishDate 被修改 | 已上线 slug 的 publishDate 永不改 |
 | E26 | 新 slug publishDate 与已有 slug 同日 | 跑 `next-publish-date.mjs --check`；全站 `*-meta.ts` 日历日唯一 |
 | E27 | 标题行使用空锚点 `{#}` | 须写 `{#kebab-id}` 或省略；空 `{#}` 会泄漏到线上标题 |
+| E28 | References 含同题第三方策略文或对照用 docs | 策略/Blog 文 References 仅 **事件一手（A）+ 事件报道（B）**；类型 C 正文内链；类型 D 禁止；见 `sections/references.md` §3.2 |
+| E29 | 中文英译腔 / 箭头链正文 | Step 06：`localization-quality.md` + `marketing-glossary.json` |
+| E30 | 英文翻译腔 / telegraphic | Step 09b：禁止逐句译 ZH；改完整句 |
+| E31 | Marketing/Blog 缺 Author POV | Brief 必填；正文第一人称判断须显式出现 |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |
@@ -75,4 +79,4 @@
 
 ---
 
-*common-errors · v3.0 · 2026-08-23*
+*common-errors · v3.1 · 2026-08-26*

@@ -11,6 +11,7 @@
 npm run verify:content-json
 npm run build
 node ../../clients/Alignify/scripts/ops/next-publish-date.mjs --check YYYY-MM-DD   # 新 slug 必跑
+python ../../clients/Alignify/scripts/audit/audit-locale-voice.py --slug {slug} --channel blog   # Marketing/Blog 必跑
 node ../../clients/Alignify/scripts/ops/audit-tools-meta-titles.mjs
 node ../../clients/Alignify/scripts/ops/check-tools-en-content.mjs
 python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --source both --locale both --violations-only
