@@ -11,10 +11,8 @@
 
 **Author POV**: Kostja 第一人称；默认 on 的 co-author 附带品牌渗透，不应与 Powered-by Badge 的 quantified ROI 混谈；Copilot revert 是 trust > growth 的 industry signal；Enterprise 应默认 off + PR 披露，合规优先 Assisted-by。
 
-**姊妹篇（已上线）**: `/blog/rate-limit-reset`、`/blog/coding-plan`  
-**未上线（正文可提、禁止内链）**: embedded-virality、OSS 维护者计划等
-
-**未上线（正文可提、禁止内链）**: embedded-virality、OSS 维护者计划等  
+**姊妹篇（已上线）**: `/blog/rate-limit-reset`、`/blog/coding-plan`、`/blog/embedded-virality`  
+**未上线（正文可提、禁止内链）**: OSS 维护者计划、platform-subdomain 等  
 **发布批次**: 与 embedded-virality **不同批**；ZH/EN **均为 flagship 质量**（EN 独立重写，非降格翻译）
 
 **Planned optional sections**（内容驱动，Step 02 可调整）:

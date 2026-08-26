@@ -12953,6 +12953,59 @@
       ],
       "status": "pending",
       "notes": "LLM brief 2026-08-27"
+    },
+    {
+      "section": "blog",
+      "slug": "embedded-virality",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "POWERED-BY BADGE",
+      "headline_line2": "(2026)",
+      "subtitle": "Free with Branding",
+      "tagline": "Pay to Remove · AI Builders",
+      "composition": "Visual-only editorial collage for embedded virality / powered-by badge guide. HERO: live app footer with Edit-with badge + chat widget powered-by strip occupying right two-thirds. Secondary: Free vs Pro pricing tear-out — badge ON vs crossed out. Tertiary: form footer Made-with chip with click arrow. Title block top-left only. Paper collage torn edges, halftone. NO real Lovable/Typeform logos, NO referral dashboard, NO git commit UI.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55% canvas): Published web app footer mockup with generic 'Edit with [Product]' pill badge + fork arrow; adjacent chat widget bubble with small 'Powered by' strip",
+        "Secondary: Free vs Pro pricing tear-out — Free tier badge ON, Pro tier badge crossed with unlock icon",
+        "Tertiary: Tally-style form footer fragment with minimal 'Made with' badge chip and signup arrow"
+      ],
+      "anti_patterns": [
+        "Generic viral loop without badge/footer UI",
+        "Real Lovable/Typeform/Tally logos",
+        "Referral program dashboard",
+        "Git commit co-author UI",
+        "SERP or SEO imagery"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-30 — embedded virality AI builders"
+    },
+    {
+      "section": "blog",
+      "slug": "embedded-virality",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "Powered-by Badge",
+      "headline_line2": "与付费去标",
+      "subtitle": "AI 产品嵌入式传播",
+      "composition": "Same layout as EN: app footer Edit-with badge HERO + widget powered-by strip + Free/Pro tear-out + form footer chip. Title top-left Chinese headline. NO vendor logos. NO git commit UI. NO blank cards.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55% canvas): Published web app footer mockup with generic Edit-with badge + chat widget powered-by strip",
+        "Secondary: Free vs Pro pricing tear-out — badge ON vs crossed out",
+        "Tertiary: form footer Made-with chip with signup arrow"
+      ],
+      "anti_patterns": [
+        "Generic viral loop without badge/footer UI",
+        "Real Lovable/Typeform/Tally logos",
+        "Referral program dashboard",
+        "Git commit co-author UI",
+        "SERP or SEO imagery"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-30 — embedded virality AI builders"
     }
   ]
 }

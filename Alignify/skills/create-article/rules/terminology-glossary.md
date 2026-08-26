@@ -189,4 +189,4 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态。
 | `rate-limit-reset` | 用量限额重置 | 无 TL;DR/FAQ 范例之一 |
 | `coding-plan` | Coding Plan 开发者订阅 | 同上 |
 | `git-commit-attribution` | **AI 提交署名** | 勿用「Git 提交归因」 |
-| `embedded-virality`（规划） | 嵌入式病毒传播 | 未上线 |
+| `embedded-virality` | **Powered-by Badge 与付费去标** | H1/正文主称；框架名 embedded virality 正文解释一次 |

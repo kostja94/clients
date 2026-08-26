@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "embedded-virality",
+  "analyzed_at": "2026-08-30T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Powered-by badge and pay-to-remove branding for AI products — embedded virality, 2026 builder and agent widget cases, Tally metrics, Oginify/Alignify carrier choice",
+  "differentiator_vs_generic": "AI vibe-coding builder footers (Edit with / Made in) + chat widget Powered-by badges + pay-to-remove pricing axis — NOT generic viral marketing or referral program hero.",
+  "visual_anchors": [
+    "HERO (~55% canvas): Published web app footer mockup with 'Edit with [Product]' pill badge + fork arrow; adjacent chat widget bubble with small 'Powered by' strip at bottom",
+    "Secondary: Free vs Pro pricing tear-out — Free tier shows badge ON, Pro tier shows badge crossed out with unlock icon",
+    "Tertiary: Tally-style form footer fragment with minimal 'Made with' badge chip and click-through arrow to signup"
+  ],
+  "anti_patterns": [
+    "Generic viral loop infographic without badge/footer UI",
+    "Real Lovable/Typeform/Tally logos — use generic mockups only",
+    "Referral program dashboard (different article)",
+    "Git commit co-author UI (git-commit-attribution article)",
+    "SERP or SEO imagery"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "POWERED-BY BADGE",
+      "headline_line2": "(2026)",
+      "subtitle": "Free with Branding",
+      "tagline": "Pay to Remove · AI Builders",
+      "composition": "Visual-only editorial collage for embedded virality / powered-by badge guide. HERO: live app footer with Edit-with badge + chat widget powered-by strip. Secondary: Free vs Pro pricing tear-out (badge on/off). Tertiary: form footer Made-with chip. Title top-left. Paper collage. NO real vendor logos."
+    },
+    "zh": {
+      "headline": "Powered-by Badge",
+      "headline_line2": "与付费去标",
+      "subtitle": "AI 产品嵌入式传播",
+      "composition": "Same layout as EN: app footer badge HERO + widget strip + Free/Pro tear-out + form footer chip. Title top-left Chinese headline. NO vendor logos. NO git commit UI."
+    }
+  }
+}
