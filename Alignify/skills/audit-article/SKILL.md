@@ -48,10 +48,10 @@ retro-audit（季度 / 重大变更）
 按 Alignify audit-article skill 终审：
 - ZH：content/{channel}/zh/{slug}.md
 - EN：content/{channel}/en/{slug}.md
-- articleType：{type}
 - Primary keyword：{kw}
 - SelfCheck：12/12 + H0–H4 Pass
 - Brief Moat：{一行}
+- 预检：audit-marketing-md-render.py --slug {slug} 全量 blog Pass 后才开始打分
 ```
 
 **Retro 模式**：

@@ -65,7 +65,7 @@
 | E34 | blog md 使用 Markdown 列表（`-` / `1.`） | 须 `childrenHtml` + `<ul>` / `<ol class="list-disc…">`；见 `anatomy.md` §四·一 |
 | E35 | `childrenHtml` / `html-block` 内 inline Tailwind（`text-base md:text-lg`、`grid grid-cols-*`、`bg-card` 等） | 仅用 `content-html` + `article-*` 语义 class；段落/列表/表格优先裸标签，样式在 `index.css`；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |
 | E36 | blog md 使用 Markdown fenced code（`` ``` ``） | 须 prose 或 `childrenHtml` `<pre><code>`；见 `anatomy.md` §四·一 |
-| E37 | 伪列表 / 碎片段（`**第一，**` + 单句 × N；全文缺长段） | 违反 [`presentation.md`](./presentation.md) §段落优先；SelfCheck 维度 5 Fail |
+| E37 | 伪列表 / 碎片段（`**第一，**` / `**阶段N ·**` + 单句 × N） | **blog**：脚本 pseudo ≥3 → Fail；**marketing 存量**：warn；见 `presentation.md` §段落优先 |
 | E38 | 策略文 HTML 表格过多（全文 ≥6 张且无 Brief 豁免） | 案例改 prose；仅保留术语别名 / 决策矩阵 / 合规对照等**必表**；见 [`templates/marketing.md`](./templates/marketing.md) §5.1 |
 | E39 | `git commit attribution` 译成「Git 提交归因 / 提交归因」 | 用 **AI 提交署名**；见 `terminology-glossary.md` §六 · `marketing-glossary.json` |
 | E40 | 表前桥接过短或行末冒号引表 | `childrenHtml` 紧上一段须 **≥3 句**且**不以** `：`/`:` 结尾；见 [`presentation.md`](./presentation.md) §表格邻接 |

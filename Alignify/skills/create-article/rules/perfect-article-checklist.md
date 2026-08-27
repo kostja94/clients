@@ -20,6 +20,7 @@
 
 ## Perfect-Ready 清单（Gate C 后、送审前）
 
+- [ ] `audit-marketing-md-render.py --slug {slug}` Pass（**全部 blog**，无 category 过滤；Fail 修复后**重跑直至 Pass**）
 - [ ] Moat 已兑现（Source Map 可指到正文段落）
 - [ ] Answer Blocks 3–5 个均可独立成段
 - [ ] Extractability + BLUF 三处 Pass

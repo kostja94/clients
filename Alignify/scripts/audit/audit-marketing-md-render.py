@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Audit marketing strategy articles for blog-md render + presentation (E33–E42).
+"""Audit blog/marketing md render + presentation (E33–E42).
 
-Scans content/blog/* (category marketing or known slugs) and content/marketing/*:
+Scans **all** content/blog/{zh,en}/*.md and content/marketing/* (no category filter):
 - E33–E36: render / format (GFM table, MD list, fenced code)
-- E37: pseudo-list paragraphs (warn if >=3)
+- E37: pseudo-list paragraphs (blog **Fail** if >=3; marketing legacy warn)
 - E38: high table count (warn if >=6)
 - E40: short or colon-terminated bridge before childrenHtml
 - E41: orphan bold label lines
-- E42: standalone disclaimer; post-table single sentence; blog 策略文单句段 >2
+- E42: standalone disclaimer; post-table single sentence; blog 单句段 >2
 
 Usage (from alignify production repo root):
   python path/to/audit-marketing-md-render.py
@@ -22,19 +22,8 @@ import re
 import sys
 from pathlib import Path
 
-MARKETING_BLOG_SLUGS = {
-    "rate-limit-reset",
-    "coding-plan",
-    "wrapped-marketing",
-    "git-commit-attribution",
-    "embedded-virality",
-    "ugc-marketing",
-    "github-for-marketing",
-    "how-to-write-github-readme",
-    "how-to-name-ai-products",
-}
-
-PRESENTATION_FAIL_CODES = frozenset({"E40", "E41", "E42"})
+PRESENTATION_FAIL_CODES = frozenset({"E37", "E40", "E41", "E42"})
+PRESENTATION_FAIL_CODES_LEGACY = frozenset({"E40", "E41", "E42"})
 RENDER_FAIL_CODES = frozenset({"E33", "E34", "E36"})
 
 DISCLAIMER_RE = re.compile(
@@ -55,12 +44,6 @@ def _body(text: str) -> str:
         if len(parts) >= 3:
             return parts[2]
     return text
-
-
-def _is_marketing_blog(slug: str, frontmatter: str) -> bool:
-    if slug in MARKETING_BLOG_SLUGS:
-        return True
-    return bool(re.search(r'^category:\s*["\']?marketing["\']?\s*$', frontmatter, re.M))
 
 
 def _count_sentences(text: str) -> int:
@@ -315,14 +298,29 @@ def audit_file(path: Path, *, channel: str) -> dict:
 
     tables = len(re.findall(r"<!-- childrenHtml:start -->[\s\S]*?<table", body))
 
-    render_errors = [x for x in issues if x["code"] in RENDER_FAIL_CODES]
-    presentation_errors = [x for x in issues if x["code"] in PRESENTATION_FAIL_CODES]
     if tables >= 6:
         warnings.append(f"high-table-count:{tables}")
     if pseudo >= 3:
-        warnings.append(f"pseudo-list-paragraphs:{pseudo}")
+        if channel == "blog":
+            issues.append(
+                {
+                    "code": "E37",
+                    "line": paras[0][0] if paras else 1,
+                    "snippet": f"pseudo-list paragraphs: {pseudo} (bold-label + single sentence)",
+                }
+            )
+        else:
+            warnings.append(f"pseudo-list-paragraphs:{pseudo}")
     if not strict_one_sentence and len(one_sentence_paras) > 2:
         warnings.append(f"legacy-one-sentence-count:{len(one_sentence_paras)}")
+
+    render_errors = [x for x in issues if x["code"] in RENDER_FAIL_CODES]
+    if channel == "blog":
+        presentation_errors = [x for x in issues if x["code"] in PRESENTATION_FAIL_CODES]
+    else:
+        presentation_errors = [
+            x for x in issues if x["code"] in PRESENTATION_FAIL_CODES_LEGACY
+        ]
 
     fail_count = len(render_errors) + len(presentation_errors)
 
@@ -370,9 +368,6 @@ def main() -> int:
                 if args.slug and f.stem != args.slug:
                     continue
                 text = f.read_text(encoding="utf-8")
-                fm = text.split("---", 2)[1] if text.startswith("---") else ""
-                if channel == "blog" and not _is_marketing_blog(f.stem, fm):
-                    continue
                 row = audit_file(f, channel=channel)
                 if row["fail_count"] or row["warnings"]:
                     row["channel"] = channel
@@ -400,7 +395,7 @@ def main() -> int:
     print(f"\nArticles with issues: {len(results)}", file=sys.stderr)
     hard_fail = sum(1 for r in results if r["fail_count"])
     print(
-        f"With hard failures (E33/E34/E36/E40–E42): {hard_fail}",
+        f"With hard failures (E33/E34/E36/E37/E40–E42): {hard_fail}",
         file=sys.stderr,
     )
     return 1 if hard_fail else 0

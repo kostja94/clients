@@ -14,7 +14,8 @@ node ../../clients/Alignify/scripts/ops/next-publish-date.mjs --check YYYY-MM-DD
 node ../../clients/Alignify/scripts/ops/merge-cta-slugs.mjs --check   # Final CTA 覆盖（E43）
 python ../../clients/Alignify/scripts/audit/audit-frontmatter.py   # E44–E48
 # E10：Brief 采用 TL;DR/FAQ/Refs → 人工核对三 JSON pathname 键（中英）；省略 → 确认无键
-python ../../clients/Alignify/scripts/audit/audit-marketing-md-render.py   # Marketing/Blog 策略文必跑（E33–E36 + E40–E42）
+python ../../clients/Alignify/scripts/audit/audit-marketing-md-render.py --slug {slug}   # 全部 content/blog/*（无 category 过滤）；blog E37≥3 Fail
+python ../../clients/Alignify/scripts/audit/audit-marketing-md-render.py   # 可选：全站 blog 批量；Fail 须修复后重跑
 python ../../clients/Alignify/scripts/audit/audit-locale-voice.py --slug {slug} --channel blog   # Marketing/Blog 必跑
 node ../../clients/Alignify/scripts/ops/audit-tools-meta-titles.mjs
 node ../../clients/Alignify/scripts/ops/check-tools-en-content.mjs

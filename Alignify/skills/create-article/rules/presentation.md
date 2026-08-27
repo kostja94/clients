@@ -42,7 +42,7 @@
 ## 段落优先协议
 
 1. **先 prose 后结构** — Answer Block 用 H2 **首段长 prose** 承载；不先堆 bullet/表格再补一句解释  
-2. **禁伪列表（E37）** — 禁止 `**Bold.**` / `**第一，…**` + 单句 × N 冒充深度  
+2. **禁伪列表（E37）** — 禁止 `**Bold.**` / `**第一，…**` / `**阶段N ·**` + 单句 × N 冒充深度；**blog 通道**：`audit-marketing-md-render.py` 检出 pseudo ≥3 → **Fail**（非仅 warning）  
 3. **节奏** — 长段（≥4 句）全文 **≥3**；连续短段（≤2 句）**≤2 处**  
 4. **单句段预算（E42）** — **blog / 新策略文**（`content/blog/` + category marketing）：全文独立成段的单句段落 **≤2 处**；**存量** `content/marketing/` 仅 Fail **免责声明独段**与**表后单句**（legacy 单句过多打 audit **warning**）  
 5. **衔接** — 段间有过渡；并列 H3 产品段长度不宜差 3 倍以上（见 `consistency.md`）  

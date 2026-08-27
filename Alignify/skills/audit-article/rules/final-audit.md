@@ -11,7 +11,6 @@
 | 站点 | alignify.co |
 | 待审 ZH | `content/{channel}/zh/{slug}.md` |
 | 待审 EN | `content/{channel}/en/{slug}.md` |
-| articleType | |
 | Primary keyword | |
 | Brief Moat（1 行） | |
 
@@ -67,6 +66,11 @@
 
 ## 审核步骤
 
+0. **自动化全量预检（必跑，Fail 则修复后重跑直至 Pass）**  
+   - `python ../../clients/Alignify/scripts/audit/audit-marketing-md-render.py --slug {slug}` — **全部** `content/blog/*`（**不按 category 过滤**）；blog 通道 E37 伪列表 ≥3 为 **Fail**  
+   - `python ../../clients/Alignify/scripts/audit/audit-frontmatter.py`  
+   - `npm run verify:content-json` · `npm run build`（部署仓根目录）  
+   - 任一脚本 Fail → **不得进入十维打分**；修复后**从头重跑**预检清单  
 1. 读 Brief + Source Map + SERP Fit  
 2. P0 逐项（G1–G7 + Alignify 结构 P0）  
 3. 十维打分 + Moat 兑现 + Excellence  
