@@ -13163,6 +13163,59 @@
       ],
       "status": "pending",
       "notes": "LLM brief 2026-08-27"
+    },
+    {
+      "section": "blog",
+      "slug": "how-to-build-a-blog-without-a-cms-using-ai",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "BUILD BLOG",
+      "headline_line2": "WITHOUT CMS",
+      "subtitle": "AI Builds the System",
+      "tagline": "Not AI Writing Posts · 2026",
+      "composition": "Editorial collage for how-to-build blog without CMS using AI. HERO: split panel — doc-tool 'write post' crossed out vs Git tree + live blog Preview. Secondary: CMS/Frontend/Design three-role chips. Tertiary: four-stage evolution timeline. Title top-left. NO WordPress dashboard. NO ChatGPT essay hero.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55% canvas): Split vignette — LEFT crossed-out 'AI writes posts' doc/chat bubble; RIGHT highlighted Git file tree (content/blog, components) + browser Preview of blog list + article page",
+        "Secondary: Three-role tear-out table chips — CMS / Frontend / Design mapped to Markdown + Next.js + Tailwind tokens",
+        "Tertiary: Four-stage timeline strip — WordPress → Lovable → JSON fields → Markdown+Git (no real product logos)"
+      ],
+      "anti_patterns": [
+        "ChatGPT-style long-form essay as sole hero (that is AI-writing-posts, not AI-builds-system)",
+        "WordPress admin dashboard screenshot",
+        "Real Cursor/Sanity/Lovable logos — generic IDE/browser mock only",
+        "Generic SaaS funnel or CMS database cylinder diagram",
+        "Platform subdomain address-bar growth (platform-subdomain-gating article)"
+      ],
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
+    },
+    {
+      "section": "blog",
+      "slug": "how-to-build-a-blog-without-a-cms-using-ai",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "不用CMS",
+      "headline_line2": "AI搭博客",
+      "subtitle": "建系统不是写文章",
+      "composition": "Same layout as EN: split HERO (写文 vs 搭站 Preview) + three-role chips + four-stage timeline. Title top-left Chinese headline. NO WordPress dashboard. NO generic AI writing hero.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55% canvas): Split vignette — LEFT crossed-out 'AI writes posts' doc/chat bubble; RIGHT highlighted Git file tree (content/blog, components) + browser Preview of blog list + article page",
+        "Secondary: Three-role tear-out table chips — CMS / Frontend / Design mapped to Markdown + Next.js + Tailwind tokens",
+        "Tertiary: Four-stage timeline strip — WordPress → Lovable → JSON fields → Markdown+Git (no real product logos)"
+      ],
+      "anti_patterns": [
+        "ChatGPT-style long-form essay as sole hero (that is AI-writing-posts, not AI-builds-system)",
+        "WordPress admin dashboard screenshot",
+        "Real Cursor/Sanity/Lovable logos — generic IDE/browser mock only",
+        "Generic SaaS funnel or CMS database cylinder diagram",
+        "Platform subdomain address-bar growth (platform-subdomain-gating article)"
+      ],
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
     }
   ]
 }

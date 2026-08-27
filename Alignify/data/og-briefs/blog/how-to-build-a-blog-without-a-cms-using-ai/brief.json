@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "how-to-build-a-blog-without-a-cms-using-ai",
+  "analyzed_at": "2026-08-27T00:00:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "How to build a blog without a CMS using AI — agent builds architecture, frontend, and design (not AI writing posts); Cursor/Sping cases, Sanity counter-argument, Alignify four-stage path",
+  "differentiator_vs_generic": "Split-panel HERO: left = AI writing a blog post in a doc tool; right = agent editing repo file tree + site Preview (routes, layout, components) — NOT generic ChatGPT typing, NOT WordPress dashboard, NOT vibe-coding app builder preview only",
+  "visual_anchors": [
+    "HERO (~55% canvas): Split vignette — LEFT crossed-out 'AI writes posts' doc/chat bubble; RIGHT highlighted Git file tree (content/blog, components) + browser Preview of blog list + article page",
+    "Secondary: Three-role tear-out table chips — CMS / Frontend / Design mapped to Markdown + Next.js + Tailwind tokens",
+    "Tertiary: Four-stage timeline strip — WordPress → Lovable → JSON fields → Markdown+Git (no real product logos)"
+  ],
+  "anti_patterns": [
+    "ChatGPT-style long-form essay as sole hero (that is AI-writing-posts, not AI-builds-system)",
+    "WordPress admin dashboard screenshot",
+    "Real Cursor/Sanity/Lovable logos — generic IDE/browser mock only",
+    "Generic SaaS funnel or CMS database cylinder diagram",
+    "Platform subdomain address-bar growth (platform-subdomain-gating article)"
+  ],
+  "accent_suggestion": "mars-green",
+  "locales": {
+    "en": {
+      "headline": "BUILD BLOG",
+      "headline_line2": "WITHOUT CMS",
+      "subtitle": "AI Builds the System",
+      "tagline": "Not AI Writing Posts · 2026",
+      "composition": "Editorial collage for how-to-build blog without CMS using AI. HERO: split panel — doc-tool 'write post' crossed out vs Git tree + live blog Preview. Secondary: CMS/Frontend/Design three-role chips. Tertiary: four-stage evolution timeline. Title top-left. NO WordPress dashboard. NO ChatGPT essay hero."
+    },
+    "zh": {
+      "headline": "不用CMS",
+      "headline_line2": "AI搭博客",
+      "subtitle": "建系统不是写文章",
+      "composition": "Same layout as EN: split HERO (写文 vs 搭站 Preview) + three-role chips + four-stage timeline. Title top-left Chinese headline. NO WordPress dashboard. NO generic AI writing hero."
+    }
+  }
+}
