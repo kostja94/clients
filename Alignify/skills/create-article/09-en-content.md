@@ -34,7 +34,7 @@ Marketing 叙事须**饱满**（见 `word-counts.md` 建议区间）；Best 产�
 
 - [ ] ZH/EN section 顺序与锚点 id 一致（含省略 TL;DR/FAQ 的对称省略）
 - [ ] 结论收束 md 正文（FAQ 在页底全局组件，不在 md 流内）
-- [ ] FAQ：**若采用**则 7 问，与 ZH 条数一致，无内链
+- [ ] FAQ：**若采用**则 7 问，与 ZH 条数一致；内链若存在须 R4 全文 1 次
 - [ ] Moat + Author POV 在 EN 侧**同等深度**兑现（非摘要版）
 - [ ] EN 非翻译腔（09b Pass）
 - [ ] E40–E42 Pass（与 ZH 对称跑 `audit-marketing-md-render.py`）
@@ -42,6 +42,6 @@ Marketing 叙事须**饱满**（见 `word-counts.md` 建议区间）；Best 产�
 ### B 层
 
 - [ ] Meta 已在 `*-meta.ts` 注册 en 键
-- [ ] **Final CTA**：`cta-config.json` → `slugs.{slug}.en` title/description 已按 EN 结论定稿（见 [`rules/final-cta.md`](./rules/final-cta.md)）
+- [ ] **Final CTA**：`cta-config.json` → `slugs.{slug}.en` title/description 已按 EN 结论定稿（见 [`rules/sections.md`](./rules/sections.md) Part 5）
 
 下一步：[10-quality-gates.md](./10-quality-gates.md)

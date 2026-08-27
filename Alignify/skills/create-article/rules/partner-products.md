@@ -3,7 +3,7 @@
 > **版本**：v1.0 · 2026-06-24  
 > **适用范围**：`content/tools/`、`content/blog/` 中 **Markdown `###` 产品块**（原 JSON `bestTools` 字段）、对比表、TL;DR、FAQ、结论等产品露出。  
 > **术语**：下文 `bestTools` = 正文产品 H3 段，**非**已删 JSON block 类型。
-> **与选品规则的关系**：产品**如何选**见 [best-tools.md](./sections/best-tools.md) 与 KB `knowledge/tools/{slug}.md`；本文只规定**客户身份**如何影响增删与保留。  
+> **与选品规则的关系**：产品**如何选**见 [`sections.md` Part 3.3](./sections.md#part-33-best-产品-h3best-ranking) 与 KB `knowledge/tools/{slug}.md`；本文只规定**客户身份**如何影响增删与保留。  
 > **客户名单来源**：部署仓 `alignify-by-kostja/app/[locale]/customer-stories/page.tsx`（Featured + 分类列表；页面营销口径「80+」为总量，下表为页内显式列出的品牌）。
 
 ---

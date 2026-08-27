@@ -1,24 +1,6 @@
-# Insights 页面模板
+# Insights 页面模板（跳转 stub）
 
-> 原 `content/templates/template-*` 中 Insights 结构摘要。完整类型说明见 [article-types.md](../article-types.md)。
+> **已合并（2026-08-27）**：全文仅维护于 **[`../templates.md` Part 5](../templates.md#part-5-insights)**  
+> 结构由 Answer Blocks 驱动；新文 → `/blog/` + `insights-analysis`。
 
----
-
-## 页面结构
-
-```
-核心要点(md) → 背景/趋势 section → 分析 sections×N → 案例/数据 → 结论 → FAQ(7, md) → References(md，仅事件相关，见 [references.md §3.2](../sections/references.md))
-```
-
-## 路径
-
-- 正文：`content/insights/{locale}/{slug}.md`
-- Meta：`insights-meta.ts` / `insights-pages-config.ts`
-
-## Meta 规则组
-
-分析型：title 突出洞察角度；description 含 2–3 个核心论点或数据点。
-
----
-
-*templates/insights · v1.0 · 2026-08-26*
+请勿在此文件编辑规则正文。

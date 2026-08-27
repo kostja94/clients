@@ -1,6 +1,6 @@
 # Step 8 — Meta + Config + Final CTA 注册
 
-> **规范**：[`rules/meta.md`](./rules/meta.md) · [`rules/final-cta.md`](./rules/final-cta.md)  
+> **规范**：[`rules/meta.md`](./rules/meta.md) · [`rules/sections.md`](./rules/sections.md) Part 5  
 > **部署仓**：`src/data/*-meta.ts` · `*-pages-config.ts` · `*-article-images.ts` · **`src/data/cta-config.json`**
 
 ---
@@ -101,7 +101,7 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --check YYYY-MM-DD
 - Step 09 EN 完稿后更新 `en.title` / `en.description`
 - 验收：`node E:\clients\Alignify\scripts\ops\merge-cta-slugs.mjs --check` → `Missing: 0`
 
-细则：[`rules/final-cta.md`](./rules/final-cta.md)
+细则：[`rules/sections.md`](./rules/sections.md) Part 5
 
 ---
 

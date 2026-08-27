@@ -87,7 +87,7 @@ registry 字段：`headline` · `headline_line2` · `subtitle`（宜短）· `co
 | 场景 | 模型 | fal 端点 |
 |------|------|----------|
 | **含标题 OG（默认）** | GPT Image 2 | `openai/gpt-image-2` |
-| 无字纯视觉 hero | flux / Codex skills | 见 aesthetic-references |
+| 无字纯视觉 hero | flux / Codex skills | 见 [`aesthetic-references.md`](../../knowledge/design/aesthetic-references.md)；速查 `E:\个人知识库\设计\11-通用-Hero与插图美学参考.md` |
 
 **GPT Image 2 参数**
 
@@ -228,5 +228,6 @@ OG 解析优先级：
 ## 10. 关联文档
 
 - [scripts/README.md](../../scripts/README.md)
-- [knowledge/design/aesthetic-references.md](../../knowledge/design/aesthetic-references.md)
+- [knowledge/design/aesthetic-references.md](../../knowledge/design/aesthetic-references.md)（Alignify SSOT）
+- Hero/OG 速查：`E:\个人知识库\设计\11-通用-Hero与插图美学参考.md`
 - 2mv 参考流程：`../2mv/blog/images/skills/ops/og-covers.md`

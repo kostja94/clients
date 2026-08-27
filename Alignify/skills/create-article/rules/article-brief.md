@@ -30,18 +30,31 @@
 **Moat Asset**（≥1，Alignify 独有增量）:
   1. …
 
-**Author POV**（Marketing/Blog 必填，1–3 条可证伪判断；正文须第一人称兑现）:
+**Author POV**（Blog 默认有；**≠** 固定 `#author-take` H2）:
+  - **Voice**：Kostja 第一人称 | 省略（Brief 写理由，如纯事件稿）
+  - **判断条目**（1–3 条可证伪观点；正文**融入**相关分析节，见 `presentation.md` §Author voice）
+  - **独立 H2**（如 `#author-take`）：仅当 User confirmed 或 intake 明确「要/不要」；**禁止**因 Author POV 有值就默认加节
   1. …
-  **Voice**: Kostja 第一人称 | 编辑部（Insights 可选）
 
-**Answer Blocks**（3–5，各对应一个 major H2）:
-  1. {block-id} — …
+**Type Plan**（推荐；全新题材写「无参照」）:
+
+| 字段 | 值 |
+|------|-----|
+| articleType | {best-ranking \| seo-guide \| marketing-strategy \| insights-analysis \| …} |
+| 路由 | content/blog/（新文）· 存量维护则注明旧路径 |
+| 参照篇（可选） | {slug} · **无（Answer Blocks 驱动）** |
+| deliberate 省略 | 例：无 How To — 策略判断文 · 无对比表 — 仅 2 款产品 |
+| Section Plan | 见 [`sections.md`](./sections.md) Part 0 · 模板仅建议 → [`templates.md`](./templates.md) Part 0 |
+
+**Answer Blocks**（3–5，各对应一个 **内容问题** 的 major H2；**非**页面模板节名）:
+  1. {block-id} — 读者要搞懂什么（例：`#what-is-x` · `#vs-y` · `#cases`）
   2. …
+  - **禁止**无 SSOT/用户依据硬塞 `#should-you-do-this` / go-no-go / `#author-take`——选型已在其他 Block 讲清则不必另开
 
-**Planned H2 architecture**（**内容驱动**；可选节采用/省略及理由）:
+**Planned H2 architecture**（**内容驱动**；从 SSOT + Answer Blocks 推导，非 Marketing 五段式）:
 | H2 / 锚点 | 目标 | Answer block |
 |-----------|------|--------------|
-| **Optional sections** | TL;DR: ☐ 采用 ☐ 省略 — 理由：… · FAQ: ☐ 采用 ☐ 省略 — 理由：… · How To: ☐ 采用 ☐ 省略 · **若采用 TL;DR/FAQ/Refs → Step 08 注册三 JSON（E10）；省略 → JSON 不得留键** |
+| **Optional sections** | TL;DR: ☐ · FAQ: ☐ · How To: ☐ · `#author-take`: ☐ 采用 ☐ 省略 · go/no-go 矩阵: ☐ 采用 ☐ 省略（**仅** `marketing-strategy` + GTM 适用性题材，见 [`templates.md`](./templates.md#part-3-marketing) §3.2） · **Skills/runbook 预告**: ☐ 正文**禁止**（E49） · **若采用 TL;DR/FAQ/Refs → Step 08 注册三 JSON（E10）；省略 → JSON 不得留键** |
 
 **Word count target**（叙事正文，见 word-counts.md）:
 **Planned internal links**（点击意图；无硬性条数，记录目标 slug + 段落 + 理由）:
@@ -51,12 +64,12 @@
 **Excellence type**（择一标注）: Depth | Objectivity | Freshness | Workflow | Proof
 **Post-publish metric**（T+7 / T+30 / T+90）:
 
-**Final CTA**（Step 08 写入 `cta-config.json` · 见 [`final-cta.md`](./final-cta.md)）:
+**Final CTA**（Step 08 写入 `cta-config.json` · 见 [`sections.md`](./sections.md) Part 5）:
 - ZH title:
 - ZH description:
 - EN title:（Step 09 定稿；Step 02 可留 TBD）
 - EN description:
-- cta 按钮: zh「开始合作」/ en「Work with us」（或 `final-cta.md` 备选表）
+- cta 按钮: zh「开始合作」/ en「Work with us」（或见 `sections.md` Part 5.2）
 ```
 
 ---
@@ -66,8 +79,8 @@
 | 字段 | 要求 |
 |------|------|
 | Moat Asset | ≥1 项；正文必须兑现（Step 10 / audit 复核） |
-| Author POV | Marketing/Blog ≥1 条；正文第一人称显式写出（见 `presentation.md`） |
-| Answer Blocks | 3–5 个；Outline 中每个有对应 H2 |
+| Author POV | Blog 默认 ≥1 条判断**写入正文**（任意相关 H2 内）；独立 `#author-take` 须 Brief/User 明示 |
+| Answer Blocks | 3–5 个**内容问题**；每个有对应 H2；**非**模板节清单 |
 | One-line thesis | 通过「SERP 同句测试」 |
 | SuccessMetric | 可量化（排名、CTR、内链点击、转化路径之一） |
 | Planned H2 | 主体节不可省略；TL;DR/FAQ/How To 若省略须在 Brief 写理由 |
@@ -75,4 +88,4 @@
 
 ---
 
-*article-brief · v1.1 · 2026-08-27*
+*article-brief · v1.3 · 2026-08-27*

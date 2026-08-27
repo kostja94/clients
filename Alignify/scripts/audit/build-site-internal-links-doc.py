@@ -5,7 +5,6 @@ Scans content/**/*.md, extracts internal links (Markdown + <a href>),
 computes outbound/inbound graphs, and writes:
   - skills/optimize-internal-links/references/site-structure-internal-links.md
   - scripts/reports/md-internal-links-status-YYYY-MM-DD.json
-  - site-structure-internal-links.md (root stub pointer)
 """
 from __future__ import annotations
 
@@ -263,9 +262,9 @@ def main() -> None:
         "",
         "## 二、内链规则（不在此重复）",
         "",
-        "> **SSOT**：[`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md) Part 1–2（点击意图、每段 ≤1 链、同 URL 1 次、FAQ 无链）",
+        "> **SSOT**：[`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md) Part 1–2（点击意图、每段 ≤1 链、同 URL 1 次；FAQ 答案内链计入正文）",
         "> **Marketing**：[`../../create-article/rules/marketing-internal-links.md`](../../create-article/rules/marketing-internal-links.md) M1–M11",
-        "> **结论内链**：[`../../create-article/rules/conclusion.md`](../../create-article/rules/conclusion.md) §4（0–2 条，非清单式）",
+        "> **结论内链**：[`../../create-article/rules/sections.md`](../../create-article/rules/sections.md) Part 4.4（0–2 条，非清单式）",
         "",
         "审计脚本可能仍输出 distinct 计数，**仅作观察**，不作为发布阻断条件。",
         "",
@@ -316,7 +315,7 @@ def main() -> None:
         "",
         "### P0 — 结构性违规（R4 重复 / 机械指路链）",
         "",
-        "优先修复同篇重复 URL、FAQ 内链、组合拳段堆链。Tools 低 distinct 仅作观察，不为凑数加链。",
+        "优先修复同篇重复 URL（含 FAQ 与正文重复）、组合拳段堆链。Tools 低 distinct 仅作观察，不为凑数加链。",
         "",
         f"**Tools distinct<5（观察）**：{len(tools_under)} 篇",
         "",
@@ -384,15 +383,6 @@ def main() -> None:
     out_doc = CTX / "skills/optimize-internal-links/references/site-structure-internal-links.md"
     out_doc.parent.mkdir(parents=True, exist_ok=True)
     out_doc.write_text("\n".join(lines), encoding="utf-8")
-
-    stub = CTX / "site-structure-internal-links.md"
-    stub.write_text(
-        "# 全站内链快照（指针）\n\n"
-        f"完整快照：[skills/optimize-internal-links/references/site-structure-internal-links.md]"
-        f"(skills/optimize-internal-links/references/site-structure-internal-links.md)\n\n"
-        f"刷新：`python scripts/audit/build-site-internal-links-doc.py`\n",
-        encoding="utf-8",
-    )
 
     print(f"Articles: {len(rows)}")
     print(f"Doc : {out_doc}")

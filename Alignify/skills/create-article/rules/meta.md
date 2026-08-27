@@ -316,7 +316,5 @@ Meta 不再写在独立 `page.tsx` 中。当前架构：
 
 - [sections/generic.md](./sections/generic.md) — H1-H6 层级、可访问性、SEO 收益（完整规范）
 - [meta.md](./meta.md) — SEO 速查入口（像素值、中英文差异、截断机制）
-- [template-tools](./templates/best-ranking.md) — Tools 页面完整模板（引用本文档 § 一–四）
-- [template-marketing](./templates/marketing.md) — Marketing 页面完整模板（引用本文档 § 一–四）
-- [template-seo](./templates/seo.md) — SEO 页面完整模板（引用本文档 § 一–四）
+- [templates.md](./templates.md) — 四类页面参考范式（Part 2–5；引用本文档 § 一–四 的 Meta 差异）
 - [meta-description-optimization](./meta.md) — P1 优化方案（历史分析，以本文档字数规则为准）

@@ -9,12 +9,13 @@
 
 **User confirmed**（2026-08-27）:
 - 中文主称：**主域名下的分块建站**
-- 文体：原理 · 科普 · 案例；落地细节一带而过（后续单独 skills）
+- 文体：原理 · 科普 · 案例；落地细节**压缩进本文**（表/prose），**禁止**正文预告未发布 skills（E49）
 - Customer Stories **不详细写**，代过即可
 - Alignify 案例 **仅一个页面**：`/audit-website-by-lovable`（Lovable iframe 嵌入），**不是**整站 subdirectory 模式
-- skills 引用：**等 skills 发布后再加**
-- Author POV：**是**（Kostja 第一人称）
-- publishDate：**往前移** → 2026-09-02（与 how-to-build 对调，how-to-build → 2026-09-03）
+- skills 引用：**等 skills 发布后再加内链**（正文零提及）
+- Author POV：**是** — 判断**融入**案例/坑/分工节；**`#author-take` 独立 H2：省略**
+- go/no-go 矩阵：**省略**（选型已在「子目录 vs 子域名」等节表达；E50）
+- publishDate：**2026-09-02**（与 how-to-build 对调）
 - 内链：**双向**与 `how-to-build-a-blog-without-a-cms-using-ai`
 - References：**不需要**
 - OG：**需要** EN/ZH
@@ -30,37 +31,33 @@
 
 **Moat Asset**:
 1. 与 blog 优先叙事脱钩——WordPress 时代就有 `/blog` 心智
-2. 与 [Content-as-Code 姊妹篇](/blog/how-to-build-a-blog-without-a-cms-using-ai) 分工表
+2. 与 Content-as-Code 姊妹篇分工表
 3. Alignify 仅 Lovable iframe 页一手边界（非整站 subdirectory）
-4. 概念级坑清单（无长代码）
+4. 概念级坑清单（无长代码；**写进本文**，不 defer）
 
-**Answer Blocks**（major H2）:
-1. `#what-is-subdirectory-hosting` — 定义与机制
-2. `#vs-content-as-code` — 多部署粘合 vs 内容仓
-3. `#subdirectory-vs-subdomain` — SEO 决策（深链 SEO 文）
-4. `#who-maintains-what` — 工程 vs 市场分工
-5. `#should-you-do-this` — 适合谁 go/no-go
+**Answer Blocks**（内容问题 → H2）:
+1. `#not-a-new-blog-only-idea` — 并非 Blog 专属
+2. `#what-is-subdirectory-hosting` — 定义与机制
+3. `#vs-content-as-code` — 与姊妹篇分工
+4. `#subdirectory-vs-subdomain` — SEO 选型
+5. `#who-maintains-what` — 组织 RACI
+6. `#cases-and-alignify` — 公开复盘 + Alignify 边界（含 Author POV 判断）
+7. `#production-pitfalls` — 坑与概念验收（表 + ≥3 句 BLUF）
 
 **Planned H2 architecture**:
-| H2 | 必选 | 呈现 |
+| H2 | 采用 | 备注 |
 |----|------|------|
-| 并非新事 | ✅ | prose |
-| 主域名下的分块建站是什么 | ✅ | BLUF + 表 + prose |
-| 与 Content-as-Code 分工 | ✅ | 表 + 双向内链 |
-| 子目录 vs 子域名 | ✅ | 决策表 + 链 SEO 文 |
-| 典型路径 | ✅ | 表 |
-| 谁维护什么 | ✅ | 表 + prose |
-| 案例 | ✅ | Customer Stories 一笔带过；Alignify iframe 页 |
-| 概念级坑清单 | ✅ | 表，无长代码 |
-| 适合谁 | ✅ | go/no-go |
-| 结论 | ✅ | prose |
+| 并非新事 / 定义 / 分工 / 子目录vs子域 / 典型路径 / 谁维护 / 案例 / 坑清单 | ✅ | 从 SSOT 推导 |
+| `#should-you-do-this` go/no-go | ❌ | 选型已在 §子目录vs子域 |
+| `#author-take` | ❌ | POV 融入案例+坑节 |
+| References | ❌ | |
+| TL;DR / FAQ | ✅ | 7 问 |
 
-**publishDate**: 2026-09-02
+**Author POV**（融入式，非独立 H2）:
+1. 能单仓就不要 proxy；Alignify 主体单应用是因 Agent 维护成本
+2. iframe 页不是整站 subdirectory 教科书
 
-**Author POV**: Kostja 第一人称
-**Voice**: 原理科普 + 一手判断
-
-**Optional sections**: TL;DR ✅ · FAQ ✅ 7 · How To ❌ · References ❌
+**Optional sections**: TL;DR ✅ · FAQ ✅ 7 · How To ❌ · References ❌ · `#author-take` ❌ · go/no-go ❌ · Skills 正文预告 ❌
 
 **Final CTA**:
 - ZH title: 产品站与内容仓要同域呈现，先对齐 Rewrite 再拆仓。
@@ -72,3 +69,5 @@
 - ← 上篇适当段落回链本篇
 
 **OG**: accent mars-green · HERO = 单 hostname 多 origin 路径分流示意
+
+**Revision note**（2026-08-27）: 对齐 skills v1.2 — E49/E50；删模板收束节；skills 仅发布后内链

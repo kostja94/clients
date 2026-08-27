@@ -12,6 +12,25 @@
 - 禁：revolutionary / game-changing / seamless / 碾压 / 唯一最佳（无限定）
 - **判断句**须可追溯到公开事件或 Source Map；无一手客户案例时不虚构「我们某客户」
 
+### Author voice vs 固定 H2（Blog / Insights / Marketing 通用）
+
+| 概念 | 要求 |
+|------|------|
+| **Author POV**（Brief 字段） | 正文 **≥1 处** Kostja 第一人称可证伪判断（`我` / `I` / `my read`） |
+| **融入方式** | 写在**与判断相关的节内**（案例、坑、分工、选型、结论前段）——**默认** |
+| **`#author-take` 独立 H2** | **非默认**；仅 User confirmed 或 Brief 勾选「采用 #author-take」 |
+| **`#should-you-do-this` + go/no-go 表** | **非默认**；仅 `marketing-strategy` 且 GTM「什么产品适合该策略」题材（[`templates.md`](./templates.md#part-3-marketing) §3.2）；架构/科普文选型已在其他 H2 讲清则**不另开** |
+
+### 禁止 Skills / Runbook 范围 meta（E49）
+
+已发布文章正文**不得**出现下列 **meta 免责声明**（未发布 Alignify skills / runbook 不存在时尤禁）：
+
+- 「落地细节进（未来）skills / runbook 随后补 / 后续 skills 会写…」
+- 「本文只建立心智模型，配置见 skills」类**把读者踢走**的单句
+- 表前/表后**仅 1 句** scope defer 代替 BLUF（同时触犯 E40/E42）
+
+**正确**：SSOT 中的坑、验收项、概念级配置要点 → **压缩进**本文 prose 或表（可无长代码块）；skills 发布后**再加**内链，而非在正文**预告**。
+
 ---
 
 ## BLUF 三处
@@ -46,14 +65,14 @@
 3. **节奏** — 长段（≥4 句）全文 **≥3**；连续短段（≤2 句）**≤2 处**  
 4. **单句段预算（E42）** — **blog / 新策略文**（`content/blog/` + category marketing）：全文独立成段的单句段落 **≤2 处**；**存量** `content/marketing/` 仅 Fail **免责声明独段**与**表后单句**（legacy 单句过多打 audit **warning**）  
 5. **衔接** — 段间有过渡；并列 H3 产品段长度不宜差 3 倍以上（见 `consistency.md`）  
-6. **与 SEO 分块** — [`templates/marketing.md` §5](./templates/marketing.md#五内容最佳实践blog-md--策略文) 的「内容分块」指 **H2 级可提取**，不是鼓励全文短段
+6. **与 SEO 分块** — [`templates.md`](./templates.md) Part 3 的「内容分块」指 **H2 级可提取**，不是鼓励全文短段
 
 ### 允许的单句段（计入 E42 预算内，仍应优先合并）
 
 | 场景 | 做法 |
 |------|------|
 | H2 与表之间的桥接 | **不允许**单独成段 — 并入 BLUF 末句 |
-| 时效/核对提醒 | **不允许**结论后另起一段 — 并入结论**最后一段**末句（见 `conclusion.md` §2.4） |
+| 时效/核对提醒 | **不允许**结论后另起一段 — 并入结论**最后一段**末句（见 [`sections.md`](./sections.md) Part 4.2.4） |
 | 术语简称声明（如「下文 Wrapped 作总称…」） | 可保留 1 处，但须 ≥2 句；单句则并入上一段 |
 | References 前无正文 | — |
 
@@ -92,7 +111,7 @@
 
 ## Tools 文补充
 
-- 产品 H3：定位 → Ideal for → 与相邻产品差异（见 `sections/best-tools.md`）
+- 产品 H3：定位 → Ideal for → 与相邻产品差异（见 [`sections.md` Part 3.3](./sections.md#part-33-best-产品-h3best-ranking)）
 - 对比文：≥1 竞品优势 + ≥1 非榜首更合适场景（E6）
 
 ---
@@ -104,9 +123,11 @@
 - [ ] 无孤立 `**标签：**` 段（E41）
 - [ ] 单句独立段 ≤2（E42）；时效提醒在结论段内
 - [ ] 伪列表 0（E37）；长段 ≥3
+- [ ] 无 skills/runbook 范围 meta 句（E49）
+- [ ] 无未经 Brief 勾选的 `#author-take` / `#should-you-do-this` 模板节（E50）
 
 **自动化**：`python scripts/audit/audit-marketing-md-render.py`（E40–E42 与 E33–E36 同 Fail）
 
 ---
 
-*presentation · v2.0 · 2026-08-27*
+*presentation · v2.1 · 2026-08-27*

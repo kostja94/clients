@@ -14,7 +14,7 @@
 | **双语 flagship** | ZH/EN **同等深度与 Moat**；无「先简后补」「EN 从简」 | EN 与 ZH 同为 flagship，非附属翻译版 |
 | **信息对等，表达独立** | ZH/EN 事实、判断、结构对齐；**禁止**逐句翻译 | 从 Answer Blocks **重写**，可换例子与句序 |
 | **内容饱满优先** | 先写足论证与场景，再对照字数区间 | 字数是 **饱满度信号**，不是 padding 目标 |
-| **作者声音** | Marketing/Blog 默认 **Kostja 第一人称**（见 `presentation.md`） | 同上，英文用 *I* / *my read* |
+| **作者声音** | Marketing/Blog 默认 **Kostja 第一人称**（见 `presentation.md`） | 同上；**融入分析节**，默认无 `#author-take` H2 |
 
 ---
 
@@ -71,7 +71,8 @@
 
 - [ ] 朗读一遍：无英译腔、无箭头链正文
 - [ ] 每 H2 首段 BLUF（先答后背景）
-- [ ] 含 **Author POV**（Brief 字段）至少 1 处显式第一人称判断
+- [ ] 含 **Author POV**（Brief）至少 1 处第一人称判断——**在相关节内**，非强制 `#author-take`
+- [ ] 无 skills/runbook 范围 meta（E49）
 - [ ] 无伪列表（`presentation.md`）
 
 ---

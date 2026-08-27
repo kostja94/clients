@@ -1,6 +1,6 @@
 # Create Article — Alignify 统一文章创建 Skill
 
-> **版本**：v2.1 · 2026-08-27  
+> **版本**：v2.2 · 2026-08-27  
 > **质量档位**：**每篇均为 flagship** — 无 lite/standard 降级；Research、Moat、BLUF、SelfCheck、终审全链路必过。  
 > **部署仓**：`E:\自有部署项目\alignify production`  
 > **上下文仓**：`E:\clients\Alignify`  
@@ -11,7 +11,7 @@
 ## 核心原则
 
 1. **Flagship 固定** — 每篇须 Moat、Answer Blocks、完整 Research、BLUF、12 维 SelfCheck；发布线终审 **≥80**，目标 **S 级 ≥90**。  
-2. **内容决定架构** — 章节**纯粹由题材与读者任务决定**；`anatomy.md` / `templates/` 仅为**参考菜单**，非骨架清单。A 层硬底线不变。  
+2. **内容决定架构** — 章节**纯粹由题材与读者任务决定**；[`templates.md`](./rules/templates.md) Part 0 与 [`sections.md`](./sections.md) 仅为**建议**，**禁止**一比一复刻存量骨架。A 层硬底线不变。新文统一 **`content/blog/`**。  
 3. **先中文后英文** — ZH/EN section 类型、顺序、锚点 id 对齐；**双语均为 flagship 质量**——EN 独立重写，非降格翻译。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
@@ -57,7 +57,7 @@
 05 中文 md
 06 中文润色 — BLUF + Extractability
 07 内链 + Internal Link Plan
-08 Meta + Config + Final CTA（`cta-config.json` · [`rules/final-cta.md`](./rules/final-cta.md)）
+08 Meta + Config + Final CTA（`cta-config.json` · [`rules/sections.md`](./rules/sections.md) Part 5）
 09 英文 md — 双语 parity（EN CTA 定稿）
 10 SelfCheck — Gate C → audit-ready + 5.5（同批≥2）
     ↓
@@ -113,9 +113,10 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | Extractability | [`rules/extractability-checklist.md`](./rules/extractability-checklist.md) |
 | S 级清单 | [`rules/perfect-article-checklist.md`](./rules/perfect-article-checklist.md) |
 | 结构原则 | [`rules/anatomy.md`](./rules/anatomy.md) |
+| 章节规范 | [`rules/sections.md`](./rules/sections.md) |
 | 质量检查 | [`rules/quality-checklist.md`](./rules/quality-checklist.md) |
-| Final CTA | [`rules/final-cta.md`](./rules/final-cta.md) |
-| 内链 | [`rules/internal-links.md`](./rules/internal-links.md) · [`rules/marketing-internal-links.md`](./rules/marketing-internal-links.md) |
+| Final CTA | [`rules/sections.md`](./rules/sections.md) Part 5 |
+| 内链 | [`rules/internal-links.md`](./rules/internal-links.md)（含 Part 4.5 Marketing M1–M11） |
 
 完整索引：[`rules/README.md`](./rules/README.md)
 
@@ -138,16 +139,18 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章
 - ❌ **新 slug** publishDate 与全站已有 slug 重复（须 `next-publish-date.mjs --check`）
 - ❌ 把 skill 示例日期当「今天」——以执行 Step 08/11 的实际 UTC+8 日历日为准
-- ❌ References 收录与本文类似的第三方策略文；策略/Blog 文仅 **事件相关**引用（`sections/references.md` §3.2）
+- ❌ References 收录与本文类似的第三方策略文；策略/Blog 文仅 **事件相关**引用（[`sections.md` Part 2.3 §3.2](./rules/sections.md#part-23-references--参考文献)）
 - ❌ 中文英译腔 / 英文逐句翻译 ZH（须 `localization-quality.md` Pass）
-- ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV**）
+- ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV** 须在某节内兑现；**不要求**独立 `#author-take`）
+- ❌ 正文 meta 预告未发布 skills/runbook（E49）
+- ❌ Insights/架构文默认套 `#should-you-do-this` + `#author-take` 双收束（E50）
 - ❌ 个人知识库已有 SSOT 仍创建 `knowledge/marketing/{slug}.md` 副本（E32）
 - ❌ `git commit attribution` 中文译成「Git 提交归因 / 提交归因」（须 **AI 提交署名**；E39 · `terminology-glossary.md` §六）
 - ❌ 未在聊天中确认用户已明示的禁忌或主叙事就动笔（见 [`intake-questions.md`](./rules/intake-questions.md)）
 - ❌ 把 SSOT 文件名默认当文章主线（角度不清楚时必须问用户）
 - ❌ 新 slug 未写 `cta-config.json` 的 `slugs.{slug}`（页底落入 fallback 通用文案；E43）
-- ❌ Final CTA 复制 Meta description 或结论整段粘贴（须 punchline + 行动理由；见 `final-cta.md`）
+- ❌ Final CTA 复制 Meta description 或结论整段粘贴（须 punchline + 行动理由；见 `sections.md` Part 5）
 
 ---
 
-*create-article · v2.2 · 2026-08-27 · complements audit-article*
+*create-article · v2.3 · 2026-08-27 · complements audit-article*

@@ -22,7 +22,9 @@
 |------|--------|
 | 用户只给 SSOT 路径 | 主叙事、中文主称、slug、与已有文 MERGE/KEEP |
 | SSOT 标题与讨论角度不一致 | 以哪个为主线 |
-| Marketing 文是否写 `#author-take` | 写 / 省略；若写，是否涉及自家产品 |
+| Marketing 文是否写 `#author-take` | **独立 H2** 写 / 省略（与 Brief **Author POV** 分离：有 POV ≠ 要 `#author-take`） |
+| 架构/Insights 文结构 | 从 SSOT 列 H2；**默认不要** go/no-go 表 + `#author-take` 双收束 |
+| 未发布 skills / runbook | 正文 **禁止** 预告「细节进 skills」；skills 上线后 **再加内链** |
 | 结构不明 | TL;DR / FAQ / How To 采用或省略 |
 | 内链 / 回链 / 发布 | 链哪些已上线 slug、是否 commit/push、publishDate |
 | commit / push | **未明确要求不执行**（沿用 git 用户规则） |
@@ -38,6 +40,8 @@
 - ❌ 用户明确不要的内容仍写进文（如指定不写某产品）  
 - ❌ 把**其他 slug** 的对话确认套用到当前篇  
 - ❌ 能推断的唯一答案仍反复追问  
+- ❌ Author POV = 是 → 默认加 `#author-take` H2（须 User 单独确认是否独立成节）  
+- ❌ 「落地一带而过」→ 正文写「细节在 future skills」（应压缩概念进本文，E49）
 
 ---
 
@@ -47,4 +51,4 @@
 
 ---
 
-*intake-questions · v1.1 · 2026-08-27*
+*intake-questions · v1.2 · 2026-08-27*

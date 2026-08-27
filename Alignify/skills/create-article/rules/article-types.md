@@ -1,8 +1,9 @@
 # 四种文章类型 × Markdown 结构
 
-> **版本**：v3.3 · 2026-08-27  
+> **版本**：v3.5 · 2026-08-27  
 > **格式**：`.md` frontmatter + `<!-- block:section -->` 正文；TL;DR / FAQ / References **仅 JSON 侧车渲染**（见 [`anatomy.md`](./anatomy.md) §二·一）  
-> **原则**：类型决定 Meta、Hub、知识块目录；**正文架构由内容决定**，下文为各类型**常见结构（建议）**。
+> **原则**：类型决定 Meta、Hub、知识块目录；**正文架构由内容决定**。**[`templates.md`](./templates.md) 与 `templates/` 仅为建议**，不要求与任一存量篇一比一复刻。  
+> **新文**：统一 **`content/blog/` + `/blog/{slug}`** — 许多题材从未有过，**更不应硬套**旧频道骨架。
 
 ---
 
@@ -15,8 +16,9 @@
 | SEO | `knowledge/seo/` | `content/blog/`（政策） | `/blog/{slug}` | `content/seo/` · `/seo/{slug}` | 独立 Hub |
 | Insights | `knowledge/insights/` | `content/blog/`（政策） | `/blog/{slug}` | `content/insights/` · `/insights/{slug}` | 独立 Hub |
 
-> **路由约定（2026-08）**：**新 slug**（任意类型）统一 **`content/blog/` + `/blog/{slug}`**（中文 `/zh/blog/{slug}`）。存量旧路径**仅维护更新，不重迁 URL**。  
-> **生产现状（2026-08-27）**：blog **31** slug · tools **108** · marketing **16** · seo **38** · insights **7**（events 另计）。**SEO / Insights 尚无 blog 新文**——仍在存量路径 + 对应 `*-meta.ts`。  
+> **路由约定（2026-08）**：**新 slug**（任意 articleType）统一 **`content/blog/` + `/blog/{slug}`**（中文 `/zh/blog/{slug}`）。存量旧路径**仅维护更新，不重迁 URL**。  
+> **为何迁到 blog**：新文大量是**全新题材**，按频道拆模板无意义；类型由 Brief `articleType` + Answer Blocks 决定，非 URL 目录。  
+> **生产现状（2026-08-27）**：blog **33** slug · tools **108** · marketing **16** · seo **38** · insights **7**（events 另计）。**SEO / Insights 尚无 blog 新文批量**——仍在存量路径 + 对应 `*-meta.ts`。  
 > **已废弃**：JSON block 类型 `howToChoose` / `bestTools` / `howItWorks` / `useCases`；对应 React 组件已删除。
 
 ---
@@ -37,7 +39,7 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 
 ## Tools 型（Blog 新文）
 
-**常见结构**见 [`anatomy.md`](./anatomy.md) §一参考菜单；完整写法参考 [`templates/best-ranking.md`](./templates/best-ranking.md)。
+**常见结构**见 [`templates.md`](./templates.md) Part 2 · [`sections.md`](./sections.md) Part 0。**勿**为对齐模板增删节。
 
 - 主体多为 Best 榜单：正文 section + 产品 H3
 - 选型类常含：`## 如何选择…` + `###` 步骤
@@ -51,13 +53,13 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 
 ## Marketing 型
 
-**常见顺序**（**参考 only**；节数与是否含 TL;DR/FAQ/How To **由内容决定**，见 [`templates/marketing.md`](./templates/marketing.md) §1.1）：
+**常见顺序**（**参考 only**；节数与是否含 TL;DR/FAQ/How To **由内容决定**）见 [`templates.md`](./templates.md) Part 3 · [`sections.md`](./sections.md) Part 0：
 
 ```
 [核心要点 JSON] → 概念 section → 策略/分析 sections×N → [场景] → [作者判断] → 结论 {#conclusion} → [FAQ JSON · 页底] → [References JSON]
 ```
 
-- 内链专规：[`marketing-internal-links.md`](./marketing-internal-links.md)
+- 内链专规：[`internal-links.md` Part 4.5](./internal-links.md#part-45-marketing-频道内链)
 - **禁止** frontmatter `heroHtml` / `heroContent` / `howTo:`（E44）；导语写首节 BLUF
 - **ZH/EN**：同等 flagship 深度；EN 独立重写
 
@@ -65,7 +67,7 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 
 ## SEO 型
 
-**常见顺序**：
+**常见顺序**（**参考 only**；H2 因题而异）见 [`templates.md`](./templates.md) Part 4 · [`sections.md`](./sections.md) Part 0：
 
 ```
 核心要点 JSON → 概念 → 操作 sections（H3）→ [场景] → 结论 → FAQ JSON(7) → [References JSON]
@@ -79,14 +81,17 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 
 ## Insights 型
 
-**常见顺序**：
+**常见顺序**（**参考**；H2 由 SSOT + Brief Answer Blocks 推导，**非** Marketing 收束模板）：
 
 ```
-核心要点 JSON → sections 或 html 长文 → 结论 → FAQ JSON(7) → [References JSON]
+核心要点 JSON → 分析 sections×N → [案例/边界] → 结论 → FAQ JSON(7) → [References JSON]
 ```
 
 - Meta：分析型规则组
-- **生产路径**：7 篇均在 `content/insights/` + `insights-meta.ts`
+- **新文**：`content/blog/` + `blog-meta.ts`（`articleType: insights-analysis`）
+- **存量**：7 篇在 `content/insights/` + `insights-meta.ts`
+- **默认不设**：`#author-take`、`#should-you-do-this` go/no-go、How To（见 [`templates.md`](./templates.md) Part 5）
+- **E49**：正文禁止「细节进 future skills」meta 句
 
 ---
 
@@ -106,11 +111,11 @@ H1 / excerpt 始终在 md frontmatter `title` / `description`。
 ## A 层硬底线（全类型）
 
 - md 正文以 `#conclusion` 收束；FAQ 由页底 `FAQ.tsx` 全局渲染（不在 md 流内）
-- Brief 采用 FAQ → `faq-data.json` 中英文各 **7 问**、无内链、条数一致
+- Brief 采用 FAQ → `faq-data.json` 中英文各 **7 问**、条数一致；内链若存在须 R4 全文 1 次
 - Brief 省略 TL;DR/FAQ/Refs → 三 JSON **不得**留对应 pathname 键
 - 禁止 frontmatter `howTo:` / `heroHtml:` / `heroContent:`（E44）；HTML 不得出现在 `---` 之间（E45）
 - frontmatter 仅允许 `anatomy.md` §二 白名单；节内勿留首尾空行（E48）
 
 ---
 
-*article-types · v3.3 · 2026-08-27*
+*article-types · v3.5 · 2026-08-27*

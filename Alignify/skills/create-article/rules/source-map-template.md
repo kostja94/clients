@@ -19,7 +19,7 @@
 
 须与 Research Log §R3 一致。
 
-**References 边界（策略/Blog 文）**：Source Map 可含竞品 docs 等类型 C 来源；**仅 A/B 类**写入底部 References 列表（见 `sections/references.md` §3.2）。
+**References 边界（策略/Blog 文）**：Source Map 可含竞品 docs 等类型 C 来源；**仅 A/B 类**写入底部 References 列表（见 [`sections.md` Part 2.3 §3.2](./sections.md#part-23-references--参考文献)）。
 
 ---
 

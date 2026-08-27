@@ -6,6 +6,8 @@
 
 **站内相邻**：[ai-logo-design.md](../insights/ai-logo-design.md)（AI 行业 VI）· [poster-generator.md](../tools/poster-generator.md)（海报工具选型）· [social-cards-generator.md](../tools/social-cards-generator.md)（OG 1200×630）· [image-generator.md](../tools/image-generator.md)（底层 T2I）
 
+**速查（个人知识库）**：`E:\个人知识库\设计\11-通用-Hero与插图美学参考.md` — Skill 选型、风格与 prompt 片段；**本文档为 Alignify 完整 SSOT**。
+
 以下条目可任意顺序阅读；**不是**教程体例。
 
 ---

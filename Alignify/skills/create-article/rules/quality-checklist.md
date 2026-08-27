@@ -44,7 +44,7 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 |---|--------|---------|
 | P0-1 | 结论收束 md 正文 | md 以 `#conclusion` 结尾；FAQ 在页底全局组件 |
 | P0-2 | FAQ 数量 | **若** 有 FAQ：中英文各 **7 问** |
-| P0-3 | FAQ 内链 | **若** 有 FAQ：答案无内链 |
+| P0-3 | FAQ 内链 | **若** FAQ 含内链：同 URL 全文仅 1 次（R4） |
 | P0-4 | 图片 | `public/` 存在 |
 | P0-5 | Best 产品段 | **若** 有 Best H3：ZH ≥100 字 / EN ≥280 字符 |
 | P0-7 | Meta title | best-ranking：含「最佳」/ `Best` |

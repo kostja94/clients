@@ -181,7 +181,7 @@
 - [ ] 4–6 distinct 出链（Hub 除外）
 - [ ] 任意段落 ≤1 链（表格无链或 ≤1）
 - [ ] 同 URL 全页 1 次
-- [ ] FAQ/TL;DR/HowTo 无链
+- [ ] TL;DR/HowTo 无链；FAQ **允许**内链（R4 全文 1 次）
 - [ ] 锚文本通过「三问」
 - [ ] EN/ZH 链接集合同构
 - [ ] 跑 `build-site-internal-links-doc.py` 更新快照

@@ -12,7 +12,7 @@ Tools 页面内链全面审计脚本
   R4: 同一目标页全文只出现一次
   R5: 锚文本覆盖目标页核心语义 + 自然融入上下文
   R6: 最小锚文本长度 ≥ 4 汉字 / ≥ 3 英文词
-  R7: FAQ ≤3 distinct slug、与正文去重、单答 ≤2 链
+  R7: FAQ 内链计入正文；与 section 同受 R2/R4 约束（无单独 FAQ 条数上限）
 
 用法：
   python3 audit-tools-internal-links.py                    # 全量审计
@@ -210,38 +210,8 @@ def audit_single_file(filepath, locale):
                 })
 
     # ── R7: FAQ 内链 ──
-    faq_links = [(s, a) for s, a, _, bt, _ in all_links if bt == "faq"]
-    faq_slugs = set(s for s, _ in faq_links)
-    body_slugs = set(s for s, _, _, bt, _ in all_links if bt != "faq")
-    faq_body_overlap = faq_slugs & body_slugs
-    if faq_body_overlap:
-        violations.append({
-            "rule": "R7",
-            "desc": f"FAQ slugs overlap body: {sorted(faq_body_overlap)}",
-            "severity": "high",
-        })
-    if len(faq_slugs) > 3:
-        violations.append({
-            "rule": "R7",
-            "desc": f"FAQ has {len(faq_slugs)} distinct slugs (max 3)",
-            "severity": "high",
-        })
-    # Check per-FAQ-answer: ≤2 links
-    for block in blocks:
-        if block.get("type") == "faq":
-            faq_items = block.get("items", block.get("questions", []))
-            if isinstance(faq_items, list):
-                for item in faq_items:
-                    answer = ""
-                    if isinstance(item, dict):
-                        answer = item.get("answer", item.get("answerHtml", ""))
-                    answer_links = extract_links_from_blocks([{'type':'faq','items':[{'answer': str(answer)}]}], locale)
-                    if len(answer_links) > 2:
-                        violations.append({
-                            "rule": "R7",
-                            "desc": f"FAQ answer has {len(answer_links)} links (max 2 per answer)",
-                            "severity": "low",
-                        })
+    # FAQ 链已包含在 all_links 中，由 R2（密度）与 R4（重复 slug）统一约束。
+    # 不再单独禁止 FAQ-body overlap 或 FAQ distinct 上限（User confirmed 2026-08-27）。
 
     # ── 指标汇总 ──
     block_distribution = defaultdict(int)

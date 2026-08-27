@@ -2,7 +2,7 @@
 
 > **用途**：全站唯一的**结构与内链优化**参考（人类 + 站点维护）。回答：**① ~400 篇文章如何按频道组织；② 当前正文内链快照；③ 后续优化优先级**
 >
-> **Skill 对齐**：规则 SSOT [`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md) · 存量优化 [`../SKILL.md`](../SKILL.md) · Marketing [`../../create-article/rules/marketing-internal-links.md`](../../create-article/rules/marketing-internal-links.md)
+> **Skill 对齐**：规则 SSOT [`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md)（含 Part 4.5 M1–M11）· 存量优化 [`../SKILL.md`](../SKILL.md)
 >
 > **最后更新**：2026-08-27（自动扫描部署仓 `content/**/*.md`，共 **400** 篇）
 >
@@ -40,9 +40,9 @@ alignify.co
 
 ## 二、内链规则（不在此重复）
 
-> **SSOT**：[`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md) Part 1–2（点击意图、每段 ≤1 链、同 URL 1 次、FAQ 无链）
-> **Marketing**：[`../../create-article/rules/marketing-internal-links.md`](../../create-article/rules/marketing-internal-links.md) M1–M11
-> **结论内链**：[`../../create-article/rules/conclusion.md`](../../create-article/rules/conclusion.md) §4（0–2 条，非清单式）
+> **SSOT**：[`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md) Part 1–2（点击意图、每段 ≤1 链、同 URL 1 次；FAQ 答案内链计入正文）
+> **Marketing**：[`../../create-article/rules/internal-links.md` Part 4.5](../../create-article/rules/internal-links.md#part-45-marketing-频道内链) M1–M11
+> **结论内链**：[`../../create-article/rules/sections.md`](../../create-article/rules/sections.md) Part 4.4（0–2 条，非清单式）
 
 审计脚本可能仍输出 distinct 计数，**仅作观察**，不作为发布阻断条件。
 

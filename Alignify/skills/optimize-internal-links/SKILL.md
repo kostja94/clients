@@ -1,46 +1,37 @@
 # optimize-internal-links
 
-存量文章的内链审计、选链、写入与验收（Markdown 正文）。
+存量文章内链：**审计 → 选链 → 写入 → 验收 → 刷新快照**（Markdown / `faq-data.json` 正文侧车）。
 
-## 文档
+> **当前范围**：本 skill 维护流程与参考数据；**存量正文修复**另开任务执行（见 [`workflow.md`](workflow.md)）。
 
-| 步骤 | 文件 |
+## 读什么
+
+| 文档 | 用途 |
 |------|------|
-| 入口（本文件） | 流程 + 脚本 |
-| 规则速查 | [`references/rules-quickref.md`](references/rules-quickref.md) |
-| 全站快照 | [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) |
-| 审计 baseline | [`02-audit-and-baseline.md`](02-audit-and-baseline.md) |
-| 单页 checklist | [`03-per-page-workflow.md`](03-per-page-workflow.md) |
-| 反向互链 | [`04-reverse-links.md`](04-reverse-links.md) |
+| [`workflow.md`](workflow.md) | 全站 baseline + 单页 loop |
+| [`references/rules-quickref.md`](references/rules-quickref.md) | R 规则 1 页速查 |
+| [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) | 全站快照（~400 篇 · 脚本生成） |
+| [`reverse-links.md`](reverse-links.md) | Phase 4 反向互链（批量，与单页分开） |
 
-**规则 SSOT**：[`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md) · Marketing [`../create-article/rules/marketing-internal-links.md`](../create-article/rules/marketing-internal-links.md)  
-**创建阶段**：[`../create-article/07-internal-links.md`](../create-article/07-internal-links.md)
+**规则 SSOT**（不在此重复）：[`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md)（含 Part 4.5 Marketing M1–M11）  
+**新文创建**：[`../create-article/07-internal-links.md`](../create-article/07-internal-links.md)
 
-## 脚本（从部署仓根目录）
+## 脚本（部署仓根目录）
 
 ```bash
-python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --locale both --violations-only
 python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug {slug} --source both --locale both --violations-only
-npm run verify:content-json
-npm run build
+python ../../clients/Alignify/scripts/audit/build-site-internal-links-doc.py   # 刷新快照
+npm run verify:content-json && npm run build
 ```
 
-## 标准流程
+## 分布原则（摘要）
 
-```
-读快照/附录 B → git show HEAD baseline（R-LINK-ONLY）
-→ audit-tools-internal-links.py
-→ StrReplace 只改 md 内 <a>
-→ verify:content-json + build
-→ python ../../clients/Alignify/scripts/audit/build-site-internal-links-doc.py  # 刷新快照
-```
+点击意图优先 · 每段 ≤1 链 · **全文同 URL 1 次**（含 FAQ 答案）· 结论 0–2 链 · 无 distinct 条数下限
 
-## 分布原则
-
-点击意图优先 · 每段 ≤1 链 · 同 URL 1 次 · FAQ 无链 · 结论 0–2 链 · **无硬性 distinct 下限**
-
-详见 [`references/rules-quickref.md`](references/rules-quickref.md)。
+FAQ 答案中的内链**计入正文**，遵守与同页 section 相同的 R4 / 密度规则（User confirmed 2026-08-27）。
 
 ## 标杆页
 
 `content/blog/en/agent-sandbox.md` · `content/blog/en/web-fetch.md`
+
+*optimize-internal-links · v2.0 · 2026-08-27*
