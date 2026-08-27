@@ -111,9 +111,12 @@
 ## 6. Step 06 自检
 
 ```bash
-python E:/clients/Alignify/scripts/audit/audit-locale-voice.py --slug {slug} --channel blog
-python E:/clients/Alignify/scripts/audit/audit-locale-voice.py --batch gtm
+python E:/clients/Alignify/scripts/audit/audit-locale-voice.py --slug {slug} --channel auto
+python E:/clients/Alignify/scripts/audit/audit-locale-voice.py --batch gtm --zh-only
+python E:/clients/Alignify/scripts/audit/audit-locale-voice.py --batch all-zh --zh-only   # 全站 blog+marketing+tools
 ```
+
+**渠道差异**：`blog` / `marketing` 要求 Kostja 第一人称 + 汉字下限；`tools` Hub 仅查英混 + 禁腔 + 箭头链（不要求「我/我认为」）。
 
 朗读 prose：相邻两个以上英文实词（非产品名/缩写）→ Fail，回改。
 
@@ -150,4 +153,4 @@ python E:/clients/Alignify/scripts/audit/audit-locale-voice.py --batch gtm
 
 | 日期 | 说明 |
 |------|------|
-| 2026-08-27 | 首版：英混 SSOT + audit naked_loanwords + 存量 P0–P2 |
+| 2026-08-27 | 全站 158 篇 blog+marketing+tools ZH 英混/禁腔/箭头链 batch 修复；audit `--batch all-zh`；tools 免第一人称 |

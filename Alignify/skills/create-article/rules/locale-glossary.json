@@ -202,7 +202,6 @@
     "该 X 用于",
     "与 X 同构",
     "campaign 性",
-    "留人",
     "抢份额",
     "Git 提交归因",
     "提交归因（指 Co-Author trailer 时）",
@@ -243,6 +242,10 @@
     "GTM Combos"
   ],
   "forbidden_regex_zh": [
+    {
+      "pattern": "(?<![预保])留人",
+      "hint": "GTM 黑话「留人」；若指 retention 用「留存」，若属「预留」则改写句子避免误读"
+    },
     {
       "pattern": "同属[^\\n]{0,24}同族",
       "hint": "改用「同一类 freemium 玩法」或「和 … 是一路子，但 KPI 分开算」"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight locale/voice audit for Alignify blog/marketing md."""
+"""Lightweight locale/voice audit for Alignify blog/marketing/tools md."""
 from __future__ import annotations
 
 import argparse
@@ -11,6 +11,7 @@ from pathlib import Path
 CLIENTS = Path(__file__).resolve().parents[2]  # e:/clients/Alignify
 GLOSSARY = CLIENTS / "skills/create-article/rules/locale-glossary.json"
 PROD = Path(r"E:/自有部署项目/alignify production")
+ZH_CHANNELS = ("blog", "marketing", "tools")
 
 # Abbreviations / tokens allowed as bare Latin in ZH prose
 ZH_LATIN_ALLOW = re.compile(
@@ -44,7 +45,7 @@ def en_word_count(text: str) -> int:
 
 
 def mask_exempt_zones(text: str) -> str:
-    """Mask URLs, code, anchor ids, inline backticks, markdown links — keep loanword audit on prose."""
+    """Mask URLs, code, anchor ids, inline backticks, markdown links."""
     out = text
     out = re.sub(r"\[([^\]]*)\]\([^\)]+\)", r"\1", out)
     out = re.sub(r"https?://[^\s)>\]]+", " ", out)
@@ -54,23 +55,8 @@ def mask_exempt_zones(text: str) -> str:
     return out
 
 
-def is_in_keep_english(token: str, keep: list[str]) -> bool:
-    t = token.strip()
-    if not t:
-        return True
-    if ZH_LATIN_ALLOW.match(t):
-        return True
-    for k in keep:
-        if t.lower() == k.lower():
-            return True
-        if len(k) > 3 and k.lower() in t.lower() and t[0].isupper():
-            return True
-    return False
-
-
 def audit_zh_naked_loanwords(body: str, glossary: dict) -> list[str]:
     issues: list[str] = []
-    keep = glossary.get("keep_english", [])
     masked = mask_exempt_zones(body)
     masked_lower = masked.lower()
 
@@ -111,6 +97,14 @@ def audit_zh_regex(body: str, glossary: dict) -> list[str]:
     return issues
 
 
+def audit_zh_forbidden_literals(body: str, glossary: dict) -> list[str]:
+    issues: list[str] = []
+    for bad in glossary.get("forbidden_in_zh", []):
+        if bad.replace(" X ", " ") in body or bad in body:
+            issues.append(f"ZH forbidden pattern: {bad} (gtm-prose-voice.md)")
+    return issues
+
+
 def audit_en_regex(body: str, glossary: dict) -> list[str]:
     issues: list[str] = []
     for entry in glossary.get("forbidden_regex_en", []):
@@ -128,26 +122,29 @@ def audit_en_regex(body: str, glossary: dict) -> list[str]:
 def audit_zh_description(desc: str, glossary: dict) -> list[str]:
     if not desc:
         return []
-    return audit_zh_naked_loanwords(desc, glossary) + audit_zh_regex(desc, glossary)
+    return (
+        audit_zh_naked_loanwords(desc, glossary)
+        + audit_zh_regex(desc, glossary)
+        + audit_zh_forbidden_literals(desc, glossary)
+    )
 
 
-def audit_zh(text: str, glossary: dict) -> list[str]:
+def audit_zh(text: str, glossary: dict, channel: str = "blog") -> list[str]:
     issues: list[str] = []
     body, fm = strip_frontmatter(text)
     desc = extract_frontmatter_description(fm)
     if desc:
         issues.extend(f"[description] {x}" for x in audit_zh_description(desc, glossary))
 
-    if han_count(body) < 1200:
+    strategy = channel in ("blog", "marketing")
+    if strategy and han_count(body) < 1200:
         issues.append(f"ZH han chars low ({han_count(body)}); check depth not padding")
     if body.count("→") >= 3:
         issues.append("ZH body uses arrow chains (→); rewrite as prose")
-    for bad in glossary.get("forbidden_in_zh", []):
-        if bad.replace(" X ", " ") in body or bad in body:
-            issues.append(f"ZH forbidden pattern: {bad} (gtm-prose-voice.md)")
+    issues.extend(audit_zh_forbidden_literals(body, glossary))
     issues.extend(audit_zh_regex(body, glossary))
     issues.extend(audit_zh_naked_loanwords(body, glossary))
-    if not re.search(r"(我|我的判断|我认为|我会)", body):
+    if strategy and not re.search(r"(我|我的判断|我认为|我会)", body):
         issues.append("ZH missing Kostja first-person judgment (我/我认为)")
     return issues
 
@@ -173,18 +170,27 @@ def audit_en(text: str, glossary: dict) -> list[str]:
 
 
 def resolve_channel_slug(slug: str, channel: str) -> tuple[str, str]:
-    if channel == "auto":
-        blog = PROD / f"content/blog/zh/{slug}.md"
-        mkt = PROD / f"content/marketing/zh/{slug}.md"
-        if blog.exists():
-            return "blog", slug
-        if mkt.exists():
-            return "marketing", slug
-        return "blog", slug
-    return channel, slug
+    if channel != "auto":
+        return channel, slug
+    for ch in ZH_CHANNELS:
+        if (PROD / f"content/{ch}/zh/{slug}.md").exists():
+            return ch, slug
+    return "blog", slug
 
 
-def audit_slug(slug: str, channel: str, glossary: dict, zh_only: bool = False) -> list[str]:
+def discover_all_zh_slugs() -> list[tuple[str, str]]:
+    found: list[tuple[str, str]] = []
+    for ch in ZH_CHANNELS:
+        d = PROD / f"content/{ch}/zh"
+        if d.is_dir():
+            for p in sorted(d.glob("*.md")):
+                found.append((ch, p.stem))
+    return found
+
+
+def audit_slug(
+    slug: str, channel: str, glossary: dict, zh_only: bool = False
+) -> list[str]:
     channel, slug = resolve_channel_slug(slug, channel)
     zh_path = PROD / f"content/{channel}/zh/{slug}.md"
     en_path = PROD / f"content/{channel}/en/{slug}.md"
@@ -192,7 +198,7 @@ def audit_slug(slug: str, channel: str, glossary: dict, zh_only: bool = False) -
 
     if zh_path.exists():
         zh = zh_path.read_text(encoding="utf-8")
-        all_issues.extend(f"[zh] {x}" for x in audit_zh(zh, glossary))
+        all_issues.extend(f"[zh] {x}" for x in audit_zh(zh, glossary, channel))
     else:
         all_issues.append(f"[zh] missing {zh_path}")
 
@@ -208,13 +214,21 @@ def audit_slug(slug: str, channel: str, glossary: dict, zh_only: bool = False) -
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--slug", help="Single slug to audit")
-    p.add_argument("--channel", default="auto", choices=["blog", "marketing", "auto"])
-    p.add_argument("--batch", choices=["gtm"], help="Audit all slugs in gtm_batch_slugs")
-    p.add_argument("--zh-only", action="store_true", help="Skip EN audit (faster batch)")
+    p.add_argument(
+        "--channel",
+        default="auto",
+        choices=["blog", "marketing", "tools", "auto"],
+    )
+    p.add_argument(
+        "--batch",
+        choices=["gtm", "all-zh"],
+        help="gtm = GTM cluster; all-zh = every content/*/zh/*.md",
+    )
+    p.add_argument("--zh-only", action="store_true", help="Skip EN audit")
     args = p.parse_args()
 
     if not args.slug and not args.batch:
-        p.error("Provide --slug or --batch gtm")
+        p.error("Provide --slug or --batch gtm|all-zh")
 
     glossary_path = GLOSSARY
     if not glossary_path.is_file():
@@ -222,24 +236,35 @@ def main() -> int:
         return 1
     glossary = json.loads(glossary_path.read_text(encoding="utf-8"))
 
-    slugs: list[str] = []
+    targets: list[tuple[str, str]] = []
     if args.batch == "gtm":
-        slugs = glossary.get("gtm_batch_slugs", [])
+        for slug in glossary.get("gtm_batch_slugs", []):
+            ch, slug = resolve_channel_slug(slug, "auto")
+            targets.append((ch, slug))
+    elif args.batch == "all-zh":
+        targets = discover_all_zh_slugs()
     elif args.slug:
-        slugs = [args.slug]
+        ch, slug = resolve_channel_slug(args.slug, args.channel)
+        targets = [(ch, slug)]
 
     failed = False
-    for slug in slugs:
-        issues = audit_slug(slug, args.channel, glossary, zh_only=args.zh_only)
+    passed = 0
+    for ch, slug in targets:
+        issues = audit_slug(slug, ch, glossary, zh_only=args.zh_only)
         if issues:
             failed = True
-            print(f"=== {slug} ===")
+            print(f"=== [{ch}] {slug} ===")
             print("FAIL")
             for i in issues:
                 print(i)
             print()
         else:
-            print(f"=== {slug} === PASS")
+            passed += 1
+            if args.batch:
+                print(f"=== [{ch}] {slug} === PASS")
+
+    if args.batch == "all-zh":
+        print(f"\nSUMMARY: PASS {passed} / FAIL {len(targets) - passed} / TOTAL {len(targets)}")
 
     return 1 if failed else 0
 
