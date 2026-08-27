@@ -13216,6 +13216,59 @@
       ],
       "status": "generated",
       "notes": "LLM brief 2026-08-27 · generated 2026-08-27"
+    },
+    {
+      "section": "blog",
+      "slug": "subdirectory-hosting",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "ONE DOMAIN",
+      "headline_line2": "MANY DEPLOYS",
+      "subtitle": "Subdirectory Hosting",
+      "tagline": "Rewrite · Not Redirect · 2026",
+      "composition": "Editorial collage for subdirectory hosting. HERO: example.com address bar with /blog path; rewrite gateway fanning to two deployment boxes (main + blog). Secondary: subdirectory vs subdomain chips. Tertiary: /_next fork warning. Title top-left. NO redirect-to-vercel hero. NO subdomain DNS hero.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55%): Browser address bar shows example.com/blog — beneath, split pipeline diagram: MAIN origin (/) vs BLOG origin (/blog/*) joined by REWRITE layer (not redirect arrow)",
+        "Secondary: Subdirectory vs subdomain decision chips — same hostname pool vs split hostname",
+        "Tertiary: Dual-Next warning badge — /_next static fork (precise chunks vs broken CSS)"
+      ],
+      "anti_patterns": [
+        "DNS subdomain diagram as hero (blog.example.com) — wrong article focus",
+        "301 redirect arrow to *.vercel.app as positive outcome",
+        "WordPress dashboard screenshot as sole visual",
+        "Full nginx config code block as hero",
+        "Platform subdomain gating address-bar growth article visual"
+      ],
+      "status": "generated",
+      "notes": "LLM brief 2026-08-27 · generated 2026-08-27"
+    },
+    {
+      "section": "blog",
+      "slug": "subdirectory-hosting",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "一个域名",
+      "headline_line2": "多套部署",
+      "subtitle": "主域名分块建站",
+      "composition": "Same layout as EN: address bar + rewrite fan-out to main/blog origins + subdir vs subdomain chips + /_next warning. Title top-left Chinese headline. NO redirect hero. NO subdomain DNS hero.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55%): Browser address bar shows example.com/blog — beneath, split pipeline diagram: MAIN origin (/) vs BLOG origin (/blog/*) joined by REWRITE layer (not redirect arrow)",
+        "Secondary: Subdirectory vs subdomain decision chips — same hostname pool vs split hostname",
+        "Tertiary: Dual-Next warning badge — /_next static fork (precise chunks vs broken CSS)"
+      ],
+      "anti_patterns": [
+        "DNS subdomain diagram as hero (blog.example.com) — wrong article focus",
+        "301 redirect arrow to *.vercel.app as positive outcome",
+        "WordPress dashboard screenshot as sole visual",
+        "Full nginx config code block as hero",
+        "Platform subdomain gating address-bar growth article visual"
+      ],
+      "status": "generated",
+      "notes": "LLM brief 2026-08-27 · generated 2026-08-27"
     }
   ]
 }
