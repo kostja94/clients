@@ -39,3 +39,5 @@
 - EN: TBD Step 09
 
 **publishDate**: 2026-09-02
+
+**Source Map**: [`how-to-build-a-blog-without-a-cms-using-ai-source-map.md`](./how-to-build-a-blog-without-a-cms-using-ai-source-map.md)（Step 10 / audit S 级）
