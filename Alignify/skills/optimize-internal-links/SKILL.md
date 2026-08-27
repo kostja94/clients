@@ -13,7 +13,7 @@
 | [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) | 全站快照（~400 篇 · 脚本生成） |
 | [`reverse-links.md`](reverse-links.md) | Phase 4 反向互链（批量，与单页分开） |
 
-**规则 SSOT**（不在此重复）：[`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md)（含 Part 4.5 Marketing M1–M11）  
+**规则 SSOT**（不在此重复）：[`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md)（Part 1–2 · 4.5 M1–M11 · Part 8 外链）  
 **新文创建**：[`../create-article/07-internal-links.md`](../create-article/07-internal-links.md)
 
 ## 脚本（部署仓根目录）

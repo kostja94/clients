@@ -4,7 +4,7 @@
 > **站点**：[alignify.co](https://alignify.co)  
 > **部署仓正文**：`alignify-by-kostja/content/**/*.md`（Markdown + frontmatter + block 标记）  
 > **Last updated**: 2026-08-27  
-> **说明**：Alignify 所有内链规则（含 Marketing M1–M11、FAQ、R1–R7）、编辑方法论、Tools/SEO 拓扑、邻居表与验收标准**仅在本文件维护**。存量优化**执行流程**见 [`optimize-internal-links/workflow.md`](../../optimize-internal-links/workflow.md)；`marketing-internal-links.md` 等旧专册仅为跳转 stub。
+> **说明**：Alignify 所有**站内内链**与**站外外链**规则（含 Marketing M1–M11、FAQ、R1–R7、UTM、Nofollow）、编辑方法论、Tools/SEO 拓扑、邻居表与验收标准**仅在本文件维护**。存量优化**执行流程**见 [`optimize-internal-links/workflow.md`](../../optimize-internal-links/workflow.md)。
 
 ---
 
@@ -18,6 +18,7 @@
 6. [Insights / 其他频道](#part-5-insights--其他频道)
 7. [创建与存量优化工作流](#part-6-创建与存量优化工作流)
 8. [Markdown 正文格式与计数范围](#part-7-markdown-正文格式与计数范围)
+9. [外链：UTM 与 Nofollow](#part-8-外链utm-与-nofollow)
 
 ---
 
@@ -3284,4 +3285,80 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 - **FAQ**：`faq-data.json` 全局渲染；**7 问**；答案**允许**站内链（计入正文；同 URL 全文 1 次，见 [§1.5](#15-faq-内链规则)）
 - **验收**：`npm run verify:content-json`（即 `verify-content-md.py`）；内链审计 `audit-tools-internal-links.py --format md`（上下文仓 `scripts/audit/`）
 - **编辑方式**：少量改动 StrReplace；批量 UTF-8 脚本写入；存量优化默认 **R-QUALITY-REWRITE**（可改 surrounding copy，禁止机械句凑数）；JSON 批量 patch 仍 **R-LINK-ONLY**
+
+---
+
+<a id="part-8-外链utm-与-nofollow"></a>
+
+# Part 8 · 外链：UTM 与 Nofollow
+
+> **实现（部署仓）**：`src/lib/utils.ts` — `addUtmToExternalLink()` · `getExternalLinkRel()`  
+> **与内链关系**：Part 1–7 规范 **alignify.co 站内路径**；本节规范 **出站 URL** 的 UTM 追踪与 `rel` 属性。正文引用、References、产品外链、Footer 等均由渲染层或组件调用上述函数，**作者无需手写 UTM 参数**。
+
+## 8.1 UTM 注入（`addUtmToExternalLink`）
+
+### 默认行为
+
+所有站外（非 `alignify.co`）出站链自动追加 `?utm_source=kostja&utm_medium=blog`。
+
+### 例外 — 不追加 UTM
+
+| 条件 | 规则 | 示例 |
+|------|------|------|
+| URL 已有 query 参数 | 跳过通用 UTM（不干扰既有追踪） | `?vsource=cutout_share-1370384` |
+| 合作伙伴邀请链 | 原样返回（不加 Alignify UTM） | `lovable.dev/invite/*`、`manus.im/invitation/*` |
+
+### 站内链
+
+链向 `alignify.co`、`www.alignify.co` 或 `*.alignify.co` 子域 **永不** 追加 UTM。
+
+## 8.2 Nofollow 规则（`getExternalLinkRel`）
+
+### 默认行为
+
+所有站外链使用 `rel="noopener noreferrer nofollow"`。
+
+### 例外 — dofollow（不含 `nofollow`）
+
+| 域名 | 原因 |
+|------|------|
+| `voispark.com` / `*.voispark.com` | VoiSpark（合作伙伴） |
+| `novascientia.com.br` / `*.novascientia.com.br` | Nova Scientia（Kostja 本地化测试站） |
+| `google.com` / `google.cn` / `g.cn` / `blog.google.com` / `developers.google.com` / `search.google.com` / `support.google.com` / `*.google.com` / `*.blog.google.com` / `*.developers.google.com` / `*.search.google.com` / `*.support.google.com` | Google（搜索引擎，dofollow） |
+
+### 无效 URL
+
+无法解析时，**默认 `nofollow`**（安全兜底）。
+
+## 8.3 正文与 References 写法（与 Part 7 配合）
+
+| 场景 | href | rel |
+|------|------|-----|
+| md `#references` 底部列表 | 经 `addUtmToExternalLink()` | 经 `getExternalLinkRel()` |
+| 正文 inline 引用（React/`childrenHtml`） | 经 `addUtmToExternalLink()` | `noopener noreferrer`（**正文引用不设 nofollow**，便于读者溯源） |
+| Tools 产品 H3 外链按钮 | 组件自动 | 经 `getExternalLinkRel()` |
+
+详见 [`sections.md`](./sections.md) Part 2.3 References · Part 3.3 Best Tools。
+
+## 8.4 相关代码与组件
+
+| 路径 | 用途 |
+|------|------|
+| `src/lib/utils.ts` | 函数定义 |
+| Markdown 正文产品 H3 块 | 工具卡片外链 |
+| `src/components/CustomerCaseCard.tsx` | 客户案例网站链 |
+| `src/components/Footer.tsx` | 社交图标 + Nova Scientia |
+| `src/components/GlossaryViewer.tsx` | Glossary 参考外链 |
+| `src/components/PartnershipPageContent.tsx` | IRIS 项目链 |
+| `src/components/References.tsx` | 引用列表链 |
+| `src/components/YouTubeThumbnail.tsx` / `YouTubeThumbnailImage.tsx` | 视频链 |
+| `src/marketing/GrowthCaseStudiesIndex.tsx` | 增长案例卡片 |
+
+---
+
+## 文档修订
+
+| 日期 | 说明 |
+|------|------|
+| 2026-08-27 | 合并 `utm-nofollow.md` → Part 8（外链 UTM · Nofollow） |
 

@@ -72,7 +72,7 @@
 | `knowledge/marketing/` | `marketing-strategy` | `/blog/{slug}` · `content/blog/` | `/marketing/{slug}` · `content/marketing/` |
 | `knowledge/insights/` | `insights-analysis` | `/blog/{slug}` · `content/blog/` | `/insights/{slug}` · `content/insights/` |
 
-存量 `/tools/` → `best-ranking-legacy`，见 Step 12。
+存量 `/tools/` → `best-ranking-legacy`；`modifiedDate` 规则见 [`08-meta-config.md`](./08-meta-config.md) §发布日期。
 
 ---
 

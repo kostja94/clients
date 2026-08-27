@@ -66,4 +66,4 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 - [ ] 无 HowTo JSON-LD
 
 **audit-ready** → [`../audit-article/SKILL.md`](../audit-article/SKILL.md)  
-**publish-ready 后** → [11-publish-dates.md](./11-publish-dates.md)
+**publish-ready 后** → 人类发布；发布前复核 [`08-meta-config.md`](./08-meta-config.md) §发布日期

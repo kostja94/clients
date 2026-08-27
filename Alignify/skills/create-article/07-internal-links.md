@@ -1,6 +1,6 @@
 # Step 7 — 内链 & Internal Link Plan
 
-> **SSOT**：[`rules/internal-links.md`](./rules/internal-links.md) Part 1–2 · Marketing M1–M11 见同文件 [Part 4.5](./rules/internal-links.md#part-45-marketing-频道内链)
+> **SSOT**：[`rules/internal-links.md`](./rules/internal-links.md) Part 1–2 · Marketing M1–M11 见同文件 [Part 4.5](./rules/internal-links.md#part-45-marketing-频道内链) · 外链 UTM/Nofollow 见 [Part 8](./rules/internal-links.md#part-8-外链utm-与-nofollow)
 
 ---
 
@@ -38,6 +38,7 @@ ZH 定稿后 EN 须复用相同 distinct 目标（锚文本可本地化）。
 - [ ] 每条链过点击意图三问（见 [`internal-links.md` Part 4.5 §一](./rules/internal-links.md#一第一原则读者想点click-intent)）
 - [ ] FAQ 内链（若有）遵守 R4：同 URL 全页 1 次
 - [ ] 同 URL 全页 1 次
+- [ ] 正文外链 / References 须经 `addUtmToExternalLink()`（见 [`internal-links.md` Part 8](./rules/internal-links.md#part-8-外链utm-与-nofollow)）
 - [ ] Link Plan 已产出
 
 下一步：[08-meta-config.md](./08-meta-config.md)

@@ -45,7 +45,7 @@ Alignify/
 
 **质量档位**：Alignify **每篇均为 flagship** — Research + Moat + SelfCheck + 终审（≥80 发布，≥90 标杆）。
 
-**流程**：create-article Step 10 → **audit-ready** → audit-article → **publish-ready** → Step 11 日期 → 发布。
+**流程**：create-article Step 10 → **audit-ready** → audit-article → **publish-ready** → 人类发布（Step 08 已注册 publishDate/modifiedDate）。
 
 **正文格式**：`content/{channel}/{locale}/{slug}.md` — TL;DR / FAQ / References **inline**，不再使用集中 JSON。
 

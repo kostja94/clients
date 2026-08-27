@@ -604,7 +604,7 @@ FAQ 组件从 `faq-data.json` 生成 FAQPage JSON-LD；Brief 采用时 Step 08 �
 - **链接位置**：优先在被引用机构/公司名称上
 - **链接样式**：`text-primary hover:underline`
 - **链接属性**：`target="_blank"`、`rel="noopener noreferrer"`（正文引用不设 nofollow，便于读者溯源）
-- **UTM**：正文中的引用链接使用 `addUtmToExternalLink()`，参见链接规范文档
+- **UTM**：正文中的引用链接使用 `addUtmToExternalLink()`，参见 [`internal-links.md`](./internal-links.md#part-8-外链utm-与-nofollow) Part 8
 
 **说明**：md `#references` section（底部列表）使用 `getExternalLinkRel()`；正文中**手动**添加的引用链接使用 `rel="noopener noreferrer"` 即可。
 

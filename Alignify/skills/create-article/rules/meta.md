@@ -169,7 +169,7 @@ Alignify 每个内容页有四个关键文案要素，分属两个导向：
 
 **禁止**：
 - 含「Guide」「指南」
-- 含年份（如 2026）——新鲜度由 meta title 和 publishDate/modifiedDate 表达
+- 含年份（如 2026）——新鲜度由 meta title 和 publishDate/modifiedDate 表达（细则 [`08-meta-config.md`](../08-meta-config.md) §发布日期）
 - 疑问句开头（如「如何选择 X」），须转换为陈述式 `[主题]：[价值]`
 - 多个 H1（会混淆搜索引擎对页面焦点的判断）
 

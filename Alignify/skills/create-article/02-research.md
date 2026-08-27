@@ -64,7 +64,7 @@
 
 ## Article Brief
 
-Gate 0R Pass 后，将 Brief 写入 `knowledge/{dir}/_briefs/{slug}.md`（或对话留存）；**外部 SSOT** 时在 Brief 顶部写 `**SSOT**: {绝对路径}`。Step 05 动笔前 **不得偏离** One-line thesis 与 Moat。
+Gate 0R Pass 后，将 Brief 写入 `knowledge/{dir}/_briefs/{slug}.md`（或对话留存）；**外部 SSOT** 时在 Brief 顶部写 `**SSOT**: {绝对路径}`。Step 05（[`content-locale.md`](./rules/content-locale.md) Part 2）动笔前 **不得偏离** One-line thesis 与 Moat。
 
 ---
 

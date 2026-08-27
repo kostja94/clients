@@ -1,6 +1,6 @@
 # Create Article — Alignify 统一文章创建 Skill
 
-> **版本**：v2.3 · 2026-08-27  
+> **版本**：v2.4 · 2026-08-27  
 > **质量档位**：**每篇均为 flagship** — 无 lite/standard 降级；Research、Moat、BLUF、SelfCheck、终审全链路必过。  
 > **部署仓**：`E:\自有部署项目\alignify production`  
 > **上下文仓**：`E:\clients\Alignify`  
@@ -54,19 +54,17 @@
     ↓ PASS
 03 Keywords + README
 04 Screenshots — **仅** best-ranking / legacy；marketing · seo · insights **跳过**
-04 Screenshots — **仅** best-ranking / legacy；marketing · seo · insights **跳过**
     ├─ Subagent ZH：05 起草 → 06 地道化（[`content-locale.md`](./rules/content-locale.md) Part 2–3）
     └─ Subagent EN：09 独立成稿 → 09b Pass（Part 4）— **可与 ZH 并行**，输入仅 Brief+SSOT
 07 内链 + Internal Link Plan
-08 Meta + Config + Final CTA（`cta-config.json` · [`sections.md`](./rules/sections.md) Part 5）
+08 Meta + Config + Final CTA + publishDate/modifiedDate（[`08-meta-config.md`](./08-meta-config.md) · `next-publish-date.mjs`）
 09c 双语对等对比（Part 5）— 协调者，非翻译校对
 10 SelfCheck — Gate C → audit-ready + 5.5（同批≥2）
     ↓
 audit-article — Final ≥80 → publish-ready
     ↓
-11 publishDate — 全站唯一日历日 → [`11-publish-dates.md`](./11-publish-dates.md) + `scripts/ops/next-publish-date.mjs`
+人类发布（发布前复核 Step 08 日期字段）
 OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [`../ops/og-covers.md`](../ops/og-covers.md)
-（12 legacy modifiedDate）
 ```
 
 **Phase 0 首行强制输出**：
@@ -90,16 +88,14 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 04 | [`04-screenshots.md`](./04-screenshots.md) | 截图（**仅** best-ranking / legacy） |
 | 05–06 | [`rules/content-locale.md`](./rules/content-locale.md) Part 2–3 | ZH md + 地道化 |
 | 07 | [`07-internal-links.md`](./07-internal-links.md) | 内链 + Link Plan |
-| 08 | [`08-meta-config.md`](./08-meta-config.md) | Meta + config + **Final CTA** |
+| 08 | [`08-meta-config.md`](./08-meta-config.md) | Meta + config + Final CTA + **publishDate/modifiedDate** |
 | 09–09c | [`rules/content-locale.md`](./rules/content-locale.md) Part 4–5 | EN 独立成稿 + 对等对比 |
 | 10 | [`10-quality-gates.md`](./10-quality-gates.md) | Gate C → audit-ready |
 | — | [`../audit-article/SKILL.md`](../audit-article/SKILL.md) | publish-ready |
-| 11 | [`11-publish-dates.md`](./11-publish-dates.md) | publishDate |
-| 12 | [`12-legacy-tools-dates.md`](./12-legacy-tools-dates.md) | legacy 日期 |
+
+> **步骤编号说明**：01–04 独立文档 · 05–06 / 09–09c → [`content-locale.md`](./rules/content-locale.md) · 07 内链 · **08 = Meta + 日期 + CTA**（无 Step 11/12）· 10 自审 · 终审后人类发布。
 
 ---
-
-## 规范索引（Flagship 核心）
 
 | 主题 | 文档 |
 |------|------|
@@ -118,7 +114,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 章节规范 | [`rules/sections.md`](./rules/sections.md) |
 | 质量检查 | [`rules/quality-checklist.md`](./rules/quality-checklist.md) |
 | Final CTA | [`rules/sections.md`](./rules/sections.md) Part 5 |
-| 内链 | [`rules/internal-links.md`](./rules/internal-links.md)（含 Part 4.5 Marketing M1–M11） |
+| 内链 | [`rules/internal-links.md`](./rules/internal-links.md)（Part 1–2 内链 · Part 4.5 Marketing M1–M11 · Part 8 外链 UTM/Nofollow） |
 
 完整索引：[`rules/README.md`](./rules/README.md)
 
@@ -139,8 +135,8 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ 表前短桥接 / 孤立标签 / 免责声明独段（E40–E42；须跑 `audit-marketing-md-render.py`）
 - ❌ 自审后直接发布（须 audit-article）· ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章
-- ❌ **新 slug** publishDate 与全站已有 slug 重复（须 `next-publish-date.mjs --check`）
-- ❌ 把 skill 示例日期当「今天」——以执行 Step 08/11 的实际 UTC+8 日历日为准
+- ❌ **新 slug** publishDate 与全站已有 slug 重复（须 Step 08 跑 `next-publish-date.mjs --check`；见 `08-meta-config.md` §发布日期）
+- ❌ 把 skill 示例日期当「今天」——以执行 Step 08 的实际 UTC+8 日历日为准
 - ❌ References 收录与本文类似的第三方策略文；策略/Blog 文仅 **事件相关**引用（[`sections.md` Part 2.3 §3.2](./rules/sections.md#part-23-references--参考文献)）
 - ❌ 中文英译腔 / 英文逐句翻译 ZH / 先写一语种再译另一语种（须 `content-locale.md` Part 3·4 Pass + Part 5 09c + `locale-glossary`）
 - ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV** 须在某节内兑现；**不要求**独立 `#author-take`）
@@ -155,4 +151,4 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 
 ---
 
-*create-article · v2.3 · 2026-08-27 · complements audit-article*
+*create-article · v2.4 · 2026-08-27 · complements audit-article*

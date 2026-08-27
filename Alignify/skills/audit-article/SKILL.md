@@ -15,7 +15,7 @@ Step 10 SelfCheck（H0–H4 + 12 维）→ audit-ready
         ↓
 audit-article Final（十维 ≥80 + P0 Pass）→ publish-ready
         ↓
-Step 11 publishDate → 人类发布
+人类发布（复核 create-article Step 08 日期字段）
         ↓
 retro-audit（季度 / 重大变更）
 ```
@@ -76,7 +76,7 @@ retro-audit（季度 / 重大变更）
 **判定**：
 
 - P0 BLOCKED → **不得发布**
-- 总分 **≥80** + P0 Pass → **publish-ready** → 可执行 Step 11
+- 总分 **≥80** + P0 Pass → **publish-ready** → 人类发布（复核 Step 08 日期）
 - 总分 **≥90** + Moat + Excellence + 零 P1 → **S 级标杆**
 
 ---

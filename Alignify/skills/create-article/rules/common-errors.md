@@ -53,8 +53,8 @@
 |---|------|---------|
 | E18 | 图片路径不存在 | `public/blog/{slug}/` 与 md 引用一致 |
 | E19 | Meta 注册位置错误 | `blog-meta.ts` / `tools-meta.ts`；无需改 page.tsx |
-| E20 | publishDate 被修改 | 已上线 slug 的 publishDate 永不改 |
-| E26 | 新 slug publishDate 与已有 slug 同日 | 跑 `next-publish-date.mjs --check`；全站 `*-meta.ts` 日历日唯一 |
+| E20 | publishDate 被修改 | 已上线 slug 的 publishDate 永不改；见 `08-meta-config.md` §发布日期 |
+| E26 | 新 slug publishDate 与已有 slug 同日 | Step 08 跑 `next-publish-date.mjs --check`；见 `08-meta-config.md` §发布日期 |
 | E27 | 标题行使用空锚点 `{#}` | 须写 `{#kebab-id}` 或省略；空 `{#}` 会泄漏到线上标题 |
 | E28 | References 含同题第三方策略文或对照用 docs | 策略/Blog 文 References 仅 **事件一手（A）+ 事件报道（B）**；类型 C 正文内链；类型 D 禁止；见 [`sections.md` Part 2.3 §3.2](./sections.md#part-23-references--参考文献) |
 | E29 | 中文英译腔 / 箭头链正文 / 先译后写 | Step 06/09：`content-locale.md` Part 3·4 + `locale-glossary.md` / `.json`；09c 对等 |

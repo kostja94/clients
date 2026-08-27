@@ -1,7 +1,7 @@
 # Marketing 全站内链优化方案
 
 > **生成**：2026-08-27  
-> **规范 SSOT**：[`skills/create-article/rules/marketing-internal-links.md`](../../skills/create-article/rules/marketing-internal-links.md)  
+> **规范 SSOT**：[`skills/create-article/rules/internal-links.md`](../../skills/create-article/rules/internal-links.md) Part 4.5（M1–M11）  
 > **快照依据**：[`skills/optimize-internal-links/references/site-structure-internal-links.md`](../../skills/optimize-internal-links/references/site-structure-internal-links.md)  
 > **部署正文**：`E:\自有部署项目\alignify production\content\marketing\{en,zh}\{slug}.md`
 

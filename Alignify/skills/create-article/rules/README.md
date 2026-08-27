@@ -4,6 +4,32 @@
 
 ---
 
+## 步骤文档速查
+
+| 步骤 | 文档 |
+|------|------|
+| 01–04 | [`01-intake.md`](../01-intake.md) … [`04-screenshots.md`](../04-screenshots.md) |
+| 05–06 · 09–09c | [`content-locale.md`](./content-locale.md) |
+| 07 | [`07-internal-links.md`](../07-internal-links.md) · [`internal-links.md`](./internal-links.md) |
+| 08 | [`08-meta-config.md`](../08-meta-config.md)（Meta + **日期** + CTA + JSON 侧车） |
+| 10 | [`10-quality-gates.md`](../10-quality-gates.md) |
+
+---
+
+## 已合并 / 已删除（勿引用旧路径）
+
+| 旧文件 | 现 SSOT |
+|--------|---------|
+| `05-zh-content.md` · `06-localize-zh.md` · `09-en-content.md` · `localization-quality.md` | [`content-locale.md`](./content-locale.md) |
+| `terminology*.md` · `marketing-glossary.json` | [`locale-glossary.md`](./locale-glossary.md) + `.json` |
+| `11-publish-dates.md` · `12-legacy-tools-dates.md` | [`08-meta-config.md`](../08-meta-config.md) §发布日期 |
+| `utm-nofollow.md` | [`internal-links.md`](./internal-links.md) Part 8 |
+| `sections/` · `conclusion.md` · `final-cta.md` | [`sections.md`](./sections.md) |
+| `templates/` 子目录 | [`templates.md`](./templates.md) |
+| `marketing-internal-links.md` | [`internal-links.md`](./internal-links.md) Part 4.5 |
+
+---
+
 ## 质检地图（何时读哪个）
 
 | 阶段 | 文档 |
@@ -11,7 +37,7 @@
 | Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) |
 | Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`presentation.md`](./presentation.md) |
 | Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md) · [`internal-links.md`](./internal-links.md) · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
-| Step 08 注册 | [`meta.md`](./meta.md) · [`sections.md`](./sections.md) Part 5 |
+| Step 08 注册 | [`meta.md`](./meta.md) · [`sections.md`](./sections.md) Part 5 · [`08-meta-config.md`](../08-meta-config.md) §发布日期 · `next-publish-date.mjs` |
 | Step 10 自审 | [`selfcheck.md`](./selfcheck.md) · [`quality-checklist.md`](./quality-checklist.md) · [`common-errors.md`](./common-errors.md) |
 | 终审 | [`../../audit-article/SKILL.md`](../../audit-article/SKILL.md) · [`perfect-article-checklist.md`](./perfect-article-checklist.md)（S 级） |
 | 同批 ≥2 篇 | [`outline-cross-check.md`](./outline-cross-check.md) · [`cross-article-audit.md`](./cross-article-audit.md) |
@@ -52,7 +78,7 @@
 | [word-counts.md](./word-counts.md) | 字数底线 |
 | [consistency.md](./consistency.md) | 跨页一致性 |
 | [sections.md](./sections.md) | 章节 SSOT（Part 0–5 · 含结论与 Final CTA） |
-| [internal-links.md](./internal-links.md) | 内链 SSOT（Part 1–2 · Part 4.5 Marketing M1–M11） |
+| [internal-links.md](./internal-links.md) | 内链 + 外链 SSOT（Part 1–2 · Part 4.5 Marketing M1–M11 · Part 8 UTM/Nofollow） |
 | [quality-checklist.md](./quality-checklist.md) | P0/P1 汇总 |
 | [product-screenshots.md](./product-screenshots.md) | Best 榜单产品截图 URL |
 | Hero / OG 美学速查 | `E:\个人知识库\设计\11-通用-Hero与插图美学参考.md`（完整 SSOT → [`knowledge/design/aesthetic-references.md`](../../../knowledge/design/aesthetic-references.md)） |
@@ -76,4 +102,4 @@
 
 ---
 
-*rules README · v3.3 · 2026-08-27*
+*rules README · v3.4 · 2026-08-27*
