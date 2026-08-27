@@ -10,7 +10,7 @@
 **User confirmed**（2026-08-27）:
 - **slug**: `egc-marketing`
 - **中文标题（锁定 A）**: 如何用员工原创内容（EGC）为 AI/DevTools 建立开发者信任（2026）
-- **中文主称**: **员工原创内容**（EGC）；Employee Advocacy = 转发官稿，须分轨
+- **中文主称**: **员工原创内容**（EGC）；Employee Advocacy = 转发官稿，须与 EGC 分开规划
 - **Author POV**: Kostja 第一人称判断**融入** `#org-playbook`，**不设**独立 `#author-take` H2
 - **案例边界**: **仅海外**；主体 = **非创始人**员工（Tibo/Boris/Rohan/Michele/Matt/Tom 等）；创始人仅对照段
 - **案例呈现**: **方案 A — `react-tweet` live embed**（`<!-- block:tweet -->` + `<!-- tweet-id:STATUS_ID -->`）
@@ -21,7 +21,7 @@
 - **publishDate**: `2026-09-04`（`next-publish-date.mjs --check`）
 - **SuccessMetric**（90 天）: 品牌词（员工原创内容 EGC / employee generated content AI devtools）
 
-**One-line thesis**: EGC 是 AI/DevTools 用产品线负责人**个人号**首发 reset、事故叙事与 dogfooding——换取 practitioner 信任与 Tier 1 转引；与 Employee Advocacy（转发官稿）、Founder-led、矩阵 UGC **分轨**。
+**One-line thesis**: EGC 是 AI/DevTools 用产品线负责人**个人号**首发 reset、事故叙事与 dogfooding——换取 practitioner 信任与 Tier 1 转引；与 Employee Advocacy（转发官稿）、Founder-led、矩阵 UGC **各自独立**。
 
 **Moat Asset**:
 1. 术语三层：EGC vs Employee Advocacy vs Founder-led

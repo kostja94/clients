@@ -66,7 +66,7 @@
 **形态谱系（与具体品牌解耦）**
 
 - **ESP 全托管型**：Mailchimp、Brevo、ConvertKit——模板、自动化、列表一体。
-- **开发者/API 型**：SendGrid、Postmark、Amazon SES + 自建编排——适合产品内事务+营销分轨。
+- **开发者/API 型**：SendGrid、Postmark、Amazon SES + 自建编排——适合事务邮件与营销邮件分开发送。
 - **CRM 一体型**：HubSpot、ActiveCampaign——邮件与 sales pipeline、scoring 绑定。
 - **极简 indie 型**：Buttondown、Substack——Newsletter-first，电商/复杂 automation 弱。
 - **纯事务型**：Postmark、Resend—— onboarding 通知；营销需另子域与工具。
@@ -100,7 +100,7 @@
 | 类型 | 代表方向 | 备注 |
 |------|----------|------|
 | **ESP / MA** | Mailchimp, Klaviyo, ActiveCampaign | 自动化 + 模板 |
-| **Transactional** | Postmark, SendGrid, Resend | 与营销分轨 |
+| **Transactional** | Postmark, SendGrid, Resend | 与营销邮件分开发送 |
 | **Newsletter-first** | Substack, Buttondown | 创作者 / indie |
 | **Deliverability** | Google Postmaster, Validity | 声誉监控 |
 | **Design / test** | Litmus, Email on Acid | 渲染与 spam 测试 |
