@@ -38,7 +38,7 @@
 |------|------|
 | Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) · [`copy-quality.md`](./copy-quality.md) 附录 A |
 | Step 03 关键词 | [`03-keywords.md`](../03-keywords.md) · Brief `Primary keyword` |
-| Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`presentation.md`](./presentation.md) · [`copy-quality.md`](./copy-quality.md) Part 2·4 |
+| Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`gtm-prose-voice.md`](./gtm-prose-voice.md) · [`presentation.md`](./presentation.md) · [`copy-quality.md`](./copy-quality.md) Part 2·4 |
 | Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md)（**按 articleType** 选 Part 3/4/4.5/5）· [`internal-links.md`](./internal-links.md) Part 1–2 + Part 8 · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
 | Step 08 注册 | [`meta.md`](./meta.md) · [`sections.md`](./sections.md) Part 5 · [`08-meta-config.md`](../08-meta-config.md) §发布日期 · `next-publish-date.mjs` |
 | Step 10 自审 | [`selfcheck.md`](./selfcheck.md) · [`quality-checklist.md`](./quality-checklist.md) · [`common-errors.md`](./common-errors.md) |
@@ -57,6 +57,7 @@
 | [research-triangle.md](./research-triangle.md) | Step 02 Gate 0R |
 | [selfcheck.md](./selfcheck.md) | Step 10 · 12 维 + H0–H4 |
 | [presentation.md](./presentation.md) | BLUF + 段落 + Kostja Voice |
+| [gtm-prose-voice.md](./gtm-prose-voice.md) | GTM/PLG 禁腔（分轨·同族分流·组合拳·姊妹篇）+ 存量待改快照 |
 | [content-locale.md](./content-locale.md) | 双语正文 SSOT：05–06 ZH · 09–09c EN · 双轨 Subagent + 地道 Pass |
 | [locale-glossary.md](./locale-glossary.md) | 双语术语 SSOT（Part 1–3 对照 · Part 2 GTM · 文风） |
 | [locale-glossary.json](./locale-glossary.json) | 机器层：`localize_required` · `forbidden_*` · audit 脚本 |

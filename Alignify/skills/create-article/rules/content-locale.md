@@ -73,6 +73,7 @@
 | SSOT / Research | `knowledge/` 或 Brief `SSOT:` 路径 |
 | 节型规范 | [`sections.md`](./sections.md) Part 0 + 实际采用的 Part |
 | 术语 | [`locale-glossary.md`](./locale-glossary.md) · [`locale-glossary.json`](./locale-glossary.json) |
+| GTM/PLG 禁腔 | [`gtm-prose-voice.md`](./gtm-prose-voice.md)（Marketing/Blog 必过） |
 
 ---
 
@@ -200,15 +201,16 @@ Brief 锁定（Step 02）
 
 ```
 1. 术语统一（[`locale-glossary.md`](./locale-glossary.md) Part 1–2 · [`locale-glossary.json`](./locale-glossary.json)）
-2. 去英译腔 — 箭头链改 prose；英文术语降频，中文主称
-3. BLUF 三处复核（B1 TL;DR · B2 每 major H2 首段 · B3 FAQ 首句）
-4. Author POV — 第一人称判断可读、可证伪
-5. Extractability — Answer Blocks 可独立成 40–60 字段（见 extractability-checklist.md）
-6. 段落节奏 — 长段≥3；伪列表清零；E40–E42
-7. FAQ vs 正文 spot-check（相似度 <30%）
-8. **Swap Test** 抽样 ≥3 处 + 独特性自评 ≥ L2（L0 不得 Pass）— 见 [`copy-quality.md`](./copy-quality.md) Part 2·4
-9. audit-locale-voice.py --slug {slug}（Fail 则回改）
-10. audit-marketing-md-render.py（Marketing/Blog 策略文；E40–E42）
+2. **GTM 禁腔**（Marketing/Blog：[`gtm-prose-voice.md`](./gtm-prose-voice.md) §2 — 禁分轨/同族分流/组合拳/姊妹篇等）
+3. 去英译腔 — 箭头链改 prose；英文术语降频，中文主称
+4. BLUF 三处复核（B1 TL;DR · B2 每 major H2 首段 · B3 FAQ 首句）
+5. Author POV — 第一人称判断可读、可证伪
+6. Extractability — Answer Blocks 可独立成 40–60 字段（见 extractability-checklist.md）
+7. 段落节奏 — 长段≥3；伪列表清零；E40–E42
+8. FAQ vs 正文 spot-check（相似度 <30%）
+9. **Swap Test** 抽样 ≥3 处 + 独特性自评 ≥ L2（L0 不得 Pass）— 见 [`copy-quality.md`](./copy-quality.md) Part 2·4
+10. audit-locale-voice.py --slug {slug}（Fail 则回改）
+11. audit-marketing-md-render.py（Marketing/Blog 策略文；E40–E42）
 ```
 
 ## 3.2 术语要点
@@ -351,7 +353,7 @@ Fail → **不得**用同义词替换凑字数。
 
 # 附录 A · 禁腔对照速查
 
-> **SSOT**：[`locale-glossary.md`](./locale-glossary.md) 附录（与 `locale-glossary.json` → `forbidden_in_zh` / `forbidden_in_en` 同步）。  
+> **SSOT**：[`locale-glossary.md`](./locale-glossary.md) 附录 · [`gtm-prose-voice.md`](./gtm-prose-voice.md)（GTM 相邻文）· `locale-glossary.json` → `forbidden_in_*` / `forbidden_regex_*`  
 > 地道 workflow 判据见 Part 0.2；Step 06/09b 须对照附录 Pass。
 
 ---

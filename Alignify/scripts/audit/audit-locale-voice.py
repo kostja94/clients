@@ -44,6 +44,34 @@ def audit_zh_localize(body: str, glossary: dict) -> list[str]:
     return issues
 
 
+def audit_zh_regex(body: str, glossary: dict) -> list[str]:
+    issues: list[str] = []
+    for entry in glossary.get("forbidden_regex_zh", []):
+        pattern = entry.get("pattern", "")
+        if pattern and re.search(pattern, body):
+            hint = entry.get("hint", "")
+            issues.append(
+                f"ZH forbidden regex /{pattern}/"
+                + (f"; {hint}" if hint else "")
+                + " (gtm-prose-voice.md)"
+            )
+    return issues
+
+
+def audit_en_regex(body: str, glossary: dict) -> list[str]:
+    issues: list[str] = []
+    for entry in glossary.get("forbidden_regex_en", []):
+        pattern = entry.get("pattern", "")
+        if pattern and re.search(pattern, body):
+            hint = entry.get("hint", "")
+            issues.append(
+                f"EN forbidden regex /{pattern}/"
+                + (f"; {hint}" if hint else "")
+                + " (gtm-prose-voice.md)"
+            )
+    return issues
+
+
 def audit_zh(text: str, glossary: dict) -> list[str]:
     issues: list[str] = []
     body = strip_frontmatter(text)
@@ -53,7 +81,8 @@ def audit_zh(text: str, glossary: dict) -> list[str]:
         issues.append("ZH body uses arrow chains (→); rewrite as prose")
     for bad in glossary.get("forbidden_in_zh", []):
         if bad.replace(" X ", " ") in body or bad in body:
-            issues.append(f"ZH forbidden pattern: {bad}")
+            issues.append(f"ZH forbidden pattern: {bad} (gtm-prose-voice.md)")
+    issues.extend(audit_zh_regex(body, glossary))
     issues.extend(audit_zh_localize(body, glossary))
     if not re.search(r"(我|我的判断|我认为|我会)", body):
         issues.append("ZH missing Kostja first-person judgment (我/我认为)")
@@ -70,7 +99,8 @@ def audit_en(text: str, glossary: dict) -> list[str]:
         issues.append("EN body uses →; rewrite as full sentences")
     for bad in glossary.get("forbidden_in_en", []):
         if bad in body:
-            issues.append(f"EN forbidden pattern: {bad}")
+            issues.append(f"EN forbidden pattern: {bad} (gtm-prose-voice.md)")
+    issues.extend(audit_en_regex(body, glossary))
     if not re.search(r"\bI\b|\bmy read\b|\bI think\b", body, re.I):
         issues.append("EN missing first-person author voice (I / my read)")
     short = len(re.findall(r"(?<=[.!?])\s+[A-Z][a-z]+[^.!?]{0,25}[.!?]", body))

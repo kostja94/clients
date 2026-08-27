@@ -110,6 +110,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | SelfCheck 12 维 | [`rules/selfcheck.md`](./rules/selfcheck.md) |
 | 双语正文 | [`rules/content-locale.md`](./rules/content-locale.md)（05–06 ZH · 09–09c EN · 双轨成稿） |
 | 双语术语 | [`rules/locale-glossary.md`](./rules/locale-glossary.md) · [`locale-glossary.json`](./rules/locale-glossary.json) |
+| GTM 禁腔 | [`rules/gtm-prose-voice.md`](./rules/gtm-prose-voice.md) |
 | BLUF / 段落 | [`rules/presentation.md`](./rules/presentation.md) |
 | 文案质量 · Swap Test | [`rules/copy-quality.md`](./rules/copy-quality.md)（M1/M2/M3 · 五维） |
 | Extractability | [`rules/extractability-checklist.md`](./rules/extractability-checklist.md) |

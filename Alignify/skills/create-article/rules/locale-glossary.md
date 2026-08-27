@@ -220,7 +220,7 @@
 | pay to remove watermark | **付费去水印** | **变现轴**（次要节，非 H1） |
 | pay to remove branding | **付费去标** | `embedded-virality` 专用；与 export 水印勿混 H1 |
 
-### 2.2.2 与 embedded-virality 分流（「什么是」节必写）
+### 2.2.2 与 embedded-virality 怎么区分（「什么是」节必写）
 
 | 维度 | Powered-by Badge | Export 水印增长 |
 |------|------------------|-----------------|
@@ -245,7 +245,7 @@
 | URL-level platform attribution | **地址栏带平台域名** | 增长机制描述 |
 | custom domain upsell / gating | **自定义域名升级** / **付费绑自定义域名** | **变现轴**（独立节，非 H1） |
 
-### 2.3.2 与 embedded-virality / watermark-growth 分流（「什么是」节必写）
+### 2.3.2 与 embedded-virality / watermark-growth 怎么区分（「什么是」节必写）
 
 | 维度 | Powered-by Badge | 平台子域增长 | Export 水印增长 |
 |------|------------------|--------------|-----------------|
@@ -301,7 +301,20 @@
 | 是 SEO 优化的基础 | 属于 SEO 基础配置 |
 | 捕获缺失或格式错误的标签 | 发现缺失或格式错误的标签 |
 
-## 3.4 Excerpt / Title 格式
+## 3.4 GTM 相邻文禁腔（Marketing / Blog）
+
+> **SSOT**：[`gtm-prose-voice.md`](./gtm-prose-voice.md) · 机器层 `locale-glossary.json` → `forbidden_in_*` / `forbidden_regex_*`
+
+| 避免 | 改用 |
+|------|------|
+| 分轨 / 同族分流 / 载体分流 / 形态分流 | 分开算 KPI · 不是一回事 · 按载体对照 |
+| GTM 组合拳 / 标准组合拳 | 与其他 GTM 怎么配合 · 标准玩法 |
+| 姊妹篇 / 混表 / 双轨 KPI | 相关专文 · 混在一个表格里 · 两套 KPI 分开算 |
+| carrier split / split tracks / Same family as… | separate tracking · related playbook |
+
+音乐 **分轨**、Hub **选型分流**、HR **工单分流** 见 `gtm-prose-voice.md` §2.1 合法域。
+
+## 3.5 Excerpt / Title 格式
 
 - 中文 title：`Meta Tag 配置：SEO 与用户体验`（冒号两侧、中文与英文词之间加空格）
 - excerpt：80–150 字；避免 `Meta Tag配置` 连写
@@ -364,6 +377,7 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态（站
 | H2 以英文短语开头 | 中文 H2 为主 |
 | Git 提交归因（Co-Author 语境） | **AI 提交署名** / **提交署名** |
 | 英文 slogan 直译 | 重写成中文读者能直读的说法 |
+| 分轨 / 同族分流 / 载体分流 / GTM 组合拳 / 姊妹篇 | 见 [`gtm-prose-voice.md`](./gtm-prose-voice.md) |
 
 ## 英文（`forbidden_in_en`）
 
@@ -373,6 +387,7 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态（站
 | land-grab（过度） | win share during rival cap windows |
 | moat（裸用） | durable advantage / what keeps users after promos end |
 | 与 ZH 相同段落数机械对齐 | 信息对等即可 |
+| carrier split / split tracks / GTM Combos | 见 [`gtm-prose-voice.md`](./gtm-prose-voice.md) |
 
 ---
 
@@ -380,6 +395,7 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态（站
 
 | 日期 | 说明 |
 |------|------|
+| 2026-08-27 | 新增 [`gtm-prose-voice.md`](./gtm-prose-voice.md)；locale-glossary.json v1.1 禁腔扩展 |
 | 2026-08-27 | 合并 terminology-glossary · terminology · marketing-glossary → locale-glossary（方案 A） |
 
 *locale-glossary.md · v1.0 · 2026-08-27*

@@ -1,6 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "ssot_md": "locale-glossary.md",
+  "gtm_prose_ssot": "gtm-prose-voice.md",
   "policy": "chinese_first_in_zh_body — 叙述用中文主称；keep_english 仅保留行业/产品固定写法",
   "keep_english": [
     "Codex",
@@ -79,11 +80,48 @@
     "AI 提交归因",
     "平台子域名门控",
     "子域名门控",
-    "平台子域与付费自定义域名"
+    "平台子域与付费自定义域名",
+    "同族分流",
+    "载体分流",
+    "形态分流",
+    "GTM 组合拳",
+    "标准组合拳",
+    "须分轨",
+    "必分轨",
+    "强制分轨",
+    "分轨 KPI",
+    "分轨追踪",
+    "混表",
+    "双轨 KPI",
+    "姊妹篇",
+    "分流表"
   ],
   "forbidden_in_en": [
     "→",
     "land-grab moat",
-    "same as ZH sentence count"
+    "same as ZH sentence count",
+    "carrier split",
+    "split tracks",
+    "Must Split Tracks",
+    "narrate on two tracks",
+    "Same family as Powered-by",
+    "sibling article's carrier",
+    "GTM Combos"
+  ],
+  "forbidden_regex_zh": [
+    {
+      "pattern": "同属[^\\n]{0,24}同族",
+      "hint": "改用「同一类 freemium 玩法」或「和 … 是一路子，但 KPI 分开算」"
+    },
+    {
+      "pattern": "和[^\\n]{0,12}badge[^\\n]{0,20}同族",
+      "hint": "改用「和页脚 badge 是同一类 freemium 交换」"
+    }
+  ],
+  "forbidden_regex_en": [
+    {
+      "pattern": "shares the embedded virality \\*\\*family\\*\\*",
+      "hint": "Use «same freemium pattern as embedded virality» or «related playbook»"
+    }
   ]
 }
