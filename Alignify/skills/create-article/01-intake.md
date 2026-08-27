@@ -11,6 +11,7 @@
 ```
 ## QualityTier: flagship
 ## ArticleType: {type}
+## BatchCount: {1 | N≥2} — {slug 或同批 slug 列表}
 ## InvestmentScore: {X.X} — {五因子摘要}
 ## Gate A: KEEP | MERGE → {target slug} | STOP
 ```
@@ -41,6 +42,14 @@
 - [ ] 主关键词 + 搜索意图已明确（不清楚则在聊天中问用户）
 - [ ] 与已有文章关系已确认（Hub / Spoke / 新 cluster）
 - [ ] 竞品 SERP Top 3 URL 已收集（供 Step 02）
+- [ ] **同批篇数**已登记：`BatchCount: 1` 或 `N≥2` + slug 列表（决定 Step 05 Outline 3.5 / Step 10 Cross 5.5 是否 `N/A`）
+
+### 条件步骤速查
+
+| BatchCount | Outline 3.5（Step 05 前） | Cross-Article 5.5（Step 10） | Step 04 截图 |
+|------------|---------------------------|------------------------------|--------------|
+| **1** | 输出 `N/A — single article` | 输出 `N/A — single article` | 仅 `best-ranking` / `legacy` |
+| **≥2** | 过 [`outline-cross-check.md`](./rules/outline-cross-check.md) | 过 [`cross-article-audit.md`](./rules/cross-article-audit.md) | 同上 |
 
 ---
 
@@ -110,7 +119,8 @@
 ## 输出
 
 - [ ] Gate A：KEEP / MERGE / STOP  
-- [ ] articleType · Hub/category  
+- [ ] articleType · Hub/category · **Copy mode**（M1/M2/M3 · 见 [`copy-quality.md`](./rules/copy-quality.md) Part 0）
+- [ ] **BatchCount** + slug 列表（写入 Brief）  
 - [ ] 大纲草案  
 - [ ] SERP Top 3 URL 列表（供 Step 02）
 

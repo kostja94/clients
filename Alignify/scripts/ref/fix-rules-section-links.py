@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[2]
 RULES = ROOT / "skills" / "create-article" / "rules"
 
 REPLACEMENTS = [
-    ("../section/section-consistency.md", "../consistency.md"),
+    ("../section/section-consistency.md", "../copy-quality.md"),
     ("../section/section-meta-copy.md", "../meta.md"),
     ("../section/section-seo.md", "../meta.md"),
     ("../section/section-heading-best-practices.md", "../sections/generic.md"),
@@ -30,7 +30,7 @@ REPLACEMENTS = [
     ("../section/README.md", "../README.md"),
     ("./template-tools.md", "./best-ranking.md"),
     ("./template-bloglayout.md", "./bloglayout.md"),
-    ("./sections/content-rules/section-consistency.md", "../consistency.md"),
+    ("./sections/content-rules/section-consistency.md", "../copy-quality.md"),
     ("content JSON（补充段落", "content Markdown（补充段落"),
     ("修改对应 content JSON", "修改对应 content Markdown"),
     ("Tldr 组件", "md `#article-intro` section"),

@@ -20,6 +20,17 @@
 8. [Markdown 正文格式与计数范围](#part-7-markdown-正文格式与计数范围)
 9. [外链：UTM 与 Nofollow](#part-8-外链utm-与-nofollow)
 
+### Step 07 阅读路径（create-article）
+
+| articleType | 必读（除 Part 1–2 · Part 8 外） |
+|-------------|----------------------------------|
+| `best-ranking` · `best-ranking-legacy` | [Part 3](#part-3-tools-类目) |
+| `marketing-strategy` | [Part 4.5](#part-45-marketing-频道内链) |
+| `seo-guide` | [Part 4](#part-4-seo-频道内链) |
+| `insights-analysis` | [Part 5](#part-5-insights--其他频道) |
+
+Part 6–7 归属 [`optimize-internal-links`](../../optimize-internal-links/SKILL.md)，**非** create-article Step 07。
+
 ---
 
 <a id="part-1-编辑层单篇怎么改best-practice"></a>
@@ -2928,6 +2939,8 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 > **全站快照**：[`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md)  
 > **Last updated**：2026-08-27
 
+> **代号消歧**：本节 **M1–M11** = Marketing **内链**规则；[`copy-quality.md`](./copy-quality.md) Part 0.2 的 **Copy mode M1/M2/M3** = 成稿五维模式。**二者无关**。
+
 新文 `content/blog/` + `/blog/{slug}`；存量 `/marketing/` 不重迁。全站共性规则见 [Part 1–2](#part-2-全站内链规则)。
 
 ---
@@ -3218,7 +3231,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | [sections.md](./sections.md) | 章节 SSOT（Part 0–5：TL;DR / FAQ / 节型 / 结论 / Final CTA） |
 | [templates.md](./templates.md) | 四类页面结构参考（Part 2–5）；**建议非施工图** |
 | [internal-links.md](./internal-links.md) | 全站内链、外链、组件级规则 |
-| [consistency.md](./consistency.md) | 「什么是」字数表含内链要求 |
+| [copy-quality.md](./copy-quality.md) | 五维 · Swap Test · L0 阻断（Part 2）；篇幅 C 层（Part 3–4） |
 | [README.md](./README.md) | 规范索引 |
 | [meta.md](./meta.md) | SEO 章约束 |
 | `alignify-keywords-tools.md` | Tools 意图与「相邻 Tools」**权威表** |
@@ -3235,7 +3248,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | [internal-links.md](./internal-links.md) | **全站**内链唯一性、相关性、样式、FAQ 可链、组件表；主文档 |
 | [sections.md](./sections.md) | 各节写法与内链位点（Part 2–5） |
 | [templates.md](./templates.md) | 四类页面结构参考（Part 2–5） |
-| [consistency.md](./consistency.md) | 「什么是」字数表含内链要求 |
+| [copy-quality.md](./copy-quality.md) | 五维 · Swap Test · L0 阻断（Part 2）；篇幅 C 层（Part 3–4） |
 | [README.md](./README.md) | 规范索引 |
 | [meta.md](./meta.md) | Meta / H1 约束 |
 | [technical/technical-crawlability.md](../../ops/seo-fundamentals.md) | 孤儿页与内链 |

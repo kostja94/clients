@@ -114,7 +114,7 @@
 
 - **H1**：`[主题]：[价值]`；不写年份
 - **H2 间距**：容器 `space-y-12`；正文 H2 之间**不加** divider（E36）
-- 完整可访问性与字数见 [`meta.md`](./meta.md)、[`consistency.md`](./consistency.md)
+- 完整可访问性与字数见 [`meta.md`](./meta.md)、[`word-counts.md`](./word-counts.md)、[`copy-quality.md`](./copy-quality.md) Part 3
 
 ---
 
@@ -416,7 +416,7 @@ Step 08 注册 `tldr-data.json` 后，线上 `Tldr.tsx` 输出 ItemList Schema�
 
 ### 2.2 字数控制（搜索与 Featured Snippet 最佳实践）
 
-全文篇幅层级见 [consistency.md §〇、§二](./consistency.md#〇字数层级硬底线-vs-建议必读)；下表为 **FAQ 答案**的常用目标，**非**刚性上限。
+全文篇幅层级见 [copy-quality.md Part 3](./copy-quality.md#part-3-字数层级与章内节奏) · [`word-counts.md`](./word-counts.md)；下表为 **FAQ 答案**的常用目标，**非**刚性上限。
 
 | 语言 | 问题长度 | 答案长度 | 统一性 | 依据 |
 |------|----------|----------|--------|------|
@@ -1222,7 +1222,7 @@ node scripts/ops/normalize-references-in-json.mjs
 
 ### 字数参考
 
-见 [`consistency.md`](./consistency.md) §二；以说清为准，勿为凑节加空 H2。
+见 [`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md) Part 3；以说清为准，勿为凑节加空 H2。
 
 ---
 
@@ -1231,7 +1231,28 @@ node scripts/ops/normalize-references-in-json.mjs
 
 ## 3.3 Best 产品 H3（best-ranking）
 
-> **客户露出（Tier 1/2）**：[`partner-products.md`](./partner-products.md) — 商业保留/突出规则，非节写法 SSOT。
+> **客户 Tier（A 层）**：本节 §3.3.0 — 与选品/写法 SSOT 同文件维护；名单来源：部署仓 `customer-stories/page.tsx`。
+
+### 3.3.0 客户 Tier（best-ranking · A 层）
+
+| 层级 | 新增 | 保留 | 突出 |
+|------|------|------|------|
+| **Tier 0** 非客户 | 仅按 KB 形态谱系 + 本节写法 | 按 KB 与编辑判断 | — |
+| **Tier 1** Customer Stories | ❌ 不得仅因「是客户」加入产品 H3 | ✅ 已在页内则**不得删除或悄然降级** | — |
+| **Tier 2** 合同/战略 | 同 Tier 1；slug 相关时**应**在 KB 与页内体现 | ✅ 必须保留 | bestTools **靠前**；对比表；TL;DR/FAQ/结论至少一处点名 |
+
+**允许移除 Tier 1/2 的唯一理由**（PR 说明一句）：产品关闭/域名失效 · 明确不属于本 slug · KB 主卡已移出且非 Tier 2。
+
+**禁止**：为腾位删 Tier 1/2 · 把 Customer Stories 全表同步进单 slug · 仅因客户身份把 KB 横评参考升为主卡（Tier 2 除外）。
+
+**Tier 2 速查**（运营维护）：
+
+| 产品 | 相关 slug |
+|------|-----------|
+| Utell AI | `accent-conversion`, `audio-translator`, `voice` |
+| TemPolor AI | `music-generator` |
+
+定稿前核对：新增是否仅因客户身份？→ 不要加（Tier 2 除外）。diff 是否删掉 §上表域名？→ 对照 Tier。Tier 2 是否仍在前段且有对比表/摘要点名？
 
 ## 〇、规则层级（必读）
 
@@ -2023,7 +2044,7 @@ npm run build
 
 > **渲染**：md 正文 `## 结论 {#conclusion}`；FAQ 在其后由页底 `FAQ.tsx` 全局渲染。  
 > **内链专规**：本节 §4.4；全站规则见 [`internal-links.md`](./internal-links.md)。  
-> **篇幅数字索引**：[`word-counts.md`](./word-counts.md) · [`consistency.md`](./consistency.md)
+> **篇幅数字索引**：[`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
 
 <a id="part-41-定位与作用"></a>
 
@@ -2068,7 +2089,7 @@ npm run build
 
 ## 4.2.3 篇幅（软约束 · 内容优先）
 
-> **定位说明**：篇幅区间是 **C 层软建议**（见 [section-consistency §〇](./consistency.md)），**不是硬性红线**。审校与生成时**优先看内容**：论证完整、信息对等、无注水 > 字数达标。**切勿为贴数字删补句式**；跨页优先对齐语气与结构，正文字数允许随主题难度浮动，不强制逐字相等。
+> **定位说明**：篇幅区间是 **C 层软建议**（见 [copy-quality.md Part 3 §3.1](./copy-quality.md#31-三级体系a--b--c)），**不是硬性红线**。审校与生成时**优先看内容**：论证完整、信息对等、无注水 > 字数达标。**切勿为贴数字删补句式**；跨页优先对齐语气与结构，正文字数允许随主题难度浮动，不强制逐字相等。
 
 | 语言 | 参考区间 | 结构 |
 |------|---------|------|
@@ -2303,8 +2324,8 @@ npm run build                 # 部署仓：全量构建
 ## 4.7 交叉引用
 
 - 结论内链全站规则：[`internal-links.md`](./internal-links.md) · 本节 Part 4.4
-- 篇幅数字索引：[`word-counts.md`](./word-counts.md) · [`consistency.md`](./consistency.md)
-- 交叉引用：[`internal-links.md`](./internal-links.md) · [`word-counts.md`](./word-counts.md) · [`consistency.md`](./consistency.md)
+- 篇幅数字索引：[`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
+- 交叉引用：[`internal-links.md`](./internal-links.md) · [`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
 
 ---
 
@@ -2458,9 +2479,9 @@ node E:\clients\Alignify\scripts\ops\merge-cta-slugs.mjs --check
 | 主题 | 文档 | 说明 |
 |------|------|------|
 | 各节字数表 | [`word-counts.md`](./word-counts.md) | TL;DR / 什么是 / 结论 / FAQ 数字索引 |
-| Best H3 客户露出 | [`partner-products.md`](./partner-products.md) | Tier 1/2 商业规则；写法见 Part 3.3 |
+| Best H3 客户 Tier | 本节 Part 3.3 §3.3.0 | Tier 0/1/2 保留/突出；写法见 Part 3.3 |
 | Best 产品截图 | [`product-screenshots.md`](./product-screenshots.md) | Step 04 操作；非节写法 |
-| 跨页一致性 | [`consistency.md`](./consistency.md) | C 层软建议定位 |
+| 跨页五维 / Swap Test | [`copy-quality.md`](./copy-quality.md) | M1/M2/M3 · 去模板化 |
 | BLUF / Author voice | [`presentation.md`](./presentation.md) | 全节通用 |
 
 ---

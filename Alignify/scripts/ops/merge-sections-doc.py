@@ -124,7 +124,7 @@ PART1 = """<a id="part-1-全局写法markdown--h1h6"></a>
 
 - **H1**：`[主题]：[价值]`；不写年份
 - **H2 间距**：容器 `space-y-12`；正文 H2 之间**不加** divider（E36）
-- 完整可访问性与字数见 [`meta.md`](./meta.md)、[`consistency.md`](./consistency.md)
+- 完整可访问性与字数见 [`meta.md`](./meta.md)、[`copy-quality.md`](./copy-quality.md)
 
 ---
 

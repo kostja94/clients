@@ -16,6 +16,8 @@
 **InvestmentScore**: {1.0–5.0} — {五因子一行摘要}
 **Gate A**: KEEP | MERGE → {target}
 
+**BatchCount**: {1 | N≥2} — {slug 或同批 slug 列表}（1 → Outline 3.5 / Cross 5.5 标 N/A）
+
 **User confirmed**（可选摘要，YYYY-MM-DD）:
 - …
 
@@ -61,6 +63,14 @@
 **Synthesis Statement**（链 Step 02）:
 **SERP Fit 摘要**（链 Step 02）:
 
+**Copy quality**（见 [`copy-quality.md`](./copy-quality.md) · 附录 A）:
+- Mode: M1 | M2 | M3（默认 M1；同 Hub 簇状生产 → M2）
+- Hero fault（本页独有故障/缺口）:
+- Deliverable（本页交付物）:
+- Uniqueness target: L2（flagship 默认）
+- Cluster hub: {slug}（仅 M2）
+- Swap neighbors: {slug-a}, {slug-b}（M2 必填 ≥2）
+
 **Excellence type**（择一标注）: Depth | Objectivity | Freshness | Workflow | Proof
 **Post-publish metric**（T+7 / T+30 / T+90）:
 
@@ -81,11 +91,12 @@
 | Moat Asset | ≥1 项；正文必须兑现（Step 10 / audit 复核） |
 | Author POV | Blog 默认 ≥1 条判断**写入正文**（任意相关 H2 内）；独立 `#author-take` 须 Brief/User 明示 |
 | Answer Blocks | 3–5 个**内容问题**；每个有对应 H2；**非**模板节清单 |
-| One-line thesis | 通过「SERP 同句测试」 |
+| One-line thesis | 通过「SERP 同句测试」（见 [`copy-quality.md`](./copy-quality.md) Part 1） |
+| Copy quality | M1 推荐 Hero fault；M2 必填 cluster + swap neighbors |
 | SuccessMetric | 可量化（排名、CTR、内链点击、转化路径之一） |
 | Planned H2 | 主体节不可省略；TL;DR/FAQ/How To 若省略须在 Brief 写理由 |
 | Final CTA | ZH title + description **Step 02 必填**；EN Step 09 定稿；Step 08 写入 deploy 仓 |
 
 ---
 
-*article-brief · v1.3 · 2026-08-27*
+*article-brief · v1.4 · 2026-08-27*

@@ -13,7 +13,7 @@
 | **H1** | P0 | G1–G7 + `quality-checklist` P0-1–P0-13 零触发 |
 | **H2** | Brief | Moat ≥1；Answer Blocks 3–5；Brief 与大纲一致 |
 | **H3** | 双语 parity | ZH/EN section 类型、顺序、锚点 id 一致 |
-| **H4** | Flagship 深度 | 叙事字数 ≥ `word-counts.md` 该类型 flagship 下限 |
+| **H4** | Flagship 深度 | 叙事字数 ≥ [`word-counts.md`](./word-counts.md) 该类型 flagship 下限；Swap Test / 独特性 ≥ L2 见 [`copy-quality.md`](./copy-quality.md) Part 4 |
 
 ---
 

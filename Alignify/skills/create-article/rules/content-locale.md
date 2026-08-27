@@ -2,9 +2,9 @@
 
 > **位置**：`skills/create-article/rules/content-locale.md`  
 > **适用**：Step 05–06（中文）· Step 09–09c（英文 + 对等验收）  
-> **版本**：v1.0 · 2026-08-27  
+> **版本**：v1.1 · 2026-08-27  
 > **原则**：ZH/EN **各自 native 成稿**；**信息对等、表达独立**；**禁止**「先写一语种再翻译另一语种」。  
-> **关联**：[`presentation.md`](./presentation.md) · [`extractability-checklist.md`](./extractability-checklist.md) · [`sections.md`](./sections.md) · [`word-counts.md`](./word-counts.md)
+> **关联**：[`presentation.md`](./presentation.md) · [`extractability-checklist.md`](./extractability-checklist.md) · [`sections.md`](./sections.md) · [`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
 
 ---
 
@@ -134,7 +134,8 @@ Brief 锁定（Step 02）
 
 - [ ] Article Brief 已锁定（Moat + Answer Blocks 3–5）
 - [ ] Planned H2 与 Brief 一致；**锚点 id 表**已写入 Brief（EN 轨复用）
-- [ ] **Outline 3.5**（同批 ≥2 篇）：[`outline-cross-check.md`](./outline-cross-check.md) Pass 或 `N/A`
+- [ ] **Outline 3.5**（Brief `BatchCount ≥2`）：[`outline-cross-check.md`](./outline-cross-check.md) Pass；**单篇** → 输出 `Outline cross-check: N/A — single article`
+- [ ] Brief **Copy quality** 已填（Mode · Hero fault；M2 含 cluster + swap neighbors）— 见 [`copy-quality.md`](./copy-quality.md) 附录 A
 
 ## 2.2 路径
 
@@ -157,12 +158,14 @@ Brief 锁定（Step 02）
 7. **含表 H2**：先 ≥3 句 BLUF → `childrenHtml` → 表后 ≥2 句（E40–E41）
 8. 节规范按**实际采用的节**查阅 [`sections.md`](./sections.md) Part 0 + Part 3.x
 9. **禁止**正文 meta 句：「落地细节进 skills / runbook…」（E49）
-10. **go/no-go 矩阵**仅当 Brief 勾选且 `marketing-strategy` + GTM 适用性题材（[`templates.md`](./templates.md) Part 3 §3.2）
+10. **go/no-go 矩阵**仅当 Brief 勾选且 `marketing-strategy` + GTM 适用性题材（[`templates.md`](./templates.md#part-3-marketing) §3.2 — **参考菜单**，非施工图）
+
+> **templates 用法**：只读 Part 0 + **当前 articleType 对应 Part**（Tools→2 · Marketing→3 · SEO→4 · Insights→5）的节级建议；**禁止**按模板增删 H2。
 
 ## 2.4 05b 深度扩写（动笔后、Step 06 前）
 
 - 每 major H2 含 **事实 + 场景 + 判断** 中至少两类（见 Part 0.2）
-- 对照 [`templates.md`](./templates.md) 节级建议区间；**不足则补论证**，不堆同义句
+- 对照 [`word-counts.md`](./word-counts.md) 与 [`templates.md`](./templates.md) 节级建议区间；**不足则补论证**，不堆同义句
 - 从 SSOT 抽**事件时间线**与**可核实数字**，勿只留表格摘要
 - **删列表 / 改 prose 时**：同步删除孤立 `**标签：**` 行（E41）
 
@@ -185,6 +188,7 @@ Brief 锁定（Step 02）
 - [ ] 主体节覆盖 Brief Answer Blocks
 - [ ] TL;DR / FAQ 与 Brief 一致
 - [ ] Moat 已兑现
+- [ ] **best-ranking**：产品 H3 定稿前过 [`sections.md`](./sections.md) Part 3.3 §3.3.0（客户 Tier）
 
 ---
 
@@ -202,8 +206,9 @@ Brief 锁定（Step 02）
 5. Extractability — Answer Blocks 可独立成 40–60 字段（见 extractability-checklist.md）
 6. 段落节奏 — 长段≥3；伪列表清零；E40–E42
 7. FAQ vs 正文 spot-check（相似度 <30%）
-8. audit-locale-voice.py --slug {slug}（Fail 则回改）
-9. audit-marketing-md-render.py（Marketing/Blog 策略文；E40–E42）
+8. **Swap Test** 抽样 ≥3 处 + 独特性自评 ≥ L2（L0 不得 Pass）— 见 [`copy-quality.md`](./copy-quality.md) Part 2·4
+9. audit-locale-voice.py --slug {slug}（Fail 则回改）
+10. audit-marketing-md-render.py（Marketing/Blog 策略文；E40–E42）
 ```
 
 ## 3.2 术语要点
@@ -221,6 +226,7 @@ Brief 锁定（Step 02）
 - [ ] 无 skills/runbook meta（E49）
 - [ ] 无伪列表
 - [ ] Extractability Pass
+- [ ] Swap Test 抽样 Pass + 独特性 ≥ L2
 - [ ] E40–E42 Pass
 
 ---
@@ -246,6 +252,7 @@ Brief 锁定（Step 02）
 
 - 对照 Part 0.2 英文正向/负向表；朗读一遍
 - 改 telegraphic 句与 `→`
+- **Swap Test**（英文独立轴，非翻译腔检查）— 同 [`copy-quality.md`](./copy-quality.md) Part 2
 - 跑 `audit-locale-voice.py --slug {slug}`
 - Marketing/Blog 策略文：跑 `audit-marketing-md-render.py`
 

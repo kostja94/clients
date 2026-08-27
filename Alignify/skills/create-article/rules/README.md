@@ -27,6 +27,8 @@
 | `sections/` · `conclusion.md` · `final-cta.md` | [`sections.md`](./sections.md) |
 | `templates/` 子目录 | [`templates.md`](./templates.md) |
 | `marketing-internal-links.md` | [`internal-links.md`](./internal-links.md) Part 4.5 |
+| `partner-products.md` | [`sections.md`](./sections.md) Part 3.3 §3.3.0 |
+| `consistency.md` | [`copy-quality.md`](./copy-quality.md) |
 
 ---
 
@@ -34,13 +36,14 @@
 
 | 阶段 | 文档 |
 |------|------|
-| Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) |
-| Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`presentation.md`](./presentation.md) |
-| Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md) · [`internal-links.md`](./internal-links.md) · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
+| Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) · [`copy-quality.md`](./copy-quality.md) 附录 A |
+| Step 03 关键词 | [`03-keywords.md`](../03-keywords.md) · Brief `Primary keyword` |
+| Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`presentation.md`](./presentation.md) · [`copy-quality.md`](./copy-quality.md) Part 2·4 |
+| Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md)（**按 articleType** 选 Part 3/4/4.5/5）· [`internal-links.md`](./internal-links.md) Part 1–2 + Part 8 · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
 | Step 08 注册 | [`meta.md`](./meta.md) · [`sections.md`](./sections.md) Part 5 · [`08-meta-config.md`](../08-meta-config.md) §发布日期 · `next-publish-date.mjs` |
 | Step 10 自审 | [`selfcheck.md`](./selfcheck.md) · [`quality-checklist.md`](./quality-checklist.md) · [`common-errors.md`](./common-errors.md) |
-| 终审 | [`../../audit-article/SKILL.md`](../../audit-article/SKILL.md) · [`perfect-article-checklist.md`](./perfect-article-checklist.md)（S 级） |
-| 同批 ≥2 篇 | [`outline-cross-check.md`](./outline-cross-check.md) · [`cross-article-audit.md`](./cross-article-audit.md) |
+| 终审 | [`../../audit-article/SKILL.md`](../../audit-article/SKILL.md) · [`perfect-article-checklist.md`](./perfect-article-checklist.md)（S 级 · **可选**） |
+| 同批 ≥2 篇 | [`outline-cross-check.md`](./outline-cross-check.md) · [`cross-article-audit.md`](./cross-article-audit.md) · [`copy-quality.md`](./copy-quality.md) M2 |
 
 ---
 
@@ -57,8 +60,9 @@
 | [content-locale.md](./content-locale.md) | 双语正文 SSOT：05–06 ZH · 09–09c EN · 双轨 Subagent + 地道 Pass |
 | [locale-glossary.md](./locale-glossary.md) | 双语术语 SSOT（Part 1–3 对照 · Part 2 GTM · 文风） |
 | [locale-glossary.json](./locale-glossary.json) | 机器层：`localize_required` · `forbidden_*` · audit 脚本 |
+| [copy-quality.md](./copy-quality.md) | 五维 · Swap Test · 去模板化（M1/M2/M3） |
 | [extractability-checklist.md](./extractability-checklist.md) | Draft / Step 06 |
-| [perfect-article-checklist.md](./perfect-article-checklist.md) | S 级标杆 |
+| [perfect-article-checklist.md](./perfect-article-checklist.md) | S 级标杆（**可选**，非 Gate C） |
 | [serp-fit-template.md](./serp-fit-template.md) | SERP Fit |
 | [source-map-template.md](./source-map-template.md) | EEAT / Source Map |
 | [outline-cross-check.md](./outline-cross-check.md) | 同批 Outline 3.5 |
@@ -75,10 +79,9 @@
 | [anatomy.md](./anatomy.md) | 内容优先 + 参考菜单（§四·一 childrenHtml · **E35**） |
 | [article-types.md](./article-types.md) | 类型 / 新文 `/blog` vs 存量路径 |
 | [meta.md](./meta.md) | Meta 四要素 |
-| [word-counts.md](./word-counts.md) | 字数底线 |
-| [consistency.md](./consistency.md) | 跨页一致性 |
+| [word-counts.md](./word-counts.md) | 字数硬底线 |
 | [sections.md](./sections.md) | 章节 SSOT（Part 0–5 · 含结论与 Final CTA） |
-| [internal-links.md](./internal-links.md) | 内链 + 外链 SSOT（Part 1–2 · Part 4.5 Marketing M1–M11 · Part 8 UTM/Nofollow） |
+| [internal-links.md](./internal-links.md) | 内链 + 外链 SSOT（Step 07：Part 1–2 + 按类型 3/4/4.5/5 + Part 8） |
 | [quality-checklist.md](./quality-checklist.md) | P0/P1 汇总 |
 | [product-screenshots.md](./product-screenshots.md) | Best 榜单产品截图 URL |
 | Hero / OG 美学速查 | `E:\个人知识库\设计\11-通用-Hero与插图美学参考.md`（完整 SSOT → [`knowledge/design/aesthetic-references.md`](../../../knowledge/design/aesthetic-references.md)） |
@@ -102,4 +105,4 @@
 
 ---
 
-*rules README · v3.4 · 2026-08-27*
+*rules README · v3.5 · 2026-08-27*

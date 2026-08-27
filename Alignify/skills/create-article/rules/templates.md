@@ -150,7 +150,7 @@ Workflow · Cost Analysis · Getting Started · Future Trends — 易与「如�
 - H1 **不写年份**；不强制 H1 含「最佳」
 - 质检：`scripts/ops/audit-tools-meta-titles.mjs`
 
-节写法 → [`sections.md`](./sections.md) Part 3.1–3.4 · 字数 → [`consistency.md`](./consistency.md)
+节写法 → [`sections.md`](./sections.md) Part 3.1–3.4 · 字数 → [`word-counts.md`](./word-counts.md) · 五维/Swap → [`copy-quality.md`](./copy-quality.md)
 
 ## 2.4 标杆对照（可选打开 md，勿复制骨架）
 

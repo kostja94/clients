@@ -50,7 +50,7 @@ PART4_INTRO = """<a id="part-4-结论"></a>
 
 > **渲染**：md 正文 `## 结论 {#conclusion}`；FAQ 在其后由页底 `FAQ.tsx` 全局渲染。  
 > **内链专规**：本节 §4.4；全站规则见 [`internal-links.md`](./internal-links.md)。  
-> **篇幅数字索引**：[`word-counts.md`](./word-counts.md) · [`consistency.md`](./consistency.md)
+> **篇幅数字索引**：[`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
 
 """
 
@@ -145,9 +145,9 @@ APPENDIX_C = """<a id="附录-c-相关文档索引"></a>
 | 主题 | 文档 | 说明 |
 |------|------|------|
 | 各节字数表 | [`word-counts.md`](./word-counts.md) | TL;DR / 什么是 / 结论 / FAQ 数字索引 |
-| Best H3 客户露出 | [`partner-products.md`](./partner-products.md) | Tier 1/2 商业规则；写法见 Part 3.3 |
+| Best H3 客户 Tier | 本节 Part 3.3 §3.3.0 | Tier 0/1/2；写法见 Part 3.3 |
 | Best 产品截图 | [`product-screenshots.md`](./product-screenshots.md) | Step 04 操作；非节写法 |
-| 跨页一致性 | [`consistency.md`](./consistency.md) | C 层软建议定位 |
+| 跨页五维 / Swap | [`copy-quality.md`](./copy-quality.md) |
 | BLUF / Author voice | [`presentation.md`](./presentation.md) | 全节通用 |
 
 ---

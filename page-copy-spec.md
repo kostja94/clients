@@ -34,12 +34,14 @@
 ```
 页面文案生产规范（本文件）    ← 跨项目通用原则、验收框架
         ↓ 引用
-站点 page-playbook            ← 该站点的模具顺序、SEO 规则、示例 brief
+Alignify copy-quality.md      ← skills/create-article/rules/（Brief · Step 05–10）
         ↓ 引用
-页面清单 / categories 文档    ← 页面清单、slug、优先级
+站点 page-playbook / templates.md  ← 类型差异参考（非施工图）
+        ↓ 引用
+页面清单 / categories / Brief     ← slug、Hero fault、swap neighbors
 ```
 
-**原则**：本规范写「怎么才算好文案」；站点 Playbook 写「这个站有哪些节、顺序是什么、Title 格式是什么」。
+**原则**：本规范写「怎么才算好文案」；Alignify 适配层写「M1/M2/M3 + Step 挂接」；站点 Playbook / `templates.md` 写「类型差异与 Meta 格式」。
 
 ---
 
@@ -381,9 +383,9 @@
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | v1.0 | 2026-08-23 | 初版：五维定义、Swap Test、篇幅层级、生产流程、验收清单、反模式 |
-| v1.1 | 2026-08-25 | 脱敏：移除客户名称、本地路径与内部文档引用 |
+| v1.2 | 2026-08-27 | Alignify 适配：→ `skills/create-article/rules/copy-quality.md` |
 
 ---
 
 > **定位**：跨项目通用的「模板页文案」生产标准。当一批页面共用同一模具（如 Pop Music Generator / Rap Music Generator / Classic Music Generator）时，按本规范产出文案，确保**一致性、差异性、相关性、去模板化、独特性**五维达标。
-> **版本**：v1.1 · 2026-08-25（变更记录见 §10）
+> **版本**：v1.2 · 2026-08-27（变更记录见 §10）

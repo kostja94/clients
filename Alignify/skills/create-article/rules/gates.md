@@ -25,9 +25,9 @@
 | **Gate A** | Step 01 | STOP / MERGE → 改题或合并 slug |
 | **Gate 0R** | Step 02 | Step 02（补 R2/R3/Synthesis）或 STOP |
 | **Gate B** | Step 05 动笔前 | Step 01/02（改大纲或 Brief） |
-| **Outline 3.5** | Step 05 前（同批 ≥2 篇） | Step 01 大纲 / MERGE |
+| **Outline 3.5** | Step 05 前（Brief `BatchCount ≥2`） | Step 01 大纲 / MERGE；单篇 → `N/A` |
 | **Gate C** | Step 10 SelfCheck | 见 [`gate-rollback.md`](./gate-rollback.md) |
-| **Cross 5.5** | Step 10 后（同批 ≥2 篇） | Step 05–06 |
+| **Cross 5.5** | Step 10 后（Brief `BatchCount ≥2`） | Step 05–06；单篇 → `N/A` |
 | **Final Audit** | audit-article | Step 05–09 按 P0/P1 项修复 |
 | **Publish** | 人类发布 | P1 清零或 documented waive |
 

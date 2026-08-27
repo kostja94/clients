@@ -38,7 +38,9 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 
 ## Cross-Article 5.5（同批 ≥2 篇）
 
-[`cross-article-audit.md`](./rules/cross-article-audit.md) Pass 或 `N/A`。
+> **单篇（Brief `BatchCount = 1`）**：送审包写 **`Cross-Article 5.5: N/A — single article`**（占位，不可省略本节）。
+
+**同批 ≥2 篇**且均 audit-ready → 过 [`cross-article-audit.md`](./rules/cross-article-audit.md) → `Cross-Article 5.5: PASS — {slugs}`。
 
 ---
 
@@ -54,9 +56,11 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 
 ---
 
-## S 级自检（送审前推荐）
+## S 级自检（可选 · 非 Gate C）
 
-[`perfect-article-checklist.md`](./rules/perfect-article-checklist.md) — 追求 ≥90 分标杆。
+> **Gate C 不依赖本节**。追求终审 ≥90 / S 级时再读。
+
+[`perfect-article-checklist.md`](./rules/perfect-article-checklist.md) — 标杆清单；与 `audit-article` 十维 ≥90 对齐。
 
 ---
 

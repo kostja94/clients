@@ -1,7 +1,7 @@
-# Perfect Article — Alignify S 级
+# Perfect Article — Alignify S 级（可选 · 非 Gate C）
 
-> **发布门槛**：publish-ready = 终审 ≥**80** + P0 Pass。  
-> **标杆目标**：每篇 flagship 文追求 **S 级（≥90）**。
+> **Gate C / audit-ready 不依赖本文件**。发布门槛：publish-ready = 终审 ≥**80** + P0 Pass。  
+> **标杆目标**：追求 **S 级（≥90）** 时再读本清单。
 
 ---
 
@@ -26,7 +26,9 @@
 - [ ] Extractability + BLUF 三处 Pass
 - [ ] FAQ 与正文相似度 spot-check <30%
 - [ ] 同批 5.5 已 Pass（若适用）
+- [ ] 独特性自评 ≥ **L2**（[`copy-quality.md`](./copy-quality.md) Part 2.3）
+- [ ] Swap Test 抽样 Pass（Step 06 记录）
 
 ---
 
-*perfect-article-checklist · v1.0 · 2026-08-26*
+*perfect-article-checklist · v1.1 · 2026-08-27*

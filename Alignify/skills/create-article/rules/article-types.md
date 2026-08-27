@@ -47,6 +47,9 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 
 可省略：对比表、应用场景、如何工作等 — 见 Step 01 大纲说明。
 
+- 内链专规：[`internal-links.md` Part 3](./internal-links.md#part-3-tools-类目)（Step 07）
+- 客户 Tier：[`sections.md` Part 3.3 §3.3.0](./sections.md#part-33-best-产品-h3best-ranking)
+
 **Tools 存量**（108 slug）：仍走 `content/tools/` + `tools-meta.ts` + `/tools/{slug}`；TL;DR/FAQ/Refs JSON 键为 `/tools/{slug}` · `/zh/tools/{slug}`。
 
 ---
@@ -73,6 +76,7 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 核心要点 JSON → 概念 → 操作 sections（H3）→ [场景] → 结论 → FAQ JSON(7) → [References JSON]
 ```
 
+- 内链专规：[`internal-links.md` Part 4](./internal-links.md#part-4-seo-频道内链)（Step 07）
 - 列表/表格：`<!-- childrenHtml:start -->` + HTML（见 `anatomy.md` §四·一）
 - Meta：指南型规则组
 - **生产路径**：38 篇均在 `content/seo/` + `seo-meta.ts` + `/seo/{slug}`（**非** blog）
@@ -87,6 +91,7 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 核心要点 JSON → 分析 sections×N → [案例/边界] → 结论 → FAQ JSON(7) → [References JSON]
 ```
 
+- 内链专规：[`internal-links.md` Part 5](./internal-links.md#part-5-insights--其他频道)（Step 07）
 - Meta：分析型规则组
 - **新文**：`content/blog/` + `blog-meta.ts`（`articleType: insights-analysis`）
 - **存量**：7 篇在 `content/insights/` + `insights-meta.ts`

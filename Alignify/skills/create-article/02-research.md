@@ -28,6 +28,7 @@
 - [ ] IG-1/2/3 已答
 - [ ] Candidate Examples ≥2
 - [ ] **Article Brief** 按 [`article-brief.md`](./rules/article-brief.md) 定稿（Moat + Answer Blocks 3–5）
+- [ ] Brief **Copy quality** 字段已填（`Copy mode`；M2 时 `cluster hub` / `swap neighbors`；见 [`copy-quality.md`](./rules/copy-quality.md) 附录 A）
 - [ ] Brief 中 Planned H2 与 Step 01 大纲一致或说明变更
 
 **Fail** → 补 R2/R3 或 STOP（见 [`gate-rollback.md`](./rules/gate-rollback.md)）

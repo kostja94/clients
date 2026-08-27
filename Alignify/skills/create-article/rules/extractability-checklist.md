@@ -6,7 +6,7 @@
 
 ## Different, not better
 
-Draft 前对照 Brief **One-line thesis**：是在 paraphrase SERP Top 3，还是提供 **Top 3 没有的决策维度**？
+Draft 前对照 Brief **One-line thesis**：是在 paraphrase SERP Top 3，还是提供 **Top 3 没有的决策维度**？SERP 同句测试见 [`copy-quality.md`](./copy-quality.md) Part 1。
 
 ---
 
