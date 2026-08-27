@@ -1,0 +1,18 @@
+===CONTENT===
+# 本周新发布 / 更新内容（与 GSC 周期一致）
+# 若 CMS 实际上线日与 catalog 不一致，以本块为准
+
+week_start: YYYY-MM-DD
+week_end: YYYY-MM-DD
+
+published:
+  - slug: example-slug
+    title: 文章标题
+    url_path: /blog/example-slug/
+    actual_publish_date: YYYY-MM-DD
+    index_status: indexed | pending | unknown
+    notes: 可选备注
+
+updated:
+  - slug: existing-slug
+    change: 大改标题 / 增补内链 / 结构化数据

@@ -1,12 +1,12 @@
 /**
  * GSC 索引健康检查脚本：遍历全站页面，调用 URL Inspection API 检查每个页面的索引状态。
  *
- * 运行前提：同 fetch-gsc，需要 config/gsc-key.json 或环境变量，国内需 VPN。
+ * 运行前提：seo-weekly-report/scripts/.env 已配置 GSC 凭据；国内需 VPN。
  *
- * 用法：
- *   node scripts/permanent/audit-gsc-index-health.mjs          # 检查全部页面
- *   node scripts/permanent/audit-gsc-index-health.mjs --recent # 仅检查近 7 天修改的页面
- *   node scripts/permanent/audit-gsc-index-health.mjs --batch 5 # 自定义并发数（默认 5）
+ * 用法（从 Alignify 根目录）：
+ *   node scripts/ops/audit-gsc-index-health.mjs
+ *   node scripts/ops/audit-gsc-index-health.mjs --recent
+ *   node scripts/ops/audit-gsc-index-health.mjs --batch 5
  *
  * 输出：
  *   1. 索引异常清单（非 submittedAndIndexed 的页面）
@@ -17,15 +17,25 @@
  * GSC URL Inspection API 每日配额 2000 次，本脚本全量运行在配额内。
  */
 
-import { google } from "googleapis";
+import { createRequire } from "module";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync } from "fs";
 import { resolve, dirname, relative, join } from "path";
 import { fileURLToPath } from "url";
+import { getDeployRoot } from "./lib/seo-report-data.mjs";
+import { loadGoogleServiceAccountCredentials } from "../../seo-weekly-report/scripts/lib/google-credentials.mjs";
 
+const require = createRequire(import.meta.url);
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(__dirname, "..", "..");
-const APP_DIR = resolve(ROOT, "app");
-const DATA_DIR = resolve(ROOT, "data");
+const ALIGNIFY_ROOT = resolve(__dirname, "..", "..");
+const DEPLOY_ROOT = getDeployRoot();
+const APP_DIR = resolve(DEPLOY_ROOT, "app");
+const SEO_SCRIPTS_DIR = resolve(ALIGNIFY_ROOT, "seo-weekly-report", "scripts");
+const DATA_DIR = resolve(ALIGNIFY_ROOT, "seo-weekly-report", "data");
+
+require(join(SEO_SCRIPTS_DIR, "node_modules/dotenv")).config({
+  path: join(SEO_SCRIPTS_DIR, ".env"),
+});
+const { google } = require(join(SEO_SCRIPTS_DIR, "node_modules/googleapis"));
 
 // ── 参数 ─────────────────────────────────────────────────────────────
 
@@ -38,22 +48,7 @@ const CONCURRENCY =
 // ── 认证 ─────────────────────────────────────────────────────────────
 
 function getCredentials() {
-  const keyPath = resolve(ROOT, "config", "gsc-key.json");
-  try {
-    const raw = readFileSync(keyPath, "utf-8");
-    const parsed = JSON.parse(raw);
-    return { client_email: parsed.client_email, private_key: parsed.private_key };
-  } catch { /* continue */ }
-
-  const email = process.env.GSC_CLIENT_EMAIL;
-  const rawKey = process.env.GSC_PRIVATE_KEY;
-  if (email && rawKey) {
-    const privateKey = rawKey.includes("\\n") ? rawKey.replace(/\\n/g, "\n") : rawKey;
-    return { client_email: email, private_key: privateKey };
-  }
-
-  console.error("✗ GSC 认证未配置");
-  process.exit(1);
+  return loadGoogleServiceAccountCredentials();
 }
 
 function getSiteUrl() {
@@ -69,7 +64,7 @@ function getSiteUrl() {
 
 /** 从 tools-pages-config.ts 解析所有工具页 slug */
 function parseToolsSlugs() {
-  const configPath = resolve(ROOT, "src", "data", "tools-pages-config.ts");
+  const configPath = resolve(DEPLOY_ROOT, "src", "data", "tools-pages-config.ts");
   if (!existsSync(configPath)) {
     console.warn("  ⚠ 未找到 tools-pages-config.ts，跳过工具页");
     return [];
@@ -366,7 +361,7 @@ async function main() {
 
         // 对有 filePath 的给出文件位置
         if (item.filePath) {
-          const rel = relative(ROOT, item.filePath);
+          const rel = relative(DEPLOY_ROOT, item.filePath);
           console.log(`     文件: ${rel}`);
         }
       });
@@ -439,7 +434,7 @@ async function main() {
       (groups[s] || []).map((item) => ({
         url: item.url,
         status: item.status,
-        file: item.filePath ? relative(ROOT, item.filePath) : null,
+        file: item.filePath ? relative(DEPLOY_ROOT, item.filePath) : null,
       })),
     ),
   };

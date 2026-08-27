@@ -1,0 +1,11 @@
+===PROJECT_STATUS===
+# 本周 SEO / 产品执行（非 API 可拉取）
+
+completed:
+  - 例：提交 sitemap / 修复 canonical / 上线新工具页
+
+planned_next_week:
+  - 
+
+blocked:
+  - 

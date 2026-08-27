@@ -1,6 +1,6 @@
 # Datus
 
-**最近更新**：2026-08-04（文档导航增加 i18n 规范）
+**最近更新**：2026-08-28（归档 i18n / 增长策略 / FAQ / 面包屑规范）
 
 ---
 
@@ -11,17 +11,13 @@
 | [datus.md](./datus.md)（本文） | 产品概览、ICP、文档索引 | — |
 | [datus-positioning.md](./datus-positioning.md) | One Story、Messaging Framework、竞争叙事、产品形态定位 | [datus.md](./datus.md)、[datus-competitors.md](./datus-competitors.md) |
 | [datus-site-structure.md](./datus-site-structure.md) | 站点结构：URL 层级、IA、技术栈 | [datus.md](./datus.md) |
-| [datus-i18n-spec.md](./datus-i18n-spec.md) | 主站 `/zh` i18n：范围规则、路由、术语、机翻→精调、SEO | [datus-site-structure.md](./datus-site-structure.md)、[datus-positioning.md](./datus-positioning.md) |
-| [datus-growth-strategy.md](./datus-growth-strategy.md) | 增长策略：渠道、实验、内容计划 | [datus-keywords.md](./datus-keywords.md)、[datus-site-structure.md](./datus-site-structure.md) |
 | [datus-features.md](./datus-features.md) | 功能页：CLI、Subagent、Context Engine、多模型 | [datus-use-cases.md](./datus-use-cases.md) |
 | [datus-use-cases.md](./datus-use-cases.md) | 应用场景：Persona、Scenario、用户旅程 | [datus-features.md](./datus-features.md) |
 | [datus-competitors.md](./datus-competitors.md) | 竞品分析、差异化 | [datus-features.md](./datus-features.md) |
 | [datus-keywords.md](./datus-keywords.md) | 关键词映射、目标页、待办 | [datus-features.md](./datus-features.md)、[datus-use-cases.md](./datus-use-cases.md) |
 | [datus-glossary.md](./datus-glossary.md) | Glossary 策略设计：关键词簇、术语选择逻辑、内容网络位置（7 类 42 词） | [datus-keywords.md](./datus-keywords.md)、[datus-positioning.md](./datus-positioning.md)、[datus-competitors.md](./datus-competitors.md) |
-| [datus-breadcrumb-spec.md](./datus-breadcrumb-spec.md) | 面包屑 UI + BreadcrumbList JSON-LD（除首页外全站） | [datus-site-structure.md](./datus-site-structure.md) |
-| [datus-faq-spec.md](./datus-faq-spec.md) | 全站 FAQ 组件 + 页内 FAQ 内容规则与示例 | [datus-site-structure.md](./datus-site-structure.md)、[blog/README.md](./blog/README.md) |
-| [datus-dosi.md](./datus-dosi.md) | **Dosi** 新产品调研、关键词与候选文章（调研阶段） | [datus-keywords.md](./datus-keywords.md)、[blog/24-open-semantic-interchange-osi-2026.md](./blog/24-open-semantic-interchange-osi-2026.md) |
-| [blog/](./blog/) | Blog 文章目录（Markdown + YAML frontmatter） | [datus-growth-strategy.md](./datus-growth-strategy.md) |
+| [datus-dosi.md](./datus-dosi.md) | **Dosi** 新产品调研、关键词与候选文章（调研阶段） | [datus-keywords.md](./datus-keywords.md)、[blog/osi/24-open-semantic-interchange-osi-2026.md](./blog/osi/24-open-semantic-interchange-osi-2026.md) |
+| [blog/](./blog/) | Blog 文章目录（Markdown + YAML frontmatter） | [datus-keywords.md](./datus-keywords.md) |
 
 *产品入口*：Web [datus.ai](https://datus.ai/) | GitHub [Datus-ai/Datus-agent](https://github.com/Datus-ai/Datus-agent) | Docs [docs.datus.ai](https://docs.datus.ai)
 
@@ -90,10 +86,9 @@ Subagent 是交付单元——它将 Scoped Context（约 10 张表、20 个指�
 - [datus-keywords.md](./datus-keywords.md)
 - [datus-competitors.md](./datus-competitors.md)
 
-## 5. 站点结构与增长策略（入口）
+## 5. 站点结构（入口）
 
 - [datus-site-structure.md](./datus-site-structure.md)
-- [datus-growth-strategy.md](./datus-growth-strategy.md)
 
 ---
 

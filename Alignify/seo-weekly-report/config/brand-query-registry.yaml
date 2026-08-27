@@ -1,0 +1,20 @@
+# Alignify 品牌词 / 品类词 — GSC query 维度拆分
+
+matching:
+  caseInsensitive: true
+  stripPunctuation: true
+
+brandGroups:
+  - id: main
+    label: Alignify
+    patterns:
+      - alignify
+      - alignify.co
+      - kostja
+      - kostja94
+
+categoryTerms:
+  - ai tools
+  - seo tools
+
+competitorBrandTerms: []

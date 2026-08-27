@@ -25,7 +25,7 @@ Historically, organizations split analytics into two worlds. **Data lakes** stor
 
 A lakehouse merges the storage economics of the lake with warehouse-like capabilities by inserting a **table abstraction layer** on object storage. You still store Parquet (or similar) files in a bucket. But an open table format tracks which files belong to which table version, enables concurrent writers, supports `UPDATE`/`MERGE`, and exposes the table through SQL engines (Spark, Trino, Snowflake external tables, Databricks SQL, etc.).
 
-Consider a concrete example. A growth team asks for "weekly active users by country from our product events table." In a pure data lake, an analyst might grep paths like `s3://events/year=2026/month=06/day=15/*.parquet`, hope partition columns are consistent, and write fragile SQL that breaks when someone adds a new folder layout. In a lakehouse, they query `analytics.events` — a governed table with documented columns, partition spec `country`, and ACID commits so yesterday's backfill does not race with today's stream ingest. The SQL looks like a warehouse. The storage underneath is still open files.
+Consider a concrete example. A data engineer backfills three missing days of `analytics.orders` while a nightly stream job concurrently appends new records. In a pure data lake, the writers race: the backfill overwrites a folder of Parquet files the stream job is mid-read, a query sees a torn snapshot, and the bad state lingers until someone manually restores files. In a lakehouse, each writer commits through the table format's snapshot layer — readers always see a consistent table version, and if the backfill mis-assigned a partition, `time travel` rolls the table back to yesterday's snapshot in one command instead of a file-level archaeology project. Partition evolution is metadata-only too: repartitioning the table from `month` to `month/day` buckets requires no rewrite of old files and no change to the queries that read it. The SQL looks like a warehouse. The storage underneath is still open files.
 
 A useful working definition:
 
@@ -138,15 +138,13 @@ Missing items 1–3 predict the same class of failures as text-to-SQL on large w
 - Organization standardizes on one vendor SQL runtime with mature workload management
 - Legal/compliance mandates proprietary storage controls hard to map to object ACLs alone
 
-Hybrid architectures are normal — lakehouse for ingest and ML features, warehouse for curated BI — bridged by [semantic layers](/blog/what-is-semantic-layer) and catalogs.
+Hybrid architectures are normal — lakehouse for ingest and ML features, warehouse for curated BI — bridged by semantic layers and catalogs.
 
 Open-source data engineering agents that emphasize **cross-stack context** aim to span both sides without forcing a rip-and-replace narrative — connecting to warehouse adapters and lakehouse tables through a unified catalog view rather than betting on one storage religion.
 
 ## Conclusion
 
-A **lakehouse** is best understood as **governed tables on open storage** — not a marketing sticker on a raw bucket. Open table formats supply the ACID and schema machinery; medallion and domain layering supply organizational clarity. For AI agents, lakehouse complexity moves failures from syntax to **layer, format, and engine context** — the same shift that separates demo-grade text-to-SQL from production-grade [data engineering agents](/blog/what-is-data-engineering-agent).
-
-Explore the [data engineering glossary](/glossary/) for 47 more definitions.
+A **lakehouse** is best understood as **governed tables on open storage** — not a marketing sticker on a raw bucket. Open table formats supply the ACID and schema machinery; medallion and domain layering supply organizational clarity. For AI agents, lakehouse complexity moves failures from syntax to **layer, format, and engine context**. Pair it with a [data catalog](/blog/what-is-data-catalog) for inventory and a semantic layer for certified metrics — and before you point an agent at lakehouse tables, run the §7 checklist. A lakehouse that cannot name its Gold layer will not produce a trustworthy answer no matter how good the model is.
 
 ## Frequently asked questions
 

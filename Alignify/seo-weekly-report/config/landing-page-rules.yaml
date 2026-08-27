@@ -1,0 +1,29 @@
+# Alignify 落地页分类 — GA4 landingPage 维度
+
+rules:
+  - type: homepage
+    exact: /
+  - type: blog
+    prefix: /blog/
+  - type: tools
+    prefix: /tools/
+  - type: seo
+    prefix: /seo/
+  - type: marketing
+    prefix: /marketing/
+  - type: insights
+    prefix: /insights/
+  - type: glossary
+    prefix: /glossary/
+  - type: events
+    prefix: /events/
+  - type: site
+    prefixes:
+      - /about
+      - /services
+      - /partnership
+      - /customer-stories
+      - /explore
+      - /skills
+
+defaultType: other

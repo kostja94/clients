@@ -297,13 +297,13 @@ Mode: `submit_all`
 - [ ] 创建服务账号，下载 JSON 密钥文件
 - [ ] 密钥文件安全存储（不提交 Git，用 `.env.local` 或 GitHub Secret）
 - [ ] **服务账号 email 添加到 Search Console → Owner（⭐ 最易遗漏，缺此步必 403）**
-- [ ] `npm install googleapis google-auth-library`（google-auth-library 已含在 googleapis 依赖中）
+- [ ] `npm install`（部署仓已含 `google-auth-library`，Indexing 专用）
 - [ ] 复制 `src/lib/google-indexing.ts`（核心库，约 300 行，可直接复用）
 - [ ] 复制 `scripts/permanent/submit-to-google-index.ts`（单页 CLI 脚本）
 - [ ] 复制 `scripts/permanent/submit-all-to-google-index.ts`（全站批量脚本）
 - [ ] 确认 `src/data/site-pages-config.ts` 已导出 `getAllPageUrls(baseUrl)` 函数
 - [ ] `package.json` 添加 `"google-index"` 和 `"google-index:all"` 脚本（用 `tsx` 运行）
-- [ ] `.env.local` 配置 `GOOGLE_INDEXING_KEY_FILE` + `GSC_SITE_URL`
+- [ ] `.env.local` 配置 `GOOGLE_INDEXING_KEY_FILE`（站点 URL 默认 `https://alignify.co`，可选 `SITE_URL` 覆盖）
 - [ ] 创建 `.github/workflows/google-indexing.yml`（推荐，用于 CI 环境）
 - [ ] GitHub 仓库添加 Secret `GCP_SA_KEY`（如用 Actions）
 - [ ] 验证认证：`npm run google-index -- --status https://yoursite.com/`

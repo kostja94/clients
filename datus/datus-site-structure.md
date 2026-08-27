@@ -1,7 +1,7 @@
 # Datus — 站点结构
 
 > **本文档职责**：三域 URL 层级、信息架构、线上页面清单（datus.ai / docs.datus.ai / studio.datus.ai）。  
-> **引用**：[datus.md](./datus.md) 概览 | [datus-growth-strategy.md](./datus-growth-strategy.md) 增长策略 | [datus-i18n-spec.md](./datus-i18n-spec.md) 主站 `/zh` i18n
+> **引用**：[datus.md](./datus.md) 概览
 
 **最近更新**：2026-08-21（新增 dosi.datus.ai、OSI Field Mapping、OSI Playground）
 
@@ -59,7 +59,7 @@ datus.ai/
 | [github.com/Datus-ai/Datus-agent](https://github.com/Datus-ai/Datus-agent) | 开源仓库 | 代码 + Issues + Discussions |
 | 微信公众号「数据杂货铺」 | 中文内容 | 创始人博客 + 中文社区运营 |
 
-*主站中文：非 Blog 营销路径规划 `/zh` + 同 path 镜像（规范见 [datus-i18n-spec.md](./datus-i18n-spec.md)；**不含** `/blog/**`，**不管** docs）。docs.datus.ai 自有 `/zh/*`。公众号仍可承担额外中文分发。*
+*主站中文：非 Blog 营销路径规划 `/zh` + 同 path 镜像（历史规范见 [_archive/datus-i18n-spec.md](./_archive/datus-i18n-spec.md)，已归档；**不含** `/blog/**`，**不管** docs）。docs.datus.ai 自有 `/zh/*`。公众号仍可承担额外中文分发。*
 
 ---
 
@@ -397,7 +397,7 @@ datus.ai/
 
 ### 4.1 datus.ai（策略规划，截至 2026-06-24 仍为 404）
 
-以下 URL 在策略文档（[datus-keywords.md](./datus-keywords.md)、[datus-growth-strategy.md](./datus-growth-strategy.md)）中仍有规划，**未出现在 datus.ai sitemap**：
+以下 URL 在策略文档（[datus-keywords.md](./datus-keywords.md)；增长策略见 [_archive/datus-growth-strategy.md](./_archive/datus-growth-strategy.md)，已归档）中仍有规划，**未出现在 datus.ai sitemap**：
 
 | 路径 | 内容 | 优先级 |
 |------|------|--------|
@@ -450,8 +450,8 @@ datus.ai/
 | **Glossary 术语 backlog** | 线上 46 词页内定义，11+ 篇已以 `/blog/{slug}/` 上线；仅 Lakehouse 有聚合页深链；其余待补 `/blog/` 与 `/glossary/` 互链 | 中高 |
 | **Blog hub discoverability** | `data-engineering-agent/` hub 及嵌套文未出现在 `/blog/` 列表，仅靠 sitemap 与 hub 内链 | 中 |
 | **Docs 死链** | hub 页 → `/concepts/architecture/` 404，应改为 `/develop/Architecture/` | 中 |
-| **Blog 内链白名单** | 独立内容互链 `/blog/{slug}`；可链 `/glossary/`（索引）、`/products/*`、`/pricing/`；面包屑与 FAQ 见 [datus-breadcrumb-spec.md](./datus-breadcrumb-spec.md)、[datus-faq-spec.md](./datus-faq-spec.md) | 中 |
-| **中文站** | 非 Blog 营销页 `/zh` 镜像（规则见 [datus-i18n-spec.md](./datus-i18n-spec.md)）；Blog/docs 不在该规范范围；公众号可继续中文分发 | 中 |
+| **Blog 内链白名单** | 独立内容互链 `/blog/{slug}`；可链 `/glossary/`（索引）、`/products/*`、`/pricing/`；面包屑与 FAQ 历史规范见 [_archive/datus-breadcrumb-spec.md](./_archive/datus-breadcrumb-spec.md)、[_archive/datus-faq-spec.md](./_archive/datus-faq-spec.md)（已归档） | 中 |
+| **中文站** | 非 Blog 营销页 `/zh` 镜像（历史规则见 [_archive/datus-i18n-spec.md](./_archive/datus-i18n-spec.md)，已归档）；Blog/docs 不在该规范范围；公众号可继续中文分发 | 中 |
 | **Dosi 交叉链** | `/osi-field-mapping/`、`/tools/osi-playground/` 已上线；Playground footer 已链 Field Mapping；**待补** 双向链至 `dosi.datus.ai` | 中高 |
 
 ---

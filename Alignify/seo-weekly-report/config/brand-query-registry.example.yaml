@@ -1,0 +1,20 @@
+# 品牌词 / 品类词 — 用于 GSC query 维度拆分
+
+matching:
+  caseInsensitive: true
+  stripPunctuation: true
+
+brandGroups:
+  - id: main
+    label: 主品牌
+    patterns:
+      - your brand
+      - yourbrand
+
+# 命中则计入 category，仍归入 nonBranded 点击（可选分析）
+categoryTerms:
+  - category keyword example
+
+# 命中则标记 isCompetitor，不计入 branded
+competitorBrandTerms:
+  - competitor name

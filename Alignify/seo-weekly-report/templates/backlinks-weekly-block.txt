@@ -1,0 +1,17 @@
+===BACKLINKS===
+# 本周外链动作（购买 / 合作 / 自然获得）
+
+purchased:
+  - target_url: https://example.com/page
+    source_site: 媒体或站点名
+    live_date: YYYY-MM-DD
+    anchor: 锚文本
+    cost_optional: 金额或留空
+    utm_used: yes | no
+
+earned:
+  - source_url: https://referrer.example/post
+    target_url: https://example.com/page
+    live_date: YYYY-MM-DD
+
+notes: 可选说明

@@ -1,112 +1,152 @@
-# Internal & External Links 规范（Datus Blog）
+# Datus Blog 分类与内链
 
-> **依据**：Nori / Dynal blog 链接规范同一思路；站内 URL 权威以 [datus-site-structure.md](../datus-site-structure.md) 为准。
-> **站点**：生产以 **datus.ai** 为准；正文为 **英文**，本规范为 **中文**，供写作与校对使用。
-> **更新**：2026-07-17——移除 Related 列（已不使用）；补充全部 31 篇文章实际链接计数；移除 frontmatter `keywords`/`related` 相关引用。
+公开 URL：`/blog/{slug}`。主题文件夹只用于本地分簇，不进入公开路径。#12 为空号（已并入 #06）。
 
----
+## 内链位置规则
 
-## 内链范围约束
+| 区域 | 做什么 | 上限 |
+|------|--------|------|
+| Lede（第一个 `##` 前） | 默认 0；必要时只链本簇 Hub 或上位词 | ≤1 |
+| TL;DR | 最多 1 条 Hub / 上位概念 | 与 lede 合计 ≤2 |
+| 正文各 `##` | 术语第一次被解释时链 canonical | 每节 ≤2 unique |
+| Conclusion | Hub、1 个兄弟 spoke、必要时 1 条跨簇 | ≤3 |
+| FAQ | 问题本身需要那篇文时才链；不引入新 unique | 已在正文出现过的可以再点 |
 
-**Blog 文章仅链向两类站内目标：**
-1. **Blog 互链**（`/blog/{slug}`）——系列稿、相邻主题
-2. **Glossary**（`/glossary`）——术语定义
+同一 slug 正文优先只链一次；Conclusion 允许作为收束再链 2–3 条 next-read。
 
-**不链向**：产品页（`/agent`、`/features/*`）、场景页（`/use-cases/*`）、对比页（`/vs/*`）、案例页（`/case-studies/*`）。原因：这些页面尚未上线——blog 内容不应依赖未上线的 URL。产品页上线后可补链。
+| 角色 | unique 目标 |
+|------|-------------|
+| 簇 Hub | 4–6，以本簇 spoke 为主 |
+| Spoke Glossary / Research | 3–5 |
+| Comparison / ToolsList | 4–6（含被比较对象） |
+| Product | 3–4 |
 
----
+OSI 对比文默认不链 DEA 定义；仅 `#36`（warehouse-native / agent grounding）保留。
 
-## 链接分层（Datus）
-
-| 类型 | URL 模式 | 用途 | 当前状态 |
-|------|----------|------|:---:|
-| **Blog 互链** | `/blog/{slug}` | 系列稿、相邻主题；锚文本用主题词 | ✅ 可用 |
-| **Glossary** | `/glossary` | 术语定义——唯一非 blog 站内链接目标 | ✅ 可用 |
-| **外部** | GitHub、Docs、Studio | 开源与试用转化 | ✅ 可用 |
-
-*以下类型暂不链入 blog——页面未上线但 URL 已规划，上线后补链：*
-
-| 类型 | URL 模式 | 用途 |
-|------|----------|------|
-| 品类 / 产品页 | `/agent`、`/features/*` | 产品叙事、功能说明 |
-| 场景页 | `/use-cases/*` | Persona 补充 |
-| 对比页 | `/vs/*`、`/alternatives/*` | 竞品拦截 |
-| 案例 | `/case-studies/*` | ROI 证明 |
+当前图：48 篇；无站内死链；无零入链稿。先前孤立的 `#13` / `#27` / `#32` 已分别由 `#01`、`#31`、`#07` 接入。Features Hub `#46` 由 `#10` 接入；`#47` 由 `#24` / `#46` 接入；`#48` 由 `#14` / `#46` 接入。
 
 ---
 
-## Internal Links 正文分布
+## 分类结构
 
-| 区域 | Blog 互链 | Glossary | 外链 |
-|------|-----------|:---:|------|
-| **开篇（第一个 `##` 之前）** | ≤ 1–2 条 | ≤ 1 条（术语首次出现时） | — |
-| **正文各 `##` 小节** | 语义相关，每节通常 ≤ 2 条 | 术语首次出现，全篇 ≤ 3 条 | 竞品文档 ≤ 5 条 |
-| **Conclusion / FAQ** | 收束链 | ≤ 1 条 | CTA → Studio / GitHub |
+`category` = 主题簇；`secondaryCategory` = 体裁。根目录散篇只有 `category: Glossary`。
 
-**锚文本**：描述性短语；避免 "click here"、"learn more"。
+| 主题簇 | 目录 | `category` | Hub slug | 篇数 |
+|--------|------|------------|----------|:---:|
+| Data Agent | `data-agent/` | `Data Agent` | `what-is-data-agent` | 4 |
+| Data Engineering Agent | `data-engineering-agent/` | `Data Engineering Agent` | `what-is-data-engineering-agent` | 18 |
+| Semantic Layer | `semantic-layer/` | `Semantic Layer` | `what-is-semantic-layer` | 11 |
+| OSI | `osi/` | `OSI` | `open-semantic-interchange-osi` | 8 |
+| Features | `features/` | `Features` | `introducing-datus-knowledge` | 3 |
+| 未归簇 | `blog/` 根 | `Glossary` | — | 3 |
 
-**Glossary 内链原则**：
-- 每个术语在正文中**首次出现**时链向 `/glossary`
-- 同一术语在单篇文章内只链一次（避免重复）
-- 全篇 glossary 内链总数 ≤ 3 条（防止过度优化）
+**体裁**：`Glossary` | `Research` | `Comparison` | `ToolsList` | `Product`
+
+```
+Data Agent
+  23 Hub ── 43 Genie Agent / 44 Cortex Analyst / 45 Claude Data plugin
+
+Data Engineering Agent
+  01 Hub ── 03 叙事 / 04 榜单 / 05 开源 / 06 教程 / 07·08 vs / 09 场景
+            10 Context / 11 MCP / 13 企业 / 14 Subagent / 15–17 术语
+            28 AI-native / 29 平台原生 DEA / 32 Cursor
+
+Semantic Layer
+  02 Hub ── 20 Metric layer / 21 Semantic model / 22 vs ontology / 40 Ontology
+            25 dbt / 26 Cube / 27 GoodData / 41 Timbr / 42 AtScale / 31 ToolsList
+
+OSI
+  24 Hub ── 33 Snowflake OSI / 34 vs MetricFlow / 35 vs LookML
+            36 vs warehouse-native / 37 semantic vs syntactic
+            38 vs RDF/OWL / 39 vs Cube
+
+Features
+  46 Hub Introducing Datus Knowledge ── 47 OSI adapter / 48 Task Subagents
+                                      /init+build-kb / Dashboard Copilot（计划）
+
+根目录
+  18 Data catalog / 19 Data mesh / 30 Lakehouse
+```
 
 ---
 
-## External Links 规范
+## 内链一览
 
-| 要求 | 说明 |
-|------|------|
-| **总量** | 每篇 2–5 条 |
-| **用途** | 竞品官方文档、平台产品页、行业报告 |
-| **格式** | `<a href="URL" rel="nofollow noopener">锚文本</a>` |
-| **E-E-A-T** | Google Cloud docs、Adobe、GitHub 社区 repo 等权威来源 |
+「互链」为正文 `/blog/{slug}` 去重后的目标。
 
----
+### Data Agent
 
-## 文章链接状态
+| # | 文章 | slug | 体裁 | 互链 |
+|---|------|------|------|------|
+| 23 | What Is a Data Agent | `what-is-data-agent` | Glossary | `what-is-databricks-genie`, `what-is-cortex-analyst`, `what-is-claude-data-plugin`, `what-is-semantic-layer`, `what-is-data-engineering-agent`, `contextual-data-engineering` |
+| 43 | What Is Databricks Genie | `what-is-databricks-genie` | Research | `what-is-data-agent`, `platform-native-data-agents-compared`, `what-is-cortex-analyst`, `what-is-claude-data-plugin`, `what-is-data-engineering-agent` |
+| 44 | What Is Cortex Analyst | `what-is-cortex-analyst` | Research | `what-is-data-agent`, `what-is-snowflake-osi`, `what-is-claude-data-plugin`, `what-is-databricks-genie`, `what-is-data-engineering-agent` |
+| 45 | What Is the Claude Data Plugin | `what-is-claude-data-plugin` | Research | `what-is-data-agent`, `data-engineering-agent-vs-claude-code`, `what-is-databricks-genie`, `what-is-cortex-analyst`, `what-is-data-engineering-agent` |
 
-**计数规则**：内链 Blog = 正文 `/blog/{slug}` 互链数；内链 Glossary = 正文 `/glossary` 引用数；外链 = 正文 `<a href="..." rel="nofollow noopener">` 数。
+### Data Engineering Agent
 
-**状态阈值**：✅ blog ≥2 且 ext ≥2；⚠️ 不满足双条件但非全零；❌ blog =0 或 ext =0；— 文稿缺失。
+| # | 文章 | slug | 体裁 | 互链 |
+|---|------|------|------|------|
+| 01 | What Is a Data Engineering Agent | `what-is-data-engineering-agent` | Research | `what-is-semantic-layer`, `contextual-data-engineering`, `best-data-engineering-agents`, `enterprise-data-engineering-agent` |
+| 03 | Contextual Data Engineering | `contextual-data-engineering` | Research | `what-is-semantic-layer`, `what-is-data-engineering-agent`, `context-engine-data-engineering-agent-accuracy` |
+| 04 | Best Data Engineering Agents | `best-data-engineering-agents` | ToolsList | `what-is-data-engineering-agent`, `contextual-data-engineering`, `open-source-data-engineering-agents`, `platform-native-data-agents-compared` |
+| 05 | Open Source Data Engineering Agents | `open-source-data-engineering-agents` | Comparison | `what-is-data-engineering-agent`, `contextual-data-engineering`, `best-data-engineering-agents`, `build-your-first-data-engineering-agent` |
+| 06 | Build Your First DE Agent | `build-your-first-data-engineering-agent` | Product | `what-is-data-engineering-agent`, `contextual-data-engineering`, `best-data-engineering-agents`, `open-source-data-engineering-agents` |
+| 07 | DE Agent vs Claude Code | `data-engineering-agent-vs-claude-code` | Comparison | `what-is-data-engineering-agent`, `contextual-data-engineering`, `cursor-for-data-engineering` |
+| 08 | DE Agent vs SQL Copilot | `data-engineering-agent-vs-sql-copilot` | Comparison | `contextual-data-engineering`, `best-data-engineering-agents`, `what-is-data-engineering-agent` |
+| 09 | One-Person Data Team | `one-person-data-team` | Product | `what-is-data-engineering-agent`, `contextual-data-engineering`, `subagents-domain-specific-data-agents`, `build-your-first-data-engineering-agent` |
+| 10 | Context Engine Accuracy | `context-engine-data-engineering-agent-accuracy` | Research | `what-is-data-engineering-agent`, `what-is-semantic-layer`, `best-data-engineering-agents`, `contextual-data-engineering`, `introducing-datus-knowledge` |
+| 11 | MCP and Data Engineering | `mcp-data-engineering` | Research | `what-is-data-engineering-agent`, `best-data-engineering-agents`, `contextual-data-engineering` |
+| 13 | Enterprise DE Agent | `enterprise-data-engineering-agent` | Research | `contextual-data-engineering`, `mcp-data-engineering`, `open-source-data-engineering-agents`, `what-is-data-engineering-agent` |
+| 14 | Subagents | `subagents-domain-specific-data-agents` | Research | `what-is-data-engineering-agent`, `one-person-data-team`, `contextual-data-engineering`, `enterprise-data-engineering-agent`, `introducing-datus-subagents` |
+| 15 | What Is Text-to-SQL | `what-is-text-to-sql` | Glossary | `what-is-schema-linking`, `what-is-data-engineering-agent`, `what-is-semantic-layer`, `rag-data-engineering`, `contextual-data-engineering` |
+| 16 | What Is Schema Linking | `what-is-schema-linking` | Glossary | `what-is-text-to-sql`, `rag-data-engineering`, `what-is-semantic-layer`, `what-is-data-catalog`, `what-is-data-engineering-agent` |
+| 17 | RAG for Data Engineering | `rag-data-engineering` | Glossary | `what-is-schema-linking`, `contextual-data-engineering`, `what-is-semantic-layer`, `what-is-text-to-sql`, `what-is-data-engineering-agent` |
+| 28 | AI-Native Data Platforms | `ai-native-data-platforms` | Research | `what-is-metric-layer`, `what-is-semantic-model`, `what-is-data-engineering-agent` |
+| 29 | Platform-Native DE Agents Compared | `platform-native-data-agents-compared` | Comparison | `what-is-databricks-genie`, `what-is-cortex-analyst`, `what-is-data-engineering-agent`, `open-source-data-engineering-agents`, `ai-native-data-platforms` |
+| 32 | Cursor for Data Engineering | `cursor-for-data-engineering` | Product | `what-is-data-engineering-agent`, `contextual-data-engineering`, `data-engineering-agent-vs-sql-copilot`, `one-person-data-team` |
 
-| # | 文章 | 内链 Blog | 内链 Glossary | 外链 | 状态 |
-|---|------|:---:|:---:|:---:|------|
-| 01 | What Is a Data Engineering Agent | 2 | 0 | 5 | ✅ |
-| 02 | What Is a Semantic Layer | 2 | 0 | 4 | ✅ |
-| 03 | Contextual Data Engineering | 2 | 3 | 5 | ✅ |
-| 04 | Best Data Engineering Agents 2026 | 3 | 0 | 1 | ⚠️ ext=1 |
-| 05 | Open Source Data Engineering Agents | 3 | 2 | 3 | ✅ |
-| 06 | Build Your First DE Agent + CLI Workflow | 8 | 2 | 3 | ✅ |
-| 07 | DE Agent vs. Claude Code | 4 | 0 | 2 | ❌ 文稿缺失 |
-| 08 | DE Agent vs. SQL Copilot | 4 | 1 | 2 | ✅ |
-| 09 | One-Person Data Team | 4 | 1 | 2 | ✅ |
-| 10 | Context Engine Accuracy | 5 | 2 | 3 | ✅ |
-| 11 | MCP and Data Engineering | 4 | 1 | 2 | ✅ |
-| 12 | —（空号，保留） | — | — | — | — |
-| 13 | Enterprise DE Agent Needs | 5 | 0 | 1 | ⚠️ ext=1 |
-| 14 | Subagents Deep Dive | 4 | 1 | 2 | ✅ |
-| 15 | What Is Text-to-SQL | 6 | 0 | 3 | ✅ |
-| 16 | What Is Schema Linking | 4 | 0 | 2 | ✅ |
-| 17 | RAG for Data Engineering | 6 | 0 | 1 | ⚠️ ext=1 |
-| 18 | What Is a Data Catalog | 6 | 0 | 3 | ✅ |
-| 19 | What Is Data Mesh | 2 | 0 | 1 | ⚠️ ext=1 |
-| 20 | What Is a Metric Layer | 1 | 0 | 6 | ⚠️ blog=1 |
-| 21 | What Is a Semantic Model | 3 | 0 | 0 | ❌ ext=0 |
-| 22 | Semantic Layer vs. Ontology | 2 | 0 | 0 | ❌ ext=0 |
-| 23 | What Is a Data Agent | 1 | 0 | 0 | ❌ ext=0 |
-| 24 | Open Semantic Interchange / OSI | 1 | 0 | 2 | ⚠️ blog=1 |
-| 25 | dbt Semantic Layer & MetricFlow | 1 | 0 | 0 | ❌ ext=0 |
-| 26 | Cube.dev Agentic Analytics | 3 | 0 | 0 | ❌ ext=0 |
-| 27 | GoodData.AI AI-Native Analytics | 1 | 0 | 0 | ❌ ext=0 |
-| 28 | AI-Native Data Platforms | 3 | 0 | 0 | ❌ ext=0 |
-| 29 | Platform-Native DE Agents Compared | 0 | 0 | 0 | ❌ blog=0 ext=0 |
-| 30 | What Is a Lakehouse | 8 | 0 | 3 | ✅ |
-| 31 | Semantic Layer Tools List & OSI Support | 8 | 0 | 2 | ✅ |
+### Semantic Layer
 
-**统计**：✅ 达标 19 篇 · ⚠️ 警告 4 篇 · ❌ 不达标 7 篇 · 空号/缺失 1 篇
+| # | 文章 | slug | 体裁 | 互链 |
+|---|------|------|------|------|
+| 02 | What Is a Semantic Layer | `what-is-semantic-layer` | Glossary | `what-is-data-engineering-agent`, `what-is-semantic-model`, `what-is-ontology`, `open-semantic-interchange-osi`, `what-is-metric-layer` |
+| 20 | What Is a Metric Layer | `what-is-metric-layer` | Glossary | `what-is-semantic-layer`, `what-is-semantic-model`, `what-is-data-engineering-agent`, `dbt-semantic-layer-metricflow` |
+| 21 | What Is a Semantic Model | `what-is-semantic-model` | Glossary | `what-is-metric-layer`, `open-semantic-interchange-osi`, `what-is-semantic-layer` |
+| 22 | Semantic Layer vs Ontology | `semantic-layer-vs-ontology` | Glossary | `what-is-semantic-model`, `what-is-semantic-layer`, `what-is-ontology` |
+| 25 | dbt Semantic Layer & MetricFlow | `dbt-semantic-layer-metricflow` | Research | `what-is-semantic-layer`, `open-semantic-interchange-osi`, `cube-agentic-analytics`, `what-is-metric-layer` |
+| 26 | Cube.dev Agentic Analytics | `cube-agentic-analytics` | Research | `what-is-data-agent`, `open-semantic-interchange-osi`, `what-is-semantic-layer`, `osi-vs-cube` |
+| 27 | What Is GoodData | `what-is-gooddata` | Research | `what-is-semantic-model`, `open-semantic-interchange-osi`, `what-is-semantic-layer` |
+| 31 | Semantic Layer Tools List | `semantic-layer-tools-list-osi` | ToolsList | `what-is-semantic-layer`, `open-semantic-interchange-osi`, `what-is-gooddata`, `what-is-data-engineering-agent` |
+| 40 | What Is an Ontology | `what-is-ontology` | Glossary | `what-is-semantic-layer`, `semantic-layer-vs-ontology`, `osi-vs-rdf-owl`, `what-is-timbr`, `what-is-atscale` |
+| 41 | What Is Timbr | `what-is-timbr` | Research | `what-is-semantic-layer`, `what-is-ontology`, `semantic-layer-vs-ontology`, `what-is-data-engineering-agent`, `cube-agentic-analytics` |
+| 42 | What Is AtScale | `what-is-atscale` | Research | `what-is-semantic-layer`, `semantic-layer-tools-list-osi`, `cube-agentic-analytics`, `what-is-timbr` |
 
-**维护说明**：
-- 共 **31** 篇（#07 文稿缺失，#12 保留空号）；其中 Glossary 类 **11** 篇 + DE Agent 类 **17** 篇 + Semantic Layer（ToolsList）**1** 篇；#31 category 已从 Glossary 改为 `Semantic Layer`
-- **禁止**链向 slug `data-engineering-agent-vs-claude-code`，直至 `07-data-engineering-agent-vs-claude-code.md` 发布
-- 每发布一篇新稿或修改链接，需更新上表
-- 链接策略：正文内链（blog 互链 + glossary）+ 外链替代原 frontmatter `related` 和 `keywords` 字段
+### OSI
+
+| # | 文章 | slug | 体裁 | 互链 |
+|---|------|------|------|------|
+| 24 | Open Semantic Interchange | `open-semantic-interchange-osi` | Research | `what-is-semantic-model`, `what-is-semantic-layer`, `what-is-snowflake-osi`, `osi-vs-dbt-metricflow`, `semantic-layer-tools-list-osi`, `datus-osi-semantic-adapter` |
+| 33 | What Is Snowflake OSI | `what-is-snowflake-osi` | Glossary | `what-is-semantic-model`, `open-semantic-interchange-osi`, `what-is-semantic-layer`, `osi-vs-warehouse-native-semantics` |
+| 34 | OSI vs dbt MetricFlow | `osi-vs-dbt-metricflow` | Glossary | `what-is-semantic-layer`, `open-semantic-interchange-osi`, `dbt-semantic-layer-metricflow`, `what-is-metric-layer`, `semantic-layer-tools-list-osi`, `osi-vs-lookml` |
+| 35 | OSI vs LookML | `osi-vs-lookml` | Glossary | `what-is-semantic-layer`, `open-semantic-interchange-osi`, `semantic-layer-tools-list-osi`, `osi-vs-dbt-metricflow`, `semantic-vs-syntactic-interoperability` |
+| 36 | OSI vs Warehouse-Native Semantics | `osi-vs-warehouse-native-semantics` | Glossary | `what-is-semantic-layer`, `open-semantic-interchange-osi`, `what-is-snowflake-osi`, `semantic-layer-tools-list-osi`, `osi-vs-dbt-metricflow`, `what-is-data-engineering-agent` |
+| 37 | Semantic vs Syntactic Interoperability | `semantic-vs-syntactic-interoperability` | Glossary | `what-is-semantic-layer`, `open-semantic-interchange-osi`, `osi-vs-rdf-owl`, `what-is-semantic-model` |
+| 38 | OSI vs RDF/OWL | `osi-vs-rdf-owl` | Glossary | `semantic-layer-vs-ontology`, `open-semantic-interchange-osi`, `what-is-semantic-layer`, `what-is-semantic-model` |
+| 39 | OSI vs Cube | `osi-vs-cube` | Glossary | `open-semantic-interchange-osi`, `cube-agentic-analytics`, `what-is-semantic-layer`, `semantic-layer-tools-list-osi` |
+
+### Features
+
+| # | 文章 | slug | 体裁 | 互链 |
+|---|------|------|------|------|
+| 46 | Introducing Datus Knowledge | `introducing-datus-knowledge` | Product | `what-is-data-engineering-agent`, `what-is-semantic-model`, `what-is-data-catalog`, `contextual-data-engineering`, `datus-osi-semantic-adapter`, `introducing-datus-subagents` |
+| 47 | Datus OSI Semantic Adapter | `datus-osi-semantic-adapter` | Product | `open-semantic-interchange-osi`, `osi-vs-dbt-metricflow`, `introducing-datus-knowledge`, `introducing-datus-subagents` |
+| 48 | Introducing Datus Subagents | `introducing-datus-subagents` | Product | `what-is-data-engineering-agent`, `subagents-domain-specific-data-agents`, `introducing-datus-knowledge`, `datus-osi-semantic-adapter` |
+
+### 根目录（未归簇）
+
+| # | 文章 | slug | 体裁 | 互链 |
+|---|------|------|------|------|
+| 18 | What Is a Data Catalog | `what-is-data-catalog` | Glossary | `what-is-semantic-layer`, `contextual-data-engineering`, `rag-data-engineering`, `what-is-schema-linking`, `what-is-lakehouse` |
+| 19 | What Is Data Mesh | `what-is-data-mesh` | Glossary | `subagents-domain-specific-data-agents`, `contextual-data-engineering`, `what-is-data-catalog`, `what-is-lakehouse` |
+| 30 | What Is a Lakehouse | `what-is-lakehouse` | Glossary | `what-is-data-catalog`, `what-is-semantic-layer`, `what-is-data-engineering-agent`, `what-is-schema-linking`, `what-is-data-mesh` |

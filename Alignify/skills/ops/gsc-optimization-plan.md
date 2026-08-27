@@ -1,8 +1,8 @@
 # GSC 数据驱动的 SEO 监控与内容优化方案
 
-本文档定义如何利用已集成的 Google Search Console API（`src/lib/gsc.ts`，三个 API Route）系统化监控搜索表现并驱动内容优化。方案与现有审计体系（[section-optimization-playbook.md](../create-article/rules/README.md)）无缝衔接。
+本文档定义如何利用 GSC / GA4 / Bing 数据（[`seo-weekly-report/`](../../seo-weekly-report/README.md)）系统化监控搜索表现并驱动内容优化。方案与现有审计体系（[section-optimization-playbook.md](../create-article/rules/README.md)）无缝衔接。
 
-**前置依赖**：GSC API 已上线（2026-05-09），`/api/gsc/search-analytics`、`/api/gsc/url-inspection`、`/api/gsc/sitemaps` 三个端点均可正常调用。
+**前置依赖**：GSC / GA4 数据通过 [`seo-weekly-report/`](../../seo-weekly-report/README.md) 直连 API 拉取；索引检查见 `scripts/ops/audit-gsc-index-health.mjs`。
 
 ---
 
@@ -61,19 +61,11 @@ GSC API（Google）                Bing Webmaster API（Phase 6 新增）
 
 **目标**：建立 GSC 数据的本地历史快照，为后续所有审计提供数据基础。
 
-**做法**：写一个脚本 `scripts/ops/fetch-gsc-data.mjs`，调用站内 `/api/gsc/search-analytics` 按 page 维度拉近 30 天数据，存为 `data/gsc-page-YYYY-MM-DD.json`。
+**做法**：[`seo-weekly-report/scripts`](../../seo-weekly-report/README.md) 直连 GSC / GA4 / Bing API，`npm run fetch-all` 产出 `seo-report-bundle-YYYY-MM-DD.json`。
 
-```javascript
-// 伪结构
-// fetch-gsc-data.mjs
-// 调用 POST /api/gsc/search-analytics
-//   { startDate, endDate, dimensions: ["page"], rowLimit: 5000 }
-// 写入 data/gsc-page-YYYY-MM-DD.json
-```
+**频率**：每周一次（报告周结束日为周日）。
 
-**频率**：每周一次。可手动跑，也可用 scheduled task 自动化。
-
-**产出**：`data/` 目录下按日期命名的 JSON 快照，每份包含各页面的 clicks、impressions、CTR、position。
+**产出**：`seo-weekly-report/data/` 下的 weekly JSON 与合并 bundle。
 
 ### Phase 2：CTR 审计脚本（优先级 P1，工作量 中）
 
@@ -81,7 +73,7 @@ GSC API（Google）                Bing Webmaster API（Phase 6 新增）
 
 **做法**：参照 `audit-seo-metadata.mjs` 的模式，写 `scripts/ops/audit-gsc-ctr.mjs`：
 
-1. 读取最新一期 `data/gsc-page-*.json`
+1. 读取最新 `seo-weekly-report/data/seo-report-bundle-*.json` 中的 `gsc.pages`
 2. 筛选 impressions > 200 且 CTR < 2% 的页面
 3. 按 impressions 降序排列（曝光越大越优先修）
 4. 输出：路径、impressions、CTR、当前 title（从 page.tsx 提取）
@@ -94,7 +86,7 @@ GSC API（Google）                Bing Webmaster API（Phase 6 新增）
 
 **做法**：写 `scripts/ops/audit-gsc-position-drop.mjs`：
 
-1. 读取连续两周的 `data/gsc-page-*.json`
+1. 读取 bundle 内 `gsc.pages` 的 `position` vs `positionPrev`（单文件环比，无需两期快照）
 2. 比较同页面的 avgPosition，找出上升 > 3 位且 impressions > 100 的页面
 3. 输出：路径、本周位置、上周位置、变化幅度
 
@@ -107,24 +99,28 @@ GSC API（Google）                Bing Webmaster API（Phase 6 新增）
 **做法**：写 `scripts/ops/audit-gsc-index-health.mjs`：
 
 1. 从 TOOLS_PAGES + site-pages-config 生成所有页面 URL 列表
-2. 对每个 URL 调用 `/api/gsc/url-inspection`
+2. 对每个 URL 调用 GSC URL Inspection API（`audit-gsc-index-health.mjs`，凭据见 `seo-weekly-report/scripts/.env`）
 3. 筛选 indexStatusResult.status !== "submittedAndIndexed" 的页面
 4. 输出异常清单
 
 **注意**：url-inspection 端点每次只查一个 URL，全站约 300+ 页面，需做并发控制（建议 5req/s，总耗时约 60s）。适合放在定时任务里每天跑。
 
-### Phase 5：SEO 看板页面（优先级 P2，工作量 大）
+### Phase 5：SEO 周报引擎（✅ 已实施，替代原 `/dash` 看板）
 
-**目标**：在站内搭建一个受保护的内部看板，可视化 GSC 数据。
+**目标**：在上下文仓用周报 JSON + Markdown 复盘搜索表现，不再维护部署仓 Web 看板。
 
-**做法**：在 `/dash` 页面路由，用 Tailwind CSS 纯样式图表可视化：
+**做法**：[`seo-weekly-report/`](../../seo-weekly-report/README.md) — 直连 GSC / GA4 / Bing API，合并为 `data/seo-report-bundle-YYYY-MM-DD.json`，Agent 按 `SKILL.md` 生成 `reports/alignify-seo-weekly-*.md`。
 
-- 每日点击/曝光趋势线
-- 按页面排名（click 降序表格）
-- CTR 最低的 20 个页面
-- 位置 8-20 的机会词列表
+```bash
+cd seo-weekly-report/scripts
+cp .env.example .env   # 首次：填写 GSC / GA4 / Bing 凭据
+npm install && npm run fetch-all
+```
 
-数据从 `data/gsc-page-*.json` 文件中读取（SSG），或从 `/api/gsc/search-analytics` 实时拉取（CSR）。页面用环境变量 `INTERNAL_ACCESS_KEY` 做简单密码保护。
+**审计脚本**（读 bundle，不再依赖 `gsc-page-*.json`）：
+
+- `scripts/ops/audit-gsc-ctr.mjs`
+- `scripts/ops/audit-gsc-position-drop.mjs`
 
 ---
 
@@ -148,31 +144,36 @@ GSC API（Google）                Bing Webmaster API（Phase 6 新增）
 
 ### 5.1 数据存档格式
 
-`data/gsc-page-YYYY-MM-DD.json`：
+主数据包：`seo-weekly-report/data/seo-report-bundle-YYYY-MM-DD.json`（周日日期）。Schema 见 `seo-weekly-report/references/portable/report-bundle-schema.md`。
+
+中间产物（fetch 脚本写入，merge 读取）：
+
+- `gsc-weekly-YYYY-MM-DD.json`
+- `ga4-weekly-YYYY-MM-DD.json`
+- `bing-weekly-YYYY-MM-DD.json`
+
+`gsc.pages[]` 字段示例：
 
 ```json
 {
-  "fetchedAt": "2026-05-10T00:00:00Z",
-  "dateRange": { "start": "2026-04-12", "end": "2026-05-10" },
-  "pages": [
-    {
-      "url": "https://alignify.co/tools/3d-scanner",
-      "clicks": 120,
-      "impressions": 3400,
-      "ctr": 0.035,
-      "position": 8.4
-    }
-  ]
+  "url": "/tools/3d-scanner",
+  "clicks": 120,
+  "impressions": 3400,
+  "ctr": 0.035,
+  "position": 8.4,
+  "clicksPrev": 100,
+  "impressionsPrev": 3200,
+  "positionPrev": 9.1
 }
 ```
 
 ### 5.2 脚本命名约定
 
-沿用现有 `scripts/permanent/` 目录：
+沿用 `scripts/ops/` 目录：
 
-- `fetch-gsc-data.mjs` — 拉取 GSC 数据并存档
-- `audit-gsc-ctr.mjs` — CTR 审计
-- `audit-gsc-position-drop.mjs` — 位置滑坡审计
+- `seo-weekly-report/scripts/fetch-*.mjs` — 拉取并 merge（见 `npm run fetch-all`）
+- `audit-gsc-ctr.mjs` — CTR 审计（读 bundle）
+- `audit-gsc-position-drop.mjs` — 位置滑坡（读 bundle 内 positionPrev）
 - `audit-gsc-index-health.mjs` — 索引健康检查
 
 ### 5.3 已知限制
@@ -205,18 +206,16 @@ Python json.dump 批量修复  ←──   内容修复（复用已有流程）
 
 | # | 任务 | 优先级 | 工作量 | 依赖 | 状态 |
 |---|------|--------|--------|------|------|
-| 1 | `fetch-gsc-data.mjs` — 数据存档脚本 | P0 | 小 | 无 | ✅ 已实施 |
-| 2 | `audit-gsc-ctr.mjs` — CTR 审计 | P1 | 中 | Phase 1 数据 | ✅ 已实施 |
-| 3 | `audit-gsc-position-drop.mjs` — 位置滑坡 | P1 | 中 | Phase 1 数据（需两周） | ✅ 已实施 |
+| 1 | `seo-weekly-report` — fetch-all 数据存档 | P0 | 小 | 无 | ✅ 已实施 |
+| 2 | `audit-gsc-ctr.mjs` — CTR 审计 | P1 | 中 | bundle | ✅ 已实施 |
+| 3 | `audit-gsc-position-drop.mjs` — 位置滑坡 | P1 | 中 | bundle | ✅ 已实施 |
 | 4 | `audit-gsc-index-health.mjs` — 索引健康 | P2 | 中 | 无 | ✅ 已实施 |
-| 5 | `/dash` — SEO 看板（Next.js App Router 页面） | P2 | 大 | Phase 1 数据 | ✅ 已实施 |
-| 6a | `fetch-bing-data.mjs` — Bing 数据存档 | P1 | 中 | Bing API Key | 待实施 |
-| 6b | `src/lib/dashboard/data.ts` — 双源数据层 | P1 | 中 | 6a | 待实施 |
-| 6c | `/dash` Google/Bing/对比 Tab | P1 | 中 | 6b | 待实施 |
-| 6d | `audit-gsc-bing-compare.mjs` — 双引擎对比审计 | P2 | 中 | 6a | 待实施 |
-| 6e | AI Citations CSV 导入 + 看板模块 | P2 | 小 | 6a | 待实施 |
+| 5 | SEO 周报 Markdown（Agent + SKILL.md） | P1 | 中 | bundle | ✅ 已实施 |
+| 6 | Bing 三源 fetch-all 稳定运行 | P1 | 小 | Bing API Key | 进行中 |
+| 6d | `audit-gsc-bing-compare.mjs` — 双引擎对比审计 | P2 | 中 | bundle | 待实施 |
+| 6e | AI Citations CSV 导入 + 周报章节 | P2 | 小 | 手动导出 | 待实施 |
 
-Phase 1 是基础设施。Phase 6（Bing 集成）是下一优先级，完成后可实现 Google + Bing 双引擎并行监控。Phase 6d-6e 可在 API 数据稳定 2-4 周后再做。
+~~原 `/dash` Web 看板~~ 已移除（2026-08-28），由 `seo-weekly-report` 替代。
 
 ---
 
@@ -225,7 +224,7 @@ Phase 1 是基础设施。Phase 6（Bing 集成）是下一优先级，完成后
 - 方案制定：2026-05-10
 - 修订记录：
   - v1：初始版本（GSC 五阶段）
-  - v2：2026-05-10 — 新增九、十章节：Bing Webmaster Tools 集成方案；看板落地页由 `/internal/seo` 改为独立 `/dash`
+  - v3：2026-08-28 — 移除部署仓 `/dash`；分析迁至 `seo-weekly-report/`（周报 bundle + Markdown）
 
 ---
 
@@ -280,72 +279,22 @@ Bing API 提供两种认证，**推荐 API Key 方式**（比 GSC 的 Service Ac
 
 完整文档：https://learn.microsoft.com/en-us/bingwebmaster/
 
-### 6.4 数据拉取脚本：`scripts/ops/fetch-bing-data.mjs`
+### 6.4 Bing 数据拉取
 
-参照 `fetch-gsc-data.mjs` 的架构，调用 Bing API：
+由 [`seo-weekly-report/scripts/fetch-bing.mjs`](../../seo-weekly-report/scripts/fetch-bing.mjs) 实现，经 `npm run fetch-all` 写入 bundle 的 `bing` 块：
 
 ```
-输入：API Key（环境变量 BING_API_KEY）
-      站点 URL（环境变量 BING_SITE_URL，如 https://alignify.co）
-      时间范围（可选，默认 28 天）
+输入：BING_API_KEY、BING_SITE_URL（scripts/.env）
+      报告周（REPORT_WEEK_END，可选）
 
-调用 Bing JSON API：
-  1. GetQueryStats — 按 query 获取，含 page URL 字段
-  2. 按 page URL 汇总 → 生成与 GSC 同结构的 page 维度数据
-
-输出：data/bing-page-YYYY-MM-DD.json
+产出：data/bing-weekly-YYYY-MM-DD.json → merge 进 seo-report-bundle
 ```
 
-**JSON 输出格式**（与 GSC 保持一致以便对比）：
+**注意**：Bing 数据更新频率约 1 周，比 GSC 慢。详见 `seo-weekly-report/references/portable/report-bundle-schema.md` 的 `bing` 块。
 
-```json
-{
-  "fetchedAt": "2026-05-10T00:00:00Z",
-  "dateRange": { "start": "2026-04-12", "end": "2026-05-10" },
-  "source": "bing",
-  "summary": {
-    "totalPages": 150,
-    "pagesWithClicks": 45,
-    "totalClicks": 280,
-    "totalImpressions": 45000
-  },
-  "pages": [
-    {
-      "url": "https://alignify.co/tools/3d-scanner",
-      "clicks": 35,
-      "impressions": 1200,
-      "ctr": 0.029,
-      "position": 12.5
-    }
-  ]
-}
-```
+### 6.5 双引擎对比（周报 bundle）
 
-**注意**：Bing API 的 `GetQueryStats` 返回 query 级别数据（每条含 Query, Clicks, Impressions, AvgClickPosition, AvgImpressionPosition），
-需自行按 page URL 字段汇总。数据更新频率约 1 周，比 GSC 慢。
-
-### 6.5 双引擎对比看板升级
-
-在 `/dash` 看板中新增 Bing 数据源对比：
-
-**数据层扩展**（`src/lib/dashboard/data.ts`）：
-- 新增 `readBingSnapshots()` — 读取 `data/bing-page-*.json`
-- 新增 `mergeGscBingData()` — 合并两个数据源到统一对比格式
-- 导出 `DataSource` 类型：`"gsc" | "bing" | "merged"`
-
-**看板 UI 新增**：
-- 顶部 Tab 切换：Google | Bing | 对比
-- 对比模式下，同一页面在 Google vs Bing 的表现并列显示
-- 差异高亮：Bing 排名更好 = 绿色，Google 排名更好 = 蓝色
-- 双引擎总点击 = GSC clicks + Bing clicks（合并视图）
-
-**新增对比指标**：
-| 对比指标 | 含义 |
-|----------|------|
-| Google-only 曝光 | 仅在 Google 有曝光的页面 → 内容可能偏 Google 偏好 |
-| Bing-only 曝光 | 仅在 Bing 有曝光的页面 → 内容偏 Bing 偏好 |
-| CTR 差异 > 2x | 同一页面在两个引擎的 CTR 差 2 倍以上 → meta 策略可能需要分引擎优化 |
-| 排名差异 > 10 位 | 同一页面排名差 10 位以上 → 内容匹配度因引擎而异 |
+`seo-report-bundle` 已含 `gsc` 与 `bing` 块；Agent 周报模板中可并列解读 Google vs Bing。无需 Web 看板。
 
 ### 6.6 AI 引用数据（Copilot Citations）— 未来路线
 
@@ -359,21 +308,20 @@ Bing Webmaster Tools 于 2026 年 2 月发布的 AI Performance 面板提供：
 **当前状态**：仅限网页看板，无 API。Microsoft 确认 API 在 backlog 中（Fabrice Canel, 2026-02-10）。
 
 **准备动作**：
-1. 先手动从 Webmaster Tools 导出 AI Performance CSV（看板支持导出）
-2. 存入 `data/bing-ai-citations-YYYY-MM-DD.csv`
-3. 在看板中增加 AI Citations 模块（读 CSV 文件），不依赖 API
-4. API 开放后立即迁移为程序化拉取
+1. 手动从 Webmaster Tools 导出 AI Performance CSV
+2. 存入 `seo-weekly-report/data/bing-ai-citations-YYYY-MM-DD.csv`
+3. 在周报手动块或 Agent overlay 中增加 AI Citations 章节
+4. API 开放后迁入 fetch 脚本
 
 ### 6.7 实施步骤
 
 | 步骤 | 内容 | 产出 | 状态 |
 |------|------|------|------|
-| 1 | 在 Bing Webmaster Tools 中验证 alignify.co 所有权，生成 API Key | API Key | 待实施 |
-| 2 | 写 `fetch-bing-data.mjs`，调用 Bing API 拉取 page 维度数据 | bing-page-*.json 快照 | 待实施 |
-| 3 | 扩展 `src/lib/dashboard/data.ts`，加入 Bing 数据读取和合并逻辑 | 数据层支持双源 | 待实施 |
-| 4 | 升级 `/dash` 看板，新增 Google/Bing/对比 Tab | 双引擎看板 | 待实施 |
-| 5 | 写 `audit-gsc-bing-compare.mjs`，自动输出双引擎差异报告 | 对比审计脚本 | 待实施 |
-| 6 | 手动导出 AI Citations CSV，在看板中增加 AI 引用模块 | AI 引用追踪 | 待实施 |
+| 1 | Bing Webmaster 验证 + API Key | API Key | 待实施 |
+| 2 | `seo-weekly-report/scripts` 配置 `.env` 并 `npm run fetch-all` | bundle 含 bing 块 | 进行中 |
+| 3 | Agent 周报双引擎对比段落 | Markdown 报告 | 进行中 |
+| 4 | `audit-gsc-bing-compare.mjs` | 对比审计脚本 | 待实施 |
+| 5 | AI Citations CSV → 周报章节 | AI 引用追踪 | 待实施 |
 
 ### 6.8 Bing API 调用示例（供脚本参考）
 
@@ -424,14 +372,4 @@ function aggregateByPage(rows) {
 
 ## 十、更新后的总体优先级排序
 
-| # | 任务 | 优先级 | 工作量 | 依赖 | 状态 |
-|---|------|--------|--------|------|------|
-| 1 | `fetch-gsc-data.mjs` — GSC 数据存档 | P0 | 小 | 无 | ✅ |
-| 2 | `audit-gsc-ctr.mjs` — CTR 审计 | P1 | 中 | Phase 1 | ✅ |
-| 3 | `audit-gsc-position-drop.mjs` — 位置滑坡 | P1 | 中 | Phase 1 | ✅ |
-| 4 | `audit-gsc-index-health.mjs` — 索引健康 | P2 | 中 | 无 | ✅ |
-| 5 | `/dash` — SEO 看板（Next.js App Router 页面） | P2 | 大 | Phase 1 | ✅ |
-| **6a** | **`fetch-bing-data.mjs` — Bing 数据存档** | **P1** | **中** | **Bing API Key** | **待实施** |
-| **6b** | **`src/lib/dashboard/data.ts` — 双源数据层** | **P1** | **中** | **6a** | **待实施** |
-| **6c** | **`/dash` — Google/Bing/对比 Tab** | **P1** | **中** | **6b** | **待实施** |
-| 6d | `audit-gsc-bing-
+与 **§七** 一致；2026-08-28 起分析数据统一走 `seo-weekly-report/`，部署仓不再维护 `/dash`。

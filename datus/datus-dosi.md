@@ -9,7 +9,8 @@
 | **输出** | 15+ 仓库方言 SQL；CLI / REST+Arrow / MCP / Python |
 | **仓库** | DuckDB、Postgres、Snowflake、ClickHouse、StarRocks、Doris、TiDB、Trino、MySQL、Oracle、BigQuery、Databricks、Redshift、Hologres 等 |
 | **Agent** | 原生 MCP；结构化错误码支持 agent 自修正 |
-| **商业** | Datus 产品；Dosi 为引擎，[Datus Studio](https://datus.ai/) 为商业平台 |
+| **商业** | Datus 产品；Dosi 为引擎，[Datus Studio](https://datus.ai/) 为商业平台；**Dosi 为 Studio 组件** |
+| **开源** | **暂未开源**（截至 2026-08-28 产品确认） |
 | **在 Datus Agent 中** | `datus-semantic-dosi` adapter — OSI 格式直编译执行，**不依赖 MetricFlow** |
 
 ---
@@ -43,9 +44,9 @@ Datus Agent: datus-semantic-dosi → Dosi 原生执行（新路径）
 
 | 主张 | 建议表述 | 风险 |
 |------|----------|------|
-| **唯一 native Ossie 实现** | 「首个将 Apache Ossie YAML **原生编译为多方言 SQL** 的开源引擎」 | 勿写 absolute "only" 除非法务/产品确认 |
+| **首个 native Ossie 实现** | 「首个将 Apache Ossie YAML **原生编译为多方言 SQL** 的引擎」 | ✅ 可用 **first**；勿写 absolute "only" |
 | **vs MetricFlow** | 同 semantic model、执行路径对比；引用 Benchmarks 数据 | 测的是 simple_model fixture；需注明场景 |
-| **with Cube** | OSI hub：Cube 消费端 + Dosi 执行端；或「author in Cube path → export OSI → run in Dosi」 | Cube 尚无 merged converter，叙事偏未来/互补 |
+| **with Cube** | OSI hub：Cube 消费端 + Dosi 执行端 | 叙事偏互补；**不写** converter 互操作实测路径 |
 | **Agent-first** | MCP + 结构化错误 vs 猜 SQL | 与 Datus Agent 叙事一致 |
 
 ---
@@ -67,20 +68,22 @@ Datus Agent: datus-semantic-dosi → Dosi 原生执行（新路径）
 | # | 标题方向 | Primary KW | 角度 |
 |---|----------|--------------|------|
 | 1 | Dosi vs MetricFlow | dosi vs metricflow | 格式相同、执行引擎不同；benchmark + 冷启动/agent 场景 |
-| 2 | Dosi + Cube | dosi with cube / OSI semantic stack | hub-spoke：Cube API 消费 vs Dosi OSI 执行；agent 栈组合 |
+| 2 | Dosi + Cube | dosi with cube / OSI semantic stack | hub-spoke：Cube API 消费 vs Dosi OSI 执行；不写 converter 互操作路径 |
 | 3 | First Native Apache Ossie Engine | apache ossie implementation | 标准科普 + Dosi 作为 runtime 层；链 OSI explainer |
 | 4 | Why OSI Needs an Execution Engine | apache ossie / OSI runtime | 回应「OSI 只是格式」；Dosi 填 execution gap |
 | 5 | MCP Semantic Layer for Agents | dosi MCP / semantic layer agent | Claude Code / Codex 集成（dosi 站有 guides） |
 
 ---
 
-## 待确认
+## 已确认（2026-08-28）
 
-- [ ] 「only Apache Ossie implementation」能否对外使用 — **产品/法务**
-- [ ] Dosi 开源范围 vs 商业许可（licensing 页在 dosi 站 footer 提及 contact Datus）
-- [ ] 与 Datus Studio 定价/打包关系
-- [ ] Cube / Snowflake converter 与 Dosi 互操作实测路径
-- [ ] 中文站 `/zh` 是否同步推 Dosi
+| 项 | 结论 |
+|----|------|
+| **对外表述** | 可用 **first** native Apache Ossie implementation；勿写 absolute "only" |
+| **开源** | **暂时没开源** |
+| **Studio 关系** | Dosi 为 **Datus Studio 组件**；不写定价/打包 |
+| **Converter 互操作** | 不写 Cube / Snowflake converter 与 Dosi 互操作实测路径 |
+| **中文站** | 不做 `/zh` 同步推 Dosi |
 
 ---
 
@@ -104,15 +107,15 @@ Datus Agent: datus-semantic-dosi → Dosi 原生执行（新路径）
 | [datus-glossary.md](./datus-glossary.md) | Glossary canonical；**暂不抢** `what is semantic layer` 等已有词 |
 | [datus-keywords.md](./datus-keywords.md) | 关键词映射；后续加 Dosi 品牌段 |
 | [datus-site-structure.md](./datus-site-structure.md) | 站点 IA；§3.1.1 OSI 页、§3.5 Dosi 子域 |
-| [blog/24-open-semantic-interchange-osi-2026.md](./blog/24-open-semantic-interchange-osi-2026.md) | OSI/Ossie 标准科普 |
-| [blog/34-osi-vs-dbt-metricflow.md](./blog/34-osi-vs-dbt-metricflow.md) | 格式 vs 运行时；可延伸 Dosi 角 |
-| [blog/31-semantic-layer-tools-list-osi.md](./blog/31-semantic-layer-tools-list-osi.md) | 15 工具 OSI 状态（2026-07）；⚠️ 需更新 Dosi 行 |
-| [blog/26-cube-dev-agentic-analytics-2026.md](./blog/26-cube-dev-agentic-analytics-2026.md) | Cube 叙事；Dosi+Cube 互补文 |
+| [blog/osi/24-open-semantic-interchange-osi-2026.md](./blog/osi/24-open-semantic-interchange-osi-2026.md) | OSI/Ossie 标准科普 |
+| [blog/osi/34-osi-vs-dbt-metricflow.md](./blog/osi/34-osi-vs-dbt-metricflow.md) | 格式 vs 运行时；可延伸 Dosi 角 |
+| [blog/semantic-layer/31-semantic-layer-tools-list-osi.md](./blog/semantic-layer/31-semantic-layer-tools-list-osi.md) | 15 工具 OSI 状态（2026-07）；⚠️ 需更新 Dosi 行 |
+| [blog/semantic-layer/26-cube-dev-agentic-analytics-2026.md](./blog/semantic-layer/26-cube-dev-agentic-analytics-2026.md) | Cube 叙事；Dosi+Cube 互补文 |
 
 **后续站内动作**（非本阶段）：更新 `semantic-layer-tools-list-osi` Dosi 行；datus.ai OSI 页 ↔ dosi.datus.ai 互链；keywords 加 Dosi 品牌段。
 
 ---
 
 *阶段*：调研（不执行内容产出）  
-*Last updated*：2026-08-21  
+*Last updated*：2026-08-28  
 *关联 task*：[TASKS.md](../TASKS.md) · datus-001

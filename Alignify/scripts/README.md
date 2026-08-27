@@ -28,17 +28,17 @@ scripts/
 
 ### permanent/（本目录，外部上下文）
 
-内容合规、引用规范化、GSC/Bing/GA4 拉取、部署前检查等。从**部署仓库**运行示例（路径按本机调整）：
+内容合规、GSC 审计等。SEO 拉数见 [`seo-weekly-report/`](../seo-weekly-report/README.md)。
 
 ```bash
-cd D:\部署项目\alignify-by-kostja
-node ../../clients/Alignify/scripts/ops/check-tools-en-content.mjs
-node ../../clients/Alignify/scripts/ops/audit-tldr-length.mjs
-node ../../clients/Alignify/scripts/ops/fetch-gsc-data.mjs
-node ../../clients/Alignify/scripts/ops/check-deploy.mjs
-```
+# SEO 周报拉数
+cd seo-weekly-report/scripts && npm install && npm run fetch-all
 
-也可在 `Alignify项目上下文` 根目录直接 `node scripts/permanent/...`（脚本内路径需指向部署仓库的 `content/` 等）。
+# CTR / 排名 / 索引健康审计（需先有 .env 或 bundle）
+node scripts/ops/audit-gsc-ctr.mjs
+node scripts/ops/audit-gsc-position-drop.mjs
+node scripts/ops/audit-gsc-index-health.mjs
+```
 
 > **说明**：`alignify-by-kostja/package.json` 不再注册这些命令，避免部署项目混入非必需脚本。
 

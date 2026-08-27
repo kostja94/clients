@@ -1,0 +1,20 @@
+# 复制为 landing-page-rules.yaml — 用于 GA4 landingPage 分类
+
+rules:
+  - type: homepage
+    exact: /
+  - type: blog
+    prefix: /blog/
+  - type: pricing
+    prefix: /pricing
+  - type: product
+    prefix: /products/
+  - type: tools
+    prefix: /tools/
+  - type: auth
+    prefixes:
+      - /login
+      - /register
+      - /signup
+
+defaultType: other

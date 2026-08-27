@@ -1,0 +1,7 @@
+# 复制为 content-catalog.yaml（可选）
+
+posts:
+  - slug: example-post
+    title: Example Post Title
+    publishedAt: 2026-08-20
+    url: /blog/example-post

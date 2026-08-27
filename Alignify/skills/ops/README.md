@@ -13,10 +13,16 @@
 | [robots.md](./robots.md) | robots.txt |
 | [indexnow.md](./indexnow.md) | IndexNow 部署后提交 |
 | [google-indexing.md](./google-indexing.md) | Google Indexing API |
-| [gsc-api.md](./gsc-api.md) | Search Console API |
+| [gsc-api.md](./gsc-api.md) | GSC / GA4 接入（`seo-weekly-report`，非部署仓 API） |
 | [gsc-optimization-plan.md](./gsc-optimization-plan.md) | GSC/Bing 监控与内容修复 |
 | [ai-search-analytics.md](./ai-search-analytics.md) | AI 搜索流量 |
 | [feed.md](./feed.md) | RSS Feed |
+
+## SEO 周报（分析数据）
+
+| 路径 | 用途 |
+|------|------|
+| [`seo-weekly-report/`](../seo-weekly-report/README.md) | 拉数、合并 bundle、Agent 生成 Markdown 周报（**已替代部署仓 `/dash`**） |
 
 ## 资源
 

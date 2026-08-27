@@ -1,0 +1,29 @@
+# 复制为 project-config.yaml 并修改
+
+project:
+  id: your-site
+  displayName: Your Site
+  siteUrl: https://example.com/
+  reportLocale: zh-CN
+
+# 数据健康：GSC 周点击合理区间（按站点阶段调整）
+health:
+  gscWeeklyClicksMin: 0
+  gscWeeklyClicksMax: 500000
+  pageOverlapRateWarnBelow: 0.2
+
+# GA4 Key events（merge 时写入 ga4.events）
+conversionEvents:
+  - signup
+  - purchase
+
+# 可选：blog 目录（存在则 merge 读取 content-catalog.yaml）
+paths:
+  blogCatalog: content-catalog.yaml
+
+# 落地页分类规则（见 landing-page-rules.example.yaml）
+landingPageRulesFile: landing-page-rules.yaml
+
+# GA4 渠道名匹配（AI 引荐 / AI Assistant）
+aiAssistantChannels:
+  - AI Assistant

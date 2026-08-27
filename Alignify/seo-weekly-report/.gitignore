@@ -1,0 +1,7 @@
+# 凭据与本地拉数产物
+scripts/.env
+data/*.json
+reports/*.md
+
+# 依赖
+scripts/node_modules/

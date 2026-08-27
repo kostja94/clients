@@ -36,7 +36,7 @@ Core capabilities users expect:
 | **Classification** | "Is this column PII?" |
 | **Popularity / usage** | "Do people still query this?" |
 
-Each of these capabilities answers a human question — not a machine question. A catalog tells an analyst that `dim_customer.status` exists, that the Data Engineering team owns it, and that 340 dashboards depend on it. But it does not tell a text-to-SQL system that when a VP asks "how many active customers do we have," the answer lives in `dim_customer.status = 'active'` joined to `fact_subscription` via `customer_id` with a filter on `subscription_end_date > CURRENT_DATE`. The catalog provides the ingredients list. A context engine provides the recipe.
+Each of these capabilities answers a human question — not a machine question. A catalog tells an analyst that `dim_customer.status` exists, that the Data Engineering team owns it, and that 340 dashboards depend on it. But it does not tell a text-to-SQL system which table answers "how many customers do we have?" — not when the catalog indexes three plausible candidates (`dim_customer`, an ad-hoc `customers` export, and an undocumented `customer_rollup` view) with no lineage showing which one feeds the executive dashboard and no owner recorded for the view. An agent with only catalog entries picks whichever description happens to match and silently queries the wrong table. The catalog provides the ingredients list. A context engine provides the recipe.
 
 ## 2. Data catalog vs data dictionary vs semantic layer
 
@@ -47,7 +47,7 @@ Each of these capabilities answers a human question — not a machine question. 
 | **Semantic layer** | Analytics + apps | Metrics, dimensions, joins | High for governed KPIs |
 | **Context engine** | Agents + engineers | Catalog + semantics + reference SQL + feedback | High for generation and evolution |
 
-A catalog tells you **`fact_orders` exists**. A semantic layer tells you **how to compute net revenue from it**. A context engine tells you **which join path last week's validated query used** and **that test accounts must be excluded** — knowledge that may never appear in either catalog or YAML yet.
+A catalog tells you **`fact_orders` exists**. A semantic layer tells you **how to compute net revenue from it**. A context engine tells you **which join path last week's validated query used** and **that joining on the legacy `customer_id` key duplicates rows after the 2024 migration** — knowledge that may never appear in either catalog or YAML yet.
 
 The progression from catalog to context engine is a progression from descriptive metadata to executable knowledge. A catalog entry for `fact_orders.net_amount` says "Net order amount in USD." A semantic layer definition says "Net revenue = SUM(net_amount) WHERE order_status IN ('completed', 'shipped')." A context engine, retrieving from reference SQL, adds "last quarter, the CFO's revenue query used `dim_fiscal_calendar.fiscal_quarter` rather than `DATE_TRUNC('quarter', order_date)` because the company's fiscal calendar offsets by two weeks — and if you use calendar quarters, the numbers will not match the board deck." That third piece of knowledge — the join authority on the time dimension — lives in neither the catalog nor the semantic layer but is the difference between a correct answer and a plausible-looking wrong answer.
 
@@ -82,7 +82,7 @@ That is [RAG for data engineering](/blog/rag-data-engineering) with catalog docu
 
 Consider a real scenario: a 500-person SaaS company deploys Atlan, populates it with dbt-generated descriptions, and adds an AI chat feature on top. An analyst asks "monthly churn rate by product line" and the AI retrieves `dim_product_line.name` and `fact_subscription.churn_flag` from the catalog. It generates SQL that divides churned subscriptions by total subscriptions — a reasonable formula but wrong for this company, which defines churn rate as "subscriptions cancelled divided by subscriptions at risk of churn (active at month start)," meaning the denominator excludes new subscriptions added mid-month. The catalog had the right tables. It did not have the metric's business logic — which lived in a dbt model file 17 directories deep, unindexed by the catalog's AI feature. The AI produced a confident wrong answer because retrieval found tables but missed the metric definition that would have produced the correct denominator.
 
-Improving AI query success requires **reference SQL**, **semantic models**, and **feedback loops** — the context engine pattern in [how a context engine improves accuracy](/blog/context-engine-data-engineering-agent-accuracy).
+Improving AI query success requires **reference SQL**, **semantic models**, and **feedback loops** — the same context-engine pattern that catalogs alone cannot supply.
 
 ## 5. Data catalog vs context engine
 
@@ -132,9 +132,7 @@ Three months later, after adding semantic layer integration and indexing dbt met
 
 ## Conclusion
 
-A **data catalog** is essential infrastructure for **finding and governing** data assets. It is not a complete grounding layer for **data engineering agents** that must generate correct SQL weekly. Treat catalogs as **upstream metadata suppliers** to semantic layers and **context engines** that add executable logic, reference SQL, and feedback. Datus sits in that second layer — helping teams turn catalog facts into evolvable agent context.
-
-Explore the [data engineering glossary](/glossary/) for 47 more definitions.
+A **data catalog** is essential infrastructure for **finding and governing** data assets. It is not a complete grounding layer for data engineering agents that must generate correct SQL weekly. Treat catalogs as **upstream metadata suppliers** to [semantic layers](/blog/what-is-semantic-layer) and context engines that add executable logic, reference SQL, and feedback. For the adjacent storage pattern, see [what a lakehouse is](/blog/what-is-lakehouse).
 
 ## Frequently asked questions
 

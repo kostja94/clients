@@ -1,5 +1,5 @@
 /**
- * Parse datus/blog/*.md frontmatter → blog catalog entries.
+ * Parse datus/blog (recursive) frontmatter → blog catalog entries.
  */
 
 import { readFileSync, readdirSync, statSync } from 'fs';
@@ -25,33 +25,42 @@ function parseFrontmatter(content) {
 }
 
 export function scanBlogDirectory(blogDir) {
-  const entries = readdirSync(blogDir);
   const posts = [];
 
-  for (const file of entries) {
-    if (!file.endsWith('.md')) continue;
-    if (SKIP_FILES.has(file)) continue;
+  function walk(dir, prefix = '') {
+    for (const entry of readdirSync(dir)) {
+      const fullPath = join(dir, entry);
+      const relPath = prefix ? `${prefix}/${entry}` : entry;
 
-    const fullPath = join(blogDir, file);
-    if (!statSync(fullPath).isFile()) continue;
+      if (statSync(fullPath).isDirectory()) {
+        walk(fullPath, relPath);
+        continue;
+      }
 
-    const content = readFileSync(fullPath, 'utf8');
-    const fm = parseFrontmatter(content);
+      if (!entry.endsWith('.md')) continue;
+      if (SKIP_FILES.has(entry)) continue;
 
-    const slug = fm.slug || file.replace(/^\d+-/, '').replace(/-2026\.md$/, '.md').replace(/\.md$/, '');
-    posts.push({
-      file,
-      slug: fm.slug || slug,
-      title: fm.title || slug,
-      description: fm.description || '',
-      date: fm.date || null,
-      author: fm.author || '',
-      category: fm.category || 'Uncategorized',
-      keywords: fm.keywords || '',
-      status: fm.status === 'draft' ? 'draft' : 'live',
-      canonicalPath: `/blog/${fm.slug || slug}`,
-    });
+      const content = readFileSync(fullPath, 'utf8');
+      const fm = parseFrontmatter(content);
+
+      const slug = fm.slug || entry.replace(/^\d+-/, '').replace(/-2026\.md$/, '.md').replace(/\.md$/, '');
+      posts.push({
+        file: relPath,
+        slug: fm.slug || slug,
+        title: fm.title || slug,
+        description: fm.description || '',
+        date: fm.date || null,
+        author: fm.author || '',
+        category: fm.category || 'Uncategorized',
+        secondaryCategory: fm.secondaryCategory || '',
+        keywords: fm.keywords || '',
+        status: fm.status === 'draft' ? 'draft' : 'live',
+        canonicalPath: `/blog/${fm.slug || slug}`,
+      });
+    }
   }
+
+  walk(blogDir);
 
   posts.sort((a, b) => {
     if (a.date && b.date) return a.date.localeCompare(b.date);

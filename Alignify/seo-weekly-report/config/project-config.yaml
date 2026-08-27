@@ -1,0 +1,24 @@
+# Alignify · seo-weekly-report 项目配置
+
+project:
+  id: alignify
+  displayName: Alignify
+  siteUrl: https://alignify.co/
+  reportLocale: zh-CN
+
+health:
+  gscWeeklyClicksMin: 0
+  gscWeeklyClicksMax: 500000
+  pageOverlapRateWarnBelow: 0.15
+
+conversionEvents:
+  - signup
+  - contact
+
+paths:
+  blogCatalog: content-catalog.yaml
+
+landingPageRulesFile: landing-page-rules.yaml
+
+aiAssistantChannels:
+  - AI Assistant

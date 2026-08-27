@@ -1,23 +1,24 @@
 /**
  * GSC CTR 审计脚本：识别高曝光低点击页面，输出 title/meta 优化清单。
  *
- * 运行前提：已执行 npm run fetch-gsc，data/ 目录下有最新快照。
+ * 运行前提：已执行 seo-weekly-report/scripts npm run fetch-all。
  * 用法：
- *   node scripts/permanent/audit-gsc-ctr.mjs          # 默认阈值
- *   node scripts/permanent/audit-gsc-ctr.mjs 500 0.03 # 自定义阈值
+ *   node scripts/ops/audit-gsc-ctr.mjs          # 默认阈值
+ *   node scripts/ops/audit-gsc-ctr.mjs 500 0.03 # 自定义阈值
  *
  * 默认阈值：impressions > 200 且 CTR < 2%
- * 输出：按曝光量降序排列的优化清单，含当前 title 和 description（从 page.tsx 提取）
  */
 
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
+import {
+  loadLatestBundle,
+  normalizeGscPages,
+  bundleSummary,
+  getDeployRoot,
+} from "./lib/seo-report-data.mjs";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.resolve(__dirname, "..", "..");
-const DATA_DIR = path.resolve(ROOT, "data");
-const APP_DIR = path.resolve(ROOT, "app");
+const APP_DIR = path.join(getDeployRoot(), "app");
 
 // ── 参数 ─────────────────────────────────────────────────────────────
 
@@ -26,28 +27,7 @@ const MAX_CTR = parseFloat(process.argv[3]) || 0.02; // 2%
 
 // ── 工具函数 ─────────────────────────────────────────────────────────
 
-/** 找到 data/ 下最新的 gsc-page-*.json */
-function findLatestDataFile() {
-  if (!fs.existsSync(DATA_DIR)) {
-    console.error("✗ data/ 目录不存在。请先运行 npm run fetch-gsc 拉取数据。");
-    process.exit(1);
-  }
-
-  const files = fs
-    .readdirSync(DATA_DIR)
-    .filter((f) => f.startsWith("gsc-page-") && f.endsWith(".json"))
-    .sort()
-    .reverse();
-
-  if (files.length === 0) {
-    console.error("✗ data/ 目录下没有 gsc-page-*.json 文件。请先运行 npm run fetch-gsc。");
-    process.exit(1);
-  }
-
-  return path.join(DATA_DIR, files[0]);
-}
-
-/** 从 GSC 页面 URL 推断对应的 page.tsx 路径 */
+/** 从 page.tsx 提取 title 和 description */
 function urlToPageTsx(url) {
   // 去掉协议和域名，保留路径部分
   let pathname = url;
@@ -118,13 +98,13 @@ function main() {
   console.log("═".repeat(60));
   console.log(`  阈值: impressions > ${MIN_IMPRESSIONS}, CTR < ${(MAX_CTR * 100).toFixed(1)}%`);
 
-  // 1. 读取最新数据
-  const dataFile = findLatestDataFile();
-  const fileName = path.basename(dataFile);
-  console.log(`\n  数据源: data/${fileName}`);
+  // 1. 读取最新 bundle
+  const { filePath, bundle } = loadLatestBundle();
+  const fileName = path.basename(filePath);
+  console.log(`\n  数据源: seo-weekly-report/data/${fileName}`);
 
-  const raw = JSON.parse(fs.readFileSync(dataFile, "utf-8"));
-  const { pages, dateRange, summary } = raw;
+  const pages = normalizeGscPages(bundle);
+  const { dateRange, summary } = bundleSummary(bundle, pages);
 
   console.log(`  日期范围: ${dateRange.start} → ${dateRange.end}`);
   console.log(`  总页面数: ${summary.totalPages}`);
@@ -180,7 +160,7 @@ function main() {
             : r.metadata.description;
         console.log(`   desc:  "${descPreview}" (${r.metadata.descLen} chars)`);
       }
-      console.log(`   文件: ${r.tsxPath.replace(ROOT, "")}`);
+      console.log(`   文件: ${r.tsxPath.replace(getDeployRoot(), "")}`);
     } else {
       console.log("   (未找到对应 page.tsx，可能是 MDX 或动态路由页面)");
     }
