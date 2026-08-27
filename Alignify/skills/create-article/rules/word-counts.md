@@ -2,7 +2,7 @@
 
 > **Flagship**：除下表节级底线外，全文叙事须**内容饱满**（场景 + 事件 + 判断），Brief `word count target` 为参考；**禁止**为凑字加空话。  
 > **Marketing / Blog 策略文**（叙事正文 md）：建议 ZH **≥2,800 汉字** / EN **≥2,000 words** — 低于此通常说明节内缺场景或判断，须扩写而非堆词。Tools 榜单文 ZH **≥3500 字** / EN **≥2800 words**（不含 frontmatter）。  
-> **地道化**：见 [`localization-quality.md`](./localization-quality.md)  
+> **地道化**：见 [`content-locale.md`](./content-locale.md) Part 0·3·4 · [`locale-glossary.md`](./locale-glossary.md)
 > **版本**：v2.2 · 2026-08-26
 
 ---

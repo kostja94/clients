@@ -30,4 +30,4 @@ python scripts/permanent/capture-blog-screenshots.py --slug {slug}
 - [ ] 每个 Best 产品 H3 有对应 jpg
 - [ ] manifest / registry 已登记（如使用 Firecrawl 流水线）
 
-下一步：[05-zh-content.md](./05-zh-content.md)
+下一步：[`rules/content-locale.md`](./rules/content-locale.md) Part 2（Step 05）

@@ -7,8 +7,8 @@
 ## Voice（Alignify）
 
 - 专业、可验证、少 hype；**Marketing / Blog / Insights 默认 Kostja 第一人称**（我 / I），Alignify founder，站内唯一作者
-- 中文地道、英文 native（非逐句翻译腔）；地道化 Pass 见 [`localization-quality.md`](./localization-quality.md)
-- 术语见 [`terminology.md`](./terminology.md) · Marketing 见 [`marketing-glossary.json`](./marketing-glossary.json)
+- 中文地道、英文 native（非逐句翻译腔）；地道化 Pass 见 [`content-locale.md`](./content-locale.md) Part 3·4
+- 术语见 [`locale-glossary.md`](./locale-glossary.md) Part 1–3 · 机器层 [`locale-glossary.json`](./locale-glossary.json)
 - 禁：revolutionary / game-changing / seamless / 碾压 / 唯一最佳（无限定）
 - **判断句**须可追溯到公开事件或 Source Map；无一手客户案例时不虚构「我们某客户」
 

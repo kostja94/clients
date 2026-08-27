@@ -115,4 +115,4 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --check YYYY-MM-DD
 - [ ] frontmatter `pageUrl` 与频道一致
 - [ ] sitemap 自动从 config 生成，无需手改
 
-下一步：[09-en-content.md](./09-en-content.md)
+下一步：若 EN 轨尚未完成 → [`rules/content-locale.md`](./rules/content-locale.md) Part 4（Step 09）；否则 → Part 5（09c 对等对比）→ [10-quality-gates.md](./10-quality-gates.md)

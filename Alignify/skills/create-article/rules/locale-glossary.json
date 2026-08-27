@@ -1,4 +1,6 @@
 {
+  "version": "1.0.0",
+  "ssot_md": "locale-glossary.md",
   "policy": "chinese_first_in_zh_body — 叙述用中文主称；keep_english 仅保留行业/产品固定写法",
   "keep_english": [
     "Codex",

@@ -7,7 +7,7 @@
 **Gate A**: KEEP  
 
 **中文主称（锁定）**: **AI 提交署名** — 全文 H1/H2/叙述优先；slug 与 EN 标题仍用 `git commit attribution`。  
-**术语 SSOT**: [`skills/create-article/rules/marketing-glossary.json`](../../skills/create-article/rules/marketing-glossary.json) · [`terminology-glossary.md` §六](../../skills/create-article/rules/terminology-glossary.md)
+**术语 SSOT**: [`skills/create-article/rules/locale-glossary.md`](../../skills/create-article/rules/locale-glossary.md) · [`locale-glossary.json`](../../skills/create-article/rules/locale-glossary.json)
 
 **Author POV**: Kostja 第一人称；默认 on 的 co-author 附带品牌渗透，不应与 Powered-by Badge 的 quantified ROI 混谈；Copilot revert 是 trust > growth 的 industry signal；Enterprise 应默认 off + PR 披露，合规优先 Assisted-by。
 

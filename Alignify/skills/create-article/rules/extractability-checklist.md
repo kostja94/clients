@@ -1,6 +1,6 @@
 # Extractability 检查（Draft / Step 06）
 
-> 与 Brief Answer Blocks、BLUF、SelfCheck 维度 4–5 一致。
+> 与 Brief Answer Blocks、BLUF、SelfCheck 维度 4–5 一致。Step 06 地道化流程见 [`content-locale.md`](./content-locale.md) Part 3；术语见 [`locale-glossary.md`](./locale-glossary.md)。
 
 ---
 

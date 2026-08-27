@@ -35,4 +35,4 @@
 - [ ] README 已新增
 - [ ] 相邻 slug 无意图重叠 >50%
 
-下一步：best-ranking / legacy → [04-screenshots.md](./04-screenshots.md)；其他 → [05-zh-content.md](./05-zh-content.md)
+下一步：best-ranking / legacy → [04-screenshots.md](./04-screenshots.md)；其他 → [`rules/content-locale.md`](./rules/content-locale.md) Part 2（Step 05）

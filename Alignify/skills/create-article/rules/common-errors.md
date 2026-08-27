@@ -57,7 +57,7 @@
 | E26 | 新 slug publishDate 与已有 slug 同日 | 跑 `next-publish-date.mjs --check`；全站 `*-meta.ts` 日历日唯一 |
 | E27 | 标题行使用空锚点 `{#}` | 须写 `{#kebab-id}` 或省略；空 `{#}` 会泄漏到线上标题 |
 | E28 | References 含同题第三方策略文或对照用 docs | 策略/Blog 文 References 仅 **事件一手（A）+ 事件报道（B）**；类型 C 正文内链；类型 D 禁止；见 [`sections.md` Part 2.3 §3.2](./sections.md#part-23-references--参考文献) |
-| E29 | 中文英译腔 / 箭头链正文 | Step 06：`localization-quality.md` + `marketing-glossary.json` |
+| E29 | 中文英译腔 / 箭头链正文 / 先译后写 | Step 06/09：`content-locale.md` Part 3·4 + `locale-glossary.md` / `.json`；09c 对等 |
 | E30 | 英文翻译腔 / telegraphic | Step 09b：禁止逐句译 ZH；改完整句 |
 | E31 | Marketing/Blog 缺 Author POV | Brief 默认 ≥1 条；正文**任一节**内第一人称判断须显式出现（**不要求**独立 `#author-take`） |
 | E32 | 个人知识库 SSOT 重复到 knowledge/marketing | campaign 类只在 `E:\个人知识库\营销campaign\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
@@ -67,7 +67,7 @@
 | E36 | blog md 使用 Markdown fenced code（`` ``` ``） | 须 prose 或 `childrenHtml` `<pre><code>`；见 `anatomy.md` §四·一 |
 | E37 | 伪列表 / 碎片段（`**第一，**` / `**阶段N ·**` + 单句 × N） | **blog**：脚本 pseudo ≥3 → Fail；**marketing 存量**：warn；见 `presentation.md` §段落优先 |
 | E38 | 策略文 HTML 表格过多（全文 ≥6 张且无 Brief 豁免） | 案例改 prose；仅保留术语别名 / 决策矩阵 / 合规对照等**必表**；见 [`templates.md`](./templates.md#part-3-marketing) §3.2 与 [`presentation.md`](./presentation.md) |
-| E39 | `git commit attribution` 译成「Git 提交归因 / 提交归因」 | 用 **AI 提交署名**；见 `terminology-glossary.md` §六 · `marketing-glossary.json` |
+| E39 | `git commit attribution` 译成「Git 提交归因 / 提交归因」 | 用 **AI 提交署名**；见 `locale-glossary.md` Part 2.1 · `locale-glossary.json` |
 | E40 | 表前桥接过短或行末冒号引表 | `childrenHtml` 紧上一段须 **≥3 句**且**不以** `：`/`:` 结尾；见 [`presentation.md`](./presentation.md) §表格邻接 |
 | E41 | 孤立标签行（`**标签：**` 单独成段） | 标签与正文**同段**；见 `presentation.md` §E41 |
 | E42 | 单句独立段过多、套话免责声明独段、表后单句 | **blog 策略文**：全文单句段 **≤2**；**任何文**：免责声明须并入结论末句；**表后**禁止仅 1 句展开；见 `presentation.md` §单句段预算 |

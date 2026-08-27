@@ -9,7 +9,7 @@
 | 阶段 | 文档 |
 |------|------|
 | Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) |
-| Step 05–06 成稿 | [`presentation.md`](./presentation.md) · [`extractability-checklist.md`](./extractability-checklist.md) |
+| Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`presentation.md`](./presentation.md) |
 | Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md) · [`internal-links.md`](./internal-links.md) · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
 | Step 08 注册 | [`meta.md`](./meta.md) · [`sections.md`](./sections.md) Part 5 |
 | Step 10 自审 | [`selfcheck.md`](./selfcheck.md) · [`quality-checklist.md`](./quality-checklist.md) · [`common-errors.md`](./common-errors.md) |
@@ -28,9 +28,9 @@
 | [research-triangle.md](./research-triangle.md) | Step 02 Gate 0R |
 | [selfcheck.md](./selfcheck.md) | Step 10 · 12 维 + H0–H4 |
 | [presentation.md](./presentation.md) | BLUF + 段落 + Kostja Voice |
-| [localization-quality.md](./localization-quality.md) | 中英文地道化 Pass |
-| [terminology-glossary.md](./terminology-glossary.md) | 全站中文术语对照（§六 Git 提交署名） |
-| [marketing-glossary.json](./marketing-glossary.json) | Marketing 术语表 |
+| [content-locale.md](./content-locale.md) | 双语正文 SSOT：05–06 ZH · 09–09c EN · 双轨 Subagent + 地道 Pass |
+| [locale-glossary.md](./locale-glossary.md) | 双语术语 SSOT（Part 1–3 对照 · Part 2 GTM · 文风） |
+| [locale-glossary.json](./locale-glossary.json) | 机器层：`localize_required` · `forbidden_*` · audit 脚本 |
 | [extractability-checklist.md](./extractability-checklist.md) | Draft / Step 06 |
 | [perfect-article-checklist.md](./perfect-article-checklist.md) | S 级标杆 |
 | [serp-fit-template.md](./serp-fit-template.md) | SERP Fit |

@@ -188,7 +188,7 @@ Workflow · Cost Analysis · Getting Started · Future Trends — 易与「如�
 
 ### TL;DR / 什么是
 
-写法 → [`sections.md`](./sections.md) Part 2.1 / 3.1。Marketing intro 常含策略名+受众；术语密集主题须在「什么是」列**行业别名**（`terminology-glossary.md`）。
+写法 → [`sections.md`](./sections.md) Part 2.1 / 3.1。Marketing intro 常含策略名+受众；术语密集主题须在「什么是」列**行业别名**（`locale-glossary.md` Part 2）。
 
 ### 策略适用性 / go-no-go（仅 marketing-strategy · 可选）
 

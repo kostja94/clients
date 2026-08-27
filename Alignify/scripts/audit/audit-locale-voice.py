@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 CLIENTS = Path(__file__).resolve().parents[2]  # e:/clients/Alignify
-GLOSSARY = CLIENTS / "skills/create-article/rules/marketing-glossary.json"
+GLOSSARY = CLIENTS / "skills/create-article/rules/locale-glossary.json"
 PROD = Path(r"E:/自有部署项目/alignify production")
 
 
@@ -32,6 +32,18 @@ def en_word_count(text: str) -> int:
     return len(re.findall(r"[A-Za-z0-9]+(?:'[A-Za-z]+)?", body))
 
 
+def audit_zh_localize(body: str, glossary: dict) -> list[str]:
+    issues: list[str] = []
+    body_lower = body.lower()
+    for en_key, zh_val in glossary.get("localize_required", {}).items():
+        if en_key.lower() in body_lower:
+            issues.append(
+                f"ZH uses English phrase '{en_key}'; use '{zh_val}' "
+                "(locale-glossary.json localize_required)"
+            )
+    return issues
+
+
 def audit_zh(text: str, glossary: dict) -> list[str]:
     issues: list[str] = []
     body = strip_frontmatter(text)
@@ -42,6 +54,7 @@ def audit_zh(text: str, glossary: dict) -> list[str]:
     for bad in glossary.get("forbidden_in_zh", []):
         if bad.replace(" X ", " ") in body or bad in body:
             issues.append(f"ZH forbidden pattern: {bad}")
+    issues.extend(audit_zh_localize(body, glossary))
     if not re.search(r"(我|我的判断|我认为|我会)", body):
         issues.append("ZH missing Kostja first-person judgment (我/我认为)")
     return issues
@@ -55,6 +68,9 @@ def audit_en(text: str, glossary: dict) -> list[str]:
         issues.append(f"EN word count low ({wc}); check depth not padding")
     if body.count("→") >= 2:
         issues.append("EN body uses →; rewrite as full sentences")
+    for bad in glossary.get("forbidden_in_en", []):
+        if bad in body:
+            issues.append(f"EN forbidden pattern: {bad}")
     if not re.search(r"\bI\b|\bmy read\b|\bI think\b", body, re.I):
         issues.append("EN missing first-person author voice (I / my read)")
     short = len(re.findall(r"(?<=[.!?])\s+[A-Z][a-z]+[^.!?]{0,25}[.!?]", body))
@@ -70,6 +86,9 @@ def main() -> int:
     args = p.parse_args()
 
     glossary_path = GLOSSARY
+    if not glossary_path.is_file():
+        print(f"FAIL\nmissing glossary {glossary_path}")
+        return 1
     glossary = json.loads(glossary_path.read_text(encoding="utf-8"))
 
     zh_path = PROD / f"content/{args.channel}/zh/{args.slug}.md"

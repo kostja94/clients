@@ -1,6 +1,6 @@
 # Create Article — Alignify 统一文章创建 Skill
 
-> **版本**：v2.2 · 2026-08-27  
+> **版本**：v2.3 · 2026-08-27  
 > **质量档位**：**每篇均为 flagship** — 无 lite/standard 降级；Research、Moat、BLUF、SelfCheck、终审全链路必过。  
 > **部署仓**：`E:\自有部署项目\alignify production`  
 > **上下文仓**：`E:\clients\Alignify`  
@@ -12,7 +12,7 @@
 
 1. **Flagship 固定** — 每篇须 Moat、Answer Blocks、完整 Research、BLUF、12 维 SelfCheck；发布线终审 **≥80**，目标 **S 级 ≥90**。  
 2. **内容决定架构** — 章节**纯粹由题材与读者任务决定**；[`templates.md`](./rules/templates.md) Part 0 与 [`sections.md`](./sections.md) 仅为**建议**，**禁止**一比一复刻存量骨架。A 层硬底线不变。新文统一 **`content/blog/`**。  
-3. **先中文后英文** — ZH/EN section 类型、顺序、锚点 id 对齐；**双语均为 flagship 质量**——EN 独立重写，非降格翻译。  
+3. **双轨 native 成稿** — ZH/EN **各自独立撰写**（可并行 Subagent），共享 Brief + 锚点 id；**禁止**先写一语种再翻译另一语种。Step 09c 做信息对等对比。见 [`rules/content-locale.md`](./rules/content-locale.md)。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
 6. **素材源可外置** — 个人知识库为 campaign SSOT；Brief 登记路径即可。  
@@ -54,11 +54,12 @@
     ↓ PASS
 03 Keywords + README
 04 Screenshots — **仅** best-ranking / legacy；marketing · seo · insights **跳过**
-05 中文 md
-06 中文润色 — BLUF + Extractability
+04 Screenshots — **仅** best-ranking / legacy；marketing · seo · insights **跳过**
+    ├─ Subagent ZH：05 起草 → 06 地道化（[`content-locale.md`](./rules/content-locale.md) Part 2–3）
+    └─ Subagent EN：09 独立成稿 → 09b Pass（Part 4）— **可与 ZH 并行**，输入仅 Brief+SSOT
 07 内链 + Internal Link Plan
-08 Meta + Config + Final CTA（`cta-config.json` · [`rules/sections.md`](./rules/sections.md) Part 5）
-09 英文 md — 双语 parity（EN CTA 定稿）
+08 Meta + Config + Final CTA（`cta-config.json` · [`sections.md`](./rules/sections.md) Part 5）
+09c 双语对等对比（Part 5）— 协调者，非翻译校对
 10 SelfCheck — Gate C → audit-ready + 5.5（同批≥2）
     ↓
 audit-article — Final ≥80 → publish-ready
@@ -87,11 +88,10 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 02 | [`02-research.md`](./02-research.md) | Research Log + Brief + Gate 0R |
 | 03 | [`03-keywords.md`](./03-keywords.md) | 关键词 + README |
 | 04 | [`04-screenshots.md`](./04-screenshots.md) | 截图（**仅** best-ranking / legacy） |
-| 05 | [`05-zh-content.md`](./05-zh-content.md) | ZH md |
-| 06 | [`06-localize-zh.md`](./06-localize-zh.md) | 润色 + BLUF |
+| 05–06 | [`rules/content-locale.md`](./rules/content-locale.md) Part 2–3 | ZH md + 地道化 |
 | 07 | [`07-internal-links.md`](./07-internal-links.md) | 内链 + Link Plan |
 | 08 | [`08-meta-config.md`](./08-meta-config.md) | Meta + config + **Final CTA** |
-| 09 | [`09-en-content.md`](./09-en-content.md) | EN md |
+| 09–09c | [`rules/content-locale.md`](./rules/content-locale.md) Part 4–5 | EN 独立成稿 + 对等对比 |
 | 10 | [`10-quality-gates.md`](./10-quality-gates.md) | Gate C → audit-ready |
 | — | [`../audit-article/SKILL.md`](../audit-article/SKILL.md) | publish-ready |
 | 11 | [`11-publish-dates.md`](./11-publish-dates.md) | publishDate |
@@ -109,6 +109,8 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | Article Brief | [`rules/article-brief.md`](./rules/article-brief.md) |
 | Research 三角 | [`rules/research-triangle.md`](./rules/research-triangle.md) |
 | SelfCheck 12 维 | [`rules/selfcheck.md`](./rules/selfcheck.md) |
+| 双语正文 | [`rules/content-locale.md`](./rules/content-locale.md)（05–06 ZH · 09–09c EN · 双轨成稿） |
+| 双语术语 | [`rules/locale-glossary.md`](./rules/locale-glossary.md) · [`locale-glossary.json`](./rules/locale-glossary.json) |
 | BLUF / 段落 | [`rules/presentation.md`](./rules/presentation.md) |
 | Extractability | [`rules/extractability-checklist.md`](./rules/extractability-checklist.md) |
 | S 级清单 | [`rules/perfect-article-checklist.md`](./rules/perfect-article-checklist.md) |
@@ -124,7 +126,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 
 ## 渐进式加载
 
-默认只读本 `SKILL.md` + 当前 Step 文档。**一次最多再读 2 个** `rules/` 文件。禁止一次性加载全部 references。
+默认只读本 `SKILL.md` + 当前 Step 文档。**双语正文**（05–06 / 09–09c）读 [`rules/content-locale.md`](./rules/content-locale.md) **对应 Part**；术语查 [`rules/locale-glossary.md`](./rules/locale-glossary.md) Part 1–3。**一次最多再读 2 个** 其他 `rules/` 文件。禁止一次性加载全部 references。
 
 ---
 
@@ -140,12 +142,12 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ **新 slug** publishDate 与全站已有 slug 重复（须 `next-publish-date.mjs --check`）
 - ❌ 把 skill 示例日期当「今天」——以执行 Step 08/11 的实际 UTC+8 日历日为准
 - ❌ References 收录与本文类似的第三方策略文；策略/Blog 文仅 **事件相关**引用（[`sections.md` Part 2.3 §3.2](./rules/sections.md#part-23-references--参考文献)）
-- ❌ 中文英译腔 / 英文逐句翻译 ZH（须 `localization-quality.md` Pass）
+- ❌ 中文英译腔 / 英文逐句翻译 ZH / 先写一语种再译另一语种（须 `content-locale.md` Part 3·4 Pass + Part 5 09c + `locale-glossary`）
 - ❌ Marketing/Blog 无 Kostja 第一人称判断（Brief **Author POV** 须在某节内兑现；**不要求**独立 `#author-take`）
 - ❌ 正文 meta 预告未发布 skills/runbook（E49）
 - ❌ Insights/架构文默认套 `#should-you-do-this` + `#author-take` 双收束（E50）
 - ❌ 个人知识库已有 SSOT 仍创建 `knowledge/marketing/{slug}.md` 副本（E32）
-- ❌ `git commit attribution` 中文译成「Git 提交归因 / 提交归因」（须 **AI 提交署名**；E39 · `terminology-glossary.md` §六）
+- ❌ `git commit attribution` 中文译成「Git 提交归因 / 提交归因」（须 **AI 提交署名**；E39 · `locale-glossary.md` Part 2.1）
 - ❌ 未在聊天中确认用户已明示的禁忌或主叙事就动笔（见 [`intake-questions.md`](./rules/intake-questions.md)）
 - ❌ 把 SSOT 文件名默认当文章主线（角度不清楚时必须问用户）
 - ❌ 新 slug 未写 `cta-config.json` 的 `slugs.{slug}`（页底落入 fallback 通用文案；E43）
