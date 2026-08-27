@@ -17,7 +17,7 @@
 **Primary keyword**（EN）: how to build a blog without a CMS using AI · AI blog without CMS
 **Search intent**: Tutorial + Alternative + Definition
 **Target reader**: 非技术创始人、个人品牌、想用 AI 建站但不想碰 WordPress/CMS 的人
-**Hub / category**: marketing · coding-dev
+**Hub / category**: coding-dev（Vibe Coding / 编码与开发）· tools `/tools` Hub · dev-coding 分组
 
 **One-line thesis**:
 不用 CMS 做博客，在 2026 的真实含义是让 AI 帮你**搭完整网站系统**——路由、页面模板、样式、构建发布流水线——而不只是帮你写 Markdown 文章。
