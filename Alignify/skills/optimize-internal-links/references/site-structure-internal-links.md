@@ -54,18 +54,18 @@ alignify.co
 |------|-------:|--------:|----------:|------------:|-----:|
 | tools ⭐ | 216 | 1008 | 4.7 | 95 | 44% |
 | seo | 76 | 214 | 2.8 | 14 | 18% |
-| blog | 66 | 361 | 5.5 | 34 | 52% |
-| marketing | 32 | 125 | 3.9 | 9 | 28% |
+| blog | 66 | 363 | 5.5 | 34 | 52% |
+| marketing | 32 | 158 | 4.9 | 12 | 38% |
 | insights | 14 | 104 | 7.4 | 6 | 43% |
 | events | 8 | 4 | 0.5 | 0 | 0% |
-| **合计** | **412** | **1816** | **4.4** | **158** | **38%** |
+| **合计** | **412** | **1851** | **4.5** | **161** | **39%** |
 
 ### 需要关注的问题
 
 - **Tools distinct<5（观察）**：**121** / 216 篇
-- **零出链**：**62** 篇
-- **零入链（EN 基准）**：**15** 篇
-- **同篇重复目标（须修）**：**62** 篇
+- **零出链**：**60** 篇
+- **零入链（EN 基准）**：**13** 篇
+- **同篇重复目标（须修）**：**61** 篇
 
 ---
 
@@ -81,28 +81,28 @@ alignify.co
 | 6 | `tools/video-generator` | 32 | tools hub |
 | 7 | `tools/knowledge-base` | 31 | tools hub |
 | 8 | `tools/web-search-api` | 31 | tools hub |
-| 9 | `tools/workflow` | 29 | tools hub |
-| 10 | `marketing/pricing-strategy` | 29 | marketing |
-| 11 | `tools/coding` | 26 | tools hub |
-| 12 | `tools/geo` | 26 | tools hub |
-| 13 | `seo/internal-links` | 26 | seo |
-| 14 | `tools/video-editor` | 25 | tools hub |
-| 15 | `marketing/geo` | 25 | marketing |
-| 16 | `seo/website-structure` | 24 | seo |
-| 17 | `marketing/affiliate` | 24 | marketing |
-| 18 | `tools/note-taker` | 22 | tools hub |
-| 19 | `tools/browser` | 21 | tools hub |
-| 20 | `tools/search-engine` | 21 | tools hub |
-| 21 | `seo/sitemap` | 21 | seo |
-| 22 | `marketing/keyword-research` | 21 | marketing |
-| 23 | `blog/embedded-virality` | 21 | blog |
-| 24 | `tools/directory` | 20 | tools hub |
-| 25 | `marketing/creator-challenge-program` | 20 | marketing |
-| 26 | `marketing/creator-program` | 19 | marketing |
-| 27 | `tools/text-to-speech` | 18 | tools hub |
-| 28 | `blog/rate-limit-reset` | 18 | blog |
+| 9 | `marketing/pricing-strategy` | 30 | marketing |
+| 10 | `tools/workflow` | 29 | tools hub |
+| 11 | `marketing/geo` | 28 | marketing |
+| 12 | `tools/coding` | 26 | tools hub |
+| 13 | `tools/geo` | 26 | tools hub |
+| 14 | `seo/internal-links` | 26 | seo |
+| 15 | `tools/video-editor` | 25 | tools hub |
+| 16 | `marketing/affiliate` | 25 | marketing |
+| 17 | `seo/website-structure` | 24 | seo |
+| 18 | `blog/embedded-virality` | 23 | blog |
+| 19 | `tools/note-taker` | 22 | tools hub |
+| 20 | `marketing/keyword-research` | 22 | marketing |
+| 21 | `marketing/creator-challenge-program` | 22 | marketing |
+| 22 | `tools/browser` | 21 | tools hub |
+| 23 | `tools/search-engine` | 21 | tools hub |
+| 24 | `seo/sitemap` | 21 | seo |
+| 25 | `tools/directory` | 20 | tools hub |
+| 26 | `blog/rate-limit-reset` | 20 | blog |
+| 27 | `marketing/creator-program` | 19 | marketing |
+| 28 | `tools/text-to-speech` | 18 | tools hub |
 | 29 | `marketing/competitive-analysis` | 18 | marketing |
-| 30 | `tools/evaluation` | 17 | tools hub |
+| 30 | `blog/ugc-marketing` | 18 | blog |
 
 ---
 
@@ -118,12 +118,10 @@ alignify.co
 
 - `blog/ai-components` — AI Components: Injecting Differentiated UI into Vi
 - `blog/how-to-name-ai-products` — AI Product Naming: Strategies, Case Studies, and a
-- `blog/wrapped-marketing` — Year in Review Marketing: Wrapped Strategy for AI 
 - `insights/ai-logo-design` — AI Product Logo Design: A Founder's Guide from Pos
 - `insights/generative-ai-landscape` — Generative AI Landscape & Reports
 - `insights/google` — Google AI Products: Complete Ecosystem from Search
 - `insights/openai` — OpenAI Products: Complete Ecosystem from ChatGPT t
-- `marketing/marketing-types` — Marketing Types: Channels, Platforms & Programs
 - `seo/best-tools` — Best SEO Tools: Free Essentials, Stacks & Platform
 - `seo/branded-queries-filter-google-search-console` — Branded Queries Filter: Google Search Console
 - `seo/example-article` — MDX Usage: Markdown+React in Next.js Tutorial
@@ -143,8 +141,6 @@ alignify.co
 - `insights/en/openai`
 - `insights/zh/openai`
 - `marketing/en/growth-case-studies`
-- `marketing/en/keyword-research`
-- `marketing/en/marketing-types`
 - `marketing/en/reddit`
 - `seo/en/best-tools`
 - `seo/zh/best-tools`
@@ -164,11 +160,13 @@ alignify.co
 - `seo/zh/glossary`
 - `seo/en/google-tag-manager`
 - `seo/zh/google-tag-manager`
-- … 另有 **32** 篇
+- `seo/en/how-search-engine-works`
+- `seo/zh/how-search-engine-works`
+- … 另有 **30** 篇
 
 ### P3 — 同篇重复目标
 
-共 **62** 篇；见 JSON `duplicates` 字段或运行 `python scripts/audit/audit-md-internal-links.py` 刷新快照。
+共 **61** 篇；见 JSON `duplicates` 字段或运行 `python scripts/audit/audit-md-internal-links.py` 刷新快照。
 
 ---
 
@@ -494,9 +492,9 @@ alignify.co
 | `ai-training-data` | en | 5 | 4 | `blog/inference-infrastructure`、`tools/evaluation`、`tools/llm`、`tools/web-scraping`、`tools/world-model` |
 | `ai-visibility` | en | 3 | 3 | `blog/ai-traffic-and-citation-sources`、`tools/geo`、`tools/search-engine` |
 | `cad` | en | 4 | 6 | `blog/interior-design`、`tools/3d`、`tools/3d-model-generator`、`tools/workflow` |
-| `coding-plan` | en | 6 | 15 | `blog/rate-limit-reset`、`marketing/competitive-analysis`、`marketing/geo`、`marketing/pricing-strategy`、`marketing/referral-program`、`marketing/x-formerly-twitter` ⚠重复 |
+| `coding-plan` | en | 6 | 17 | `blog/rate-limit-reset`、`marketing/competitive-analysis`、`marketing/geo`、`marketing/pricing-strategy`、`marketing/referral-program`、`marketing/x-formerly-twitter` ⚠重复 |
 | `data-engineering-agent` | en | 3 | 3 | `blog/inference-infrastructure`、`tools/agent-skills`、`tools/api` |
-| `embedded-virality` | en | 11 | 21 | `blog/coding-plan`、`blog/git-commit-attribution`、`blog/how-to-add-payments-to-vibe-coded-app`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`tools/social-cards-generator` ⚠重复 |
+| `embedded-virality` | en | 11 | 23 | `blog/coding-plan`、`blog/git-commit-attribution`、`blog/how-to-add-payments-to-vibe-coded-app`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`tools/social-cards-generator` ⚠重复 |
 | `git-commit-attribution` | en | 5 | 8 | `blog/coding-plan`、`blog/embedded-virality`、`blog/rate-limit-reset`、`marketing/competitive-analysis`、`marketing/pricing-strategy` |
 | `git-hosting` | en | 4 | 2 | `blog/agent-sandbox`、`blog/multi-agent`、`tools/cli`、`tools/code-review` ⚠重复 |
 | `github-for-marketing` | en | 2 | 4 | `blog/how-to-build-a-blog-without-a-cms-using-ai`、`blog/how-to-write-github-readme` |
@@ -509,12 +507,12 @@ alignify.co
 | `medical-scribe` | en | 4 | 6 | `tools/chatbot`、`tools/knowledge-base`、`tools/note-taker`、`tools/speech-to-text` |
 | `multi-agent` | en | 5 | 6 | `blog/agent-sandbox`、`tools/agent-for-desktop`、`tools/hr-assistant`、`tools/llm`、`tools/workflow` |
 | `platform-subdomain-gating` | en | 10 | 5 | `blog/coding-plan`、`blog/embedded-virality`、`blog/git-commit-attribution`、`blog/how-to-add-payments-to-vibe-coded-app`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`seo/subdomain-vs-subfolder` ⚠重复 |
-| `rate-limit-reset` | en | 5 | 18 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/pricing-strategy`、`marketing/x-formerly-twitter` ⚠重复 |
+| `rate-limit-reset` | en | 5 | 20 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/pricing-strategy`、`marketing/x-formerly-twitter` ⚠重复 |
 | `subdirectory-hosting` | en | 4 | 4 | `audit-website-by-lovable`、`blog/how-to-build-a-blog-without-a-cms-using-ai`、`seo/sitemap`、`seo/subdomain-vs-subfolder` ⚠重复 |
-| `ugc-marketing` | en | 6 | 17 | `blog/rate-limit-reset`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`seo/landing-page` ⚠重复 |
-| `watermark-growth` | en | 7 | 12 | `blog/embedded-virality`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy` ⚠重复 |
+| `ugc-marketing` | en | 7 | 18 | `blog/rate-limit-reset`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`marketing/marketing-types`、`seo/landing-page` ⚠重复 |
+| `watermark-growth` | en | 7 | 14 | `blog/embedded-virality`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy` ⚠重复 |
 | `web-fetch` | en | 6 | 2 | `blog/data-engineering-agent`、`tools/headless-browser`、`tools/llm`、`tools/search-indexing`、`tools/web-scraping`、`tools/web-search-api` |
-| `wrapped-marketing` | en | 4 | 0 | `blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/pricing-strategy` |
+| `wrapped-marketing` | en | 4 | 2 | `blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/pricing-strategy` |
 | `agent-memory` | zh | 5 | 3 | `blog/agent-sandbox`、`blog/ai-training-data`、`tools/agent-skills`、`tools/knowledge-base`、`tools/openclaw-alternatives` |
 | `agent-sandbox` | zh | 5 | 10 | `blog/agent-to-agent`、`blog/inference-infrastructure`、`tools/agent-for-desktop`、`tools/authentication`、`tools/headless-browser` |
 | `agent-to-agent` | zh | 6 | 4 | `blog/agent-sandbox`、`blog/multi-agent`、`tools/agent-skills`、`tools/character-chat`、`tools/community`、`tools/workflow` |
@@ -527,9 +525,9 @@ alignify.co
 | `ai-training-data` | zh | 6 | 4 | `blog/data-engineering-agent`、`blog/inference-infrastructure`、`tools/evaluation`、`tools/llm`、`tools/web-scraping`、`tools/world-model` |
 | `ai-visibility` | zh | 4 | 3 | `blog/ai-traffic-and-citation-sources`、`tools/geo`、`tools/search-engine`、`tools/text-generator` |
 | `cad` | zh | 4 | 6 | `blog/interior-design`、`tools/3d`、`tools/3d-model-generator`、`tools/workflow` |
-| `coding-plan` | zh | 6 | 15 | `blog/rate-limit-reset`、`marketing/competitive-analysis`、`marketing/geo`、`marketing/pricing-strategy`、`marketing/referral-program`、`marketing/x-formerly-twitter` ⚠重复 |
+| `coding-plan` | zh | 6 | 17 | `blog/rate-limit-reset`、`marketing/competitive-analysis`、`marketing/geo`、`marketing/pricing-strategy`、`marketing/referral-program`、`marketing/x-formerly-twitter` ⚠重复 |
 | `data-engineering-agent` | zh | 3 | 3 | `blog/inference-infrastructure`、`tools/agent-skills`、`tools/api` |
-| `embedded-virality` | zh | 11 | 21 | `blog/coding-plan`、`blog/git-commit-attribution`、`blog/how-to-add-payments-to-vibe-coded-app`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`tools/social-cards-generator` ⚠重复 |
+| `embedded-virality` | zh | 11 | 23 | `blog/coding-plan`、`blog/git-commit-attribution`、`blog/how-to-add-payments-to-vibe-coded-app`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`tools/social-cards-generator` ⚠重复 |
 | `git-commit-attribution` | zh | 5 | 8 | `blog/coding-plan`、`blog/embedded-virality`、`blog/rate-limit-reset`、`marketing/competitive-analysis`、`marketing/pricing-strategy` |
 | `git-hosting` | zh | 4 | 2 | `blog/agent-sandbox`、`blog/multi-agent`、`tools/cli`、`tools/code-review` ⚠重复 |
 | `github-for-marketing` | zh | 2 | 4 | `blog/how-to-build-a-blog-without-a-cms-using-ai`、`blog/how-to-write-github-readme` |
@@ -542,48 +540,48 @@ alignify.co
 | `medical-scribe` | zh | 5 | 6 | `tools/chatbot`、`tools/knowledge-base`、`tools/legal`、`tools/note-taker`、`tools/speech-to-text` |
 | `multi-agent` | zh | 8 | 6 | `blog/agent-sandbox`、`blog/agent-to-agent`、`tools/agent-for-desktop`、`tools/agent-skills`、`tools/hr-assistant`、`tools/llm`、`tools/openclaw-alternatives`、`tools/workflow` |
 | `platform-subdomain-gating` | zh | 10 | 5 | `blog/coding-plan`、`blog/embedded-virality`、`blog/git-commit-attribution`、`blog/how-to-add-payments-to-vibe-coded-app`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`seo/subdomain-vs-subfolder` ⚠重复 |
-| `rate-limit-reset` | zh | 5 | 18 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/pricing-strategy`、`marketing/x-formerly-twitter` ⚠重复 |
+| `rate-limit-reset` | zh | 5 | 20 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/pricing-strategy`、`marketing/x-formerly-twitter` ⚠重复 |
 | `subdirectory-hosting` | zh | 4 | 4 | `audit-website-by-lovable`、`blog/how-to-build-a-blog-without-a-cms-using-ai`、`seo/sitemap`、`seo/subdomain-vs-subfolder` ⚠重复 |
-| `ugc-marketing` | zh | 5 | 17 | `blog/rate-limit-reset`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer` ⚠重复 |
-| `watermark-growth` | zh | 7 | 12 | `blog/embedded-virality`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy` ⚠重复 |
+| `ugc-marketing` | zh | 6 | 18 | `blog/rate-limit-reset`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`marketing/marketing-types` ⚠重复 |
+| `watermark-growth` | zh | 7 | 14 | `blog/embedded-virality`、`blog/platform-subdomain-gating`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/lifetime-deal`、`marketing/pricing-strategy` ⚠重复 |
 | `web-fetch` | zh | 6 | 2 | `blog/data-engineering-agent`、`tools/headless-browser`、`tools/llm`、`tools/search-indexing`、`tools/web-scraping`、`tools/web-search-api` |
-| `wrapped-marketing` | zh | 4 | 0 | `blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/pricing-strategy` |
+| `wrapped-marketing` | zh | 4 | 2 | `blog/rate-limit-reset`、`blog/ugc-marketing`、`marketing/creator-challenge-program`、`marketing/pricing-strategy` |
 
 ### marketing
 
 | 文章 | 语言 | 出链 | 入链 | 出链目标 |
 |------|------|-----:|-----:|---------|
-| `affiliate` | en | 3 | 24 | `marketing/creator-challenge-program`、`marketing/creator-program`、`tools/affiliate-marketing` ⚠重复 |
+| `affiliate` | en | 3 | 25 | `marketing/creator-challenge-program`、`marketing/creator-program`、`tools/affiliate-marketing` ⚠重复 |
 | `competitive-analysis` | en | 2 | 18 | `marketing/email-marketing`、`marketing/keyword-research` ⚠重复 |
-| `creator-challenge-program` | en | 5 | 20 | `blog/embedded-virality`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/affiliate`、`marketing/creator-program` ⚠重复 |
-| `creator-program` | en | 3 | 19 | `marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/influencer` ⚠重复 |
+| `creator-challenge-program` | en | 6 | 22 | `blog/embedded-virality`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/affiliate`、`marketing/creator-program`、`marketing/marketing-types` |
+| `creator-program` | en | 4 | 19 | `marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/influencer`、`marketing/marketing-types` ⚠重复 |
 | `email-marketing` | en | 1 | 6 | `marketing/keyword-research` ⚠重复 |
-| `geo` | en | 5 | 25 | `marketing/affiliate`、`marketing/creator-program`、`marketing/influencer`、`seo/how-search-engine-works`、`seo/search-engine` ⚠重复 |
+| `geo` | en | 6 | 28 | `marketing/affiliate`、`marketing/creator-program`、`marketing/influencer`、`marketing/marketing-types`、`seo/how-search-engine-works`、`seo/search-engine` ⚠重复 |
 | `growth-case-studies` | en | 0 | 2 | — |
 | `influencer` | en | 4 | 10 | `blog/ugc-marketing`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program` ⚠重复 |
-| `keyword-research` | en | 0 | 21 | — |
-| `lifetime-deal` | en | 7 | 13 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/creator-program`、`marketing/pricing-strategy`、`marketing/referral-program`、`seo/landing-page` |
+| `keyword-research` | en | 2 | 22 | `marketing/geo`、`marketing/marketing-types` |
+| `lifetime-deal` | en | 7 | 15 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/creator-program`、`marketing/pricing-strategy`、`marketing/referral-program`、`seo/landing-page` |
 | `localization-strategy` | en | 1 | 4 | `seo/navigation-menu` |
-| `marketing-types` | en | 0 | 0 | — |
-| `pricing-strategy` | en | 3 | 29 | `blog/coding-plan`、`marketing/competitive-analysis`、`marketing/lifetime-deal` ⚠重复 |
+| `marketing-types` | en | 14 | 12 | `blog/coding-plan`、`blog/embedded-virality`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`blog/wrapped-marketing`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/geo`、`marketing/keyword-research`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`marketing/referral-program` |
+| `pricing-strategy` | en | 4 | 30 | `blog/coding-plan`、`marketing/competitive-analysis`、`marketing/lifetime-deal`、`marketing/marketing-types` ⚠重复 |
 | `reddit` | en | 0 | 5 | — |
-| `referral-program` | en | 2 | 7 | `blog/coding-plan`、`tools/referral-program` |
+| `referral-program` | en | 2 | 9 | `blog/coding-plan`、`tools/referral-program` |
 | `x-formerly-twitter` | en | 2 | 9 | `insights/indie-hackers`、`marketing/influencer` |
-| `affiliate` | zh | 7 | 24 | `blog/ugc-marketing`、`marketing/competitive-analysis`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`marketing/pricing-strategy`、`marketing/referral-program` ⚠重复 |
+| `affiliate` | zh | 7 | 25 | `blog/ugc-marketing`、`marketing/competitive-analysis`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/influencer`、`marketing/pricing-strategy`、`marketing/referral-program` ⚠重复 |
 | `competitive-analysis` | zh | 6 | 18 | `blog/coding-plan`、`marketing/email-marketing`、`marketing/geo`、`marketing/influencer`、`marketing/keyword-research`、`marketing/pricing-strategy` ⚠重复 |
-| `creator-challenge-program` | zh | 5 | 20 | `blog/embedded-virality`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/affiliate`、`marketing/creator-program` |
-| `creator-program` | zh | 4 | 19 | `blog/ugc-marketing`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/influencer` ⚠重复 |
+| `creator-challenge-program` | zh | 6 | 22 | `blog/embedded-virality`、`blog/ugc-marketing`、`blog/watermark-growth`、`marketing/affiliate`、`marketing/creator-program`、`marketing/marketing-types` |
+| `creator-program` | zh | 5 | 19 | `blog/ugc-marketing`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/influencer`、`marketing/marketing-types` ⚠重复 |
 | `email-marketing` | zh | 1 | 6 | `marketing/keyword-research` |
-| `geo` | zh | 6 | 25 | `marketing/affiliate`、`marketing/creator-program`、`marketing/influencer`、`marketing/keyword-research`、`seo/how-search-engine-works`、`seo/search-engine` |
+| `geo` | zh | 7 | 28 | `marketing/affiliate`、`marketing/creator-program`、`marketing/influencer`、`marketing/keyword-research`、`marketing/marketing-types`、`seo/how-search-engine-works`、`seo/search-engine` |
 | `growth-case-studies` | zh | 3 | 2 | `marketing/affiliate`、`marketing/keyword-research`、`marketing/referral-program` |
 | `influencer` | zh | 4 | 10 | `blog/ugc-marketing`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program` ⚠重复 |
-| `keyword-research` | zh | 2 | 21 | `marketing/competitive-analysis`、`marketing/geo` |
-| `lifetime-deal` | zh | 6 | 13 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/creator-program`、`marketing/pricing-strategy`、`marketing/referral-program` |
+| `keyword-research` | zh | 3 | 22 | `marketing/competitive-analysis`、`marketing/geo`、`marketing/marketing-types` |
+| `lifetime-deal` | zh | 6 | 15 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/creator-program`、`marketing/pricing-strategy`、`marketing/referral-program` |
 | `localization-strategy` | zh | 2 | 4 | `marketing/keyword-research`、`seo/navigation-menu` |
-| `marketing-types` | zh | 3 | 0 | `marketing/creator-program`、`marketing/keyword-research`、`marketing/pricing-strategy` |
-| `pricing-strategy` | zh | 6 | 29 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/geo`、`marketing/lifetime-deal`、`marketing/referral-program` ⚠重复 |
+| `marketing-types` | zh | 14 | 12 | `blog/coding-plan`、`blog/embedded-virality`、`blog/rate-limit-reset`、`blog/ugc-marketing`、`blog/watermark-growth`、`blog/wrapped-marketing`、`marketing/affiliate`、`marketing/creator-challenge-program`、`marketing/creator-program`、`marketing/geo`、`marketing/keyword-research`、`marketing/lifetime-deal`、`marketing/pricing-strategy`、`marketing/referral-program` |
+| `pricing-strategy` | zh | 7 | 30 | `blog/coding-plan`、`marketing/affiliate`、`marketing/competitive-analysis`、`marketing/geo`、`marketing/lifetime-deal`、`marketing/marketing-types`、`marketing/referral-program` ⚠重复 |
 | `reddit` | zh | 2 | 5 | `marketing/geo`、`marketing/x-formerly-twitter` |
-| `referral-program` | zh | 4 | 7 | `blog/coding-plan`、`marketing/affiliate`、`marketing/pricing-strategy`、`tools/referral-program` |
+| `referral-program` | zh | 4 | 9 | `blog/coding-plan`、`marketing/affiliate`、`marketing/pricing-strategy`、`tools/referral-program` |
 | `x-formerly-twitter` | zh | 4 | 9 | `insights/indie-hackers`、`marketing/influencer`、`marketing/reddit`、`seo/meta-tag` |
 
 ### insights
@@ -632,10 +630,10 @@ alignify.co
 
 | 分区 | 语言 | 篇数 | 零出链 | 堆链/重复 | 零入链 |
 |------|------|-----:|-------:|----------:|-------:|
-| marketing | en | 16 | 4 | 9 | 1 |
-| marketing | zh | 16 | 0 | 5 | 1 |
-| blog GTM | en | 8 | 0 | 6 | 1 |
-| blog GTM | zh | 8 | 0 | 6 | 1 |
+| marketing | en | 16 | 2 | 9 | 0 |
+| marketing | zh | 16 | 0 | 7 | 0 |
+| blog GTM | en | 8 | 0 | 6 | 0 |
+| blog GTM | zh | 8 | 0 | 6 | 0 |
 
 **典型待办**：EN `/marketing/*` 零出链孤岛 · `geo` / `lifetime-deal` 堆链 · `blog/wrapped-marketing` 零入链 · blog GTM 8 篇互链（Batch 5）。
 
@@ -645,35 +643,35 @@ alignify.co
 
 | slug | en 出 | zh 出 | en 入 | zh 入 | 标记 |
 |------|------:|------:|------:|------:|------|
-| `affiliate` | 3 | 7 | 24 | 24 | 堆链 · EN/ZH不对称 |
+| `affiliate` | 3 | 7 | 25 | 25 | 堆链 · EN/ZH不对称 |
 | `competitive-analysis` | 2 | 6 | 18 | 18 | 堆链 · EN/ZH不对称 |
-| `creator-challenge-program` | 5 | 5 | 20 | 20 | 堆链 |
-| `creator-program` | 3 | 4 | 19 | 19 | 堆链 |
+| `creator-challenge-program` | 6 | 6 | 22 | 22 | ✓ |
+| `creator-program` | 4 | 5 | 19 | 19 | 堆链 |
 | `email-marketing` | 1 | 1 | 6 | 6 | 堆链 |
-| `geo` | 5 | 6 | 25 | 25 | 堆链 |
+| `geo` | 6 | 7 | 28 | 28 | 堆链 |
 | `growth-case-studies` | 0 | 3 | 2 | 2 | 零出 · EN/ZH不对称 |
 | `influencer` | 4 | 4 | 10 | 10 | 堆链 |
-| `keyword-research` | 0 | 2 | 21 | 21 | 零出 |
-| `lifetime-deal` | 7 | 6 | 13 | 13 | 堆链 |
+| `keyword-research` | 2 | 3 | 22 | 22 | ✓ |
+| `lifetime-deal` | 7 | 6 | 15 | 15 | 堆链 |
 | `localization-strategy` | 1 | 2 | 4 | 4 | ✓ |
-| `marketing-types` | 0 | 3 | 0 | 0 | 零出 · 零入 · EN/ZH不对称 |
-| `pricing-strategy` | 3 | 6 | 29 | 29 | 堆链 · EN/ZH不对称 |
+| `marketing-types` | 14 | 14 | 12 | 12 | 堆链 |
+| `pricing-strategy` | 4 | 7 | 30 | 30 | 堆链 · EN/ZH不对称 |
 | `reddit` | 0 | 2 | 5 | 5 | 零出 |
-| `referral-program` | 2 | 4 | 7 | 7 | ✓ |
+| `referral-program` | 2 | 4 | 9 | 9 | ✓ |
 | `x-formerly-twitter` | 2 | 4 | 9 | 9 | ✓ |
 
 #### `/blog/*` 增长策略
 
 | slug | en 出 | zh 出 | en 入 | zh 入 | 标记 |
 |------|------:|------:|------:|------:|------|
-| `coding-plan` | 6 | 6 | 15 | 15 | 堆链 |
-| `embedded-virality` | 11 | 11 | 21 | 21 | 堆链 |
+| `coding-plan` | 6 | 6 | 17 | 17 | 堆链 |
+| `embedded-virality` | 11 | 11 | 23 | 23 | 堆链 |
 | `git-commit-attribution` | 5 | 5 | 8 | 8 | ✓ |
 | `platform-subdomain-gating` | 10 | 10 | 5 | 5 | 堆链 |
-| `rate-limit-reset` | 5 | 5 | 18 | 18 | 堆链 |
-| `ugc-marketing` | 6 | 5 | 17 | 17 | 堆链 |
-| `watermark-growth` | 7 | 7 | 12 | 12 | 堆链 |
-| `wrapped-marketing` | 4 | 4 | 0 | 0 | 零入 |
+| `rate-limit-reset` | 5 | 5 | 20 | 20 | 堆链 |
+| `ugc-marketing` | 7 | 6 | 18 | 18 | 堆链 |
+| `watermark-growth` | 7 | 7 | 14 | 14 | 堆链 |
+| `wrapped-marketing` | 4 | 4 | 2 | 2 | ✓ |
 
 ### 7.4 Cluster 矩阵 · 逐页指令 · 执行批次
 
