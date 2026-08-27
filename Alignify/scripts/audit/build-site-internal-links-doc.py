@@ -33,6 +33,23 @@ if DEPLOY is None:
 CATEGORIES = ["tools", "seo", "blog", "marketing", "insights", "events"]
 TODAY = date.today().isoformat()
 
+BLOG_GTM_SLUGS = frozenset(
+    {
+        "coding-plan",
+        "rate-limit-reset",
+        "ugc-marketing",
+        "wrapped-marketing",
+        "embedded-virality",
+        "watermark-growth",
+        "platform-subdomain-gating",
+        "git-commit-attribution",
+    }
+)
+OVER_LINKED_DISTINCT = 7
+BACKLOG_PATH = (
+    CTX / "skills/optimize-internal-links/references/marketing-internal-links-backlog.md"
+)
+
 STATIC_EXT = re.compile(r"\.(jpe?g|png|gif|webp|svg|ico|pdf|zip|css|js|woff2?|mp4|webm|avif)$", re.I)
 ANCHOR_RE = re.compile(r"#.*$")
 MD_LINK_RE = re.compile(r"(?<!\!)\[([^\]]*)\]\(([^)\s]+)")
@@ -89,6 +106,134 @@ def parse_frontmatter(text: str) -> dict:
 
 def page_key(route: str, slug: str) -> str:
     return f"{route}/{slug}"
+
+
+def find_row(rows: list[dict], route: str, slug: str, locale: str) -> dict | None:
+    for r in rows:
+        if r["route"] == route and r["slug"] == slug and r["locale"] == locale:
+            return r
+    return None
+
+
+def marketing_status_flags(en: dict | None, zh: dict | None) -> str:
+    flags: list[str] = []
+    for r in (en, zh):
+        if r is None:
+            continue
+        if r["distinct_targets"] == 0:
+            flags.append("零出")
+        if r["inbound_count"] == 0:
+            flags.append("零入")
+        if r["distinct_targets"] >= OVER_LINKED_DISTINCT or r["duplicates"]:
+            flags.append("堆链")
+    if en and zh and abs(en["distinct_targets"] - zh["distinct_targets"]) >= 3:
+        flags.append("EN/ZH不对称")
+    return " · ".join(dict.fromkeys(flags)) if flags else "✓"
+
+
+def build_marketing_gtm_section(rows: list[dict]) -> list[str]:
+    marketing_slugs = sorted({r["slug"] for r in rows if r["route"] == "marketing"})
+    blog_gtm = sorted(BLOG_GTM_SLUGS)
+
+    def stats_for(route: str, slugs: list[str], locale: str) -> dict:
+        rs = [find_row(rows, route, s, locale) for s in slugs]
+        rs = [r for r in rs if r]
+        zero_out = sum(1 for r in rs if r["distinct_targets"] == 0)
+        over = sum(
+            1
+            for r in rs
+            if r["distinct_targets"] >= OVER_LINKED_DISTINCT or r["duplicates"]
+        )
+        zero_in = sum(1 for r in rs if r["inbound_count"] == 0)
+        return {
+            "count": len(rs),
+            "zero_out": zero_out,
+            "over": over,
+            "zero_in": zero_in,
+        }
+
+    m_en = stats_for("marketing", marketing_slugs, "en")
+    m_zh = stats_for("marketing", marketing_slugs, "zh")
+    b_en = stats_for("blog", blog_gtm, "en")
+    b_zh = stats_for("blog", blog_gtm, "zh")
+
+    lines: list[str] = [
+        "## 七、Marketing / GTM 内链专项",
+        "",
+        "> **规则**：[`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md) Part 4.5（M1–M11）",
+        "> **Cluster 矩阵与逐页指令**：[`marketing-internal-links-backlog.md`](marketing-internal-links-backlog.md)（人工维护；本节 §7.2–7.3 为脚本快照）",
+        "",
+        "### 7.1 范围",
+        "",
+        f"- **`/marketing/*`**：{len(marketing_slugs)} slug × 2 语言 = **{len(marketing_slugs) * 2}** 篇",
+        f"- **`/blog/*` 增长策略**：{len(blog_gtm)} slug × 2 语言 = **{len(blog_gtm) * 2}** 篇（`ugc-marketing` 等已迁 `/blog/`，勿按 `/marketing/` 查）",
+        "",
+        "### 7.2 快照摘要",
+        "",
+        "| 分区 | 语言 | 篇数 | 零出链 | 堆链/重复 | 零入链 |",
+        "|------|------|-----:|-------:|----------:|-------:|",
+        f"| marketing | en | {m_en['count']} | {m_en['zero_out']} | {m_en['over']} | {m_en['zero_in']} |",
+        f"| marketing | zh | {m_zh['count']} | {m_zh['zero_out']} | {m_zh['over']} | {m_zh['zero_in']} |",
+        f"| blog GTM | en | {b_en['count']} | {b_en['zero_out']} | {b_en['over']} | {b_en['zero_in']} |",
+        f"| blog GTM | zh | {b_zh['count']} | {b_zh['zero_out']} | {b_zh['over']} | {b_zh['zero_in']} |",
+        "",
+        "**典型待办**：EN `/marketing/*` 零出链孤岛 · `geo` / `lifetime-deal` 堆链 · `blog/wrapped-marketing` 零入链 · blog GTM 8 篇互链（Batch 5）。",
+        "",
+        "### 7.3 逐页现状（自动）",
+        "",
+        "#### `/marketing/*`",
+        "",
+        "| slug | en 出 | zh 出 | en 入 | zh 入 | 标记 |",
+        "|------|------:|------:|------:|------:|------|",
+    ]
+
+    for slug in marketing_slugs:
+        en = find_row(rows, "marketing", slug, "en")
+        zh = find_row(rows, "marketing", slug, "zh")
+        lines.append(
+            f"| `{slug}` | "
+            f"{en['distinct_targets'] if en else '—'} | "
+            f"{zh['distinct_targets'] if zh else '—'} | "
+            f"{en['inbound_count'] if en else '—'} | "
+            f"{zh['inbound_count'] if zh else '—'} | "
+            f"{marketing_status_flags(en, zh)} |"
+        )
+
+    lines += [
+        "",
+        "#### `/blog/*` 增长策略",
+        "",
+        "| slug | en 出 | zh 出 | en 入 | zh 入 | 标记 |",
+        "|------|------:|------:|------:|------:|------|",
+    ]
+    for slug in blog_gtm:
+        en = find_row(rows, "blog", slug, "en")
+        zh = find_row(rows, "blog", slug, "zh")
+        lines.append(
+            f"| `{slug}` | "
+            f"{en['distinct_targets'] if en else '—'} | "
+            f"{zh['distinct_targets'] if zh else '—'} | "
+            f"{en['inbound_count'] if en else '—'} | "
+            f"{zh['inbound_count'] if zh else '—'} | "
+            f"{marketing_status_flags(en, zh)} |"
+        )
+
+    lines += [
+        "",
+        "### 7.4 Cluster 矩阵 · 逐页指令 · 执行批次",
+        "",
+    ]
+    if BACKLOG_PATH.is_file():
+        backlog = BACKLOG_PATH.read_text(encoding="utf-8")
+        # Drop duplicate H1; keep from first ## onward
+        backlog = re.sub(r"^# .+\n\n", "", backlog, count=1)
+        lines.append(backlog.rstrip())
+        lines.append("")
+    else:
+        lines.append(f"*Backlog 文件缺失：{BACKLOG_PATH}*")
+        lines.append("")
+
+    return lines
 
 
 def audit_file(path: Path) -> dict | None:
@@ -209,6 +354,8 @@ def main() -> None:
         key=lambda x: -x[1],
     )[:30]
 
+    route_counts = {cat: len(by_route.get(cat, [])) for cat in CATEGORIES}
+
     lines: list[str] = []
     lines += [
         "# Alignify 全站文章结构与内链",
@@ -227,12 +374,12 @@ def main() -> None:
         "",
         "```",
         "alignify.co",
-        "├── /tools/{slug}          ← 216 篇（Hub 106 slug · Tools 型 Blog 6 篇计入 tools hub）",
-        "├── /seo/{slug}            ← 76 篇",
-        "├── /blog/{slug}           ← 52 篇（含部分原 tools 迁移文）",
-        "├── /marketing/{slug}      ← 34 篇",
-        "├── /insights/{slug}       ← 14 篇",
-        "└── /events/{slug}         ← 8 篇",
+        f"├── /tools/{{slug}}          ← {route_counts.get('tools', 0)} 篇",
+        f"├── /seo/{{slug}}            ← {route_counts.get('seo', 0)} 篇",
+        f"├── /blog/{{slug}}           ← {route_counts.get('blog', 0)} 篇",
+        f"├── /marketing/{{slug}}      ← {route_counts.get('marketing', 0)} 篇",
+        f"├── /insights/{{slug}}       ← {route_counts.get('insights', 0)} 篇",
+        f"└── /events/{{slug}}         ← {route_counts.get('events', 0)} 篇",
         "```",
         "",
         "**正文 SSOT**：`E:\\自有部署项目\\alignify production\\content/{channel}/{locale}/{slug}.md`",
@@ -366,15 +513,18 @@ def main() -> None:
             )
         lines.append("")
 
+    lines += build_marketing_gtm_section(rows)
+
     lines += [
         "---",
         "",
-        "## 七、维护说明",
+        "## 八、维护说明",
         "",
         "1. **刷新本文**：`python scripts/audit/build-site-internal-links-doc.py`",
-        "2. **单频道快照**：`python scripts/audit/audit-md-internal-links.py`",
-        "3. **改内链**：只改部署仓 `content/**/*.md` 正文；改后重跑本脚本更新快照",
-        "4. **邻居选题**：SSOT 附录 B · [`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md)",
+        "2. **Marketing backlog**：改 [`marketing-internal-links-backlog.md`](marketing-internal-links-backlog.md) 后重跑上一条（§7.4 自动嵌入）",
+        "3. **单频道快照**：`python scripts/audit/audit-md-internal-links.py`",
+        "4. **改内链**：只改部署仓 `content/**/*.md` 正文；改后重跑本脚本更新快照",
+        "5. **邻居选题**：SSOT 附录 B · [`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md)",
         "",
         f"*自动生成 · {TODAY} · Alignify 上下文仓 · `skills/optimize-internal-links/references/`*",
         "",

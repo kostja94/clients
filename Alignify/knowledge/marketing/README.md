@@ -15,22 +15,24 @@
 
 **正式文章创作**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
-**外部 SSOT（个人知识库 · 唯一维护处）**：营销 campaign 类素材**只在** `E:\个人知识库\营销campaign\` 维护，**禁止**在 `knowledge/marketing/` 再建同名 `{slug}.md` 副本。Brief 与 Step 02 登记绝对路径即可。
+**外部 SSOT（个人知识库 · 唯一维护处）**：增长策略类素材**只在** `E:\个人知识库\增长策略\` 维护，**禁止**在 `knowledge/marketing/` 再建同名 `{slug}.md` 副本。Brief 与 Step 02 登记绝对路径即可。
 
 | slug（Alignify 文章） | 外部 SSOT 路径 |
 |------------------------|----------------|
-| `rate-limit-reset` | `E:\个人知识库\营销campaign\增长模式\Agent限额与Reset促销.md` |
-| `coding-plan` | `E:\个人知识库\营销campaign\增长模式\Coding-Plan-开发者订阅.md` |
-| `git-commit-attribution` | `E:\个人知识库\营销campaign\增长模式\Git-Commit-Attribution-提交归因.md`（中文主称：**AI 提交署名**） |
-| `embedded-virality` | `E:\个人知识库\营销campaign\增长模式\Embedded-Virality-嵌入式病毒传播.md`（中文主称：**Powered-by Badge 与付费去标**） |
-| `watermark-growth` | `E:\个人知识库\营销campaign\增长模式\Pay-to-Remove-Watermark-付费去水印.md`（中文主称：**免费导出带 logo：AI 产品用水印做增长**；SSOT 文件名偏变现，文章主线=增长） |
-| `platform-subdomain-gating` | `E:\个人知识库\营销campaign\增长模式\Platform-Subdomain-平台子域名门控.md`（中文主称：**平台子域增长**） |
-| `ugc-marketing` | `E:\个人知识库\营销campaign\增长模式\矩阵UGC-创作者网络.md` |
-| `wrapped-marketing` | `E:\个人知识库\营销campaign\年度节奏\Wrapped-参考.md` |
+| `rate-limit-reset` | `E:\个人知识库\增长策略\定价促销\Agent限额与Reset促销.md` |
+| `coding-plan` | `E:\个人知识库\增长策略\定价促销\Coding-Plan-开发者订阅.md` |
+| `lifetime-deal` | `E:\个人知识库\增长策略\定价促销\Lifetime-Deal-终身买断.md` |
+| `git-commit-attribution` | `E:\个人知识库\增长策略\产品内嵌\Git-Commit-Attribution-提交归因.md`（中文主称：**AI 提交署名**） |
+| `embedded-virality` | `E:\个人知识库\增长策略\产品内嵌\Embedded-Virality-嵌入式病毒传播.md`（中文主称：**Powered-by Badge 与付费去标**） |
+| `watermark-growth` | `E:\个人知识库\增长策略\产品内嵌\Pay-to-Remove-Watermark-付费去水印.md`（中文主称：**免费导出带 logo：AI 产品用水印做增长**；SSOT 文件名偏变现，文章主线=增长） |
+| `platform-subdomain-gating` | `E:\个人知识库\增长策略\产品内嵌\Platform-Subdomain-平台子域名门控.md`（中文主称：**平台子域增长**） |
+| `ugc-marketing` | `E:\个人知识库\增长策略\渠道分发\矩阵UGC-创作者网络.md` |
+| `creator-challenge-program` | `E:\个人知识库\增长策略\渠道分发\Creator-Challenge-AI创作者挑战赛.md` · Brief：[`_briefs/creator-challenge-program.md`](./_briefs/creator-challenge-program.md) · Skills：[`marketing-slug-notes/creator-challenge-program.md`](../../skills/create-article/rules/marketing-slug-notes/creator-challenge-program.md) |
+| `wrapped-marketing` | `E:\个人知识库\增长策略\运营节奏\Wrapped-参考.md` |
 
-**路由（2026-08-28）**：上表 campaign 专题及所有**新 marketing 文**统一发布于 **`/blog/{slug}`**（正文 `content/blog/`）；存量 `/marketing/[slug]` 仅维护不重迁。
+**路由（2026-08-28）**：上表增长策略专题及所有**新 marketing 文**统一发布于 **`/blog/{slug}`**（正文 `content/blog/`）；存量 `/marketing/[slug]` 仅维护不重迁（如 `lifetime-deal`）。
 
-**Alignify 本目录**：仅保留**无外部 SSOT**、或已与 `/marketing/[slug]` 长期对齐的 legacy 知识块（下表 13 篇）。新建 campaign 主题 → 个人知识库 + `_briefs/{slug}.md` 登记路径，**不**复制正文到本目录。
+**Alignify 本目录**：仅保留**无外部 SSOT**、或已与 `/marketing/[slug]` 长期对齐的 legacy 知识块（下表 12 篇）。新建增长策略主题 → 个人知识库 + `_briefs/{slug}.md` 登记路径，**不**复制正文到本目录。
 
 ---
 
@@ -59,9 +61,8 @@
 | [localization-strategy.md](./localization-strategy.md) | ✅ 完整 | 本地化策略 |
 | [growth-case-studies.md](./growth-case-studies.md) | ✅ 完整 | 增长案例 |
 | [competitive-analysis.md](./competitive-analysis.md) | ✅ 完整 | 竞品分析 |
-| [creator-challenge-program.md](./creator-challenge-program.md) | ✅ 完整 | 创作者挑战计划 |
 
-共 13 个文件，其中 13 篇完整、0 篇待补充。
+共 12 个文件，其中 12 篇完整、0 篇待补充。
 
 - 全站知识块总说明：[knowledgehub/README.md](../README.md)
 

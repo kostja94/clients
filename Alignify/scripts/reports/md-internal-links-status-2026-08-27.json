@@ -1,7 +1,7 @@
 {
   "date": "2026-08-27",
   "deploy_root": "E:\\自有部署项目\\alignify production",
-  "article_count": 400,
+  "article_count": 412,
   "articles": [
     {
       "pageKey": "tools/3d-model-generator",
@@ -158,22 +158,20 @@
       "title": "Affiliate Marketing Tools: Track Commissions & Grow Revenue",
       "pageUrl": "https://alignify.co/tools/affiliate-marketing",
       "category": "marketing",
-      "total_internal_links": 4,
-      "distinct_targets": 4,
+      "total_internal_links": 3,
+      "distinct_targets": 3,
       "targets": [
         "blog/agentic-commerce",
-        "marketing/affiliate",
         "tools/lead-generation",
         "tools/referral-program"
       ],
       "target_counts": {
         "tools/referral-program": 1,
         "blog/agentic-commerce": 1,
-        "tools/lead-generation": 1,
-        "marketing/affiliate": 1
+        "tools/lead-generation": 1
       },
       "duplicates": [],
-      "inbound_count": 9,
+      "inbound_count": 7,
       "inbound_from": [
         "blog/agentic-commerce",
         "marketing/affiliate",
@@ -231,10 +229,9 @@
       "title": "Agent Skills Directories: Discover, Install, and Ship Faster",
       "pageUrl": "https://alignify.co/tools/agent-skills",
       "category": "coding-dev",
-      "total_internal_links": 17,
-      "distinct_targets": 17,
+      "total_internal_links": 16,
+      "distinct_targets": 16,
       "targets": [
-        "skills",
         "tools/agent-for-desktop",
         "tools/api",
         "tools/app-builder",
@@ -268,16 +265,16 @@
         "tools/chatbot": 1,
         "tools/browser": 1,
         "tools/code-review": 1,
-        "tools/openclaw-alternatives": 1,
-        "skills": 1
+        "tools/openclaw-alternatives": 1
       },
       "duplicates": [],
-      "inbound_count": 14,
+      "inbound_count": 16,
       "inbound_from": [
         "blog/agent-memory",
         "blog/agent-to-agent",
         "blog/agentic-payments",
         "blog/data-engineering-agent",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "blog/inference-infrastructure",
         "blog/multi-agent",
         "tools/api",
@@ -474,10 +471,11 @@
         "tools/coding": 1
       },
       "duplicates": [],
-      "inbound_count": 14,
+      "inbound_count": 16,
       "inbound_from": [
         "blog/ai-components",
         "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "insights/indie-hackers",
         "tools/agent-skills",
         "tools/authentication",
@@ -522,13 +520,12 @@
       "title": "Authentication & IAM Tools: CIAM, Oauth, and Agent Authorization",
       "pageUrl": "https://alignify.co/tools/authentication",
       "category": "coding-dev",
-      "total_internal_links": 8,
-      "distinct_targets": 8,
+      "total_internal_links": 7,
+      "distinct_targets": 7,
       "targets": [
         "tools/api",
         "tools/app-builder",
         "tools/browser",
-        "tools/documentation",
         "tools/notes-generator",
         "tools/productivity",
         "tools/user-research",
@@ -541,8 +538,7 @@
         "tools/notes-generator": 1,
         "tools/productivity": 1,
         "tools/api": 1,
-        "tools/user-research": 1,
-        "tools/documentation": 1
+        "tools/user-research": 1
       },
       "duplicates": [],
       "inbound_count": 4,
@@ -1118,10 +1114,9 @@
         "tools/code-review": 1
       },
       "duplicates": [],
-      "inbound_count": 18,
+      "inbound_count": 16,
       "inbound_from": [
         "tools/api",
-        "tools/authentication",
         "tools/coding",
         "tools/interview-assistant",
         "tools/llm",
@@ -1344,11 +1339,10 @@
       "title": "Generative Engine Optimization Tools: AI-Era SEO Solutions",
       "pageUrl": "https://alignify.co/tools/geo",
       "category": "geo",
-      "total_internal_links": 10,
-      "distinct_targets": 10,
+      "total_internal_links": 9,
+      "distinct_targets": 9,
       "targets": [
         "blog/ai-traffic-and-citation-sources",
-        "marketing/geo",
         "tools/api",
         "tools/browser",
         "tools/notes-generator",
@@ -1367,16 +1361,14 @@
         "tools/notes-generator": 1,
         "tools/productivity": 1,
         "tools/api": 1,
-        "tools/user-research": 1,
-        "marketing/geo": 1
+        "tools/user-research": 1
       },
       "duplicates": [],
-      "inbound_count": 28,
+      "inbound_count": 26,
       "inbound_from": [
         "blog/agentic-commerce",
         "blog/ai-traffic-and-citation-sources",
         "blog/ai-visibility",
-        "marketing/geo",
         "seo/checklist",
         "tools/agent-for-desktop",
         "tools/character-chat",
@@ -1533,8 +1525,9 @@
         "tools/cli": 1
       },
       "duplicates": [],
-      "inbound_count": 10,
+      "inbound_count": 12,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "tools/agent-for-desktop",
         "tools/cli",
         "tools/code-completion",
@@ -1766,9 +1759,8 @@
         "tools/affiliate-marketing": 1
       },
       "duplicates": [],
-      "inbound_count": 3,
+      "inbound_count": 2,
       "inbound_from": [
-        "marketing/influencer",
         "tools/affiliate-marketing",
         "tools/referral-program"
       ]
@@ -2145,10 +2137,9 @@
       "title": "AI Logo Generators: Transform Ideas into Brand Logos",
       "pageUrl": "https://alignify.co/tools/logo-generator",
       "category": "ai-creative",
-      "total_internal_links": 6,
-      "distinct_targets": 6,
+      "total_internal_links": 5,
+      "distinct_targets": 5,
       "targets": [
-        "insights/ai-logo-design",
         "media-kit",
         "tools/background-changer",
         "tools/design",
@@ -2160,8 +2151,7 @@
         "tools/poster-generator": 1,
         "tools/design": 1,
         "tools/background-changer": 1,
-        "media-kit": 1,
-        "insights/ai-logo-design": 1
+        "media-kit": 1
       },
       "duplicates": [],
       "inbound_count": 10,
@@ -2573,10 +2563,9 @@
       "title": "Referral Program Tools: User Growth & Tracking Platforms",
       "pageUrl": "https://alignify.co/tools/referral-program",
       "category": "marketing",
-      "total_internal_links": 4,
-      "distinct_targets": 4,
+      "total_internal_links": 3,
+      "distinct_targets": 3,
       "targets": [
-        "marketing/referral-program",
         "tools/affiliate-marketing",
         "tools/b2b",
         "tools/lead-generation"
@@ -2584,11 +2573,10 @@
       "target_counts": {
         "tools/affiliate-marketing": 1,
         "tools/lead-generation": 1,
-        "tools/b2b": 1,
-        "marketing/referral-program": 1
+        "tools/b2b": 1
       },
       "duplicates": [],
-      "inbound_count": 8,
+      "inbound_count": 6,
       "inbound_from": [
         "marketing/referral-program",
         "tools/affiliate-marketing",
@@ -2745,8 +2733,9 @@
         "tools/geo": 1
       },
       "duplicates": [],
-      "inbound_count": 2,
+      "inbound_count": 4,
       "inbound_from": [
+        "blog/embedded-virality",
         "tools/influencer-marketing",
         "tools/poster-generator"
       ]
@@ -3084,20 +3073,23 @@
       "title": "Vibe Coding Tools: Natural Language App Development",
       "pageUrl": "https://alignify.co/tools/vibe-coding",
       "category": "coding-dev",
-      "total_internal_links": 2,
-      "distinct_targets": 2,
+      "total_internal_links": 3,
+      "distinct_targets": 3,
       "targets": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "tools/app-builder",
         "tools/coding"
       ],
       "target_counts": {
         "tools/coding": 1,
-        "tools/app-builder": 1
+        "tools/app-builder": 1,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 1
       },
       "duplicates": [],
-      "inbound_count": 14,
+      "inbound_count": 16,
       "inbound_from": [
         "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "tools/agent-skills",
         "tools/animation-library",
         "tools/app-builder",
@@ -3840,22 +3832,20 @@
       "title": "联盟营销工具：佣金追踪与营收增长",
       "pageUrl": "https://alignify.co/zh/tools/affiliate-marketing",
       "category": "marketing",
-      "total_internal_links": 4,
-      "distinct_targets": 4,
+      "total_internal_links": 3,
+      "distinct_targets": 3,
       "targets": [
         "blog/agentic-commerce",
-        "marketing/affiliate",
         "tools/influencer-marketing",
         "tools/referral-program"
       ],
       "target_counts": {
         "tools/referral-program": 1,
         "tools/influencer-marketing": 1,
-        "blog/agentic-commerce": 1,
-        "marketing/affiliate": 1
+        "blog/agentic-commerce": 1
       },
       "duplicates": [],
-      "inbound_count": 9,
+      "inbound_count": 7,
       "inbound_from": [
         "blog/agentic-commerce",
         "marketing/affiliate",
@@ -3921,11 +3911,10 @@
       "title": "Agent Skills 目录：发现工作流、降低试错成本",
       "pageUrl": "https://alignify.co/zh/tools/agent-skills",
       "category": "coding-dev",
-      "total_internal_links": 11,
-      "distinct_targets": 11,
+      "total_internal_links": 10,
+      "distinct_targets": 10,
       "targets": [
         "blog/agent-memory",
-        "skills",
         "tools/api",
         "tools/browser",
         "tools/cli",
@@ -3946,16 +3935,16 @@
         "tools/knowledge-base": 1,
         "tools/browser": 1,
         "tools/code-review": 1,
-        "tools/api": 1,
-        "skills": 1
+        "tools/api": 1
       },
       "duplicates": [],
-      "inbound_count": 14,
+      "inbound_count": 16,
       "inbound_from": [
         "blog/agent-memory",
         "blog/agent-to-agent",
         "blog/agentic-payments",
         "blog/data-engineering-agent",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "blog/inference-infrastructure",
         "blog/multi-agent",
         "tools/api",
@@ -4162,10 +4151,11 @@
         "tools/coding": 1
       },
       "duplicates": [],
-      "inbound_count": 14,
+      "inbound_count": 16,
       "inbound_from": [
         "blog/ai-components",
         "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "insights/indie-hackers",
         "tools/agent-skills",
         "tools/authentication",
@@ -4217,13 +4207,12 @@
       "title": "身份认证与访问管理：CIAM、OAuth 与 Agent 授权",
       "pageUrl": "https://alignify.co/zh/tools/authentication",
       "category": "coding-dev",
-      "total_internal_links": 8,
-      "distinct_targets": 8,
+      "total_internal_links": 7,
+      "distinct_targets": 7,
       "targets": [
         "blog/agentic-commerce",
         "tools/browser",
         "tools/chatbot",
-        "tools/documentation",
         "tools/llm",
         "tools/notes-generator",
         "tools/productivity",
@@ -4236,8 +4225,7 @@
         "tools/notes-generator": 1,
         "tools/productivity": 1,
         "tools/user-research": 1,
-        "tools/chatbot": 1,
-        "tools/documentation": 1
+        "tools/chatbot": 1
       },
       "duplicates": [],
       "inbound_count": 4,
@@ -4845,10 +4833,9 @@
         "tools/ocr": 1
       },
       "duplicates": [],
-      "inbound_count": 18,
+      "inbound_count": 16,
       "inbound_from": [
         "tools/api",
-        "tools/authentication",
         "tools/coding",
         "tools/interview-assistant",
         "tools/llm",
@@ -5085,12 +5072,11 @@
       "title": "生成式引擎优化工具：AI 时代的 SEO 解决方案",
       "pageUrl": "https://alignify.co/zh/tools/geo",
       "category": "geo",
-      "total_internal_links": 13,
-      "distinct_targets": 12,
+      "total_internal_links": 12,
+      "distinct_targets": 11,
       "targets": [
         "blog/ai-traffic-and-citation-sources",
         "blog/ai-visibility",
-        "marketing/geo",
         "tools/browser",
         "tools/chatbot",
         "tools/notes-generator",
@@ -5112,18 +5098,16 @@
         "tools/spreadsheet": 1,
         "tools/chatbot": 1,
         "tools/web-search-api": 1,
-        "blog/ai-visibility": 1,
-        "marketing/geo": 1
+        "blog/ai-visibility": 1
       },
       "duplicates": [
         "blog/ai-traffic-and-citation-sources"
       ],
-      "inbound_count": 28,
+      "inbound_count": 26,
       "inbound_from": [
         "blog/agentic-commerce",
         "blog/ai-traffic-and-citation-sources",
         "blog/ai-visibility",
-        "marketing/geo",
         "seo/checklist",
         "tools/agent-for-desktop",
         "tools/character-chat",
@@ -5274,8 +5258,9 @@
         "tools/code-review": 1
       },
       "duplicates": [],
-      "inbound_count": 10,
+      "inbound_count": 12,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "tools/agent-for-desktop",
         "tools/cli",
         "tools/code-completion",
@@ -5512,10 +5497,9 @@
       "title": "红人营销：智能化的影响力营销",
       "pageUrl": "https://alignify.co/zh/tools/influencer-marketing",
       "category": "marketing",
-      "total_internal_links": 5,
-      "distinct_targets": 5,
+      "total_internal_links": 4,
+      "distinct_targets": 4,
       "targets": [
-        "marketing/influencer",
         "tools/affiliate-marketing",
         "tools/lead-generation",
         "tools/referral-program",
@@ -5525,13 +5509,11 @@
         "tools/lead-generation": 1,
         "tools/referral-program": 1,
         "tools/social-cards-generator": 1,
-        "tools/affiliate-marketing": 1,
-        "marketing/influencer": 1
+        "tools/affiliate-marketing": 1
       },
       "duplicates": [],
-      "inbound_count": 3,
+      "inbound_count": 2,
       "inbound_from": [
-        "marketing/influencer",
         "tools/affiliate-marketing",
         "tools/referral-program"
       ]
@@ -5930,10 +5912,9 @@
       "title": "AI Logo生成：品牌视觉识别的快速设计",
       "pageUrl": "https://alignify.co/zh/tools/logo-generator",
       "category": "ai-creative",
-      "total_internal_links": 6,
-      "distinct_targets": 6,
+      "total_internal_links": 5,
+      "distinct_targets": 5,
       "targets": [
-        "insights/ai-logo-design",
         "media-kit",
         "tools/background-changer",
         "tools/design",
@@ -5945,8 +5926,7 @@
         "tools/design": 1,
         "tools/poster-generator": 1,
         "tools/background-changer": 1,
-        "media-kit": 1,
-        "insights/ai-logo-design": 1
+        "media-kit": 1
       },
       "duplicates": [],
       "inbound_count": 10,
@@ -6362,10 +6342,9 @@
       "title": "推荐奖励计划工具：用户增长与推荐追踪平台",
       "pageUrl": "https://alignify.co/zh/tools/referral-program",
       "category": "marketing",
-      "total_internal_links": 5,
-      "distinct_targets": 5,
+      "total_internal_links": 4,
+      "distinct_targets": 4,
       "targets": [
-        "marketing/referral-program",
         "tools/affiliate-marketing",
         "tools/influencer-marketing",
         "tools/linkedin",
@@ -6375,11 +6354,10 @@
         "tools/productivity": 1,
         "tools/influencer-marketing": 1,
         "tools/affiliate-marketing": 1,
-        "tools/linkedin": 1,
-        "marketing/referral-program": 1
+        "tools/linkedin": 1
       },
       "duplicates": [],
-      "inbound_count": 8,
+      "inbound_count": 6,
       "inbound_from": [
         "marketing/referral-program",
         "tools/affiliate-marketing",
@@ -6542,8 +6520,9 @@
         "tools/geo": 1
       },
       "duplicates": [],
-      "inbound_count": 2,
+      "inbound_count": 4,
       "inbound_from": [
+        "blog/embedded-virality",
         "tools/influencer-marketing",
         "tools/poster-generator"
       ]
@@ -6881,22 +6860,25 @@
       "title": "自然语言编程：用对话创造应用",
       "pageUrl": "https://alignify.co/zh/tools/vibe-coding",
       "category": "coding-dev",
-      "total_internal_links": 3,
-      "distinct_targets": 3,
+      "total_internal_links": 4,
+      "distinct_targets": 4,
       "targets": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "tools/app-builder",
         "tools/code-completion",
         "tools/coding"
       ],
       "target_counts": {
         "tools/app-builder": 1,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 1,
         "tools/code-completion": 1,
         "tools/coding": 1
       },
       "duplicates": [],
-      "inbound_count": 14,
+      "inbound_count": 16,
       "inbound_from": [
         "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "tools/agent-skills",
         "tools/animation-library",
         "tools/app-builder",
@@ -7965,8 +7947,8 @@
       "duplicates": [],
       "inbound_count": 4,
       "inbound_from": [
+        "blog/ugc-marketing",
         "marketing/lifetime-deal",
-        "marketing/ugc-marketing",
         "seo/checklist"
       ]
     },
@@ -8285,8 +8267,10 @@
       "targets": [],
       "target_counts": {},
       "duplicates": [],
-      "inbound_count": 17,
+      "inbound_count": 21,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "blog/subdirectory-hosting",
         "seo/breadcrumbs",
         "seo/category-pages",
         "seo/checklist",
@@ -8310,8 +8294,11 @@
       "targets": [],
       "target_counts": {},
       "duplicates": [],
-      "inbound_count": 2,
+      "inbound_count": 8,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "blog/platform-subdomain-gating",
+        "blog/subdirectory-hosting",
         "seo/checklist"
       ]
     },
@@ -8924,8 +8911,8 @@
       "duplicates": [],
       "inbound_count": 4,
       "inbound_from": [
+        "blog/ugc-marketing",
         "marketing/lifetime-deal",
-        "marketing/ugc-marketing",
         "seo/checklist"
       ]
     },
@@ -9255,8 +9242,10 @@
       "duplicates": [
         "seo/website-indexing"
       ],
-      "inbound_count": 17,
+      "inbound_count": 21,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "blog/subdirectory-hosting",
         "seo/breadcrumbs",
         "seo/category-pages",
         "seo/checklist",
@@ -9280,8 +9269,11 @@
       "targets": [],
       "target_counts": {},
       "duplicates": [],
-      "inbound_count": 2,
+      "inbound_count": 8,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "blog/platform-subdomain-gating",
+        "blog/subdirectory-hosting",
         "seo/checklist"
       ]
     },
@@ -9694,11 +9686,10 @@
       "duplicates": [
         "tools/geo"
       ],
-      "inbound_count": 9,
+      "inbound_count": 7,
       "inbound_from": [
         "blog/ai-visibility",
         "blog/how-to-add-payments-to-vibe-coded-app",
-        "marketing/geo",
         "tools/geo"
       ]
     },
@@ -9754,10 +9745,9 @@
         "blog/ai-traffic-and-citation-sources": 1
       },
       "duplicates": [],
-      "inbound_count": 5,
+      "inbound_count": 3,
       "inbound_from": [
         "blog/ai-traffic-and-citation-sources",
-        "marketing/geo",
         "tools/geo"
       ]
     },
@@ -9820,8 +9810,11 @@
       "duplicates": [
         "blog/rate-limit-reset"
       ],
-      "inbound_count": 9,
+      "inbound_count": 15,
       "inbound_from": [
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
         "blog/rate-limit-reset",
         "marketing/competitive-analysis",
         "marketing/lifetime-deal",
@@ -9857,6 +9850,85 @@
       ]
     },
     {
+      "pageKey": "blog/embedded-virality",
+      "slug": "embedded-virality",
+      "locale": "en",
+      "route": "blog",
+      "title": "Powered-by Badges for AI Products: Free with Branding, Paid to Remove",
+      "pageUrl": "https://alignify.co/blog/embedded-virality",
+      "category": "marketing",
+      "total_internal_links": 13,
+      "distinct_targets": 11,
+      "targets": [
+        "blog/coding-plan",
+        "blog/git-commit-attribution",
+        "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/platform-subdomain-gating",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
+        "marketing/creator-challenge-program",
+        "marketing/lifetime-deal",
+        "marketing/pricing-strategy",
+        "tools/social-cards-generator"
+      ],
+      "target_counts": {
+        "marketing/pricing-strategy": 1,
+        "blog/how-to-add-payments-to-vibe-coded-app": 1,
+        "marketing/lifetime-deal": 1,
+        "blog/watermark-growth": 2,
+        "tools/social-cards-generator": 1,
+        "blog/git-commit-attribution": 2,
+        "blog/rate-limit-reset": 1,
+        "blog/coding-plan": 1,
+        "blog/ugc-marketing": 1,
+        "blog/platform-subdomain-gating": 1,
+        "marketing/creator-challenge-program": 1
+      },
+      "duplicates": [
+        "blog/git-commit-attribution",
+        "blog/watermark-growth"
+      ],
+      "inbound_count": 21,
+      "inbound_from": [
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
+        "blog/watermark-growth",
+        "marketing/creator-challenge-program"
+      ]
+    },
+    {
+      "pageKey": "blog/git-commit-attribution",
+      "slug": "git-commit-attribution",
+      "locale": "en",
+      "route": "blog",
+      "title": "AI Commit Attribution: Agent Trailers, Growth Side Effects, and the Copilot Revert",
+      "pageUrl": "https://alignify.co/blog/git-commit-attribution",
+      "category": "marketing",
+      "total_internal_links": 5,
+      "distinct_targets": 5,
+      "targets": [
+        "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/rate-limit-reset",
+        "marketing/competitive-analysis",
+        "marketing/pricing-strategy"
+      ],
+      "target_counts": {
+        "marketing/pricing-strategy": 1,
+        "marketing/competitive-analysis": 1,
+        "blog/rate-limit-reset": 1,
+        "blog/coding-plan": 1,
+        "blog/embedded-virality": 1
+      },
+      "duplicates": [],
+      "inbound_count": 8,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating"
+      ]
+    },
+    {
       "pageKey": "blog/git-hosting",
       "slug": "git-hosting",
       "locale": "en",
@@ -9882,8 +9954,10 @@
         "tools/cli",
         "tools/code-review"
       ],
-      "inbound_count": 0,
-      "inbound_from": []
+      "inbound_count": 2,
+      "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai"
+      ]
     },
     {
       "pageKey": "blog/github-for-marketing",
@@ -9896,16 +9970,17 @@
       "total_internal_links": 2,
       "distinct_targets": 2,
       "targets": [
-        "blog/how-to-write-github-readme",
-        "services"
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "blog/how-to-write-github-readme"
       ],
       "target_counts": {
         "blog/how-to-write-github-readme": 1,
-        "services": 1
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 1
       },
       "duplicates": [],
-      "inbound_count": 2,
+      "inbound_count": 4,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "blog/how-to-write-github-readme"
       ]
     },
@@ -9934,8 +10009,57 @@
         "blog/ai-traffic-and-citation-sources": 1
       },
       "duplicates": [],
-      "inbound_count": 0,
-      "inbound_from": []
+      "inbound_count": 4,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating"
+      ]
+    },
+    {
+      "pageKey": "blog/how-to-build-a-blog-without-a-cms-using-ai",
+      "slug": "how-to-build-a-blog-without-a-cms-using-ai",
+      "locale": "en",
+      "route": "blog",
+      "title": "How to Build a Blog Without a CMS Using AI",
+      "pageUrl": "https://alignify.co/blog/how-to-build-a-blog-without-a-cms-using-ai",
+      "category": "coding-dev",
+      "total_internal_links": 12,
+      "distinct_targets": 11,
+      "targets": [
+        "blog/git-hosting",
+        "blog/github-for-marketing",
+        "blog/subdirectory-hosting",
+        "glossary/seo",
+        "seo/sitemap",
+        "seo/subdomain-vs-subfolder",
+        "skills",
+        "tools/agent-skills",
+        "tools/app-builder",
+        "tools/ide",
+        "tools/vibe-coding"
+      ],
+      "target_counts": {
+        "tools/ide": 1,
+        "blog/subdirectory-hosting": 2,
+        "tools/vibe-coding": 1,
+        "seo/sitemap": 1,
+        "blog/git-hosting": 1,
+        "tools/agent-skills": 1,
+        "tools/app-builder": 1,
+        "skills": 1,
+        "blog/github-for-marketing": 1,
+        "seo/subdomain-vs-subfolder": 1,
+        "glossary/seo": 1
+      },
+      "duplicates": [
+        "blog/subdirectory-hosting"
+      ],
+      "inbound_count": 12,
+      "inbound_from": [
+        "blog/github-for-marketing",
+        "blog/subdirectory-hosting",
+        "tools/vibe-coding"
+      ]
     },
     {
       "pageKey": "blog/how-to-name-ai-products",
@@ -9965,15 +10089,13 @@
       "title": "How to Write a GitHub README: Best Practices for SEO, Growth & Developer Adoption",
       "pageUrl": "https://alignify.co/blog/how-to-write-github-readme",
       "category": "marketing",
-      "total_internal_links": 2,
-      "distinct_targets": 2,
+      "total_internal_links": 1,
+      "distinct_targets": 1,
       "targets": [
-        "blog/github-for-marketing",
-        "services"
+        "blog/github-for-marketing"
       ],
       "target_counts": {
-        "blog/github-for-marketing": 1,
-        "services": 1
+        "blog/github-for-marketing": 1
       },
       "duplicates": [],
       "inbound_count": 2,
@@ -10099,6 +10221,53 @@
       ]
     },
     {
+      "pageKey": "blog/platform-subdomain-gating",
+      "slug": "platform-subdomain-gating",
+      "locale": "en",
+      "route": "blog",
+      "title": "Platform Subdomain Growth: Distribution Through the Address Bar",
+      "pageUrl": "https://alignify.co/blog/platform-subdomain-gating",
+      "category": "marketing",
+      "total_internal_links": 18,
+      "distinct_targets": 10,
+      "targets": [
+        "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
+        "marketing/lifetime-deal",
+        "marketing/pricing-strategy",
+        "seo/subdomain-vs-subfolder"
+      ],
+      "target_counts": {
+        "blog/embedded-virality": 4,
+        "blog/watermark-growth": 3,
+        "seo/subdomain-vs-subfolder": 1,
+        "blog/ugc-marketing": 2,
+        "blog/rate-limit-reset": 2,
+        "blog/how-to-add-payments-to-vibe-coded-app": 1,
+        "marketing/pricing-strategy": 1,
+        "blog/git-commit-attribution": 2,
+        "marketing/lifetime-deal": 1,
+        "blog/coding-plan": 1
+      },
+      "duplicates": [
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "blog/watermark-growth"
+      ],
+      "inbound_count": 5,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/watermark-growth"
+      ]
+    },
+    {
       "pageKey": "blog/rate-limit-reset",
       "slug": "rate-limit-reset",
       "locale": "en",
@@ -10106,7 +10275,7 @@
       "title": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas",
       "pageUrl": "https://alignify.co/blog/rate-limit-reset",
       "category": "marketing",
-      "total_internal_links": 7,
+      "total_internal_links": 6,
       "distinct_targets": 5,
       "targets": [
         "blog/coding-plan",
@@ -10116,7 +10285,7 @@
         "marketing/x-formerly-twitter"
       ],
       "target_counts": {
-        "marketing/pricing-strategy": 3,
+        "marketing/pricing-strategy": 2,
         "marketing/affiliate": 1,
         "marketing/x-formerly-twitter": 1,
         "marketing/competitive-analysis": 1,
@@ -10125,12 +10294,124 @@
       "duplicates": [
         "marketing/pricing-strategy"
       ],
-      "inbound_count": 10,
+      "inbound_count": 18,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
+        "blog/wrapped-marketing"
+      ]
+    },
+    {
+      "pageKey": "blog/subdirectory-hosting",
+      "slug": "subdirectory-hosting",
+      "locale": "en",
+      "route": "blog",
+      "title": "Subdirectory Hosting: One Domain, Multiple Deployments",
+      "pageUrl": "https://alignify.co/blog/subdirectory-hosting",
+      "category": "coding-dev",
+      "total_internal_links": 7,
+      "distinct_targets": 4,
+      "targets": [
+        "audit-website-by-lovable",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "seo/sitemap",
+        "seo/subdomain-vs-subfolder"
+      ],
+      "target_counts": {
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 4,
+        "seo/subdomain-vs-subfolder": 1,
+        "audit-website-by-lovable": 1,
+        "seo/sitemap": 1
+      },
+      "duplicates": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai"
+      ],
+      "inbound_count": 4,
+      "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai"
+      ]
+    },
+    {
+      "pageKey": "blog/ugc-marketing",
+      "slug": "ugc-marketing",
+      "locale": "en",
+      "route": "blog",
+      "title": "UGC Marketing Strategy: Creator Networks, Whitelisting & FTC Rules for AI",
+      "pageUrl": "https://alignify.co/blog/ugc-marketing",
+      "category": "marketing",
+      "total_internal_links": 7,
+      "distinct_targets": 6,
+      "targets": [
+        "blog/rate-limit-reset",
+        "marketing/affiliate",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/influencer",
+        "seo/landing-page"
+      ],
+      "target_counts": {
+        "marketing/creator-program": 1,
+        "marketing/creator-challenge-program": 2,
+        "marketing/affiliate": 1,
+        "seo/landing-page": 1,
+        "marketing/influencer": 1,
+        "blog/rate-limit-reset": 1
+      },
+      "duplicates": [
+        "marketing/creator-challenge-program"
+      ],
+      "inbound_count": 17,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "blog/watermark-growth",
         "blog/wrapped-marketing",
+        "marketing/affiliate",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/influencer"
+      ]
+    },
+    {
+      "pageKey": "blog/watermark-growth",
+      "slug": "watermark-growth",
+      "locale": "en",
+      "route": "blog",
+      "title": "Free Exports with Logo: Watermark Growth for AI Media SaaS",
+      "pageUrl": "https://alignify.co/blog/watermark-growth",
+      "category": "marketing",
+      "total_internal_links": 11,
+      "distinct_targets": 7,
+      "targets": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/creator-challenge-program",
         "marketing/lifetime-deal",
-        "marketing/ugc-marketing"
+        "marketing/pricing-strategy"
+      ],
+      "target_counts": {
+        "blog/embedded-virality": 5,
+        "marketing/creator-challenge-program": 1,
+        "marketing/pricing-strategy": 1,
+        "marketing/lifetime-deal": 1,
+        "blog/rate-limit-reset": 1,
+        "blog/ugc-marketing": 1,
+        "blog/platform-subdomain-gating": 1
+      },
+      "duplicates": [
+        "blog/embedded-virality"
+      ],
+      "inbound_count": 12,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "marketing/creator-challenge-program"
       ]
     },
     {
@@ -10174,23 +10455,21 @@
       "title": "Year in Review Marketing: Wrapped Strategy for AI Products",
       "pageUrl": "https://alignify.co/blog/wrapped-marketing",
       "category": "marketing",
-      "total_internal_links": 5,
+      "total_internal_links": 4,
       "distinct_targets": 4,
       "targets": [
         "blog/rate-limit-reset",
+        "blog/ugc-marketing",
         "marketing/creator-challenge-program",
-        "marketing/pricing-strategy",
-        "marketing/ugc-marketing"
+        "marketing/pricing-strategy"
       ],
       "target_counts": {
-        "marketing/ugc-marketing": 2,
+        "blog/ugc-marketing": 1,
         "blog/rate-limit-reset": 1,
         "marketing/creator-challenge-program": 1,
         "marketing/pricing-strategy": 1
       },
-      "duplicates": [
-        "marketing/ugc-marketing"
-      ],
+      "duplicates": [],
       "inbound_count": 0,
       "inbound_from": []
     },
@@ -10451,11 +10730,10 @@
       "duplicates": [
         "tools/geo"
       ],
-      "inbound_count": 9,
+      "inbound_count": 7,
       "inbound_from": [
         "blog/ai-visibility",
         "blog/how-to-add-payments-to-vibe-coded-app",
-        "marketing/geo",
         "tools/geo"
       ]
     },
@@ -10515,10 +10793,9 @@
         "tools/text-generator": 1
       },
       "duplicates": [],
-      "inbound_count": 5,
+      "inbound_count": 3,
       "inbound_from": [
         "blog/ai-traffic-and-citation-sources",
-        "marketing/geo",
         "tools/geo"
       ]
     },
@@ -10581,8 +10858,11 @@
       "duplicates": [
         "blog/rate-limit-reset"
       ],
-      "inbound_count": 9,
+      "inbound_count": 15,
       "inbound_from": [
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
         "blog/rate-limit-reset",
         "marketing/competitive-analysis",
         "marketing/lifetime-deal",
@@ -10618,6 +10898,86 @@
       ]
     },
     {
+      "pageKey": "blog/embedded-virality",
+      "slug": "embedded-virality",
+      "locale": "zh",
+      "route": "blog",
+      "title": "Powered-by Badge 与付费去标：AI 产品的嵌入式病毒传播策略",
+      "pageUrl": "https://alignify.co/zh/blog/embedded-virality",
+      "category": "marketing",
+      "total_internal_links": 14,
+      "distinct_targets": 11,
+      "targets": [
+        "blog/coding-plan",
+        "blog/git-commit-attribution",
+        "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/platform-subdomain-gating",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
+        "marketing/creator-challenge-program",
+        "marketing/lifetime-deal",
+        "marketing/pricing-strategy",
+        "tools/social-cards-generator"
+      ],
+      "target_counts": {
+        "marketing/pricing-strategy": 1,
+        "blog/platform-subdomain-gating": 2,
+        "blog/how-to-add-payments-to-vibe-coded-app": 1,
+        "marketing/lifetime-deal": 1,
+        "blog/watermark-growth": 2,
+        "tools/social-cards-generator": 1,
+        "blog/git-commit-attribution": 2,
+        "blog/rate-limit-reset": 1,
+        "blog/coding-plan": 1,
+        "blog/ugc-marketing": 1,
+        "marketing/creator-challenge-program": 1
+      },
+      "duplicates": [
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
+        "blog/watermark-growth"
+      ],
+      "inbound_count": 21,
+      "inbound_from": [
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
+        "blog/watermark-growth",
+        "marketing/creator-challenge-program"
+      ]
+    },
+    {
+      "pageKey": "blog/git-commit-attribution",
+      "slug": "git-commit-attribution",
+      "locale": "zh",
+      "route": "blog",
+      "title": "AI 提交署名：编码 Agent 的 Commit Trailer 增长与争议",
+      "pageUrl": "https://alignify.co/zh/blog/git-commit-attribution",
+      "category": "marketing",
+      "total_internal_links": 5,
+      "distinct_targets": 5,
+      "targets": [
+        "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/rate-limit-reset",
+        "marketing/competitive-analysis",
+        "marketing/pricing-strategy"
+      ],
+      "target_counts": {
+        "marketing/pricing-strategy": 1,
+        "marketing/competitive-analysis": 1,
+        "blog/rate-limit-reset": 1,
+        "blog/coding-plan": 1,
+        "blog/embedded-virality": 1
+      },
+      "duplicates": [],
+      "inbound_count": 8,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating"
+      ]
+    },
+    {
       "pageKey": "blog/git-hosting",
       "slug": "git-hosting",
       "locale": "zh",
@@ -10643,8 +11003,10 @@
         "tools/cli",
         "tools/code-review"
       ],
-      "inbound_count": 0,
-      "inbound_from": []
+      "inbound_count": 2,
+      "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai"
+      ]
     },
     {
       "pageKey": "blog/github-for-marketing",
@@ -10657,16 +11019,17 @@
       "total_internal_links": 2,
       "distinct_targets": 2,
       "targets": [
-        "blog/how-to-write-github-readme",
-        "services"
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "blog/how-to-write-github-readme"
       ],
       "target_counts": {
         "blog/how-to-write-github-readme": 1,
-        "services": 1
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 1
       },
       "duplicates": [],
-      "inbound_count": 2,
+      "inbound_count": 4,
       "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
         "blog/how-to-write-github-readme"
       ]
     },
@@ -10695,8 +11058,57 @@
         "blog/ai-traffic-and-citation-sources": 1
       },
       "duplicates": [],
-      "inbound_count": 0,
-      "inbound_from": []
+      "inbound_count": 4,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating"
+      ]
+    },
+    {
+      "pageKey": "blog/how-to-build-a-blog-without-a-cms-using-ai",
+      "slug": "how-to-build-a-blog-without-a-cms-using-ai",
+      "locale": "zh",
+      "route": "blog",
+      "title": "如何不用 CMS，用 AI 搭建整个博客网站",
+      "pageUrl": "https://alignify.co/zh/blog/how-to-build-a-blog-without-a-cms-using-ai",
+      "category": "coding-dev",
+      "total_internal_links": 12,
+      "distinct_targets": 11,
+      "targets": [
+        "blog/git-hosting",
+        "blog/github-for-marketing",
+        "blog/subdirectory-hosting",
+        "glossary/seo",
+        "seo/sitemap",
+        "seo/subdomain-vs-subfolder",
+        "skills",
+        "tools/agent-skills",
+        "tools/app-builder",
+        "tools/ide",
+        "tools/vibe-coding"
+      ],
+      "target_counts": {
+        "tools/ide": 1,
+        "blog/subdirectory-hosting": 2,
+        "tools/vibe-coding": 1,
+        "seo/sitemap": 1,
+        "blog/git-hosting": 1,
+        "tools/agent-skills": 1,
+        "tools/app-builder": 1,
+        "skills": 1,
+        "blog/github-for-marketing": 1,
+        "seo/subdomain-vs-subfolder": 1,
+        "glossary/seo": 1
+      },
+      "duplicates": [
+        "blog/subdirectory-hosting"
+      ],
+      "inbound_count": 12,
+      "inbound_from": [
+        "blog/github-for-marketing",
+        "blog/subdirectory-hosting",
+        "tools/vibe-coding"
+      ]
     },
     {
       "pageKey": "blog/how-to-name-ai-products",
@@ -10726,15 +11138,13 @@
       "title": "如何写GitHub README：SEO与增长最佳实践指南",
       "pageUrl": "https://alignify.co/zh/blog/how-to-write-github-readme",
       "category": "marketing",
-      "total_internal_links": 2,
-      "distinct_targets": 2,
+      "total_internal_links": 1,
+      "distinct_targets": 1,
       "targets": [
-        "blog/github-for-marketing",
-        "services"
+        "blog/github-for-marketing"
       ],
       "target_counts": {
-        "blog/github-for-marketing": 1,
-        "services": 1
+        "blog/github-for-marketing": 1
       },
       "duplicates": [],
       "inbound_count": 2,
@@ -10870,6 +11280,53 @@
       ]
     },
     {
+      "pageKey": "blog/platform-subdomain-gating",
+      "slug": "platform-subdomain-gating",
+      "locale": "zh",
+      "route": "blog",
+      "title": "平台子域增长：SaaS 用地址栏换分发",
+      "pageUrl": "https://alignify.co/zh/blog/platform-subdomain-gating",
+      "category": "marketing",
+      "total_internal_links": 17,
+      "distinct_targets": 10,
+      "targets": [
+        "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/how-to-add-payments-to-vibe-coded-app",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
+        "marketing/lifetime-deal",
+        "marketing/pricing-strategy",
+        "seo/subdomain-vs-subfolder"
+      ],
+      "target_counts": {
+        "blog/embedded-virality": 3,
+        "blog/watermark-growth": 3,
+        "seo/subdomain-vs-subfolder": 1,
+        "blog/ugc-marketing": 2,
+        "blog/rate-limit-reset": 2,
+        "blog/how-to-add-payments-to-vibe-coded-app": 1,
+        "marketing/pricing-strategy": 1,
+        "blog/git-commit-attribution": 2,
+        "marketing/lifetime-deal": 1,
+        "blog/coding-plan": 1
+      },
+      "duplicates": [
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "blog/watermark-growth"
+      ],
+      "inbound_count": 5,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/watermark-growth"
+      ]
+    },
+    {
       "pageKey": "blog/rate-limit-reset",
       "slug": "rate-limit-reset",
       "locale": "zh",
@@ -10877,7 +11334,7 @@
       "title": "用量限额重置：AI Agent 双窗限额下的增长促销策略",
       "pageUrl": "https://alignify.co/zh/blog/rate-limit-reset",
       "category": "marketing",
-      "total_internal_links": 7,
+      "total_internal_links": 6,
       "distinct_targets": 5,
       "targets": [
         "blog/coding-plan",
@@ -10887,7 +11344,7 @@
         "marketing/x-formerly-twitter"
       ],
       "target_counts": {
-        "marketing/pricing-strategy": 3,
+        "marketing/pricing-strategy": 2,
         "marketing/affiliate": 1,
         "marketing/x-formerly-twitter": 1,
         "marketing/competitive-analysis": 1,
@@ -10896,12 +11353,122 @@
       "duplicates": [
         "marketing/pricing-strategy"
       ],
-      "inbound_count": 10,
+      "inbound_count": 18,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
+        "blog/wrapped-marketing"
+      ]
+    },
+    {
+      "pageKey": "blog/subdirectory-hosting",
+      "slug": "subdirectory-hosting",
+      "locale": "zh",
+      "route": "blog",
+      "title": "主域名下的分块建站：一个域名，多套独立部署怎么拼",
+      "pageUrl": "https://alignify.co/zh/blog/subdirectory-hosting",
+      "category": "coding-dev",
+      "total_internal_links": 7,
+      "distinct_targets": 4,
+      "targets": [
+        "audit-website-by-lovable",
+        "blog/how-to-build-a-blog-without-a-cms-using-ai",
+        "seo/sitemap",
+        "seo/subdomain-vs-subfolder"
+      ],
+      "target_counts": {
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 4,
+        "seo/subdomain-vs-subfolder": 1,
+        "audit-website-by-lovable": 1,
+        "seo/sitemap": 1
+      },
+      "duplicates": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai"
+      ],
+      "inbound_count": 4,
+      "inbound_from": [
+        "blog/how-to-build-a-blog-without-a-cms-using-ai"
+      ]
+    },
+    {
+      "pageKey": "blog/ugc-marketing",
+      "slug": "ugc-marketing",
+      "locale": "zh",
+      "route": "blog",
+      "title": "UGC 营销策略：AI 产品的创作者网络、Whitelisting 与 FTC 合规",
+      "pageUrl": "https://alignify.co/zh/blog/ugc-marketing",
+      "category": "marketing",
+      "total_internal_links": 6,
+      "distinct_targets": 5,
+      "targets": [
+        "blog/rate-limit-reset",
+        "marketing/affiliate",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/influencer"
+      ],
+      "target_counts": {
+        "marketing/creator-program": 1,
+        "marketing/creator-challenge-program": 2,
+        "marketing/affiliate": 1,
+        "marketing/influencer": 1,
+        "blog/rate-limit-reset": 1
+      },
+      "duplicates": [
+        "marketing/creator-challenge-program"
+      ],
+      "inbound_count": 17,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "blog/watermark-growth",
         "blog/wrapped-marketing",
+        "marketing/affiliate",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/influencer"
+      ]
+    },
+    {
+      "pageKey": "blog/watermark-growth",
+      "slug": "watermark-growth",
+      "locale": "zh",
+      "route": "blog",
+      "title": "免费导出带 logo：AI 产品用水印做增长",
+      "pageUrl": "https://alignify.co/zh/blog/watermark-growth",
+      "category": "marketing",
+      "total_internal_links": 11,
+      "distinct_targets": 7,
+      "targets": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/creator-challenge-program",
         "marketing/lifetime-deal",
-        "marketing/ugc-marketing"
+        "marketing/pricing-strategy"
+      ],
+      "target_counts": {
+        "blog/embedded-virality": 5,
+        "marketing/creator-challenge-program": 1,
+        "marketing/pricing-strategy": 1,
+        "marketing/lifetime-deal": 1,
+        "blog/rate-limit-reset": 1,
+        "blog/ugc-marketing": 1,
+        "blog/platform-subdomain-gating": 1
+      },
+      "duplicates": [
+        "blog/embedded-virality"
+      ],
+      "inbound_count": 12,
+      "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "marketing/creator-challenge-program"
       ]
     },
     {
@@ -10945,23 +11512,21 @@
       "title": "年终回顾营销：AI 产品 Wrapped 留存与传播策略",
       "pageUrl": "https://alignify.co/zh/blog/wrapped-marketing",
       "category": "marketing",
-      "total_internal_links": 5,
+      "total_internal_links": 4,
       "distinct_targets": 4,
       "targets": [
         "blog/rate-limit-reset",
+        "blog/ugc-marketing",
         "marketing/creator-challenge-program",
-        "marketing/pricing-strategy",
-        "marketing/ugc-marketing"
+        "marketing/pricing-strategy"
       ],
       "target_counts": {
-        "marketing/ugc-marketing": 2,
+        "blog/ugc-marketing": 1,
         "blog/rate-limit-reset": 1,
         "marketing/creator-challenge-program": 1,
         "marketing/pricing-strategy": 1
       },
-      "duplicates": [
-        "marketing/ugc-marketing"
-      ],
+      "duplicates": [],
       "inbound_count": 0,
       "inbound_from": []
     },
@@ -10973,20 +11538,25 @@
       "title": "Affiliate Marketing: CPS Commission Strategy",
       "pageUrl": "https://alignify.co/marketing/affiliate",
       "category": "marketing",
-      "total_internal_links": 2,
-      "distinct_targets": 1,
+      "total_internal_links": 4,
+      "distinct_targets": 3,
       "targets": [
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
         "tools/affiliate-marketing"
       ],
       "target_counts": {
-        "tools/affiliate-marketing": 2
+        "tools/affiliate-marketing": 1,
+        "marketing/creator-program": 1,
+        "marketing/creator-challenge-program": 2
       },
       "duplicates": [
-        "tools/affiliate-marketing"
+        "marketing/creator-challenge-program"
       ],
-      "inbound_count": 23,
+      "inbound_count": 24,
       "inbound_from": [
         "blog/rate-limit-reset",
+        "blog/ugc-marketing",
         "insights/indie-hackers",
         "marketing/creator-challenge-program",
         "marketing/creator-program",
@@ -10995,9 +11565,7 @@
         "marketing/influencer",
         "marketing/lifetime-deal",
         "marketing/pricing-strategy",
-        "marketing/referral-program",
-        "marketing/ugc-marketing",
-        "tools/affiliate-marketing"
+        "marketing/referral-program"
       ]
     },
     {
@@ -11021,9 +11589,10 @@
       "duplicates": [
         "marketing/keyword-research"
       ],
-      "inbound_count": 16,
+      "inbound_count": 18,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/git-commit-attribution",
         "blog/rate-limit-reset",
         "insights/ai-logo-design",
         "insights/indie-hackers",
@@ -11038,24 +11607,39 @@
       "slug": "creator-challenge-program",
       "locale": "en",
       "route": "marketing",
-      "title": "Creator Contests: UGC Topic Marketing",
+      "title": "Creator Challenges for AI Products: A Growth Playbook",
       "pageUrl": "https://alignify.co/marketing/creator-challenge-program",
       "category": "marketing",
-      "total_internal_links": 1,
-      "distinct_targets": 1,
+      "total_internal_links": 8,
+      "distinct_targets": 5,
       "targets": [
+        "blog/embedded-virality",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
+        "marketing/affiliate",
         "marketing/creator-program"
       ],
       "target_counts": {
-        "marketing/creator-program": 1
+        "blog/ugc-marketing": 2,
+        "marketing/creator-program": 2,
+        "blog/watermark-growth": 1,
+        "marketing/affiliate": 2,
+        "blog/embedded-virality": 1
       },
-      "duplicates": [],
-      "inbound_count": 6,
+      "duplicates": [
+        "blog/ugc-marketing",
+        "marketing/affiliate",
+        "marketing/creator-program"
+      ],
+      "inbound_count": 20,
       "inbound_from": [
+        "blog/embedded-virality",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
         "blog/wrapped-marketing",
         "marketing/affiliate",
         "marketing/creator-program",
-        "marketing/ugc-marketing"
+        "marketing/influencer"
       ]
     },
     {
@@ -11066,24 +11650,30 @@
       "title": "Creator Programs: Long-Term Content Co-Creation",
       "pageUrl": "https://alignify.co/marketing/creator-program",
       "category": "marketing",
-      "total_internal_links": 1,
-      "distinct_targets": 1,
+      "total_internal_links": 4,
+      "distinct_targets": 3,
       "targets": [
-        "marketing/affiliate"
+        "marketing/affiliate",
+        "marketing/creator-challenge-program",
+        "marketing/influencer"
       ],
       "target_counts": {
-        "marketing/affiliate": 1
+        "marketing/affiliate": 1,
+        "marketing/influencer": 1,
+        "marketing/creator-challenge-program": 2
       },
-      "duplicates": [],
-      "inbound_count": 13,
+      "duplicates": [
+        "marketing/creator-challenge-program"
+      ],
+      "inbound_count": 19,
       "inbound_from": [
+        "blog/ugc-marketing",
         "marketing/affiliate",
         "marketing/creator-challenge-program",
         "marketing/geo",
         "marketing/influencer",
         "marketing/lifetime-deal",
-        "marketing/marketing-types",
-        "marketing/ugc-marketing"
+        "marketing/marketing-types"
       ]
     },
     {
@@ -11119,32 +11709,26 @@
       "title": "GEO/AEO: Generative Engine Optimization",
       "pageUrl": "https://alignify.co/marketing/geo",
       "category": "geo",
-      "total_internal_links": 9,
-      "distinct_targets": 8,
+      "total_internal_links": 6,
+      "distinct_targets": 5,
       "targets": [
-        "blog/ai-traffic-and-citation-sources",
-        "blog/ai-visibility",
         "marketing/affiliate",
         "marketing/creator-program",
         "marketing/influencer",
         "seo/how-search-engine-works",
-        "seo/search-engine",
-        "tools/geo"
+        "seo/search-engine"
       ],
       "target_counts": {
         "marketing/creator-program": 1,
         "seo/search-engine": 1,
         "seo/how-search-engine-works": 2,
         "marketing/influencer": 1,
-        "marketing/affiliate": 1,
-        "tools/geo": 1,
-        "blog/ai-visibility": 1,
-        "blog/ai-traffic-and-citation-sources": 1
+        "marketing/affiliate": 1
       },
       "duplicates": [
         "seo/how-search-engine-works"
       ],
-      "inbound_count": 27,
+      "inbound_count": 25,
       "inbound_from": [
         "blog/coding-plan",
         "insights/directory-submission-sites",
@@ -11157,8 +11741,7 @@
         "seo/breadcrumbs",
         "seo/checklist",
         "seo/schema",
-        "seo/search-engine",
-        "tools/geo"
+        "seo/search-engine"
       ]
     },
     {
@@ -11187,28 +11770,32 @@
       "title": "Influencer Marketing: Drive Growth & Brand for AI/SaaS Products",
       "pageUrl": "https://alignify.co/marketing/influencer",
       "category": "marketing",
-      "total_internal_links": 3,
-      "distinct_targets": 2,
+      "total_internal_links": 8,
+      "distinct_targets": 4,
       "targets": [
+        "blog/ugc-marketing",
         "marketing/affiliate",
+        "marketing/creator-challenge-program",
         "marketing/creator-program"
       ],
       "target_counts": {
-        "marketing/affiliate": 2,
-        "marketing/creator-program": 1
+        "marketing/affiliate": 3,
+        "marketing/creator-program": 3,
+        "blog/ugc-marketing": 1,
+        "marketing/creator-challenge-program": 1
       },
       "duplicates": [
-        "marketing/affiliate"
+        "marketing/affiliate",
+        "marketing/creator-program"
       ],
       "inbound_count": 10,
       "inbound_from": [
+        "blog/ugc-marketing",
         "marketing/affiliate",
         "marketing/competitive-analysis",
         "marketing/creator-program",
         "marketing/geo",
-        "marketing/ugc-marketing",
-        "marketing/x-formerly-twitter",
-        "tools/influencer-marketing"
+        "marketing/x-formerly-twitter"
       ]
     },
     {
@@ -11246,11 +11833,10 @@
       "title": "Lifetime Deal Strategy: Debt, Credits & AppSumo in 2026",
       "pageUrl": "https://alignify.co/marketing/lifetime-deal",
       "category": "marketing",
-      "total_internal_links": 8,
-      "distinct_targets": 8,
+      "total_internal_links": 7,
+      "distinct_targets": 7,
       "targets": [
         "blog/coding-plan",
-        "blog/rate-limit-reset",
         "marketing/affiliate",
         "marketing/competitive-analysis",
         "marketing/creator-program",
@@ -11265,15 +11851,16 @@
         "seo/landing-page": 1,
         "marketing/competitive-analysis": 1,
         "marketing/creator-program": 1,
-        "blog/coding-plan": 1,
-        "blog/rate-limit-reset": 1
+        "blog/coding-plan": 1
       },
       "duplicates": [],
-      "inbound_count": 9,
+      "inbound_count": 13,
       "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "blog/watermark-growth",
         "insights/indie-hackers",
-        "marketing/pricing-strategy",
-        "marketing/ugc-marketing"
+        "marketing/pricing-strategy"
       ]
     },
     {
@@ -11337,10 +11924,14 @@
       "duplicates": [
         "marketing/competitive-analysis"
       ],
-      "inbound_count": 23,
+      "inbound_count": 29,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
         "blog/rate-limit-reset",
+        "blog/watermark-growth",
         "blog/wrapped-marketing",
         "insights/generative-ai-landscape",
         "insights/indie-hackers",
@@ -11378,7 +11969,7 @@
       "title": "Referral Program: User Growth Strategy",
       "pageUrl": "https://alignify.co/marketing/referral-program",
       "category": "marketing",
-      "total_internal_links": 3,
+      "total_internal_links": 2,
       "distinct_targets": 2,
       "targets": [
         "blog/coding-plan",
@@ -11386,57 +11977,16 @@
       ],
       "target_counts": {
         "blog/coding-plan": 1,
-        "tools/referral-program": 2
+        "tools/referral-program": 1
       },
-      "duplicates": [
-        "tools/referral-program"
-      ],
-      "inbound_count": 9,
+      "duplicates": [],
+      "inbound_count": 7,
       "inbound_from": [
         "blog/coding-plan",
         "marketing/affiliate",
         "marketing/growth-case-studies",
         "marketing/lifetime-deal",
-        "marketing/pricing-strategy",
-        "tools/referral-program"
-      ]
-    },
-    {
-      "pageKey": "marketing/ugc-marketing",
-      "slug": "ugc-marketing",
-      "locale": "en",
-      "route": "marketing",
-      "title": "UGC Marketing Strategy: Creator Networks, Whitelisting & FTC Rules for AI",
-      "pageUrl": "https://alignify.co/marketing/ugc-marketing",
-      "category": "marketing",
-      "total_internal_links": 7,
-      "distinct_targets": 7,
-      "targets": [
-        "blog/rate-limit-reset",
-        "marketing/affiliate",
-        "marketing/creator-challenge-program",
-        "marketing/creator-program",
-        "marketing/influencer",
-        "marketing/lifetime-deal",
-        "seo/landing-page"
-      ],
-      "target_counts": {
-        "marketing/affiliate": 1,
-        "seo/landing-page": 1,
-        "marketing/influencer": 1,
-        "marketing/creator-challenge-program": 1,
-        "blog/rate-limit-reset": 1,
-        "marketing/creator-program": 1,
-        "marketing/lifetime-deal": 1
-      },
-      "duplicates": [],
-      "inbound_count": 8,
-      "inbound_from": [
-        "blog/wrapped-marketing",
-        "marketing/affiliate",
-        "marketing/creator-challenge-program",
-        "marketing/creator-program",
-        "marketing/influencer"
+        "marketing/pricing-strategy"
       ]
     },
     {
@@ -11474,32 +12024,34 @@
       "title": "联盟营销：CPS佣金制获客策略",
       "pageUrl": "https://alignify.co/zh/marketing/affiliate",
       "category": "marketing",
-      "total_internal_links": 8,
-      "distinct_targets": 8,
+      "total_internal_links": 9,
+      "distinct_targets": 7,
       "targets": [
+        "blog/ugc-marketing",
         "marketing/competitive-analysis",
         "marketing/creator-challenge-program",
         "marketing/creator-program",
         "marketing/influencer",
         "marketing/pricing-strategy",
-        "marketing/referral-program",
-        "marketing/ugc-marketing",
-        "tools/affiliate-marketing"
+        "marketing/referral-program"
       ],
       "target_counts": {
         "marketing/referral-program": 1,
         "marketing/influencer": 1,
-        "marketing/ugc-marketing": 1,
+        "blog/ugc-marketing": 1,
         "marketing/competitive-analysis": 1,
-        "marketing/creator-challenge-program": 1,
         "marketing/pricing-strategy": 1,
-        "tools/affiliate-marketing": 1,
-        "marketing/creator-program": 1
+        "marketing/creator-program": 2,
+        "marketing/creator-challenge-program": 2
       },
-      "duplicates": [],
-      "inbound_count": 23,
+      "duplicates": [
+        "marketing/creator-challenge-program",
+        "marketing/creator-program"
+      ],
+      "inbound_count": 24,
       "inbound_from": [
         "blog/rate-limit-reset",
+        "blog/ugc-marketing",
         "insights/indie-hackers",
         "marketing/creator-challenge-program",
         "marketing/creator-program",
@@ -11508,9 +12060,7 @@
         "marketing/influencer",
         "marketing/lifetime-deal",
         "marketing/pricing-strategy",
-        "marketing/referral-program",
-        "marketing/ugc-marketing",
-        "tools/affiliate-marketing"
+        "marketing/referral-program"
       ]
     },
     {
@@ -11542,9 +12092,10 @@
       "duplicates": [
         "marketing/keyword-research"
       ],
-      "inbound_count": 16,
+      "inbound_count": 18,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/git-commit-attribution",
         "blog/rate-limit-reset",
         "insights/ai-logo-design",
         "insights/indie-hackers",
@@ -11559,28 +12110,35 @@
       "slug": "creator-challenge-program",
       "locale": "zh",
       "route": "marketing",
-      "title": "创作竞赛：UGC话题营销策略",
+      "title": "如何用创作者挑战赛为 AI 产品带来增长",
       "pageUrl": "https://alignify.co/zh/marketing/creator-challenge-program",
       "category": "marketing",
-      "total_internal_links": 3,
-      "distinct_targets": 3,
+      "total_internal_links": 5,
+      "distinct_targets": 5,
       "targets": [
+        "blog/embedded-virality",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
         "marketing/affiliate",
-        "marketing/creator-program",
-        "marketing/ugc-marketing"
+        "marketing/creator-program"
       ],
       "target_counts": {
-        "marketing/ugc-marketing": 1,
+        "blog/ugc-marketing": 1,
         "marketing/creator-program": 1,
-        "marketing/affiliate": 1
+        "blog/watermark-growth": 1,
+        "marketing/affiliate": 1,
+        "blog/embedded-virality": 1
       },
       "duplicates": [],
-      "inbound_count": 6,
+      "inbound_count": 20,
       "inbound_from": [
+        "blog/embedded-virality",
+        "blog/ugc-marketing",
+        "blog/watermark-growth",
         "blog/wrapped-marketing",
         "marketing/affiliate",
         "marketing/creator-program",
-        "marketing/ugc-marketing"
+        "marketing/influencer"
       ]
     },
     {
@@ -11591,30 +12149,32 @@
       "title": "创作者计划：长期内容共创策略",
       "pageUrl": "https://alignify.co/zh/marketing/creator-program",
       "category": "marketing",
-      "total_internal_links": 4,
+      "total_internal_links": 5,
       "distinct_targets": 4,
       "targets": [
+        "blog/ugc-marketing",
         "marketing/affiliate",
         "marketing/creator-challenge-program",
-        "marketing/influencer",
-        "marketing/ugc-marketing"
+        "marketing/influencer"
       ],
       "target_counts": {
-        "marketing/ugc-marketing": 1,
+        "blog/ugc-marketing": 1,
         "marketing/affiliate": 1,
         "marketing/influencer": 1,
-        "marketing/creator-challenge-program": 1
+        "marketing/creator-challenge-program": 2
       },
-      "duplicates": [],
-      "inbound_count": 13,
+      "duplicates": [
+        "marketing/creator-challenge-program"
+      ],
+      "inbound_count": 19,
       "inbound_from": [
+        "blog/ugc-marketing",
         "marketing/affiliate",
         "marketing/creator-challenge-program",
         "marketing/geo",
         "marketing/influencer",
         "marketing/lifetime-deal",
-        "marketing/marketing-types",
-        "marketing/ugc-marketing"
+        "marketing/marketing-types"
       ]
     },
     {
@@ -11648,18 +12208,15 @@
       "title": "GEO/AEO：生成式引擎优化策略",
       "pageUrl": "https://alignify.co/zh/marketing/geo",
       "category": "geo",
-      "total_internal_links": 9,
-      "distinct_targets": 9,
+      "total_internal_links": 6,
+      "distinct_targets": 6,
       "targets": [
-        "blog/ai-traffic-and-citation-sources",
-        "blog/ai-visibility",
         "marketing/affiliate",
         "marketing/creator-program",
         "marketing/influencer",
         "marketing/keyword-research",
         "seo/how-search-engine-works",
-        "seo/search-engine",
-        "tools/geo"
+        "seo/search-engine"
       ],
       "target_counts": {
         "marketing/creator-program": 1,
@@ -11667,13 +12224,10 @@
         "seo/how-search-engine-works": 1,
         "marketing/keyword-research": 1,
         "marketing/influencer": 1,
-        "marketing/affiliate": 1,
-        "tools/geo": 1,
-        "blog/ai-visibility": 1,
-        "blog/ai-traffic-and-citation-sources": 1
+        "marketing/affiliate": 1
       },
       "duplicates": [],
-      "inbound_count": 27,
+      "inbound_count": 25,
       "inbound_from": [
         "blog/coding-plan",
         "insights/directory-submission-sites",
@@ -11686,8 +12240,7 @@
         "seo/breadcrumbs",
         "seo/checklist",
         "seo/schema",
-        "seo/search-engine",
-        "tools/geo"
+        "seo/search-engine"
       ]
     },
     {
@@ -11724,19 +12277,19 @@
       "title": "红人营销：KOL信任建设策略",
       "pageUrl": "https://alignify.co/zh/marketing/influencer",
       "category": "marketing",
-      "total_internal_links": 7,
+      "total_internal_links": 8,
       "distinct_targets": 4,
       "targets": [
+        "blog/ugc-marketing",
         "marketing/affiliate",
-        "marketing/creator-program",
-        "marketing/ugc-marketing",
-        "tools/influencer-marketing"
+        "marketing/creator-challenge-program",
+        "marketing/creator-program"
       ],
       "target_counts": {
         "marketing/affiliate": 3,
-        "marketing/creator-program": 2,
-        "marketing/ugc-marketing": 1,
-        "tools/influencer-marketing": 1
+        "marketing/creator-program": 3,
+        "blog/ugc-marketing": 1,
+        "marketing/creator-challenge-program": 1
       },
       "duplicates": [
         "marketing/affiliate",
@@ -11744,13 +12297,12 @@
       ],
       "inbound_count": 10,
       "inbound_from": [
+        "blog/ugc-marketing",
         "marketing/affiliate",
         "marketing/competitive-analysis",
         "marketing/creator-program",
         "marketing/geo",
-        "marketing/ugc-marketing",
-        "marketing/x-formerly-twitter",
-        "tools/influencer-marketing"
+        "marketing/x-formerly-twitter"
       ]
     },
     {
@@ -11794,11 +12346,10 @@
       "title": "Lifetime Deal 策略：2026 AI 产品的买断与 credits 结构",
       "pageUrl": "https://alignify.co/zh/marketing/lifetime-deal",
       "category": "marketing",
-      "total_internal_links": 7,
-      "distinct_targets": 7,
+      "total_internal_links": 6,
+      "distinct_targets": 6,
       "targets": [
         "blog/coding-plan",
-        "blog/rate-limit-reset",
         "marketing/affiliate",
         "marketing/competitive-analysis",
         "marketing/creator-program",
@@ -11811,15 +12362,16 @@
         "marketing/referral-program": 1,
         "marketing/competitive-analysis": 1,
         "marketing/creator-program": 1,
-        "blog/coding-plan": 1,
-        "blog/rate-limit-reset": 1
+        "blog/coding-plan": 1
       },
       "duplicates": [],
-      "inbound_count": 9,
+      "inbound_count": 13,
       "inbound_from": [
+        "blog/embedded-virality",
+        "blog/platform-subdomain-gating",
+        "blog/watermark-growth",
         "insights/indie-hackers",
-        "marketing/pricing-strategy",
-        "marketing/ugc-marketing"
+        "marketing/pricing-strategy"
       ]
     },
     {
@@ -11899,10 +12451,14 @@
       "duplicates": [
         "marketing/competitive-analysis"
       ],
-      "inbound_count": 23,
+      "inbound_count": 29,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/embedded-virality",
+        "blog/git-commit-attribution",
+        "blog/platform-subdomain-gating",
         "blog/rate-limit-reset",
+        "blog/watermark-growth",
         "blog/wrapped-marketing",
         "insights/generative-ai-landscape",
         "insights/indie-hackers",
@@ -11946,7 +12502,7 @@
       "title": "推荐奖励计划：用户增长策略",
       "pageUrl": "https://alignify.co/zh/marketing/referral-program",
       "category": "marketing",
-      "total_internal_links": 5,
+      "total_internal_links": 4,
       "distinct_targets": 4,
       "targets": [
         "blog/coding-plan",
@@ -11958,55 +12514,16 @@
         "marketing/pricing-strategy": 1,
         "blog/coding-plan": 1,
         "marketing/affiliate": 1,
-        "tools/referral-program": 2
+        "tools/referral-program": 1
       },
-      "duplicates": [
-        "tools/referral-program"
-      ],
-      "inbound_count": 9,
+      "duplicates": [],
+      "inbound_count": 7,
       "inbound_from": [
         "blog/coding-plan",
         "marketing/affiliate",
         "marketing/growth-case-studies",
         "marketing/lifetime-deal",
-        "marketing/pricing-strategy",
-        "tools/referral-program"
-      ]
-    },
-    {
-      "pageKey": "marketing/ugc-marketing",
-      "slug": "ugc-marketing",
-      "locale": "zh",
-      "route": "marketing",
-      "title": "UGC 营销策略：AI 产品的创作者网络、Whitelisting 与 FTC 合规",
-      "pageUrl": "https://alignify.co/zh/marketing/ugc-marketing",
-      "category": "marketing",
-      "total_internal_links": 6,
-      "distinct_targets": 6,
-      "targets": [
-        "blog/rate-limit-reset",
-        "marketing/affiliate",
-        "marketing/creator-challenge-program",
-        "marketing/creator-program",
-        "marketing/influencer",
-        "marketing/lifetime-deal"
-      ],
-      "target_counts": {
-        "marketing/affiliate": 1,
-        "marketing/influencer": 1,
-        "marketing/creator-challenge-program": 1,
-        "blog/rate-limit-reset": 1,
-        "marketing/creator-program": 1,
-        "marketing/lifetime-deal": 1
-      },
-      "duplicates": [],
-      "inbound_count": 8,
-      "inbound_from": [
-        "blog/wrapped-marketing",
-        "marketing/affiliate",
-        "marketing/creator-challenge-program",
-        "marketing/creator-program",
-        "marketing/influencer"
+        "marketing/pricing-strategy"
       ]
     },
     {
@@ -12026,10 +12543,10 @@
         "seo/meta-tag"
       ],
       "target_counts": {
-        "marketing/reddit": 1,
-        "seo/meta-tag": 1,
         "insights/indie-hackers": 1,
-        "marketing/influencer": 1
+        "marketing/reddit": 1,
+        "marketing/influencer": 1,
+        "seo/meta-tag": 1
       },
       "duplicates": [],
       "inbound_count": 9,
@@ -12063,10 +12580,8 @@
       "duplicates": [
         "tools/logo-generator"
       ],
-      "inbound_count": 2,
-      "inbound_from": [
-        "tools/logo-generator"
-      ]
+      "inbound_count": 0,
+      "inbound_from": []
     },
     {
       "pageKey": "insights/directory-submission-sites",
@@ -12282,10 +12797,8 @@
       "duplicates": [
         "tools/logo-generator"
       ],
-      "inbound_count": 2,
-      "inbound_from": [
-        "tools/logo-generator"
-      ]
+      "inbound_count": 0,
+      "inbound_from": []
     },
     {
       "pageKey": "insights/directory-submission-sites",
@@ -12725,12 +13238,12 @@
       }
     },
     "tools/referral-program": {
-      "count": 8,
+      "count": 6,
       "from": {
         "tools/affiliate-marketing": 2,
         "tools/influencer-marketing": 1,
         "tools/lead-generation": 1,
-        "marketing/referral-program": 4
+        "marketing/referral-program": 2
       }
     },
     "blog/agentic-commerce": {
@@ -12753,23 +13266,6 @@
         "tools/referral-program": 1,
         "tools/influencer-marketing": 1,
         "tools/recruiting": 1
-      }
-    },
-    "marketing/affiliate": {
-      "count": 23,
-      "from": {
-        "tools/affiliate-marketing": 2,
-        "blog/rate-limit-reset": 2,
-        "marketing/creator-program": 2,
-        "marketing/geo": 2,
-        "marketing/influencer": 5,
-        "marketing/lifetime-deal": 2,
-        "marketing/ugc-marketing": 2,
-        "marketing/creator-challenge-program": 1,
-        "marketing/growth-case-studies": 1,
-        "marketing/pricing-strategy": 1,
-        "marketing/referral-program": 1,
-        "insights/indie-hackers": 2
       }
     },
     "tools/browser": {
@@ -12799,14 +13295,15 @@
       }
     },
     "tools/ide": {
-      "count": 10,
+      "count": 12,
       "from": {
         "tools/agent-for-desktop": 2,
         "tools/cli": 1,
         "tools/code-completion": 2,
         "tools/coding": 2,
         "tools/documentation": 2,
-        "tools/headless-browser": 1
+        "tools/headless-browser": 1,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2
       }
     },
     "tools/productivity": {
@@ -12915,7 +13412,7 @@
       }
     },
     "tools/vibe-coding": {
-      "count": 14,
+      "count": 16,
       "from": {
         "tools/agent-skills": 2,
         "tools/app-builder": 2,
@@ -12925,7 +13422,8 @@
         "tools/cli": 1,
         "tools/coding": 1,
         "tools/website-builder": 1,
-        "blog/how-to-add-payments-to-vibe-coded-app": 2
+        "blog/how-to-add-payments-to-vibe-coded-app": 2,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2
       }
     },
     "tools/code-completion": {
@@ -13023,7 +13521,7 @@
       }
     },
     "tools/app-builder": {
-      "count": 14,
+      "count": 16,
       "from": {
         "tools/agent-skills": 1,
         "tools/authentication": 1,
@@ -13032,6 +13530,7 @@
         "tools/vibe-coding": 2,
         "blog/ai-components": 2,
         "blog/how-to-add-payments-to-vibe-coded-app": 2,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2,
         "insights/indie-hackers": 2
       }
     },
@@ -13072,12 +13571,6 @@
         "blog/agent-memory": 2,
         "blog/agentic-payments": 2,
         "blog/multi-agent": 1
-      }
-    },
-    "skills": {
-      "count": 2,
-      "from": {
-        "tools/agent-skills": 2
       }
     },
     "tools/education": {
@@ -13321,23 +13814,6 @@
         "tools/geo": 2
       }
     },
-    "tools/documentation": {
-      "count": 18,
-      "from": {
-        "tools/authentication": 2,
-        "tools/coding": 1,
-        "tools/llm-for-coding": 2,
-        "tools/llm-for-math": 2,
-        "tools/llm": 2,
-        "tools/multimodal-llm": 2,
-        "tools/openclaw-alternatives": 2,
-        "tools/text-generator": 1,
-        "tools/api": 1,
-        "tools/interview-assistant": 1,
-        "tools/recruiting": 1,
-        "tools/website-builder": 1
-      }
-    },
     "tools/lip-sync": {
       "count": 9,
       "from": {
@@ -13551,6 +14027,22 @@
         "tools/essay-writer": 1
       }
     },
+    "tools/documentation": {
+      "count": 16,
+      "from": {
+        "tools/coding": 1,
+        "tools/llm-for-coding": 2,
+        "tools/llm-for-math": 2,
+        "tools/llm": 2,
+        "tools/multimodal-llm": 2,
+        "tools/openclaw-alternatives": 2,
+        "tools/text-generator": 1,
+        "tools/api": 1,
+        "tools/interview-assistant": 1,
+        "tools/recruiting": 1,
+        "tools/website-builder": 1
+      }
+    },
     "tools/character-chat": {
       "count": 5,
       "from": {
@@ -13586,7 +14078,7 @@
       }
     },
     "tools/geo": {
-      "count": 28,
+      "count": 26,
       "from": {
         "tools/documentation": 2,
         "tools/headless-browser": 2,
@@ -13601,12 +14093,11 @@
         "seo/checklist": 2,
         "blog/agentic-commerce": 2,
         "blog/ai-traffic-and-citation-sources": 4,
-        "blog/ai-visibility": 2,
-        "marketing/geo": 2
+        "blog/ai-visibility": 2
       }
     },
     "tools/agent-skills": {
-      "count": 14,
+      "count": 16,
       "from": {
         "tools/evaluation": 1,
         "tools/workflow": 2,
@@ -13615,6 +14106,7 @@
         "blog/agent-memory": 2,
         "blog/agentic-payments": 2,
         "blog/data-engineering-agent": 2,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2,
         "blog/agent-to-agent": 1,
         "blog/inference-infrastructure": 1,
         "blog/multi-agent": 1
@@ -13642,12 +14134,11 @@
       }
     },
     "blog/ai-traffic-and-citation-sources": {
-      "count": 9,
+      "count": 7,
       "from": {
         "tools/geo": 3,
         "blog/ai-visibility": 2,
-        "blog/how-to-add-payments-to-vibe-coded-app": 2,
-        "marketing/geo": 2
+        "blog/how-to-add-payments-to-vibe-coded-app": 2
       }
     },
     "tools/search-indexing": {
@@ -13658,24 +14149,6 @@
         "tools/web-search-api": 2,
         "tools/directory": 1,
         "blog/web-fetch": 2
-      }
-    },
-    "marketing/geo": {
-      "count": 27,
-      "from": {
-        "tools/geo": 2,
-        "seo/breadcrumbs": 2,
-        "seo/checklist": 2,
-        "seo/schema": 3,
-        "seo/search-engine": 2,
-        "blog/coding-plan": 2,
-        "marketing/competitive-analysis": 1,
-        "marketing/keyword-research": 1,
-        "marketing/pricing-strategy": 1,
-        "marketing/reddit": 1,
-        "insights/directory-submission-sites": 2,
-        "insights/indie-hackers": 6,
-        "insights/reasons-you-need-seo": 2
       }
     },
     "tools/image": {
@@ -13762,12 +14235,12 @@
       }
     },
     "tools/affiliate-marketing": {
-      "count": 9,
+      "count": 7,
       "from": {
         "tools/influencer-marketing": 2,
         "tools/referral-program": 2,
         "blog/agentic-commerce": 2,
-        "marketing/affiliate": 3
+        "marketing/affiliate": 1
       }
     },
     "blog/agent-memory": {
@@ -13813,12 +14286,6 @@
         "tools/logo-generator": 2
       }
     },
-    "insights/ai-logo-design": {
-      "count": 2,
-      "from": {
-        "tools/logo-generator": 2
-      }
-    },
     "tools/ocr": {
       "count": 3,
       "from": {
@@ -13839,17 +14306,6 @@
         "tools/productivity": 1,
         "tools/recruiting": 2,
         "blog/multi-agent": 2
-      }
-    },
-    "marketing/referral-program": {
-      "count": 9,
-      "from": {
-        "tools/referral-program": 2,
-        "blog/coding-plan": 2,
-        "marketing/lifetime-deal": 2,
-        "marketing/affiliate": 1,
-        "marketing/growth-case-studies": 1,
-        "marketing/pricing-strategy": 1
       }
     },
     "tools/memory": {
@@ -13905,6 +14361,14 @@
         "tools/religion": 1
       }
     },
+    "blog/how-to-build-a-blog-without-a-cms-using-ai": {
+      "count": 12,
+      "from": {
+        "tools/vibe-coding": 2,
+        "blog/github-for-marketing": 2,
+        "blog/subdirectory-hosting": 8
+      }
+    },
     "tools/video-effects": {
       "count": 8,
       "from": {
@@ -13940,11 +14404,10 @@
       }
     },
     "tools/influencer-marketing": {
-      "count": 3,
+      "count": 2,
       "from": {
         "tools/affiliate-marketing": 1,
-        "tools/referral-program": 1,
-        "marketing/influencer": 1
+        "tools/referral-program": 1
       }
     },
     "tools/spreadsheet": {
@@ -13954,30 +14417,18 @@
       }
     },
     "blog/ai-visibility": {
-      "count": 5,
+      "count": 3,
       "from": {
         "tools/geo": 1,
-        "blog/ai-traffic-and-citation-sources": 2,
-        "marketing/geo": 2
+        "blog/ai-traffic-and-citation-sources": 2
       }
     },
     "tools/social-cards-generator": {
-      "count": 2,
+      "count": 4,
       "from": {
         "tools/influencer-marketing": 1,
-        "tools/poster-generator": 1
-      }
-    },
-    "marketing/influencer": {
-      "count": 10,
-      "from": {
-        "tools/influencer-marketing": 1,
-        "marketing/geo": 2,
-        "marketing/ugc-marketing": 2,
-        "marketing/x-formerly-twitter": 2,
-        "marketing/affiliate": 1,
-        "marketing/competitive-analysis": 1,
-        "marketing/creator-program": 1
+        "tools/poster-generator": 1,
+        "blog/embedded-virality": 2
       }
     },
     "tools/religion": {
@@ -14033,8 +14484,25 @@
         "seo/url-optimization": 2
       }
     },
+    "marketing/geo": {
+      "count": 25,
+      "from": {
+        "seo/breadcrumbs": 2,
+        "seo/checklist": 2,
+        "seo/schema": 3,
+        "seo/search-engine": 2,
+        "blog/coding-plan": 2,
+        "marketing/competitive-analysis": 1,
+        "marketing/keyword-research": 1,
+        "marketing/pricing-strategy": 1,
+        "marketing/reddit": 1,
+        "insights/directory-submission-sites": 2,
+        "insights/indie-hackers": 6,
+        "insights/reasons-you-need-seo": 2
+      }
+    },
     "seo/sitemap": {
-      "count": 17,
+      "count": 21,
       "from": {
         "seo/breadcrumbs": 2,
         "seo/category-pages": 2,
@@ -14043,7 +14511,9 @@
         "seo/programmatic-seo": 2,
         "seo/schema": 2,
         "seo/url-optimization": 4,
-        "seo/navigation-menu": 1
+        "seo/navigation-menu": 1,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2,
+        "blog/subdirectory-hosting": 2
       }
     },
     "seo/navigation-menu": {
@@ -14195,8 +14665,8 @@
       "count": 4,
       "from": {
         "seo/checklist": 2,
-        "marketing/lifetime-deal": 1,
-        "marketing/ugc-marketing": 1
+        "blog/ugc-marketing": 1,
+        "marketing/lifetime-deal": 1
       }
     },
     "seo/category-pages": {
@@ -14216,9 +14686,12 @@
       }
     },
     "seo/subdomain-vs-subfolder": {
-      "count": 2,
+      "count": 8,
       "from": {
-        "seo/checklist": 2
+        "seo/checklist": 2,
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2,
+        "blog/platform-subdomain-gating": 2,
+        "blog/subdirectory-hosting": 2
       }
     },
     "glossary": {
@@ -14330,19 +14803,26 @@
       }
     },
     "blog/rate-limit-reset": {
-      "count": 10,
+      "count": 18,
       "from": {
         "blog/coding-plan": 4,
-        "blog/wrapped-marketing": 2,
-        "marketing/lifetime-deal": 2,
-        "marketing/ugc-marketing": 2
+        "blog/embedded-virality": 2,
+        "blog/git-commit-attribution": 2,
+        "blog/platform-subdomain-gating": 4,
+        "blog/ugc-marketing": 2,
+        "blog/watermark-growth": 2,
+        "blog/wrapped-marketing": 2
       }
     },
     "marketing/pricing-strategy": {
-      "count": 23,
+      "count": 29,
       "from": {
         "blog/coding-plan": 2,
-        "blog/rate-limit-reset": 6,
+        "blog/embedded-virality": 2,
+        "blog/git-commit-attribution": 2,
+        "blog/platform-subdomain-gating": 2,
+        "blog/rate-limit-reset": 4,
+        "blog/watermark-growth": 2,
         "blog/wrapped-marketing": 2,
         "marketing/lifetime-deal": 2,
         "marketing/affiliate": 1,
@@ -14354,9 +14834,10 @@
       }
     },
     "marketing/competitive-analysis": {
-      "count": 16,
+      "count": 18,
       "from": {
         "blog/coding-plan": 2,
+        "blog/git-commit-attribution": 2,
         "blog/rate-limit-reset": 2,
         "marketing/lifetime-deal": 2,
         "marketing/pricing-strategy": 4,
@@ -14364,6 +14845,16 @@
         "marketing/keyword-research": 1,
         "insights/ai-logo-design": 2,
         "insights/indie-hackers": 2
+      }
+    },
+    "marketing/referral-program": {
+      "count": 7,
+      "from": {
+        "blog/coding-plan": 2,
+        "marketing/lifetime-deal": 2,
+        "marketing/affiliate": 1,
+        "marketing/growth-case-studies": 1,
+        "marketing/pricing-strategy": 1
       }
     },
     "marketing/x-formerly-twitter": {
@@ -14375,17 +14866,96 @@
         "insights/indie-hackers": 4
       }
     },
+    "blog/how-to-add-payments-to-vibe-coded-app": {
+      "count": 4,
+      "from": {
+        "blog/embedded-virality": 2,
+        "blog/platform-subdomain-gating": 2
+      }
+    },
+    "marketing/lifetime-deal": {
+      "count": 13,
+      "from": {
+        "blog/embedded-virality": 2,
+        "blog/platform-subdomain-gating": 2,
+        "blog/watermark-growth": 2,
+        "marketing/pricing-strategy": 2,
+        "insights/indie-hackers": 5
+      }
+    },
+    "blog/watermark-growth": {
+      "count": 12,
+      "from": {
+        "blog/embedded-virality": 4,
+        "blog/platform-subdomain-gating": 6,
+        "marketing/creator-challenge-program": 2
+      }
+    },
+    "blog/git-commit-attribution": {
+      "count": 8,
+      "from": {
+        "blog/embedded-virality": 4,
+        "blog/platform-subdomain-gating": 4
+      }
+    },
+    "blog/coding-plan": {
+      "count": 15,
+      "from": {
+        "blog/embedded-virality": 2,
+        "blog/git-commit-attribution": 2,
+        "blog/platform-subdomain-gating": 2,
+        "blog/rate-limit-reset": 2,
+        "marketing/lifetime-deal": 2,
+        "marketing/pricing-strategy": 2,
+        "marketing/referral-program": 2,
+        "marketing/competitive-analysis": 1
+      }
+    },
+    "blog/ugc-marketing": {
+      "count": 17,
+      "from": {
+        "blog/embedded-virality": 2,
+        "blog/platform-subdomain-gating": 4,
+        "blog/watermark-growth": 2,
+        "blog/wrapped-marketing": 2,
+        "marketing/creator-challenge-program": 3,
+        "marketing/influencer": 2,
+        "marketing/affiliate": 1,
+        "marketing/creator-program": 1
+      }
+    },
+    "blog/platform-subdomain-gating": {
+      "count": 5,
+      "from": {
+        "blog/embedded-virality": 3,
+        "blog/watermark-growth": 2
+      }
+    },
+    "marketing/creator-challenge-program": {
+      "count": 20,
+      "from": {
+        "blog/embedded-virality": 2,
+        "blog/ugc-marketing": 4,
+        "blog/watermark-growth": 2,
+        "blog/wrapped-marketing": 2,
+        "marketing/affiliate": 4,
+        "marketing/creator-program": 4,
+        "marketing/influencer": 2
+      }
+    },
+    "blog/embedded-virality": {
+      "count": 21,
+      "from": {
+        "blog/git-commit-attribution": 2,
+        "blog/platform-subdomain-gating": 7,
+        "blog/watermark-growth": 10,
+        "marketing/creator-challenge-program": 2
+      }
+    },
     "blog/how-to-write-github-readme": {
       "count": 2,
       "from": {
         "blog/github-for-marketing": 2
-      }
-    },
-    "services": {
-      "count": 4,
-      "from": {
-        "blog/github-for-marketing": 2,
-        "blog/how-to-write-github-readme": 2
       }
     },
     "insights/indie-hackers": {
@@ -14403,25 +14973,85 @@
         "blog/agentic-commerce": 1
       }
     },
+    "blog/subdirectory-hosting": {
+      "count": 4,
+      "from": {
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 4
+      }
+    },
+    "blog/git-hosting": {
+      "count": 2,
+      "from": {
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2
+      }
+    },
+    "skills": {
+      "count": 2,
+      "from": {
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2
+      }
+    },
+    "blog/github-for-marketing": {
+      "count": 4,
+      "from": {
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2,
+        "blog/how-to-write-github-readme": 2
+      }
+    },
+    "glossary/seo": {
+      "count": 2,
+      "from": {
+        "blog/how-to-build-a-blog-without-a-cms-using-ai": 2
+      }
+    },
     "seo/domain": {
       "count": 2,
       "from": {
         "blog/how-to-name-ai-products": 2
       }
     },
-    "blog/github-for-marketing": {
-      "count": 2,
-      "from": {
-        "blog/how-to-write-github-readme": 2
-      }
-    },
-    "blog/coding-plan": {
-      "count": 9,
+    "marketing/affiliate": {
+      "count": 24,
       "from": {
         "blog/rate-limit-reset": 2,
+        "blog/ugc-marketing": 2,
+        "marketing/creator-challenge-program": 3,
+        "marketing/creator-program": 2,
+        "marketing/geo": 2,
+        "marketing/influencer": 6,
         "marketing/lifetime-deal": 2,
-        "marketing/pricing-strategy": 2,
-        "marketing/referral-program": 2,
+        "marketing/growth-case-studies": 1,
+        "marketing/pricing-strategy": 1,
+        "marketing/referral-program": 1,
+        "insights/indie-hackers": 2
+      }
+    },
+    "audit-website-by-lovable": {
+      "count": 2,
+      "from": {
+        "blog/subdirectory-hosting": 2
+      }
+    },
+    "marketing/creator-program": {
+      "count": 19,
+      "from": {
+        "blog/ugc-marketing": 2,
+        "marketing/affiliate": 3,
+        "marketing/creator-challenge-program": 3,
+        "marketing/geo": 2,
+        "marketing/influencer": 6,
+        "marketing/lifetime-deal": 2,
+        "marketing/marketing-types": 1
+      }
+    },
+    "marketing/influencer": {
+      "count": 10,
+      "from": {
+        "blog/ugc-marketing": 2,
+        "marketing/creator-program": 2,
+        "marketing/geo": 2,
+        "marketing/x-formerly-twitter": 2,
+        "marketing/affiliate": 1,
         "marketing/competitive-analysis": 1
       }
     },
@@ -14432,25 +15062,6 @@
         "blog/ai-training-data": 1
       }
     },
-    "marketing/ugc-marketing": {
-      "count": 8,
-      "from": {
-        "blog/wrapped-marketing": 4,
-        "marketing/affiliate": 1,
-        "marketing/creator-challenge-program": 1,
-        "marketing/creator-program": 1,
-        "marketing/influencer": 1
-      }
-    },
-    "marketing/creator-challenge-program": {
-      "count": 6,
-      "from": {
-        "blog/wrapped-marketing": 2,
-        "marketing/ugc-marketing": 2,
-        "marketing/affiliate": 1,
-        "marketing/creator-program": 1
-      }
-    },
     "marketing/email-marketing": {
       "count": 6,
       "from": {
@@ -14458,31 +15069,11 @@
         "insights/indie-hackers": 4
       }
     },
-    "marketing/creator-program": {
-      "count": 13,
-      "from": {
-        "marketing/creator-challenge-program": 2,
-        "marketing/geo": 2,
-        "marketing/influencer": 3,
-        "marketing/lifetime-deal": 2,
-        "marketing/ugc-marketing": 2,
-        "marketing/affiliate": 1,
-        "marketing/marketing-types": 1
-      }
-    },
     "seo/search-engine": {
       "count": 4,
       "from": {
         "marketing/geo": 2,
         "events/praxis-2025-09-27": 2
-      }
-    },
-    "marketing/lifetime-deal": {
-      "count": 9,
-      "from": {
-        "marketing/pricing-strategy": 2,
-        "marketing/ugc-marketing": 2,
-        "insights/indie-hackers": 5
       }
     },
     "marketing/reddit": {
@@ -14562,14 +15153,6 @@
       "count": 0,
       "from": {}
     },
-    "blog/git-hosting": {
-      "count": 0,
-      "from": {}
-    },
-    "blog/how-to-add-payments-to-vibe-coded-app": {
-      "count": 0,
-      "from": {}
-    },
     "blog/how-to-name-ai-products": {
       "count": 0,
       "from": {}
@@ -14579,6 +15162,10 @@
       "from": {}
     },
     "marketing/marketing-types": {
+      "count": 0,
+      "from": {}
+    },
+    "insights/ai-logo-design": {
       "count": 0,
       "from": {}
     },

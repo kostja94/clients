@@ -1,6 +1,6 @@
 ## Article Brief — lifetime-deal
 
-**SSOT**: `E:\个人知识库\营销campaign\增长模式\Lifetime-Deal-终身买断.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
+**SSOT**: `E:\个人知识库\增长策略\定价促销\Lifetime-Deal-终身买断.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy  

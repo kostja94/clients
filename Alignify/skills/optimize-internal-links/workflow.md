@@ -6,7 +6,7 @@
 
 ## 0. 读上下文
 
-1. [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) — 出链/入链、P0–P3 队列  
+1. [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) — 出链/入链、P0–P3 队列、**§七 Marketing/GTM 专项**  
 2. [`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md) 附录 B — 邻居矩阵  
 3. [`../../knowledge/tools/territory-map.md`](../../knowledge/tools/territory-map.md) — 同 Territory 选题  
 

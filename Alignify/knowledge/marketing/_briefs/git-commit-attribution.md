@@ -1,6 +1,6 @@
 ## Article Brief — git-commit-attribution
 
-**SSOT**: `E:\个人知识库\营销campaign\增长模式\Git-Commit-Attribution-提交归因.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
+**SSOT**: `E:\个人知识库\增长策略\产品内嵌\Git-Commit-Attribution-提交归因.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（路由 `/blog/git-commit-attribution`）  

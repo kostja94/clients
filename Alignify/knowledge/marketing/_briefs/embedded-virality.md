@@ -1,6 +1,6 @@
 ## Article Brief — embedded-virality
 
-**SSOT**: `E:\个人知识库\营销campaign\增长模式\Embedded-Virality-嵌入式病毒传播.md`（**唯一维护处**）
+**SSOT**: `E:\个人知识库\增长策略\产品内嵌\Embedded-Virality-嵌入式病毒传播.md`（**唯一维护处**）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（路由 `/blog/embedded-virality`）  

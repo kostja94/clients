@@ -2935,7 +2935,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 # Part 4.5 · Marketing 频道内链（M1–M11）
 
-> **逐页执行表**：[`knowledge/marketing/marketing-internal-links-plan.md`](../../../knowledge/marketing/marketing-internal-links-plan.md)  
+> **逐页执行表**：[`skills/optimize-internal-links/references/site-structure-internal-links.md`](../../../skills/optimize-internal-links/references/site-structure-internal-links.md) **§七** · [`marketing-internal-links-backlog.md`](../../../skills/optimize-internal-links/references/marketing-internal-links-backlog.md)  
 > **全站快照**：[`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md)  
 > **Last updated**：2026-08-27
 
@@ -3063,7 +3063,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 ## 七、新建 / 改版工作流
 
-1. 查 [`marketing-internal-links-plan.md`](../../../knowledge/marketing/marketing-internal-links-plan.md) 该 slug 的「应链向 / 应被链自」  
+1. 查 [`site-structure-internal-links.md` §7.3–7.4](../../../skills/optimize-internal-links/references/site-structure-internal-links.md) 或 [`marketing-internal-links-backlog.md`](../../../skills/optimize-internal-links/references/marketing-internal-links-backlog.md) 该 slug 的「应链向 / 应被链自」  
 2. 写 **Internal Link Plan** 表（见 [`07-internal-links.md`](../07-internal-links.md)）— 锚文本 / 目标 / 段落 / 点击意图  
 3. 落稿：先写无链正文，再按 M7 节奏插入  
 4. 自检：M1–M11 + 三问  

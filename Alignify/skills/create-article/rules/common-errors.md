@@ -60,7 +60,7 @@
 | E29 | 中文英译腔 / 箭头链正文 / 先译后写 | Step 06/09：`content-locale.md` Part 3·4 + `locale-glossary.md` / `.json`；09c 对等 |
 | E30 | 英文翻译腔 / telegraphic | Step 09b：禁止逐句译 ZH；改完整句 |
 | E31 | Marketing/Blog 缺 Author POV | Brief 默认 ≥1 条；正文**任一节**内第一人称判断须显式出现（**不要求**独立 `#author-take`） |
-| E32 | 个人知识库 SSOT 重复到 knowledge/marketing | campaign 类只在 `E:\个人知识库\营销campaign\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
+| E32 | 个人知识库 SSOT 重复到 knowledge/marketing | 增长策略类只在 `E:\个人知识库\增长策略\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
 | E33 | blog md 使用 GFM 管道表格 | 须 `childrenHtml` + `<div class="content-html"><table>…`；见 `anatomy.md` §四·一 |
 | E34 | blog md 使用 Markdown 列表（`-` / `1.`） | 须 `childrenHtml` + `<ul>` / `<ol class="list-disc…">`；见 `anatomy.md` §四·一 |
 | E35 | `childrenHtml` / `html-block` 内 inline Tailwind（`text-base md:text-lg`、`grid grid-cols-*`、`bg-card` 等） | 仅用 `content-html` + `article-*` 语义 class；段落/列表/表格优先裸标签，样式在 `index.css`；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |

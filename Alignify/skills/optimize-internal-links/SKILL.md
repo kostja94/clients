@@ -10,7 +10,8 @@
 |------|------|
 | [`workflow.md`](workflow.md) | 全站 baseline + 单页 loop |
 | [`references/rules-quickref.md`](references/rules-quickref.md) | R 规则 1 页速查 |
-| [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) | 全站快照（~400 篇 · 脚本生成） |
+| [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) | 全站快照（~400 篇 · 脚本生成 · **§七 Marketing/GTM**） |
+| [`references/marketing-internal-links-backlog.md`](references/marketing-internal-links-backlog.md) | Marketing cluster 矩阵与执行批次（嵌入 §7.4） |
 | [`reverse-links.md`](reverse-links.md) | Phase 4 反向互链（批量，与单页分开） |
 
 **规则 SSOT**（不在此重复）：[`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md)（Part 1–2 · 4.5 M1–M11 · Part 8 外链）  
