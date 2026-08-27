@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Merge conclusion.md + final-cta.md into sections.md Part 4/5."""
+"""Merge conclusion + final-cta content into sections.md Part 4/5.
+
+NOTE: 源文件 `conclusion.md` / `final-cta.md` 已删除；重跑前须从 git 历史 checkout 或手动维护 Part 4/5。
+"""
 import re
 from pathlib import Path
 
@@ -13,7 +16,7 @@ HEADER = """# Alignify 章节规范（唯一真相源）
 > **位置**：`skills/create-article/rules/sections.md`  
 > **格式**：`content/{channel}/{locale}/{slug}.md` + JSON 侧车（TL;DR / FAQ / References）  
 > **Last updated**：2026-08-27  
-> **说明**：所有章节写法、选节决策、JSON 侧车、**结论**、**Final CTA** 规则**仅在本文件维护**。`sections/`、`conclusion.md`、`final-cta.md` 均为跳转 stub。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。
+> **说明**：所有章节写法、选节决策、JSON 侧车、**结论**、**Final CTA** 规则**仅在本文件维护**。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。
 
 ---
 

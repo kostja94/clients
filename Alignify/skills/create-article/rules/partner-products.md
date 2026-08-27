@@ -135,7 +135,7 @@ Tier 2 名单由运营维护；变更时同步改本节表格。
 - [ ] 新增产品是否**仅**因 Customer Stories，而 KB 形态谱系不需要？→ 若是，**不要加**（Tier 2 除外）
 - [ ] 本次 diff 是否从 bestTools / 对比表 / TL;DR 中**删掉** §三或 §二 中的域名？→ 若是，对照 Tier 与 §一移除理由
 - [ ] Tier 2 是否仍在目标 slug 的 bestTools **前段**且有对比表或摘要点名？
-- [ ] 普通选品是否仍服从 KB「与站内 bestTools 一致」主卡层 + [best-tools.md](./sections/best-tools.md) 字数规则？
+- [ ] 普通选品是否仍服从 KB「与站内 bestTools 一致」主卡层 + [`sections.md`](./sections.md) Part 3.3 字数规则？
 
 ---
 

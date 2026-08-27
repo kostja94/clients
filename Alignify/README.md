@@ -49,7 +49,7 @@ Alignify/
 
 **正文格式**：`content/{channel}/{locale}/{slug}.md` — TL;DR / FAQ / References **inline**，不再使用集中 JSON。
 
-**架构原则**：正文节数与顺序由**内容**决定；`rules/anatomy.md` 与 `templates/` 为参考菜单，A 层硬底线（结论在 FAQ 前、FAQ 7 问等）见 [`anatomy.md`](skills/create-article/rules/anatomy.md) §〇。
+**架构原则**：正文节数与顺序由**内容**决定；`rules/anatomy.md` 与 [`templates.md`](skills/create-article/rules/templates.md) 为参考菜单，A 层硬底线（结论在 FAQ 前、FAQ 7 问等）见 [`anatomy.md`](skills/create-article/rules/anatomy.md) §〇。
 
 **部署仓说明**：渲染层若仍从 `tldr-data.json` / `faq-data.json` 注入，需单独在部署仓迁移；上下文规范与审计脚本已按 inline md 对齐。
 

@@ -235,7 +235,7 @@
 
 - **中文优先**：「什么是 XXX」章节
 - **英文优先**：「What Are XXX」章节
-- 参见 [what-is.md](./sections/what-is.md)、[tldr.md](./sections/tldr.md)
+- 参见 [`sections.md`](./sections.md) Part 3.1、Part 2.1
 
 ### 1.3 内链相关性原则
 
@@ -247,13 +247,13 @@
 | **同质替代** | 解决同类问题的不同工具 | 变声器 ↔ 文字转语音 ↔ 声音克隆（均为人声处理） |
 | **场景延伸** | 同一使用场景下的不同需求 | 视频制作：视频编辑 + 音乐生成 |
 
-**避免**：仅因同属某大类而链接。例如音乐生成与文字转语音、声音克隆虽同属「音频」，但音乐是旋律创作、后两者是人声处理，功能边界不同，不宜作为内链目标。详见 [what-is.md §3.4、§3.6](./sections/what-is.md#34-内链相关性原则)。
+**避免**：仅因同属某大类而链接。例如音乐生成与文字转语音、声音克隆虽同属「音频」，但音乐是旋律创作、后两者是人声处理，功能边界不同，不宜作为内链目标。详见 [`sections.md`](./sections.md) Part 3.1 §内链相关性。
 
 ### 1.4 内链样式
 
 - **正文内链**：`.link-internal` 或 `.blog-post-content a`（非外链）
 - **样式**：`text-inherit font-medium underline underline-offset-2 decoration-foreground/30`，hover 加深下划线 `decoration-foreground/50`（由 `src/index.css` 全局控制）
-- 参见 [generic.md § AlsoInterestedIn](./sections/generic.md)
+- 参见 [`sections.md`](./sections.md) Part 3.2
 
 ### 1.5 FAQ 内链规则
 
@@ -537,7 +537,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 位置 | 规则 |
 |------|------|
-| **什么是 · 第二段** | **建议**含 **1～2 个**强相关内链，且与 TLDR 去重；全页仍以唯一性为先；见 [what-is.md](./sections/what-is.md) |
+| **什么是 · 第二段** | **建议**含 **1～2 个**强相关内链，且与 TLDR 去重；全页仍以唯一性为先；见 [`sections.md`](./sections.md) Part 3.1 |
 | **邻居选题** | 优先 **附录 B** 与 keywords 表；不足时自拟并后续补 keywords |
 | **结论** | 可含内链（见 [`sections.md`](./sections.md) Part 4.4）；仍遵守唯一性 |
 | **FAQ** | **允许**站内链；**计入正文**；同 URL 全文 1 次（见 [§1.5](#15-faq-内链规则)） |
@@ -2517,7 +2517,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 维度 | 建议 |
 |------|------|
 | **主轴** | TLDR 的 `items` 一般为**纯文本**（无 `<a>`）；若必须在 TLDR `introduction` 内链，**≤1** 条且与后文去重 |
-| **什么是 · 末段或第二段** | **1～2** 条强相关 `/seo/...` 链；与 [what-is.md](./sections/what-is.md) 及 [`templates.md`](./templates.md) Part 4 一致 |
+| **什么是 · 末段或第二段** | **1～2** 条强相关 `/seo/...` 链；与 [`sections.md`](./sections.md) Part 3.1 及 [`templates.md`](./templates.md) Part 4 一致 |
 | **正文中部** | `comparisonSection.introHtml`、`html`、`section` 长段落承担 **多数** distinct `/seo/...` URL；**同一 H2 内**建议 **≤3** 条不同站内链，避免单屏链接堆叠 |
 | **结论** | **0–2** 条 distinct（见 [`sections.md`](./sections.md) Part 4.4）；常与「网站结构 / 站点地图 / 内链」等收束组合；**不得**与上文重复同一 `href` |
 | **FAQ** | **允许**答案内链；**计入正文**；同 URL 全文 1 次（见 [§1.5](#15-faq-内链规则)） |
@@ -3099,7 +3099,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 规则 | 说明 |
 |------|------|
-| **FAQ 答案允许内链** | 与 [Part 2 §1.5](#15-faq-内链规则)、[sections/faq.md](./sections/faq.md) 一致；**计入正文**；同 URL 全文 1 次 |
+| **FAQ 答案允许内链** | 与 [Part 2 §1.5](#15-faq-内链规则)、[`sections.md`](./sections.md) Part 2.2 一致；**计入正文**；同 URL 全文 1 次 |
 | **首屏 TL;DR** | 可概括内链主题，不要在 `items` 里塞 URL；具体链放在正文 `section` / `html` 字符串中 |
 
 ---
@@ -3214,18 +3214,12 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 文档 | 用途 |
 |------|------|
+| [sections.md](./sections.md) | 章节 SSOT（Part 0–5：TL;DR / FAQ / 节型 / 结论 / Final CTA） |
 | [templates.md](./templates.md) | 四类页面结构参考（Part 2–5）；**建议非施工图** |
-| [sections/tldr.md](./sections/tldr.md) | 技能 CTA 与 `/seo/internal-links` 页面名 |
-| [section/section-links.md](./internal-links.md) | 全站内链、外链、组件级规则 |
-| [sections/what-is.md](./sections/what-is.md) | 「什么是」内链位置、相关性 |
-| [sections/faq.md](./sections/faq.md) | FAQ 与 Tools JSON 例外 |
-| [sections.md](./sections.md) | 结论内链 0–2（Part 4.4） |
-| [section/section-best-tools.md](./sections/best-tools.md) | 产品描述禁 `<Link>` |
-| [section/section-also-interested-in.md](./sections/generic.md) | AlsoInterestedIn 样式与四卡片 |
-| [section/consistency.md](./consistency.md) | 「什么是」字数表含内链要求 |
-| [sections/how-to.md](./sections/how-to.md) | 「如何选择」唯一真相源：定位分工、3–5 步、去模板、组件与 Schema、审计 |
-| [section/README.md.md](./README.md) | FAQ 与内链组件约束（表内一行） |
-| [section/meta.md.md](./meta.md) | SEO 章约束 |
+| [internal-links.md](./internal-links.md) | 全站内链、外链、组件级规则 |
+| [consistency.md](./consistency.md) | 「什么是」字数表含内链要求 |
+| [README.md](./README.md) | 规范索引 |
+| [meta.md](./meta.md) | SEO 章约束 |
 | `alignify-keywords-tools.md` | Tools 意图与「相邻 Tools」**权威表** |
 | `src/data/tools-pages-config.ts` | AlsoInterestedIn 等组件 slug 列表 |
 
@@ -3237,20 +3231,13 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 文档 | 与内链相关的内容（保留原因） |
 |------|------------------------------|
-| [section/section-links.md](./internal-links.md) | **全站**内链唯一性、相关性、样式、FAQ 可链、组件表；主文档 |
-| [sections/what-is.md](./sections/what-is.md) | Tools/SEO/Marketing 共用的「什么是」第二段内链、示例代码、3.4–3.6 |
-| [sections/faq.md](./sections/faq.md) | FAQ 写法；答案**允许**内链（§1.5） |
-| [sections.md](./sections.md) | 结论内链 0–2（Part 4.4） |
-| [section/section-best-tools.md](./sections/best-tools.md) | 产品描述禁 `<Link>` |
-| [section/section-also-interested-in.md](./sections/generic.md) | 四卡片与**正文内链 CSS** |
-| [section/consistency.md](./consistency.md) | 「什么是」字数表含内链要求 |
-| [sections/how-to.md](./sections/how-to.md) | 「如何选择」唯一真相源：定位分工、3–5 步、去模板、组件与 Schema、审计 |
-| [section/README.md.md](./README.md) | FAQ 与内链组件约束（表内一行） |
-| [sections/generic.md.md](./sections/generic.md) | GEO 块 id `internal-links`（技能/章节标识，非本站内链规范正文） |
-| [section/meta.md.md](./meta.md) | FAQ 与 SEO 章约束 |
+| [internal-links.md](./internal-links.md) | **全站**内链唯一性、相关性、样式、FAQ 可链、组件表；主文档 |
+| [sections.md](./sections.md) | 各节写法与内链位点（Part 2–5） |
 | [templates.md](./templates.md) | 四类页面结构参考（Part 2–5） |
-| [sections/tldr.md](./sections/tldr.md) | 技能 CTA 与 `/seo/internal-links` 页面名 |
-| [technical/technical-crawlability.md](../../ops/seo-fundamentals.md) | 孤儿页与内链（指向 section-links） |
+| [consistency.md](./consistency.md) | 「什么是」字数表含内链要求 |
+| [README.md](./README.md) | 规范索引 |
+| [meta.md](./meta.md) | Meta / H1 约束 |
+| [technical/technical-crawlability.md](../../ops/seo-fundamentals.md) | 孤儿页与内链 |
 | [technical/technical-indexing.md](../../ops/seo-fundamentals.md) | 索引检查项含内链 |
 | [alignify-project-context/brand-visual.md](../../../knowledge/design/aesthetic-references.md) | 内链视觉/token |
 | [alignify-project-context/seo-article-optimization-tracker.md](../../ops/gsc-optimization-plan.md) | 站内 SEO 文章 Internal Links 页进度 |

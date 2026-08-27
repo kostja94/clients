@@ -70,7 +70,6 @@
 | **本文 `templates.md`** | 类型差异、常见原型、部署仓对照、**禁止误套**说明 |
 | [`sections.md`](./sections.md) | 节型写法（TL;DR、什么是、Best H3…） |
 | [`anatomy.md`](./anatomy.md) | frontmatter、block、JSON 侧车 |
-| [`templates/*.md`](./templates/) | **跳转 stub**，勿编辑 |
 
 ---
 
@@ -353,6 +352,6 @@ B/C 层偏离（无对比表、无 How To、H2 仅 5 个…）→ Brief 或 Self
 
 | 日期 | 说明 |
 |------|------|
-| 2026-08-27 | 初版：合并 templates/ 五文件；强调模板=建议、新文 /blog、禁止一比一复刻；附录部署仓实证 |
+| 2026-08-27 | 初版：合并 templates 五文件为单 SSOT；强调模板=建议、新文 /blog、禁止一比一复刻；附录部署仓实证 |
 
 *templates.md · v1.0 · 2026-08-27*

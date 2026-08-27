@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""One-off: merge sections/*.md into rules/sections.md"""
+"""One-off: merge sections/*.md into rules/sections.md
+
+NOTE: `sections/` 子目录已删除；本脚本仅作历史重建参考。增量合并 Part 4/5 用 merge-sections-conclusion-cta.py。
+"""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2] / "skills" / "create-article" / "rules"
@@ -11,7 +14,7 @@ PART0 = """# Alignify 章节规范（唯一真相源）
 > **位置**：`skills/create-article/rules/sections.md`  
 > **格式**：`content/{channel}/{locale}/{slug}.md` + JSON 侧车（TL;DR / FAQ / References）  
 > **Last updated**：2026-08-27  
-> **说明**：所有章节写法、选节决策、JSON 侧车、结论、Final CTA **仅在本文件维护**。`sections/`、`conclusion.md`、`final-cta.md` 均为跳转 stub。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。  
+> **说明**：所有章节写法、选节决策、JSON 侧车、结论、Final CTA **仅在本文件维护**。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。  
 > **增量合并**：`scripts/ops/merge-sections-conclusion-cta.py`（Part 4–5）；初版九文件合并见 `merge-sections-doc.py`。
 
 ---

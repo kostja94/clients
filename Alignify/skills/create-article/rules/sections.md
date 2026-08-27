@@ -3,7 +3,7 @@
 > **位置**：`skills/create-article/rules/sections.md`  
 > **格式**：`content/{channel}/{locale}/{slug}.md` + JSON 侧车（TL;DR / FAQ / References）  
 > **Last updated**：2026-08-27  
-> **说明**：所有章节写法、选节决策、JSON 侧车、**结论**、**Final CTA** 规则**仅在本文件维护**。`sections/`、`conclusion.md`、`final-cta.md` 均为跳转 stub。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。
+> **说明**：所有章节写法、选节决策、JSON 侧车、**结论**、**Final CTA** 规则**仅在本文件维护**。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。
 
 ---
 
@@ -2304,7 +2304,7 @@ npm run build                 # 部署仓：全量构建
 
 - 结论内链全站规则：[`internal-links.md`](./internal-links.md) · 本节 Part 4.4
 - 篇幅数字索引：[`word-counts.md`](./word-counts.md) · [`consistency.md`](./consistency.md)
-- 原 `conclusion.md` 已于 2026-08-27 并入本节；`conclusion.md` 现为 stub
+- 交叉引用：[`internal-links.md`](./internal-links.md) · [`word-counts.md`](./word-counts.md) · [`consistency.md`](./consistency.md)
 
 ---
 
@@ -2469,7 +2469,7 @@ node E:\clients\Alignify\scripts\ops\merge-cta-slugs.mjs --check
 
 | 日期 | 说明 |
 |------|------|
-| 2026-08-27 | 初版：合并 `sections/` 九文件为单 SSOT；新增 Part 0 内容优先选节；`sections/*.md` 改 stub |
-| 2026-08-27 | 合并 `conclusion.md` → Part 4 · `final-cta.md` → Part 5；附录 C 索引 |
+| 2026-08-27 | 初版：合并 sections 九文件为单 SSOT；新增 Part 0 内容优先选节 |
+| 2026-08-27 | 合并结论 → Part 4 · Final CTA → Part 5；附录 C 索引；删除 `sections/` 子目录 |
 
 *sections.md · v1.1 · 2026-08-27*

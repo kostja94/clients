@@ -2,7 +2,7 @@
 
 > **版本**：v3.5 · 2026-08-27  
 > **格式**：`.md` frontmatter + `<!-- block:section -->` 正文；TL;DR / FAQ / References **仅 JSON 侧车渲染**（见 [`anatomy.md`](./anatomy.md) §二·一）  
-> **原则**：类型决定 Meta、Hub、知识块目录；**正文架构由内容决定**。**[`templates.md`](./templates.md) 与 `templates/` 仅为建议**，不要求与任一存量篇一比一复刻。  
+> **原则**：类型决定 Meta、Hub、知识块目录；**正文架构由内容决定**。**[`templates.md`](./templates.md) 仅为建议**，不要求与任一存量篇一比一复刻。  
 > **新文**：统一 **`content/blog/` + `/blog/{slug}`** — 许多题材从未有过，**更不应硬套**旧频道骨架。
 
 ---

@@ -62,7 +62,7 @@ products:
 python ../../clients/Alignify/scripts/ops/screenshot-tools-products.py --page git-hosting --force
 ```
 
-Blog 截图条目写入 `tools-screenshot-registry.json`（`outputPath`: `blog/{slug}/{file}.jpg`），与 Tools 页共用同一 Firecrawl 流水线。规范见 `skills/create-article/rules/sections/best-tools.md` §5.3（**fullPage: false**，首屏 viewport）。
+Blog 截图条目写入 `tools-screenshot-registry.json`（`outputPath`: `blog/{slug}/{file}.jpg`），与 Tools 页共用同一 Firecrawl 流水线。规范见 [`sections.md`](./sections.md) Part 3.3（**fullPage: false**，首屏 viewport）。
 
 ```python
 from firecrawl import Firecrawl

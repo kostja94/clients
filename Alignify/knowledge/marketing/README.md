@@ -39,7 +39,7 @@
 新建 `*.md` 时，章节骨架与文首声明沿用 [`../README.md`](../README.md) 中「知识块文档结构」；本专册**无** Tools 页对照时，可省略「站内对照」「Tools 关键词与 slug 映射」，改为：
 
 - `**材料范围**：…`（网摘来源、日期）
-- `**规范或长文对照**：…`（链到 `skills/create-article/rules/sections/`、`insights` 长文或 Agent skill 路径，按需）
+- `**规范或长文对照**：…`（链到 `skills/create-article/rules/sections.md`、`insights` 长文或 Agent skill 路径，按需）
 
 ---
 

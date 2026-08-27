@@ -1,6 +1,6 @@
 /**
  * TL;DR 字数审计：扫描 md 内 `## 核心要点 {#article-intro}` / `## Key Takeaways {#article-intro}`
- * 依据：skills/create-article/rules/sections/tldr.md §2.2
+ * 依据：skills/create-article/rules/sections.md Part 2.1
  *
  * 用法（部署仓根目录）：
  *   node ../../clients/Alignify/scripts/ops/audit-tldr-length.mjs

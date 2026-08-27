@@ -1,7 +1,7 @@
 # Marketing 正文 md 审计（2026-08-27 · 终态）
 
 > **脚本**：[`scripts/audit/audit-marketing-md-render.py`](../../scripts/audit/audit-marketing-md-render.py)  
-> **规范 SSOT**：[`presentation.md`](../../skills/create-article/rules/presentation.md) · [`templates/marketing.md` §5](../../skills/create-article/rules/templates/marketing.md)
+> **规范 SSOT**：[`presentation.md`](../../skills/create-article/rules/presentation.md) · [`templates.md`](../../skills/create-article/rules/templates.md) Part 3
 
 ---
 

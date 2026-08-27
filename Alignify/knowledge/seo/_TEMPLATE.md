@@ -59,7 +59,7 @@ SEO 知识块**不绑定** `tools-pages-config.ts`，因此元数据块做如下
 |-----------|----------|------|
 | 站内对照（`alignify.co/tools/{slug}`） | 站内文章对照（`alignify.co/seo/{slug}` 或 `/zh/seo/{slug}`） | SEO 页面对应 `/seo/[slug]` 路由 |
 | Tools 关键词与 slug 映射 | **删除**；替换为 **本分册说明** | SEO 不在 tools-pages-config 中 |
-| （无） | 规范对照（`skills/create-article/rules/sections/` / `technical/`） | SEO 文章需与站内技术规范、section 写作规范对齐 |
+| （无） | 规范对照（`skills/create-article/rules/sections.md` / `technical/`） | SEO 文章需与站内技术规范、section 写作规范对齐 |
 
 ---
 

@@ -103,7 +103,7 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 | `audit-alt-text.mjs` | BestTools / HTML 图片 alt 质量审计 |
 | `screenshot-tools-images.py` | **已废弃** — 仅 12 条硬编码 backlog，请用 `screenshot-tools-products.py` |
 
-规范见 `skills/create-article/rules/sections/best-tools.md` §5.1–5.3。
+规范见 `skills/create-article/rules/sections.md` Part 3.3。
 
 #### 产品 URL 审计
 

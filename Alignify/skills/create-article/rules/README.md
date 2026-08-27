@@ -59,11 +59,11 @@
 
 ## 章节规范
 
-[`sections.md`](./sections.md)（唯一 SSOT · 含 `conclusion.md` / `final-cta.md` 已合并）· `sections/*.md` 为跳转 stub
+[`sections.md`](./sections.md)（唯一 SSOT · Part 0–5）
 
 ## 页面模板（参考 — 非施工图）
 
-[`templates.md`](./templates.md)（唯一 SSOT）· `templates/*.md` 为跳转 stub
+[`templates.md`](./templates.md)（唯一 SSOT）
 
 ## 自动化脚本（Step 10）
 

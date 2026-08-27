@@ -4,7 +4,7 @@
 
 **站内对照**：[`content/seo/zh/best-tools.md`](../../content/seo/zh/best-tools.md) · [`content/seo/en/best-tools.md`](../../content/seo/en/best-tools.md) · 路由 `/zh/seo/best-tools`、`/seo/best-tools`（以实际部署为准）
 
-**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [section-best-tools.md](../../skills/create-article/rules/sections/best-tools.md) · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 检查清单：[checklist.md](./checklist.md) · 学习资源：[learn-seo.md](./learn-seo.md) · **GEO / AI 应答可见度**另见分册：[tools/geo.md](../tools/geo.md)（与经典 Web SERP **分册**，避免重复维护）
+**规范对照**：[meta.md](../../skills/create-article/rules/meta.md) · [sections.md](../../skills/create-article/rules/sections.md) Part 3.3 · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 检查清单：[checklist.md](./checklist.md) · 学习资源：[learn-seo.md](./learn-seo.md) · **GEO / AI 应答可见度**另见分册：[tools/geo.md](../tools/geo.md)（与经典 Web SERP **分册**，避免重复维护）
 
 以下条目可任意顺序阅读；**不是**文章体例。文末外链为**检索整理**，用于建立「类目心智模型」，**不**替代具体站点的 GSC、日志与合同约束下的采购决策。
 
@@ -133,7 +133,7 @@
 ### 站内索引（Alignify 仓库）
 
 - 本分册：[seo/README.md](./README.md) · [checklist.md](./checklist.md) · [how-search-engine-works.md](./how-search-engine-works.md) · [learn-seo.md](./learn-seo.md)
-- 规范：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · [section-best-tools.md](../../skills/create-article/rules/sections/best-tools.md)
+- 规范：[meta.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · [sections.md](../../skills/create-article/rules/sections.md) Part 3.3
 - 关键词表（`/seo/best-tools`）：[alignify-keywords-seo.md](../../keywords/alignify-keywords-seo.md)（检索「best-tools」行）
 - 内链维护：[seo-articles-internal-links.md](../../internal-links/seo-articles-internal-links.md)
 

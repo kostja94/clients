@@ -1,6 +1,6 @@
 /**
  * FAQ 答案长度审计：扫描 md 内 `## 常见问题 {#faq}` / `## FAQ {#faq}`
- * 依据：skills/create-article/rules/sections/faq.md §2.2
+ * 依据：skills/create-article/rules/sections.md Part 2.2
  *
  * 用法（部署仓根目录）：
  *   node ../../clients/Alignify/scripts/ops/audit-faq-length.mjs
