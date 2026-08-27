@@ -2,8 +2,8 @@
 
 > **适用**：`content/blog/`、`content/marketing/` 下 growth / GTM / PLG 策略文（ZH + EN）  
 > **机器层**：[`locale-glossary.json`](./locale-glossary.json) → `forbidden_in_*` · `forbidden_regex_*` · `audit-locale-voice.py`  
-> **关联**：[`presentation.md`](./presentation.md) · [`locale-glossary.md`](./locale-glossary.md) Part 2 · [`internal-links.md`](./internal-links.md) M7/M11  
-> **版本**：2026-08-27 — 源自 `egc-marketing` 内链与「分轨」文风审计及 PLG 姊妹文扫库
+> **关联**：[`presentation.md`](./presentation.md) · [`locale-glossary.md`](./locale-glossary.md) Part 2 · [`zh-en-mixing.md`](./zh-en-mixing.md) · [`internal-links.md`](./internal-links.md) M7/M11  
+> **版本**：2026-08-27 — 源自 `egc-marketing` 内链与「分轨」文风审计及 PLG 姊妹文扫库；英混见 `zh-en-mixing.md`
 
 ---
 
@@ -72,22 +72,15 @@
 
 ## 5. 存量待改快照（production · 2026-08-27）
 
-> **已修复**：`egc-marketing`、`ugc-marketing`（部分）、`marketing-types`（分轨）、`x-formerly-twitter`、`rate-limit-reset`（分轨一句）等 — 见 commit `82da92aa` 前后。  
-> **touch 下列 slug 时**按 §2–§3 改剩余腔调：
+> **已修复（英混 + 禁腔 · commit 待打）**：`watermark-growth` · `embedded-virality` · `platform-subdomain-gating` · `wrapped-marketing` · `coding-plan` · `rate-limit-reset` · `git-commit-attribution` · `egc-marketing` · `ugc-marketing` · `subdirectory-hosting` · `creator-challenge-program` · `lifetime-deal` — 见 `zh-en-mixing.md` §7 + `audit-locale-voice.py --batch gtm --zh-only` 全 PASS。  
+> **touch 下列 slug 时**若 audit Fail，按 §2–§3 + [`zh-en-mixing.md`](./zh-en-mixing.md) 回改：
 
 | slug | 典型残留 | 文件路径 hint |
 |------|----------|---------------|
-| `watermark-growth` | 同族分流 H2、同族、形态分流、GTM 组合拳、分流表 | `#vs-embedded-virality` · `#gtm-combo` |
-| `embedded-virality` | 载体分流、同族、GTM 组合拳、分流表、PLG 家族 | `#gtm-combo` · 表前后 |
-| `platform-subdomain-gating` | 形态分流、双轨 KPI、载体分流、split、GTM 组合拳 | go/no-go 段 · `#gtm-combo` |
-| `wrapped-marketing` | 按 AI 产品形态分流 | go/no-go 段 |
-| `subdirectory-hosting` | 姊妹篇（×4） | 对照表 · 结论 |
-| `lifetime-deal` | 姊妹篇（×4）、description | 开篇 · 结论 |
-| `coding-plan` · `rate-limit-reset` · `git-commit-attribution` | GTM **组合拳** H2 | `#gtm-combo` |
-| `creator-challenge-program` | 标准组合拳、description 组合拳 | `#standard-playbook` |
-| `faq-data` / `tldr-data` / meta | 姊妹篇、GTM 族（TLDR intro 否定句可留） | Step 08 JSON 侧车 |
-
-**EN 镜像**：`watermark-growth` · `embedded-virality` · `platform-subdomain-gating` — carrier split / Same family / two tracks / GTM Combos。
+| ~~`watermark-growth`~~ | ✅ 2026-08-27 | — |
+| ~~`embedded-virality`~~ | ✅ 2026-08-27 | — |
+| ~~`platform-subdomain-gating`~~ | ✅ 2026-08-27 | — |
+| `faq-data` / `tldr-data` / meta | 姊妹篇、GTM 族（TLDR intro 否定句可留） | Step 08 JSON 侧车 · touch 时扫 description |
 
 ---
 

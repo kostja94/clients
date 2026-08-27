@@ -12,13 +12,24 @@ CLIENTS = Path(__file__).resolve().parents[2]  # e:/clients/Alignify
 GLOSSARY = CLIENTS / "skills/create-article/rules/locale-glossary.json"
 PROD = Path(r"E:/自有部署项目/alignify production")
 
+# Abbreviations / tokens allowed as bare Latin in ZH prose
+ZH_LATIN_ALLOW = re.compile(
+    r"^(?:AI|SEO|API|SaaS|PLG|GTM|KPI|FAQ|EU|MP4|PNG|WAV|TTS|LLM|URL|CTA|SKU|LTD|ARR|DAU|UX|UI|CLI|IDE|Pro|Plus|Ultra|Standard|Creator|Lite|Help|Settings|Toggle|USD|min|Art\.50)$",
+    re.I,
+)
 
-def strip_frontmatter(text: str) -> str:
+
+def strip_frontmatter(text: str) -> tuple[str, str]:
     if text.startswith("---"):
         end = text.find("---", 3)
         if end != -1:
-            return text[end + 3 :].strip()
-    return text.strip()
+            return text[end + 3 :].strip(), text[: end + 3]
+    return text.strip(), ""
+
+
+def extract_frontmatter_description(fm: str) -> str:
+    m = re.search(r"^description:\s*[\"']?(.+?)[\"']?\s*$", fm, re.M)
+    return m.group(1) if m else ""
 
 
 def han_count(text: str) -> int:
@@ -26,34 +37,76 @@ def han_count(text: str) -> int:
 
 
 def en_word_count(text: str) -> int:
-    body = strip_frontmatter(text)
+    body = strip_frontmatter(text)[0]
     body = re.sub(r"```[\s\S]*?```", "", body)
     body = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", body)
     return len(re.findall(r"[A-Za-z0-9]+(?:'[A-Za-z]+)?", body))
 
 
-def audit_zh_localize(body: str, glossary: dict) -> list[str]:
+def mask_exempt_zones(text: str) -> str:
+    """Mask URLs, code, anchor ids, inline backticks, markdown links — keep loanword audit on prose."""
+    out = text
+    out = re.sub(r"\[([^\]]*)\]\([^\)]+\)", r"\1", out)
+    out = re.sub(r"https?://[^\s)>\]]+", " ", out)
+    out = re.sub(r"`[^`]+`", " ", out)
+    out = re.sub(r"\{#([^}]+)\}", " ", out)
+    out = re.sub(r"<!--[^>]*-->", " ", out)
+    return out
+
+
+def is_in_keep_english(token: str, keep: list[str]) -> bool:
+    t = token.strip()
+    if not t:
+        return True
+    if ZH_LATIN_ALLOW.match(t):
+        return True
+    for k in keep:
+        if t.lower() == k.lower():
+            return True
+        if len(k) > 3 and k.lower() in t.lower() and t[0].isupper():
+            return True
+    return False
+
+
+def audit_zh_naked_loanwords(body: str, glossary: dict) -> list[str]:
     issues: list[str] = []
-    body_lower = body.lower()
+    keep = glossary.get("keep_english", [])
+    masked = mask_exempt_zones(body)
+    masked_lower = masked.lower()
+
     for en_key, zh_val in glossary.get("localize_required", {}).items():
-        if en_key.lower() in body_lower:
+        if en_key.lower() in masked_lower:
             issues.append(
                 f"ZH uses English phrase '{en_key}'; use '{zh_val}' "
-                "(locale-glossary.json localize_required)"
+                "(locale-glossary.json localize_required · zh-en-mixing.md)"
             )
+
+    loanwords = {
+        **glossary.get("naked_loanwords_zh", {}),
+        **glossary.get("naked_loanwords_zh_gate_as_word", {}),
+    }
+    for word, zh_val in loanwords.items():
+        pattern = rf"(?<![A-Za-z]){re.escape(word)}(?![A-Za-z])"
+        if re.search(pattern, masked, re.I):
+            issues.append(
+                f"ZH naked loanword '{word}'; use '{zh_val}' "
+                "(zh-en-mixing.md · naked_loanwords_zh)"
+            )
+
     return issues
 
 
 def audit_zh_regex(body: str, glossary: dict) -> list[str]:
     issues: list[str] = []
+    masked = mask_exempt_zones(body)
     for entry in glossary.get("forbidden_regex_zh", []):
         pattern = entry.get("pattern", "")
-        if pattern and re.search(pattern, body):
+        if pattern and re.search(pattern, masked):
             hint = entry.get("hint", "")
             issues.append(
                 f"ZH forbidden regex /{pattern}/"
                 + (f"; {hint}" if hint else "")
-                + " (gtm-prose-voice.md)"
+                + " (zh-en-mixing.md · gtm-prose-voice.md)"
             )
     return issues
 
@@ -72,9 +125,19 @@ def audit_en_regex(body: str, glossary: dict) -> list[str]:
     return issues
 
 
+def audit_zh_description(desc: str, glossary: dict) -> list[str]:
+    if not desc:
+        return []
+    return audit_zh_naked_loanwords(desc, glossary) + audit_zh_regex(desc, glossary)
+
+
 def audit_zh(text: str, glossary: dict) -> list[str]:
     issues: list[str] = []
-    body = strip_frontmatter(text)
+    body, fm = strip_frontmatter(text)
+    desc = extract_frontmatter_description(fm)
+    if desc:
+        issues.extend(f"[description] {x}" for x in audit_zh_description(desc, glossary))
+
     if han_count(body) < 1200:
         issues.append(f"ZH han chars low ({han_count(body)}); check depth not padding")
     if body.count("→") >= 3:
@@ -83,7 +146,7 @@ def audit_zh(text: str, glossary: dict) -> list[str]:
         if bad.replace(" X ", " ") in body or bad in body:
             issues.append(f"ZH forbidden pattern: {bad} (gtm-prose-voice.md)")
     issues.extend(audit_zh_regex(body, glossary))
-    issues.extend(audit_zh_localize(body, glossary))
+    issues.extend(audit_zh_naked_loanwords(body, glossary))
     if not re.search(r"(我|我的判断|我认为|我会)", body):
         issues.append("ZH missing Kostja first-person judgment (我/我认为)")
     return issues
@@ -91,7 +154,7 @@ def audit_zh(text: str, glossary: dict) -> list[str]:
 
 def audit_en(text: str, glossary: dict) -> list[str]:
     issues: list[str] = []
-    body = strip_frontmatter(text)
+    body = strip_frontmatter(text)[0]
     wc = en_word_count(text)
     if wc < 900:
         issues.append(f"EN word count low ({wc}); check depth not padding")
@@ -109,20 +172,22 @@ def audit_en(text: str, glossary: dict) -> list[str]:
     return issues
 
 
-def main() -> int:
-    p = argparse.ArgumentParser()
-    p.add_argument("--slug", required=True)
-    p.add_argument("--channel", default="blog", choices=["blog", "marketing"])
-    args = p.parse_args()
+def resolve_channel_slug(slug: str, channel: str) -> tuple[str, str]:
+    if channel == "auto":
+        blog = PROD / f"content/blog/zh/{slug}.md"
+        mkt = PROD / f"content/marketing/zh/{slug}.md"
+        if blog.exists():
+            return "blog", slug
+        if mkt.exists():
+            return "marketing", slug
+        return "blog", slug
+    return channel, slug
 
-    glossary_path = GLOSSARY
-    if not glossary_path.is_file():
-        print(f"FAIL\nmissing glossary {glossary_path}")
-        return 1
-    glossary = json.loads(glossary_path.read_text(encoding="utf-8"))
 
-    zh_path = PROD / f"content/{args.channel}/zh/{args.slug}.md"
-    en_path = PROD / f"content/{args.channel}/en/{args.slug}.md"
+def audit_slug(slug: str, channel: str, glossary: dict, zh_only: bool = False) -> list[str]:
+    channel, slug = resolve_channel_slug(slug, channel)
+    zh_path = PROD / f"content/{channel}/zh/{slug}.md"
+    en_path = PROD / f"content/{channel}/en/{slug}.md"
     all_issues: list[str] = []
 
     if zh_path.exists():
@@ -131,19 +196,52 @@ def main() -> int:
     else:
         all_issues.append(f"[zh] missing {zh_path}")
 
-    if en_path.exists():
+    if not zh_only and en_path.exists():
         en = en_path.read_text(encoding="utf-8")
         all_issues.extend(f"[en] {x}" for x in audit_en(en, glossary))
-    else:
+    elif not zh_only and not en_path.exists():
         all_issues.append(f"[en] missing {en_path}")
 
-    if all_issues:
-        print("FAIL")
-        for i in all_issues:
-            print(i)
+    return all_issues
+
+
+def main() -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument("--slug", help="Single slug to audit")
+    p.add_argument("--channel", default="auto", choices=["blog", "marketing", "auto"])
+    p.add_argument("--batch", choices=["gtm"], help="Audit all slugs in gtm_batch_slugs")
+    p.add_argument("--zh-only", action="store_true", help="Skip EN audit (faster batch)")
+    args = p.parse_args()
+
+    if not args.slug and not args.batch:
+        p.error("Provide --slug or --batch gtm")
+
+    glossary_path = GLOSSARY
+    if not glossary_path.is_file():
+        print(f"FAIL\nmissing glossary {glossary_path}")
         return 1
-    print("PASS")
-    return 0
+    glossary = json.loads(glossary_path.read_text(encoding="utf-8"))
+
+    slugs: list[str] = []
+    if args.batch == "gtm":
+        slugs = glossary.get("gtm_batch_slugs", [])
+    elif args.slug:
+        slugs = [args.slug]
+
+    failed = False
+    for slug in slugs:
+        issues = audit_slug(slug, args.channel, glossary, zh_only=args.zh_only)
+        if issues:
+            failed = True
+            print(f"=== {slug} ===")
+            print("FAIL")
+            for i in issues:
+                print(i)
+            print()
+        else:
+            print(f"=== {slug} === PASS")
+
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

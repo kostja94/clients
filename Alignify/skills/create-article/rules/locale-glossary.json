@@ -1,7 +1,8 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "ssot_md": "locale-glossary.md",
   "gtm_prose_ssot": "gtm-prose-voice.md",
+  "zh_en_mixing_ssot": "zh-en-mixing.md",
   "policy": "chinese_first_in_zh_body — 叙述用中文主称；keep_english 仅保留行业/产品固定写法",
   "keep_english": [
     "Codex",
@@ -20,7 +21,79 @@
     "OpenAI",
     "Anthropic",
     "banked reset",
-    "Usage"
+    "Usage",
+    "SynthID",
+    "C2PA",
+    "Sparkle",
+    "logo",
+    "badge",
+    "MP4",
+    "PNG",
+    "WAV",
+    "PLG",
+    "GTM",
+    "KPI",
+    "FAQ",
+    "EU",
+    "TTS",
+    "LLM",
+    "SaaS",
+    "URL",
+    "CTA",
+    "SKU",
+    "LTD",
+    "ARR",
+    "DAU",
+    "UX",
+    "UI",
+    "Help",
+    "Settings",
+    "Toggle",
+    "Runway",
+    "HeyGen",
+    "ElevenLabs",
+    "Midjourney",
+    "Gemini",
+    "Kling",
+    "Pika",
+    "Luma",
+    "Sora",
+    "Suno",
+    "Udio",
+    "Firefly",
+    "Canva",
+    "Tally",
+    "Mailchimp",
+    "Base44",
+    "Lovable",
+    "Qualtrics",
+    "Supabase",
+    "DeWatermark",
+    "Sorastrip",
+    "Undetectr",
+    "Anthropic",
+    "Google",
+    "Adobe",
+    "OpenAI",
+    "TikTok",
+    "YouTube",
+    "Bluesky",
+    "Stripe",
+    "Reddit"
+  ],
+  "gtm_batch_slugs": [
+    "watermark-growth",
+    "embedded-virality",
+    "platform-subdomain-gating",
+    "wrapped-marketing",
+    "coding-plan",
+    "rate-limit-reset",
+    "git-commit-attribution",
+    "egc-marketing",
+    "ugc-marketing",
+    "subdirectory-hosting",
+    "creator-challenge-program",
+    "lifetime-deal"
   ],
   "localize_required": {
     "usage limits reset": "用量限额重置",
@@ -49,6 +122,23 @@
     "watermark growth": "水印增长",
     "export watermark": "导出物水印",
     "pay to remove watermark": "付费去水印",
+    "pay-to-remove": "付费去水印",
+    "watermark-free export": "无水印导出",
+    "watermark-free exports": "无水印导出",
+    "visible watermark": "可见水印",
+    "machine-readable marking": "机器可读标记",
+    "machine-readable": "机器可读",
+    "export moment": "导出时刻",
+    "freemium gate": "免费增值门槛",
+    "growth gate": "增长门槛",
+    "customer-facing": "面向客户",
+    "self-serve": "自助",
+    "signup loop": "注册闭环",
+    "moving watermark": "动态水印",
+    "permanent trap": "永久带标陷阱",
+    "export friction": "导出摩擦",
+    "strict toggle": "严格开关",
+    "permanent watermark trap": "永久带标陷阱",
     "embedded virality": "嵌入式病毒传播",
     "workflow-native branding": "工作流级品牌植入",
     "commit-level brand imprint": "提交级品牌印记",
@@ -59,12 +149,52 @@
     "default tenant subdomain": "默认平台子域",
     "URL-level platform attribution": "地址栏带平台域名"
   },
+  "naked_loanwords_zh": {
+    "export": "导出",
+    "watermark": "水印",
+    "playbook": "打法",
+    "rollout": "全量上线",
+    "sunset": "下线",
+    "adjacent": "相邻",
+    "hybrid": "混合",
+    "provenance": "来源追溯",
+    "materially": "实质",
+    "monetization": "变现",
+    "friction": "摩擦",
+    "generous": "够用",
+    "segmentation": "分层",
+    "awareness": "认知",
+    "impression": "曝光",
+    "tolerate": "接受",
+    "deliberate": "刻意",
+    "canonical": "权威",
+    "thumbnail": "缩略图",
+    "disqualify": "取消资格",
+    "removal": "去除",
+    "hobby": "爱好者",
+    "agency": "代理",
+    "trap": "陷阱",
+    "survey": "调研",
+    "deepfake": "深度伪造",
+    "embed": "嵌入",
+    "widget": "组件",
+    "preview": "预览",
+    "download": "下载",
+    "render": "渲染",
+    "stock": "素材库",
+    "dashboard": "仪表盘",
+    "outdoor": "户外",
+    "loop": "闭环"
+  },
+  "naked_loanwords_zh_gate_as_word": {
+    "gate": "门槛"
+  },
   "disambiguation_zh": {
     "AI 提交署名": "Git commit 末尾 Co-Authored-By / Made-with 等 trailer；≠ 广告归因 / UTM / SKAN",
     "提交署名": "作者/协作者 credit；≠ 营销 campaign 归因",
     "广告归因": "Paid Ads / UTM / 转化追踪；≠ AI 提交署名",
-    "水印增长": "export 带 logo 换曝光；≠ 仅写付费去水印定价",
-    "付费去标": "embedded-virality / 页脚 badge；≠ export 付费去水印（除非对照节）",
+    "水印增长": "导出带 logo 换曝光；≠ 仅写付费去水印定价",
+    "付费去标": "embedded-virality / 页脚 badge；≠ 导出付费去水印（除非对照节）",
     "平台子域增长": "地址栏/分享链上的平台子域换分发；≠ 付费绑自有域（见自定义域名升级节）",
     "自定义域名升级": "商业化/信任变现；常与去 badge 打包；≠ 本文唯一主题"
   },
@@ -94,7 +224,11 @@
     "混表",
     "双轨 KPI",
     "姊妹篇",
-    "分流表"
+    "分流表",
+    "Tier 2 描述",
+    "Tier 1",
+    "Tier 2",
+    "Tier 3"
   ],
   "forbidden_in_en": [
     "→",
@@ -116,6 +250,46 @@
     {
       "pattern": "和[^\\n]{0,12}badge[^\\n]{0,20}同族",
       "hint": "改用「和页脚 badge 是同一类 freemium 交换」"
+    },
+    {
+      "pattern": "(?i)\\bexport\\s+水印",
+      "hint": "改用「导出物水印」或「导出带标」"
+    },
+    {
+      "pattern": "(?i)export\\s+增长",
+      "hint": "改用「导出带标增长」"
+    },
+    {
+      "pattern": "可见\\s*gate",
+      "hint": "改用「可见水印门槛」"
+    },
+    {
+      "pattern": "(?i)watermark\\s+增长",
+      "hint": "改用「水印增长」"
+    },
+    {
+      "pattern": "(?i)playbook\\s+弱",
+      "hint": "改用「打法偏弱」"
+    },
+    {
+      "pattern": "(?i)pay-to-remove",
+      "hint": "改用「付费去水印」或「付费去标」"
+    },
+    {
+      "pattern": "(?i)freemium\\s+gate",
+      "hint": "改用「免费增值门槛」"
+    },
+    {
+      "pattern": "(?i)growth\\s+gate",
+      "hint": "改用「增长门槛」"
+    },
+    {
+      "pattern": "(?i)self-serve",
+      "hint": "改用「自助」"
+    },
+    {
+      "pattern": "(?i)customer-facing",
+      "hint": "改用「面向客户」"
     }
   ],
   "forbidden_regex_en": [

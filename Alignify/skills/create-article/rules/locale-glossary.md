@@ -301,7 +301,20 @@
 | 是 SEO 优化的基础 | 属于 SEO 基础配置 |
 | 捕获缺失或格式错误的标签 | 发现缺失或格式错误的标签 |
 
-## 3.4 GTM 相邻文禁腔（Marketing / Blog）
+## 3.4 中文英混（Marketing / Blog · ZH）
+
+> **SSOT**：[`zh-en-mixing.md`](./zh-en-mixing.md) · 机器层 `locale-glossary.json` → `naked_loanwords_zh` · `localize_required`
+
+| 避免（叙述） | 改用 |
+|-------------|------|
+| export / watermark（作机制主词） | **导出** / **水印** / **导出带标** |
+| playbook / gate / rollout / sunset / hybrid / adjacent | **打法** / **门槛** / **全量上线** / **下线** / **混合** / **相邻** |
+| pay-to-remove / self-serve / customer-facing | **付费去水印** / **自助** / **面向客户** |
+| export 水印 / 可见 gate | **导出物水印** / **可见水印门槛** |
+
+**logo** 作角标通称可保留；**SynthID / C2PA / 产品名 / API / Pro** 见 §0.1 与 JSON `keep_english`。
+
+## 3.5 GTM 相邻文禁腔（Marketing / Blog）
 
 > **SSOT**：[`gtm-prose-voice.md`](./gtm-prose-voice.md) · 机器层 `locale-glossary.json` → `forbidden_in_*` / `forbidden_regex_*`
 
@@ -314,7 +327,7 @@
 
 音乐 **分轨**、Hub **选型分流**、HR **工单分流** 见 `gtm-prose-voice.md` §2.1 合法域。
 
-## 3.5 Excerpt / Title 格式
+## 3.6 Excerpt / Title 格式
 
 - 中文 title：`Meta Tag 配置：SEO 与用户体验`（冒号两侧、中文与英文词之间加空格）
 - excerpt：80–150 字；避免 `Meta Tag配置` 连写

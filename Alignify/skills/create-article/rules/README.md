@@ -58,6 +58,7 @@
 | [selfcheck.md](./selfcheck.md) | Step 10 · 12 维 + H0–H4 |
 | [presentation.md](./presentation.md) | BLUF + 段落 + Kostja Voice |
 | [gtm-prose-voice.md](./gtm-prose-voice.md) | GTM/PLG 禁腔（分轨·同族分流·组合拳·姊妹篇）+ 存量待改快照 |
+| [zh-en-mixing.md](./zh-en-mixing.md) | 中文正文英混禁则（export/watermark/playbook/gate 等）+ audit naked_loanwords |
 | [content-locale.md](./content-locale.md) | 双语正文 SSOT：05–06 ZH · 09–09c EN · 双轨 Subagent + 地道 Pass |
 | [locale-glossary.md](./locale-glossary.md) | 双语术语 SSOT（Part 1–3 对照 · Part 2 GTM · 文风） |
 | [locale-glossary.json](./locale-glossary.json) | 机器层：`localize_required` · `forbidden_*` · audit 脚本 |
