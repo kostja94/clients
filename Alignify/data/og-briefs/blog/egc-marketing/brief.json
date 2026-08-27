@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "egc-marketing",
+  "analyzed_at": "2026-08-27T00:00:00+08:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Employee Generated Content (EGC) for AI/DevTools — practitioner voices on X beat corporate pages for developer trust",
+  "differentiator_vs_generic": "NOT generic HR employee advocacy SaaS. Show personal X/LinkedIn avatars as HERO vs muted company page; signature voice tier labels; dogfooding/workflow motif. Distinct from UGC creator farm or founder CEO portrait.",
+  "visual_anchors": [
+    "HERO (~55%): 2–3 stylized personal profile cards (engineer/PM silhouettes) with X bird motif vs faded corporate logo page in background — practitioner beats brand page",
+    "Secondary: speech bubble stack showing reset announcement / warroom / dogfooding PR stats (388 PRs) as torn paper chips",
+    "Tertiary: funnel arrow X post → Tier 1 press clip → HN discussion node"
+  ],
+  "anti_patterns": [
+    "HR dashboard or advocacy software UI",
+    "Single CEO founder hero portrait",
+    "UGC phone matrix (that's ugc-marketing OG)",
+    "Real X/Twitter/LinkedIn logos",
+    "Generic handshake stock photo"
+  ],
+  "accent_suggestion": "titian-red",
+  "locales": {
+    "en": {
+      "headline": "EGC MARKETING",
+      "headline_line2": "(2026)",
+      "subtitle": "Employee Voices for AI/DevTools",
+      "tagline": "X · Trust · Practitioner",
+      "composition": "Visual-only editorial collage. HERO: personal creator cards vs ghosted company page — employee voice wins. Secondary: torn-paper chips with reset/warroom/dogfooding motifs. Tertiary: X→press→HN funnel arrow. Title top-left. Paper zine. NO HR SaaS UI, NO founder-only hero."
+    },
+    "zh": {
+      "headline": "员工原创内容",
+      "headline_line2": "（EGC · 2026）",
+      "subtitle": "AI/DevTools 开发者信任",
+      "composition": "Same as EN: personal voice cards HERO vs faded corp page + speech chips + X→媒体→HN arrow. Chinese headline top-left. NO platform logos. NO HR dashboard."
+    }
+  }
+}

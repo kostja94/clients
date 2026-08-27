@@ -39,7 +39,7 @@
 | slug | 类型 | 应链向（出） | 应被链自 |
 |------|------|-------------|----------|
 | **geo** | B | blog/ai-visibility, blog/ai-traffic-and-citation-sources, tools/geo, seo/search-engine | 全站高频 |
-| **x-formerly-twitter** | B | blog/rate-limit-reset, influencer, indie-hackers | blog/coding-plan, blog/rate-limit-reset |
+| **x-formerly-twitter** | B | blog/rate-limit-reset, blog/egc-marketing, influencer, indie-hackers | blog/coding-plan, blog/rate-limit-reset, blog/egc-marketing |
 | **reddit** | B | influencer, x-formerly-twitter | indie-hackers |
 | **email-marketing** | B | competitive-analysis, keyword-research | competitive-analysis |
 | **localization-strategy** | B | seo/navigation-menu, seo/submit-website | indie-hackers |
@@ -56,7 +56,8 @@
 |------|--------|----------|
 | **coding-plan** | rate-limit-reset(×1), pricing, competitive-analysis, referral, x, geo | 各 H2 分散，gtm-combo **0 链** |
 | **rate-limit-reset** | pricing(×1), coding-plan, affiliate, competitive-analysis, x | 组合拳 1–2 链，勿堆 |
-| **ugc-marketing** | creator-program, affiliate, influencer, rate-limit-reset, lifetime-deal, creator-challenge | 表无链；结论 ≤2 链 |
+| **ugc-marketing** | creator-program, affiliate, influencer, rate-limit-reset, lifetime-deal, creator-challenge, blog/egc-marketing | 表无链；结论 ≤2 链 |
+| **egc-marketing** | blog/ugc-marketing, creator-challenge-program, blog/rate-limit-reset, x-formerly-twitter, marketing-types, creator-program | 案例 tweet embed；结论 ≤2 链 |
 | **wrapped-marketing** | rate-limit-reset, creator-challenge-program, pricing-strategy, blog/ugc-marketing | Q4 仪式对照 |
 | **embedded-virality** | git-commit-attribution, watermark-growth, platform-subdomain-gating, pricing-strategy | badge 族互链 |
 | **watermark-growth** | embedded-virality, pricing-strategy, platform-subdomain-gating | 导出 watermark 轴 |

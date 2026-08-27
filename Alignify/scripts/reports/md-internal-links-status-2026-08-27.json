@@ -1,7 +1,7 @@
 {
   "date": "2026-08-27",
   "deploy_root": "E:\\自有部署项目\\alignify production",
-  "article_count": 412,
+  "article_count": 414,
   "articles": [
     {
       "pageKey": "tools/3d-model-generator",
@@ -9851,6 +9851,50 @@
       ]
     },
     {
+      "pageKey": "blog/egc-marketing",
+      "slug": "egc-marketing",
+      "locale": "en",
+      "route": "blog",
+      "title": "How Employee Generated Content (EGC) Builds Developer Trust for AI/DevTools (2026)",
+      "pageUrl": "https://alignify.co/blog/egc-marketing",
+      "category": "marketing",
+      "total_internal_links": 17,
+      "distinct_targets": 7,
+      "targets": [
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/geo",
+        "marketing/marketing-types",
+        "marketing/x-formerly-twitter"
+      ],
+      "target_counts": {
+        "marketing/marketing-types": 2,
+        "blog/ugc-marketing": 4,
+        "marketing/creator-challenge-program": 2,
+        "blog/rate-limit-reset": 3,
+        "marketing/x-formerly-twitter": 3,
+        "marketing/creator-program": 2,
+        "marketing/geo": 1
+      },
+      "duplicates": [
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/marketing-types",
+        "marketing/x-formerly-twitter"
+      ],
+      "inbound_count": 8,
+      "inbound_from": [
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/marketing-types",
+        "marketing/x-formerly-twitter"
+      ]
+    },
+    {
       "pageKey": "blog/embedded-virality",
       "slug": "embedded-virality",
       "locale": "en",
@@ -10277,10 +10321,11 @@
       "title": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas",
       "pageUrl": "https://alignify.co/blog/rate-limit-reset",
       "category": "marketing",
-      "total_internal_links": 6,
-      "distinct_targets": 5,
+      "total_internal_links": 7,
+      "distinct_targets": 6,
       "targets": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "marketing/affiliate",
         "marketing/competitive-analysis",
         "marketing/pricing-strategy",
@@ -10289,6 +10334,7 @@
       "target_counts": {
         "marketing/pricing-strategy": 2,
         "marketing/affiliate": 1,
+        "blog/egc-marketing": 1,
         "marketing/x-formerly-twitter": 1,
         "marketing/competitive-analysis": 1,
         "blog/coding-plan": 1
@@ -10296,9 +10342,10 @@
       "duplicates": [
         "marketing/pricing-strategy"
       ],
-      "inbound_count": 20,
+      "inbound_count": 26,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/git-commit-attribution",
         "blog/platform-subdomain-gating",
@@ -10346,9 +10393,10 @@
       "title": "UGC Marketing Strategy: Creator Networks, Whitelisting & FTC Rules for AI",
       "pageUrl": "https://alignify.co/blog/ugc-marketing",
       "category": "marketing",
-      "total_internal_links": 8,
-      "distinct_targets": 7,
+      "total_internal_links": 9,
+      "distinct_targets": 8,
       "targets": [
+        "blog/egc-marketing",
         "blog/rate-limit-reset",
         "marketing/affiliate",
         "marketing/creator-challenge-program",
@@ -10359,6 +10407,7 @@
       ],
       "target_counts": {
         "marketing/marketing-types": 1,
+        "blog/egc-marketing": 1,
         "marketing/creator-program": 1,
         "marketing/creator-challenge-program": 2,
         "marketing/affiliate": 1,
@@ -10369,8 +10418,9 @@
       "duplicates": [
         "marketing/creator-challenge-program"
       ],
-      "inbound_count": 18,
+      "inbound_count": 26,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/platform-subdomain-gating",
         "blog/watermark-growth",
@@ -10908,6 +10958,50 @@
       ]
     },
     {
+      "pageKey": "blog/egc-marketing",
+      "slug": "egc-marketing",
+      "locale": "zh",
+      "route": "blog",
+      "title": "如何用员工原创内容（EGC）为 AI/DevTools 建立开发者信任（2026）",
+      "pageUrl": "https://alignify.co/zh/blog/egc-marketing",
+      "category": "marketing",
+      "total_internal_links": 17,
+      "distinct_targets": 7,
+      "targets": [
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/geo",
+        "marketing/marketing-types",
+        "marketing/x-formerly-twitter"
+      ],
+      "target_counts": {
+        "marketing/marketing-types": 2,
+        "blog/ugc-marketing": 4,
+        "marketing/creator-challenge-program": 2,
+        "blog/rate-limit-reset": 3,
+        "marketing/x-formerly-twitter": 3,
+        "marketing/creator-program": 2,
+        "marketing/geo": 1
+      },
+      "duplicates": [
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/creator-challenge-program",
+        "marketing/creator-program",
+        "marketing/marketing-types",
+        "marketing/x-formerly-twitter"
+      ],
+      "inbound_count": 8,
+      "inbound_from": [
+        "blog/rate-limit-reset",
+        "blog/ugc-marketing",
+        "marketing/marketing-types",
+        "marketing/x-formerly-twitter"
+      ]
+    },
+    {
       "pageKey": "blog/embedded-virality",
       "slug": "embedded-virality",
       "locale": "zh",
@@ -11345,10 +11439,11 @@
       "title": "用量限额重置：AI Agent 双窗限额下的增长促销策略",
       "pageUrl": "https://alignify.co/zh/blog/rate-limit-reset",
       "category": "marketing",
-      "total_internal_links": 6,
-      "distinct_targets": 5,
+      "total_internal_links": 7,
+      "distinct_targets": 6,
       "targets": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "marketing/affiliate",
         "marketing/competitive-analysis",
         "marketing/pricing-strategy",
@@ -11357,6 +11452,7 @@
       "target_counts": {
         "marketing/pricing-strategy": 2,
         "marketing/affiliate": 1,
+        "blog/egc-marketing": 1,
         "marketing/x-formerly-twitter": 1,
         "marketing/competitive-analysis": 1,
         "blog/coding-plan": 1
@@ -11364,9 +11460,10 @@
       "duplicates": [
         "marketing/pricing-strategy"
       ],
-      "inbound_count": 20,
+      "inbound_count": 26,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/git-commit-attribution",
         "blog/platform-subdomain-gating",
@@ -11414,9 +11511,10 @@
       "title": "UGC 营销策略：AI 产品的创作者网络、Whitelisting 与 FTC 合规",
       "pageUrl": "https://alignify.co/zh/blog/ugc-marketing",
       "category": "marketing",
-      "total_internal_links": 7,
-      "distinct_targets": 6,
+      "total_internal_links": 8,
+      "distinct_targets": 7,
       "targets": [
+        "blog/egc-marketing",
         "blog/rate-limit-reset",
         "marketing/affiliate",
         "marketing/creator-challenge-program",
@@ -11426,6 +11524,7 @@
       ],
       "target_counts": {
         "marketing/marketing-types": 1,
+        "blog/egc-marketing": 1,
         "marketing/creator-program": 1,
         "marketing/creator-challenge-program": 2,
         "marketing/affiliate": 1,
@@ -11435,8 +11534,9 @@
       "duplicates": [
         "marketing/creator-challenge-program"
       ],
-      "inbound_count": 18,
+      "inbound_count": 26,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/platform-subdomain-gating",
         "blog/watermark-growth",
@@ -11648,8 +11748,9 @@
         "blog/embedded-virality": 1
       },
       "duplicates": [],
-      "inbound_count": 22,
+      "inbound_count": 26,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/ugc-marketing",
         "blog/watermark-growth",
@@ -11685,8 +11786,9 @@
       "duplicates": [
         "marketing/creator-challenge-program"
       ],
-      "inbound_count": 19,
+      "inbound_count": 23,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/ugc-marketing",
         "marketing/affiliate",
         "marketing/creator-challenge-program",
@@ -11750,9 +11852,10 @@
       "duplicates": [
         "seo/how-search-engine-works"
       ],
-      "inbound_count": 28,
+      "inbound_count": 30,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "insights/directory-submission-sites",
         "insights/indie-hackers",
         "insights/reasons-you-need-seo",
@@ -11923,10 +12026,11 @@
       "title": "How to Choose a GTM Route for AI Products with a Marketing Types Framework (2026)",
       "pageUrl": "https://alignify.co/marketing/marketing-types",
       "category": "marketing",
-      "total_internal_links": 14,
-      "distinct_targets": 14,
+      "total_internal_links": 15,
+      "distinct_targets": 15,
       "targets": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/rate-limit-reset",
         "blog/ugc-marketing",
@@ -11949,6 +12053,7 @@
         "marketing/pricing-strategy": 1,
         "marketing/creator-program": 1,
         "blog/ugc-marketing": 1,
+        "blog/egc-marketing": 1,
         "marketing/creator-challenge-program": 1,
         "marketing/lifetime-deal": 1,
         "blog/embedded-virality": 1,
@@ -11958,8 +12063,9 @@
         "blog/wrapped-marketing": 1
       },
       "duplicates": [],
-      "inbound_count": 12,
+      "inbound_count": 16,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/ugc-marketing",
         "marketing/creator-challenge-program",
         "marketing/creator-program",
@@ -12067,20 +12173,23 @@
       "title": "X Marketing: Grok AI Algorithm & Personal Brand",
       "pageUrl": "https://alignify.co/marketing/x-formerly-twitter",
       "category": "marketing",
-      "total_internal_links": 2,
-      "distinct_targets": 2,
+      "total_internal_links": 3,
+      "distinct_targets": 3,
       "targets": [
+        "blog/egc-marketing",
         "insights/indie-hackers",
         "marketing/influencer"
       ],
       "target_counts": {
+        "blog/egc-marketing": 1,
         "insights/indie-hackers": 1,
         "marketing/influencer": 1
       },
       "duplicates": [],
-      "inbound_count": 9,
+      "inbound_count": 15,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "blog/rate-limit-reset",
         "insights/indie-hackers",
         "marketing/reddit"
@@ -12203,8 +12312,9 @@
         "blog/embedded-virality": 1
       },
       "duplicates": [],
-      "inbound_count": 22,
+      "inbound_count": 26,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/ugc-marketing",
         "blog/watermark-growth",
@@ -12242,8 +12352,9 @@
       "duplicates": [
         "marketing/creator-challenge-program"
       ],
-      "inbound_count": 19,
+      "inbound_count": 23,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/ugc-marketing",
         "marketing/affiliate",
         "marketing/creator-challenge-program",
@@ -12305,9 +12416,10 @@
         "marketing/affiliate": 1
       },
       "duplicates": [],
-      "inbound_count": 28,
+      "inbound_count": 30,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "insights/directory-submission-sites",
         "insights/indie-hackers",
         "insights/reasons-you-need-seo",
@@ -12488,10 +12600,11 @@
       "title": "如何用营销类型框架为 AI 产品选 GTM 路线（2026）",
       "pageUrl": "https://alignify.co/zh/marketing/marketing-types",
       "category": "marketing",
-      "total_internal_links": 14,
-      "distinct_targets": 14,
+      "total_internal_links": 15,
+      "distinct_targets": 15,
       "targets": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "blog/embedded-virality",
         "blog/rate-limit-reset",
         "blog/ugc-marketing",
@@ -12514,6 +12627,7 @@
         "marketing/pricing-strategy": 1,
         "marketing/creator-program": 1,
         "blog/ugc-marketing": 1,
+        "blog/egc-marketing": 1,
         "marketing/creator-challenge-program": 1,
         "marketing/lifetime-deal": 1,
         "blog/embedded-virality": 1,
@@ -12523,8 +12637,9 @@
         "blog/wrapped-marketing": 1
       },
       "duplicates": [],
-      "inbound_count": 12,
+      "inbound_count": 16,
       "inbound_from": [
+        "blog/egc-marketing",
         "blog/ugc-marketing",
         "marketing/creator-challenge-program",
         "marketing/creator-program",
@@ -12648,24 +12763,27 @@
       "title": "X营销：Grok AI算法与个人品牌策略",
       "pageUrl": "https://alignify.co/zh/marketing/x-formerly-twitter",
       "category": "marketing",
-      "total_internal_links": 4,
-      "distinct_targets": 4,
+      "total_internal_links": 5,
+      "distinct_targets": 5,
       "targets": [
+        "blog/egc-marketing",
         "insights/indie-hackers",
         "marketing/influencer",
         "marketing/reddit",
         "seo/meta-tag"
       ],
       "target_counts": {
+        "blog/egc-marketing": 1,
         "insights/indie-hackers": 1,
         "marketing/reddit": 1,
         "marketing/influencer": 1,
         "seo/meta-tag": 1
       },
       "duplicates": [],
-      "inbound_count": 9,
+      "inbound_count": 15,
       "inbound_from": [
         "blog/coding-plan",
+        "blog/egc-marketing",
         "blog/rate-limit-reset",
         "insights/indie-hackers",
         "marketing/reddit"
@@ -14599,13 +14717,14 @@
       }
     },
     "marketing/geo": {
-      "count": 28,
+      "count": 30,
       "from": {
         "seo/breadcrumbs": 2,
         "seo/checklist": 2,
         "seo/schema": 3,
         "seo/search-engine": 2,
         "blog/coding-plan": 2,
+        "blog/egc-marketing": 2,
         "marketing/keyword-research": 2,
         "marketing/marketing-types": 2,
         "marketing/competitive-analysis": 1,
@@ -14918,9 +15037,10 @@
       }
     },
     "blog/rate-limit-reset": {
-      "count": 20,
+      "count": 26,
       "from": {
         "blog/coding-plan": 4,
+        "blog/egc-marketing": 6,
         "blog/embedded-virality": 2,
         "blog/git-commit-attribution": 2,
         "blog/platform-subdomain-gating": 4,
@@ -14975,12 +15095,67 @@
       }
     },
     "marketing/x-formerly-twitter": {
-      "count": 9,
+      "count": 15,
       "from": {
         "blog/coding-plan": 2,
+        "blog/egc-marketing": 6,
         "blog/rate-limit-reset": 2,
         "marketing/reddit": 1,
         "insights/indie-hackers": 4
+      }
+    },
+    "marketing/marketing-types": {
+      "count": 16,
+      "from": {
+        "blog/egc-marketing": 4,
+        "blog/ugc-marketing": 2,
+        "marketing/creator-challenge-program": 2,
+        "marketing/creator-program": 2,
+        "marketing/geo": 2,
+        "marketing/keyword-research": 2,
+        "marketing/pricing-strategy": 2
+      }
+    },
+    "blog/ugc-marketing": {
+      "count": 26,
+      "from": {
+        "blog/egc-marketing": 8,
+        "blog/embedded-virality": 2,
+        "blog/platform-subdomain-gating": 4,
+        "blog/watermark-growth": 2,
+        "blog/wrapped-marketing": 2,
+        "marketing/creator-challenge-program": 2,
+        "marketing/influencer": 2,
+        "marketing/marketing-types": 2,
+        "marketing/affiliate": 1,
+        "marketing/creator-program": 1
+      }
+    },
+    "marketing/creator-challenge-program": {
+      "count": 26,
+      "from": {
+        "blog/egc-marketing": 4,
+        "blog/embedded-virality": 2,
+        "blog/ugc-marketing": 4,
+        "blog/watermark-growth": 2,
+        "blog/wrapped-marketing": 2,
+        "marketing/affiliate": 4,
+        "marketing/creator-program": 4,
+        "marketing/influencer": 2,
+        "marketing/marketing-types": 2
+      }
+    },
+    "marketing/creator-program": {
+      "count": 23,
+      "from": {
+        "blog/egc-marketing": 4,
+        "blog/ugc-marketing": 2,
+        "marketing/affiliate": 3,
+        "marketing/creator-challenge-program": 2,
+        "marketing/geo": 2,
+        "marketing/influencer": 6,
+        "marketing/lifetime-deal": 2,
+        "marketing/marketing-types": 2
       }
     },
     "blog/how-to-add-payments-to-vibe-coded-app": {
@@ -15031,38 +15206,11 @@
         "marketing/competitive-analysis": 1
       }
     },
-    "blog/ugc-marketing": {
-      "count": 18,
-      "from": {
-        "blog/embedded-virality": 2,
-        "blog/platform-subdomain-gating": 4,
-        "blog/watermark-growth": 2,
-        "blog/wrapped-marketing": 2,
-        "marketing/creator-challenge-program": 2,
-        "marketing/influencer": 2,
-        "marketing/marketing-types": 2,
-        "marketing/affiliate": 1,
-        "marketing/creator-program": 1
-      }
-    },
     "blog/platform-subdomain-gating": {
       "count": 5,
       "from": {
         "blog/embedded-virality": 3,
         "blog/watermark-growth": 2
-      }
-    },
-    "marketing/creator-challenge-program": {
-      "count": 22,
-      "from": {
-        "blog/embedded-virality": 2,
-        "blog/ugc-marketing": 4,
-        "blog/watermark-growth": 2,
-        "blog/wrapped-marketing": 2,
-        "marketing/affiliate": 4,
-        "marketing/creator-program": 4,
-        "marketing/influencer": 2,
-        "marketing/marketing-types": 2
       }
     },
     "blog/embedded-virality": {
@@ -15150,33 +15298,19 @@
         "insights/indie-hackers": 2
       }
     },
+    "blog/egc-marketing": {
+      "count": 8,
+      "from": {
+        "blog/rate-limit-reset": 2,
+        "blog/ugc-marketing": 2,
+        "marketing/marketing-types": 2,
+        "marketing/x-formerly-twitter": 2
+      }
+    },
     "audit-website-by-lovable": {
       "count": 2,
       "from": {
         "blog/subdirectory-hosting": 2
-      }
-    },
-    "marketing/marketing-types": {
-      "count": 12,
-      "from": {
-        "blog/ugc-marketing": 2,
-        "marketing/creator-challenge-program": 2,
-        "marketing/creator-program": 2,
-        "marketing/geo": 2,
-        "marketing/keyword-research": 2,
-        "marketing/pricing-strategy": 2
-      }
-    },
-    "marketing/creator-program": {
-      "count": 19,
-      "from": {
-        "blog/ugc-marketing": 2,
-        "marketing/affiliate": 3,
-        "marketing/creator-challenge-program": 2,
-        "marketing/geo": 2,
-        "marketing/influencer": 6,
-        "marketing/lifetime-deal": 2,
-        "marketing/marketing-types": 2
       }
     },
     "marketing/influencer": {
