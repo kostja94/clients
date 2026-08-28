@@ -8,12 +8,12 @@
 
 | 位置 | 用途 |
 |------|------|
-| **`knowledge/tools/`** | 与 **`src/data/tools-pages-config.ts`** 中 **`slug` 同名**的 `*.md` 知识块，便于与 **`/tools/[slug]`**、`product/alignify-keywords-tools.md` 对照（如 [`tools/geo.md`](../tools/geo.md)、[`tools/note-taker.md`](../tools/note-taker.md)）。 |
+| **`knowledge/tools/`** | 与 **`src/data/tools-pages-config.ts`** 中 **`slug` 同名**的 `*.md` 知识块，便于与 **`/tools/[slug]`**、`product/alignify-keywords-tools.md` 对照（如 [`tools/geo.md`](../tools/search-geo/geo.md)、[`tools/note-taker.md`](../tools/productivity/note-taker.md)）。 |
 | **`knowledge/seo/`（本目录）** | **不绑定** Tools slug 的 SEO 专册；**已对应站上长文**的条目，文件名 **与 `content/seo/*/[slug].md` 的 `slug` 段同名**（kebab-case），便于与 **`/seo/[slug]`** 对照；尚无正式页的主题可暂用描述性文件名，上线后改为 slug 同名。**不要求**在 `tools-pages-config` 中存在对应项。 |
 | **`skills/ops/`** | 发布后 SEO 运维（sitemap、IndexNow、GSC）；本目录为**网摘与概念整理**，二者互补。 |
 | **`skills/create-article/rules/`** | 文章创作与 section 写作规范 SSOT。 |
 
-**边界提示**：**GEO / AEO / LLMO** 等「生成式答案可见度」若需与 Tools 页 **`geo`** 对齐，知识块正文仍放在 [`tools/geo.md`](../tools/geo.md)，避免同一主题在两条路径重复维护。本目录侧重**经典 Web 搜索**与站内 technical SEO 工作流相关的笔记。
+**边界提示**：**GEO / AEO / LLMO** 等「生成式答案可见度」若需与 Tools 页 **`geo`** 对齐，知识块正文仍放在 [`tools/geo.md`](../tools/search-geo/geo.md)，避免同一主题在两条路径重复维护。本目录侧重**经典 Web 搜索**与站内 technical SEO 工作流相关的笔记。
 
 **正式文章创作**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
@@ -35,7 +35,7 @@
 |------|------|------|
 | [learn-seo.md](./learn-seo.md) | ✅ 完整 | 如何学习 SEO：路径、信源分层与资源索引 |
 | [how-search-engine-works.md](./how-search-engine-works.md) | ✅ 完整 | 搜索引擎三阶段工作原理：爬取、索引、结果呈现 |
-| [search-engine.md](./search-engine.md) | 🔲 待补充 | 搜索引擎类型与市场份额 |
+| [search-engine.md](../tools/search-geo/search-engine.md) | 🔲 待补充 | 搜索引擎类型与市场份额 |
 | [local-search-engines.md](./local-search-engines.md) | ✅ 完整 | 本地化与特色搜索引擎：区域引擎与垂直品类 |
 | [glossary.md](./glossary.md) | 🔲 待补充 | SEO 术语表 |
 | [checklist.md](./checklist.md) | ✅ 完整 | SEO Checklist（技术 + On-page + 发布前） |

@@ -1,0 +1,19 @@
+{
+  "slug": "spiderman-voice-changer-pubgm",
+  "section": "blog",
+  "locale": "en",
+  "provider": "apineed",
+  "quality": "high",
+  "crop_bias": "top",
+  "output_size": [
+    1200,
+    630
+  ],
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "brand_mode": "kostja",
+  "brand_corner": "bottom-left",
+  "headline": "MOBILE VOICE CHANGER"
+}

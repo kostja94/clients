@@ -1,0 +1,31 @@
+{
+  "section": "blog",
+  "slug": "best-ai-voice-changer",
+  "source_md": "blog/01-best-ai-voice-changer-2026.md",
+  "analyzed_at": "2026-08-28T12:00:00+00:00",
+  "model": "manual-dubbingai-v1",
+  "page_topic_one_liner": "Best AI voice changers for gaming, Discord, and streaming in 2026 — latency, soundboards, presets comparison hub",
+  "differentiator_vs_generic": "Real-time gaming/streaming voice changer roundup — NOT Google Assistant settings, NOT file-only TTS, NOT generic microphone stock photo. Hero must show live headset + waveform + preset variety.",
+  "visual_anchors": [
+    "HERO (~45% canvas): Gaming headset with live cyan waveform on torn paper — real-time voice metaphor",
+    "2x2 grid of blurred voice preset avatar tiles (anime, robot, deep, chipmunk) — no text labels",
+    "Small Discord-style voice panel mock + latency stopwatch — blurred UI only"
+  ],
+  "anti_patterns": [
+    "Google Assistant or phone TTS settings as hero",
+    "Readable Voicemod/Discord/competitor logos",
+    "Corporate SaaS dashboard or pricing table on canvas",
+    "Ranking list text or model names",
+    "Empty white placeholder cards"
+  ],
+  "accent_suggestion": "dubbing-gradient",
+  "locales": {
+    "en": {
+      "headline": "BEST AI VOICE CHANGERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Gaming · Discord · Streaming · Real-Time",
+      "tagline": "Compare Latency, Soundboards & Presets",
+      "composition": "Visual-only editorial paper collage for best AI voice changer hub (dubbingai.io/blog/best-ai-voice-changer). HERO upper-right: gaming headset with live cyan-to-indigo waveform on torn paper. Secondary left: 2x2 blurred preset avatar tiles. Tertiary lower: Discord-style voice panel mock + small stopwatch. Title block top-left only. Warm paper #F4F4F2, torn edges, halftone. NO logos, NO ranking text, NO Assistant UI, NO extra captions."
+    }
+  }
+}

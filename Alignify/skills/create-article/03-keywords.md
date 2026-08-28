@@ -49,7 +49,7 @@ Step 02 已填 SERP Fit；本 Step **只登记**关键词锚点，**不重做** 
 
 **分流**：[与相邻 slug 的差异 — 读者任务 / 关键词意图]
 
-**数据源**：`knowledge/tools/{slug}.md`
+**数据源**：`knowledge/tools/{slug}.md` 或 `knowledge/tools/{cluster}/{slug}.md`
 ```
 
 ### 其他类型

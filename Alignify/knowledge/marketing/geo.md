@@ -13,9 +13,8 @@
 | slug + 页面类型 | 回答什么 | 不覆盖什么 | 知识块链接 |
 |---|---|---|---|
 | `/marketing/geo`（本页，Pillar） | GEO 概念框架、SEO vs GEO、4 种平台关系模型、策略方法论 | 具体工具选型、平台流量排名、引用来源详细分析 | — |
-| `/tools/geo`（Spoke） | GEO 全栈工具选型（Profound, Goodie, Karis, Daydream, Writesonic, Semrush） | AI 平台流量格局、检索供给链、引用来源规律 | [geo.md](../tools/geo.md) |
-| `/blog/ai-visibility`（Spoke） | 纯 AI 可见度监测（Otterly.AI, Trakkr, Searchable, Profound, Peec AI, Semrush） | GEO 策略方法论、平台流量分析 | [ai-visibility.md](../tools/ai-visibility.md) |
-| `/blog/geo-platform-source`（Spoke） | AI 搜索平台流量排名、检索供给链、跨平台引用来源规律、区域 AI 平台生态 | GEO 策略实施、具体工具选型 | [geo-platform-source.md](../tools/geo-platform-source.md) |
+| `/tools/geo`（Spoke） | GEO 全栈工具选型（Profound, Goodie, Karis, Daydream, Writesonic, Semrush） | AI 平台流量格局、检索供给链、引用来源规律 | [geo.md](../tools/search-geo/geo.md) |
+| `/blog/ai-visibility`（Spoke） | 纯 AI 可见度监测（Otterly.AI, Trakkr, Searchable, Profound, Peec AI, Semrush） | GEO 策略方法论、平台流量分析 | [ai-visibility.md](../tools/search-geo/ai-visibility.md) |
 
 以下条目可任意顺序阅读；**不是**文章体例。
 

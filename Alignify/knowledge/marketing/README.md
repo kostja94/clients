@@ -53,7 +53,7 @@
 |------|------|------|
 | [indie-hackers.md](./indie-hackers.md) | ✅ 完整 | Indie Hacker 独立开发者增长（Insights 侧入口见 [../insights/indie-hackers.md](../insights/indie-hackers.md)） |
 | [keyword-research.md](./keyword-research.md) | ✅ 完整 | 关键词研究 |
-| [geo.md](./geo.md) | ✅ 完整 | GEO 生成式引擎优化 |
+| [geo.md](../tools/search-geo/geo.md) | ✅ 完整 | GEO 生成式引擎优化 |
 | [pricing-strategy.md](./pricing-strategy.md) | ✅ 完整 | 定价策略 |
 | [lifetime-deal.md](./lifetime-deal.md) | ✅ 完整 | LTD 终身优惠 |
 | [affiliate.md](./affiliate.md) | ✅ 完整 | 联盟营销 |

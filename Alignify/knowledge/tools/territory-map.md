@@ -1,7 +1,39 @@
 # Territory Map — Knowledge Block Tiers & Clusters
 
-> 最后更新：2026-06-25 · 原则见 [README.md](./README.md) §战略原则
+> 最后更新：2026-08-28 · 原则见 [README.md](./README.md) §战略原则
 > A/B/C 深度分层定义见 [README.md](./README.md) §A/B/C 深度分层
+
+## 主题簇物理路径（2026-08-28）
+
+> **slug 与路由不变**；完整索引见 [README.md §主题簇物理路径](./README.md#主题簇物理路径2026-08-28)。
+
+| 文件夹 | Hub | slug 数 |
+|--------|-----|:-------:|
+| `image/` | `image` | 12 |
+| `video/` | `video` | 13 |
+| `3d-spatial/` | `3d` | 7 |
+| `llm/` | `llm` | 6 |
+| `voice-audio/` | `voice` | 10 |
+| `web-data/` | `web-scraping` | 6 |
+| `search-geo/` | `search-engine` | 4 |
+| `agent/` | `agent-skills` | 10 |
+| `coding/` | `coding` | 9 |
+| `design/` | `design` | 6 |
+| `marketing-growth/` | `influencer-marketing` | 9 |
+| `hr-recruiting/` | `recruiting` | 4 |
+| `education/` | `education` | 8 |
+| `text-content/` | `text-generator` | 6 |
+| `chat-social/` | `chatbot` | 5 |
+| `enterprise-knowledge/` | `knowledge-base` | 7 |
+| `infrastructure/` | `api` | 4 |
+| `healthcare/` | `healthcare` | 2 |
+| `productivity/` | `productivity` | 4 |
+| `website-builder/` | `website-builder` | 5 |
+| `cms/` | — | 1 |
+
+**独立根目录**（11 slug）：`agentic-commerce` · `agentic-payments` · `ai-shopping` · `animation-library` · `data-engineering-agent` · `family-assistant` · `fashion` · `lifetime-deals` · `religion` · `vibe-coding-payments` · `world-model`
+
+---
 
 ## A 档 · 品类支柱（12 个）
 
@@ -12,7 +44,7 @@
 | `filmmaking` | 媒体生产链 | spoke | 六类可提取层全覆盖 |
 | `headless-browser` | Web 数据链 | spoke | 六类可提取层全覆盖 |
 | `image-generator` | 媒体生产链 | pillar | 六类可提取层全覆盖 |
-| `llm` | LLM 评测五轴 | pillar | 六类可提取层全覆盖；快变 Top N 见 [llm-leaderboard-snapshots.md](./llm-leaderboard-snapshots.md) |
+| `llm` | LLM 评测五轴 | pillar | 六类可提取层全覆盖；快变 Top N 见 [llm-leaderboard-snapshots.md](llm-leaderboard-snapshots.md) |
 | `recruiting` | 招聘与 HR | pillar | 六类可提取层全覆盖 |
 | `search-engine` | 搜索发现链 | pillar | 六类可提取层全覆盖 |
 | `video-generator` | 媒体生产链 | spoke | 六类可提取层全覆盖 |
@@ -20,7 +52,9 @@
 | `web-scraping` | Web 数据链 | pillar | 六类可提取层全覆盖 |
 | `web-search-api` | Web 数据链 | spoke | 六类可提取层全覆盖 |
 
-## B 档 · 有效辐条（92 个）
+## B 档 · 有效辐条（93 个）
+
+> **主题簇路径**：21 簇见上表 §主题簇物理路径；建站器 [`website-builder/`](./website-builder/README.md) · CMS [`cms/`](./cms/README.md) 并列，非 `website-building/`。
 
 | Slug | Territory | Role |
 |------|-----------|:----:|
@@ -49,6 +83,7 @@
 | `b2b` | 企业销售与营销 | spoke |
 | `background-changer` | 媒体生产链 | spoke |
 | `browser` | Agent 执行链 | spoke |
+| `blog-website-builder` | 编程工具链 | spoke · KB only（`website-builder/` 簇；2026-08-28；发文走 `/blog`） |
 | `canvas-video` | 媒体生产链 | spoke |
 | `character-chat` | 对话与社交 | spoke |
 | `chatbot` | 对话与社交 | pillar |
@@ -60,12 +95,15 @@
 | `design` | 设计链 | pillar |
 | `directory` | 对话与社交 | spoke |
 | `documentation` | 企业工具 | spoke |
+| `ecommerce-website-builder` | 编程工具链 | spoke · KB only（新建 2026-08-28；发文走 `/blog`） |
 | `essay-writer` | 内容与创作 | spoke |
 | `evaluation` | LLM 评测五轴 | spoke |
 | `family-assistant` | 企业工具 | spoke |
 | `fundraising` | 企业销售与营销 | spoke |
 | `geo` | 搜索发现链 | spoke |
 | `git-hosting` | 编程工具链 | spoke · KB only（新建 2026-08-21；发文走 `/blog`） |
+| `headless-cms` | 编程工具链 | spoke · KB only（新建 2026-08-28；发文走 `/blog`） |
+| `portfolio-website-builder` | 编程工具链 | spoke · KB only（新建 2026-08-28；发文走 `/blog`） |
 | `headshot-generator` | 媒体生产链 | spoke |
 | `healthcare` | 健康与医疗 | pillar |
 | `ide` | 编程工具链 | spoke |
@@ -120,6 +158,7 @@
 | `video-translator` | 语音与声音 | spoke |
 | `voice-changer` | 语音与声音 | spoke |
 | `voice-cloning` | 语音与声音 | spoke |
+| `landing-page-builder` | 编程工具链 | spoke · KB only（新建 2026-08-28；发文走 `/blog`） |
 | `website-builder` | 编程工具链 | spoke |
 | `workflow` | Agent 执行链 | spoke |
 | `ai-documents` | 内容与创作 | spoke |

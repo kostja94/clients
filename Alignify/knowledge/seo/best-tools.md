@@ -4,7 +4,7 @@
 
 **站内对照**：[`content/seo/zh/best-tools.md`](../../content/seo/zh/best-tools.md) · [`content/seo/en/best-tools.md`](../../content/seo/en/best-tools.md) · 路由 `/zh/seo/best-tools`、`/seo/best-tools`（以实际部署为准）
 
-**规范对照**：[meta.md](../../skills/create-article/rules/meta.md) · [sections.md](../../skills/create-article/rules/sections.md) Part 3.3 · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 检查清单：[checklist.md](./checklist.md) · 学习资源：[learn-seo.md](./learn-seo.md) · **GEO / AI 应答可见度**另见分册：[tools/geo.md](../tools/geo.md)（与经典 Web SERP **分册**，避免重复维护）
+**规范对照**：[meta.md](../../skills/create-article/rules/meta.md) · [sections.md](../../skills/create-article/rules/sections.md) Part 3.3 · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 检查清单：[checklist.md](./checklist.md) · 学习资源：[learn-seo.md](./learn-seo.md) · **GEO / AI 应答可见度**另见分册：[tools/geo.md](../tools/search-geo/geo.md)（与经典 Web SERP **分册**，避免重复维护）
 
 以下条目可任意顺序阅读；**不是**文章体例。文末外链为**检索整理**，用于建立「类目心智模型」，**不**替代具体站点的 GSC、日志与合同约束下的采购决策。
 
@@ -21,7 +21,7 @@
 - **Technical crawler / 站内爬虫**：桌面或云端抓取 HTML/JS 渲染结果，输出断链、重定向、canonical、重复等**可修复清单**。
 - **Log file analysis / 日志分析**：从访问日志还原 **Googlebot 与其它爬虫**的命中模式，与抓取预算、索引延迟相关；大厂站与复杂 CMS 更常见刚需。
 - **Local SEO stack / 本地 SEO**：引用（citation）、网格排名（grid）、GBP 管理等，与「全国词」关键词工具体系**部分重叠、部分独立**。
-- **GEO / LLM visibility**：衡量品牌在 **ChatGPT、Perplexity、Gemini** 等应答中的**引用与提及**；与「蓝色链接排名」工具**不同赛道**，详见 [tools/geo.md](../tools/geo.md)。
+- **GEO / LLM visibility**：衡量品牌在 **ChatGPT、Perplexity、Gemini** 等应答中的**引用与提及**；与「蓝色链接排名」工具**不同赛道**，详见 [tools/geo.md](../tools/search-geo/geo.md)。
 
 ---
 
@@ -111,7 +111,7 @@
 - **本地 SEO（示例）**：BrightLocal、Whitespark、Moz Local、Yext、Synup 等；网格工具常见独立品牌。
 - **性能持续监测（示例）**：WebPageTest、DebugBear、Calibre、SpeedCurve 等——与一次性 Lighthouse 分层使用。
 - **结构化数据生成辅助**：Google Structured Data Markup Helper、Merkle Schema Generator 等——**生成后**仍需官方测试工具校验。
-- **GEO / AI 可见性（示例）**：部分套件已含 AI Overview 相关模块；独立产品形态变化快，概念层以 [tools/geo.md](../tools/geo.md) 为准。
+- **GEO / AI 可见性（示例）**：部分套件已含 AI Overview 相关模块；独立产品形态变化快，概念层以 [tools/geo.md](../tools/search-geo/geo.md) 为准。
 
 ---
 
@@ -147,4 +147,4 @@
 
 - [Schema.org](https://schema.org/)（词汇表；与 Google 富结果要求**分开阅读**）
 - [W3C Markup Validator](https://validator.w3.org/)（标记有效性辅助）
-- GEO 专题与 Tools 页对齐：[tools/geo.md](../tools/geo.md)
+- GEO 专题与 Tools 页对齐：[tools/geo.md](../tools/search-geo/geo.md)

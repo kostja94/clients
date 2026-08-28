@@ -1,6 +1,6 @@
 # Clients 任务看板
 
-> 跨客户任务总览 · **Last updated**: 2026-08-21
+> 跨客户任务总览 · **Last updated**: 2026-08-28
 
 **用法**：新任务进「待办」→ 执行中移「进行中」→ 完成移「已完成」。ID 格式 `{client}-{序号}`。
 
@@ -12,7 +12,7 @@
 
 | ID | 客户 | 任务 | 优先级 | 备注 |
 |----|------|------|:------:|------|
-| datus-001 | datus | 调研 Dosi | P1 | 调研文档已建，待确认主张 |
+| | | | | |
 
 ### 进行中
 
@@ -25,6 +25,7 @@
 | ID | 客户 | 任务 | 完成 | 交付物 |
 |----|------|------|------|--------|
 | floatboat-001 | floatboat | 构建全站 SEO/GEO 审计 Skill 包（内部团队执行） | 2026-08-21 | [site-seo-geo-audit/](./floatboat/site-seo-geo-audit/) |
+| datus-001 | datus | 内容策略、Blog 簇、Skills 与 Dosi 调研（合作已结束，材料归档） | 2026-08-28 | [others/datus/](./others/datus/) |
 
 ### 已阻塞
 
@@ -40,8 +41,8 @@
 
 - **目标**：调研 Dosi 新产品推广大方向（关键词 + 候选文章）
 - **范围**：仅调研，不写文章、不改站
-- **交付**：[datus-dosi.md](./datus/datus-dosi.md)
-- **待确认**：「only Ossie implementation」等对外主张需产品/法务
+- **交付**：[datus-dosi.md](./others/datus/datus-dosi.md) · 完整材料 [others/datus/](./others/datus/)
+- **状态**：合作已结束（2026-08-28），文件夹已移至 `others/`
 
 ### floatboat-001
 
@@ -56,5 +57,5 @@
 
 | 客户 | 文件夹 | 已完成 |
 |------|--------|:------:|
-| datus | [datus/](./datus/) | 0 |
+| datus | [others/datus/](./others/datus/)（已归档） | 1 |
 | floatboat | [floatboat/](./floatboat/) | 1 |

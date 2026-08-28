@@ -309,6 +309,9 @@ Publishability (G+P+C) · Fact · Differentiation · CMS Category Match · Produ
 4. Cross-Article Audit（如有）
 5. 提示人类：Track S → 更新 blog/README + content-graph 序号；Track C → 更新 manifest.csv
 6. **Meta 预留**：Title 45–65 chars · Description 140–160 chars · 主关键词在前 80 chars
+7. **OG 封面**（Track S 推荐 / publish 前）：APINEED → 1200×630 WebP → [`../ops/og-covers.md`](../ops/og-covers.md)
+   - 新 slug：先 `analyze-og-page.py --merge-registry`，再 `generate-og-cover.py --slug {slug}`
+   - 输出：`blog/images/og/{slug}/{slug}-og-en.webp`
 
 **SelfCheck 输出格式**:
 

@@ -4,7 +4,7 @@
 
 **规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [technical/README.md](../../skills/ops/README.md) · 本分册说明：[seo/README.md](./README.md) · 经典三阶段流水线：[how-search-engine-works.md](./how-search-engine-works.md)
 
-**与 `/seo/crawler`、Tools 页的分工**：用户向的 **站长指南** 正文在 **`/seo/crawler`**（及中文）；本知识块为**网摘笔记**（UA 表、外链、碎片），**不**与 `content/seo/*/crawler.md` 逐段同步。若读者站在**数据采集方**（代理、Playwright、托管 API），请参阅 Tools **`/tools/web-scraping`** 与知识块 **[`web-scraping.md`](../tools/web-scraping.md)**；本文件**不**展开厂商选型八条。
+**与 `/seo/crawler`、Tools 页的分工**：用户向的 **站长指南** 正文在 **`/seo/crawler`**（及中文）；本知识块为**网摘笔记**（UA 表、外链、碎片），**不**与 `content/seo/*/crawler.md` 逐段同步。若读者站在**数据采集方**（代理、Playwright、托管 API），请参阅 Tools **`/tools/web-scraping`** 与知识块 **[`web-scraping.md`](../tools/web-data/web-scraping.md)**；本文件**不**展开厂商选型八条。
 
 以下条目可任意顺序阅读；**不是**文章体例。文中「爬虫 / 机器人 / bot / 抓取器」在 HTTP 语境下常互通；**Crawl（爬取）** 与 **Scrape（抓取/刮取）** 的辨析见 **词汇锚点**。**合规与可识别性**以各运营方文档为准。**User-Agent 可被伪造**，安全与运维侧需结合 **反向 DNS、IP 段、ASN、TLS/JA3、行为与会话、HTTP 签名** 等综合判断。
 
@@ -16,7 +16,7 @@
 
 - **Robots Exclusion Protocol / robots.txt**：站点根目录的纯文本声明，告知爬虫**哪些路径不宜抓取**；**自愿遵守**，不是强制 ACL（见 [RFC 9309](https://datatracker.ietf.org/doc/html/rfc9309) 与 [Google 对 robots 的说明](https://developers.google.com/search/docs/crawling-indexing/robots/intro)）。
 - **Crawling / 爬取**：下载 URL 资源；**不等于**收录。口语里常强调 **顺着链接大量发现页面**、持续访问（如搜索引擎蜘蛛）。
-- **Scraping / Web scraping（抓取、刮取）**：用程序 **自动从页面或 API 抽取数据**；与 **Crawl** 的辨析、**HTTP/浏览器/编排工具栈**、SEO 审计爬虫与 **自研抓取管线** 的分工见专册 **[`tools/web-scraping.md`](../tools/web-scraping.md)**（本站知识块；**非**穷尽工具清单）。
+- **Scraping / Web scraping（抓取、刮取）**：用程序 **自动从页面或 API 抽取数据**；与 **Crawl** 的辨析、**HTTP/浏览器/编排工具栈**、SEO 审计爬虫与 **自研抓取管线** 的分工见专册 **[`tools/web-scraping.md`](../tools/web-data/web-scraping.md)**（本站知识块；**非**穷尽工具清单）。
 - **Indexing / 索引**：处理内容并可能纳入索引库；被 robots **禁止抓取**的页面仍可能以「仅 URL」等形式出现在搜索结果中（Google 文档对限制的说明）。
 - **Serving / 呈现**：查询时组装 SERP；与爬取、索引是不同环节（见 [how-search-engine-works.md](./how-search-engine-works.md)）。
 - **User-agent token（robots 内）**：`User-agent:` 行使用的**令牌**（如 `Googlebot`），与 HTTP 请求头里的完整 **User-Agent 字符串**不是同一概念；部分产品（如 **Google-Extended**）在 Google 文档中说明为 **robots 专用令牌**，**HTTP 层可能仍使用既有 Google UA**。
@@ -56,11 +56,11 @@
 ### Agent 与浏览器自动化
 
 - **Agent 爬虫 / 浏览器型 AI Agent**：多步任务、表单、会话；可能使用**类真机 Chrome** 的 UA；OpenAI **ChatGPT agent** 官方说明用 **RFC 9421** 签名 + **`Signature-Agent: "https://chatgpt.com"`**（见 [ChatGPT agent allowlisting](https://help.openai.com/en/articles/11845367-chatgpt-agent-allowlisting)）。
-- **无头浏览器 / 通用网页抓取栈**（Puppeteer、Playwright、Selenium、Scrapy 等）用于**数据采集与测试**时的工具谱系、分层选型，见 **[`tools/web-scraping.md`](../tools/web-scraping.md)**；本文保留 **UA 可被仿冒**、**与 ChatGPT agent 验签机制不同** 的站位结论。
+- **无头浏览器 / 通用网页抓取栈**（Puppeteer、Playwright、Selenium、Scrapy 等）用于**数据采集与测试**时的工具谱系、分层选型，见 **[`tools/web-scraping.md`](../tools/web-data/web-scraping.md)**；本文保留 **UA 可被仿冒**、**与 ChatGPT agent 验签机制不同** 的站位结论。
 
 ### 第三方与站内生态
 
-- **SEO 工具爬虫 / 桌面审计爬虫**：链接图、排名监控、站点审计（Ahrefs、Semrush、Majestic、Lighthouse、Screaming Frog 等）的**工具谱系与抓取技术栈辨析**见 **[`tools/web-scraping.md`](../tools/web-scraping.md)**；在本文中的结论不变——**模拟的是「可观测的抓取」**，不等于搜索引擎内部渲染与索引状态。
+- **SEO 工具爬虫 / 桌面审计爬虫**：链接图、排名监控、站点审计（Ahrefs、Semrush、Majestic、Lighthouse、Screaming Frog 等）的**工具谱系与抓取技术栈辨析**见 **[`tools/web-scraping.md`](../tools/web-data/web-scraping.md)**；在本文中的结论不变——**模拟的是「可观测的抓取」**，不等于搜索引擎内部渲染与索引状态。
 - **预览/社交爬虫**：为生成链接预览抓取 OG 信息（如 **facebookexternalhit**、**Slackbot**、**Discord**、**Twitterbot**、**LinkedInBot** 等）；频率与缓存策略各异。
 - **RSS/聚合阅读器**：按 Feed 拉取；部分仍 HEAD/GET 页面。
 - **监控与可用性**：Uptime、Synthetic monitoring；可能从全球 PoP 出流量。
@@ -71,7 +71,7 @@
 - **恶意 / 灰色爬虫**：撞库、凭证填充、库存锁单、虚假互动、高频爬取致 **DoS**、**绕过付费墙/鉴权** 等。
 - **OAT-011 Scraping（OWASP 自动化威胁分类）**：以自动化手段**批量提取数据**的一类威胁；常与业务风控、账户安全并列讨论。
 - **Scraping 的中性与负面语境**：**中性**时指合规场景下的公开数据抓取、有约定的速率与用途（监控、研究、聚合等）。**负面**时多指违反服务条款、绕过鉴权、大规模盗用内容、撞库等——与「正规爬虫是否被站点欢迎」不是同一维度。
-- **Scraper**：常指 **执行 scraping 的程序或脚本**；与 **Crawler** 在命名上可能重叠（一个 bot 既爬又刮）。**技术栈与产品分类**（HTTP 库、框架、浏览器自动化等）见 **[`tools/web-scraping.md`](../tools/web-scraping.md)**。
+- **Scraper**：常指 **执行 scraping 的程序或脚本**；与 **Crawler** 在命名上可能重叠（一个 bot 既爬又刮）。**技术栈与产品分类**（HTTP 库、框架、浏览器自动化等）见 **[`tools/web-scraping.md`](../tools/web-data/web-scraping.md)**。
 
 ### 性能与站点侧
 
@@ -104,7 +104,7 @@
 | **大类** | **典型目的** | **与站长的关系（概念上）** |
 |----------|--------------|------------------------|
 | **搜索引擎爬虫** | 建索引、呈现自然结果 | 内容 + 技术可爬性 + 规范对照 GSC |
-| **AI 相关爬虫** | 训练、检索、预览/安全 | **分令牌/分 UA** 管理；与 GEO 相关：[tools/geo.md](../tools/geo.md) |
+| **AI 相关爬虫** | 训练、检索、预览/安全 | **分令牌/分 UA** 管理；与 GEO 相关：[tools/geo.md](../tools/search-geo/geo.md) |
 | **Agent / 浏览器自动化（厂商）** | 代用户多步操作 | **签名/验真**、边缘 Bot 策略；区别于批量索引爬虫 |
 | **第三方合规/半合规爬虫** | SEO、监控、存档、科研 | robots 与速率；过量仍占 **成本** |
 | **恶意 / 灰色爬虫** | 盗刷、撞库、薅羊毛、攻击辅助 | WAF、风控、身份与速率；UA **冒充** |
@@ -160,7 +160,7 @@
 - **搜索索引类**：主索引爬虫、图片/新闻/视频垂直爬虫、广告与预览类爬虫。
 - **AI 管线类**：训练、搜索索引（AI 搜索）、用户触发拉取、广告落地页校验。
 - **Agent 管线类**：多步浏览、会话、脚本执行；验签与 WAF 白名单策略与「传统爬虫」不同。
-- **工具与监控类**：SEO 外链与站点审计、排名监控、价格监控、变更检测（工具层细节见 [`tools/web-scraping.md`](../tools/web-scraping.md)）。
+- **工具与监控类**：SEO 外链与站点审计、排名监控、价格监控、变更检测（工具层细节见 [`tools/web-scraping.md`](../tools/web-data/web-scraping.md)）。
 - **预览与社交类**：链接 unfurl、消息应用预览。
 - **Feed 与聚合类**：RSS/Atom、内容聚合器。
 - **档案与科研类**：Web Archive、引文与大规模语料。
@@ -196,7 +196,7 @@
 
 **工具与产品类型（数据采集 / 网页抓取栈）**
 
-- **网页抓取**相关的 HTTP 库、浏览器自动化、爬虫框架、托管 API、SEO 审计工具等 **分层与示例**，已迁至 **[`tools/web-scraping.md`](../tools/web-scraping.md)**，避免与本文「访客机器人身份与治理」重复。
+- **网页抓取**相关的 HTTP 库、浏览器自动化、爬虫框架、托管 API、SEO 审计工具等 **分层与示例**，已迁至 **[`tools/web-scraping.md`](../tools/web-data/web-scraping.md)**，避免与本文「访客机器人身份与治理」重复。
 - **仍留在本文的相邻品类**：**站长与调试**（**Rich Results Test**、**URL Inspection**（GSC））、**搜索引擎站长工具**（GSC、Bing、Yandex、百度站长等）、**CDN / WAF / Bot Management**、**日志与 SIEM**、**威胁情报**、**第三方 UA 目录**（非官方，需复核）。
 
 ---
@@ -249,9 +249,9 @@
 - **采集向工具页**：`/tools/web-scraping`、`/zh/tools/web-scraping`（`content/tools/*/web-scraping.md`）
 - **流水线**：[how-search-engine-works.md](./how-search-engine-works.md)
 - **清单**：[checklist.md](./checklist.md)
-- **GEO**：[tools/geo.md](../tools/geo.md)
-- **Web 抓取工具谱系（HTTP/浏览器/编排/托管 API）**：[tools/web-scraping.md](../tools/web-scraping.md)
-- **Agent Skills（产品技能生态，非 HTTP 爬虫）**：[agent-skills.md](../tools/agent-skills.md)
+- **GEO**：[tools/geo.md](../tools/search-geo/geo.md)
+- **Web 抓取工具谱系（HTTP/浏览器/编排/托管 API）**：[tools/web-scraping.md](../tools/web-data/web-scraping.md)
+- **Agent Skills（产品技能生态，非 HTTP 爬虫）**：[agent-skills.md](../tools/agent/agent-skills.md)
 
 ---
 

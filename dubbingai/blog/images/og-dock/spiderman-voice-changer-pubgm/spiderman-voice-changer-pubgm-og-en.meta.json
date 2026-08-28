@@ -1,0 +1,18 @@
+{
+  "slug": "spiderman-voice-changer-pubgm",
+  "workflow": "post-cover-standalone",
+  "engine": "https://github.com/chainepic/post-cover",
+  "background_source": "search-or-procedural",
+  "output_size": [
+    1200,
+    630
+  ],
+  "post_cover_size": [
+    1920,
+    1080
+  ],
+  "intermediate_1080": "E:\\clients\\dubbingai\\blog\\images\\og-dock\\spiderman-voice-changer-pubgm\\spiderman-voice-changer-pubgm-dock-1080.webp",
+  "title": "Spider-Man Voice in PUBG Mobile",
+  "theme": "sky_blue",
+  "ai_image_api": null
+}

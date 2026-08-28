@@ -642,7 +642,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | `authentication` | `/tools/authentication` | workflow、evaluation、app-builder、knowledge-base、agent-skills、llm、browser、web-search-api、notes-generator、productivity、api、user-research、spreadsheet、chatbot、directory；hero：`documentation`；FAQ：note-taker、recruiting、speech-to-text（附录 C §14；正文与 FAQ href 全文唯一） |
 | `documentation` | `/tools/documentation` | agent-skills、knowledge-base、vibe-coding、coding、api、workflow、web-search-api、geo、llm、ide、cli、code-completion、directory、app-builder、chatbot、website-builder、text-generator、productivity、user-research、browser、code-review；FAQ：note-taker、notes-generator、recruiting（附录 C §12） |
 | `world-model` | `/tools/world-model` | text-to-video、image-to-video、video-generator（创作向）；正文落地另含 video-editor、3d、llm、search-engine、directory、image-generator、legal（见 JSON，遵守全文唯一） |
-| `video` | `/tools/video` | video-generator、text-to-video、image-to-video、video-to-video、video-editor、video-clipping、video-effects、canvas-video、filmmaking、animation-generator、short-drama、music-video-generator（Hub 分流 + 内容分工见 [video.md](../../../knowledge/tools/video.md)） |
+| `video` | `/tools/video` | video-generator、text-to-video、image-to-video、video-to-video、video-editor、video-clipping、video-effects、canvas-video、filmmaking、animation-generator、short-drama、music-video-generator（Hub 分流 + 内容分工见 [video.md](../../../knowledge/tools/video/video.md)） |
 | `video-generator` | `/tools/video-generator` | video、text-to-video、image-to-video、video-to-video、canvas-video、filmmaking、animation-generator（生成层 SSOT；完整旗舰模型表仅此 slug） |
 | `text-to-video` | `/tools/text-to-video` | video、video-generator、image-to-video、video-editor（输入=文本/文档；讲解视频专表在本 slug） |
 | `image-to-video` | `/tools/image-to-video` | video、video-generator、text-to-video、video-to-video、filmmaking（输入=静态图；Motion Brush 深度在本 slug） |
@@ -2436,7 +2436,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 日期 | 说明 |
 |------|------|
 | 2026-08-27 | **SSOT 合并**：Marketing M1–M11 迁入 Part 4.5；FAQ **允许**内链、**计入正文**、R4 全文 1 次；`marketing-internal-links.md` / `rules-quickref.md` 改为跳转 stub；Part 1 §七–§十一 执行流程指向 `optimize-internal-links/workflow.md` |
-| 2026-06-23 | 附录 B：新增 **`multi-agent`**（`/blog/`）；`agent-skills`、`agent-for-desktop`、`openclaw-alternatives` 邻居增 multi-agent。附录 C：新增 **§blog-multi-agent**（正文各 6 + FAQ 各 2）。知识块 `knowledge/tools/multi-agent.md` + 部署仓 `content/blog/{en|zh}/multi-agent.md`。 |
+| 2026-06-23 | 附录 B：新增 **`multi-agent`**（`/blog/`）；`agent-skills`、`agent-for-desktop`、`openclaw-alternatives` 邻居增 multi-agent。附录 C：新增 **§blog-multi-agent**（正文各 6 + FAQ 各 2）。知识块 `knowledge/tools/agent/multi-agent.md` + 部署仓 `content/blog/{en|zh}/multi-agent.md`。 |
 | 2026-06-23 | 附录 B/C：新增 **`agent-memory`**（`/blog/`）；`agent-skills`、`memory` 邻居增 agent-memory。
 | 2026-06-23 | 附录 B：新增 **`agent-sandbox`**（`/blog/`）；`agent-skills`、`agent-for-desktop` 邻居增 agent-sandbox。附录 C：新增 **§blog-agent-sandbox**（正文各 5 + FAQ 各 3，共 8 distinct href）。规范：`create-tools-article` / `section-faq` 统一允许 Tools/Blog JSON FAQ 内链。 |
 | 2026-06-23 | 附录 B：新增 **`medical-scribe`**、**`healthcare`**（`/blog/` / `/tools/`）；`web-fetch` 行指向 §blog-web-fetch。附录 C：新增 **§blog-medical-scribe**（正文各 2 条）、**§blog-web-fetch**（正文各 3 条），FAQ 均无站内链。 |
@@ -2445,7 +2445,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 2026-04-29 | 附录 C：新增 **§20–§23** 垂类 LLM（`llm-for-coding`、`llm-for-math`、`multimodal-llm`、`llm-for-reasoning`）中英内链台账；`content/tools/zh|en` 四页 JSON 扩写（英文叙事 2000+ words、`bestTools` 与对比表未改序）；附录数据源与 §19 试点说明同步。 |
 | 2026-04-29 | 附录 C：新增 §19 **`llm`** 中英内链台账（正文 16–17 + FAQ 3）；`content/tools/zh|en/llm.md` 扩写榜单/检索方法论、英文 2000+ words、内链与 §1.5 对齐。 |
 | 2026-04-28 | 附录 B：`character-chat`；附录 C：新增 §18 `character-chat` 中英台账（正文 16 + FAQ 3，`TL;DR` ≤2）；`content/tools/zh|en/character-chat.md` 扩写与 knowledgehub 对齐。 |
-| 2026-04-28 | **`openclaw-alternatives` 产品线修订**：移除 Tencent QClaw；五个产品外链统一 `utm_source=kostja&utm_medium=blog`（与 linkedin/authentication 等 Tools 一致）；`public/tools/openclaw-alternatives/` 替换为实拍产品图；`knowledge/tools/openclaw-alternatives.md` 与之对齐。 |
+| 2026-04-28 | **`openclaw-alternatives` 产品线修订**：移除 Tencent QClaw；五个产品外链统一 `utm_source=kostja&utm_medium=blog`（与 linkedin/authentication 等 Tools 一致）；`public/tools/openclaw-alternatives/` 替换为实拍产品图；`knowledge/tools/agent/openclaw-alternatives.md` 与之对齐。 |
 | 2026-04-28 | 附录 B：`openclaw-alternatives`；附录 C：新增 §17 `openclaw-alternatives` 中英台账（TL;DR 2、`agent-for-desktop` 不重复于「什么是」、正文 12 + FAQ 3）；`content/tools` 数据源与 `alignify-keywords-tools` 更新。 |
 | 2026-04-28 | 附录 B：`agent-for-desktop`；附录 C：新增 §16 `agent-for-desktop` 中英台账（正文 18 + FAQ 3，`TL;DR` ≤2 条 Tools 链）；`alignify-keywords-tools` 增支柱行与 `#agent-for-desktop-tools`。 |
 | 2026-04-24 | 附录 C 未改 slug 台账：`web-scraping`、`headless-browser`、`linkedin`、`geo`、`code-review`、`agent-skills`、`documentation`、`authentication` 等文将原 TLDR 后「弱化 html 岛」并入 `tldr`/`section`；内链首次出现位置与表一致者维持不变；`documentation` 中文版 TL;DR 不再重复放 `geo`/`web-search-api` 的 `<a>`（保留对比表 `introHtml` 唯一定位）。 |

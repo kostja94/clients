@@ -4,7 +4,7 @@
 
 **材料范围**：公开网络检索（Google hreflang 文档、next-intl / i18n 实践、Similarweb 市场流量分析用法、多语言 SEO 与「翻译 vs 本地化」讨论、Alignify 站内 **`content/marketing/*/localization-strategy.md`** 及本站 `/zh` 路由实现经验）；并归纳 Agent skill **localization-strategy**。**未**把 LSP 厂商营销页当作普适真理。网摘整理日期 **2026-06-24**。
 
-**规范或长文对照**：Alignify 站内长文 [本地化策略（ZH）](https://alignify.co/zh/marketing/localization-strategy)；英文：`content/marketing/en/localization-strategy.md`。相邻专题：[keyword-research.md](./keyword-research.md)（各语言独立选词）、[geo.md](./geo.md)（多语言 AI 可见度）。
+**规范或长文对照**：Alignify 站内长文 [本地化策略（ZH）](https://alignify.co/zh/marketing/localization-strategy)；英文：`content/marketing/en/localization-strategy.md`。相邻专题：[keyword-research.md](./keyword-research.md)（各语言独立选词）、[geo.md](../tools/search-geo/geo.md)（多语言 AI 可见度）。
 
 **Agent skill 对照**：locale 优先级与 hreflang 清单见 **localization-strategy**；本页为概念锚点。
 

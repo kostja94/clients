@@ -5,7 +5,7 @@
 **注**：本模板为 Alignify 知识库内部写作工具，**非**面向读者的输出页面。
 
 > **使用前必读**：方法论硬约束见 [`../README.md`](../README.md) 第一章；当前 slug 对应关系与缺口跟踪见 [`README.md`](./README.md)。  
-> **知识块 → 正式文章**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
+> **知识块维护**：[`skills/knowledge-block/SKILL.md`](../../skills/knowledge-block/SKILL.md) · **知识块 → 正式文章**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
 ---
 
@@ -189,14 +189,14 @@ URL 列表 + 对比与测评。URL 表格式：
 
 | 文件 | 职责 |
 |------|------|
-| [llm.md](./llm.md) | **Hub**：五轴分流、读榜清单、共享治理、行业格局叙事 |
-| [llm-leaderboard-snapshots.md](./llm-leaderboard-snapshots.md) | **唯一**维护 Top N 表、厂商分数、快照日期（季度复审） |
+| [llm.md](llm/llm.md) | **Hub**：五轴分流、读榜清单、共享治理、行业格局叙事 |
+| [llm-leaderboard-snapshots.md](llm-leaderboard-snapshots.md) | **唯一**维护 Top N 表、厂商分数、快照日期（季度复审） |
 | 四专轴 `llm-for-*` / `multimodal-llm` | 轴内词汇、基准谱系、选型落地；**禁止**复制完整 Top N 表 |
 
 ### 专轴应链快照，而非自建 Top N
 
 ```markdown
-**排行快照**：见 [llm-leaderboard-snapshots.md](./llm-leaderboard-snapshots.md) §{轴名}（快照 YYYY-MM-DD）。
+**排行快照**：见 [llm-leaderboard-snapshots.md](llm-leaderboard-snapshots.md) §{轴名}（快照 YYYY-MM-DD）。
 ```
 
 ### 专轴禁止项

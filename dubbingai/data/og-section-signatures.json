@@ -1,0 +1,36 @@
+{
+  "voice-changer-hub": {
+    "sections": ["blog"],
+    "slugs": ["best-ai-voice-changer"],
+    "hero_rule": "Gaming headset + live waveform OR preset avatar grid — NOT phone assistant settings",
+    "anti_patterns": ["Google Assistant UI", "Nest speaker as hero", "corporate SaaS dashboard"]
+  },
+  "assistant-intent-split": {
+    "sections": ["blog"],
+    "slugs": ["how-to-change-google-assistant-voice"],
+    "hero_rule": "Phone Assistant voice picker settings UI — NOT gaming headset or Discord",
+    "anti_patterns": ["gaming headset hero", "Discord voice panel", "voice changer comparison grid"]
+  },
+  "live-voice-howto": {
+    "sections": ["blog"],
+    "slugs": ["how-to-change-your-voice"],
+    "hero_rule": "Mic routing flow diagram (virtual cable → app) — live vs file split",
+    "anti_patterns": ["Assistant settings", "product ranking list", "empty flow boxes"]
+  },
+  "alternative-comparison": {
+    "sections": ["blog"],
+    "slugs": ["dubbing-ai-vs-voicemod"],
+    "hero_rule": "Fair side-by-side panels (stream desk vs soundboard) — NO readable competitor logos",
+    "anti_patterns": ["winner badge text", "star ratings", "readable app logos"]
+  },
+  "soundboard-meme": {
+    "sections": ["blog"],
+    "hero_rule": "Playful sound tile grid + meme/game visual cues — young audience energy",
+    "anti_patterns": ["corporate B2B layout", "voice routing diagram", "Assistant UI"]
+  },
+  "voice-actor-profile": {
+    "sections": ["blog"],
+    "hero_rule": "Character portrait mood + mic/stream context — NOT product comparison",
+    "anti_patterns": ["app comparison grid", "pricing table", "generic stock microphone only"]
+  }
+}

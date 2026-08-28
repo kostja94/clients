@@ -2,13 +2,13 @@
 
 存量文章内链：**审计 → 选链 → 写入 → 验收 → 刷新快照**（Markdown / `faq-data.json` 正文侧车）。
 
-> **当前范围**：本 skill 维护流程与参考数据；**存量正文修复**另开任务执行（见 [`workflow.md`](workflow.md)）。
+> **当前范围**：本 skill 维护流程与参考数据；**存量正文修复**另开任务执行（见 [`workflow.md`](./workflow.md)）。
 
 ## 读什么
 
 | 文档 | 用途 |
 |------|------|
-| [`workflow.md`](workflow.md) | 全站 baseline + 单页 loop |
+| [`workflow.md`](./workflow.md) | 全站 baseline + 单页 loop |
 | [`references/rules-quickref.md`](references/rules-quickref.md) | R 规则 1 页速查 |
 | [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) | 全站快照（~400 篇 · 脚本生成 · **§七 Marketing/GTM**） |
 | [`references/marketing-internal-links-backlog.md`](references/marketing-internal-links-backlog.md) | Marketing cluster 矩阵与执行批次（嵌入 §7.4） |

@@ -1,0 +1,35 @@
+# Datus Blog Article — Eval Manifest
+
+version: "2.0.0"
+skill: datus-blog-article
+notes: "Unified skill; datus-glossary-article removed 2026-08-28"
+
+checks:
+  - id: skill-self-contained
+    description: SKILL.md declares self-contained true and lists forbidden-reads
+    path: datus/skills/datus-blog-article/SKILL.md
+
+  - id: portable-bundle
+    description: references/portable/ contains final-audit.md and gates-master.md
+    glob: datus/skills/datus-blog-article/references/portable/*.md
+    min_files: 10
+
+  - id: article-types-routing
+    description: article-types.md defines content-intent ArticleType routing (not dual-skill split)
+    path: datus/skills/datus-blog-article/references/article-types.md
+
+  - id: cluster-layout
+    description: content-graph registers cluster-folders with NN=49
+    path: datus/skills/datus-blog-article/references/content-graph.md
+
+  - id: golden-brief
+    description: golden-brief-lakehouse.md exists for GlossaryTerm regression
+    path: datus/skills/datus-blog-article/evals/golden-brief-lakehouse.md
+
+  - id: forbidden-loads
+    description: forbidden-loads eval blocks external datus.md reads during draft phase
+    path: datus/skills/datus-blog-article/evals/forbidden-loads.md
+
+  - id: audit-skill
+    description: datus-blog-audit complements create skill
+    path: datus/skills/datus-blog-audit/SKILL.md

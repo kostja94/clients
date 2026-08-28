@@ -4,7 +4,7 @@
 
 **材料范围**：公开网络检索（Impact / PartnerStack 联盟计划最佳实践、CPS/CPL/CPA 模型说明、SaaS affiliate ROI 社区数据区间、FTC 披露与 GDPR 营销合规摘要、Alignify 站内 **`content/marketing/*/affiliate.md`**）；并归纳 Agent skill **affiliate-marketing**、**affiliate-page-generator**。**未**把单一 affiliate 网络营销页当作普适真理。网摘整理日期 **2026-06-24**。
 
-**规范或长文对照**：Alignify 站内长文 [联盟营销（ZH）](https://alignify.co/zh/marketing/affiliate)；英文：`content/marketing/en/affiliate.md`。相邻专题：[referral-program.md 待补](./referral-program.md)（用户推荐 vs 第三方推广）、[influencer.md 待补](./influencer.md)（红人 vs affiliate）。
+**规范或长文对照**：Alignify 站内长文 [联盟营销（ZH）](https://alignify.co/zh/marketing/affiliate)；英文：`content/marketing/en/affiliate.md`。相邻专题：[referral-program.md 待补](../tools/marketing-growth/referral-program.md)（用户推荐 vs 第三方推广）、[influencer.md 待补](./influencer.md)（红人 vs affiliate）。
 
 **Agent skill 对照**：计划设计与落地页见 **affiliate-marketing**、**affiliate-page-generator**；本页为概念锚点。
 

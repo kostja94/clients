@@ -4,7 +4,7 @@
 
 **站内对照**：Alignify 已发布 [SEO核心价值与挑战：AI搜索时代的持续增长（ZH）](https://alignify.co/zh/insights/reasons-you-need-seo)（正文源：`content/insights/zh/reasons-you-need-seo.md`；英文：`content/insights/en/reasons-you-need-seo.md`）。该文是**叙事体**洞察：堆叠第三方数据（如 BrightEdge、Think with Google、HubSpot、Semrush、Backlinko、Ahrefs、Moz、AWR、SparkToro、Statcounter 等）、阐述 **「实务上 SEO≈Google 优化」**、展开 **当前挑战**（零点击与 Google 自有产品分流、SGE/AI 摘要与 TOFU、算法与平台虹吸、UGC 与「公平性」讨论、首位有机 CTR 与波动）、**整合营销**（SEO×广告/红人/社媒/插件）、**是否建专职 SEO 团队**与**冷启动优先**等；正文以段落与站内链为主，**已移除**历史碎裂配图。**本知识块**不重述长文论证链，而补：**多口径基准对照**（如 Conductor 企业样本 vs 营销口径「约半数」）、**内部知识库**与 **IMC** 的结构性条目、**归因与治理**碎片、以及指向长文与官方文档的索引。
 
-**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [knowledgehub/seo/README.md](../seo/README.md) · 搜索引擎机制导览：[how-search-engine-works.md](../seo/how-search-engine-works.md) · 学习路径与资源索引：[learn-seo.md](../seo/learn-seo.md) · GEO 与经典 Web 搜索边界：[tools/geo.md](../tools/geo.md)
+**规范对照**：[section-seo.md](../../skills/create-article/rules/meta.md) · [knowledgehub/seo/README.md](../seo/README.md) · 搜索引擎机制导览：[how-search-engine-works.md](../seo/how-search-engine-works.md) · 学习路径与资源索引：[learn-seo.md](../seo/learn-seo.md) · GEO 与经典 Web 搜索边界：[tools/geo.md](../tools/search-geo/geo.md)
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。文中比例与调研结论为**第三方摘要**，请以原报告全文与自家 **GSC / Analytics** 为准。
 
@@ -45,7 +45,7 @@
 | **主题** | **站内长文 [reasons-you-need-seo](https://alignify.co/zh/insights/reasons-you-need-seo)** | **本知识块（增量）** |
 |----------|----------------------------------------------------------------------------------------|----------------------|
 | **价值论证与数据** | 系统引用 BrightEdge、Think with Google、HubSpot、Semrush、Backlinko、Ahrefs、Moz 等，含「数字房地产」比喻与 Google 份额图 | 引入 **Conductor 企业七行业**、**SEL+Graphite** 等与上文**并置**，强调口径差异而非二选一 |
-| **挑战与生态** | 专章：零点击、SparkToro 链、SGE 覆盖率快照、算法热力、自有产品点击份额、Reddit/UGC 案例、首位 CTR 下滑、团队与冷启动建议 | 只保留**与策略相关的结论型碎片**（见「落地碎片」），细节与引用链回长文；**GEO** 技术块见 [tools/geo.md](../tools/geo.md) |
+| **挑战与生态** | 专章：零点击、SparkToro 链、SGE 覆盖率快照、算法热力、自有产品点击份额、Reddit/UGC 案例、首位 CTR 下滑、团队与冷启动建议 | 只保留**与策略相关的结论型碎片**（见「落地碎片」），细节与引用链回长文；**GEO** 技术块见 [tools/geo.md](../tools/search-geo/geo.md) |
 | **内部知识库** | 未单独成章 | **多维表 + 落地碎片**显式覆盖 |
 | **整合营销** | SEO×广告/红人/社媒/插件，FAQ 可检索 | 与 **IMC skill**、**内容策略** 的仓库路径互链 |
 | **读者** | 对外读者、行业洞察 | **作者/编辑**用的非线性笔记与索引 |
@@ -58,7 +58,7 @@
 - **付费边际与账号依赖**：广告停则曝光断；平台算法与竞价波动推高 CAC；组织希望有**可积累的有机资产**与之对冲。
 - **内容与信任的规模化**：排名与摘要呈现依赖**可抓取、可理解、可比对**的公开内容；与 E-E-A-T、品牌叙事在 YMYL 行业绑定更深。
 - **组织内「谁负责 SEO」分裂**：产品站、文档站、博客、地区站分属不同团队，易出现重复、冲突 canonical 与内链断裂——「重要性」在协作层面被放大为治理问题。
-- **生成式搜索与零点击**：用户可能在 SERP 或 AI 界面即得答案；「还要不要做 SEO」演变为**可见度目标从 blue links 扩展到引用源、实体与结构化事实**（与 GEO 相邻，见 [tools/geo.md](../tools/geo.md)）。
+- **生成式搜索与零点击**：用户可能在 SERP 或 AI 界面即得答案；「还要不要做 SEO」演变为**可见度目标从 blue links 扩展到引用源、实体与结构化事实**（与 GEO 相邻，见 [tools/geo.md](../tools/search-geo/geo.md)）。
 - **平台自有触点分流**：地图、视频、航班、Jobs 等**不经过独立站**即可完成会话；与长文「近 30% 点击流向 Google 生态」类论述同域，需把 SEO 扩展到**垂直搜索与资产**（YouTube、本地、ASO），而非只盯传统十条蓝链。
 - **UGC 与大平台排序**：论坛、社区在 SERP 中的可见度变化会挤压**独立站**；与 E-E-A-T、品牌与社区运营联动，而非单靠页面因子（见长文相关讨论；**可验证性**以当时报道与工具为准）。
 - **组织阶段错配**：冷启动期若以 SEO 为唯一杠杆易与**时间尺度**冲突；长文建议先邮件/广告拿种子用户——与 [indie-hackers.md](../marketing/indie-hackers.md) 的冷启动叙事一致，本块不重复展开。

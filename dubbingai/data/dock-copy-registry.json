@@ -1,0 +1,18 @@
+{
+  "defaults": {
+    "theme": "sky_blue",
+    "brand_text": "DUBBING AI · BLOG",
+    "cta_text": "Voice Changer Guide",
+    "accent_rgb": [34, 211, 238]
+  },
+  "entries": {
+    "spiderman-voice-changer-pubgm": {
+      "title": "Spider-Man Voice in PUBG Mobile",
+      "subtitle": "Live Squad Chat · Earbuds · App Routing",
+      "note": "Real-time voice conversion — not text-to-speech",
+      "tags": "Android app routing · iOS earbuds · ~300ms latency",
+      "search_query": "mobile gaming smartphone headset voice chat esports neon",
+      "theme": "sky_blue"
+    }
+  }
+}

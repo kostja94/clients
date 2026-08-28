@@ -53,7 +53,7 @@
 - **现有支付为人设计**：3DS、短信 OTP、KYC 界面——Agent 无法「看屏幕点确认」；需要 programmatic mandate 与 scoped token。
 - **微支付经济**：Agent 单次 API 调用 $0.001–$0.05——信用卡 interchange 不经济；x402/稳定币使 **pay-per-call** 可行（公开数据称 x402 累计亿级笔数，具体口径随统计源变化）。
 - **大厂卡位协议**：Google AP2+UCP、OpenAI+Stripe ACP、银联 APOP、支付宝 ACT 2.0、京东 A2P2——争夺「Agent 时代结算入口」规则制定权。
-- **OpenClaw/龙虾生态**：FluxA「龙虾抢红包」等活动将 **Agent Wallet** 从概念推到可玩场景——与 [openclaw-alternatives.md](./openclaw-alternatives.md) 执行链相邻。
+- **OpenClaw/龙虾生态**：FluxA「龙虾抢红包」等活动将 **Agent Wallet** 从概念推到可玩场景——与 [openclaw-alternatives.md](agent/openclaw-alternatives.md) 执行链相邻。
 
 ---
 
@@ -91,7 +91,7 @@
 - 先画三层：**授权（AP2）→ 结账（ACP）→ 结算（x402 或 MPP/卡）**；不要用一个协议名覆盖全栈。
 - B2B Agent 买 API：**x402 或 MPP** 优先；消费者零售 Agent：**ACP + 卡 rails + AP2**。
 - 上生产前必须有 **per-agent spend ledger**，再 hand Agent the wallet。
-- 与 [agentic-commerce.md](./agentic-commerce.md) 分流：消费者「Agent 帮我买」读 commerce；工程师「怎么接支付」读本页。
+- 与 [agentic-commerce.md](agentic-commerce.md) 分流：消费者「Agent 帮我买」读 commerce；工程师「怎么接支付」读本页。
 
 ---
 
@@ -132,7 +132,7 @@
 
 ## 延伸阅读
 
-- [agentic-commerce.md](./agentic-commerce.md)（消费者旅程）
-- [ai-shopping.md](./ai-shopping.md)（购物工具目录）
-- [authentication.md](./authentication.md)（OAuth 委托，非支付 rails）
-- [openclaw-alternatives.md](./openclaw-alternatives.md)（FluxA 红包等活动载体）
+- [agentic-commerce.md](agentic-commerce.md)（消费者旅程）
+- [ai-shopping.md](ai-shopping.md)（购物工具目录）
+- [authentication.md](infrastructure/authentication.md)（OAuth 委托，非支付 rails）
+- [openclaw-alternatives.md](agent/openclaw-alternatives.md)（FluxA 红包等活动载体）

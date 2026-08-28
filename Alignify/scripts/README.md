@@ -94,7 +94,7 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 | `generate-registry-from-audit.py` | 从审计 JSON 生成/合并 `tools-screenshot-registry.json` |
 | `screenshot-customer-products.py` | 客户故事精选产品截图 |
 | `screenshot-social-cards.py` | Social Cards 工具页截图 + JSON 更新 |
-| `generate-og-cover.py` | fal GPT Image 2 生成 OG → **默认直写部署仓** `public/`（`--to-staging` 仅预览） |
+| `generate-og-cover.py` | GPT Image 2 生成 OG（`--provider fal` 默认 · `--provider apineed`）；**默认直写部署仓** `public/`（`--to-staging` 仅预览）。双提供方质量对照见 [`API-PROVIDER-QUALITY-VERIFICATION.md`](../../API-PROVIDER-QUALITY-VERIFICATION.md) |
 | `batch-generate-og-covers.py` | 批量生图；`--workers 8` 并行（对齐 fal 并发）；`--skip-existing` 断点续跑 |
 | `migrate-og-covers.py` | 历史 staging → deploy **move**（非 copy）+ 可选注册 `OG_LOCALE_READY` |
 | `audit-og-coverage.mjs` | deploy OG 覆盖审计（`--staging` 查遗留副本） |

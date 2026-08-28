@@ -137,6 +137,6 @@
 
 ## 延伸阅读与参考材料
 
-- **站内相邻知识块**：[image-generator.md](./image-generator.md)（通用图片生成——底层模型技术）、[avatar.md](./avatar.md)（AI 数字人生成——相邻品类）、[virtual-staging.md](./virtual-staging.md)（虚拟空间布置——不同领域但技术相似）。
+- **站内相邻知识块**：[image-generator.md](image/image-generator.md)（通用图片生成——底层模型技术）、[avatar.md](image/avatar.md)（AI 数字人生成——相邻品类）、[virtual-staging.md](3d-spatial/virtual-staging.md)（虚拟空间布置——不同领域但技术相似）。
 - **行业事件**：2025 年 6 月 Google Doppl 发布（TIME 2025 最佳发明）、2025 年 12 月 Doppl 增加可购物视频流。
 - **Alignify Tools 正文**：产品清单与选型步骤以线上 `/zh/tools/fashion` 为准；本知识块**不**替代站内长文教程，仅作概念索引与外链锚点。

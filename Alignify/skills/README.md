@@ -10,6 +10,7 @@
 | Skill | 用途 |
 |-------|------|
 | [`create-article/`](./create-article/SKILL.md) | 新建/重写文章（flagship 流程，见下表） |
+| [`knowledge-block/`](./knowledge-block/SKILL.md) | **知识块**维护：slug 分流、keyword 映射、SSOT、站内相邻（非成稿） |
 | [`audit-article/`](./audit-article/SKILL.md) | audit-ready → publish-ready 终审 |
 | [`optimize-internal-links/`](./optimize-internal-links/SKILL.md) | 存量内链：[`workflow.md`](./optimize-internal-links/workflow.md) + [**全站快照**](./optimize-internal-links/references/site-structure-internal-links.md) |
 | [`ops/`](./ops/README.md) | 发布后 SEO / 索引 / OG / RSS |

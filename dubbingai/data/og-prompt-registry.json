@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "defaults": {
+    "model": "gpt-image-2",
+    "provider": "apineed",
+    "style": "editorial-collage",
+    "quality": "high",
+    "output_format": "webp",
+    "output_size": "1200x630",
+    "author": "Kostja"
+  },
+  "entries": [
+    {
+      "section": "blog",
+      "slug": "best-ai-voice-changer",
+      "locale": "en",
+      "status": "pending",
+      "style": "editorial-collage",
+      "accent": "dubbing-gradient",
+      "author": "Kostja",
+      "headline": "BEST AI VOICE CHANGERS",
+      "headline_line2": "(2026)",
+      "subtitle": "Gaming · Discord · Streaming · Real-Time",
+      "tagline": "Compare Latency, Soundboards & Presets",
+      "composition": "Visual-only collage for best AI voice changer roundup (dubbingai.io/blog/best-ai-voice-changer): (1) HERO: gaming headset + live waveform on torn paper with cyan-to-indigo gradient accent strip — no readable app names. (2) 2x2 grid of blurred voice-preset avatar tiles (anime, robot, deep, chipmunk) — images only, no labels. (3) Small latency stopwatch icon beside a Discord-style voice panel mock (blurred usernames). Paper torn edges, halftone. NO ranking lists, NO Voicemod/Discord logos, NO extra captions.",
+      "visual_anchors": [
+        "HERO: Gaming headset with live cyan waveform on torn paper — real-time voice changer metaphor",
+        "2x2 blurred voice preset avatar tiles (anime, robot, deep, chipmunk) — no text labels",
+        "Small Discord-style voice chat panel mock with latency stopwatch — blurred UI only"
+      ],
+      "anti_patterns": [
+        "Google Assistant or phone TTS settings UI as hero",
+        "Readable competitor app names or logos",
+        "Corporate SaaS dashboard with pricing tables",
+        "Empty white placeholder cards",
+        "Ranking list text on canvas"
+      ],
+      "notes": "Track S pillar — manual seed brief"
+    },
+    {
+      "section": "blog",
+      "slug": "how-to-change-google-assistant-voice",
+      "locale": "en",
+      "status": "pending",
+      "style": "editorial-collage",
+      "accent": "dubbing-cyan",
+      "author": "Kostja",
+      "headline": "CHANGE GOOGLE ASSISTANT VOICE",
+      "headline_line2": "(2026)",
+      "subtitle": "Android · iPhone · Nest Speakers",
+      "composition": "Visual-only collage for Google Assistant voice settings guide: (1) HERO: smartphone settings screen archetype showing Assistant voice picker (blurred option rows, no readable text). (2) Nest smart speaker silhouette with sound-wave ring. (3) Small torn note distinguishing Assistant TTS from live mic voice changer (headset icon crossed out vs checkmark — visual only). Warm paper collage, cyan accent. NO gaming headset hero, NO Discord UI, NO voice changer app comparison grid.",
+      "visual_anchors": [
+        "HERO: Phone Assistant voice picker settings UI (blurred rows)",
+        "Nest smart speaker with sound-wave ring",
+        "Visual split: Assistant TTS vs live mic (headset) — not the same workflow"
+      ],
+      "anti_patterns": [
+        "Gaming headset or Discord as hero",
+        "Voice changer app comparison grid",
+        "Readable Google logo",
+        "Live streaming setup imagery"
+      ],
+      "notes": "Track S IntentSplit — manual seed"
+    },
+    {
+      "section": "blog",
+      "slug": "how-to-change-your-voice",
+      "locale": "en",
+      "status": "pending",
+      "style": "editorial-collage",
+      "accent": "dubbing-indigo",
+      "author": "Kostja",
+      "headline": "HOW TO CHANGE YOUR VOICE",
+      "headline_line2": "(2026)",
+      "subtitle": "Live Mic · Web · PC · Routing",
+      "composition": "Visual-only collage for live voice change how-to: (1) HERO: torn-paper flow diagram — mic input → virtual audio cable → game/chat app (blurred icons, no labels). (2) Split panel: live real-time path vs file upload path (waveform vs document icon). (3) Small checklist card with blurred bullet lines. Indigo accent, gaming vibe. NO Assistant phone settings, NO product ranking list.",
+      "visual_anchors": [
+        "HERO: Mic → virtual cable → app routing flow on torn paper",
+        "Split: live real-time vs file-based workflow icons",
+        "Blurred setup checklist card"
+      ],
+      "anti_patterns": [
+        "Google Assistant settings as hero",
+        "Product comparison ranking on canvas",
+        "Empty routing diagram boxes",
+        "Readable app store badges"
+      ],
+      "notes": "Track S HowTo — manual seed"
+    },
+    {
+      "section": "blog",
+      "slug": "dubbing-ai-vs-voicemod",
+      "locale": "en",
+      "status": "pending",
+      "style": "editorial-collage",
+      "accent": "dubbing-gradient",
+      "author": "Kostja",
+      "headline": "DUBBING AI VS VOICEMOD",
+      "headline_line2": "(2026)",
+      "subtitle": "Latency · Soundboards · Stream Setup",
+      "composition": "Visual-only collage for fair voice changer comparison: (1) HERO: two side-by-side torn paper panels — left cyan-tinted live stream desk with headset, right indigo-tinted soundboard grid (blurred tiles, NO logos or app names). (2) Center magnifying glass over a latency waveform strip. (3) Small stream overlay mock at bottom (blurred chat). Gradient accent, editorial collage. NO readable Voicemod/Dubbing logos, NO winner badge text, NO star ratings on canvas.",
+      "visual_anchors": [
+        "HERO: Two side-by-side panels — stream desk vs soundboard grid (no logos)",
+        "Magnifying glass on latency waveform comparison strip",
+        "Blurred stream overlay / chat mock"
+      ],
+      "anti_patterns": [
+        "Readable Voicemod or Dubbing AI logos",
+        "Winner badge or star rating text",
+        "Google Assistant UI",
+        "Generic abstract tech background with no comparison layout"
+      ],
+      "notes": "Track S Alternative — manual seed"
+    },
+    {
+      "section": "blog",
+      "slug": "spiderman-voice-changer-pubgm",
+      "locale": "en",
+      "status": "approved",
+      "style": "editorial-collage",
+      "accent": "dubbing-gradient",
+      "author": "Kostja",
+      "headline": "MOBILE VOICE CHANGER",
+      "headline_line2": "",
+      "subtitle": "Live Squad Chat · Earbuds · Low Latency",
+      "tagline": "",
+      "composition": "Visual-only collage for mobile game live voice guide. 1200x630 safe frame: headline inset top-left with margins; HERO center-right phone + squad voice HUD; lower-left earbuds→chip→phone flow; stopwatch lower-right inside middle band. NO edge bleed, NO logos, NO TTS UI.",
+      "visual_anchors": [
+        "HERO: Mobile shooter game HUD on phone with squad voice-chat indicator",
+        "Earbuds → processor chip → phone → game chat routing flow",
+        "Live waveform + latency stopwatch"
+      ],
+      "anti_patterns": [
+        "Text-to-speech UI as hero",
+        "Desktop PC streaming setup",
+        "Readable game or app logos",
+        "Copyrighted character costumes",
+        "Competitor ranking text"
+      ],
+      "notes": "Live article 2026-08-03 — manual brief from dubbingai.io"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # 反向互链（Phase 4）
 
-> 与单页 Wave **分开批**；入口：[`SKILL.md`](SKILL.md) · 单页：[`workflow.md`](workflow.md)
+> 与单页 Wave **分开批**；入口：[`SKILL.md`](SKILL.md) · 单页：[`workflow.md`](./workflow.md)
 
 ## 输入
 

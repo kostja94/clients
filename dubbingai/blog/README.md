@@ -32,7 +32,8 @@ author: "Kostja"
 
 > **2026-08-11 起废弃**：`image` / `keywords` / `related` 不再写入 frontmatter（image 由 CMS 单独管理；keywords/related 由正文内链与 CMS 配置承载）。
 
-封面图路径需与 CMS/静态资源一致后替换占位。
+**OG 封面（1200×630）**：APINEED 生图流程 → [skills/ops/og-covers.md](../skills/ops/og-covers.md)  
+默认输出：`blog/images/og/{slug}/{slug}-og-en.webp` · CMS 上传对齐 `/blog/images/og/{slug}/`
 
 ---
 
@@ -83,6 +84,8 @@ CMS 已发布旧文的 **Markdown 忠实镜像**（约 257 篇），与上表 **
 | [dubbingai-internal-links.md](../dubbingai-internal-links.md) | 全站内链总纲 |
 | [internal-external-links-checklist.md](./internal-external-links-checklist.md) | **Blog** 内链分层、博文互链矩阵、`related` 与抽检表 |
 | [cms-export/README.md](./cms-export/README.md) | CMS 已发布文章镜像、manifest、转换脚本 |
+| [skills/ops/og-covers.md](../skills/ops/og-covers.md) | **OG 封面** APINEED 生图（1200×630） |
+| [data/og-cover-rules.md](../data/og-cover-rules.md) | OG 视觉规则与 registry 字段 |
 
 ---
 

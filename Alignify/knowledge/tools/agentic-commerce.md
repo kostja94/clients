@@ -29,7 +29,7 @@
 ## 词汇锚点
 
 - **Agentic Commerce / 代理式商务**：AI Agent 代表用户完成**购物全链路或关键段**——发现、比较、选品、下单乃至售后——而非仅返回文字推荐。a16z 分 **Conversational**（人指挥每步）与 **Delegated**（给预算让 Agent 自主执行）。
-- **Agentic Checkout / 代理式结账**：Commerce 旅程中的**交易执行层**——从「找到了」到「订单确认」；比 commerce 窄，常与 [agentic-payments.md](./agentic-payments.md) 的 checkout+settlement 重叠。
+- **Agentic Checkout / 代理式结账**：Commerce 旅程中的**交易执行层**——从「找到了」到「订单确认」；比 commerce 窄，常与 [agentic-payments.md](agentic-payments.md) 的 checkout+settlement 重叠。
 - **Discovery–Transaction Gap / 发现–交易鸿沟**：2026 典型数据形态——多数消费者用 AI **比价/发现**（行业调研常引 ~62%），显著 fewer 在 AI 内**完成结账**（~23% 量级，口径因来源而异）。品类核心瓶颈。
 - **Headless Merchant / 无头商家**：面向 Agent 而非人类 UI 的商家——结构化 catalog API + 机器可读定价；a16z 2026 叙事中的长期形态。
 - **UCP（Universal Commerce Protocol）**：Google+Shopify 等 2026 主推的**全链路商务语言**——发现、购物车、结账、售后；与仅 checkout 的 ACP 对比常被并列讨论。
@@ -74,7 +74,7 @@
 
 - **Over-spend / 误购**：Agent 误解意图或超预算——需 mandate 与用户确认分级（L0–L5 自主化分级，京东 A2P2 类比自动驾驶）。
 - **推荐偏差与付费排序**：Agent 是否优先付费商户——透明度与监管关注。
-- **隐私**：购物历史、偏好进入模型上下文——与 [memory.md](./memory.md) 个人数据风险相邻。
+- **隐私**：购物历史、偏好进入模型上下文——与 [memory.md](enterprise-knowledge/memory.md) 个人数据风险相邻。
 - **归因与退款**：Agent 代下单后的售后责任链——merchant、platform、Agent 开发者分工不清。
 
 ---
@@ -119,7 +119,7 @@ US「agentic commerce」搜索约 **4.4K/月**、YoY **+408%**（DataForSEO，SE
 
 ## 延伸阅读
 
-- [ai-shopping.md](./ai-shopping.md)
-- [agentic-payments.md](./agentic-payments.md)
-- [geo.md](./geo.md)
-- [influencer-marketing.md](./influencer-marketing.md)（creator commerce 相邻）
+- [ai-shopping.md](ai-shopping.md)
+- [agentic-payments.md](agentic-payments.md)
+- [geo.md](search-geo/geo.md)
+- [influencer-marketing.md](marketing-growth/influencer-marketing.md)（creator commerce 相邻）

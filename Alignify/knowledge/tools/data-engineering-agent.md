@@ -126,7 +126,7 @@
 
 ### 能力相邻知识块
 
-- [agent-for-desktop.md](./agent-for-desktop.md)（桌面智能体——Datus CLI 属于开发者向 CLI agent 谱系）
-- [agent-skills.md](./agent-skills.md)（AI Agent 技能与 MCP 连接器）
-- [chatbot.md](./chatbot.md)（AI Chatbot——用户界面层可对比 Datus Chat 的 Web UI 形态）
-- [cli.md](./cli.md)（CLI 工具品类，Datus CLI 属于此谱系）
+- [agent-for-desktop.md](agent/agent-for-desktop.md)（桌面智能体——Datus CLI 属于开发者向 CLI agent 谱系）
+- [agent-skills.md](agent/agent-skills.md)（AI Agent 技能与 MCP 连接器）
+- [chatbot.md](chat-social/chatbot.md)（AI Chatbot——用户界面层可对比 Datus Chat 的 Web UI 形态）
+- [cli.md](coding/cli.md)（CLI 工具品类，Datus CLI 属于此谱系）

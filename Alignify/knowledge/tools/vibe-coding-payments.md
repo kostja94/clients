@@ -222,7 +222,7 @@ Clink 走的是**「PCI L1 中间层」路线**——既不是传统的 Payment 
 
 - **B2B SaaS + 用量计费 → Polar 或 Dodo**：2026 年 AI 产品大量采用 token/credit/seat 组合定价——传统 Stripe Billing 的纯 seat-based 模型不够灵活，需要额外搭建 metering 层。Polar 和 Dodo 原生支持事件级用量计费。
 
-- **与相邻 slug 分流阅读**：作为 **人类开发者** 接支付→本页；如果产品中有 **AI Agent 代用户付钱**→读 [agentic-payments.md](./agentic-payments.md)；想知道用什么 AI 工具搭 App→读 [app-builder.md](./app-builder.md)；想知道搭完后怎么做 SEO→kostja94/vibe-coding 仓库的 Lovable→Next.js 迁移指南。
+- **与相邻 slug 分流阅读**：作为 **人类开发者** 接支付→本页；如果产品中有 **AI Agent 代用户付钱**→读 [agentic-payments.md](agentic-payments.md)；想知道用什么 AI 工具搭 App→读 [app-builder.md](coding/app-builder.md)；想知道搭完后怎么做 SEO→kostja94/vibe-coding 仓库的 Lovable→Next.js 迁移指南。
 
 ---
 

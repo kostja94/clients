@@ -1,10 +1,10 @@
 # LLM 评测排行快照 · 快变事实层
 
-**材料范围**：公开网络检索（[BenchLM](https://benchlm.ai/) 聚合榜、厂商官方博客与评测方法论、Chatbot Arena）；**未**引用 Alignify 站内 JSON 或本站实测。**本文件为 LLM 评测五轴唯一数字维护点**——框架与分流见 [llm.md](./llm.md)；专轴解读见 [llm-for-coding.md](./llm-for-coding.md) 等。
+**材料范围**：公开网络检索（[BenchLM](https://benchlm.ai/) 聚合榜、厂商官方博客与评测方法论、Chatbot Arena）；**未**引用 Alignify 站内 JSON 或本站实测。**本文件为 LLM 评测五轴唯一数字维护点**——框架与分流见 [llm.md](llm/llm.md)；专轴解读见 [llm-for-coding.md](llm/llm-for-coding.md) 等。
 
 **快照日期**：**2026-06-23** · **建议复审周期**：每 **90** 天 · **上次数据源 verified 标注**：BenchLM 主站 Last verified **2026-06-18**（以原页为准）
 
-**站内对照**：非独立 slug；数字被 [llm.md](./llm.md) 及四专轴引用。
+**站内对照**：非独立 slug；数字被 [llm.md](llm/llm.md) 及四专轴引用。
 
 ---
 
@@ -68,7 +68,7 @@
 | 4 | Google | Gemini 系 | 92.2 | prov. |
 | 5 | Z.AI | GLM-5 等 | 91.2 | prov.；开源/open-weight |
 
-*前排分差常 **<2pt**——GPQA 趋饱和；更难 tail 见 HLE、ARC-AGI-2（框架见 [llm-for-reasoning.md](./llm-for-reasoning.md)）。*
+*前排分差常 **<2pt**——GPQA 趋饱和；更难 tail 见 HLE、ARC-AGI-2（框架见 [llm-for-reasoning.md](llm/llm-for-reasoning.md)）。*
 
 ---
 
@@ -116,7 +116,7 @@ BenchLM 注明 **AIME26 为 display-only、不计入总榜加权**；该页收�
 | 4 | Moonshot AI | Kimi 系 | 87.1% | prov. |
 | 5 | NVIDIA | NVIDIA 系 | 86.8% | prov. |
 
-*原版 MMLU 在前沿模型上 **>90% 饱和**——读榜优先 MMLU-Pro 或 HLE tail（见 [llm.md](./llm.md) §词汇锚点）。*
+*原版 MMLU 在前沿模型上 **>90% 饱和**——读榜优先 MMLU-Pro 或 HLE tail（见 [llm.md](llm/llm.md) §词汇锚点）。*
 
 ---
 
@@ -132,7 +132,7 @@ FrontierMath 用 **未公开题集** + Python 验证器；**Tier 越高越难**�
 | **T3** | 研究级组合题 | 头部闭源 **低–中个位 %**；开源常 **落后 5–15pt**（轴内，非跨表） |
 | **T4** | 极难、长链证明 | 最佳模型 **极低分**——与 AIME **96% 档不可比** |
 
-**MathArena / USAMO 线**：证明题人审榜与 FrontierMath **排序不必一致**——教辅场景见 [llm-for-math.md](./llm-for-math.md) §形态谱系 Type B。
+**MathArena / USAMO 线**：证明题人审榜与 FrontierMath **排序不必一致**——教辅场景见 [llm-for-math.md](llm/llm-for-math.md) §形态谱系 Type B。
 
 **BRUMO / MATH-500（加权参与）**：BenchLM math 子分仍引用——较 AIME 更有 **日常数学任务** 区分度；具体行见 [benchlm.ai/math](https://benchlm.ai/math)。
 
@@ -148,7 +148,7 @@ ARC-AGI-2 **不是**与 GPQA 同单位的 % 榜——读 **pass@k、refinement l
 |------|-------------------|----------|
 | **ARC-AGI-1 饱和** | 多模型 **>80%** 公开集 | 不代表 ARC-2 同等 |
 | **ARC-AGI-2 tail** | 头部 **个位–低两位 %** 常见 | harness 可差 **10×+** |
-| **与 GPQA** | GPQA 高 **不预测** ARC-2 高 | 见 [llm-for-reasoning.md](./llm-for-reasoning.md) |
+| **与 GPQA** | GPQA 高 **不预测** ARC-2 高 | 见 [llm-for-reasoning.md](llm/llm-for-reasoning.md) |
 
 ---
 
@@ -166,9 +166,9 @@ ARC-AGI-2 **不是**与 GPQA 同单位的 % 榜——读 **pass@k、refinement l
 
 *BenchLM 主榜 Elo 与 [lmarena.ai](https://lmarena.ai/leaderboard/) **live 榜可能漂移**——成稿须双源标注日期。Meta 博客语境 Muse Spark **~1474–1491** Elo（第三方转述）。*
 
-**Vision / 多模态 Arena**：类目独立——MMMU 高 **不保证** Arena Vision 高；见 [multimodal-llm.md](./multimodal-llm.md)。
+**Vision / 多模态 Arena**：类目独立——MMMU 高 **不保证** Arena Vision 高；见 [multimodal-llm.md](llm/multimodal-llm.md)。
 
-Arena 反映 **人类双盲偏好**（helpfulness、风格、拒绝率），与 SWE/GPQA **排序常不一致**——读 [llm.md](./llm.md) §专题对照 · 通用榜 vs 专轴。
+Arena 反映 **人类双盲偏好**（helpfulness、风格、拒绝率），与 SWE/GPQA **排序常不一致**——读 [llm.md](llm/llm.md) §专题对照 · 通用榜 vs 专轴。
 
 ---
 
@@ -221,5 +221,5 @@ Arena 反映 **人类双盲偏好**（helpfulness、风格、拒绝率），与 
 
 ## 延伸阅读
 
-- 框架 hub：[llm.md](./llm.md)
-- 专轴：[llm-for-coding.md](./llm-for-coding.md) · [llm-for-math.md](./llm-for-math.md) · [llm-for-reasoning.md](./llm-for-reasoning.md) · [multimodal-llm.md](./multimodal-llm.md)
+- 框架 hub：[llm.md](llm/llm.md)
+- 专轴：[llm-for-coding.md](llm/llm-for-coding.md) · [llm-for-math.md](llm/llm-for-math.md) · [llm-for-reasoning.md](llm/llm-for-reasoning.md) · [multimodal-llm.md](llm/multimodal-llm.md)

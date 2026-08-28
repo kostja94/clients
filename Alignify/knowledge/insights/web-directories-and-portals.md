@@ -6,7 +6,7 @@
 
 **站内对照**：长文 [directory-submission-sites](https://alignify.co/zh/insights/directory-submission-sites) 以**叙事 + 表单化提交指南**为主。**本知识块**补：**谱系与术语**、**极简史与没落纲要（链长文段落）**、**字段/路径速查**、**商业评价平台一览**、**目录站在 Google 政策坐标系中的位置**、**AI 对供给与需求两侧的挤压**、**转型案例索引**、**FAQ 碎片**与**研究型外链索引**；图解与分步仍以长文为准，避免 drift。
 
-**规范对照**：[spam policies](https://developers.google.com/search/docs/essentials/spam-policies?hl=zh-cn) · [how-search-engine-works.md](../seo/how-search-engine-works.md) · GEO 边界：[tools/geo.md](../tools/geo.md)
+**规范对照**：[spam policies](https://developers.google.com/search/docs/essentials/spam-policies?hl=zh-cn) · [how-search-engine-works.md](../seo/how-search-engine-works.md) · GEO 边界：[tools/geo.md](../tools/search-geo/geo.md)
 
 以下条目可任意顺序阅读；**不是**教程体例。
 
@@ -20,7 +20,7 @@
 - **Programmatic / scaled thin pages**：模板化批量生成的相似列表页、极薄聚合页；在 Google 政策话语中常与 **Scaled content abuse（规模化内容滥用）** 一并讨论。
 - **Site reputation abuse / 站点声誉滥用**：高信任站点托管**与主业弱相关、主要为排名**的三方内容（常被外界对应「寄生 SEO」讨论）；与「卖目录区块」形态相关但**不等同于**所有目录合作。
 - **Parasite SEO（业界俗称）**：借高权借名站发布外托内容；**非** Google 官方术语，但帮助理解「为何整站信任会被三方列表反噬」。
-- **GEO / AI 可见度**：生成式答案中的**品牌提及与引用**；目录站若仅存在于传统蓝链漏斗，可能需重新证明「列表以外的信息增益」（与 [tools/geo.md](../tools/geo.md) 同域）。
+- **GEO / AI 可见度**：生成式答案中的**品牌提及与引用**；目录站若仅存在于传统蓝链漏斗，可能需重新证明「列表以外的信息增益」（与 [tools/geo.md](../tools/search-geo/geo.md) 同域）。
 
 ---
 

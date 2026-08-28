@@ -1,0 +1,32 @@
+{
+  "section": "blog",
+  "slug": "spiderman-voice-changer-pubgm",
+  "source_md": "(live dubbingai.io/blog/spiderman-voice-changer-pubgm/)",
+  "analyzed_at": "2026-08-28T13:30:00+00:00",
+  "model": "manual-dubbingai-v1-sanitized",
+  "page_topic_one_liner": "How to use a real-time voice changer for mobile battle royale squad chat — app routing vs voice-processing earbuds",
+  "differentiator_vs_generic": "Live mobile game match voice transformation — NOT text-to-speech, NOT desktop streaming setup. Hero shows phone game HUD + headset earbud signal flow.",
+  "visual_anchors": [
+    "HERO: smartphone mobile shooter game HUD with squad voice-chat indicator on torn paper",
+    "Secondary: signal flow — headset mic → earbud processor chip → phone → game chat (cyan-indigo arrows)",
+    "Tertiary: live audio waveform + small stopwatch — real-time latency cue"
+  ],
+  "anti_patterns": [
+    "Text-to-speech typing UI as hero",
+    "Desktop PC monitor streaming setup",
+    "Readable game or app logos or trademarks",
+    "Copyrighted superhero costume likeness",
+    "Competitor app ranking text on canvas",
+    "Text touching or bleeding past canvas edges"
+  ],
+  "accent_suggestion": "dubbing-gradient",
+  "locales": {
+    "en": {
+      "headline": "MOBILE VOICE CHANGER",
+      "headline_line2": "",
+      "subtitle": "Live Squad Chat · Earbuds · Low Latency",
+      "tagline": "",
+      "composition": "Visual-only editorial paper collage for mobile game voice changer guide. Layout for 1200x630 safe frame with generous top-left text inset. HERO center-right: smartphone showing generic mobile shooter battle HUD with voice-chat mic indicator (blurred UI, no readable branding). Secondary lower-left: torn-paper audio routing — wireless earbuds → processor chip → phone (cyan-to-indigo arrows). Tertiary: small stopwatch lower-right inside middle band (not flush to bottom edge). Title block top-left with clear margins. Warm paper #F4F4F2, torn edges, halftone. NO copyrighted characters, NO readable logos, NO TTS keyboard, NO text at canvas edges."
+    }
+  }
+}

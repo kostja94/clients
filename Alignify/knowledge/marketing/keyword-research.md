@@ -4,7 +4,7 @@
 
 **材料范围**：公开网络检索（Ahrefs / Semrush 关键词研究方法论、Google Search Central 搜索意图文档、People Also Ask 与 SERP feature 讨论、Topical Map / Hub-Spoke 内容架构社区实践、Alignify 站内 **`content/marketing/*/keyword-research.md`** 方法论段落）；并归纳 Agent skill **keyword-research**、**content-strategy** 中的执行索引。**未**把 SEO 工具营销页当作独立事实来源。网摘整理日期 **2026-06-24**。
 
-**规范或长文对照**：Alignify 站内长文 [关键词调研（ZH）](https://alignify.co/zh/marketing/keyword-research)；英文：`content/marketing/en/keyword-research.md`。相邻专题：[competitive-analysis.md](./competitive-analysis.md)（竞品逆向深化）、[geo.md](./geo.md)（AI 搜索意图扩展）。
+**规范或长文对照**：Alignify 站内长文 [关键词调研（ZH）](https://alignify.co/zh/marketing/keyword-research)；英文：`content/marketing/en/keyword-research.md`。相邻专题：[competitive-analysis.md](./competitive-analysis.md)（竞品逆向深化）、[geo.md](../tools/search-geo/geo.md)（AI 搜索意图扩展）。
 
 **Agent skill 对照**：选词与 Topical Map 编排见 skill **keyword-research**、**content-strategy**；本页为概念锚点与外链索引，**不**替代逐步工单。
 
@@ -61,6 +61,18 @@
 - **Topical Map 设计**：Hub 定义、Spoke 清单、内链规则、更新节奏。
 - **竞品逆向衔接**：2–3 个 SERP 竞品的 Top pages 与 gap 词进入路线图（见 competitive-analysis）。
 - **测量闭环**：发布后 GSC 查询、排名、转化；季度 prune 低表现集群。
+
+---
+
+**同意图关键词 · 搜索量快判（Intent-Near）**
+
+两个候选词 **买家任务相同、只是说法不同** 时（例：`blog website builder` vs `blog CMS`），在工具 MSV 不可用或需快速定 slug 前：
+
+1. **现搜**：Google/Bing 各搜一次，记 **「About / 约 XXX 条结果」**（Google 超大数常为约数，如 ~390M；只比相对大小，不当精确 MSV）。
+2. **SERP 展开**：若搜 **较低量说法** 时，前 10 标题却全是 **另一说法**（搜 CMS → 满屏 *blogging platform* / *website builder for blogs*），则 **标题重复出现的词** 更接近头词。
+3. **逻辑**：谁在说（C 端 vs 采购）· 是否自然英文 · 六轴验收归哪条 slug。
+
+**标答（2026-08-28）**：`blog website builder` **>** `CMS for publishing blog`；slug **`blog-website-builder`**（`website-builder/` 簇），非 `blog-cms`。headless → `cms/` 簇。→ [`intent-near-keyword-volume.md`](../../skills/knowledge-block/references/intent-near-keyword-volume.md)
 
 ---
 
