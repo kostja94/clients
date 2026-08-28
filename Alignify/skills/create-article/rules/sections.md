@@ -228,6 +228,10 @@ items 内允许 `**粗体**` 与 `[锚文本](/path)`（每 item 最多 1–2 �
 
 `introduction` + `- ` 列表 items；items 内允许 `**粗体**` 与 `[锚文本](/path)`（每 item 最多 1–2 内链）。计字数前 strip HTML/Markdown 标记。
 
+**渲染**：线上 `Tldr.tsx` 经 `markdownToHtml` + `applyMarkdownBoldToHtml` 输出；**禁止**只写 Markdown 链接却不走 JSON 侧车，也**禁止**在 items 里写裸 `[text](url)` 期望自动变链（须确认部署仓已含 link 渲染）。
+
+**中文叙述**（[`content-locale.md`](./content-locale.md) · [`zh-en-mixing.md`](./zh-en-mixing.md)）：TL;DR items/intro **不得**用「分叉」「fork first」等内部术语；内链锚文本用中文（如「AI 建站」），不用英文 slug 当锚文。
+
 **Step 08 注册**：同步写入 `tldr-data.json`（键 = `pageUrl` 路径，如 `/zh/blog/{slug}` 或 `/tools/{slug}`）。见 [`anatomy.md`](./anatomy.md) §二·一。
 
 ```markdown

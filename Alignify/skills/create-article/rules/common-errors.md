@@ -82,6 +82,7 @@
 | E49 | 正文 meta 预告未发布 skills/runbook | 禁止「落地细节进 skills / runbook 随后补 / 后续 skills 会写…」；概念与验收项压缩进本文 prose/表；见 `presentation.md` §E49 |
 | E50 | 未经 Brief 的模板收束节 | 禁止默认 `#author-take` H2 或 `#should-you-do-this` go/no-go（Insights/架构文）；GTM go/no-go 仅 `marketing-strategy` + §4.2b；见 `presentation.md` §Author voice |
 | E51 | 独立发展史 H2 污染选型文 | `best-ranking` / Commercial 意图禁止 `## 发展历史` / `History of X` 整节年代表；演进脉络 **嵌入** `#what-is-*`（1 段 80–120 字）+ 可选 `#types-*` 3 行阶段表；须收束到本文交付物（checklist/对比），见 `sections.md` §2.2b |
+| E53 | TL;DR 中文「分叉」/ 叙述层英混 / 内链不渲染 | 禁读者向「分叉」「fork first」→ 用「对号入座」「先分清场景」；禁 composable、listicle、presentation 等裸英文（产品名/API 除外）；禁 `Official Rules`/`live Rules`→**官方规则**，`watermark`→**水印**，`badge`→**标识**（marketing TLDR）；内链写 `[中文锚](/zh/...)`；见 `sections.md` §2.4 · `zh-en-mixing.md` · `audit-tldr-full.mjs` ZH_LOANWORDS |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |
