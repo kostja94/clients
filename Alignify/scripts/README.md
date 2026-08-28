@@ -119,5 +119,6 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 | 脚本 | 用途 |
 |------|------|
 | `fix-rules-section-links.py` | 修复 `skills/create-article/rules/` 内 `../section/` 等断链 |
+| `migrate-tables-to-childrenhtml.py` | 裸 HTML / GFM 管道表 → `childrenHtml` 围栏（格式 A） |
 
 历史一次性脚本（已归档或移除）：`migrate-doc-paths.py`、`fix-format-mismatches.py`、`fix-fullpage-screenshots.py` 等。
