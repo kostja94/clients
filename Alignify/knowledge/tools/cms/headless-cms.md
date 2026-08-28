@@ -6,9 +6,9 @@
 
 **Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#headless-cms-tools`）· `keywordEn`: **Headless CMS / API-first CMS** · `keywordZh`: **无头 CMS / API 优先内容管理**
 
-**主题簇**：[README.md](./README.md) · 路由 SSOT：[website-builder.md §簇级 FAQ](../website-builder/website-builder.md#簇级-faq)
+**主题簇**：[README.md](./README.md) · Hub：[content-management-system.md](./content-management-system.md) · 路由 SSOT：[website-builder.md §簇级 FAQ](../website-builder/website-builder.md#簇级-faq)
 
-**站内相邻**（CMS 簇 · builder 对照）：[website-builder.md](../website-builder/website-builder.md)（Hub）· [blog-website-builder.md](../website-builder/blog-website-builder.md) · [app-builder.md](../coding/app-builder.md)
+**站内相邻**（CMS 簇）：[open-source-cms.md](./open-source-cms.md)（OSS 选型）· [enterprise-cms.md](./enterprise-cms.md) · [website-builder.md](../website-builder/website-builder.md)（builder Hub）· [blog-website-builder.md](../website-builder/blog-website-builder.md) · [app-builder.md](../coding/app-builder.md)
 
 **站内相邻**（Tools · 簇外）：[headless-browser.md](../web-data/headless-browser.md) · [geo.md](../search-geo/geo.md)
 
@@ -40,6 +40,7 @@
 ## 词汇锚点
 
 - **Headless CMS / 无头 CMS**：**无内置展示层（presentation layer）** 的内容管理系统；编辑后台（CMA）与内容存储经 **REST / GraphQL 等 API** 交付，由 Next.js、Nuxt、Astro、移动 App 等**自行渲染**。与 **Traditional / Coupled CMS**（WordPress 主题、Webflow 画布）相对。
+- **成文：嵌入演进脉络（非独立 History H2）**：术语 = 砍掉 presentation **head**；~2010s JAMstack/mobile API → Contentful/Prismic 主流化；~2020s MACH/composable → 进 RFP；2025+ 检索降温 → 买家问 **迁移 SEO + Preview 治理**。正式文 1 段收束到 checklist；`#types` 可附 3 行阶段表。全品类编年 → hub `content-management-system`。
 - **与 headless-browser 的区分（必消歧）**：**Headless browser** = 无 UI 的浏览器进程（Playwright/Chromium headless shell），供 E2E 测试与 Agent 自动化；**Headless CMS** = 无「网站头部/前端」的内容 API。**Headless** 在两条赛道里是不同隐喻，检索与 slug 均勿混用 → [`headless-browser`](../web-data/headless-browser.md)。
 - **CMS（Content Management System）**：创建、编辑、协作、发布与存储数字内容的软件（含图片、视频、交互代码等）（[MDN — CMS](https://developer.mozilla.org/en-US/docs/Glossary/CMS)）。
 - **CMA / CDA**：**Content Management Application**（编辑界面）与 **Content Delivery Application**（存储与对外交付）；Headless 保留 CMA+CDA，**剥离**与页面模板绑定的 presentation。
@@ -145,7 +146,7 @@
 | 类型（英文常检索词） | 垂直优先（典型） | 横向 / 非 Headless（典型） | 备注 |
 |---------------------|-----------------|---------------------------|------|
 | **Headless SaaS** | **Contentful**, Sanity, Storyblok, Hygraph | — | 见 §六产品速览 |
-| **OSS 自托管** | Strapi, Payload, Directus | — | 见 §六产品速览 |
+| **OSS 自托管** | Strapi, Payload, Directus | — | 深度见 [**open-source-cms**](./open-source-cms.md) |
 | **Git-based CMS** | Tina, Decap, Nuxt Studio | — | Type C；**Git 博客** → blog-website-builder Type E |
 | **Hybrid DXP** | Sitecore, AEM, Optimizely | — | 企业 DXP |
 | **Traditional + API** | WordPress + WPGraphQL | — | Type E |

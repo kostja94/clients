@@ -1,7 +1,8 @@
 # Step 4 — 产品截图（best-ranking）
 
+> **范围**：**仅 Brief `Product roster` 内产品**（默认 3 款 = 3 张；不必为凑数加截图）  
 > **适用**：`articleType: best-ranking`  
-> **规范**：[`rules/product-screenshots.md`](./rules/product-screenshots.md)
+> **规范 SSOT**：[`rules/product-screenshots.md`](./rules/product-screenshots.md) · 数量/独占 → [`rules/product-coverage.md`](./rules/product-coverage.md)
 
 ---
 

@@ -70,7 +70,7 @@
 
 1. **现搜**：Google/Bing 各搜一次，记 **「About / 约 XXX 条结果」**（Google 超大数常为约数，如 ~390M；只比相对大小，不当精确 MSV）。
 2. **SERP 展开**：若搜 **较低量说法** 时，前 10 标题却全是 **另一说法**（搜 CMS → 满屏 *blogging platform* / *website builder for blogs*），则 **标题重复出现的词** 更接近头词。
-3. **逻辑**：谁在说（C 端 vs 采购）· 是否自然英文 · 六轴验收归哪条 slug。
+3. **逻辑**：谁在说（C 端 vs 采购）· 是否自然英文 · builder/CMS 簇验收归哪条 slug · **产品池是否独占**（见 [`product-coverage.md`](../../skills/create-article/rules/product-coverage.md)）。
 
 **标答（2026-08-28）**：`blog website builder` **>** `CMS for publishing blog`；slug **`blog-website-builder`**（`website-builder/` 簇），非 `blog-cms`。headless → `cms/` 簇。→ [`intent-near-keyword-volume.md`](../../skills/knowledge-block/references/intent-near-keyword-volume.md)
 

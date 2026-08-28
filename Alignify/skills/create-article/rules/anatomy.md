@@ -68,16 +68,17 @@ updated: "2026年6月23日"
 readingMinutes: "18 分钟阅读"
 pageUrl: "https://alignify.co/zh/blog/{slug}"
 locale: "zh"
-category: "coding-dev"
-categorySecondary: ""
+pillar: "dev"
+section: "dev-coding"
+contentType: "tool-guide"
 heroImage: "/blog/{slug}/hero.jpg"
 heroImageAlt: "…"
 ---
 ```
 
-**允许键（仅此）**：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `category` · `categorySecondary` · `heroImage` · `heroImageAlt`
+**允许键（仅此）**：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `pillar` · `section` · `contentType` · `heroImage` · `heroImageAlt`
 
-**禁止键（E44）**：`heroHtml` · `howTo` · `heroContent` — 全站 md **不得**出现在 frontmatter；HTML 误入 YAML 区同样 Fail（E45）。区内首尾空行 Fail（E48）。送审跑 `scripts/audit/audit-frontmatter.py`；批量 normalize 跑 `scripts/ops/normalize-frontmatter.py`。
+**禁止键（E44）**：`heroHtml` · `howTo` · `heroContent` — 全站 md **不得**出现在 frontmatter；HTML 误入 YAML 区同样 Fail（E45）。区内首尾空行 Fail（E48）。**废弃（E49）**：`category` · `categorySecondary`。分类规则见 [`category-assignment.md`](./category-assignment.md)。送审跑 `scripts/audit/audit-frontmatter.py`；批量 normalize 跑 `scripts/ops/normalize-frontmatter.py`。
 
 ### 二·一 TL;DR / FAQ / References（JSON 侧车 · 线上 SSOT · 2026-08）
 
@@ -105,7 +106,7 @@ heroImageAlt: "…"
 **Step 08 规则（E10）**：Brief 采用 TL;DR/FAQ/Refs → 注册对应 JSON（中英 pathname 键）；Brief 省略 → JSON **不得**留键。**勿**在 md 写这三节正文。
 
 md 内可留 `<!-- references injected from references-data.json -->` 占位（editorial 提示），**不能**代替 JSON 注册。
-- `category` → Hub 归属（经 `ARTICLE_CATEGORY_MAP` 推导）
+- `pillar` / `section` / `contentType` → Taxonomy v2（见 [`category-assignment.md`](./category-assignment.md)；面包屑经 `ARTICLE_CATEGORY_MAP`）
 
 ### H2/H3 锚点语法
 

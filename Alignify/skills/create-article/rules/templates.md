@@ -58,7 +58,7 @@
 | articleType | best-ranking / marketing-strategy / seo-guide / insights-analysis / … |
 | 路由 | content/blog/（新文）· 存量路径若维护更新则注明 |
 | 参照篇（可选） | video-generator · geo · 无（全新题材） |
-|  deliberate 省略 | 无 How To — 策略判断文 · 无对比表 — 仅 2 款产品 |
+|  deliberate 省略 | 无 How To — 策略判断文 · 无对比表 — 仅 3 款产品 · 不写 6+ 款大盘点 |
 | Section Plan | 见 sections.md Part 0 |
 ```
 
@@ -90,9 +90,9 @@ JSON 侧车键 = frontmatter `pageUrl` 去域路径（如 `/zh/blog/{slug}`）�
 
 ## 1.2 frontmatter
 
-允许键：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `category` · `categorySecondary` · `heroImage` · `heroImageAlt`
+允许键：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `pillar` · `section` · `contentType` · `heroImage` · `heroImageAlt`
 
-**禁止（E44）**：`heroHtml` · `howTo` · `heroContent`
+**禁止（E44）**：`heroHtml` · `howTo` · `heroContent` · **废弃（E49）** `category` / `categorySecondary`（见 [`category-assignment.md`](./category-assignment.md)）
 
 ## 1.3 正文壳
 
@@ -136,6 +136,8 @@ H1 / excerpt：frontmatter `title` / `description`；**H1 不写年份**。
 ```
 
 **部署仓（108 篇 EN）大致比例**：结论 100% · 什么是 ~99% · Best/榜单 ~86% · 应用场景 ~80% · 对比表 ~31% · 标准 `#how-to-choose` ~47%
+
+**嵌入演进脉络（C 层）**：成熟架构/品类选型文可在「什么是」内嵌 **1 段 + 可选 3 行阶段表**（见 [`sections.md`](./sections.md) §2.2b），收束到 checklist/对比——**禁止**独立 `## 发展历史`（E51）。全品类编年留给 hub slug。
 
 → **对比表、应用场景、How To 均可省略**；Brief 写理由即可。
 
@@ -342,7 +344,7 @@ SEO 文 H2 **因题而异**，常见模式：
 | FAQ 7 问（若采用） | ✅ | ✅ | ✅ | ✅ |
 | frontmatter 无 howTo: | ✅ | ✅ | ✅ | ✅ |
 | 新文禁 author-take / skills defer | — | ✅ | ✅ | ✅ |
-| Best H3 ≥2 产品（若有榜单节） | ✅ | — | — | — |
+| Best H3 | **3 款默认**（≥2 硬底线 · ≤5 新文软上限） | ✅ | — | — | — |
 
 B/C 层偏离（无对比表、无 How To、H2 仅 5 个…）→ Brief 或 SelfCheck **一句理由**即可。
 

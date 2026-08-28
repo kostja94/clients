@@ -2,7 +2,7 @@
 
 **材料范围**：公开网络检索（WordPress.org、Wix/Squarespace、Ghost/Substack/beehiiv、Blogger；MDN、W3Techs；Tier 1「best website builder for blogs」对比稿；HN 摘要）；**未**引用 Alignify 站内 JSON 内容稿。网摘整理日期 **2026-08-28** · 簇迁自 `blog-cms` / `blogging-platform`。
 
-**站内对照**：KB → 正式文优先 **`/blog/blog-website-builder`** · **`/zh/blog/blog-website-builder`** · Brief [`blog-website-builder.md`](blog-website-builder.md)
+**站内对照**：KB → 正式文优先 **`/blog/blog-website-builder`** · **`/zh/blog/blog-website-builder`** · Brief [`../../insights/_briefs/blog-website-builder.md`](../../insights/_briefs/blog-website-builder.md)
 
 **Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../keywords/alignify-keywords-tools.md)（锚点 `#blog-website-builder-tools`）· `keywordEn`: **Blog Website Builder / Website Builder for Blogs** · `keywordZh`: **博客建站 / 博客网站搭建** · 次轴 **Blogging Platform / Blog CMS**（同 SERP，非独立 slug）· 快判 → [KEYWORD-RESEARCH.md](./KEYWORD-RESEARCH.md)
 

@@ -58,18 +58,22 @@ function collectPublishDates(deployRoot) {
   const dataDir = path.join(deployRoot, "src", "data");
   const files = fs
     .readdirSync(dataDir)
-    .filter((f) => f.endsWith("-meta.ts"));
+    .filter((f) => f.endsWith("-meta.ts") && f !== "glossary-meta.ts");
 
   const byDay = new Map(); // YYYY-MM-DD -> [{ file, slug }]
+  const slugRe = /^ {2,}(?:"([^"]+)"|(?!en\b|zh\b)([A-Za-z][\w-]*)): \{/gm;
 
   for (const file of files) {
     const text = fs.readFileSync(path.join(dataDir, file), "utf8");
-    const re =
-      /"([^"]+)":\s*\{[\s\S]*?publishDate:\s*"(\d{4}-\d{2}-\d{2})T/g;
-    let m;
-    while ((m = re.exec(text)) !== null) {
-      const slug = m[1];
-      const day = m[2];
+    const matches = [...text.matchAll(slugRe)];
+    for (let i = 0; i < matches.length; i++) {
+      const slug = matches[i][1] || matches[i][2];
+      const start = matches[i].index;
+      const end = i + 1 < matches.length ? matches[i + 1].index : text.length;
+      const block = text.slice(start, end);
+      const pub = block.match(/publishDate:\s*"(\d{4}-\d{2}-\d{2})T/);
+      if (!pub) continue;
+      const day = pub[1];
       if (!byDay.has(day)) byDay.set(day, []);
       byDay.get(day).push({ file, slug });
     }

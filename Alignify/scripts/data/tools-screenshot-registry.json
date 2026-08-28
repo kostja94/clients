@@ -1128,5 +1128,47 @@
     "reason": "Blog git-hosting BestTools — Graphite homepage",
     "priority": "P0",
     "jsonImageSrc": "/blog/git-hosting/graphite.jpg"
+  },
+  "headless-cms:contentful": {
+    "screenshotUrl": "https://www.contentful.com/headless-cms/",
+    "outputPath": "blog/headless-cms/contentful.jpg",
+    "reason": "Blog headless-cms — Contentful headless CMS product page",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/headless-cms/contentful.jpg"
+  },
+  "headless-cms:sanity": {
+    "screenshotUrl": "https://www.sanity.io/",
+    "outputPath": "blog/headless-cms/sanity.jpg",
+    "reason": "Blog headless-cms — Sanity homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/headless-cms/sanity.jpg"
+  },
+  "headless-cms:storyblok": {
+    "screenshotUrl": "https://www.storyblok.com/",
+    "outputPath": "blog/headless-cms/storyblok.jpg",
+    "reason": "Blog headless-cms — Storyblok homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/headless-cms/storyblok.jpg"
+  },
+  "headless-cms:hygraph": {
+    "screenshotUrl": "https://hygraph.com/",
+    "outputPath": "blog/headless-cms/hygraph.jpg",
+    "reason": "Blog headless-cms — Hygraph homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/headless-cms/hygraph.jpg"
+  },
+  "headless-cms:strapi": {
+    "screenshotUrl": "https://strapi.io/",
+    "outputPath": "blog/headless-cms/strapi.jpg",
+    "reason": "Blog headless-cms — Strapi homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/headless-cms/strapi.jpg"
+  },
+  "headless-cms:payload": {
+    "screenshotUrl": "https://payloadcms.com/",
+    "outputPath": "blog/headless-cms/payload.jpg",
+    "reason": "Blog headless-cms — Payload CMS homepage",
+    "priority": "P0",
+    "jsonImageSrc": "/blog/headless-cms/payload.jpg"
   }
 }

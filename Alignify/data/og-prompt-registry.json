@@ -3646,6 +3646,112 @@
     },
     {
       "section": "blog",
+      "slug": "headless-cms",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "HEADLESS CMS",
+      "headline_line2": "(2026)",
+      "subtitle": "API Content Without a Frontend",
+      "tagline": "Contentful · Sanity · Strapi",
+      "composition": "Editorial collage for headless CMS guide. HERO: structured content blocks hub with REST/GraphQL API rays to browser, phone, and email consumer frames. Secondary: generic CMS studio field panel. Tertiary: webhook arrow to Next.js SSG page frame. Title top-left. Paper torn edges. NO builder canvas, NO browser automation, NO vendor logos, NO ranking numbers.",
+      "accent": "alignify-navy",
+      "visual_anchors": [
+        "HERO (~55% canvas): Central content schema blocks connected by API arrows to browser frame, mobile phone, email template",
+        "Secondary: Studio/admin panel vignette with structured field list",
+        "Tertiary: Webhook/revalidate dotted line from CMS hub to Next.js SSG page frame"
+      ],
+      "anti_patterns": [
+        "Drag-and-drop website builder canvas as hero",
+        "Headless Chromium browser window",
+        "WordPress theme live preview screenshot",
+        "Real Contentful/Sanity/Storyblok logos",
+        "Ranking badges or numbered product list on image"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-28"
+    },
+    {
+      "section": "blog",
+      "slug": "headless-cms",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "无头CMS",
+      "headline_line2": "（2026）",
+      "subtitle": "API内容·前端自选",
+      "composition": "Same layout as EN: content schema hub + API rays to multi-channel frames + studio fields + webhook to SSG page. Title top-left Chinese headline. NO builder canvas, NO browser automation, NO vendor logos.",
+      "accent": "alignify-navy",
+      "visual_anchors": [
+        "HERO (~55% canvas): Central content schema blocks connected by API arrows to browser frame, mobile phone, email template",
+        "Secondary: Studio/admin panel vignette with structured field list",
+        "Tertiary: Webhook/revalidate dotted line from CMS hub to Next.js SSG page frame"
+      ],
+      "anti_patterns": [
+        "Drag-and-drop website builder canvas as hero",
+        "Headless Chromium browser window",
+        "WordPress theme live preview screenshot",
+        "Real Contentful/Sanity/Storyblok logos",
+        "Ranking badges or numbered product list on image"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-28"
+    },
+    {
+      "section": "blog",
+      "slug": "open-source-cms",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "OPEN SOURCE CMS",
+      "headline_line2": "(2026)",
+      "subtitle": "Self-Host · License · TCO",
+      "tagline": "Strapi · Payload · Directus",
+      "composition": "Editorial collage for open source CMS guide. HERO: self-hosted server rack vignette with MIT/GPL license document stamp and database cylinder on right two-thirds. Secondary: source code window with fork/branch icon. Tertiary: checklist panel with self-host and revenue-threshold tick marks. Title top-left. Paper torn edges. NO drag-and-drop builder, NO headless browser, NO vendor logos, NO star-ranking numbers.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55% canvas): VPS/server stack with open license badge and Postgres cylinder representing self-hosted data",
+        "Secondary: code editor vignette with Git fork icon",
+        "Tertiary: license checklist card with MIT vs source-available contrast"
+      ],
+      "anti_patterns": [
+        "Website builder drag canvas",
+        "Headless Chromium browser",
+        "Real Strapi/Payload/Directus logos",
+        "Ten-product ranking grid",
+        "WordPress plugin marketplace screenshot as hero"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-07-23 open-source-cms"
+    },
+    {
+      "section": "blog",
+      "slug": "open-source-cms",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "开源CMS",
+      "headline_line2": "（2026）",
+      "subtitle": "自托管·许可·TCO",
+      "composition": "Same layout as EN: self-hosted server + license stamp + database + code fork vignette + license checklist. Title top-left Chinese headline. NO builder canvas, NO browser automation, NO vendor logos.",
+      "accent": "mars-green",
+      "visual_anchors": [
+        "HERO (~55% canvas): VPS/server stack with open license badge and Postgres cylinder representing self-hosted data",
+        "Secondary: code editor vignette with Git fork icon",
+        "Tertiary: license checklist card with MIT vs source-available contrast"
+      ],
+      "anti_patterns": [
+        "Website builder drag canvas",
+        "Headless Chromium browser",
+        "Real Strapi/Payload/Directus logos",
+        "Ten-product ranking grid",
+        "WordPress plugin marketplace screenshot as hero"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-07-23 open-source-cms"
+    },
+    {
+      "section": "blog",
       "slug": "github-for-marketing",
       "locale": "en",
       "style": "editorial-collage",

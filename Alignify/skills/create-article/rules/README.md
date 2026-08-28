@@ -36,7 +36,7 @@
 
 | 阶段 | 文档 |
 |------|------|
-| Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) · [`copy-quality.md`](./copy-quality.md) 附录 A |
+| Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) · [`product-coverage.md`](./product-coverage.md) · [`copy-quality.md`](./copy-quality.md) 附录 A |
 | Step 03 关键词 | [`03-keywords.md`](../03-keywords.md) · Brief `Primary keyword`（须与 KB keyword 映射一致，见 [`knowledge-block/SKILL.md`](../../knowledge-block/SKILL.md)） |
 | Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`gtm-prose-voice.md`](./gtm-prose-voice.md) · [`presentation.md`](./presentation.md) · [`copy-quality.md`](./copy-quality.md) Part 2·4 |
 | Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md)（**按 articleType** 选 Part 3/4/4.5/5）· [`internal-links.md`](./internal-links.md) Part 1–2 + Part 8 · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
@@ -69,6 +69,7 @@
 | [source-map-template.md](./source-map-template.md) | EEAT / Source Map |
 | [outline-cross-check.md](./outline-cross-check.md) | 同批 Outline 3.5 |
 | [cross-article-audit.md](./cross-article-audit.md) | 同批 5.5 |
+| [product-coverage.md](./product-coverage.md) | 垂类选题 · 产品数量 · 全站独占 |
 
 **终审**：[`../../audit-article/SKILL.md`](../../audit-article/SKILL.md)
 

@@ -4,9 +4,9 @@
 
 **站内对照**：待上线正式页时对齐（新文优先 **`/blog/portfolio-website-builder`** · **`/zh/blog/portfolio-website-builder`**）· slug **`portfolio-website-builder`**
 
-**Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#portfolio-website-builder-tools`）· `keywordEn`: **Portfolio website builder / Online portfolio maker** · `keywordZh`: **作品集建站 / 在线作品集**
+**Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#portfolio-website-builder-tools`）· `keywordEn`: **Portfolio website builder / Photography website builder** · `keywordZh`: **作品集建站 / 摄影网站** · Secondary：online portfolio maker
 
-**主题簇**：[README.md](./README.md) · 六轴路由 SSOT：[website-builder.md §分流](website-builder.md#与相邻-slug-分流)
+**主题簇**：[README.md](./README.md) · builder 簇路由 SSOT：[website-builder.md §分流](website-builder.md#与相邻-slug-分流)
 
 **Territory**：编程工具链（B 档 spoke · KB only；发文走 `/blog`）
 
@@ -16,7 +16,7 @@
 
 ## 与相邻 slug 分流
 
-> 六轴全表与跨轴 FAQ → **[website-builder §与相邻 slug 分流](website-builder.md#与相邻-slug-分流)** · **[§簇级 FAQ](website-builder.md#簇级-faq)**。
+> builder 簇全表与跨轴 FAQ → **[website-builder §与相邻 slug 分流](website-builder.md#与相邻-slug-分流)** · **[§簇级 FAQ](website-builder.md#簇级-faq)**。
 
 | 维度 | **`portfolio-website-builder`（本文）** | **`website-builder`** | **`ecommerce-website-builder`** |
 |------|----------------------------------------|----------------------|--------------------------------|

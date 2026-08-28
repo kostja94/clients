@@ -1,0 +1,36 @@
+{
+  "section": "blog",
+  "slug": "headless-cms",
+  "analyzed_at": "2026-08-28T12:20:00+00:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Headless CMS guide — API-first content hub (Contentful, Sanity, Storyblok, Strapi, Payload) decoupled from front-end rendering vs website builders and headless browsers",
+  "differentiator_vs_generic": "Show content API + schema blocks feeding multiple front ends (Web, mobile), NOT drag-and-drop website builder canvas, NOT Playwright browser automation, NOT WordPress theme preview",
+  "visual_anchors": [
+    "HERO (~55% canvas): Central content schema blocks (title, body, media fields) connected by API arrows to three consumer silhouettes — browser frame, mobile phone, email template",
+    "Secondary: Studio/admin panel vignette with structured field list (not WYSIWYG full-page canvas)",
+    "Tertiary: Webhook/revalidate dotted line from CMS hub to Next.js page frame labeled SSG/ISR"
+  ],
+  "anti_patterns": [
+    "Drag-and-drop website builder canvas as hero (that's website-builder)",
+    "Headless Chromium browser window (that's headless-browser)",
+    "WordPress theme live preview screenshot",
+    "Real Contentful/Sanity/Storyblok logos — generic CMS blocks only",
+    "Ranking badges or numbered product list on image"
+  ],
+  "accent_suggestion": "alignify-navy",
+  "locales": {
+    "en": {
+      "headline": "HEADLESS CMS",
+      "headline_line2": "(2026)",
+      "subtitle": "API Content Without a Frontend",
+      "tagline": "Contentful · Sanity · Strapi",
+      "composition": "Editorial collage for headless CMS guide. HERO: structured content blocks hub with REST/GraphQL API rays to browser, phone, and email consumer frames. Secondary: generic CMS studio field panel. Tertiary: webhook arrow to Next.js SSG page frame. Title top-left. Paper torn edges. NO builder canvas, NO browser automation, NO vendor logos, NO ranking numbers."
+    },
+    "zh": {
+      "headline": "无头CMS",
+      "headline_line2": "（2026）",
+      "subtitle": "API内容·前端自选",
+      "composition": "Same layout as EN: content schema hub + API rays to multi-channel frames + studio fields + webhook to SSG page. Title top-left Chinese headline. NO builder canvas, NO browser automation, NO vendor logos."
+    }
+  }
+}

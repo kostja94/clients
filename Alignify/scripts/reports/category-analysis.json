@@ -1,0 +1,401 @@
+﻿{
+  "total": 209,
+  "by_channel_count": {
+    "blog": 36,
+    "tools": 108,
+    "seo": 38,
+    "marketing": 16,
+    "insights": 7,
+    "events": 4
+  },
+  "primary_category": {
+    "seo": 42,
+    "marketing": 31,
+    "coding-dev": 21,
+    "ai-creative": 21,
+    "ai-agents": 19,
+    "business": 18,
+    "ai-video": 16,
+    "ai-text": 11,
+    "insights": 10,
+    "ai-audio": 8,
+    "data-infra": 7,
+    "geo": 5
+  },
+  "invalid_secondary": [
+    {
+      "channel": "blog",
+      "slug": "coding-plan",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Coding Plan Subscriptions: China's Growth Path for AI Coding"
+    },
+    {
+      "channel": "blog",
+      "slug": "egc-marketing",
+      "category": "marketing",
+      "secondary": "content",
+      "title": "How Employee Generated Content (EGC) Builds Developer Trust for AI/Dev"
+    },
+    {
+      "channel": "blog",
+      "slug": "embedded-virality",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Powered-by Badges for AI Products: Free with Branding, Paid to Remove"
+    },
+    {
+      "channel": "blog",
+      "slug": "git-commit-attribution",
+      "category": "marketing",
+      "secondary": "referral",
+      "title": "AI Commit Attribution: Agent Trailers, Growth Side Effects, and the Co"
+    },
+    {
+      "channel": "blog",
+      "slug": "platform-subdomain-gating",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Platform Subdomain Growth: Distribution Through the Address Bar"
+    },
+    {
+      "channel": "blog",
+      "slug": "rate-limit-reset",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas"
+    },
+    {
+      "channel": "blog",
+      "slug": "ugc-marketing",
+      "category": "marketing",
+      "secondary": "content",
+      "title": "UGC Marketing Strategy: Creator Networks, Whitelisting & FTC Rules for"
+    },
+    {
+      "channel": "blog",
+      "slug": "watermark-growth",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Free Exports with Logo: Watermark Growth for AI Media SaaS"
+    },
+    {
+      "channel": "blog",
+      "slug": "wrapped-marketing",
+      "category": "marketing",
+      "secondary": "social",
+      "title": "Year in Review Marketing: Wrapped Strategy for AI Products"
+    },
+    {
+      "channel": "marketing",
+      "slug": "lifetime-deal",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Lifetime Deal Strategy: Debt, Credits & AppSumo in 2026"
+    }
+  ],
+  "invalid_primary": [],
+  "blog_articles": [
+    {
+      "channel": "blog",
+      "slug": "agent-memory",
+      "category": "coding-dev",
+      "secondary": "ai-agents",
+      "title": "AI Agent Memory Layer: Persistent Cross-Session Middleware",
+      "hubGroup": "dev-multi-agent"
+    },
+    {
+      "channel": "blog",
+      "slug": "agent-sandbox",
+      "category": "ai-agents",
+      "secondary": "",
+      "title": "AI Agent Sandbox: Secure Isolated Execution for Production Agents",
+      "hubGroup": "dev-multi-agent"
+    },
+    {
+      "channel": "blog",
+      "slug": "agent-to-agent",
+      "category": "ai-agents",
+      "secondary": "",
+      "title": "Agent-To-Agent Networks: Agent-Only Social, Identity Proxies, and Broa",
+      "hubGroup": "dev-multi-agent"
+    },
+    {
+      "channel": "blog",
+      "slug": "agentic-commerce",
+      "category": "ai-agents",
+      "secondary": "",
+      "title": "Agentic Commerce: When AI Agents Shop for You",
+      "hubGroup": "vertical-consumer"
+    },
+    {
+      "channel": "blog",
+      "slug": "agentic-payments",
+      "category": "ai-agents",
+      "secondary": "",
+      "title": "Agentic Payments: Authorization, Checkout, and Settlement Rails",
+      "hubGroup": "dev-multi-agent"
+    },
+    {
+      "channel": "blog",
+      "slug": "ai-components",
+      "category": "coding-dev",
+      "secondary": "",
+      "title": "AI Components: Injecting Differentiated UI into Vibe Coding Tools",
+      "hubGroup": "dev-coding"
+    },
+    {
+      "channel": "blog",
+      "slug": "ai-flashcards",
+      "category": "business",
+      "secondary": "",
+      "title": "Best AI Flashcard Makers (2026): Spaced Repetition, Active Recall & Sc",
+      "hubGroup": "vertical-professional"
+    },
+    {
+      "channel": "blog",
+      "slug": "ai-language-learning",
+      "category": "business",
+      "secondary": "",
+      "title": "Best AI Language Learning Tools (2026): Speaking, Accent Training & Co",
+      "hubGroup": "vertical-professional"
+    },
+    {
+      "channel": "blog",
+      "slug": "ai-traffic-and-citation-sources",
+      "category": "geo",
+      "secondary": "marketing",
+      "title": "AI Traffic & Citation Sources: Which Platforms Drive Your Brand Visibi",
+      "hubGroup": "content-seo"
+    },
+    {
+      "channel": "blog",
+      "slug": "ai-training-data",
+      "category": "data-infra",
+      "secondary": "ai-agents",
+      "title": "AI Training Data Platforms: Labeling, Licensing, and Multimodal Pipeli",
+      "hubGroup": "dev-data-ml"
+    },
+    {
+      "channel": "blog",
+      "slug": "ai-visibility",
+      "category": "geo",
+      "secondary": "marketing",
+      "title": "AI Visibility: Tracking Brand Mentions & Citations in AI-Generated Ans",
+      "hubGroup": "content-seo"
+    },
+    {
+      "channel": "blog",
+      "slug": "cad",
+      "category": "ai-creative",
+      "secondary": "coding-dev",
+      "title": "CAD Software and AI CAD: From Parametric Modeling to Text-To-CAD",
+      "hubGroup": "3d"
+    },
+    {
+      "channel": "blog",
+      "slug": "coding-plan",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Coding Plan Subscriptions: China's Growth Path for AI Coding",
+      "hubGroup": "pricing"
+    },
+    {
+      "channel": "blog",
+      "slug": "data-engineering-agent",
+      "category": "data-infra",
+      "secondary": "ai-agents",
+      "title": "Data Engineering Agents: Automate Pipelines, Schemas, and Ops",
+      "hubGroup": "dev-data-ml"
+    },
+    {
+      "channel": "blog",
+      "slug": "egc-marketing",
+      "category": "marketing",
+      "secondary": "content",
+      "title": "How Employee Generated Content (EGC) Builds Developer Trust for AI/Dev",
+      "hubGroup": "content"
+    },
+    {
+      "channel": "blog",
+      "slug": "embedded-virality",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Powered-by Badges for AI Products: Free with Branding, Paid to Remove",
+      "hubGroup": "pricing"
+    },
+    {
+      "channel": "blog",
+      "slug": "git-commit-attribution",
+      "category": "marketing",
+      "secondary": "referral",
+      "title": "AI Commit Attribution: Agent Trailers, Growth Side Effects, and the Co",
+      "hubGroup": "referral"
+    },
+    {
+      "channel": "blog",
+      "slug": "git-hosting",
+      "category": "coding-dev",
+      "secondary": "",
+      "title": "Agent-Native Git Hosting: Agent-Scale Forge and Collaboration Boundari",
+      "hubGroup": "dev-coding"
+    },
+    {
+      "channel": "blog",
+      "slug": "github-for-marketing",
+      "category": "marketing",
+      "secondary": "coding-dev",
+      "title": "GitHub for AI/SaaS Growth: Repository Marketing, README Optimization &",
+      "hubGroup": "content-seo"
+    },
+    {
+      "channel": "blog",
+      "slug": "headless-cms",
+      "category": "coding-dev",
+      "secondary": "",
+      "title": "Headless CMS: API-First Content Without a Built-In Frontend",
+      "hubGroup": "dev-coding"
+    },
+    {
+      "channel": "blog",
+      "slug": "how-to-add-payments-to-vibe-coded-app",
+      "category": "coding-dev",
+      "secondary": "",
+      "title": "How to Add Payments to Your Vibe Coded App: Stripe, MoR & Clink Compar",
+      "hubGroup": "dev-data-ml"
+    },
+    {
+      "channel": "blog",
+      "slug": "how-to-build-a-blog-without-a-cms-using-ai",
+      "category": "coding-dev",
+      "secondary": "",
+      "title": "How to Build a Blog Without a CMS Using AI",
+      "hubGroup": "dev-coding"
+    },
+    {
+      "channel": "blog",
+      "slug": "how-to-name-ai-products",
+      "category": "marketing",
+      "secondary": "",
+      "title": "AI Product Naming: Strategies, Case Studies, and a Complete Framework",
+      "hubGroup": "content-seo"
+    },
+    {
+      "channel": "blog",
+      "slug": "how-to-write-github-readme",
+      "category": "marketing",
+      "secondary": "seo",
+      "title": "How to Write a GitHub README: Best Practices for SEO, Growth & Develop",
+      "hubGroup": "content-seo"
+    },
+    {
+      "channel": "blog",
+      "slug": "inference-infrastructure",
+      "category": "ai-agents",
+      "secondary": "",
+      "title": "AI Inference Platforms: From Deployment to Production at Scale",
+      "hubGroup": "dev-data-ml"
+    },
+    {
+      "channel": "blog",
+      "slug": "interior-design",
+      "category": "ai-creative",
+      "secondary": "",
+      "title": "AI Interior Design: Room Redesign and Virtual Renovation",
+      "hubGroup": "image-portrait"
+    },
+    {
+      "channel": "blog",
+      "slug": "medical-scribe",
+      "category": "business",
+      "secondary": "",
+      "title": "AI Medical Scribe: From Encounter to SOAP Notes in EHR",
+      "hubGroup": "vertical-professional"
+    },
+    {
+      "channel": "blog",
+      "slug": "multi-agent",
+      "category": "ai-agents",
+      "secondary": "",
+      "title": "Multi-Agent Systems: From Agent Orchestration to Team Collaboration",
+      "hubGroup": "dev-multi-agent"
+    },
+    {
+      "channel": "blog",
+      "slug": "open-source-cms",
+      "category": "coding-dev",
+      "secondary": "",
+      "title": "Open Source CMS: Self-Hosted Options and License Boundaries",
+      "hubGroup": "dev-coding"
+    },
+    {
+      "channel": "blog",
+      "slug": "platform-subdomain-gating",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Platform Subdomain Growth: Distribution Through the Address Bar",
+      "hubGroup": "pricing"
+    },
+    {
+      "channel": "blog",
+      "slug": "rate-limit-reset",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Usage Limits Reset: Growth Strategy Under Dual-Window AI Agent Quotas",
+      "hubGroup": "referral"
+    },
+    {
+      "channel": "blog",
+      "slug": "subdirectory-hosting",
+      "category": "coding-dev",
+      "secondary": "",
+      "title": "Subdirectory Hosting: One Domain, Multiple Deployments",
+      "hubGroup": "dev-coding"
+    },
+    {
+      "channel": "blog",
+      "slug": "ugc-marketing",
+      "category": "marketing",
+      "secondary": "content",
+      "title": "UGC Marketing Strategy: Creator Networks, Whitelisting & FTC Rules for",
+      "hubGroup": "creator"
+    },
+    {
+      "channel": "blog",
+      "slug": "watermark-growth",
+      "category": "marketing",
+      "secondary": "pricing",
+      "title": "Free Exports with Logo: Watermark Growth for AI Media SaaS",
+      "hubGroup": "pricing"
+    },
+    {
+      "channel": "blog",
+      "slug": "web-fetch",
+      "category": "data-infra",
+      "secondary": "",
+      "title": "Web Fetch: Turn Any URL into LLM-Ready Content",
+      "hubGroup": "search-data"
+    },
+    {
+      "channel": "blog",
+      "slug": "wrapped-marketing",
+      "category": "marketing",
+      "secondary": "social",
+      "title": "Year in Review Marketing: Wrapped Strategy for AI Products",
+      "hubGroup": "social"
+    }
+  ],
+  "tools_by_category": {
+    "ai-creative": 19,
+    "ai-video": 16,
+    "business": 15,
+    "ai-agents": 13,
+    "coding-dev": 13,
+    "ai-text": 11,
+    "ai-audio": 8,
+    "marketing": 6,
+    "data-infra": 4,
+    "geo": 2,
+    "seo": 1
+  }
+}

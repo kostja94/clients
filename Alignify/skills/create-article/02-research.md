@@ -28,6 +28,7 @@
 - [ ] IG-1/2/3 已答
 - [ ] Candidate Examples ≥2
 - [ ] **Article Brief** 按 [`article-brief.md`](./rules/article-brief.md) 定稿（Moat + Answer Blocks 3–5）
+- [ ] **best-ranking**：Brief **`Product roster`** + **`Product dedup check`** 全 clear（[`product-coverage.md`](./rules/product-coverage.md)）
 - [ ] Brief **Copy quality** 字段已填（`Copy mode`；M2 时 `cluster hub` / `swap neighbors`；见 [`copy-quality.md`](./rules/copy-quality.md) 附录 A）
 - [ ] Brief 中 Planned H2 与 Step 01 大纲一致或说明变更
 

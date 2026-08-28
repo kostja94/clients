@@ -8,13 +8,13 @@
 
 **主题簇**：[README.md](./README.md) · 路由 SSOT：[website-builder.md §簇级 FAQ](website-builder.md#簇级-faq)
 
-**站内相邻**（六轴）：[website-builder.md](website-builder.md)（Hub）· [advertising-agent.md](../marketing-growth/advertising-agent.md) · [lead-generation.md](../marketing-growth/lead-generation.md)
+**站内相邻**（builder 簇）：[website-builder.md](website-builder.md)（Hub）· [advertising-agent.md](../marketing-growth/advertising-agent.md) · [lead-generation.md](../marketing-growth/lead-generation.md)
 
 **站内相邻**（跨频道 · 已发布）：[落地页创建（SEO）](https://alignify.co/seo/landing-page) · [如何不用 CMS，用 AI 搭建博客](https://alignify.co/blog/how-to-build-a-blog-without-a-cms-using-ai)（落地页与博客同 Content-as-Code 流水线）· [主域名下的分块建站](https://alignify.co/blog/subdirectory-hosting)
 
 ## 与相邻 slug 分流
 
-> 六轴全表与跨轴 FAQ → **[website-builder §分流](website-builder.md#与相邻-slug-分流)** · **[§簇级 FAQ](website-builder.md#簇级-faq)**。
+> builder 簇全表与跨轴 FAQ → **[website-builder §分流](website-builder.md#与相邻-slug-分流)** · **[§簇级 FAQ](website-builder.md#簇级-faq)**。
 
 | 维度 | **`landing-page-builder`（本文）** | **`website-builder`** | **`advertising-agent`** |
 |------|-----------------------------------|----------------------|-------------------------|

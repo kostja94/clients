@@ -10,7 +10,7 @@
 | Skill | 用途 |
 |-------|------|
 | [`create-article/`](./create-article/SKILL.md) | 新建/重写文章（flagship 流程，见下表） |
-| [`knowledge-block/`](./knowledge-block/SKILL.md) | **知识块**维护：slug 分流、keyword 映射、SSOT、站内相邻（非成稿） |
+| [`knowledge-block/`](./knowledge-block/SKILL.md) | **知识块**维护：slug 分流、keyword 映射、**垂类产品池**、SSOT、站内相邻（非成稿） |
 | [`audit-article/`](./audit-article/SKILL.md) | audit-ready → publish-ready 终审 |
 | [`optimize-internal-links/`](./optimize-internal-links/SKILL.md) | 存量内链：[`workflow.md`](./optimize-internal-links/workflow.md) + [**全站快照**](./optimize-internal-links/references/site-structure-internal-links.md) |
 | [`ops/`](./ops/README.md) | 发布后 SEO / 索引 / OG / RSS |
@@ -50,6 +50,7 @@
 | **术语** | [`locale-glossary.md`](./create-article/rules/locale-glossary.md) + `.json` |
 | **内链 + 外链** | [`internal-links.md`](./create-article/rules/internal-links.md) Part 1–8 |
 | **Intake** | 不清楚时在聊天问用户 — [`intake-questions.md`](./create-article/rules/intake-questions.md) |
+| **Tools 产品** | 垂类 spoke · 默认 **3 款** H3 · **一产品一 canonical** — [`product-coverage.md`](./create-article/rules/product-coverage.md) |
 
 ---
 

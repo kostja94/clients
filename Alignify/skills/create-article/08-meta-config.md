@@ -51,7 +51,7 @@
 ```
 
 - `publishDate` / `modifiedDate` 为 **slug 级** ISO 字段
-- Hub 归属由 frontmatter `category` 推导；**无** `routeCategory`
+- Hub 归属由 frontmatter `pillar` + `section` 推导；**无** `routeCategory`（Taxonomy v2，见 [`category-assignment.md`](./rules/category-assignment.md)）
 
 ---
 
@@ -176,6 +176,7 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --list
 | Insights 改版同步 | [`rules/internal-links.md`](./rules/internal-links.md) Part 5 | `blogLayout.modifiedDate` · OG · RSS |
 | RSS / Sitemap | [`../ops/feed.md`](../ops/feed.md) · [`../ops/sitemap.md`](../ops/sitemap.md) | 按 modifiedDate；勿用 `new Date()` |
 | 脚本说明 | [`scripts/README.md`](../../scripts/README.md) | `next-publish-date.mjs` 参数 |
+| 全站日期清单 | [`../ops/article-dates.md`](../ops/article-dates.md) | 各 slug 的 publishDate / modifiedDate |
 
 ### 日期常见错误
 

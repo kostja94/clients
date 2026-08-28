@@ -19,7 +19,10 @@
 ├─ 作品集 / 案例画廊 → portfolio-website-builder
 ├─ blog website builder · 开博客站 → blog-website-builder（搜索量头词）
 ├─ 单页转化 / A/B / CRO → landing-page-builder
-└─ headless CMS · Content API + Next → ../cms/headless-cms
+├─ 什么是 CMS / 类型总览 → ../cms/content-management-system（Hub）
+├─ open source CMS · 自托管选型 → ../cms/open-source-cms
+├─ headless CMS · Content API + Next → ../cms/headless-cms
+└─ enterprise CMS · DXP · AEM/Sitecore → ../cms/enterprise-cms
 ```
 
 **第一性原理**：slug **跟 SERP 头词**（见 [KEYWORD-RESEARCH.md](./KEYWORD-RESEARCH.md)）；`blog website builder` (~898k) **≥** `blogging platform` (~45k) → 博客 spoke 锚 **builder**，非 `blog-cms`。
@@ -46,10 +49,10 @@
 
 | 事实 | 维护位置 |
 |------|----------|
-| 买家问题 / 六轴对照（builder 侧） | [website-builder.md §与相邻 slug 分流](website-builder.md#与相邻-slug-分流) |
+| 买家问题 / builder 簇对照 | [website-builder.md §与相邻 slug 分流](website-builder.md#与相邻-slug-分流) |
 | W3Techs CMS 总盘（WordPress 等） | [blog-website-builder.md §市场份额快照](blog-website-builder.md#市场份额快照w3techs--2026-08--占已知-cms网站) |
 | W3Techs 电商份额 | [ecommerce-website-builder.md §市场份额快照](ecommerce-website-builder.md#市场份额快照w3techs--2026-08--电商系统内) |
 | 关键词快判 | [KEYWORD-RESEARCH.md](./KEYWORD-RESEARCH.md) |
-| 正式文 Brief | [`blog-website-builder.md`](blog-website-builder.md) 等 |
+| 正式文 Brief | [`../../insights/_briefs/blog-website-builder.md`](../../insights/_briefs/blog-website-builder.md) 等 |
 
 **KB 路径**：`knowledge/tools/website-builder/{slug}.md`

@@ -91,18 +91,21 @@
 | `code-completion` | 编程工具链 | spoke |
 | `code-review` | 编程工具链 | spoke |
 | `community` | 对话与社交 | spoke |
+| `content-management-system` | 编程工具链 | Hub · KB only（2026-08-28；`cms/` 簇；发文走 `/blog`） |
 | `dating` | 对话与社交 | spoke |
 | `design` | 设计链 | pillar |
 | `directory` | 对话与社交 | spoke |
 | `documentation` | 企业工具 | spoke |
 | `ecommerce-website-builder` | 编程工具链 | spoke · KB only（新建 2026-08-28；发文走 `/blog`） |
+| `enterprise-cms` | 编程工具链 | spoke · KB only（2026-08-28；`cms/` 簇；发文走 `/blog`） |
 | `essay-writer` | 内容与创作 | spoke |
 | `evaluation` | LLM 评测五轴 | spoke |
 | `family-assistant` | 企业工具 | spoke |
 | `fundraising` | 企业销售与营销 | spoke |
 | `geo` | 搜索发现链 | spoke |
 | `git-hosting` | 编程工具链 | spoke · KB only（新建 2026-08-21；发文走 `/blog`） |
-| `headless-cms` | 编程工具链 | spoke · KB only（新建 2026-08-28；发文走 `/blog`） |
+| `headless-cms` | 编程工具链 | spoke · KB only（2026-08-28；`cms/` 簇；发文走 `/blog`） |
+| `open-source-cms` | 编程工具链 | spoke · KB only（2026-08-28；`cms/` 簇） |
 | `portfolio-website-builder` | 编程工具链 | spoke · KB only（新建 2026-08-28；发文走 `/blog`） |
 | `headshot-generator` | 媒体生产链 | spoke |
 | `healthcare` | 健康与医疗 | pillar |

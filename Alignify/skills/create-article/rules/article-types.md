@@ -41,7 +41,7 @@ Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 
 
 **常见结构**见 [`templates.md`](./templates.md) Part 2 · [`sections.md`](./sections.md) Part 0。**勿**为对齐模板增删节。
 
-- 主体多为 Best 榜单：正文 section + 产品 H3
+- 主体多为 Best 榜单：正文 section + 产品 H3（**默认 3 款**，见 [`product-coverage.md`](./product-coverage.md)）
 - 选型类常含：`## 如何选择…` + `###` 步骤
 - FAQ：**7 问**（`faq-data.json`）— Brief 采用时
 

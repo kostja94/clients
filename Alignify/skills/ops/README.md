@@ -29,6 +29,7 @@
 | 文档 | 用途 |
 |------|------|
 | [og-covers.md](./og-covers.md) | OG 封面生成流程 |
+| [article-dates.md](./article-dates.md) | 全站文章 publishDate / modifiedDate 清单 |
 
 ---
 

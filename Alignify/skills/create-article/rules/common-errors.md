@@ -61,6 +61,8 @@
 | E30 | 英文翻译腔 / telegraphic | Step 09b：禁止逐句译 ZH；改完整句 |
 | E31 | Marketing/Blog 缺 Author POV | Brief 默认 ≥1 条；正文**任一节**内第一人称判断须显式出现（**不要求**独立 `#author-take`） |
 | E32 | 个人知识库 SSOT 重复到 knowledge/marketing | 增长策略类只在 `E:\个人知识库\增长策略\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
+| E51 | 同一产品多篇 **完整 Best H3** | 全站仅 1 篇 canonical；他文删 H3 改链回 · 见 [`product-coverage.md`](./product-coverage.md) |
+| E52 | Best H3 **>5 款**无 Brief 扩展 + 用户确认 | 新文默认 ≤5；3 款即可 Pass |
 | E33 | blog md 使用 GFM 管道表格 | 须 `childrenHtml` + `<div class="content-html"><table>…`；见 `anatomy.md` §四·一 |
 | E34 | blog md 使用 Markdown 列表（`-` / `1.`） | 须 `childrenHtml` + `<ul>` / `<ol class="list-disc…">`；见 `anatomy.md` §四·一 |
 | E35 | `childrenHtml` / `html-block` 内 inline Tailwind（`text-base md:text-lg`、`grid grid-cols-*`、`bg-card` 等） | 仅用 `content-html` + `article-*` 语义 class；段落/列表/表格优先裸标签，样式在 `index.css`；见 [`anatomy.md` §四·一](./anatomy.md#四一正文表格与列表blog-md) |
@@ -79,6 +81,7 @@
 | E48 | frontmatter 区内首尾空行 | `---` 与首键 / 末键之间不得留空行；跑 `normalize-frontmatter.py` |
 | E49 | 正文 meta 预告未发布 skills/runbook | 禁止「落地细节进 skills / runbook 随后补 / 后续 skills 会写…」；概念与验收项压缩进本文 prose/表；见 `presentation.md` §E49 |
 | E50 | 未经 Brief 的模板收束节 | 禁止默认 `#author-take` H2 或 `#should-you-do-this` go/no-go（Insights/架构文）；GTM go/no-go 仅 `marketing-strategy` + §4.2b；见 `presentation.md` §Author voice |
+| E51 | 独立发展史 H2 污染选型文 | `best-ranking` / Commercial 意图禁止 `## 发展历史` / `History of X` 整节年代表；演进脉络 **嵌入** `#what-is-*`（1 段 80–120 字）+ 可选 `#types-*` 3 行阶段表；须收束到本文交付物（checklist/对比），见 `sections.md` §2.2b |
 | E21 | Tools 仅改 meta 未改 md | Hero 读 frontmatter `updated`；须 meta + en/zh md 同步 |
 | E22 | FAQ 答案从正文复制 | FAQ 独立撰写 |
 | E23 | 锚文本硬插入导航句 | 链接须自然融入解释性句子 |

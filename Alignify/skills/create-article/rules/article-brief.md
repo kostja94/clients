@@ -25,7 +25,7 @@
 **Search intent**: Definition | Comparison | Tutorial | Alternative | Commercial | …
 **SuccessMetric**（发布后 90 天可量化）:
 **Target reader**:
-**Hub / category**:
+**Hub / taxonomy**（pillar · section · contentType）:
 
 **One-line thesis**（Top SERP **找不到同句**）:
 **Differentiation angle**（vs SERP Top 3）:
@@ -45,13 +45,23 @@
 | articleType | {best-ranking \| seo-guide \| marketing-strategy \| insights-analysis \| …} |
 | 路由 | content/blog/（新文）· 存量维护则注明旧路径 |
 | 参照篇（可选） | {slug} · **无（Answer Blocks 驱动）** |
-| deliberate 省略 | 例：无 How To — 策略判断文 · 无对比表 — 仅 2 款产品 |
+| deliberate 省略 | 例：无 How To — 策略判断文 · 无对比表 — 仅 3 款产品 · 无第 4–6 款 — 垂类独占 |
+
+**Product roster**（`best-ranking` 必填 · 见 [`product-coverage.md`](./product-coverage.md)）:
+  1. {Product A}
+  2. {Product B}
+  3. {Product C}
+
+**Product dedup check**（YYYY-MM-DD）:
+  - {Product A}: clear | conflict → {slug}
+  - …
 | Section Plan | 见 [`sections.md`](./sections.md) Part 0 · 模板仅建议 → [`templates.md`](./templates.md) Part 0 |
 
 **Answer Blocks**（3–5，各对应一个 **内容问题** 的 major H2；**非**页面模板节名）:
   1. {block-id} — 读者要搞懂什么（例：`#what-is-x` · `#vs-y` · `#cases`）
   2. …
   - **禁止**无 SSOT/用户依据硬塞 `#should-you-do-this` / go-no-go / `#author-take`——选型已在其他 Block 讲清则不必另开
+  - **嵌入演进脉络**（可选）：成熟品类在 `what-is` Block 内 1 段（术语 + 2–3 买家阶段 + 收束到本文 checklist）；**禁止**另开 `## 发展历史` H2（E51）；见 [`sections.md`](./sections.md) §2.2b
 
 **Planned H2 architecture**（**内容驱动**；从 SSOT + Answer Blocks 推导，非 Marketing 五段式）:
 | H2 / 锚点 | 目标 | Answer block |
@@ -95,6 +105,7 @@
 | Copy quality | M1 推荐 Hero fault；M2 必填 cluster + swap neighbors |
 | SuccessMetric | 可量化（排名、CTR、内链点击、转化路径之一） |
 | Planned H2 | 主体节不可省略；TL;DR/FAQ/How To 若省略须在 Brief 写理由 |
+| Product roster | `best-ranking`：**2–5 款**（默认 **3**）；与 `Product dedup check` 成对 |
 | Final CTA | ZH title + description **Step 02 必填**；EN Step 09 定稿；Step 08 写入 deploy 仓 |
 
 ---

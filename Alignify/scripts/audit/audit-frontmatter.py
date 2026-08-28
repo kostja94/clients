@@ -2,10 +2,14 @@
 """Audit content/*.md YAML frontmatter consistency (E44–E48 + schema).
 
 Required keys (all locales):
-  title, description, slug, date, updated, readingMinutes, pageUrl, locale, category
+  title, description, slug, date, updated, readingMinutes, pageUrl, locale,
+  pillar, contentType
 
 Optional keys:
-  categorySecondary, heroImage, heroImageAlt
+  section, heroImage, heroImageAlt
+
+Deprecated (must not appear after Taxonomy v2 migration):
+  category, categorySecondary
 
 Forbidden keys:
   heroHtml, howTo, heroContent
@@ -32,10 +36,12 @@ REQUIRED = frozenset(
         "readingMinutes",
         "pageUrl",
         "locale",
-        "category",
+        "pillar",
+        "contentType",
     }
 )
-OPTIONAL = frozenset({"categorySecondary", "heroImage", "heroImageAlt"})
+OPTIONAL = frozenset({"section", "heroImage", "heroImageAlt"})
+DEPRECATED = frozenset({"category", "categorySecondary"})
 ALLOWED = REQUIRED | OPTIONAL
 FORBIDDEN = frozenset({"heroHtml", "howTo", "heroContent"})
 
@@ -76,6 +82,8 @@ def parse_keys(text: str) -> tuple[dict[str, str], list[str]]:
         key, val = kv.group(1), kv.group(2)
         if key in FORBIDDEN:
             issues.append(f"E44: forbidden frontmatter key {key}")
+        elif key in DEPRECATED:
+            issues.append(f"E49: deprecated frontmatter key {key} (use pillar/section/contentType)")
         elif key not in ALLOWED:
             issues.append(f"E46: unknown frontmatter key {key}")
         data[key] = val.strip().strip('"')

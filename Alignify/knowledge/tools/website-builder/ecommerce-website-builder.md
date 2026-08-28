@@ -4,19 +4,19 @@
 
 **站内对照**：待上线正式页时对齐（新文优先 **`/blog/ecommerce-website-builder`** · **`/zh/blog/ecommerce-website-builder`**）· slug **`ecommerce-website-builder`**
 
-**Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#ecommerce-website-builder-tools`）· `keywordEn`: **E-commerce website builder / Online store platform** · `keywordZh`: **电商建站平台 / 独立站平台**
+**Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#ecommerce-website-builder-tools`）· `keywordEn`: **Online store platform / E-commerce website builder** · `keywordZh`: **电商建站平台 / 独立站平台**
 
 **主题簇**：[README.md](./README.md) · 路由 SSOT：[website-builder.md §簇级 FAQ](website-builder.md#簇级-faq)
 
 **Territory**：**编程工具链**（[`territory-map.md`](../territory-map.md)）— 与 [`website-builder`](website-builder.md)（内容/落地页建站）、[`headless-cms`](../cms/headless-cms.md)（内容 API）、[`app-builder`](../coding/app-builder.md)（全栈应用）并列；本 slug 锚定 **commerce-first 在线商店**。
 
-**站内相邻**（六轴）：[website-builder.md](website-builder.md)（Hub）· [headless-cms.md](../cms/headless-cms.md) · [portfolio-website-builder.md](portfolio-website-builder.md)
+**站内相邻**（builder 簇）：[website-builder.md](website-builder.md)（Hub）· [headless-cms.md](../cms/headless-cms.md) · [portfolio-website-builder.md](portfolio-website-builder.md)
 
 **站内相邻**（跨频道 · 已发布）：[代理式商务](https://alignify.co/blog/agentic-commerce) · [Vibe 产品加支付](https://alignify.co/blog/how-to-add-payments-to-vibe-coded-app) · [Agent 支付](https://alignify.co/blog/agentic-payments)
 
 ## 与相邻 slug 分流
 
-> 六轴全表与跨轴 FAQ → **[website-builder §分流](website-builder.md#与相邻-slug-分流)** · **[§簇级 FAQ](website-builder.md#簇级-faq)**。
+> builder 簇全表与跨轴 FAQ → **[website-builder §分流](website-builder.md#与相邻-slug-分流)** · **[§簇级 FAQ](website-builder.md#簇级-faq)**。
 
 | 维度 | **`ecommerce-website-builder`（本页）** | **`website-builder`** | **`app-builder`** |
 |------|----------------------------------------|----------------------|-------------------|

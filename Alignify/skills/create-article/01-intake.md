@@ -41,6 +41,7 @@
 - [ ] Investment Score **≥3.0**（<3.0 → MERGE 或 STOP，**无急稿例外**）
 - [ ] 主关键词 + 搜索意图已明确（不清楚则在聊天中问用户）
 - [ ] 与已有文章关系已确认（Hub / Spoke / 新 cluster）
+- [ ] **best-ranking**：拟选 **Product roster**（默认 **3 款**）与站级 canonical **无冲突**（粗查 → [`rules/product-coverage.md`](./rules/product-coverage.md)）
 - [ ] 竞品 SERP Top 3 URL 已收集（供 Step 02）
 - [ ] **同批篇数**已登记：`BatchCount: 1` 或 `N≥2` + slug 列表（决定 Step 05 Outline 3.5 / Step 10 Cross 5.5 是否 `N/A`）
 

@@ -41,6 +41,7 @@ Alignify/
 | 存量内链优化 | [`skills/optimize-internal-links/SKILL.md`](skills/optimize-internal-links/SKILL.md) |
 | **全站内链快照** | [`skills/optimize-internal-links/references/site-structure-internal-links.md`](skills/optimize-internal-links/references/site-structure-internal-links.md) |
 | 发布后 SEO | [`skills/ops/README.md`](skills/ops/README.md) |
+| **全站发布/更新日期** | [`skills/ops/article-dates.md`](skills/ops/article-dates.md) |
 | **SEO 周报 / 分析数据** | [`seo-weekly-report/README.md`](seo-weekly-report/README.md) |
 | 规范 SSOT | [`skills/create-article/rules/README.md`](skills/create-article/rules/README.md) |
 | 路径修复脚本 | [`scripts/ref/fix-rules-section-links.py`](scripts/ref/fix-rules-section-links.py) |

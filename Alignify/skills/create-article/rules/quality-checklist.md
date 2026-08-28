@@ -47,6 +47,7 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 | P0-3 | FAQ 内链 | **若** FAQ 含内链：同 URL 全文仅 1 次（R4） |
 | P0-4 | 图片 | `public/` 存在 |
 | P0-5 | Best 产品段 | **若** 有 Best H3：ZH ≥100 字 / EN ≥280 字符 |
+| P0-5b | 产品数量/独占 | 新文 H3 **≤5**（默认 **3**）；Brief roster = 正文 H3；**无**站级 duplicate canonical（E51 · [`product-coverage.md`](./product-coverage.md)） |
 | P0-7 | Meta title | best-ranking：含「最佳」/ `Best` |
 | P0-8 | Meta description | ≥2 产品名（Tools） |
 | P0-9 | Meta 格式 | 年份 + 冒号副线 |

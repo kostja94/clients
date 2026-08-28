@@ -1036,6 +1036,7 @@ node scripts/ops/normalize-references-in-json.mjs
 | **P0 定义段** | 定义 + 核心价值 + 适用人群 | 所有页面 |
 | **P1 边界段** | 与相邻品类的区分、常见误解澄清 | 概念易混淆（如 web-scraping vs crawling、agent vs chatbot） |
 | **P2 误区/上下文段** | 技术选型陷阱、行业背景（可选） | 技术门槛高的类目（如 authentication、headless-browser） |
+| **P2b 嵌入演进脉络** | 1 段（80–120 字 / 60–90 词）说明术语来源 + 2–3 个选型相关阶段 + **为何本文不写成编年史**；**禁止**独立 `## 发展历史` H2 | 成熟品类、买家已被 Wikipedia 式 filler 污染（如 headless CMS、DXP、JAMstack 类）；见 §2.2b |
 | **P3 内链段** | 工作流 + 内链 | 所有页面 |
 
 ```tsx
@@ -1053,6 +1054,24 @@ node scripts/ops/normalize-references-in-json.mjs
 | **P0 概念段** | 概念界定 + 为什么现在重要 + 解决了什么此前未解决的问题 |
 | **P1 定位段** | 与主流方案的定位差异（非功能对比，而是范式差异） |
 | **P2 内链段** | 相关工具链 + 内链 |
+
+#### 2.2b 嵌入演进脉络（非独立 H2）
+
+**适用**：`best-ranking` / 架构选型文；检索意图为 **Commercial investigation**，不是百科。**禁止**为凑 SERP 加 `## 发展历史 / History of X` 大段年代表。
+
+**写法**（嵌入 `#what-is-*` 第二段，或 `#types-*` intro 后）：
+
+1. **术语隐喻**（1 句）— 如 headless = 砍掉 presentation head  
+2. **2–3 个买家相关阶段**（每阶段 1 句）— 阶段名用「买家在问什么」，不是创始人传记  
+3. **收束到本文交付物**（1 句）— 如「故本文侧重 checklist 而非编年史」
+
+**可选**：在 `#types-*` 加 **3 行 mini 表**（阶段 | 买家问题 | 典型信号），与 Type A–F **架构表**并列，**不是**第二套 H2。
+
+**反例**：2000–2026 完整时间轴 · 每款产品创立年份 · 与选型无关的 Gartner 年表复制粘贴。
+
+**簇分工**：全品类编年 → hub slug（如 `content-management-system`）；企业采购史 → `enterprise-cms`；选型文只保留 **决策相关** 脉络。
+
+**参照成稿**：`/blog/headless-cms` · `#what-is-headless-cms` + `#headless-cms-types` 三行阶段表。
 
 ### 2.3 段落级篇幅
 
@@ -1297,6 +1316,10 @@ node scripts/ops/normalize-references-in-json.mjs
 ### 2.2 产品数量
 
 **A 层硬底线**：每个产品 H3 区块至少包含 **2 个产品**。单产品无法构成「排名/推荐」。
+
+**B 层新文默认**（`/blog/` best-ranking）：**3 款即可** — Brief 锁定 roster 后不必凑大盘点。完整规则 → [`product-coverage.md`](./product-coverage.md)。
+
+**C 层软上限**：新文 Best H3 **≤5 款**；超过须在 Brief 说明 + 用户确认。Flagship 深度来自 Moat/选型框架，**非**产品条数。
 
 ### 2.3 篇幅
 

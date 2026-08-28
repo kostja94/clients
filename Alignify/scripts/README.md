@@ -99,6 +99,7 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 | `migrate-og-covers.py` | 历史 staging → deploy **move**（非 copy）+ 可选注册 `OG_LOCALE_READY` |
 | `audit-og-coverage.mjs` | deploy OG 覆盖审计（`--staging` 查遗留副本） |
 | `next-publish-date.mjs` | **新 slug** 分配全站唯一 `publishDate`（`--check` / `--from` / `--list`） |
+| `list-article-dates.mjs` | 扫描 `*-meta.ts` 生成全站发布/更新清单 [`article-dates.md`](../skills/ops/article-dates.md) |
 | `merge-cta-slugs.mjs` | Final CTA 覆盖审计（`--check`）或批量合并（`--batch batch.json`）→ `cta-config.json` |
 | `audit-alt-text.mjs` | BestTools / HTML 图片 alt 质量审计 |
 | `screenshot-tools-images.py` | **已废弃** — 仅 12 条硬编码 backlog，请用 `screenshot-tools-products.py` |

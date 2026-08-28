@@ -80,6 +80,7 @@
 | ~~`watermark-growth`~~ | ✅ 2026-08-27 | — |
 | ~~`embedded-virality`~~ | ✅ 2026-08-27 | — |
 | ~~`platform-subdomain-gating`~~ | ✅ 2026-08-27 | — |
+| ~~`creator-program`~~ | ✅ 2026-08-28 v2 · audit PASS | — |
 | `faq-data` / `tldr-data` / meta | 姊妹篇、GTM 族（TLDR intro 否定句可留） | Step 08 JSON 侧车 · touch 时扫 description |
 
 ---

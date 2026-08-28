@@ -15,7 +15,9 @@
 | **差异性** | FAQ 复制 | 与邻 slug ≥3 问仅差一词 |
 | **去模板化** | Swap Test（邻页轴） | Brief `swap neighbors` 并排，Intro + 1 主体 H2 + FAQ 首问仍成立 |
 | **相关性** | 概念 canonical | 同一核心概念多篇重复展开 → 1 篇 canonical + 他文链回 |
+| **相关性** | **产品 canonical** | 同批或站级：**同一产品** 不得两篇完整 Best H3 → 保留 1 canonical（[`product-coverage.md`](./product-coverage.md)） |
 | **一致性** | 内容网络 | Hub-Spoke 互链双向？orphan spoke？ |
+| **一致性** | **产品池不交** | 同批 slug 的 `Product roster` **集合不交** |
 
 **M1 同批**：至少过 **差异性 + 去模板化** 行；**M2 同批**：五维全表。
 

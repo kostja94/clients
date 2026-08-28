@@ -17,7 +17,8 @@
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
 6. **素材源可外置** — 个人知识库为 campaign SSOT；Brief 登记路径即可。  
 7. **TL;DR/FAQ/Refs → JSON** — Brief 采用则 Step 08 注册三 JSON 侧车（E10）；**不写 md**；见 `anatomy.md` §二·一。  
-8. **不清楚就问用户** — 对主叙事、中文主称、slug、结构、是否写 Author POV 等**任何不确定项**，在聊天中问用户后再继续；禁止静默假设。见 [`rules/intake-questions.md`](./rules/intake-questions.md)。
+8. **不清楚就问用户** — 对主叙事、中文主称、slug、结构、是否写 Author POV 等**任何不确定项**，在聊天中问用户后再继续；禁止静默假设。见 [`rules/intake-questions.md`](./rules/intake-questions.md)。  
+9. **垂类 + 产品独占** — Tools 新文 **3 款 H3 深度足够**（≥2 硬底线）；**同一产品仅一篇 canonical Best H3**；选题偏窄意图 spoke。见 [`rules/product-coverage.md`](./rules/product-coverage.md)。
 
 ---
 
@@ -114,6 +115,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 中文英混 | [`rules/zh-en-mixing.md`](./rules/zh-en-mixing.md) |
 | BLUF / 段落 | [`rules/presentation.md`](./rules/presentation.md) |
 | 文案质量 · Swap Test | [`rules/copy-quality.md`](./rules/copy-quality.md)（M1/M2/M3 · 五维） |
+| **产品覆盖 · 垂类独占** | [`rules/product-coverage.md`](./rules/product-coverage.md) |
 | Extractability | [`rules/extractability-checklist.md`](./rules/extractability-checklist.md) |
 | S 级清单（**可选**，非 Gate C） | [`rules/perfect-article-checklist.md`](./rules/perfect-article-checklist.md) |
 | 结构原则 | [`rules/anatomy.md`](./rules/anatomy.md) |
@@ -166,6 +168,9 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ 新 slug 未写 `cta-config.json` 的 `slugs.{slug}`（页底落入 fallback 通用文案；E43）
 - ❌ Swap Test 失败仍过 Step 06（L0 模板壳 · 见 [`copy-quality.md`](./rules/copy-quality.md) Part 2）
 - ❌ M2 cluster 无 Brief `swap neighbors` 仍批量送审
+- ❌ Tools 新文 Best H3 **>5 款**无 Brief + 用户确认（见 [`product-coverage.md`](./rules/product-coverage.md)）
+- ❌ 同一产品在多篇拥有 **完整 Best H3**（须保留 1 篇 canonical，他文链回 · E51）
+- ❌ Step 02 无 `Product roster` / `Product dedup check` 仍开写 best-ranking
 
 ---
 

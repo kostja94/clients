@@ -9,9 +9,11 @@
 
 **Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#website-builder-tools`](../../keywords/alignify-keywords-tools.md#website-builder-tools)）
 
-**主题簇**：[README.md](./README.md) · **本页 = 六轴路由 SSOT（分流表 + 簇级 FAQ）**
+**主题簇**：[README.md](./README.md) · **本页 = builder 簇路由 SSOT（分流表 + 簇级 FAQ）**
 
-**站内相邻**（builder 簇 spoke）：[ecommerce-website-builder.md](ecommerce-website-builder.md) · [portfolio-website-builder.md](portfolio-website-builder.md) · [blog-website-builder.md](blog-website-builder.md) · [landing-page-builder.md](landing-page-builder.md) · [headless-cms.md](../cms/headless-cms.md) · [app-builder.md](../coding/app-builder.md)
+**站内相邻**（builder 簇 spoke）：[ecommerce-website-builder.md](ecommerce-website-builder.md) · [portfolio-website-builder.md](portfolio-website-builder.md) · [blog-website-builder.md](blog-website-builder.md) · [landing-page-builder.md](landing-page-builder.md) · [app-builder.md](../coding/app-builder.md)
+
+**站内相邻**（CMS 簇 · [`../cms/`](../cms/README.md)）：[content-management-system.md](../cms/content-management-system.md)（Hub）· [open-source-cms.md](../cms/open-source-cms.md) · [headless-cms.md](../cms/headless-cms.md) · [enterprise-cms.md](../cms/enterprise-cms.md)
 
 **站内相邻**（跨频道 · 已发布）：[如何不用 CMS，用 AI 搭建博客](https://alignify.co/blog/how-to-build-a-blog-without-a-cms-using-ai) · [主域名下的分块建站](https://alignify.co/blog/subdirectory-hosting) · [AI 组件（Vibe 建站 UI）](https://alignify.co/blog/ai-components) · [网站结构 SEO](https://alignify.co/seo/website-structure)
 
@@ -26,7 +28,9 @@
 | `portfolio-website-builder` | 「作品/案例怎么好看地展示？」 | 画廊/项目页/媒体-heavy 模板 | 视觉品质、作品组织 |
 | `blog-website-builder` | 「怎么搭博客站 / 选哪个 blog website builder？」 | 托管 builder + born-blog + WP · 同 SERP listicle | 搜索量头词、发稿流、SEO |
 | `landing-page-builder` | 「单活动/单转化页，要快测 CTA？」 | 单页或短 funnel · A/B · 表单/leads | 转化率、投放对接 |
-| `headless-cms` | 「多渠道/API 分发，front-end 自己写？」 | Content API · 无内置 front-end | Omnichannel、开发者速度 |
+| `headless-cms`（[`cms/`](../cms/)） | 「多渠道/API 分发，front-end 自己写？」 | Content API · 无内置 front-end | Omnichannel、开发者速度 |
+| `open-source-cms`（[`cms/`](../cms/)） | 「要源码/自托管/OSS 替代 SaaS？」 | GPL/MIT 等 · 自托管 | 许可、数据驻留、TCO |
+| `enterprise-cms`（[`cms/`](../cms/)） | 「大企业 DXP/AEM/Sitecore 采购？」 | 治理 · SLA · 多站点 | 合规、审计、RFP |
 | `app-builder` | 「要登录/数据库/业务逻辑，不是 brochure site？」 | 应用运行时 · 数据模型 · 工作流 | 功能完整性、可扩展逻辑 |
 
 **边界口诀**：验收标准是 **「站点存在 + 内容可改」→ 本 slug**；验收标准是 **「成交/库存」→ ecommerce**；验收标准是 **「内容 API + 自研 front」→ headless**。
@@ -48,7 +52,9 @@
 | 「Mintlify / Docusaurus 写博客或当 CMS？」 | [`documentation`](../enterprise-knowledge/documentation.md) — 非营销 WCM |
 | 「headless 是不是无头浏览器？」 | **不是** → [`headless-browser`](../web-data/headless-browser.md) |
 | 「Notion / RAG 当公开博客？」 | [`knowledge-base`](../enterprise-knowledge/knowledge-base.md) — 内部消费 |
-| 「v0 / Lovable 整站还要不要 CMS？」 | [`app-builder`](../coding/app-builder.md)；营销内容层另议 [`headless-cms`](../cms/headless-cms.md) |
+| 「v0 / Lovable 整站还要不要 CMS？」 | [`app-builder`](../coding/app-builder.md)；营销内容层 → [`cms/`](../cms/README.md) |
+| 「什么是 CMS / 和 website builder 区别？」 | [`content-management-system`](../cms/content-management-system.md) |
+| 「要开源自托管 CMS 不要 SaaS builder？」 | [`open-source-cms`](../cms/open-source-cms.md) |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
