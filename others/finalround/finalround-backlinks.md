@@ -27,7 +27,7 @@
 | **grokipedia.com** | 手动 | 免费 | /mock-interview | Jaya | 🟠 待 Jaya 确认来源 |
 | **airbyte.com** | 投稿 | $300–500（收入） | TBD | — | ⬜ 待执行 |
 | **mintlify.app** | 手动 | 免费 | TBD | — | ⬜ 待执行 |
-| **ThetaWave 交换** | 互换 | 免费 | TBD | Kostja（主导） | ⬜ 待启动 |
+| **ThetaWave 交换** | 互换 | 免费 | TBD | Kostja（主导） | ⏸️ 暂停（ThetaWave 合作已结束） |
 | **历史外链复盘** | — | — | — | Jaya → Kostja | ⬜ 待 Jaya 提供 |
 | Wave 2 pitches | 手动 | 免费 | TBD | — | ✅ 已发送 |
 
@@ -77,7 +77,9 @@
 
 ## 6. 跨客户外链交换
 
-### ThetaWave.ai ↔ FinalRound AI
+### ThetaWave.ai ↔ FinalRound AI（已暂停）
+
+> **2026-08-29**：ThetaWave 已移至 `others/thetawave/`，合作暂停；以下交换计划不再执行，保留备查。
 
 | 维度 | ThetaWave | FinalRound |
 |------|-----------|------------|
@@ -90,9 +92,9 @@
 
 | 步骤 | 负责 | 状态 |
 |------|------|------|
-| ThetaWave 侧撰写提及 FinalRound 的文章 | Kostja 协调 ThetaWave 团队 | ⬜ 待启动 |
-| FinalRound 侧撰写提及 ThetaWave 的文章 | Kostja 协调 FinalRound 团队 | ⬜ 待启动 |
-| 双方确认 dofollow 链接与锚文本 | Kostja | ⬜ 待启动 |
+| ThetaWave 侧撰写提及 FinalRound 的文章 | Kostja 协调 ThetaWave 团队 | ⏸️ 已取消 |
+| FinalRound 侧撰写提及 ThetaWave 的文章 | Kostja 协调 FinalRound 团队 | ⏸️ 已取消 |
+| 双方确认 dofollow 链接与锚文本 | Kostja | ⏸️ 已取消 |
 
 ---
 
@@ -110,7 +112,7 @@
 2. **其次**：LinkedIn DM Antoine Tardif（unite.ai，免费、回复率高、历史转化好）
 3. **同时推进**：Kelly 直联 cloudways（小宿科技）+ 让 Jaya 确认 grokipedia 上 FinalRound 引用是前人推广还是自然引用 + Jaya 提供历史外链计划与表现给 Kostja
 4. **等待**：CoherentMarketInsights 回复
-5. **后续**：Kostja 主导 ThetaWave 交换启动 + airbyte / mintlify 手动操作
+5. **后续**：airbyte / mintlify 手动操作（~~ThetaWave 交换~~ 已暂停）
 
 ---
 

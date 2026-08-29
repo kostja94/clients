@@ -42,7 +42,7 @@
 
 ## 对应 JSON 文件
 
-- `content/topics/llm.json`
+- `content/topics/llm.md`
 - `content/products/chatgpt.json`
 - `content/products/claude.json`
 - `content/products/gemini.json`

@@ -1,7 +1,7 @@
 # Nova Scientia — 多语言多地区路由规划
 
-> **Status**: 实施中（阶段 0 完成）
-> **Last updated**: 2026-08-08（v2：精简为 5 市场）
+> **Status**: 阶段 0 已完成（路由 + 数据层）；阶段 1 UI 文案待做
+> **Last updated**: 2026-08-29（v2：精简为 5 市场）
 
 ---
 
@@ -40,37 +40,29 @@
 
 **关键决策**：URL slug 不本地化。产品 slug（`chatgpt`）、主题 slug（`llm`、`image-generator`）跨语言保持一致，只有 H1/标题/正文翻译。避免重定向矩阵和 hreflang 混乱，是 Google 国际站标准做法。
 
-## 四、技术实现架构
+## 四、技术实现架构（已上线）
 
-复用 Alignify 已验证的 `next-intl` + `app/[locale]/` 模式，用 **middleware 重写** 让 pt-BR 留在根路径：
+采用自研 i18n（`src/lib/i18n.ts` + `middleware.ts`），**未使用** next-intl。pt-BR 通过 middleware 重写保持根路径 URL 不变。
 
 ```
 app/
-├── [locale]/                  # 统一语言树（包含 pt-br 镜像）
-│   ├── layout.tsx             # <html lang={locale}> + next-intl Provider
-│   ├── page.tsx               # 首页
+├── [locale]/                  # 统一语言树（含 pt-br 镜像）
+│   ├── layout.tsx             # <html lang> + Organization/WebSite schema
+│   ├── page.tsx
 │   ├── products/[slug]/page.tsx
-│   ├── [slug]/page.tsx        # 主题（RESERVED_SLUGS 守卫照旧）
+│   ├── [slug]/page.tsx        # 主题（RESERVED_SLUGS 守卫）
 │   ├── company/[slug]/page.tsx
 │   ├── glossary/page.tsx
 │   ├── topic/page.tsx
-│   └── ...
-├── middleware.ts              # 核心：无前缀请求 → 重写为 /pt-br/...（URL 不变）
-├── i18n/
-│   ├── routing.ts             # locales: ['pt-br','pt-pt','es-mx','es-es','en']
-│   └── request.ts
-└── messages/
-    ├── pt-br.json             # UI 文案（导航/按钮/页脚）
-    ├── pt-pt.json
-    ├── es-mx.json
-    ├── es-es.json
-    └── en.json
+│   ├── about/page.tsx
+│   └── image|video|voice|3d|design|coding|productivity/
+├── sitemap.ts
+middleware.ts                  # 无前缀 → rewrite /pt-br/*；/pt-br/* → 301 去前缀
+src/lib/i18n.ts                # LOCALES、hreflang、路径前缀
+src/lib/content/content-dir.ts # locale 覆盖层解析
 ```
 
-**middleware 逻辑**：
-- 请求 `/products/chatgpt` → 内部重写为 `/pt-br/products/chatgpt`，浏览器地址栏仍是 `/products/chatgpt`，现有外链/Google 收录全部不失效
-- 请求 `/es-mx/...`、`/en/...` 等 → 直接走对应 locale
-- 非法 locale（如 `/fr/`）→ `notFound()`
+**UI 文案**：导航/按钮/页脚仍为 pt-BR 硬编码；`messages/*.json` 尚未实现（阶段 1 待办）。
 
 ## 五、数据层方案（部分翻译 + 优雅回落）
 
@@ -86,7 +78,7 @@ content/
     ├── pt-pt/
     │   ├── manifest.json        # 已翻译 slug 索引
     │   ├── products/            # 只放已翻译的产品
-    │   └── topics/
+    │   └── topics/            # 已翻译的主题（*.md）
     ├── es-mx/                   # 同上
     ├── es-es/                   # 同上
     └── en/                      # 同上
@@ -141,9 +133,9 @@ readProducts(locale) {
 
 | 阶段 | 内容 | 产出 |
 |------|------|------|
-| **0. 架构** | middleware + `[locale]` 树迁移 + 数据层加 locale 参数 | ✅ 已完成 |
-| **1. UI 文案** | `messages/*.json` 翻译导航/按钮/页脚/横幅 | 界面多语言可切换 |
-| **2. 内容翻译** | 按优先级翻译主题/产品到各 locale | 各语言内容上线 |
+| **0. 架构** | middleware + `[locale]` 树 + 数据层 locale 参数 + sitemap hreflang | ✅ 已完成 |
+| **1. UI 文案** | 导航/按钮/页脚多语言（当前硬编码 pt-BR） | 🔲 待做 |
+| **2. 内容翻译** | 按优先级翻译主题/产品到各 locale（topics 为 MD） | 进行中（es-mx 示例 1 篇） |
 | **3. 葡语低成本铺开** | pt-PT 内容：与 pt-BR 同源，只改词汇/结构 | pt-PT 全量覆盖 |
 | **4. 产品扩量** | 产品评测逐步翻译，按 GSC 流量排序 | 覆盖率持续上升 |
 | **5. 验收** | sitemap/hreflang/IndexNow 全量接入，GSC 分语言验证 | 各市场 SEO 独立运转 |

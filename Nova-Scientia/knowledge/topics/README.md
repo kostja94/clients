@@ -1,6 +1,6 @@
 # Nova Scientia 知识库
 
-> 按 topic slug 索引的版本追踪笔记。编辑 JSON 前查阅，避免版本/价格过期。
+> 按 topic slug 索引的版本追踪笔记。编辑主题 MD 前查阅，避免版本/价格过期。
 
 **Last updated**: 2026-06-20
 
@@ -8,7 +8,7 @@
 
 ## 使用方式
 
-1. 编辑 `content/topics/{slug}.json` 前 → 读 `topics/{slug}.md`
+1. 编辑 `content/topics/{slug}.md` 前 → 读 `topics/{slug}.md`
 2. 新建 topic 笔记 → 复制 [templates/knowledgehub/_template.md](../../templates/knowledgehub/_template.md)
 3. 产品版本变更 → 更新所有引用该产品的 topic 笔记
 

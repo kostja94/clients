@@ -4,19 +4,27 @@
 
 **适用人员**：内容编辑、开发者、AI 助手。修改本文档需注明日期和原因。
 
+**Last updated**: 2026-08-29
+
 ---
 
 ## 一、语言与地区
 
 | 项目 | 设定 |
 |------|------|
-| 主语言 | pt-BR（巴西葡萄牙语） |
-| HTML lang | `<html lang="pt-BR">` |
-| Schema inLanguage | `"pt-BR"` |
-| 目标市场 | 巴西 |
-| OpenGraph locale | `pt_BR` |
+| 默认语言 | pt-BR（巴西葡萄牙语），URL **无前缀** |
+| 其他语言 | `pt-pt`、`es-mx`、`es-es`、`en` — URL 带 `/{locale}/` 前缀 |
+| HTML lang | 按 locale 动态设置（如 `pt-BR`、`es-MX`、`en-US`） |
+| Schema inLanguage | 与当前页面 locale 一致 |
+| 主目标市场 | 巴西（pt-BR 内容最完整） |
+| OpenGraph locale | 按 locale 映射（见 `src/lib/i18n.ts`） |
 
-**规则**：所有页面内容（标题、段落、标签、alt 文本、结构化数据）均为葡萄牙语。不提供多语言版本。URL 路径使用葡萄牙语 slug（非英语翻译）。
+**规则**：
+- **pt-BR 内容**（`content/products/`、`content/topics/`、`content/companies/`）均为葡萄牙语；URL slug 使用 kebab-case，不翻译 slug 本身。
+- **多语言架构已上线**：路由与数据层支持 5 个 locale；翻译内容放 `content/locales/{locale}/`。未翻译页面在对应语言下 **404**，不回落 pt-BR 原文。
+- **UI 文案**（导航/按钮/页脚）尚未国际化，仍为 pt-BR 硬编码。
+
+详见 [i18n-route-plan.md](i18n-route-plan.md)、[i18n-content-workflow.md](i18n-content-workflow.md)。
 
 ## 二、URL 规范
 
@@ -65,20 +73,22 @@
 
 ### 3.1 内容来源
 
-所有页面内容为本地 JSON 文件，直接编辑、git 版本控制：
+| 页面类型 | 文件 | 格式 |
+|----------|------|------|
+| 产品页 | `content/products/{slug}.json` | JSON |
+| 主题页 | `content/topics/{slug}.md` | Markdown + YAML frontmatter |
+| 公司页 | `content/companies/{slug}.json` | JSON |
+| 词汇表 | `content/glossary.json` | JSON（由 merge 脚本生成） |
+| 多语言覆盖 | `content/locales/{locale}/...` | 与源类型相同（topics 为 MD） |
 
-1. **产品页**：直接编辑 `content/products/{slug}.json`，提交到 git
-2. **主题页**：直接编辑 `content/topics/{slug}.json`，提交到 git
-3. **公司页**：直接编辑 `content/companies/{slug}.json`，提交到 git
-4. **词汇表**：通过 `scripts/ref/glossary/merge-glossary.mjs` 合并分片后生成 `content/glossary.json`
-5. **构建时读取**：页面通过 `src/lib/content/*.ts` 中的 `readFileSync` 读取本地 JSON
+编辑后直接 git 提交。构建时 `src/lib/content/*.ts` 读取本地文件（主题经 `topic-md.ts` 解析）。
 
 ### 3.2 必需字段
 
 完整字段表见 **[content-model.md](content-model.md)**。以下为最低门禁摘要：
 
 - **产品页**：`slug`、`name`、`content.hero`（h1/description/cta_url）、`content.about`、`content.faqs`
-- **主题页**：`slug`、`name`、`content.h1`、`content.description`、`content.intro`
+- **主题页**：frontmatter 中 `h1`、`description`、intro section（`#intro`）
 - **公司页**：`slug`、`name`、`content.description`、`content.type`（`company` 或 `investor`）
 
 ### 3.3 禁止的内容模式
@@ -113,11 +123,11 @@
 
 | Schema 类型 | 位置 | 页面 |
 |-------------|------|------|
-| Organization | `app/layout.tsx` | 全站 |
-| WebSite | `app/layout.tsx` | 全站 |
-| Person (author) | `app/layout.tsx` | 全站 |
+| Organization | `app/[locale]/layout.tsx` | 全站 |
+| WebSite | `app/[locale]/layout.tsx` | 全站 |
+| Person (author) | `app/[locale]/layout.tsx` | 全站 |
 | SoftwareApplication + FAQPage + ItemList | 产品页组件内 | `/products/[slug]` |
-| FAQPage + HowTo | `TopicJsonLd` 组件 | `/[slug]`（主题） |
+| FAQPage + HowTo | `TopicJsonLd` 组件 | `/{slug}`（主题） |
 | CollectionPage | 列表页 | `/products`、`/topic`、`/company` |
 
 所有 schema 使用 `@id` 引用链接到根布局中的 Organization/Person，确保实体一致性。
@@ -146,6 +156,7 @@
 - 组件文件：PascalCase（`ProductHeroSection.tsx`、`TopicPage.tsx`）
 - 工具/类型文件：kebab-case（`product-adapter.ts`、`category-hub.ts`）
 - JSON 数据文件：kebab-case slug 匹配（`chatgpt.json`）
+- 主题 Markdown：`{slug}.md` 与 frontmatter `slug` 一致
 - 文档文件：kebab-case（`reference.md`、`page-types.md`）
 
 ### 6.2 组件命名
@@ -166,11 +177,11 @@
 - 所有产品/主题/公司页面使用 SSG（`generateStaticParams`）
 - 首屏图片使用 Next.js `Image` 组件 + `priority` 属性
 - 图标统一使用 `lucide-react`
-- `next.config.js` 中已配置 `optimizePackageImports` 用于 Radix 和 lucide-react 的 tree-shaking
+- `next.config.js` 中已配置 `optimizePackageImports` 用于 Radix 组件的 tree-shaking
 
 ## 八、内容更新流程
 
-完整步骤见 **[content-workflow.md](content-workflow.md)**（编辑 JSON → validate → build → deploy → IndexNow）。
+完整步骤见 **[content-workflow.md](content-workflow.md)**（编辑 JSON/MD → validate → build → deploy → IndexNow）。
 
 ## 九、参考来源
 

@@ -41,7 +41,7 @@
 
 ## 对应 JSON 文件
 
-- `content/topics/image-generator.json`
+- `content/topics/image-generator.md`
 - `content/products/midjourney.json`
 
 ---

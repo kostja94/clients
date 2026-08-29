@@ -1,23 +1,23 @@
 # Nova Scientia 运维脚本
 
-脚本读写**部署仓** `D:\部署项目\nova-scientia` 的 `content/`、`public/`、`config/`。路径解析见 `lib/deploy-root.js`。
+脚本读写**部署仓** `E:\自有部署项目\nova-scientia-main` 的 `content/`、`public/`、`config/`。路径解析见 `lib/deploy-root.js`。
 
 在**部署仓根目录**执行：
 
 ```powershell
-cd D:\部署项目\nova-scientia
+cd E:\自有部署项目\nova-scientia-main
 ```
 
 ## audit/
 
 | 命令 | 说明 |
 |------|------|
-| `node ..\..\项目文档\Nova-Scientia项目上下文\scripts\audit\audit-seo-meta.js` | SEO title/description 长度审计 |
-| `node ..\..\项目文档\Nova-Scientia项目上下文\scripts\audit\audit-product-tags.js` | Hero tag 覆盖率 |
-| `npx tsx ..\..\项目文档\Nova-Scientia项目上下文\scripts\audit\simulate-product-categories.ts` | 分类映射 dry-run |
-| `python ..\..\项目文档\Nova-Scientia项目上下文\scripts\audit\capture-screenshots.py --target products` | 产品截图 |
-| `python ..\..\项目文档\Nova-Scientia项目上下文\scripts\audit\capture-screenshots.py --target companies` | 公司 logo 截图 |
-| `python ..\..\项目文档\Nova-Scientia项目上下文\scripts\audit\capture-screenshots.py --target all` | 两者 |
+| `node ..\..\clients\Nova-Scientia\scripts\audit\audit-seo-meta.js` | SEO title/description 长度审计 |
+| `node ..\..\clients\Nova-Scientia\scripts\audit\audit-product-tags.js` | Hero tag 覆盖率 |
+| `npx tsx ..\..\clients\Nova-Scientia\scripts\audit\simulate-product-categories.ts` | 分类映射 dry-run |
+| `python ..\..\clients\Nova-Scientia\scripts\audit\capture-screenshots.py --target products` | 产品截图 |
+| `python ..\..\clients\Nova-Scientia\scripts\audit\capture-screenshots.py --target companies` | 公司 logo 截图 |
+| `python ..\..\clients\Nova-Scientia\scripts\audit\capture-screenshots.py --target all` | 两者 |
 
 ## archive/
 
@@ -29,8 +29,8 @@ cd D:\部署项目\nova-scientia
 
 | 命令 | 说明 |
 |------|------|
-| `node ..\..\项目文档\Nova-Scientia项目上下文\scripts\ref\generate-redirects-from-gsc.js <file.xlsx>` | GSC → 301（需 `npm i xlsx`） |
-| `node ..\..\项目文档\Nova-Scientia项目上下文\scripts\ref\glossary\merge-glossary.mjs` | glossary 分片合并 |
+| `node ..\..\clients\Nova-Scientia\scripts\ref\generate-redirects-from-gsc.js <file.xlsx>` | GSC → 301（需 `npm i xlsx`） |
+| `node ..\..\clients\Nova-Scientia\scripts\ref\glossary\merge-glossary.mjs` | glossary 分片合并 |
 
 ## 部署仓保留脚本
 

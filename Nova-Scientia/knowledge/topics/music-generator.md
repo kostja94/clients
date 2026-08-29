@@ -37,7 +37,7 @@
 
 ## 对应 JSON 文件
 
-- `content/topics/music-generator.json`
+- `content/topics/music-generator.md`
 - `content/products/suno.json`
 - `content/products/acestudio.json`
 

@@ -180,17 +180,33 @@ No Nova Scientia, os links internos são gerados dinamicamente pelos componentes
 Após adicionar os links a cada tópico, rodar:
 
 ```bash
+# 在部署仓根目录执行（需先 cd 到部署仓）
 python3 -c "
-import json, os
+import json, os, re, yaml
 products = {f.replace('.json','') for f in os.listdir('content/products') if f.endswith('.json')}
-topics = {f.replace('.json','') for f in os.listdir('content/topics') if f.endswith('.json')}
+topics = {f.replace('.md','') for f in os.listdir('content/topics') if f.endswith('.md')}
+
+def parse_topic_frontmatter(path):
+    text = open(path, encoding='utf-8').read()
+    m = re.match(r'^---\r?\n([\s\S]*?)\r?\n---', text)
+    if not m: return {}
+    data = {}
+    for line in m.group(1).splitlines():
+        kv = line.split(':', 1)
+        if len(kv) == 2:
+            k, v = kv[0].strip(), kv[1].strip()
+            try: data[k] = json.loads(v)
+            except: data[k] = v.strip('\"')
+    return data
+
 for f in os.listdir('content/topics'):
-    if not f.endswith('.json'): continue
-    d = json.load(open(f'content/topics/{f}'))
-    for item in d.get('content',{}).get('featuredProducts',{}).get('items',[]):
+    if not f.endswith('.md'): continue
+    d = parse_topic_frontmatter(f'content/topics/{f}')
+    fp = d.get('featuredProducts') or {}
+    for item in (fp.get('items') if isinstance(fp, dict) else []) or []:
         if item.get('slug') and item['slug'] not in products:
             print(f'BROKEN: {f} → featured product slug \"{item[\"slug\"]}\" not found')
-    for rt in d.get('content',{}).get('recommendedTopics',[]):
+    for rt in d.get('recommendedTopics') or []:
         if rt.get('slug') and rt['slug'] not in topics:
             print(f'BROKEN: {f} → recommended topic slug \"{rt[\"slug\"]}\" not found')
 "

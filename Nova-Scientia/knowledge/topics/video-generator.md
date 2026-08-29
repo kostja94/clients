@@ -41,14 +41,14 @@
 
 ## 对应 JSON 文件
 
-- `content/topics/video-generator.json`
+- `content/topics/video-generator.md`
 - `content/products/sora.json` ⚠️ 需处理（Sora 已关停）
 
 ---
 
 ## 注意事项
 
-- **Sora 已从 video-generator.json 的对比表、featured products、FAQ、TLDR、SEO 元数据中移除**（2026-05-18）
+- **Sora 已从 video-generator.md 的对比表、featured products、FAQ、TLDR、SEO 元数据中移除**（2026-05-18）
 - `content/products/sora.json` 仍然存在，需要决定移除或标记为关停
 - Veo 3 所有引用已更新为 Veo 3.1
 - Kling 2.0 所有引用已更新为 Kling 3.0

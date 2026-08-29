@@ -17,7 +17,7 @@
 
 ## 对应 JSON
 
-- `content/topics/interview-assistant.json`
+- `content/topics/interview-assistant.md`
 
 ## 注意事项
 

@@ -149,7 +149,7 @@ async rewrites() {
 ## 8. 与本仓库的关系
 
 - 本文与 [thetawave-production-routing.md](./thetawave-production-routing.md) 一样，**描述架构与配置位置**；实际 `rewrites` 仍在 **主域托管仓库** 或边缘网关。  
-- **子站 Next 的 `[locale]` 路由与翻译资源** 在 **thetawave-three 代码仓库** 中实现；本 `clients/thetawave` 目录为营销/项目文档，若子站路由变更，请同步更新两文路径示例。
+- **子站 Next 的 `[locale]` 路由与翻译资源** 在 **thetawave-three 代码仓库** 中实现；本 `others/thetawave` 目录为营销/项目文档（归档），若子站路由变更，请同步更新两文路径示例。
 
 ---
 

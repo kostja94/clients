@@ -1,6 +1,6 @@
 /**
  * Simula categorias para todos os produtos (hero.tags → deriveProductCategoryFromTags).
- * Uso（部署仓根目录）: npx tsx ../../项目文档/Nova-Scientia项目上下文/scripts/audit/simulate-product-categories.ts
+ * Uso（部署仓根目录）: npx tsx ../../clients/Nova-Scientia/scripts/audit/simulate-product-categories.ts
  */
 import fs from "fs";
 import path from "path";

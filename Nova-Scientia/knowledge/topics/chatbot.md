@@ -22,7 +22,7 @@
 
 ## 对应 JSON 文件
 
-- `content/topics/chatbot.json`
+- `content/topics/chatbot.md`
 - `content/products/chatgpt.json` ⚠️ Sora 引用已移除
 - `content/products/claude.json`
 

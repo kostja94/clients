@@ -15,7 +15,7 @@
 
 ## 对应 JSON
 
-- `content/topics/accent-converter.json`
+- `content/topics/accent-converter.md`
 
 ## 注意事项
 

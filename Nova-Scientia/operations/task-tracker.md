@@ -66,7 +66,7 @@
 | Task | Status | Priority | Notes |
 |------|--------|----------|-------|
 | Products description 300–600 | Done | P1 | |
-| Topics 正文与 Meta | In Progress | P1 | content/topics/*.json |
+| Topics 正文与 Meta | In Progress | P1 | content/topics/*.md |
 | Version sweep | Done | P1 | ~60 修正 2026-05 |
 | Sora 全面移除 | Done | P0 | 2026-05 |
 

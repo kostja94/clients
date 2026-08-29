@@ -2,7 +2,7 @@
 
 本文档定义 Nova Scientia 项目全量的**命名规则、slug 约束、面包屑一致性规则**。
 
-适用范围：上下文仓内目录命名、部署仓 `content/` JSON 文件命名、产品/主题 slug、以及产品页面包屑 URL 一致性检查。
+适用范围：上下文仓内目录命名、部署仓 `content/` 文件命名、产品/主题 slug、以及产品页面包屑 URL 一致性检查。
 
 ---
 
@@ -16,18 +16,18 @@
 | 分段 | **kebab-case**（`-` 连接） |
 | 目录名 | 子目录使用小写 kebab-case |
 
-### 0.2 部署仓 `content/` JSON 路径
+### 0.2 部署仓 `content/` 路径
 
 | 类型 | 路径 | 规则 |
 |------|------|------|
 | 产品 | `content/products/{slug}.json` | slug = 文件名（kebab-case），见 §一 |
-| 主题 | `content/topics/{slug}.json` | 与 URL `/{slug}` 一致 |
+| 主题 | `content/topics/{slug}.md` | 与 URL `/{slug}` 一致；frontmatter `slug` 须匹配 |
 | 公司 | `content/companies/{slug}.json` | 与 URL `/company/{slug}` 一致 |
 | 词汇表 | `content/glossary.json` | 由 `scripts/ref/glossary/merge-glossary.mjs` 合并生成 |
 
 ### 0.3 版本追踪笔记
 
-`knowledge/topics/{slug}.md` 的 basename 必须与 `content/topics/{slug}.json` 的 slug 对齐。
+`knowledge/topics/{slug}.md` 的 basename 必须与 `content/topics/{slug}.md` 的 slug 对齐。
 
 ---
 
@@ -114,15 +114,15 @@ API 同步时可能将完整 URL 的路径片段误解析为 slug。`scripts/syn
 {
   "content": {
     "breadcrumbs": [
-      { "label": "Home", "url": "/" },
-      { "label": "Produtos", "url": "/products" },
-      { "label": "ChatGPT", "url": "/products/chatgpt" }  ← 必须匹配
+      { "name": "Início", "url": "/" },
+      { "name": "Produtos", "url": "/products" },
+      { "name": "ChatGPT", "url": "/products/chatgpt" }
     ]
   }
 }
 ```
 
-**规则**：`breadcrumbs[last].url` 必须等于 `/products/{slug}`。
+**规则**：`breadcrumbs[last].url` 必须等于 `/products/{slug}`。字段名为 `name`（非 `label`）；`BreadcrumbNav` 组件内部映射为显示 label。
 
 `scripts/sync-products-from-api.js` 中的 `normalizeBreadcrumbUrl()` 函数会在同步时自动修正不匹配的面包屑 URL。
 

@@ -17,7 +17,7 @@
 
 ## 对应 JSON
 
-- `content/topics/text-to-speech.json`
+- `content/topics/text-to-speech.md`
 
 ## 注意事项
 

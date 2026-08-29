@@ -1,6 +1,6 @@
 # Internal & External Links Checklist（Collov AI Blog）
 
-> **依据**：与 [Dubbing AI blog](../../dubbingai/blog/internal-external-links-checklist.md)、[ThetaWave blog](../../thetawave/blog/internal-external-links-checklist.md) 同一思路；站点以 **collov.ai** 为准；正文为 **英文**，本规范为 **中文**。  
+> **依据**：与 [Dubbing AI blog](../../dubbingai/blog/internal-external-links-checklist.md)、[ThetaWave blog](../thetawave/blog/internal-external-links-checklist.md) 同一思路；站点以 **collov.ai** 为准；正文为 **英文**，本规范为 **中文**。  
 > **信息增量**：成稿前对照仓库根目录 [内容-信息增量-笔记.md](../../../内容-信息增量-笔记.md) —— 先满足主意图，再叠加可验证的新信息（步骤、边界条件、清单），避免仅复述 SERP 共识层。  
 > **产品语境**：[collov.md](../collov.md) · **关键词**：[collov-keywords.md](../collov-keywords.md) · **功能 URL**：[collov-features.md](../collov-features.md)
 

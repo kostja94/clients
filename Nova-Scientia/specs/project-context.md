@@ -2,7 +2,7 @@
 
 > 项目上下文文档，供 AI Agent 与营销技能使用。基于 [marketing-skills/project-context](https://github.com/kostja94/marketing-skills/blob/main/templates/project-context.md) 模板，结合 Nova Scientia 实际结构填写。
 
-**Last updated**: 2026-06-06 — 保持更新；过时上下文会降低输出质量。
+**Last updated**: 2026-08-29 — 保持更新；过时上下文会降低输出质量。
 
 ---
 
@@ -47,7 +47,7 @@
 **Product form**:
 - **Platforms**: Web only
 - **Entry points**: Explorar Produtos, Temas（首页 CTA）
-- **Data scale**: content/products/*.json、content/topics/*.json（主题指南）、content/companies/*.json
+- **Data scale**: `content/products/*.json`（435）、`content/topics/*.md`（35 主题指南）、`content/companies/*.json`（35）
 
 ---
 
@@ -67,7 +67,7 @@ Portal de IA para o Brasil que ajuda usuários a descobrir, comparar e escolher 
 | Product / Feature | Description |
 |-------------------|-------------|
 | **Produtos** | 产品评测页，单产品深度分析（features、pricing、pros/cons、alternatives、FAQ） |
-| **Temas / guias** | 主题详情 `/{slug}`（如 LLM、生图），总聚合 `/topic`；产品分类目录 `/products/categoria/...` |
+| **Temas / guias** | 主题详情 `/{slug}`（如 LLM、生图），总聚合 `/topic`；分类 hub 短路径 `/{segment}`（如 `/image`） |
 
 **Differentiation**:
 - 专注巴西市场，全站 pt-BR
@@ -126,7 +126,7 @@ Portal de IA para o Brasil que ajuda usuários a descobrir, comparar e escolher 
 |--------------|---------|---------|
 | / | Homepage | Hero, CTA, featured product |
 | /products | Produtos index | 产品列表 |
-| /products/categoria/[cat] | …/image-generation | 按产品业务分类聚合 |
+| /products/categoria/[cat] | …/image 等 | **301 重定向**至短 hub（`/image` 等），非活跃路由 |
 | /products/[slug] | /products/cursor | 产品详情 |
 | /topic | Temas index | 主题/指南总聚合 |
 | /[slug] | /llm | 主题指南详情（content/topics） |
@@ -146,7 +146,7 @@ Portal de IA para o Brasil que ajuda usuários a descobrir, comparar e escolher 
 | **Competitor / brand** | [produto] alternativa, [produto] vs [produto] |
 | **Target intent** | Informational, Commercial |
 
-**Programmatic SEO**: 主题页 `/{slug}`（Temas）与产品目录 `/products`、分类页 `/products/categoria/...` 覆盖主要意图与长尾。
+**Programmatic SEO**: 主题页 `/{slug}`（Temas）与产品目录 `/products`、分类 hub `/{segment}` 覆盖主要意图与长尾。
 
 ---
 
@@ -235,9 +235,11 @@ Portal de IA para o Brasil que ajuda usuários a descobrir, comparar e escolher 
 ## 15. Technical Architecture (from src/)
 
 **Data sources**:
-- `content/products/*.json` → `getAllProducts`, `getProductBySlug`, `getRelatedProducts`（仅读本地；更新：直接编辑 JSON）
-- `content/companies/*.json` → `getAllCompanies`, `getCompanyBySlug`（仅读本地；直接编辑 JSON）
-- `content/topics/*.json` → `getAllTopics`, `getTopicBySlug`（仅读本地；直接编辑 JSON）
+- `content/products/*.json` → `getAllProducts`, `getProductBySlug`（JSON，直接编辑）
+- `content/companies/*.json` → `getAllCompanies`, `getCompanyBySlug`（JSON，直接编辑）
+- `content/topics/*.md` → `getAllTopics`, `getTopicBySlug`（MD，经 `topic-md.ts` 解析）
+- `content/locales/{locale}/` → 多语言覆盖层（见 `content-dir.ts`）
+- 路由：`app/[locale]/` + `middleware.ts`（5 locale，pt-BR 无前缀）
 
 **Key components**:
 - `Header` / `HeaderWithNav` — Produtos、Temas、Empresas 下拉

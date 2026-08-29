@@ -1,6 +1,6 @@
 # Nova Scientia — 数据模型速查
 
-本文档提供所有内容 JSON 的数据结构参考。字段名与 API 输出保持一致（snake_case）。
+本文档提供所有内容文件的数据结构参考。产品/公司为 JSON（snake_case）；主题为 Markdown frontmatter + 正文块。
 
 ## 一、ApiProduct（产品）
 
@@ -55,47 +55,80 @@ TypeScript 类型：`src/lib/content/product-adapter.ts` → `ApiProduct`
 
 ## 二、ApiTopic（主题）
 
-文件位置：`content/topics/{slug}.json`
+文件位置：`content/topics/{slug}.md`（Markdown + YAML frontmatter）
+解析器：部署仓 `src/lib/content/topic-md.ts` → 输出 `ApiTopic`
 TypeScript 类型：`src/types/topics.ts` → `ApiTopic`
 
-### 顶层字段
+> 历史格式 `content/topics/{slug}.json` 已全部迁移为 MD。JSON 仅作解析器遗留回退，勿再新建。
+
+### 文件结构
+
+```markdown
+---
+slug: "llm"
+name: "LLM (Large Language Models)"
+seo_title: "..."
+seo_description: "..."
+canonical_url: null
+og_image: null
+updated: "2026-06-20"
+readingMinutes: "5 min read"
+author: "Kostja"
+h1: "..."
+description: "..."
+tldr: {"title":"...","points":[...],"summary":"..."}
+comparisonTable: {...}
+featuredProducts: {...}
+faqs: [{"q":"...","a":"..."}]
+recommendedTopics: [{"name":"...","slug":"..."}]
+---
+
+<!-- block:section -->
+## Introdução {#intro}
+段落内容...
+
+<!-- block:section -->
+## 章节标题 {#anchor}
+...
+```
+
+Frontmatter 值：字符串直接写；`null` 写 `null`；对象/数组写单行 JSON。
+
+正文块：`<!-- block:section -->` 开启区块；`## Title {#id}` 定义标题与锚点；段落以空行分隔；可选 `<!-- highlights:start/end -->`、`<!-- childrenHtml:start/end -->`。
+
+### 顶层字段（frontmatter）
 
 | 字段 | 类型 | 必需 | 说明 |
 |------|------|------|------|
-| `slug` | `string` | 是 | 唯一标识 |
+| `slug` | `string` | 是 | 唯一标识，与文件名一致 |
 | `name` | `string` | 是 | 导航栏显示名称 |
 | `seo_title` | `string \| null` | 否 | 自定义 SEO 标题 |
 | `seo_description` | `string \| null` | 否 | 自定义 SEO 描述 |
 | `canonical_url` | `string \| null` | 否 | 自定义 canonical URL |
 | `og_image` | `string \| null` | 否 | 自定义 OG 图片 |
-| `content` | `TopicContent` | 是 | 见下方 |
-
-### TopicContent 字段
-
-| 字段 | 类型 | 必需 | 说明 |
-|------|------|------|------|
-| `badge` | `string` | 否 | Hero 区的标签文案 |
-| `navLabel` | `string` | 否 | 导航栏短标题；未设则从 h1 截断 |
+| `updated` | `string` | 否 | 最后更新日期（如 `2026-06-20`） |
+| `readingMinutes` | `string` | 否 | 阅读时长文案 |
+| `author` | `string` | 否 | 作者名 |
 | `h1` | `string` | 是 | 页面 H1 标题 |
 | `description` | `string` | 是 | 页面描述 |
-| `tldr` | `object` | 否 | `{ title, summary, points: string[] }` — 核心要点 |
-| `stats` | `array` | 否 | `{ value: string, label: string }[]` |
-| `intro` | `object` | 是 | `{ title: string, paragraphs: string[] }` |
-| `sections` | `TopicSection[]` | 是 | 主要章节列表 |
-| `comparisonTable` | `object` | 否 | `{ title?, headers: string[], rows: { cells: string[] }[] }` |
+| `tldr` | `object` | 否 | `{ title, summary, points: string[] }` |
+| `comparisonTable` | `object` | 否 | `{ title?, headers, rows: { cells: string[] }[] }` |
 | `featuredProducts` | `object` | 否 | `{ title, items: TopicFeaturedProduct[] }` |
 | `faqs` | `array` | 是 | `{ q: string, a: string }[]` |
 | `recommendedTopics` | `array` | 否 | `{ name: string, slug: string }[]` |
 
-### TopicSection 子字段
+解析后映射为 `TopicContent`：`intro` 来自第一个 section；`sections[]` 来自后续 section 块。
+
+### TopicSection 子字段（解析后）
 
 | 字段 | 类型 | 必需 | 说明 |
 |------|------|------|------|
-| `id` | `string` | 是 | 锚点 id（用于 TOC 链接） |
+| `id` | `string` | 是 | 锚点 id（`## Title {#id}` 或 intro 固定为 `intro`） |
 | `title` | `string` | 是 | 章节标题（H2） |
 | `paragraphs` | `string[]` | 是 | 段落内容（支持内联 HTML） |
-| `highlights` | `string[]` | 否 | 高亮要点 |
-| `productCards` | `TopicProductCard[]` | 否 | 内嵌产品卡片：`{ name, subtitle, image?, cta_url?, cta_text?, description }[]` |
+| `highlights` | `string[]` | 否 | 高亮要点（`highlights` 围栏） |
+| `childrenHtml` | `string` | 否 | 嵌套 HTML 块（`childrenHtml` 围栏） |
+| `productCards` | `TopicProductCard[]` | 否 | 内嵌产品卡片（JSON 时代遗留；MD 中少用） |
 
 ### TopicFeaturedProduct 子字段
 

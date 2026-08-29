@@ -7,7 +7,7 @@
 | 类型 | URL 模式 | 数据源 | 核心组件 |
 |------|----------|--------|----------|
 | **A — 产品详情** | `/products/{slug}` | `content/products/{slug}.json` | `ProductLayout` > `ProductHeroSection`, `ProductFeaturesSection`... |
-| **B — 主题指南** | `/{slug}` | `content/topics/{slug}.json` | `TopicPage` > `TopicHero`, `TopicTldr`, `TopicEditorialSection`... |
+| **B — 主题指南** | `/{slug}` | `content/topics/{slug}.md` | `TopicPage` > `TopicHero`, `TopicTldr`, `TopicEditorialSection`... |
 | **C — 公司档案** | `/company/{slug}` | `content/companies/{slug}.json` | `CompanyLayout` > `CompanyHero`, `CompanyPortfolio`... |
 | **D — 词汇表** | `/glossary` | `content/glossary.json` | `GlossaryPageContent` |
 | **E — 分类中心** | `/{segment}` | `category-hub.ts` 路由 | `ProductCategoryHubPage` |
@@ -66,7 +66,7 @@ API 中的 toc id 通过 `API_TOC_ID_MAP` 映射到页面 section id：
 
 ### 数据结构
 
-JSON schema 见 `src/types/topics.ts` 中的 `ApiTopic` 接口。字段通过 `TopicContent` 定义。
+Markdown + YAML frontmatter，由 `topic-md.ts` 解析为 `ApiTopic`。字段见 `src/types/topics.ts` 与 [content-model.md](content-model.md) §二。
 
 ### 区块顺序
 
@@ -101,7 +101,11 @@ JSON schema 见 `src/types/topics.ts` 中的 `ApiTopic` 接口。字段通过 `T
 
 ### 路由守卫
 
-`/[slug]` 是动态路由，必须检查 `RESERVED_SLUGS` 防止与静态路由冲突。保留的 slug 包括：`about`、`products`、`topic`、`company`、`glossary`、`image`、`video`、`voice`、`3d`、`design`、`coding`、`productivity`。匹配时调用 `notFound()`。
+`app/[locale]/[slug]/page.tsx` 是动态路由。以下 slug 在 `RESERVED_SLUGS` 中会被 `notFound()`：
+
+`products`、`company`、`tools`、`topic`、`glossary`、`sitemap.xml`、`media-kit`
+
+**静态路由优先**：`/about`、`/image`、`/video` 等 hub 页由 `app/[locale]/about/page.tsx`、`app/[locale]/image/page.tsx` 等静态路由匹配，不经过 `[slug]` 动态段，因此无需列入 `RESERVED_SLUGS`。
 
 ---
 
@@ -147,7 +151,7 @@ JSON schema 见 `src/types/companies.ts` 中的 `ApiCompany` 接口。
 
 ### 结构
 
-- 14 个分类，147 个术语
+- 15 个分类，147 个术语
 - 每个术语含 `term`、`definition`、可选的 `relatedHref` 和 `relatedLabel`
 - 分类间使用互斥手风琴（一次展开一个分类）
 - 支持 URL hash 定位到具体术语（`/glossary#term-id`）

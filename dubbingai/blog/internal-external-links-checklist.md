@@ -1,6 +1,6 @@
 # Internal & External Links Checklist（Dubbing AI Blog）
 
-> **依据**：与 [ThetaWave blog internal-external-links-checklist](../../thetawave/blog/internal-external-links-checklist.md) 同一思路；站点以 **dubbingai.io** 为准；正文为 **英文**，本规范为 **中文**。  
+> **依据**：与 [ThetaWave blog internal-external-links-checklist](../../others/thetawave/blog/internal-external-links-checklist.md) 同一思路；站点以 **dubbingai.io** 为准；正文为 **英文**，本规范为 **中文**。  
 > **产品语境**：[dubbingai.md](../dubbingai.md) · **全站内链总纲**：[dubbingai-internal-links.md](../dubbingai-internal-links.md) · **关键词映射**：[dubbingai-keywords.md](../dubbingai-keywords.md)
 
 **适用范围**：`blog/` 根目录 **2026 新稿**（`01-`…`04-`）适用下文互链矩阵硬性要求。**`cms-export/`** 第一阶段为 CMS 忠实镜像，`related` / 首段互链 / 竞品 nofollow **暂不强制**（见 [cms-export/README.md](./cms-export/README.md)）。

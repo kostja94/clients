@@ -1,13 +1,14 @@
 # Nova Scientia 项目上下文
 
-> **Updated**: 2026-08-08
+> **Updated**: 2026-08-29
 
 本目录是 Nova Scientia 的**文档与运维脚本单一来源**，不进入 Vercel 构建。
 
 | | 路径 |
 |---|------|
-| **部署仓** | `D:\部署项目\个人部署项目\nova-scientia` |
-| **本目录** | `D:\项目文档\Nova-Scientia项目上下文` |
+| **部署仓** | `E:\自有部署项目\nova-scientia-main` |
+| **GitHub** | https://github.com/kostja94/nova-scientia |
+| **本目录** | `E:\clients\Nova-Scientia` |
 | **生产站点** | https://novascientia.com.br |
 
 ---
@@ -16,7 +17,7 @@
 
 | 仓 | 放什么 | 不放什么 |
 |----|--------|----------|
-| **部署仓** | Next.js 源码、`content/*.json`、`scripts/permanent/`、`CLAUDE.md` | `docs/`、一次性脚本 |
+| **部署仓** | Next.js 源码、`content/products|companies/*.json`、`content/topics/*.md`、`scripts/permanent/`、`CLAUDE.md` | `docs/`、一次性脚本 |
 | **上下文仓** | 全站规范、知识库、审计脚本 | Next.js 路由、`app/` 源码 |
 
 ---
@@ -41,14 +42,14 @@
 | 语言变体差异对照 | [knowledge/locale-vocabulary.md](knowledge/locale-vocabulary.md) |
 | 任务进度 | [operations/task-tracker.md](operations/task-tracker.md) |
 | 审计脚本 | [scripts/README.md](scripts/README.md) |
-| 部署仓架构 | `D:\部署项目\个人部署项目\nova-scientia\CLAUDE.md` |
+| 部署仓架构 | `E:\自有部署项目\nova-scientia-main\CLAUDE.md` |
 
 ---
 
 ## 目录结构
 
 ```
-Nova-Scientia项目上下文/
+Nova-Scientia/
 ├── README.md                 ← 本文件（唯一入口）
 ├── specs/                    全站规范
 │   ├── reference.md          总则
@@ -85,8 +86,8 @@ Nova-Scientia项目上下文/
 ## Agent 协作
 
 ```text
-完整规范：D:\项目文档\Nova-Scientia项目上下文\README.md
-内容任务：先读 specs/，再改部署仓 content/*.json。
+完整规范：E:\clients\Nova-Scientia\README.md
+内容任务：先读 specs/；改 products/companies → 部署仓 `content/*.json`；改 topics → 部署仓 `content/topics/*.md`。
 ```
 
 **维护约定**：增删文件后同步更新本 README；状态标记 ✅ 当前 | ⚠️ 需关注 | 🔲 缺失。

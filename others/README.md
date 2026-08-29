@@ -12,4 +12,5 @@
 | [coura-ai](./coura-ai/coura-ai.md) | Coura.AI |
 | [craveu](./craveu/craveu.md) | CraveU (含 Talkie 竞品) |
 | [crepal-ai-vlog](./crepal-ai-vlog/crepal-ai-vlog.md) | CrePal / AI |
-| [datus](./datus/datus.md) | Datus（开源 Data Engineering Agent · 合作已结束） | 
+| [datus](./datus/datus.md) | Datus（开源 Data Engineering Agent · 合作已结束） |
+| [thetawave](./thetawave/readme.md) | ThetaWave（AI 笔记 · 暂停合作 2026-08-29） | 

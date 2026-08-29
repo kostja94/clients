@@ -17,4 +17,4 @@
 
 ## 对应 JSON
 
-- `content/topics/headshot-generator.json`
+- `content/topics/headshot-generator.md`

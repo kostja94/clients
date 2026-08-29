@@ -16,4 +16,4 @@
 
 ## 对应 JSON
 
-- `content/topics/voice-generator.json`
+- `content/topics/voice-generator.md`

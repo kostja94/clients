@@ -1,6 +1,6 @@
 /**
  * Junta partes em scripts/ref/glossary/parts/*.json → 部署仓 content/glossary.json
- * Uso（部署仓根目录）: node ../../项目文档/Nova-Scientia项目上下文/scripts/ref/glossary/merge-glossary.mjs
+ * Uso（部署仓根目录）: node ../../clients/Nova-Scientia/scripts/ref/glossary/merge-glossary.mjs
  */
 import fs from "fs";
 import path from "path";

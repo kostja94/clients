@@ -24,7 +24,7 @@ _CONTEXT_ROOT = os.path.normpath(
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 )
 PROJECT_ROOT = os.environ.get("NOVA_SCIENTIA_DEPLOY_ROOT") or os.path.normpath(
-    os.path.join(_CONTEXT_ROOT, "..", "..", "部署项目", "nova-scientia")
+    os.path.join(_CONTEXT_ROOT, "..", "..", "自有部署项目", "nova-scientia-main")
 )
 
 PRODUCT_TARGETS = [

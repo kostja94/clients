@@ -16,7 +16,7 @@
 
 ## 对应 JSON
 
-- `content/topics/cli.json`
+- `content/topics/cli.md`
 
 ## 注意事项
 

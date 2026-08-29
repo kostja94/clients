@@ -31,7 +31,7 @@
 
 ## 对应 JSON 文件
 
-- `content/topics/{slug}.json`
+- `content/topics/{slug}.md`
 - 关联 product: `content/products/{product-slug}.json`
 
 ---

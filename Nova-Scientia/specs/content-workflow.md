@@ -2,26 +2,32 @@
 
 本文档描述本地内容编辑和构建部署的完整工作流。
 
-**内容路径**：`D:\部署项目\nova-scientia\content\`（部署仓）。本文档在上下文仓，路径均相对于部署仓根目录。
+**内容路径**：`E:\自有部署项目\nova-scientia-main\content\`（部署仓）。本文档在上下文仓，路径均相对于部署仓根目录。
 
 ---
 
 ## 一、内容架构
 
-所有页面内容以 JSON 文件形式存储在部署仓 `content/` 目录下，直接受 git 版本控制：
+页面内容存储在部署仓 `content/` 目录下，直接受 git 版本控制：
 
 ```
 content/
-├── products/         # 产品详情页（435 个 JSON 文件）
+├── products/         # 产品详情页（435 个 JSON）
 │   └── {slug}.json
-├── topics/           # 主题编辑页（35 个 JSON 文件）
+├── topics/           # 主题指南（35 个 Markdown）
+│   └── {slug}.md
+├── companies/        # 公司/VC 页面（35 个 JSON）
 │   └── {slug}.json
-├── companies/        # 公司/VC 页面
-│   └── {slug}.json
-└── glossary.json     # AI 词汇表（147 术语）
+├── glossary.json     # AI 词汇表（147 术语，15 分类）
+└── locales/          # 多语言覆盖层（按 locale 子目录）
+    └── {locale}/
+        ├── manifest.json
+        └── topics/{slug}.md   # 已翻译的主题（示例：es-mx/image-generator.md）
 ```
 
-构建时通过 `src/lib/content/*.ts` 中的 `readFileSync` 同步读取。
+构建时通过 `src/lib/content/*.ts` 读取；主题由 `topic-md.ts` 解析 MD，产品/公司读 JSON。
+
+**路由**：所有页面在 `app/[locale]/` 下；pt-BR 默认语言 URL 无前缀（middleware 内部重写为 `/pt-br/*`）。
 
 ---
 
@@ -63,13 +69,22 @@ content/
 
 ### 3.1 添加新主题
 
-1. 创建 `content/topics/{slug}.json`
-2. 填写 `ApiTopic` 类型的完整内容
-3. 在 `app/[slug]/page.tsx` 中确保 `generateStaticParams` 覆盖（通过 `RESERVED_SLUGS` 排除保留 slug）
+1. 创建 `content/topics/{slug}.md`（YAML frontmatter + 正文块，见 [content-model.md](content-model.md) §二）
+2. 复制已有主题（如 `llm.md`）作为模板
+3. 路由由 `getAllTopicSlugs()` 自动发现；动态路由在 `app/[locale]/[slug]/page.tsx`，需避开 `RESERVED_SLUGS`（见 [page-types.md](page-types.md) §B）
 
-### 3.2 主题 JSON 结构
+### 3.2 修改主题
 
-参考 `specs/content-model.md` 的 `ApiTopic` 完整字段表。
+直接编辑 `content/topics/{slug}.md`：
+- 元数据（SEO、h1、faqs 等）→ frontmatter
+- 正文段落 → `<!-- block:section -->` 块内
+
+### 3.3 验证主题 MD
+
+```bash
+# 在部署仓根目录
+npx tsx scripts/permanent/verify-topic-md-roundtrip.ts
+```
 
 ---
 
@@ -94,10 +109,10 @@ content/
 
 ```bash
 # 编辑分片（上下文仓）
-# Nova-Scientia项目上下文/scripts/ref/glossary/parts/
+# Nova-Scientia/scripts/ref/glossary/parts/
 
 # 合并为部署仓 content/glossary.json（在部署仓根目录执行）
-node ../../项目文档/Nova-Scientia项目上下文/scripts/ref/glossary/merge-glossary.mjs
+node ../../clients/Nova-Scientia/scripts/ref/glossary/merge-glossary.mjs
 ```
 
 ---
@@ -108,7 +123,8 @@ node ../../项目文档/Nova-Scientia项目上下文/scripts/ref/glossary/merge-
 
 ```bash
 # 在部署仓根目录
-npm run validate:products      # slug/breadcrumb 一致性（build 门禁）
+npm run validate:products      # 产品 slug/breadcrumb 一致性（build 门禁）
+npx tsx scripts/permanent/verify-topic-md-roundtrip.ts   # 主题 MD 解析（修改 topics 后）
 ```
 
 `npm run build` 会自动运行 `validate:products` 作为门禁。
@@ -119,10 +135,11 @@ npm run validate:products      # slug/breadcrumb 一致性（build 门禁）
 
 ```bash
 # 1. 编辑内容
-# 直接修改 content/ 下的 JSON 文件
+# products/companies → JSON；topics → MD
 
 # 2. 验证
 npm run validate:products
+npx tsx scripts/permanent/verify-topic-md-roundtrip.ts   # 若改了 topics
 
 # 3. 本地预览
 npm run dev
@@ -144,7 +161,8 @@ npm run indexnow:all
 
 ## 八、关键约束
 
-- 内容 JSON 文件全部提交到 git，受版本控制
+- 产品/公司 JSON、主题 MD 全部提交到 git，受版本控制
 - 所有修改通过 git commit 追踪变更历史
 - `content/glossary.json` 由 `merge-glossary.mjs` 脚本生成，不直接编辑
 - Slug 规则见 [slug-breadcrumb.md](slug-breadcrumb.md)
+- 多语言翻译流程见 [i18n-content-workflow.md](i18n-content-workflow.md)

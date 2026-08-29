@@ -20,7 +20,7 @@
 
 ## 对应 JSON 文件
 
-- `content/topics/ai-detector.json`
+- `content/topics/ai-detector.md`
 
 ---
 

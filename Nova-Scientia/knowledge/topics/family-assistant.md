@@ -22,7 +22,7 @@
 
 ## 对应 JSON
 
-- `content/topics/family-assistant.json`
+- `content/topics/family-assistant.md`
 
 ## 注意事项
 
