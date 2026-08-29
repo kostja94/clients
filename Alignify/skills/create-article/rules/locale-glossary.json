@@ -184,7 +184,22 @@
     "stock": "素材库",
     "dashboard": "仪表盘",
     "outdoor": "户外",
-    "loop": "闭环"
+    "loop": "闭环",
+    "reveal": "揭晓",
+    "mystery": "悬念",
+    "benchmark": "跑分",
+    "retire": "下线",
+    "hints": "线索",
+    "crippled": "阉割",
+    "universal": "万能",
+    "frontier": "一线",
+    "meme": "梗图",
+    "campaign": "发布战役",
+    "credibility": "公信力",
+    "mystery cycle": "悬念周期",
+    "blind credibility": "盲测公信力",
+    "go/no-go": "做还是不做",
+    "invite-only": "邀请制"
   },
   "naked_loanwords_zh_gate_as_word": {
     "gate": "门槛"

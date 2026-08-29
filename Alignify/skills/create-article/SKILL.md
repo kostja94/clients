@@ -66,6 +66,8 @@
     ↓
 audit-article — Final ≥80 → publish-ready
     ↓
+[可选] article-zh-locale-pass — 中文地道化后置轮 → [`../../article-zh-locale-pass-spec.md`](../../article-zh-locale-pass-spec.md)
+    ↓
 人类发布（发布前复核 Step 08 日期字段）
 OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [`../ops/og-covers.md`](../ops/og-covers.md)
 ```
@@ -96,6 +98,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 09–09c | [`rules/content-locale.md`](./rules/content-locale.md) Part 4–5 | EN 独立成稿 + 对等对比 |
 | 10 | [`10-quality-gates.md`](./10-quality-gates.md) | Gate C → audit-ready |
 | — | [`../audit-article/SKILL.md`](../audit-article/SKILL.md) | publish-ready |
+| —（可选） | [`../../article-zh-locale-pass-spec.md`](../../article-zh-locale-pass-spec.md) | ZH 地道化后置轮 |
 
 > **步骤编号说明**：01–04 独立文档 · 05–06 / 09–09c → [`content-locale.md`](./rules/content-locale.md) · 07 内链 · **08 = Meta + 日期 + CTA**（无 Step 11/12）· 10 自审 · 终审后人类发布。
 

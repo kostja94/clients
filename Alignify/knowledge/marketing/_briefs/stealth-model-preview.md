@@ -89,3 +89,11 @@
 - [x] OG 封面 EN/ZH + og-locale-ready
 - [x] audit-article Final 88/A → **publish-ready**
 - [x] publishDate 改 **2026-07-24** · commit + push（2026-08-29）
+
+**ZH Locale Pass**（2026-08-29）:
+- [x] 新增 `#terminology-layers`（机制/平台/传播三层）
+- [x] 正文 Reveal→揭晓、英混句骨架中文化；title/description 去 Stealth 主称
+- [x] tldr-data.json · faq-data.json · blog-meta.ts zh 同步
+- [x] locale-glossary.json 补词（reveal、mystery cycle、blind credibility 等）
+- [x] audit-locale-voice PASS · audit-marketing-md-render PASS
+- 元文档：[`article-zh-locale-pass-spec.md`](../../../article-zh-locale-pass-spec.md)
