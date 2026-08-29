@@ -1,0 +1,18 @@
+{
+  "section": "blog",
+  "slug": "gui-vs-cli-vs-tui",
+  "title_en": "GUI vs CLI vs TUI for AI Agents",
+  "title_zh": "GUI、CLI 还是 TUI？AI Agent 界面类型对照",
+  "visual_anchors": [
+    "HERO: Three-band stack — CLI one-liner, TUI full terminal UI, GUI editor diff",
+    "Secondary: Product interface mapping chips (no real logos)",
+    "Tertiary: Machine layer MCP / API / Skills below human interfaces"
+  ],
+  "anti_patterns": [
+    "Generic Linux terminal stock art",
+    "Real vendor logos",
+    "Best-tools ranking list aesthetic"
+  ],
+  "composition": "Editorial zine collage explaining AI agent interface taxonomy; paper texture; mars-green accent; Kostja author badge bottom-left",
+  "created": "2026-08-29"
+}
