@@ -12610,6 +12610,57 @@
     },
     {
       "section": "site",
+      "slug": "vibe-coding",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "VIBE CODING",
+      "headline_line2": "HUB",
+      "subtitle": "Build · Ship · Monetize",
+      "tagline": "Tools · Guides · Workflows",
+      "composition": "Visual-only collage for vibe coding channel hub. HERO: natural-language prompt card morphing into live app preview on right two-thirds — chat bubble with blurred prompt lines, arrow into browser window showing SaaS dashboard silhouette, payment checkout chip, and subdirectory URL bar hint. Secondary: three workflow tiles (IDE chat, deploy rocket, Stripe checkout blur). Tertiary: torn-paper code bracket accents. Title top-left. Paper collage, halftone. NO Lovable/Bolt logos, NO readable prompt text, NO blank panels.",
+      "accent": "klein-blue",
+      "visual_anchors": [
+        "HERO: Prompt-to-app pipeline — chat prompt card with sparkle icon → arrow → browser window with blurred SaaS UI and accent CTA button",
+        "Secondary: three small workflow tiles (terminal agent, deploy rocket, payment checkout icon)",
+        "Tertiary: subdirectory URL bar fragment showing example.com/blog path hint"
+      ],
+      "anti_patterns": [
+        "Generic code editor only without app output",
+        "Marketing funnel chart unrelated to building",
+        "Empty chat bubble white box",
+        "Real product logos (Lovable, Bolt, Cursor)"
+      ],
+      "status": "pending",
+      "notes": "Vibe Coding hub OG 2026-08-29"
+    },
+    {
+      "section": "site",
+      "slug": "vibe-coding",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "Vibe Coding",
+      "headline_line2": "指南索引",
+      "subtitle": "构建 · 发布 · 变现",
+      "composition": "Same layout as EN: prompt-to-app pipeline HERO + workflow tiles + URL bar tertiary. Title top-left, NO extra Chinese UI labels, NO blank panels, NO product logos.",
+      "accent": "klein-blue",
+      "visual_anchors": [
+        "HERO: Prompt-to-app pipeline — chat prompt card with sparkle icon → arrow → browser window with blurred SaaS UI and accent CTA button",
+        "Secondary: three small workflow tiles (terminal agent, deploy rocket, payment checkout icon)",
+        "Tertiary: subdirectory URL bar fragment showing example.com/blog path hint"
+      ],
+      "anti_patterns": [
+        "Generic code editor only without app output",
+        "Marketing funnel chart unrelated to building",
+        "Empty chat bubble white box",
+        "Real product logos (Lovable, Bolt, Cursor)"
+      ],
+      "status": "pending",
+      "notes": "Vibe Coding hub OG 2026-08-29"
+    },
+    {
+      "section": "site",
       "slug": "media-kit",
       "locale": "en",
       "style": "editorial-collage",
