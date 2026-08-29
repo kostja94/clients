@@ -594,13 +594,13 @@ FAQ 组件从 `faq-data.json` 生成 FAQPage JSON-LD；Brief 采用时 Step 08 �
 ### 2.1 Markdown 列表写法
 
 ```markdown
-<!-- block:section -->
-## 参考文献 {#references}
-
-- [文章标题](https://example.com/article) — 出版方，2026年。一句说明本条参考价值。
+<!-- block:references -->
+<!-- references injected from references-data.json -->
 ```
 
 **Step 08 注册**：同步写入 `references-data.json`（`items[]` 字段：`title`, `url`, `source?`, `date?`, `description?`）。见 [`anatomy.md`](./anatomy.md) §二·一。
+
+> **禁止**用 `<!-- block:section -->` + `## 参考文献 {#references}`：会与 JSON 侧车 `References` 组件重复渲染 H2 标题。占位须用 `block:references`（无 md 标题行）。
 
 ### 2.2 引用添加规则（正文中）
 
