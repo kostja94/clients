@@ -13532,6 +13532,59 @@
       ],
       "status": "approved",
       "notes": "Manual brief 2026-08-29 · gui-vs-cli-vs-tui blog · OG generated 2026-08-29"
+    },
+    {
+      "section": "blog",
+      "slug": "stealth-model-preview",
+      "locale": "en",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "STEALTH MODEL",
+      "headline_line2": "PREVIEW",
+      "subtitle": "Codename · Blind Arena · Reveal",
+      "tagline": "Nano Banana · Ox Alpha · GTM",
+      "composition": "Visual-only editorial collage for Stealth Model Preview GTM article. HERO: LMArena-style blind A/B image battle with anonymous codename labels and banana emoji sticker. Secondary: OpenRouter stealth API terminal snippet with hidden model ID. Tertiary: mystery question marks peeling away to reveal official model badge on Reveal day. Title top-left. Paper collage zine. NO real Google/Z.ai logos. NO generic SEO chart.",
+      "accent": "klein-blue",
+      "visual_anchors": [
+        "HERO (~55% canvas): Split-screen blind model battle UI mock — left output tagged 'nano-banana' with banana emoji, right output 'Model B' anonymous; user pick A/B buttons",
+        "Secondary: Terminal/API card showing stealth/ox-alpha slug with token counter climbing (agent usage chart tear-out)",
+        "Tertiary: Paper layer labeled 'Reveal' lifting to show generic image model nameplate underneath question marks"
+      ],
+      "anti_patterns": [
+        "Generic stealth startup / company in stealth mode office imagery",
+        "Invite-only beta waitlist UI (different mechanism)",
+        "Creator challenge trophy (different article)",
+        "Real OpenRouter/Google/Z.ai brand marks — generic mockups only",
+        "Numbered best-tools ranking list"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-29 · stealth-model-preview blog · OG generated 2026-08-29"
+    },
+    {
+      "section": "blog",
+      "slug": "stealth-model-preview",
+      "locale": "zh",
+      "style": "editorial-collage",
+      "author": "Kostja",
+      "headline": "匿名模型",
+      "headline_line2": "预览发布",
+      "subtitle": "代号盲测与揭晓",
+      "composition": "Same layout as EN: blind Arena battle HERO with banana/ox codename stickers + stealth API terminal + Reveal peel-away. Chinese headline top-left. NO vendor logos.",
+      "accent": "klein-blue",
+      "visual_anchors": [
+        "HERO (~55% canvas): Split-screen blind model battle UI mock — left output tagged 'nano-banana' with banana emoji, right output anonymous Model B; user pick A/B buttons",
+        "Secondary: Terminal/API card showing stealth slug with token counter climbing",
+        "Tertiary: Paper layer labeled Reveal lifting to show model nameplate under question marks"
+      ],
+      "anti_patterns": [
+        "Generic stealth startup office imagery",
+        "Invite-only beta waitlist UI",
+        "Creator challenge trophy",
+        "Real vendor logos",
+        "Numbered best-tools ranking list"
+      ],
+      "status": "approved",
+      "notes": "Manual brief 2026-08-29 · stealth-model-preview blog · OG generated 2026-08-29"
     }
   ]
 }

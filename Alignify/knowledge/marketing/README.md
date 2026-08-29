@@ -31,6 +31,7 @@
 | `marketing-types` | `E:\个人知识库\增长策略\Marketing-Types-渠道平台与计划选型.md` · Brief：[`_briefs/marketing-types.md`](./_briefs/marketing-types.md) · Skills：[`marketing-slug-notes/marketing-types.md`](../../skills/create-article/rules/marketing-slug-notes/marketing-types.md) |
 | `egc-marketing` | `E:\个人知识库\增长策略\渠道分发\EGC-员工发声-AI与DevTools.md` · Brief：[`_briefs/egc-marketing.md`](./_briefs/egc-marketing.md) · Skills：[`marketing-slug-notes/egc-marketing.md`](../../skills/create-article/rules/marketing-slug-notes/egc-marketing.md) |
 | `wrapped-marketing` | `E:\个人知识库\增长策略\运营节奏\Wrapped-参考.md` |
+| `stealth-model-preview` | `E:\个人知识库\增长策略\渠道分发\Stealth-Model-Preview-匿名模型预览发布.md` · Brief：[`_briefs/stealth-model-preview.md`](./_briefs/stealth-model-preview.md) |
 
 **路由（2026-08-28）**：上表增长策略专题及所有**新 marketing 文**统一发布于 **`/blog/{slug}`**（正文 `content/blog/`）；存量 `/marketing/[slug]` 仅维护不重迁（如 `lifetime-deal`）。
 
