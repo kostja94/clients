@@ -8,9 +8,9 @@
 >
 > **规则**：[`08-meta-config.md`](../create-article/08-meta-config.md) §发布日期
 >
-> **最后扫描**：2026-08-28（部署仓 `E:\自有部署项目\alignify production`，共 **209** 篇）
+> **最后扫描**：2026-08-30（部署仓 `E:\自有部署项目\alignify production`，共 **211** 篇）
 >
-> **范围**：最新 [`blog/egc-marketing`](https://alignify.co/blog/egc-marketing)（2026-09-04）→ 最老 [`marketing/affiliate`](https://alignify.co/marketing/affiliate)（2025-02-16）
+> **范围**：最新 [`blog/gui-vs-cli-vs-tui`](https://alignify.co/blog/gui-vs-cli-vs-tui)（2026-09-05）→ 最老 [`marketing/affiliate`](https://alignify.co/marketing/affiliate)（2025-02-16）
 >
 > **再生**：`node scripts/ops/list-article-dates.mjs`
 >
@@ -22,15 +22,15 @@
 
 | 频道 | 篇数 | 最早发布 | 最近发布 | 最近更新 | 已改版 |
 | --- | --- | --- | --- | --- | --- |
-| `blog` | 36 | 2026-06-07 | 2026-09-04 | 2026-09-04 | 4 |
+| `blog` | 38 | 2026-06-07 | 2026-09-05 | 2026-09-05 | 4 |
 | `events` | 4 | 2025-03-16 | 2025-12-15 | 2025-12-15 | 0 |
 | `insights` | 7 | 2024-12-03 | 2026-01-16 | 2026-06-08 | 7 |
 | `marketing` | 16 | 2024-12-03 | 2026-06-24 | 2026-08-28 | 11 |
 | `seo` | 38 | 2024-11-27 | 2026-06-08 | 2026-06-11 | 35 |
 | `tools` | 108 | 2025-01-01 | 2026-06-20 | 2026-06-25 | 100 |
-| **合计** | **209** | 2024-11-27 | 2026-09-04 | 2026-09-04 | **157** |
+| **合计** | **211** | 2024-11-27 | 2026-09-05 | 2026-09-05 | **157** |
 
-**改版** = `modifiedDate` ≠ `publishDate`（157 篇按更新日排序，52 篇按发布日排序）。
+**改版** = `modifiedDate` ≠ `publishDate`（157 篇按更新日排序，54 篇按发布日排序）。
 
 ---
 
@@ -44,6 +44,7 @@ _正文与 `*-meta.ts` 一一对应，无缺口。_
 
 | 排序日 | 依据 | 频道 | slug | 标题（中文） | 发布 | 更新 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-09-05 | 发布 | `blog` | [`gui-vs-cli-vs-tui`](https://alignify.co/blog/gui-vs-cli-vs-tui) | GUI、CLI 还是 TUI？AI Agent 界面类型对照（2026） | 2026-09-05 | 2026-09-05 |
 | 2026-09-04 | 发布 | `blog` | [`egc-marketing`](https://alignify.co/blog/egc-marketing) | 如何用员工原创内容（EGC）为 AI/DevTools 建立开发者信任（2026） | 2026-09-04 | 2026-09-04 |
 | 2026-09-03 | 发布 | `blog` | [`how-to-build-a-blog-without-a-cms-using-ai`](https://alignify.co/blog/how-to-build-a-blog-without-a-cms-using-ai) | 如何不用 CMS，用 AI 搭建整个博客网站（2026） | 2026-09-03 | 2026-09-03 |
 | 2026-09-02 | 发布 | `blog` | [`subdirectory-hosting`](https://alignify.co/blog/subdirectory-hosting) | 主域名下的分块建站：一个域名多套部署怎么拼（2026） | 2026-09-02 | 2026-09-02 |
@@ -61,6 +62,7 @@ _正文与 `*-meta.ts` 一一对应，无缺口。_
 | 2026-08-26 | 更新 | `blog` | [`coding-plan`](https://alignify.co/blog/coding-plan) | Coding Plan 开发者订阅：中国 AI 编程增长 SKU | 2026-07-16 | 2026-08-26 |
 | 2026-08-22 | 发布 | `blog` | [`headless-cms`](https://alignify.co/blog/headless-cms) | 最佳无头CMS（2026）：Contentful、Sanity、Strapi等 | 2026-08-22 | 2026-08-22 |
 | 2026-08-21 | 发布 | `blog` | [`git-hosting`](https://alignify.co/blog/git-hosting) | 最佳 Agent 时代 Git 托管（2026）：Origin、GitHub、GitLab 等 | 2026-08-21 | 2026-08-21 |
+| 2026-07-24 | 发布 | `blog` | [`stealth-model-preview`](https://alignify.co/blog/stealth-model-preview) | 匿名模型预览发布：大模型如何用代号盲测做增长（2026） | 2026-07-24 | 2026-07-24 |
 | 2026-07-23 | 发布 | `blog` | [`open-source-cms`](https://alignify.co/blog/open-source-cms) | 最佳开源CMS（2026）：Strapi、Payload、Directus等 | 2026-07-23 | 2026-07-23 |
 | 2026-07-15 | 更新 | `blog` | [`multi-agent`](https://alignify.co/blog/multi-agent) | 最佳多智能体系统（2026）：LangGraph、CrewAI、Multica等 | 2026-06-15 | 2026-07-15 |
 | 2026-07-10 | 发布 | `blog` | [`ai-components`](https://alignify.co/blog/ai-components) | 最佳AI组件库（2026）：Vibe Coding的Prompt模板与Registry选型 | 2026-07-10 | 2026-07-10 |
@@ -529,4 +531,4 @@ _正文与 `*-meta.ts` 一一对应，无缺口。_
 
 日期写入规范见 [`08-meta-config.md`](../create-article/08-meta-config.md) §发布日期。
 
-*article-dates · 自动生成 · 2026-08-28*
+*article-dates · 自动生成 · 2026-08-30*
