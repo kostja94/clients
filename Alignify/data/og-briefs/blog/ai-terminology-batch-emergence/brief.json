@@ -1,0 +1,37 @@
+{
+  "section": "blog",
+  "slug": "ai-terminology-batch-emergence",
+  "analyzed_at": "2026-08-31T00:00:00+08:00",
+  "model": "cursor-manual-v1",
+  "page_topic_one_liner": "Why AI-related jargon arrives in batches — nine jargon tracks, feedback loop, and Loop Engineering's 72-hour birth timeline with X embeds",
+  "differentiator_vs_generic": "NOT a glossary of single buzzwords. Show WAVE/BATCH emergence: stacked -engineering labels arriving in a cliff, 72h X content factory timeline, nine parallel tracks — distinct from one-term explainer or terminology treadmill meme only.",
+  "visual_anchors": [
+    "HERO (~50%): torn-paper label chips cascading in a short wave — prompt / context / harness / loop / graph engineering — right-edge cliff spike suggesting 72-hour burst, not gradual trend",
+    "Secondary: stylized social post card stack with clock arc labeled 72h and day-0 to day-3 markers (no real X logo)",
+    "Tertiary: nine narrow colored lanes or zine strips hinting at nine jargon tracks (E/S/M/W/P–D) converging on one feedback loop ring"
+  ],
+  "anti_patterns": [
+    "Generic AI brain or neural network glow",
+    "Static dictionary/glossary page layout",
+    "Single isolated buzzword with no batch/wave motif",
+    "Real X/Twitter logo or profile screenshots",
+    "Literal treadmill stock photo as hero",
+    "Ranking list of tools or model names"
+  ],
+  "accent_suggestion": "klein-blue",
+  "locales": {
+    "en": {
+      "headline": "AI JARGON WAVES",
+      "headline_line2": "(2026)",
+      "subtitle": "Batch Emergence · Nine Tracks · 72h Case",
+      "tagline": "Loop Engineering Birth Timeline",
+      "composition": "Visual-only editorial collage. HERO: cascading -engineering label chips with cliff spike at 72h window. Secondary: social post stack + clock arc 0→72h. Tertiary: nine track lanes into one feedback loop. Title top-left. Paper zine halftone. NO glossary page, NO brain icon, NO platform logos."
+    },
+    "zh": {
+      "headline": "AI 术语批量出现",
+      "headline_line2": "（2026）",
+      "subtitle": "九轨 taxonomy · 72 小时案例",
+      "composition": "Same as EN: label-chip wave cliff + 72h social post stack + nine track lanes into feedback loop. Simplified Chinese headline top-left. NO glossary layout, NO brain icon, NO platform logos."
+    }
+  }
+}

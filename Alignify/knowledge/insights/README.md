@@ -42,6 +42,7 @@
 | [google.md](./google.md) | 🔲 待补充 | Google 深度分析：搜索/AI/云/硬件等多线战略、反垄断与竞争格局。配套: `/insights/google` |
 | [openai.md](./openai.md) | 🔲 待补充 | OpenAI 深度分析：GPT/o 系列、商业化路径、治理结构与竞合。配套: `/insights/openai` |
 | [ai-product-naming.md](./ai-product-naming.md) | 🔶 入门 | AI 产品命名全景：六大策略、命名 agency 案例（Lexicon/A Hundred Monkeys/Igor/Catchword 等）、全球 50 个知名 AI 产品命名溯源。配套: `/insights/ai-product-naming`（待上线） |
+| `_briefs/ai-terminology-batch-emergence.md` | ✅ Brief | AI 术语批量出现：九轨 taxonomy、Loop 72h 案例。配套: `/blog/ai-terminology-batch-emergence` |
 
 另有 [web-directories-and-portals.md](./web-directories-and-portals.md)（辅文，site 暂无对应 Insight 页，覆盖历史谱系与政策分析）。
 
