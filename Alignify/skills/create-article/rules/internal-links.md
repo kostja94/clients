@@ -2818,17 +2818,17 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 目标路径 | 锚文本（可见文案） | 首次出现区块 |
 |----------|-------------------|--------------|
 | `/tools/browser` | browsers | What Are Search Engines · 第 1 段 |
-| `/tools/search-engine` | AI search engines | What Are Search Engines · 第 2 段 |
-| `/seo/how-search-engine-works` | search engine technical guide | What Are Search Engines · 第 2 段 |
-| `/glossary` | SEO glossary | Search Engine Comparison Table · 表前说明 |
-| `/seo/serp` | SERP | Search Engine Comparison Table · 表后解读 · 第 1 段 |
-| `/seo/website-indexing` | indexing diagnostics | Search Engine Comparison Table · 表后解读 · 第 1 段 |
-| `/marketing/geo` | GEO (generative engine optimization) | AI Search Engines · html |
-| `/tools/web-search-api` | Web Search API — providers, selection, and RAG integration | Web Search APIs · html |
-| `/seo/schema` | Schema.org structured data | Future Trends · 第 2 段 |
-| `/seo/checklist` | SEO checklist | Conclusion · 第 2 段 |
-| `/seo/learn-seo` | SEO learning resources | Conclusion · 第 2 段 |
-| `/seo/website-traffic` | traffic and channel reporting | Conclusion · 第 2 段 |
+| `/tools/search-engine` | AI search engines | What Are Search Engines · 第 3 段 |
+| `/seo/how-search-engine-works` | search engine technical guide | Global Mainstream Search Engines · intro |
+| `/glossary` | SEO glossary | Search Engine Taxonomy · after table |
+| `/seo/serp` | SERP | Local & Specialized Search Engines · 第 2 段 |
+| `/seo/website-indexing` | indexing diagnostics | SEO Stack by Market · Layer 2 |
+| `/marketing/geo` | GEO (generative engine optimization) | AI Search · closing paragraph |
+| `/tools/web-search-api` | Web Search API — providers, selection, and RAG integration | Web Search APIs · closing paragraph |
+| `/seo/schema` | Schema.org structured data | Industry Notes 2026 · 第 2 段 |
+| `/seo/checklist` | SEO checklist | SEO Stack by Market · Layer 1 |
+| `/seo/learn-seo` | SEO learning resources | Market Share · after table |
+| `/seo/website-traffic` | traffic and channel reporting | Conclusion · closing paragraph |
 
 **统计**：上表共 **12** 条不同站内路径；同一 `href` 在 JSON 内仅出现一次；FAQ 无 `<a>`。
 
@@ -2839,17 +2839,17 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 目标路径 | 锚文本（可见文案） | 首次出现区块 |
 |----------|-------------------|--------------|
 | `/zh/tools/browser` | 浏览器 | 什么是搜索引擎 · 第 1 段 |
-| `/zh/tools/search-engine` | AI搜索引擎 | 什么是搜索引擎 · 第 2 段 |
-| `/zh/seo/how-search-engine-works` | 搜索引擎技术详解指南 | 什么是搜索引擎 · 第 3 段 |
-| `/zh/glossary` | 词汇表 | 搜索引擎对比表 · 表前说明 |
-| `/zh/seo/serp` | SERP 与搜索结果形态 | 搜索引擎对比表 · 表后解读 · 第 1 段 |
-| `/zh/seo/website-indexing` | 网站索引与收录排查 | 搜索引擎对比表 · 表后解读 · 第 1 段 |
-| `/zh/marketing/geo` | GEO（生成式引擎优化） | AI搜索引擎 · html |
-| `/zh/tools/web-search-api` | Web Search API · 选型与接入指南 | Web Search API · html |
-| `/zh/seo/schema` | Schema.org 结构化数据 | 搜索引擎未来趋势 · 第 2 段 |
-| `/zh/seo/checklist` | SEO Checklist | 结论 · 第 2 段 |
-| `/zh/seo/learn-seo` | SEO 学习资源 | 结论 · 第 2 段 |
-| `/zh/seo/website-traffic` | 流量与渠道报表 | 结论 · 第 2 段 |
+| `/zh/tools/search-engine` | AI搜索引擎 | 什么是搜索引擎 · 第 3 段 |
+| `/zh/seo/how-search-engine-works` | 搜索引擎技术详解指南 | 全球主流搜索引擎 · 引言 |
+| `/zh/glossary` | 词汇表 | 搜索引擎类型学 · 表后解读 |
+| `/zh/seo/serp` | SERP 与搜索结果形态 | 本地化与特色搜索引擎 · 第 2 段 |
+| `/zh/seo/website-indexing` | 网站索引与收录排查 | 按市场叠加 SEO 工作 · 第 2 层 |
+| `/zh/marketing/geo` | GEO（生成式引擎优化） | AI搜索引擎 · 末段 |
+| `/zh/tools/web-search-api` | Web Search API · 选型与接入指南 | Web Search API · 末段 |
+| `/zh/seo/schema` | Schema.org 结构化数据 | 2026 行业注记 · 第 2 段 |
+| `/zh/seo/checklist` | SEO Checklist | 按市场叠加 SEO 工作 · 第 1 层 |
+| `/zh/seo/learn-seo` | SEO 学习资源 | 市场份额 · 表后解读 |
+| `/zh/seo/website-traffic` | 流量与渠道报表 | 结论 · 末段 |
 
 **统计**：上表共 **12** 条不同站内路径；同一 `href` 在 JSON 内仅出现一次；FAQ 无 `<a>`。
 
