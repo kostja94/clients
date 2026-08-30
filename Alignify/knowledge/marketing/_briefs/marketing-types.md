@@ -1,6 +1,6 @@
 ## Article Brief — marketing-types
 
-**SSOT**: `E:\个人知识库\增长策略\Marketing-Types-渠道平台与计划选型.md`（**唯一维护处**）
+**SSOT**: `E:\个人知识库\增长策略-Growth\渠道平台与计划选型-Marketing-Types.md`（**唯一维护处**）
 
 **QualityTier**: flagship（Hub 索引页 · 可简化篇幅）  
 **ArticleType**: marketing-strategy（**存量** `/marketing/marketing-types`）  

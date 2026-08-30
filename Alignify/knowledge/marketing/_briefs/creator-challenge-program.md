@@ -1,6 +1,6 @@
 ## Article Brief — creator-challenge-program
 
-**SSOT**: `E:\个人知识库\增长策略\渠道分发\Creator-Challenge-AI创作者挑战赛.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
+**SSOT**: `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\创作者挑战赛-Creator-Challenge-AI.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（**存量**路由 `/marketing/creator-challenge-program` · 不重迁）  

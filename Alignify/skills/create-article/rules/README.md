@@ -87,7 +87,7 @@
 | [internal-links.md](./internal-links.md) | 内链 + 外链 SSOT（Step 07：Part 1–2 + 按类型 3/4/4.5/5 + Part 8） |
 | [quality-checklist.md](./quality-checklist.md) | P0/P1 汇总 |
 | [product-screenshots.md](./product-screenshots.md) | Best 榜单产品截图 URL |
-| Hero / OG 美学速查 | `E:\个人知识库\设计\11-通用-Hero与插图美学参考.md`（完整 SSOT → [`knowledge/design/aesthetic-references.md`](../../../knowledge/design/aesthetic-references.md)） |
+| Hero / OG 美学速查 | `E:\个人知识库\设计-Design\首屏与插图美学参考-Hero-Illustration.md`（完整 SSOT → [`knowledge/design/aesthetic-references.md`](../../../knowledge/design/aesthetic-references.md)） |
 
 ## 章节规范
 

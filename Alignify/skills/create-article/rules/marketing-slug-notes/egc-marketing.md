@@ -1,7 +1,7 @@
 # Marketing slug 锁定说明 — `egc-marketing`
 
 > **Brief SSOT**: [`knowledge/marketing/_briefs/egc-marketing.md`](../../../../knowledge/marketing/_briefs/egc-marketing.md)  
-> **素材 SSOT**: `E:\个人知识库\增长策略\渠道分发\EGC-员工发声-AI与DevTools.md`
+> **素材 SSOT**: `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\员工发声-AI-DevTools-EGC.md`
 
 ---
 

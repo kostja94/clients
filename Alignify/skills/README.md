@@ -79,7 +79,7 @@
 | `rules/sections/` · `conclusion.md` · `final-cta.md` | [`sections.md`](./create-article/rules/sections.md) |
 | `rules/templates/` 子目录 | [`templates.md`](./create-article/rules/templates.md) |
 | `marketing-internal-links.md` | [`internal-links.md`](./create-article/rules/internal-links.md) Part 4.5 |
-| `aesthetic-hero.md` | 个人知识库 `11-通用-Hero与插图美学参考.md` |
+| `aesthetic-hero.md` | 个人知识库 `首屏与插图美学参考-Hero-Illustration.md`（`设计-Design/首屏与插图美学参考-Hero-Illustration.md`） |
 
 ---
 

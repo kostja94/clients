@@ -1,6 +1,6 @@
 ## Article Brief — wrapped-marketing
 
-**SSOT**: `E:\个人知识库\增长策略\运营节奏\Wrapped-参考.md`（唯一维护处；禁止在 `knowledge/marketing/` 建副本）
+**SSOT**: `E:\个人知识库\增长策略-Growth\运营节奏-Ops-Rhythm\年度回顾参考-Wrapped-Reference.md`（唯一维护处；禁止在 `knowledge/marketing/` 建副本）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（路由 `/blog/wrapped-marketing`）  

@@ -662,7 +662,7 @@ SWOT 或类似分析。
 *按 client-template §4.6 与 knowledge-doc-spec §3 创建/更新。*
 ```
 
-**知识库文档元数据模板**（`E:\个人知识库\`；细则以 [knowledge-doc-spec.md](../../个人知识库/knowledge-doc-spec.md) 为准；H1 下直接 `## TL;DR` 或正文第一节）：
+**知识库文档元数据模板**（`E:\个人知识库\`；细则以 [knowledge-doc-spec.md](../../../个人知识库/知识文档创建规范-Knowledge-Doc-Spec.md) 为准；H1 下直接 `## TL;DR` 或正文第一节）：
 
 ```markdown
 ## 站内关联

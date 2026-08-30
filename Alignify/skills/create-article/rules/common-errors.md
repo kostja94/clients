@@ -60,7 +60,7 @@
 | E29 | 中文英译腔 / 箭头链正文 / 先译后写 | Step 06/09：`content-locale.md` Part 3·4 + `locale-glossary.md` / `.json`；09c 对等 |
 | E30 | 英文翻译腔 / telegraphic | Step 09b：禁止逐句译 ZH；改完整句 |
 | E31 | Marketing/Blog 缺 Author POV | Brief 默认 ≥1 条；正文**任一节**内第一人称判断须显式出现（**不要求**独立 `#author-take`） |
-| E32 | 个人知识库 SSOT 重复到 knowledge/marketing | 增长策略类只在 `E:\个人知识库\增长策略\` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
+| E32 | 个人知识库 SSOT 重复到 knowledge/marketing | 增长策略类只在 `E:\个人知识库\增长策略-Growth` 维护；Alignify 侧仅 `_briefs/{slug}.md` 登记路径，**禁止** `{slug}.md` 副本 |
 | E51 | 同一产品多篇 **完整 Best H3** | 全站仅 1 篇 canonical；他文删 H3 改链回 · 见 [`product-coverage.md`](./product-coverage.md) |
 | E52 | Best H3 **>5 款**无 Brief 扩展 + 用户确认 | 新文默认 ≤5；3 款即可 Pass |
 | E33 | blog md 使用 GFM 管道表格 | 须 `childrenHtml` + `<div class="content-html"><table>…`；见 `anatomy.md` §四·一 |

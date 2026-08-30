@@ -1,6 +1,6 @@
 ## Article Brief — stealth-model-preview
 
-**SSOT**: `E:\个人知识库\增长策略\渠道分发\Stealth-Model-Preview-匿名模型预览发布.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
+**SSOT**: `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\匿名模型预览发布-Stealth-Model-Preview.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（新文路由 `/blog/stealth-model-preview`）  

@@ -5,7 +5,7 @@
 **InvestmentScore**: 4.5 — path-based composition 科普 + 与 Content-as-Code 姊妹篇 + Alignify 一手案例
 **Gate A**: KEEP
 
-**SSOT**: `E:\个人知识库\Vibe Coding\Subdirectory-Hosting-同域子目录发布.md`
+**SSOT**: `E:\个人知识库\氛围编码-Vibe-Coding\同域子目录发布-Subdirectory-Hosting.md`
 
 **User confirmed**（2026-08-27）:
 - 中文主称：**主域名下的分块建站**

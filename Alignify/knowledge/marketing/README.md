@@ -15,23 +15,23 @@
 
 **正式文章创作**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md)
 
-**外部 SSOT（个人知识库 · 唯一维护处）**：增长策略类素材**只在** `E:\个人知识库\增长策略\` 维护，**禁止**在 `knowledge/marketing/` 再建同名 `{slug}.md` 副本。Brief 与 Step 02 登记绝对路径即可。
+**外部 SSOT（个人知识库 · 唯一维护处）**：增长策略类素材**只在** `E:\个人知识库\增长策略-Growth` 维护，**禁止**在 `knowledge/marketing/` 再建同名 `{slug}.md` 副本。Brief 与 Step 02 登记绝对路径即可。
 
 | slug（Alignify 文章） | 外部 SSOT 路径 |
 |------------------------|----------------|
-| `rate-limit-reset` | `E:\个人知识库\增长策略\定价促销\Agent限额与Reset促销.md` |
-| `coding-plan` | `E:\个人知识库\增长策略\定价促销\Coding-Plan-开发者订阅.md` |
-| `lifetime-deal` | `E:\个人知识库\增长策略\定价促销\Lifetime-Deal-终身买断.md` |
-| `git-commit-attribution` | `E:\个人知识库\增长策略\产品内嵌\Git-Commit-Attribution-提交归因.md`（中文主称：**AI 提交署名**） |
-| `embedded-virality` | `E:\个人知识库\增长策略\产品内嵌\Embedded-Virality-嵌入式病毒传播.md`（中文主称：**Powered-by Badge 与付费去标**） |
-| `watermark-growth` | `E:\个人知识库\增长策略\产品内嵌\Pay-to-Remove-Watermark-付费去水印.md`（中文主称：**免费导出带 logo：AI 产品用水印做增长**；SSOT 文件名偏变现，文章主线=增长） |
-| `platform-subdomain-gating` | `E:\个人知识库\增长策略\产品内嵌\Platform-Subdomain-平台子域名门控.md`（中文主称：**平台子域增长**） |
-| `ugc-marketing` | `E:\个人知识库\增长策略\渠道分发\矩阵UGC-创作者网络.md` |
-| `creator-challenge-program` | `E:\个人知识库\增长策略\渠道分发\Creator-Challenge-AI创作者挑战赛.md` · Brief：[`_briefs/creator-challenge-program.md`](./_briefs/creator-challenge-program.md) · Skills：[`marketing-slug-notes/creator-challenge-program.md`](../../skills/create-article/rules/marketing-slug-notes/creator-challenge-program.md) |
-| `marketing-types` | `E:\个人知识库\增长策略\Marketing-Types-渠道平台与计划选型.md` · Brief：[`_briefs/marketing-types.md`](./_briefs/marketing-types.md) · Skills：[`marketing-slug-notes/marketing-types.md`](../../skills/create-article/rules/marketing-slug-notes/marketing-types.md) |
-| `egc-marketing` | `E:\个人知识库\增长策略\渠道分发\EGC-员工发声-AI与DevTools.md` · Brief：[`_briefs/egc-marketing.md`](./_briefs/egc-marketing.md) · Skills：[`marketing-slug-notes/egc-marketing.md`](../../skills/create-article/rules/marketing-slug-notes/egc-marketing.md) |
-| `wrapped-marketing` | `E:\个人知识库\增长策略\运营节奏\Wrapped-参考.md` |
-| `stealth-model-preview` | `E:\个人知识库\增长策略\渠道分发\Stealth-Model-Preview-匿名模型预览发布.md` · Brief：[`_briefs/stealth-model-preview.md`](./_briefs/stealth-model-preview.md) |
+| `rate-limit-reset` | `E:\个人知识库\增长策略-Growth\定价促销-Pricing-Promo\Agent限额与Reset促销-Agent-Limits-Reset-Promo.md` |
+| `coding-plan` | `E:\个人知识库\增长策略-Growth\定价促销-Pricing-Promo\开发者订阅-Coding-Plan.md` |
+| `lifetime-deal` | `E:\个人知识库\增长策略-Growth\定价促销-Pricing-Promo\终身买断-Lifetime-Deal.md` |
+| `git-commit-attribution` | `E:\个人知识库\增长策略-Growth\产品内嵌-Embedded\提交归因-Git-Commit-Attribution.md`（中文主称：**AI 提交署名**） |
+| `embedded-virality` | `E:\个人知识库\增长策略-Growth\产品内嵌-Embedded\嵌入式病毒传播-Embedded-Virality.md`（中文主称：**Powered-by Badge 与付费去标**） |
+| `watermark-growth` | `E:\个人知识库\增长策略-Growth\产品内嵌-Embedded\付费去水印-Pay-to-Remove-Watermark.md`（中文主称：**免费导出带 logo：AI 产品用水印做增长**；SSOT 文件名偏变现，文章主线=增长） |
+| `platform-subdomain-gating` | `E:\个人知识库\增长策略-Growth\产品内嵌-Embedded\平台子域名门控-Platform-Subdomain.md`（中文主称：**平台子域增长**） |
+| `ugc-marketing` | `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\矩阵创作者网络-Matrix-UGC-Creator-Network.md` |
+| `creator-challenge-program` | `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\创作者挑战赛-Creator-Challenge-AI.md` · Brief：[`_briefs/creator-challenge-program.md`](./_briefs/creator-challenge-program.md) · Skills：[`marketing-slug-notes/creator-challenge-program.md`](../../skills/create-article/rules/marketing-slug-notes/creator-challenge-program.md) |
+| `marketing-types` | `E:\个人知识库\增长策略-Growth\渠道平台与计划选型-Marketing-Types.md` · Brief：[`_briefs/marketing-types.md`](./_briefs/marketing-types.md) · Skills：[`marketing-slug-notes/marketing-types.md`](../../skills/create-article/rules/marketing-slug-notes/marketing-types.md) |
+| `egc-marketing` | `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\员工发声-AI-DevTools-EGC.md` · Brief：[`_briefs/egc-marketing.md`](./_briefs/egc-marketing.md) · Skills：[`marketing-slug-notes/egc-marketing.md`](../../skills/create-article/rules/marketing-slug-notes/egc-marketing.md) |
+| `wrapped-marketing` | `E:\个人知识库\增长策略-Growth\运营节奏-Ops-Rhythm\年度回顾参考-Wrapped-Reference.md` |
+| `stealth-model-preview` | `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\匿名模型预览发布-Stealth-Model-Preview.md` · Brief：[`_briefs/stealth-model-preview.md`](./_briefs/stealth-model-preview.md) |
 
 **路由（2026-08-28）**：上表增长策略专题及所有**新 marketing 文**统一发布于 **`/blog/{slug}`**（正文 `content/blog/`）；存量 `/marketing/[slug]` 仅维护不重迁（如 `lifetime-deal`）。
 

@@ -1,6 +1,6 @@
 ## Article Brief — platform-subdomain-gating
 
-**SSOT**: `E:\个人知识库\增长策略\产品内嵌\Platform-Subdomain-平台子域名门控.md`（**唯一维护处**）
+**SSOT**: `E:\个人知识库\增长策略-Growth\产品内嵌-Embedded\平台子域名门控-Platform-Subdomain.md`（**唯一维护处**）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（路由 `/blog/platform-subdomain-gating`）  

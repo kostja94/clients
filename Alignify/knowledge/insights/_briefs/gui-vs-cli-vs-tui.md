@@ -4,7 +4,7 @@
 **ArticleType**: seo-guide
 **Gate A**: KEEP
 
-**SSOT**: `E:\个人知识库\Vibe Coding\Dev-Environment-Taxonomy-开发环境术语对照.md`
+**SSOT**: `E:\个人知识库\氛围编码-Vibe-Coding\开发环境术语对照-Dev-Environment-Taxonomy.md`
 
 **Primary keyword**（ZH / EN）:
 - EN: `GUI vs CLI vs TUI for AI agents`

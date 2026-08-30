@@ -1,6 +1,6 @@
 ## Article Brief — egc-marketing
 
-**SSOT**: `E:\个人知识库\增长策略\渠道分发\EGC-员工发声-AI与DevTools.md`（**唯一维护处**）
+**SSOT**: `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\员工发声-AI-DevTools-EGC.md`（**唯一维护处**）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（**新文** `/blog/egc-marketing` · `content/blog/`）  

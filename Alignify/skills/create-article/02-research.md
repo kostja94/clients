@@ -10,7 +10,7 @@
 
 | 步骤 | 要求 |
 |------|------|
-| R1 | **优先** Brief 的 `SSOT: {绝对路径}`（如 `E:\个人知识库\增长策略\`）；**禁止**增长策略类再读/建 `knowledge/marketing/{slug}.md` 副本 + README + cannibalization |
+| R1 | **优先** Brief 的 `SSOT: {绝对路径}`（如 `E:\个人知识库\增长策略-Growth`）；**禁止**增长策略类再读/建 `knowledge/marketing/{slug}.md` 副本 + README + cannibalization |
 | R2 | primary keyword **中英**各搜 → SERP Top **5** + PAA |
 | R3 | Fetch **≥5** URL（SERP Top 3–5 + **≥2** 产品官方页） |
 | Synthesis | 三问 + **同句测试** Pass |

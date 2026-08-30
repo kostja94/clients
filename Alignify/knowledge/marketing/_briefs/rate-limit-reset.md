@@ -1,6 +1,6 @@
 ## Article Brief — rate-limit-reset
 
-**SSOT**: `E:\个人知识库\增长策略\定价促销\Agent限额与Reset促销.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
+**SSOT**: `E:\个人知识库\增长策略-Growth\定价促销-Pricing-Promo\Agent限额与Reset促销-Agent-Limits-Reset-Promo.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（路由 `/blog/rate-limit-reset`）  

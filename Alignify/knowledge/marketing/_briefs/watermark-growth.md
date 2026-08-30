@@ -1,6 +1,6 @@
 ## Article Brief — watermark-growth
 
-**SSOT**: `E:\个人知识库\增长策略\产品内嵌\Pay-to-Remove-Watermark-付费去水印.md`（**唯一维护处**；文件名偏变现轴，**文章主线=用水印做增长**）
+**SSOT**: `E:\个人知识库\增长策略-Growth\产品内嵌-Embedded\付费去水印-Pay-to-Remove-Watermark.md`（**唯一维护处**；文件名偏变现轴，**文章主线=用水印做增长**）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（路由 `/blog/watermark-growth`）  

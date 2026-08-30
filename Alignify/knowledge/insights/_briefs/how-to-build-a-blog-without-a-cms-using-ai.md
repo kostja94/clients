@@ -5,7 +5,7 @@
 **InvestmentScore**: 4.7 — 通用 how-to-build 搜索词 + 与「AI 写文章」清晰区分 + Alignify 四阶段一手 Moat + 大企业/Sanity 专章
 **Gate A**: KEEP
 
-**SSOT**: `E:\个人知识库\Vibe Coding\Content-as-Code-代码库即内容库.md`
+**SSOT**: `E:\个人知识库\氛围编码-Vibe-Coding\代码库即内容库-Content-as-Code.md`
 
 **User confirmed**（2026-08-27）:
 - 主叙事：**用 AI 构建整个博客系统**（架构 + 前端 + 设计），**不是**用 AI 写博客文章

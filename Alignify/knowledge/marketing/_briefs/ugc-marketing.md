@@ -1,6 +1,6 @@
 ## Article Brief — ugc-marketing
 
-**SSOT**: `E:\个人知识库\增长策略\渠道分发\矩阵UGC-创作者网络.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
+**SSOT**: `E:\个人知识库\增长策略-Growth\渠道分发-Distribution\矩阵创作者网络-Matrix-UGC-Creator-Network.md`（**唯一维护处**；禁止在 `knowledge/marketing/` 建副本）
 
 **QualityTier**: flagship  
 **ArticleType**: marketing-strategy（路由 `/blog/ugc-marketing`）  
