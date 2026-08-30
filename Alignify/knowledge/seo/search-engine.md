@@ -1,71 +1,58 @@
-# 搜索引擎类型 · 知识块（非线性笔记）
+# 搜索引擎类型 · 知识块
 
-**文件名与 slug**：本文件 basename `search-engine` 与站内路由 **`/search-engine`** 对齐。
+**文件名与 slug**：`search-engine` ↔ `/seo/search-engine` · `/zh/seo/search-engine`
 
-**材料范围**：[待补充]
+**材料范围**：StatCounter GlobalStats（2026-04）、Google Search Central、Bing Webmaster、Search Engine Journal / Ahrefs 行业分析；**未**将 Alignify 站内正文当作独立事实源复述。整理日期 **2026-08-30**。
 
-**规范对照**：[待补充]
+**规范对照**：[`skills/create-article/rules/meta.md`](../../skills/create-article/rules/meta.md) · [`search-engine.plan.md`](./search-engine.plan.md)
 
-以下条目可任意顺序阅读；**不是**文章体例。
+**站内文章对照**：[alignify.co/seo/search-engine](https://alignify.co/seo/search-engine) · `content/seo/{en,zh}/search-engine.md`
 
----
-
-**词汇锚点**
-
-[待补充]
+**本分册说明**：[seo/README.md](./README.md) · 分类：入门与学习
 
 ---
 
-**专题对照 / 扩展定义**
+## 与相邻 slug 分流
 
-[待补充]
-
----
-
-**问题域（为何会出现这类产品）**
-
-[待补充]
-
----
-
-**能力栈（概念拆分，非厂商功能表）**
-
-[待补充]
+| slug | 关系 |
+|------|------|
+| `how-search-engine-works` | 本文 = 品类地图；彼文 = 爬取→索引→呈现流水线 |
+| `local-search-engines` | 本文 = 全球四引擎 + bridge；彼文 = 22 款区域/特色引擎卡片 |
+| `tools/search-engine` | 本文 = AI 三形态概览；彼文 = AI 搜索产品深评 |
+| `tools/web-search-api` | 本文 = 基础设施对照表；彼文 = API 选型与 RAG 接入 |
+| `marketing/geo` | 本文 = 被引用 vs 被排名；彼文 = GEO 战术 |
 
 ---
 
-**形态谱系（与具体品牌解耦）**
+## 词汇锚点
 
-[待补充]
-
----
-
-**风险 · 合规**
-
-[待补充]
-
----
-
-**落地碎片（无先后）**
-
-[待补充]
+- **通用搜索引擎**：自建全网索引，面向通用查询（Google、Bing）
+- **区域门户搜索**：本土市场主导 + 自有内容生态（百度、Naver）
+- **隐私 / syndicated 搜索**：少追踪；索引常依赖 Bing API（DuckDuckGo）或自建（Brave）
+- **AI 原生 / SERP+AI**：答案合成 vs 经典蓝链 + 摘要层
+- **syndication（下游授权）**：Bing 索引授权给第三方产品
+- **Web Search API**：程序化检索接口，Agent/RAG 上游
 
 ---
 
-**工具与产品类型（检索里常混在一起的品类；非穷尽）**
+## 问题域
 
-[待补充]
-
----
-
-**外链索引（检索整理；非广告、无排序优先级）**
-
-### 对比与测评（第三方；观点非官方）
-
-[待补充]
+1. 「搜索引擎 = Google」认知惯性 → 国际化 SEO 失效  
+2. 市场份额数据黑箱 → 须按国家看趋势  
+3. AI 搜索冲击零点击与 citation 逻辑  
+4. 隐私引擎依赖 Bing 的悖论  
+5. 搜索引擎 API 基础设施化（Agent 受众）
 
 ---
 
-**延伸阅读与参考材料**
+## 外链索引
 
-[待补充]
+| 名称 | URL |
+|------|-----|
+| StatCounter 市场份额 | https://gs.statcounter.com/search-engine-market-share |
+| Google Search Central | https://developers.google.com/search |
+| Bing Webmaster | https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a |
+
+---
+
+*Brief：[`_briefs/search-engine.md`](./_briefs/search-engine.md) · 重构 2026-08-30*

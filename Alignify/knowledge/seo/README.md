@@ -35,7 +35,7 @@
 |------|------|------|
 | [learn-seo.md](./learn-seo.md) | ✅ 完整 | 如何学习 SEO：路径、信源分层与资源索引 |
 | [how-search-engine-works.md](./how-search-engine-works.md) | ✅ 完整 | 搜索引擎三阶段工作原理：爬取、索引、结果呈现 |
-| [search-engine.md](../tools/search-geo/search-engine.md) | 🔲 待补充 | 搜索引擎类型与市场份额 |
+| [search-engine.md](./search-engine.md) | ✅ 完整 | 全球搜索引擎版图：七型类型学、份额数据源、AI 三形态、2026 行业注记 |
 | [local-search-engines.md](./local-search-engines.md) | ✅ 完整 | 本地化与特色搜索引擎：区域引擎与垂直品类 |
 | [glossary.md](./glossary.md) | 🔲 待补充 | SEO 术语表 |
 | [checklist.md](./checklist.md) | ✅ 完整 | SEO Checklist（技术 + On-page + 发布前） |
