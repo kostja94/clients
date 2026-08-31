@@ -43,3 +43,9 @@
 **Skills**: [`marketing-slug-notes/egc-marketing.md`](../../skills/create-article/rules/marketing-slug-notes/egc-marketing.md)
 
 **Audit**: Batch 4 内链出链 + 入链回写（rate-limit-reset, ugc-marketing, x-formerly-twitter, marketing-types）
+
+**ZH Locale Pass**（2026-08-31）:
+- [x] 术语节 `{#terminology-layers}` · 表前桥接 · 侧车同步
+- [x] audit-locale-voice PASS · audit-marketing-md-render PASS
+- 改前 en/han ratio: ~33.8% → 改后: ~21.4%（prose 区，去表）
+- 备注: 二次收尾 2026-08-31——度量节/FAQ/meta 对齐、案例赋值体改写、口吻记忆/帮助中心收术语节
