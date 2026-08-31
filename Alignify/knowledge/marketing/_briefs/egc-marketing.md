@@ -51,4 +51,4 @@
 - [x] Hero 四件套：frontmatter · blog-meta · tldr · cta-config 中文对齐
 - [x] audit-locale-voice PASS · audit-marketing-md-render PASS
 - 改前 en/han ratio: ~33.8% → 改后: ~21.4%（prose 区，去表）
-- 备注: 二次收尾 2026-08-31——度量节/FAQ/meta 对齐、案例赋值体改写、E37 伪列表段（**X**/**招牌声音选型** 等）改 prose
+- 备注: 三次通读 2026-08-31——节号（第二节→第三节）、Tibo 原帖指向、标题回 Brief 锁定 A；reset/quota/Usage/HR 英混清理；TLDR/FAQ 同步
