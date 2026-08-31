@@ -18,6 +18,7 @@
 | [clink-competitors.md](./clink-competitors.md) | Stripe/Paddle/Chargebee 等 |
 | [clink-site-structure.md](./clink-site-structure.md) | URL、导航、**文档站 IA**、阶段规划 |
 | [clink-growth-strategy.md](./clink-growth-strategy.md) | 增长与内容战役 |
+| [TASKS.md](./TASKS.md) | **任务看板**（P0–P2 执行跟踪） |
 
 ---
 
