@@ -46,6 +46,9 @@
 
 **ZH Locale Pass**（2026-08-31）:
 - [x] 术语节 `{#terminology-layers}` · 表前桥接 · 侧车同步
+- [x] 渠道矩阵 `#channel-matrix`：⭐ 伪列表 → childrenHtml 表 + 表后 prose
+- [x] 内链 R4：6 条出链各 1 次（marketing-types / ugc / creator-challenge / rate-limit-reset / x-formerly-twitter / creator-program）
+- [x] Hero 四件套：frontmatter · blog-meta · tldr · cta-config 中文对齐
 - [x] audit-locale-voice PASS · audit-marketing-md-render PASS
 - 改前 en/han ratio: ~33.8% → 改后: ~21.4%（prose 区，去表）
-- 备注: 二次收尾 2026-08-31——度量节/FAQ/meta 对齐、案例赋值体改写、口吻记忆/帮助中心收术语节
+- 备注: 二次收尾 2026-08-31——度量节/FAQ/meta 对齐、案例赋值体改写、E37 伪列表段（**X**/**招牌声音选型** 等）改 prose
