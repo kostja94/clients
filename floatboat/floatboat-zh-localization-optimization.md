@@ -74,7 +74,7 @@
 
 ### 3.1 技术根因：i18n 只做了路由壳
 
-当前架构推断（基于 `floatboat-page-composition-guide.md` 与 live 行为）：
+当前架构推断（基于 `_archive/floatboat-page-composition-guide.md`（已归档）与 live 行为）：
 
 ```
 用户访问 /zh/{path}
@@ -251,7 +251,7 @@ interface PageLocaleBundle {
   seo: { title: string; description: string; h1: string }; // h1 必为中文（品牌 FloatIM 等例外）
   hero: { title: string; subtitle: string; cta: string };
   featureCarousel: CarouselItem[];  // 4–8 张，每张 40–90 词 equivalent 中文字数
-  useCasesGrid: UseCaseItem[];      // 4 张，按 §floatboat-page-composition-guide
+  useCasesGrid: UseCaseItem[];      // 4 张，按 §floatboat-site-structure（原 page-composition-guide 已归档）
   howItWorks: StepItem[];           // 严格 3 步
   comparisonTable?: ComparisonRow[]; // 若有，竞品列本地化
   faqs: FaqItem[];                  // 恰好 6 条
@@ -652,7 +652,7 @@ python zh_audit_probe.py
 - [Google hreflang 指南](https://developers.google.com/search/docs/specialty/international/localized-versions)
 - `floatboat/site-seo-geo-audit/references/zh-ecosystem.md`
 - `floatboat/floatboat-keywords.md` §0 语言策略
-- `floatboat/floatboat-page-composition-guide.md` §10 内容下沉 DB
+- `floatboat/_archive/floatboat-page-composition-guide.md` §10 内容下沉 DB（已归档，仅供回溯）
 
 ---
 

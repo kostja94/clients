@@ -1,5 +1,7 @@
 # 页面搭建指南：以 Floatboat 产品页为例
 
+> **已归档**（2026-09-01）→ 见 [_archive/README.md](./README.md)。活跃路由与页面清单以 [floatboat-site-structure.md](../floatboat-site-structure.md) 为准。
+
 面向内部同事与 agent，讲清楚我们如何用「共享 block + 每页定制的内容组件」的方式搭一个新的 Floatboat landing page，并保持整站的结构、SEO、内链与品牌一致性。
 
 配套阅读：`docs/BRAND_GUIDELINES.md`（视觉/排版/间距的唯一真源）、`docs/blog-article-redesign.md`（博客文章迁移指南）。

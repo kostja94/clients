@@ -13,13 +13,20 @@ blog/
 │
 ├── Updates/                           ← Floatboat 产品更新 / 功能公告
 │   ├── 01-introducing-floatim-2026.md
-│   ├── 31-gpt-5-6-floatboat.md
 │   ├── 33-kimi-k3-floatboat.md
 │   ├── 34-vibe-coding-one-prompt-html-game.md
 │   └── 56-introducing-flow-mode.md
 ├── openai/                            ← OpenAI 簇（主分类 OpenAI）
 │   ├── 30-gpt-5-6-sol-terra-luna.md
+│   ├── 31-gpt-5-6-floatboat.md
 │   └── 57-codex-harness-open-source.md
+├── voice/                             ← Voice × Agent 簇
+│   ├── 58-what-is-voice-dictation-for-ai-agents.md
+│   ├── 59-voice-mode-vs-dictation-for-ai-agents.md
+│   ├── 60-best-voice-dictation-for-ai-agents.md
+│   ├── 70-chatgpt-voice-mode-vs-dictation.md
+│   ├── 73-what-is-a-voice-agent.md
+│   └── 75-voice-agent-vs-voice-dictation-for-work.md
 ├── 02-ai-scheduling-agent.md
 ├── 03-what-is-agentic-calendar.md
 ├── 04-calendar-driven-ai-vs-chat-ai.md
@@ -32,7 +39,9 @@ blog/
 ├── 45-what-is-minimax-h3.md
 ├── 51-grok-4-6.md
 ├── 53-grok-bot.md
-│
+├── 54-glm-5-3.md
+├── 55-gemini-3-7-flash.md
+├── 61-minimax-h3-max-infinite-ai-livestream.md
 ├── claude/                            ← Claude 产品簇（主分类 Claude）
 │   ├── 35-what-is-claude-cowork.md
 │   ├── 36-best-claude-cowork-alternatives.md
@@ -116,7 +125,9 @@ Phase 6 — Delivery             (portable/final-audit 终审指令)
 
 **工具先跑**：Gate C 前执行 `tools/` 下三个 Python 脚本（见 [tools/README.md](./skills/floatboat-blog-article/tools/README.md)）。
 
-新文章文件序号：当前下一号为 **58**（见 `references/content-graph.md` §1）。成稿后请更新下方「博客文章」表。
+**落盘规则**：成稿仅写入 `floatboat/blog/[{cluster}/]NN-{slug}.md`。**禁止**创建 `blog/schema/`（已删除）；Source Map、SelfCheck 等辅助交付物仅在对话中输出，不写入仓库。
+
+新文章文件序号：当前下一号为 **62**（见 `skills/floatboat-blog-article/references/content-graph.md` §1）。成稿后请更新下方「博客文章」表。
 
 ---
 
@@ -144,6 +155,8 @@ Phase 6 — Delivery             (portable/final-audit 终审指令)
 | 53 | [53-grok-bot.md](./53-grok-bot.md) | `grok-bot` | Research | ~2.3k | ✅ | Grok Bot：云电脑架构 + 安全边界争议 + Cursor 绑定 |
 | 54 | [54-glm-5-3.md](./54-glm-5-3.md) | `glm-5-3` | Research | ~3.1k | ✅ | GLM-5.3：后训练 Scaling + 网安涌现 + 定价/生态 |
 | 55 | [55-gemini-3-7-flash.md](./55-gemini-3-7-flash.md) | `gemini-3-7-flash` | Research | ~3.2k | ✅ | Gemini 3.7 Flash：三周迭代 + 半价促销 + Floatboat 接入 |
+| 61 | [61-minimax-h3-max-infinite-ai-livestream.md](./61-minimax-h3-max-infinite-ai-livestream.md) | `minimax-h3-max-infinite-ai-livestream` | Research | ~2.4k | 📝 | H3 Max Live：快于播放 + Twitch 无限 AI 直播 + 成本/平台 |
+| 45 | [45-what-is-minimax-h3.md](./45-what-is-minimax-h3.md) | `what-is-minimax-h3` | Research | ~3.0k | ✅ | MiniMax H3 开源 omni-modal 视频模型 Hub |
 | 41 | [41-what-is-deepseek-agent.md](./deepseek/41-what-is-deepseek-agent.md) | `what-is-deepseek-agent` | DeepSeek/Research | ~3.4k | ✅ | DeepSeek Agent 定义 Hub：四类 Agent 形态 + 选型 |
 | 42 | [42-how-to-build-deepseek-agent.md](./deepseek/42-how-to-build-deepseek-agent.md) | `how-to-build-deepseek-agent` | DeepSeek/Product | ~1.9k | ✅ | API Key 到首个 Agent：loop / tool calling / production 模式 |
 | 43 | [43-deepseek-agent-function-calling.md](./deepseek/43-deepseek-agent-function-calling.md) | `deepseek-agent-function-calling` | DeepSeek/Product | ~2.1k | ✅ | 函数调用实操：schema / strict mode / 并行 / MCP |
@@ -296,13 +309,14 @@ Phase 6 — Delivery             (portable/final-audit 终审指令)
               └────────────────────┘
 ```
 
-**发布节奏**：41 (08-04) → 42 (08-05) → 43 (08-06) → 44 (08-07) → 46 (08-10) → 50 (08-16) · 45（MiniMax H3）为独立 Model 单篇，保留根目录
+**发布节奏**：41 (08-04) → 42 (08-05) → 43 (08-06) → 44 (08-07) → 46 (08-10) → 50 (08-16) · 45（MiniMax H3 Hub）→ 61（H3 Max Live Spoke，2026-09-01）
 
 ### Model 单篇（根目录模型文）
 
 | NN | slug | 模型/产品 | 说明 |
 |----|------|----------|------|
-| 45 | `what-is-minimax-h3` | MiniMax H3 | 开源 omni-modal 视频模型（独立单篇） |
+| 45 | `what-is-minimax-h3` | MiniMax H3 | 开源 omni-modal 视频模型 Hub |
+| 61 | `minimax-h3-max-infinite-ai-livestream` | MiniMax H3 Max Live | fal 后训练 H3 Max + 无限 AI 直播实验（Spoke → 45） |
 | 51 | `grok-4-6` | Grok 4.6 | xAI agentic frontier model；与 50 同日对照桥 |
 | 53 | `grok-bot` | Grok Bot | xAI agent 产品；云电脑架构 + 安全模型；与 52 双向对照桥 |
 | 54 | `glm-5-3` | GLM-5.3 | 智谱后训练 Scaling 旗舰；开源第一 + 网安涌现；与 55 对照桥 |
@@ -395,5 +409,5 @@ articleFormat: "Ranking | Listing | HeadToHead | —"  # best/top 多竞品文�
 | [../floatboat-use-cases.md](../floatboat-use-cases.md) | 5 层受众、solopreneur/solo founder 语言策略 |
 | [../floatboat-site-structure.md](../floatboat-site-structure.md) | URL 路由、结构化数据、内链规划 |
 | [../floatboat-obsidian.md](../floatboat-obsidian.md) | Obsidian 落地页方案 |
-| [../floatboat-page-composition-guide.md](../floatboat-page-composition-guide.md) | Landing 搭建规范 |
+| [../floatboat-site-structure.md](../floatboat-site-structure.md) | 正式站路由与 Landing 结构 |
 | [../_archive/floatboat-world-cup-blog-plan-30.md](../_archive/floatboat-world-cup-blog-plan-30.md) | （归档）世界杯 30 篇博客规划 |

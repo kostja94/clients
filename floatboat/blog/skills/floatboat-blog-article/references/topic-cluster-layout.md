@@ -49,6 +49,7 @@ Phase 2 Gate B 校验：
 | `claude/` | Claude Cowork / Tag / Code |
 | `deepseek/` | DeepSeek Agent / Harness |
 | `openai/` | OpenAI 模型族 / Codex Harness |
+| `voice/` | Voice × Agent（dictation / voice agent） |
 | `worldcup/` | World Cup 2026 |
 | `Updates/` | 产品公告与内置能力 |
 | *(根目录)* | Scheduling Agent 02–07、Model 单篇等 |

@@ -110,7 +110,8 @@
 
 | slug | 集群角色 | 应链向 | 应被链自 |
 |------|---------|-------|---------|
-| `what-is-minimax-h3` (45) | Standalone | —（按 context） | 51 |
+| `what-is-minimax-h3` (45) | MiniMax H3 Hub | 61 | 51, 61 |
+| `minimax-h3-max-infinite-ai-livestream` (61) | H3 Max Live Spoke | 45, 34 | 45 |
 | `grok-4-6` (51) | Standalone（对照枢纽） | 45, 41, 50 | 50 |
 | `grok-bot` (53) | Standalone（agent 产品） | 51, 52, 41 | 52 |
 | `glm-5-3` (54) | Standalone（Model 单篇） | 55, 50, 41 | 55 |
@@ -122,6 +123,20 @@
 |------|---------|-------|---------|
 | `deepseek-v4-pro-0813` (50) ↔ `grok-4-6` (51) | 同日对照桥 | 双向互链（§6/§5 已实现） | 双向互链 |
 | `glm-5-3` (54) ↔ `gemini-3-7-flash` (55) | 24h 内双模型对照桥 | 双向互链（§6/§6 已实现） | 双向互链 |
+
+### 3.11 Voice × Agent 簇（`voice/` · 2026-09）
+
+| slug | 集群角色 | 应链向 | 应被链自 |
+|------|---------|-------|---------|
+| `what-is-voice-dictation-for-ai-agents` (58) | **Hub** | 59, 60, 70, 73, 75, 56, 04 | 59, 60, 70, 73, 75, 56 |
+| `voice-mode-vs-dictation-for-ai-agents` (59) | Spoke (范式) | 58, 73, 70, 75, 56 | 58, 60, 70, 73, 75 |
+| `best-voice-dictation-for-ai-agents` (60) | Spoke (Ranking) | 58, 59, 56 | 58, 75 |
+| `chatgpt-voice-mode-vs-dictation` (70) | Spoke (Comparison) | 58, 59, 73, 56 | 58, 59, 73 |
+| `what-is-a-voice-agent` (73) | Spoke (Glossary) | 58, 59, 75, 56, 70 | 58, 59, 70, 75 |
+| `voice-agent-vs-voice-dictation-for-work` (75) | Spoke (范式) | 58, 59, 73, 60, 56 | 58, 59, 73 |
+| `introducing-flow-mode` (56) | 产品公告（Updates） | 58, 04, 06, 07 | 58–60, 70, 73, 75 |
+
+**R4 提醒**：Ranking 60 对 `introducing-flow-mode` / Hub / 59 各仅保留 **1** 条 `<a>`；FAQ 不加内链。
 
 ---
 

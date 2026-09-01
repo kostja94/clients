@@ -7,7 +7,7 @@
 > **创始人**：谭少卿（Tan Shaoqing）| **成立**：2025-11  
 > **融资**：种子轮 ~$2M，红杉中国（HongShan）种子基金 + 微光创投（Weiguang Ventures），2026-03
 
-**关联**：[README.md](./README.md) · [floatboat-features.md](./floatboat-features.md) · [floatboat-keywords.md](./floatboat-keywords.md) · [floatboat-competitors.md](./floatboat-competitors.md) · [floatboat-use-cases.md](./floatboat-use-cases.md) · [floatboat-site-structure.md](./floatboat-site-structure.md) · [floatboat-skills-ecosystem.md](./floatboat-skills-ecosystem.md) · [floatboat-obsidian.md](./floatboat-obsidian.md) · [floatboat-page-composition-guide.md](./floatboat-page-composition-guide.md)
+**关联**：[README.md](./README.md) · [floatboat-features.md](./floatboat-features.md) · [floatboat-keywords.md](./floatboat-keywords.md) · [floatboat-competitors.md](./floatboat-competitors.md) · [floatboat-use-cases.md](./floatboat-use-cases.md) · [floatboat-site-structure.md](./floatboat-site-structure.md) · [floatboat-skills-ecosystem.md](./floatboat-skills-ecosystem.md) · [floatboat-obsidian.md](./floatboat-obsidian.md)
 
 **文档阅读顺序建议**：
 1. 本文（全局定位 + 策略摘要）
@@ -17,9 +17,9 @@
 5. [floatboat-use-cases.md](./floatboat-use-cases.md)（人群与场景）
 6. [floatboat-site-structure.md](./floatboat-site-structure.md)（路由实施）
 7. [floatboat-skills-ecosystem.md](./floatboat-skills-ecosystem.md)（Skills 专项）
-8. [floatboat-page-composition-guide.md](./floatboat-page-composition-guide.md) / [floatboat-obsidian.md](./floatboat-obsidian.md)（落地页）
+8. [floatboat-obsidian.md](./floatboat-obsidian.md)（落地页）
 
-**Last updated**: 2026-07-28（归档 world-cup blog plan、directory-submission；删除 brand-visual）
+**Last updated**: 2026-09-01（归档 page-composition-guide；此前 2026-07-28 归档 world-cup blog plan、directory-submission；删除 brand-visual）
 
 ---
 
@@ -183,4 +183,3 @@ Floatboat is the proactive agent OS where your calendar becomes the runtime — 
 | FloatIM | 分布见 [floatboat-features.md](./floatboat-features.md) §1.5 / [floatboat-competitors.md](./floatboat-competitors.md) §2.4 / [floatboat-keywords.md](./floatboat-keywords.md) §6 / [floatboat-use-cases.md](./floatboat-use-cases.md) §7 |
 | [floatboat-skills-ecosystem.md](./floatboat-skills-ecosystem.md) | Skills 生态：Combo Store 优化、Leaderboard、提交、比赛、Agent Skill Creator |
 | [floatboat-obsidian.md](./floatboat-obsidian.md) | Floatboat for Obsidian 落地页 + Integrations |
-| [floatboat-page-composition-guide.md](./floatboat-page-composition-guide.md) | Landing 页面搭建规范 |

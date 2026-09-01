@@ -6,7 +6,7 @@ description: >
   Score, Phase 0R, Ranking vs Comparison routing, Topic Scope, cluster folders
   (claude/deepseek/openai/worldcup/Updates), tools/ validators, portable/ audit.
 metadata:
-  version: 5.1.0
+  version: 5.1.1
   project: floatboat.ai
   locale: en
   self-contained: true
@@ -70,16 +70,16 @@ Topic Scope：{scheduling-agent|floatim|combo-skills}
 |---|--------|:----:|:--------:|:--------:|
 | 1 | Article Brief | ✅ | ✅ | ✅ |
 | 2 | Research Log（R1–R3 + Synthesis） | 简 | ✅ | ✅ |
-| 3 | 成稿 `floatboat/blog/[{cluster}/]NN-{slug}.md`（NN **58**） | ✅ | ✅ | ✅ |
+| 3 | 成稿 `floatboat/blog/[{cluster}/]NN-{slug}.md`（NN **62**） | ✅ | ✅ | ✅ |
 | 4 | SelfCheck（H0–H4 + 12 维） | ✅ | ✅ | ✅ |
-| 5 | Source Map | ✅ | ✅ | ✅ |
+| 5 | Source Map | ✅ | ✅ | ✅ | **仅对话交付**，不写入仓库 |
 | 6 | SERP Fit | 简 | ✅ | ✅ |
 | 7 | Internal Link Plan | — | ✅ | ✅ |
 | 8 | 终审指令（`references/portable/final-audit.md`） | ✅ | ✅ | ✅ |
 | 9 | Post-publish Metric Spec | — | ✅ | ✅ |
 | 10 | 提示人类更新 `blog/README.md` | ✅ | ✅ | ✅ |
 
-**禁止单独生成**：`blog/schema/*.json` · `blog/images/` · ItemList JSON-LD 文件。
+**禁止创建或写入**：`blog/schema/` 目录（已删除，2026-09-01）· `blog/images/` · ItemList JSON-LD 文件。
 
 与用户沟通可用中文；**正文必须为英文**。
 
@@ -103,7 +103,7 @@ Topic Scope：{scheduling-agent|floatim|combo-skills}
 | **blogLayout** | **cluster-folders**（见 §4 + `content-graph.md` §1B） |
 | **博客前缀** | `/blog/`（slug kebab-case，**不含**子目录前缀） |
 | **Pillar Hub** | `what-is-agentic-calendar` |
-| **下一序号 NN** | **58**（见 `content-graph.md` §1） |
+| **下一序号 NN** | **62**（见 `content-graph.md` §1） |
 | **品类表述** | *The Proactive Agent OS that Runs Work from the Calendar* |
 | **受众** | solopreneur / solo founder |
 | **署名默认** | `Floatboat`；Research 优先 `Tan Shaoqing` |
@@ -329,8 +329,8 @@ python blog/skills/floatboat-blog-article/tools/link_checker.py blog/{path} --fo
 
 ### Phase 6 — Delivery
 
-1. 写入 `floatboat/blog/[{cluster}/]NN-{slug}.md`
-2. Brief + SelfCheck + Source Map + SERP Fit + Internal Link Plan
+1. 写入 `floatboat/blog/[{cluster}/]NN-{slug}.md`（**仅此一篇**落盘）
+2. Brief + SelfCheck + Source Map + SERP Fit + Internal Link Plan（Source Map 等在对话中交付，**禁止**写入 `blog/schema/`）
 3. **终审指令**：
 
 ```
@@ -374,6 +374,7 @@ python blog/skills/floatboat-blog-article/tools/link_checker.py blog/{path} --fo
 | worldcup | `worldcup/` | world-cup-2026-guide | **World Cup** + secondaryCategory |
 | model-singles | *(root)* | — | Research / Product |
 | obsidian | *(root)* | what-is-obsidian-vault | Research / Product |
+| voice-agent | `voice/` | what-is-voice-dictation-for-ai-agents | Research / Comparison |
 
 **双分类示例（claude/ 内）**：
 
@@ -415,7 +416,8 @@ articleFormat: "Ranking"   # Ranking 文必填
 - ❌ 混用 Topic Scope 禁混词（Scheduling 文写 FloatIM P0 词）
 - ❌ slug 含子目录前缀 · 内链写 `/blog/claude/...`
 - ❌ FloatIM 与 Floatboat 桌面工作区混为一谈
-- ❌ 生成 `blog/schema/*.json`
+- ❌ 创建或写入 `blog/schema/`（目录已删除；Source Map 仅对话交付）
+- ❌ 生成 ItemList JSON-LD 文件
 - ❌ Gate 未 Pass 交付 · 一次加载全部 references · 读 skill 文件夹外文档
 - ❌ 旧触发语要求加载 blog-create L0
 
@@ -425,6 +427,7 @@ articleFormat: "Ranking"   # Ranking 文必填
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| **5.1.1** | 2026-09-01 | 删除 `blog/schema/` 目录；Source Map 改为仅对话交付；禁止重建 schema 目录 |
 | **5.1.0** | 2026-08-24 | **客户交付自包含版**：`self-contained: true`；完整 9 Phase 内联；topic-cluster-layout 内置；终审用 portable/final-audit；NN→58；撤销 L0 外部依赖 |
 | 5.0.0 | 2026-08-23 | 路线 A 试验（L0+L1，已废弃） |
 | 4.0.0 | 2026-07-31 | SelfCheck 内联 |
@@ -432,4 +435,4 @@ articleFormat: "Ranking"   # Ranking 文必填
 
 ---
 
-*floatboat-blog-article · v5.1.0 · 2026-08-24 · self-contained*
+*floatboat-blog-article · v5.1.1 · 2026-09-01 · self-contained*

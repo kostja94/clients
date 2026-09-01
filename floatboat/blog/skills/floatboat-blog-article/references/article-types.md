@@ -120,7 +120,7 @@
 - 每个排名 H3 以 **`### {n}. {Product} — Best for {job shape}`** 开头
 - **#1 产品** 必须写 ≥1 个「不适合」场景（同 Alternative §4.1 规则）
 - 被替代产品放在表格 **reference row**（`—` rank），不单列第一名之上
-- **勿**生成 `@type: ItemList` 的 `blog/schema/*.json`（schema 交付已停用；见 `floatboat-blog-schema.md` 归档说明）
+- **勿**生成 `@type: ItemList` JSON-LD 文件（schema 交付已停用；`blog/schema/` 目录已删除，见 `floatboat-blog-schema.md`）
 - TL;DR 第二条 bullet 声明 **ranked listing / ranked by job fit**
 
 **Floatboat 出现方式**：按 job shape 排 #1（如 FloatIM 于 Tag 簇、Floatboat 于 Cowork 簇）；全文禁「drop-in replacement」除非 FAQ 明确否定。

@@ -1,7 +1,7 @@
 # Extractability 检查（Draft 阶段）
 
 > Phase 4 使用。覆盖 **BLUF · Claim 原子性 · Judgment**——人类 SEO 与 LLM 摘录共用。  
-> **Schema JSON-LD 文件已停用**：不在此清单要求 Agent 产出 `blog/schema/*.json`。  
+> **Schema JSON-LD 与 `blog/schema/` 目录已停用并删除（2026-09-01）**：不在此清单要求 Agent 产出 JSON-LD 或向仓库写入 Source Map 文件。  
 > 与 `06-research` §6.1 IG-3、SelfCheck §5.3–§5.4 一致。**随 skill 分发。**
 
 ---
@@ -46,7 +46,8 @@ Draft 前对照 Synthesis one-line thesis：是在 **paraphrase Top3**，还是�
 
 | 层级 | 要求 |
 |------|------|
-| **Agent** | **禁止**写入 `floatboat/blog/schema/{slug}.json` |
+| **Agent** | **禁止**创建或写入 `floatboat/blog/schema/`（目录已删除） |
+| **Source Map 等** | Phase 6 仅在对话中交付，不写入仓库 |
 | **正文** | 仍须写好可抽取的 FAQ / 步骤（站点若注入 JSON-LD，可从正文对齐） |
 | **站点** | 结构化数据由 CMS / 站点侧处理 |
 

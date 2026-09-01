@@ -1,7 +1,7 @@
 # Floatboat Content Graph — Published & Draft Articles
 
 > 加载时机：Phase 0（冲突检查）· Phase 1（KEEP/MERGE）· Phase 2（路径/日期）· Phase 5.5
-> 主文件：SKILL.md §4 · 下一序号：**58**
+> 主文件：SKILL.md §4 · 下一序号：**62**（voice 簇 62–69/71–72/74 预留）
 
 ---
 
@@ -45,14 +45,21 @@
 | 19 | worldcup/19-world-cup-2026-schedule-usa.md | world-cup-2026-schedule-usa | World Cup/Reference/Product | 可发布 | USA Schedule & Match Reminders — P11 |
 
 | 30 | openai/30-gpt-5-6-sol-terra-luna.md | gpt-5-6-sol-terra-luna | OpenAI/Research | 可发布 | GPT-5.6 Sol Terra Luna model family |
-| 31 | Updates/31-gpt-5-6-floatboat.md | gpt-5-6-floatboat | Product | 可发布 | GPT-5.6 built into Floatboat |
+| 31 | openai/31-gpt-5-6-floatboat.md | gpt-5-6-floatboat | OpenAI/Product | 可发布 | GPT-5.6 built into Floatboat |
 | 32 | 32-kimi-k3-open-frontier-model.md | kimi-k3-open-frontier-model | Research | 可发布 | Kimi K3 open frontier model |
 | 33 | Updates/33-kimi-k3-floatboat.md | kimi-k3-floatboat | Product | 可发布 | Kimi K3 built into Floatboat |
 | 34 | Updates/34-vibe-coding-one-prompt-html-game.md | vibe-coding-one-prompt-html-game | Product | 可发布 | vibe coding, one prompt HTML game |
 | 56 | Updates/56-introducing-flow-mode.md | introducing-flow-mode | Features/Announcement | 草稿 | Floatboat Flow Mode — AI voice dictation |
 | 57 | openai/57-codex-harness-open-source.md | codex-harness-open-source | OpenAI/Research | 草稿 | Codex Harness open platform — Hub |
+| 58 | voice/58-what-is-voice-dictation-for-ai-agents.md | what-is-voice-dictation-for-ai-agents | Research/Glossary | 草稿 | voice dictation for AI agent — Hub |
+| 59 | voice/59-voice-mode-vs-dictation-for-ai-agents.md | voice-mode-vs-dictation-for-ai-agents | Research | 草稿 | voice mode vs dictation |
+| 60 | voice/60-best-voice-dictation-for-ai-agents.md | best-voice-dictation-for-ai-agents | Comparison/Ranking | 草稿 | best voice dictation for AI agents |
+| 70 | voice/70-chatgpt-voice-mode-vs-dictation.md | chatgpt-voice-mode-vs-dictation | Comparison | 草稿 | ChatGPT voice mode vs dictation |
+| 73 | voice/73-what-is-a-voice-agent.md | what-is-a-voice-agent | Research/Glossary | 草稿 | what is a voice agent |
+| 75 | voice/75-voice-agent-vs-voice-dictation-for-work.md | voice-agent-vs-voice-dictation-for-work | Research | 草稿 | voice agent vs voice dictation for work |
+| 61 | 61-minimax-h3-max-infinite-ai-livestream.md | minimax-h3-max-infinite-ai-livestream | Research | 草稿 | MiniMax H3 Max live stream — infinite AI broadcast |
 
-**下一序号：58**（World Cup 系列 P03–P08/P12–P21 待写，11–16/20–29 预留；41–44/46/50/52 为 DeepSeek 簇（`deepseek/`），45/51/53–55 为 Model 单篇保留根目录；Updates/ 为产品公告；openai/ 为 OpenAI 簇）
+**下一序号：62**（voice 簇 62–69/71–72/74 预留；World Cup P03+ 待写；41–44/46/50/52 DeepSeek；45/51/53–55/61 Model 单篇）
 
 ---
 
@@ -64,15 +71,16 @@
 | Cluster ID | folder | Hub slug | 主 category | 说明 |
 |------------|--------|----------|-------------|------|
 | scheduling-agent | *(root)* | what-is-agentic-calendar | Research / Product / Comparison | 02–07 等根目录 |
-| updates | `Updates/` | introducing-floatim | Product / Features | 01, 31, 33, 34, 56 产品公告与内置能力 |
+| updates | `Updates/` | introducing-floatim | Product / Features | 01, 33, 34, 56 产品公告与内置能力 |
 | floatim | `Updates/` | introducing-floatim | Product | 01（FloatIM 公告） |
 | claude | `claude/` | what-is-claude-cowork | Claude + secondaryCategory | 35–38, 47–49 |
 | deepseek | `deepseek/` | what-is-deepseek-agent | DeepSeek + secondaryCategory | 41–44, 46, 50, 52 |
-| openai | `openai/` | codex-harness-open-source | OpenAI + secondaryCategory | 30, 57；GPT-5.6 模型族 + Codex Harness |
+| openai | `openai/` | codex-harness-open-source | OpenAI + secondaryCategory | 30, 31, 57；GPT-5.6 模型族 + Codex Harness |
 | worldcup | `worldcup/` | world-cup-2026-guide | World Cup + secondaryCategory | 09–10, 17–19 |
-| model-singles | *(root)* | — | Research | 45, 51, 53–55 单篇 |
+| model-singles | *(root)* | what-is-minimax-h3 | Research | 45, 51, 53–55, 61；45↔61 H3 / H3 Max Live 对 |
 | obsidian | *(root)* | what-is-obsidian-vault | Research / Product | 39–40 |
 | model-release | *(root)* | — | Research / Product | 32, 54–55 等（不含 openai/、Updates/） |
+| voice-agent | `voice/` | what-is-voice-dictation-for-ai-agents | Research / Comparison | 58–60, 70, 73, 75；Hub 58；链 Updates/56 Flow Mode |
 
 **standalone 判定**：不在上表 cluster 内、或仅 1 篇无 spoke 计划 → `folder = (root)`。
 
@@ -262,6 +270,27 @@ P09     P10            P11
 | Claude Code 定义 | what-is-claude-code | 1–2 句 + link |
 | Code/Cowork/Tag 三方对比 | claude-code-vs-cowork-vs-tag §2 | 1–2 句 + link |
 | Code alternatives 排名 | best-claude-code-alternatives §2–3 | 1–2 句 + link |
+
+## 3F. Hub-Spoke 结构（MiniMax H3 簇 · 2026-09-01）
+
+```
+                    ┌──────────────────────────────┐
+                    │  45 What Is MiniMax H3        │
+                    │  Hub — 模型定义 + 架构        │
+                    └────────────┬─────────────────┘
+                                 │
+                    ┌────────────▼────────────┐
+                    │  61 H3 Max Live Spoke      │
+                    │  快于播放 + 无限 AI 直播    │
+                    └────────────────────────────┘
+```
+
+**发布节奏**：45 (2026-08-04) → 61 (2026-09-01)
+
+| 概念 | Canonical slug | 引用方式 |
+|------|---------------|---------|
+| MiniMax H3 定义 | what-is-minimax-h3 | 1–2 句 + link |
+| H3 Max / H3 Max Live | minimax-h3-max-infinite-ai-livestream §2 | 1–2 句 + link |
 
 ---
 

@@ -4,7 +4,8 @@ description: "GPT-5.6 Sol, Terra, and Luna are already built into Floatboat with
 slug: "gpt-5-6-floatboat"
 date: 2026-07-12
 author: "Floatboat Team"
-category: "Product"
+category: "OpenAI"
+secondaryCategory: "Product"
 ---
 
 ## TL;DR

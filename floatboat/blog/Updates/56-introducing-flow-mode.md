@@ -104,7 +104,7 @@ At no point did you export the doc to a chat box or wait until Friday to "proces
 
 **Floatboat Flow Mode** treats **AI voice dictation** as the start of co-authoring—not a shortcut to raw transcript. If your bottleneck is switching between speaking, typing, chatting, and meeting tools, the fix is not louder prompts; it is a single document stream that respects momentum.
 
-Try Flow Mode in the latest Floatboat build on [floatboat.ai](https://floatboat.ai/). If you are comparing paradigms first, read [Calendar-Driven AI vs Chat-Based AI](/blog/calendar-driven-ai-vs-chat-ai); if your week is meeting-heavy, pair this launch with the [meeting prep](/blog/ai-meeting-preparation) and [follow-up](/blog/ai-follow-up-automation) guides already on the blog.
+Try Flow Mode in the latest Floatboat build on [floatboat.ai](https://floatboat.ai/). If you are mapping voice input categories first, read [what is voice dictation for AI agents](/blog/what-is-voice-dictation-for-ai-agents) — Flow Mode sits in the document-centric branch of that taxonomy. If you are comparing paradigms first, read [Calendar-Driven AI vs Chat-Based AI](/blog/calendar-driven-ai-vs-chat-ai); if your week is meeting-heavy, pair this launch with the [meeting prep](/blog/ai-meeting-preparation) and [follow-up](/blog/ai-follow-up-automation) guides already on the blog.
 
 ---
 

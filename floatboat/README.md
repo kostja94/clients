@@ -16,7 +16,7 @@
 | 写对比页 / 竞品文 | [floatboat-competitors.md](./floatboat-competitors.md) |
 | DeepSeek Agent 小产品（SEO + 原生竞品） | [floatboat-deepseek-agent.md](./floatboat-deepseek-agent.md) |
 | 写人群场景 | [floatboat-use-cases.md](./floatboat-use-cases.md) |
-| 建站 / 路由 / SEO 技术 | [floatboat-site-structure.md](./floatboat-site-structure.md) · [floatboat-page-composition-guide.md](./floatboat-page-composition-guide.md) |
+| 建站 / 路由 / SEO 技术 | [floatboat-site-structure.md](./floatboat-site-structure.md) |
 | 写博客 | [blog/README.md](./blog/README.md) |
 | 全站 SEO/GEO 审计 | [site-seo-geo-audit/](./site-seo-geo-audit/)（清单 + Skill + tools，可整包外发） |
 | SEO 周报 | [seo-weekly-report/floatboat-seo-weekly-report-skill.md](./seo-weekly-report/floatboat-seo-weekly-report-skill.md) |
@@ -38,7 +38,6 @@ floatboat/
 ├── floatboat-deepseek-agent.md        ← DeepSeek Agent：SEO 关键词 + 原生竞品简报
 ├── floatboat-use-cases.md             ← 人群与场景
 ├── floatboat-obsidian.md              ← Floatboat for Obsidian 落地页 + Integrations 方案
-├── floatboat-page-composition-guide.md← Landing 页面搭建指南
 ├── floatboat-site-structure.md        ← 正式站路由结构
 ├── site-seo-geo-audit/                ← 全站 SEO/GEO 审计包（清单 + Skill + tools，可整包外发）
 ├── floatboat-skills-ecosystem.md      ← Combo Store / Leaderboard 生态
@@ -53,8 +52,7 @@ floatboat/
     ├── README.md                      ← 博客工作流说明
     ├── scheduling-agent-article-plans.md  ← 主题簇构建方案
     ├── 01–08 *.md                     ← 博客草稿与终稿
-    ├── schema/                        ← JSON-LD 样例
-    ├── images/README.md               ← OG 图片说明（图片在现网）
+    ├── images/README.md               ← OG 图片说明（图片在现网；勿新建 blog/images/ 资产）
     └── skills/floatboat-blog-article/ ← 博客创作 Skill（自包含）
 ```
 
