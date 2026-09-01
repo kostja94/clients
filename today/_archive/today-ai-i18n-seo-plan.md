@@ -356,6 +356,6 @@ hub-spoke 闭环（见 healthcare 文档）同步到双语：hub 能力卡 → 3
 
 ## 站内关联
 
-[主文档](./today-ai.md) · [site-structure](./today-ai-site-structure.md) · [keywords](./today-ai-keywords.md) · [healthcare](./today-ai-healthcare.md) · [style](./style.md)
+[主文档](../today-ai.md) · [site-structure](../today-ai-site-structure.md) · [keywords](../today-ai-keywords.md) · [healthcare](../today-ai-healthcare.md) · [style](../today-ai-style.md)
 
 *Last updated: 2026-08-12*

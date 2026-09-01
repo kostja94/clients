@@ -124,6 +124,6 @@ releases.today.ai             # 安装包 CDN（如 today-macos-arm64.dmg）
 
 ---
 
-*关联：[主文档](./today-ai.md) | [keywords](./today-ai-keywords.md) | [capabilities](./today-ai-capabilities.md) | [competitors](./today-ai-competitors.md) | [use-cases](./today-ai-use-cases.md) | [growth-strategy](./today-ai-growth-strategy.md)*
+*关联：[主文档](./today-ai.md) | [keywords](./today-ai-keywords.md) | [capabilities](./today-ai-capabilities.md) | [competitors](./today-ai-competitors.md) | [use-cases](./today-ai-use-cases.md)*
 
 *Last updated: 2026-07-22*

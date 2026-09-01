@@ -92,6 +92,6 @@
 
 ---
 
-*关联：[主文档](./today-ai.md) | [capabilities](./today-ai-capabilities.md) | [keywords](./today-ai-keywords.md) | [use-cases](./today-ai-use-cases.md) | [site-structure](./today-ai-site-structure.md) | [growth-strategy](./today-ai-growth-strategy.md)*
+*关联：[主文档](./today-ai.md) | [capabilities](./today-ai-capabilities.md) | [keywords](./today-ai-keywords.md) | [use-cases](./today-ai-use-cases.md) | [site-structure](./today-ai-site-structure.md)*
 
 *Last updated: 2026-07-22*

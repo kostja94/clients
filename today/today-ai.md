@@ -18,9 +18,9 @@
 | [today-ai-competitors.md](./today-ai-competitors.md) | 竞品分析、差异化 | [capabilities](./today-ai-capabilities.md) |
 | [today-ai-site-structure.md](./today-ai-site-structure.md) | URL 层级、IA、技术栈 | 主文档 |
 | [today-ai-use-cases.md](./today-ai-use-cases.md) | 场景、Persona | [capabilities](./today-ai-capabilities.md) |
-| [today-ai-growth-strategy.md](./today-ai-growth-strategy.md) | 增长渠道、内容计划 | [keywords](./today-ai-keywords.md) |
 | [today-ai-healthcare.md](./today-ai-healthcare.md) | Healthcare 解决方案：策略/构思/目标（hub+spoke） | [use-cases](./today-ai-use-cases.md) |
-| [style.md](./style.md) | 视觉 token（颜色/字体/间距/动效） | 知识库 `docs/style.md` |
+| [today-ai-style.md](./today-ai-style.md) | 视觉 token（颜色/字体/间距/动效） | 知识库 `docs/style.md` |
+| [blog/README.md](./blog/README.md) | 博客系统 · 创作 Skill · 选题队列 | [keywords](./today-ai-keywords.md) |
 
 ---
 
@@ -133,8 +133,6 @@ ICP 是日程与信息过载的个人用户——设计师、创始人、自由�
 - **P1**：Proactive vs Chatbot 内容；用例落地页；TestFlight/社区 Skills  
 - **P2**：Beta→付费转化设计；若有硬件/Agent 终端，独立叙事防混淆  
 
-*完整* → [today-ai-growth-strategy.md](./today-ai-growth-strategy.md)
-
 ---
 
 ## 8. 优化建议
@@ -151,6 +149,6 @@ ICP 是日程与信息过载的个人用户——设计师、创始人、自由�
 
 ---
 
-*关联：[keywords](./today-ai-keywords.md) | [capabilities](./today-ai-capabilities.md) | [competitors](./today-ai-competitors.md) | [site-structure](./today-ai-site-structure.md) | [use-cases](./today-ai-use-cases.md) | [growth-strategy](./today-ai-growth-strategy.md)*
+*关联：[keywords](./today-ai-keywords.md) | [capabilities](./today-ai-capabilities.md) | [competitors](./today-ai-competitors.md) | [site-structure](./today-ai-site-structure.md) | [use-cases](./today-ai-use-cases.md)*
 
 *Last updated: 2026-07-22*

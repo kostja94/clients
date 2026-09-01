@@ -1,0 +1,31 @@
+# Golden Briefs — Today Blog Skill Regression
+
+> Skill 升级后可选跑回归。对应 P0 首三篇规划选题。
+
+briefs:
+  - id: gb-01-proactive-pillar
+    keyword: proactive AI assistant
+    article_type: BrandPillar
+    mode: flagship
+    cluster: core-pillar
+    expected_slug: what-is-proactive-ai-assistant
+    must_pass_gates: [G1, G5, T2, T3]
+    min_word_count: 2500
+
+  - id: gb-04-vs-chatgpt
+    keyword: Today vs ChatGPT
+    article_type: Comparison
+    mode: flagship
+    cluster: comparison
+    expected_slug: today-vs-chatgpt
+    must_pass_gates: [G4, G7, T2]
+    min_word_count: 2200
+
+  - id: gb-16-meal-planner
+    keyword: ai meal planner
+    article_type: HealthcareGuide
+    mode: flagship
+    cluster: healthcare
+    expected_slug: ai-meal-planner-guide
+    must_pass_gates: [T1, T4]
+    min_word_count: 2200

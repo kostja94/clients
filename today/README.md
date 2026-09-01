@@ -12,6 +12,14 @@
 | [today-ai-keywords.md](./today-ai-keywords.md) | 关键词 |
 | [today-ai-competitors.md](./today-ai-competitors.md) | 竞品 |
 | [today-ai-use-cases.md](./today-ai-use-cases.md) | 场景 |
-| [today-ai-growth-strategy.md](./today-ai-growth-strategy.md) | 增长策略 |
 | [today-ai-healthcare.md](./today-ai-healthcare.md) | Healthcare 解决方案（策略·构思·目标） |
-| [today-ai-i18n-seo-plan.md](./today-ai-i18n-seo-plan.md) | 多语言 SEO 技术栈切换方案（现状诊断 + next-intl 落地 + Healthcare 示例） |
+| [today-ai-style.md](./today-ai-style.md) | 视觉 token（颜色/字体/间距/动效） |
+
+### Blog 系统
+
+| 路径 | 说明 |
+|------|------|
+| [blog/README.md](./blog/README.md) | 博客目录索引 · 下一序号 01 |
+| [blog/skills/today-blog-article/SKILL.md](./blog/skills/today-blog-article/SKILL.md) | 自包含创作 Skill（9 Phase + Gate） |
+
+**归档**（历史文档，活跃库不引用）→ [_archive/](./_archive/README.md)

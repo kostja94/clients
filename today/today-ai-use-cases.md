@@ -55,6 +55,6 @@
 
 ---
 
-*关联：[主文档](./today-ai.md) | [capabilities](./today-ai-capabilities.md) | [keywords](./today-ai-keywords.md) | [competitors](./today-ai-competitors.md) | [site-structure](./today-ai-site-structure.md) | [growth-strategy](./today-ai-growth-strategy.md)*
+*关联：[主文档](./today-ai.md) | [capabilities](./today-ai-capabilities.md) | [keywords](./today-ai-keywords.md) | [competitors](./today-ai-competitors.md) | [site-structure](./today-ai-site-structure.md)*
 
 *Last updated: 2026-08-12*
