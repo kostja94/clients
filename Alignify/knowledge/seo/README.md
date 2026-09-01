@@ -62,7 +62,8 @@
 | [website-indexing.md](./website-indexing.md) | 🔲 待补充 | 网站索引 |
 | [website-rendering.md](./website-rendering.md) | 🔲 待补充 | 网站渲染（SSR/CSR/JS SEO） |
 | [redirect-chain.md](./redirect-chain.md) | 🔲 待补充 | 重定向链 |
-| [submit-website.md](./submit-website.md) | 🔲 待补充 | 提交网站到搜索引擎 |
+| [submit-website.md](./submit-website.md) | ✅ 已重构 | GSC Website + Platform **单篇**（部署仓 2026-09-01） |
+| [gsc-platform-properties.md](./gsc-platform-properties.md) | ↪ 已合并 | 内容并入 `submit-website` · KB 指针保留 |
 
 ### On-page 与标记
 

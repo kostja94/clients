@@ -1,71 +1,14 @@
-# 提交网站到搜索引擎 · 知识块（非线性笔记）
+# GSC 提交与验证 · 知识块指针（Website + Platform 单篇）
 
-**文件名与 slug**：本文件 basename `submit-website` 与站内路由 **`/submit-website`** 对齐。
+> **Canonical SSOT（外部 · 双源）**:  
+> - `E:\个人知识库\数据分析-Analytics\GSC\网站提交与验证-GSC-Submit-Website.md`  
+> - `E:\个人知识库\数据分析-Analytics\GSC\社媒平台属性-GSC-Platform-Properties.md`  
+> **成文 Brief**: [`_briefs/submit-website.md`](./_briefs/submit-website.md) · **Skills**: [`seo-slug-notes/submit-website.md`](../../skills/create-article/rules/seo-slug-notes/submit-website.md)
 
-**材料范围**：[待补充]
+**站内文章对照**: [alignify.co/seo/submit-website](https://alignify.co/seo/submit-website)（[中文](https://alignify.co/zh/seo/submit-website)）· **已重构**（2026-09-01 · Website + Platform 单篇）
 
-**规范对照**：[待补充]
-
-以下条目可任意顺序阅读；**不是**文章体例。
-
----
-
-**词汇锚点**
-
-[待补充]
+**本分册说明**: [seo/README.md](./README.md) · 分类：技术：抓取、索引与渲染
 
 ---
 
-**专题对照 / 扩展定义**
-
-[待补充]
-
----
-
-**问题域（为何会出现这类产品）**
-
-[待补充]
-
----
-
-**能力栈（概念拆分，非厂商功能表）**
-
-[待补充]
-
----
-
-**形态谱系（与具体品牌解耦）**
-
-[待补充]
-
----
-
-**风险 · 合规**
-
-[待补充]
-
----
-
-**落地碎片（无先后）**
-
-[待补充]
-
----
-
-**工具与产品类型（检索里常混在一起的品类；非穷尽）**
-
-[待补充]
-
----
-
-**外链索引（检索整理；非广告、无排序优先级）**
-
-### 对比与测评（第三方；观点非官方）
-
-[待补充]
-
----
-
-**延伸阅读与参考材料**
-
-[待补充]
+维护约定：事实与表格以**外部个人知识库**为准；Platform 内容**不另开 slug**，与 Website 验证同篇维护。

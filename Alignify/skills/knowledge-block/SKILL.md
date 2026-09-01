@@ -20,6 +20,7 @@
 | 写 `/blog/` 或 `/tools/` 正式正文 | create-article |
 | 存量页内链优化 | optimize-internal-links |
 | 仅 Marketing 长文（非 KB） | create-article + `knowledge/marketing/` 长文 |
+| SEO 专册 + 外部 GSC KB | create-article + [`seo-slug-notes/`](../create-article/rules/seo-slug-notes/) · Brief 登记 `E:\个人知识库\…` 路径 |
 
 ---
 

@@ -127,6 +127,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | Final CTA | [`rules/sections.md`](./rules/sections.md) Part 5 |
 | 内链 | [`07-internal-links.md`](./07-internal-links.md) → [`rules/internal-links.md`](./rules/internal-links.md)（Part 1–2 + **按类型** Part 3/4/4.5/5 + Part 8） |
 | **Marketing slug 锁定** | [`rules/marketing-slug-notes/`](./rules/marketing-slug-notes/)（User 确认边界 · 如 `creator-challenge-program`） |
+| **SEO slug 锁定** | [`rules/seo-slug-notes/`](./rules/seo-slug-notes/)（GSC 提交 · Platform properties 等 · 外部 KB SSOT） |
 
 完整索引：[`rules/README.md`](./rules/README.md)
 
