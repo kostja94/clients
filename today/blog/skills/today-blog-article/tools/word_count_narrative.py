@@ -12,6 +12,7 @@ from pathlib import Path
 THRESHOLDS = {
     "pillar": 2800,
     "pillartutorial": 2800,
+    "brandpillar": 2500,
     "glossary": 1800,
     "glossaryguide": 1800,
     "comparison": 2200,
@@ -22,6 +23,7 @@ THRESHOLDS = {
     "product": 2000,
     "decisionguide": 1800,
     "usecase": 1500,
+    "opinion": 1500,
     "diagnosis": 2000,
     "announcement": 1200,
     "framework": 2500,

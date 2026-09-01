@@ -238,7 +238,10 @@ HealthcareGuide：T1 免责 + 禁诊断词
 python blog/skills/today-blog-article/tools/frontmatter_validator.py blog/NN-{slug}.md --keyword "{kw}"
 python blog/skills/today-blog-article/tools/word_count_narrative.py blog/NN-{slug}.md --intent {type}
 python blog/skills/today-blog-article/tools/link_checker.py blog/NN-{slug}.md --forbidden /pricing,/compare,article.today.ai
+python blog/skills/today-blog-article/tools/audit_prose_links.py blog/NN-{slug}.md --strict
 ```
+
+`link_checker.py` 现含 **R4**（重复 `/blog/` slug → FAIL）与 **R5**（TL;DR 内链 >1 → WARN）。`audit_prose_links.py --strict` 为散文阻断门（长段、伪列表、列表占比、中文）。
 
 H0–H4 + 12 维全 Pass → **audit-ready**
 
@@ -343,6 +346,7 @@ secondary_category: "Proactive | Memory | Comparison | Use Cases | Healthcare"
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| **1.0.6** | 2026-09-01 | Phase 5 新增 `audit_prose_links.py --strict`（散文阻断门）与 `link_checker.py` R4/R5；writing-constraints 强化 When-to-choose 散文、伪列表、H2 开篇、英文正文 |
 | **1.0.5** | 2026-09-01 | #05 重命名：office agent → **work agent**；slug `ai-personal-agent-vs-work-agent` |
 | **1.0.3** | 2026-09-01 | 入库 #04 assistant vs agent、#05 agent vs office agent |
 | **1.0.2** | 2026-09-01 | 入库 #03 what-is-ai-personal-agent；AI personal agent 升格为概念 Hub；三篇词数达标；next NN → 04 |
@@ -350,4 +354,4 @@ secondary_category: "Proactive | Memory | Comparison | Use Cases | Healthcare"
 
 ---
 
-*today-blog-article · v1.0.3 · 2026-09-01 · self-contained · next NN: 06*
+*today-blog-article · v1.0.6 · 2026-09-01 · self-contained · next NN: 06*
