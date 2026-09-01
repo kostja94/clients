@@ -30,6 +30,9 @@
 | 29 | agentic-payments/29-what-is-agentic-commerce-protocol.md | what-is-agentic-commerce-protocol | Research | Agentic Payments | 2026-09-10 | Agentic Commerce Protocol ACP |
 | 33 | agentic-payments/33-what-is-universal-commerce-protocol.md | what-is-universal-commerce-protocol | Research | Agentic Payments | 2026-09-11 | Universal Commerce Protocol UCP |
 | 31 | agentic-payments/31-how-to-sell-on-chatgpt.md | how-to-sell-on-chatgpt | HowTo | Agentic Payments | 2026-09-12 | how to sell on ChatGPT merchant |
+| 34 | agentic-payments/34-agentic-commerce-agent-channels.md | agentic-commerce-agent-channels | Research | Agentic Payments | 2026-09-13 | agentic commerce agent channels |
+| 35 | agentic-payments/35-agentic-commerce-merchant-stack-cms.md | agentic-commerce-merchant-stack-cms | Research | Agentic Payments | 2026-09-14 | agentic commerce supported platforms CMS |
+| 36 | agentic-payments/36-agentic-commerce-merchant-stack-psp.md | agentic-commerce-merchant-stack-psp | Research | Agentic Payments | 2026-09-15 | agentic commerce supported PSP payment processors |
 | 16 | 16-what-is-skill-marketplace.md | what-is-skill-marketplace | Product | Product | 2026-08-05 | what is a skill marketplace |
 | 17 | 17-clink-launches-skill-marketplace.md | clink-launches-skill-marketplace | Product | Product | 2026-08-06 | monetize agent skills |
 | 18 | industry-news/18-stripe-openrouter-acquisition.md | stripe-openrouter-acquisition | IndustryNews | Industry News | 2026-08-18 | Stripe OpenRouter acquisition |
@@ -106,6 +109,9 @@
 | 2026-09-10 | what-is-agentic-commerce-protocol |
 | 2026-09-11 | what-is-universal-commerce-protocol |
 | 2026-09-12 | how-to-sell-on-chatgpt |
+| 2026-09-13 | agentic-commerce-agent-channels |
+| 2026-09-14 | agentic-commerce-merchant-stack-cms |
+| 2026-09-15 | agentic-commerce-merchant-stack-psp |
 
 新文从下一可用日错开，**每自然日 ≤1 篇**。
 
@@ -138,13 +144,17 @@ Hub: what-is-clink (Brand canon)
 Agentic Payments cluster (`agentic-payments/`):
  Hub: agent-payments (04)
  └── Protocol definition series (Research, secondaryCategory):
-     ├── what-is-ap2-agent-payments-protocol (26) → hub + x402 + mpp + acp + ucp
-     ├── what-is-x402 (27) → hub + ap2 + mpp + cloudflare-wallets
-     ├── what-is-machine-payments-protocol (28) → hub + x402 + ap2 + acp
-     ├── what-is-agentic-commerce-protocol (29) → hub + ucp + mpp + ap2
-     └── what-is-universal-commerce-protocol (33) → hub + acp + ap2 + agent-payments
+     ├── what-is-ap2-agent-payments-protocol (26) → hub + x402 + mpp + acp + ucp + reference lists (34–36)
+     ├── what-is-x402 (27) → hub + ap2 + mpp + cloudflare-wallets + reference lists (34–36)
+     ├── what-is-machine-payments-protocol (28) → hub + x402 + ap2 + acp + reference lists (34–36)
+     ├── what-is-agentic-commerce-protocol (29) → hub + ucp + mpp + ap2 + reference lists (34–36)
+     └── what-is-universal-commerce-protocol (33) → hub + acp + ap2 + agent-payments + reference lists (34–36)
  └── Merchant how-to (HowTo, secondaryCategory):
-     └── how-to-sell-on-chatgpt (31) → hub + acp + ucp + mor-vs-psp + agent-payments
+     └── how-to-sell-on-chatgpt (31) → hub + acp + ucp + mor-vs-psp + reference lists (34–36)
+ └── Reference lists (Research, secondaryCategory):
+     ├── agentic-commerce-agent-channels (34) → hub + acp + ucp + ap2 + how-to-sell-on-chatgpt + merchant-stack-cms + merchant-stack-psp + mpp
+     ├── agentic-commerce-merchant-stack-cms (35) → hub + acp + ucp + agent-channels + merchant-stack-psp + how-to-sell-on-chatgpt + mpp
+     └── agentic-commerce-merchant-stack-psp (36) → hub + acp + ucp + ap2 + agent-channels + merchant-stack-cms + how-to-sell-on-chatgpt + mpp
 
 Industry News cluster (`industry-news/`):
  Hub: stripe-openrouter-acquisition (18)
@@ -203,13 +213,13 @@ Glossary cluster (category: Glossary):
 | what-is-clink | mor-vs-psp, smart-routing, agent-payments, how-to-add-payments-lovable-app |
 | mor-vs-psp | what-is-clink, smart-routing |
 | smart-routing | what-is-clink, mor-vs-psp |
-| agent-payments | what-is-clink, what-is-ap2-agent-payments-protocol, what-is-x402 |
+| agent-payments | what-is-clink, what-is-ap2-agent-payments-protocol, what-is-x402, agentic-commerce-agent-channels, agentic-commerce-merchant-stack-cms, agentic-commerce-merchant-stack-psp |
 | cloudflare-wallets-agent-payments | agent-payments, smart-routing, what-is-clink, what-is-x402, stripe-openrouter-acquisition |
 | what-is-ap2-agent-payments-protocol | agent-payments, what-is-x402, what-is-machine-payments-protocol, what-is-agentic-commerce-protocol, what-is-universal-commerce-protocol |
 | what-is-x402 | agent-payments, what-is-ap2-agent-payments-protocol, what-is-machine-payments-protocol, cloudflare-wallets-agent-payments |
 | what-is-machine-payments-protocol | agent-payments, what-is-x402, what-is-ap2-agent-payments-protocol, what-is-agentic-commerce-protocol |
-| what-is-agentic-commerce-protocol | agent-payments, what-is-universal-commerce-protocol, what-is-machine-payments-protocol, what-is-ap2-agent-payments-protocol |
-| what-is-universal-commerce-protocol | agent-payments, what-is-agentic-commerce-protocol, what-is-ap2-agent-payments-protocol, what-is-clink |
+| what-is-agentic-commerce-protocol | agent-payments, what-is-universal-commerce-protocol, what-is-machine-payments-protocol, what-is-ap2-agent-payments-protocol, agentic-commerce-agent-channels, agentic-commerce-merchant-stack-cms, agentic-commerce-merchant-stack-psp, how-to-sell-on-chatgpt |
+| what-is-universal-commerce-protocol | agent-payments, what-is-agentic-commerce-protocol, what-is-ap2-agent-payments-protocol, what-is-clink, agentic-commerce-agent-channels, agentic-commerce-merchant-stack-cms, agentic-commerce-merchant-stack-psp |
 | stripe-openrouter-acquisition | agent-payments, what-is-clink, cloudflare-wallets-agent-payments, mor-vs-psp |
 | best-ai-companies-by-arr | annual-recurring-revenue, fastest-growing-ai-companies-arr, what-is-clink, agent-payments |
 | fastest-growing-ai-companies-arr | best-ai-companies-by-arr, annual-recurring-revenue, burn-rate, what-is-clink |
@@ -231,6 +241,10 @@ Glossary cluster (category: Glossary):
 | runway | burn-rate, annual-recurring-revenue, smart-routing, what-is-clink |
 | what-is-skill-marketplace | what-is-clink, agent-payments, cloudflare-wallets-agent-payments, clink-launches-skill-marketplace |
 | clink-launches-skill-marketplace | what-is-clink, agent-payments, what-is-skill-marketplace |
+| agentic-commerce-merchant-stack-psp | agent-payments, what-is-agentic-commerce-protocol, what-is-universal-commerce-protocol, agentic-commerce-agent-channels, agentic-commerce-merchant-stack-cms, how-to-sell-on-chatgpt, what-is-machine-payments-protocol |
+| agentic-commerce-agent-channels | agent-payments, what-is-agentic-commerce-protocol, what-is-universal-commerce-protocol, agentic-commerce-merchant-stack-cms, agentic-commerce-merchant-stack-psp, how-to-sell-on-chatgpt, what-is-machine-payments-protocol, what-is-ap2-agent-payments-protocol |
+| agentic-commerce-merchant-stack-cms | agent-payments, what-is-agentic-commerce-protocol, what-is-universal-commerce-protocol, agentic-commerce-agent-channels, agentic-commerce-merchant-stack-psp, how-to-sell-on-chatgpt, what-is-machine-payments-protocol |
+| how-to-sell-on-chatgpt | agent-payments, what-is-agentic-commerce-protocol, what-is-universal-commerce-protocol, mor-vs-psp, agentic-commerce-agent-channels, agentic-commerce-merchant-stack-cms, agentic-commerce-merchant-stack-psp |
 
 **规则**：用正文 Markdown 互链；**不要**写 frontmatter `related`。
 

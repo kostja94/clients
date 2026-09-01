@@ -16,7 +16,7 @@ readingMinutes: 11
 - UCP supports **capability negotiation**—merchants declare what they offer (checkout, loyalty, fulfillment extensions); agents and merchants agree on handlers per transaction, including **Google Pay**, **Shop Pay**, and third-party PSPs.
 - Transports include **REST**, **GraphQL**, **JSON-RPC**, **MCP**, and **A2A**; UCP is compatible with [AP2](/blog/what-is-ap2-agent-payments-protocol), MCP, and A2A per Google's launch materials.
 - **Google AI Mode** and **Gemini** checkout for eligible U.S. retailers is the first major consumer surface; **Microsoft Copilot** embedded checkout and **Shopify Agentic Storefronts** extend distribution.
-- For Shopify merchants, UCP is the **default agent commerce rail** for Google surfaces—distinct from [ACP](/blog/what-is-agentic-commerce-protocol)'s ChatGPT-first checkout model.
+- For Shopify merchants, UCP is the **default agent commerce rail** for Google surfaces—distinct from [ACP](/blog/what-is-agentic-commerce-protocol)'s ChatGPT-first checkout model. Buyer surfaces that consume UCP and ACP are catalogued in our [AI channel live-status reference](/blog/agentic-commerce-agent-channels).
 
 ---
 
@@ -137,7 +137,9 @@ UCP does **not** replace Shopify Payments or human checkout; it adds **agent-add
 
 UCP is Google's and Shopify's bid to make **agent commerce a protocol problem, not an N×M integration problem**. Capability negotiation, handler extensibility, and multi-transport support reflect real retail complexity—discounts, loyalty, regional payments—that thin HTTP 402 models alone do not capture.
 
-Treat UCP as the **full-journey commerce standard** for Google-aligned surfaces; pair it with [AP2](/blog/what-is-ap2-agent-payments-protocol) for authorization evidence and with [MPP](/blog/what-is-x402)/[x402](/blog/what-is-x402) where API micropayments matter. The agentic payments stack is complementary by design—UCP is the retail spine for merchants who already live in Shopify and Google ecosystems.
+Treat UCP as the **full-journey commerce standard** for Google-aligned surfaces; pair it with [AP2](/blog/what-is-ap2-agent-payments-protocol) for authorization evidence and with [MPP](/blog/what-is-machine-payments-protocol) and [x402](/blog/what-is-x402) where API micropayments matter. The agentic payments stack is complementary by design—UCP is the retail spine for merchants who already live in Shopify and Google ecosystems.
+
+Implementation planning often starts with **who is live today**: our [Gemini and Copilot channel list](/blog/agentic-commerce-agent-channels), [Shopify and headless platform list](/blog/agentic-commerce-merchant-stack-cms), and [Stripe ACS and Adyen Agentic PSP list](/blog/agentic-commerce-merchant-stack-psp) answer that question without conflating protocol specs with operator enrollment.
 
 ---
 

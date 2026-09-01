@@ -109,6 +109,8 @@ x402 turns HTTP into a payment-capable transport for the agent era. Neutral Linu
 
 API sellers should evaluate x402 when agent buyers cannot complete human checkout. Platform teams should treat it as complementary to [MPP](/blog/what-is-machine-payments-protocol) for Stripe-native lifecycle needs and to [AP2](/blog/what-is-ap2-agent-payments-protocol) when authorization audit trails matter. The protocol is mature enough to build against; operational details (facilitator choice, network, compliance) remain deployment-specific.
 
+**Retail agentic commerce**—product feeds and delegated checkout on consumer AI surfaces—uses [ACP](/blog/what-is-agentic-commerce-protocol) and [UCP](/blog/what-is-universal-commerce-protocol), not x402 per SKU. If you sell SKUs through ChatGPT or Gemini, check [which AI surfaces are live](/blog/agentic-commerce-agent-channels), [whether your storefront platform is enrolled](/blog/agentic-commerce-merchant-stack-cms), and [which PSP exposes delegated checkout](/blog/agentic-commerce-merchant-stack-psp)—separate questions from HTTP 402 micropayments.
+
 ---
 
 ## FAQ

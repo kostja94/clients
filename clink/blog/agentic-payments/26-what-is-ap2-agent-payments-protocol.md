@@ -117,6 +117,8 @@ AP2 is the industry’s bet that agent commerce needs a **shared trust layer** b
 
 For infrastructure teams, the actionable frame is layered: implement commerce with UCP or ACP, implement transport with x402 or MPP, and implement accountability with AP2-compatible mandates when auditors, issuers, or enterprise buyers require proof that an agent stayed inside human-defined bounds. The protocols stack; they do not compete for a single checkbox on a roadmap.
 
+AP2 tells you *how to prove authorization*—not *which ChatGPT or Gemini surfaces are live*, *which CMS exposes Agentic Storefronts*, or *which PSP ships ACS*. Those enrollment questions belong in our [live AI shopping channel list](/blog/agentic-commerce-agent-channels), [Shopify and headless platform enablement list](/blog/agentic-commerce-merchant-stack-cms), and [Stripe ACS and peer PSP product list](/blog/agentic-commerce-merchant-stack-psp).
+
 ---
 
 ## FAQ

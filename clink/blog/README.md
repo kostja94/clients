@@ -2,8 +2,8 @@
 
 > Blog content for [clinkbill.com](https://clinkbill.com/) blog section.
 
-**Last updated**: 2026-08-24  
-**Note**: All nine published articles received an S-grade structural rewrite on 2026-07-23 (slugs frozen; titles normalized to `Title — Subtitle`). Series anti-clone contract for 05–09: [`../skills/clink-blog-article/references/series-canonical-ownership.md`](../skills/clink-blog-article/references/series-canonical-ownership.md). GlossaryTerm entries (10–14) published 2026-07-27–31. Skill Marketplace 双文（16–17）published 2026-08-05/06. **Agentic Payments protocol definition 五部曲**（26–29, 33）published 2026-09-07–11. **Images removed 2026-08-11** — no article uses an `image` field.
+**Last updated**: 2026-09-01  
+**Note**: All nine published articles received an S-grade structural rewrite on 2026-07-23 (slugs frozen; titles normalized to `Title — Subtitle`). Series anti-clone contract for 05–09: [`../skills/clink-blog-article/references/series-canonical-ownership.md`](../skills/clink-blog-article/references/series-canonical-ownership.md). GlossaryTerm entries (10–14) published 2026-07-27–31. Skill Marketplace 双文（16–17）published 2026-08-05/06. **Agentic Payments protocol definition 五部曲**（26–29, 33）published 2026-09-07–11. **Agentic reference list 三文**（34–36）published 2026-09-13–15. **Images removed 2026-08-11** — no article uses an `image` field.
 
 ---
 
@@ -20,7 +20,10 @@ blog/
 │   ├── 28-what-is-machine-payments-protocol.md
 │   ├── 29-what-is-agentic-commerce-protocol.md
 │   ├── 31-how-to-sell-on-chatgpt.md
-│   └── 33-what-is-universal-commerce-protocol.md
+│   ├── 33-what-is-universal-commerce-protocol.md
+│   ├── 34-agentic-commerce-agent-channels.md
+│   ├── 35-agentic-commerce-merchant-stack-cms.md
+│   └── 36-agentic-commerce-merchant-stack-psp.md
 ├── industry-news/                 ← 行业新闻簇（15, 18）
 │   ├── 15-cloudflare-wallets-agent-payments.md
 │   └── 18-stripe-openrouter-acquisition.md
@@ -58,6 +61,9 @@ blog/
 | 29 | [What Is Agentic Commerce Protocol ACP? — Instant Checkout](./agentic-payments/29-what-is-agentic-commerce-protocol.md) | what-is-agentic-commerce-protocol | Agentic Payments / Research | 2026-09-10 |
 | 33 | [What Is Universal Commerce Protocol UCP? — Google and Shopify](./agentic-payments/33-what-is-universal-commerce-protocol.md) | what-is-universal-commerce-protocol | Agentic Payments / Research | 2026-09-11 |
 | 31 | [How to Sell on ChatGPT in 2026 — Merchant Setup Guide](./agentic-payments/31-how-to-sell-on-chatgpt.md) | how-to-sell-on-chatgpt | Agentic Payments / HowTo | 2026-09-12 |
+| 34 | [Agentic Commerce Agent Channels — Supported List (2026 Reference)](./agentic-payments/34-agentic-commerce-agent-channels.md) | agentic-commerce-agent-channels | Agentic Payments / Research | 2026-09-13 |
+| 35 | [Agentic Commerce Supported Platforms CMS — Merchant Stack (2026 Reference)](./agentic-payments/35-agentic-commerce-merchant-stack-cms.md) | agentic-commerce-merchant-stack-cms | Agentic Payments / Research | 2026-09-14 |
+| 36 | [Agentic Commerce Supported PSP Payment Processors — 2026 Reference](./agentic-payments/36-agentic-commerce-merchant-stack-psp.md) | agentic-commerce-merchant-stack-psp | Agentic Payments / Research | 2026-09-15 |
 | 16 | [What Is a Skill Marketplace? — How AI Agents Discover, Install, and Pay for Skills](./16-what-is-skill-marketplace.md) | what-is-skill-marketplace | Product | 2026-08-05 |
 | 17 | [Clink Launches Skill Marketplace — Monetize Agent Skills Natively](./17-clink-launches-skill-marketplace.md) | clink-launches-skill-marketplace | Product | 2026-08-06 |
 | 18 | [Stripe OpenRouter Acquisition Reported at $7B+ — What It Means for Agent Payments](./industry-news/18-stripe-openrouter-acquisition.md) | stripe-openrouter-acquisition | Industry News | 2026-08-18 |
@@ -118,7 +124,7 @@ blog/
 
 1. **Payment Infrastructure** — orchestration, routing, multi-PSP architecture
 2. **Subscription Billing** — lifecycle management, usage-based pricing, portals
-3. **Agentic Payments** — agent rails, protocol stack（`agentic-payments/`：04 Hub, 26–29, 31, 33）
+3. **Agentic Payments** — agent rails, protocol stack（`agentic-payments/`：04 Hub, 26–29, 31, 33–36）
 4. **Industry News** — 收购/发布/基础设施事件（`industry-news/`：15, 18）
 5. **Skill Marketplace** — 16–17（根目录 Product）
 6. **Global Expansion** — multi-currency, local payment methods, tax compliance

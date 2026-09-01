@@ -125,6 +125,8 @@ MPP is Stripe and Tempo's answer to a specific question: **how do registered mer
 
 Evaluate MPP if you are on Stripe and agent traffic is becoming material. Evaluate [x402](/blog/what-is-x402) if you need maximum facilitator neutrality or lightweight agent-to-agent transfers. Evaluate [AP2](/blog/what-is-ap2-agent-payments-protocol) when authorization audit trails are non-negotiable. The agent payment future is layered; MPP is the merchant-native layer.
 
+**Retail catalog checkout** on ChatGPT, Gemini, or Copilot uses [ACP](/blog/what-is-agentic-commerce-protocol) and [UCP](/blog/what-is-universal-commerce-protocol)—not MPP. For live enablement by surface, platform, and processor, see our [AI shopping channel list](/blog/agentic-commerce-agent-channels), [commerce platform enablement list](/blog/agentic-commerce-merchant-stack-cms), and [PSP agentic product list](/blog/agentic-commerce-merchant-stack-psp) rather than inferring status from MPP documentation alone.
+
 ---
 
 ## FAQ

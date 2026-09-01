@@ -3,7 +3,7 @@ title: "AI Agents Need Payments Too — Agent-Native Transaction Rails"
 description: "Browser sessions, 3DS, and CAPTCHAs break when the buyer is an LLM. Agent-native payments need scoped caps, browserless auth, and machine-readable audit—Clink for Claw is Early Access."
 slug: "agent-payments"
 date: "2026-06-29"
-updated: "2026-07-23"
+updated: "2026-09-01"
 category: "Agentic Payments"
 secondaryCategory: "Opinion"
 author: "Clink Team"
@@ -17,6 +17,7 @@ readingMinutes: 12
 - Three requirements define the category: programmable constraints, browserless cryptographic authorization, and machine-readable audit trails with task-level trace IDs—not a saved card plus a cron job.
 - **Clink for Claw** implements Harness Payment on Clink’s billing and [smart routing](/blog/smart-routing) stack; it is **Early Access** as of June 2026, with ModelMax and PollyReach cited on clinkbill.com as design partners.
 - Market forecasts about autonomous decisions outpace payment standards; infrastructure for scoped spend must lead, not wait for schemes to invent “agent” as a cardholder type.
+- **Retail agentic commerce** (ChatGPT, Gemini, Copilot checkout) has separate live-status references for [AI shopping channels](/blog/agentic-commerce-agent-channels), [storefront platform enablement](/blog/agentic-commerce-merchant-stack-cms), and [PSP delegated-checkout products](/blog/agentic-commerce-merchant-stack-psp)—distinct from the machine/API rails this essay emphasizes.
 
 ---
 
@@ -79,6 +80,22 @@ The practical implication for 2026 product teams is sequencing. Memory, tool use
 Procurement and security will ask different questions than the model team. Procurement wants cost attribution by task and vendor. Security wants blast-radius limits and revocation. Finance wants a trail that survives an audit without reconstructing chat logs. Those three stakeholders are why “we put a card in the secrets manager” fails organizational review even when it works for a weekend prototype. Agent-native rails are as much an org-design answer as a crypto-token answer.
 
 None of this requires believing the highest CAGR slide. It requires noticing that every production agent with write-access to a billed API eventually becomes a payments customer—and that the customer is not the one holding the phone. If your 2026 roadmap already includes agents that call paid APIs, treat settlement authority as a first-class requirement next to tool schemas—not a backlog ticket labeled “billing polish.”
+
+---
+
+## Retail Agentic Commerce: Where This Essay Fits
+
+Clink for Claw addresses **agent-native authorization and spend** for software runtimes—scoped capabilities, audit trails, and orchestration on existing billing rails. **Retail agentic commerce**—ChatGPT discovery, Copilot Checkout, Gemini native checkout—is a parallel track built on open protocols and merchant infrastructure, not on Harness Payment alone.
+
+If you are mapping **who supports what** as of September 2026, start with three verified lists rather than slide-deck logos:
+
+| Layer | Start here |
+|-------|------------|
+| **Where buyers shop via AI** | [Live status for ChatGPT, Copilot, Gemini, and messaging channels](/blog/agentic-commerce-agent-channels) |
+| **What merchants run underneath** | [Shopify, Adobe, WooCommerce, and APAC platform enablement paths](/blog/agentic-commerce-merchant-stack-cms) |
+| **Who settles the payment** | [Stripe ACS, Adyen Agentic, Worldpay, and other PSP agentic products](/blog/agentic-commerce-merchant-stack-psp) |
+
+Protocol mechanics live in the definition series—[ACP](/blog/what-is-agentic-commerce-protocol), [UCP](/blog/what-is-universal-commerce-protocol), [AP2](/blog/what-is-ap2-agent-payments-protocol), [MPP](/blog/what-is-machine-payments-protocol), [x402](/blog/what-is-x402). Once you know your target channel, follow our [ChatGPT merchant setup guide](/blog/how-to-sell-on-chatgpt) for feed and syndication steps. API and machine buyers belong on MPP/x402, not retail catalog lists.
 
 ---
 

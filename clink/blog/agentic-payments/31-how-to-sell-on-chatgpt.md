@@ -196,6 +196,8 @@ Selling on ChatGPT in 2026 is a **distribution and catalog hygiene** project fir
 
 For protocol depth behind the merchant surface, read [ACP](/blog/what-is-agentic-commerce-protocol) and the [agent payments](/blog/agent-payments) hub. For Google-native embedded checkout, see [UCP](/blog/what-is-universal-commerce-protocol)—a parallel track, not a substitute for ChatGPT discovery.
 
+Before you build feeds, confirm **where** you want to appear ([AI channel live status](/blog/agentic-commerce-agent-channels)), **what platform** syndicates your catalog ([Shopify Agentic, WooCommerce, headless UCP profiles](/blog/agentic-commerce-merchant-stack-cms)), and **which PSP** handles delegated payment ([Stripe ACS, Worldpay, and peers](/blog/agentic-commerce-merchant-stack-psp)).
+
 ---
 
 ## FAQ

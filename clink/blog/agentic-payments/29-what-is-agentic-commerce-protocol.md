@@ -16,7 +16,7 @@ readingMinutes: 11
 - **Instant Checkout** ("Buy it in ChatGPT") launched in **September 2025** with **Etsy live day one**; by **March 2026** OpenAI **deprioritized standalone in-chat checkout** in favor of **product discovery + merchant-owned checkout**—the **ACP protocol itself continues** on [agenticcommerce.dev](https://agenticcommerce.dev).
 - Stable spec **2026-04-17** adds cart, product feed, orders, authentication, and MCP bindings; merchants implement five **`/checkout_sessions`** REST endpoints and accept **Shared Payment Tokens (SPT)** at `complete`.
 - Shopify announced **1M+ merchants** in the pipeline, but only roughly **12–30 Shopify brands** ever went live for in-chat checkout before the pivot—feed syndication (Shopify/Etsy auto-integrated as of mid-2026) matters more than raw pipeline size.
-- ACP is **retail agent commerce**—distinct from [x402](/blog/what-is-x402)/[MPP](/blog/what-is-machine-payments-protocol) API micropayments and from [UCP](/blog/what-is-universal-commerce-protocol)'s Google-led full-journey model.
+- ACP is **retail agent commerce**—distinct from [x402](/blog/what-is-x402)/[MPP](/blog/what-is-machine-payments-protocol) API micropayments and from [UCP](/blog/what-is-universal-commerce-protocol)'s Google-led full-journey model. For which ChatGPT and Meta surfaces are live today, see our [AI channel status list](/blog/agentic-commerce-agent-channels).
 
 ---
 
@@ -123,6 +123,8 @@ If your product is **B2B subscription software**, ACP is rarely the first integr
 ACP is the **open commerce protocol for ChatGPT-era agent retail**—checkout APIs, delegated payment tokens, and product feeds that let merchants keep backend systems while agents handle discovery and (where enabled) purchase orchestration. After the **March 2026 product pivot**, the durable merchant play is **feed quality and syndication**, with checkout APIs ready when platforms re-enable in-chat completion.
 
 Build ACP feeds if ChatGPT discovery is a channel you can serve with accurate catalog data. Build MPP/x402 if your buyers are agents consuming APIs. Build [UCP](/blog/what-is-universal-commerce-protocol) alongside ACP if Google and Copilot surfaces matter too. The agent economy is multi-protocol by design—not a single checkout winner.
+
+To see which surfaces, platforms, and PSPs are **Live versus waitlist** as of September 2026—without rereading every operator changelog—use our [AI channel status list](/blog/agentic-commerce-agent-channels), [commerce platform enablement list](/blog/agentic-commerce-merchant-stack-cms), and [PSP agentic product list](/blog/agentic-commerce-merchant-stack-psp). For feed mechanics, continue to our [ChatGPT merchant setup guide](/blog/how-to-sell-on-chatgpt).
 
 ---
 
