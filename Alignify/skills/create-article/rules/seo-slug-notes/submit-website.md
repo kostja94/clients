@@ -98,10 +98,24 @@
 
 ---
 
-## 内链
+## 内链（seo-guide · 本文锁定）
 
-**出链（各 ≤1）**: `how-search-engine-works`, `search-engine`, `website-indexing`, `sitemap`, `checklist`, `internal-links`  
-**入链回写**: `checklist`, `search-engine`, `learn-seo`, `website-indexing`
+**全文 distinct 站内链 ≤4**（含结论；FAQ 若链则计入）：
+
+| slug | 出现位置 | 理由 |
+|------|----------|------|
+| `how-search-engine-works` | `#submit-vs-index` 首段 | 提交 vs 三阶段，一次即可 |
+| `website-indexing` | `#submit-vs-index` 第二段 | 未收录排查下游 |
+| `checklist` | `#conclusion` | 验证前收束 |
+
+**禁止**为凑数链：`search-engine`、`sitemap`、`internal-links`、`learn-seo`（与本文任务无关或分散阅读）。
+
+## 段落（presentation.md · 本篇强制）
+
+- 每个 major H2 **首段 ≥3 句** prose BLUF  
+- **禁止** `**第一步**` / `**Step 1**` 伪列表短段链  
+- `#anti-patterns` 用 **2 段长 prose**，禁止 bold 单句 × N  
+- 表前末句自然引出「见下表」；表后 **≥2 句** 展开
 
 ---
 
