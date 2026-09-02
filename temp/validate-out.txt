@@ -1,0 +1,120 @@
+鉁?abolish-context-switching-not-gui.md
+鉁?agentic-ai-workforce.md
+鉁?ai-assistant-for-business.md
+鉁?ai-chatbot-vs-ai-agent.md
+鉁?ai-customer-support-agent-vs-chatbot.md
+鉁?ai-employees-arent-for-builders.md
+鉁?ai-executive-assistant.md
+鉁?ai-paralegal.md
+鉁?ai-personal-assistant.md
+鉁?ai-skill-divergence.md
+鉁?ai-virtual-assistant.md
+鉁?ai-workforce.md
+鉁?automate-customer-onboarding.md
+鉁?automate-email-responses.md
+鉁?automate-repetitive-tasks.md
+鉁?blackbox-trust.md
+鉁?discord-moderation-bot.md
+鉁?discord-poll-bot.md
+鉁?discord-security-bot.md
+鉁?discord-server-rules.md
+鉁?discord-ticket-bot.md
+鉁?discord-verification-bot.md
+鉁?discord-welcome-bot.md
+鉁?from-memory-to-intuition.md
+鉁?how-to-automate-discord-moderation.md
+鉁?how-to-automate-my-business.md
+鉁?how-to-build-an-online-community.md
+鉁?how-to-onboard-community-members.md
+鉁?how-to-reduce-support-tickets.md
+鉁?how-to-use-knockin.md
+鉁?human-in-the-loop-ai.md
+鉁?introducing-knockin.md
+鉁?jagged-frontier-org-design.md
+鉁?openclaw-enterprise-postmortem.md
+鉁?outsource-back-office-operations.md
+鉁?persona-that-speaks.md
+鉁?pm-middle-layer-repriced.md
+鉁?what-is-a-digital-employee.md
+鉁?what-is-an-ai-analyst.md
+鉁?what-is-an-ai-coworker.md
+鉁?zh\abolish-context-switching-not-gui.md
+鉁?zh\agentic-ai-workforce.md
+
+鉁?zh\ai-assistant-for-business.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}
+
+鉁?zh\ai-chatbot-vs-ai-agent.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}
+鉁?zh\ai-customer-support-agent-vs-chatbot.md
+鉁?zh\ai-employees-arent-for-builders.md
+
+鉁?zh\ai-executive-assistant.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}
+鉁?zh\ai-paralegal.md
+
+鉁?zh\ai-personal-assistant.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}
+鉁?zh\ai-skill-divergence.md
+鉁?zh\ai-virtual-assistant.md
+鉁?zh\ai-workforce.md
+鉁?zh\automate-customer-onboarding.md
+鉁?zh\automate-email-responses.md
+鉁?zh\automate-repetitive-tasks.md
+鉁?zh\blackbox-trust.md
+鉁?zh\discord-moderation-bot.md
+鉁?zh\discord-poll-bot.md
+
+鉁?zh\discord-security-bot.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}
+鉁?zh\discord-server-rules.md
+鉁?zh\discord-ticket-bot.md
+鉁?zh\discord-verification-bot.md
+鉁?zh\discord-welcome-bot.md
+鉁?zh\from-memory-to-intuition.md
+
+鉁?zh\how-to-automate-discord-moderation.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}
+鉁?zh\how-to-automate-my-business.md
+鉁?zh\how-to-build-an-online-community.md
+鉁?zh\how-to-onboard-community-members.md
+鉁?zh\how-to-reduce-support-tickets.md
+鉁?zh\how-to-use-knockin.md
+
+鉁?zh\human-in-the-loop-ai.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}
+鉁?zh\introducing-knockin.md
+鉁?zh\jagged-frontier-org-design.md
+鉁?zh\openclaw-enterprise-postmortem.md
+鉁?zh\outsource-back-office-operations.md
+鉁?zh\persona-that-speaks.md
+鉁?zh\pm-middle-layer-repriced.md
+鉁?zh\what-is-a-digital-employee.md
+鉁?zh\what-is-an-ai-analyst.md
+
+鉁?zh\what-is-an-ai-coworker.md
+{
+  _errors: [],
+  description: { _errors: [ 'String must contain at least 80 character(s)' ] }
+}

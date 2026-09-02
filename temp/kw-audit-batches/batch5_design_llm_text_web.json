@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "design",
+    "path": "tools/design/design.md",
+    "current_primary": "AI Design Tool",
+    "keywordEn": null,
+    "h1": "AI Design（AI 设计工具）",
+    "narrative": "AI Design Tool"
+  },
+  {
+    "slug": "prototyping",
+    "path": "tools/design/prototyping.md",
+    "current_primary": "Prototyping / 交互原型",
+    "keywordEn": null,
+    "h1": "Prototyping（AI 交互原型）",
+    "narrative": "Prototyping / 交互原型"
+  },
+  {
+    "slug": "ui-design",
+    "path": "tools/design/ui-design.md",
+    "current_primary": "AI UI Design / 界面设计",
+    "keywordEn": null,
+    "h1": "AI UI Design（AI 界面设计）",
+    "narrative": "AI UI Design / 界面设计"
+  },
+  {
+    "slug": "user-research",
+    "path": "tools/design/user-research.md",
+    "current_primary": "AI User Research",
+    "keywordEn": null,
+    "h1": "AI User Research",
+    "narrative": "AI User Research"
+  },
+  {
+    "slug": "ux-design",
+    "path": "tools/design/ux-design.md",
+    "current_primary": "UX Design / 体验设计",
+    "keywordEn": null,
+    "h1": "AI UX Design（AI 体验设计）",
+    "narrative": "UX Design / 体验设计"
+  },
+  {
+    "slug": "wireframing",
+    "path": "tools/design/wireframing.md",
+    "current_primary": "Wireframing / 线框图",
+    "keywordEn": null,
+    "h1": "Wireframing（AI 线框图）",
+    "narrative": "Wireframing / 线框图"
+  },
+  {
+    "slug": "evaluation",
+    "path": "tools/llm/evaluation.md",
+    "current_primary": "AI evaluation / LLM evaluation / AI 评测",
+    "keywordEn": null,
+    "h1": "AI Evaluation / AI 模型评测",
+    "narrative": "AI evaluation / LLM evaluation / AI 评测"
+  },
+  {
+    "slug": "llm-for-coding",
+    "path": "tools/llm/llm-for-coding.md",
+    "current_primary": "AI Coding LLM / 编程向大模型",
+    "keywordEn": null,
+    "h1": "AI Coding LLM / 编程向大模型",
+    "narrative": null
+  },
+  {
+    "slug": "llm-for-math",
+    "path": "tools/llm/llm-for-math.md",
+    "current_primary": "AI Math LLM / 数学向大模型",
+    "keywordEn": null,
+    "h1": "AI Math LLM / 数学向大模型",
+    "narrative": null
+  },
+  {
+    "slug": "llm-for-reasoning",
+    "path": "tools/llm/llm-for-reasoning.md",
+    "current_primary": "AI Reasoning LLM / 推理向大模型",
+    "keywordEn": null,
+    "h1": "AI Reasoning LLM / 推理向大模型",
+    "narrative": null
+  },
+  {
+    "slug": "llm",
+    "path": "tools/llm/llm.md",
+    "current_primary": "Large Language Model",
+    "keywordEn": "Large Language Model",
+    "h1": "Large Language Model / 通用大语言模型",
+    "narrative": null
+  },
+  {
+    "slug": "multimodal-llm",
+    "path": "tools/llm/multimodal-llm.md",
+    "current_primary": "AI Multimodal LLM / 多模态大模型",
+    "keywordEn": null,
+    "h1": "AI Multimodal LLM / 多模态大模型",
+    "narrative": null
+  },
+  {
+    "slug": "essay-writer",
+    "path": "tools/text-content/essay-writer.md",
+    "current_primary": "AI Essay Writer",
+    "keywordEn": null,
+    "h1": "AI Essay Writer",
+    "narrative": "AI Essay Writer"
+  },
+  {
+    "slug": "presentation-maker",
+    "path": "tools/text-content/presentation-maker.md",
+    "current_primary": "AI Presentation Maker",
+    "keywordEn": null,
+    "h1": "AI Presentation Maker",
+    "narrative": "AI Presentation Maker"
+  },
+  {
+    "slug": "story-generator",
+    "path": "tools/text-content/story-generator.md",
+    "current_primary": "AI Story Generator",
+    "keywordEn": null,
+    "h1": "AI Story Generator",
+    "narrative": "AI Story Generator"
+  },
+  {
+    "slug": "text-generator",
+    "path": "tools/text-content/text-generator.md",
+    "current_primary": "AI Text Generator",
+    "keywordEn": null,
+    "h1": "AI Text Generator",
+    "narrative": "AI Text Generator"
+  },
+  {
+    "slug": "text-translator",
+    "path": "tools/text-content/text-translator.md",
+    "current_primary": "AI text translation",
+    "keywordEn": null,
+    "h1": "AI Text Translation",
+    "narrative": "AI text translation"
+  },
+  {
+    "slug": "text",
+    "path": "tools/text-content/text.md",
+    "current_primary": "AI Text Tools / AI Writing Tools",
+    "keywordEn": null,
+    "h1": "AI Text",
+    "narrative": "AI Text Tools / AI Writing Tools"
+  },
+  {
+    "slug": "headless-browser",
+    "path": "tools/web-data/headless-browser.md",
+    "current_primary": "Headless browser / 云浏览器基础设施",
+    "keywordEn": null,
+    "h1": "无头浏览器与云浏览器基础设施（Headless / BaaS / Agent 向）",
+    "narrative": "Headless browser / 云浏览器基础设施"
+  },
+  {
+    "slug": "search-indexing",
+    "path": "tools/web-data/search-indexing.md",
+    "current_primary": "AI Search Indexing",
+    "keywordEn": null,
+    "h1": "AI Search Indexing",
+    "narrative": "AI Search Indexing"
+  },
+  {
+    "slug": "technology-profiler",
+    "path": "tools/web-data/technology-profiler.md",
+    "current_primary": "website technology profiler / 网站技术栈检测",
+    "keywordEn": null,
+    "h1": "网站技术检测与画像工具",
+    "narrative": "website technology profiler / 网站技术栈检测"
+  },
+  {
+    "slug": "web-fetch",
+    "path": "tools/web-data/web-fetch.md",
+    "current_primary": "Web Fetch",
+    "keywordEn": null,
+    "h1": "Web Fetch（URL 转 AI 可读内容）",
+    "narrative": "Web Fetch"
+  },
+  {
+    "slug": "web-scraping",
+    "path": "tools/web-data/web-scraping.md",
+    "current_primary": "Web scraping / 网页抓取",
+    "keywordEn": null,
+    "h1": null,
+    "narrative": "Web scraping / 网页抓取"
+  },
+  {
+    "slug": "web-search-api",
+    "path": "tools/web-data/web-search-api.md",
+    "current_primary": "Web Search API",
+    "keywordEn": null,
+    "h1": "Web Search API",
+    "narrative": "Web Search API"
+  }
+]

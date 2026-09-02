@@ -1,0 +1,226 @@
+[
+  {
+    "slug": "accent-conversion",
+    "path": "tools/voice-audio/accent-conversion.md",
+    "current_primary": "AI 口音转换（Accent Conversion）",
+    "keywordEn": null,
+    "h1": "AI 口音转换（Accent Conversion）",
+    "narrative": null
+  },
+  {
+    "slug": "audio-translator",
+    "path": "tools/voice-audio/audio-translator.md",
+    "current_primary": "AI Audio Translation",
+    "keywordEn": null,
+    "h1": "AI Audio Translation",
+    "narrative": null
+  },
+  {
+    "slug": "lip-sync",
+    "path": "tools/voice-audio/lip-sync.md",
+    "current_primary": "AI lip sync / AI 唇形同步",
+    "keywordEn": null,
+    "h1": "AI Lip Sync / AI 唇形同步",
+    "narrative": "AI lip sync / AI 唇形同步"
+  },
+  {
+    "slug": "music-generator",
+    "path": "tools/voice-audio/music-generator.md",
+    "current_primary": "AI Music Generator",
+    "keywordEn": null,
+    "h1": "AI Music Generator",
+    "narrative": null
+  },
+  {
+    "slug": "speech-to-text",
+    "path": "tools/voice-audio/speech-to-text.md",
+    "current_primary": "Speech-to-Text / ASR / 自动语音识别",
+    "keywordEn": null,
+    "h1": "AI Speech-to-Text（ASR / STT / 语音转文字）",
+    "narrative": "Speech-to-Text / ASR / 自动语音识别"
+  },
+  {
+    "slug": "text-to-speech",
+    "path": "tools/voice-audio/text-to-speech.md",
+    "current_primary": "AI Text-to-Speech / TTS / 文本转语音",
+    "keywordEn": null,
+    "h1": "AI Text-to-Speech（TTS / 文本转语音）",
+    "narrative": "AI Text-to-Speech / TTS / 文本转语音"
+  },
+  {
+    "slug": "video-translator",
+    "path": "tools/voice-audio/video-translator.md",
+    "current_primary": "AI Video Translation",
+    "keywordEn": null,
+    "h1": "AI Video Translation",
+    "narrative": null
+  },
+  {
+    "slug": "voice-changer",
+    "path": "tools/voice-audio/voice-changer.md",
+    "current_primary": "AI Voice Changer（AI 变声器）",
+    "keywordEn": null,
+    "h1": "AI Voice Changer（AI 变声器）",
+    "narrative": null
+  },
+  {
+    "slug": "voice-cloning",
+    "path": "tools/voice-audio/voice-cloning.md",
+    "current_primary": "AI Voice Cloning",
+    "keywordEn": null,
+    "h1": "AI Voice Cloning",
+    "narrative": null
+  },
+  {
+    "slug": "voice",
+    "path": "tools/voice-audio/voice.md",
+    "current_primary": "AI Voice",
+    "keywordEn": null,
+    "h1": "AI Voice",
+    "narrative": null
+  },
+  {
+    "slug": "ai-components",
+    "path": "tools/coding/ai-components.md",
+    "current_primary": "AI Components / Prompt-as-Component / Component Registry",
+    "keywordEn": null,
+    "h1": "AI Components / AI 组件 Prompt 库与 Registry",
+    "narrative": "AI Components / Prompt-as-Component / Component Registry"
+  },
+  {
+    "slug": "app-builder",
+    "path": "tools/coding/app-builder.md",
+    "current_primary": "AI App Builder / AI 应用构建器",
+    "keywordEn": null,
+    "h1": "App Builder",
+    "narrative": "AI App Builder / AI 应用构建器"
+  },
+  {
+    "slug": "cli",
+    "path": "tools/coding/cli.md",
+    "current_primary": "AI CLI / Agentic CLI",
+    "keywordEn": null,
+    "h1": "AI CLI Tools",
+    "narrative": "AI CLI / Agentic CLI"
+  },
+  {
+    "slug": "code-completion",
+    "path": "tools/coding/code-completion.md",
+    "current_primary": "Code completion / AI code assistant",
+    "keywordEn": null,
+    "h1": "AI 代码补全（Code Completion）",
+    "narrative": "Code completion / AI code assistant"
+  },
+  {
+    "slug": "code-review",
+    "path": "tools/coding/code-review.md",
+    "current_primary": "AI code review / PR 审查",
+    "keywordEn": null,
+    "h1": "AI 代码审查（Code review / 代码质量检查）",
+    "narrative": "AI code review / PR 审查"
+  },
+  {
+    "slug": "coding",
+    "path": "tools/coding/coding.md",
+    "current_primary": "AI Coding Agent / 编程智能体",
+    "keywordEn": null,
+    "h1": "AI Coding",
+    "narrative": "AI Coding Agent / 编程智能体"
+  },
+  {
+    "slug": "git-hosting",
+    "path": "tools/coding/git-hosting.md",
+    "current_primary": "Agent-native Git hosting / Code forge",
+    "keywordEn": "Agent-native Git hosting / Code forge",
+    "h1": "Agent 时代 Git 托管 / Code Forge",
+    "narrative": "Agent-native Git hosting / Code forge"
+  },
+  {
+    "slug": "ide",
+    "path": "tools/coding/ide.md",
+    "current_primary": "AI IDE / Agentic IDE",
+    "keywordEn": null,
+    "h1": "AI IDE",
+    "narrative": "AI IDE / Agentic IDE"
+  },
+  {
+    "slug": "vibe-coding",
+    "path": "tools/coding/vibe-coding.md",
+    "current_primary": "Vibe coding / 氛围编程",
+    "keywordEn": null,
+    "h1": "Vibe coding（氛围编程）",
+    "narrative": "Vibe coding / 氛围编程"
+  },
+  {
+    "slug": "advertising-agent",
+    "path": "tools/marketing-growth/advertising-agent.md",
+    "current_primary": "Advertising Agent / AI 广告投放 Agent",
+    "keywordEn": null,
+    "h1": "Advertising Agent",
+    "narrative": "Advertising Agent / AI 广告投放 Agent"
+  },
+  {
+    "slug": "affiliate-marketing",
+    "path": "tools/marketing-growth/affiliate-marketing.md",
+    "current_primary": "Affiliate marketing / 联盟营销",
+    "keywordEn": null,
+    "h1": "Affiliate Marketing",
+    "narrative": "Affiliate marketing / 联盟营销"
+  },
+  {
+    "slug": "b2b",
+    "path": "tools/marketing-growth/b2b.md",
+    "current_primary": "AI B2B Marketing Tools / B2B 营销 AI 工具",
+    "keywordEn": null,
+    "h1": "B2B Marketing",
+    "narrative": "AI B2B Marketing Tools / B2B 营销 AI 工具"
+  },
+  {
+    "slug": "fundraising",
+    "path": "tools/marketing-growth/fundraising.md",
+    "current_primary": "AI fundraising / AI 融资工具",
+    "keywordEn": null,
+    "h1": "AI Fundraising",
+    "narrative": "AI fundraising / AI 融资工具"
+  },
+  {
+    "slug": "influencer-marketing",
+    "path": "tools/marketing-growth/influencer-marketing.md",
+    "current_primary": "Influencer marketing / 网红营销",
+    "keywordEn": null,
+    "h1": "Influencer Marketing",
+    "narrative": "Influencer marketing / 网红营销"
+  },
+  {
+    "slug": "lead-generation",
+    "path": "tools/marketing-growth/lead-generation.md",
+    "current_primary": "AI Lead Generation / AI 线索生成",
+    "keywordEn": null,
+    "h1": "Lead Generation",
+    "narrative": "AI Lead Generation / AI 线索生成"
+  },
+  {
+    "slug": "referral-program",
+    "path": "tools/marketing-growth/referral-program.md",
+    "current_primary": "Referral program / 推荐计划",
+    "keywordEn": null,
+    "h1": "Referral Program",
+    "narrative": "Referral program / 推荐计划"
+  },
+  {
+    "slug": "social-media-tools",
+    "path": "tools/marketing-growth/social-media-tools.md",
+    "current_primary": "Social media management / scheduling tools（社媒管理与排程工具）",
+    "keywordEn": null,
+    "h1": "Social Media Tools",
+    "narrative": "Social media management / scheduling tools（社媒管理与排程工具）"
+  },
+  {
+    "slug": "ugc",
+    "path": "tools/marketing-growth/ugc.md",
+    "current_primary": "UGC / User-Generated Content（营销语境）",
+    "keywordEn": null,
+    "h1": "UGC",
+    "narrative": "UGC / User-Generated Content（营销语境）"
+  }
+]

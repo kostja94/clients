@@ -1,0 +1,258 @@
+[
+  {
+    "slug": "character-chat",
+    "path": "tools/chat-social/character-chat.md",
+    "current_primary": "Character Chat",
+    "keywordEn": "Character Chat",
+    "h1": "Character Chat / AI 角色对话",
+    "narrative": null
+  },
+  {
+    "slug": "chatbot",
+    "path": "tools/chat-social/chatbot.md",
+    "current_primary": "AI Chatbot",
+    "keywordEn": null,
+    "h1": "AI Chatbot",
+    "narrative": null
+  },
+  {
+    "slug": "community",
+    "path": "tools/chat-social/community.md",
+    "current_primary": "AI 社区",
+    "keywordEn": null,
+    "h1": "AI 社区",
+    "narrative": null
+  },
+  {
+    "slug": "dating",
+    "path": "tools/chat-social/dating.md",
+    "current_primary": "AI Dating（AI 约会与匹配）",
+    "keywordEn": null,
+    "h1": "AI Dating（AI 约会与匹配）",
+    "narrative": null
+  },
+  {
+    "slug": "directory",
+    "path": "tools/chat-social/directory.md",
+    "current_primary": "AI Directory / AI 工具导航",
+    "keywordEn": null,
+    "h1": "AI Directory / AI 工具导航",
+    "narrative": null
+  },
+  {
+    "slug": "blog-website-builder",
+    "path": "tools/website-builder/blog-website-builder.md",
+    "current_primary": "Blog Website Builder / Website Builder for Blogs",
+    "keywordEn": "Blog Website Builder / Website Builder for Blogs",
+    "h1": "Blog Website Builder / 博客建站",
+    "narrative": null
+  },
+  {
+    "slug": "ecommerce-website-builder",
+    "path": "tools/website-builder/ecommerce-website-builder.md",
+    "current_primary": "Online store platform / E-commerce website builder",
+    "keywordEn": "Online store platform / E-commerce website builder",
+    "h1": "E-commerce Website Builder / 电商建站平台",
+    "narrative": null
+  },
+  {
+    "slug": "landing-page-builder",
+    "path": "tools/website-builder/landing-page-builder.md",
+    "current_primary": "Landing Page Builder / Conversion Page Builder",
+    "keywordEn": "Landing Page Builder / Conversion Page Builder",
+    "h1": "Landing Page Builder / 落地页构建器",
+    "narrative": null
+  },
+  {
+    "slug": "portfolio-website-builder",
+    "path": "tools/website-builder/portfolio-website-builder.md",
+    "current_primary": "Portfolio website builder / Photography website builder",
+    "keywordEn": "Portfolio website builder / Photography website builder",
+    "h1": "Portfolio Website Builder / 作品集建站",
+    "narrative": null
+  },
+  {
+    "slug": "website-builder",
+    "path": "tools/website-builder/website-builder.md",
+    "current_primary": "Website Builder",
+    "keywordEn": null,
+    "h1": "Website Builder",
+    "narrative": null
+  },
+  {
+    "slug": "content-management-system",
+    "path": "tools/cms/content-management-system.md",
+    "current_primary": "Content Management System / CMS",
+    "keywordEn": "Content Management System / CMS",
+    "h1": "Content Management System / 内容管理系统",
+    "narrative": null
+  },
+  {
+    "slug": "enterprise-cms",
+    "path": "tools/cms/enterprise-cms.md",
+    "current_primary": "Enterprise CMS / DXP / Digital Experience Platform",
+    "keywordEn": "Enterprise CMS / DXP / Digital Experience Platform",
+    "h1": "Enterprise CMS / DXP · 企业内容管理系统",
+    "narrative": null
+  },
+  {
+    "slug": "headless-cms",
+    "path": "tools/cms/headless-cms.md",
+    "current_primary": "Headless CMS / API-first CMS",
+    "keywordEn": "Headless CMS / API-first CMS",
+    "h1": "Headless CMS / 无头内容管理系统",
+    "narrative": null
+  },
+  {
+    "slug": "open-source-cms",
+    "path": "tools/cms/open-source-cms.md",
+    "current_primary": "Open Source CMS / OSS CMS",
+    "keywordEn": "Open Source CMS / OSS CMS",
+    "h1": "Open Source CMS / 开源 CMS",
+    "narrative": null
+  },
+  {
+    "slug": "hr-assistant",
+    "path": "tools/hr-recruiting/hr-assistant.md",
+    "current_primary": "AI HR assistant / AI HR 助手",
+    "keywordEn": null,
+    "h1": "AI HR Assistant",
+    "narrative": "AI HR assistant / AI HR 助手"
+  },
+  {
+    "slug": "interview-assistant",
+    "path": "tools/hr-recruiting/interview-assistant.md",
+    "current_primary": "AI interview assistant / 面试助手",
+    "keywordEn": null,
+    "h1": "AI 面试助手",
+    "narrative": "AI interview assistant / 面试助手"
+  },
+  {
+    "slug": "linkedin",
+    "path": "tools/hr-recruiting/linkedin.md",
+    "current_primary": "LinkedIn AI tools / LinkedIn 向 AI 工具",
+    "keywordEn": null,
+    "h1": "LinkedIn AI 工具",
+    "narrative": "LinkedIn AI tools / LinkedIn 向 AI 工具"
+  },
+  {
+    "slug": "recruiting",
+    "path": "tools/hr-recruiting/recruiting.md",
+    "current_primary": "AI recruiting / AI 人才获取",
+    "keywordEn": null,
+    "h1": "AI Recruiting",
+    "narrative": "AI recruiting / AI 人才获取"
+  },
+  {
+    "slug": "ai-training-data",
+    "path": "tools/infrastructure/ai-training-data.md",
+    "current_primary": "AI Training Data Platform",
+    "keywordEn": "AI Training Data Platform",
+    "h1": "大模型训练数据平台",
+    "narrative": "AI Training Data Platform / 训练数据基础设施"
+  },
+  {
+    "slug": "api",
+    "path": "tools/infrastructure/api.md",
+    "current_primary": "Unified AI API Platform / 统一 AI API",
+    "keywordEn": null,
+    "h1": "统一 AI API 平台",
+    "narrative": "Unified AI API Platform / 统一 AI API"
+  },
+  {
+    "slug": "authentication",
+    "path": "tools/infrastructure/authentication.md",
+    "current_primary": "Authentication / CIAM / 应用身份",
+    "keywordEn": null,
+    "h1": "身份认证与访问管理（Authentication / IAM）",
+    "narrative": "Authentication / CIAM / 应用身份"
+  },
+  {
+    "slug": "inference-infrastructure",
+    "path": "tools/infrastructure/inference-infrastructure.md",
+    "current_primary": "AI Inference Infrastructure",
+    "keywordEn": "AI Inference Infrastructure",
+    "h1": "AI 推理基础设施",
+    "narrative": "AI Inference Infrastructure / 推理托管"
+  },
+  {
+    "slug": "ai-scheduling",
+    "path": "tools/productivity/ai-scheduling.md",
+    "current_primary": "AI scheduling / AI 日程安排",
+    "keywordEn": null,
+    "h1": "AI 日程安排",
+    "narrative": "AI scheduling / AI 日程安排"
+  },
+  {
+    "slug": "note-taker",
+    "path": "tools/productivity/note-taker.md",
+    "current_primary": "AI note taker / AI meeting notes",
+    "keywordEn": null,
+    "h1": "AI 会议记录",
+    "narrative": "AI note taker / AI meeting notes"
+  },
+  {
+    "slug": "productivity",
+    "path": "tools/productivity/productivity.md",
+    "current_primary": "AI productivity tools / AI 生产力工具",
+    "keywordEn": null,
+    "h1": "AI Productivity",
+    "narrative": "AI productivity tools / AI 生产力工具"
+  },
+  {
+    "slug": "project-management",
+    "path": "tools/productivity/project-management.md",
+    "current_primary": "AI project management / AI 项目管理",
+    "keywordEn": null,
+    "h1": "Project Management",
+    "narrative": "AI project management / AI 项目管理"
+  },
+  {
+    "slug": "ai-traffic-and-citation-sources",
+    "path": "tools/search-geo/ai-traffic-and-citation-sources.md",
+    "current_primary": "AI 搜索平台与引用来源",
+    "keywordEn": null,
+    "h1": "AI 搜索平台与引用来源",
+    "narrative": null
+  },
+  {
+    "slug": "ai-visibility",
+    "path": "tools/search-geo/ai-visibility.md",
+    "current_primary": "AI 可见度（AI Visibility）",
+    "keywordEn": null,
+    "h1": "AI 可见度（AI Visibility）",
+    "narrative": null
+  },
+  {
+    "slug": "geo",
+    "path": "tools/search-geo/geo.md",
+    "current_primary": "GEO（生成式引擎优化 / Generative Engine Optimization）",
+    "keywordEn": null,
+    "h1": "GEO（生成式引擎优化 / Generative Engine Optimization）",
+    "narrative": null
+  },
+  {
+    "slug": "search-engine",
+    "path": "tools/search-geo/search-engine.md",
+    "current_primary": "AI search engine / 对话式 AI 搜索",
+    "keywordEn": null,
+    "h1": "AI 搜索引擎",
+    "narrative": "AI search engine / 对话式 AI 搜索"
+  },
+  {
+    "slug": "healthcare",
+    "path": "tools/healthcare/healthcare.md",
+    "current_primary": "AI Healthcare",
+    "keywordEn": null,
+    "h1": "AI Healthcare",
+    "narrative": null
+  },
+  {
+    "slug": "medical-scribe",
+    "path": "tools/healthcare/medical-scribe.md",
+    "current_primary": "AI Medical Scribe",
+    "keywordEn": null,
+    "h1": "AI Medical Scribe",
+    "narrative": null
+  }
+]

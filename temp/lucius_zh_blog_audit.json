@@ -1,0 +1,477 @@
+{
+  "listing": {
+    "url": "https://luciusai.com/zh/blog",
+    "meta_title": "",
+    "meta_description": "来自 Lucius AI 的产品思考、AI 队友工作流和公司更新。",
+    "nav_en": [],
+    "footer_en": [],
+    "nav_text": "",
+    "footer_text": "",
+    "article_count": 38
+  },
+  "articles": {
+    "abolish-context-switching-not-gui": {
+      "url": "https://luciusai.com/zh/blog/abolish-context-switching-not-gui",
+      "meta_title": "",
+      "meta_description": "我们真正要解决的问题，是人在多个系统之间反复来回切换、搬运上下文、重复组织信息所产生的认知负担。IM 不是 GUI 的替代品，而是 AI 员工最合适的调度中枢。",
+      "h1": "废除系统切换，不是废除 GUI：为什么 AI 员工应该长在 IM 里",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.958,
+      "status": "fully_zh"
+    },
+    "agentic-ai-workforce": {
+      "url": "https://luciusai.com/zh/blog/agentic-ai-workforce",
+      "meta_title": "",
+      "meta_description": "Agentic AI Workforce（AI 劳动力）是一组各自守着明确岗位、背后有人负责的 AI agent，不是在真空里自己规划的 demo。这个词落到实处指什么，以及怎么真的跑起来。",
+      "h1": "Agentic AI Workforce：一个你能落地执行的 AI 劳动力定义",
+      "title_mixed_en": true,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.955,
+      "status": "mixed_title"
+    },
+    "ai-assistant-for-business": {
+      "url": "https://luciusai.com/zh/blog/ai-assistant-for-business",
+      "meta_title": "",
+      "meta_description": "面向企业的 AI 助理能做什么、在哪里止步，以及什么时候一个角色化的 AI 员工更合适。",
+      "h1": "面向企业的 AI 助理——还是 AI 员工？",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.962,
+      "status": "fully_zh"
+    },
+    "ai-chatbot-vs-ai-agent": {
+      "url": "https://luciusai.com/zh/blog/ai-chatbot-vs-ai-agent",
+      "meta_title": "",
+      "meta_description": "从用途、工具、权限、责任和人工监督比较 AI chatbot、AI agent 与 AI 员工，不被产品标签带着走。",
+      "h1": "AI Chatbot、AI Agent 和 AI 员工：到底差在哪？",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.949,
+      "status": "fully_zh"
+    },
+    "ai-customer-support-agent-vs-chatbot": {
+      "url": "https://luciusai.com/zh/blog/ai-customer-support-agent-vs-chatbot",
+      "meta_title": "",
+      "meta_description": "对比小型 SaaS 可用的 7 类 AI 客服方案：帮助台原生 AI、独立 Agent、共享收件箱、Lucius 与自建方案。",
+      "h1": "小型 SaaS 的 AI 客服怎么选：7 类方案对比",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.939,
+      "status": "fully_zh"
+    },
+    "ai-employees-arent-for-builders": {
+      "url": "https://luciusai.com/zh/blog/ai-employees-arent-for-builders",
+      "meta_title": "",
+      "meta_description": "现在大多数 AI 员工需要一个专职工程师才能正常工作。那不叫员工——那叫穿了马甲的工具。真正的标准应该是什么样的？",
+      "h1": "AI 员工不是给技术人员用的。它是给所有人用的——前提是它配得上这个称号。",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.969,
+      "status": "fully_zh"
+    },
+    "ai-executive-assistant": {
+      "url": "https://luciusai.com/zh/blog/ai-executive-assistant",
+      "error": "IncompleteRead(0 bytes read)"
+    },
+    "ai-paralegal": {
+      "url": "https://luciusai.com/zh/blog/ai-paralegal",
+      "meta_title": "",
+      "meta_description": "起草动议、审阅合同、检索判例——AI 律师助理到底能接手哪些？它负责的、律师保留的、以及律所如何起步，每条结论都有来源。",
+      "h1": "AI 律师助理能做什么——哪些工作仍归律师",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.964,
+      "status": "fully_zh"
+    },
+    "ai-personal-assistant": {
+      "url": "https://luciusai.com/zh/blog/ai-personal-assistant",
+      "meta_title": "",
+      "meta_description": "一张 2026 年 AI 个人助理的实话地图：它擅长什么、在哪停下，以及什么时候你的团队需要的是共享 AI，而不是一堆个人 copilot。",
+      "h1": "AI 个人助理：它能做什么，边界在哪",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.957,
+      "status": "fully_zh"
+    },
+    "ai-skill-divergence": {
+      "url": "https://luciusai.com/zh/blog/ai-skill-divergence",
+      "meta_title": "",
+      "meta_description": "代码版本不一致，程序会崩。AI skill 版本不一致，bot 会「隐隐地不对」——这比崩更可怕。9 个 bot、70 个技能、一次静默分叉，让我不得不从头想 AI 技能管理这件事。",
+      "h1": "从&quot;技能散落各处&quot;到 monorepo：一个人管 9 个 bots 的 skill 版本控制实录",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.866,
+      "status": "fully_zh"
+    },
+    "ai-virtual-assistant": {
+      "url": "https://luciusai.com/zh/blog/ai-virtual-assistant",
+      "meta_title": "",
+      "meta_description": "了解 AI 虚拟助理（AI virtual assistant）的定义、常见类型和应用，以及它与聊天机器人、AI Agent、人类虚拟助理的区别和选型方法。",
+      "h1": "AI 虚拟助理（AI Virtual Assistant）是什么？类型、应用与选型",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.969,
+      "status": "fully_zh"
+    },
+    "ai-workforce": {
+      "url": "https://luciusai.com/zh/blog/ai-workforce",
+      "meta_title": "",
+      "meta_description": "AI workforce 既可指从事 AI 工作的人，也可指与人协作的角色型 AI agents。本文说明两种含义、实际例子、搭建步骤、衡量方法和治理边界。",
+      "h1": "AI Workforce 是什么：定义、例子、搭建方法与边界",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [
+        "Onboarding"
+      ],
+      "zh_ratio": 0.95,
+      "status": "fully_zh"
+    },
+    "automate-customer-onboarding": {
+      "url": "https://luciusai.com/zh/blog/automate-customer-onboarding",
+      "meta_title": "",
+      "meta_description": "如何安全地自动化客户 onboarding：梳理材料收集、KYB 关卡、欢迎序列、人工复核，以及当前产品边界。",
+      "h1": "用 AI 员工自动化客户 onboarding",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.939,
+      "status": "fully_zh"
+    },
+    "automate-email-responses": {
+      "url": "https://luciusai.com/zh/blog/automate-email-responses",
+      "meta_title": "",
+      "meta_description": "搜 automate email responses，大多数教程让你配自动回复模板——只买时间，不解决问题。这篇讲怎么让 AI 员工真的把邮件答掉，而不是确认收到。",
+      "h1": "Automate Email Responses：让 AI 员工替你把邮件答完",
+      "title_mixed_en": true,
+      "nav_en": [
+        "Email"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.972,
+      "status": "mixed_title"
+    },
+    "automate-repetitive-tasks": {
+      "url": "https://luciusai.com/zh/blog/automate-repetitive-tasks",
+      "meta_title": "",
+      "meta_description": "多数 automate repetitive tasks 的教程甩给你一串工具。这篇讲按岗位的做法：把一整份重复的活交给一个 AI 员工，配一条升级线。",
+      "h1": "Automate Repetitive Tasks：把整块重复的活交给 AI 员工",
+      "title_mixed_en": true,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.965,
+      "status": "mixed_title"
+    },
+    "blackbox-trust": {
+      "url": "https://luciusai.com/zh/blog/blackbox-trust",
+      "meta_title": "",
+      "meta_description": "AI 是黑盒子，但信任不要求打开黑盒子。信任要求的是：我知道它大概率会做对，做错了我能发现，发现了我能纠正。",
+      "h1": "对抗「黑盒恐惧」：AI 员工信任建立的渐进式授权",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.979,
+      "status": "fully_zh"
+    },
+    "discord-moderation-bot": {
+      "url": "https://luciusai.com/zh/blog/discord-moderation-bot",
+      "meta_title": "",
+      "meta_description": "MEE6、Dyno 这类 Discord moderation bot 的机械工作处理得很好。但规则型 bot 的能力有边界：当关键词读不出意图时，是什么在读它。",
+      "h1": "Discord moderation bot 的规则边界在哪",
+      "title_mixed_en": false,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.924,
+      "status": "fully_zh"
+    },
+    "discord-poll-bot": {
+      "url": "https://luciusai.com/zh/blog/discord-poll-bot",
+      "meta_title": "",
+      "meta_description": "判断 Discord 原生投票还是 Discord poll bot 更合适：比较定时、匿名、导出等需求，也看清投票反馈的边界。",
+      "h1": "Discord Poll Bot：原生投票够用时，不必装机器人",
+      "title_mixed_en": true,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.954,
+      "status": "mixed_title"
+    },
+    "discord-security-bot": {
+      "url": "https://luciusai.com/zh/blog/discord-security-bot",
+      "meta_title": "",
+      "meta_description": "按真实威胁选择和配置 Discord 安全控制：原生 raid 设置、验证、第三方 anti-nuke、消息审核与人工复核。",
+      "h1": "Discord security bot：按威胁配置安全防线",
+      "title_mixed_en": true,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.937,
+      "status": "mixed_title"
+    },
+    "discord-server-rules": {
+      "url": "https://luciusai.com/zh/blog/discord-server-rules",
+      "meta_title": "",
+      "meta_description": "一套可以直接改用的 Discord server rules、原生 Rules Screening 与 AutoMod 各自管到哪里，以及成员数超过版主数之后，规则靠什么继续生效。",
+      "h1": "Discord server rules：模板之外的执行断层",
+      "title_mixed_en": true,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.955,
+      "status": "mixed_title"
+    },
+    "discord-ticket-bot": {
+      "url": "https://luciusai.com/zh/blog/discord-ticket-bot",
+      "meta_title": "",
+      "meta_description": "比较 Ticket Tool、Tickets.bot 与 Tickety 等 Discord 工单机器人；配置私有支持队列、存档和认领，并避免把“更快”误当成“更少”。",
+      "h1": "Discord 工单机器人怎么选：Ticket Tool、Tickets.bot 与 Tickety",
+      "title_mixed_en": false,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.955,
+      "status": "fully_zh"
+    },
+    "discord-verification-bot": {
+      "url": "https://luciusai.com/zh/blog/discord-verification-bot",
+      "meta_title": "",
+      "meta_description": "按威胁模型选择 Discord 验证机器人，配置原生安全控制与经过测试的关卡，并了解入口验证覆盖不到什么。",
+      "h1": "Discord 验证机器人怎么选：选择与配置指南",
+      "title_mixed_en": false,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.95,
+      "status": "fully_zh"
+    },
+    "discord-welcome-bot": {
+      "url": "https://luciusai.com/zh/blog/discord-welcome-bot",
+      "meta_title": "",
+      "meta_description": "从 Community Onboarding、Server Guide 到可选的 Discord 欢迎机器人：按步骤配置角色、频道、权限、测试与故障排查。",
+      "h1": "Discord 欢迎机器人怎么配置：Onboarding 完整步骤",
+      "title_mixed_en": false,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [
+        "Discord Community Onboarding 配置步骤"
+      ],
+      "zh_ratio": 0.93,
+      "status": "fully_zh"
+    },
+    "from-memory-to-intuition": {
+      "url": "https://luciusai.com/zh/blog/from-memory-to-intuition",
+      "meta_title": "",
+      "meta_description": "AI 员工变强不是靠记住更多文档，而是在成千上万次真实交互中练出直觉——从数据里「长」出来的模式识别能力。",
+      "h1": "从记忆到直觉：AI 员工的进化，不是靠堆知识，是靠长出「直觉」",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.956,
+      "status": "fully_zh"
+    },
+    "how-to-automate-discord-moderation": {
+      "url": "https://luciusai.com/zh/blog/how-to-automate-discord-moderation",
+      "meta_title": "",
+      "meta_description": "Discord AutoMod 设置指南：配置关键词、通配符、正则、刷屏限制、处置动作与豁免，并用一套测试方法减少误伤。",
+      "h1": "Discord AutoMod 设置指南：规则、通配符、正则与限制",
+      "title_mixed_en": false,
+      "nav_en": [
+        "Discord"
+      ],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.941,
+      "status": "fully_zh"
+    },
+    "how-to-automate-my-business": {
+      "url": "https://luciusai.com/zh/blog/how-to-automate-my-business",
+      "meta_title": "",
+      "meta_description": "问题不是买哪个 app。这篇讲 how to automate my business：从重复的岗位入手，一个一个交给 AI 员工，而不是先囤一堆工具。",
+      "h1": "How to Automate My Business：该把哪些岗位交给 AI",
+      "title_mixed_en": true,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.955,
+      "status": "mixed_title"
+    },
+    "how-to-build-an-online-community": {
+      "url": "https://luciusai.com/zh/blog/how-to-build-an-online-community",
+      "error": "IncompleteRead(0 bytes read)"
+    },
+    "how-to-onboard-community-members": {
+      "url": "https://luciusai.com/zh/blog/how-to-onboard-community-members",
+      "meta_title": "",
+      "meta_description": "怎么让新来的社群成员留下来：挑一个 activation 时刻，在 channel 里就把头一个问题答掉，筛掉 spam，把卡住的人转给人。",
+      "h1": "怎么给社群新人做 onboarding，让他们真的留下来",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.957,
+      "status": "fully_zh"
+    },
+    "how-to-reduce-support-tickets": {
+      "url": "https://luciusai.com/zh/blog/how-to-reduce-support-tickets",
+      "meta_title": "",
+      "meta_description": "七个减少 support ticket 的打法：修掉根因、在上下文里回答、用一个会升级的 AI agent 拦截，每一个都告诉你怎么量。",
+      "h1": "怎么减少 support ticket（别把联系入口藏起来）",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.956,
+      "status": "fully_zh"
+    },
+    "human-in-the-loop-ai": {
+      "url": "https://luciusai.com/zh/blog/human-in-the-loop-ai",
+      "meta_title": "",
+      "meta_description": "Human in the loop AI 需要明确的动作边界、可见的 Task 所有权，以及能够检查业务活动和责任记录的 Activity Log 与 Audit Log。",
+      "h1": "Human in the Loop AI：一套可以审计的控制模型",
+      "title_mixed_en": true,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.929,
+      "status": "mixed_title"
+    },
+    "jagged-frontier-org-design": {
+      "url": "https://luciusai.com/zh/blog/jagged-frontier-org-design",
+      "meta_title": "",
+      "meta_description": "你的公司在培训员工怎么写 prompt。但没人培训他们什么时候不该打开 ChatGPT。这是大多数 AI 战略里缺失的那一半。",
+      "h1": "锯齿技术前沿：新手看不见错误，老手不信自己会错",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.892,
+      "status": "fully_zh"
+    },
+    "openclaw-enterprise-postmortem": {
+      "url": "https://luciusai.com/zh/blog/openclaw-enterprise-postmortem",
+      "meta_title": "",
+      "meta_description": "全平台覆盖、多模型路由、沙盒执行、360 个贡献者——但每一个企业客户听完演示都没有签约。以下是我们失败尝试的 6 个教训。",
+      "h1": "我们给 OpenClaw 套了层企业壳。两周后，我们停了。",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.948,
+      "status": "fully_zh"
+    },
+    "outsource-back-office-operations": {
+      "url": "https://luciusai.com/zh/blog/outsource-back-office-operations",
+      "meta_title": "",
+      "meta_description": "后台运营该外包给 BPO 还是用 AI？比较控制、例外、集成与人工复核，并说明 Lucius 当前不自动化哪些后台工作。",
+      "h1": "把后台运营外包出去，还是雇一个 AI 员工？",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.962,
+      "status": "fully_zh"
+    },
+    "persona-that-speaks": {
+      "url": "https://luciusai.com/zh/blog/persona-that-speaks",
+      "error": "IncompleteRead(0 bytes read)"
+    },
+    "pm-middle-layer-repriced": {
+      "url": "https://luciusai.com/zh/blog/pm-middle-layer-repriced",
+      "meta_title": "",
+      "meta_description": "岗位名称往往比岗位定价活得更久。PM 这个 title 不会消失，先松动的是协调型的中间那层；builder PM 和资源拥有者会拿走价值。",
+      "h1": "PM 不会消失。先被重新定价的是中间那层",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.946,
+      "status": "fully_zh"
+    },
+    "what-is-a-digital-employee": {
+      "url": "https://luciusai.com/zh/blog/what-is-a-digital-employee",
+      "error": "IncompleteRead(0 bytes read)"
+    },
+    "what-is-an-ai-analyst": {
+      "url": "https://luciusai.com/zh/blog/what-is-an-ai-analyst",
+      "meta_title": "",
+      "meta_description": "AI analyst 既可能指使用 AI 和数据的人类职位，也可能指能生成查询、图表和结论的数据分析软件。本文说明它的工作内容、使用限制和选型方法。",
+      "h1": "AI analyst 是什么：职位、软件、工作内容与使用边界",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.95,
+      "status": "fully_zh"
+    },
+    "what-is-an-ai-coworker": {
+      "url": "https://luciusai.com/zh/blog/what-is-an-ai-coworker",
+      "meta_title": "",
+      "meta_description": "AI Coworker 是一个持续在线的 AI 系统，它承担一个明确定义的角色、记住上下文、并跨工具工作。这对你的团队意味着什么，本文讲清楚。",
+      "h1": "什么是 AI Coworker？",
+      "title_mixed_en": false,
+      "nav_en": [],
+      "footer_en": [],
+      "en_headings": [],
+      "zh_ratio": 0.937,
+      "status": "fully_zh"
+    }
+  },
+  "summary": {
+    "total": 38,
+    "en_title_prefix_count": 8,
+    "en_title_slugs": [
+      "agentic-ai-workforce",
+      "automate-email-responses",
+      "automate-repetitive-tasks",
+      "discord-poll-bot",
+      "discord-security-bot",
+      "discord-server-rules",
+      "how-to-automate-my-business",
+      "human-in-the-loop-ai"
+    ],
+    "fully_zh_count": 26,
+    "mixed_count": 8,
+    "coverage_pct": 68.4
+  }
+}

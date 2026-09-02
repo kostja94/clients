@@ -1,0 +1,210 @@
+[
+  {
+    "slug": "animation-generator",
+    "path": "tools/video/animation-generator.md",
+    "current_primary": "AI animation generator / AI anime generator",
+    "keywordEn": null,
+    "h1": "AI Animation & Anime Generator",
+    "narrative": "AI animation generator / AI anime generator"
+  },
+  {
+    "slug": "canvas-video",
+    "path": "tools/video/canvas-video.md",
+    "current_primary": "AI video canvas / node-based AI video workflow",
+    "keywordEn": null,
+    "h1": "Canvas Video",
+    "narrative": "AI video canvas / node-based AI video workflow"
+  },
+  {
+    "slug": "filmmaking",
+    "path": "tools/video/filmmaking.md",
+    "current_primary": "AI Filmmaking / AI 电影制作",
+    "keywordEn": null,
+    "h1": "AI Filmmaking",
+    "narrative": "AI Filmmaking / AI 电影制作"
+  },
+  {
+    "slug": "image-to-video",
+    "path": "tools/video/image-to-video.md",
+    "current_primary": "Image-to-Video / I2V / 图生视频",
+    "keywordEn": null,
+    "h1": "AI Image-to-Video",
+    "narrative": "Image-to-Video / I2V / 图生视频"
+  },
+  {
+    "slug": "interactive-video",
+    "path": "tools/video/interactive-video.md",
+    "current_primary": "Interactive video / 实时交互视频",
+    "keywordEn": null,
+    "h1": "实时交互视频（Interactive Video / Live Video Generation）",
+    "narrative": "Interactive video / 实时交互视频"
+  },
+  {
+    "slug": "music-video-generator",
+    "path": "tools/video/music-video-generator.md",
+    "current_primary": "AI music video generator / MV 生成器",
+    "keywordEn": null,
+    "h1": "AI 音乐视频生成器（Music Video Generator）",
+    "narrative": "AI music video generator / MV 生成器"
+  },
+  {
+    "slug": "short-drama",
+    "path": "tools/video/short-drama.md",
+    "current_primary": "AI short drama platform / AI 短剧平台",
+    "keywordEn": null,
+    "h1": "AI Short Drama / AI 短剧平台",
+    "narrative": "AI short drama platform / AI 短剧平台"
+  },
+  {
+    "slug": "text-to-video",
+    "path": "tools/video/text-to-video.md",
+    "current_primary": "Text-to-Video (T2V) / 文生视频",
+    "keywordEn": null,
+    "h1": "AI Text-to-Video",
+    "narrative": "Text-to-Video (T2V) / 文生视频"
+  },
+  {
+    "slug": "video-clipping",
+    "path": "tools/video/video-clipping.md",
+    "current_primary": "AI Video Clipping / Repurposing",
+    "keywordEn": null,
+    "h1": "AI Video Clipping",
+    "narrative": "AI Video Clipping / Repurposing"
+  },
+  {
+    "slug": "video-editor",
+    "path": "tools/video/video-editor.md",
+    "current_primary": "AI Video Editor / AI 视频编辑器",
+    "keywordEn": null,
+    "h1": "AI Video Editor",
+    "narrative": "AI Video Editor / AI 视频编辑器"
+  },
+  {
+    "slug": "video-effects",
+    "path": "tools/video/video-effects.md",
+    "current_primary": "AI Video Effects / AI VFX",
+    "keywordEn": null,
+    "h1": "AI Video Effects",
+    "narrative": "AI Video Effects / AI VFX"
+  },
+  {
+    "slug": "video-generator",
+    "path": "tools/video/video-generator.md",
+    "current_primary": "AI video generator / AI 视频生成器",
+    "keywordEn": null,
+    "h1": "AI Video Generator / AI 视频生成",
+    "narrative": "AI video generator / AI 视频生成器"
+  },
+  {
+    "slug": "video-to-video",
+    "path": "tools/video/video-to-video.md",
+    "current_primary": "Video-to-Video (V2V) / 视频到视频",
+    "keywordEn": null,
+    "h1": "AI Video-to-Video",
+    "narrative": "Video-to-Video (V2V) / 视频到视频"
+  },
+  {
+    "slug": "video",
+    "path": "tools/video/video.md",
+    "current_primary": "AI Video",
+    "keywordEn": null,
+    "h1": "AI Video",
+    "narrative": null
+  },
+  {
+    "slug": "avatar",
+    "path": "tools/image/avatar.md",
+    "current_primary": "Talking avatar / AI presenter / 数字人视频",
+    "keywordEn": null,
+    "h1": "AI Avatar Generator",
+    "narrative": "Talking avatar / AI presenter / 数字人视频"
+  },
+  {
+    "slug": "background-changer",
+    "path": "tools/image/background-changer.md",
+    "current_primary": "AI Background Changer",
+    "keywordEn": null,
+    "h1": "AI Background Changer",
+    "narrative": null
+  },
+  {
+    "slug": "headshot-generator",
+    "path": "tools/image/headshot-generator.md",
+    "current_primary": "AI Headshot Generator",
+    "keywordEn": null,
+    "h1": "AI Headshot Generator",
+    "narrative": null
+  },
+  {
+    "slug": "image-editor",
+    "path": "tools/image/image-editor.md",
+    "current_primary": "AI Image Editor",
+    "keywordEn": null,
+    "h1": "AI Image Editor",
+    "narrative": null
+  },
+  {
+    "slug": "image-enhancer",
+    "path": "tools/image/image-enhancer.md",
+    "current_primary": "AI Image Enhancer",
+    "keywordEn": null,
+    "h1": "AI Image Enhancer",
+    "narrative": null
+  },
+  {
+    "slug": "image-generator",
+    "path": "tools/image/image-generator.md",
+    "current_primary": "AI image generator / 文生图（T2I）",
+    "keywordEn": null,
+    "h1": "AI Image Generator",
+    "narrative": "AI image generator / 文生图（T2I）"
+  },
+  {
+    "slug": "image-relighting",
+    "path": "tools/image/image-relighting.md",
+    "current_primary": "AI Image Relighting",
+    "keywordEn": null,
+    "h1": "AI Image Relighting",
+    "narrative": null
+  },
+  {
+    "slug": "image",
+    "path": "tools/image/image.md",
+    "current_primary": "AI Image",
+    "keywordEn": null,
+    "h1": "AI Image",
+    "narrative": null
+  },
+  {
+    "slug": "logo-generator",
+    "path": "tools/image/logo-generator.md",
+    "current_primary": "AI logo generator / AI Logo 生成器",
+    "keywordEn": null,
+    "h1": "AI Logo Generator / AI Logo 生成器",
+    "narrative": "AI logo generator / AI Logo 生成器"
+  },
+  {
+    "slug": "poster-generator",
+    "path": "tools/image/poster-generator.md",
+    "current_primary": "AI Poster Generator",
+    "keywordEn": null,
+    "h1": "AI Poster Generator",
+    "narrative": null
+  },
+  {
+    "slug": "social-cards-generator",
+    "path": "tools/image/social-cards-generator.md",
+    "current_primary": "Social Cards Generator",
+    "keywordEn": null,
+    "h1": "Social Cards Generator",
+    "narrative": null
+  },
+  {
+    "slug": "tattoo-generator",
+    "path": "tools/image/tattoo-generator.md",
+    "current_primary": "AI Tattoo Generator",
+    "keywordEn": null,
+    "h1": "AI Tattoo Generator",
+    "narrative": null
+  }
+]

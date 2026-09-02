@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "agent-for-desktop",
+    "path": "tools/agent/agent-for-desktop.md",
+    "current_primary": "Agent on desktop / 桌面智能体",
+    "keywordEn": null,
+    "h1": "桌面智能体（Agent on Desktop）",
+    "narrative": "Agent on desktop / 桌面智能体"
+  },
+  {
+    "slug": "agent-identity",
+    "path": "tools/agent/agent-identity.md",
+    "current_primary": "AI Agent Identity",
+    "keywordEn": "AI Agent Identity",
+    "h1": "AI Agent 身份与访问治理",
+    "narrative": "Agent Identity / Agent IAM / Agentic Access"
+  },
+  {
+    "slug": "agent-memory",
+    "path": "tools/agent/agent-memory.md",
+    "current_primary": "Agent Memory Layer / Agent 记忆层",
+    "keywordEn": null,
+    "h1": "AI Agent 记忆层",
+    "narrative": "Agent Memory Layer / Agent 记忆层"
+  },
+  {
+    "slug": "agent-runtime",
+    "path": "tools/agent/agent-runtime.md",
+    "current_primary": "AI Agent Runtime",
+    "keywordEn": "AI Agent Runtime",
+    "h1": "AI Agent 运行时",
+    "narrative": null
+  },
+  {
+    "slug": "agent-sandbox",
+    "path": "tools/agent/agent-sandbox.md",
+    "current_primary": "AI Agent Sandbox / Agent 沙箱",
+    "keywordEn": null,
+    "h1": "AI Agent 沙箱",
+    "narrative": "AI Agent Sandbox / Agent 沙箱"
+  },
+  {
+    "slug": "agent-skills",
+    "path": "tools/agent/agent-skills.md",
+    "current_primary": "Agent Skills / 技能生态",
+    "keywordEn": null,
+    "h1": "Agent Skills 生态",
+    "narrative": "Agent Skills / 技能生态"
+  },
+  {
+    "slug": "agent-to-agent",
+    "path": "tools/agent/agent-to-agent.md",
+    "current_primary": "A2A Agent Network / Agent 互联网络",
+    "keywordEn": null,
+    "h1": "Agent-to-Agent Network / Agent 互联网络",
+    "narrative": "A2A Agent Network / Agent 互联网络"
+  },
+  {
+    "slug": "ai-employee",
+    "path": "tools/agent/ai-employee.md",
+    "current_primary": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+    "keywordEn": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+    "h1": "AI Employee（AI 员工）",
+    "narrative": "AI Employee / Chat-native AI Coworker"
+  },
+  {
+    "slug": "browser",
+    "path": "tools/agent/browser.md",
+    "current_primary": "AI browser / 人工智能浏览器",
+    "keywordEn": null,
+    "h1": "AI 浏览器",
+    "narrative": "AI browser / 人工智能浏览器"
+  },
+  {
+    "slug": "expert-agent",
+    "path": "tools/agent/expert-agent.md",
+    "current_primary": "Expert Agent / 专家网络与 AI Agent 市场",
+    "keywordEn": null,
+    "h1": "AI Expert Agent",
+    "narrative": "Expert Agent / 专家网络与 AI Agent 市场"
+  },
+  {
+    "slug": "multi-agent",
+    "path": "tools/agent/multi-agent.md",
+    "current_primary": "Multi-Agent Systems / 多智能体系统",
+    "keywordEn": null,
+    "h1": "多智能体系统",
+    "narrative": "Multi-Agent Systems / 多智能体系统"
+  },
+  {
+    "slug": "openclaw-alternatives",
+    "path": "tools/agent/openclaw-alternatives.md",
+    "current_primary": "OpenClaw 系谱 / alternatives 检索意图",
+    "keywordEn": null,
+    "h1": "OpenClaw 系谱与变体对照",
+    "narrative": "OpenClaw 系谱 / alternatives 检索意图"
+  },
+  {
+    "slug": "work-agent",
+    "path": "tools/agent/work-agent.md",
+    "current_primary": "Work Agent / AI Work Agent",
+    "keywordEn": "Work Agent / AI Work Agent",
+    "h1": "Work Agent（工作智能体）",
+    "narrative": "Work Agent / 工作智能体"
+  },
+  {
+    "slug": "workflow",
+    "path": "tools/agent/workflow.md",
+    "current_primary": "Workflow automation / 工作流自动化",
+    "keywordEn": null,
+    "h1": "AI Workflow",
+    "narrative": "Workflow automation / 工作流自动化"
+  },
+  {
+    "slug": "workspace-agent",
+    "path": "tools/agent/workspace-agent.md",
+    "current_primary": "Workspace Agent / Team AI Agent",
+    "keywordEn": "Workspace Agent / Team AI Agent",
+    "h1": "Workspace Agent（工作区智能体）",
+    "narrative": "Workspace Agent / 团队可复用 AI Agent"
+  },
+  {
+    "slug": "agent-billing",
+    "path": "tools/agent-billing.md",
+    "current_primary": "Agent Billing / AI Agent 计费",
+    "keywordEn": null,
+    "h1": "Agent Billing",
+    "narrative": "Agent Billing / AI Agent 计费"
+  },
+  {
+    "slug": "agentic-commerce",
+    "path": "tools/agentic-commerce.md",
+    "current_primary": "Agentic Commerce",
+    "keywordEn": "Agentic Commerce",
+    "h1": "Agentic Commerce",
+    "narrative": null
+  },
+  {
+    "slug": "agentic-payments",
+    "path": "tools/agentic-payments.md",
+    "current_primary": "Agentic Payments",
+    "keywordEn": "Agentic Payments",
+    "h1": "Agentic Payments",
+    "narrative": null
+  },
+  {
+    "slug": "ai-shopping",
+    "path": "tools/ai-shopping.md",
+    "current_primary": "AI Shopping",
+    "keywordEn": null,
+    "h1": "AI Shopping",
+    "narrative": null
+  },
+  {
+    "slug": "animation-library",
+    "path": "tools/animation-library.md",
+    "current_primary": "Animation Library",
+    "keywordEn": null,
+    "h1": "Animation Library",
+    "narrative": null
+  },
+  {
+    "slug": "data-engineering-agent",
+    "path": "tools/data-engineering-agent.md",
+    "current_primary": "Data Engineering Agent",
+    "keywordEn": null,
+    "h1": "Data Engineering Agent",
+    "narrative": null
+  },
+  {
+    "slug": "family-assistant",
+    "path": "tools/family-assistant.md",
+    "current_primary": "AI 家庭助手",
+    "keywordEn": null,
+    "h1": "AI 家庭助手",
+    "narrative": null
+  },
+  {
+    "slug": "fashion",
+    "path": "tools/fashion.md",
+    "current_primary": "AI fashion / AI 时尚工具",
+    "keywordEn": null,
+    "h1": "AI Fashion / AI 时尚",
+    "narrative": "AI fashion / AI 时尚工具"
+  },
+  {
+    "slug": "lifetime-deals",
+    "path": "tools/lifetime-deals.md",
+    "current_primary": "Lifetime Deals",
+    "keywordEn": null,
+    "h1": "Lifetime Deals",
+    "narrative": null
+  },
+  {
+    "slug": "religion",
+    "path": "tools/religion.md",
+    "current_primary": "AI Religion",
+    "keywordEn": null,
+    "h1": "AI Religion",
+    "narrative": null
+  },
+  {
+    "slug": "vibe-coding-payments",
+    "path": "tools/vibe-coding-payments.md",
+    "current_primary": "Vibe Coding 支付集成",
+    "keywordEn": null,
+    "h1": "Vibe Coding 支付集成",
+    "narrative": null
+  },
+  {
+    "slug": "world-model",
+    "path": "tools/world-model.md",
+    "current_primary": "World model / 世界模型",
+    "keywordEn": null,
+    "h1": "世界模型（World Models）",
+    "narrative": "World model / 世界模型"
+  }
+]

@@ -14,6 +14,7 @@
 2. **内容决定架构** — 章节**纯粹由题材与读者任务决定**；[`templates.md`](./rules/templates.md) Part 0 与 [`sections.md`](./rules/sections.md) 仅为**建议**，**禁止**一比一复刻存量骨架。A 层硬底线不变。新文统一 **`content/blog/`**。  
 3. **双轨 native 成稿** — ZH/EN **各自独立撰写**（可并行 Subagent），共享 Brief + 锚点 id；**禁止**先写一语种再翻译另一语种。Step 09c 做信息对等对比。见 [`rules/content-locale.md`](./rules/content-locale.md)。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
+4b. **仅调研 ≠ 成文** — 用户说「只调研 / 我说写才写」时，禁止擅自新建 KB 或部署仓正文；见 [`../knowledge-block/references/research-only-gate.md`](../knowledge-block/references/research-only-gate.md)。  
 5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
 6. **素材源可外置** — 个人知识库为 campaign SSOT；Brief 登记路径即可。  
 7. **TL;DR/FAQ/Refs → JSON** — Brief 采用则 Step 08 注册三 JSON 侧车（E10）；**不写 md**；见 `anatomy.md` §二·一。  

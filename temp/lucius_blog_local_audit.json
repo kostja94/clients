@@ -1,0 +1,352 @@
+[
+  {
+    "category": "Chrome",
+    "file": "site-chrome.ts",
+    "detail": "Features",
+    "priority": "P0",
+    "note": "English label"
+  },
+  {
+    "category": "Chrome",
+    "file": "site-chrome.ts",
+    "detail": "Pricing",
+    "priority": "P0",
+    "note": "English label"
+  },
+  {
+    "category": "Chrome",
+    "file": "site-chrome.ts",
+    "detail": "Docs",
+    "priority": "P0",
+    "note": "English label"
+  },
+  {
+    "category": "Chrome",
+    "file": "site-chrome.ts",
+    "detail": "Privacy",
+    "priority": "P0",
+    "note": "English label"
+  },
+  {
+    "category": "Chrome",
+    "file": "site-chrome.ts",
+    "detail": "Terms",
+    "priority": "P0",
+    "note": "English label"
+  },
+  {
+    "category": "Chrome",
+    "file": "site-chrome.ts",
+    "detail": "DPA",
+    "priority": "P0",
+    "note": "English label"
+  },
+  {
+    "category": "Description",
+    "file": "agentic-ai-workforce",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "智能体 AI 劳动力是一组守着明确岗位、背后有人负责的 AI agent，不是真空里自己规划的 demo。本文说明可落地"
+  },
+  {
+    "category": "Description",
+    "file": "ai-assistant-for-business",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "面向企业的 AI 助理能做什么、在哪里止步，以及什么时候角色化的 AI 员工更合适——一篇坦诚的对比分析，帮你避开常见陷"
+  },
+  {
+    "category": "Description",
+    "file": "ai-chatbot-vs-ai-agent",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "从用途、权限、责任与人工监督比较 chatbot、agent 与 AI 员工，按工作流而非营销名词选型，不被产品标签带着"
+  },
+  {
+    "category": "Description",
+    "file": "ai-customer-support-agent-vs-chatbot",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "对比小型 SaaS 可选的 7 类 AI 客户支持方案：帮助台原生 AI、独立 Agent、共享收件箱、Lucius 与"
+  },
+  {
+    "category": "Description",
+    "file": "ai-paralegal",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "AI 律师助理能起草文书、审阅合同、检索判例——本文说明它能接手哪些工作、哪些仍须律师负责，以及律所如何安全起步与合规边"
+  },
+  {
+    "category": "Description",
+    "file": "ai-personal-assistant",
+    "detail": "len=83",
+    "priority": "P1",
+    "note": "2026 年 AI 个人助理的实话地图：它擅长什么、在哪停下，以及团队何时需要共享 AI 角色，而不是每人一个 copi"
+  },
+  {
+    "category": "Description",
+    "file": "ai-skill-divergence",
+    "detail": "len=94",
+    "priority": "P1",
+    "note": "管 9 个 bot、70 个 skill 之后，本文记录 skill 为什么会漂移，以及 monorepo 式同步如何让"
+  },
+  {
+    "category": "Description",
+    "file": "ai-virtual-assistant",
+    "detail": "len=86",
+    "priority": "P1",
+    "note": "了解 AI 虚拟助理（AI virtual assistant）的定义、常见类型和应用，以及它与聊天机器人、AI Age"
+  },
+  {
+    "category": "Description",
+    "file": "ai-workforce",
+    "detail": "len=90",
+    "priority": "P1",
+    "note": "AI workforce 既可指从事 AI 工作的人，也可指与人协作的角色型 AI agent。本文说明两种含义、实际示"
+  },
+  {
+    "category": "Description",
+    "file": "automate-customer-onboarding",
+    "detail": "len=83",
+    "priority": "P1",
+    "note": "如何安全地自动化客户 onboarding：梳理材料收集、KYB 关卡、欢迎序列与人工复核，并说明 Lucius 当前产"
+  },
+  {
+    "category": "Description",
+    "file": "automate-email-responses",
+    "detail": "len=82",
+    "priority": "P1",
+    "note": "多数教程教你搭自动回复模板——那不是自动化。本文讲如何让回复真正解决邮件，而不只是确认收到并推入不断变长、仍须人工处理的"
+  },
+  {
+    "category": "Description",
+    "file": "automate-repetitive-tasks",
+    "detail": "len=85",
+    "priority": "P1",
+    "note": "多数 automate repetitive tasks 教程只给你一串工具清单。本文讲按岗位的做法：把一整份重复工作交"
+  },
+  {
+    "category": "Description",
+    "file": "blackbox-trust",
+    "detail": "len=96",
+    "priority": "P1",
+    "note": "AI 是黑盒，但信任不要求打开黑盒。本文给出可操作的信任建立路径与 Lucius 四步渐进式授权模型，帮你逐步放权。含 "
+  },
+  {
+    "category": "Title",
+    "file": "discord-moderation-bot",
+    "detail": "Discord Moderation Bot：规则边界在哪",
+    "priority": "P0",
+    "note": "English prefix"
+  },
+  {
+    "category": "Description",
+    "file": "discord-moderation-bot",
+    "detail": "len=96",
+    "priority": "P1",
+    "note": "MEE6、Dyno 这类 Discord moderation bot 很擅长机械处置，但规则型 bot 有上限——关键"
+  },
+  {
+    "category": "Title",
+    "file": "discord-poll-bot",
+    "detail": "Discord Poll Bot：原生投票够用时，不必装机器人",
+    "priority": "P0",
+    "note": "English prefix"
+  },
+  {
+    "category": "Description",
+    "file": "discord-poll-bot",
+    "detail": "len=89",
+    "priority": "P1",
+    "note": "判断 Discord 原生投票还是 poll bot 更合适：比较定时、匿名、导出等需求，也看清投票反馈在社区决策中的边"
+  },
+  {
+    "category": "Title",
+    "file": "discord-security-bot",
+    "detail": "Discord Security Bot：按威胁配置安全防线",
+    "priority": "P0",
+    "note": "English prefix"
+  },
+  {
+    "category": "Title",
+    "file": "discord-server-rules",
+    "detail": "Discord server rules：模板之外的执行断层",
+    "priority": "P0",
+    "note": "English prefix"
+  },
+  {
+    "category": "Description",
+    "file": "discord-server-rules",
+    "detail": "len=86",
+    "priority": "P1",
+    "note": "规则措辞往往没问题，执行才是断层。本文讲 Discord 原生能力与 AI 社区运营如何补上凌晨三点无人值守、规则只置顶"
+  },
+  {
+    "category": "Title",
+    "file": "discord-ticket-bot",
+    "detail": "Discord Ticket Bot：Ticket Tool、Tickets.bot 与 Tickety 怎么选",
+    "priority": "P0",
+    "note": "English prefix"
+  },
+  {
+    "category": "Description",
+    "file": "discord-ticket-bot",
+    "detail": "len=88",
+    "priority": "P1",
+    "note": "工单 bot 把支持请求变成私有频道。本文讲配置要点、Ticket Tool 等工具差异，以及为何队列长度是错指标、要减"
+  },
+  {
+    "category": "Title",
+    "file": "discord-verification-bot",
+    "detail": "Discord Verification Bot：选择与配置指南",
+    "priority": "P0",
+    "note": "English prefix"
+  },
+  {
+    "category": "Description",
+    "file": "discord-verification-bot",
+    "detail": "len=89",
+    "priority": "P1",
+    "note": "按威胁模型选择 Discord 验证 bot，配置原生安全控制与经过测试的关卡，并了解入口验证永远拦不住哪些进门后的 s"
+  },
+  {
+    "category": "Title",
+    "file": "discord-welcome-bot",
+    "detail": "Discord Welcome Bot：Onboarding 完整配置步骤",
+    "priority": "P0",
+    "note": "English prefix"
+  },
+  {
+    "category": "Description",
+    "file": "discord-welcome-bot",
+    "detail": "len=83",
+    "priority": "P1",
+    "note": "从 Community Onboarding、Server Guide 到可选的欢迎 bot：按步骤配置角色、频道、权限"
+  },
+  {
+    "category": "Description",
+    "file": "from-memory-to-intuition",
+    "detail": "len=84",
+    "priority": "P1",
+    "note": "AI 员工变强不靠堆文档，而是在真实交互中练出直觉。本文对比记忆型 RAG 与行动—观察—学习闭环的路径差异、适用场景与"
+  },
+  {
+    "category": "Description",
+    "file": "how-to-automate-discord-moderation",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "Discord AutoMod 设置指南：关键词、通配符、正则、刷屏限制、处置动作与测试方法，减少误伤后再决定是否加 A"
+  },
+  {
+    "category": "Description",
+    "file": "how-to-automate-my-business",
+    "detail": "len=84",
+    "priority": "P1",
+    "note": "问题不在买哪个 app，而在哪些岗位重复够多、文档化够清楚，可以交给 AI 员工——本文讲逐个岗位自动化的顺序、验收方法"
+  },
+  {
+    "category": "Description",
+    "file": "how-to-build-an-online-community",
+    "detail": "len=82",
+    "priority": "P1",
+    "note": "选平台、熬过前一百人，以及规模上来后必然出现的三件运营活儿——重复答疑、规则执行与沉默流失，本文给出可执行、可衡量的应对"
+  },
+  {
+    "category": "Description",
+    "file": "how-to-onboard-community-members",
+    "detail": "len=93",
+    "priority": "P1",
+    "note": "如何让新社群成员真正留下来：选定 activation 时刻、在 channel 里即时回答首个问题、筛除 spam、将"
+  },
+  {
+    "category": "Description",
+    "file": "how-to-reduce-support-tickets",
+    "detail": "len=84",
+    "priority": "P1",
+    "note": "七个减少 support ticket 的打法：修掉根因、在上下文里回答、部署会升级的 AI agent 拦截重复问题—"
+  },
+  {
+    "category": "Description",
+    "file": "how-to-use-knockin",
+    "detail": "len=100",
+    "priority": "P1",
+    "note": "Knockin 完整操作指南：从注册入门到 LIVE 名片上线，配置 Knowledge、Card Editor、发布分"
+  },
+  {
+    "category": "Body",
+    "file": "how-to-use-knockin",
+    "detail": "Introducing",
+    "priority": "P1",
+    "note": ""
+  },
+  {
+    "category": "Description",
+    "file": "human-in-the-loop-ai",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "人在回路 AI 是一套可审计的控制模型：人定义边界、承担越界责任，并审查系统留下的证据，而非审批每条 routine 动"
+  },
+  {
+    "category": "Description",
+    "file": "introducing-knockin",
+    "detail": "len=83",
+    "priority": "P1",
+    "note": "Knockin 把工作经历与个人故事变成会答疑的智能名片。按构建、打磨、分享三步走，几分钟即可上线，无需信用卡、也无需工"
+  },
+  {
+    "category": "Body",
+    "file": "introducing-knockin",
+    "detail": "Introducing",
+    "priority": "P1",
+    "note": ""
+  },
+  {
+    "category": "Description",
+    "file": "jagged-frontier-org-design",
+    "detail": "len=84",
+    "priority": "P1",
+    "note": "你的公司在培训员工怎么写 prompt，却没人教他们什么时候不该打开 ChatGPT。这是大多数 AI 战略里缺失的那一"
+  },
+  {
+    "category": "Description",
+    "file": "openclaw-enterprise-postmortem",
+    "detail": "len=81",
+    "priority": "P1",
+    "note": "OpenClaw 解决了 AI 进入真实 IM 工作流这一最难的一层。我们尝试在上面套企业壳，两周后每个潜在客户都没有签"
+  },
+  {
+    "category": "Description",
+    "file": "outsource-back-office-operations",
+    "detail": "len=82",
+    "priority": "P1",
+    "note": "后台运营该外包给 BPO 还是用 AI？比较控制、例外、集成与人工复核，并说明 Lucius 当前不自动化哪些后台工作，"
+  },
+  {
+    "category": "Description",
+    "file": "persona-that-speaks",
+    "detail": "len=84",
+    "priority": "P1",
+    "note": "Dashboard 告诉你发生了什么，却回答不了「我该做什么」。本文讲用户画像如何从只读数据展示走向可优先执行、可交接的"
+  },
+  {
+    "category": "Description",
+    "file": "pm-middle-layer-repriced",
+    "detail": "len=88",
+    "priority": "P1",
+    "note": "岗位名称往往比岗位定价活得更久。PM 这个 title 不会消失，先松动的是协调型的中间层；builder PM 和资源"
+  },
+  {
+    "category": "Description",
+    "file": "what-is-a-digital-employee",
+    "detail": "len=90",
+    "priority": "P1",
+    "note": "数字员工是被配置来承担有边界工作的软件。本文说明它与 digital worker、RPA、chatbot 和数字员工体"
+  },
+  {
+    "category": "Description",
+    "file": "what-is-an-ai-analyst",
+    "detail": "len=87",
+    "priority": "P1",
+    "note": "AI analyst 既可能指使用 AI 与数据的人类职位，也可能指能生成查询、图表和结论的数据分析软件。本文说明其工作"
+  }
+]

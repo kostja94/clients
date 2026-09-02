@@ -1,0 +1,1686 @@
+{
+  "total": 169,
+  "high": 0,
+  "medium": 0,
+  "low": 0,
+  "none": 169,
+  "folder_stats": {
+    "3d-spatial": {
+      "total": 7,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 7
+    },
+    "(root)": {
+      "total": 16,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 16
+    },
+    "agent": {
+      "total": 15,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 15
+    },
+    "chat-social": {
+      "total": 5,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 5
+    },
+    "cms": {
+      "total": 8,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 8
+    },
+    "coding": {
+      "total": 9,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 9
+    },
+    "design": {
+      "total": 6,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 6
+    },
+    "education": {
+      "total": 8,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 8
+    },
+    "enterprise-knowledge": {
+      "total": 7,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 7
+    },
+    "healthcare": {
+      "total": 2,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 2
+    },
+    "hr-recruiting": {
+      "total": 4,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 4
+    },
+    "image": {
+      "total": 12,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 12
+    },
+    "infrastructure": {
+      "total": 4,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 4
+    },
+    "llm": {
+      "total": 6,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 6
+    },
+    "marketing-growth": {
+      "total": 9,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 9
+    },
+    "productivity": {
+      "total": 4,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 4
+    },
+    "search-geo": {
+      "total": 4,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 4
+    },
+    "text-content": {
+      "total": 6,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 6
+    },
+    "video": {
+      "total": 14,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 14
+    },
+    "voice-audio": {
+      "total": 10,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 10
+    },
+    "web-data": {
+      "total": 6,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 6
+    },
+    "website-builder": {
+      "total": 7,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 7
+    }
+  },
+  "results": [
+    {
+      "path": "README.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\README.md",
+      "lines": 402,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "llm/llm.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\llm\\llm.md",
+      "lines": 331,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 14
+    },
+    {
+      "path": "image/image-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\image-generator.md",
+      "lines": 321,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "vibe-coding-payments.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\vibe-coding-payments.md",
+      "lines": 294,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 14
+    },
+    {
+      "path": "coding/ai-components.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\ai-components.md",
+      "lines": 263,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "image/social-cards-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\social-cards-generator.md",
+      "lines": 262,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "_TEMPLATE.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\_TEMPLATE.md",
+      "lines": 247,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "llm-leaderboard-snapshots.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\llm-leaderboard-snapshots.md",
+      "lines": 225,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 3
+    },
+    {
+      "path": "voice-audio/text-to-speech.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\text-to-speech.md",
+      "lines": 225,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/agent-identity.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\agent-identity.md",
+      "lines": 223,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "voice-audio/voice-changer.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\voice-changer.md",
+      "lines": 223,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "chat-social/community.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\chat-social\\community.md",
+      "lines": 222,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "territory-map.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\territory-map.md",
+      "lines": 221,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "infrastructure/inference-infrastructure.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\infrastructure\\inference-infrastructure.md",
+      "lines": 219,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "marketing-growth/fundraising.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\fundraising.md",
+      "lines": 218,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "healthcare/medical-scribe.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\healthcare\\medical-scribe.md",
+      "lines": 215,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "website-builder/website-builder.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\website-builder\\website-builder.md",
+      "lines": 213,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "ai-shopping.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\ai-shopping.md",
+      "lines": 208,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 14
+    },
+    {
+      "path": "agent/agent-runtime.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\agent-runtime.md",
+      "lines": 207,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 10
+    },
+    {
+      "path": "cms/headless-cms.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\headless-cms.md",
+      "lines": 207,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "voice-audio/music-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\music-generator.md",
+      "lines": 206,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 14
+    },
+    {
+      "path": "infrastructure/api.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\infrastructure\\api.md",
+      "lines": 205,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "video/short-drama.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\short-drama.md",
+      "lines": 205,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "3d-spatial/virtual-staging.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\3d-spatial\\virtual-staging.md",
+      "lines": 204,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "llm/llm-for-coding.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\llm\\llm-for-coding.md",
+      "lines": 202,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "coding/git-hosting.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\git-hosting.md",
+      "lines": 201,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 14
+    },
+    {
+      "path": "infrastructure/authentication.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\infrastructure\\authentication.md",
+      "lines": 201,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "web-data/web-scraping.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\web-data\\web-scraping.md",
+      "lines": 201,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "video/canvas-video.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\canvas-video.md",
+      "lines": 199,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "video/filmmaking.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\filmmaking.md",
+      "lines": 199,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "enterprise-knowledge/ocr.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\enterprise-knowledge\\ocr.md",
+      "lines": 198,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "llm/multimodal-llm.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\llm\\multimodal-llm.md",
+      "lines": 196,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "enterprise-knowledge/knowledge-base.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\enterprise-knowledge\\knowledge-base.md",
+      "lines": 193,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "llm/llm-for-math.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\llm\\llm-for-math.md",
+      "lines": 193,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "marketing-growth/ugc.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\ugc.md",
+      "lines": 190,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "world-model.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\world-model.md",
+      "lines": 190,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "3d-spatial/3d-scanner.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\3d-spatial\\3d-scanner.md",
+      "lines": 187,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/multi-agent.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\multi-agent.md",
+      "lines": 187,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "website-builder/portfolio-website-builder.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\website-builder\\portfolio-website-builder.md",
+      "lines": 187,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "enterprise-knowledge/spreadsheet.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\enterprise-knowledge\\spreadsheet.md",
+      "lines": 184,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "video/animation-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\animation-generator.md",
+      "lines": 184,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agentic-payments.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agentic-payments.md",
+      "lines": 183,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "family-assistant.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\family-assistant.md",
+      "lines": 183,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "video/text-to-video.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\text-to-video.md",
+      "lines": 183,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "voice-audio/voice.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\voice.md",
+      "lines": 183,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 14
+    },
+    {
+      "path": "coding/code-completion.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\code-completion.md",
+      "lines": 182,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "search-geo/ai-visibility.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\search-geo\\ai-visibility.md",
+      "lines": 182,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "3d-spatial/3d.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\3d-spatial\\3d.md",
+      "lines": 181,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 10
+    },
+    {
+      "path": "agent/ai-employee.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\ai-employee.md",
+      "lines": 181,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "healthcare/healthcare.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\healthcare\\healthcare.md",
+      "lines": 181,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "search-geo/ai-traffic-and-citation-sources.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\search-geo\\ai-traffic-and-citation-sources.md",
+      "lines": 181,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "cms/open-source-cms.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\open-source-cms.md",
+      "lines": 179,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "llm/llm-for-reasoning.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\llm\\llm-for-reasoning.md",
+      "lines": 179,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "voice-audio/voice-cloning.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\voice-cloning.md",
+      "lines": 179,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "website-builder/ecommerce-website-builder.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\website-builder\\ecommerce-website-builder.md",
+      "lines": 178,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "3d-spatial/3d-model-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\3d-spatial\\3d-model-generator.md",
+      "lines": 177,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "3d-spatial/3d-modelling.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\3d-spatial\\3d-modelling.md",
+      "lines": 177,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "3d-spatial/cad.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\3d-spatial\\cad.md",
+      "lines": 176,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "hr-recruiting/recruiting.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\hr-recruiting\\recruiting.md",
+      "lines": 176,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "3d-spatial/interior-design.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\3d-spatial\\interior-design.md",
+      "lines": 175,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "coding/coding.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\coding.md",
+      "lines": 175,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 14
+    },
+    {
+      "path": "image/image.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\image.md",
+      "lines": 175,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 10
+    },
+    {
+      "path": "marketing-growth/affiliate-marketing.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\affiliate-marketing.md",
+      "lines": 175,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "voice-audio/speech-to-text.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\speech-to-text.md",
+      "lines": 174,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/work-agent.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\work-agent.md",
+      "lines": 173,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "search-geo/search-engine.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\search-geo\\search-engine.md",
+      "lines": 173,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "agent/workflow.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\workflow.md",
+      "lines": 172,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent-billing.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent-billing.md",
+      "lines": 171,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "voice-audio/lip-sync.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\lip-sync.md",
+      "lines": 171,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "coding/cli.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\cli.md",
+      "lines": 170,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "voice-audio/accent-conversion.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\accent-conversion.md",
+      "lines": 170,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "web-data/headless-browser.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\web-data\\headless-browser.md",
+      "lines": 170,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "search-geo/geo.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\search-geo\\geo.md",
+      "lines": 169,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "design/user-research.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\design\\user-research.md",
+      "lines": 168,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "coding/vibe-coding.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\vibe-coding.md",
+      "lines": 167,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "website-builder/blog-website-builder.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\website-builder\\blog-website-builder.md",
+      "lines": 167,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "video/video-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\video-generator.md",
+      "lines": 166,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "agent/agent-sandbox.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\agent-sandbox.md",
+      "lines": 165,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "enterprise-knowledge/documentation.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\enterprise-knowledge\\documentation.md",
+      "lines": 165,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "agent/openclaw-alternatives.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\openclaw-alternatives.md",
+      "lines": 164,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "education/ai-language-learning.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\ai-language-learning.md",
+      "lines": 164,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "hr-recruiting/hr-assistant.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\hr-recruiting\\hr-assistant.md",
+      "lines": 164,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "video/music-video-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\music-video-generator.md",
+      "lines": 164,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "web-data/technology-profiler.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\web-data\\technology-profiler.md",
+      "lines": 164,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "web-data/web-fetch.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\web-data\\web-fetch.md",
+      "lines": 164,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "education/ai-homework-helper.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\ai-homework-helper.md",
+      "lines": 163,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "design/ui-design.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\design\\ui-design.md",
+      "lines": 162,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "image/avatar.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\avatar.md",
+      "lines": 162,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "image/image-editor.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\image-editor.md",
+      "lines": 162,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "video/video-effects.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\video-effects.md",
+      "lines": 162,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "enterprise-knowledge/ai-documents.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\enterprise-knowledge\\ai-documents.md",
+      "lines": 161,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "image/background-changer.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\background-changer.md",
+      "lines": 161,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "video/image-to-video.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\image-to-video.md",
+      "lines": 161,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "video/interactive-video.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\interactive-video.md",
+      "lines": 161,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "chat-social/character-chat.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\chat-social\\character-chat.md",
+      "lines": 160,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "education/education.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\education.md",
+      "lines": 160,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "infrastructure/ai-training-data.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\infrastructure\\ai-training-data.md",
+      "lines": 160,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "voice-audio/video-translator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\video-translator.md",
+      "lines": 160,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "design/ux-design.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\design\\ux-design.md",
+      "lines": 158,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "education/ai-flashcards.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\ai-flashcards.md",
+      "lines": 158,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "text-content/text.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\text-content\\text.md",
+      "lines": 158,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "image/image-enhancer.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\image-enhancer.md",
+      "lines": 157,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "voice-audio/audio-translator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\voice-audio\\audio-translator.md",
+      "lines": 157,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "website-builder/landing-page-builder.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\website-builder\\landing-page-builder.md",
+      "lines": 157,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "education/ai-for-science.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\ai-for-science.md",
+      "lines": 156,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "text-content/text-translator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\text-content\\text-translator.md",
+      "lines": 156,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "video/video.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\video.md",
+      "lines": 156,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 10
+    },
+    {
+      "path": "image/logo-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\logo-generator.md",
+      "lines": 154,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/agent-memory.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\agent-memory.md",
+      "lines": 153,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "enterprise-knowledge/legal.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\enterprise-knowledge\\legal.md",
+      "lines": 153,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "image/image-relighting.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\image-relighting.md",
+      "lines": 153,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/agent-to-agent.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\agent-to-agent.md",
+      "lines": 152,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "text-content/presentation-maker.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\text-content\\presentation-maker.md",
+      "lines": 152,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "video/video-editor.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\video-editor.md",
+      "lines": 152,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "video/video-to-video.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\video-to-video.md",
+      "lines": 152,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "chat-social/dating.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\chat-social\\dating.md",
+      "lines": 150,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "marketing-growth/advertising-agent.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\advertising-agent.md",
+      "lines": 150,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "marketing-growth/referral-program.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\referral-program.md",
+      "lines": 150,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "text-content/text-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\text-content\\text-generator.md",
+      "lines": 150,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "agent/expert-agent.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\expert-agent.md",
+      "lines": 149,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "coding/code-review.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\code-review.md",
+      "lines": 149,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "web-data/web-search-api.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\web-data\\web-search-api.md",
+      "lines": 149,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "education/notes-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\notes-generator.md",
+      "lines": 147,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "coding/app-builder.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\app-builder.md",
+      "lines": 146,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "enterprise-knowledge/memory.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\enterprise-knowledge\\memory.md",
+      "lines": 145,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "hr-recruiting/linkedin.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\hr-recruiting\\linkedin.md",
+      "lines": 143,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 10
+    },
+    {
+      "path": "llm/evaluation.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\llm\\evaluation.md",
+      "lines": 143,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "marketing-growth/b2b.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\b2b.md",
+      "lines": 143,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/browser.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\browser.md",
+      "lines": 142,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "education/quiz-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\quiz-generator.md",
+      "lines": 142,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "fashion.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\fashion.md",
+      "lines": 142,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "image/headshot-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\headshot-generator.md",
+      "lines": 142,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "design/prototyping.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\design\\prototyping.md",
+      "lines": 141,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "productivity/project-management.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\productivity\\project-management.md",
+      "lines": 141,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "chat-social/directory.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\chat-social\\directory.md",
+      "lines": 140,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "image/poster-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\poster-generator.md",
+      "lines": 140,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "education/ai-tutor.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\education\\ai-tutor.md",
+      "lines": 139,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "productivity/ai-scheduling.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\productivity\\ai-scheduling.md",
+      "lines": 139,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "text-content/essay-writer.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\text-content\\essay-writer.md",
+      "lines": 139,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "marketing-growth/social-media-tools.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\social-media-tools.md",
+      "lines": 138,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/agent-for-desktop.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\agent-for-desktop.md",
+      "lines": 137,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "text-content/story-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\text-content\\story-generator.md",
+      "lines": 137,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "agent/agent-skills.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\agent-skills.md",
+      "lines": 136,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "animation-library.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\animation-library.md",
+      "lines": 136,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "chat-social/chatbot.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\chat-social\\chatbot.md",
+      "lines": 136,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "data-engineering-agent.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\data-engineering-agent.md",
+      "lines": 136,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "hr-recruiting/interview-assistant.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\hr-recruiting\\interview-assistant.md",
+      "lines": 136,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "image/tattoo-generator.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\image\\tattoo-generator.md",
+      "lines": 135,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "lifetime-deals.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\lifetime-deals.md",
+      "lines": 135,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "religion.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\religion.md",
+      "lines": 135,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "agent/workspace-agent.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agent\\workspace-agent.md",
+      "lines": 134,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "productivity/note-taker.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\productivity\\note-taker.md",
+      "lines": 134,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "productivity/productivity.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\productivity\\productivity.md",
+      "lines": 134,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "web-data/search-indexing.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\web-data\\search-indexing.md",
+      "lines": 132,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "video/video-clipping.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\video\\video-clipping.md",
+      "lines": 131,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "coding/ide.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\coding\\ide.md",
+      "lines": 130,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "design/wireframing.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\design\\wireframing.md",
+      "lines": 130,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 13
+    },
+    {
+      "path": "design/design.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\design\\design.md",
+      "lines": 127,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "agentic-commerce.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\agentic-commerce.md",
+      "lines": 124,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "cms/enterprise-cms.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\enterprise-cms.md",
+      "lines": 124,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "marketing-growth/lead-generation.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\lead-generation.md",
+      "lines": 124,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 12
+    },
+    {
+      "path": "marketing-growth/influencer-marketing.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\marketing-growth\\influencer-marketing.md",
+      "lines": 123,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 11
+    },
+    {
+      "path": "cms/content-management-system.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\content-management-system.md",
+      "lines": 112,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 6
+    },
+    {
+      "path": "website-builder/README.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\website-builder\\README.md",
+      "lines": 58,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "cms/KEYWORD-RESEARCH.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\KEYWORD-RESEARCH.md",
+      "lines": 50,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "cms/README.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\README.md",
+      "lines": 50,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "cms/_briefs/open-source-cms.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\_briefs\\open-source-cms.md",
+      "lines": 48,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "website-builder/KEYWORD-RESEARCH.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\website-builder\\KEYWORD-RESEARCH.md",
+      "lines": 40,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    },
+    {
+      "path": "cms/_briefs/headless-cms.md",
+      "abs_path": "e:\\clients\\Alignify\\knowledge\\tools\\cms\\_briefs\\headless-cms.md",
+      "lines": 33,
+      "severity": "NONE",
+      "score": 0,
+      "issues": [],
+      "section_count": 1
+    }
+  ]
+}

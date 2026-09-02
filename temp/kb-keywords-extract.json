@@ -1,0 +1,1274 @@
+[
+  {
+    "path": "tools/3d-spatial/3d-model-generator.md",
+    "slug": "3d-model-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Text-to-3D / Image-to-3D / 文图生 3D",
+    "h1": "AI 3D Model Generator"
+  },
+  {
+    "path": "tools/3d-spatial/3d-modelling.md",
+    "slug": "3d-modelling",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "3D modelling / DCC 精修",
+    "h1": "3D 建模工具（3D Modelling）"
+  },
+  {
+    "path": "tools/3d-spatial/3d-scanner.md",
+    "slug": "3d-scanner",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI 3D scanner / 实物数字化",
+    "h1": "AI 3D Scanner"
+  },
+  {
+    "path": "tools/3d-spatial/3d.md",
+    "slug": "3d",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI 3D 工具（Hub）",
+    "h1": "AI 3D Tools"
+  },
+  {
+    "path": "tools/3d-spatial/cad.md",
+    "slug": "cad",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "CAD / 工程几何",
+    "h1": "AI CAD Tools"
+  },
+  {
+    "path": "tools/3d-spatial/interior-design.md",
+    "slug": "interior-design",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI interior design / 自住改造可视化",
+    "h1": "AI Interior Design"
+  },
+  {
+    "path": "tools/3d-spatial/virtual-staging.md",
+    "slug": "virtual-staging",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI virtual staging / listing 虚拟置景",
+    "h1": "AI Virtual Staging"
+  },
+  {
+    "path": "tools/agent/agent-for-desktop.md",
+    "slug": "agent-for-desktop",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Agent on desktop / 桌面智能体",
+    "h1": "桌面智能体（Agent on Desktop）"
+  },
+  {
+    "path": "tools/agent/agent-identity.md",
+    "slug": "agent-identity",
+    "keywordEn": "AI Agent Identity",
+    "keywordZh": null,
+    "narrative": "Agent Identity / Agent IAM / Agentic Access",
+    "h1": "AI Agent 身份与访问治理"
+  },
+  {
+    "path": "tools/agent/agent-memory.md",
+    "slug": "agent-memory",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Agent Memory Layer / Agent 记忆层",
+    "h1": "AI Agent 记忆层"
+  },
+  {
+    "path": "tools/agent/agent-runtime.md",
+    "slug": "agent-runtime",
+    "keywordEn": "AI Agent Runtime",
+    "keywordZh": "AI Agent 运行时",
+    "narrative": null,
+    "h1": "AI Agent 运行时"
+  },
+  {
+    "path": "tools/agent/agent-sandbox.md",
+    "slug": "agent-sandbox",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Agent Sandbox / Agent 沙箱",
+    "h1": "AI Agent 沙箱"
+  },
+  {
+    "path": "tools/agent/agent-skills.md",
+    "slug": "agent-skills",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Agent Skills / 技能生态",
+    "h1": "Agent Skills 生态"
+  },
+  {
+    "path": "tools/agent/agent-to-agent.md",
+    "slug": "agent-to-agent",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "A2A Agent Network / Agent 互联网络",
+    "h1": "Agent-to-Agent Network / Agent 互联网络"
+  },
+  {
+    "path": "tools/agent/ai-employee.md",
+    "slug": "ai-employee",
+    "keywordEn": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+    "keywordZh": "AI 员工 / IM 里的 AI 同事 / 聊天软件里的数字员工",
+    "narrative": "AI Employee / Chat-native AI Coworker",
+    "h1": "AI Employee（AI 员工）"
+  },
+  {
+    "path": "tools/agent/browser.md",
+    "slug": "browser",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI browser / 人工智能浏览器",
+    "h1": "AI 浏览器"
+  },
+  {
+    "path": "tools/agent/expert-agent.md",
+    "slug": "expert-agent",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Expert Agent / 专家网络与 AI Agent 市场",
+    "h1": "AI Expert Agent"
+  },
+  {
+    "path": "tools/agent/multi-agent.md",
+    "slug": "multi-agent",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Multi-Agent Systems / 多智能体系统",
+    "h1": "多智能体系统"
+  },
+  {
+    "path": "tools/agent/openclaw-alternatives.md",
+    "slug": "openclaw-alternatives",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "OpenClaw 系谱 / alternatives 检索意图",
+    "h1": "OpenClaw 系谱与变体对照"
+  },
+  {
+    "path": "tools/agent/work-agent.md",
+    "slug": "work-agent",
+    "keywordEn": "Work Agent / AI Work Agent",
+    "keywordZh": "工作智能体 / AI 办公智能体",
+    "narrative": "Work Agent / 工作智能体",
+    "h1": "Work Agent（工作智能体）"
+  },
+  {
+    "path": "tools/agent/workflow.md",
+    "slug": "workflow",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Workflow automation / 工作流自动化",
+    "h1": "AI Workflow"
+  },
+  {
+    "path": "tools/agent/workspace-agent.md",
+    "slug": "workspace-agent",
+    "keywordEn": "Workspace Agent / Team AI Agent",
+    "keywordZh": "工作区智能体 / 团队 Agent 工作流",
+    "narrative": "Workspace Agent / 团队可复用 AI Agent",
+    "h1": "Workspace Agent（工作区智能体）"
+  },
+  {
+    "path": "tools/agent-billing.md",
+    "slug": "agent-billing",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Agent Billing / AI Agent 计费",
+    "h1": "Agent Billing"
+  },
+  {
+    "path": "tools/agentic-commerce.md",
+    "slug": "agentic-commerce",
+    "keywordEn": "Agentic Commerce",
+    "keywordZh": "代理式商务",
+    "narrative": null,
+    "h1": "Agentic Commerce"
+  },
+  {
+    "path": "tools/agentic-payments.md",
+    "slug": "agentic-payments",
+    "keywordEn": "Agentic Payments",
+    "keywordZh": "智能体支付",
+    "narrative": null,
+    "h1": "Agentic Payments"
+  },
+  {
+    "path": "tools/ai-shopping.md",
+    "slug": "ai-shopping",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Shopping"
+  },
+  {
+    "path": "tools/animation-library.md",
+    "slug": "animation-library",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "Animation Library"
+  },
+  {
+    "path": "tools/chat-social/character-chat.md",
+    "slug": "character-chat",
+    "keywordEn": "Character Chat",
+    "keywordZh": "角色对话",
+    "narrative": null,
+    "h1": "Character Chat / AI 角色对话"
+  },
+  {
+    "path": "tools/chat-social/chatbot.md",
+    "slug": "chatbot",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Chatbot"
+  },
+  {
+    "path": "tools/chat-social/community.md",
+    "slug": "community",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI 社区"
+  },
+  {
+    "path": "tools/chat-social/dating.md",
+    "slug": "dating",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Dating（AI 约会与匹配）"
+  },
+  {
+    "path": "tools/chat-social/directory.md",
+    "slug": "directory",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Directory / AI 工具导航"
+  },
+  {
+    "path": "tools/cms/content-management-system.md",
+    "slug": "content-management-system",
+    "keywordEn": "Content Management System / CMS",
+    "keywordZh": "内容管理系统 / CMS",
+    "narrative": null,
+    "h1": "Content Management System / 内容管理系统"
+  },
+  {
+    "path": "tools/cms/enterprise-cms.md",
+    "slug": "enterprise-cms",
+    "keywordEn": "Enterprise CMS / DXP / Digital Experience Platform",
+    "keywordZh": "企业 CMS / 数字体验平台",
+    "narrative": null,
+    "h1": "Enterprise CMS / DXP · 企业内容管理系统"
+  },
+  {
+    "path": "tools/cms/headless-cms.md",
+    "slug": "headless-cms",
+    "keywordEn": "Headless CMS / API-first CMS",
+    "keywordZh": "无头 CMS / API 优先内容管理",
+    "narrative": null,
+    "h1": "Headless CMS / 无头内容管理系统"
+  },
+  {
+    "path": "tools/cms/open-source-cms.md",
+    "slug": "open-source-cms",
+    "keywordEn": "Open Source CMS / OSS CMS",
+    "keywordZh": "开源 CMS / 开源内容管理系统",
+    "narrative": null,
+    "h1": "Open Source CMS / 开源 CMS"
+  },
+  {
+    "path": "tools/coding/ai-components.md",
+    "slug": "ai-components",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Components / Prompt-as-Component / Component Registry",
+    "h1": "AI Components / AI 组件 Prompt 库与 Registry"
+  },
+  {
+    "path": "tools/coding/app-builder.md",
+    "slug": "app-builder",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI App Builder / AI 应用构建器",
+    "h1": "App Builder"
+  },
+  {
+    "path": "tools/coding/cli.md",
+    "slug": "cli",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI CLI / Agentic CLI",
+    "h1": "AI CLI Tools"
+  },
+  {
+    "path": "tools/coding/code-completion.md",
+    "slug": "code-completion",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Code completion / AI code assistant",
+    "h1": "AI 代码补全（Code Completion）"
+  },
+  {
+    "path": "tools/coding/code-review.md",
+    "slug": "code-review",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI code review / PR 审查",
+    "h1": "AI 代码审查（Code review / 代码质量检查）"
+  },
+  {
+    "path": "tools/coding/coding.md",
+    "slug": "coding",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Coding Agent / 编程智能体",
+    "h1": "AI Coding"
+  },
+  {
+    "path": "tools/coding/git-hosting.md",
+    "slug": "git-hosting",
+    "keywordEn": "Agent-native Git hosting / Code forge",
+    "keywordZh": "AI 原生 Git 托管 / 代码托管平台",
+    "narrative": "Agent-native Git hosting / Code forge",
+    "h1": "Agent 时代 Git 托管 / Code Forge"
+  },
+  {
+    "path": "tools/coding/ide.md",
+    "slug": "ide",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI IDE / Agentic IDE",
+    "h1": "AI IDE"
+  },
+  {
+    "path": "tools/coding/vibe-coding.md",
+    "slug": "vibe-coding",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Vibe coding / 氛围编程",
+    "h1": "Vibe coding（氛围编程）"
+  },
+  {
+    "path": "tools/data-engineering-agent.md",
+    "slug": "data-engineering-agent",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "Data Engineering Agent"
+  },
+  {
+    "path": "tools/design/design.md",
+    "slug": "design",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Design Tool",
+    "h1": "AI Design（AI 设计工具）"
+  },
+  {
+    "path": "tools/design/prototyping.md",
+    "slug": "prototyping",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Prototyping / 交互原型",
+    "h1": "Prototyping（AI 交互原型）"
+  },
+  {
+    "path": "tools/design/ui-design.md",
+    "slug": "ui-design",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI UI Design / 界面设计",
+    "h1": "AI UI Design（AI 界面设计）"
+  },
+  {
+    "path": "tools/design/user-research.md",
+    "slug": "user-research",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI User Research",
+    "h1": "AI User Research"
+  },
+  {
+    "path": "tools/design/ux-design.md",
+    "slug": "ux-design",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "UX Design / 体验设计",
+    "h1": "AI UX Design（AI 体验设计）"
+  },
+  {
+    "path": "tools/design/wireframing.md",
+    "slug": "wireframing",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Wireframing / 线框图",
+    "h1": "Wireframing（AI 线框图）"
+  },
+  {
+    "path": "tools/education/ai-flashcards.md",
+    "slug": "ai-flashcards",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI flashcards / 间隔重复学习工具",
+    "h1": "AI Flashcards & Study Tools"
+  },
+  {
+    "path": "tools/education/ai-for-science.md",
+    "slug": "ai-for-science",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI for Science / AI4S",
+    "h1": "AI for Science（AI 赋能科学研究）"
+  },
+  {
+    "path": "tools/education/ai-homework-helper.md",
+    "slug": "ai-homework-helper",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI homework helper / 拍照解题",
+    "h1": "AI Homework Helper"
+  },
+  {
+    "path": "tools/education/ai-language-learning.md",
+    "slug": "ai-language-learning",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI language learning / AI 语言学习 App",
+    "h1": "AI Language Learning"
+  },
+  {
+    "path": "tools/education/ai-tutor.md",
+    "slug": "ai-tutor",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI tutor / AI 家教",
+    "h1": "AI Tutor（AI 家教与智能辅导）"
+  },
+  {
+    "path": "tools/education/education.md",
+    "slug": "education",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Education / AI 教育工具（Hub）",
+    "h1": "AI Education"
+  },
+  {
+    "path": "tools/education/notes-generator.md",
+    "slug": "notes-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI notes generator / PDF·视频→笔记",
+    "h1": "AI 笔记生成器"
+  },
+  {
+    "path": "tools/education/quiz-generator.md",
+    "slug": "quiz-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI quiz generator / AI 测评生成",
+    "h1": "AI Quiz Generator（AI 出题与测评生成）"
+  },
+  {
+    "path": "tools/enterprise-knowledge/ai-documents.md",
+    "slug": "ai-documents",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Documents / 智能文档",
+    "h1": "AI 文档（AI Documents）"
+  },
+  {
+    "path": "tools/enterprise-knowledge/documentation.md",
+    "slug": "documentation",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Developer documentation / 开发者文档",
+    "h1": "开发者文档与 Agent 时代"
+  },
+  {
+    "path": "tools/enterprise-knowledge/knowledge-base.md",
+    "slug": "knowledge-base",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Knowledge Base / RAG 知识库",
+    "h1": "AI Knowledge Base"
+  },
+  {
+    "path": "tools/enterprise-knowledge/legal.md",
+    "slug": "legal",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Legal AI / AI for lawyers",
+    "h1": "AI Tools for Lawyers（律师用 AI 工具）"
+  },
+  {
+    "path": "tools/enterprise-knowledge/memory.md",
+    "slug": "memory",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Memory / 个人第二大脑",
+    "h1": "AI Memory"
+  },
+  {
+    "path": "tools/enterprise-knowledge/ocr.md",
+    "slug": "ocr",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "OCR / 光学字符识别",
+    "h1": "AI OCR（文字识别）"
+  },
+  {
+    "path": "tools/enterprise-knowledge/spreadsheet.md",
+    "slug": "spreadsheet",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI spreadsheet / AI 表格",
+    "h1": "AI 表格"
+  },
+  {
+    "path": "tools/family-assistant.md",
+    "slug": "family-assistant",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI 家庭助手"
+  },
+  {
+    "path": "tools/fashion.md",
+    "slug": "fashion",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI fashion / AI 时尚工具",
+    "h1": "AI Fashion / AI 时尚"
+  },
+  {
+    "path": "tools/healthcare/healthcare.md",
+    "slug": "healthcare",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Healthcare"
+  },
+  {
+    "path": "tools/healthcare/medical-scribe.md",
+    "slug": "medical-scribe",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Medical Scribe"
+  },
+  {
+    "path": "tools/hr-recruiting/hr-assistant.md",
+    "slug": "hr-assistant",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI HR assistant / AI HR 助手",
+    "h1": "AI HR Assistant"
+  },
+  {
+    "path": "tools/hr-recruiting/interview-assistant.md",
+    "slug": "interview-assistant",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI interview assistant / 面试助手",
+    "h1": "AI 面试助手"
+  },
+  {
+    "path": "tools/hr-recruiting/linkedin.md",
+    "slug": "linkedin",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "LinkedIn AI tools / LinkedIn 向 AI 工具",
+    "h1": "LinkedIn AI 工具"
+  },
+  {
+    "path": "tools/hr-recruiting/recruiting.md",
+    "slug": "recruiting",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI recruiting / AI 人才获取",
+    "h1": "AI Recruiting"
+  },
+  {
+    "path": "tools/image/avatar.md",
+    "slug": "avatar",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Talking avatar / AI presenter / 数字人视频",
+    "h1": "AI Avatar Generator"
+  },
+  {
+    "path": "tools/image/background-changer.md",
+    "slug": "background-changer",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Background Changer"
+  },
+  {
+    "path": "tools/image/headshot-generator.md",
+    "slug": "headshot-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Headshot Generator"
+  },
+  {
+    "path": "tools/image/image-editor.md",
+    "slug": "image-editor",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Image Editor"
+  },
+  {
+    "path": "tools/image/image-enhancer.md",
+    "slug": "image-enhancer",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Image Enhancer"
+  },
+  {
+    "path": "tools/image/image-generator.md",
+    "slug": "image-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI image generator / 文生图（T2I）",
+    "h1": "AI Image Generator"
+  },
+  {
+    "path": "tools/image/image-relighting.md",
+    "slug": "image-relighting",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Image Relighting"
+  },
+  {
+    "path": "tools/image/image.md",
+    "slug": "image",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Image"
+  },
+  {
+    "path": "tools/image/logo-generator.md",
+    "slug": "logo-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI logo generator / AI Logo 生成器",
+    "h1": "AI Logo Generator / AI Logo 生成器"
+  },
+  {
+    "path": "tools/image/poster-generator.md",
+    "slug": "poster-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Poster Generator"
+  },
+  {
+    "path": "tools/image/social-cards-generator.md",
+    "slug": "social-cards-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "Social Cards Generator"
+  },
+  {
+    "path": "tools/image/tattoo-generator.md",
+    "slug": "tattoo-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Tattoo Generator"
+  },
+  {
+    "path": "tools/infrastructure/ai-training-data.md",
+    "slug": "ai-training-data",
+    "keywordEn": "AI Training Data Platform",
+    "keywordZh": "大模型训练数据平台（底层：AI训练数据基础设施）",
+    "narrative": "AI Training Data Platform / 训练数据基础设施",
+    "h1": "大模型训练数据平台"
+  },
+  {
+    "path": "tools/infrastructure/api.md",
+    "slug": "api",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Unified AI API Platform / 统一 AI API",
+    "h1": "统一 AI API 平台"
+  },
+  {
+    "path": "tools/infrastructure/authentication.md",
+    "slug": "authentication",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Authentication / CIAM / 应用身份",
+    "h1": "身份认证与访问管理（Authentication / IAM）"
+  },
+  {
+    "path": "tools/infrastructure/inference-infrastructure.md",
+    "slug": "inference-infrastructure",
+    "keywordEn": "AI Inference Infrastructure",
+    "keywordZh": "AI推理平台（底层：AI推理基础设施）",
+    "narrative": "AI Inference Infrastructure / 推理托管",
+    "h1": "AI 推理基础设施"
+  },
+  {
+    "path": "tools/lifetime-deals.md",
+    "slug": "lifetime-deals",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "Lifetime Deals"
+  },
+  {
+    "path": "tools/llm/evaluation.md",
+    "slug": "evaluation",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI evaluation / LLM evaluation / AI 评测",
+    "h1": "AI Evaluation / AI 模型评测"
+  },
+  {
+    "path": "tools/llm/llm-for-coding.md",
+    "slug": "llm-for-coding",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Coding LLM / 编程向大模型"
+  },
+  {
+    "path": "tools/llm/llm-for-math.md",
+    "slug": "llm-for-math",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Math LLM / 数学向大模型"
+  },
+  {
+    "path": "tools/llm/llm-for-reasoning.md",
+    "slug": "llm-for-reasoning",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Reasoning LLM / 推理向大模型"
+  },
+  {
+    "path": "tools/llm/llm.md",
+    "slug": "llm",
+    "keywordEn": "Large Language Model",
+    "keywordZh": "大语言模型",
+    "narrative": null,
+    "h1": "Large Language Model / 通用大语言模型"
+  },
+  {
+    "path": "tools/llm/multimodal-llm.md",
+    "slug": "multimodal-llm",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Multimodal LLM / 多模态大模型"
+  },
+  {
+    "path": "tools/marketing-growth/advertising-agent.md",
+    "slug": "advertising-agent",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Advertising Agent / AI 广告投放 Agent",
+    "h1": "Advertising Agent"
+  },
+  {
+    "path": "tools/marketing-growth/affiliate-marketing.md",
+    "slug": "affiliate-marketing",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Affiliate marketing / 联盟营销",
+    "h1": "Affiliate Marketing"
+  },
+  {
+    "path": "tools/marketing-growth/b2b.md",
+    "slug": "b2b",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI B2B Marketing Tools / B2B 营销 AI 工具",
+    "h1": "B2B Marketing"
+  },
+  {
+    "path": "tools/marketing-growth/fundraising.md",
+    "slug": "fundraising",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI fundraising / AI 融资工具",
+    "h1": "AI Fundraising"
+  },
+  {
+    "path": "tools/marketing-growth/influencer-marketing.md",
+    "slug": "influencer-marketing",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Influencer marketing / 网红营销",
+    "h1": "Influencer Marketing"
+  },
+  {
+    "path": "tools/marketing-growth/lead-generation.md",
+    "slug": "lead-generation",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Lead Generation / AI 线索生成",
+    "h1": "Lead Generation"
+  },
+  {
+    "path": "tools/marketing-growth/referral-program.md",
+    "slug": "referral-program",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Referral program / 推荐计划",
+    "h1": "Referral Program"
+  },
+  {
+    "path": "tools/marketing-growth/social-media-tools.md",
+    "slug": "social-media-tools",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Social media management / scheduling tools（社媒管理与排程工具）",
+    "h1": "Social Media Tools"
+  },
+  {
+    "path": "tools/marketing-growth/ugc.md",
+    "slug": "ugc",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "UGC / User-Generated Content（营销语境）",
+    "h1": "UGC"
+  },
+  {
+    "path": "tools/productivity/ai-scheduling.md",
+    "slug": "ai-scheduling",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI scheduling / AI 日程安排",
+    "h1": "AI 日程安排"
+  },
+  {
+    "path": "tools/productivity/note-taker.md",
+    "slug": "note-taker",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI note taker / AI meeting notes",
+    "h1": "AI 会议记录"
+  },
+  {
+    "path": "tools/productivity/productivity.md",
+    "slug": "productivity",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI productivity tools / AI 生产力工具",
+    "h1": "AI Productivity"
+  },
+  {
+    "path": "tools/productivity/project-management.md",
+    "slug": "project-management",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI project management / AI 项目管理",
+    "h1": "Project Management"
+  },
+  {
+    "path": "tools/religion.md",
+    "slug": "religion",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Religion"
+  },
+  {
+    "path": "tools/search-geo/ai-traffic-and-citation-sources.md",
+    "slug": "ai-traffic-and-citation-sources",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI 搜索平台与引用来源"
+  },
+  {
+    "path": "tools/search-geo/ai-visibility.md",
+    "slug": "ai-visibility",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI 可见度（AI Visibility）"
+  },
+  {
+    "path": "tools/search-geo/geo.md",
+    "slug": "geo",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "GEO（生成式引擎优化 / Generative Engine Optimization）"
+  },
+  {
+    "path": "tools/search-geo/search-engine.md",
+    "slug": "search-engine",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI search engine / 对话式 AI 搜索",
+    "h1": "AI 搜索引擎"
+  },
+  {
+    "path": "tools/text-content/essay-writer.md",
+    "slug": "essay-writer",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Essay Writer",
+    "h1": "AI Essay Writer"
+  },
+  {
+    "path": "tools/text-content/presentation-maker.md",
+    "slug": "presentation-maker",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Presentation Maker",
+    "h1": "AI Presentation Maker"
+  },
+  {
+    "path": "tools/text-content/story-generator.md",
+    "slug": "story-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Story Generator",
+    "h1": "AI Story Generator"
+  },
+  {
+    "path": "tools/text-content/text-generator.md",
+    "slug": "text-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Text Generator",
+    "h1": "AI Text Generator"
+  },
+  {
+    "path": "tools/text-content/text-translator.md",
+    "slug": "text-translator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI text translation",
+    "h1": "AI Text Translation"
+  },
+  {
+    "path": "tools/text-content/text.md",
+    "slug": "text",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Text Tools / AI Writing Tools",
+    "h1": "AI Text"
+  },
+  {
+    "path": "tools/vibe-coding-payments.md",
+    "slug": "vibe-coding-payments",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "Vibe Coding 支付集成"
+  },
+  {
+    "path": "tools/video/animation-generator.md",
+    "slug": "animation-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI animation generator / AI anime generator",
+    "h1": "AI Animation & Anime Generator"
+  },
+  {
+    "path": "tools/video/canvas-video.md",
+    "slug": "canvas-video",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI video canvas / node-based AI video workflow",
+    "h1": "Canvas Video"
+  },
+  {
+    "path": "tools/video/filmmaking.md",
+    "slug": "filmmaking",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Filmmaking / AI 电影制作",
+    "h1": "AI Filmmaking"
+  },
+  {
+    "path": "tools/video/image-to-video.md",
+    "slug": "image-to-video",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Image-to-Video / I2V / 图生视频",
+    "h1": "AI Image-to-Video"
+  },
+  {
+    "path": "tools/video/interactive-video.md",
+    "slug": "interactive-video",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Interactive video / 实时交互视频",
+    "h1": "实时交互视频（Interactive Video / Live Video Generation）"
+  },
+  {
+    "path": "tools/video/music-video-generator.md",
+    "slug": "music-video-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI music video generator / MV 生成器",
+    "h1": "AI 音乐视频生成器（Music Video Generator）"
+  },
+  {
+    "path": "tools/video/short-drama.md",
+    "slug": "short-drama",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI short drama platform / AI 短剧平台",
+    "h1": "AI Short Drama / AI 短剧平台"
+  },
+  {
+    "path": "tools/video/text-to-video.md",
+    "slug": "text-to-video",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Text-to-Video (T2V) / 文生视频",
+    "h1": "AI Text-to-Video"
+  },
+  {
+    "path": "tools/video/video-clipping.md",
+    "slug": "video-clipping",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Video Clipping / Repurposing",
+    "h1": "AI Video Clipping"
+  },
+  {
+    "path": "tools/video/video-editor.md",
+    "slug": "video-editor",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Video Editor / AI 视频编辑器",
+    "h1": "AI Video Editor"
+  },
+  {
+    "path": "tools/video/video-effects.md",
+    "slug": "video-effects",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Video Effects / AI VFX",
+    "h1": "AI Video Effects"
+  },
+  {
+    "path": "tools/video/video-generator.md",
+    "slug": "video-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI video generator / AI 视频生成器",
+    "h1": "AI Video Generator / AI 视频生成"
+  },
+  {
+    "path": "tools/video/video-to-video.md",
+    "slug": "video-to-video",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Video-to-Video (V2V) / 视频到视频",
+    "h1": "AI Video-to-Video"
+  },
+  {
+    "path": "tools/video/video.md",
+    "slug": "video",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Video"
+  },
+  {
+    "path": "tools/voice-audio/accent-conversion.md",
+    "slug": "accent-conversion",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI 口音转换（Accent Conversion）"
+  },
+  {
+    "path": "tools/voice-audio/audio-translator.md",
+    "slug": "audio-translator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Audio Translation"
+  },
+  {
+    "path": "tools/voice-audio/lip-sync.md",
+    "slug": "lip-sync",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI lip sync / AI 唇形同步",
+    "h1": "AI Lip Sync / AI 唇形同步"
+  },
+  {
+    "path": "tools/voice-audio/music-generator.md",
+    "slug": "music-generator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Music Generator"
+  },
+  {
+    "path": "tools/voice-audio/speech-to-text.md",
+    "slug": "speech-to-text",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Speech-to-Text / ASR / 自动语音识别",
+    "h1": "AI Speech-to-Text（ASR / STT / 语音转文字）"
+  },
+  {
+    "path": "tools/voice-audio/text-to-speech.md",
+    "slug": "text-to-speech",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Text-to-Speech / TTS / 文本转语音",
+    "h1": "AI Text-to-Speech（TTS / 文本转语音）"
+  },
+  {
+    "path": "tools/voice-audio/video-translator.md",
+    "slug": "video-translator",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Video Translation"
+  },
+  {
+    "path": "tools/voice-audio/voice-changer.md",
+    "slug": "voice-changer",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Voice Changer（AI 变声器）"
+  },
+  {
+    "path": "tools/voice-audio/voice-cloning.md",
+    "slug": "voice-cloning",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Voice Cloning"
+  },
+  {
+    "path": "tools/voice-audio/voice.md",
+    "slug": "voice",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "AI Voice"
+  },
+  {
+    "path": "tools/web-data/headless-browser.md",
+    "slug": "headless-browser",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Headless browser / 云浏览器基础设施",
+    "h1": "无头浏览器与云浏览器基础设施（Headless / BaaS / Agent 向）"
+  },
+  {
+    "path": "tools/web-data/search-indexing.md",
+    "slug": "search-indexing",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "AI Search Indexing",
+    "h1": "AI Search Indexing"
+  },
+  {
+    "path": "tools/web-data/technology-profiler.md",
+    "slug": "technology-profiler",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "website technology profiler / 网站技术栈检测",
+    "h1": "网站技术检测与画像工具"
+  },
+  {
+    "path": "tools/web-data/web-fetch.md",
+    "slug": "web-fetch",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Web Fetch",
+    "h1": "Web Fetch（URL 转 AI 可读内容）"
+  },
+  {
+    "path": "tools/web-data/web-scraping.md",
+    "slug": "web-scraping",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Web scraping / 网页抓取",
+    "h1": null
+  },
+  {
+    "path": "tools/web-data/web-search-api.md",
+    "slug": "web-search-api",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "Web Search API",
+    "h1": "Web Search API"
+  },
+  {
+    "path": "tools/website-builder/blog-website-builder.md",
+    "slug": "blog-website-builder",
+    "keywordEn": "Blog Website Builder / Website Builder for Blogs",
+    "keywordZh": "博客建站 / 博客网站搭建",
+    "narrative": null,
+    "h1": "Blog Website Builder / 博客建站"
+  },
+  {
+    "path": "tools/website-builder/ecommerce-website-builder.md",
+    "slug": "ecommerce-website-builder",
+    "keywordEn": "Online store platform / E-commerce website builder",
+    "keywordZh": "电商建站平台 / 独立站平台",
+    "narrative": null,
+    "h1": "E-commerce Website Builder / 电商建站平台"
+  },
+  {
+    "path": "tools/website-builder/landing-page-builder.md",
+    "slug": "landing-page-builder",
+    "keywordEn": "Landing Page Builder / Conversion Page Builder",
+    "keywordZh": "落地页构建器 / 转化页工具",
+    "narrative": null,
+    "h1": "Landing Page Builder / 落地页构建器"
+  },
+  {
+    "path": "tools/website-builder/portfolio-website-builder.md",
+    "slug": "portfolio-website-builder",
+    "keywordEn": "Portfolio website builder / Photography website builder",
+    "keywordZh": "作品集建站 / 摄影网站",
+    "narrative": null,
+    "h1": "Portfolio Website Builder / 作品集建站"
+  },
+  {
+    "path": "tools/website-builder/website-builder.md",
+    "slug": "website-builder",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": null,
+    "h1": "Website Builder"
+  },
+  {
+    "path": "tools/world-model.md",
+    "slug": "world-model",
+    "keywordEn": null,
+    "keywordZh": null,
+    "narrative": "World model / 世界模型",
+    "h1": "世界模型（World Models）"
+  }
+]

@@ -30,6 +30,7 @@
 | [luciusai-capabilities.md](./luciusai-capabilities.md) | Why/能力轮播能力库：五页抽取去重、中性能力名 + 文案钩子、选配示例与忌同屏近义 | ✅ 完成 |
 | [luciusai-meta-optimization-plan.md](./luciusai-meta-optimization-plan.md) | Meta 优化方案：全站 title/description 审计与优化、中文页七处同步、缺失页面 meta 预置 | ✅ 完成 |
 | [luciusai-breadcrumb-optimization-plan.md](./luciusai-breadcrumb-optimization-plan.md) | 面包屑优化方案：视觉面包屑组件、BreadcrumbList JSON-LD 全站审计与修复、Back to Blog 替换 | ✅ 完成 |
+| [luciusai-blog-migration-plan.md](./luciusai-blog-migration-plan.md) | **Blog 迁移**：现有 CMS → OpenBlog；部署于 `E:\客户部署项目\luciusai-blog` | 🚧 Phase 2 基础配置完成 |
 
 ---
 

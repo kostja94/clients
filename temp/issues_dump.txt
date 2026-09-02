@@ -1,0 +1,110 @@
+
+============================================================
+/zh/docs
+title: 产品文档：接入、角色与交接 — Lucius Docs
+  [中] 标题: Bot name
+  [高] CTA/按钮: Add mailbox
+  [高] CTA/按钮: Connect a platform
+  [高] CTA/按钮: Connected mailboxes
+  [高] CTA/按钮: Create an agent
+  [高] CTA/按钮: Getting started
+  [高] CTA/按钮: Start Guide
+  [高] CTA/按钮: Upload knowledge
+  [高] meta: Lucius AI teammates that get things done
+  [高] 导航: Feishu / Lark
+  [高] 导航: Getting started
+  [高] 导航: Start Guide
+  [高] 标题: Bot events
+  [高] 标题: Discovered mailbox channels
+  [高] 标题: Feishu / Lark
+  [高] 标题: Generic IMAP/SMTP
+  [高] 标题: Gmail / Google Workspace
+  [高] 标题: Gmail / Workspace
+  [高] 标题: IMAP host / port
+  [高] 标题: Lark / Feishu
+  [高] 标题: Mailbox address
+  [高] 标题: Microsoft 365 / Outlook
+  [高] 标题: SMTP host / port
+  [高] 标题: Security mode
+  [高] 正文: /setabouttext
+  [高] 正文: /setdescription
+  [高] 正文: /setuserpic
+  [高] 正文: iCloud / Zoho / Fastmail
+
+============================================================
+/zh/use-cases
+title: AI 队友使用场景 — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+
+============================================================
+/zh/use-cases/admin-governance
+title: AI 团队治理：角色与权限 — Lucius AI
+  [中] 导航: AI 团队治理
+  [高] meta: Lucius AI teammates that get things done
+  [高] 标题: Tool Permissions
+
+============================================================
+/zh/use-cases/operations-analytics
+title: AI 社区分析：自动生成周报 — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+
+============================================================
+/zh/use-cases/ai-sales-assistant
+title: AI 销售助手：筛选入站线索 — Lucius AI
+  [中] 导航: AI 销售助手
+  [中] 正文: , and
+  [高] meta: Lucius AI teammates that get things done
+
+============================================================
+/zh/use-cases/ai-spam-defense
+title: 面向 Discord 社区的 AI 垃圾信息过滤 — Lucius AI
+  [中] 导航: AI 垃圾信息过滤
+  [中] 正文: , and
+  [高] meta: Lucius AI teammates that get things done
+  [高] 标题: Lucius Moderator
+
+============================================================
+/zh/case-studies
+title: AI 队友客户案例 — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+  [高] 标题: Jarsy · Financial Product
+  [高] 标题: Museon · KOL Operations
+  [高] 标题: Utell · AI Tool
+
+============================================================
+/zh/case-studies/utell
+title: Utell 客户案例：网站与 Discord 客服 — Lucius AI
+  [中] 标题: AI Tool
+  [高] meta: Lucius AI teammates that get things done
+  [高] 标题: Community Operator
+
+============================================================
+/zh/case-studies/museon
+title: Museon 客户案例：KOL 运营中的 AI — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+
+============================================================
+/zh/case-studies/jarsy
+title: Jarsy 客户案例：金融社区的 AI 审核 — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+
+============================================================
+/zh/discover/social-content-community
+title: 让社媒内容在社区里聊起来 — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+  [高] meta: image/webp
+  [高] 标题: Community Operator
+
+============================================================
+/zh/discover/automate-refund-email
+title: 退款邮件的 AI 自动核验流程 — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+  [高] meta: image/webp
+  [高] 标题: Email Assistant
+
+============================================================
+/zh/discover/smart-welcome-guide
+title: AI 迎新引导：让新成员快速上手 — Lucius AI
+  [高] meta: Lucius AI teammates that get things done
+  [高] meta: image/webp
+  [高] 标题: Community Operator

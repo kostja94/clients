@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "ai-flashcards",
+    "path": "tools/education/ai-flashcards.md",
+    "current_primary": "AI flashcards / 间隔重复学习工具",
+    "keywordEn": null,
+    "h1": "AI Flashcards & Study Tools",
+    "narrative": "AI flashcards / 间隔重复学习工具"
+  },
+  {
+    "slug": "ai-for-science",
+    "path": "tools/education/ai-for-science.md",
+    "current_primary": "AI for Science / AI4S",
+    "keywordEn": null,
+    "h1": "AI for Science（AI 赋能科学研究）",
+    "narrative": "AI for Science / AI4S"
+  },
+  {
+    "slug": "ai-homework-helper",
+    "path": "tools/education/ai-homework-helper.md",
+    "current_primary": "AI homework helper / 拍照解题",
+    "keywordEn": null,
+    "h1": "AI Homework Helper",
+    "narrative": "AI homework helper / 拍照解题"
+  },
+  {
+    "slug": "ai-language-learning",
+    "path": "tools/education/ai-language-learning.md",
+    "current_primary": "AI language learning / AI 语言学习 App",
+    "keywordEn": null,
+    "h1": "AI Language Learning",
+    "narrative": "AI language learning / AI 语言学习 App"
+  },
+  {
+    "slug": "ai-tutor",
+    "path": "tools/education/ai-tutor.md",
+    "current_primary": "AI tutor / AI 家教",
+    "keywordEn": null,
+    "h1": "AI Tutor（AI 家教与智能辅导）",
+    "narrative": "AI tutor / AI 家教"
+  },
+  {
+    "slug": "education",
+    "path": "tools/education/education.md",
+    "current_primary": "AI Education / AI 教育工具（Hub）",
+    "keywordEn": null,
+    "h1": "AI Education",
+    "narrative": "AI Education / AI 教育工具（Hub）"
+  },
+  {
+    "slug": "notes-generator",
+    "path": "tools/education/notes-generator.md",
+    "current_primary": "AI notes generator / PDF·视频→笔记",
+    "keywordEn": null,
+    "h1": "AI 笔记生成器",
+    "narrative": "AI notes generator / PDF·视频→笔记"
+  },
+  {
+    "slug": "quiz-generator",
+    "path": "tools/education/quiz-generator.md",
+    "current_primary": "AI quiz generator / AI 测评生成",
+    "keywordEn": null,
+    "h1": "AI Quiz Generator（AI 出题与测评生成）",
+    "narrative": "AI quiz generator / AI 测评生成"
+  },
+  {
+    "slug": "3d-model-generator",
+    "path": "tools/3d-spatial/3d-model-generator.md",
+    "current_primary": "Text-to-3D / Image-to-3D / 文图生 3D",
+    "keywordEn": null,
+    "h1": "AI 3D Model Generator",
+    "narrative": "Text-to-3D / Image-to-3D / 文图生 3D"
+  },
+  {
+    "slug": "3d-modelling",
+    "path": "tools/3d-spatial/3d-modelling.md",
+    "current_primary": "3D modelling / DCC 精修",
+    "keywordEn": null,
+    "h1": "3D 建模工具（3D Modelling）",
+    "narrative": "3D modelling / DCC 精修"
+  },
+  {
+    "slug": "3d-scanner",
+    "path": "tools/3d-spatial/3d-scanner.md",
+    "current_primary": "AI 3D scanner / 实物数字化",
+    "keywordEn": null,
+    "h1": "AI 3D Scanner",
+    "narrative": "AI 3D scanner / 实物数字化"
+  },
+  {
+    "slug": "3d",
+    "path": "tools/3d-spatial/3d.md",
+    "current_primary": "AI 3D 工具（Hub）",
+    "keywordEn": null,
+    "h1": "AI 3D Tools",
+    "narrative": "AI 3D 工具（Hub）"
+  },
+  {
+    "slug": "cad",
+    "path": "tools/3d-spatial/cad.md",
+    "current_primary": "CAD / 工程几何",
+    "keywordEn": null,
+    "h1": "AI CAD Tools",
+    "narrative": "CAD / 工程几何"
+  },
+  {
+    "slug": "interior-design",
+    "path": "tools/3d-spatial/interior-design.md",
+    "current_primary": "AI interior design / 自住改造可视化",
+    "keywordEn": null,
+    "h1": "AI Interior Design",
+    "narrative": "AI interior design / 自住改造可视化"
+  },
+  {
+    "slug": "virtual-staging",
+    "path": "tools/3d-spatial/virtual-staging.md",
+    "current_primary": "AI virtual staging / listing 虚拟置景",
+    "keywordEn": null,
+    "h1": "AI Virtual Staging",
+    "narrative": "AI virtual staging / listing 虚拟置景"
+  },
+  {
+    "slug": "ai-documents",
+    "path": "tools/enterprise-knowledge/ai-documents.md",
+    "current_primary": "AI Documents / 智能文档",
+    "keywordEn": null,
+    "h1": "AI 文档（AI Documents）",
+    "narrative": "AI Documents / 智能文档"
+  },
+  {
+    "slug": "documentation",
+    "path": "tools/enterprise-knowledge/documentation.md",
+    "current_primary": "Developer documentation / 开发者文档",
+    "keywordEn": null,
+    "h1": "开发者文档与 Agent 时代",
+    "narrative": "Developer documentation / 开发者文档"
+  },
+  {
+    "slug": "knowledge-base",
+    "path": "tools/enterprise-knowledge/knowledge-base.md",
+    "current_primary": "AI Knowledge Base / RAG 知识库",
+    "keywordEn": null,
+    "h1": "AI Knowledge Base",
+    "narrative": "AI Knowledge Base / RAG 知识库"
+  },
+  {
+    "slug": "legal",
+    "path": "tools/enterprise-knowledge/legal.md",
+    "current_primary": "Legal AI / AI for lawyers",
+    "keywordEn": null,
+    "h1": "AI Tools for Lawyers（律师用 AI 工具）",
+    "narrative": "Legal AI / AI for lawyers"
+  },
+  {
+    "slug": "memory",
+    "path": "tools/enterprise-knowledge/memory.md",
+    "current_primary": "AI Memory / 个人第二大脑",
+    "keywordEn": null,
+    "h1": "AI Memory",
+    "narrative": "AI Memory / 个人第二大脑"
+  },
+  {
+    "slug": "ocr",
+    "path": "tools/enterprise-knowledge/ocr.md",
+    "current_primary": "OCR / 光学字符识别",
+    "keywordEn": null,
+    "h1": "AI OCR（文字识别）",
+    "narrative": "OCR / 光学字符识别"
+  },
+  {
+    "slug": "spreadsheet",
+    "path": "tools/enterprise-knowledge/spreadsheet.md",
+    "current_primary": "AI spreadsheet / AI 表格",
+    "keywordEn": null,
+    "h1": "AI 表格",
+    "narrative": "AI spreadsheet / AI 表格"
+  }
+]

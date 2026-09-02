@@ -1,0 +1,999 @@
+{
+  "/zh": {
+    "url": "https://luciusai.com/zh",
+    "meta": {
+      "title": "Lucius AI — 真正把活干完的 AI 队友",
+      "title_en": false,
+      "description": "Lucius 是会学业务、记得住每位客户的 AI 队友：在你的渠道里回答问题，处理不了的连同完整上下文交给团队，并把解决过程沉淀成新知识。立即预约演示。",
+      "description_en": false,
+      "og_title": "Lucius AI — 真正把活干完的 AI 队友",
+      "og_title_en": false,
+      "og_description": "Lucius 是会学业务、记得住每位客户的 AI 队友：在你的渠道里回答问题，处理不了的连同完整上下文交给团队，并把解决过程沉淀成新知识。立即预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Customer Support",
+        "Community Operator",
+        "Email Assistant",
+        "Discord",
+        "Telegram",
+        "Website",
+        "Lark",
+        "Slack",
+        "WhatsApp",
+        "${t(role.title)}"
+      ],
+      "english_phrases": [
+        "Enterprise",
+        "Professional",
+        "Integrations"
+      ],
+      "english_lines_sample": [
+        "&nbsp;See what Lucius handled, what it learned, and what still needs your action",
+        "Messages handled 120 Knowledge learned 22 Tasks created 8 Activities View more 7/22 Learned new knowledge from document_name 12 mins ago Supported 88 Users Created a new profile for @user_name 26 mins ago Created a task for @user_name 30 mins ago 已移除 16 messages in #channel_name Removed a message in #channel_name 1 hour ago Removed a message in #channel_name 1 hour ago Muted @user_name 1 hour ago Updated Role role_name 1 hour ago Created a new profile for @user_name 2 hours ago Updated knowledge from website_name 2 hours ago Lucius advice Onboarding To-do 2 / 5 Add your employee info Create your first task Added 3 HNW clients See 1 task has exceeded 48 hours See Credits usage See details 2500 / 3000 83% Support Teammate Web Widget Ashly User How do I upgrade to Enterprise",
+        "It helps us spot what's outdated - something we struggled to do before",
+        "\" Jarsy Team Pre-IPO Investment Platform \"This solved countless operational hurdles and let our team focus on the creative campaigns that actually move the needle",
+        "\" Victor Chen COO, Dubbing AI \"Lucius has been extremely helpful for our community operations",
+        "It responds to user questions quickly, learns new information fast, and communicates in a very natural way",
+        "The daily summaries are also clear and well-structured, making it much easier for us to stay on top of user feedback",
+        "\" Emma Community &amp; User Operation Lead, Medeo Discord \"Lucius elevated our brand image in the community",
+        "Users get professional, thoughtful responses — not generic bot replies",
+        "app Team Community Operations, Momen \"Lucius AI has greatly improved our community operations through its powerful automated response system",
+        "It delivers fast, accurate replies to user inquiries, quickly absorbs new information, and maintains natural, smooth communication",
+        "With its clear, well-structured daily summaries, we can efficiently track and act on user feedback — significantly boosting our team's overall efficiency"
+      ]
+    },
+    "cta": {
+      "all": [
+        "无需先整理文档",
+        "记得每一位用户",
+        "知道什么时候该停",
+        "每次人工处理都变成它的能力",
+        "Lucius 和普通 Chatbot 有什么区别？",
+        "Lucius 会不会乱回复？",
+        "可以接入哪些平台？",
+        "适合什么类型的团队？",
+        "我可以自定义 AI 队友的职责吗？",
+        "预约演示",
+        "看它是怎么工作的",
+        "查看工作方式",
+        "联系我们"
+      ],
+      "english": []
+    }
+  },
+  "/zh/features": {
+    "url": "https://luciusai.com/zh/features",
+    "meta": {
+      "title": "AI 队友的能力：知识、记忆与交接 — Lucius AI",
+      "title_en": false,
+      "description": "看 Lucius 如何学习你的业务知识、记住每位客户的上下文，并在超出能力边界时把完整任务交给真人，而不是硬答。三个能力串成一条闭环。预约演示。",
+      "description_en": false,
+      "og_title": "AI 队友的能力：知识、记忆与交接 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "看 Lucius 如何学习你的业务知识、记住每位客户的上下文，并在超出能力边界时把完整任务交给真人，而不是硬答。三个能力串成一条闭环。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/pricing": {
+    "url": "https://luciusai.com/zh/pricing",
+    "meta": {
+      "title": "AI 队友定价：只为产出付费 — Lucius AI",
+      "title_en": false,
+      "description": "观察、学习和记忆都不消耗 Credit，只有 Lucius 产出可见结果时才计费。免费 500 Credit 起步、无需信用卡，用量涨了再升级套餐。现在就免费开始。",
+      "description_en": false,
+      "og_title": "AI 队友定价：只为产出付费 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "观察、学习和记忆都不消耗 Credit，只有 Lucius 产出可见结果时才计费。免费 500 Credit 起步、无需信用卡，用量涨了再升级套餐。现在就免费开始。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "联系我们",
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/roles": {
+    "url": "https://luciusai.com/zh/roles",
+    "meta": {
+      "title": "面向支持、社区与销售的 AI 队友 — Lucius AI",
+      "title_en": false,
+      "description": "每个 Lucius 角色都有明确的职责、知识范围、工具权限和人工交接边界，不会越界也不会装懂。从客户支持、社区运营到销售跟进，选择团队最缺的 AI 队友并预约演示。",
+      "description_en": false,
+      "og_title": "面向支持、社区与销售的 AI 队友 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "每个 Lucius 角色都有明确的职责、知识范围、工具权限和人工交接边界，不会越界也不会装懂。从客户支持、社区运营到销售跟进，选择团队最缺的 AI 队友并预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Customer Support",
+        "Moderator"
+      ],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "查看 Administrator",
+        "预约演示"
+      ],
+      "english": [
+        "查看 Administrator"
+      ]
+    }
+  },
+  "/zh/discover": {
+    "url": "https://luciusai.com/zh/discover",
+    "meta": {
+      "title": "AI 队友场景与实操手册 — Lucius AI",
+      "title_en": false,
+      "description": "探索 AI 队友的实际使用场景：从社群对话接力、退款邮件自动核验到新成员引导流程，每个场景都拆开讲清楚 Lucius 到底在什么位置做了什么。看看怎么干活。",
+      "description_en": false,
+      "og_title": "AI 队友场景与实操手册 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "探索 AI 队友的实际使用场景：从社群对话接力、退款邮件自动核验到新成员引导流程，每个场景都拆开讲清楚 Lucius 到底在什么位置做了什么。看看怎么干活。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Discover More about Lucius Agents"
+      ],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [],
+      "english": []
+    }
+  },
+  "/zh/profile": {
+    "url": "https://luciusai.com/zh/profile",
+    "meta": {
+      "title": "会替你回答的 AI 商务名片 — Lucius AI",
+      "title_en": false,
+      "description": "把你的线上资料变成一张会说话的 AI 商务名片：替你回答问题、帮你预约会议、记住每一位新联系人，并在你需要时把对话交回给你。免费创建你的名片。",
+      "description_en": false,
+      "og_title": "会替你回答的 AI 商务名片 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "把你的线上资料变成一张会说话的 AI 商务名片：替你回答问题、帮你预约会议、记住每一位新联系人，并在你需要时把对话交回给你。免费创建你的名片。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Who it's for"
+      ],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/customer-support": {
+    "url": "https://luciusai.com/zh/customer-support",
+    "meta": {
+      "title": "AI 客户支持：自动处理工单 — Lucius AI",
+      "title_en": false,
+      "description": "AI 队友回答客户问题、遵循你写好的政策、自动创建 case，把复杂问题连同完整上下文交给团队。无论客服量涨到多少，回复质量都不掉。预约演示。",
+      "description_en": false,
+      "og_title": "AI 客户支持：自动处理工单 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "AI 队友回答客户问题、遵循你写好的政策、自动创建 case，把复杂问题连同完整上下文交给团队。无论客服量涨到多少，回复质量都不掉。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Deliver exceptional customer support at any scale",
+        "Built for customer service teams",
+        "Answer customer questions",
+        "Collect the right details",
+        "Create support cases",
+        "Escalate with context",
+        "Keep customer history connected",
+        "Follow your support rules",
+        "What Customer Support can do",
+        "Account access issue",
+        "Technical troubleshooting",
+        "Billing escalation",
+        "Refund and cancellation request",
+        "Urgent customer issue",
+        "Human handoff when it matters",
+        "Every handoff includes",
+        "Start supporting customers in four steps",
+        "Sign up and choose Customer Support",
+        "Connect your knowledge",
+        "Set your support rules"
+      ],
+      "english_phrases": [
+        "Sign Up",
+        "Product",
+        "Why Lucius",
+        "Built for",
+        "FAQ"
+      ],
+      "english_lines_sample": [
+        "Customer Support Deliver exceptional customer support at any scale Lucius answers product questions, follows your support policies, collects the details your team needs, and hands off complex cases with full context",
+        "预约演示 Built for customer service teams Answer customer questions Give accurate answers from your help center, website, documents, policies, and previous resolved cases",
+        "Collect the right details Ask for account emails, order numbers, screenshots, device information, error messages, and other required information before escalation",
+        "Create support cases Turn conversations into structured cases with summaries, customer details, priority, category, and next steps",
+        "Escalate with context Bring in your team when the issue is sensitive, unresolved, urgent, or outside the knowledge base",
+        "Keep customer history connected Remember previous issues, notes, orders, tasks, and follow-ups so every answer fits the actual customer",
+        "Follow your support rules Respect your handoff boundaries, refund policies, escalation paths, and internal workflows",
+        "What Customer Support can do 回答常见产品和账号问题 检索知识库，找到准确信息 Troubleshoot access, setup, and usage problems 收集账号、订单、付款和问题细节 Create support cases for your team Escalate billing, refund, and account issues Summarize long conversations before handoff Notify the right teammate when attention is needed Update customer records after each interaction Follow your support policies and approval rules 内置支持工作流 产品问题咨询 Example: \"How do I invite another teammate to my workspace",
+        "\" Lucius searches your help content, explains the right steps, and offers to help if the customer gets stuck",
+        "Account access issue Example: \"I upgraded, but I still can't use the feature",
+        "\" Lucius asks for the account email, workspace name, plan, and error message, then creates a case with full context attached",
+        "Technical troubleshooting Example: \"The dashboard keeps loading forever"
+      ]
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/customer-support/community": {
+    "url": "https://luciusai.com/zh/customer-support/community",
+    "meta": {
+      "title": "AI 社区支持：就地回答与升级 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 在社区频道里就地回答常见客户问题，遵循你的客服流程，并把需要人工判断的情况连同上下文升级给团队。成员不用等，团队也不用翻聊天记录。预约演示。",
+      "description_en": false,
+      "og_title": "AI 社区支持：就地回答与升级 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 在社区频道里就地回答常见客户问题，遵循你的客服流程，并把需要人工判断的情况连同上下文升级给团队。成员不用等，团队也不用翻聊天记录。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 Customer Support Community Operator",
+      "phrases_en": [
+        "Support"
+      ],
+      "english_lines": [
+        "首页 Customer Support Community Operator"
+      ]
+    },
+    "footer": {
+      "text": "AI 队友在你的团队工作现场工作。 功能 Link Link Link Link 角色 Link Link Link Link 渠道 Link Link Link Link Link Link Link Link Usecase and resources Link Link Link Link Link Link 获取 Lucius 的 AI 总结 © 2026 Lucius",
+      "phrases_en": [
+        "Resources"
+      ],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Act on customers with Al"
+      ],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "Website",
+        "Discord",
+        "Slack",
+        "Telegram",
+        "Feishu",
+        "邮件",
+        "WhatsApp",
+        "免费开始"
+      ],
+      "english": [
+        "Website",
+        "Discord",
+        "Slack",
+        "Telegram",
+        "Feishu",
+        "WhatsApp"
+      ]
+    }
+  },
+  "/zh/customer-support/email": {
+    "url": "https://luciusai.com/zh/customer-support/email",
+    "meta": {
+      "title": "AI 邮件助手：自动回复与交接 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 阅读客服邮件、回答常规问题、主动收集缺失的订单和账号信息，并把需要人工处理的邮件整理成带完整上下文的交接任务。邮箱不再堆积。预约演示。",
+      "description_en": false,
+      "og_title": "AI 邮件助手：自动回复与交接 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 阅读客服邮件、回答常规问题、主动收集缺失的订单和账号信息，并把需要人工处理的邮件整理成带完整上下文的交接任务。邮箱不再堆积。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 Customer Support Email Assistant",
+      "phrases_en": [
+        "Support"
+      ],
+      "english_lines": [
+        "首页 Customer Support Email Assistant"
+      ]
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示",
+        "查看 Customer Support",
+        "查看 Administrator"
+      ],
+      "english": [
+        "查看 Customer Support",
+        "查看 Administrator"
+      ]
+    }
+  },
+  "/zh/community-moderation": {
+    "url": "https://luciusai.com/zh/community-moderation",
+    "meta": {
+      "title": "AI 社区审核：垃圾信息与规则执行 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 识别垃圾信息、隐性推广、诈骗和违规内容，按你定的社区规则执行处理，并把不确定的情况升级给团队复核。每次操作都留痕可追溯。预约演示。",
+      "description_en": false,
+      "og_title": "AI 社区审核：垃圾信息与规则执行 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 识别垃圾信息、隐性推广、诈骗和违规内容，按你定的社区规则执行处理，并把不确定的情况升级给团队复核。每次操作都留痕可追溯。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "D Discord",
+        "T Telegram",
+        "S Slack",
+        "F Feishu",
+        "WA WhatsApp",
+        "预约演示",
+        "查看 Administrator"
+      ],
+      "english": [
+        "D Discord",
+        "T Telegram",
+        "S Slack",
+        "F Feishu",
+        "WA WhatsApp",
+        "查看 Administrator"
+      ]
+    }
+  },
+  "/zh/administrator": {
+    "url": "https://luciusai.com/zh/administrator",
+    "meta": {
+      "title": "AI 团队管理员：角色与权限治理 — Lucius AI",
+      "title_en": false,
+      "description": "每个 Lucius 工作空间都内置管理员角色，用来治理 AI 队友的权限、渠道、工作流、知识范围和计划任务，每次配置变更都有审计记录。不用再单独雇一个人管。预约演示。",
+      "description_en": false,
+      "og_title": "AI 团队管理员：角色与权限治理 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "每个 Lucius 工作空间都内置管理员角色，用来治理 AI 队友的权限、渠道、工作流、知识范围和计划任务，每次配置变更都有审计记录。不用再单独雇一个人管。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": [
+        "Administrator"
+      ]
+    },
+    "cta": {
+      "all": [
+        "预约演示",
+        "查看管理示例"
+      ],
+      "english": []
+    }
+  },
+  "/zh/channels": {
+    "url": "https://luciusai.com/zh/channels",
+    "meta": {
+      "title": "覆盖每个渠道的 AI 机器人接入 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 接入 Discord、Slack、Telegram、飞书、WhatsApp、邮件和你的网站，在客户和团队真正沟通的地方干活。从一个主入口开始，随时扩展到更多渠道。预约演示。",
+      "description_en": false,
+      "og_title": "覆盖每个渠道的 AI 机器人接入 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 接入 Discord、Slack、Telegram、飞书、WhatsApp、邮件和你的网站，在客户和团队真正沟通的地方干活。从一个主入口开始，随时扩展到更多渠道。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Discord",
+        "Website",
+        "Telegram",
+        "Feishu",
+        "Slack",
+        "WhatsApp"
+      ],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [],
+      "english": []
+    }
+  },
+  "/zh/channels/discord": {
+    "url": "https://luciusai.com/zh/channels/discord",
+    "meta": {
+      "title": "Discord AI 机器人：答疑与审核 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 在任意 Discord 频道回答成员问题、执行服务器规则、识别垃圾信息，并把需要关注的对话整理成任务交给团队。社区规模再大也接得住。预约演示。",
+      "description_en": false,
+      "og_title": "Discord AI 机器人：答疑与审核 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 在任意 Discord 频道回答成员问题、执行服务器规则、识别垃圾信息，并把需要关注的对话整理成任务交给团队。社区规模再大也接得住。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 渠道 Discord",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示",
+        "查看工作方式",
+        "阅读 Museon 案例"
+      ],
+      "english": []
+    }
+  },
+  "/zh/channels/telegram": {
+    "url": "https://luciusai.com/zh/channels/telegram",
+    "meta": {
+      "title": "Telegram AI 机器人：群组支持 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 回答 Telegram 群组成员的问题、执行群规、清理垃圾信息，并把真正需要人工判断的对话升级给团队。群再大也不用一直有人盯着。预约演示。",
+      "description_en": false,
+      "og_title": "Telegram AI 机器人：群组支持 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 回答 Telegram 群组成员的问题、执行群规、清理垃圾信息，并把真正需要人工判断的对话升级给团队。群再大也不用一直有人盯着。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 渠道 Telegram",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示",
+        "查看工作方式",
+        "阅读 Museon 案例"
+      ],
+      "english": []
+    }
+  },
+  "/zh/channels/feishu": {
+    "url": "https://luciusai.com/zh/channels/feishu",
+    "meta": {
+      "title": "飞书 / Lark AI 机器人 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 在飞书和 Lark 的社群与工作空间中回答问题、执行规则、创建后续任务，把散落在群聊里的信息变成团队能跟进的事项。内外部群都能用。预约演示。",
+      "description_en": false,
+      "og_title": "飞书 / Lark AI 机器人 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 在飞书和 Lark 的社群与工作空间中回答问题、执行规则、创建后续任务，把散落在群聊里的信息变成团队能跟进的事项。内外部群都能用。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 渠道 Feishu",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示",
+        "查看工作方式",
+        "阅读 Museon 案例"
+      ],
+      "english": []
+    }
+  },
+  "/zh/channels/website": {
+    "url": "https://luciusai.com/zh/channels/website",
+    "meta": {
+      "title": "适用于任何网站的 AI 聊天组件 — Lucius AI",
+      "title_en": false,
+      "description": "给网站加上 AI 聊天组件，全天候回答访客问题、收集销售线索、提供引导式自助支持，并在需要人工时把完整对话交接给团队。装一段脚本即可上线。免费开始。",
+      "description_en": false,
+      "og_title": "适用于任何网站的 AI 聊天组件 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "给网站加上 AI 聊天组件，全天候回答访客问题、收集销售线索、提供引导式自助支持，并在需要人工时把完整对话交接给团队。装一段脚本即可上线。免费开始。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 渠道 Website",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [
+        "Homepage",
+        "Product",
+        "Checkout",
+        "Community Operator",
+        "Sales Assistant"
+      ],
+      "english_phrases": [
+        "Home",
+        "Product",
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示",
+        "查看工作方式",
+        "阅读 Utell 案例"
+      ],
+      "english": []
+    }
+  },
+  "/zh/channels/slack": {
+    "url": "https://luciusai.com/zh/channels/slack",
+    "meta": {
+      "title": "Slack AI 机器人：频道内即时回答 — Lucius AI",
+      "title_en": false,
+      "description": "在任意 Slack 频道 @ Lucius，它会从你的文档、工单和历史讨论里找答案，遵守频道权限，答不了的带上下文交给同事。团队不用再重复回答同一个问题。预约演示。",
+      "description_en": false,
+      "og_title": "Slack AI 机器人：频道内即时回答 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "在任意 Slack 频道 @ Lucius，它会从你的文档、工单和历史讨论里找答案，遵守频道权限，答不了的带上下文交给同事。团队不用再重复回答同一个问题。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 渠道 Slack",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示",
+        "查看工作方式",
+        "阅读 Museon 案例"
+      ],
+      "english": []
+    }
+  },
+  "/zh/channels/email": {
+    "url": "https://luciusai.com/zh/channels/email",
+    "meta": {
+      "title": "邮件 AI 机器人：自动回复客服邮件 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 读取邮件上下文、生成回复草稿、按主题分类问题，并把重要邮件整理成团队可以直接执行的任务。异步沟通不再靠人肉分拣。预约演示。",
+      "description_en": false,
+      "og_title": "邮件 AI 机器人：自动回复客服邮件 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 读取邮件上下文、生成回复草稿、按主题分类问题，并把重要邮件整理成团队可以直接执行的任务。异步沟通不再靠人肉分拣。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 渠道 Email",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [],
+      "english": []
+    }
+  },
+  "/zh/channels/whatsapp": {
+    "url": "https://luciusai.com/zh/channels/whatsapp",
+    "meta": {
+      "title": "WhatsApp AI 机器人：移动端客户支持 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 处理 WhatsApp 上的常见咨询、销售跟进和人工升级，让移动端的客户沟通保持及时响应，不会因为时差或下班而卡住。预约演示看看实际效果。",
+      "description_en": false,
+      "og_title": "WhatsApp AI 机器人：移动端客户支持 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 处理 WhatsApp 上的常见咨询、销售跟进和人工升级，让移动端的客户沟通保持及时响应，不会因为时差或下班而卡住。预约演示看看实际效果。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 渠道 WhatsApp",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [],
+      "english": []
+    }
+  },
+  "/zh/features/knowledge": {
+    "url": "https://luciusai.com/zh/features/knowledge",
+    "meta": {
+      "title": "AI 知识引擎：发现过期答案 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 持续解析和对账你的业务知识，主动找出过期信息、互相冲突的答案和没人注意到的知识盲区，并把它们标记出来等人确认。知识库不再悄悄腐烂。预约演示。",
+      "description_en": false,
+      "og_title": "AI 知识引擎：发现过期答案 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 持续解析和对账你的业务知识，主动找出过期信息、互相冲突的答案和没人注意到的知识盲区，并把它们标记出来等人确认。知识库不再悄悄腐烂。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 功能 知识引擎",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "FAQ"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/features/customer-profile": {
+    "url": "https://luciusai.com/zh/features/customer-profile",
+    "meta": {
+      "title": "AI 客户记忆与画像 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 记住每位用户是谁、之前发生过什么、当前处在哪个阶段，让每一次回复和交接都贴合真实上下文，而不是把老客户当成第一次来的人。预约演示。",
+      "description_en": false,
+      "og_title": "AI 客户记忆与画像 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 记住每位用户是谁、之前发生过什么、当前处在哪个阶段，让每一次回复和交接都贴合真实上下文，而不是把老客户当成第一次来的人。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 功能 客户画像",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [
+        "Starter"
+      ],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/features/tasks": {
+    "url": "https://luciusai.com/zh/features/tasks",
+    "meta": {
+      "title": "AI 人工交接与任务创建 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 知道什么时候该停下来，并把摘要、完整上下文、建议的下一步和责任人打包成一个任务，让接手的人不用从头看聊天记录。交接不再丢信息。预约演示。",
+      "description_en": false,
+      "og_title": "AI 人工交接与任务创建 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 知道什么时候该停下来，并把摘要、完整上下文、建议的下一步和责任人打包成一个任务，让接手的人不用从头看聊天记录。交接不再丢信息。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 功能 任务与交接",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/features/data-analysis": {
+    "url": "https://luciusai.com/zh/features/data-analysis",
+    "meta": {
+      "title": "用大白话问的 AI 数据分析 — Lucius AI",
+      "title_en": false,
+      "description": "用一句自然语言问社区和运营数据，Lucius 负责选表、写查询、汇总结果，并把答案整理成图表返回。不用等数据同学排期，也不用自己写 SQL。预约演示。",
+      "description_en": false,
+      "og_title": "用大白话问的 AI 数据分析 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "用一句自然语言问社区和运营数据，Lucius 负责选表、写查询、汇总结果，并把答案整理成图表返回。不用等数据同学排期，也不用自己写 SQL。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 功能 数据分析",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": [
+        "platform, COUNT(m",
+        "id) AS message_count FROM lucius_runtime",
+        "messages AS m WHERE m",
+        "workspace_id = :workspace_id AND m",
+        "sent_at >= NOW() - INTERVAL '30 days' GROUP BY m"
+      ]
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  },
+  "/zh/features/automation": {
+    "url": "https://luciusai.com/zh/features/automation",
+    "meta": {
+      "title": "AI 自动化：定时任务与报告 — Lucius AI",
+      "title_en": false,
+      "description": "Lucius 按时间、条件和业务规则主动执行任务：定时发报告、触发条件时提醒负责人、把结果写回系统，并留下可审计的完整记录。到点它自己会动手。预约演示。",
+      "description_en": false,
+      "og_title": "AI 自动化：定时任务与报告 — Lucius AI",
+      "og_title_en": false,
+      "og_description": "Lucius 按时间、条件和业务规则主动执行任务：定时发报告、触发条件时提醒负责人、把结果写回系统，并留下可审计的完整记录。到点它自己会动手。预约演示。",
+      "og_description_en": false
+    },
+    "nav": {
+      "text": "首页 功能 自动化",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "footer": {
+      "text": "",
+      "phrases_en": [],
+      "english_lines": []
+    },
+    "body": {
+      "english_headings": [],
+      "english_phrases": [],
+      "english_lines_sample": []
+    },
+    "cta": {
+      "all": [
+        "预约演示"
+      ],
+      "english": []
+    }
+  }
+}

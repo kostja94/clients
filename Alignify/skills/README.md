@@ -1,7 +1,7 @@
 # Alignify Skills 索引
 
 > **部署仓**：`E:\自有部署项目\alignify production` · **上下文仓**：`E:\clients\Alignify`  
-> **最后更新**：2026-08-27
+> **最后更新**：2026-09-02
 
 ---
 
@@ -10,7 +10,7 @@
 | Skill | 用途 |
 |-------|------|
 | [`create-article/`](./create-article/SKILL.md) | 新建/重写文章（flagship 流程，见下表） |
-| [`knowledge-block/`](./knowledge-block/SKILL.md) | **知识块**维护：slug 分流、keyword 映射、**垂类产品池**、SSOT、站内相邻（非成稿） |
+| [`knowledge-block/`](./knowledge-block/SKILL.md) | **知识块**维护：slug 分流、keyword 映射、**垂类产品池**、SSOT、站内相邻；**Tools 簇临时 brief 成稿后删除**（非成稿） |
 | [`audit-article/`](./audit-article/SKILL.md) | audit-ready → publish-ready 终审 |
 | [`optimize-internal-links/`](./optimize-internal-links/SKILL.md) | 存量内链：[`workflow.md`](./optimize-internal-links/workflow.md) + [**全站快照**](./optimize-internal-links/references/site-structure-internal-links.md) |
 | [`ops/`](./ops/README.md) | 发布后 SEO / 索引 / OG / RSS |
@@ -51,6 +51,8 @@
 | **内链 + 外链** | [`internal-links.md`](./create-article/rules/internal-links.md) Part 1–8 |
 | **Intake** | 不清楚时在聊天问用户 — [`intake-questions.md`](./create-article/rules/intake-questions.md) |
 | **Tools 产品** | 垂类 spoke · 默认 **3 款** H3 · **一产品一 canonical** — [`product-coverage.md`](./create-article/rules/product-coverage.md) |
+| **Tools 簇 brief** | 会话内 `knowledge/tools/{cluster}/_briefs/*.md` · **KB 正文完成后删除** — [`knowledge-block/references/tools-cluster-ephemeral-brief.md`](./knowledge-block/references/tools-cluster-ephemeral-brief.md) |
+| **Work Agent 簇** | Hub `work-agent` + Spoke `workspace-agent` + `ai-employee` — [`knowledge-block/references/work-agent-cluster.md`](./knowledge-block/references/work-agent-cluster.md) · [`ai-employee-cluster.md`](./knowledge-block/references/ai-employee-cluster.md) |
 
 ---
 
