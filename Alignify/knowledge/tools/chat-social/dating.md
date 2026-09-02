@@ -52,13 +52,13 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
-- **Type 1 — AI 增强型巨头（Incumbent AI Layer）**：传统约会 App 在现有产品上叠加 AI 功能。Tinder 的 Chemistry（AI 扫描相册分析兴趣）、Bumble 的 Bee（AI 管家）、Hinge 的 AI 优化匹配。特点：用户基数大（Tinder 7500 万+ MAU），AI 是留存工具而非产品重构。
-- **Type 2 — AI Native 匹配平台（AI-Native Matchmaking）**：从零开始用 AI 构建匹配体验，通常废弃滑动机制。Date Drop（66 题算法 + 每周一个匹配）、Ditto（iMessage 代理 + 每周三一个约会）、Known（语音 AI 深度访谈 + $15/介绍）。特点：匹配量少但声称质量更高，按结果而非订阅收费。
-- **Type 3 — AI 约会助手 / 僚机（AI Wingman / Assistant）**：不参与匹配，只辅助对话环节。Rizz（截图→回复建议，1300 万下载）、Wingman、WingAI。特点：与 Type 1/2 互补而非竞争，常作为独立 App 或键盘插件存在。
-- **Type 4 — 人类+AI 混合媒人（Human-AI Hybrid Matchmaker）**：专业媒人用 AI 辅助筛选和匹配，但最终推荐由人类做出。Three Day Rule 为代表。特点：高价（$5,000+），服务质量依赖人类媒人能力，AI 是效率工具。
-- **Type 5 — AI 约会教练（AI Dating Coach）**：不参与匹配或对话，提供策略和建议。Maia（24/7 AI 关系指导）、Ember（AI 情侣治疗）。特点：面向约会前/后的能力建设，非实时约会辅助。
+- **Type 1 — AI 增强型巨头（Incumbent AI Layer）**：传统约会 App 叠加 AI 功能；用户基数大，AI 是留存工具。
+- **Type 2 — AI Native 匹配平台**：从零用 AI 构建匹配，通常废弃滑动；匹配量少但声称质量更高。
+- **Type 3 — AI 约会助手 / 僚机**：不参与匹配，只辅助对话环节。
+- **Type 4 — 人类+AI 混合媒人**：专业媒人 + AI 辅助筛选。
+- **Type 5 — AI 约会教练**：策略与建议，不参与匹配或对话替代。
 
 ---
 
@@ -84,16 +84,16 @@
 
 ---
 
-## 工具与产品类型
+## 工具与产品类型（检索词分类 · 产品见 §外链索引）
 
-| 类型（英文常检索词） | 典型包含什么 | 代表产品 | 备注 |
-|---------------------|-------------|---------|------|
-| **AI Matchmaking App**（AI 婚恋匹配） | AI 驱动的真人匹配平台，通常废弃或弱化滑动机制 | Date Drop、Ditto、Known、Sitch、Keeper、Amata、Fate、Overtone、Soulmate、HeySoda | 2026 年最活跃的初创方向；商业模式从订阅转向按结果付费；HeySoda 覆盖超出约会的多场景（联合创始/招聘/投资等） |
-| **AI-Enhanced Dating App**（AI 增强型传统约会 App） | 传统约会 App 在滑动/匹配机制上叠加 AI 功能 | Tinder（Chemistry）、Bumble（Bee）、Hinge（AI 优化）、Grindr（AI 推荐流）、Facebook Dating（AI 助手） | 巨头防御性 AI 化；用户基数大但 AI 通常是增量功能非重构 |
-| **AI Wingman / Dating Assistant**（AI 约会僚机） | 辅助约会对话环节的 AI 工具 | Rizz、Wingman、WingAI | 独立品类，与匹配平台互补；Rizz 1300 万下载证明需求真实 |
-| **AI Dating Coach**（AI 约会教练） | 提供约会策略和关系建议的 AI | Maia、Ember、OurRitual | 面向约会前/后的能力建设；与 AI 伴侣易混淆但定位不同 |
-| **Human-AI Hybrid Matchmaker**（人类+AI 混合媒人） | 专业媒人用 AI 辅助筛选 | Three Day Rule | 高价服务；AI 是效率工具非替代人类判断 |
-| **AI Companion / Girlfriend**（AI 伴侣/虚拟恋人） | AI 扮演虚拟恋人与用户建立情感关系 | Replika、Nomi、Kindroid、Character.AI | **归入 [`character-chat.md`](character-chat.md)**；2026 年市场规模 $2.91B，与 dating 有交叉但搜索意图不同 |
+| 类型（英文常检索词） | 典型包含什么 | 备注 |
+|---------------------|-------------|------|
+| **AI Matchmaking App** | Date Drop、Ditto、Known、Sitch 等 | 2026 最活跃初创方向 |
+| **AI-Enhanced Dating App** | Tinder、Bumble、Hinge、Grindr | 巨头防御性 AI 化 |
+| **AI Wingman / Dating Assistant** | Rizz、Wingman、WingAI | 独立品类，与匹配平台互补 |
+| **AI Dating Coach** | Maia、Ember、OurRitual | 约会前/后能力建设 |
+| **Human-AI Hybrid Matchmaker** | Three Day Rule | 高价服务 |
+| **AI Companion / Girlfriend** | Replika、Nomi 等 | **→ [`character-chat`](character-chat.md)** |
 
 ---
 
@@ -135,16 +135,16 @@
 
 ### 对比与测评（第三方；观点非官方）
 
-- Business Insider 2026 年 1 月实测结论：Amata 是唯一"实际产生了约会"的 AI 匹配 App；Sitch UX 好但匹配池有限；Facebook Dating AI 太新，匹配距离远；Three Day Rule 慢且匹配数量少。
-- 2026 年 B2C AI 约会行业共识：无限滑动模式正在死亡——Bumble 已在部分市场测试移除滑动，Tinder 的 Chemistry 是存量防御。AI 原生匹配平台（Type 2）的挑战不是产品体验，而是冷启动（匹配池大小）和盈利模式（按结果付费的 unit economics 是否成立）。
-- Rizz 是 AI 约会工具层最成功的案例——1300 万下载且上线即盈利，证明约会对话辅助是独立且可持续的品类。但其长期风险是被 OS 级 AI（Apple Intelligence / Google AI）内嵌替代。
-- AI 伴侣 vs AI 约会的边界模糊——Replika 10M+ 安装量、每月 73,000+ 次 "AI 关系机器人" 搜索——部分用户将 AI 伴侣视为"练习"，但行业尚未解决"AI 替代真人关系"的伦理问题。
+- Business Insider 2026 年 1 月实测：Amata 是唯一「实际产生了约会」的 AI 匹配 App；Sitch UX 好但匹配池有限。
+- 2026 年 B2C 共识：无限滑动模式正在死亡；AI 原生平台挑战是冷启动与按结果付费 unit economics。
+- Rizz 是 AI 约会工具层最成功案例——1300 万下载且上线即盈利。
+- AI 伴侣 vs AI 约会边界模糊——部分用户将 AI 伴侣视为「练习」，伦理问题尚未解决。
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- **市场结构**：Match 集团股价 2026 年 YTD 持续低迷——市场在定价"AI 原生约会产品可能蚕食传统滑动式 App"。Bumble Reddit 情绪在 AI 管家发布后从 29（看跌）飙升至 76（看涨），显示 AI 叙事对投资者情绪的巨大影响力。
-- **用户行为**：Stream 2026 约会 App 统计报告——70% 用户对尝试新平台持开放态度，为 AI 原生初创公司提供了冷启动窗口。
-- **安全与合规**：Mozilla *Privacy Not Included* 约会 App 隐私评估；EU AI Act 分阶段实施时间表（2024-2027）；加州 SB 243（2026 年 1 月生效）。
-- **线下复兴**：2024 年底美国线下速配/单身活动参与率同比增长 69%——暗示纯数字约会的疲劳不仅针对滑动模式，也针对"屏幕中介"本身。AI 约会产品需要在线上效率与线下推动力之间找到平衡。
+**站外**（行业数据；产品见 §外链索引）
+
+- Global Dating Insights · PitchBook · Business Insider · Mashable · GV 等见 §外链索引「行业数据与趋势」
+- Mozilla *Privacy Not Included* 约会 App 隐私评估；EU AI Act 时间表；加州 SB 243（2026-01 生效）

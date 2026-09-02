@@ -160,17 +160,24 @@ TTS 音质/延迟详 [text-to-speech.md §对比与测评](text-to-speech.md#对
 
 ## 行业注记 · 2026 年语音与声音格局
 
-- **实时语音 Agent 落地**：2026 年，AI 语音 Agent 从实验阶段进入生产——客服、预约回访、电话销售等场景广泛采用「STT→LLM→TTS」管线。Cartesia（<100ms）和 ElevenLabs Flash（~75ms）的亚秒级延迟使实时语音交互流畅可用。
-- **语音克隆的监管加速**：EU AI Act（2026-08 生效）要求合成语音标注并嵌入水印。美国 TAKE IT DOWN Act（2025 年生效）要求平台 48 小时内删除未经同意的深度伪造内容。46 个州已制定深度伪造专门立法。水印（如 C2PA、Resemble PerTh）从可选功能变为合规刚需。
-- **TTS 质量开源追赶**：Fish Audio S2 Pro（5B 参数，80+ 语言）和 OpenVoice（MIT 许可，300M 参数）在 2026 年将开源 TTS 质量提升到接近 ElevenLabs 的商业水平，推动声纹克隆在中小开发者和隐私优先场景的普及。
-- **音频翻译从管线到端到端**：OpenAI GPT-Realtime-Translate（2026-05，70+ 语言→13 输出语言）和 Gemini Native Audio 标志着从传统的 STT→MT→TTS 串行管线向端到端 S2ST 的范式迁移。
-- **声纹作为生物特征的隐私挑战**：语音克隆技术的普及与深度伪造语音欺诈（2025 Q1 vishing 环比暴涨 1,600%）形成双刃剑——音频水印、C2PA 溯源和声纹验证正在成为语音 AI 生态的下游安全层。
+叙事层注记（**非**产品 SSOT；TTS/克隆细节见各辐条 §外链索引）：
+
+- **实时语音 Agent 落地**：STT+LLM+TTS 与 **原生 S2S**（GPT-Realtime-2、ElevenAgents Expressive）并存——架构分叉见 §词汇锚点 **原生音频模型**。
+- **语音克隆监管加速**：EU AI Act（2026-08）、TAKE IT DOWN Act、C2PA/PerTh 水印从可选变合规刚需——详 [voice-cloning.md](voice-cloning.md) §风险。
+- **TTS 开源追赶**：Fish Audio S2 Pro、OpenVoice 等缩小与 ElevenLabs 差距——详 [text-to-speech.md](text-to-speech.md)。
+- **音频翻译范式迁移**：GPT-Realtime-Translate、Gemini Native Audio 推动 S2ST——详 [audio-translator.md](audio-translator.md)。
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - [Advancing voice intelligence with new models in the API (OpenAI, 2026-05)](https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/)
 - [Introducing Expressive Mode for ElevenAgents](https://elevenlabs.io/blog/introducing-expressive-mode)
-- [AI Voice Generator Market Report (MarketsandMarkets)](https://www.marketsandmarkets.com/Market-Reports/ai-voice-generator-market-144271159.html)
-- [Voice Cloning Market Report (TBRC/GII)](https://www.gii.tw/report/tbrc1983575-voice-cloning-global-market-report.html)
+- 语音 / 克隆市场报告（MarketsandMarkets、TBRC/GII）→ §外链索引 **AI Voice Generator Market Report**、**Voice Cloning Market Report**
+
+**站内**
+
+- TTS SSOT：[text-to-speech.md](text-to-speech.md) · ASR SSOT：[speech-to-text.md](speech-to-text.md)
+- 克隆 / 变声 / 翻译：[voice-cloning.md](voice-cloning.md) · [voice-changer.md](voice-changer.md) · [audio-translator.md](audio-translator.md)

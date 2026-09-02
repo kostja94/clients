@@ -1,5 +1,7 @@
 # 统一 AI API 平台 · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**Unified AI API Platform / 统一 AI API**——通过**单一接口**调用多模型/多模态（协议、路由、缓存、计费），验收以**TTFT、$/unit、多模态覆盖、故障转移**为主。本页为 **API 聚合与网关产品 SSOT**（完整 URL 表仅此一处）；GPU 推理部署 → [inference-infrastructure.md](inference-infrastructure.md)；模型能力评测 → [llm.md](../llm/llm.md)。
+
 **材料范围**：公开网络检索（厂商文档、定价页、独立基准测试、社区对比与行业分析）；归纳 **统一 AI API 平台**——通过单一接口提供多模型、多模态 AI 能力访问的中间层与基础设施。覆盖范围包括但不限于：LLM API 聚合路由、生成式媒体 API（图像/视频/音频/3D）、模型部署与推理托管平台、企业 API 网关、云厂商托管 AI 服务。**未**把 Alignify 站内 Tools 正文 JSON 当作独立事实来源。具体参数、定价与 SLA 以各官网为准。网摘整理日期 **2026-05-18**。
 
 **站内对照**：[alignify.co/tools/api](https://alignify.co/tools/api) · [alignify.co/zh/tools/api](https://alignify.co/zh/tools/api) · `content/tools/en/api.md`、`content/tools/zh/api.md` · slug **`api`**
@@ -80,16 +82,20 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **直接提供方 API（Type I — Provider Direct）**：模型研发方直接提供 API——OpenAI、Anthropic、Google DeepMind、xAI、DeepSeek。拥有最新模型首发权、原生协议完整功能，但需单独对接每家。适合需要前沿能力和独家功能（如 Anthropic extended thinking）的团队。
-- **聚合路由平台（Type II — Multi-Provider Router）**：单一 API key 访问数百模型和多种模态——OpenRouter 为代表（LLM + 视频生成 API）。提供统一计费、自动故障转移、跨提供方比价。适合需要模型多样性和供应商灵活性的团队。缺点是可能滞后于提供方最新功能发布。
-- **生成式媒体 API 托管平台（Type III — Generative Media API）**：专注图像、视频、音频和 3D 模型生成的托管 API——fal.ai（600+ 媒体模型、自研推理引擎加速 10×）、Replicate（数千预训练模型、按使用付费、自动扩缩）。适合需要高吞吐媒体生成但不想管理 GPU 集群的团队。以 fal.ai 为代表的平台正从纯媒体生成向 LLM + 媒体混合调度演进。
-- **推理托管平台（Type IV — Inference-as-a-Service）**：→ 见独立知识块 [`inference-infrastructure.md`](inference-infrastructure.md)——覆盖 AI 推理基础设施的完整谱系：纯推理托管（Baseten、DeepInfra）、全栈 AI 云（Together AI、Fireworks AI）、芯片驱动推理（Groq、Cerebras）、多云端调度、边缘推理网络等 8 种形态。Type III 偏媒体生成，Type IV 偏 LLM 文本推理，但边界日益模糊。
-- **模型市场与推理控制平面（Type V — Model Hub + Inference）**：Hugging Face Inference——从模型发现到推理的一站式平台。三层架构：routed/serverless（探索）→ dedicated endpoints（生产）→ self-hosted TGI（极致控制）。覆盖 900K+ 模型（文本、图像、音频、3D 等多模态），适合需要跨模型实验且最终落地生产的团队。
-- **云厂商托管 AI API（Type VI — Cloud-Native Managed）**：AWS Bedrock、Azure OpenAI Service、Google Vertex AI——将 AI API 嵌入云 IAM/VPC/SLA 体系。价格通常比直接 API 贵 1–2×，但换取企业合规（数据不出 VPC、SOC 2/HIPAA）。适合已有云合约的大型企业。多模态覆盖程度因云厂商而异。
-- **开源自建网关（Type VII — Open-Source Gateway）**：LiteLLM（Python，8 种缓存后端）、AI Cost Firewall（Rust，nginx 风格配置）、OneAPI（MIT，31K+ GitHub stars）——部署在自有基础设施上的 AI API 网关。适合需要完全控制数据路径和成本策略的团队，但需自行运维。目前主要覆盖 LLM 文本 API，媒体生成 API 的统一网关尚不成熟。
-- **企业 API 网关（Type VIII — Enterprise API Gateway）**：Requesty 为代表——提供统一 API 访问、请求路由、速率限制、身份验证管理和全面监控。面向企业级 API 管理场景，强在安全和审计而非模型多样性。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **I** | 直接提供方 API——最新功能、原生协议 | provider direct API | OpenAI、Anthropic、Google、DeepSeek |
+| **II** | 聚合路由——单 key 多模型/模态 | multi-provider router, LLM gateway | OpenRouter |
+| **III** | 生成式媒体 API 托管 | generative media API | fal.ai、Replicate |
+| **IV** | 推理托管（LLM 为主） | inference-as-a-service | → [inference-infrastructure.md](inference-infrastructure.md) |
+| **V** | 模型市场 + 推理控制平面 | model hub + inference | Hugging Face Inference |
+| **VI** | 云厂商托管 AI API | cloud-native managed AI | AWS Bedrock、Azure OpenAI、Vertex AI |
+| **VII** | 开源自建网关 | open-source LLM gateway | LiteLLM、AI Cost Firewall、OneAPI |
+| **VIII** | 企业 API 网关 | enterprise API gateway | Requesty |
+
+Type III 偏媒体生成，Type IV 偏 LLM 文本推理——边界日益模糊；Type IV 竞争格局详见 [inference-infrastructure.md](inference-infrastructure.md) §对比与测评。
 
 ---
 
@@ -120,14 +126,15 @@
 
 | 类型 | 典型包含什么 | 备注 |
 |------|--------------|------|
-| **前沿提供方直接 API** | OpenAI API、Anthropic Messages API、Google Gemini API、DeepSeek API、xAI Grok API | 模型研发方自有接口；最新功能首发；以 LLM 文本为主 |
-| **聚合路由平台** | OpenRouter、CrazyRouter、七牛云 AI、硅基流动 | 单 key 通百模；跨提供方比价与故障转移；部分开始覆盖视频生成 |
-| **生成式媒体 API 托管** | fal.ai（600+ 媒体模型、自研推理引擎）、Replicate（数千预训练模型、按使用付费） | 图像/视频/音频/3D 生成；按图片张数或 GPU 秒计费；与 LLM API 互补 |
-| **模型市场 + 推理控制平面** | Hugging Face Inference（routed + dedicated + TGI self-hosted） | 从发现到生产的一站式；900K+ 模型覆盖多模态 |
-| **云厂商托管 AI API** | AWS Bedrock、Azure OpenAI Service、Google Vertex AI | 嵌云 IAM/VPC/SLA；企业合规首选；多模态覆盖因厂商而异 |
-| **企业 API 网关** | Requesty（统一 API 访问、速率限制、身份验证管理） | 面向企业 API 管理；强在安全与审计 |
-| **开源自建网关** | LiteLLM（Python，8 种缓存后端）、AI Cost Firewall（Rust）、OneAPI（MIT） | 自行部署、完全控制数据与成本；目前以 LLM 文本为主 |
-| **LLM 成本优化/缓存层** | PromptCache（Go，语义缓存）、LiteLLM（多后端缓存）、vcal-project/ai-firewall（Redis + Qdrant） | 削减重复 API 调用成本 60–80%；媒体缓存以内容哈希为主 |
+| **前沿提供方直接 API** | Type I | 见 §外链索引 |
+| **聚合路由平台** | Type II | 见 §外链索引 |
+| **生成式媒体 API 托管** | Type III | 见 §外链索引 |
+| **模型市场 + 推理控制平面** | Type V | 见 §外链索引 |
+| **云厂商托管 AI API** | Type VI | 见 §外链索引 |
+| **企业 API 网关** | Type VIII | 见 §外链索引 |
+| **开源自建网关** | Type VII | 见 §外链索引 |
+| **LLM 成本优化/缓存层** | PromptCache、LiteLLM 缓存、ai-firewall | 语义/精确缓存；媒体以内容哈希为主 |
+| **推理托管** | Type IV | 见 [inference-infrastructure.md](inference-infrastructure.md) |
 
 ---
 
@@ -160,7 +167,7 @@ MorphLLM 和 Inference.net 的独立定价分析（2026 年 3–5 月）指出�
 
 **生成式媒体 API 托管领域**，fal.ai 凭借自研推理引擎（声称扩散模型推理加速 10×）和 H100/H200/B200 集群在速度上差异化，Replicate 以最低配置门槛和数千预训练模型覆盖在易用性上领先。两者的共同挑战：媒体生成 API 尚无统一协议标准，各家采用不同的输入格式、异步轮询机制和输出交付方式——切换成本高于 LLM API 领域。
 
-推理托管平台的竞争格局详见 [`inference-infrastructure.md`](inference-infrastructure.md) § 对比与测评——Baseten、Together AI、Fireworks AI、Modal 四家合计估值超 $30B，竞争维度沿芯片、生态、多云和合规四轴分化。
+推理托管平台的竞争格局详见 [`inference-infrastructure.md`](inference-infrastructure.md) §对比与测评——不在此重复 Baseten/Together/Fireworks/Modal 四方对比。
 
 OpenRouter 的 **Auto Exacto** 功能（2026 年 4 月增强版：每 5 分钟重新评估提供方的吞吐量、工具调用遥测和基准分数）代表聚合平台的进化方向——从被动路由到主动性能优化。500 万+ 开发者、25 万亿月 token 处理量使其成为事实上的 AI API 市场层。
 
@@ -170,7 +177,7 @@ OpenRouter 的 **Auto Exacto** 功能（2026 年 4 月增强版：每 5 分钟�
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **LLM API Comparison 2026: Pricing, Speed, Features | Every Provider**（MorphLLM, 2026）：全提供方定价与速度对比，覆盖 30+ 模型。  
   - <https://www.morphllm.com/llm-api>

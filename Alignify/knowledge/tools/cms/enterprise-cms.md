@@ -51,9 +51,9 @@
 
 ---
 
-## 形态谱系（Type · 产品见 §工具与产品类型）
+## 形态谱系（Type · 产品见 §工具与产品类型 / §外链索引）
 
-- **Type A — 传统 Enterprise DXP（耦合 + 云转型）**：AEM、Sitecore XP/XM — 长期 **on-prem/托管** 客户群 + **云原生** 新产品线。
+- **Type A — 传统 Enterprise DXP（耦合 + 云转型）**：AEM、Sitecore XP/XM — 长期 on-prem/托管客户群 + 云原生产品线。
 - **Type B — DXP + 实验/个性化原生**：Optimizely — CMS + experimentation 历史基因。
 - **Type C — Enterprise Headless-native（上探 enterprise）**：Contentstack、Contentful Enterprise — API-first 但 **企业治理档**。
 - **Type D — .NET / 区域 strong**：Kentico — SMB→Enterprise 连续体。
@@ -79,20 +79,19 @@
 
 ## 工具与产品类型（Enterprise CMS / DXP · 非穷尽）
 
-> **born-for enterprise/DXP** 优先。Headless SMB 档见 [`headless-cms`](./headless-cms.md)。
+> **born-for enterprise/DXP** 优先。规格与 URL → **§外链索引**；Headless SMB 档见 [`headless-cms`](./headless-cms.md)；Drupal OSS 见 [`open-source-cms`](./open-source-cms.md)。
 
-| 产品 | Type | 一句话 | 备注 |
-|------|------|--------|------|
-| **Adobe Experience Manager (AEM)** | A | 企业 WCM+DXP 基准 · Adobe 云 | Forms、Assets、Edge Delivery |
-| **Sitecore** | A | .NET 生态 · XM Cloud | 传统 XP → 云原生 |
-| **Optimizely** | B | CMS + 实验/个性化 | 原 Episerver |
-| **Kentico** | D | .NET · SMB—Enterprise | Xperience DXP |
-| **Contentstack** | C | API-first · enterprise 治理 | Composable 叙事 |
-| **Contentful Enterprise** | C | 与 SMB 档同一品牌 | 对照 [`headless-cms`](./headless-cms.md) |
-| **Drupal**（enterprise 自托管） | — | OSS 大型 WCM | 深度 [`open-source-cms`](./open-source-cms.md) |
+| 产品 | Type | 一句话 |
+|------|------|--------|
+| **Adobe Experience Manager (AEM)** | A | 企业 WCM+DXP 基准 · Adobe 云 |
+| Sitecore | A | .NET 生态 · XM Cloud |
+| Optimizely | B | CMS + 实验/个性化 |
+| Kentico | D | .NET · SMB—Enterprise |
+| Contentstack | C | API-first · enterprise 治理 |
+| **Contentful Enterprise** | C | 与 SMB 档同一品牌 |
+| **Drupal**（enterprise 自托管） | — | OSS 大型 WCM |
 
 ---
-
 ## 外链索引
 
 | 名称 | URL |
@@ -104,9 +103,18 @@
 | **Contentstack** | [contentstack.com](https://www.contentstack.com/) |
 | **CMSWire — DXP** | [cmswire.com/digital-experience](https://www.cmswire.com/digital-experience/) |
 
+### 对比与测评（第三方；观点非官方）
+
+- **Enterprise DXP 无 SMB 捷径**：六位/七位 USD/年 TCO 常见；团队 <20 人常 over-buy——先试 headless 或 OSS（§落地碎片）。
+- **Type B vs Type C**：实验/个性化原生 vs headless-native 上探 enterprise，采购标准不同——规格见 §外链索引。
+
+*观点非官方。*
+
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
+
+**站内**
 
 - Hub：[`content-management-system.md`](./content-management-system.md)
 - [`headless-cms.md`](./headless-cms.md) · [`open-source-cms.md`](./open-source-cms.md)

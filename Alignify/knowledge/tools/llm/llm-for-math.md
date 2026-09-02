@@ -188,6 +188,6 @@ AIME26 Top 行（display-only、常不足 5 家 provider）及 FrontierMath 指�
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
 - [llm.md](llm.md) · [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md) · [llm-for-reasoning.md](llm-for-reasoning.md)

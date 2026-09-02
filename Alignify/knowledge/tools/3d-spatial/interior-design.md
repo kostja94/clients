@@ -1,5 +1,7 @@
 # AI Interior Design · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI interior design / 自住改造可视化**——照片/户型/风格偏好→效果图级方案（可含 virtual renovation）；验收以风格匹配、动线可行性、预算沟通为主。**listing 空房摆家具、MLS 披露** → [virtual-staging.md](virtual-staging.md)；**施工级 BIM/施工图** → [cad.md](cad.md)。完整 URL 表 **仅 §外链索引**；与 staging 对照 SSOT 见 §专题对照。
+
 **材料范围**：公开网络检索（Collov、REimagineHome、Spacely AI、Planner 5D、Homestyler 等产品页、室内设计媒体与测评摘要）；**未**引用 Alignify 站内 JSON 正文为论据。网摘整理日期 **2026-06-24**。
 
 **站内对照**：[alignify.co/blog/interior-design](https://alignify.co/blog/interior-design) · [alignify.co/zh/blog/interior-design](https://alignify.co/zh/blog/interior-design) · 正文 md 已同步至部署仓 `alignify-by-kostja/content/blog/{en|zh}/interior-design.md` · slug **`interior-design`**
@@ -8,15 +10,11 @@
 
 **站内相邻**：[image.md](../image/image.md) · [virtual-staging.md](virtual-staging.md) · [background-changer.md](../image/background-changer.md) · [cad.md](cad.md)
 
-**内容边界**：本 slug 主责 **业主 / 室内设计师 / 装修公司的空间改造可视化**——布局、风格、材质、软装选型；可含 **virtual renovation**（改墙、地面、橱柜）。**房源 listing 营销、MLS 披露、空房摆家具不改硬装** 见 [virtual-staging.md](virtual-staging.md)。**施工级 BIM/施工图** 见 [cad.md](cad.md)。完整对照见下文 §专题对照（与 staging **SSOT 一致**）。
-
-**勿与…混买**：本页是 **自住改造与设计方案（效果图级）**——不是经纪人 listing 合规置景、不是 UI 界面设计（`ui-design`）、不是 Revit 算量与施工 BIM（`cad`）。
-
 以下条目可任意顺序阅读；**不是**文章体例。
 
 ---
 
-## Buyer 子决策树（自住 / 设计意图）
+## Buyer 子决策树（自住 / 设计意图 SSOT）
 
 | 你的问题 | 去哪个 slug | 知识块 |
 |----------|-------------|--------|
@@ -44,51 +42,46 @@
 
 ## 词汇锚点
 
-- **AI interior design（本知识块主标签）**：检索常写作 **AI interior design**、**room redesign AI**、**AI home design**、**interior design AI tool**。核心链路为 **照片 / 户型 / 风格偏好 → AI 生成或编辑室内场景**——验收侧重 **风格匹配、动线可行性、选材与预算沟通**，而非 MLS 照片真实性披露框架。
+- **AI interior design（本页主轴）**：检索常写 **AI interior design**、**room redesign AI**、**AI home design**、**interior design AI tool**。链路：**照片/户型/风格偏好 → AI 生成或编辑室内场景**——验收侧重 **风格匹配、动线可行性、选材与预算沟通**，而非 MLS 照片真实性披露框架。
 - **Room redesign / 空间重塑**：可改动 **墙面颜色、地面材质、橱柜、布局**——与 virtual staging「**硬装不变**」形成品类分界；本块为 **virtual renovation** 主归属。
-- **Style transfer / 风格迁移**：将参考图或预设风格（北欧、工业、日式等）应用到现有房间照片——多数产品的默认交互。
-- **Mood board / 情绪板**：多图拼贴定调——部分高端工具与设计师工作流整合；AI 可自动生成 mood board 再细化到单品。
-- **Floor plan editor / 户型编辑**：在 2D 户型上改墙体、放家具→渲染 3D——Planner 5D、Homestyler 等路线；**自住规划** 主归属本块；**开发商预售 listing** 见 staging。
-- **Shoppable furniture / 可购家具导流**：生成图中家具可链到电商 SKU——staging 与 interior 均可能出现；本块写 **家装选购与方案落地**，staging 写 **listing 展示用家具**。
-- **AR preview / 实景预览**：手机摄像头叠加家具或材质——增强「住进去之前」的信心；与 Matterport tour staging 不同（后者属 staging + scanner 交叉）。
+- **Style transfer / 风格迁移**：将参考图或预设风格（北欧、工业、日式等）应用到现有房间照片——多数产品默认交互。
+- **Mood board / 情绪板**：多图拼贴定调——AI 可自动生成 mood board 再细化到单品。
+- **Floor plan editor / 户型编辑**：2D 户型改墙放家具→3D 渲染——Planner 5D、Homesyler 等；**自住规划** 主归属本块；**开发商预售 listing** 见 staging。
+- **Shoppable furniture / 可购家具导流**：生成图家具链到电商 SKU——本块写 **家装选购与方案落地**；listing 语境见 staging。
+- **AR preview / 实景预览**：手机摄像头叠加家具或材质——增强「住进去之前」信心；Matterport tour staging 属 staging + scanner 交叉。
 
 ---
 
 ## 专题对照 / 扩展定义（与 virtual-staging SSOT 一致）
 
-| 维度 | **interior-design（本文件）** | **virtual-staging** |
+术语定义见 §词汇锚点；下表只列 **买家体验差**（staging 全文见 [virtual-staging.md](virtual-staging.md)）。
+
+| 维度 | **interior-design（本页）** | **virtual-staging** |
 |------|-------------------------------|---------------------|
 | **买家** | 业主、室内设计师、装修公司 | 经纪人、摄影师、staging 服务商 |
 | **商业目标** | 改造决策、客户提案、选材采购 | 缩短上市、提高 listing 点击 |
 | **结构改动** | **允许**（墙、地面、橱柜、布局） | **禁止**（仅软装与装饰） |
-| **输入** | 照片、户型图、风格描述、参考图 | 空房/旧家具 **listing 实拍** |
-| **验收** | 美感、可行性、风格匹配、预算沟通 | 像真实拍摄、多角度一致、披露合规 |
-| **检索词** | AI interior design, room redesign AI | virtual staging, AI real estate staging |
+| **验收** | 美感、可行性、风格匹配、预算沟通 | 真实感、多角度一致、披露合规 |
 | **法规重心** | 效果图≠竣工、结构安全须专业复核 | MLS、AB 723、Fair Housing（全文见 staging） |
 
-| 维度 | **interior-design（本文件）** | **image-generator** |
+| 维度 | **interior-design（本页）** | **image-generator** |
 |------|-------------------------------|---------------------|
 | **约束** | 房间结构、比例、硬装逻辑 | 无空间约束，可任意虚构房间 |
-| **失败模式** | 风格不搭、动线不合理、「效果图太假」 | 手指/文字错误、风格漂移 |
-| **检索意图** | 装修、改造、软装方案 | 创意概念图、社交媒体 |
+| **失败模式** | 风格不搭、动线不合理 | 手指/文字错误、风格漂移 |
 
-| 维度 | **interior-design（本文件）** | **background-changer** |
+| 维度 | **interior-design（本页）** | **background-changer** |
 |------|-------------------------------|------------------------|
 | **对象** | **整间空间** 风格与家具编辑 | 主体抠像换 **平面底** |
-| **核心能力** | 空间推理、风格匹配、布局建议 | matting、白底、场景合成 |
-| **相邻 Tools** | `virtual-staging` | `image-editor` |
 
-| 维度 | **interior-design（本文件）** | **cad（Revit/BIM）** |
+| 维度 | **interior-design（本页）** | **cad（Revit/BIM）** |
 |------|-------------------------------|----------------------|
 | **产出** | **营销/决策级效果图**、漫游预览 | **施工图级 BIM/CAD**、出图与算量 |
-| **买家** | 消费者与方案沟通 | 持证设计师、施工方 |
-| **备注** | AI 加速 **前期方案**；竣工仍须专业图纸 | [cad.md](cad.md) |
 
 ---
 
-## 问题域（为何会出现这类产品）
+## 问题域
 
-- **装修决策高焦虑、高客单价**：业主在签约硬装前需要 **可讨论的视觉方案**——传统 3D 效果图外包贵、周期长。
+- **装修决策高焦虑、高客单价**：业主签约硬装前需要 **可讨论的视觉方案**——传统 3D 效果图外包贵、周期长。
 - **设计师提效与提案迭代**：同一户型快速出 **多风格方案** 供客户选择，缩短前期沟通轮次。
 - **远程选材与供应链**：shoppable 链路把效果图与 **可买 SKU** 绑定——缩短从「喜欢」到「下单」路径。
 - **租房与轻改造**：不重硬装的前提下换风格、换软装——与 staging 的「卖房」动机不同但技术栈相似。
@@ -109,14 +102,16 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **一键风格化（photo → redesign）**：上传照片选风格→整屋重设计——REimagineHome、Collov、Interior AI 类。
-- **设计师工作台（B2B）**：客户管理、多方案、品牌家具库——Spacely AI、部分 Collov 企业线。
-- **户型图编辑器 + AI 渲染**：Planner 5D、Homestyler——自住规划主路径。
-- **AI + 人工设计服务**：平台接单，AI 加速 + 设计师交付——部分传统软装平台转型。
-- **全功能套件（redesign + staging 双模式）**：REimagineHome、BrightShot——**redesign 主归属本块**；staging 模式链 staging。
-- **传统 BIM 的 AI 层**：Revit/SketchUp AI 插件——叙述在 [3d-modelling.md](3d-modelling.md)。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 一键风格化（photo → redesign） | AI room redesign | REimagineHome、Collov、Interior AI |
+| **B** | 设计师 B2B 工作台 | interior design platform B2B | Spacely AI |
+| **C** | 户型图编辑器 + AI 渲染 | floor plan 3D design | Planner 5D、Homestyler |
+| **D** | AI + 人工设计服务 | AI + human interior design | 部分传统软装平台转型 |
+| **E** | 全功能套件（redesign + staging 双模式） | home design suite | REimagineHome、BrightShot（staging 模式链 staging） |
+| **F** | 传统 BIM 的 AI 层 | Revit AI plugin | 叙述在 [cad.md](cad.md) |
 
 ---
 
@@ -125,37 +120,23 @@
 MLS / AB 723 / Virtually Staged 披露 **全文 SSOT** 见 [virtual-staging.md](virtual-staging.md) §风险。本块特有：
 
 - **效果图 ≠ 竣工**：AI 方案 **不构成施工图纸**——拆改墙、承重、管线改造须结构工程师与施工方复核。
-- **材料与光照偏差**：屏幕上的大理石/木地板与实物色差可导致客诉——合同应声明 **仅供参考**。
-- **Fair Housing 与刻板印象**：风格预设与默认家具组合避免暗示特定人群偏好；与 staging 相同的 HUD 适用性原则，但 **listing 场景** 执法案例更多见 staging。
+- **材料与光照偏差**：屏幕材质与实物色差可导致客诉——合同应声明 **仅供参考**。
+- **Fair Housing 与刻板印象**：风格预设与默认家具组合避免暗示特定人群偏好。
 - **数据隐私**：上传自家照片涉及居住隐私——读清是否用于模型训练、是否云端永久存储。
 
 ---
 
-## 落地碎片（无先后）
+## 落地碎片
 
 - **卖房 listing** → [virtual-staging.md](virtual-staging.md)；**自住改造** → 本页——勿因同一 App 双模式就混写 KB。
 - 先定 **编辑深度**：只换沙发抱枕 vs 改厨房橱柜——筛选产品能力边界。
 - 双栖产品（REimagineHome、Collov）：写 KB 时 **按模式拆归属**，勿在两篇各写完整产品长文。
-- 需要 **施工图/算量** → Revit/SketchUp + [3d-modelling.md](3d-modelling.md)；本块止于 **方案可视化**。
+- 需要 **施工图/算量** → Revit/SketchUp + [cad.md](cad.md)；本块止于 **方案可视化**。
 - 开发商 **无实拍预售** → staging §户型图路线；业主 **已有房改造** → 本块户型编辑器。
 
 ---
 
-## 工具与产品类型
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|----------------------|--------------|------|
-| **AI room redesign** | 整屋风格化、改材质 | 本块核心 |
-| **AI interior design app** | 消费者一键改造 | Collov、Interior AI 等 |
-| **Floor plan + 3D** | 户型编辑 + 渲染 | Planner 5D、Homestyler |
-| **Designer B2B platform** | 多客户、提案、家具库 | Spacely AI 等 |
-| **Virtual renovation** | 改硬装预览 | 本块；合规敏感场景链 staging 对照 |
-| **AI home staging** | listing 摆家具 | 主归属 `virtual-staging` |
-| **BIM / CAD** | Revit、SketchUp | 主归属 `3d-modelling` |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话 | URL |
 |------|--------|-----|
@@ -172,7 +153,7 @@ MLS / AB 723 / Virtually Staged 披露 **全文 SSOT** 见 [virtual-staging.md](
 
 ### 对比与测评（第三方；观点非官方）
 
-- **消费者一键 vs 设计师工作台**：一键 app 适合 **风格探索**；B2B 平台适合 **多方案比选与客户管理**——客单价与交付周期差异大。
+- **消费者一键 vs 设计师工作台**：一键 app 适合 **风格探索**；B2B 平台适合 **多方案比选与客户管理**。
 - **与 staging 工具重叠**：同一照片「换风格」vs「摆家具」——买家意图不同；测评文常混品类，Alignify 按 slug 分流。
 - **Planner 5D vs 纯 photo AI**：户型驱动适合 **新建/大改**；纯 photo 适合 **现房软装**。
 
@@ -180,20 +161,15 @@ MLS / AB 723 / Virtually Staged 披露 **全文 SSOT** 见 [virtual-staging.md](
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- Listing 合规与 MLS：[virtual-staging.md](virtual-staging.md)
-- 抠图换底（非整屋）：[background-changer.md](../image/background-changer.md)
-- BIM/施工图：[cad.md](cad.md)
-
----
-
-
----
-
-## 延伸阅读 · 站内知识块
+**站内**
 
 - Hub：[image.md](../image/image.md)
 - Listing 置景：[virtual-staging.md](virtual-staging.md)
 - 换底抠图：[background-changer.md](../image/background-changer.md)
-- CAD/BIM：[cad.md](cad.md)
+- BIM/施工图：[cad.md](cad.md)
+
+**站外**
+
+- 抠图换底（非整屋）：[background-changer.md](../image/background-changer.md)

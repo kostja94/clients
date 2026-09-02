@@ -163,9 +163,14 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - [Shopify — Platform vs Marketplace](https://www.shopify.com/blog/ecommerce-platform-vs-marketplace) · [BigCommerce Frameworks 2026](https://www.bigcommerce.com/articles/ecommerce-website-development/ecommerce-frameworks/) · [TechTarget — Headless Commerce](https://www.techtarget.com/enterprise-software/definition/headless-commerce-headless-e-commerce)
+
+**站内 / 底稿**
+
 - [网搜报告归档](../../../temp/ecommerce-website-builder-web-search-2026-08-28.md)（2026-08-28）
 
 ---

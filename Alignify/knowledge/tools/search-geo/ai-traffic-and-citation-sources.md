@@ -11,8 +11,7 @@
 | slug | 典型买家问题 | 交付形态 | 验收核心 |
 |------|-------------|---------|---------|
 | **`ai-traffic-and-citation-sources`（本页）** | "哪些 AI 平台流量最大？它们的检索链路是怎样的？引用来源有什么规律？" | 平台流量排序、检索供给链拆解、引用来源光谱 | 平台选择决策、监测平台优先级排序 |
-| [`geo`](geo.md) | "GEO 策略怎么定？要不要做？" | 概念框架、策略方法论 | SEO vs GEO 理解对齐、执行优先级 |
-| [`geo`](geo.md) | "怎么让 AI 多引用我的品牌？用什么工具？" | 监测 + 内容优化 + 技术审计全栈 | 可见度分数提升 + 内容改版闭环 |
+| [`geo`](geo.md) | "GEO 策略怎么定？用什么工具？" | 监测 + 内容优化 + 技术审计全栈 | 可见度分数提升 + 内容改版闭环 |
 | [`ai-visibility`](ai-visibility.md) | "ChatGPT/Perplexity 里有人提到我品牌吗？" | 监测仪表盘、自动化快照 | 提及率、引用率、声量份额走势 |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
@@ -72,14 +71,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **大模型对话入口（联网检索）**：用户跟大模型对话，模型在需要时搜索网页并展示来源——ChatGPT Search、Claude Web Search、Grok、Gemini Apps。多数有自有爬虫但检索链路不透明。
-- **AI 原生搜索引擎**：产品本身就是「AI + 搜索」的融合形态——Perplexity、Brave Search/Leo、Kagi Assistant、You.com。自有爬虫与索引，检索链路相对可控。
-- **传统搜索内嵌 AI 层**：Google AI Overviews/AI Mode、Bing Copilot——在传统搜索结果之上叠加生成式摘要，依赖原有搜索索引与排序。
-- **地区 AI 平台**：各市场本土 AI 助手和搜索引擎——检索供给多为自有/合作索引 + 本地生态内容。
-- **垂直/特殊场景 AI**：Consensus（学术）、Phind（开发者）、Amazon Rufus（站内购物）、Apple Intelligence（系统级）——不依赖公开网页排名，数据源高度平台特有。
-- **AI 编码/Agent 发现入口**：Claude Code、Cursor、Copilot Studio 等——虽非流量型答案引擎，但引用开发者文档与 API Catalog 影响长尾专业决策。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 大模型对话 + 联网检索 | grounded chat / web search | ChatGPT、Claude、Grok |
+| **B** | AI 原生搜索引擎 | native AI search | Perplexity、Brave |
+| **C** | 传统搜索内嵌 AI 层 | AI Overviews / Copilot | Google、Bing |
+| **D** | 地区 AI 平台 | regional AI assistant | 见 §外链索引 **地区 AI 平台** |
+| **E** | 垂直场景（学术/开发/购物） | domain AI search | Consensus、Phind、Rufus |
+| **F** | Agent/编码发现入口 | dev doc citation | Claude Code、Cursor 等——非 C 端流量型 |
+
+平台流量排序与 citation 实证见 §对比与测评、§外链索引——本表不重复 ChatGPT ~60% 等数字。
 
 ---
 
@@ -167,11 +170,12 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- **学界**：Princeton · GEO: Generative Engine Optimization（[arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)）——GEO 领域的学术基础，包含引用、引语与可见度的关系讨论。
-- **Google 搜索产品**：[Google AI Mode 帮助](https://support.google.com/websearch/answer/16011537)（展示随版本更新）。
-- **OpenAI Bots**：[platform.openai.com/docs/bots](https://platform.openai.com/docs/bots)——GPTBot 与 OAI-SearchBot 的官方文档。
-- **Perplexity Bots**：[docs.perplexity.ai/guides/bots](https://docs.perplexity.ai/guides/bots)——PerplexityBot 与 Perplexity-User 的区别说明。
-- **实证引用分析**：SE Ranking AI Mode Study（10,000 US keywords, AI Mode/AI Overviews/organic top-10 URL 重合度约 10.7%）；Ahrefs AI Citation Research（1700 万条引用，内容新鲜度分析）。
-- **地区 GEO 生态**：各市场存在本土 GEO 服务商生态与地区 AI 平台图谱——需根据目标市场独立研究。
+**站外**
+
+- **Princeton GEO 论文**、**OpenAI Bots**、**Perplexity Bots**、**Google AI Mode**——框架与爬虫 SSOT 见 [geo.md](geo.md) §延伸阅读；本页 §外链索引 含 **SE Ranking / Semrush / Ahrefs** 实证研究入口。
+
+**站内**
+
+- 策略全栈：[geo.md](geo.md) · 监测工具：[ai-visibility.md](ai-visibility.md) · AI 搜索产品：[search-engine.md](search-engine.md)

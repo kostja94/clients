@@ -83,14 +83,18 @@
 
 ---
 
-## 形态谱系
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **桌面专业增强器（Desktop Professional Enhancer）**：以 Topaz Gigapixel AI（$99 一次性 或 $199/年 Photo AI 套装）为代表——本地 GPU 运行、9+ 专业 AI 模型、面部精炼、Photoshop/Lightroom 插件集成。2026 年摄影师的"默认增强器"——忠实路径的代表——适合需要保持原始图像法律/商业可靠性的专业场景。ON1 Resize AI 2026（一次性购买、Genuine Fractals® + AI、两种模型——最高质量和标准）是"反订阅"的替代选项。
-- **云端创意增强器（Cloud Creative Enhancer）**：以 Magnific AI（$79/月——16 倍扩散超分——创意滑块控制 AI 重新想象的程度）为代表——全云端——不需要 GPU。优势：创意质量最高——特别擅长 AI 生成图像（Midjourney/SD/FLUX）的放大——合成真实的皮肤毛孔、织物编织和大气细节。劣势：昂贵（$79/月远高于桌面一次性购买）——对其实产品图的"幻觉"风险高——不适合法律/证据用途。
-- **开源增强模型（Open-Source Enhancer）**：以 Real-ESRGAN（最广泛的开源超分——4 倍——通过平铺可至 8K/16K——免费——快速）、SUPIR（开源扩散超分 SOTA——8 倍——可至 16K——免费但需 12GB+ VRAM——比 Real-ESRGAN 慢 10-50 倍）、Upscayl（开源桌面应用——本地处理——隐私优先——完全免费——4 倍——通过双通道可至 16 倍）为代表。优势：免费、自托管、无限使用——颠覆了付费增强器的"每张图成本"逻辑。劣势：需要技术能力——设置和配置不是一键式的。
-- **移动端面部增强器（Mobile Face Enhancer）**：以 Remini（免费-$9.99/月——一键面部增强+老照片修复——移动端优先）为代表——利用 AI 将颗粒状的低分辨率面部照片转换为看起来专业的面部照片。2026 年广泛用于社交媒体头像修复、"找回老照片中的亲人面部"。它不是全功能增强器——它是"面部增强即服务"——在这个狭窄领域中做得异常出色。
-- **Web/API 批量增强服务（Web/API Batch Enhancer）**：以 Let's Enhance（$9/月起——Web 界面——16 倍放大——API 集成）和 WaveSpeed API（程序化超分——按调用计费——SDK 支持）为代表——面向需要处理大量图像但不想管理 GPU 的企业。关键价值：可扩展性——从 100 张到 100,000 张——边际成本线性、不增加运维复杂度。
-- **专业化增强（Specialist Enhancer）**：针对特定图像类型的增强——waifu2x（动漫/插画——2 倍——免费——开源）——在动漫和插图上优于通用增强器。4DDiG AI Photo Enhancer（老照片修复+增强——一次解决多个问题——划痕去除+超分+着色）——面向家庭照片和档案修复的非技术用户。这种"类型特化"从通用增强中分化——因为不同的图像类型（照片 vs 动漫 vs 文件扫描）需要不同的增强策略。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 桌面专业：本地 GPU、多 AI 模型、面部精炼、PS/LR 插件 | Desktop pro enhancer, Topaz Gigapixel | Topaz Gigapixel AI、ON1 Resize AI 2026 |
+| **B** | 云端创意：扩散模型超分、创意滑块、全云端 | Cloud creative upscaler, Magnific AI | Magnific AI |
+| **C** | 开源/自托管：免费无限、需技术能力 | Open-source upscaler, Real-ESRGAN | Real-ESRGAN、SUPIR、Upscayl |
+| **D** | 移动端面部：一键面部修复、老照片恢复 | Mobile face enhancer, Remini | Remini |
+| **E** | Web/API 批量：可扩展批量处理、按调用计费 | Web batch upscaler, upscaler API | Let's Enhance、WaveSpeed API |
+| **F** | 类型特化：动漫/插画或老照片全修复 | Specialist enhancer, waifu2x | waifu2x、4DDiG AI Photo Enhancer |
+
+**Type A vs B**（体验均「放大」，哲学不同）：A 为**忠实放大**（CNN/标准模式——不编造细节）；B 为**创意放大**（扩散合成纹理——法律/产品图慎用）。
 
 ---
 
@@ -113,20 +117,7 @@
 
 ---
 
-## 工具与产品类型
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|---------------------|-------------|------|
-| **Desktop Pro Enhancer**（Topaz Gigapixel AI, ON1 Resize AI 2026） | 本地 GPU 处理，多 AI 模型，面部精炼，PS 插件 | 专业摄影师的默认选择——Topaz $99 一次性/ON1 一次性——"忠实"优先 |
-| **Cloud Creative Upscaler**（Magnific AI） | 扩散模型 16 倍超分，创意滑块，云处理 | $79/月——AI 生成图像放大的首选——"好看"优先但价格高 |
-| **Open-Source Enhancer**（Real-ESRGAN, SUPIR, Upscayl） | 免费开源，无限制使用，自托管 | 不适合非技术用户——但性价比无可匹敌——Upscayl 隐私优先 |
-| **Mobile Face Enhancer**（Remini） | 一键面部修复，老照片恢复，移动端优先 | 免费-$9.99/月——"面部增强即服务"——全球最广泛的 AI 增强使用场景 |
-| **Web/API Batch Service**（Let's Enhance, WaveSpeed API） | Web 界面/API 批量处理，16 倍放大 | $9/月起——面向企业和开发者——可扩展的批量增强 |
-| **Specialist Enhancer**（waifu2x, 4DDiG） | 针对特定类型优化——动漫/插画或老照片全修复 | 通用增强器在特定类型上的表现弱于专门优化工具 |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话 | URL |
 |------|--------|-----|
@@ -148,7 +139,9 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - GII Research — "Artificial Intelligence (AI) Image Enhancer Global Market Report 2026"（$2.45B → $2.83B → $5.03B by 2030, CAGR 15.7%）
 - Technology.org — "AI Image Upscalers in 2026: How Super Resolution Actually Works (and Where It Still Falls Short)"（2026 年 4 月——经典 vs 扩散的技术分叉分析）
@@ -158,10 +151,7 @@
 - ON1 — "ON1 Resize AI 2026 vs Others: Real Results from AI Photo Enlarging"
 - Raxxo Studios — "Magnific vs Topaz vs Krea: Which AI Upscaler Actually Works"（2026）
 
----
+**站内**
 
-
----
-## 延伸阅读 · 站内知识块
 - 品类 Hub：[image.md](image.md)
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）

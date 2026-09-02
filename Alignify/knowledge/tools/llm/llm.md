@@ -299,23 +299,32 @@
 
 ---
 
-## 工具与产品类型（LLM 评测）
+## 工具与产品类型（LLM 评测 · 路由表）
 
-| 基准类型 | 代表基准 | 用途 |
-|---------|---------|------|
-| 综合知识 | MMLU-Pro, GPQA Diamond | 学术/专业知识覆盖 |
-| 编程能力 | SWE-bench Verified, LiveCodeBench | Agent 软件工程 |
-| 数学推理 | AIME, FrontierMath | 形式推理与计算 |
-| 多模态 | MMMU-Pro, MM-Vet v2 | 图文/视频理解 |
-| 人类偏好 | Chatbot Arena, WildBench | 用户排名 |
+各基准代表与用途见 §五轴总分流、§词汇锚点；**实时 Top N** 见 [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)——本表不重复枚举。
+
+| 路由 | 知识块 |
+|------|--------|
+| 综合 / Arena / Overall | 本页 + snapshots §Overall |
+| 编程 SWE / LCB / Terminal | [llm-for-coding.md](llm-for-coding.md) |
+| 数学 AIME / FrontierMath | [llm-for-math.md](llm-for-math.md) |
+| 推理 GPQA / HLE / ARC | [llm-for-reasoning.md](llm-for-reasoning.md) |
+| 多模态 MMMU / Video-MME | [multimodal-llm.md](multimodal-llm.md) |
+| 评自己的应用 | [evaluation.md](evaluation.md) |
 
 ### 对比与测评（第三方；观点非官方）
 
-2026 年中格局：Claude 系列在编程与推理领先；GPT-5 系列在多模态与通用任务全面；Gemini 3 在长上下文有差异化。闭源 vs 开源差距在缩小（DeepSeek-R1、Qwen3 逼近前沿）。实时排行见 [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)。
+2026 年中格局：**闭源 vs 开源差距缩小**，但 **轴内 tail**（SWE Pro、FrontierMath、Video-MME）仍可能差 **5–15pt**。**实时数字** 只维护于 [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)（2026-06-23）。
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
+
+**站外**
+
+- 基准原站：Chatbot Arena、BenchLM、HLE、SWE-bench、LiveCodeBench——URL 见 §外链索引。
+
+**站内**
 
 - 快变数字：[llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)
 - 专轴：[llm-for-coding.md](llm-for-coding.md) · [llm-for-math.md](llm-for-math.md) · [llm-for-reasoning.md](llm-for-reasoning.md) · [multimodal-llm.md](multimodal-llm.md)

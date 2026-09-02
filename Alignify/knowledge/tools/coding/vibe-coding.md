@@ -1,5 +1,7 @@
 # Vibe coding（氛围编程）· 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**Vibe coding / 氛围编程**——以自然语言 **prompt** 驱动 **LLM** / **agent** 生成可运行界面或小应用，验收以「能点、能用、能改 prompt 再出一版」为主。本页为 **Vibe coding 工具与话语 SSOT**（完整 URL 表仅此一处）；专业工程交付与 **AI coding** 治理见 §专题对照；Agent 视觉语言输入见 [`ui-design.md`](../design/ui-design.md)。
+
 **材料范围**：公开网络检索（百科、云厂商解读、词典年度词报道、行业评论与研究报告摘要）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 2026-04-18。
 
 **站内对照**：[alignify.co/tools/vibe-coding](https://alignify.co/tools/vibe-coding) · `/tools/vibe-coding` · [alignify.co/zh/tools/vibe-coding](https://alignify.co/zh/tools/vibe-coding) · `/zh/tools/vibe-coding` · `content/tools/zh/vibe-coding.md`、`content/tools/en/vibe-coding.md` · slug **`vibe-coding`**
@@ -22,7 +24,7 @@
 
 ## 专题对照 / 扩展定义（可选）
 
-*本笔记用法：Vibe coding 与 AI coding*
+*本笔记用法：Vibe coding 与 AI coding*——范式定义见 §词汇锚点；下表只列**买家体验差**，不重复术语。
 
 | 维度 | **Vibe coding**（氛围编程） | **AI coding** |
 |------|---------------------------|----------------|
@@ -33,6 +35,8 @@
 | **与代码的关系** | 常**不读**或**少读**生成物；靠对话与再生成 | 以**读懂 diff** 为常态；**AI** 是加速器而非黑箱替代品 |
 
 *重叠区*：专业开发者也会用「一句话改 **UI**」的 **vibe** 式交互；非开发者也可能在托管平台里点到企业模板——上表描述的是**话语与采购场景里最常见的主轴**。
+
+品类 Type 与产品 URL → **§形态谱系**、**§外链索引**。
 
 ---
 
@@ -48,21 +52,38 @@
 
 ## 能力栈（概念拆分，非厂商功能表）
 
-- **自然语言 → 代码 / 项目脚手架**（两端都有，权重不同）：从空白描述到可运行目录；**vibe** 侧重「少文件心智负担」，**AI coding** 侧重「与现有仓库结构对齐」。
-- **迭代式修补**：报错栈贴回对话、让模型重试；**vibe** 常止于「界面好了就行」；**AI coding** 常要求补回归测试与根因说明。
-- **Agentic 工作流**（更偏 **AI coding**）：任务拆解、终端命令、测试运行、**PR** 草稿、与 **issue tracker** 联动。
-- **企业级 AI 应用**（**AI coding** 外延）：**RAG** 知识库、权限与租户隔离、模型路由与成本配额、**eval**、人工复核队列——与「个人 **vibe** 出一个页面」不是同一套交付物。
-- **与「负责任 AI 辅助开发」对照**：不少公开材料刻意区分「完全信 vibe」与「生成 + 人工架构/安全/审阅」；后者与本笔记的 **AI coding** 主轴一致（见 Google Cloud 解读文）。
+- **自然语言 → 代码 / 项目脚手架**（两端都有，权重不同）：从空白描述到可运行目录；**vibe** 侧重「少文件心智负担」，AI coding 侧重「与现有仓库结构对齐」。
+- **迭代式修补**：报错栈贴回对话、让模型重试；**vibe** 常止于「界面好了就行」；AI coding 常要求补回归测试与根因说明。
+- **Agentic 工作流**（更偏 AI coding）：任务拆解、终端命令、测试运行、**PR** 草稿、与 **issue tracker** 联动。
+- **企业级 AI 应用**（AI coding 外延）：**RAG** 知识库、权限与租户隔离、模型路由与成本配额、**eval**、人工复核队列——与「个人 **vibe** 出一个页面」不是同一套交付物。
+- **与「负责任 AI 辅助开发」对照**：不少公开材料刻意区分「完全信 vibe」与「生成 + 人工架构/安全/审阅」；后者与本笔记的 AI coding 主轴一致（见 Google Cloud 解读文）。
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（品类 SSOT；与具体品牌解耦）
 
-- **周末原型 / throwaway（vibe 主轴）**：验证想法、个人脚本、黑客松 **MVP**；与 **Karpathy** 早期「周末项目」语境接近；典型叙述是**非开发者**也能交作业式交付。
-- **商业产品中的 vibe 层（vibe 主轴）**：营销或社区常说 **vibe coding app**，自然语言 → 托管全栈；买家常为个人或小团队，条款里重点看数据与导出。
-- **专业工程师的「受控使用」（AI coding 主轴）**：媒体亦报道商业场景采用度上升；表现为「**AI** 起草 + **review** + **CI**」——词典意义上的「纯 **vibe**」在此通常**不被**团队规范接受。
-- **企业级应用 + 内部平台（AI coding 主轴）**：多服务、多环境、合规与可观测性绑定；**AI** 可能只是其中一层（代码助手 + 运维助手 + 客服 **RAG** 等）。
+| Type | 品类特征 | 英文常检索词 | 主轴（本笔记） | 代表（规格见 §外链索引） |
+|------|----------|--------------|----------------|--------------------------|
+| **A** | 自然语言 → 全栈或前端项目、托管预览与部署 | Vibe coding / app builder | **Vibe** | Lovable、Bolt、Replit、Emergent、Trickle、Medo、Youware、Anything、Rocket、Atoms |
+| **B** | 托管运行时、一键部署、与云资源/账号绑定 | Cloud / vendor studio | **Vibe**（企业团队用时多滑向 **AI coding**） | Firebase Studio、Google AI Studio |
+| **C** | 多文件 **agent**、终端、索引、**inline** 补全 | AI IDE / editor agent | **AI coding** | Cursor、Windsurf |
+| **D** | 从提示生成 **UI**/组件或设计稿 → 前端代码 | UI / design-to-code generator | **Vibe** 为主 | v0、Framer、Anima |
+| **E** | 可视化 **no-code** 数据库与逻辑 + **AI** 辅助 | No-code + AI | **Vibe** | Bubble |
+| **F** | **PR** 级建议、测试生成 | Copilot / pair programmer | **AI coding** | —（盘点语境常见，本表无单列外链） |
+| **G** | 仓库级任务、脚本化交互 | CLI agent（coding agent） | **AI coding** | —（与 **headless** / **DevOps** 流程结合） |
+| **H** | **RAG**、权限、配额、**eval**、审计日志 | Enterprise AI app 平台 | **AI coding / 企业应用** | —（与「个人一句话出站」分流） |
+
+**成熟度 / 买家场景轴**（与 Type 正交）：
+
+- **周末原型 / throwaway（vibe 主轴）**：验证想法、个人脚本、黑客松 **MVP**；Type **A** 典型；与 **Karpathy** 早期「周末项目」语境接近；典型叙述是**非开发者**也能交作业式交付。
+- **商业产品中的 vibe 层**：营销或社区常说 **vibe coding app**，自然语言 → 托管全栈；买家常为个人或小团队，条款里重点看数据与导出——Type **A/B**。
+- **专业工程师的「受控使用」（AI coding 主轴）**：媒体亦报道商业场景采用度上升；表现为「**AI** 起草 + **review** + **CI**」——词典意义上的「纯 **vibe**」在此通常**不被**团队规范接受——Type **C** 为主。
+- **企业级应用 + 内部平台（AI coding 主轴）**：多服务、多环境、合规与可观测性绑定；**AI** 可能只是其中一层（代码助手 + 运维助手 + 客服 **RAG** 等）——Type **H** 及工程流程。
 - **文化延伸**：如媒体提出的 **vibe valuation**（估值叙事与经典指标脱节）等衍生词，说明 **vibe** 话语已溢出纯技术讨论。
+
+**Type A vs C**（盘点里常同框，场景不同）：A 为「从空目录到能点」；C 为「已存在仓库 + **PR** 级改动」——对比见 §外链索引「对比与测评」。
+
+*检索补充*：同类还有 **Tempo**、**Softgen**、**Zed**、各云厂商 **AI app builder** 实验入口等，更新快；选型以官方文档、数据驻留与导出条款为准。
 
 ---
 
@@ -85,53 +106,37 @@
 
 ---
 
-## 工具与产品类型（检索里常与 vibe coding 同框的品类；非穷尽）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 主轴（本笔记） |
-|----------------------|--------------|----------------|
-| **Vibe coding / app builder 产品** | 自然语言 → 全栈或前端项目、托管预览 | **Vibe**（非开发者友好）；例：**Lovable**、**Bolt**、**Replit** 等盘点语境 |
-| **Cloud / vendor studio** | 托管运行时、一键部署、与云资源绑定 | **Vibe** 为主；企业团队用时多滑向 **AI coding**（加 **IAM**、审计） |
-| **AI IDE / editor agent** | 多文件编辑、终端、索引、**inline** 补全 | **AI coding**；例：**Cursor**、**Windsurf**、**Zed** |
-| **Copilot / pair programmer** | **PR** 级建议、测试生成 | **AI coding** |
-| **CLI agent（coding agent）** | 仓库级任务、脚本化交互 | **AI coding**；与 **headless** / **DevOps** 流程结合 |
-| **Enterprise AI app 平台** | **RAG**、权限、配额、**eval**、审计日志 | **AI coding / 企业应用**；与「个人一句话出站」分流 |
+| 名称 | Type | 一句话（据公开页面归纳） | URL |
+|------|------|--------------------------|-----|
+| **Lovable** | A | 对话描述生成全栈 Web 应用、托管与协作迭代 | [lovable.dev](https://lovable.dev/) |
+| **Bolt**（StackBlitz） | A | 浏览器内对话生成前后端，常见 **Node** 运行时与即时预览 | [bolt.new](https://bolt.new/) |
+| **Replit** | A | **Replit Agent** 等从描述搭项目、运行与部署（教育/黑客松场景常见） | [replit.com](https://replit.com/) |
+| **Emergent** | A | 全栈 **vibe coding** 平台，多 **agent** 协作（设计→构建→测试→部署），$100M+ ARR，6M 用户；企业版推进中（SOC 2） | [emergent.sh](https://emergent.sh/) |
+| **Trickle** | A | 一体化全栈构建器，**Magic Canvas**（永久上下文画布 + 内置数据库 + 设计变量系统），免外部 Supabase 配置，一键部署 | [trickle.so](https://trickle.so/) |
+| **Medo**（百度） | A | 对话式全栈应用生成，多智能体协作（架构师/编码/测试/优化/安全/部署），100 万+应用已生成，支持微信小程序 | [medo.dev](https://medo.dev/) |
+| **Youware** | A | **YouBase** 内置后端（auth/DB/storage/secrets），多模型切换（GPT/Claude/Gemini），500K+ MAU，PWA 与自定义域名 | [youware.com](https://www.youware.com/) |
+| **Anything**（Create.xyz） | A | 自然语言 → Web + iOS 原生应用，30+ 集成（Stripe/Neon/Google Maps），代码可导出+GitHub 同步；曾因 App Store 政策被下架 | [createanything.com](https://www.createanything.com/) |
+| **Rocket** | A | 三件套：**Solve**（市场调研/竞品分析）+ **Build**（AI 全栈构建）+ **Intelligence**（竞品监控），25+ 原生集成 | [rocket.new](https://www.rocket.new/) |
+| **Atoms**（DeepWisdom） | A | 多 **agent** 虚拟开发团队（7 角色：调研/架构/产品/开发/SEO/数据/协调），MetaGPT 学术背景，面向一人公司全流程 | [atoms.dev](https://atoms.dev/) |
+| **Firebase Studio** | B | Google 系「想法 → 带 **Firebase** 后端的原型」工作流（与谷歌账号/配额绑定） | [firebase.google.com/docs/studio](https://firebase.google.com/docs/studio) |
+| **Google AI Studio** | B | 提示、模型试用与轻量应用/原型实验（与 **Gemini** API 同一生态） | [aistudio.google.com](https://aistudio.google.com/) |
+| **Cursor** | C | **AI coding** 主轴；非开发者亦偶用「对话改仓库」，盘点里常与 **vibe** 同框 | [cursor.com](https://cursor.com/) |
+| **Windsurf**（Codeium） | C | 同上，**agent** 式多文件编辑强，企业工程向与 **vibe** 叙事常混在同一榜单 | [windsurf.com](https://windsurf.com/) |
+| **v0**（Vercel） | D | 从提示生成 **UI** 与组件代码（**React** / **shadcn** 等栈），可导出到项目 | [v0.dev](https://v0.dev/) |
+| **Framer**（**AI** 建站） | D | 设计向落地页 / 站点生成与改版，偏视觉与营销站 | [framer.com](https://www.framer.com/) |
+| **Anima** | D | 设计稿（**Figma** 等）→ 前端代码导出，与「从设计到代码」检索意图重叠 | [animaapp.com](https://www.animaapp.com/) |
+| **Bubble**（**AI** 辅助） | E | 可视化 **no-code** 数据库与逻辑 + **AI** 生成页/工作流（学习曲线仍高于「一句话出栈」） | [bubble.io](https://bubble.io/) |
 
----
-
-## 外链索引（外链；非广告、无排序优先级）
-
-### 工具与产品
-
-下列以「**自然语言 / 少代码** → **可预览或可部署** 的 Web / 小应用」为主叙事；专业开发者也可把它们当 **AI coding** 脚手架使用，表里不重复争论主轴。
-
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| **Lovable** | 对话描述生成全栈 Web 应用、托管与协作迭代 | [lovable.dev](https://lovable.dev/) |
-| **Bolt**（StackBlitz） | 浏览器内对话生成前后端，常见 **Node** 运行时与即时预览 | [bolt.new](https://bolt.new/) |
-| **Replit** | **Replit Agent** 等从描述搭项目、运行与部署（教育/黑客松场景常见） | [replit.com](https://replit.com/) |
-| **v0**（Vercel） | 从提示生成 **UI** 与组件代码（**React** / **shadcn** 等栈），可导出到项目 | [v0.dev](https://v0.dev/) |
-| **Firebase Studio** | Google 系「想法 → 带 **Firebase** 后端的原型」工作流（与谷歌账号/配额绑定） | [firebase.google.com/docs/studio](https://firebase.google.com/docs/studio) |
-| **Framer**（**AI** 建站） | 设计向落地页 / 站点生成与改版，偏视觉与营销站 | [framer.com](https://www.framer.com/) |
-| **Bubble**（**AI** 辅助） | 可视化 **no-code** 数据库与逻辑 + **AI** 生成页/工作流（学习曲线仍高于「一句话出栈」） | [bubble.io](https://bubble.io/) |
-| **Anima** | 设计稿（**Figma** 等）→ 前端代码导出，与「从设计到代码」检索意图重叠 | [animaapp.com](https://www.animaapp.com/) |
-| **Google AI Studio** | 提示、模型试用与轻量应用/原型实验（与 **Gemini** API 同一生态） | [aistudio.google.com](https://aistudio.google.com/) |
-| **Cursor** | 本笔记多归为 **AI coding**；非开发者亦偶用「对话改仓库」，盘点里常与 **vibe** 同框 | [cursor.com](https://cursor.com/) |
-| **Windsurf**（Codeium） | 同上，**agent** 式多文件编辑强，企业工程向与 **vibe** 叙事常混在同一榜单 | [windsurf.com](https://windsurf.com/) |
-| **Emergent** | 全栈 **vibe coding** 平台，多 **agent** 协作（设计→构建→测试→部署），$100M+ ARR，6M 用户；企业版推进中（SOC 2） | [emergent.sh](https://emergent.sh/) |
-| **Trickle** | 一体化全栈构建器，**Magic Canvas**（永久上下文画布 + 内置数据库 + 设计变量系统），免外部 Supabase 配置，一键部署 | [trickle.so](https://trickle.so/) |
-| **Medo**（百度） | 对话式全栈应用生成，多智能体协作（架构师/编码/测试/优化/安全/部署），100 万+应用已生成，支持微信小程序 | [medo.dev](https://medo.dev/) |
-| **Youware** | **YouBase** 内置后端（auth/DB/storage/secrets），多模型切换（GPT/Claude/Gemini），500K+ MAU，PWA 与自定义域名 | [youware.com](https://www.youware.com/) |
-| **Anything**（Create.xyz） | 自然语言 → Web + iOS 原生应用，30+ 集成（Stripe/Neon/Google Maps），代码可导出+GitHub 同步；曾因 App Store 政策被下架 | [createanything.com](https://www.createanything.com/) |
-| **Rocket** | 三件套：**Solve**（市场调研/竞品分析）+ **Build**（AI 全栈构建）+ **Intelligence**（竞品监控），25+ 原生集成 | [rocket.new](https://www.rocket.new/) |
-| **Atoms**（DeepWisdom） | 多 **agent** 虚拟开发团队（7 角色：调研/架构/产品/开发/SEO/数据/协调），MetaGPT 学术背景，面向一人公司全流程 | [atoms.dev](https://atoms.dev/) |
-
-*检索补充（2026-05 更新）*：同类还有 **Tempo**、**Softgen**、各云厂商 **AI app builder** 实验入口等，更新快；选型以官方文档、数据驻留与导出条款为准。本表新增条目为 2026-05-13 网络检索与交叉验证整理，融资与用户数据以官方最新披露为准。
+*2026-05 更新*：本表新增条目为 2026-05-13 网络检索与交叉验证整理，融资与用户数据以官方最新披露为准。
 
 ### 对比与测评（第三方；观点非官方）
 
-独立开发者长测与中文社区「同一需求多平台复现」类文章里，**Lovable**、**Bolt**、**Replit** 常被放在一条线上比较：共性是「自然语言 → 可预览全栈」，分歧主要在**额度/计费**（按日、按月、按 **AI** 调用）、**栈锁定**（是否强绑定 **Supabase**、**React** 模板）以及**导出后是否还能在自己仓库里迭代**。较常见的用户决策是：快速给客户看 **demo** 用 A，需要细抠后端与部署管线时迁回传统 **IDE**——很少有人指望单一 **vibe** 入口扛长期生产。
-
-教育向「贪吃蛇同一题」横评则暴露另一条轴：**新手友好** vs **代码可控**；社区反馈里，**零代码爽**与「生成物难 **debug**」几乎总是成对出现。与 **Cursor**、**Windsurf** 等 **AI IDE** 对比时，第三方观点多强调：后者适合「已存在仓库 + **PR** 级改动」，前者适合「从空目录到能点」；把两者混谈为「谁取代谁」在论坛里往往被反驳为场景错误匹配。
+- **Type A 横评（Lovable / Bolt / Replit 等）**：共性见 §形态谱系 **Type A**；规格见上表。第三方长测与中文社区「同一需求多平台复现」分歧主要在**额度/计费**（按日、按月、按 **AI** 调用）、**栈锁定**（是否强绑定 **Supabase**、**React** 模板）以及**导出后是否还能在自己仓库里迭代**。较常见决策：快速 **demo** 用 A 类平台，细抠后端与部署管线时迁回传统 **IDE**——少有人指望单一 **vibe** 入口扛长期生产。
+- **新手友好 vs 代码可控**：教育向「贪吃蛇同一题」横评暴露「零代码爽」与「生成物难 **debug**」几乎成对出现——与 §问题域「质量自毁循环」呼应。
+- **Type A vs C**：第三方观点多强调场景错配——把 **AI IDE** 与 **app builder** 混谈「谁取代谁」在论坛里常被反驳；架构对照见 §形态谱系 **Type A vs C**。
+- **不存在单一 winner**：多 **agent** 全栈（Emergent、Medo、Atoms）、一体化画布（Trickle）、内置后端（Youware）、跨端（Anything）各走不同集成/导出策略——按 §形态谱系 Type 切片选型。
 
 *本小节为网摘与独立作者/社区观点综合，非 Alignify 实测；**不**以各 **vibe** 平台厂商自有营销博文为论证主体。*
 
@@ -151,7 +156,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **Merriam-Webster**：曾将 **vibe code** 列入「**slang & trending**」观察名单（百科条目引用其 2025-03 报道；具体措辞以词典站为准）。
 - **Y Combinator**：关于 **Winter 2025** 批次中「高比例 **AI-generated** 代码库」的公开叙述常被二次引用——注意原问法未必等于「**vibe coding**」定义（见维基百科该节表述）。

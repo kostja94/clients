@@ -82,15 +82,18 @@
 
 ---
 
-## 形态谱系
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **专业桌面编辑器（Professional Desktop Editor）**：以 Photoshop + Firefly 为代表——完整的图层、蒙版、通道、非破坏性编辑+AI 增强。$22.99/月。优势：像素级控制、无妥协的编辑精度、最大的第三方插件生态。劣势：陡峭的学习曲线、订阅制和生成式点数的双重计费。2026 年地位：仍然是无可争议的专业标准——AI 增加效率但不改变"专业工具"的本质定位。
-- **AI 原生编辑器（AI-Native Editor）**：以 Luminar Neo 为代表——AI 是核心 DNA 而非后期附加功能——一次性购买 $99-179（无订阅）、离线可用、RAW 支持。优势：学习曲线最平、一次性购买选项、Sky AI/Portrait AI 在某些任务上超越 Adobe。劣势：桌面限定、遮罩精度不如 Photoshop、批处理速度慢于云端工具。适合：摄影师——想要强大的 AI 但不想要订阅的人。
-- **电商专用编辑器（E-Commerce Editor）**：以 Photoroom（免费-$9.99/月）、Claid.ai、Remove.bg 为代表——背景去除+产品图批处理+场景生成。优势：针对电商工作流优化（批量→质量→分发）、极低价格（$0.03-2.99 vs 传统拍摄 $20-150/图）。劣势：不适用于非产品摄影。2026 年地位：电商 AI 编辑是从通用编辑器中分化出的最成功的垂直子品类。
-- **在线/协作编辑器（Online Collaborative Editor）**：以 Canva Magic Studio（免费-$14.99/月）、Fotor（免费-$8.99/月）为代表——浏览器内 AI 编辑+团队协作+模板。优势：零安装、团队共享、与社交媒体模板深度整合。劣势：控制精度低于桌面工具。适合：营销团队、社交媒体经理、非设计师。
-- **移动端 AI 编辑器（Mobile AI Editor）**：以 Remini（免费-$9.99/月）、Picsart（免费-$5/月）为代表——触屏优先、一键 AI 效果、面部增强。2026 年移动端 AI 编辑占全球 AI 编辑图像的 55%——这不是未来趋势而是当前现实。优势：即时性（拍→修→发在同一个设备上）。劣势：控制粒度有限、输出分辨率受限。
-- **AI 编辑插件（AI Editing Plugin）**：嵌入已有编辑器的第三方 AI 工具——AutoCut（Premiere 和 DaVinci 的 AI 剪辑插件——但视频侧）、Retouch4me（Photoshop 的人像精修 AI 插件套组——皮肤、眼睛、嘴唇、减淡加深各自一个 AI 插件）。优势：不离开已有工作流。劣势：碎片化——多个插件需要分别购买和管理。
-- **专业降噪/锐化工具（Specialist Denoise/Sharpen Tool）**：以 Topaz Photo AI（$199 一次性）为代表——不试图成为全功能编辑器，只做降噪、锐化和上采样——并在这一件事上做到最好。优势：在专项任务上超越通用编辑器。劣势：需要额外的导出/导入工作流——增加操作步骤。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 专业桌面：完整图层/蒙版+Firefly 生成式填充 | Professional desktop editor, Photoshop Firefly | Adobe Photoshop + Firefly |
+| **B** | AI 原生桌面：Sky AI/Portrait AI 为核心，一次性购买 | AI-native editor, Luminar Neo | Luminar Neo (Skylum) |
+| **C** | 电商专用：背景去除+产品场景+API 批量 | E-commerce editor, product photo AI | Photoroom、Claid.ai、Remove.bg |
+| **D** | 在线协作：浏览器+模板+团队+社媒集成 | Online collaborative editor, Canva AI | Canva Magic Studio、Fotor |
+| **E** | 移动端：触屏优先、一键 AI 效果、面部增强 | Mobile AI editor, Remini | Remini、Picsart、FaceApp |
+| **F** | 专项工具：降噪/锐化/上采样或人像精修插件 | Specialist denoise/sharpen, Retouch4me | Topaz Photo AI、Retouch4me |
+
+**Type A vs B**（均面向摄影师，商业模式不同）：A 为订阅+生成式点数；B 为一次性购买+离线——Sky AI 质量 B 在某些任务上超越 A（§对比与测评）。
 
 ---
 
@@ -115,20 +118,7 @@
 
 ---
 
-## 工具与产品类型
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|---------------------|-------------|------|
-| **Professional Desktop Editor**（Adobe Photoshop + Firefly） | 完整图层/蒙版/通道+AI 生成式填充+对象移除+神经滤镜 | $22.99/月——行业标准，学习曲线陡峭，IP 赔偿 |
-| **AI-Native Editor**（Luminar Neo, Skylum） | AI 为核心——Sky AI、Portrait AI、GenErase/GenSwap/GenExpand | $99-179 一次性或 ~$10/月——反订阅+速度快 |
-| **E-Commerce Editor**（Photoroom, Claid.ai, Remove.bg） | 背景去除、白底生成、产品场景生成、API 批量 | $2.99-9.99/月——电商专用，成本为传统拍摄的 0.1-2% |
-| **Online Collaborative Editor**（Canva Magic Studio, Fotor） | 浏览器 AI 编辑+模板+团队协作+社媒集成 | 免费-$14.99/月——非设计师的友好入口 |
-| **Mobile AI Editor**（Remini, Picsart, FaceApp） | 一键面部增强、老照片修复、AI 滤镜 | 免费-$9.99/月——占全球 AI 编辑图像 55% |
-| **Specialist Tool**（Topaz Photo AI, Retouch4me） | 专项功能——降噪/锐化/上采样、人像精修插件 | $199 一次性或插件单独定价——在特定任务上超越通用编辑器 |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话 | URL |
 |------|--------|-----|
@@ -149,7 +139,9 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - Congruence Market Insights — "AI Photo Editing and Creative Software Market 2026-2033"（$1.04B → $2.23B, CAGR 10%）
 - WMR — "AI Image Editor Market Size and Share Analysis 2026-2033"（$2.3B → $5.7B, CAGR 13.5%）
@@ -162,10 +154,9 @@
 - AuditFutures — "The 10 Best AI Image Editing Tools of 2026"
 - OfficeChai — "AI For Photo Editing: 23 Best Tools (With Examples) 2026"
 
----
+**站内**
 
-
----
-## 延伸阅读 · 站内知识块
 - 品类 Hub：[image.md](image.md)
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）
+- 电商 matting 长文：[background-changer.md](background-changer.md)
+- 纯超分：[image-enhancer.md](image-enhancer.md)

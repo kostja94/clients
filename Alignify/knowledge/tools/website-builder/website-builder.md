@@ -138,21 +138,21 @@
 
 ---
 
-## 工具与产品类型（品类表格）
+## 工具与产品类型（检索词分类 · 产品 URL/规格见 §外链索引）
 
-> **本 slug 为通用建站 Hub**，产品以 **横向 all-in-one** 为主；**场景垂直** 范例见 sibling：`blog-website-builder`（Blogger/Wix 博客）、`portfolio-website-builder`（Format）、`ecommerce-website-builder`（Shopify）等。下表 **AI-native 垂直**（Durable）在同类中优先列举。
+> **本 slug 为通用建站 Hub**；场景垂直 spoke：`blog-website-builder`、`portfolio-website-builder`、`ecommerce-website-builder` 等。**列举顺序**：AI-native 垂直先于横向 all-in-one。
 
-| 类型（英文常检索词） | 垂直 / 场景专精（典型） | 横向 all-in-one（典型） | 备注 |
-|---------------------|------------------------|------------------------|------|
-| AI website builder | **Durable**, Hostinger AI Builder | Wix AI, Squarespace Blueprint AI | Durable = AI instant **垂直** |
-| All-in-one website builder | — | Wix, Squarespace, GoDaddy, Weebly | W3Techs 份额见外链 |
-| Design / visual website builder | — | Framer, Webflow | 设计优先横向 |
-| WordPress hosted + AI | — | WordPress.com AI Builder | 非 .org 自托管 |
-| WordPress plugin builder layer | — | Elementor 等 | WP 生态层 |
-| Agency / multi-client builder | **Duda** | — | 代理批量 **垂直** |
-| AI business OS bundled | **Durable**（站+CRM+开票） | — | Type C 垂直 bundled |
+| 类型（英文常检索词） | 垂直 / 场景 | 横向 all-in-one | 对应 Type |
+|---------------------|------------|----------------|-----------|
+| AI website builder | Durable, Hostinger AI Builder | Wix AI, Squarespace Blueprint AI | C / D |
+| All-in-one website builder | — | Wix, Squarespace, GoDaddy, Weebly | A |
+| Design / visual website builder | — | Framer, Webflow | B |
+| WordPress hosted + AI | — | WordPress.com AI Builder | E |
+| WordPress plugin builder layer | — | Elementor 等 | E 生态层 |
+| Agency / multi-client builder | Duda | — | A 垂直 |
+| AI business OS bundled | Durable（站+CRM+开票） | — | C 垂直 |
 
-**Top 5（横向份额 + AI 垂直，2026-08-28）**：**Wix · Squarespace · Webflow · Framer · Hostinger AI Builder**；**AI 垂直候补**：Durable。
+**Top 5 横向 + AI 垂直候补**：见 §外链索引（Wix · Squarespace · Webflow · Framer · Hostinger AI Builder；候补 Durable）。
 
 ---
 
@@ -177,20 +177,29 @@
 - HN WordPress.com AI（2025）：.com vs .org 混淆；应对 Elementor 类插件。
 - 市场规模口径不一：Mordor ~$3.57B vs Fact.MR ~$2.4B（2026），须标注来源。
 
-## 延伸阅读
-
-- TechTarget：[headless vs traditional CMS](https://www.techtarget.com/enterprise-software/feature/Traditional-CMS-vs-headless-CMS-Whats-the-difference) · [low-code 定义](https://www.techtarget.com/it-infrastructure/definition/low-code-and-no-code-development-platforms)
-- 完整检索报告：[`temp/website-builder-web-search-2026-08-28.md`](../../../temp/website-builder-web-search-2026-08-28.md)
-
 ---
 
 ## 专题对照 · AI vs 拖拽（2026）
+
+> 范式定义见 §形态谱系 Type A/C/D；下表只列**买家体验差**。
 
 | 维度 | Type A 拖拽 | Type C AI instant | Type D Agentic |
 |------|------------|-------------------|----------------|
 | 首版 | 小时–天 | 分钟 | 分钟+持续自动化 |
 | 生成后 | 拖拽 | 拖拽/regenerate | AI 执行+人工 publish |
-| 代表 | Squarespace | Durable, Blueprint | Hostinger AI Builder |
+| 代表 | 见 §外链索引 | 见 §外链索引 | Hostinger AI Builder |
+
+---
+
+## 延伸阅读 · 站内外
+
+**站外**
+
+- TechTarget：[headless vs traditional CMS](https://www.techtarget.com/enterprise-software/feature/Traditional-CMS-vs-headless-CMS-Whats-the-difference) · [low-code 定义](https://www.techtarget.com/it-infrastructure/definition/low-code-and-no-code-development-platforms)
+
+**站内 / 底稿**
+
+- 完整检索报告：[`temp/website-builder-web-search-2026-08-28.md`](../../../temp/website-builder-web-search-2026-08-28.md)
 
 ---
 

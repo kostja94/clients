@@ -1,30 +1,28 @@
 # AI CAD Tools · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**CAD / 工程几何**——参数化实体、NURBS、B-Rep、BIM、STEP/IGES 交换及 AI text-to-CAD；验收以壁厚、公差、特征可编辑、出图为主。影视/游戏 DCC 精修 → [3d-modelling.md](3d-modelling.md)；展示 mesh 生成 → [3d-model-generator.md](3d-model-generator.md)；家装效果图 → [interior-design.md](interior-design.md)。完整 URL 表 **仅 §外链索引**。
+
 **材料范围**：公开网络检索（Autodesk / Dassault / Trimble 产品页、Zoo.dev / Adam 文档、KCL 说明、CAD 行业媒体与 Forbes 2026 摘要）；**未**引用 Alignify 站内 JSON 正文为论据。网摘整理日期 **2026-06-24**。
 
 **站内对照**：[alignify.co/blog/cad](https://alignify.co/blog/cad) · [alignify.co/zh/blog/cad](https://alignify.co/zh/blog/cad) · 正文 md 已同步至部署仓 `alignify-by-kostja/content/blog/{en|zh}/cad.md` · slug **`cad`**
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#cad-tools`
 
-**站内相邻**：[3d.md](3d.md) · [3d-modelling.md](3d-modelling.md) · [3d-model-generator.md](3d-model-generator.md)
-
-**内容边界**：本 slug 主责 **制造与工程向 CAD**——参数化实体、NURBS、B-Rep、BIM 数据模型、STEP/IGES 交换，以及 **AI 加持层**（text-to-CAD、CAD Copilot、geometry API）。**影视/游戏 DCC 精修**（拓扑/UV/绑骨）见 [3d-modelling.md](3d-modelling.md)；**展示用 mesh 生成**（Tripo/Meshy）见 [3d-model-generator.md](3d-model-generator.md)。完整分工见 [3d.md](3d.md) §内容分工。
-
-**勿与…混买**：本页是 **可加工 / 可出图 / 可算量的工程几何**——不是游戏道具 mesh、不是 listing 虚拟软装、不是 UI 原型（`ui-design`）。
+**站内相邻**：[3d.md](3d.md) · [3d-modelling.md](3d-modelling.md) · [3d-model-generator.md](3d-model-generator.md) · [interior-design.md](interior-design.md)
 
 以下条目可任意顺序阅读；**不是**文章体例。
 
 ---
 
-## Buyer 子决策树
+## Buyer 子决策树（CAD 轴 SSOT）
 
 | 你的问题 | 去哪个 slug | 知识块 |
 |----------|-------------|--------|
 | 机械零件 / CNC / 注塑，要 STEP/B-Rep？ | `cad` | 本页 |
-| 用 **自然语言** 直接生成可编辑 CAD？ | `cad` | 本页 §AI text-to-CAD |
+| 用 **自然语言** 直接生成可编辑 CAD？ | `cad` | 本页 §形态谱系 Type G |
 | 影视/游戏 mesh 要拓扑/UV/绑骨精修？ | `3d-modelling` | [3d-modelling.md](3d-modelling.md) |
 | 文/图凭空生成 **展示 mesh**（非制造）？ | `3d-model-generator` | [3d-model-generator.md](3d-model-generator.md) |
-| 建筑 **施工级 BIM** 算量与协同？ | `cad` | 本页 §BIM |
+| 建筑 **施工级 BIM** 算量与协同？ | `cad` | 本页 §形态谱系 Type E |
 | 业主 **效果图级** 家装 redesign（非施工图）？ | `interior-design` | [interior-design.md](interior-design.md) |
 
 ---
@@ -42,16 +40,18 @@
 | Blender/Maya/ZBrush 雕刻动画 | **`3d-modelling`** | cad 不写绑骨长段 |
 | Claude → **Fusion** 连接器 | **`cad`** 1 句 | Blender 连接器在 modelling |
 
+完整簇分工见 [3d.md](3d.md) §内容分工。
+
 ---
 
 ## 词汇锚点
 
-- **CAD / Computer-Aided Design（本知识块主标签）**：检索常写作 **CAD software**、**3D CAD**、**parametric CAD**、**mechanical CAD**；偶与 **AutoCAD**、**Fusion 360** 等品牌词混搜。核心产出为 **尺寸驱动、可制造或可出施工图** 的几何与数据——非单纯渲染图。
-- **CAD vs DCC**：CAD 面向 **制造 / 工程 / BIM 数据**（STEP、IGES、DWG、RVT）；DCC 面向 **屏幕呈现**（FBX、glTF、雕刻、动画）——详见 §专题对照与 [3d-modelling.md](3d-modelling.md)。
+- **CAD / Computer-Aided Design（本页主轴）**：检索常写 **CAD software**、**3D CAD**、**parametric CAD**、**mechanical CAD**。核心产出为 **尺寸驱动、可制造或可出施工图** 的几何与数据——非单纯渲染图。
+- **CAD vs DCC**：CAD 面向 **制造/工程/BIM**（STEP、IGES、DWG、RVT）；DCC 面向 **屏幕呈现**（FBX、glTF、雕刻、动画）——对照见 §与相邻 slug 分流。
 - **B-Rep / 边界表示**：精确实体边界——机械加工与模具常用；与三角 **mesh** 不同。
-- **STEP / IGES**：制造业 **交换格式** SSOT；AI CAD 黄金交付常为 STEP。
-- **Parametric / 参数化建模**：尺寸与约束驱动特征树——改一处参数全局更新；SolidWorks、Fusion、FreeCAD 范式。
-- **NURBS CAD**：Rhino、Alias 等 **数学曲面**——工业设计与自由曲面建筑。
+- **STEP / IGES**：制造业 **交换格式 SSOT**；AI CAD 黄金交付常为 STEP。
+- **Parametric / 参数化建模**：尺寸与约束驱动特征树——SolidWorks、Fusion、FreeCAD 范式。
+- **NURBS CAD**：Rhino、Alias——**数学曲面**，工业设计与自由曲面建筑。
 - **BIM / 建筑信息模型**：Revit、ArchiCAD——模型携带 **构件数据** 流向施工与运维；≠ 家装效果图（见 `interior-design`）。
 - **Text-to-CAD / AI CAD generator**：NL、草图 → B-Rep/STEP——Zoo.dev、Adam；品类词 **text to cad** 月搜低于 **autocad** 但意图更纯。
 - **Geometry-as-code（KCL）**：Zoo 生态——模型即代码，适合 API 与 CI。
@@ -59,40 +59,27 @@
 
 ---
 
-## 专题对照 / 扩展定义
+## 与相邻 slug 分流（避免混买混评）
 
-| 维度 | **cad（本文件）** | **3d-modelling** |
-|------|-------------------|------------------|
-| **核心任务** | 工程几何、制造、出图、BIM 数据 | DCC 创作、雕刻、动画、影视精修 |
-| **典型工具** | Fusion、SolidWorks、AutoCAD、Rhino、Revit | Blender、Maya、ZBrush、Houdini |
-| **输出格式** | STEP、IGES、DWG、RVT | FBX、glTF、USD（场景） |
-| **AI 角色** | text-to-CAD、Copilot 改特征 | 重拓扑、UV、Auto-Rig、操控 Blender |
-| **检索词** | CAD software, Fusion 360, text to cad | 3D modelling, Blender, ZBrush |
+| 维度 | **`cad`（本页）** | **`3d-modelling`** | **`3d-model-generator`** | **`interior-design`** |
+|------|-------------------|--------------------|--------------------------|----------------------|
+| **典型买家问题** | 零件能加工/能出施工图吗？ | mesh 拓扑/UV 能进动画管线吗？ | 一句话能生成 3D 吗？ | 改造效果能提案给客户吗？ |
+| **产出** | 可制造实体 / BIM | 精修 mesh、绑定 | 展示 mesh / splat | 效果图、风格方案 |
+| **验收核心** | 壁厚、公差、特征可编辑 | 四边面、边流、变形 | silhouette、贴图、rig | 美感、可行性、预算沟通 |
+| **检索词** | CAD software, text to cad | 3D modelling, Blender | text to 3D | AI interior design |
 
-| 维度 | **cad（本文件）** | **3d-model-generator** |
-|------|-------------------|------------------------|
-| **产出** | 可制造实体 / 工程模型 | 展示 mesh / splat |
-| **验收** | 壁厚、公差、特征可编辑 | silhouette、贴图、rig |
-| **检索词** | AI CAD, prompt to STEP | text to 3D, image to 3D |
-
-| 维度 | **cad（本文件）** | **interior-design** |
-|------|-------------------|----------------------|
-| **产出** | 施工图/BIM/加工件 | 效果图、风格方案、mood board |
-| **买家** | 机械/建筑工程师 | 业主、室内设计师 |
-| **SketchUp** | 建筑草模 CAD 向 | 家装可视化向（与 Planner 5D 等） |
-
-| 维度 | **cad（本文件）** | **vibe-coding** |
-|------|-------------------|-----------------|
+| 维度 | **`cad`（本页）** | **`vibe-coding`** |
+|------|-------------------|-------------------|
 | **产出** | 几何零件 | 应用源代码 |
 
 ---
 
-## 问题域（为何会出现这类产品）
+## 问题域
 
-- **制造数字化**：从概念到 CNC/注塑/钣金的全链路依赖 CAD——AI 压缩 **首轮建模** 而非取代 QC。
+- **制造数字化**：概念→CNC/注塑/钣金全链路依赖 CAD——AI 压缩 **首轮建模** 而非取代 QC。
 - **订阅成本与开源替代**：AutoCAD/Fusion 订阅 vs FreeCAD 免费——中小团队选型压力大。
 - **硬件初创缺 CAD 人力**：text-to-CAD 与 geometry API 服务 **定制件下单**。
-- **BIM  mandated**：大型建筑项目要求 **数据模型** 交付——Revit 等仍为基建。
+- **BIM mandated**：大型建筑项目要求 **数据模型** 交付——Revit 等仍为基建。
 - **AI Copilot 嵌入传统 CAD**：Fusion AI 等降低 **特征编辑** 门槛——与 standalone text-to-CAD 并存。
 - **移动与外勤**：Shapr3D 等将 CAD 带到客户现场——速稿到 STL 闭环。
 
@@ -111,17 +98,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **机械参数化 CAD**：SolidWorks、Fusion 360、Onshape、FreeCAD——机械与产品设计主流。
-- **2D+3D 通用 CAD**：AutoCAD、BricsCAD——工程制图传统强项 + 部分 3D。
-- **NURBS / 工业设计**：Rhinoceros + Grasshopper——曲面与参数化建筑。
-- **BIM 平台**：Revit、ArchiCAD、Vectorworks——建筑信息模型与施工协同。
-- **建筑快速草模**：SketchUp——推拉式直觉建模；家装 **效果图** 与 interior-design 工具重叠。
-- **移动 CAD**：Shapr3D（iPad）——外勤速稿与 STL。
-- **AI text-to-CAD**：Zoo.dev、Adam——NL/KCL → STEP。
-- **CAD 内嵌 Copilot**：Fusion AI、SolidWorks 助手——操控既有特征树。
-- **开源参数化**：FreeCAD——模块化工作台，成本敏感团队。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 机械参数化 CAD | mechanical CAD / parametric CAD | SolidWorks、Fusion 360、Onshape、FreeCAD |
+| **B** | 2D+3D 通用 CAD | 2D CAD / AutoCAD | AutoCAD、BricsCAD |
+| **C** | NURBS / 工业设计 | NURBS CAD / industrial design | Rhino + Grasshopper |
+| **D** | BIM 平台 | BIM software | Revit、ArchiCAD、Vectorworks |
+| **E** | 建筑快速草模 | architectural sketch modeling | SketchUp |
+| **F** | 移动 CAD | mobile CAD / iPad CAD | Shapr3D |
+| **G** | AI text-to-CAD | text to cad / AI CAD generator | Zoo.dev、Adam |
+| **H** | CAD 内嵌 Copilot | CAD copilot | Fusion AI、SolidWorks 助手 |
 
 ---
 
@@ -137,7 +125,7 @@
 
 ---
 
-## 落地碎片（无先后）
+## 落地碎片
 
 - **制造件** → 本页或传统 CAD；**游戏/电商 mesh** → [3d-model-generator.md](3d-model-generator.md)。
 - **精修拓扑/UV** → [3d-modelling.md](3d-modelling.md)（即使起点是 CAD 导出的 mesh）。
@@ -147,24 +135,7 @@
 
 ---
 
-## 工具与产品类型
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|----------------------|--------------|------|
-| **Mechanical CAD** | SolidWorks、Fusion 360、Onshape | 参数化实体 |
-| **2D/3D CAD** | AutoCAD、BricsCAD | 工程图传统 |
-| **NURBS CAD** | Rhino、Alias | 曲面工业/建筑 |
-| **BIM** | Revit、ArchiCAD | 施工数据流 |
-| **Open-source CAD** | FreeCAD | 免费参数化 |
-| **Mobile CAD** | Shapr3D | iPad 外勤 |
-| **Text-to-CAD / AI CAD** | Zoo.dev、Adam | NL→STEP |
-| **Sketch-to-CAD** | 部分 Zoo/Adam | 成熟度需实测 |
-| **Text-to-3D mesh** | Tripo、Meshy | → `3d-model-generator` |
-| **DCC** | Blender、Maya | → `3d-modelling` |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话 | URL |
 |------|--------|-----|
@@ -191,20 +162,15 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- DCC 精修：[3d-modelling.md](3d-modelling.md)
-- Mesh 生成：[3d-model-generator.md](3d-model-generator.md)
-- 家装效果图（非施工图）：[interior-design.md](interior-design.md)
-- Forbes 2026：制造 CAD vs 内容 mesh 管线区分
-
----
-
-
----
-
-## 延伸阅读 · 站内知识块
+**站内**
 
 - Hub：[3d.md](3d.md)
 - DCC 精修：[3d-modelling.md](3d-modelling.md)
-- 展示 mesh：[3d-model-generator.md](3d-model-generator.md)
+- Mesh 生成：[3d-model-generator.md](3d-model-generator.md)
+- 家装效果图（非施工图）：[interior-design.md](interior-design.md)
+
+**站外**
+
+- Forbes 2026：制造 CAD vs 内容 mesh 管线区分

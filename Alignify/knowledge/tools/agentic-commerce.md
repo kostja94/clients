@@ -117,9 +117,8 @@ US「agentic commerce」搜索约 **4.4K/月**、YoY **+408%**（DataForSEO，SE
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
-- [ai-shopping.md](ai-shopping.md)
-- [agentic-payments.md](agentic-payments.md)
-- [geo.md](search-geo/geo.md)
-- [influencer-marketing.md](marketing-growth/influencer-marketing.md)（creator commerce 相邻）
+**站内**
+
+- [ai-shopping.md](ai-shopping.md) · [agentic-payments.md](agentic-payments.md) · [geo.md](search-geo/geo.md)

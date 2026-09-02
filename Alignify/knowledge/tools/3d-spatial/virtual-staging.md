@@ -1,8 +1,8 @@
 # AI Virtual Staging · 知识块（非线性笔记）
 
-**材料范围**：公开网络检索（SaaS 产品页、独立测评、MLS 政策文件摘要、NAR 行业报告摘要）；**未**引用 Alignify 站内 JSON 正文为论据。网摘整理日期 **2026-06-24**。
+**叙述主词 · 勿与…混买**：**AI virtual staging / listing 虚拟置景**——空房/旧家具 **listing 实拍 → 虚拟软装（不改硬装）→ MLS 可披露营销图**；验收以真实感、多角度一致、披露合规为主。全屋改造/自住 redesign → [interior-design.md](interior-design.md)；Matterport **采集** → [3d-scanner.md](3d-scanner.md)。**MLS / 披露 SSOT 在本页 §风险**；完整 URL 表 **仅 §外链索引**。
 
-**主轴词**：**AI virtual staging**（与 Tools `keywordEn` 一致）；中文常称 **AI 虚拟置景 / 虚拟软装 / AI 空房摆场**。
+**材料范围**：公开网络检索（SaaS 产品页、独立测评、MLS 政策文件摘要、NAR 行业报告摘要）；**未**引用 Alignify 站内 JSON 正文为论据。网摘整理日期 **2026-06-24**。
 
 **站内对照**：[alignify.co/tools/virtual-staging](https://alignify.co/tools/virtual-staging) · [alignify.co/zh/tools/virtual-staging](https://alignify.co/zh/tools/virtual-staging) · `content/tools/en/virtual-staging.md` · `content/tools/zh/virtual-staging.md` · slug **`virtual-staging`**
 
@@ -10,24 +10,20 @@
 
 **站内相邻**：[image.md](../image/image.md) · [interior-design.md](interior-design.md) · [background-changer.md](../image/background-changer.md) · [3d-scanner.md](3d-scanner.md)
 
-**内容边界**：本 slug 主责 **房源 listing 营销**——**空房/旧家具实拍 → 虚拟软装（不改硬装）→ MLS 可披露营销图**。全屋改造、改墙改橱柜、自住 redesign 见 [interior-design.md](interior-design.md)。Matterport **采集**见 [3d-scanner.md](3d-scanner.md)；商品白底抠图见 [background-changer.md](../image/background-changer.md)。
-
-**勿与…混买**：本页是 **经纪人 listing 置景与合规披露**——不是业主装修方案（`interior-design`）、不是展示 mesh 生成（`3d-model-generator`）、不是 DCC 精修（`3d-modelling`）、不是工程 CAD（`cad`）。
-
 以下条目可任意顺序阅读；**不是**文章体例。
 
 ---
 
-## Buyer 子决策树（listing 意图）
+## Buyer 子决策树（listing 意图 SSOT）
 
 | 你的问题 | 去哪个 slug | 知识块 |
 |----------|-------------|--------|
 | **空房 listing 照片** 要摆家具、需 MLS 披露？ | `virtual-staging` | 本页 |
 | **自住改造** / 换风格 / 改布局 / 翻新预览？ | `interior-design` | [interior-design.md](interior-design.md) |
 | 只 **清场去杂物**（declutter），不摆新家具？ | `virtual-staging` | 本页 §能力栈 |
-| **期房/未建成** 开发商预售（无实拍）？ | `virtual-staging` | 本页 §户型图→3D |
+| **期房/未建成** 开发商预售（无实拍）？ | `virtual-staging` | 本页 §形态谱系 Type C |
 | Matterport **扫描采集** 空间？ | `3d-scanner` | [3d-scanner.md](3d-scanner.md) |
-| 全景 tour **内换家具**（已有多视角数据）？ | `virtual-staging` | 本页 §视频与全景 |
+| 全景 tour **内换家具**（已有多视角数据）？ | `virtual-staging` | 本页 §形态谱系 Type H |
 
 ---
 
@@ -49,40 +45,33 @@
 
 ## 词汇锚点
 
-- **AI virtual staging（本知识块主标签）**：检索常写作 **AI virtual staging**、**virtual home staging**、**AI real estate staging**、**digital staging**。链路为 **listing 实拍 → AI 识别房间结构 → 放置虚拟家具与装饰**；**不改墙体/窗户/地板等永久结构**。
-- **Virtual furniture placement**：在二维照片推断深度后放置家具——约束是 **硬装不变**；与「凭空生成房间」的文生图不同。
-- **3D engine staging vs generative AI staging**：**3D 引擎型**（Apply Design）在三维空间放模型后渲染——**多角度一致性**强；**生成式**（Virtual Staging AI）扩散 inpainting——速度快，单张优化，角度间家具可能漂移。
+- **AI virtual staging（本页主轴）**：检索常写 **AI virtual staging**、**virtual home staging**、**AI real estate staging**、**digital staging**。链路：**listing 实拍 → AI 识别房间结构 → 放置虚拟家具与装饰**；**不改墙体/窗户/地板等永久结构**。
+- **Virtual furniture placement**：二维照片推断深度后放置家具——约束是 **硬装不变**；与「凭空生成房间」文生图不同。
+- **3D engine staging vs generative AI staging**：**3D 引擎型**在三维空间放模型后渲染——**多角度一致性**强；**生成式**扩散 inpainting——速度快，单张优化，角度间家具可能漂移。对照见 §专题对照。
 - **Multi-angle consistency**：同房间不同角度家具位置/款式一致——买家信任核心；3D 引擎天然支持；Edensign 以 batch 一致性为卖点。
-- **Photo-based vs floor-plan-based staging**：**照片型**（主流）从实拍添置家具；**户型图型**（Foursite/VirtualSpaces）从平面图生成 3D——适合 **开发商预售 listing**，非业主自住规划（后者见 interior-design）。
+- **Photo-based vs floor-plan-based staging**：**照片型**（主流）从实拍添置家具；**户型图型**（Foursite/VirtualSpaces）从平面图生成 3D——适合 **开发商预售 listing**；业主自住规划见 interior-design。
 - **Decluttering（清场）**：移除杂物/旧家具再 staging——AI HomeDesign 等强项；可与 staging 同一流程。
-- **Virtual renovation**：改墙体、地板、橱柜——**主归属 `interior-design`**；staging 仅允许软装；MLS 对翻新类修改更严——见 interior-design §风险 + 本页 §MLS 边界一句。
+- **Virtual renovation**：改墙体、地板、橱柜——**主归属 `interior-design`**；staging 仅允许软装；MLS 对翻新类修改更严。
 - **Virtual twilight / sky replacement**：白日照→黄昏、窗景替换——部分工具边缘能力；**窗景替换** 在多数 MLS **禁止**（窗外实景属房源物理属性）。
 - **MLS compliance / disclosure**：虚拟置景图须标注 **Virtually Staged** 并提供原图——§风险 SSOT 在本页。
-- **3D walkthrough / tour staging**：在 Matterport/Zillow 漫游中换家具——Styldod 等；技术上不同于单张 inpainting；**采集**见 scanner。
+- **3D walkthrough / tour staging**：Matterport/Zillow 漫游中换家具——Styldod 等；**采集**见 scanner。
 
 ---
 
 ## 专题对照 / 扩展定义（与 interior-design SSOT 一致）
 
-| 维度 | **virtual-staging（本文件）** | **interior-design** |
+术语定义见 §词汇锚点；下表只列 **买家体验差**（redesign 全文见 [interior-design.md](interior-design.md)）。
+
+| 维度 | **virtual-staging（本页）** | **interior-design** |
 |------|-------------------------------|---------------------|
 | **买家** | 经纪人、摄影师、staging 服务商 | 业主、室内设计师、装修公司 |
 | **商业目标** | 缩短上市、提高 listing 点击 | 改造决策、客户提案、选材 |
 | **结构改动** | **禁止**（仅软装） | **允许** |
-| **输入** | 空房/旧家具 **listing 实拍** | 照片、户型、风格偏好 |
 | **验收** | 真实感、多角度一致、披露合规 | 美感、可行性、风格匹配 |
-| **检索词** | virtual staging, AI real estate staging | AI interior design, room redesign AI |
-| **相邻 slug** | `interior-design` | `virtual-staging` |
 
-| 维度 | **virtual-staging（本文件）** | **image-generator** |
+| 维度 | **virtual-staging（本页）** | **image-generator** |
 |------|-------------------------------|---------------------|
 | **约束** | 房间结构不可变、比例合理 | 无空间约束 |
-| **检索意图** | 房地产营销、买家想象 | 创意概念、社交内容 |
-
-| 维度 | **virtual-staging（本文件）** | **background-changer** |
-|------|-------------------------------|------------------------|
-| **对象** | 整间空间家具编辑 | 主体抠像换平面底 |
-| **相邻** | `interior-design` | `image-editor` |
 
 | 维度 | **3D engine staging** | **Generative AI staging** |
 |------|----------------------|---------------------------|
@@ -94,7 +83,7 @@
 
 ---
 
-## 问题域（为何会出现这类产品）
+## 问题域
 
 - **实体 staging 成本高**：单项目常 $2,000+；AI staging 单张约 $0.10–$1（NAR 2025 staging 报告口径对比）。
 - **空房难卖**：买家难投射生活场景；staged 照停留时间高于空房照。
@@ -122,16 +111,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **生成式一键 staging（秒级）**：Virtual Staging AI、StageHQ、BrightShot（staging 模式）。
-- **3D 引擎精准 staging（分钟级）**：Apply Design——高端 listing、多角度。
-- **户型图→3D+Staging（预售）**：Foursite/VirtualSpaces——**开发商 listing**；业主户型规划见 interior-design。
-- **人机混合精修**：BoxBrownie——$2M+ 奢侈物业，24–48h。
-- **全功能 listing 视觉套件**：staging + declutter + 外观——REimagineHome、BrightShot（**redesign 模式链 interior-design**）。
-- **多模型 staging**：StagerGo（Flux/MJ/SD）。
-- **移动端**：StageInside——before/after slider。
-- **视频与全景**：Trolto（视频）、Styldod（Matterport 360°）。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 生成式一键 staging（秒级） | generative virtual staging | Virtual Staging AI、StageHQ、BrightShot（staging 模式） |
+| **B** | 3D 引擎精准 staging（分钟级） | 3D engine virtual staging | Apply Design |
+| **C** | 户型图→3D+Staging（预售） | floor plan to 3D staging | Foursite/VirtualSpaces |
+| **D** | 人机混合精修 | human-edited staging | BoxBrownie |
+| **E** | 全功能 listing 视觉套件 | real estate photo suite | REimagineHome、BrightShot（redesign 链 interior-design） |
+| **F** | 多模型 staging | multi-model staging | StagerGo |
+| **G** | 移动端 before/after | mobile virtual staging | StageInside |
+| **H** | 视频与全景 tour staging | 3D tour staging | Trolto、Styldod |
 
 ---
 
@@ -151,7 +142,7 @@
 
 ---
 
-## 落地碎片（无先后）
+## 落地碎片
 
 - 原图与 staged **并列**（before/after）——合规与信任双需。
 - 批量前先测 **最难 3 张**（异型房间、复杂光源、occupied 房）。
@@ -163,22 +154,7 @@
 
 ---
 
-## 工具与产品类型
-
-| 类型 | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **AI virtual staging（生成式）** | 照片→风格→秒出 | 多角度弱 |
-| **3D engine virtual staging** | 3D 库+渲染 | 一致性高 |
-| **Floor-plan-to-3D staging** | 户型→3D→staging | **预售 listing** |
-| **AI decluttering** | 清场不摆新家具 | staging 前序 |
-| **Real estate photo enhancement** | 调色、天空、草坪 | 与 staging 互补 |
-| **Human-edited staging** | AI+人工 | 奢侈物业 |
-| **Video / 3D tour staging** | 漫游内换家具 | Styldod、Trolto |
-| **AI interior redesign** | 改硬装/全屋风格 | **interior-design** |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话 | URL |
 |------|--------|-----|
@@ -211,20 +187,16 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - NAR 2025 Profile of Home Staging
 - NAR Code of Ethics Article 12
 - California AB 723 (2026)
 - CRMLS Digitally Altered Image Guidance — https://kb.crmls.org/
-- 自住改造：[interior-design.md](interior-design.md)
 
----
-
-
----
-
-## 延伸阅读 · 站内知识块
+**站内**
 
 - Hub：[image.md](../image/image.md)
 - 室内设计 / redesign：[interior-design.md](interior-design.md)

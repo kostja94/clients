@@ -1,5 +1,7 @@
 # AI Memory · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI Memory / 个人第二大脑**——消费级 PKM 与笔记捕获、组织、对话式检索；验收以捕获摩擦、检索质量与隐私模型为主。Agent 记忆中间件（Mem0/Zep/Letta）→ [agent-memory.md](../agent/agent-memory.md)；会议转写 → [note-taker.md](../productivity/note-taker.md)。
+
 **材料范围**：公开网络检索（Vellum.ai/Mem.ai/Notion/Supermemory 厂商和项目官网、GitHub 开源项目页、Gartner 预测数据、中文播客/社区讨论）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 **2026-06-23**。
 
 **站内对照**：[alignify.co/tools/memory](https://alignify.co/tools/memory) · `content/tools/en/memory.md` · [alignify.co/zh/tools/memory](https://alignify.co/zh/tools/memory) · `content/tools/zh/memory.md` · slug **`memory`** · 2026-06-23 重写（PKM/第二大脑；Agent 中间件改 `/blog/agent-memory`）
@@ -22,7 +24,7 @@
 
 - **AI 记忆工具（AI Memory Tools）**（本页范围）：利用 AI 帮助**个人和团队**持久化、组织与检索信息的**消费级与 PKM 品类**——AI 原生笔记（Mem.ai）、AI 增强笔记（Notion AI）、第二大脑引擎（Supermemory App）、硬件捕获（Limitless/Plaud Pin）。**不含** Agent 记忆中间件（Mem0/Zep/Letta/MemOS）——见 [agent-memory.md](../agent/agent-memory.md)。
 - **第二大脑（Second Brain）**：个人知识管理的 AI 化形态——外部、可检索、AI 增强的信息系统——捕获笔记/灵感/书签→AI 组织关联→需要时检索。四层栈：捕获→存储→记忆层（RAG）→行动层（摘要/简报/回顾）。**SEO 核心词（中）**：AI第二大脑、第二大脑工具；**（英）**：AI second brain、AI second brain tools。
-- **AI 笔记（AI-Native Notes）**：以 AI 为核心设计理念（而非后期附加功能）的笔记工具——核心特征：（1）AI 自组织——无需用户手动创建文件夹和标签——AI 自动分类和关联、（2）对话式检索——用自然语言提问而非关键词搜索——"我上周关于 X 的想法是什么？"、（3）上下文自动串联——AI 在不同的笔记之间发现隐藏关联。Mem.ai（免费-$10/月——无文件夹/标签——AI 自动组织）是本理念的消费级代表——与 Notion AI（强大但依赖用户手动构建结构）形成对照。
+- **AI 笔记（AI-Native Notes）**：以 AI 为核心设计理念（而非后期附加功能）的笔记工具——核心特征：（1）AI 自组织——无需用户手动创建文件夹和标签——AI 自动分类和关联、（2）对话式检索——用自然语言提问而非关键词搜索——"我上周关于 X 的想法是什么？"、（3）上下文自动串联——AI 在不同的笔记之间发现隐藏关联。Mem.ai 是本理念的消费级代表——与 Notion AI（强大但依赖用户手动构建结构）形成对照。
 - **RAG（检索增强生成 / Retrieval-Augmented Generation）**：AI 记忆系统的核心技术——不是将所有信息直接塞入模型（成本高、速度慢、不可扩展）——而是在需要时从记忆库中检索最相关的信息片段（向量相似度搜索）→将这些片段作为上下文提供给 AI 生成回答。与微调（fine-tuning）的核心区别：RAG 实时更新（添加新信息立即可检索——无需重新训练模型）、成本低（按检索而非按 token 计费）、不需要 ML 专业知识。2026 年 RAG 是个人 AI 记忆系统的首选技术路线——微调仅用于需要深度模式学习的企业场景。
 - **持久记忆（Persistent Memory）**（个人产品语境）：ChatGPT Memory、Gemini 个性化等**平台内置**跨会话记忆——终端用户无需选型第三方工具。Agent 开发者侧的持久记忆层见 [agent-memory.md](../agent/agent-memory.md)。**本页 SEO 核心词（中）**：AI记忆工具；**（英）**：AI memory tools、best AI memory tools。
 
@@ -30,7 +32,7 @@
 
 ## 专题对照
 
-### 「文件夹式组织」vs「AI 自组织」：两种知识管理范式
+**文件夹式 vs AI 自组织**：范式定义见 §词汇锚点；下表只列**买家体验差**。
 
 | 维度 | 传统文件夹/标签式 | AI 自组织式 |
 |------|-----------------|-----------|
@@ -52,23 +54,29 @@
 
 ---
 
-## 能力栈
+## 能力栈（概念拆分，非厂商功能表）
 
-- **AI 自动分类与关联**：AI 在后台自动理解每条笔记的内容——将其分类到相关主题——并发现不同笔记之间的隐藏关联——无需用户手动创建文件夹、标签或双向链接。Mem.ai 是这一理念的消费级代表。核心价值：消除"数字囤积"的摩擦——用户只需"写下来"——组织由 AI 负责。
-- **对话式知识检索**：用自然语言（而非关键词+过滤条件）查询你的个人知识库——"我三个月前关于定价策略的想法是什么？""与 X 项目相关的所有笔记有哪些？"。Supermemory 和 Mem.ai 以对话式检索为核心交互。与传统搜索的关键区别：AI 理解查询的语义意图——而非仅匹配关键词——可以检索"意思相近但用词不同"的笔记。
+- **AI 自动分类与关联**：AI 在后台自动理解每条笔记的内容——将其分类到相关主题——并发现不同笔记之间的隐藏关联——无需用户手动创建文件夹、标签或双向链接。核心价值：消除"数字囤积"的摩擦——用户只需"写下来"——组织由 AI 负责；代表产品见 §外链索引。
+- **对话式知识检索**：用自然语言（而非关键词+过滤条件）查询你的个人知识库——"我三个月前关于定价策略的想法是什么？""与 X 项目相关的所有笔记有哪些？"。与传统搜索的关键区别：AI 理解查询的语义意图——而非仅匹配关键词——可以检索"意思相近但用词不同"的笔记。
 - **主动推送与时机提醒（Proactive Memory）**：AI 不只是等待用户提问——而是在相关时机（会议前、写作时、浏览相关网页时）主动推送可能相关的历史笔记和想法。2026 年这是 AI 记忆工具的"圣杯"——最难做好——因为"在不相关的时机推送不相关的信息"比"不推送"更糟糕。Vellum（开源——主动推送）和 Google NotebookLM（基于资料来源的总结和提醒）是主动记忆的两个代表方向。
 - **多模态捕获**：信息的自动捕获不限于打字——语音（录音→AI 转录和总结——闪念贝壳 Apple Watch "捏一捏"录音）、硬件（Limitless 录音项链、Plaid Pin 录音别针、Pebble 录音戒指——无感化持续记录）、浏览器扩展（自动保存正在浏览的网页和阅读内容）。2026 年"捕获摩擦"正在被系统性地消除——记忆工具的竞争从"如何组织信息"上移至"如何最低摩擦地捕获信息"。
 - **知识图谱与遗忘曲线**：AI 从笔记中自动提取概念并构建知识图谱——建模概念之间的依赖和关联。ORBIT（知识图谱第二大脑——Walker Agent 在图中游走发现隐藏关联——集成 Ebbinghaus 遗忘曲线标记即将遗忘的内容）是知识图谱记忆的前沿探索。核心价值：知识的关系结构比知识的内容本身更有长期价值——因为"A 和 B 的关系"在内容被遗忘后仍然存在。
 
 ---
 
-## 形态谱系
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **AI 原生笔记（AI-Native Notes）**：以 Mem.ai（免费-$10/月——无文件夹——AI 自组织+对话式检索——"第二大脑"）和 Google NotebookLM（研究/学习型——基于来源的总结和提炼——不适合随手记录）为代表。2026 年这一品类正在从"AI 增强的笔记"变成"以 AI 为核心——笔记是 AI 记忆的数据输入"。
-- **个人 AI 助手 + 记忆（Personal AI Assistant with Memory）**：Vellum 等开源本地助手——混合检索+主动推送——偏 **个人助理** 而非企业 Agent infra。OpenClaw 的本地记忆文件见 [openclaw-alternatives.md](../agent/openclaw-alternatives.md) 与 [agent-memory.md](../agent/agent-memory.md) Type VI。
-- **Supermemory（产品 vs API）**：Supermemory **App/扩展** 属本页第二大脑；**Supermemory Memory API** 属 Agent 记忆层——见 [agent-memory.md](../agent/agent-memory.md)。
-- **硬件记忆设备（Hardware Memory Device）**：以 Limitless 录音项链、Plaid Pin 录音别针、Bee 手环、Pebble 录音戒指为代表——通过可穿戴设备实现无感化的持续记忆捕获——消除"掏出手机→打开 App→打字"的捕获摩擦。2026 年这一品类仍处于早期——设备续航、隐私焦虑和"持续录音"的社会接受度是核心障碍。
-- **AI 增强传统笔记（AI-Enhanced Traditional Notes）**：以 Notion AI（页面+数据库+AI 统一工作区——适合已有 Notion 工作流的用户）和 Evernote AI（AI 会议记录和转写——适合传统笔记升级用户）为代表——在已有的大型笔记平台上附加 AI 功能——而非从零构建 AI 原生体验。优势：用户基数和现有工作流生态——劣势：AI 是附加而非核心——体验不如 AI 原生工具自然。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 无文件夹——AI 自组织+对话式检索 | AI-native notes / second brain | Mem.ai |
+| **B** | 页面+数据库+AI 统一工作区——结构仍由人建 | AI-enhanced workspace | Notion AI |
+| **C** | 跨 Claude/Cursor 的个人知识库（MCP） | Cross-tool PKM | Supermemory **App** |
+| **D** | 基于上传来源的总结和提炼——非随手记 | Research notebook | Google NotebookLM |
+| **E** | 本地部署混合检索+主动推送 | Personal AI assistant + memory | Vellum |
+| **F** | 平台内置跨会话记忆——零集成但不可移植 | Built-in chat memory | ChatGPT/Gemini Memory |
+| **G** | 可穿戴无感化录音捕获 | Hardware memory device | Limitless / Plaud |
+
+**Supermemory 分流**：**App/扩展** 属本页 Type C；**Memory API** 属 Agent 记忆层——见 [agent-memory.md](../agent/agent-memory.md)。OpenClaw 本地记忆文件见 [openclaw-alternatives.md](../agent/openclaw-alternatives.md) 与 agent-memory Type VI。
 
 ---
 
@@ -86,67 +94,52 @@
 
 ---
 
-
-## 产品候选与定价对照（2026-06）
-
-> **分流**：本表仅含 **个人/团队第二大脑与 PKM** 消费级产品；Agent 记忆中间件（Mem0/Zep 等）见 [agent-memory.md](../agent/agent-memory.md) 与站内 `/blog/agent-memory`。
-
-| 产品 | 形态谱系 | 公开定价（2026-06） | 最佳买家 |
-|------|----------|---------------------|----------|
-| **Mem.ai** | AI 原生笔记 | 免费层 + **$10/月** Pro | 碎片灵感、低摩擦捕获 |
-| **Notion AI** | AI 增强传统笔记 | Notion 订阅 + **$10/成员/月** AI 附加 | 已有 Notion 工作流团队 |
-| **Supermemory App** | 跨工具 PKM（MCP） | 开源自托管免费；Cloud 按量 | 跨 Claude/Cursor 个人知识库 |
-| **Google NotebookLM** | 研究型笔记 | 免费（Workspace 企业版另计） | 文献/课程材料提炼 |
-| **Vellum** | 个人助理 + 记忆 | 开源免费（自托管运维成本） | 隐私敏感、本地优先用户 |
-| **ChatGPT Memory** | 平台内置记忆 | ChatGPT 订阅内含 | 不选型第三方、单平台用户 |
-| **Limitless / Plaud**（可选） | 硬件捕获 | 设备 **$99–399** + 订阅 | 无感化录音捕获（本页非主榜） |
-
-**形态谱系速览**（与上表交叉阅读）：
-
-| 谱系 | 代表 | 2026 分化点 |
-|------|------|-------------|
-| AI 自组织笔记 | Mem.ai | 无文件夹——信任 AI 分类质量 |
-| 工作区一体化 | Notion AI | 数据库+页面+AI——结构仍由人建 |
-| 跨工具 MCP PKM | Supermemory **App** | 个人知识进多个 AI 客户端 |
-| 研究型来源笔记 | NotebookLM | 基于上传来源，非随手记 |
-| 本地主动记忆 | Vellum | 混合检索 + proactive 推送 |
-| 平台内置 | ChatGPT/Gemini Memory | 零集成但不可移植 |
-
-**与 Agent 记忆层**：Supermemory **Memory API**、Mem0、Zep 等属开发者中间件——见 [agent-memory.md](../agent/agent-memory.md) · [alignify.co/blog/agent-memory](https://alignify.co/blog/agent-memory)。Limitless/Plaud 等硬件 **不在** agent-memory 文；可后续在本页硬件谱系扩写。
-
-## 工具与产品类型
+## 工具与产品类型（「AI memory tools」检索里常混在一起的品类；非穷尽）
 
 | 类型（英文常检索词） | 典型包含什么 | 备注 |
 |---------------------|-------------|------|
-| **AI-Native Notes**（Mem.ai, NotebookLM） | AI 自组织——无文件夹——对话式检索——第二大脑 | Mem.ai $10/月——"AI 是核心而非附加" |
-| **Personal AI Assistant + Memory**（Vellum, ChatGPT Memory） | 个人助理——主动推送+跨会话 | Vellum 开源本地；ChatGPT 平台内置 |
-| **Cross-tool PKM**（Supermemory App, MCP 扩展） | 跨 Claude/Cursor 的个人知识库 | 与 Mem0 等 Agent layer 分流 |
-| **AI-Enhanced Traditional Notes**（Notion AI, Evernote AI） | 传统笔记+AI 搜索+自动总结——大型已有用户基础 | 适合已有工作流的用户——AI 是增强而非重构 |
-| **Hardware Memory Device**（Limitless, Plaud Pin, Pebble） | 可穿戴录音设备——无感化捕获——AI 转录和总结 | 早期品类——隐私和续航是核心障碍 |
+| **AI-Native Notes** | AI 自组织——无文件夹——对话式检索——第二大脑 | 与 AI-Enhanced Traditional Notes 分流 |
+| **Personal AI Assistant + Memory** | 个人助理——主动推送+跨会话 | 开源本地 vs 平台内置 |
+| **Cross-tool PKM** | 跨 Claude/Cursor 的个人知识库（MCP） | 与 Mem0 等 Agent layer 分流 |
+| **AI-Enhanced Traditional Notes** | 传统笔记+AI 搜索+自动总结——大型已有用户基础 | 适合已有工作流的用户——AI 是增强而非重构 |
+| **Hardware Memory Device** | 可穿戴录音设备——无感化捕获——AI 转录和总结 | 早期品类——隐私和续航是核心障碍 |
+
+> **分流**：本表仅含 **个人/团队第二大脑与 PKM** 消费级产品类型；Agent 记忆中间件（Mem0/Zep 等）见 [agent-memory.md](../agent/agent-memory.md) · [alignify.co/blog/agent-memory](https://alignify.co/blog/agent-memory)。Limitless/Plaud 等硬件 **不在** agent-memory 文。
 
 ---
 
-## 外链索引
+## 外链索引（产品 SSOT：URL + 定价；非广告、无排序优先级）
 
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| Mem.ai | AI 原生笔记——无文件夹自组织+对话式检索，免费-$10/月 | https://mem.ai |
-| Supermemory | 开源记忆引擎——对话式检索+MCP 集成连接 AI 工具，自托管 | https://github.com/supermemory |
-| Vellum | 开源个人 AI 记忆代理——本地部署混合检索+主动推送，免费 | https://github.com/vellum |
-| Google NotebookLM | 研究型 AI 笔记——基于来源的总结和提炼 | https://notebooklm.google.com |
-| Notion AI | AI 增强的全功能笔记——页面+数据库+AI 统一工作区 | https://notion.so |
+| 名称 | Type | 一句话（据公开页面归纳） | URL |
+|------|------|--------------------------|-----|
+| **Mem.ai** | A | AI 原生笔记——无文件夹自组织+对话式检索，免费-$10/月 Pro | [mem.ai](https://mem.ai) |
+| **Notion AI** | B | AI 增强的全功能笔记——页面+数据库+AI 统一工作区，$10/成员/月 AI 附加 | [notion.so](https://notion.so) |
+| **Supermemory App** | C | 开源记忆引擎——对话式检索+MCP 集成，Cloud 按量/自托管 | [github.com/supermemory](https://github.com/supermemory) |
+| **Google NotebookLM** | D | 研究型 AI 笔记——基于来源的总结和提炼 | [notebooklm.google.com](https://notebooklm.google.com) |
+| **Vellum** | E | 开源个人 AI 记忆代理——本地部署混合检索+主动推送 | [github.com/vellum](https://github.com/vellum) |
+| **ChatGPT Memory** | F | 平台内置记忆——ChatGPT 订阅内含 | — |
+| **Limitless / Plaud**（可选） | G | 硬件捕获——设备 $99–399 + 订阅 | — |
 
 ### 对比与测评（第三方；观点非官方）
 
 - **Vellum.ai 2026 十大带记忆的个人 AI 助手**：Vellum（开源本地——混合检索+主动推送）排名第一。OpenClaw（完全本地+24+ 通讯渠道集成）是"隐私极致"的选择。ChatGPT 的记忆功能被评价为"最熟悉的——但不是最可配置的"。
 - **ToolNavs 2026 Notion AI vs NotebookLM vs Mem vs Evernote 对比**：Mem.ai 最适合碎片灵感捕捉者（低门槛记录——AI 自动串联上下文）、Notion AI 最适合工作流本就在 Notion 的用户（一站式体验但不是最低门槛）、NotebookLM 最适合研究/学习型用户（内容提炼而非随手记录）、Evernote 适合传统笔记升级用户（AI 会议记录和稳定转写）。
 
+*本小节为网摘与社区观点综合，非 Alignify 实测。*
+
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - Vellum.ai — "10 Best Personal AI Assistants with Memory in 2026"
 - GitHub — Supermemory（14,800+ Star——"AI 外置大脑"——MCP 集成）
 - Gartner — 2026 年预测：40% 企业应用将包含任务特定 AI Agent
 - MindStudio — "How to Build a Second Brain That Remembers Everything Using AI"（AI 第二大脑四层架构）
 - ToolNavs — "Notion AI、NotebookLM、Mem、Evernote 谁更适合你？"（2026）
+
+**站内**
+
+- Agent 记忆中间件 SSOT：[agent-memory.md](../agent/agent-memory.md)
+- 会议捕获 adjacent：[note-taker.md](../productivity/note-taker.md)

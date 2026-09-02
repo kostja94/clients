@@ -65,25 +65,25 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
 ### Type A：EHR 内嵌 / 原生环境文书
-EHR 厂商自有 AI 文书——Epic AI Charting（2026-02 上线）、athenaAmbient（2026 H1 内测）、Meditech Ambient Listening（2025-05）。核心特征是「零集成摩擦」：无需第三方签约、无需额外 IT 部署、无需医生切换 UI——文书界面直接嵌入现有 EHR 工作流。劣势是封闭生态（一个 EHR 的文书不能跨平台使用）和专科深度不足。2026 年定价策略多为「对现有客户免费」——这对独立厂商是最大的结构性威胁。
+EHR 厂商自有 AI 文书——零集成摩擦；2026 对独立厂商最大结构性威胁。
 
 ### Type B：企业级独立环境文书
-面向大型卫生系统（250+ 床位的医院、多院区系统）的第三方 AI 文书——Abridge（KLAS 连续 #1）、Nuance DAX Copilot（Microsoft，~33% 市场份额，Dragon Medical 遗产）。核心壁垒不是模型本身，而是「与 Epic 等主流 EHR 的深度集成 + NEJM/JAMA 等权威源整合 + 大规模部署的运维能力 + 临床验证数据」。定价按年合同，$50K-500K+。
+大型卫生系统第三方；核心壁垒是 EHR 深度集成 + 临床验证。
 
 ### Type C：独立执业 / 小型诊所文书
-面向 1-50 人独立执业医生或小型诊所的轻量级 AI 文书——Freed（$39-119/mo，26,000+ 临床医生）、Nabla（免费层 ≤30 问诊/月）、Doximity Scribe（免费对美国验证医师）。特征是快速上手（分钟级）、按月订阅、无需 IT 团队部署。深度 EHR 集成通常弱于企业级产品，但对独立执业场景足够。
+轻量级、按月订阅、快速上手。
 
 ### Type D：专科深度定制文书
-在特定专科上训练或微调的 AI 文书——DeepScribe（肿瘤/心脏专科 SOAP + 计费代码，$350-500/mo 每医生）、Heidi Health 的 "Ask Heidi" CDS 模块（英国 NHSE AVT 列名）。特征是为特定专科术语、诊断流程和编码习惯定制模型输出——「心内科医生看到的心内科笔记」和「通用模板套出来的心内科笔记」是两个完全不同的产品质量层级。
+特定专科微调模型输出。
 
 ### Type E：混合 AI + 人工文书
-AI 初稿 + 人工医学文书审校/补全——Augmedix（~$2,400/mo 每医生）、IKS Health、ScribeEMR。适合对 AI 准确率要求极高或专科非常特殊（如罕见病）的场景。人工审校成本决定了这不会是主流产品形态，但在某些高风险领域（肿瘤、急诊）可能长期存在。
+AI 初稿 + 人工医学文书审校。
 
 ### Type F：免费 / NHS 列名 / 公益导向文书
-以免费或极低价策略获取用户基数——Doximity Scribe（免费，限定美国验证医师）、Heidi Health（英国 NHSE AVT 列名 + 免费层）、Accurx Scribe（英国，98% GP 诊所覆盖）。商业模式通常是「文书免费 → CDS/人口健康/编码优化等增值模块收费」的漏斗策略。
+免费或极低价获客，增值模块变现。
 
 ---
 
@@ -109,17 +109,17 @@ AI 初稿 + 人工医学文书审校/补全——Augmedix（~$2,400/mo 每医生
 
 ---
 
-## 工具与产品类型（品类表格）
+## 工具与产品类型（检索词分类 · 规格见 §外链索引）
 
 | 类型（英文常检索词） | 典型厂商 | 备注 |
 |------|---------|------|
-| EHR 内嵌环境文书（Epic AI scribe, athenahealth ambient scribe） | Epic AI Charting, athenaAmbient, Meditech Ambient Listening, Accurx Scribe (UK) | 2026 年对独立厂商最大的竞争威胁；免费/捆绑，零集成摩擦；专科深度不足是当前弱点 |
-| 企业级独立环境文书（enterprise ambient scribe, AI medical documentation platform） | Abridge, Nuance DAX Copilot (Microsoft), Ambience Healthcare, Suki | 面向大型卫生系统；核心壁垒是 EHR 深度集成 + 权威源整合 + 部署运维能力 |
-| 独立执业 / 小型诊所文书（AI scribe for solo practice, affordable medical scribe） | Freed, Nabla Copilot, Doximity Scribe | 按月订阅 $39-119/mo 或免费；快速上手，无需 IT 部署；EHR 推送集成为主，非深度嵌入 |
-| 专科深度定制文书（specialty-specific AI scribe, oncology/cardiology AI scribe） | DeepScribe, Heidi Health, Regard, Notable | 肿瘤/心脏/精神等专科术语和编码习惯定制；专科准确率显著高于通用产品 |
-| 混合 AI + 人工文书（augmented scribe, human-in-the-loop medical documentation） | Augmedix, IKS Health, ScribeEMR | 适合高风险专科或对 AI 准确率极度敏感的机构；人工成本决定了高定价 |
-| 免费 / 公益导向文书（free AI scribe, NHS-approved scribe） | Heidi Health (UK NHSE AVT), Doximity Scribe (US, free for verified physicians), Accurx Scribe (UK) | 免费或极低价获客，通过增值模块变现；在英国 NHS 生态中占主导地位 |
-| 转录型医疗文档（medical transcription AI, clinical dictation） | Sonix Medical, AWS Transcribe Medical, Rev AI, Verbit | 语音→文本，不做 SOAP 结构化、不做编码映射、不做 EHR 写回——与 AI 文书是不同品类，但检索词常混用 |
+| EHR 内嵌环境文书 | Epic AI Charting, athenaAmbient, Meditech | 2026 最大竞争威胁 |
+| 企业级独立环境文书 | Abridge, Nuance DAX Copilot, Ambience, Suki | 大型卫生系统 |
+| 独立执业 / 小型诊所 | Freed, Nabla, Doximity Scribe | 按月订阅 |
+| 专科深度定制 | DeepScribe, Heidi Health, Regard, Notable | 专科术语 |
+| 混合 AI + 人工 | Augmedix, CareBeam | 高风险场景 |
+| 免费 / NHS / 公益 | Heidi, Doximity, Accurx | 漏斗策略 |
+| 转录型医疗文档（相邻） | Sonix, AWS Transcribe Medical | **≠** 本页 ambient scribe |
 
 ---
 
@@ -201,13 +201,15 @@ AI 初稿 + 人工医学文书审校/补全——Augmedix（~$2,400/mo 每医生
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- KLAS Research 2026 Best in KLAS: Ambient Scribing — [klasresearch.com](https://klasresearch.com/report/best-in-klas-2026/3438)
-- Nature Digital Medicine "Ambient AI Scribes" System Review (2025) — [nature.com](https://www.nature.com/articles/s41746-025-02272-z)（Table 1 为 19 产品对照表）
-- MedCity News "Do Ambient Scribe Startups Have a Future" (2026-02) — [medcitynews.com](https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/)
-- HTN Now Awards 2025/26: Best AI Scribe Solution — [htn.co.uk](https://htn.co.uk/htn-now-awards-2025-26-best-ai-scribe-solution/)
-- HIPAA Business Associate Agreement (BAA) 官方指南 — [hhs.gov](https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html)
-- FDA Clinical Decision Support Software 监管指南（2019, 2022 更新） — 涉及 AI 文书功能扩张与 CDS 监管边界的核心文件
-- NHSE AI and Digital Regulations Service — 英国 NHS AI 采购合规路径
-- 分流对照知识块：[note-taker.md](../productivity/note-taker.md)（通用会议记录）、[healthcare.md](healthcare.md)（医疗 AI 全景，medical-scribe 为其中一个子品类）、[notes-generator.md](../education/notes-generator.md)（学习材料→笔记/闪卡）
+**站外**（框架/合规；产品 URL 见 §外链索引）
+
+- [KLAS Research 2026 Best in KLAS: Ambient Scribing](https://klasresearch.com/report/best-in-klas-2026/3438)
+- [Nature Digital Medicine Ambient AI Scribes (2025)](https://www.nature.com/articles/s41746-025-02272-z)
+- [MedCity News ambient scribe vs Epic (2026-02)](https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/)
+- [HIPAA BAA 官方指南](https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html)
+
+**站内**
+
+- [note-taker.md](../productivity/note-taker.md) · [healthcare.md](healthcare.md) · [notes-generator.md](../education/notes-generator.md)

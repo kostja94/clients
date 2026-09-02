@@ -1,15 +1,16 @@
 # AI Video Editor · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI Video Editor / AI 视频编辑器**——处理**已有素材的时间线**（字幕、降噪、裁剪、调色等），**非从头生成**；验收以 **字幕准确率、降噪效果、编辑效率** 为主。本页为 **AI 视频编辑器产品 SSOT**（完整 URL 表仅此一处）；从零生成见 [video-generator.md](video-generator.md)；长→多片段见 [video-clipping.md](video-clipping.md)；像素级特效见 [video-effects.md](video-effects.md)。
+
 **材料范围**：公开网络检索（厂商官网、YipitData/Research and Markets/GII 等第三方市场报告、Buffer/G2/Duple 等媒体横向评测、NAB 2025 行业动态）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 **2026-06-24**（簇去重修订）。
-
-
-**站内相邻**：[video.md](video.md) · [video-generator.md](video-generator.md)（上游生成素材）· [video-clipping.md](video-clipping.md) · [video-effects.md](video-effects.md)
-
-**勿与…混买**：本页处理 **已有素材的时间线**；从零生成见 video-generator；长→多片段见 video-clipping（非完整时间线）。
 
 **站内对照**：[alignify.co/tools/video-editor](https://alignify.co/tools/video-editor) · `/tools/video-editor` · [alignify.co/zh/tools/video-editor](https://alignify.co/zh/tools/video-editor) · `/zh/tools/video-editor` · `content/tools/zh/video-editor.md`、`content/tools/en/video-editor.md` · slug **`video-editor`**
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-editor-tools`](../../product/alignify-keywords-tools.md#video-editor-tools)
+
+**站内相邻**：[video.md](video.md)（Hub）· [video-generator.md](video-generator.md) · [video-clipping.md](video-clipping.md) · [video-effects.md](video-effects.md) · [text-to-video.md](text-to-video.md) · [filmmaking.md](filmmaking.md)
+
+---
 
 ## 与相邻 slug 分流（避免混买混评）
 
@@ -49,6 +50,8 @@
 | **典型用户** | 专业剪辑师、后期团队 | 社交媒体运营、中小企业、教师 | YouTuber、播客主、独立创作者 |
 | **2026 市场趋势** | AI 功能持续嵌入（Firefly 集成），但核心仍是手动操作 | VEED 面临整合压力（客户数 -7%），Descript 上升 | Descript +37% YoY 增长，~$3,000/客户/月平均花费 |
 
+编辑器形态路线 → **§形态谱系**；产品规格与 URL → **§外链索引**。
+
 ---
 
 ## 问题域（为何会出现这类产品）
@@ -73,13 +76,15 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type A — 专业 NLE + AI 辅助**：以传统专业编辑器为底座，AI 功能作为效率增强（Premiere Pro 的 Firefly 集成、DaVinci Resolve 的 Magic Mask）。适合已有剪辑技能的专业用户——AI 加速现有工作流而非改变工作流。月费/买断制，学习曲线最陡。
-- **Type B — 文本驱动编辑器**：以转录文本为编辑界面，所有操作（删段落、调顺序、加字幕）均在文本层面完成。适合播客主、教育者、以对话为核心的内容创作者。代表方向：Descript（2026 年市场领导者，+37% YoY 增长，~$3,000/客户/月平均花费，G2 4.6/5）。
-- **Type C — 浏览器全功能编辑器**：纯浏览器端运行，AI 驱动核心编辑功能（字幕、降噪、调色、场景切分）。强调零安装、快速出片、品牌套件和团队协作。代表方向：VEED（客户数略降 -7%，但仍是浏览器端最完整的方案，$12-18/月）。
-- **Type D — 社交优先编辑器**：深度集成短视频平台生态（TikTok/Reels/Shorts），AI 字幕有丰富的动画模板，免费版功能慷慨。代表方向：CapCut（免费版 1080p 无水印，Pro $19.99/月，2026 年初涨价近翻倍引发社区不满）。
-- **Type E — 消费级 AI 编辑器**：面向完全零基础的普通用户——模板驱动、一键式操作、AI 自动完成大部分决策。代表方向：Filmora（$4-6/月，入门门槛最低）、Clipchamp（微软内置 Windows 11）。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 传统专业 NLE 为底座，AI 为效率增强 | 专业 NLE + AI 插件 / pro video editor with AI | Adobe Premiere Pro、DaVinci Resolve、Final Cut Pro |
+| **B** | 以转录文本为编辑界面，改变编辑范式 | 文本驱动编辑器 / text-based video editor | Descript |
+| **C** | 纯浏览器端，AI 驱动核心编辑功能 | 浏览器 AI 编辑器 / online AI video editor | VEED、Canva Video |
+| **D** | 深度集成短视频平台生态，免费版慷慨 | 社交短视频编辑器 / TikTok editor | CapCut |
+| **E** | 模板驱动、一键式操作、面向零基础用户 | 消费级 AI 编辑器 / easy AI video editor | Filmora、Clipchamp |
 
 ---
 
@@ -104,31 +109,19 @@
 
 ---
 
-## 工具与产品类型（「AI video editor」「best video editing software」「auto subtitle editor」等检索里常混在一起的品类；非穷尽）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **专业 NLE + AI 插件**（pro video editor with AI） | Adobe Premiere Pro（Firefly）、DaVinci Resolve（Magic Mask）、Final Cut Pro | AI 为辅助，核心仍是专业手动编辑 |
-| **文本驱动编辑器**（text-based video editor, edit video like doc） | Descript | 从转录切入，改变编辑范式，2026 年市场领导者 |
-| **浏览器 AI 编辑器**（online AI video editor, browser video editor） | VEED、Canva Video | 零安装、协作友好、品牌套件支持 |
-| **社交短视频编辑器**（TikTok editor, Reels maker） | CapCut | 与社交媒体平台生态深度绑定，免费版最慷慨 |
-| **消费级 AI 编辑器**（easy AI video editor for beginners） | Filmora、Clipchamp | 模板驱动、最低学习成本 |
-
----
-
-## 外链索引（工具与产品；无排序优先级）
-
-| 名称 | 一句话（据公开页面或综述归纳） | URL |
-|------|--------------------------|-----|
-| **Descript** | 文本驱动编辑范式开创者——Studio Sound 降噪、填充词移除（93-97%）、视线校正、+37% YoY 增长，$12-24/月 | [descript.com](https://www.descript.com) |
-| **Adobe Premiere Pro** | 行业标准 NLE——2024 年起整合 Firefly AI（字幕、风格迁移、场景检测），月费 $22.99 | [adobe.com](https://www.adobe.com/products/premiere.html) |
-| **DaVinci Resolve** | Blackmagic 旗下专业 NLE——Magic Mask AI 抠像 + 调色被公认为行业最佳，一次性 $295 | [blackmagicdesign.com](https://www.blackmagicdesign.com/products/davinciresolve) |
-| **CapCut** | 字节跳动旗下社交视频编辑器——免费 1080p 无水印、AI 字幕动画模板丰富、深度 TikTok 集成，Pro $19.99/月 | [capcut.com](https://www.capcut.com) |
-| **VEED** | 浏览器端全功能 AI 编辑器——自动字幕（100+ 语言）、降噪、品牌套件、团队协作，$12-18/月 | [veed.io](https://www.veed.io) |
-| **Filmora** | Wondershare 出品消费级 AI 编辑器——AI 调色/降噪/运动跟踪，月费 $4-6，入门门槛最低 | [filmora.wondershare.com](https://filmora.wondershare.com) |
-| **Clipchamp** | 微软旗下浏览器编辑器，集成于 Windows 11——面向轻量编辑场景 | [clipchamp.com](https://clipchamp.com) |
-| **Canva Video** | Canva 内置的视频编辑模块——与设计资产库打通，适合已有 Canva 工作流的用户 | [canva.com](https://www.canva.com) |
-| **Final Cut Pro** | Apple 专业 NLE——iPad 版推出后降低使用门槛，AI 场景检测与色彩匹配为内置功能 | [apple.com/final-cut-pro](https://www.apple.com/final-cut-pro/) |
+| 名称 | Type | 一句话（据公开页面或综述归纳） | URL |
+|------|------|--------------------------|-----|
+| **Descript** | B | 文本驱动编辑范式开创者——Studio Sound 降噪、填充词移除（93-97%）、视线校正、+37% YoY 增长，$12-24/月 | [descript.com](https://www.descript.com) |
+| **Adobe Premiere Pro** | A | 行业标准 NLE——2024 年起整合 Firefly AI（字幕、风格迁移、场景检测），月费 $22.99 | [adobe.com](https://www.adobe.com/products/premiere.html) |
+| **DaVinci Resolve** | A | Blackmagic 旗下专业 NLE——Magic Mask AI 抠像 + 调色被公认为行业最佳，一次性 $295 | [blackmagicdesign.com](https://www.blackmagicdesign.com/products/davinciresolve) |
+| **CapCut** | D | 字节跳动旗下社交视频编辑器——免费 1080p 无水印、AI 字幕动画模板丰富、深度 TikTok 集成，Pro $19.99/月 | [capcut.com](https://www.capcut.com) |
+| **VEED** | C | 浏览器端全功能 AI 编辑器——自动字幕（100+ 语言）、降噪、品牌套件、团队协作，$12-18/月 | [veed.io](https://www.veed.io) |
+| **Filmora** | E | Wondershare 出品消费级 AI 编辑器——AI 调色/降噪/运动跟踪，月费 $4-6，入门门槛最低 | [filmora.wondershare.com](https://filmora.wondershare.com) |
+| **Clipchamp** | E | 微软旗下浏览器编辑器，集成于 Windows 11——面向轻量编辑场景 | [clipchamp.com](https://clipchamp.com) |
+| **Canva Video** | C | Canva 内置的视频编辑模块——与设计资产库打通，适合已有 Canva 工作流的用户 | [canva.com](https://www.canva.com) |
+| **Final Cut Pro** | A | Apple 专业 NLE——iPad 版推出后降低使用门槛，AI 场景检测与色彩匹配为内置功能 | [apple.com/final-cut-pro](https://www.apple.com/final-cut-pro/) |
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -142,10 +135,7 @@ CapCut 在社交短视频编辑领域占据绝对份额——其免费版的无�
 
 ---
 
-## 延伸阅读 · 站内知识块
-
-- 上游：[video-generator.md](video-generator.md) · [text-to-video.md](text-to-video.md) · [image-to-video.md](image-to-video.md)
-- 并列：[video-clipping.md](video-clipping.md) · [video-effects.md](video-effects.md) · [filmmaking.md](filmmaking.md)
+## 延伸阅读 · 站内外
 
 **站外**
 
@@ -155,3 +145,8 @@ CapCut 在社交短视频编辑领域占据绝对份额——其免费版的无�
 - [AI Video Processing Software Market — Global Forecast 2025-2030 (Research and Markets)](https://www.researchandmarkets.com/reports/6133463/ai-video-processing-software-market-global)
 - [Best AI Video Editors 2025 (Buffer)](https://buffer.com/resources/ai-video-tools/)
 - [AI Video Editing Tools in 2026: Edit Like a Pro Without Years of Training (dev.to)](https://dev.to/aimakerspro/ai-video-editing-tools-in-2026-edit-like-a-pro-without-years-of-training-513p)
+
+**站内**
+
+- 上游生成：[video-generator.md](video-generator.md) · [text-to-video.md](text-to-video.md) · [image-to-video.md](image-to-video.md)
+- 并列：[video-clipping.md](video-clipping.md) · [video-effects.md](video-effects.md) · [filmmaking.md](filmmaking.md)

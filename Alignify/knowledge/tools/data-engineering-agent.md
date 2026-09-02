@@ -116,17 +116,21 @@
 | Ascend.io Otto | Agentic Analytics Engineering，dbt Core 集成，自愈事件响应，50-70% 维护时间减少 | https://www.ascend.io/ |
 | dltHub Pro | 91% 新 Pipeline 由 Agent 构建，34× Pipeline 量 YoY 增长，Cursor/Copilot 原生集成 | https://dlthub.com/ |
 
-### 市场数据与行业分析
+### 市场数据与行业分析（第三方框架）
 
-- Futurum Group（2026-01）：DIAI 市场 $541B 2026 → $1.2T 2031，16.9% CAGR — https://futurumgroup.com/press-release/1-2t-data-market-by-2031-agentic-ai-replaces-data-pipelines/
-- Research & Markets（2025-08）：Agentic AI for Data Engineering 市场 2024-2029 $3.76B 增长，39.2% CAGR — https://www.researchandmarkets.com/reports/6182119/agentic-ai-data-engineering-market
-- IBM Think：What Is Agentic AI Data Engineering? — https://www.ibm.com/think/topics/agentic-ai-data-engineering
-- Atlan：AI Agents for Data Engineering — 2026 Guide — https://atlan.com/know/ai-agents-for-data-engineering/
-- Peliqan：Agentic Data Pipelines — All You Need to Know — https://peliqan.io/blog/agentic-data-pipelines/
+- Futurum Group DIAI 市场预测 · Research & Markets Agentic DE · IBM Think · Atlan 2026 Guide · Peliqan agentic pipelines
 
-### 能力相邻知识块
+### 对比与测评（第三方；观点非官方）
 
-- [agent-for-desktop.md](agent/agent-for-desktop.md)（桌面智能体——Datus CLI 属于开发者向 CLI agent 谱系）
-- [agent-skills.md](agent/agent-skills.md)（AI Agent 技能与 MCP 连接器）
-- [chatbot.md](chat-social/chatbot.md)（AI Chatbot——用户界面层可对比 Datus Chat 的 Web UI 形态）
-- [cli.md](coding/cli.md)（CLI 工具品类，Datus CLI 属于此谱系）
+- **平台原生 vs 开源 CLI**：Databricks/BigQuery/Snowflake 内嵌 Agent 零部署但生态锁定；Datus 等 CLI-first 可移植但需自建运维——按数据栈绑定程度选型。
+- **Pipeline 生成 vs 全栈 DE Agent**：Domo/dlt 偏单点生成；Qlik/Ascend 偏多 Agent 矩阵——见 §工具与产品类型，规格见 §外链索引。
+
+*观点非官方。*
+
+---
+
+## 延伸阅读 · 站内外
+
+**站内**
+
+- [agent-for-desktop.md](agent/agent-for-desktop.md) · [agent-skills.md](agent/agent-skills.md) · [cli.md](coding/cli.md)

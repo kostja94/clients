@@ -52,14 +52,14 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
-- **体量领军型**：最大的 deal 量、最大的社区、最广泛的品类覆盖。AppSumo 独居此层——70 万+用户，$1.13 亿+累计支付，每周 3 个新 deal。
-- **策展品质型**：严格控制 deal 数量和质量，每个 deal 都经过深度审查。Earlybird（仅同时展示少数 deal，创始人必须先对话）和 RocketHub（每周/每两周 1 个 deal）为代表。吸引不愿冒「买完产品就关」风险的买家。
-- **教育赋能型**：以免费课程和网络研讨会作为差异化手段。PitchGround 为代表——$2500 万 GMV，教育内容是其区别于 AppSumo 的核心壁垒。
-- **聚合/元平台型**：不自营市场，从 10+ 个 LTD 平台聚合 deal 到统一 feed。SaaSPirate 为代表——10 万+社区成员，每周 newsletter 推送跨平台最佳 deal。
-- **垂直/品类聚焦型**：专注于特定买家角色。Dealify（增长黑客和数字营销人员）、DealFuel（Web 开发者、WordPress 用户、设计师）。
-- **综合零售型**：LTD 只是业务的一部分，同时销售课程、电子产品和实体商品。StackSocial 为代表——$15 亿+用户累计节省，品类横跨软件/课程/硬件。
+- **体量领军型**：最大 deal 量与社区（AppSumo）。
+- **策展品质型**：严格 deal 审查（Earlybird、RocketHub）。
+- **教育赋能型**：课程+网络研讨会差异化（PitchGround）。
+- **聚合/元平台型**：跨平台 deal 聚合（SaaSPirate）。
+- **垂直/品类聚焦型**：特定买家角色（Dealify、DealFuel）。
+- **综合零售型**：软件+课程+硬件 bundle（StackSocial）。
 
 ---
 
@@ -126,9 +126,10 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- **Earlybird · The Complete Guide to Lifetime Deals in 2026**：品类内部视角（注意来源偏差），覆盖 LTD 运作机制、平台差异与买家指南。[earlybird.so/the-complete-guide-to-lifetime-deals-in-2026](https://earlybird.so/the-complete-guide-to-lifetime-deals-in-2026-what-smart-buyers-need-to-know/)
-- **Ecommerce Paradise · Best Software Deals Websites in 2026**：独立评测博客对 10 大平台的横向对比排名。[ecommerceparadise.com/best-software-deals-websites-in-2026](https://ecommerceparadise.com/best-software-deals-websites-in-2026-top-platforms-for-lifetime-saas-deals-and-discounts/)
-- **Indie Hackers · 4 Years into an AppSumo Lifetime Deal**：LTD 卖家视角的 4 年回顾，含详细财务数据与反思。[indiehackers.com](https://www.indiehackers.com/post/4-years-into-an-appsumo-lifetime-deal-the-unvarnished-math-and-a-question-i-m-stuck-on-4dd2b262ac)
-- **Rich Niches · AppSumo Alternatives**：竞品对比专文，覆盖 8 家替代平台。[richniches.com/appsumo-alternatives](https://richniches.com/appsumo-alternatives/)
+**站外**（买家/卖家指南；平台 URL 见 §外链索引）
+
+- [Earlybird — LTD Guide 2026](https://earlybird.so/the-complete-guide-to-lifetime-deals-in-2026-what-smart-buyers-need-to-know/)
+- [Ecommerce Paradise — Best Software Deals 2026](https://ecommerceparadise.com/best-software-deals-websites-in-2026-top-platforms-for-lifetime-saas-deals-and-discounts/)
+- [Indie Hackers — 4 Years AppSumo LTD](https://www.indiehackers.com/post/4-years-into-an-appsumo-lifetime-deal-the-unvarnished-math-and-a-question-i-m-stuck-on-4dd2b262ac)

@@ -1,10 +1,14 @@
 # 身份认证与访问管理（Authentication / IAM）· 知识块（非线性笔记）
 
-**材料范围**：**列名 CIAM / 应用身份产品仅限** [Auth0](https://auth0.com/)、[Clerk](https://clerk.com/)、[Logto](https://logto.io/)、[Better Auth](https://www.better-auth.com/) 四家。另纳入 **Agent 时代相邻能力** 的公开材料（**出站**：工具委托授权、集成运行时、[Merge Agent Handler](https://docs.merge.dev/merge-agent-handler)、[Composio](https://composio.dev/)、[Nango](https://nango.dev/)、[Arcade](https://www.arcade.dev/)；**入站**：[Fingerprint](https://fingerprint.com/) 设备智能与 AI Agent 检测等）；以及 **协议、标准草案与安全参考**（[OpenID Connect](https://openid.net/connect/)、[OAuth 2.0](https://www.rfc-editor.org/rfc/rfc6749)、[OAuth 2.1 材料](https://oauth.net/2.1/)、[OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)、IETF OAuth 与 AI Agent 相关 Internet-Draft）。**未**将 Alignify 站内 Tools 正文 JSON 当作独立事实来源。网摘整理日期 **2026-04-21**（**2026-04** 增补 Agent 分层与五家集成/识别厂商索引）。
+**叙述主词 · 勿与…混买**：**Authentication / CIAM / 应用身份**——用户**登录你的 App**、会话、组织、SSO、MFA 等 **AuthN/AuthZ**；验收以协议覆盖、租户模型、合规与开发者体验为主。本页为 **列名四家 CIAM + Agent 相邻能力 SSOT**（完整 URL 表仅此一处）。Agent 时代 **A/B/C 三象限**与相邻 slug 分流见 §专题对照；**企业 Agent 一等身份 / NHI 治理** → [agent-identity.md](../agent/agent-identity.md)。
+
+**材料范围**：公开网络检索（列名 **Auth0 / Clerk / Logto / Better Auth** 四家 CIAM，及 **Merge / Composio / Nango / Arcade / Fingerprint** 等 Agent 相邻能力官方材料）；协议与安全参考（OAuth 2.x/OIDC、OWASP、IETF OAuth-AI-Agent 草案等）。**未**将 Alignify 站内 Tools 正文 JSON 当作独立事实来源。**具体定价、配额与 API 条款以各官网为准**。网摘整理日期 **2026-04-21**（**2026-04** 增补 Agent 分层与五家集成/识别厂商索引）。
 
 **站内对照**：**`slug`：`authentication`** 与 [README.md](../../../README.md) §十一约定一致；正式页 **`/tools/authentication`**、**`/zh/tools/authentication`**，`content/tools/en|zh/authentication.md`，关键词与意图见 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 **`#authentication-tools`**。
 
-## 与相邻 slug 分流
+---
+
+## 与相邻 slug 分流（避免混买混评）
 
 | 维度 | **`authentication`（本页）** | **`api`** | **`inference-infrastructure`** |
 |------|-----------------------------|----------|-------------------------------|
@@ -24,7 +28,7 @@
 - **Identity Provider（IdP）**：签发登录会话、令牌或与下游应用建立信任的身份服务；**托管 CIAM** 与 **自托管 OIDC 服务器** 都可扮演 IdP。
 - **CIAM（Customer Identity and Access Management）**：面向**终端客户**（B2C/B2B 租户）的身份与访问管理叙事；本文 **列名四家** 主落在此谱系（及 **Better Auth** 对应的「应用内自建身份」）。
 - **SSO（Single Sign-On）**：单点登录；常依赖 **SAML 2.0**、**OpenID Connect** 或企业目录联合。
-- **OAuth 2.x / OpenID Connect（OIDC）**：授权框架与在 OAuth 之上的一层**身份**协议；既服务 **人类登录**，也服务 **委托第三方 API**；**AI Agent 代用户行动** 场景下，产业与标准界正在讨论 **显式委托、actor 参数、审计声明** 等扩展（见延伸阅读 Internet-Draft）。
+- **OAuth 2.x / OpenID Connect（OIDC）**：授权框架与在 OAuth 之上的一层**身份**协议；既服务 **人类登录**，也服务 **委托第三方 API**；**AI Agent 代用户行动** 场景下，产业与标准界正在讨论 **显式委托、actor 参数、审计声明** 等扩展（见 §延伸阅读 Internet-Draft）。
 - **SAML**：企业集成中常见的 **XML** 联合协议；与 OIDC **并存**，选型常由买方 IdP 与历史系统决定。
 - **JWT（JSON Web Token）**：一种**紧凑的令牌表示**；常用于传递声明，但 **「用了 JWT」≠ 自动安全**（密钥管理、受众、时效、撤销仍需设计）。
 - **Session vs token**：**服务端会话**（cookie + server store）与 **无状态 Bearer token** 的运维与吊销模型不同；**BFF、刷新令牌轮转、设备绑定**等属工程细节。
@@ -38,25 +42,23 @@
 
 ## 专题对照 / 扩展定义
 
-| 维度 | **托管 CIAM / 身份云**（**Auth0**、**Clerk**、**Logto Cloud**） | **自托管 IdP**（**Logto OSS**） | **应用内认证框架**（**Better Auth**） |
-|------|------------------------------------------------------|------------------------------------------------------------------|--------------------------------------------------------|
+**A / B / C 三象限**：定义见 §词汇锚点（出站 / 入站）；下表只列**买家选型差**，不重复术语。
+
+| **象限** | **在解决什么** | **与列名四家的关系** | **常见关键词 / 能力** |
+|----------|----------------|----------------------|------------------------|
+| **A. 应用身份（人类为主）** | 用户**登录你的 App**、会话、组织、SSO | **Auth0 / Clerk / Logto / Better Auth** 主战场 | login, CIAM, SSO, MFA, Passkey |
+| **B. 出站：Agent 调第三方 API** | 用户**授权**后，Agent 代操作 Slack/Jira/GitHub… | **一般不**由 CIAM 单独包圆；常叠加 **集成平台 / Agent 工具层**（见 §形态谱系 Type E–H） | OAuth refresh, connection per user, MCP, tool auth |
+| **C. 入站：谁访问我的站** | 区分真人、恶意 Bot、**已验证的 AI Agent** | **不是** CIAM 四家典型卖点；属 **设备智能 / Bot & Agent 检测**（Type I） | bot detection, device ID, signed agent |
+
+| 维度 | **托管 CIAM / 身份云** | **自托管 IdP** | **应用内认证框架** |
+|------|------------------------|----------------|---------------------|
 | 运维重心 | 供应商 SLA、配额、区域与合规叙事 | 自建或 K8s/虚机运维、补丁、备份与高可用 | 应用发布节奏与数据库迁移同学 |
 | 数据驻留 | 依赖云厂商与合同 | 可强自控 | 用户表常在**自有**数据库 |
 | 协议与集成 | 常开箱 **OIDC、社交登录、企业 SSO** | 同左，工作量更多在运维 | 由代码与插件扩展；**标准协议**需自行接或委托上游 |
 | 典型买家 | 要快、要全、要审计叙事的产品团队 | 强合规、多环境、已有平台团队 | 强定制、TS/Node 全栈、希望 auth **与业务同仓** |
+| **代表** | 见 §外链索引 **Type A** | 见 §外链索引 **Type C** | 见 §外链索引 **Type D** |
 
-| **问题切面** | **在解决什么** | **与列名四家的关系** | **常见关键词 / 能力** |
-|--------------|----------------|----------------------|------------------------|
-| **A. 应用身份（人类为主）** | 用户**登录你的 App**、会话、组织、SSO | **Auth0 / Clerk / Logto / Better Auth** 主战场 | login, CIAM, SSO, MFA, Passkey |
-| **B. 出站：Agent 调第三方 API** | 用户**授权**后，Agent 代操作 Slack/Jira/GitHub… | **一般不**由 CIAM 单独包圆；常叠加 **集成平台 / Agent 工具层**（见下表） | OAuth refresh, connection per user, MCP, tool auth |
-| **C. 入站：谁访问我的站** | 区分真人、恶意 Bot、**已验证的 AI Agent** | **不是** CIAM 四家典型卖点；属 **设备智能 / Bot & Agent 检测** | bot detection, device ID, signed agent |
-
-| 英文高频「功能向」检索词（品类级） | **说明** |
-|-----------------------------------|----------|
-| authentication, login, sign in | 大类与行为词；**CIAM 品牌站**自然流量仍多来自 **auth0 / clerk / logto / better auth** 等 |
-| single sign on, SSO, SAML, OAuth, OIDC | 协议与采购向 |
-| identity provider, user management, CIAM | 方案与 B2B 选型向 |
-| MFA, 2FA, passkey, passwordless | 安全升级与体验叙事 |
+形态路线（托管 / 组件 / OSS / TS 框架 / Agent 层）→ **§形态谱系**；产品规格与 URL → **§外链索引**。
 
 ---
 
@@ -81,26 +83,34 @@
 - **管理平面**：租户、应用注册、密钥轮换、审计日志、webhook。
 - **开发者体验**：SDK 覆盖、框架示例、**本地联调**与**多环境**（dev/staging/prod）。
 - **终端用户体验**：品牌化登录页、本地化、无障碍。
-- **工具与第三方 API（Agent 相关）**：**connection** 与用户 id 绑定、**scope** 最小化、token 刷新与吊销、工具调用的 **DLP/审计**（若在网关层做）；与 **A 能力栈** 并行存在，**采购上可能是第二个供应商**。
+- **工具与第三方 API（Agent 相关）**：**connection** 与用户 id 绑定、**scope** 最小化、token 刷新与吊销、工具调用的 **DLP/审计**（若在网关层做）；与上列能力栈并行存在，**采购上可能是第二个供应商**。
 
 ---
 
-## 形态谱系（与具体品牌解耦；含两层）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
 ### 应用身份（本文 **列名四家**）
 
-- **托管身份云（MAU/档位）**：**Auth0**、**Logto Cloud**。
-- **强 UI 组件与全栈用户管理**：**Clerk**。
-- **开源身份平台 + 可选云**：**Logto**（OSS 与 Cloud 同源产品线）。
-- **进程内 TS 认证框架 + 自有数据库**：**Better Auth**。
+| Type | 形态特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 托管身份云：Universal Login、MAU/档位、Actions 扩展 | hosted CIAM, auth0 | Auth0、Logto Cloud |
+| **B** | 前端组件型：可嵌入登录与用户/组织 UI | clerk, user management UI | Clerk |
+| **C** | 开源 OIDC/OAuth 平台，可自托管 | logto oss, self-hosted IdP | Logto OSS |
+| **D** | TS 应用内认证框架 + 自有数据库 | better auth, in-app auth | Better Auth |
 
 ### Agent 与集成 / 流量治理（**相邻赛道**；解决 **B 出站** 或 **C 入站**，**不替代**上表四家的「登录你的 App」）
 
-- **统一集成 + 托管 OAuth + 代码化 Sync/Action + Agent 工具暴露**：[Nango](https://nango.dev/) 等（自述 **700+ API**、**LLM tool calling**、**MCP**）。
-- **Agent 工具目录 + 托管 OAuth + 会话内拉起授权**：[Composio](https://composio.dev/) 等（**Connect Links**、**in-chat authentication** 等叙事）。
-- **企业连接器 + MCP + 工具侧认证与网关**：[Merge](https://www.merge.dev/) 的 **Merge Agent Handler**（文档：代用户连第三方、**MCP**、**Security Gateway**）；另 **Merge Unified / Gateway** 偏数据集成与 LLM 路由，**与 Agent Handler 产品线需分开看**。
-- **MCP 运行时 + IdP 连接 + Agent 授权**：[Arcade](https://www.arcade.dev/)（公开叙事：**MCP runtime**、接身份提供方、**agent authorization**）。
-- **设备与自动化识别（入站）**：[Fingerprint](https://fingerprint.com/)（**Device intelligence**、**AI Agent detection**、**Web Bot Auth** 生态等——**识别来访 Agent**，而非代 Agent 存 OAuth token）。
+| Type | 形态特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **E** | 集成运行时 + 托管 OAuth：sync、webhook、LLM tool calling | integration platform, nango | Nango |
+| **F** | Agent 工具平台 + 托管 OAuth：工具目录、会话内 Connect | composio, agent tools | Composio |
+| **G** | MCP 工具网关 + 企业连接器：预置连接器、Security Gateway | merge agent handler, MCP gateway | Merge Agent Handler |
+| **H** | MCP 运行时 + IdP 对接 + agent authorization | arcade, MCP runtime | Arcade |
+| **I** | 设备智能 / Bot & Agent 检测（**入站**） | fingerprint, bot detection, AI agent detection | Fingerprint |
+
+> **企业 Agent IAM（L1–L3）**——Agent 注册、NHI/AAM、JIT 凭证等——见 **[agent-identity.md](../agent/agent-identity.md)**；上表 **E–I** 为 **出站 OAuth/MCP（B）** 或 **入站识别（C）**。**Arcade（H）** 规格表保留本文；与 NewCore/Keycard **分层互补**，见 agent-identity §四层堆栈。
+
+**Type A vs C**（同属 Logto 产品线，部署模型不同）：A 为托管 Cloud；C 为 OSS 自托管——选型权衡见 §对比与测评。
 
 ---
 
@@ -112,14 +122,14 @@
 - **数据驻留与出境**：用户 PII 存于身份云或**集成云**时，**DPA** 与区域选项需对齐法务结论。
 - **审计与留存**：日志保留与 **SIEM** 对接；过度留存亦可能触发隐私最小化争议。
 - **开源供应链**：自托管与库方案同样依赖 **依赖项漏洞** 与升级节奏；**无供应商 SLA ≠ 无运维责任**。
-- **Agent 特有风险**：**过度 scope**、refresh token 共享、**无法归因**「哪一步工具调用代表用户真实意图」；需 **每用户独立 connection**、**逐步授权** 与 **工具层审计**，并关注 **MCP / OAuth** 相关安全讨论（见第三方文与标准草案）。
+- **Agent 特有风险**：**过度 scope**、refresh token 共享、**无法归因**「哪一步工具调用代表用户真实意图」；需 **每用户独立 connection**、**逐步授权** 与 **工具层审计**，并关注 **MCP / OAuth** 相关安全讨论（见 §延伸阅读）。
 
 ---
 
 ## 落地碎片（无先后）
 
 - 先画清 **人类用户登录** 与 **M2M / 服务账户** 是否共用同一授权服务器；混用常导致 scope 与审计混乱。
-- 再画清 **A 应用身份** vs **B 出站工具** vs **C 入站识别**；**不要**用选 CIAM 的标准去选 **Bot 检测**，反之亦然。
+- 再画清 **A 应用身份** vs **B 出站工具** vs **C 入站识别** vs **企业 Agent IAM**（→ [agent-identity.md](../agent/agent-identity.md)）；**不要**用选 CIAM 的标准去选 **Bot 检测**或 **Keycard/NewCore**，反之亦然。
 - 选型问句：**是否必须 SAML**、**是否要组织/多租户**、**是否接受用户数据出 VPC**、**框架是否为 TS 优先**；若做 Agent：**要接多少第三方**、**是否要长期 sync**、**是否 MCP-first**、**工具调用要不要过 DLP**。
 - **英语内容**用 **authentication**；做法语/加拿大双语站时再用 **authentification** 对齐本地查询。
 - 若团队已有 **反向代理 / API 网关**，核对与 **JWT 校验、mtls、introspection** 的分工，避免重复实现或双源真相。
@@ -127,47 +137,28 @@
 
 ---
 
-## 工具与产品类型（两层：CIAM 四家 + Agent 相邻能力）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型 | 典型包含什么 | 与本文 **列名四家** 的对应（归纳） |
-|------|--------------|----------------------------------|
-| **托管 CIAM / 身份云** | Universal Login、社交/企业 IdP、MFA、规则扩展 | **Auth0**；**Logto Cloud** |
-| **前端组件型身份服务** | 可嵌入的登录与用户/组织 UI | **Clerk**（叙事强项） |
-| **开源 OIDC/OAuth 平台（可自托管）** | 管理控制台、连接器、多应用 | **Logto OSS** |
-| **TS 应用内认证框架** | 会话、插件、ORM 迁移、自建 UI | **Better Auth** |
+### 列名 CIAM / 应用身份（四家）
 
-| 类型 | 典型包含什么 | **与四家关系** |
-|------|--------------|----------------|
-| **集成运行时 + 托管 API Auth** | OAuth/API key 托管、sync、webhook、对 Agent 暴露工具 | **叠加**在应用身份之上；常管 **第三方** 凭据而非你站内的用户密码 |
-| **Agent 工具平台 + 托管 OAuth** | 工具目录、会话、对话内 Connect、多 toolkit | 同上，偏 **产品化工具编排** |
-| **MCP 工具网关 + 企业连接器** | MCP 入口、预置连接器、工具侧权限与扫描 | 同上，偏 **企业工具与合规叙事** |
-| **MCP 运行时 + IdP 对接** | 运行时执行工具、授权策略 | 偏 **协议与运行时**，仍常需 **真实 OAuth** 落到各 SaaS |
-| **设备智能 / Bot & Agent 检测** | 访客 ID、恶意 Bot、**签名/验证 AI Agent** | **入站**能力；**不**解决「帮 Agent 拿 GitHub token」 |
+| 名称 | Type | 一句话（据公开页面归纳） | URL |
+|------|------|--------------------------|-----|
+| **Auth0** | A | Okta 旗下面向开发者的**认证与授权平台**；Universal Login、B2B/B2C、Actions 等叙事 | [auth0.com](https://auth0.com/) · [文档](https://auth0.com/docs) |
+| **Clerk** | B | **全栈认证与用户管理**；预置组件、会话、组织与 B2B 叙事 | [clerk.com](https://clerk.com/) · [文档](https://clerk.com/docs) |
+| **Logto** | A/C | **开源**身份基础设施；OIDC/OAuth/SAML、多租户与 SSO；**Logto Cloud** 为托管版（Type A），**OSS** 为自托管（Type C） | [logto.io](https://logto.io/) · [文档](https://docs.logto.io/) · [GitHub](https://github.com/logto-io/logto) |
+| **Better Auth** | D | **TypeScript** 身份认证与授权**框架**；插件生态、自带数据库迁移；与「托管 IdP」形态不同 | [better-auth.com](https://www.better-auth.com/) · [文档](https://www.better-auth.com/docs) |
 
----
+### Agent 与集成 / 入站识别（**与上表分工不同**，选型勿混为一类）
 
-## 外链索引（非广告、无排序优先级）
+| 名称 | Type | 一句话（据公开页面归纳） | URL |
+|------|------|--------------------------|-----|
+| **Merge** | G | **Merge Agent Handler**：**MCP** 接 Agent、预置连接器、**工具侧认证**与安全网关等；另有 **Unified API**、**Merge Gateway**（LLM 路由等）**不同产品线** | [merge.dev](https://www.merge.dev/) · [Agent Handler 文档](https://docs.merge.dev/merge-agent-handler) |
+| **Composio** | F | **Agent 工具**与 **Managed Auth**；**Connect Links**、会话、**in-chat** 授权叙事 | [composio.dev](https://composio.dev/) · [Managed authentication](https://docs.composio.dev/docs/managed-authentication) |
+| **Nango** | E | **集成平台**：**700+ API** 的 auth、sync、webhook、**LLM tool calling**、**MCP** 等 | [nango.dev](https://nango.dev/) · [Auth 指南](https://nango.dev/docs/guides) |
+| **Arcade** | H | **MCP runtime**；接 **IdP**、**agent authorization**、在常用 SaaS 中执行动作等叙事（**L4 动作层**；企业 Agent IAM → [agent-identity.md](../agent/agent-identity.md)） | [arcade.dev](https://www.arcade.dev/) |
+| **Fingerprint** | I | **设备智能**；**Bot / AI Agent 检测**（含 **Web Bot Auth** 等验证叙事），偏 **入站流量治理** | [fingerprint.com](https://fingerprint.com/) · [AI Agent Detection](https://fingerprint.com/ai-agent-detection/) · [文档 · AI agents](https://docs.fingerprint.com/docs/ai-tools-detection/ai-agents) |
 
-## 列名 CIAM / 应用身份（四家）
-
-| 名称 | 一句话（据公开页面归纳） | URL |
-|------|--------------------------|-----|
-| **Auth0** | Okta 旗下面向开发者的**认证与授权平台**；Universal Login、B2B/B2C、Actions 等叙事 | [auth0.com](https://auth0.com/) · [文档](https://auth0.com/docs) |
-| **Clerk** | **全栈认证与用户管理**；预置组件、会话、组织与 B2B 叙事 | [clerk.com](https://clerk.com/) · [文档](https://clerk.com/docs) |
-| **Logto** | **开源**身份基础设施；OIDC/OAuth/SAML、多租户与 SSO；**Logto Cloud** 为托管版 | [logto.io](https://logto.io/) · [文档](https://docs.logto.io/) · [GitHub](https://github.com/logto-io/logto) |
-| **Better Auth** | **TypeScript** 身份认证与授权**框架**；插件生态、自带数据库迁移；与「托管 IdP」形态不同 | [better-auth.com](https://www.better-auth.com/) · [文档](https://www.better-auth.com/docs) |
-
-## Agent 与集成 / 入站识别（网摘归纳；**与上表分工不同**，选型勿混为一类）
-
-| 名称 | 一句话（据公开页面归纳） | URL |
-|------|--------------------------|-----|
-| **Merge** | **Merge Agent Handler**：**MCP** 接 Agent、预置连接器、**工具侧认证**与安全网关等；另有 **Unified API**、**Merge Gateway**（LLM 路由等）**不同产品线** | [merge.dev](https://www.merge.dev/) · [Agent Handler 文档](https://docs.merge.dev/merge-agent-handler) |
-| **Composio** | **Agent 工具**与 **Managed Auth**；**Connect Links**、会话、**in-chat** 授权叙事 | [composio.dev](https://composio.dev/) · [Managed authentication](https://docs.composio.dev/docs/managed-authentication) |
-| **Nango** | **集成平台**：**700+ API** 的 auth、sync、webhook、**LLM tool calling**、**MCP** 等 | [nango.dev](https://nango.dev/) · [Auth 指南](https://nango.dev/docs/guides) |
-| **Arcade** | **MCP runtime**；接 **IdP**、**agent authorization**、在常用 SaaS 中执行动作等叙事 | [arcade.dev](https://www.arcade.dev/) |
-| **Fingerprint** | **设备智能**；**Bot / AI Agent 检测**（含 **Web Bot Auth** 等验证叙事），偏 **入站流量治理** | [fingerprint.com](https://fingerprint.com/) · [AI Agent Detection](https://fingerprint.com/ai-agent-detection/) · [文档 · AI agents](https://docs.fingerprint.com/docs/ai-tools-detection/ai-agents) |
-
-## 协议与安全参考（非厂商产品）
+### 协议与安全参考（非厂商产品）
 
 | 名称 | 说明 | URL |
 |------|------|-----|
@@ -177,21 +168,34 @@
 
 ### 对比与测评（第三方；观点非官方）
 
-**CIAM 四家**：英文社区常将 **Auth0** 与 **Clerk** 放在「托管、少运维」中比较——差异多在 **定价**、**B2B 组织**、**组件化程度**、是否接受 **用户目录在供应商**。**Logto** 的权衡在 **OSS 自托管 vs Cloud**。**Better Auth** 适合 auth **与业务同仓**、强 **TS**；要 **开箱 Universal Login 控制台**则更接近前三者。功能盘点文 **易过时**，以官网与安全公告为准。
+- **CIAM 四家（Type A–D）**：英文社区常将托管 CIAM 放在「少运维」中比较——差异多在 **定价**、**B2B 组织**、**组件化程度**、是否接受 **用户目录在供应商**。Logto 的权衡在 **OSS 自托管 vs Cloud**（Type C vs A）。Better Auth 适合 auth **与业务同仓**、强 **TS**；要 **开箱 Universal Login 控制台**则更接近前三者。功能盘点文 **易过时**，以官网与安全公告为准；规格见 §外链索引。
+- **Agent 层（Type E–I）**：出站工具调用、OAuth 托管、MCP 常与 **Type E–H** 同屏讨论；其中 Merge 需区分 **Agent Handler** 与 **Unified / Gateway**。**Type I** 则属 **入站识别**，与「连接器 OAuth」**不是同一采购项**；若只比「谁能接最多 SaaS」会误判。第三方对比文属 **竞争叙事**，阅读时需交叉验证。
 
-**Agent 层五家**：**Merge / Composio / Nango / Arcade** 多与 **出站工具调用、OAuth 托管、MCP** 同屏讨论；其中 **Merge** 需区分 **Agent Handler** 与 **Unified / Gateway**。**Fingerprint** 则属 **入站识别**，与「连接器 OAuth」**不是同一采购项**；若只比「谁能接最多 SaaS」会误判。**Nango** 方曾有与 **Arcade** 对比的第三方文（如 DEV 上的选型帖），属 **竞争叙事**，阅读时需交叉验证。*本小节为网摘与社区观点综合，非 Alignify 实测；**不**以各产品营销首页为唯一论证依据。*
+*本小节为网摘与社区观点综合，非 Alignify 实测；**不**以各产品营销首页为唯一论证依据。*
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外 · 列名四家文档**
 
 - **Auth0 · Introduction to Auth0**：<https://auth0.com/docs/get-started/identity-fundamentals/introduction-to-auth0>
-- **Clerk · Docs 总入口**：<https://clerk.com/docs>
 - **Logto · OSS vs Cloud**：<https://docs.logto.io/logto-oss>
 - **Better Auth · Introduction**：<https://www.better-auth.com/docs/introduction>
+
+**站外 · 标准草案与安全**
+
 - **IETF · draft-oauth-ai-agents-on-behalf-of-user**（OAuth 2.0 面向 AI Agent 代用户授权的扩展草案，**进行中**）：<https://datatracker.ietf.org/doc/html/draft-oauth-ai-agents-on-behalf-of-user-02>
 - **IETF · draft-mishra-oauth-agent-grants**（DAAP / Agent grants 方向草案，**进行中**）：<https://datatracker.ietf.org/doc/draft-mishra-oauth-agent-grants/>
-- **GitGuardian · AI Agents Authentication**（自主系统身份与 OAuth/MCP 等实践讨论，第三方）：<https://blog.gitguardian.com/ai-agents-authentication-how-autonomous-systems-prove-identity/>
-- **Security Boulevard · AI Agent Authentication Methods**（方法罗列类第三方文）：<https://securityboulevard.com/2026/04/9-ai-agent-authentication-methods-for-autonomous-systems/>
 - **IETF · RFC 6749**（OAuth 2.0 框架）：<https://www.rfc-editor.org/rfc/rfc6749>
 - **OWASP · Authorization Cheat Sheet**：<https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html>
+
+**站外 · 第三方观点**
+
+- **GitGuardian · AI Agents Authentication**（自主系统身份与 OAuth/MCP 等实践讨论）：<https://blog.gitguardian.com/ai-agents-authentication-how-autonomous-systems-prove-identity/>
+- **Security Boulevard · AI Agent Authentication Methods**（方法罗列类第三方文）：<https://securityboulevard.com/2026/04/9-ai-agent-authentication-methods-for-autonomous-systems/>
+
+**站内**
+
+- [agent-identity.md](../agent/agent-identity.md) — **企业 Agent IAM / NHI / AAM**（L1–L3）；与本文 A/B/C **正交**
+- [agent-runtime.md](../agent/agent-runtime.md) — Agent **执行层**；与身份层分工

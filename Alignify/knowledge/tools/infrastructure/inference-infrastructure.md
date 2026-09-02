@@ -1,5 +1,7 @@
 # AI 推理基础设施 · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI Inference Infrastructure / 推理托管**——为开源或定制模型提供 **GPU 调度、推理引擎、扩缩与计费**，验收以 **tok/s、TTFT、$/1M tokens、冷启动** 为主。本页为 **推理基础设施产品 SSOT**（完整 URL 表仅此一处）；多模型 API 路由 → [api.md](api.md)；模型能力评测 → [llm.md](../llm/llm.md)。
+
 **材料范围**：公开网络检索（厂商文档、定价页、融资新闻、券商报告、独立基准测试与行业分析）；归纳 **AI 推理基础设施**——为开源和定制化模型提供 GPU 调度、推理优化、自动扩缩、可观测性和计费的全套系统软件与算力层。覆盖范围包括但不限于：推理托管平台（Inference-as-a-Service）、自建推理引擎、推理芯片、边缘推理网络。**未**引用 Alignify 站内文章或站内 JSON 内容稿。具体参数、定价与 SLA 以各官网为准。网摘整理日期 **2026-06-23**。
 
 **站内对照**：[alignify.co/blog/inference-infrastructure](https://alignify.co/blog/inference-infrastructure) · [alignify.co/zh/blog/inference-infrastructure](https://alignify.co/zh/blog/inference-infrastructure) · 正文 md 已同步至部署仓 `alignify-by-kostja/content/blog/{en|zh}/inference-infrastructure.md`（上下文仓不再保留 JSON） · slug **`inference-infrastructure`**
@@ -83,23 +85,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **纯推理托管平台（Type I — Pure-Play Inference Hosting）**：专注推理环节，不做训练。以 API 形式暴露开源或定制化模型，用户按 token 或 GPU 秒付费。核心能力：多模型支持、自动扩缩、低冷启动延迟。代表定位：Baseten、DeepInfra。
-
-- **全栈 AI 云（Type II — Full-Stack AI Cloud）**：覆盖推理 + 训练 + 微调的全生命周期。提供从 GPU 集群（GB200/GB300 NVL72）到 serverless 推理的多层产品。核心能力：模型目录广度、微调生态、研究输出（FlashAttention-4、ATLAS 等）。代表定位：Together AI。
-
-- **代码优先 GPU 平台（Type III — Code-First GPU Compute）**：以 Python 函数为部署单元，非传统容器/YAML。提供 sub-second 冷启动、per-second 计费、弹性 GPU 执行环境。核心能力：极低冷启动延迟、与 Python 生态深度集成。代表定位：Modal。
-
-- **芯片驱动推理平台（Type IV — Chip-Native Inference）**：自研推理芯片或晶圆级处理器，垂直整合硬件和推理软件栈。核心能力：极致速度（500–1,500 tok/s）、确定性能耗比。风险：芯片路线图依赖、模型适配范围窄。代表定位：Groq（LPU）、Cerebras（WSE-3）、曦望（启望 S3）。
-
-- **多云端推理调度层（Type V — Multi-Cloud Orchestration）**：不持有 GPU，而是对接多家云厂商的 GPU 算力池做智能调度。核心能力：跨云容量管理、成本仲裁、99.99% 可用性 SLA。代表定位：Baseten 的多云模式（20 家云厂商）。
-
-- **训推一体硬件超节点（Type VI — Unified Train-Infer Hardware）**：面向万亿参数模型的训推一体算力底座。支持昼推夜训分时复用，全液冷散热。核心能力：超大集群扩展（32–16,384 卡）、训推模式切换。代表定位：H3C UniPoD S80000。
-
-- **开源推理引擎（Type VII — Open-Source Inference Engine）**：部署在自有基础设施上的推理软件栈。完全控制数据路径、模型版本和 GPU 配置，但需自行运维集群。代表：vLLM、SGLang、TensorRT-LLM、赤兔 Chitu。
-
-- **边缘推理网络（Type VIII — Edge Inference Network）**：将推理节点部署在靠近用户的边缘位置（CDN 节点、基站、本地服务器），满足超低延迟（<50ms）和数据驻留要求。代表定位：CloudSky、Akamai AI Inference。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **I** | 纯推理托管——OpenAI 兼容 API | pure-play inference hosting | Baseten、DeepInfra |
+| **II** | 全栈 AI 云——训推微调 | full-stack AI cloud | Together AI |
+| **III** | 代码优先 GPU 平台——函数式部署 | code-first GPU compute | Modal |
+| **IV** | 芯片驱动推理——垂直整合 | chip-native inference | Groq、Cerebras、曦望 S3 |
+| **V** | 多云端调度——跨云容量 | multi-cloud orchestration | Baseten 多云模式、Nebius |
+| **VI** | 训推一体硬件超节点 | unified train-infer hardware | H3C UniPoD、NVIDIA DGX |
+| **VII** | 开源推理引擎——自建 | open-source inference engine | vLLM、SGLang、TensorRT-LLM、赤兔 Chitu |
+| **VIII** | 边缘推理网络 | edge inference network | CloudSky、Akamai AI Inference |
 
 ---
 
@@ -145,14 +142,14 @@
 
 | 类型 | 典型包含什么 | 备注 |
 |------|--------------|------|
-| **纯推理托管平台** | Baseten（20+ 云厂商、Truss 容器、Chains SDK）、DeepInfra（107M Series B、5T tokens/周） | 专注推理部署，不碰训练；按 token 或 GPU 秒计费 |
-| **全栈 AI 云** | Together AI（200+ 模型、微调 SFT+RLHF、GB200 集群）、Fireworks AI（400+ 模型、FireAttention 引擎、SOC 2/HIPAA） | 推理+训练+微调全覆盖；研究驱动 |
-| **代码优先 GPU 部署** | Modal（Python 函数式、1s 冷启动、per-second 计费） | 非推理专用，但广泛用于推理部署 |
-| **芯片驱动推理** | Groq（LPU 芯片、840 tok/s Llama 3.1 8B）、Cerebras（WSE-3 晶圆级、2026 年 5 月 IPO NASDAQ: CBRS）、曦望启望 S3（国产推理 GPU、LPDDR6） | 垂直整合硬件+软件；速度极快但模型覆盖窄 |
-| **开源推理引擎** | vLLM（PagedAttention）、SGLang（结构化生成）、TensorRT-LLM（NVIDIA）、赤兔 Chitu（国产多芯片适配） | 自建部署；完全控制数据与成本；需 GPU 运维能力 |
-| **边缘推理网络** | CloudSky（300+ 城市、6 亿用户）、Akamai AI Inference | 超低延迟；适合媒体处理和轻量级 LLM |
-| **多云端调度** | Baseten 多云模式（对接 20 家云厂商）、Nebius | 跨云 GPU 容量管理；提升可用性；成本仲裁 |
-| **训推一体硬件** | H3C UniPoD S80000（32–16,384 卡、昼推夜训）、NVIDIA DGX 系列 | 企业级硬件方案；适合自建数据中心的大型企业 |
+| **纯推理托管平台** | Type I | 见 §外链索引 |
+| **全栈 AI 云** | Type II | 见 §外链索引 |
+| **代码优先 GPU 部署** | Type III | 见 §外链索引 |
+| **芯片驱动推理** | Type IV | 见 §外链索引 |
+| **开源推理引擎** | Type VII | 见 §外链索引 |
+| **边缘推理网络** | Type VIII | 见 §外链索引 |
+| **多云端调度** | Type V | 见 §外链索引 |
+| **训推一体硬件** | Type VI | 见 §外链索引 |
 
 ---
 
@@ -192,7 +189,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **Baseten 完成 15 亿美元 F 轮融资，估值达 130 亿美元**（智东西, 2026-06-23）：Baseten 融资详情、客户名单、行业竞争格局与推理赛道分析。  
   - 智东西报道（用户提供原文）

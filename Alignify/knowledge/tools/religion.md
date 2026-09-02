@@ -49,14 +49,14 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
-- **Type A — 特定宗教经典 AI 问答**：基于单一宗教传统的全部经典训练——确保回答的神学准确性。代表方向：Magisterium AI（天主教）、Bible Pray AI（基督教）。面向追求「可信任的经文解释」的信众。
-- **Type B — AI 虚拟宗教人物对话**：AI 以特定宗教人物的身份与用户交互——最具争议的产品形态。代表方向：Just Like Me（AI 耶稣视频通话）、Text With Jesus（AI 耶稣/圣母/使徒聊天）。面向寻求「与神圣人物直接对话」体验的用户。
-- **Type C — AI 灵修陪伴**：AI 以非特定宗教人物的身份提供灵修支持——更接近「AI 灵修导师」而非「AI 神」。代表方向：Emi Jido（禅宗 AI 教师）、AI 祷告教练。争议性较低，神学风险较小。
-- **Type D — 跨信仰 AI 平台**：支持多个宗教传统的比较学习——用户可以在同一平台上提问基督教、伊斯兰教、佛教、印度教的问题。代表方向：ChatwithGod、SmartFaith。面向宗教比较学习者和跨信仰家庭。
-- **Type E — 宗教教育/研经 AI**：AI 辅助深入研究宗教经典——经文搜索、多译本对照、原文分析、注释索引。面向神学生、宗教教育者和深度研经者。
-- **Type F — AI 宗教内容生成器**：AI 生成讲道稿、灵修文章、祷告词等宗教文本——面向神职人员和宗教内容创作者。最具风险：AI 生成的讲道可能在神学上不准确。
+- **Type A — 特定宗教经典 AI 问答**：单一传统经文锚定。
+- **Type B — AI 虚拟宗教人物对话**：最具争议形态。
+- **Type C — AI 灵修陪伴**：非特定神圣人物。
+- **Type D — 跨信仰 AI 平台**：多传统比较学习。
+- **Type E — 宗教教育/研经 AI**：深度经文研究。
+- **Type F — AI 宗教内容生成器**：讲道/灵修文本生成。
 
 ---
 
@@ -127,8 +127,9 @@ Matthew Sanders（Magisterium AI/Longbeard）指出：大部分 AI 宗教工具�
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- [From BuddhaBot to $1.99 chats with AI Jesus, the faith-based tech boom is here (AP News / Economic Times)](https://economictimes.indiatimes.com/tech/artificial-intelligence/from-buddhabot-to-1-99-chats-with-ai-jesus-the-faith-based-tech-boom-is-here/articleshow/130188057.cms)
-- [People of faith divided as AI enters religion (New Age BD)](https://www.newagebd.net/post/telecom/277967/)
-- [From BuddhaBot to $1.99 chats with AI Jesus (The Independent)](https://www.the-independent.com/news/christians-chatgpt-hindu-openai-jim-b2955239.html)
+**站外**（行业报道；产品见 §外链索引）
+
+- [AP News / Economic Times — faith-based tech boom 2026](https://economictimes.indiatimes.com/tech/artificial-intelligence/from-buddhabot-to-1-99-chats-with-ai-jesus-the-faith-based-tech-boom-is-here/articleshow/130188057.cms)
+- [The Independent — AI religion divide](https://www.the-independent.com/news/christians-chatgpt-hindu-openai-jim-b2955239.html)

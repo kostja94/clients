@@ -1,15 +1,16 @@
 # AI Video-to-Video · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**Video-to-Video (V2V) / 视频到视频**——以**既有视频**为基底改变视觉风格或内容，**保留原始运动/结构**；验收以 **时间一致性、运动保留、可控生成** 为主。本页为 **V2V 产品 SSOT**（完整 URL 表仅此一处）；**全片风格迁移 / anime 化** 本页；**抠像/跟踪/去路人** → [video-effects.md](video-effects.md)；**从零生成动漫** → [animation-generator.md](animation-generator.md)；从零生成见 [video-generator.md](video-generator.md)。
+
 **材料范围**：公开网络检索（厂商官网与产品文档、TechCrunch/eWeek/Variety 等科技媒体评测、学术论文与开源项目仓库）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 **2026-06-24**（簇去重修订）。
-
-
-**站内相邻**：[video.md](video.md) · [video-generator.md](video-generator.md) · [video-effects.md](video-effects.md) · [animation-generator.md](animation-generator.md)
-
-**勿与…混买**：**全片风格迁移 / anime 化**见本页；**抠像/跟踪/去路人**见 video-effects；**从零生成动漫**见 animation-generator。
 
 **站内对照**：[alignify.co/tools/video-to-video](https://alignify.co/tools/video-to-video) · `/tools/video-to-video` · [alignify.co/zh/tools/video-to-video](https://alignify.co/zh/tools/video-to-video) · `/zh/tools/video-to-video` · `content/tools/zh/video-to-video.md`、`content/tools/en/video-to-video.md` · slug **`video-to-video`**
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-to-video-tools`](../../product/alignify-keywords-tools.md#video-to-video-tools)
+
+**站内相邻**：[video.md](video.md)（Hub）· [video-generator.md](video-generator.md) · [video-effects.md](video-effects.md) · [animation-generator.md](animation-generator.md) · [filmmaking.md](filmmaking.md)
+
+---
 
 ## 与相邻 slug 分流（避免混买混评）
 
@@ -47,6 +48,8 @@
 | **核心挑战** | 时间一致性 | 主体一致性 + 环境融合 | 物理一致性 + prompt 遵循 | 运动合理性 |
 | **代表方向** | Runway Gen4 Aleph、Wan 2.7 | Beeble SwitchX、Runway Aleph | Veo 3、Kling 3.0（Sora 已关停） | Runway Gen-4、Pika、Kling |
 
+架构路线 → **§形态谱系**；产品规格与 URL → **§外链索引**。
+
 ---
 
 ## 问题域（为何会出现这类产品）
@@ -70,13 +73,17 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type A — 综合 V2V 平台**：在一个工具内覆盖风格迁移、内容变换、物体替换、光照重打——以 Gen4 Aleph 为代表。内部使用专用「上下文视频模型」（in-context video model），在编辑前分析画面以理解场景。适合专业创作者和制作团队。
-- **Type B — 环境级 V2V（场景重建型）**：聚焦改变整个场景环境（季节、天气、地点），同时通过参考图像保持主体外观不变。以 Beeble SwitchX 为代表。适合商业拍摄、MV、虚拟制片。
-- **Type C — 开源 V2V 框架**：基于开源组件（SD + ControlNet + AnimateDiff 或 Wan 2.7 Video Edit 模式）构建的灵活管线。适合有工程能力的团队——完全可控、省钱、可嵌入自动化流程，但需要自行解决部署和调参。
-- **Type D — 快速社交型 V2V**：优化速度和易用性，预设风格模板，牺牲一定画质和一致性来换取「10 秒出片」。以 Pika 为代表。适合社交媒体运营和需要快速测试不同风格的创作者。
-- **Type E — 运动迁移型**：从参考视频中提取运动模式，应用到不同主体上——「让一只猫做出视频里那个人的动作」。以 Kling 3.0 的运动迁移模式为代表。适合创意广告和视觉实验。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 风格迁移 + 内容变换 + 物体替换 + 重打光，in-context video model | 综合 V2V 平台 / video-to-video AI | Runway Gen4 Aleph |
+| **B** | 改变整个场景环境（季节/天气/地点），参考图锁定主体 | 环境级 V2V / AI video scene changer | Beeble SwitchX |
+| **C** | SD + ControlNet + AnimateDiff 或 Wan Video Edit，自部署 | 开源 V2V 框架 / AnimateDiff style transfer | Wan 2.7 Video Edit、AnimateDiff + ControlNet |
+| **D** | 速度优先，预设风格模板，牺牲一致性换出片速度 | 快速社交型 / AI video filter | Pika 2.0 |
+| **E** | 从参考视频提取运动，应用到不同主体 | 运动迁移型 / AI motion transfer | Kling 3.0（**非专用 V2V**） |
+
+**常被误搜为 V2V 的 T2V/I2V 工具**（Veo 3、Luma Dream Machine、Kling 3.0、Seedance 2.0）：这些是**生成**工具而非**转换**工具——选型见 [video-generator.md](video-generator.md)。
 
 ---
 
@@ -100,32 +107,19 @@
 
 ---
 
-## 工具与产品类型（「AI video to video」「video style transfer」「change video style AI」等检索里常混在一起的品类；非穷尽）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **综合 V2V 平台**（video-to-video AI, AI video style transfer） | Runway Gen4 Aleph | 风格迁移 + 内容变换 + 物体替换 + 重打光，V2V 品类认知度最高 |
-| **环境级 V2V**（AI video scene changer, video environment swap） | Beeble SwitchX | 改变整个场景环境但保持主体一致 |
-| **开源 V2V 框架**（open source video-to-video, AnimateDiff style transfer） | Wan 2.7 Video Edit、AnimateDiff + ControlNet、SD + EbSynth | 自部署，灵活但需工程能力 |
-| **运动迁移型**（AI motion transfer, video motion swap） | Kling 3.0 | 从参考视频提取运动，应用到不同主体 |
-| **快速社交型**（AI video filter, quick video style change） | Pika 2.0 | 速度优先，社交模板丰富 |
-| **T2V/I2V（常被误搜为 V2V）** | Veo 3、Luma Dream Machine、Kling 3.0（Sora 2 历史数据；已关停） | 这些是生成工具而非转换工具——但「video-to-video」检索词常被用户误用于搜索它们 |
-
----
-
-## 外链索引（工具与产品；无排序优先级）
-
-| 名称 | 一句话（据公开页面或综述归纳） | URL |
-|------|--------------------------|-----|
-| **Runway Gen4 Aleph** | 2025 年 7 月发布——专用 V2V 上下文视频模型；风格迁移、物体操作、环境变换、视角生成、角色修改；4K/60s | [runwayml.com](https://runwayml.com) |
-| **Beeble SwitchX** | 可控生成式 V2V——改变背景/布光/道具/环境，通过参考图像锁定主体一致性；2K/~5min | [beeble.ai](https://beeble.ai) |
-| **Wan 2.7** | 阿里巴巴开源视频模型——Video Edit 模式专为 V2V 风格迁移设计；7 种模式；1080p/15s；支持自部署 | [github.com](https://github.com/Wan-Video/Wan2.2) |
-| **Kling 3.0** | 运动迁移模式强；**非专用 V2V**——轻量选型见对比表备注 | [klingai.com](https://klingai.com) |
-| **Pika 2.0** | 快速社交迭代——**非专用 V2V**，适合短片段风格试验 | [pika.art](https://pika.art) |
-| **Seedance 2.0** | 多参考输入；偏 I2V/生成——V2V 场景见 Runway Aleph | [jimeng.jianying.com](https://jimeng.jianying.com) |
-| **Luma Dream Machine** | **非专用 V2V**——偏 I2V/3D 一致性；全片风格化见 Aleph/Wan | [lumalabs.ai](https://lumalabs.ai) |
-| **AnimateDiff + ControlNet** | 开源社区 V2V 经典管线——ControlNet 捕捉结构 + AnimateDiff 注入运动 + SD 重绘 | [github.com/guoyww/AnimateDiff](https://github.com/guoyww/AnimateDiff) |
-| **GoEnhance AI** | 视频风格化——预设风格模板，一键将实拍转动漫/3D/像素风 | [goenhance.ai](https://goenhance.ai) |
+| 名称 | Type | 一句话（据公开页面或综述归纳） | URL |
+|------|------|--------------------------|-----|
+| **Runway Gen4 Aleph** | A | 2025 年 7 月发布——专用 V2V 上下文视频模型；风格迁移、物体操作、环境变换、视角生成、角色修改；4K/60s | [runwayml.com](https://runwayml.com) |
+| **Beeble SwitchX** | B | 可控生成式 V2V——改变背景/布光/道具/环境，通过参考图像锁定主体一致性；2K/~5min | [beeble.ai](https://beeble.ai) |
+| **Wan 2.7** | C | 阿里巴巴开源视频模型——Video Edit 模式专为 V2V 风格迁移设计；7 种模式；1080p/15s；支持自部署 | [github.com](https://github.com/Wan-Video/Wan2.2) |
+| **Kling 3.0** | E | 运动迁移模式强；**非专用 V2V**——轻量选型见对比表备注 | [klingai.com](https://klingai.com) |
+| **Pika 2.0** | D | 快速社交迭代——**非专用 V2V**，适合短片段风格试验 | [pika.art](https://pika.art) |
+| **Seedance 2.0** | — | 多参考输入；偏 I2V/生成——V2V 场景见 Runway Aleph | [jimeng.jianying.com](https://jimeng.jianying.com) |
+| **Luma Dream Machine** | — | **非专用 V2V**——偏 I2V/3D 一致性；全片风格化见 Aleph/Wan | [lumalabs.ai](https://lumalabs.ai) |
+| **AnimateDiff + ControlNet** | C | 开源社区 V2V 经典管线——ControlNet 捕捉结构 + AnimateDiff 注入运动 + SD 重绘 | [github.com/guoyww/AnimateDiff](https://github.com/guoyww/AnimateDiff) |
+| **GoEnhance AI** | D | 视频风格化——预设风格模板，一键将实拍转动漫/3D/像素风 | [goenhance.ai](https://goenhance.ai) |
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -139,11 +133,7 @@ Wan 2.7 在开源社区（GitHub、r/LocalLLaMA）获得大量正面讨论——
 
 ---
 
-## 延伸阅读 · 站内知识块
-
-- 并列：[video-generator.md](video-generator.md) · [image-to-video.md](image-to-video.md) · [video-effects.md](video-effects.md)（抠像/跟踪）
-- 垂直：[animation-generator.md](animation-generator.md)（从零动漫）· [filmmaking.md](filmmaking.md)
-- 完整旗舰表：[video-generator.md](video-generator.md) §外链索引
+## 延伸阅读 · 站内外
 
 **站外**
 
@@ -154,3 +144,9 @@ Wan 2.7 在开源社区（GitHub、r/LocalLLaMA）获得大量正面讨论——
 - [Best AI Video Generator 2026: Sora vs Veo 3 vs Kling vs Runway Full Comparison](https://dev.to/serenitiesai/best-ai-video-generator-2026-sora-vs-veo-3-vs-kling-vs-runway-full-comparison-4hcp)
 - [Best Runway ML alternatives in 2026: API access, pay-per-use, more models (Apidog)](https://apidog.com/blog/best-runway-ml-alternative-2026/)
 - [Video Generation Model Evaluation in 2025: Veo 2, Sora, Pika 2.0, Ray2 (Variety VIP)](https://variety.com/vip/video-generation-model-evaluation-in-2025-veo-2-sora-pika-ray2-1236276435/)
+
+**站内**
+
+- Hub：[video.md](video.md)
+- 通用模型 SSOT：[video-generator.md](video-generator.md) · [image-to-video.md](image-to-video.md)
+- 相邻：[video-effects.md](video-effects.md)（抠像/跟踪）· [animation-generator.md](animation-generator.md)（从零动漫）· [filmmaking.md](filmmaking.md)

@@ -1,5 +1,7 @@
 # 大模型训练数据平台 · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI Training Data Platform / 训练数据基础设施**——采购、生产、质检与交付**可训语料**（标注、RLHF、授权语料、合成数据），验收以 **rubric、版权链、IAA、模态覆盖** 为主。本页为 **训练数据平台 SSOT**（完整 URL 表仅此一处）；原始抓取 → [web-scraping.md](../web-data/web-scraping.md)；训后评测 → [evaluation.md](../llm/evaluation.md)。
+
 **材料范围**：公开网络检索（厂商官网与产品文档、融资新闻、TechCrunch/The Information 等行业报道、Research and Markets / IDC 类市场摘要、Anthropic/OpenAI 公开 RLHF 说明、arXiv 预印本）；归纳 **AI 训练数据平台 / AI training data infrastructure**——为 LLM 与多模态模型采购、生产、质检与交付可训练语料的全栈系统，覆盖数据标注 Lab、标注 MLOps 平台、授权语料市场、合成数据管线。**未**引用 Alignify 站内文章或站内 JSON 内容稿。具体定价、合同条款与数据许可以各官网为准。网摘整理日期 **2026-06-23**。
 
 **站内对照**：[alignify.co/blog/ai-training-data](https://alignify.co/blog/ai-training-data) · [alignify.co/zh/blog/ai-training-data](https://alignify.co/zh/blog/ai-training-data) · 正文 md 已同步至部署仓 `alignify-by-kostja/content/blog/{en|zh}/ai-training-data.md` · slug **`ai-training-data`**
@@ -69,14 +71,16 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type I — Enterprise Labeling Lab（纯 Lab）**：买家购买「项目结果」而非软件席位。核心能力：复杂 rubric、专家网络、保密与驻场。代表定位：Scale AI、Surge AI、Appen（传统众包向 AI 升级）。
-- **Type II — Labeling Platform + MLOps**：买家在平台上自建项目，可选托管劳动力。核心能力：工作流、自动化 QA、与训练 pipeline 集成。代表：Labelbox、Encord。
-- **Type III — Licensed / Creator Marketplace**：从创作者或机构采购 **权利 cleared** 的内容包。核心：许可链、定价透明、双边网络。代表：Wirestock、Luel。
-- **Type IV — Multimodal / Vertical Data Pack**：按行业或模态打包（视频、3D、游戏、医疗影像）。代表：Origin Lab、Encord（视频-heavy）。
-- **Type V — Synthetic / Programmatic Data**：以程序与弱监督生成标签，降低人工比例。代表：Snorkel AI、Defined.ai。
-- **Type VI — Robotics / Physical AI Data**：真实世界轨迹、teleop、sim-to-real 配对——与 world-model、具身智能需求交汇。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **I** | Enterprise Labeling Lab——买项目结果 | RLHF lab, expert labeling | Scale AI、Surge AI、Appen |
+| **II** | Labeling Platform + MLOps——自建项目 | data labeling platform | Labelbox、Encord |
+| **III** | Licensed / Creator Marketplace | licensed training data | Wirestock、Luel |
+| **IV** | Multimodal / Vertical Data Pack | video training data, 3D data | Origin Lab |
+| **V** | Synthetic / Programmatic | programmatic labeling | Snorkel AI、Defined.ai |
+| **VI** | Robotics / Physical AI Data | embodied AI data, teleop | 与 [world-model.md](../world-model.md) 交汇 |
 
 ---
 
@@ -108,12 +112,12 @@
 
 | 类型 | 典型包含什么 | 备注 |
 |------|--------------|------|
-| **Enterprise RLHF Lab** | Scale AI、Surge AI | 项目制、高保密、专家偏好数据 |
-| **Crowd + Enterprise 混合** | Appen | 传统数据标注巨头向 GenAI 延伸 |
-| **标注平台 / MLOps** | Labelbox、Encord | 自建工作流 + 可选劳动力 |
-| **Creator / Licensed Marketplace** | Wirestock、Luel | 授权内容、创作者网络 |
-| **Multimodal Data Pack** | Origin Lab | 视频/3D/游戏向训练包 |
-| **Synthetic / Programmatic** | Snorkel AI、Defined.ai | 弱监督与合成标签 |
+| **Enterprise RLHF Lab** | Type I | 见 §外链索引 |
+| **Crowd + Enterprise 混合** | Appen | 见 §外链索引 |
+| **标注平台 / MLOps** | Type II | 见 §外链索引 |
+| **Creator / Licensed Marketplace** | Type III | 见 §外链索引 |
+| **Multimodal Data Pack** | Type IV | 见 §外链索引 |
+| **Synthetic / Programmatic** | Type V | 见 §外链索引 |
 | **Raw Scrape 管道** | Firecrawl、Bright Data 等 | 见 [web-scraping.md](../web-data/web-scraping.md)，**非**训练交付终点 |
 
 ---
@@ -145,7 +149,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **What is RLHF?**（AWS 文档）：RLHF 流程与 human feedback 角色说明。  
   - <https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/>

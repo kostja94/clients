@@ -79,15 +79,19 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **独立 AI 可见度监测 SaaS**：单一品类心智——只做品牌在 AI 答案中出现 / 不出现的监测。典型起点 $29–$99/月。代表路径：Searchable、Trakkr、Otterly.AI、Peec AI、LLM Pulse、ZipTie、Rankscale、Presenc AI。
-- **企业级 AI 品牌治理平台**：多品牌、多区域、多团队权限；含 SOC2 / HIPAA 合规。典型起点 $300–$2,400/月。代表路径：Profound、Scrunch AI、Evertune、Bluefish、AthenaHQ。
-- **SEO 套件附加 AI 模块**：传统 SEO 平台内的附加功能——与已有 rank tracking、keyword research 数据同一订阅。代表路径：Semrush AI Visibility Toolkit、Ahrefs Brand Radar、SE Ranking AI Visibility、Surfer AI Tracker、Conductor。
-- **GEO 全栈平台内的监测层**：监测不是独立产品，而是「发现缺口→改内容→复测」闭环中的第一环。代表路径：Promptwatch、Frase、Writesonic GEO、Goodie AI、KIME。
-- **免费 AI 可见度检查器**：一次性快照，无需注册——用作付费品的获客漏斗。代表路径：Ahrefs AI Visibility Checker、HubSpot AEO Grader。
-- **API 数据层**：提供结构化 LLM 提及数据供企业自建仪表盘，而非直接向终端用户售卖 UI。代表路径：DataForSEO LLM Mentions API。
-- **本地 GEO 监测**：侧重各地区本地 AI 助手与对话平台；常以「品牌可见度」「GEO 评分」为叙事。代表路径：各市场本地品牌可见度追踪方案。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 独立监测 SaaS | AI visibility tracker | Otterly、Peec、Trakkr、ZipTie |
+| **B** | 企业品牌治理 | enterprise AI brand platform | Profound、Evertune、Scrunch |
+| **C** | SEO 套件附加模块 | AI visibility toolkit | Semrush、Ahrefs Brand Radar |
+| **D** | GEO 全栈内嵌监测层 | closed-loop GEO | Promptwatch、Goodie、KIME |
+| **E** | 免费快照 / 获客漏斗 | free AI visibility checker | Ahrefs checker、HubSpot grader |
+| **F** | API 数据层 | LLM mentions API | DataForSEO |
+| **G** | 本地/区域引擎监测 | local GEO monitoring | 见 §外链索引 **本地监测方案** |
+
+全栈 GEO（监测+内容+审计）见 [geo.md](geo.md) §外链索引——本页不重复 Profound/Writesonic 等全栈条目。
 
 ---
 
@@ -165,14 +169,14 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- **学界**：[Princeton · GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735)（KDD 2024；citations 优化方法论基础）
-- **厂商公开**：[OpenAI · Bots](https://platform.openai.com/docs/bots)（GPTBot 爬取行为与 robots.txt 规则）
-- **市场数据**：[Rankability · AI Search Statistics 2026](https://www.rankability.com/reports/state-of-ai-search/)（48 个月搜索需求全景）
-- **品类盘点**：[TechnologyAdvice · Best AI Search Monitoring Tools 2026](https://technologyadvice.com/blog/information-technology/ai-software/best-ai-search-monitoring-tools/)
-- **品类盘点**：[Trakkr · AI Visibility Tools Category Map](https://trakkr.ai/ai-visibility-tools)（12 工具对比 + 品类地图）
-- **品类盘点**：[Ibrahim Furkan Ozcelik · 60+ AI Search Visibility Tools Compared](https://ibrahimfurkanozcelik.com/writing/complete-guide-ai-search-visibility-tools-2026)
-- **实证研究**：[Presenc AI · Best AI Visibility Tools 2026](https://presenc.ai/research/best-ai-visibility-tools-2026)（8 工具加权评分）
-- **行业叙事**：[Neil Patel · AI Brand Visibility Tracking](https://neilpatel.com/blog/ai-brand-visibility-tracking/)（批判「把 prompt 当关键词」的思维陷阱）
-- **本地生态**：[IT之家 · GEO 赛道白皮书 2025-2026](https://www.ithome.com/0/945/559.htm)（区域 GEO 服务商生态图谱）
+**站外**
+
+- **Princeton GEO 论文**（KDD 2024）——[arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)（书目页见 geo §延伸阅读）
+- **OpenAI Bots**、**Google AI Mode 帮助**、**llmstxt.org**——见 [geo.md](geo.md) §延伸阅读（爬虫与提案 SSOT 集中维护）
+
+**站内**
+
+- 全栈 GEO：[geo.md](geo.md) · 纯监测：[ai-visibility.md](ai-visibility.md)
+- 平台流量与 citation：[ai-traffic-and-citation-sources.md](ai-traffic-and-citation-sources.md)

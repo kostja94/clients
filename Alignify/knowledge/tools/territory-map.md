@@ -1,6 +1,6 @@
 # Territory Map — Knowledge Block Tiers & Clusters
 
-> 最后更新：2026-08-28 · 原则见 [README.md](./README.md) §战略原则
+> 最后更新：2026-09-02 · 原则见 [README.md](./README.md) §战略原则
 > A/B/C 深度分层定义见 [README.md](./README.md) §A/B/C 深度分层
 
 ## 主题簇物理路径（2026-08-28）
@@ -10,13 +10,13 @@
 | 文件夹 | Hub | slug 数 |
 |--------|-----|:-------:|
 | `image/` | `image` | 12 |
-| `video/` | `video` | 13 |
+| `video/` | `video` | 14 |
 | `3d-spatial/` | `3d` | 7 |
 | `llm/` | `llm` | 6 |
 | `voice-audio/` | `voice` | 10 |
 | `web-data/` | `web-scraping` | 6 |
 | `search-geo/` | `search-engine` | 4 |
-| `agent/` | `agent-skills` | 10 |
+| `agent/` | `agent-skills` | 14 |
 | `coding/` | `coding` | 9 |
 | `design/` | `design` | 6 |
 | `marketing-growth/` | `influencer-marketing` | 9 |
@@ -31,7 +31,7 @@
 | `website-builder/` | `website-builder` | 5 |
 | `cms/` | — | 1 |
 
-**独立根目录**（11 slug）：`agentic-commerce` · `agentic-payments` · `ai-shopping` · `animation-library` · `data-engineering-agent` · `family-assistant` · `fashion` · `lifetime-deals` · `religion` · `vibe-coding-payments` · `world-model`
+**独立根目录**（12 slug）：`agent-billing` · `agentic-commerce` · `agentic-payments` · `ai-shopping` · `animation-library` · `data-engineering-agent` · `family-assistant` · `fashion` · `lifetime-deals` · `religion` · `vibe-coding-payments` · `world-model`
 
 ---
 
@@ -52,7 +52,7 @@
 | `web-scraping` | Web 数据链 | pillar | 六类可提取层全覆盖 |
 | `web-search-api` | Web 数据链 | spoke | 六类可提取层全覆盖 |
 
-## B 档 · 有效辐条（93 个）
+## B 档 · 有效辐条（95 个）
 
 > **主题簇路径**：21 簇见上表 §主题簇物理路径；建站器 [`website-builder/`](./website-builder/README.md) · CMS [`cms/`](./cms/README.md) 并列，非 `website-building/`。
 
@@ -69,7 +69,12 @@
 | `advertising-agent` | 企业销售与营销 | spoke · 新建 2026-07-01；KB only（发文走 `/blog`） |
 | `affiliate-marketing` | 企业销售与营销 | spoke |
 | `agent-for-desktop` | Agent 执行链 | spoke |
+| `agent-identity` | Agent 执行链 | spoke · KB only（新建 2026-09-02；发文走 `/blog`） |
+| `ai-employee` | Agent 执行链 | spoke · KB only（发文走 `/blog/ai-employee`）· 2026-09-02 |
+| `work-agent` | Agent 执行链 | spoke · KB only（发文走 `/blog`）· 2026-09-02 |
+| `workspace-agent` | Agent 执行链 | spoke · KB only（发文走 `/blog`）· 2026-09-02 |
 | `agent-memory` | Agent 执行链 | spoke |
+| `agent-runtime` | Agent 执行链 | spoke · KB only（新建 2026-09-02；发文走 `/blog`） |
 | `agent-sandbox` | Agent 执行链 | spoke |
 | `agent-skills` | Agent 执行链 | pillar |
 | `ai-homework-helper` | 教育与学习 | spoke |
@@ -115,6 +120,7 @@
 | `image-enhancer` | 媒体生产链 | spoke |
 | `image-relighting` | 媒体生产链 | spoke |
 | `image-to-video` | 媒体生产链 | spoke |
+| `interactive-video` | 媒体生产链 | spoke · KB only（新建 2026-09-02；发文走 `/blog`） |
 | `influencer-marketing` | 企业销售与营销 | pillar |
 | `ugc` | 企业销售与营销 | spoke · 新建 2026-07-25；KB only（发文走 `/blog`） |
 | `social-media-tools` | 企业销售与营销 | spoke · 新建 2026-07-26；KB only（发文走 `/blog`） |
@@ -211,5 +217,5 @@
 
 ---
 
-**统计**：A=12 · B=108 · C=14 · **总计 134**（不含上表 2 个 meta 文件；`multi-agent` 在 B 档标注，计一次；2026-07-26 新增 `social-media-tools`）
-Territory 归类：134/134 slug 已归入上表 A/B/C
+**统计**：A=12 · B=113 · C=14 · **总计 139**（不含上表 2 个 meta 文件；`multi-agent` 在 B 档标注，计一次；2026-09-02 新增 `work-agent`、`workspace-agent`、`agent-runtime`、`ai-employee`、`agent-identity`）  
+Territory 归类：139/139 slug 已归入上表 A/B/C

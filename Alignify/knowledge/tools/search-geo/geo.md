@@ -78,17 +78,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **搜索引擎内嵌生成式摘要**：经典 SERP 上的概览条、对话模式。
-- **AI 原生答案引擎**：检索 + 生成 + 引用列表一体化产品形态。
-- **通用助手 + 可选联网**：聊天产品中打开「搜索」或浏览器工具链路。
-- **操作系统 / 浏览器侧入口**：侧边栏、系统写作工具；**域名流量统计易低估**真实触达。
-- **垂直科研 / 代码 / 医疗**：引用规范与合规要求更高。
-- **第三方监测 SaaS**：Profound、Semrush AI Visibility、Similarweb Gen AI Intelligence、Otterly、Peec、Ahrefs Brand Radar、Promptwatch、Atomic AGI、AirOps、SE Ranking（GEO 套件）等——**细分定位**含纯监测、监测 + 内容、企业 API；以各站当前 SKU 为准。
-- **GEO-friendly 内容 / 优化套件**：常与 **SEO writing、brief、大纲** 工具链条相邻（业界盘点常把 **Surfer、Clearscope、Writesonic** 等与 AI 可见度议题放在同一采购讨论里——**是否算 GEO 专属**取决于是否强调 **摘录结构 / 引擎抽样验证**）。
-- **归因与流量侧**：Similarweb「AI Traffic」类、GA4 引荐维度自定义、部分监测商宣传的 **click-through** 叙事；**定义互不兼容**，不宜横向比「转化率倍数」营销句。
-- **`/llms.txt` 静态提案**：低成本占位；独立研究显示全站级「有/无」与引用率**未发现稳定因果**。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引 / ai-visibility） |
+|------|----------|--------------|------------------------------------------|
+| **A** | 搜索引擎内嵌生成式摘要 | AI Overviews / AI Mode | Google、Bing |
+| **B** | AI 原生答案引擎 | answer engine / native AI search | Perplexity 类 |
+| **C** | 通用助手 + 可选联网 | grounded chat | ChatGPT、Gemini Apps |
+| **D** | 操作系统/浏览器侧入口 | sidebar / system AI | Copilot in Edge 等 |
+| **E** | 垂直（科研/代码/医疗） | domain search | Consensus、Phind |
+| **F** | 第三方 GEO 监测 SaaS | AI visibility tracker | 见 [ai-visibility.md](ai-visibility.md) §外链索引 |
+| **G** | GEO 内容/优化套件 | GEO-friendly content | Writesonic 等——与监测捆绑 |
+| **H** | `/llms.txt` 静态提案 | llms.txt | 社区提案；效应见 §风险 |
 
 ---
 
@@ -155,7 +156,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **学界**：Princeton / IIT Delhi / Georgia Tech 等参与的 GEO 论文与 **GEO-Bench**；论文入口 [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)，书目元数据可参考 [Princeton · GEO 出版物页](https://collaborate.princeton.edu/en/publications/geo-generative-engine-optimization)。
 - **爬虫与站点政策**：[OpenAI · Bots](https://platform.openai.com/docs/bots)（GPTBot 等与 robots 相关说明）。

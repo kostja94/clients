@@ -39,16 +39,16 @@
 
 ---
 
-## 专题对照
+## 专题对照 / 扩展定义
 
-### 语音克隆 vs 语音合成 vs 变声：核心边界
+**克隆 vs TTS vs 变声 vs 翻译**：范式定义见 §词汇锚点；下表只列**买家体验差**与路由，产品名见 §外链索引。
 
-| 概念 | 输入→输出 | 保留什么 | 典型产品 |
-|------|----------|---------|---------|
-| **通用 TTS** | 文本 → 语音 | 不保留特定人声 | ElevenLabs Text-to-Speech（通用语音） |
-| **语音克隆 TTS** | 参考音频 + 文本 → 语音 | **保留特定人的声纹** | ElevenLabs Instant/Professional Cloning |
-| **实时变声** | 实时音频流 → 实时音频流 | 不保留原声——替换为目标声音 | Voicemod、Resemble AI real-time S2S |
-| **语音→语音翻译** | 源语言语音 → 目标语言语音 | 保留音色 + 翻译文本 | ElevenLabs Dubbing Studio |
+| 概念 | 输入→输出 | 保留什么 | 路由 |
+|------|----------|---------|------|
+| **通用 TTS** | 文本 → 语音 | 不绑定特定人声 | [text-to-speech.md](text-to-speech.md) |
+| **语音克隆** | 样本 + 文本 → 语音 | **特定声纹** | 本页 |
+| **实时变声** | 音频流 → 音频流 | 改身份、保留内容 | [voice-changer.md](voice-changer.md) |
+| **跨语言配音** | 源语音 → 目标语音 | 音色 + 译文 | [audio-translator.md](audio-translator.md) · [video-translator.md](video-translator.md) |
 
 ### 云端 API vs 本地开源：架构二分
 
@@ -161,7 +161,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - arXiv:2605.05611 — X-Voice: 30 语言零样本跨语言语音克隆（two-stage flow-matching, 0.4B）
 - arXiv:2604.11552 — MimicLM: Zero-Shot 语音模仿（自回归建模伪平行语音语料库）
@@ -177,8 +177,3 @@
 - CloneMyVoice.ai 2026 API Comparison — 8 家语音克隆 API 价格/延迟/质量横评
 
 ---
-
-
----
-
-**交叉引用**：语音克隆是 AI 唇形同步（[lip-sync.md](lip-sync.md)）的上游音频源——Vozo AI 内置 VoiceREAL™ 语音克隆与 LipREAL™ 唇形同步协同输出最终配音视频；ElevenLabs 为独立语音克隆/TTS 领域标杆，需搭配第三方 lip sync API（如 Sync.so）完成对口型。通用 TTS（[text-to-speech.md](text-to-speech.md)）提供不绑定特定人声的合成能力，与语音克隆共享底层模型但服务于不同的买家问题（「把文字变成声音」vs「用我的声音把文字变成声音」）。语音变声（[voice-changer.md](voice-changer.md)）是实时音频→音频映射，不经文本中间层，与语音克隆的 TTS 路线形成技术路线分叉。

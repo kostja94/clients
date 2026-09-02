@@ -88,32 +88,31 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **消费级文生音乐（prompt-to-song）**：以 Suno、Udio 为代表——输入文本 prompt 或歌词，**一键生成完整歌曲**（含人声）；强调速度、易用性和「惊喜感」；适合探索性创作和快速原型。典型特征：免费档有日/月额度限制，付费解锁商业授权和 stem 导出。
-- **专业编曲辅助（AI-augmented DAW）**：在传统 DAW（Logic Pro、Ableton Live）中嵌入 AI 辅助功能——智能和弦建议、自动鼓组编排、旋律变奏生成；**不替代**音乐人，而是加速已有技能的产出。与「一键出歌」不同，这类产品面向**已有制作能力**的用户。
-- **版权安全型（royalty-free generator）**：定位在「生成可安全商用的背景音乐」——不强调「像热门歌曲」，而强调「不撞版权」和「商业授权清晰」。典型场景：YouTuber、播客主、企业宣传片。代表如 TemPolor（一次性付费终身使用）、Soundraw（按 mood/genre 精确控制段落长度）、Mubert（API 优先、每月 500 首商用 $12）。
-- **API / B2B 集成型**：面向平台与应用的**音乐生成 API**——游戏引擎动态配乐（随玩家行为实时变奏）、短视频模板自动配乐、广告批量 A/B 素材；核心卖点是延迟、可变性和规模化成本。Mubert 支撑 Picsart 月均 300 万首生成；Producer（被 Google 收购）通过 Lyria 3 + Gemini 深度绑定 Google AI 订阅体系。
-- **人声合成 / 虚拟歌手型**：聚焦「AI 歌声」而非完整编曲——用户写词，AI 以特定声线演唱；常与 voice cloning 技术栈重叠。Ace Studio（$398 终身、140+ AI 歌手、MIDI+歌词驱动）、Musicfy（30–60 秒样本克隆声线、$9–70/月）是两种典型价格/控制粒度光谱的两端。
-- **开源 / 本地部署型**：AudioCraft（Meta）、Stable Audio Open 等——模型权重公开，可自托管微调；适合有 GPU 和研究能力的团队，但工程门槛远高于消费级 SaaS。
-- **DAW 插件型（VST3/AU plugin）**：以 Roland Melody Flip（与 Sony CSL 联合开发，分析导入音频的 BPM/调性/情绪后生成 300+ 创意 palette）、Google Infinite Crate（Lyria RealTime 模型、Apache 2.0 开源、NAMM 2026 演示）、LANDR Blueprints+Layers（Fair Trade AI 框架，训练数据获艺术家同意并补偿）为代表——**直接在宿主软件中**分析当前工程并生成匹配素材，输出 MIDI + audio 双轨，拖拽即用。核心理念是「嵌入已有工作流」而非替代 DAW。
-- **AI-原生生成式 DAW（generative DAW）**：MODULO（Dartmouth 论文项目、Tracktion 引擎、并行和弦生成+stem 分离+全功能混音台）、Mozart AI（ElevenLabs API 驱动、六轨 stem、实时 MIDI+audio 录制）、K.G.Studio（开源浏览器 DAW + LLM agent，类比「Cursor for DAW」——AI agent 在选定区域内执行音乐编辑工具）、Audiotool NEXUS（2026 年 1 月，多人协作 + 开放式 AI 工具开发平台，多个 AI 组件可在 DAW 内实时通信）——将 AI 生成**内建为工作站的默认交互范式**，而非挂在已有 DAW 上的插件。
-- **垂直场景型（video-to-music / SFX）**：以 Beatoven.ai 为典型（200 万用户、1500 万首生成、Maestro 模型在 300 万+授权曲目上训练）——上传视频后 AI 逐帧分析画面，自动生成与视觉节奏同步的配乐；同时提供 Maestro SFX 引擎（文字→音效）。Mubert 的 image-to-music 模式（上传图片生成匹配情绪的音乐）、Boomy 的「一键生成并分发至 Spotify」也可归入此列。这类产品不追求「写出热门歌曲」，而是解决**特定内容类型的配乐效率**。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 自回归 token 预测 | AR audio LM | Suno、Udio |
+| **B** | 潜空间扩散 Transformer | DiT / diffusion T2M | AudioX 系、Suno V5 叙事 |
+| **C** | 离散掩码 / 非自回归 | Mask-and-predict | OmniVoice 系（人声子任务） |
+| **D** | 符号→波形混合 | MIDI + stem 管线 | AIVA、Beatoven 部分 SKU |
+| **E** | DAW 插件 / 原生生成式 DAW | VST3 plugin / generative DAW | Roland Melody Flip、Infinite Crate、MODULO |
+| **F** | 垂直：视频→配乐 / image→music | video-to-music | Beatoven.ai、Mubert |
+| **G** | API / B2B 动态配乐 | music generation API | Mubert API、Producer（Lyria） |
+| **H** | 开源 / 本地权重 | open-weights music LM | AudioCraft、Stable Audio Open |
+
+**Type A vs B**（体验均「一键出歌」，底层不同）：A 为因果 token 序列；B 为潜空间去噪——媒体横评见 §对比与测评。
 
 ---
 
-## 行业注记：2026 年关键事件
+## 行业注记 · 2026 年关键事件
 
-以下事件显著改变了 AI 音乐生成赛道的竞争格局（来源：厂商官方发布 + 第三方科技媒体报道；非 Alignify 实测，非投资建议）：
+以下事件显著改变了赛道格局（来源：厂商官方 + 第三方媒体；**非** Alignify 实测）。**诉讼与和解、DSP 政策**全文见 §风险 · 合规；**产品名与 URL** 见 §外链索引；**横评观点** 见 §对比与测评——本段只列**架构拐点类型**：
 
-- **Google 收购 Producer（原 Riffusion）· 2026 年 2 月**：从开源 side project 到 Google Labs 正式产品，整合 DeepMind Lyria 3（音频）、Gemini（推理）、Veo（视频生成）、SynthID（水印）技术栈。三档 Google AI 订阅用户免费获对应 Producer 权益，将 AI 音乐创作嵌入 Google 生态。
-- **Mureka V8 + MusiCoT · 2026 年 1 月**：昆仑天工发布 Mureka V8，引入 MusiCoT（Music Chain-of-Thought）——生成前对整曲结构做全局推演，而非逐片段拼接。盲测声称在音乐结构、人声表现力、音频质量等维度超越 Suno V5。签约太合音乐，平台化对标「AI Spotify」。
-- **MiniMax Music 2.5 / 2.5+ · 2026 年 1–3 月**：首次实现 14 种段落级结构标签（Intro/Verse/Chorus/Bridge/Hook 等）的精确控制 + 物理级高保真人声合成。2.5+ 解锁纯器乐生成与跨风格融合（如「巴洛克×重金属」「中国风×奇幻史诗」）。中文流行乐体验被媒体评价为「从盲盒走向工程化」。
-- **Roland Melody Flip · 2026 年 3 月**：老牌音乐硬件厂商首次以 VST/AU 插件形态进入 AI 赛道，与 Sony CSL 联合开发。分析导入音频后生成约 300 种风格的创意片段，输出 MIDI+audio 双轨。Roland 同步发布「AI 音乐创作原则」——强调 AI 为 partner 而非 replacement。
-- **Audiotool NEXUS · 2026 年 1 月**：推出多人协作云 DAW + 开放式 AI 工具开发平台，社区可用 Cursor 等 LLM 辅助开发自定义 AI 音乐工具并接入平台，多个 AI 组件可实时通信。
-- **LANDR Blueprints + Layers + Reason Studios 收购**：LANDR 收购 Reason Studios 后推出两阶段「ethical AI」管线——Blueprints 生成多轨 song starter（含真实 intro/verse/chorus 结构），Layers 听辨已有内容后生成匹配器乐层。训练数据基于 Fair Trade AI Framework（艺术家同意+补偿）。
-- **三大厂牌诉讼走向和解**：2024 年 RIAA 起诉 → 2025 年 Warner 与 Suno/Udio 双和解、UMG 与 Udio 和解并共建授权平台 → Sony 仍在诉讼中（截至 2026 年 5 月，夏季可能出 fair use 判例）。Klay Vision 成为首个从三大厂牌+Merlin+Kobalt 全授权的替代平台。
-
+- **大厂收购垂直创作工具**（Google Labs 系整合 Lyria/Gemini/Veo）。
+- **结构控制升级**（Chain-of-Thought / 段落标签级生成前规划）。
+- **DAW+AI 插件与原生生成式 DAW** 两条工作流并入主流。
+- **Fair Trade / 全授权训练** 叙事与未和解厂商并存。
 
 ---
 
@@ -130,7 +129,7 @@
 
 ## 落地碎片（无先后）
 
-- **先定义交付场景再选工具**：需要「完整的歌（含演唱）」→ Suno/Udio/Mureka；只需「背景配乐（纯器乐）」→ Soundraw/Mubert/Loudly/Beatoven.ai；需要「我写的词被唱出来」→ Ace Studio/Musicfy；需要「管弦/影视配乐+MIDI 精细编辑」→ AIVA。
+- **先定义交付场景再选工具**：完整歌曲 → §外链索引 Suno/Udio/Mureka；纯 BGM → Soundraw/Mubert/Loudly/Beatoven；词生歌 → Ace Studio/Musicfy；管弦/MIDI → AIVA（详见 §工具与产品类型）。
 - **prompt 工程**：音乐 prompt 的精髓是**风格 + 情绪 + 乐器 + BPM + 结构标记**（如 "lo-fi hip-hop, chill, jazzy piano, vinyl crackle, 85 BPM, with intro and fade-out"）；堆砌过多风格词会降低风格辨识度。2026 年支持段落级标签的产品（MiniMax 2.5）可进一步指定 `[Verse] [Chorus] [Bridge]` 等结构标记。
 - **Stem 不是魔法**：当前 stem 导出的串音问题在低声部（bass）和鼓组（drums）上最明显——如需专业级混音，建议在 DAW 中**叠加真人演奏或采样**补足弱轨。2026 年 MozArt AI 将 stem 提升到六轨粒度（vocals + 5 种乐器分轨），但行业整体仍处于「够用但不完美」阶段。
 - **DAW 工作流集成三路径**：已有工程 → 用 Roland Melody Flip 或 Infinite Crate 插件直接在宿主内分析并生成匹配素材；从零开始 → 用 Suno/Udio 生成粗胚 → 导出 stem → DAW 精修；探索型 → 用 Producer（Google）的 agentic chat 做创意对话 → 导出元素到 DAW。
@@ -197,7 +196,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **技术论文**：[AudioX — Unified Audio Generation with DiT（ICLR 2026）](https://arxiv.org/abs/2503.10522) · [Khala — Scaling Acoustic Token LMs（May 2026）](https://arxiv.org/abs/2605.01790) · [DUO-TOK — Dual-Track Semantic Music Tokenizer](https://huggingface.co/papers/2511.20224) · [LATENTFT — Latent Fourier Transform for Music Structure（ICLR 2026 Oral）](https://github.com/maswang32/latentfouriertransform) · [Siren — LM-Based T2A via Isolated Transformers](https://arxiv.org/abs/2505.xxxxx)（2025）
 - **法律与产业**：[Suno/Udio 诉讼时间线与和解分析（Dynamoi, 2026）](https://dynamoi.com/learn/statistics/ai-music-copyright-cases-timeline) · [UMG-Udio 和解公告（Oct 2025）](https://musically.com/2025/10/30/umg-settles-udio-lawsuit-companies-plan-new-ai-music-service-together/) · [Warner-Suno 和解信号（PCMag, 2025）](https://me.pcmag.com/en/ai/30194/your-favorite-ai-music-generators-might-live-on-if-they-give-labels-enough-cash) · [Suno/Udio 版权战对音乐人的意义（We Rave You, May 2026）](https://weraveyou.com/2026/05/suno-udio-umg-copyright-lawsuit-musicians-2026/)

@@ -52,6 +52,8 @@
 
 ## 专题对照：架构 × 建站 × 内容存储
 
+> 术语定义见 §词汇锚点；Hub 概念三问见 [`content-management-system`](./content-management-system.md#概念基线三问ssot)。下表只列**买家体验差**。
+
 | 维度 | **Headless CMS（API SaaS/OSS）** | **Coupled / Visual Builder** | **Traditional CMS** | **Git-based** |
 |------|----------------------------------|------------------------------|---------------------|---------------|
 | 展示层 | 前端自建 | **平台内置** | 主题/插件 | SSG/SSR 读 repo |
@@ -59,13 +61,7 @@
 | SEO 责任 | **前端** SSR/SSG/ISR | 平台模板 + 托管 | 主题 + 插件 | 构建模板 |
 | 运行时 API | **是**（REST/GraphQL） | 部分（Webflow Cloud 等） | 可选（WPGraphQL） | 多为构建期 |
 | 平台锁定 | schema/API 迁移成本 | **强**（画布/托管） | 中（数据可迁，主题重写） | **低**（Git） |
-| Alignify slug | **`headless-cms`** | **`website-builder`** | 本页 §Hybrid | 本页 Type C |
-
-**概念基线三问（选型前对齐）**
-
-1. **是什么** — 管理结构化内容、经 API（或 Git 构建链）交付、**不**决定页面长什么样的 CMS。  
-2. **有哪些类型** — 架构（Traditional / Decoupled / Headless / Hybrid）× 部署（SaaS / OSS / Git）× 用途（WCM vs 文档 vs 电商）。  
-3. **有哪些知名产品** — Contentful、Sanity、Strapi、Payload、Storyblok、Hygraph（born-headless）；WordPress/Webflow/Wix（**非** Headless 主路径）。
+| Alignify slug | **`headless-cms`** | **`website-builder`** | [`open-source-cms`](./open-source-cms.md) | 本页 Type C |
 
 ---
 
@@ -101,7 +97,9 @@
 
 ---
 
-## 六产品速览（2026；非排名 · 产品 SSOT）
+## 六产品速览（2026 · 旗舰 SSOT；非排名）
+
+> 完整 URL 与官方一句话见 **§外链索引**；OSS 深度见 [`open-source-cms`](./open-source-cms.md)。
 
 | 产品 | 差异化 | 2026 注记 |
 |------|--------|-----------|
@@ -191,12 +189,17 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**（产品 URL 见 §外链索引）
 
 - [CMSWire — DXP 2026 / Headless Grows Up / Gartner WCM MQ](https://www.cmswire.com/digital-experience/what-you-need-to-know-about-digital-experience-platforms/)
 - [CMSWire — Figma Payload deal](https://www.cmswire.com/digital-experience/when-cms-meets-ux-design-what-figmas-payload-deal-really-means/)
 - [InfoQ — Nuxt Studio OSS (2026-02)](https://www.infoq.com/news/2026/02/nuxt-studio-cms/)
 - [Replatform Radar — platform shopping cooled / AEM→Headless](https://replatformradar.com/blog/platform-shopping-has-cooled)
+
+**站内 / 底稿**
+
 - 网搜底稿：[headless-cms-web-search-2026-08-28.md](../../../temp/headless-cms-web-search-2026-08-28.md)
 
 ---

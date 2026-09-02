@@ -105,17 +105,26 @@
 
 ---
 
-## 形态谱系（Hub 级，无 URL 表）
+## 形态谱系（Hub 级架构 SSOT；无产品 URL 表）
 
-| 形态 | 典型买家 | 深入阅读 |
-|------|----------|----------|
-| 从零生成 | 营销、概念艺术、API | `image-generator` |
-| 改已有图 | 设计师、电商 | `image-editor` |
-| 提质放大 | 摄影师、档案 | `image-enhancer` |
-| 改光照 | 产品/人像后期 | `image-relighting` |
-| 换底抠图 | 电商、证件白底 | `background-changer` |
-| Listing 置景 / 自住改造 | 经纪人、业主、设计师 | `virtual-staging` · `interior-design` |
-| 垂直交付 | Logo/海报/职业照/纹身 | 对应 spoke |
+| Type | 形态 / 架构特征 | 典型买家 | 深入阅读 |
+|------|----------------|----------|----------|
+| **A** | 从零生成 T2I/I2I | 营销、概念艺术、API | [image-generator.md](image-generator.md) |
+| **B** | 改已有图：Generative Fill / Inpainting | 设计师、电商 | [image-editor.md](image-editor.md) |
+| **C** | 提质放大：超分/降噪（不改语义） | 摄影师、档案 | [image-enhancer.md](image-enhancer.md) |
+| **D** | 只改光照 / relight | 产品/人像后期 | [image-relighting.md](image-relighting.md) |
+| **E** | Matting + 换底 + 批量 API | 电商、证件白底 | [background-changer.md](background-changer.md) |
+| **F** | Listing 虚拟置景 / MLS 披露 | 经纪人 | [virtual-staging.md](../3d-spatial/virtual-staging.md) |
+| **G** | 自住 redesign / virtual renovation | 业主、设计师 | [interior-design.md](../3d-spatial/interior-design.md) |
+| **H** | Likeness 约束职业照 | 个人/HR | [headshot-generator.md](headshot-generator.md) |
+| **I** | 矢量 Logo + Brand Kit | 早期创业者 | [logo-generator.md](logo-generator.md) |
+| **J** | 海报 = 生图 + 排版 + 文字 | 营销、活动 | [poster-generator.md](poster-generator.md) |
+| **K** | 纹身风格 + 试戴 / Stencil | 纹身客户 | [tattoo-generator.md](tattoo-generator.md) |
+| **L** | 数字人**视频**（非静态头像） | 培训、营销 | [avatar.md](avatar.md) |
+| **M** | 静态图 → I2V | 动画、社交 | [image-to-video.md](../video/image-to-video.md) |
+| **N** | OG / Twitter Cards 社交预览图 | 开发者、内容站 | [social-cards-generator.md](social-cards-generator.md) |
+
+完整 T2I/I2I 旗舰 URL 表**仅** [image-generator.md](image-generator.md) §外链索引；Hub 不重复维护模型榜。
 
 ---
 
@@ -137,27 +146,15 @@
 
 ---
 
-## 外链索引（Hub 级——产品链接见 image-generator §外链索引）
+## 外链索引（Hub 级——产品 URL 见 image-generator §外链索引）
 
 | 名称 | 一句话 | URL |
 |------|--------|-----|
 | **AI Image Generator Market Report** | Grand View Research 2026 市场规模 | [grandviewresearch.com](https://www.grandviewresearch.com/industry-analysis/ai-image-generator-market-report) |
 | **EU AI Act Article 50** | 合成内容透明度义务（2026-08-02 生效） | [eur-lex.europa.eu](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) |
 | **C2PA 规范** | Coalition for Content Provenance and Authenticity | [c2pa.org](https://c2pa.org/) |
-| **Midjourney** | 旗舰 T2I 平台（V8.1） | [midjourney.com](https://www.midjourney.com/) |
 
----
-
-## 工具与产品类型（Hub 级，详情见各 spoke）
-
-| 类型 | 典型工具 | 深入阅读 |
-|------|---------|----------|
-| T2I/I2I 生成 | Midjourney, GPT-Image-2, Ideogram 4.0, FLUX.2 | [image-generator.md](image-generator.md) |
-| 图像编辑（inpainting/outpainting） | Photoshop Firefly, Runway | [image-editor.md](image-editor.md) |
-| 图像增强/超分 | Topaz, Magnific | [image-enhancer.md](image-enhancer.md) |
-| 重打光/光照编辑 | Relight AI, IC-Light | [image-relighting.md](image-relighting.md) |
-| 抠图换底 | Photoroom, Remove.bg | [background-changer.md](background-changer.md) |
-| Logo/品牌 Kit | Looka, Hatchful | [logo-generator.md](logo-generator.md) |
+*T2I/I2I 旗舰产品（Midjourney、GPT-Image-2、Ideogram、FLUX.2 等）完整 URL 表 → [image-generator.md](image-generator.md) §外链索引。*
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -165,7 +162,14 @@
 
 ---
 
-## 延伸阅读 · 站内知识块
+## 延伸阅读 · 站内外
+
+**站外**
+
+- 完整行业注记、旗舰 API 速查与合规框架 → [image-generator.md](image-generator.md) §行业注记 / §风险 · 合规
+
+**站内**
+
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）
 - Listing 置景：[virtual-staging.md](../3d-spatial/virtual-staging.md)
 - 室内设计：[interior-design.md](../3d-spatial/interior-design.md)

@@ -79,13 +79,17 @@
 
 ---
 
-## 形态谱系
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **桌面专业插件（Desktop Professional Plugin）**：以 Vividon（2026 年 4 月新发布——Photoshop 插件——100+ 光照预设——参考匹配——非破坏性图层——$10-55/月）和 Luminar Neo Relight AI（3D 深度感知——前景/背景独立——$9.95/月或 $99 一次性）为代表——面向需要高控制度和专业工作流集成的摄影师。核心价值：不离开 Photoshop/Lightroom——照片编辑选光照是自然的工作流延伸而非工具跳转。
-- **云端 API 重打光服务（Cloud API Relighting Service）**：以 IC-Light V2（文本驱动——WaveSpeedAI API——~$0.20/图——5 方向+文本控制）和 Bria Fibo Relight（商业安全——11+ 风格——$0.04/图——Scene-Aware 场景分析）为代表——面向开发者和企业——将重打光集成到自有应用和自动化工作流中。核心价值：可扩展性和程序化控制——不受 GUI 速度限制。
-- **Web 交互式重打光（Web Interactive Relighting）**：以 Higgsfield Relight（3D 方向板+软硬光+色温——实时交互——也支持视频）和 Clipdrop Relight（Stability AI——移动虚拟光源——$7/月——配背景去除和超分）为代表——无需安装——浏览器即用。核心价值：最低的尝试成本——"我想看看重打光能否解决我的问题"的最快入口。
-- **电商专用重打光（E-Commerce Specialized Relighting）**：以 Photoroom AI Relight（批量 250 张——分析并自动改善产品光照——光方向/强度/色温调整——$11/月——与虚拟模特集成）为代表——专为产品图和目录设计。核心价值：不是"一张图的光照艺术"而是"一千张图的光照一致性"——这是电商特有的需求维度。
-- **免费/开源重打光（Free/Open-Source Relighting）**：以 Dreamina by CapCut（完全免费——文本驱动——Seedream 5.0——AI Agent 批处理 40 张——区域画笔精细控制）和 Qwen-Edit-Relight LoRA（阿里通义千问——双 LoRA 架构——12 种光照场景——92% 光照保真度——ComfyUI/SD WebUI——8GB VRAM——免费开源）为代表。核心价值：零成本——但需要技术能力（开源）或接受平台锁定（免费但非开源）。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 桌面专业插件：PS/LR 集成、3D 深度感知、非破坏性图层 | Desktop relight plugin, Photoshop relight | Vividon、Luminar Neo Relight AI |
+| **B** | 云端 API：文本/参考光照驱动、程序化集成 | Cloud relight API, IC-Light | IC-Light V2、Bria Fibo Relight |
+| **C** | Web 交互：浏览器 3D 光照板、零安装 | Web interactive relight, Higgsfield relight | Higgsfield Relight、Clipdrop Relight |
+| **D** | 电商专用：批量产品图重打光+虚拟模特一站式 | E-commerce relight, product photo lighting | Photoroom AI Relight |
+| **E** | 免费/开源：文本驱动或 ComfyUI 节点、AI Agent 批处理 | Free OSS relight, Qwen-Edit-Relight | Dreamina by CapCut、Qwen-Edit-Relight LoRA |
+
+**Type A vs B**（均改光照，交付不同）：A 为**编辑器内非破坏性图层**；B 为**HTTP API 按图计费**——电商大批量优先 B/D。
 
 ---
 
@@ -106,19 +110,7 @@
 
 ---
 
-## 工具与产品类型
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|---------------------|-------------|------|
-| **Desktop Plugin**（Vividon, Luminar Neo Relight AI） | Photoshop/Lightroom 集成，3D 深度感知，非破坏性图层 | 专业摄影师——"不离开我的编辑器" |
-| **Cloud API Service**（IC-Light V2, Bria Fibo Relight） | 文本/参考光照驱动，程序化集成，商业安全训练数据 | $0.04-0.20/图——开发者和企业——规模化 |
-| **Web Interactive Tool**（Higgsfield Relight, Clipdrop Relight） | 浏览器 3D 光照交互，零安装，也支持视频 | $7/月起——"试试重打光能不能解决我的问题"的最快入口 |
-| **E-Commerce Specialist**（Photoroom AI Relight） | 批量产品图重打光+虚拟模特+背景去除一站式 | $11/月——电商专用——光照一致性而非光照艺术 |
-| **Free/OSS Relighting**（Dreamina by CapCut, Qwen-Edit-Relight LoRA） | 免费/开源，文本驱动或 ComfyUI 节点，AI Agent 批处理 | 零成本——但平台锁定或需要技术能力 |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话 | URL |
 |------|--------|-----|
@@ -140,7 +132,9 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - arXiv — TokenLight（CVPR 2026）: Precise Lighting Control in Images using Attribute Tokens — `arxiv.org/abs/2604.15310`
 - arXiv — PIXLRelight（Oxford, 2026）: Controllable Relighting via Intrinsic Conditioning — `arxiv.org/abs/2605.18735`
@@ -152,10 +146,8 @@
 - WaveSpeedAI — IC-Light V2 和 Bria Fibo Relight 产品公告（2026）
 - Filmora — "Luminar Neo Relight AI Review 2026: Pro Lighting Alternative"
 
----
+**站内**
 
-
----
-## 延伸阅读 · 站内知识块
 - 品类 Hub：[image.md](image.md)
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）
+- 天空替换叙事：[image-editor.md](image-editor.md) §Sky AI

@@ -91,14 +91,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **原生对话式 AI 搜索**：从第一天即围绕「提问—引用答案」设计增长与付费点。
-- **传统搜索引擎 + 生成式摘要**：在既有索引上叠加 **AI Overviews**、**AI Mode** 等；**默认是否展开、地域差异**影响体验。
-- **聊天产品 + 联网开关**：通用 **LLM** 内嵌「Search / 联网」工具，产品边界介于 **search-engine** 与 **llm**。
-- **开发者向 / Pro**：同一品牌下再卖 **API** 或高阶研究——与 [web-search-api.md](../web-data/web-search-api.md) 交叉。
-- **区域与合规分叉**：同一全球品牌在不同司法辖区的功能列表可能不一致——**以当地产品页为准**。
-- **与站内搜索的混淆**：企业 **portal / 文档站** 内检索有时也被口语称为「搜索」，但索引多在**私域**；本页 **search-engine** 语境默认是**公网或可公开访问的网页证据链**，除非文内另作说明。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 搜索引擎内嵌生成式摘要 | AI Overviews / AI Mode | Google、Bing Copilot |
+| **B** | AI 原生答案引擎（检索+生成一体） | native AI search / answer engine | Perplexity、Brave Leo |
+| **C** | 通用 LLM + 联网开关 | grounded chat / web search | ChatGPT Search、Claude Web |
+| **D** | 垂直科研/开发检索 | academic / dev search | Consensus、Phind |
+| **E** | 区域/语言优先独立索引 | privacy-first search | Brave Search |
+| **F** | 开发者向 Pro / API 层 | search API for agents | 与 [web-search-api.md](../web-data/web-search-api.md) 交叉 |
+
+GEO 监测与 citation 策略见 [geo.md](geo.md)、[ai-traffic-and-citation-sources.md](ai-traffic-and-citation-sources.md)——本页不重复引用域名排行。
 
 ---
 
@@ -151,23 +155,15 @@
 | **Brave Search** | 隐私优先搜索引擎 + AI Summarizer，独立索引（非 Google/Bing 代理） | [search.brave.com](https://search.brave.com/) |
 | **Andi** | 对话式 AI 搜索，以视觉卡片式呈现结果，强调反垃圾和隐私 | [andisearch.com](https://andisearch.com/) |
 
-### 行业注记 · 2026 年 AI 搜索格局
-
-- **「零点击」加剧**：Google AI Overviews 在全球 100+ 国家推出后，传统有机链接点击率持续下滑——内容生态与搜索引擎之间的价值分配尚未重建。
-- **Perplexity vs Google 的对决**：Perplexity 以独立 AI 搜索 + Instant Buy + Comet 浏览器三线扩展，Google 以 Search + Gemini 一体化防御——2026 年两者都在验证「订阅制 AI 搜索是否可成为独立商业模式」。
-- **You.com 从消费级退场**：2025-2026 年从消费级 AI 搜索转型为企业搜索 API 平台（$100M Series C @ $1.5B）——独立 AI 搜索创业公司的 B2B 出口路径成为行业信号。
-- **GEO 成为 SEO 必修课**：约 15-25% 搜索流量来自 AI 引擎，结构化数据（Schema/JSON-LD）和实体标识远超传统 blue link 时代的重要性。
-- **区域合规分叉**：欧盟 DMA 对默认搜索引擎的约束、中国百度封闭生态、印度/东南亚本地语言需求——AI 搜索的区域化合规成为新维度。
-
 ### 对比与测评（第三方；观点非官方）
 
+**2026 年格局注记**（叙事层；非排名）：Google AI Overviews 扩大后有机 CTR 承压；Perplexity 与 Google Search+Gemini 验证订阅制 AI 搜索；You.com 消费级退场转企业 API（见 [web-search-api.md](../web-data/web-search-api.md)）；GEO 与结构化数据重要性上升——策略见 [geo.md](geo.md)。
 
-> **产品动态**：You.com 已于 2025–2026 年从消费级 AI 搜索转向企业搜索 API 平台（$100M Series C @ $1.5B，现为 DuckDuckGo/Windsurf/Databricks 等提供搜索 API），参见 [web-search-api.md](../web-data/web-search-api.md) 中的 You.com Search API 条目。本文不再将其列为消费搜索产品。
 2025–2026 年英文科技媒体与社区常比较 **Google AI Mode**、**Perplexity**、**ChatGPT 联网**等在**引用透明度、多模态、深度研究耗时**上的差异；共识更多是「**没有单一全能**」，而是按**是否刚需 Google 生态登录**、**是否重视逐条引用**、**是否愿意付订阅**来选。**AI 浏览器**横评则会单独测 **RAM**、**自动化权限**与 **SPA 稳定性**——与纯 **AI 搜索**的「答得准不准」评测维度**不完全重叠**。中文社区亦常讨论**国内可访问性、支付与发票、中文信源覆盖**，与英文评测维度并列时需单独建表。*本小节为网摘综合，非 Alignify 实测。*
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **站内相邻知识块**：[web-search-api.md](../web-data/web-search-api.md)（程序化检索 API）、[browser.md](../agent/browser.md)（AI 浏览器与壳层能力）。
 - **经典搜索引擎机制**（爬虫/索引/排名，非本页重点）：[`how-search-engine-works.md`](../seo/how-search-engine-works.md)（与 `/seo/how-search-engine-works` 配套）等 SEO 专册。
@@ -175,4 +171,3 @@
 - **Alignify Tools 正文**：产品清单与选型步骤以线上 `/zh/tools/search-engine` 为准；本知识块**不**替代站内长文教程，仅作概念索引与外链锚点。
 - **Perplexity 官方博客**：[perplexity.ai/blog](https://www.perplexity.ai/blog)——AI 搜索产品路线图与功能更新入口
 - **Google Search Central Blog**：[developers.google.com/search/blog](https://developers.google.com/search/blog)——Google 搜索官方动态，含 AI Mode/Overviews 更新
-- **Liner 产品文档**：[liner.com](https://liner.com/)——AI 搜索+研究平台，含 Liner Scholar（4.6 亿论文库）

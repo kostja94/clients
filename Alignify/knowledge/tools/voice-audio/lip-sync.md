@@ -81,14 +81,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **纯 API/SDK 唇形同步引擎**：以 REST API 或 Replicate/HuggingFace 模型卡形式提供，输入视频 + 音频，输出处理后的视频。目标用户是**开发者与 SaaS 平台**，而非终端创作者。Sync Labs 为此类代表，Wav2Lip（开源）为社区基准。
-- **一体化 AI 配音平台**：将翻译、TTS/语音克隆、唇形同步、字幕生成打包为单一 Web/App 产品。目标用户是**内容创作者、营销团队**，追求「上传→一键出片」。Vozo、Rask AI、Dubverse 属于此类。唇形同步在此类产品中是差异化卖点而非独立商品。
-- **数字人/虚拟主播平台**：先创建或选择一个数字人形象，再通过 TTS/实时音频驱动其唇形与面部动画。HeyGen、Synthesia、D-ID 等。唇形同步是「数字人引擎」的一个输出层。
-- **实时交互 Agent 平台**：将唇形同步与实时对话 AI 结合，产生可在视频通话、直播、游戏中互动的 AI 角色。Runway Characters 为 2026 年新范式代表——从单张照片生成可实时对话的视频流。
-- **电影级视觉配音工具**：面向专业后期制作，从 DI 母版介入，在保留演员原始表演的前提下修改唇部运动。Flawless TrueSync 是目前唯一进入院线发行的此类产品。需演员授权与二次录音，非零样本。
-- **开源/研究级方案**：Wav2Lip、SadTalker、MuseTalk 等 GitHub 开源项目，适合学术研究、原型验证或自建管线，但需要自行处理工程化与规模化问题。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 纯 API/SDK 唇形引擎 | lip sync API / zero-shot | Sync Labs、Wav2Lip |
+| **B** | 一体化配音平台（含唇形） | AI dubbing with lip sync | Vozo、Rask、Dubverse |
+| **C** | 数字人/虚拟主播（TTS 驱动口型） | talking avatar platform | HeyGen、Synthesia |
+| **D** | 实时对话 Agent（流式唇形） | real-time conversational agent | Runway Characters、LiveAvatar |
+| **E** | 电影级视觉配音 | film-grade visual dubbing | Flawless TrueSync |
+| **F** | 开源/研究方案 | open-source lip sync | Wav2Lip、SadTalker |
+
+完整视频翻译管线见 [video-translator.md](video-translator.md)——本页只锚 **唇形对齐** 环节。
 
 ---
 
@@ -158,7 +162,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **站内相邻知识块**：[video-translator.md](video-translator.md)（AI 视频翻译/配音——lip sync 是其管线环节）、[voice-cloning.md](voice-cloning.md)（语音克隆——lip sync 的上游音频源）、[avatar.md](../image/avatar.md)（AI 数字人——lip sync 是其视觉输出层）、[text-to-speech.md](text-to-speech.md)（TTS 语音合成——lip sync 的另一上游）、[animation-generator.md](../video/animation-generator.md)（AI 动画——动画角色唇形同步）。
 - **开源基准**：Wav2Lip（GitHub）及其社区变体（Wav2Lip-HD、Wav2Lip-GFPGAN 等）是学术研究与自建管线的起点。

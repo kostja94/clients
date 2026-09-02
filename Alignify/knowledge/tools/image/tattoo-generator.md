@@ -53,13 +53,17 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type A — 专用 AI 纹身设计工具**：从底层就为纹身场景训练和设计——内置纹身风格分类（30+ 风格）、线稿清晰度优化、遮盖方案、字体模板、身体部位预览。代表方向：BlackInk AI（324K+ 月访问量，市场领导者）。功能最完整，输出质量最接近可纹身标准，但需付费（$15/月）。
-- **Type B — AI 纹身移动 App（虚拟试戴优先）**：以移动端为核心体验——AR 虚拟试戴、相机实时预览、社交分享、应用内购买。代表方向：InkGenie（$4.99-24.99 信用点制）、InkTry（端侧试戴，照片隐私不出设备）、InkPulse AI（内置编辑+透明 PNG 导出）、InkSight AI（$7.99/周 或 $44.99/年）。面向「在手机上看纹身效果」的消费场景。
-- **Type C — 风格探索型 AI 纹身工具**：以快速生成同一主题的多种风格变体为核心——帮助用户在风格间做出选择。代表方向：TattoosAI（$5/月起，18+ 风格过滤）。68K+ 月访问量，增长+10.4%。
-- **Type D — 通用 AI 图像生成器兼做纹身**：以通用 T2I 生成纹身风格图像——灵活性和画质高，但无纹身专属功能。模型选型见 [image-generator.md](image-generator.md)。
-- **Type E — 免费/轻量在线生成器**：浏览器内快速生成，零安装——通常基于 Stable Diffusion 或其他开源模型。代表方向：Perchance（完全免费、无限制使用）、ArtGuru（免费、每日额度）、Canva Magic Media（50 次免费生成）。适合初次尝试和灵感探索。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 专用纹身设计：30+ 风格、线稿清晰度、遮盖方案、字体模板、身体预览 | AI tattoo designer, tattoo design AI | BlackInk AI |
+| **B** | 移动 App 虚拟试戴优先：AR/2D 皮肤叠加、相机实时预览 | AI tattoo app, tattoo try-on AR | InkGenie、InkTry、InkPulse AI、InkSight AI |
+| **C** | 风格探索：同一主题多风格变体快速生成 | AI tattoo style explorer, tattoo variation generator | TattoosAI、InkGenie |
+| **D** | 通用 T2I 兼做纹身：灵活画质高，无纹身专属功能 | AI image for tattoo, Midjourney tattoo | 见 [image-generator.md](image-generator.md) |
+| **E** | 免费/轻量在线：浏览器内快速生成，零安装 | free AI tattoo generator, online tattoo maker | Perchance、ArtGuru、Canva Magic Media |
+
+**Type A vs E**（均出纹身图案，深度不同）：A 为线稿导出+遮盖+身体预览；E 为零成本灵感探索——正式刺青前仍须艺术家评估可纹性（§风险 · 合规）。
 
 ---
 
@@ -84,19 +88,7 @@
 
 ---
 
-## 工具与产品类型（「AI tattoo generator」「AI tattoo designer」「tattoo design AI」等检索里常混在一起的品类；非穷尽）
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **专用 AI 纹身工具**（AI tattoo designer, tattoo design AI） | BlackInk AI、TattoosAI | 纹身风格分类+遮盖方案+字体模板+线稿导出 |
-| **AI 纹身移动 App**（AI tattoo app, tattoo try-on AR） | InkGenie、InkTry、InkPulse AI、InkSight AI | AR 虚拟试戴+移动端优先，信用点/订阅制 |
-| **风格探索型**（AI tattoo style explorer, tattoo variation generator） | TattoosAI、InkGenie | 同一主题多风格变体快速生成 |
-| **通用 AI 图像即纹身生成**（AI image for tattoo, Midjourney tattoo） | 通用 T2I（见 image-generator） | 画质好但无纹身专属功能 |
-| **免费在线生成**（free AI tattoo generator, online tattoo maker） | Perchance、ArtGuru、Canva Magic Media | 零成本探索创意，适合入门 |
-
----
-
-## 外链索引（工具与产品；无排序优先级）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话（据公开页面或综述归纳） | URL |
 |------|--------------------------|-----|
@@ -126,7 +118,9 @@ Toolworthy 2026 年横评将 InkPulse AI 列为「编辑能力最佳」——其
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - [I tested the 6 best AI tattoo generators in 2026 (JotForm)](https://www.jotform.com/ai/best-ai-tattoo-generator/)
 - [Best AI Tattoo Generators in 2026 (Programming Insider)](https://programminginsider.com/best-ai-tattoo-generators-in-2026/)
@@ -135,10 +129,7 @@ Toolworthy 2026 年横评将 InkPulse AI 列为「编辑能力最佳」——其
 - [Best AI for Tattoo Designs: 9 Tools to Create Unique Ideas (StringLabs)](https://stringlabscreative.com/best-ai-for-tattoo-designs/)
 - [Best AI Tattoo Generator: Custom Designs Guide 2026 (Apatero)](https://apatero.com/blog/ai-tattoo-generator-design-ideas-2026)
 
----
+**站内**
 
-
----
-## 延伸阅读 · 站内知识块
 - 品类 Hub：[image.md](image.md)
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）

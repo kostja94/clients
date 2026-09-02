@@ -146,12 +146,21 @@
 | **Substack** | Newsletter-first | [substack.com](https://substack.com/) |
 | **W3Techs — CMS** | 份额 | [w3techs.com/technologies/overview/content_management/](https://w3techs.com/technologies/overview/content_management/) |
 
+### 对比与测评（第三方；观点非官方）
+
+- **born-blog vs 通用 builder**：Ghost/Substack 偏出版 Newsletter；Wix/Squarespace 偏营销站点——W3Techs 份额≠ blog-only 最优（§外链索引 W3Techs 行）。
+- **托管 vs 自托管**：WordPress.com 与 WordPress.org 勿混——OSS 深度见 [open-source-cms.md](../cms/open-source-cms.md)。
+
+*观点非官方。*
+
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
-- 调研底稿：[blog-cms-web-search-2026-08-28.md](../../temp/blog-cms-web-search-2026-08-28.md)
-- 正式文 Brief：[blog-website-builder.md](blog-website-builder.md)
+**站内 / 底稿**
+
+- 调研底稿：[blog-cms-web-search-2026-08-28.md](../../../temp/blog-cms-web-search-2026-08-28.md)
+- 正式文 Brief：[../../insights/_briefs/blog-website-builder.md](../../insights/_briefs/blog-website-builder.md)
 
 ---
 

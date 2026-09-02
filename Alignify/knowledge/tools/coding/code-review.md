@@ -1,12 +1,18 @@
 # AI 代码审查（Code review / 代码质量检查）· 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI code review / PR 审查**——对 **PR/MR** 或本地变更做自动或半自动审阅，输出行内评论、摘要或与 **CI** 联动；验收以**上下文范围、噪声控制与合并工作流集成**为主。本页为 **AI 代码审查产品 SSOT**（完整 URL 表仅此一处）；被动补全 → [code-completion.md](code-completion.md)；终端 AI → [cli.md](cli.md)；IDE 内联审查 → [ide.md](ide.md)。
+
 **材料范围**：公开网络检索（各产品官网首页与帮助文档、第三方技术博客与基准说明摘要）；**未**把 Alignify 站内 Tools 正文 JSON 当作独立事实来源复述。**定价、配额与功能边界以各厂商当前页面及合同为准**。网摘整理日期 **2026-04-21**；**2026-04-22** 与线上 `content/tools/*/code-review.md` 对齐修订（五款工具、无 Qodo）。
 
 **站内对照**：[alignify.co/tools/code-review](https://alignify.co/tools/code-review) · `/zh/tools/code-review` · 正文与内链拓扑见 [tools-articles-internal-links.md](../../internal-links/tools-articles-internal-links.md) §1.5 与 **附录 C §9**（试点 href 台账）
 
 **Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) · [knowledgehub/tools/README.md](./README.md)
 
-## 与相邻 slug 分流
+**站内相邻**：[code-completion.md](code-completion.md) · [cli.md](cli.md) · [ide.md](ide.md)
+
+---
+
+## 与相邻 slug 分流（避免混买混评）
 
 | 维度 | **`code-review`（本页）** | **`code-completion`** | **`cli`** |
 |------|--------------------------|-----------------------|-----------|
@@ -42,6 +48,8 @@
 
 ## 专题对照 / 扩展定义
 
+**人工 vs AI、PR 机器人 vs 工作流平台**：术语定义见 §词汇锚点；下表只列**买家体验差**，不重复术语。
+
 | 维度 | **传统人工审查** | **AI 辅助审查** |
 |------|------------------|-----------------|
 | **一致性** | 依赖评审者状态与经验 | 可对每条 **PR** 跑相同检查基线；需注意模型幻觉与漏报 |
@@ -53,6 +61,8 @@
 |------|----------------------|------------------------------|
 | **典型能力** | 打开 **PR** → 评论与建议 | **Stack**、**merge queue**、收件箱、指标、与 **Agent** 同一界面 |
 | **买家心智** | 在现有 **Git 托管**上「加一层 AI」 | 愿意换用或深度嵌套「从分支策略到合并」的一套工具 |
+
+架构形态（托管 App / 队列平台 / 图谱 / Agent 编排 / 左移）→ **§形态谱系**；产品规格与 URL → **§外链索引**。
 
 ---
 
@@ -76,13 +86,19 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **托管 Git 内嵌应用型**：以 **GitHub App** 等形式_comment on PR_，配置多为 **YAML** 或控制台。
-- **审查 + 分支/队列平台型**：在 **stacked PR**、**merge queue**、收件箱层面一体化，**AI** 为其中一层能力。
-- **「上下文层 / 架构图谱」型**：强调跨服务、工单与文档的统一上下文，审查与规划、生成共享同一知识模型。
-- **验证层 / Agent 编排型**：多 **Agent** 并行审 **PR**、可接 **MCP**、与编码 **Agent** 循环直到评论清零；部分附带**自动生成/运行测试**（如沙箱内测）。
-- **本地与左移**：在提交或 **IDE** 内先跑审查，减少 **PR** 往返。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 托管 Git 内嵌应用，打开 **PR** 即评论 | AI PR reviewer / GitHub App | CodeRabbit |
+| **B** | **Stacked PR**、**merge queue**、收件箱与 **AI** 一体化 | Stacked PR / merge queue 套件 | Graphite |
+| **C** | 跨服务/工单/文档统一上下文，审查与规划共享知识模型 | Context layer / architecture graph | Bito |
+| **D** | 多 **Agent** 并行审 **PR**、**MCP**、迭代闭环；可含自动生成/运行测试 | Agent orchestration / verification layer | Greptile（含 **TREX**） |
+| **E** | 提交前或 **IDE** 内先跑审查，减少 **PR** 往返 | IDE inline review / shift-left | CodeRabbit IDE 路径等 |
+
+**与 SAST / 依赖扫描**：已知漏洞模式与供应链扫描（**SAST / dependency scanning**）与 **LLM 审查**互补、非替代——常并列于同一 **CI** 流水线。
+
+**Type A vs B**（体验均「审 PR」，集成深度不同）：A 在现有 Git 托管上「加一层」；B 覆盖分支策略到合并——媒体对照见 §外链索引「对比与测评」。
 
 ---
 
@@ -105,38 +121,26 @@
 
 ---
 
-## 工具与产品类型（检索里常与 AI code review 混排的品类；非穷尽）
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|----------------------|--------------|------|
-| **AI PR reviewer** | 打开 **PR** 即触发、行内评论与摘要 | 与 Git 托管深度集成 |
-| **Stacked PR / merge queue 套件** | 小步 **PR**、有序合并、审查收件箱 | **AI** 常为增值模块 |
-| **SAST / dependency scanning** | 已知漏洞模式与供应链 | 与 **LLM 审查**互补，非替代 |
-| **IDE 内联审查** | 保存前提示 | 「左移」减少 **PR** 噪声 |
-
----
-
-## 外链索引（工具与产品；外链；非广告、无排序优先级）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 下列 **五款** 与站内 **`content/tools/en/code-review.md`**（及中文版）**Best Tools** 列表一致；一句话定位据 **2026-04** 官网与公开文档归纳，细节以官方为准。
 
-| 名称 | 一句话（据官网公开表述归纳） | URL |
-|------|------------------------------|-----|
-| **CodeRabbit** | **AI** 驱动的 **PR** 审查与摘要；以 **GitHub App** 等为入口，并宣称支持 **GitLab、Azure DevOps、Bitbucket** 等；提供 **IDE**（如 **VS Code、Cursor、Windsurf**）与 **CLI** 等路径；可通过 **`.coderabbit.yaml`** 等配置审查画像与路径过滤（详见官方文档） | [coderabbit.ai](https://coderabbit.ai/) · [docs.coderabbit.ai](https://docs.coderabbit.ai/) |
-| **Baz** | 强调 **Purpose-built agents** 在每次 **PR** 上执行多类审查视角；宣称结合 **specs、代码与生产上下文**；支持将重复反馈沉淀为 **memory** 以更新 **agent** 行为；官网引用 **Code Review Bench** 等榜单链接；叙事含 **SRE Agent**（监听生产并开修复 **PR** 等） | [baz.co](https://baz.co/) |
-| **Bito** | 定位 **「自主开发所需的上下文层」**：**AI Architect** 构建跨代码、提交、文档与工单的**知识图谱**，支撑可行性分析、技术设计、跨仓影响评估等；**AI Code Reviews** 宣称在 **GitHub / GitLab / Bitbucket** 上基于全系统上下文做 **PR** 审查；强调 **MCP** 接入 **Cursor、Claude Code、Codex** 等及 **Jira** 侧能力；宣称不存储代码作训练、支持云与本地部署、**SOC 2 Type II** 等 | [bito.ai](https://bito.ai/) |
-| **Graphite** | **「下一代代码审查」**平台：核心组合为 **stacked PRs**、**AI code review**、**merge queue**、**PR inbox** 与 **Graphite Chat**（在 **PR** 页协作排 **CI**、改代码）；与 **GitHub** 同步；亦宣传 **CLI / VS Code** 扩展管理堆叠分支 | [graphite.com](https://graphite.com/) |
-| **Greptile** | 先对代码库建**图索引**，再用多 **Agent** 并行审 **PR**，强调超越 **diff** 的影响分析；支持自然语言 **custom rules**、从团队 **PR** 评论学习风格；提供 **MCP**、与 **Claude Code** 等集成及 **`/greploop`** 类迭代闭环；**TREX** 为面向 **PR** 自动生成/运行测试的 **Agent**；公开 **FAQ** 曾列示按席计费与每席含一定次数审查等（以定价页更新为准）；支持自托管叙事 | [greptile.com](https://www.greptile.com/) |
+| 名称 | Type | 一句话（据官网公开表述归纳） | URL |
+|------|------|------------------------------|-----|
+| **CodeRabbit** | A · E | **AI** 驱动的 **PR** 审查与摘要；以 **GitHub App** 等为入口，并宣称支持 **GitLab、Azure DevOps、Bitbucket** 等；提供 **IDE**（如 **VS Code、Cursor、Windsurf**）与 **CLI** 等路径；可通过 **`.coderabbit.yaml`** 等配置审查画像与路径过滤（详见官方文档） | [coderabbit.ai](https://coderabbit.ai/) · [docs.coderabbit.ai](https://docs.coderabbit.ai/) |
+| **Baz** | A | 强调 **Purpose-built agents** 在每次 **PR** 上执行多类审查视角；宣称结合 **specs、代码与生产上下文**；支持将重复反馈沉淀为 **memory** 以更新 **agent** 行为；官网引用 **Code Review Bench** 等榜单链接；叙事含 **SRE Agent**（监听生产并开修复 **PR** 等） | [baz.co](https://baz.co/) |
+| **Bito** | C | 定位 **「自主开发所需的上下文层」**：**AI Architect** 构建跨代码、提交、文档与工单的**知识图谱**，支撑可行性分析、技术设计、跨仓影响评估等；**AI Code Reviews** 宣称在 **GitHub / GitLab / Bitbucket** 上基于全系统上下文做 **PR** 审查；强调 **MCP** 接入 **Cursor、Claude Code、Codex** 等及 **Jira** 侧能力；宣称不存储代码作训练、支持云与本地部署、**SOC 2 Type II** 等 | [bito.ai](https://bito.ai/) |
+| **Graphite** | B | **「下一代代码审查」**平台：核心组合为 **stacked PRs**、**AI code review**、**merge queue**、**PR inbox** 与 **Graphite Chat**（在 **PR** 页协作排 **CI**、改代码）；与 **GitHub** 同步；亦宣传 **CLI / VS Code** 扩展管理堆叠分支 | [graphite.com](https://graphite.com/) |
+| **Greptile** | D | 先对代码库建**图索引**，再用多 **Agent** 并行审 **PR**，强调超越 **diff** 的影响分析；支持自然语言 **custom rules**、从团队 **PR** 评论学习风格；提供 **MCP**、与 **Claude Code** 等集成及 **`/greploop`** 类迭代闭环；**TREX** 为面向 **PR** 自动生成/运行测试的 **Agent**；公开 **FAQ** 曾列示按席计费与每席含一定次数审查等（以定价页更新为准）；支持自托管叙事 | [greptile.com](https://www.greptile.com/) |
 
 ### 对比与测评（第三方；观点非官方）
 
-横向盘点类文章常从 **集成深度（仅 PR vs 含分支策略）**、**上下文范围（diff vs 图谱）**、**噪声与严重级别可调性**、**私有化与合规**、**计费方式（按席 / 按次 / 开源额度）** 切入。**Graphite** 与纯「PR 机器人」相比更重**工作流**；**Bito**、**Greptile** 常见叙事是「全库/全系统上下文」。**CodeRabbit** 在第三方介绍中常强调**采用面与多平台**；**Baz** 等引用 **Code Review Bench** 时，对比前请阅读**同一基准版本与任务定义**。
+横向盘点常从 **集成深度（仅 PR vs 含分支策略）**、**上下文范围（diff vs 图谱）**、**噪声与严重级别可调性**、**私有化与合规**、**计费方式（按席 / 按次 / 开源额度）** 切入——维度定义见 §能力栈与 §形态谱系。Graphite（Type B） 与纯 **PR 机器人（Type A）** 的工作流差异见 §专题对照第二表；Bito（Type C）、Greptile（Type D） 的「全库/全系统上下文」叙事见上表。CodeRabbit 在第三方介绍中常强调**采用面与多平台**；Baz 等引用 Code Review Bench 时，对比前请阅读**同一基准版本与任务定义**（基准名称见 §词汇锚点）。
 
 *本小节为网摘综合，非 Alignify 实测；**不**以各 SaaS 营销首页为唯一论证依据。*
 
 ---
-
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **CodeRabbit 文档**：[docs.coderabbit.ai · Quickstart](https://docs.coderabbit.ai/quickstart/code-review)（平台与配置以官方为准）。
 - **合并队列与堆叠分支**（概念）：各 **Git** 托管与第三方平台文档；选型时对照团队分支模型。

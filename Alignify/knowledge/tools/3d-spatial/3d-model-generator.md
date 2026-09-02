@@ -1,6 +1,8 @@
 # AI 3D Model Generator · 知识块（非线性笔记）
 
-**材料范围**：公开网络检索（厂商官网与 OpenAPI 文档、arXiv/GitHub 开源仓库、Tripo Changelog、TechCrunch/Forbes 等行业媒体、GII/TBRC 市场报告摘要）；归纳 **文本/图像/视频→3D 网格** 的生成技术、产品格局与选型。**未**把 Alignify 站内 JSON 正文当作独立事实来源。**定价与许可证以各官网为准**。网摘整理日期 **2026-06-24**。
+**叙述主词 · 勿与…混买**：**Text-to-3D / Image-to-3D / 文图生 3D**——从无到有（ex nihilo）生成 **展示 mesh**；验收以 silhouette、拓扑、PBR、rig 为主。制造几何 STEP/B-Rep → [cad.md](cad.md)；实物数字化 → [3d-scanner.md](3d-scanner.md)；拓扑/UV/绑定精修 → [3d-modelling.md](3d-modelling.md)。完整 URL 表 **仅 §外链索引**；版本号 SSOT 见 [3d.md](3d.md) §共享事实速查。
+
+**材料范围**：公开网络检索（厂商官网与 OpenAPI 文档、arXiv/GitHub 开源仓库、Tripo Changelog、TechCrunch/Forbes 等行业媒体、GII/TBRC 市场报告摘要）；**未**把 Alignify 站内 JSON 正文当作独立事实来源。**定价与许可证以各官网为准**。网摘整理日期 **2026-06-24**。
 
 **站内对照**：[alignify.co/tools/3d-model-generator](https://alignify.co/tools/3d-model-generator) · [alignify.co/zh/tools/3d-model-generator](https://alignify.co/zh/tools/3d-model-generator) · `content/tools/en/3d-model-generator.md` · `content/tools/zh/3d-model-generator.md` · slug **`3d-model-generator`**
 
@@ -8,18 +10,18 @@
 
 **站内相邻**：[3d.md](3d.md) · [3d-scanner.md](3d-scanner.md) · [3d-modelling.md](3d-modelling.md) · [cad.md](cad.md) · [world-model.md](../world-model.md)
 
-**内容边界**：本 slug 主责 **从无到有（ex nihilo）** 的 text/image/video→**展示 mesh** 生成；制造几何 STEP/B-Rep 见 [cad.md](cad.md)；实物数字化见 [3d-scanner.md](3d-scanner.md)；拓扑/UV/绑定精修见 [3d-modelling.md](3d-modelling.md)。完整分工见 [3d.md](3d.md) §内容分工。版本号 SSOT 见 [3d.md](3d.md) §共享事实速查。
-
-## 与相邻 slug 分流
-
-| 维度 | **3d-model-generator（本文）** | **3d-modelling** | **3d-scanner** | **world-model** |
-|------|-----|------|------|------|
-| 核心问题 | 怎么从文字/图片**凭空生成** 3D | 怎么**编辑、精修、拓扑重建**已有模型 | 怎么从**真实物体**扫描出 3D | 怎么让 AI **理解物理空间**并模拟演化 |
-| 输入 | 文字 prompt、单张/多张图片、视频片段 | 已有 3D 模型（任何来源） | 实物照片、LiDAR 点云 | 文本、图像、视频、机器人传感器 |
-| 产出 | 初始网格 + 贴图（OBJ/GLB/FBX） | 精修后网格、UV、绑定、动画就绪 | 点云→网格（真实物体数字化） | 场景表征、动作预测、物理仿真 |
-| 典型买家问题 | "我没有 3D 资产，能不能一句话生成一个？" | "AI 生成的拓扑太乱，能不能自动修复？" | "能不能拍几张照得到这个物体的 3D？" | "AI 能预测物体在空间里怎么动吗？" |
-
 以下条目可任意顺序阅读；**不是**文章体例。
+
+---
+
+## 与相邻 slug 分流（避免混买混评）
+
+| 维度 | **`3d-model-generator`（本页）** | **`3d-modelling`** | **`3d-scanner`** | **`world-model`** |
+|------|--------------------------------|-------------------|------------------|-------------------|
+| **典型买家问题** | 没有资产，一句话/一张图能生成 3D 吗？ | AI 生成的拓扑太乱，能自动修复吗？ | 拍几张照能得到物体 3D 吗？ | AI 能预测物体在空间里怎么动吗？ |
+| **输入** | prompt / 单或多图 / 视频 | 已有 mesh（任何来源） | 实物照片、LiDAR | 文本、图像、视频、传感器 |
+| **产出** | 初始 mesh + 贴图（OBJ/GLB/FBX） | 精修 mesh、UV、绑定就绪 | 点云→网格（实物数字化） | 场景表征、物理仿真 |
+| **验收核心** | silhouette、拓扑、PBR、rig | 四边面、边流、动画变形 | 与原物几何偏差 | 物理/持久性/动作接口 |
 
 ---
 
@@ -41,6 +43,8 @@
 
 ## 专题对照 / 扩展定义
 
+术语定义见 §词汇锚点；下表只列 **选型二分**，不重复定义。
+
 | 二分维度 | A 方向 | B 方向 |
 |------|------|------|
 | **生成范式** | **优化式**（SDS/SIR）——质量高、分钟级 | **前馈式**——秒级、质量上限受训练数据约束 |
@@ -49,15 +53,7 @@
 | **产品策略** | **API/插件**——嵌入管线（Meshy、Rodin API） | **独立 Web 平台**——一站式（Tripo Studio） |
 | **开源生态** | **闭源商业**——体验与集成 | **开源权重**——Hunyuan3D 2.1 OSS、TRELLIS.2（MIT） |
 
-### 快速选型（2026-06；观点性摘要）
-
-| 优先项 | 倾向工具 | 备注 |
-|--------|----------|------|
-| 硬表面 hero / 几何精度 | Rodin Gen-2 | 纹理常需二次 pass |
-| 角色 rig + 动画一键导出 | Meshy 5 | 500+ 动画预设 |
-| 风格化 / 快速迭代 / Smart Mesh | Tripo（P1、v3.1） | P1 约秒级 mesh |
-| quad-flow / retopo 专精 | CSM Cube 2 | Google 收购后路线图需跟踪 |
-| 自托管 / 研究定制 | Hunyuan3D 2.1 OSS、TRELLIS.2 | GPU 与许可地域限制 |
+**快速选型（2026-06）** → 详见 §对比与测评；产品规格与 URL → **§外链索引**。
 
 ---
 
@@ -86,14 +82,16 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **云端全栈平台（web-first）**：浏览器内生成、预览、导出——Tripo、Meshy、Rodin。
-- **API/SDK 优先**：嵌入电商/游戏批量管线——Alpha3D、CSM、Rodin API。
-- **开源自托管**：GPU 上跑权重——Hunyuan3D 2.1、TRELLIS.2。
-- **设计工具内嵌**：Spline、Wonder 3D（Autodesk Flow Studio）——生成是功能模块而非独立品类。
-- **平台特化**：Roblox Cube——生成 + 平台内交互行为。
-- **自然语言操控 DCC**：Claude + Blender/Fusion 连接器——属 [3d-modelling.md](3d-modelling.md)（操控传统软件，非 mesh 生成）。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 浏览器全栈（生成→预览→导出） | web-first 3D generator | Tripo、Meshy、Rodin |
+| **B** | API/SDK 嵌入批量管线 | text/image to 3D API | Alpha3D、CSM、Rodin API |
+| **C** | 开源自托管权重 | open weights 3D | Hunyuan3D 2.1、TRELLIS.2 |
+| **D** | 设计工具内嵌生成模块 | AI in 3D design tool | Spline、Wonder 3D |
+| **E** | 平台特化（生成+交互行为） | platform-native 3D | Roblox Cube |
+| **F** | NL 操控传统 DCC（非 mesh 生成） | Claude + Blender/Fusion | → [3d-modelling.md](3d-modelling.md) / [cad.md](cad.md) |
 
 ---
 
@@ -118,21 +116,7 @@
 
 ---
 
-## 工具与产品类型
-
-| 类型 | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **Text-to-3D** | prompt → mesh + 贴图 | 主流入口 |
-| **Image-to-3D** | 单/多图 → mesh | 一致性是竞争关键 |
-| **纹理/Material 生成** | 为已有 mesh 生成 PBR | Meshy、Rodin |
-| **角色专精** | 照片 → 角色 + rig | Tripo、Rodin、LAM 等 |
-| **场景/环境生成** | text/video → 3D 场景 | Luma Genie（非 Luma Capture） |
-| **开源基础模型** | 可自托管权重 | Hunyuan3D 2.1、TRELLIS.2 |
-| **设计平台内嵌 AI** | 生成 + Web 交互 | Spline |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话（据公开页面归纳） | URL |
 |------|--------------------------|-----|
@@ -153,9 +137,17 @@
 
 2026 年上半年行业横评（Forbes、Scenario Generative 3D Comparator、StraySpark 等）的 **共识分歧** 可归纳为：
 
-- **Rodin Gen-2**：硬表面几何与 quad 拓扑领先；生成较慢；纹理常弱于 Meshy，不少管线需 Substance 二次贴图。
+| 优先项 | 倾向工具 | 备注 |
+|--------|----------|------|
+| 硬表面 hero / 几何精度 | Rodin Gen-2 | 纹理常需 Substance 二次 pass |
+| 角色 rig + 动画一键导出 | Meshy 5 | 500+ 动画预设 |
+| 风格化 / 快速迭代 / Smart Mesh | Tripo（P1、v3.1） | P1 约秒级 mesh |
+| quad-flow / retopo 专精 | CSM Cube 2 | Google 收购后路线图需跟踪 |
+| 自托管 / 研究定制 | Hunyuan3D 2.1 OSS、TRELLIS.2 | GPU 与许可地域限制 |
+
+- **Rodin Gen-2**：硬表面几何与 quad 拓扑领先；生成较慢；纹理常弱于 Meshy。
 - **Meshy 5**：**集成生态 + 全链路**（含 rig/动画）最强；适合 indie 角色与多引擎迭代。
-- **Tripo v3.1 / P1**：**速度 + 风格化 + Smart Mesh**；P1 适合实时生产向结构化 mesh；hero 硬表面仍常选 Rodin。
+- **Tripo v3.1 / P1**：**速度 + 风格化 + Smart Mesh**；hero 硬表面仍常选 Rodin。
 - **CSM Cube 2**：**retopo / quad-flow** 专精，适合 rig 变形前置。
 - **开源**：TRELLIS.2 几何锐度与 MIT 许可受研究向团队青睐；Hunyuan3D 工业文档与 PBR 管线较完整。
 
@@ -165,22 +157,18 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - **MicroDreamer**（TPAMI 2025）— SIR 替代 SDS：<https://pubmed.ncbi.nlm.nih.gov/40828710/>
 - **Hunyuan3D 2.0/2.1**（arXiv 2501.12202 系列）：<https://arxiv.org/html/2501.12202v5>
-- **TRELLIS.2**（GitHub）：<https://github.com/microsoft/TRELLIS.2>
 - **Tripo OpenAPI Changelog**（v3.1、P1）：<https://docs.tripo3d.ai/get-started/changelog.html>
 - **Forbes · How AI Is Transforming 3D Content Creation**（2026-03）：<https://www.forbes.com/councils/forbestechcouncil/2026/03/19/how-ai-is-transforming-3d-content-creation/>
 - **Generative AI for 3D Assets 2026**（TBRC 摘要）：<https://www.giiresearch.com/report/tbrc1981187-generative-artificial-intelligence-ai-three.html>
 - **Scenario · Generative 3D Comparator**（多厂商 I2-3D 并排）：<https://www.scenario.com/apps/generative-3d-comparator>
 
----
-
-
----
-
-## 延伸阅读 · 站内知识块
+**站内**
 
 - Hub：[3d.md](3d.md)
 - 精修：[3d-modelling.md](3d-modelling.md)

@@ -174,6 +174,6 @@ GPQA Diamond Top N 见 **[llm-leaderboard-snapshots.md §Reasoning](../llm-leade
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
 - [llm.md](llm.md) · [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md) · [llm-for-math.md](llm-for-math.md)

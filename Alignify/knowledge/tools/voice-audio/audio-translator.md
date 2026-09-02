@@ -43,15 +43,13 @@
 | **声纹保留** | 依赖 TTS 克隆层 | 部分模型原生保留 |
 | **典型买家** | 开发者自建、DeepL Voice | OpenAI Realtime、Gemini 耳机场景 |
 
-**与 video-translator、text-translator 的分流**（原表保留）：
+**与 video-translator、text-translator 的分流**（买家体验差；产品见各页 §外链索引）：
 
 | 维度 | **audio-translator（本文）** | **video-translator** | **text-translator** |
 |------|------------------------------|----------------------|---------------------|
 | **核心输入** | 实时或录制语音 | 视频文件中的语音轨 | 文字 |
-| **核心输出** | 另一种语言的语音或字幕 | 另一种语言的配音或字幕 | 另一种语言的文字 |
+| **核心输出** | 另一种语言的语音或字幕 | 翻译+配音+字幕视频 | 另一种语言的文字 |
 | **额外挑战** | 口音、语速、噪音、多人 | 口型对齐、背景音/配乐分离 | 格式保留、术语一致性 |
-| **典型产品** | Palabra, DeepL Voice, Google Translate Gemini | Rask AI, HeyGen, Captions | DeepL, Google Translate, ChatGPT Translate |
-| **典型场景** | 跨国会议、直播、面对面交谈 | 视频本地化、影视配音 | 文档翻译、邮件、网页 |
 
 ---
 
@@ -149,7 +147,7 @@ Google Translate Gemini 的定位最独特——不卖软件卖生态覆盖：�
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - [Advancing voice intelligence (OpenAI Realtime, 2026-05)](https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/)
 - DeepL Voice 发布：40+ 语言实时语音翻译 — https://thenextweb.com/news/deepl-voice-to-voice-real-time-spoken-translation

@@ -54,14 +54,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type A — 全栈 AI 设计平台内置**：在综合设计平台内提供 AI 海报生成——用户可以在 AI 出初稿后继续手动精调。代表方向：Canva Magic Studio、Adobe Express。优势是编辑灵活性 + 模板生态，劣势是 AI 图像质量不如专用工具。
-- **Type B — AI 图像优先 + 手动排版**：使用通用 T2I（见 image-generator）出视觉主体，再导入 Canva/Photoshop 手工加字排版。适合对画面艺术质量要求高的场景。
-- **Type C — 专用 AI 海报工具（文字渲染差异化）**：以文字渲染为差异化——Ideogram、Recraft v3 等；适合信息密集型海报（活动详情、报价、促销信息）。
-- **Type D — 品牌物料批量生成**：面向电商和营销团队的批量海报生产工具——输入产品信息和品牌规范，输出数十张不同尺寸、不同文案变体的海报。代表方向：Designs.ai、Promeo。适合 SKU 多、促销频次高的电商场景。
-- **Type E — 对话式 AI 海报设计**：2026 年新形态——通过自然语言对话引导用户完成海报设计，AI 理解意图而非依赖精确 prompt。代表方向：CapCut AI 设计系统。适合完全零基础用户——不需要学习设计术语或 prompt 工程。
-- **Type F — 数据驱动型海报/信息图**：侧重将数据可视化与海报设计融合——AI 自动将图表、数据指标、文字说明整合为信息图风格海报。代表方向：Venngage、PiktoChart、Visme。适合商业报告、年度总结、数据新闻等场景。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 全栈 AI 设计平台内置：AI 出初稿+手动精调+Brand Kit | AI poster maker, AI design tool | Canva Magic Studio、Adobe Express |
+| **B** | AI 图像优先+手动排版：T2I 出主体→Canva/PS 加字 | AI art for poster, Midjourney poster | 通用 T2I（见 image-generator）+ 排版工具 |
+| **C** | 文字渲染专用：信息密集型海报、Logo 文字 | AI text in image, AI typography generator | Ideogram、Recraft v3 |
+| **D** | 品牌物料批量：SKU 多、促销频次高 | AI marketing material generator, bulk flyer maker | Designs.ai、Promeo |
+| **E** | 对话式 AI 海报：自然语言引导、零 prompt 门槛 | AI conversational poster designer | CapCut AI Design |
+| **F** | 数据驱动信息图：图表+数据+文字整合 | AI infographic poster, data visualization poster | Venngage、Piktochart、Visme |
+
+**Type A vs C**（均产出海报，差异化不同）：A 为**版式+品牌套件+多格式导出**一站式；C 为**画面内文字可读性**专精——信息密集海报优先 C。
 
 ---
 
@@ -87,20 +91,7 @@
 
 ---
 
-## 工具与产品类型（「AI poster generator」「AI poster maker」「AI flyer design」等检索里常混在一起的品类；非穷尽）
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **AI 设计平台内置**（AI poster maker, AI design tool） | Canva Magic Studio、Adobe Express | 图像+排版+品牌套件+多格式导出，一站式 |
-| **AI 图像生成+手动排版**（AI art for poster, Midjourney poster） | 通用 T2I + Canva/PS 排版 | 出图质量高但需额外排版；模型见 image-generator |
-| **AI 文字渲染专用**（AI text in image, AI typography generator） | Ideogram、Recraft v3 | 解决「AI 图里文字乱码」；版本 SSOT 见 image-generator |
-| **品牌物料批量生成**（AI marketing material generator, bulk flyer maker） | Designs.ai、Promeo | 面向电商 SKU 多、促销频次高的场景 |
-| **对话式 AI 海报设计**（AI conversational poster designer） | CapCut AI Design | 自然语言交互、零 prompt 门槛、2026 新范式 |
-| **数据驱动型海报/信息图**（AI infographic poster, data visualization poster） | Venngage、PiktoChart、Visme | 将数据自动转化为可视化海报 |
-
----
-
-## 外链索引（工具与产品；无排序优先级）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 | 名称 | 一句话（据公开页面或综述归纳） | URL |
 |------|--------------------------|-----|
@@ -130,7 +121,9 @@ Ideogram 在多个评测（monday.com 2026、FixThePhoto 2025）中被特别提�
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - [I Tested the 8 Best AI Image Generators for 2026 (G2)](https://learn.g2.com/best-ai-image-generators)
 - [13 best AI image generators for creative teams in 2026 (monday.com)](https://monday.com/blog/ai-agents/best-ai-for-image-generation/)
@@ -140,11 +133,8 @@ Ideogram 在多个评测（monday.com 2026、FixThePhoto 2025）中被特别提�
 - [11 of the Best AI Design Tools for 2026 (Figma)](https://www.figma.com/resource-library/ai-design-tools/)
 - [7 Best Poster Making Software for 2026 (Venngage)](https://venngage.com/blog/best-poster-making-software/)
 
----
+**站内**
 
-
----
-## 延伸阅读 · 站内知识块
 - 品类 Hub：[image.md](image.md)
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）
 - 编辑型海报美学参考：[aesthetic-references.md](../design/aesthetic-references.md)（含 [GC Minimal Zine Poster](https://github.com/LiamGvchi/gc-minimal-zine-poster) Codex Skill）

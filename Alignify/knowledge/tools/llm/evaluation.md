@@ -135,7 +135,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **站内相邻知识块**：[llm.md](llm.md)（通用大模型评测——Arena Elo/MMLU 排行榜）、[llm-for-coding.md](llm-for-coding.md)（代码模型评测——SWE-bench/LiveCodeBench）、[llm-for-reasoning.md](llm-for-reasoning.md)（推理模型评测——GPQA/HLE/ARC-AGI-2）。
 - **行业事件**：2025 年 3 月 CoreWeave 以 ~$1.4B 收购 Weights & Biases；2025 年 8 月 Anthropic 收购 Humanloop。

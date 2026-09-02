@@ -1,6 +1,6 @@
 # Agentic Payments · 知识块（非线性笔记）
 
-**材料范围**：公开网络检索（Google AP2/UCP 规范、Coinbase x402 Foundation、Stripe ACP/MPP 文档、Visa TAP、Forrester/PYMNTS/Juniper 行业分析、FluxA/Clink/Basis Theory/Skyfire 官网与融资新闻、Crossmint/Alatirok 协议对比文）；**未**引用 Alignify 站内 JSON 为独立事实来源。网摘整理日期 **2026-06-23**。
+**材料范围**：公开网络检索（Google AP2/UCP 规范、Coinbase x402 Foundation、Stripe ACP/MPP 文档、Visa TAP、Forrester/PYMNTS/Juniper 行业分析、FluxA/Clink/Basis Theory、**Skyfire KYAPay / Fastly 合作**、**Crossmint Agentic Payments / Agentic Cards API**、**Catena Labs 银行牌照路线**、Crossmint/Alatirok 协议对比文）；**未**引用 Alignify 站内 JSON 为独立事实来源。网摘整理日期 **2026-09-02**（2026-06-23 初版 + 2026-09 产品层补全）。
 
 **站内对照**：[alignify.co/blog/agentic-payments](https://alignify.co/blog/agentic-payments) · `/zh/blog/agentic-payments` · `content/blog/en|zh/agentic-payments.md` · slug **`agentic-payments`**
 
@@ -14,6 +14,8 @@
 | **`agentic-commerce`** | 「Agent 替我购物时经历什么？消费者/商家要准备什么？」 | 发现→比价→结账旅程、平台产品（Gemini/ChatGPT） | 本页只管**动钱**；commerce 管**买什么、在哪买** |
 | **`ai-shopping`** | 「有哪些 AI 购物/商务工具值得对比？」 | 工具目录（ChatGPT Shopping、Glance、Nosto…） | shopping = **产品谱系**；本页 = **支付基础设施** |
 | **`authentication`** | 「人类/Agent 如何 OAuth 接 SaaS？」 | CIAM、出站工具授权 | 本页含**支付授权/委托**，不含通用 IdP 选型 |
+| **`agent-billing`** | 「Agent **卖方**怎么向客户定价、计费、证明 ROI？」 | Paid / witn / Flexprice 等计费平台 | 本页 = Agent **买方**动钱；卖方 monetization → [agent-billing.md](agent-billing.md) |
+| **`how-to-add-payments-to-vibe-coded-app`** | 「人类开发者给 Vibe 产品接 Stripe/Paddle？」 | 独立开发者支付集成 | 见 [vibe-coding-payments.md](vibe-coding-payments.md) |
 
 以下条目可任意顺序阅读；**不是**文章体例。
 
@@ -72,8 +74,47 @@
 - **协议/标准层**：x402、AP2、ACP、MPP、UCP（支付相关扩展）、APOP、A2P2、ACT 2.0
 - **Agent Wallet 平台**：FluxA、Fireblocks Agentic Payments Suite、支付宝 AI 钱包
 - **Fiat Agentic Payment Infra**：Clink、SolvaPay、Basis Theory（tokenization + Agentic Commerce Consortium）
-- **Crypto KYA + Pay**：Skyfire KYAPay
+- **Crypto KYA + Pay**：Skyfire KYAPay（JWT 身份+支付凭证；Fastly 边缘验真）
+- **Agent 支付全栈 API**：Crossmint（钱包+虚拟卡+稳定币+Checkout+多协议）
+- **受监管 Agent 银行 + 策略治理**：Catena Labs（OCC National Trust Bank 申请中）
 - **卡组织方案**：Visa TAP、Mastercard Agent Pay / Agentic Tokens
+
+---
+
+## Agent 支付基础设施 · 产品速查（2026-09）
+
+> 与 §工具与产品类型 互补；**canonical Best H3** 若成文仍走 `/blog/agentic-payments` 刷新，不在此 KB 写完整产品榜。
+
+### Skyfire — Agent Trust Stack（KYA + KYAPay）
+
+- **定位**：开放 **KYAPay** 协议 + **Know Your Agent (KYA)** JWT——Agent 携带可验证身份与支付意图，完成登录、API 微支付、电商 Checkout。
+- **Token 类型**：`kya`（身份）· `pay`（支付）· `kya-pay`（合并）；标准 JWT，经 `kyapay-token` header；卖方 JWKS 验签后 `chargeToken` 结算。
+- **钱包**：稳定币（USDC）+ tokenized 信用卡；用户 mandate + spending cap。
+- **公司**：Skyfire Systems；CEO Amir Sarhangi、Craig DeWitt（Ripple 早期高管）；2024-08 **$8.5M 种子**；按交易约 **2–3%** 手续费（TechCrunch/VentureBeat）。
+- **2026 动态**：2026-06 与 **Fastly** 合作——在边缘节点做 KYA/KYAPay 验证，与 Bot Management 集成；合作伙伴含 Okta、Auth0、Mastercard、Visa、Experian 等。
+- **典型集成**：Apify Agentic Payments（Skyfire PAY token ≥$5 跑 Actor）；MCP 程序化开户。
+- **官方**：https://skyfire.xyz/ · https://docs.skyfire.xyz/
+
+### Crossmint — Agentic Payments 全栈 API
+
+- **定位**：**单一 API** 覆盖 Agent 钱包（法币+稳定币）、虚拟 Visa/Mastercard、stablecoin onramp、Agentic Checkout（MoR）、Agent credentials；**多协议**（x402 已生产，MPP/ACP/AP2 架构预留）。
+- **公司**：原 Web3/NFT 基建（Adidas、Red Bull 等）；2025-03 **$23.6M**（Ribbit）；开源 **GOAT SDK**；产品 **lobster.cash** 可嵌入 Claude Code/OpenClaw 等。
+- **2026 动态**：**Agentic Cards API**（Visa Intelligent Commerce + **Basis Theory** PCI 凭证层）。
+- **与 Skyfire 差异**：Crossmint 偏 **执行层打包**（钱包+卡+Checkout）；Skyfire 偏 **开放 KYAPay 协议 + 身份/Checkout 凭证**，更强调商户侧验 JWT。
+- **官方**：https://www.crossmint.com/solutions/agentic-payments · [协议对比文](https://www.crossmint.com/learn/agentic-payments-protocols-compared)
+
+### Catena Labs — Agent 银行 + 金融治理
+
+- **定位**：**治理控制面 + 银行能力**——企业为人类 Operator 设 deterministic policy（限额、对手方、审批），Agent 在策略内处理 payroll、AP、Treasury、采购等**真实企业资金**。
+- **技术**：MCP/API/CLI；策略在 **TEE 签名层**强制执行（Binding Policy to Money）；开源 **Agent Commerce Kit (ACK)**。
+- **公司**：Circle 联合创始人 **Sean Neville**；2025 **$18M 种子** + 2026-05 **$30M Series A**（Acrew、a16z crypto），累计约 **$48M**；已向 **OCC 申请 National Trust Bank** 牌照（Catena Trust Bank, N.A.）。
+- **与 Skyfire/Crossmint 差异**：Catena 最重 **受监管银行 + 企业级 policy**，非单纯「给 Agent 一张卡/钱包」；支持 Mastercard Agent Pay。
+- **名称歧义**：≠ `operators.catena.network`（CMCX 区块链项目）。
+- **官方**：https://catena.com/ · https://catena.com/blog/banking-governance-platform-for-ai-agents-open
+
+### Paid — **不属于本 slug**
+
+- **Paid**（paid.ai）等 Agent **卖方计费** 见 [agent-billing.md](agent-billing.md)（`agent-billing` slug）。
 
 ---
 
@@ -106,7 +147,9 @@
 | Agent Wallet（crypto） | FluxA | Agent Wallet、AgentCard、AEP2 |
 | Fiat Agentic Payment | Clink | Agentic Payment Skill；PCI L1；BV 等种子轮 |
 | Tokenization / 联盟 | Basis Theory | Agentic Commerce Consortium |
-| KYA + Pay | Skyfire | 身份+支付 crossover |
+| KYA + Pay | Skyfire | KYAPay JWT；Fastly 边缘；$8.5M seed；2–3% take rate |
+| Agent 支付全栈 | Crossmint | 钱包+虚拟卡+x402/AP2 多协议；$23.6M；MoR Checkout |
+| Agent 银行 + 治理 | Catena Labs | OCC 信托银行申请；TEE 策略；ACK；~$48M |
 | 企业稳定币 | Fireblocks Agentic Payments Suite | PSP/企业 Agent 钱包 |
 
 ---
@@ -119,6 +162,9 @@
 | Google AP2 | Agent Payments Protocol 规范 | https://github.com/google-agentic-commerce/AP2 |
 | Stripe ACP | Agentic Commerce Protocol（checkout） | https://stripe.com/docs/agentic-commerce |
 | Clink | Fiat Agentic Payment Skill；PCI L1 | https://clinkbill.com/ |
+| Skyfire | KYAPay / KYA；Agent Checkout | https://skyfire.xyz/ |
+| Crossmint | Agentic payments 全栈 + 协议对比 | https://www.crossmint.com/solutions/agentic-payments |
+| Catena Labs | Agent 银行 + policy 治理 | https://catena.com/ |
 | FluxA | Agent Wallet / x402 生态活动 | https://fluxapay.xyz/ |
 | Crossmint 协议对比 | AP2/x402/ACP/MPP 分层说明 | https://www.crossmint.com/learn/agentic-payments-protocols-compared |
 | Forrester | Agentic Payments in B2C Commerce | https://www.forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now/ |
@@ -126,13 +172,12 @@
 
 ## 对比与测评（第三方）
 
-2026 年共识是 **composed stack**：Consumer checkout 常用 ACP+卡+AP2；machine commerce 常用 x402/MPP。「x402 vs AP2」是错误 framing——前者 settlement，后者 authorization。Presenc AI 2026 基准：仅 ~17% 品牌接受任一 major agent payment protocol——品类仍极早期。*网摘综合，非 Alignify 实测。*
+2026 共识：**composed stack**——Consumer checkout 常用 ACP+卡+AP2；machine commerce 常用 x402/MPP。「x402 vs AP2」是错误 framing。Presenc AI 2026：仅 ~17% 品牌接受 major agent payment protocol。*网摘综合。*
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
-- [agentic-commerce.md](agentic-commerce.md)（消费者旅程）
-- [ai-shopping.md](ai-shopping.md)（购物工具目录）
-- [authentication.md](infrastructure/authentication.md)（OAuth 委托，非支付 rails）
-- [openclaw-alternatives.md](agent/openclaw-alternatives.md)（FluxA 红包等活动载体）
+**站内**
+
+- [agentic-commerce.md](agentic-commerce.md) · [ai-shopping.md](ai-shopping.md) · [authentication.md](infrastructure/authentication.md) · [agent-billing.md](agent-billing.md)

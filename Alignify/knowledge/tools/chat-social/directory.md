@@ -63,14 +63,14 @@ Alignify 属于本知识块讨论的品类——AI 工具导航站。本知识�
 
 ---
 
-## 形态谱系
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
-- **综合聚合器（General Aggregator）**：收录 3,000-10,000+ 工具，按品类分类。Futurepedia（5,000+，社区评论）、There's An AI For That（5,000+，问题导航）、Toolify.ai（大目录）。商业模式以广告+付费收录为主。2026 年信任度在下降——用户对「未经测试的 5,000 条营销信息」失去耐心。
-- **实测精选平台（Curated & Tested）**：100-500 个精选工具，全部经人工实测。zPlatform（~150，全部实测+Buy/Wait/Skip 判定）、AIToolsHQ（诚实评测，无付费植入）。信任度最高的子品类——但规模受限，无法覆盖长尾工具。适合「我要一个真正好用的 X 工具」而非「还有什么我不认识的工具？」。
-- **数据驱动型导航站（Data-Driven Directory）**：汇总流量数据、增长趋势和市场竞争分析。SeekTool.ai（6,727+ 工具，400+ 分类，月度流量刷新）是这一模式的标杆。面向市场研究者、投资者和竞品分析而非终端用户。
-- **垂直导航站（Vertical Directory）**：聚焦特定领域——如「AI 教育工具导航」「AI 电商工具导航」「开源 AI 模型导航」。提供比综合导航站更深、更专业的分类和评测。Hugging Face Spaces（开源模型演示）是开发者垂直的代表。
-- **社区驱动平台（Community-Driven Discovery）**：以用户提交、投票和讨论为核心。Product Hunt 不是专门的 AI 导航站——但 AI 工具是其中最活跃的品类之一。优势是实时性强（新发布即上榜），劣势是品类覆盖不系统（热门产品排前面，冷门品类找不到）。
-- **AI 工具比价/采购平台（Marketplace with Comparison）**：整合定价对比、演示请求和采购流程。处于导航站和 SaaS 市场（如 G2、Capterra）的交叉地带。TheToolPicker 和 IA Hunt 是这个方向的早期代表——从「发现工具」到「对比采购」的漏斗。
+- **综合聚合器（General Aggregator）**：3,000–10,000+ 工具，分类浏览；信任度下降中。
+- **实测精选平台（Curated & Tested）**：100–500 个精选，全部人工实测；信任度最高。
+- **数据驱动型导航站（Data-Driven Directory）**：流量数据、增长趋势、市场情报。
+- **垂直导航站（Vertical Directory）**：聚焦特定领域。
+- **社区驱动平台（Community-Driven Discovery）**：用户投票、评论、讨论为核心。
+- **AI 工具比价/采购平台（Marketplace with Comparison）**：整合定价对比与采购流程。
 
 ---
 
@@ -130,10 +130,11 @@ Alignify 属于本知识块讨论的品类——AI 工具导航站。本知识�
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- Admin365.Blog — "AI Tools Directory 2026: 13 Best Catalogs with 400k+ Free Tools & Models"（2026.1）
-- GlobeNewsWire — "Jeetro.com Launches AI Tools Discovery Platform"（2026.2）
-- SaaSHub — Futurepedia vs 各类替代品的社区对比（持续更新）
-- zPlatform — "AI Directory 2026: 149+ Hands-On Tested AI Tools by Use Case"（2026）
-- Product Hunt — "TheToolPicker | Find and compare AI tools — updated daily, expert-reviewed"（2026）
+**站外**（第三方横评；产品见 §外链索引）
+
+- Admin365.Blog — "AI Tools Directory 2026"（2026.1）
+- GlobeNewsWire — Jeetro.com launch（2026.2）
+- SaaSHub — Futurepedia vs 替代品社区对比
+- zPlatform — "149+ Hands-On Tested AI Tools"（2026）

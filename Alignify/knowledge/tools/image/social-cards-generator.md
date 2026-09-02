@@ -191,14 +191,18 @@ WhatsApp 是最严格的平台，超出限制会**静默删除整个链接预览
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-1. **开发者库 / SDK** —— 嵌入项目代码中，通过函数调用生成 OG 图片。代表：`@vercel/og`、`satori` + `resvg`、`@ogify/core`。优势：完全控制、无第三方依赖、Edge 原生。门槛：需开发能力。
-2. **托管 API 服务** —— 通过 HTTP API 提交参数获得图片 URL。代表：`ogimg.xyz`、Pixelixe、Bannerbear API、Placid API。优势：零部署、内置缓存和 CDN。门槛：按量付费、有网络延迟。
-3. **可视化模板编辑器 + API** —— 拖拽设计模板后通过 API 填充变量生成图片。代表：Bannerbear、Placid、DynaPictures、Templated.io。优势：设计团队可独立维护模板。门槛：较高的订阅费用。
-4. **浏览器端生成器** —— 纯前端工具，在浏览器中通过 Canvas API 合成图片。代表：CardForge、hidekazu-konishi 的 OG Generator。优势：零服务器成本、无数据泄露。局限：无法集成到自动化流程。
-5. **CMS 插件** —— 嵌入 WordPress 等内容管理系统，自动为每篇文章生成 OG 图片。代表：OpenGraph.xyz（WP 插件）、OG Pilot。优势：即装即用、与 CMS 深度集成。局限：锁定平台。
-6. **AI 驱动生成器** —— 通过 AI 分析页面内容自动设计 OG 图片布局。代表：OGimagen（AI + MCP 集成）、OpenGraph.xyz（AI 模板创建）、SEO Image Gen（LobeHub）。优势：零模板设计工作。局限：输出一致性依赖 AI 质量。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 开发者库/SDK：函数调用生成，Edge 原生 | OG image library, social card SDK | `@vercel/og`、Satori + resvg、`@ogify/core` |
+| **B** | 托管 API：HTTP 提交参数→图片 URL，内置 CDN 缓存 | OG image API, dynamic og image | ogimg.xyz、Pixelixe、Bannerbear API、Placid API |
+| **C** | 可视化模板编辑器+API：拖拽设计→变量填充 | OG image template editor, social card designer | Bannerbear、Placid、DynaPictures、Templated.io |
+| **D** | 浏览器端：Canvas API 合成，零服务器 | Browser OG generator, client-side card | CardForge、hidekazu-konishi OG Generator |
+| **E** | CMS 插件：与内容管理系统深度集成 | WordPress OG plugin, social card plugin | OpenGraph.xyz WP 插件、OG Pilot |
+| **F** | AI 驱动：分析页面内容自动设计布局 | AI OG image, AI social card | OGimagen、OpenGraph.xyz AI、SEO Image Gen |
+
+**Type A vs B**（均面向开发者，部署不同）：A 嵌入项目代码、完全控制；B 零部署、按量付费——社区共识高流量站优先 A（Edge），小团队优先 B。
 
 ---
 
@@ -224,29 +228,35 @@ WhatsApp 是最严格的平台，超出限制会**静默删除整个链接预览
 
 ---
 
-## 工具与产品类型
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|----------------------|-------------|------|
-| **开发者 SDK/库**（OG image library, social card SDK） | `@vercel/og`, Satori + resvg, `@ogify/core` | 嵌入项目代码，函数调用生成——完全控制、Edge 原生、需开发能力 |
-| **托管 API 服务**（OG image API, dynamic og image） | ogimg.xyz, Pixelixe, Bannerbear API, Placid API | 通过 HTTP API 提交参数获得图片 URL——零部署、内置缓存和 CDN |
-| **可视化模板编辑器**（OG image template editor, social card designer） | Bannerbear, Placid, DynaPictures, Templated.io | 拖拽设计模板后通过 API 填充变量——设计团队可独立维护模板 |
-| **CMS 插件**（WordPress OG plugin, social card plugin） | OpenGraph.xyz WP 插件, OG Pilot | 自动为每篇文章生成 OG 图片——即装即用、与 CMS 深度集成 |
-| **AI 驱动生成器**（AI OG image, AI social card） | OGimagen（AI + MCP 集成）, OpenGraph.xyz AI, SEO Image Gen | AI 自动设计布局——零模板设计工作但一致性依赖 AI 质量 |
-
----
+| 名称 | Type | 一句话 | URL |
+|------|------|--------|-----|
+| **@vercel/og** | A | Next.js / Edge 原生 OG 图片生成（Satori 渲染） | [github.com/vercel/og-image](https://github.com/vercel/og-image) |
+| **Satori** | A | HTML→SVG 渲染引擎，OG 图片生成核心依赖 | [github.com/vercel/satori](https://github.com/vercel/satori) |
+| **ogimg.xyz** | B | 托管 OG 图片 API，内置 CDN 缓存 | [ogimg.xyz](https://ogimg.xyz/) |
+| **Bannerbear** | B/C | 可视化模板 + API，社媒自动化常用 | [bannerbear.com](https://www.bannerbear.com/) |
+| **Placid** | B/C | 模板编辑器 + 动态图片 API | [placid.app](https://placid.app/) |
+| **OGimagen** | F | AI 分析页面内容自动生成 OG 布局 | [ogimagen.com](https://ogimagen.com/) |
+| **Open Graph Protocol** | — | Facebook OG 标签规范（social cards 事实标准） | [ogp.me](https://ogp.me/) |
+| **Twitter Cards** | — | X/Twitter 社交卡片规范文档 | [developer.x.com](https://developer.x.com/en/docs/twitter-for-websites/cards/overview/markup) |
 
 ### 对比与测评（第三方；观点非官方）
 
-2026 年社区对 OG 图片生成工具的讨论集中在三个维度：(1) **Edge 运行时性能**——Satori + Vercel Edge 方案冷启动 <50ms 对比 Puppeteer/Playwright 方案 >1s，边缘生成是生产环境的首选架构；(2) **可视化 vs 代码**——Bannerbear/Placid 等可视化编辑器降低了非开发者的进入门槛，但 API 调用成本和模板灵活性上限不及自建方案；(3) **AI 辅助设计的可用性**——OGimagen 等 AI 工具可以自动生成布局，但多篇文章的品牌一致性仍然需要人工模板约束。社区共识：高流量内容站优先自建 Edge 方案（`@vercel/og` + Next.js），小团队和个人优先用可视化托管 API。*网摘综合，非 Alignify 实测。*
+2026 年社区对 OG 图片生成工具的讨论集中在三个维度：(1) **Edge 运行时性能**——Satori + Vercel Edge 方案冷启动 <50ms 对比 Puppeteer/Playwright 方案 >1s，边缘生成是生产环境的首选架构；(2) **可视化 vs 代码**——Bannerbear/Placid 等可视化编辑器降低了非开发者的进入门槛，但 API 调用成本和模板灵活性上限不及自建方案；(3) **AI 辅助设计的可用性**——OGimagen 等 AI 工具可以自动生成布局，但多篇文章的品牌一致性仍然需要人工模板约束。社区共识：高流量内容站优先自建 Edge 方案（`@vercel/og` + Next.js），小团队和个人优先用可视化托管 API。架构对照见 §形态谱系 **Type A vs B**。
+
+*网摘综合，非 Alignify 实测。*
 
 ---
 
-## 外链索引
+## 延伸阅读 · 站内外
 
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| **Vercel OG Image** | Vercel 开源的 OG 图片生成库，Satori 渲染 | [github.com/vercel/og-image](https://github.com/vercel/og-image) |
-| **Satori** | Vercel 的 HTML→SVG 渲染引擎，OG 图片生成核心依赖 | [github.com/vercel/satori](https://github.com/vercel/satori) |
-| **Open Graph Protocol** | Facebook 的 OG 标签规范，social cards 的事实标准 | [ogp.me](https://ogp.me/) |
-| **Twitter Cards** | X/Twitter 的社交卡片规范文档 | [developer.x.com](https://developer.x.com/en/docs/twitter-for-websites/cards/overview/markup) |
+**站外**
+
+- [Next.js opengraph-image 约定](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image)
+- [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+
+**站内**
+
+- Hub：[image.md](image.md) · 静态图生成：[image-generator.md](image-generator.md)

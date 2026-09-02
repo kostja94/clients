@@ -6,7 +6,7 @@
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-tools`](../../product/alignify-keywords-tools.md#video-tools)
 
-**站内相邻**：本页为 **Hub**；生成层主归属 [video-generator.md](video-generator.md) · 输入专论 [text-to-video.md](text-to-video.md) · [image-to-video.md](image-to-video.md) · [video-to-video.md](video-to-video.md)
+**站内相邻**：本页为 **Hub**；生成层主归属 [video-generator.md](video-generator.md) · 实时交互长视频 [interactive-video.md](interactive-video.md) · 输入专论 [text-to-video.md](text-to-video.md) · [image-to-video.md](image-to-video.md) · [video-to-video.md](video-to-video.md)
 
 **勿与…混买**：本页只做品类分流与内容分工说明，不替代专页选型；旗舰模型 URL 表与横评 **仅** 见 [video-generator.md](video-generator.md) §外链索引。
 
@@ -24,11 +24,12 @@
 
 ---
 
-## 子类导航（14 slug → 深度知识块）
+## 子类导航（15 slug → 深度知识块）
 
 | slug | 典型买家问题 | 深度知识块 |
 |------|--------------|------------|
 | `video-generator` | 哪种模型/平台从零生成视频？ | [video-generator.md](video-generator.md) |
+| `interactive-video` | 生成过程中能否改 prompt、连续播多久？ | [interactive-video.md](interactive-video.md) |
 | `text-to-video` | 输入是文本/文档？ | [text-to-video.md](text-to-video.md) |
 | `image-to-video` | 输入是静态图，要让它动起来？ | [image-to-video.md](image-to-video.md) |
 | `video-to-video` | 已有视频要换风格/改场景？ | [video-to-video.md](video-to-video.md) |
@@ -52,6 +53,7 @@
 |----------|--------------|----------------|
 | 品类地图 / 子类分流 | **本页 `video`** | 专页只保留与本 slug 相关的一行对比 |
 | 通用 T2V/I2V 模型横评 + 完整 URL 表 | [video-generator.md](video-generator.md) | ≤2 个代表 + 「完整对比见 generator §外链索引」 |
+| 实时交互 / Live Model / 无限流 steering | [interactive-video.md](interactive-video.md) | generator/world-model 各 ≤2 句 + 链本页 SSOT |
 | T2V 定义 + 讲解视频 / 数字人播报 | [text-to-video.md](text-to-video.md) | generator 不展开 Golpo/VideoTutor/Synthesia 专表 |
 | I2V + Motion Brush / 品牌保真 / 废片率 | [image-to-video.md](image-to-video.md) | generator 不重复 I2V 长定义 |
 | V2V + 时间一致性 / 风格迁移 | [video-to-video.md](video-to-video.md) | video-effects 仅抠像/跟踪；全片风格化链 V2V |
@@ -75,16 +77,17 @@
 |------|----------|
 | Sora 2 关停 | 2026-03-24 OpenAI 宣布关停；Web/App **2026-04-26** 下线；API **2026-09-24** 下线 |
 | T2V 市场占比 | 约 **46%**（2026 第三方报告口径；细节见 video-generator） |
-| 2026 旗舰模型代际 | **Veo 3.1** / **Runway Gen-4.5** / **Kling 3.0** |
+| 2026 旗舰模型代际与横评 | **Veo 3.1**（原生音频 + 4K；prompt 遵循度领先）/ **Runway Gen-4.5**（角色一致 + Motion Brush；控制不可替代）/ **Kling 3.0**（多镜头 + 原生音频 5 语言；性价比占优）；2025–2026 无全能冠军；Sora 2 关停标志大厂消费级退场；完整对比见 [video-generator §对比与测评](video-generator.md#对比与测评第三方观点非官方) |
 | 推理成本趋势 | 约 10× 下降（2025→2026，~$2.50→~$0.18–0.30/5s 片段量级） |
+| 实时交互分支（2026-09） | **Query Model**（离线 clip）vs **Live Model / 交互流**（Orbis、fal.live、Odyssey-2 Pro）——产品 SSOT 见 [interactive-video.md](interactive-video.md) |
 
 ---
 
 ## 词汇锚点（Hub 级，细节见专页）
 
-- **AI 视频（本页主轴）**：涵盖 **生成**（从无到有）、**编辑**（处理已有像素）、**特效/Repurposing** 与 **垂直场景**（电影、动漫、短剧、MV）。生成子类按 **输入模态** 分为 T2V / I2V / V2V——定义与产品深度见上表专页，不在此重复。
-- **2026 旗舰生成模型（摘要）**：Veo 3.1（原生音频 + 4K）、Runway Gen-4.5（角色一致 + Motion Brush）、Kling 3.0（多镜头 + 原生音频 5 语言）。完整 URL 表见 [video-generator.md](video-generator.md)。
-- **T2V 市场占比**：约 46%；讲解视频 / 数字人播报专论见 [text-to-video.md](text-to-video.md)。
+- **AI 视频（本页主轴）**：涵盖 **生成**（从无到有）、**编辑**（处理已有像素）、**特效/Repurposing** 与 **垂直场景**（电影、动漫、短剧、MV）。生成子类按 **输入模态** 分为 T2V / I2V / V2V——定义与产品深度见 **§子类导航** 各 spoke，不在此重复。
+- **旗舰模型、市场占比、关停时间线**：见 **§全簇共享事实**；完整 URL 表见 [video-generator.md](video-generator.md) §外链索引。
+- **讲解视频 / 数字人播报**：专论见 [text-to-video.md](text-to-video.md)（T2V 子类，非通用生成横评）。
 
 ---
 
@@ -117,11 +120,9 @@
 
 ---
 
-## 延伸阅读 · 站内知识块
+## 工具与产品类型
 
-- 生成层：[video-generator.md](video-generator.md) · [text-to-video.md](text-to-video.md) · [image-to-video.md](image-to-video.md) · [video-to-video.md](video-to-video.md)
-- 后期：[video-editor.md](video-editor.md) · [video-clipping.md](video-clipping.md) · [video-effects.md](video-effects.md)
-- 垂直/编排：[canvas-video.md](canvas-video.md) · [filmmaking.md](filmmaking.md) · [animation-generator.md](animation-generator.md) · [short-drama.md](short-drama.md) · [music-video-generator.md](music-video-generator.md)
+品类分流见 **§子类导航**；代表产品与完整 URL 表见各 spoke（生成层 SSOT：[video-generator.md](video-generator.md)）。
 
 ---
 
@@ -133,25 +134,23 @@
 | **Sora 2 关停报道** | CNN 2026-03-24 报道 | [cnn.com](https://www.cnn.com/2026/03/24/tech/openai-sora-video-app-shutting-down) |
 | **WaveSpeed AI Video API Guide** | 2026 年视频生成 API 完整指南 | [wavespeed.ai](https://wavespeed.ai/blog/posts/complete-guide-ai-video-apis-2026/) |
 
-**站外**
+### 对比与测评（第三方；观点非官方）
 
-- [Complete Guide to AI Video Generation APIs in 2026 (WaveSpeed)](https://wavespeed.ai/blog/posts/complete-guide-ai-video-apis-2026/)
-- [OpenAI is shutting down its Sora video app (CNN, 2026-03-24)](https://www.cnn.com/2026/03/24/tech/openai-sora-video-app-shutting-down)
-- [AI Video Generator Market Report 2026-2033 (GII / Grand View Research)](https://www.giiresearch.com/report/grvi1942046-ai-video-generator-market-size-share-trends.html)
+- **Hub 不做产品横评**：旗舰 T2V 规格与 Type 取舍见 [video-generator.md](video-generator.md) §对比与测评；实时交互见 [interactive-video.md](interactive-video.md)。
+- **宏观趋势 SSOT**：Sora 关停、三足鼎立、Live Model 分支见 [video-generator.md](video-generator.md) §行业注记与 §全簇共享事实。
+
+*观点非官方。*
 
 ---
 
-## 工具与产品类型（Hub 级，详情见各 spoke）
+## 延伸阅读 · 站内外
 
-| 类型 | 代表工具 | 深入阅读 |
-|------|---------|----------|
-| 文生视频（T2V） | Veo 3.1, Kling 3.0 | [video-generator.md](video-generator.md) |
-| 图生视频（I2V） | Runway Gen-4.5, Pika 2.5, Luma Ray 3 | [image-to-video.md](image-to-video.md) |
-| 视频编辑 | Adobe Premiere v26.0, DaVinci Resolve 20.3.2 | [video-editor.md](video-editor.md) |
-| 视频转风格 | Runway, DomoAI | [video-to-video.md](video-to-video.md) |
-| 电影全流程 | Melies, LTX Studio | [filmmaking.md](filmmaking.md) |
-| 短剧生成 | SkyReels, Kling 短剧模式 | [short-drama.md](short-drama.md) |
+**站内**
 
-### 对比与测评（第三方；观点非官方）
+- 生成层：[video-generator.md](video-generator.md) · [interactive-video.md](interactive-video.md) · [text-to-video.md](text-to-video.md) · [image-to-video.md](image-to-video.md) · [video-to-video.md](video-to-video.md)
+- 后期：[video-editor.md](video-editor.md) · [video-clipping.md](video-clipping.md) · [video-effects.md](video-effects.md)
+- 垂直/编排：[canvas-video.md](canvas-video.md) · [filmmaking.md](filmmaking.md) · [animation-generator.md](animation-generator.md) · [short-drama.md](short-drama.md) · [music-video-generator.md](music-video-generator.md)
 
-2025–2026 年共识：视频生成领域无全能冠军——Veo 3.1 在原生音频与 prompt 遵循度领先，Runway Gen-4.5 在角色一致性与 Motion Brush 控制上不可替代，Kling 3.0 在多镜头叙事与性价比上占优。Sora 2 关停标志着大厂消费级视频生成的退场。完整对比见 [video-generator.md §对比与测评](video-generator.md#对比与测评第三方观点非官方)。
+**站外**
+
+Hub 级站外参考见 **§外链索引**；产品 URL 表见 [video-generator.md](video-generator.md) §外链索引。

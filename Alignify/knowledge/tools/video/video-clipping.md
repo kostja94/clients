@@ -1,15 +1,16 @@
 # AI Video Clipping · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI Video Clipping / Repurposing**——从**长视频**自动识别高光并裁切为**多条社交短片**（9:16 等）；验收以 **叙事连贯性、说话人跟踪、传播力评分** 为主。本页为 **AI 视频剪辑/再利用产品 SSOT**（完整 URL 表仅此一处）；完整时间线剪辑与精修 → [video-editor.md](video-editor.md)；从零生成见 [video-generator.md](video-generator.md)。
+
 **材料范围**：公开网络检索（厂商官网、Skywork/quso.ai/G2 等第三方评测、社区讨论与行业综述）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 **2026-06-24**（簇去重修订）。
-
-
-**站内相邻**：[video.md](video.md) · [video-editor.md](video-editor.md) · [video-generator.md](video-generator.md)
-
-**勿与…混买**：本页交付 **多条社交短片**；完整时间线剪辑与精修见 video-editor。
 
 **站内对照**：[alignify.co/tools/video-clipping](https://alignify.co/tools/video-clipping) · `/tools/video-clipping` · [alignify.co/zh/tools/video-clipping](https://alignify.co/zh/tools/video-clipping) · `/zh/tools/video-clipping` · `content/tools/zh/video-clipping.md`、`content/tools/en/video-clipping.md` · slug **`video-clipping`**
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-clipping-tools`](../../product/alignify-keywords-tools.md#video-clipping-tools)
+
+**站内相邻**：[video.md](video.md)（Hub）· [video-editor.md](video-editor.md) · [video-generator.md](video-generator.md)
+
+---
 
 ## 与相邻 slug 分流（避免混买混评）
 
@@ -55,13 +56,16 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type A — 全自动一气呵成型**：用户上传长视频→ AI 自动检测高光、裁切、加字幕、出片——全程极少人工干预。适合追求效率的独立创作者。代表方向：OpusClip（ClipAnything 引擎、90%+ AI 准确率、免费 300 额度/月）。
-- **Type B — 趋势驱动型**：在自动剪辑基础上叠加 SEO/趋势分析——不仅找出「好片段」，还分析「什么内容在当下更容易传播」。适合营销团队和数据敏感型创作者。代表方向：Munch Studio（GPT/OCR/NLP 语义理解、趋势对齐、$38/月起）。
-- **Type C — 模板驱动型**：提供丰富的模板库和格式选项，用户可以基于 AI 初剪结果进一步定制。适合有一定美学偏好的创作者。代表方向：Vidyo.ai（Intelliclips、CutMagic 多机位）、Vizard AI（30+ 片段一键生成）。
-- **Type D — 转录优先型**：将视频先转录为文本，用户在文本层面标注高光段落，再反向定位视频时间戳——适合对剪辑内容有精确把控需求的专业人士。代表方向：Pictory、Clipwing（多说话人检测 + 转录驱动）。
-- **Type E — 开源自建型**：基于 Whisper + Gemini API 或开源 LLM 组合的 GitHub 项目——适合有工程能力的团队定制自己的剪辑管线。代表方向：AutoClip AI（通义千问 + React）、Vinci Clips（Gemini API + Whisper）。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 上传长视频→自动检测高光、裁切、加字幕、出片，极少人工干预 | 全自动高光剪辑 / AI video repurposing | OpusClip、Vizard AI、Reap Video |
+| **B** | 叠加 SEO/趋势分析，分析「什么内容当下更容易传播」 | 趋势分析型剪辑 / AI viral clip maker | Munch Studio、Quso.ai |
+| **C** | 丰富模板库，基于 AI 初剪结果进一步定制 | 模板驱动型 / auto highlight clips | Vidyo.ai |
+| **D** | 视频先转录为文本，用户在文本层面标注高光段落 | 转录驱动剪辑 / transcript-based clipping | Pictory、Clipwing |
+| **E** | Whisper + LLM 组合的 GitHub 项目，可自建管线 | 开源/自建方案 / AI clip generator GitHub | AutoClip AI、Vinci Clips |
+| **F** | 最低价付费选项，YouTube Shorts 垂直优化 | 低价极简型 / budget video repurposing | 2short.ai |
 
 ---
 
@@ -85,32 +89,20 @@
 
 ---
 
-## 工具与产品类型（「AI clip maker」「podcast to clips」「long video to short」等检索里常混在一起的品类；非穷尽）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **全自动高光剪辑**（auto highlight clips, AI video repurposing） | OpusClip、Vizard AI、Reap Video | 上传即出片，最少人工干预 |
-| **趋势分析型剪辑**（AI viral clip maker, trend-based clipping） | Munch Studio、Quso.ai | 内置传播力评分+关键词趋势分析 |
-| **转录驱动剪辑**（transcript-based clipping, podcast to shorts） | Pictory、Clipwing、Vidyo.ai | 文本层面选段，更精确但更耗时 |
-| **开源/自建方案**（open source video clipping, AI clip generator GitHub） | AutoClip AI、Vinci Clips | 完全可控但需要工程能力 |
-| **低价极简型**（cheapest AI clip maker, budget video repurposing） | 2short.ai（$9.90/月） | YouTube Shorts 优化，最便宜付费选项 |
-
----
-
-## 外链索引（工具与产品；无排序优先级）
-
-| 名称 | 一句话（据公开页面或综述归纳） | URL |
-|------|--------------------------|-----|
-| **OpusClip** | 全自动高光检测与剪辑市场领导者——ClipAnything 引擎、传播力评分、内置社交调度、Free Forever 300 额度/月，$15/月起 | [opusclip.com](https://opusclip.com) |
-| **Munch Studio** | 趋势驱动型 AI 剪辑——GPT/OCR/NLP 语义理解、趋势对齐、Fresh Ideas 周度创意，$38/月起 | [getmunch.com](https://getmunch.com) |
-| **Vidyo.ai** | 模板丰富的 AI 剪辑工具——Intelliclips、CutMagic 多机位编辑、视频章节自动生成，免费门槛较低 | [vidyo.ai](https://vidyo.ai) |
-| **Vizard AI** | 速度优先——30+ 片段一键生成、AI 字幕、社交发布调度，$16/月起 | [vizard.ai](https://vizard.ai) |
-| **Pictory** | 转录驱动的高光提取——可在文本层面选取段落后反向定位视频时间戳 | [pictory.ai](https://pictory.ai) |
-| **Quso.ai** | 全栈社交套件——AI 剪辑+传播力预测+社交发布调度，免费方案可用 | [quso.ai](https://quso.ai) |
-| **Clipwing** | 多说话人检测 + 转录驱动剪辑——适合访谈和圆桌讨论 | [clipwing.com](https://clipwing.com) |
-| **2short.ai** | 最低价付费选项——$9.90/月、YouTube Shorts 优化、AI 字幕 | [2short.ai](https://2short.ai) |
-| **AutoClip AI** | 开源方案——通义千问 LLM 内容分析 + React 前端，支持 YouTube/Bilibili | [github.com/Gshouxuan/autoclip-ai-](https://github.com/Gshouxuan/autoclip-ai-) |
-| **Vinci Clips** | 开源方案——Gemini API 视频分析 + Whisper 转录，支持 2GB 文件上传 | [github.com/tryvinci/vinci-clips](https://github.com/tryvinci/vinci-clips) |
+| 名称 | Type | 一句话（据公开页面或综述归纳） | URL |
+|------|------|--------------------------|-----|
+| **OpusClip** | A | 全自动高光检测与剪辑市场领导者——ClipAnything 引擎、传播力评分、内置社交调度、Free Forever 300 额度/月，$15/月起 | [opusclip.com](https://opusclip.com) |
+| **Munch Studio** | B | 趋势驱动型 AI 剪辑——GPT/OCR/NLP 语义理解、趋势对齐、Fresh Ideas 周度创意，$38/月起 | [getmunch.com](https://getmunch.com) |
+| **Vidyo.ai** | C | 模板丰富的 AI 剪辑工具——Intelliclips、CutMagic 多机位编辑、视频章节自动生成，免费门槛较低 | [vidyo.ai](https://vidyo.ai) |
+| **Vizard AI** | A | 速度优先——30+ 片段一键生成、AI 字幕、社交发布调度，$16/月起 | [vizard.ai](https://vizard.ai) |
+| **Pictory** | D | 转录驱动的高光提取——可在文本层面选取段落后反向定位视频时间戳 | [pictory.ai](https://pictory.ai) |
+| **Quso.ai** | B | 全栈社交套件——AI 剪辑+传播力预测+社交发布调度，免费方案可用 | [quso.ai](https://quso.ai) |
+| **Clipwing** | D | 多说话人检测 + 转录驱动剪辑——适合访谈和圆桌讨论 | [clipwing.com](https://clipwing.com) |
+| **2short.ai** | F | 最低价付费选项——$9.90/月、YouTube Shorts 优化、AI 字幕 | [2short.ai](https://2short.ai) |
+| **AutoClip AI** | E | 开源方案——通义千问 LLM 内容分析 + React 前端，支持 YouTube/Bilibili | [github.com/Gshouxuan/autoclip-ai-](https://github.com/Gshouxuan/autoclip-ai-) |
+| **Vinci Clips** | E | 开源方案——Gemini API 视频分析 + Whisper 转录，支持 2GB 文件上传 | [github.com/tryvinci/vinci-clips](https://github.com/tryvinci/vinci-clips) |
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -124,9 +116,7 @@ Vizard AI 在 quso.ai 2026 年横评中被列为「最佳 OpusClip 替代」—�
 
 ---
 
-## 延伸阅读 · 站内知识块
-
-- 并列：[video-editor.md](video-editor.md) · [video-generator.md](video-generator.md)
+## 延伸阅读 · 站内外
 
 **站外**
 
@@ -135,3 +125,7 @@ Vizard AI 在 quso.ai 2026 年横评中被列为「最佳 OpusClip 替代」—�
 - [Turn 1 Video Into 30 Clips with AI Video Repurposing (Gaga.art)](https://gaga.art/blog/ai-video-repurposing-tool/)
 - [Best Get Munch Alternatives for Repurposing Your Video Content In 2026 (quso.ai)](https://quso.ai/blog/get-munch-alternatives-for-video-repurposing)
 - [4 AI Video Clipping Tools Similar to Opus Clip (Aim is Game)](https://aimisgame.com/4-ai-video-clipping-tools-similar-to-opus-clip/)
+
+**站内**
+
+- 并列：[video-editor.md](video-editor.md) · [video-generator.md](video-generator.md) · [video.md](video.md)

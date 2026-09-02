@@ -70,14 +70,21 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Web SaaS 个人套餐**：上传 → 选风格 → 等邮件/队列下载。
-- **移动端 App**：偏轻量与社交分享；打印店合作在部分市场存在。
-- **企业/团队 headshot**：统一背景色、Logo 区、批量邀请员工上传。
-- **「证件照神器」类**：强调规格库（多国签证/考试报名）+ 检测条；与**纯形象照**工具用户群重叠于「白底胸像」但**用途声明**不同。
-- **API / 白标**：嵌入招聘或 **HRIS**；关注 **DPA** 与数据驻留。
-- **与传统修图混合**：AI 初稿 + 人工在 **Photoshop** 修肤与液化。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | Web SaaS 个人套餐：上传→选风格→队列下载 | Professional headshot SaaS, LinkedIn headshot | Aragon AI、HeadshotPro、BetterPic |
+| **B** | 移动端 App：轻量+社交分享；部分市场有打印店合作 | AI headshot app, mobile portrait | Insta Headshots |
+| **C** | 企业/团队：统一背景色、Logo 区、批量邀请上传 | Team headshot, corporate portrait | Aragon Teams API |
+| **D** | 「证件照神器」：规格库（多国签证/考试报名）+ 检测条 | ID photo maker, passport photo size | 与 A 用户群重叠于白底胸像；**用途声明**不同（§专题对照） |
+| **E** | API / 白标：嵌入招聘或 **HRIS**；关注 **DPA** 与数据驻留 | Headshot API, white-label portrait | Aragon Teams API + Zapier |
+| **F** | AI 初稿 + 人工 **Photoshop** 修肤与液化 | Hybrid headshot retouch | 传统合成 + AI 抠图/初稿 |
+| **G** | 通用 T2I + 脸模 | AI face generator, Midjourney portrait | 见 [image-generator.md](image-generator.md)（likeness 弱于专用） |
+| **H** | 设计套件画布内一键头像 | Design suite avatar add-on | Canva 等；与全站模板绑定 |
+| **I** | 老照片修复/清晰化（非换棚拍） | AI portrait enhancer, photo restoration | 与 headshot 检索重叠；验收标准不同 |
+
+**Type A vs D**（均产出白底胸像，用途不同）：A 为**社交/职场形象**；D 为**规格裁剪与检测**——能否用于法定办证见 §专题对照。
 
 ---
 
@@ -102,19 +109,7 @@
 
 ---
 
-## 工具与产品类型（「headshot / portrait / 证件照」检索里常混在一起的品类；非穷尽）
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|----------------------|--------------|------|
-| **Professional headshot SaaS** | 商务风格、批量团队 | 与 LinkedIn 优化服务检索重叠 |
-| **ID / passport photo app** | 规格裁剪、检测条 | 与「能否办证」无必然联系 |
-| **AI portrait / photo enhancer** | 老照片修复、清晰化 | 不一定是「换棚拍」 |
-| **General image gen + face** | 文生图 + 脸模 | 像本人稳定性通常弱于专用 headshot 产品 |
-| **Design suite add-on** | 画布内一键头像 | 与全站模板绑定 |
-
----
-
-## 外链索引（工具与产品；外链；非广告、无排序优先级）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 与站内 Tools 页数据源一致：`content/tools/zh/headshot-generator.md`、`content/tools/en/headshot-generator.md` 中 **`bestTools`**（顺序与 JSON 相同）。下表「一句话」为**中文版** `shortDescription`。
 
@@ -131,15 +126,17 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - **独立对比实测（观点非官方）**：开发者社区上多产品同图测试类文章（如 **DEV** 上「多款 headshot 生成器同图对比」类稿），适合观察**像真度**方差，**非**权威排名。
 - **隐私议题（行业向；观点非官方）**：部分品牌或第三方撰写的 **AI headshot confidentiality** 导读，可当作**提问清单**（训练、删除、保留期限），不构成任何单一产品背书。
 - **中文规格工具（商业站点；非监管文件）**：标注「证件照尺寸/像素/白底」的在线服务，可用于理解**用户侧需求**，**不能**替代政府或使领馆公开指引。
-- **站内相邻主题**：[background-changer.md](background-changer.md)（胸像白底与换景）、[avatar.md](avatar.md)（动态数字人，与静态头部分流）。
 
+**站内**
 
----
-## 延伸阅读 · 站内知识块
 - 品类 Hub：[image.md](image.md)
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）
+- 胸像白底与换景：[background-changer.md](background-changer.md)
+- 动态数字人（与静态头部分流）：[avatar.md](avatar.md)

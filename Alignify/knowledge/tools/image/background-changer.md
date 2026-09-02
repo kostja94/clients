@@ -71,22 +71,26 @@
 - **分辨率与格式**：**PNG / WebP**、是否保留 **alpha**；放大与锐化常与 **image enhancer** 工作流串联。
 - **批量与自动化**：文件夹、表格驱动、**webhook**；失败重试与人工抽检队列。
 - **API & on-prem（扩展）**：**mask** 导出、私有化与跨境数据驻留诉求。
-- **视频去背**：从图片向视频延伸——支持逐帧或时序感知的**视频背景移除**（Pixa、Picsart 等已提供），与实时会议虚拟背景（轻量低延迟模型）是不同的工程目标和精度要求。
-- **模特架消除（ghost mannequin）**：服饰电商特有——从服装照片中移除人台/模特架，生成「悬浮穿着」的成品效果；**Pixa**（原 Pixelcut）将其作为独立产品线。
-- **自然语言交互界面**：2026 年兴起的 conversational UI——用户用文本描述编辑意图，AI 编排抠图、换底、校色等多步操作（**Picsart AI Agent**、**Fotor AI Agent**、**Pixa agent**）。
+- **视频去背**：从图片向视频延伸——支持逐帧或时序感知的**视频背景移除**（见 §外链索引 **Type F**），与实时会议虚拟背景（轻量低延迟模型）是不同的工程目标和精度要求。
+- **模特架消除（ghost mannequin）**：服饰电商特有——从服装照片中移除人台/模特架，生成「悬浮穿着」的成品效果；代表见 §外链索引 **Type F**。
+- **自然语言交互界面**：2026 年兴起的 conversational UI——用户用文本描述编辑意图，AI 编排抠图、换底、校色等多步操作（见 §外链索引 **Type D** 等 agent 向产品）。
 - **MCP / agent 协议集成**：背景移除工具开始接入 **MCP**（Model Context Protocol）生态——**remove.bg** 通过 **Composio** 提供 MCP server，Claude Agent SDK、Claude Code、LangChain 等可直接调用 API；标志着「人手动上传图片」向「agent 自主调度」的接口层演化。
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **浏览器轻量编辑器**：上传 → 选背景 → 导出；适合低频个人与中小卖家。
-- **移动端创意套件**：社交模板、贴纸化背景，与「专业商品图」指标可能不一致。
-- **垂直电商 / PIM 集成**：强调**规范预设**与批量，弱化单张炫酷效果。
-- **开发者 API 型**：返回抠图结果、mask 或合成图，嵌入自建 **ERP/CMS**。
-- **生成式「文生场景」型**：强调**独一无二**背景，成本与时延通常高于模板铺底。
-- **传统合成工作流 + AI 抠图**：**Photoshop** 等仍承接精修；AI 负责初剪与草案。
-- **AI Agent 对话式编辑器**：2026 新形态——用户自然语言描述意图（「换白底+调亮」），AI 编排多工具链；区别于传统按钮式工具，交互门槛更低但中间步骤可控性弱于手动操作。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 浏览器轻量：上传→选背景→导出 | Cutout + replace SaaS, change background online | Fotor、Canva |
+| **B** | 生成式文生场景铺底 | Generative scene fill, prompt background | Claid AI Inspiration Mode |
+| **C** | 电商/API：批量、规范预设、mask 输出 | E-commerce background API, product photo batch | Claid AI、Remove.bg |
+| **D** | 移动端创意套件：模板、社交尺寸 | Mobile creative background, social template | Picsart |
+| **E** | 桌面专业+AI 初剪：PS 精修混合 | Desktop pro + AI assist matting | Photoshop + Remove.bg API |
+| **F** | 视频去背：逐帧或时序感知 | Video background removal | Pixa、Picsart |
+| **G** | AI Agent 对话式：自然语言→多工具链编排 | AI agent background editor, conversational edit | Picsart AI Agent、Fotor AI Agent、Pixa agent |
+
+**Type A vs C**（均换底，规模不同）：A 为**低频个人/中小卖家**；C 为**万级 SKU 目录吞吐**——小样本试用与批量体验可能相反（§对比与测评）。
 
 ---
 
@@ -112,22 +116,7 @@
 
 ---
 
-## 工具与产品类型（「background changer / replacement」检索里常混在一起的品类；非穷尽）
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|----------------------|--------------|------|
-| **Cutout + replace SaaS** | 去背、模板/纯色/上传底图 | 与 **remove background** 检索高度重叠 |
-| **Generative scene fill** | **Text / prompt** 生成背景、风格参考 | 质量波动大于模板型 |
-| **E-commerce & API** | 批量、规范预设、**mask** 输出 | 定价常按张或按调用阶梯 |
-| **Mobile creative** | 模板、社交尺寸一键导出 | 未必满足**目录**像素规范 |
-| **Design suite 内置** | 画布中与其他设计元素并列 | 适合营销物料而非万级 SKU |
-| **Desktop pro + AI assist** | 半自动选区 + 人工精修 | 大促主图仍常见此混合 |
-| **Video background removal** | 逐帧或时序感知视频去背，替换或输出透明通道 | 与实时会议绿幕管线不同，偏后期制作精度 |
-| **AI Agent / conversational editor** | 自然语言→多工具链编排（抠图+换底+校色） | 2026 新兴，降门槛但审计与可控性待成熟 |
-
----
-
-## 外链索引（工具与产品；外链；非广告、无排序优先级）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 与站内 Tools 页数据源一致：`content/tools/zh/background-changer.md`、`content/tools/en/background-changer.md` 中 **`bestTools`**（顺序与 JSON 相同）。下表「一句话」为**中文版** `shortDescription`（英文版见 `en` 稿同字段）。
 
@@ -152,7 +141,9 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**
 
 - **开发者文档（技术向；官方）**：PhotoRoom 等公开 **Remove Background API** 文档中对 **segmentation mask**、**alpha** 与合成工作流的说明（**URL 以线上为准**）。
 - **电商批量工作流（观点非官方）**：FileSpin 等博客对**目录级去背/换底**与多平台素材分发的讨论，适合理解**吞吐**诉求，非单一产品评测。
@@ -163,8 +154,8 @@
 - **MCP 与 Agent 集成**：Composio remove.bg MCP Toolkit 文档（Claude Agent SDK / LangChain / Vercel AI SDK 对接说明）。
 - **remove.bg 产品更新**：Magic Background 公告（2025-08）、WebP 支持公告（2025-07）。
 
+**站内**
 
----
-## 延伸阅读 · 站内知识块
 - 品类 Hub：[image.md](image.md)
 - 生成层 SSOT：[image-generator.md](image-generator.md)（§行业注记 / §外链索引 / §共享事实速查）
+- Generative Fill SSOT：[image-editor.md](image-editor.md)

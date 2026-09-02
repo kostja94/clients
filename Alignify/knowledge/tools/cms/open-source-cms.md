@@ -51,15 +51,17 @@
 
 ## 专题对照：OSS CMS × 架构 × 商业化
 
-| 模式 | 含义 | 代表 | Self-host 数据 |
-|------|------|------|----------------|
-| **经典 OSS WCM** | 主题一体、PHP/自托管 | WordPress.org, Drupal, Joomla | ✅ |
-| **OSS Headless** | API + 自托管 Studio | Strapi, Payload, Directus | ✅（Directus 看许可） |
-| **OSS Born-blog** | 出版垂直 | Ghost (MIT) | ✅ |
-| **OSS + 官方 Cloud** | 同厂托管可选 | Strapi Cloud, Payload Cloud, Ghost(Pro) | ✅ 自托管路径仍在 |
-| **Open core** | 企业功能付费 | Strapi Enterprise 功能 | ✅ CE 免费 |
-| **分层栈** | UI 开源 / 后端 SaaS | Sanity Studio | ❌ |
-| **纯 SaaS（对照）** | 闭源 | Contentful | ❌ → 用 **别厂 OSS** 替代，非同厂 fork |
+> 产品清单与 License 列见 **§工具与产品类型**（SSOT）；URL 见 **§外链索引**。
+
+| 模式 | 含义 | 代表 Type | Self-host 数据 |
+|------|------|-----------|----------------|
+| **经典 OSS WCM** | 主题一体、PHP/自托管 | A | ✅ |
+| **OSS Headless API** | REST/GraphQL 自托管 | B | ✅ |
+| **OSS Born-blog** | 出版垂直 | C | ✅ |
+| **OSS + 官方 Cloud** | 同厂托管可选 | B/C | ✅ 自托管路径仍在 |
+| **Open core** | 企业功能付费 | B | ✅ CE 免费 |
+| **分层栈** | UI 开源 / 后端 SaaS | — | ❌（Sanity） |
+| **纯 SaaS（对照）** | 闭源 | — | ❌ → [`headless-cms`](./headless-cms.md) |
 
 ---
 
@@ -104,19 +106,19 @@
 
 ---
 
-## 工具与产品类型（OSS CMS · 检索常混；非穷尽）
+## 工具与产品类型（OSS CMS · License SSOT；URL 见 §外链索引）
 
 > **列举顺序**：**垂直 OSS 优先** → 广义 WCM 平台。闭源对照单列最后一行。**License / Self-host 数据** 为必选列（跨品类 OSS 维度 SSOT）。
 
 | 产品 | Type | License / 模式 | Self-host 数据 | 典型买家 |
 |------|------|----------------|----------------|----------|
-| **WordPress.org** | A | GPL | ✅ | 插件生态 · SEO · 最大 WCM 份额 |
-| **Drupal** | A | GPL | ✅ | 复杂站点 · 政府/enterprise WCM |
+| WordPress.org | A | GPL | ✅ | 插件生态 · SEO · 最大 WCM 份额 |
+| Drupal | A | GPL | ✅ | 复杂站点 · 政府/enterprise WCM |
 | **Joomla** | A | GPL | ✅ | 中小 WCM |
-| **Strapi** | B | MIT CE + open core | ✅ | Node · headless · 插件 |
-| **Payload** | B | MIT | ✅ | Next/TS · code-first |
-| **Directus** | B/E | Source-available 2026 | ✅（看阈） | 已有 SQL · 数据平台 |
-| **Ghost** | C | MIT | ✅ | 博客 · Newsletter |
+| Strapi | B | MIT CE + open core | ✅ | Node · headless · 插件 |
+| Payload | B | MIT | ✅ | Next/TS · code-first |
+| Directus | B/E | Source-available 2026 | ✅（看阈） | 已有 SQL · 数据平台 |
+| Ghost | C | MIT | ✅ | 博客 · Newsletter |
 | **TYPO3** | A | GPL | ✅ | 欧洲 enterprise WCM |
 | **Tina** | D | Apache 2.0 | ✅ Git | MDX · 视觉编辑 + Git |
 | **Decap** | D | MIT | ✅ Git | 原 Netlify CMS |
@@ -151,14 +153,26 @@
 | **W3Techs — CMS** | 份额 | [w3techs.com/technologies/overview/content_management/](https://w3techs.com/technologies/overview/content_management/) |
 | **OSI — Open Source Definition** | 许可边界 | [opensource.org/osd](https://opensource.org/osd) |
 
+### 对比与测评（第三方；观点非官方）
+
+- **无单一 OSS CMS 冠军**：Type A WCM 生态 vs Type B headless vs Type C born-blog 验收轴正交——按 §按场景→Type 切片，规格见 §外链索引。
+- **许可优先于功能列表**：Directus source-available、Strapi open core 等须在选型期读 license 页，勿凭记忆（§风险）。
+
+*观点非官方。*
+
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
+
+**站内**
 
 - 跨品类 OSS 维度：[`open-source-deployment-dimension.md`](../../skills/knowledge-block/references/open-source-deployment-dimension.md)
 - Headless 深度：[`headless-cms.md`](./headless-cms.md)
 - 博客 builder SERP：[`blog-website-builder.md`](../website-builder/blog-website-builder.md)
-- 调研底稿：[`headless-cms-web-search-2026-08-28.md`](../../../temp/headless-cms-web-search-2026-08-28.md) · [`blog-cms-web-search-2026-08-28.md`](../../../temp/blog-cms-web-search-2026-08-28.md)
+
+**底稿**
+
+- [`headless-cms-web-search-2026-08-28.md`](../../../temp/headless-cms-web-search-2026-08-28.md) · [`blog-cms-web-search-2026-08-28.md`](../../../temp/blog-cms-web-search-2026-08-28.md)
 
 ---
 

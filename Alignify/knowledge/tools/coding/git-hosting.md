@@ -1,5 +1,7 @@
 # Agent 时代 Git 托管 / Code Forge · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**Agent-native Git hosting / Code forge**——源码**存哪、怎么 push/PR/merge**，验收以**Agent 负载下的存储/审查吞吐、mirror 策略、数据条款**为主。本页为 **Forge 路线与产品 SSOT**（完整 URL 表仅此一处）；PR 审查层 → [code-review.md](code-review.md)；在哪写代码 → [ide.md](ide.md)；Agent 执行任务 → [coding.md](coding.md)。
+
 **材料范围**：公开网络检索（Cursor / GitLab / GitHub / Zed / xAI 官方文档与工程博客；Reuters、VentureBeat、TechCrunch、The Verge、SiliconANGLE、Pragmatic Engineer；GitHub Status 与 availability 报告）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。产品阶段、定价与合规条款以各官网为准。网摘整理日期 **2026-08-21**。
 
 **站内对照**：`/blog/git-hosting` · `/zh/blog/git-hosting`（Best Ranking · 2026-08-21）· slug **`git-hosting`**
@@ -55,7 +57,9 @@
 
 ---
 
-## 专题对照：五条技术路线（2026）
+## 专题对照 / 扩展定义
+
+*五条技术路线（2026）*：术语见 §词汇锚点；下表只列**架构与 Agent 差异化**——产品规格见 §外链索引。
 
 | 路线 | 代表 | 是否新 forge | Git 协议 | Agent 差异化 |
 |------|------|:------------:|:--------:|-------------|
@@ -90,13 +94,15 @@
 
 ---
 
-## 形态谱系
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type I — Incumbent + Agent 编排**：GitHub **Agent HQ**；保留 GitHub，加 Mission Control、多厂商 Agent、AGENTS.md。适合 **零迁移**、已深度绑定 Actions/Apps 的团队。
-- **Type II — Incumbent + SCM 引擎升级**：GitLab **下一代 SCM + Orbit + Duo Agent Platform**；企业留在 GitLab，后端为 Agent 并发优化。适合 **已有 GitLab** 与合规自建需求。
-- **Type III — Editor 系新建 Forge**：Cursor **Origin**；mirror wedge + Continuity；与 Cursor/Grok 生态绑定。适合 **Cursor 重度用户**、愿试验第二托管面。
-- **Type IV — Git 伴侣 / 会话版本层**：Zed **DeltaDB**；不替换 remote，捕获 **commit 之间** 的 edit 与 Agent 对话。适合 **审查溯源**、多人/多 Agent 实时协作。
-- **Type V — 替代 VCS / 早期 forge**：Oak（virtual mount VCS）、Gitdot（Rust forge 早期）、OpenAI 内部 forge（传闻）——成熟度与 **企业就绪** 差异大。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **I** | Incumbent + Agent 编排——不换 substrate | Agent HQ, mission control | GitHub Agent HQ |
+| **II** | Incumbent + SCM 引擎升级 | next-gen SCM, commit-without-clone | GitLab 下一代 SCM、Orbit |
+| **III** | Editor 系新建 Forge——mirror wedge | agent-native forge | Cursor Origin |
+| **IV** | Git 伴侣——commit 之间版本层 | git companion VCS | Zed DeltaDB |
+| **V** | 替代 VCS / 早期 forge | OSS forge, rumoured forge | Gitdot、Oak、OpenAI 内部（传闻） |
 
 ---
 
@@ -183,7 +189,7 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
 - **Git 托管架构**：Cursor「Git at any scale」——Spokes 与 WAL 设计权衡（Tier 0 工程文）。
 - **DORA / 2025 报告**：AI  adoption 与 delivery throughput / stability 关系——Agent 放大产出亦放大 breakage（VentureBeat 等引用；以 Google/DORA 原文为准）。

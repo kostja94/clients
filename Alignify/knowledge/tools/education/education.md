@@ -1,18 +1,20 @@
 # AI Education · 知识块（非线性笔记）
 
-**材料范围**：公开网络检索（厂商官网、Research and Markets/GII 市场报告、TIME 评选、学术论文、EdTech 行业媒体）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 2026-05-19。
+**叙述主词 · 勿与…混买**：**AI Education / AI 教育工具（Hub）**——学习辅导、自适应教学、备考、教师效率与企业 upskilling 等**教育 AI 品类地图与分流**；本页 **不**重复各 Spoke 产品规格（见 §外链索引与各 Spoke SSOT）。拍照解题 → [ai-homework-helper.md](ai-homework-helper.md)；苏格拉底家教 → [ai-tutor.md](ai-tutor.md)；语言 → [ai-language-learning.md](ai-language-learning.md)；闪卡 → [ai-flashcards.md](ai-flashcards.md)；出题 → [quiz-generator.md](quiz-generator.md)；笔记 → [notes-generator.md](notes-generator.md)；科研 → [ai-for-science.md](ai-for-science.md)。
 
-**站内对照**：[alignify.co/tools/education](https://alignify.co/tools/education) · `content/tools/en/education.md` · [alignify.co/zh/tools/education](https://alignify.co/zh/tools/education) · `content/tools/zh/education.md` · slug **`education`**
+**材料范围**：公开网络检索（厂商官网、Research and Markets/GII、TIME 评选、学术论文、EdTech 媒体）；**未**引用 Alignify 站内 JSON。网摘整理日期 **2026-05-19**。
+
+**站内对照**：[alignify.co/tools/education](https://alignify.co/tools/education) · `content/tools/en|zh/education.md` · slug **`education`**
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 `#education-tools`
 
-## 与相邻 slug 分流
+## 与相邻 slug 分流（Hub 级）
 
-| 维度 | education（本页） | essay-writer | ai-for-science | recruiting |
-|------|-----------------|-------------|---------------|------------|
-| **买家问题** | "AI 如何帮助学习和教学？" | "AI 能帮我写论文吗？" | "AI 如何加速科研？" | "AI 如何辅助招聘？" |
-| **核心场景** | 学习辅导、自适应教学、备考 | 学术写作（有可能被用于学术不端） | 文献分析、实验设计、数据解释 | 简历筛选、面试安排 |
-| **典型用户** | 学生、教师、学校管理者 | 学生、研究人员 | 科学家、研究机构 | HR、招聘经理 |
+| 维度 | **education（本页 Hub）** | **essay-writer** | **ai-for-science** | **recruiting** |
+|------|-------------------------|-----------------|-------------------|----------------|
+| **买家问题** | AI 如何帮助学习/教学？ | AI 写论文？ | AI 加速科研？ | AI 辅助招聘？ |
+| **核心场景** | 辅导、自适应、备考、教师工具 | 学术写作 | 文献/实验/数据 | 简历/面试 |
+| **Spoke** | 见 §站内相邻 | — | [ai-for-science.md](ai-for-science.md) | recruiting 簇 |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -20,125 +22,139 @@
 
 ## 词汇锚点
 
-- **AI 教育工具（AI Education Tools）**：利用人工智能辅助学习和教学全过程的软件与平台——覆盖个性化辅导、自适应学习路径、自动评估与反馈、内容生成、学习行为分析。2026 年这一品类正从「辅助工具」向「核心教学基础设施」迁移，全球生成式 AI 教育市场 2026 年达 $7.63 亿（Research and Markets），CAGR 44%。
-- **自适应学习（Adaptive Learning）**：根据学生的实时答题表现、错误模式和认知状态，动态调整后续学习内容的难度、节奏和呈现方式的 AI 系统。不同于简单的「对就对、错就错」判断——自适应系统诊断「为什么会错」并回溯到前置知识点进行补救。代表：Squirrel AI 的知识图谱+微知识点诊断。
-- **AI 辅导（AI Tutoring / AI Personal Tutor）**：以一对一对话形式模拟人类辅导教师的 AI 系统。2026 年主流实现有三：苏格拉底式引导（Khanmigo——不直接给答案，通过反问引导学生）、对话式练习（Duolingo Max——GPT-4 驱动的角色扮演和视频通话）、知识裂缝诊断（Squirrel AI——从答题错误回溯到更早期的知识漏洞）。
-- **知识图谱（Knowledge Graph）**：将学科知识拆解为数千个有依赖关系的「微知识点」并建模它们之间的先修关系。当一个学生在某道题上出错时，AI 不是简单地标记「这道题错了」，而是沿知识图谱往下追溯——「这道题需要的前置知识点中，哪一个是断裂的？」这是 Squirrel AI 的核心差异化。
-- **苏格拉底式辅导（Socratic Tutoring）**：不直接给出答案，而是通过一系列引导性问题帮助学生自己推导出解决方案的 AI 辅导模式。Khanmigo 是这一理念的代表——「我不会替你解题，但我可以帮你找到解题的思路。」与直接生成答案的通用 LLM（ChatGPT）的核心区别。
-- **AI 备课助手（AI Teaching Assistant）**：面向教师而非学生的工具——自动生成教案、评分标准、差异化练习题、学生进度摘要。Khanmigo 的教师端功能包含这些。2026 年趋势：AI 减少教师的事务性工作（出题、批改、写评语），让教师专注于只有人能做的事（激励、情感支持、复杂判别）。
-- **间隔重复与记忆保持（Spaced Repetition & Memory Score）**：利用 AI 优化的遗忘曲线算法决定每个知识点应该何时复习——在即将遗忘的临界点进行提示。Quizlet 的 Memory Score 是这个方向的代表实现——追踪每张闪卡的记忆保持率，AI 决定下次复习时间。
+- **AI 教育工具**：辅助学习与教学全过程——个性化辅导、自适应路径、自动评估、内容生成、行为分析。2026 生成式 AI 教育市场约 $7.63 亿（Research and Markets），CAGR 44%。
+- **自适应学习（Adaptive Learning）**：按实时表现、错误模式动态调整难度与节奏——诊断「为什么错」并回溯前置知识点。
+- **AI 辅导（AI Tutoring）**：一对一对话模拟辅导——苏格拉底引导（Khanmigo）、对话练习（Duolingo Max）、知识裂缝诊断（Squirrel AI）。
+- **知识图谱（Knowledge Graph）**：微知识点先修关系——错题沿图追溯断裂点（Squirrel AI 差异化）。
+- **苏格拉底式辅导**：不直接给答案——与 ChatGPT 直接生成答案的核心区别；详见 [ai-tutor.md](ai-tutor.md)。
+- **AI 备课助手**：面向教师——教案、评分标准、差异化练习、进度摘要。
+- **间隔重复与 Memory Score**：Quizlet 等优化遗忘曲线——详见 [ai-flashcards.md](ai-flashcards.md)。
 
 ---
 
 ## 专题对照
 
-### 「AI 教」vs「AI 辅」：两种教育 AI 哲学
+**AI 教 vs AI 辅**：苏格拉底式、自适应等定义见 §词汇锚点；下表只列**买家体验与监管差**。
 
-| 维度 | AI 作为教师（AI as Teacher） | AI 作为工具（AI as Tool） |
-|------|---------------------------|------------------------|
-| **核心问题** | "AI 能替代老师教学生吗？" | "AI 能让老师教得更好吗？" |
-| **学生交互对象** | AI 是主要交互方 | 教师是主要交互方，AI 是幕后增强 |
-| **代表工具** | Squirrel AI（全 AI 授课实验）、Duolingo | Khanmigo（辅助+教师工具）、Quizlet |
-| **实证结果** | Squirrel AI 七年级实验组 92.91 vs 对照组 79.07 | 教师效率提升（更多时间用于个性化关注） |
-| **2026 争议** | AI 教学效果可能优于人类——但「AI 应该有资格教孩子吗？」 | 无争议——这是所有人认同的方向 |
-| **监管状态** | 需要教育监管审批（中国已核发课外培训许可） | 无需特殊审批 |
+| 维度 | AI 作为教师 | AI 作为工具 |
+|------|------------|------------|
+| **核心问题** | AI 能替代老师教学生吗？ | AI 能让老师教得更好吗？ |
+| **交互对象** | AI 是主交互方 | 教师为主，AI 幕后 |
+| **2026 争议** | 效果或优于人类——「AI 有资格教吗？」 | 共识方向——减事务性工作 |
+| **监管** | 部分法域需培训许可（中国课外培训） | 通常无需特殊审批 |
+
+各 Spoke 产品与实验数据 → §外链索引、§对比与测评；**Hub 不写 Best 产品 H3**。
 
 ---
 
 ## 问题域
 
-- **优质教育资源的极度不平等**：全球数亿学生缺乏合格的教师——尤其是在 STEM 领域。AI 辅导以极低成本（Khanmigo $44/年 vs 人类辅导教师 $30-60/小时）将一对一辅导从奢侈品变为日用品。这是 AI 教育最根本的 WHY——不是「让好学生更好」，而是「让没有老师的学生有老师」。
-- **「一个老师对 30 个学生」的工业时代教学模式不可持续**：在传统课堂中，教师只能以「班级平均」的水平和速度教学——最前面的学生被拖慢，最后面的学生跟不上。AI 自适应系统使每个学生获得自己的学习路径和速度成为可能——这在物理课堂中从未实现过。
-- **学生 AI 使用率的爆发增长**：92% 的本科生已在 2025 年使用 AI（2024 年为 66%），生成式 AI 用于作业的比例从 53% 跃升至 88%。这既是机遇（学生自主使用 AI 学习），也是挑战（学生用 AI 绕过学习——直接获取答案而非学习过程）。
-- **「AI 写作业」vs「AI 教学习」的边界模糊**：ChatGPT 式的通用 AI 可以直接生成论文和解题答案——这对学习过程是破坏性的。AI 教育工具的差异化在于设计「不能直接给答案」的交互——Khanmigo 的苏格拉底模式、Quizlet 的自测模式。这条边界的清晰程度决定了工具是「学习增强器」还是「作弊加速器」。
-- **教师群体的 AI 焦虑与 AI 接纳并存**：教师一方面担心 AI 取代他们的工作，另一方面面对行政性工作（出题、批改、写评语、与家长沟通）的严重过载——AI 在后者上的价值是明确且无争议的。2026 年的智能定位：AI 做教师的「事务性工作」——教学决策和情感支持留给人类。
+- **优质教育资源极度不平等**：Khanmigo $44/年 vs 人类辅导 $30–60/小时。
+- **「1 对 30」不可持续**：AI 自适应使个性化路径成为可能。
+- **学生 AI 使用率爆发**：92% 本科生 2025 用 AI（2024 66%）；作业用途 53%→88%。
+- **「AI 写作业」vs「AI 教学习」边界**：工具设计能否禁止直接给答案——见 [ai-tutor.md](ai-tutor.md) vs [ai-homework-helper.md](ai-homework-helper.md)。
+- **教师 AI 焦虑与接纳并存**：AI 减出题/批改/评语等事务性工作——争议最小的增长轴。
 
 ---
 
-## 能力栈
+## 能力栈（概念维度，非厂商功能表）
 
-- **知识诊断与漏洞回溯**：根据学生的答题错误模式，沿知识依赖图向下追溯——找到真正的知识裂缝而非表面症状。Squirrel AI 的知识图谱包含数千个微知识点及其先修关系——这是将「错了」变成「为什么错、从哪开始补」的核心技术。
-- **自适应学习路径生成**：实时根据学生掌握程度调整——跳过已掌握的知识点、增加薄弱点的练习密度、调整难度曲线。与静态课件（所有人看相同的视频和习题）的本质区别：每个学生的学习序列是动态生成的。
-- **AI 对话辅导**：基于大语言模型的自然对话能力——但关键不是「对话」本身而是「对话的教学设计」。苏格拉底式引导（Khanmigo）需要 LLM 在 prompt 中嵌入教学策略约束——「不要直接给答案」「如果学生卡住了，给 hint 而非全文解答」「检查学生是否真的理解了」。对话式练习（Duolingo Max）需要角色扮演的场景设计和实时纠错。
-- **自动评估与反馈生成**：AI 批改论文（不仅是语法检查——还包括论点质量、逻辑结构、证据支持度）、自动评分简答题和数学证明步骤、生成个性化反馈（不是「写得不好」而是「第三段的论据不足以支持你的论点，因为……」）。2026 年水平：客观题（选择、填空）已完全自动化；主观题（论文、证明）需要教师复核但 AI 初评大幅减少批改时间。
-- **学习行为分析与预警**：通过分析学生的答题时间、错误类型分布、学习时间段、放弃率等行为信号，预测可能掉队的学生——比考试成绩更早地发出预警。2026 年从「描述性分析」（发生了什么）向「预测性分析」（将要发生什么）演进。
-- **AI 内容生成——教案、题目、差异化材料**：面向教师的生成能力——根据教学大纲自动生成教案、根据班级错误模式生成针对性练习题、为不同水平的学生生成差异化阅读材料。2026 年是 AI 教师工具增长最快的子领域——因为减少教师工作量比提高学生成绩的 AI 更容易被市场接受。
-- **多模态学习输入**：学生可以手写解题步骤拍照上传→AI 分析手写内容→定位具体哪一步出错。Khanmigo 已支持此功能。语音交互也正在成为标配——特别是语言学习场景。
+- **知识诊断与漏洞回溯**：沿依赖图找裂缝——Spoke [ai-tutor.md](ai-tutor.md)、Squirrel AI。
+- **自适应学习路径生成**：动态序列 vs 静态课件。
+- **AI 对话辅导**：prompt 嵌入教学策略约束——Socratic、hint 非全文。
+- **自动评估与反馈**：客观题自动化；主观题 AI 初评+教师复核。
+- **学习行为分析与预警**：描述性→预测性分析。
+- **AI 内容生成（教师向）**：教案、差异化材料——2026 增长最快子领域。
+- **多模态输入**：手写拍照分析、语音——语言场景见 [ai-language-learning.md](ai-language-learning.md)。
+
+产品功能表 → 各 Spoke §外链索引。
 
 ---
 
-## 形态谱系
+## 形态谱系（Hub 级架构切片；Spoke 有独立 Type 表）
 
-- **全科 AI 辅导平台（General AI Tutor）**：覆盖多个学科的 AI 对话辅导。Khanmigo（K-12 全科，苏格拉底式，$44/年）是标杆——入选 TIME 2026 年度最佳发明。以可汗学院现有的免费视频内容为基础，叠加 AI 的个性化引导层。
-- **自适应学习系统（Adaptive Learning System）**：以知识诊断和个性化学习路径为核心——不一定是对话形式。Squirrel AI（5,200 万学生、6 万所学校、TIME 2026 全球百强）是最大、证据最强的代表——吉尼斯纪录实验中 7 年级 AI 教学组平均分 92.91 vs 人类教师组 79.07。部署模式以线下的 AI 学习中心为主——与纯线上工具不同。
-- **AI 语言学习（AI Language Learning）**：对话式语言练习的专业化。Duolingo Max（GPT-4 驱动，Video Call + Roleplay，$168/年）是消费级标杆——入选 TIME 2026 年度最佳发明。免费的基础课程+AI 对话附加付费——典型的 Freemium 模式。
-- **备考与记忆工具（Test Prep & Memorization）**：AI 将学习笔记转化为多种形式（闪卡、模拟测试、脑波歌）并以间隔重复算法优化复习节奏。Quizlet（Magic Notes + Q-Chat + Memory Score，Plus $35.99/年）是这一子品类的领导者——面向有大量内容需要记忆和自测的备考学生。
-- **AI 教师工具（AI for Teachers）**：面向教师的效率工具——自动出题、批改、教案生成、差异化材料生成、学生进度可视化。减少教师事务性工作时间——这是 AI 教育争议最小、增长最快的子领域。
-- **企业学习与技能提升（Corporate Learning & Upskilling）**：面向职场人士的 AI 技能培训——不按学科而是按职业技能分类（编程、数据分析、项目管理）。Coursera 的 AI 辅导功能、GoSkills AI Tutor 是代表。2026 年这一子品类正从 K-12 和高等教育的阴影中走出——终身学习和职业转型创造了一个独立的需求池。
+| Type | 架构特征 | 英文常检索词 | Spoke / 代表见 |
+|------|----------|--------------|----------------|
+| **A** | 全科 AI 对话辅导，苏格拉底式 | General AI tutor | [ai-tutor.md](ai-tutor.md) · Khanmigo |
+| **B** | 知识图谱+自适应路径，可非对话 | Adaptive learning system | [ai-tutor.md](ai-tutor.md) · Squirrel AI |
+| **C** | 语言：课程+AI 对话/发音 | AI language learning | [ai-language-learning.md](ai-language-learning.md) |
+| **D** | 备考：闪卡/SRS/模拟测 | Test prep & memorization | [ai-flashcards.md](ai-flashcards.md) |
+| **E** | 教师效率：出题/批改/教案 | AI for teachers | [quiz-generator.md](quiz-generator.md) · MagicSchool |
+| **F** | Answer-first 拍照解题 | AI homework helper | [ai-homework-helper.md](ai-homework-helper.md) |
+| **G** | 材料→笔记/闪卡/quiz | Notes & study kit generation | [notes-generator.md](notes-generator.md) |
+| **H** | 企业 upskilling | Corporate AI learning | Coursera AI、GoSkills |
 
 ---
 
 ## 风险 · 合规 · 伦理与教育公平（外部框架可对照）
 
-- **AI 教学效果的「黑箱」问题**：当 AI 而不是人类教师主导教学过程时，教学决策（为什么让学生 A 多练乘法而不是分数的原因）可能是不透明的。如果学生没有进步——谁负责？教师？学校？AI 厂商？2026 年尚无明确的法律框架。
-- **数字鸿沟的加剧风险**：AI 教育工具假设学生拥有稳定的互联网接入和个人设备——这在不发达地区和低收入家庭是最主要的障碍。如果 AI 教育工具比人类教师更有效——没有设备的学生不仅缺少一个好老师，还比有设备的学生落后更多。
-- **数据隐私与儿童保护**：教育 AI 收集了大量学生行为数据——答题模式、错误历史、注意力持续时间——这些数据的高度敏感性（未成年人学习数据）使其成为隐私保护的最高风险领域。COPPA（美国儿童在线隐私保护法）、GDPR 对儿童数据的特殊保护、FERPA（美国家庭教育权利和隐私法）构成了多层合规要求。
-- **AI 作弊与学术诚信**：92% 的本科生使用 AI，88% 用于作业——AI 教育工具需要在「辅助学习」和「替代学习」之间设计明确的边界。工具级的解决方案（如 Khanmigo 不直接给答案）比事后检测（AI 检测器）更根本。
-- **教育监管的中国特殊路径**：Squirrel AI 在中国获得了课外培训的监管许可——这是中国教育监管对 AI 教学的明确态度。中国在 AI 教育领域的监管实践可能成为全球模板——约束 AI 可以做什么（不能替代学校教育的主体地位）和不能做什么（不能增加学生负担）。
+- **AI 教学黑箱**：谁对没进步负责——2026 法律框架尚不明确。
+- **数字鸿沟**：有效 AI 工具假设设备与网络——可能加剧不平等。
+- **数据隐私与儿童保护**：COPPA、GDPR 儿童条款、FERPA。
+- **AI 作弊与学术诚信**：工具级「不给答案」比事后检测更根本——Spoke 分流见上。
+- **中国教育监管路径**：Squirrel AI 获课外培训许可——AI 可做什么/不可做什么的模板。
 
 ---
 
 ## 落地碎片
 
-- **Khanmigo + Quizlet 是性价比最高的个人学习组合**：Khanmigo $44/年覆盖全科辅导（数学、科学、编程、历史、人文——苏格拉底式，不直接给答案），Quizlet Plus $35.99/年覆盖备考和记忆（Magic Notes + 间隔重复）。合计 ~$80/年——大约是 Duolingo Max 的一半价格、人类辅导教师的 2-3 小时费用。
-- **如果目标是系统性地补知识漏洞——Squirrel AI 是当前证据最强的选择**：吉尼斯纪录实验数据令人印象深刻（七年级 +13.84 分 vs 人类教师），但需注意——Squirrel AI 是线下 AI 学习中心模式，不是手机 App。在北美/欧洲市场尚未普及。
-- **对于语言学习——Duolingo 免费层已足够覆盖基础**：Duolingo Max 的 Video Call 和 Roleplay 是锦上添花，不是必需品。先用免费层跑完基础课程，只有在需要口语对话练习时才升级到 Max——不要一开始就付 $168/年。
-- **教师应主动使用 AI 工具——这是减少职业倦怠的最快路径**：AI 出题、AI 批改客观题、AI 生成差异化练习题、AI 写学生评语初稿——这些事务性工作占教师 30-40% 的时间。花费 $0（Khanmigo 教师端免费）到几十美元/月的 AI 工具可以释放数百小时的课堂时间——用于教师最擅长的事：与学生建立关系和个性化指导。
-- **「AI 不应该给答案」是所有有效 AI 教育工具的共同特征**：在选择 AI 教育工具时，一个简单的试金石——问工具一个数学题，看它是直接给答案（坏）还是引导你推导（好）。如果工具直接给答案，它不是在帮助你学习——它是在帮助你不学习。
+- 个人学习组合叙事（第三方）：Khanmigo + Quizlet ~$80/年 vs 人类辅导 2–3 小时——规格见 §外链索引。
+- 系统补知识漏洞、有对照实验证据 → Squirrel AI 线下学习中心模式（非全球 App）。
+- 语言：Duolingo 免费层跑基础，需口语再升 Max——见 [ai-language-learning.md](ai-language-learning.md)。
+- 教师：AI 减 30–40% 事务时间——Khanmigo 教师端免费等见 §外链索引。
+- **试金石**：问数学题——直接给答案（坏）vs 引导推导（好）。
 
 ---
 
-## 工具与产品类型
+## 工具与产品类型（检索词地图；非产品枚举）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|---------------------|-------------|------|
-| **AI Tutor / AI Homework Help**（Khanmigo, Squirrel AI, Brainly） | 全科对话辅导，苏格拉底式引导，知识诊断 | 学生→AI 直接交互；2026 年最重要的子品类 |
-| **Adaptive Learning Platform**（DreamBox, Century Tech, Kiddom） | 实时自适应学习路径，学校/LMS 集成 | 面向学校采购；与学区课程体系对接 |
-| **AI Language Learning**（Duolingo Max, Babbel AI, ELSA Speak） | 对话练习，语音评估，角色扮演 | 消费级市场最成熟的子品类 |
-| **AI Study & Test Prep**（Quizlet, Chegg, Course Hero AI） | 闪卡自动生成，模拟测试，间隔重复 | 面向考试备考的大学生和高中生 |
-| **AI for Teachers**（Khanmigo Teacher, MagicSchool, Diffit） | 教案生成，出题，批改，差异化材料 | 增长最快的子领域——赋能教师而非替代教师 |
-| **Corporate AI Learning**（Coursera AI, GoSkills AI Tutor, Sana Labs） | 职业技能培训，定制学习路径 | 企业采购；面向员工 Upskilling |
+| 类型（英文常检索词） | 典型包含什么 | Spoke |
+|---------------------|-------------|-------|
+| **AI Tutor / AI Homework Help** | 对话辅导 vs 直接解题 | ai-tutor / ai-homework-helper |
+| **Adaptive Learning Platform** | 学校/LMS 集成自适应 | ai-tutor |
+| **AI Language Learning** | 对话、发音、角色扮演 | ai-language-learning |
+| **AI Study & Test Prep** | 闪卡、模拟测、SRS | ai-flashcards |
+| **AI Quiz / Assessment Generator** | 出题、批改、游戏化测验 | quiz-generator |
+| **AI Notes Generator** | PDF/视频→笔记/卡片 | notes-generator |
+| **AI for Teachers** | 教案、差异化、MagicSchool 类 | quiz-generator |
+| **Corporate AI Learning** | 职业技能 upskilling | （本 Hub 略述） |
 
 ---
 
-## 外链索引
+## 外链索引（Hub 级代表产品 SSOT；各 Spoke 有更全表）
 
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| Khanmigo (Khan Academy) | 全科 AI 辅导——苏格拉底式引导，永不直接给答案，学生 $44/年，教师免费 | https://khanmigo.ai |
-| Duolingo Max | AI 语言学习标杆——GPT-4 驱动的 Video Call + Roleplay，$168/年 | https://duolingo.com |
-| Quizlet | 备考与记忆——Magic Notes 自动生成闪卡/测试，Q-Chat AI 辅导，$35.99/年 | https://quizlet.com |
-| Squirrel AI | 自适应学习系统——知识图谱诊断+微知识点回溯，5,200 万学生，TIME 2026 全球百强 | https://squirrelai.com |
-| Brainly | 社交学习+AI——学生互助问答社区+AI 辅导 | https://brainly.com |
-| DreamBox Learning | K-8 数学+阅读自适应平台——学校采购，实时调整学习路径 | https://dreambox.com |
-| Coursera | 高等教育+职业培训——AI 辅导功能，全球数千万学习者 | https://coursera.org |
-| MagicSchool | AI 教师工具——教案生成，出题，差异化材料，面向 K-12 教师 | https://magicschool.ai |
+| 名称 | Type | 一句话 | URL |
+|------|------|--------|-----|
+| **Khanmigo** | A | 全科苏格拉底辅导；学生 $44/年，教师免费 | [khanmigo.ai](https://khanmigo.ai) |
+| **Duolingo Max** | C | GPT-4 Video Call + Roleplay；$168/年 | [duolingo.com](https://duolingo.com) |
+| **Quizlet** | D | Magic Notes、Q-Chat；Plus $35.99/年 | [quizlet.com](https://quizlet.com) |
+| **Squirrel AI** | B | 知识图谱+微知识点；5200 万学生叙事 | [squirrelai.com](https://squirrelai.com) |
+| **Brainly** | F/A | 社交问答+AI 辅导 | [brainly.com](https://brainly.com) |
+| **DreamBox Learning** | B | K-8 数学/阅读自适应，学校采购 | [dreambox.com](https://dreambox.com) |
+| **Coursera** | H | 高等教育+职业培训+AI 辅导 | [coursera.org](https://coursera.org) |
+| **MagicSchool** | E | K-12 教师 AI 工具 | [magicschool.ai](https://magicschool.ai) |
 
 ### 对比与测评（第三方；观点非官方）
 
-- **TIME 2026 年度最佳发明**：Khanmigo 和 Duolingo Max 同时入选——前者因「将 AI 辅导从'给答案'升级为'教思考'」、后者因「用 GPT-4 实现真实场景语言对话练习」。这是主流媒体对 AI 教育工具的最高认可。
-- **TIME 2026 全球最具影响力百强公司**：Squirrel AI 与 OpenAI、华为、NVIDIA 并列——因其「用 AI 解决教育公平问题」的愿景和 5,200 万学生的覆盖规模。是唯一入选的纯 EdTech AI 公司。
-- **BeFreed AI 2026 年度教育 App 评测**：综合推荐 Khanmigo（最佳 AI 家教）、Duolingo Max（最佳语言学习）、Quizlet（最佳备考）、Squirrel AI（最佳自适应系统）。四款工具的免费层均足以覆盖基础需求——付费层面向深度使用。
-- **吉尼斯世界纪录实验（2026.1）**：Squirrel AI 千名学生对照实验——AI 教学组在六年级（87.58 vs 78.80）和七年级（92.91 vs 79.07）均显著超过人类教师组。这是 AI 教育领域迄今为止最大规模的控制实验。
+- **TIME 2026 Best Inventions**：Khanmigo（教思考）、Duolingo Max（真实场景对话）。
+- **TIME 2026 全球百强**：Squirrel AI 与 OpenAI、NVIDIA 并列——唯一纯 EdTech AI。
+- **BeFreed AI 2026 教育 App 评测**：Khanmigo、Duolingo Max、Quizlet、Squirrel AI——免费层覆盖基础需求。
+- **吉尼斯实验（2026.1）**：Squirrel AI 千人对照——六年级 87.58 vs 78.80；七年级 92.91 vs 79.07（AI 组 vs 人类教师组）。
+
+*本小节为网摘与社区观点综合，非 Alignify 实测。*
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- Research and Markets — "Generative AI in Edtech Market Report 2026"（$0.53B → $3.22B by 2030, CAGR 43.6%）
-- Research and Markets — "AI-Powered Tutoring Bots Market Report 2026"（$3.60B → $11.89B by 2030）
-- Research and Markets — "AI Personal Tutors Market Report 2026"（$2.45B → $8.72B by 2030）
-- TIME — "The 100 Most Influential Companies 2026: Squirrel AI Learning"（2026）
-- TIME — "Best Inventions 2026: Khanmigo & Duolingo Max"（2026）
-- BeFreed AI — "Best AI Education Apps in 2026"（2026）
-- Squirrel AI — "The World's First AI Teaching Experiment with a Thousand Participants"（2026.1，吉尼斯纪录）
+**站外**
+
+- Research and Markets — Generative AI in Edtech 2026（$0.53B→$3.22B, CAGR 43.6%）
+- Research and Markets — AI-Powered Tutoring Bots / AI Personal Tutors 2026 报告
+- TIME — Influential Companies 2026: Squirrel AI · Best Inventions: Khanmigo & Duolingo Max
+- BeFreed AI — Best AI Education Apps 2026
+- Squirrel AI — Thousand-Participant AI Teaching Experiment（2026.1，吉尼斯）
+
+**站内 Spoke**
+
+- [ai-tutor.md](ai-tutor.md) · [ai-homework-helper.md](ai-homework-helper.md) · [ai-language-learning.md](ai-language-learning.md) · [ai-flashcards.md](ai-flashcards.md) · [quiz-generator.md](quiz-generator.md) · [notes-generator.md](notes-generator.md) · [ai-for-science.md](ai-for-science.md)

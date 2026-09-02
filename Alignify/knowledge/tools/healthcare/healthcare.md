@@ -27,16 +27,17 @@
 
 ## 专题对照：消费级健康 AI vs 企业级临床 AI
 
+> 术语见 §词汇锚点；下表只列**买家体验差**。
+
 | 维度 | 消费级健康 AI | 企业级临床 AI |
 |------|-------------|-------------|
 | 典型买家 | 个人消费者 | 医院/卫生系统/支付方 |
-| 核心场景 | 症状自查、健康问答、生活方式建议 | 影像诊断、环境文书、临床决策、病历分析 |
-| 监管路径 | 通常无 FDA（健康管理工具豁免） | 需 FDA 510(k) 或 CE MDR（诊断/分诊功能） |
-| HIPAA 合规 | 通常无（用户自主上传数据） | 必须签署 BAA，全链路 PHI 保护 |
-| 数据来源 | 用户手动输入 + 可穿戴设备 | EHR、PACS、检验系统、理赔数据 |
-| 定价模式 | 按月订阅（$10-20）或免费+广告 | 按医生/月或按医院年合同（$10K-100K+） |
-| 代表产品 | Google AI Health Coach、ChatGPT Health | Claude for Healthcare、Aidoc、Abridge、OpenEvidence |
-| 幻觉容忍度 | 中等（有免责声明即可） | 极低（误诊即医疗事故） |
+| 核心场景 | 症状自查、健康问答 | 影像诊断、环境文书、临床决策 |
+| 监管路径 | 通常无 FDA | 需 FDA 510(k) 或 CE MDR |
+| HIPAA 合规 | 通常无 | 必须 BAA |
+| 定价模式 | 订阅 $10-20 或免费 | 按医生/月或年合同 |
+| 幻觉容忍度 | 中等 | 极低 |
+| 代表 | 见 §外链索引 | 见 §外链索引 |
 
 ---
 
@@ -101,17 +102,17 @@ FDA 510(k) 批准的计算机辅助检测/诊断（CADe/CADx）软件。产品�
 
 ---
 
-## 工具与产品类型（品类表格）
+## 工具与产品类型（检索词分类 · 规格见 §外链索引）
 
 | 类型（英文常检索词） | 典型厂商 | 备注 |
 |------|---------|------|
-| 消费级健康 AI 教练（AI health coach, symptom checker AI） | Google AI Health Coach, ChatGPT Health, Ada Health, Babylon Health, WebMD AI | 无 FDA，免费或以 $9.99/mo 定价；场景为症状自查 + 生活方式指导 |
-| 企业级临床 AI 平台（HIPAA-compliant AI for healthcare, medical LLM） | Claude for Healthcare (Anthropic), ChatGPT for Healthcare (OpenAI), Hippocratic AI, Google MedLM, NVIDIA Clara | HIPAA + BAA + FHIR 集成，面向医院/支付方；定价按 API 调用量或年合同 |
-| 临床影像 AI / 放射学 AI（AI radiology, FDA-cleared imaging AI） | Aidoc, Viz.ai, Gleamer/DeepHealth (RadNet), Lunit, Qure.ai, Annalise.ai, RapidAI, Brainomix, Oxipit | FDA 510(k) 是准入门槛；~76% FDA AI 设备在放射学；AI 平台（aiOS）正在取代算法孤岛 |
-| 环境 AI 文书（AI medical scribe, ambient clinical documentation） | Abridge, Nuance DAX Copilot (Microsoft), Suki, Nabla, Freed, DeepScribe, Ambience Healthcare, Heidi Health, Augmedix, CareBeam | 2026 最热品类；**已拆分独立知识块** [medical-scribe.md](medical-scribe.md)，含完整 30+ 厂商外链、分流对照、选型指南 |
-| 循证临床决策支持（evidence-based CDS, medical RAG） | OpenEvidence, UpToDate AI (Wolters Kluwer), DynaMed AI, BMJ Best Practice, Elsevier ClinicalKey AI | 核心壁垒是权威源接入（PubMed/MICROMEDEX/临床指南库），非模型本身 |
-| AI 病理学（AI pathology, digital pathology AI） | Paige AI, PathAI, Tempus, Ibex, Proscia | 数字病理切片 + AI 辅助判读；与放射学 AI 并行的第二大影像赛道 |
-| AI 药物研发（AI drug discovery） | Insilico Medicine, Recursion, Isomorphic Labs (Alphabet), BenevolentAI, Atomwise | 传统制药 + AI；本知识块以临床 AI 为主，药物研发仅列名，未来可能独立成 slug |
+| 消费级健康 AI 教练 | Google AI Health Coach, ChatGPT Health, Ada Health | 无 FDA |
+| 企业级临床 AI 平台 | Claude for Healthcare, OpenAI for Healthcare, Hippocratic AI | HIPAA + BAA |
+| 临床影像 AI / 放射学 AI | Aidoc, Viz.ai, Gleamer, Lunit 等 | FDA 510(k) |
+| 环境 AI 文书 | Abridge, Nuance DAX, Suki 等 | **→ [medical-scribe.md](medical-scribe.md)** |
+| 循证临床决策支持 | OpenEvidence, UpToDate AI 等 | 权威源 RAG |
+| AI 病理学 | Paige AI, PathAI 等 | 数字病理 |
+| AI 药物研发 | Insilico, Recursion 等 | 本页仅列名 |
 
 ---
 
@@ -162,26 +163,19 @@ FDA 510(k) 批准的计算机辅助检测/诊断（CADe/CADx）软件。产品�
 
 ### 对比与测评（第三方；观点非官方）
 
-- KLAS Research 2025/2026 环境文书报告：Abridge 连续 KLAS #1，Nuance DAX Copilot 第二，Suki 第三。详见 [medical-scribe.md](medical-scribe.md)「对比与测评」节。
-- Nature Digital Medicine (2025) 环境文书系统综述（Table 1）：19 款产品对照。详见 [medical-scribe.md](medical-scribe.md)。
-- FDA 510(k) 数据库：截至 2025 年 FDA 共批准 ~1,451 个 AI 医疗设备，~76% 为放射学，每年新增 ~250+ 个——连续 5 年保持快速增长，但获批≠有效，需结合外部临床验证。
-- 环境文书 2026 年核心叙事：Epic/athenahealth 内置免费方案 vs 独立厂商的差异化生存之战。详见 [medical-scribe.md](medical-scribe.md)「对比与测评」。
-- 放射学 AI 2026 年核心叙事：从算法孤岛走向集成平台（aiOS），并购加速（RadNet 收购 Gleamer €230M / Sectra 收购 Oxipit）。AI 平台零抽成模式（Harrison.ai Open Platform）试图解决「数据贡献→付费购买」的不对称循环。
+- KLAS / Nature / MedCity 环境文书深度 → **[medical-scribe.md](medical-scribe.md) §对比与测评**（本页不重复）。
+- FDA 510(k) 数据库：截至 2025 ~1,451 个 AI 医疗设备，~76% 放射学。
+- 2026 叙事：Epic/athenahealth 内置免费 vs 独立厂商；放射学 aiOS 平台化与并购加速。
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- FDA AI-Enabled Medical Device Database: [accessdata.fda.gov](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMA/pma.cfm) — 核查任意厂商的 FDA 批准状态与适应症范围
-- KLAS Research 2026 Best in KLAS: Ambient Scribing — 环境文书权威排名，详细分析见 [medical-scribe.md](medical-scribe.md)「对比与测评」
-- Nature Digital Medicine "Ambient AI Scribes" (2025) — 19 产品对照表，见 [medical-scribe.md](medical-scribe.md)
-- EU MDR 医疗器械法规数据库: [ec.europa.eu](https://ec.europa.eu/tools/eudamed) — 核实欧盟市场准入
-- HIMSS 2026 Medical Imaging Roundup: 云原生影像平台与临床 AI 企业级部署最新动态
-- MedCity News "Do Ambient Scribe Startups Have a Future" (2026-02) — 见 [medical-scribe.md](medical-scribe.md)「对比与测评」
+**站外**
 
-### 子品类拆分评估
+- [FDA AI-Enabled Medical Device Database](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMA/pma.cfm)
+- [EU MDR Eudamed](https://ec.europa.eu/tools/eudamed)
 
-| 子品类 | 厂商数 | 独立搜索需求 | 拆分状态 | 建议 slug |
-|--------|--------|------------|---------|----------|
-| AI 文书 / 环境临床文档 | 30+ (6 市场领先 + 15 独立 + 6 EHR 内嵌) | "AI medical scribe" / "ambient clinical documentation" | **已拆分** → [medical-scribe.md](medical-scribe.md) | `medical-scribe` |
-| AI 医学影像 / 放射学 AI | 30+ (6 设备巨头 + 16 纯 AI 公司 + 10+ 专科) | "AI radiology tools" / "medical imaging AI software" | 待拆分（放射学 AI 并购潮持续加速，2026） | `radiology-ai` 或 `medical-imaging` |
+**站内**
+
+- 环境文书专册：[medical-scribe.md](medical-scribe.md)

@@ -1,16 +1,16 @@
 # AI 音乐视频生成器（Music Video Generator）· 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI music video generator / MV 生成器**——以**音乐/音频为首要输入**，将音频转化为动态视频；验收以 **beat-sync、stem 分析、歌词对齐、角色一致性** 为主。本页为 **music-first MV 专用工具 SSOT**（完整 URL 表仅此一处）；通用 T2V 见 [video-generator.md](video-generator.md) / [text-to-video.md](text-to-video.md)；上游音频见 [music-generator.md](../voice-audio/music-generator.md)。
+
 **材料范围**：公开网络检索（厂商官网、第三方评测、版权与法律分析）；**未**引用 Alignify 站内 JSON。网摘整理日期 **2026-06-24**（簇边界修订）。
 
-**品类总览**：[voice.md](../voice-audio/voice.md) · Territory「语音与声音」辐条，但产品哲学为 **music-first**（先有歌后有画）；通用 T2V 见 [video-generator.md](video-generator.md)。
-
-**站内相邻**：[music-generator.md](../voice-audio/music-generator.md)（上游音频） · [video-generator.md](video-generator.md)（**排除**：通用 T2V 横评）
-
-**勿与…混买**：**music-first、beat-sync** 专用 MV 工具；通用 T2V 挪用见 video-generator / text-to-video。
+**品类总览**：[voice.md](../voice-audio/voice.md) · Territory「语音与声音」辐条，但产品哲学为 **music-first**（先有歌后有画）。
 
 **站内对照**：[alignify.co/tools/music-video-generator](https://alignify.co/tools/music-video-generator) · `/tools/music-video-generator` · [alignify.co/zh/tools/music-video-generator](https://alignify.co/zh/tools/music-video-generator) · `/zh/tools/music-video-generator` · `content/tools/zh/music-video-generator.md`、`content/tools/en/music-video-generator.md` · slug **`music-video-generator`**
 
 **Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#music-video-generator-tools`](../../product/alignify-keywords-tools.md#music-video-generator-tools)
+
+**站内相邻**：[music-generator.md](../voice-audio/music-generator.md) · [video-generator.md](video-generator.md) · [animation-generator.md](animation-generator.md) · [video.md](video.md)
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -43,17 +43,7 @@
 | 典型买家问题 | 「我有一首歌，帮我生成 MV」 | 「我需要一段视频素材」 | 「我需要给静音视频配上音效」（Mirelo 适用） |
 | 代表产品 | Neural Frames、Plazmapunk、Koyal、VidMuse、1 More Shot、Kaiber | Runway、Pika、Kling（尽管理论上可做 MV，但不收录） | Suno、Udio（MV 工具的**上游输入源**） |
 
-### 专用 MV 工具内部的子类型分裂
-
-| 子类型 | 核心特征 | 代表产品 | 典型工作流 |
-|--------|---------|---------|-----------|
-| **Pro 级帧控型** | DAW 式时间轴、stem 级音频分析、4K 输出 | Neural Frames、Koyal | 上传音频 → 逐帧 prompt → 精调时间轴 → 导出 |
-| **一键快出型** | 上传音频后自动生成、低保真但速度快 | Freebeat、Plazmapunk（基础模式） | 上传/导入 Suno 链接 → 点生成 → 直接发布 |
-| **分镜导演型** | 逐场景 prompt + 角色一致性引擎 | Plazmapunk（Scene Editor）、Tunee（MV Agent）、VidMuse | 编写分镜脚本 → 逐段生成 → 拼接 |
-| **歌词/文字型** | 音节级歌词同步、动态排版 | LyricEdits.ai | 上传音频 + 粘贴歌词 → AI 对齐音节 → 导出 |
-| **素材剪辑型** | 非生成式 AI——用授权素材库按节拍自动剪辑 | Rotor Videos | 上传音频 → 选风格 → AI 剪辑素材 → 导出 |
-| **风格化动画型** | 艺术风格迁移、Flipbook 帧动画、强风格表现力 | Kaiber | 上传音频 → 选艺术风格 → beat-synced 动画 |
-| **移动先行型** | 手机端操作、token 制、支持 Suno 链接导入、口型同步 | 1 More Shot | 手机上传/粘贴链接 → 选模式 → 导出 |
+架构路线 → **§形态谱系**；产品规格与 URL → **§外链索引**。
 
 ---
 
@@ -81,15 +71,19 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Pro 级时间轴编辑器型**：以 DAW 式时间轴为核心——逐帧 prompt、stem 分析驱动的视觉效果、关键帧控制。核心用户是需要精细控制每个镜头的专业音乐人。Neural Frames 是范式代表，Koyal 以 audio-first 叙事加入此阵营。交付为 Web App，强调逐帧可控而非一键生成。学习曲线最陡。
-- **音频驱动 / AI Agent 分镜型**：用户上传音频或输入创意描述 → AI Agent 自动分析歌曲结构（verse/chorus/bridge）、生成分镜脚本和视觉方案 → 用户可在分镜面板上干预单个镜头。核心用户是想要叙事控制力但又不想逐帧操作的独立音乐人。Plazmapunk、Tunee、VidMuse 属于此类。学习曲线中等。
-- **一键自动生成型**：上传音频/粘贴 Suno 链接 → 选模式/风格 → AI 全自动生成 → 导出发布。最低操作门槛，最快产出速度。核心用户是需要高频产出社交内容的创作者和 faceless channel 运营者。Freebeat 和 1 More Shot 的 Auto Mode 是代表。
-- **歌词/文字专做型**：以歌词同步为核心——音节级对齐、动态排版、karaoke 风格。非生成式 AI 画面，而是文字动画工具。LyricEdits.ai 是目前该子类的唯一代表。
-- **素材剪辑型**：非生成式 AI——用百万级授权素材库按节拍自动剪辑。优势是无 AI hallucination、版权安全、适合 YouTube 货币化。Rotor Videos 是代表。
-- **风格化动画型**：艺术风格迁移 + 节拍同步动画。核心用户是需要强烈视觉风格辨识度的电子/实验音乐人。Kaiber（Flipbook + Motion 双引擎）是代表——曾被 Linkin Park 用于 "Lost" MV。
-- **移动端消费型**：手机 App 操作、token 制按量付费、Suno/Udio/YouTube 链接直接导入。核心用户是手机端创作者和 Suno 用户。1 More Shot（iOS/Android，10 万–50 万安装量）是代表。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | DAW 式时间轴，逐帧 prompt，stem 级音频分析，4K | Pro 级帧控 MV 工具 / AI music video generator | Neural Frames、Koyal |
+| **B** | AI Agent 自动分析歌曲结构→生成分镜→用户干预单镜头 | AI Agent 分镜 MV 工具 / AI MV maker | Plazmapunk、Tunee、VidMuse |
+| **C** | 上传音频/粘贴 Suno 链接→选模式→全自动生成 | 一键自动 MV 工具 / song to video AI | Freebeat、1 More Shot（Auto Mode） |
+| **D** | 音节级歌词同步、动态排版、karaoke 风格 | 歌词/文字 MV 专做 / lyric video AI | LyricEdits.ai |
+| **E** | 授权素材库按节拍自动剪辑，非生成式 AI | 素材剪辑 MV 工具 / music video maker | Rotor Videos |
+| **F** | 艺术风格迁移 + 节拍同步动画，Flipbook + Motion | 风格化动画 MV 工具 / audio reactive video | Kaiber |
+| **G** | 手机 App、token 制、Suno 链接导入、口型同步 | 移动端 MV App / mobile music video | 1 More Shot（iOS/Android） |
+
+**上游输入源（非 MV 工具）**：Suno、Udio 等 AI music generator——几乎所有 MV 工具主动集成其链接导入。**易混淆反向工具**：Mirelo（Video → Audio，给静音视频配音效）——非 MV 工具。
 
 ---
 
@@ -117,36 +111,20 @@
 
 ---
 
-## 工具与产品类型（仅收录以 MV 为第一场景的专用工具；非穷尽）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|----------------------|--------------|------|
-| **Pro 级帧控 MV 工具** | Neural Frames、Koyal | DAW 式时间轴、stem 级音频分析、4K；学习曲线最陡 |
-| **AI Agent 分镜 MV 工具** | Plazmapunk、Tunee、VidMuse | AI 自动生成分镜脚本 + 用户干预单镜头 |
-| **一键自动 MV 工具** | Freebeat、1 More Shot（Auto Mode） | 上传音频 → 全自动生成；最低门槛 |
-| **歌词/文字 MV 专做** | LyricEdits.ai | 音节级歌词同步动画；非画面生成 |
-| **素材剪辑 MV 工具** | Rotor Videos | 授权素材库按节拍自动剪辑；非生成式 AI |
-| **风格化动画 MV 工具** | Kaiber | 艺术风格迁移 + 节拍同步；Flipbook + Motion 双引擎 |
-| **移动端 MV App** | 1 More Shot（iOS/Android） | 手机操作、token 制、口型同步、Suno 链接导入 |
-| **AI 音乐生成器（MV 工具的上游）** | Suno、Udio | 只出音频；但几乎所有 MV 工具都在主动集成其链接导入 |
-| **音效/配乐生成器（易混淆）** | Mirelo | Video → Audio（方向相反）；非 MV 工具，勿混入 |
-
----
-
-## 外链索引（工具与产品；外链；非广告、无排序优先级）
-
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| **Neural Frames** | 专用 MV 工具 #1；8-stem 音频分析 + DAW 式时间轴 + 4K；40K+ 艺术家，近 200 万视频；$26–$199/月；2026-04 上线 Neural Tunes（AI 音乐生成） | [neuralframes.com](https://www.neuralframes.com/) |
-| **Plazmapunk** | 最低商用门槛 €12/月；GPT-4o Scene Editor 分镜；100K+ 创作者；SDXL/Kandinsky 多风格；内置 AI composer | [plazmapunk.com](https://www.plazmapunk.com/) |
-| **Koyal** | YC S24；audio-first 电影级 MV；character consistency 自称 best-in-class；CHARCHA 安全协议（webcam 真人验证防 deepfake）；合作过 Universal Music、T-Series、A.R. Rahman；$29/月 | [koyal.ai](https://www.koyal.ai/) |
-| **VidMuse** | Sand.ai 旗下；「Music in, Video out」Video Agent；上线 2 个月 ARR 破千万美金；多模型调度 + 分镜自动生成；⚠️ Trustpilot 1.7/5（credit 消耗、客服缺失） | [vidmuse.ai](https://vidmuse.ai/) |
-| **1 More Shot** | iOS/Android/Web；custom LoRA 角色训练 + 口型同步；Suno/Udio/YouTube/SoundCloud 链接导入；token 制 $8.25/月起；10 万–50 万安装量 | [onemoreshot.ai](https://www.onemoreshot.ai/) |
-| **Tunee** | 趣丸科技；MV Agent 五大模式（一键MV/对口型/肢体控制）；Seedance 2.0 + 虚拟角色定制 + 音色克隆；OpenClaw API；Tunee 2.0 全球创作挑战赛；免费–$88/月 | [tunee.ai](https://www.tunee.ai/) |
-| **Kaiber** | 风格化动画；Flipbook + Motion 双引擎；Linkin Park「Lost」MV 使用；$5–$29/月 | [kaiber.ai](https://www.kaiber.ai/) |
-| **Freebeat.ai** | 一键 beat-synced 视频；Suno 链接直接导入；Singing MV / Storytelling MV 双模式；$7–$14/月 | [freebeat.ai](https://freebeat.ai/) |
-| **Rotor Videos** | 非生成式 AI——100 万+ 授权素材按节拍自动剪辑；YouTube 货币化友好；$9–$17/月 | [rotorvideos.com](https://rotorvideos.com/) |
-| **LyricEdits.ai** | 音节级歌词同步 + 动态排版；karaoke 风格 lyric video 专做；$39/月 | [lyric-ai.com](https://www.lyric-ai.com/) |
+| 名称 | Type | 一句话 | URL |
+|------|------|--------|-----|
+| **Neural Frames** | A | 专用 MV 工具 #1；8-stem 音频分析 + DAW 式时间轴 + 4K；40K+ 艺术家，近 200 万视频；$26–$199/月；2026-04 上线 Neural Tunes（AI 音乐生成） | [neuralframes.com](https://www.neuralframes.com/) |
+| **Plazmapunk** | B | 最低商用门槛 €12/月；GPT-4o Scene Editor 分镜；100K+ 创作者；SDXL/Kandinsky 多风格；内置 AI composer | [plazmapunk.com](https://www.plazmapunk.com/) |
+| **Koyal** | A | YC S24；audio-first 电影级 MV；character consistency 自称 best-in-class；CHARCHA 安全协议（webcam 真人验证防 deepfake）；合作过 Universal Music、T-Series、A.R. Rahman；$29/月 | [koyal.ai](https://www.koyal.ai/) |
+| **VidMuse** | B | Sand.ai 旗下；「Music in, Video out」Video Agent；上线 2 个月 ARR 破千万美金；多模型调度 + 分镜自动生成；⚠️ Trustpilot 1.7/5（credit 消耗、客服缺失） | [vidmuse.ai](https://vidmuse.ai/) |
+| **1 More Shot** | C/G | iOS/Android/Web；custom LoRA 角色训练 + 口型同步；Suno/Udio/YouTube/SoundCloud 链接导入；token 制 $8.25/月起；10 万–50 万安装量 | [onemoreshot.ai](https://www.onemoreshot.ai/) |
+| **Tunee** | B | 趣丸科技；MV Agent 五大模式（一键MV/对口型/肢体控制）；Seedance 2.0 + 虚拟角色定制 + 音色克隆；OpenClaw API；Tunee 2.0 全球创作挑战赛；免费–$88/月 | [tunee.ai](https://www.tunee.ai/) |
+| **Kaiber** | F | 风格化动画；Flipbook + Motion 双引擎；Linkin Park「Lost」MV 使用；$5–$29/月 | [kaiber.ai](https://www.kaiber.ai/) |
+| **Freebeat.ai** | C | 一键 beat-synced 视频；Suno 链接直接导入；Singing MV / Storytelling MV 双模式；$7–$14/月 | [freebeat.ai](https://freebeat.ai/) |
+| **Rotor Videos** | E | 非生成式 AI——100 万+ 授权素材按节拍自动剪辑；YouTube 货币化友好；$9–$17/月 | [rotorvideos.com](https://rotorvideos.com/) |
+| **LyricEdits.ai** | D | 音节级歌词同步 + 动态排版；karaoke 风格 lyric video 专做；$39/月 | [lyric-ai.com](https://www.lyric-ai.com/) |
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -164,10 +142,7 @@
 
 ---
 
-## 延伸阅读 · 站内知识块
-
-- 音频上游：[music-generator.md](../voice-audio/music-generator.md)
-- 排除参照：[video-generator.md](video-generator.md)（通用 T2V，非 music-first）
+## 延伸阅读 · 站内外
 
 **站外**
 
@@ -182,3 +157,8 @@
 - **1 More Shot 官网**：[Song to Video AI](https://www.onemoreshot.ai/song-to-video-ai/) — 上传音频→AI MV 流程说明
 - **AI 输出可版权性**：美国版权局关于 AI 生成内容的指南——纯 prompt 输出不受版权保护（U.S. Copyright Office, 2025–2026）
 - **AI 生成角色与形象权**：[YouTube's AI Likeness Detection Tool](https://ubaltlawreview.com/2026/03/16/youtubes-ai-likeness-detection-tool-and-the-emerging-law-of-digital-identity/)（Baltimore Law Review, 2026-03）
+
+**站内**
+
+- 音频上游：[music-generator.md](../voice-audio/music-generator.md)
+- 排除参照：[video-generator.md](video-generator.md)（通用 T2V，非 music-first）· [animation-generator.md](animation-generator.md) · [video.md](video.md)

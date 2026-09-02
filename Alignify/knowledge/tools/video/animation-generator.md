@@ -1,29 +1,29 @@
 # AI Animation & Anime Generator · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI animation generator / AI anime generator**——以生成**动漫/动画风格视频**为首要输出目标的 AI 应用平台；验收以 **角色一致性、分镜编排、可控编辑** 为主。本页为 **动漫/动画创作平台 SSOT**（完整 URL 表仅此一处）；Runway/Veo 通用描述 → [video-generator.md](video-generator.md)；全流程短剧 → [short-drama.md](short-drama.md)；实拍风格迁移 → [video-to-video.md](video-to-video.md)；音乐 MV → [music-video-generator.md](music-video-generator.md)。
+
 **材料范围**：公开网络检索（厂商官网、Product Hunt 页面、36氪/Pandaily 科技媒体、第三方评测、Reddit/Discord 社区讨论摘要、融资披露）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 **2026-06-24**（簇去重修订）。
-
-
-**站内相邻**：[video.md](video.md) · [video-generator.md](video-generator.md)（底层模型，**不含通用横评**）· [short-drama.md](short-drama.md) · [video-to-video.md](video-to-video.md) · [music-video-generator.md](music-video-generator.md)
-
-**勿与…混买**：本页为 **动漫/动画风格平台**；Runway/Veo 通用描述见 video-generator；全流程短剧见 short-drama。
 
 **站内对照**：待上线 Tools 页时对齐。建议 slug **`animation-generator`**。
 
 **Tools 关键词与 slug 映射**：待 `tools-pages-config` 收录 slug `animation-generator` 后补全。
 
-## 与相邻 slug 分流
+**站内相邻**：[video.md](video.md)（Hub）· [video-generator.md](video-generator.md) · [short-drama.md](short-drama.md) · [video-to-video.md](video-to-video.md) · [music-video-generator.md](music-video-generator.md) · [filmmaking.md](filmmaking.md)
 
-本品类与 Alignify 现有视频相关 slug 的边界——**animation-generator** 是唯一以「输出动漫/动画风格」为品类划分轴、覆盖完整创作平台（非底层模型、非后期工具）的 slug。
+---
+
+## 与相邻 slug 分流（避免混买混评）
 
 | slug | 典型买家问题 | 交付形态 | 为何不重叠 |
 |------|------------|---------|-----------|
-| **`video-generator`** | 「哪种 AI 模型能生成高质量视频？」 | 底层模型 API / 通用 T2V 工具（Sora, Runway, Kling, Veo） | 模型层 vs 应用平台层；通用输出 vs 动漫风格定向 |
-| **`filmmaking`** | 「如何用 AI 制作影视级真人电影？」 | 真人影视预可视化 / 后期制作工具 | 真人影视买家 vs 动漫/动画创作者；交付审美完全不同 |
-| **`image-to-video`** / **`text-to-video`** | 「把图片/文字变成视频的工具有哪些？」 | 输入模态为分类轴的工具列表 | 输入方式划分 vs 输出风格划分；一个 AI anime 工具可能同时支持 T2V 和 I2V |
-| **`video-editor`** / **`video-effects`** / **`video-clipping`** | 「已有的视频怎么用 AI 编辑/加特效/剪辑？」 | 后期编辑工具 | 编辑已有素材 vs 从零生成动漫视频 |
-| **`music-video-generator`** | 「我有一首歌，帮它生成 MV 画面」 | 音频驱动的 MV 生成工具 | 音频优先 vs 角色/故事/视觉优先；beat-sync 等音乐专属能力栈 |
-| **`animation-library`** | 「前端项目里用什么动画库？」 | 代码库（Anime.js, GSAP 等） | 前端开发用代码动画库 vs AI 视频生成平台 |
-| **`lip-sync`** | 「如何让 AI 角色口型对上台词？」 | 口型同步专项工具 | 单一技术环节 vs 全流程制作平台 |
+| **`animation-generator`（本页）** | 「怎么从零做动漫/动画风格视频？」 | 动漫/动画风格完整创作平台 | 输出审美定向 vs 通用模型 |
+| **`video-generator`** | 「哪种 AI 模型能生成高质量视频？」 | 底层模型 API / 通用 T2V 工具 | 模型层 vs 应用平台层 |
+| **`filmmaking`** | 「如何用 AI 制作影视级真人电影？」 | 真人影视预可视化 / 后期 | 真人影视 vs 动漫创作者 |
+| **`text-to-video`** / **`image-to-video`** | 「把图片/文字变成视频」 | 输入模态为分类轴 | 输入方式 vs 输出风格 |
+| **`video-editor`** / **`video-effects`** / **`video-clipping`** | 「已有视频怎么用 AI 编辑？」 | 后期编辑工具 | 编辑已有素材 vs 从零生成 |
+| **`music-video-generator`** | 「我有一首歌，帮它生成 MV」 | 音频驱动的 MV 生成 | 音频优先 vs 角色/故事优先 |
+| **`animation-library`** | 「前端项目里用什么动画库？」 | 代码库（Anime.js, GSAP） | 前端代码库 vs AI 视频平台 |
+| **`lip-sync`** | 「如何让 AI 角色口型对上台词？」 | 口型同步专项工具 | 单一环节 vs 全流程平台 |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -46,8 +46,6 @@
 
 ### Full-pipeline agent vs style transfer：品类内的根本二分
 
-本品类内存在两种完全不同的产品基因，买家不应混为一谈：
-
 | 维度 | **Full-pipeline agent** | **Style transfer** |
 |------|------------------------|---------------------|
 | **核心范式** | Text/idea → full anime video（从零创作） | Real footage → anime style（转换已有素材） |
@@ -58,11 +56,8 @@
 | **典型买家** | 动漫创作者、漫剧工作室、IP 孵化者 | 社交媒体创作者、vlogger、meme 制作者 |
 | **代表产品** | AniJam, Elser, OiiOii, Flova | DomoAI, GoEnhance |
 | **定价区间** | $10–60/月 或按量计费 | $6–9/月起 |
-| **创作门槛** | 中高（需理解分镜、叙事节奏） | 极低（上传视频→选风格→导出） |
 
 ### 三种 Agent 编排哲学
-
-full-pipeline agent 内部也不是铁板一块：
 
 | 编排类型 | 代表产品 | 运作方式 | 适合谁 |
 |---------|---------|---------|--------|
@@ -70,11 +65,13 @@ full-pipeline agent 内部也不是铁板一块：
 | **对话式（Conversational）** | OiiOii（对话模式）、Elser（Studio Mode） | 每步 Agent 完成→汇报→用户确认→下一步 | 需要把控创作方向但不想手搓每个参数 |
 | **画布式（Canvas-based）** | AniJam（画布+时间轴）、Flova（Tapflow） | 可视化节点编排 + 时间轴编辑器 + 逐帧可控 | 专业创作者、需要精细控制每个镜头 |
 
+架构路线 → **§形态谱系**；产品规格与 URL → **§外链索引**。
+
+**边界说明（检索易混、非本页收录）**：`AI video generator` / T2V / I2V 底层模型 → [video-generator.md](video-generator.md)；`AI video editor` / `AI video effects` → [video-editor.md](video-editor.md)；`AI music video generator` → [music-video-generator.md](music-video-generator.md)；`AI lip sync` / `AI talking avatar` → lip-sync / avatar slug；`AI filmmaking` → [filmmaking.md](filmmaking.md)；`AI animation library`（Anime.js, GSAP）→ animation-library slug；`AI comic generator`（静态漫画）→ 相邻品类，区别为「视频 vs 静态图像」。
+
 ---
 
-## 问题域
-
-为何 2026 年出现了专门的「AI animation generator」品类（而非被通用视频工具覆盖）？
+## 问题域（为何会出现这类产品）
 
 - **通用 T2V 模型做动漫的"崩脸"问题**。Sora、Runway、Kling 等底层模型面向通用场景训练，动漫风格属于长尾分布——同一角色在连续镜头中面部特征漂移（"每帧一张脸"）是通用模型的系统性缺陷。专门做 animation generator 的产品在模型之上建立了角色一致性层（特征注入、全局资产库、多角度建模），解决的是通用模型不关心的垂直问题。
 - **动漫创作的工序复杂度远超"生成一段视频"**。动画制作天然包含剧本→角色设计→分镜→关键帧→中间帧→上色→配音→剪辑的链式工序，每个环节的输出是下一个环节的约束条件。2024-2025 年的 AI 视频工具只能完成其中「生成一段视频」这一个环节，创作者仍需手动串联其他工序。2026 年的 animation generator 本质上是用 Agent 编排替代了手工串联。
@@ -85,9 +82,7 @@ full-pipeline agent 内部也不是铁板一块：
 
 ---
 
-## 能力栈
-
-animation generator 的能力栈比通用视频工具多出一层「创作编排层」——这是品类存在的根本理由。
+## 能力栈（概念拆分，非厂商功能表）
 
 - **底层模型层（model orchestration）**：大多数 animation generator 不自研视频生成基础模型，而是整合多个第三方模型（Kling、Veo、Sora、Seedance、Vidu、Hailuo 等）并通过统一接口暴露。模型选择策略是核心产品决策——AniJam 走「广度路线」（整合 7+ 模型），Flova/OiiOii 走「深度路线」（重仓 Seedance 2.0）。自研模型路径目前只有 Elser 在探索。
 - **角色一致性引擎（character consistency engine）**：品类内最核心的技术壁垒。实现路径包括：基于参考图的多维特征注入（AniJam 的三重注入）、全局资产库+场景设计师校验（OiiOii）、专用微调模型（Elser claim 比行业高 30%+）、多角度 3D 建模+360° 旋转（Flova）。对比维度：跨镜头数量上限、角色-场景交互保真度、服饰/发型细节保持。
@@ -100,14 +95,16 @@ animation generator 的能力栈比通用视频工具多出一层「创作编排
 
 ---
 
-## 形态谱系
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-与具体品牌解耦的类型划分：
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 画布/时间轴为交互核心，Agent 后台编排，用户逐环节可控 | Agent 全流程工作站 / AI animation generator | AniJam、Flova |
+| **B** | 自然语言对话为交互核心，Agent 逐步汇报供用户确认 | Agent 对话式工作室 / AI anime studio | OiiOii、Elser |
+| **C** | 上传已有视频→选择动画风格→导出，不涉及角色创作/分镜 | 风格迁移工具 / anime style transfer | DomoAI、GoEnhance |
+| **D** | 面向特定受众（儿童、IP 持有者）的专用平台 | 垂直场景 Agent / AI cartoon maker | Pixley、Mini Studio |
 
-- **Type A: Agent 全流程工作站**（AniJam, Flova）——以画布/时间轴为交互核心，Agent 在后台编排全流程，用户在前台逐环节可控。定位接近视频创作的「IDE」。买家是追求控制力的专业/半专业创作者。定价较高（$25-60/月）。
-- **Type B: Agent 对话式工作室**（OiiOii, Elser）——以自然语言对话为交互核心，Agent 主动汇报每一步产出供用户确认。定位接近「虚拟动画团队」。买家是想要专业产出但不想学习复杂工具的创作者。OiiOii 偏「托管式」（AI 全自动）、Elser 偏「Studio 式」（逐步确认）。
-- **Type C: 风格迁移工具**（DomoAI, GoEnhance）——以「上传已有视频→选择动画风格→导出」为核心工作流。不涉及角色创作、分镜、叙事编排。买家是社交媒体创作者和 viral trend 追随者。定价最低（$6-9/月起），用户量最大（DomoAI 300 万+）。
-- **Type D: 垂直场景 Agent**（未在本次范围但属相邻品类：Pixley 的儿童卡通、Mini Studio 的 IP 动画生态）——面向特定受众（儿童、IP 持有者）的专用平台，功能集合为场景深度定制。
+**Type A vs B**（体验均「全流程」，交互不同）：A 偏画布/IDE 式精细控制；B 偏对话/虚拟团队式逐步确认——媒体对照见 §外链索引「对比与测评」。
 
 ---
 
@@ -122,7 +119,7 @@ animation generator 的能力栈比通用视频工具多出一层「创作编排
 
 ---
 
-## 落地碎片
+## 落地碎片（无先后）
 
 - **选型先判断创作类型**。做社交媒体的 15 秒动漫短片 → DomoAI 的 style transfer 最省钱省力（$7/月，上传视频→选风格→导出）。做连载动漫系列或叙事型动画 → 必须上 full-pipeline agent（AniJam 或 OiiOii），style transfer 工具连分镜都没有。做音乐 MV → 应优先看 `music-video-generator` 品类而非本品类。
 - **评估"角色一致性"不要看 demo reel，要实测跨镜头能力**。每家都宣称角色一致性杰出——实际测试方法：生成同一角色在正面特写、侧身中景、全身远景三个镜头，观察面部轮廓、发型、服饰细节的保持度。Elser 声称比行业高 30%+，AniJam 走三重特征注入——但这些是厂商声明，第三方独立评测数据极少。
@@ -133,47 +130,32 @@ animation generator 的能力栈比通用视频工具多出一层「创作编排
 
 ---
 
-## 工具与产品类型
-
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|---------------------|------------|------|
-| `AI animation generator` / `AI anime generator` / `AI cartoon maker` | Full-pipeline agent、style transfer 工具 | 本品类核心检索词，覆盖 Type A-D |
-| `AI video generator` / `text to video` / `image to video` | Sora, Runway, Kling, Veo, Seedance 等底层模型 | **不收录**——属于 `video-generator` slug 范围 |
-| `AI video editor` / `AI video effects` | 后期编辑/特效工具（如 Adobe Premiere AI 插件） | **不收录**——属于 `video-editor` slug |
-| `AI music video generator` / `AI MV maker` | Neural Frames, Plazmapunk, Koyal 等音频驱动 MV 工具 | **不收录**——属于 `music-video-generator` slug |
-| `AI lip sync` / `AI talking avatar` | 口型同步专项工具、数字人 speech 驱动 | **不收录**——属于 `lip-sync` / `avatar` slug |
-| `AI filmmaking` / `AI movie maker` | 真人影视制作工具、预可视化平台 | **不收录**——属于 `filmmaking` slug |
-| `AI animation library` | Anime.js, GSAP, Lottie 等前端动画代码库 | **不收录**——属于 `animation-library` slug |
-| `AI comic generator` / `AI manga creator` | 静态漫画/条漫生成（非视频） | 相邻品类，与本品类的区别是「视频 vs 静态图像」 |
-
----
-
-## 外链索引
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
 ### Full-pipeline agent（全流程创作平台）
 
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| AniJam | "Cursor for video creation"——画布式 AI 动画 Agent，CTO 前 Adobe 首席科学家，5-20 分钟长视频，$25-60/月 | https://www.anijam.ai |
-| Elser AI | Product Hunt 日榜冠军，四 Agent 协同，30 分钟长片，角色一致性比行业高 30%+，内置 IP 风格模板 | https://www.elser.ai |
-| OiiOii | 7 Agent 虚拟动画工作室，149 种风格，多宫格分镜系统，Seedance 2.0 深度集成，$100M+ 估值 | https://www.oiioii.ai |
-| Flova | AI 视频 Agent 平台，Skill 系统（风格模板复用+社区共享），"不断片"修改，Beta 阶段 | https://flova.ai |
+| 名称 | Type | 一句话 | URL |
+|------|------|--------|-----|
+| **AniJam** | A | "Cursor for video creation"——画布式 AI 动画 Agent，CTO 前 Adobe 首席科学家，5-20 分钟长视频，$25-60/月 | [anijam.ai](https://www.anijam.ai) |
+| **Elser AI** | B | Product Hunt 日榜冠军，四 Agent 协同，30 分钟长片，角色一致性比行业高 30%+，内置 IP 风格模板 | [elser.ai](https://www.elser.ai) |
+| **OiiOii** | B | 7 Agent 虚拟动画工作室，149 种风格，多宫格分镜系统，Seedance 2.0 深度集成，$100M+ 估值 | [oiioii.ai](https://www.oiioii.ai) |
+| **Flova** | A | AI 视频 Agent 平台，Skill 系统（风格模板复用+社区共享），"不断片"修改，Beta 阶段 | [flova.ai](https://flova.ai) |
 
 ### Style transfer（动漫风格迁移）
 
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| DomoAI | 300 万+用户，30+ 动漫风格转换，对口型 talking avatar，4K 升档，$6.99/月起 | https://domoai.app |
-| GoEnhance | 视频转动漫/黏土/像素风格，轻量级，$8/月起，免费版限 5 秒 | https://www.goenhance.ai |
+| 名称 | Type | 一句话 | URL |
+|------|------|--------|-----|
+| **DomoAI** | C | 300 万+用户，30+ 动漫风格转换，对口型 talking avatar，4K 升档，$6.99/月起 | [domoai.app](https://domoai.app) |
+| **GoEnhance** | C | 视频转动漫/黏土/像素风格，轻量级，$8/月起，免费版限 5 秒 | [goenhance.ai](https://www.goenhance.ai) |
 
 ### 相邻品类（不在本品类范围内，但检索时易混淆）
 
 | 名称 | 一句话 | 为何不属于本品类 | URL |
 |------|--------|----------------|-----|
-| Viggle | JST-1 物理运动模型，角色图+动作视频=换动作，8000+ 模板，Discord 400 万+用户 | 偏 motion swap / meme 短片，非动画创作平台 | https://viggle.ai |
-| Pixley | Y Combinator 2026，儿童涂鸦→个性化教育卡通剧集 | 垂直场景（儿童教育），非通用 anime generator | https://pixley.ai |
-| Mini Studio | a16z 投资，AI 原生产卡通生态，195M 月播放量 | 专注儿童卡通 IP，面向专业工作室而非个人 | https://www.fuzzlets.com |
-| Doratoon (LAiPIC) | 16 分钟 AI 故事动画，1800 万+素材训练 | 香港团队，偏教育/品牌内容，非开放创作平台 | https://www.doratoon.com |
+| **Viggle** | JST-1 物理运动模型，角色图+动作视频=换动作，8000+ 模板，Discord 400 万+用户 | 偏 motion swap / meme 短片，非动画创作平台 | [viggle.ai](https://viggle.ai) |
+| **Pixley** | Y Combinator 2026，儿童涂鸦→个性化教育卡通剧集 | 垂直场景（儿童教育），非通用 anime generator | [pixley.ai](https://pixley.ai) |
+| **Mini Studio** | a16z 投资，AI 原生产卡通生态，195M 月播放量 | 专注儿童卡通 IP，面向专业工作室而非个人 | [fuzzlets.com](https://www.fuzzlets.com) |
+| **Doratoon (LAiPIC)** | 16 分钟 AI 故事动画，1800 万+素材训练 | 香港团队，偏教育/品牌内容，非开放创作平台 | [doratoon.com](https://www.doratoon.com) |
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -182,12 +164,11 @@ animation generator 的能力栈比通用视频工具多出一层「创作编排
 - Product Hunt：Elser AI 386 upvotes（2026.01.11 日榜冠军），AniJam 用户评价集中在"controllable editing"的正面反馈
 - Reddit r/aianime / r/aiArt 社区：DomoAI 的 Japanese Anime 3.0 风格是动漫风格迁移细分中最受好评的单项功能
 
+*网摘综合，非本站实测。*
+
 ---
 
-## 延伸阅读 · 站内知识块
-
-- 底层模型：[video-generator.md](video-generator.md) · 角色一致技术：[image-to-video.md](image-to-video.md)
-- 并列：[animation-generator.md](animation-generator.md) · [filmmaking.md](filmmaking.md) · [video.md](video.md)
+## 延伸阅读 · 站内外
 
 **站外**
 
@@ -196,3 +177,8 @@ animation generator 的能力栈比通用视频工具多出一层「创作编排
 - **行业与趋势**：[DoNews AI 视频四象限分析](https://www.donews.com/news/detail/4/6454225.html)（2026）· [AI 漫剧成本分析](https://vv.lmtw.com/mzs/content/detail/id/253568)（2026）
 - **底层模型**：[Seedance 2.0 评测](https://cybernews.com/ai-tools/seedance-2-0-review/)（2026.03）· [Higgsfield 多模型平台定价](https://similarlabs.com/blog/kling-vs-seedance-vs-veo-3-vs-higgsfield)（2026）
 - **版权与合规**：日本文化厅「AI 与著作权指南」（2025）· 美国版权局 AI 作品登记政策（2026.03）
+
+**站内**
+
+- 底层模型：[video-generator.md](video-generator.md) · 角色一致技术：[image-to-video.md](image-to-video.md)
+- 并列：[short-drama.md](short-drama.md) · [video-to-video.md](video-to-video.md) · [music-video-generator.md](music-video-generator.md) · [filmmaking.md](filmmaking.md) · [video.md](video.md)

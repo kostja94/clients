@@ -190,7 +190,7 @@ MMMU-Pro Top N 见 **[llm-leaderboard-snapshots.md §Multimodal](../llm-leaderbo
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
 - [llm.md](llm.md) · [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)
 - [world-model.md](../world-model.md) · [image-generator.md](../image/image-generator.md)

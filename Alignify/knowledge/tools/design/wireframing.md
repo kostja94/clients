@@ -1,133 +1,130 @@
 # Wireframing（AI 线框图）· 知识块（非线性笔记）
 
-**材料范围**：公开网络检索（厂商产品页、设计社区评测、行业对比文与社区讨论摘要）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 **2026-05-13**。
+**叙述主词 · 勿与…混买**：**Wireframing / 线框图**——刻意**低保真**的结构蓝图（灰阶、占位、信息层级）；验收以**结构对齐**为主，非视觉审美或交互行为。本页为 **工具 URL 表 SSOT**。高保真 UI → [ui-design.md](ui-design.md)；可点击交互 → [prototyping.md](prototyping.md)。
 
-**站内对照**：待上线 Tools 页时对齐（slug **`wireframing`** 待 `tools-pages-config` 收录）。
+**材料范围**：公开网络检索（厂商产品页、设计社区评测、行业对比文）；**未**引用 Alignify 站内 JSON 内容稿。网摘整理日期 **2026-05-13**。
 
-**与相邻 slug 分流**：见下表；三个知识块各自覆盖**不同的产品集和搜索意图**，互不重叠。
+**站内对照**：待上线 Tools 页时对齐（slug **`wireframing`** 待 `tools-pages-config` 收录）
+
+---
+
+## 与相邻 slug 分流（避免混买混评）
 
 | slug | 核心问题 | 典型产品 | 保真度 |
 |------|---------|---------|--------|
-| **`wireframing`**（本页） | "东西该放哪？信息架构怎么走？" | Balsamiq、Whimsical、Wireframe.cc、Moqups | 刻意低保真 |
-| [`ui-design`](ui-design.md) | "界面长什么样？从 prompt 生成完整 UI" | Stitch、Uizard、Figma AI、Visily、Pencil 等 | 中→高保真 |
-| [`prototyping`](prototyping.md) | "交互行为怎么定义？用户真的能用吗？" | ProtoPie、Axure RP、Alloy、UXPin Merge | 高保真可交互 |
+| **`wireframing`**（本页） | 东西该放哪？信息架构怎么走？ | Balsamiq、Whimsical、Wireframe.cc、Moqups | 刻意低保真 |
+| [`ui-design`](ui-design.md) | 界面长什么样？从 prompt 生成完整 UI | Stitch、Uizard、Figma AI、Visily | 中→高保真 |
+| [`prototyping`](prototyping.md) | 交互行为怎么定义？用户真的能用吗？ | ProtoPie、Axure RP、Alloy | 高保真可交互 |
 
-以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
+以下条目可任意顺序阅读；**不是**文章体例。
 
 ---
 
 ## 词汇锚点
 
-- **Wireframe / 线框图**：UI 设计流程中最早期的**结构蓝图**——用灰阶方块、占位文字和简单几何形状表达页面布局和信息层级。刻意剔除颜色、字体、图片等视觉元素，使讨论焦点停留在**逻辑和结构**而非审美。
-- **Low-Fidelity（低保真）**：线框图的核心哲学——"看起来像草图"不是能力不足，而是**刻意的设计选择**。Balsamiq 的手绘风格向所有利益相关者传递一个信号：**这只是结构草案，可以随时推翻**。Nielsen Norman Group 研究表明，低保真线框图让评审者的反馈更集中于信息架构和导航逻辑，而非视觉偏好。
-- **Wireframe vs Mockup vs Prototype**：线框图回答"东西放哪"（结构问题）；Mockup 回答"长什么样"（视觉问题）；Prototype 回答"怎么用"（行为问题）。三者在设计流程中**顺序递进但不应跳跃**——跳过线框图直接出高保真 Mockup 是行业共识中的最常见错误。
-- **Wireframing ≠ UI Design**：线框工具**刻意不做**高保真渲染、不做像素级设计系统、不做动画曲线——这不是功能缺失，而是品类边界。试图用线框工具做 UI 设计的人很快会撞到能力天花板，反之亦然。
-- **AI Wireframing**：2025-2026 年出现的新能力层——AI 根据文字描述生成低保真布局、从手绘照片转数字线框、或基于 PRD 自动生成信息架构草图。AI 加速了线框的生成速度，但**不改变线框的核心目的**（结构沟通）。
+- **Wireframe / 线框图**：UI 流程最早期的结构蓝图——灰阶方块、占位文字、简单几何；**刻意剔除**颜色、字体、图片，聚焦逻辑与结构。
+- **Low-Fidelity（低保真）**：「看起来像草图」是刻意选择——Balsamiq 手绘风格向利益相关者传递「草案可随时推翻」。
+- **Wireframe vs Mockup vs Prototype**：线框=结构；Mockup=视觉；Prototype=行为——顺序递进，不宜跳跃（详见 [prototyping.md](prototyping.md) §词汇锚点）。
+- **Wireframing ≠ UI Design**：线框工具不做高保真渲染——品类边界，非功能缺失。
+- **AI Wireframing**：prompt 生成布局、手绘转数字、PRD→IA 草图——加速生成，**不改变**线框核心目的（结构沟通）。
 
 ---
 
-## 线框图的刻意低保真哲学（为何"丑"是故意的）
+## 专题对照 / 扩展定义
 
-Balsamiq 产品哲学文档中明确阐述：线框图的"未完成感"不是一个 bug，而是三个独立的 UX 功能：
+**低保真哲学**（术语见 §词汇锚点；下表只列 UX 功能差）：
 
-1. **降低反馈门槛**：面对一个"看起来像涂鸦"的设计，人们更愿意提出批评——因为改动的心理成本看起来很低。"看起来已经做好了"是过早进入高保真的最大副作用。
-2. **聚焦结构而非审美**：剥夺了颜色、字体、阴影后，讨论自然收敛到"这个按钮该不该在这""这个信息层级对吗"——无法转移话题到"我不喜欢这个蓝色"。
-3. **防止过早承诺**：高保真设计会让利益相关者产生"决策已完成"的错觉，关闭进一步讨论的空间。Balsamiq 故意让输出看起来像铅笔稿，迫使所有人记住：**这还没定案**。
+Balsamiq 产品哲学：未完成感服务于 (1) 降低反馈门槛 (2) 聚焦结构而非审美 (3) 防止过早承诺。
 
-Nielsen Norman Group 的一项研究补充了一个关键警示：低保真线框图**确实会系统性低估视觉设计带来的用户摩擦**——用户在线框测试中的行为与在高保真原型中的行为有 60-70% 的差异。这意味着线框图适合**结构验证和团队对齐**，不适合**最终可用性测试**。
+NN/g 研究警示：低保真线框会**系统性低估**视觉设计带来的用户摩擦——与高保真原型行为差异约 60–70%。线框适合**内部对齐与结构探索**，**不适合**最终可用性测试。
 
 ---
 
 ## 问题域（为何会出现这类产品）
 
-- **结构思维需要隔离视觉噪音**：在讨论"信息架构是否合理"时，颜色、字体、间距都是干扰项。专用的线框工具通过剥夺这些维度，强制对话聚焦在正确的问题上。
-- **利益相关者对齐是设计流程的最大瓶颈**：产品经理、工程师和设计师对"一个页面该怎么布局"的初始理解几乎总是不同。快速产出可讨论的结构草案，比产出精美的视觉稿更能推动对齐。
-- **AI 时代反而强化了线框图的价值**：当 AI 能在几秒内生成高保真 UI 时，"先想清楚结构"反而变得更重要——因为 AI 生成的高保真输出容易让人误以为"已经想好了"，掩盖了底层逻辑的缺失。
-- **非设计师需要"安全"的表达工具**：创始人、PM、工程师有想法但不会操作 Figma 的复杂图层系统。线框工具的极简界面（如 Wireframe.cc 只有一张"数字纸"）降低了表达门槛。
+- **结构思维需隔离视觉噪音**：专用线框工具剥夺颜色/字体/间距，强制对话聚焦信息架构。
+- **利益相关者对齐是瓶颈**：快速结构草案比精美视觉稿更能推动 PM/工程/设计对齐。
+- **AI 时代强化线框价值**：AI 秒出高保真易让人误以为「已想清结构」——底层逻辑缺失被掩盖。
+- **非设计师需要低门槛表达工具**：Wireframe.cc「数字纸」等降低表达摩擦。
 
 ---
 
 ## 能力栈（概念拆分，非厂商功能表）
 
-- **手绘→数字转换**：手机拍一张白板草图或餐巾纸涂鸦 → AI 识别并转为可编辑的数字线框。Uizard 是这个能力的标杆。
-- **Drag-and-Drop 模板组件**：预置的按钮、输入框、导航栏等低保真组件库，拖拽组合成布局。Moqups 和 Balsamiq 在此维度最成熟。
-- **AI 生成布局**：输入一段产品描述（如"一个 SaaS 仪表盘，左侧导航，顶部 KPI 卡片，下方数据表格"）→ AI 生成多版线框方案。
-- **协作标注**：评审者在特定元素上添加评论、团队实时标注修改意见——线框作为"讨论媒介"而非"交付物"。
-- **流程图 + 线框一体化**：部分工具（Whimsical、Miro）将用户流程图和线框图放在同一画布上，适合早期探索阶段的全局思考。
-- **PRD 联动**：2026 年新趋势——部分工具（Prodmap）尝试将产品需求文档与线框生成联动，使线框直接反映 PRD 中的功能描述。
+- **手绘→数字转换**：白板/餐巾纸 → 可编辑线框（Uizard 标杆）。
+- **Drag-and-Drop 模板组件**：预置低保真组件库（Moqups、Balsamiq）。
+- **AI 生成布局**：产品描述 → 多版线框方案。
+- **协作标注**：评审评论、实时标注。
+- **流程图 + 线框一体化**：Whimsical、Miro 同一画布。
+- **PRD 联动**：Prodmap 等将 PRD 与线框生成联动（2026 趋势）。
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **纯粹低保真型**：核心卖点是"看起来像涂鸦"——Balsamiq 是此形态的定义者，Wireframe.cc 是极简主义的极端。这些工具不会"升级"到高保真，因为它们的价值就在低保真本身。
-- **流程图 + 线框融合型**：同一个画布上既有流程图又有线框图，适合从信息架构到页面布局的平滑过渡。Whimsical 和 Miro 在此象限。
-- **入门级线框模板型**：提供丰富的模板库降低空白画布焦虑，适合 PM 和创业者快速出稿。Moqups 和 MockFlow 在此象限。
-- **AI 增强型**：传统线框能力 + AI 生成/识别层——包括手绘转数字、prompt 生成布局、PRD 解析等。Uizard（线框模式）和 Visily（线框功能）在此象限，但注意这些工具同时具备高保真 UI 生成能力，已不完全属于纯线框品类。
-
----
-
-## 工具与产品类型（检索里常与 wireframing 同框的品类；非穷尽）
-
-| 类型（英文常检索词） | 典型包含什么 | 主轴（本笔记） |
-|----------------------|--------------|----------------|
-| **Dedicated wireframing tools** | 纯低保真、刻意手绘风格 | 核心品类——Balsamiq、Wireframe.cc |
-| **Diagramming + wireframing** | 流程图、思维导图、低保真页面 | 相邻品类——Whimsical、Miro、Lucidchart |
-| **Template-based wireframing** | 组件库 + 拖拽布局 | 入门向——Moqups、MockFlow |
-| **AI wireframe generators** | prompt→布局、手绘→数字 | AI 层——Uizard（线框模式）、Visily（线框功能） |
-| **Full-stack UI design tools**（仅 wireframe 模式） | Figma 等工具的线框插件/模式 | 非专用但可用——见 [`ui-design.md`](ui-design.md) |
-
----
-
-## 外链索引（外链；非广告、无排序优先级）
-
-### 工具与产品
-
-| 名称 | 一句话 | URL | 关键特征 |
-|------|--------|-----|---------|
-| **Balsamiq** | 线框图品类的定义者——刻意手绘风格，强制低保真 | [balsamiq.com](https://balsamiq.com/) | 手绘风格 UI 组件库、实时协作、AI 布局生成（beta）、约 $9-12/月 |
-| **Whimsical** | 流程图 + 思维导图 + 线框图一体化，AI 生成布局 | [whimsical.com](https://whimsical.com/) | 刻意低保真、AI 生成流程图与页面布局、免费层 + Pro $10/月 |
-| **Wireframe.cc** | 极简主义——无 UI 组件库，就是一张数字草稿纸 | [wireframe.cc](https://wireframe.cc/) | 零学习曲线、无模板、无组件库、纯低保真、适合极早期构思 |
-| **Moqups** | 入门级线框图 + 模板库，降低非设计师的使用摩擦 | [moqups.com](https://moqups.com/) | 丰富的 stencil 组件库、模板系统、免费层 + 个人 $9/月、团队 $15/月 |
-| **Miro**（线框模式） | 无限白板 + 线框模板，最适合团队 Workshop | [miro.com](https://miro.com/) | 实时多人协作、视频通话集成、3 个可编辑看板免费 |
-| **MockFlow** | 线框图 + 站点地图 + 设计工作流一体化 | [mockflow.com](https://mockflow.com/) | WireframePro 组件、站点地图生成器、与 Uizard 有对比评测数据 |
-| **Lucidchart** | 企业级图表工具，含线框模板和协作功能 | [lucidchart.com](https://www.lucidchart.com/) | 强在流程图和 UML，线框为辅助功能；企业向定价 |
-
-### 对比与测评（第三方；观点非官方）
-
-独立评测中，**Balsamiq 几乎毫无争议地被公认为纯低保真线框的行业标准**。Moqups 博客一篇 2026 年实测对比（《Top Figma Alternatives for Wireframing》）对 Balsamiq、Moqups、Miro、Uizard、Whimsical、Lucidchart 逐一做了上手体验，核心发现：Figma 作为"万能工具"在纯线框场景下反而过重——团队花在 Figma 组件管理和图层操作上的时间远多于真正讨论结构的时间。
-
-AI 线框工具横评方面，Forasoft 2025 年评测对 Relume、Banani、Mockflow、Visily、UX Pilot、Framer、Uizard 逐项打分（功能、易用性、AI 能力、性价比），Visily 以 5/5 总分获最高推荐。Prodmap 2026 年横评覆盖 Figma AI、Uizard、Whimsical AI、Balsamiq Cloud、v0.dev 六款工具的线框模式，附带"线框图 vs 原型"决策对照表。
-
-搜索"wireframing tools"和"prototyping tools"返回的是**不同的排名页面集合**——前者以 Balsamiq/Whimsical/Moqups 为主角，后者以 ProtoPie/Axure/Framer 为主角——这验证了搜索引擎将二者理解为不同的搜索意图。
-
-*本小节为网摘与独立作者/社区观点综合，非 Alignify 实测；**不**以各平台厂商自有营销博文为论证主体。*
+| Type | 形态 | 代表（规格见 §外链索引） |
+|------|------|--------------------------|
+| **A** | 纯粹低保真 | Balsamiq、Wireframe.cc |
+| **B** | 流程图 + 线框融合 | Whimsical、Miro |
+| **C** | 入门级模板型 | Moqups、MockFlow |
+| **D** | AI 增强型 | Uizard（线框模式）、Visily（线框功能）——亦具高保真能力，边界见 §与相邻 slug 分流 |
 
 ---
 
 ## 风险 · 合规 · 工程治理（外部框架可对照，非法律意见）
 
-- **低保真≠低风险**：线框图的"未完成感"可能导致非设计背景的利益相关者低估后续工作量——从线框到高保真 UI 到可用原型到开发交付，每个阶段都有复杂度跃进。建议在线框阶段就明确时间线和里程碑预期。
-- **跳过线框阶段的结构性风险**：直接出高保真 Mockup 是行业中最常见的错误——修复一个在高保真阶段发现的结构问题，成本是线框阶段的 5-10 倍。线框阶段 2 天的工作可以避免后续 2 周的 Sprint 返工。
-- **线框图 ≠ 可用性测试**：NN/g 研究已证实线框图会系统性扭曲用户行为（与高保真原型的测试结果有 60-70% 差异）。线框图应用于**内部对齐和结构探索**，不应作为可用性测试的最终依据。
-- **协作工具的权限与数据**：线框协作工具通常存储团队的产品构思和用户流程——评估企业数据驻留、SSO、审计日志是否满足组织合规要求。
+- **低保真≠低风险**：利益相关者可能低估后续高保真→原型→开发工作量。
+- **跳过线框的结构性风险**：高保真阶段修结构问题成本约为线框阶段 5–10 倍。
+- **线框图 ≠ 可用性测试**：见 §专题对照 NN/g 警示。
+- **协作工具权限与数据**：产品构思与用户流程可能敏感——评估 SSO、审计、数据驻留。
 
 ---
 
 ## 落地碎片（无先后）
 
-- 线框评审会上只问三个问题："信息层级对吗？主要操作路径清晰吗？缺了什么？"——视觉偏好（颜色、圆角、阴影）留到 Mockup 阶段再讨论。
-- 用手绘白板照片 + Uizard 转换作为线框阶段的起点，而非从空白画布开始——这是非设计师进入设计流程最实际的路径。
-- 线框不是交付物，是讨论媒介。评审完后可以扔掉——不要在"完善线框"上花时间，把精力留给高保真阶段。
-- 如果要验证交互流程，不要用线框图——直接上可点击原型（见 [`prototyping.md`](prototyping.md)）。线框阶段只回答结构问题。
+- 线框评审只问：信息层级对吗？主路径清晰吗？缺什么？——视觉偏好留到 Mockup。
+- 手绘照片 + Uizard 转换作起点，非设计师友好路径。
+- 线框是讨论媒介，评审完可扔——勿在「完善线框」上过度投入。
+- 验证交互流程 → [prototyping.md](prototyping.md)，非线框。
 
 ---
 
-## 延伸阅读与参考材料
+## 工具与产品类型（检索词分类；非产品 SSOT）
 
-- Balsamiq 官方博客：《Wireframe vs Mockup vs Prototype: How Teams Decide What to Use and When》——线框品类定义者的一手方法论阐述
-- UXPin 博客：《Prototype vs. Wireframe vs. Mockup: Key Differences Explained (2026)》
-- Nielsen Norman Group：低保真线框图与高保真原型的用户行为差异研究（60-70% 行为差异的原始出处）
-- Prodmap Blog：《Best AI Wireframe Tools in 2026 (Side-by-Side Review)》——6 款 AI 线框工具的实测对比
-- Forasoft：《AI Wireframe Tools Review 2025: Pricing, Features, and Best Picks》——Relume、Banani、Visily、UX Pilot 等 7 款的评分矩阵
-- Moqups Blog：《Top Figma Alternatives for Wireframing in 2026》——Balsamiq、Moqups、Miro、Uizard、Whimsical、Lucidchart 逐款实测
+| 类型 | 典型包含什么 | 备注 |
+|------|--------------|------|
+| **Dedicated wireframing** | 纯低保真、手绘风格 | Balsamiq、Wireframe.cc |
+| **Diagramming + wireframing** | 流程图、思维导图、低保真页面 | Whimsical、Miro |
+| **Template-based** | 组件库 + 拖拽 | Moqups、MockFlow |
+| **AI wireframe generators** | prompt→布局、手绘→数字 | Uizard、Visily |
+| **Full-stack UI（仅 wireframe 模式）** | Figma 等插件/模式 | 见 [ui-design.md](ui-design.md) |
+
+---
+
+## 外链索引（产品 SSOT；非广告、无排序优先级）
+
+| 名称 | 一句话 | URL |
+|------|--------|-----|
+| **Balsamiq** | 线框品类定义者——刻意手绘风格 | [balsamiq.com](https://balsamiq.com/) |
+| **Whimsical** | 流程图+思维导图+线框一体化，AI 布局 | [whimsical.com](https://whimsical.com/) |
+| **Wireframe.cc** | 极简数字草稿纸，零组件库 | [wireframe.cc](https://wireframe.cc/) |
+| **Moqups** | 入门级线框+模板库 | [moqups.com](https://moqups.com/) |
+| **Miro**（线框模式） | 无限白板+线框模板，Workshop | [miro.com](https://miro.com/) |
+| **MockFlow** | 线框+站点地图+工作流 | [mockflow.com](https://mockflow.com/) |
+| **Lucidchart** | 企业图表，线框为辅助 | [lucidchart.com](https://www.lucidchart.com/) |
+
+### 对比与测评（第三方；观点非官方）
+
+独立评测：**Balsamiq** 几乎无争议为纯低保真行业标准。Moqups 2026 实测：Figma 在纯线框场景过重。Forasoft 2025 横评 Visily 5/5 最高；Prodmap 2026 覆盖六款 AI 线框模式。搜索 wireframing vs prototyping 返回**不同排名集合**——搜索引擎视为不同意图。
+
+*非 Alignify 实测。*
+
+---
+
+## 延伸阅读 · 站内外
+
+- Balsamiq Blog：《Wireframe vs Mockup vs Prototype》
+- UXPin：《Prototype vs. Wireframe vs. Mockup (2026)》
+- Prodmap：《Best AI Wireframe Tools 2026》
+- Forasoft：《AI Wireframe Tools Review 2025》
+- Moqups：《Top Figma Alternatives for Wireframing 2026》

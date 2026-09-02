@@ -122,23 +122,15 @@
 
 ### 对比与测评（第三方；观点非官方）
 
-社区（Reddit、Hacker News、DEV Community、CSS-Tricks）与前端媒体对三款 React 动画库的共识已趋于稳定：**Motion** 被广泛视为 React 声明式动画的首选——API 设计贴合 React 心智模型（`animate` / `initial` / `exit` 与组件生命周期对齐），`layout` prop 的自动 FLIP 在列表筛选与重排场景表现突出，且作为 Framer Motion 的后继项目，社区依赖惯性强。**React Spring** 的弹簧物理模型在拖拽、缩放手势等「中断后重定向」交互上更具控制力，但 API 曲线更陡——开发者需要理解 `useSpring`、`useTransition`、`useTrail` 的区别，而不能像 Motion 那样以单一 `motion.div` 覆盖多数场景。
-
-**GSAP** 在非 React 阵营与需要跨渲染目标（Three.js / Canvas / PixiJS）的场景中几乎没有替代品——它的 `timeline` 编排、`ScrollTrigger` 滚动叙事、SVG path morphing 能力在社区讨论中反复被提及为「做不到」与「做得到」的分界线。主要摩擦点是：GSAP 的商业许可证（付费墙）与 React 中需要 `useGSAP` hook 做生命周期管理，让一些纯 React 团队优先评估 Motion。社区结论通常是：**React UI 动画 → Motion；品牌叙事 / 滚动长篇 / Canvas 动画 → GSAP；两者不互斥，常组合使用**。
-
-**Lottie** 在「设计师直接交付动效资产」的叙事中市场认知最高，LottieFiles 平台积累了大量可复用的社区动画。工程侧的普遍反馈是：运行时轻量（`lottie-web` ~50KB 压缩后），但设计师导出的 JSON 常未经优化（冗余图层、高精度路径），需要工程侧介入做体积审计。**Rive** 在「动画需要交互逻辑」的叙事中与 Lottie 形成差异化——Rive 的状态机让按钮的 press/hover/release 三态动画无需开发者手写 JS 切换逻辑，但设计师需要学习 Rive 编辑器，生态与素材积累远不及 Lottie。社区常见结论：**纯播放 → Lottie；带交互逻辑 → Rive**。
-
-**Anime.js** 在轻量场景（单文件 ~7KB、无依赖）中保持忠实用户群，其 SVG 操作 API 简洁且文档清晰；但因长期未发布大版本更新，在快速迭代的前端生态中「维护活跃度」被打问号。部分开发者已从 Anime.js 迁移到 Motion 或 GSAP。
+社区（Reddit、HN、DEV Community、CSS-Tricks）共识：Motion 为 React 声明式首选；React Spring 适合手势弹簧；GSAP 在滚动叙事/Canvas 几乎无替代；Lottie vs Rive 按「纯播放 vs 交互状态机」分流。Anime.js 维护活跃度存疑。*网摘综合，非 Alignify 实测。*
 
 *本小节为网摘与社区观点综合，非 Alignify 实测；**不**以各厂商自有营销博文为论证主体。*
 
 ---
+## 延伸阅读 · 站内外
 
-## 延伸阅读与参考材料
+**站外**（框架/性能；产品 URL 见 §外链索引）
 
-- **Lottie vs Rive 社区讨论**：[Reddit r/webdev · Lottie vs Rive](https://www.reddit.com/r/webdev/search/?q=lottie+vs+rive) — 了解设计师与开发者在两者之间的实际选型权衡。
-- **GSAP React 最佳实践**：[GSAP 官方 React 指南](https://gsap.com/resources/React) — `useGSAP` hook 的动机与 `gsap.context()` 的 SSR-safe 方案。
-- **Motion（Framer Motion）迁移指南**：Motion 从 Framer Motion 独立后的 API 变更与迁移路径；具体以 [motion.dev 文档](https://motion.dev/docs) 为准。
-- **web.dev · 动画性能**：[Animations and performance](https://web.dev/articles/animations-and-performance) — Google 的浏览器渲染管线与动画性能基础讲解。
-- **WCAG · 动效无障碍**：[WCAG 2.2 · Motion Actuation](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html) 与 [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) — 动效无障碍的规范层面与工程实现参考。
-- **dotLottie 格式规范**：[dotLottie 官方仓库](https://github.com/dotlottie/dotlottie-spec) — Lottie 的下一代格式，支持多动画打包、主题切换、交互状态。
+- [GSAP React 指南](https://gsap.com/resources/React) · [web.dev 动画性能](https://web.dev/articles/animations-and-performance)
+- [WCAG 2.2 Motion Actuation](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html) · [dotLottie 规范](https://github.com/dotlottie/dotlottie-spec)
+- [Reddit r/webdev — Lottie vs Rive 讨论](https://www.reddit.com/r/webdev/search/?q=lottie+vs+rive)

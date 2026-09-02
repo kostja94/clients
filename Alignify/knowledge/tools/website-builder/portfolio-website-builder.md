@@ -130,12 +130,12 @@
 
 | 类型（英文常检索词） | 垂直优先（典型） | 横向 / 附带（典型） | 备注 |
 |---------------------|-----------------|-------------------|------|
-| **Photography portfolio builder** | **Format**, Pixpa | SmugMug（偏卖图 commerce） | Format：90+ 主题、client galleries、proofing、零佣金 store（[format.com](https://www.format.com/)） |
+| **Photography portfolio builder** | **Format**, Pixpa | SmugMug（偏卖图 commerce） | Format 垂直；proofing 见 §外链索引 |
 | **UX portfolio builder** | **UXfolio** | — | Case study / 求职 **垂直** |
-| **Designer / art director site** | Cargo | Framer, Webflow | Cargo 偏实验排版；Framer/Webflow 设计控制型 |
+| **Designer / art director site** | Cargo | Framer, Webflow | Cargo 偏实验排版 |
 | **Writer / journalist portfolio** | **Journo Portfolio** | — | 文字归档 **垂直** |
-| **Online portfolio maker（通用）** | — | Squarespace, Wix, Portfoliobox | 模板广谱；**非** born-portfolio |
-| **Creative Cloud portfolio** | — | Adobe Portfolio | CC 捆绑；边际成本低、深度有限 |
+| **Online portfolio maker（通用）** | — | Squarespace, Wix, Portfoliobox | 模板广谱 |
+| **Creative Cloud portfolio** | — | Adobe Portfolio | CC 捆绑 |
 | **Client gallery only（邻接）** | Pixieset | — | 非 primary 公开展示 slug |
 | **Community portfolio（邻接）** | — | Behance, Dribbble | 非独立站 builder |
 
@@ -168,14 +168,18 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- [Squarespace Help — Building a portfolio site](https://support.squarespace.com/hc/en-us/articles/210295778-Building-a-portfolio-site)（Tier 0 · Portfolio Page vs Gallery Section）
-- [Squarespace Newsroom — AI Visibility 2026](https://newsroom.squarespace.com/blog/ai-visibility-helps-businesses-navigate-the-shift-to-ai-powered-search)（Tier 0）
-- [Format Help — Portfolio plans](https://help.format.com/hc/en-us/articles/40988178214035-Format-Portfolio-plans-and-add-ons)（Tier 0 · 定价与 gallery 限额）
-- [Cargo 3 Docs — Home](https://docs.cargo.site/home)（Tier 0 · 多站点协作）
-- [TechTarget — CMS definition](https://www.techtarget.com/searchcontentmanagement/definition/content-management-system-CMS)（Tier 1 · CMA/CDA）
-- [The Verge — Journo Portfolio / 写作作品集工具对比](https://www.theverge.com/24218943/archive-article-writing-authory-journalist)（Tier 1 · 文字 portfolio 邻接）
+**站外**（Tier 0 帮助文档；产品 URL 见 §外链索引）
+
+- [Squarespace Help — Building a portfolio site](https://support.squarespace.com/hc/en-us/articles/210295778-Building-a-portfolio-site)
+- [Format Help — Portfolio plans](https://help.format.com/hc/en-us/articles/40988178214035-Format-Portfolio-plans-and-add-ons)
+- [Cargo 3 Docs — Home](https://docs.cargo.site/home)
+- [TechTarget — CMS definition](https://www.techtarget.com/searchcontentmanagement/definition/content-management-system-CMS)
+- [The Verge — Journo Portfolio / 写作作品集工具对比](https://www.theverge.com/24218943/archive-article-writing-authory-journalist)
+
+**站内 / 底稿**
+
 - 本次 Web Deep Search 全文：[portfolio-website-builder-web-search-2026-08-28.md](../../../temp/portfolio-website-builder-web-search-2026-08-28.md)
 
 ---

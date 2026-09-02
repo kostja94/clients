@@ -204,27 +204,19 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-## 市场研究
-- SkyQuest.《社区互动平台市场规模、份额与增长分析（按平台类型、组织规模、部署模式、应用和地区分类）——行业预测 2026-2033》。2026。https://www.giiresearch.com/report/sky1898326-community-engagement-platform-market-size-share.html
-- Stratistics MRC.《社区管理应用市场预测至 2034 年——全球分析》。2026。https://marketpublishers.com/report/software/application_software/community-management-apps-strat.html
-- QYResearch.《全球 AI 内容审核市场研究报告 2026》。2026。https://www.qyresearch.com/reports/6001640/ai-content-moderation
+**站外**（市场研究 · 合规 · 行业动态；产品见 §外链索引）
 
-## 学术与框架
-- Gould van Praag, C. et al.《探索社区健康指标》Collaborations Workshop 2026, Zenodo。2026。https://zenodo.org/records/19827355
-- CMX Hub.《SPACES 模型：定义社区商业价值的框架》。2021 年发布，2025 年更新。https://www.cmxhub.com/blog/the-spaces-model
-- EDPB.《EDPB 关于 DSA 与 GDPR 交互的指南》。2025 年 9 月。https://www.edpb.europa.eu
+### 市场研究
+- SkyQuest 社区互动平台市场 2026-2033 · Stratistics MRC 社区管理应用 · QYResearch AI 内容审核 2026
 
-## 行业动态
-- TechCrunch.《Meta acquires Moltbook》——agent-only 社交实验与身份真实性争议。2026 年 3 月。https://techcrunch.com/2026/03/10/meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts/
-- **Alignify · Agent-to-Agent Network**：[agent-to-agent.md](../agent/agent-to-agent.md)——Moltbook/Second Me/Elys/EigenFlux 专册。
-- TechCrunch.《Bumble 收购社区应用 Geneva，拓展友谊功能》。2024 年 5 月。https://techcrunch.com/2024/05/20/bumble-buys-community-building-app-geneva-to-expand-further-into-friendships/
-- VentureBeat.《Orbit 获 $1500 万美元融资解决「社区数据混沌」》。2021 年 5 月。https://venturebeat.com/business/orbit-launches-with-15m-to-fix-community-data-chaos
-- The Recursive.《LAUNCHub Ventures 投资的 Orbiit 被 Hivebrite 收购以提升 AI 驱动的社区互动》。2026。https://therecursive.com/launchub-ventures-backed-orbiit-acquired-by-hivebrite-to-elevate-ai-powered-community-engagement/
-- GlobeNewsWire.《Khoros 发布 Aurora AI：企业社区的新黎明》。2026 年 4 月。https://persportaal.anp.nl/artikel/CSN-110426002/khoros-launches-aurora-ai-a-new-dawn-for-enterprise-community
+### 学术与框架
+- CHAOSS 社区健康指标（Zenodo 2026）· CMX SPACES 模型 · EDPB DSA/GDPR 交互指南（2025-09）
 
-## 合规与治理
-- European Commission.《DSA 透明度数据库》。持续更新。https://transparency.dsa.ec.europa.eu
-- MHC.ie.《DSA 两年回顾与展望》。2026。https://www.mhc.ie/latest/insights/the-dsa-two-year-on-and-whats-next
-- Compact.nl.《导航 DSA 下一阶段：审计、行为守则、指南与执法行动》。2026。https://www.compact.nl/articles/navigating-the-next-phase-of-the-digital-services-act-audits-codes-of-conduct-guidelines-and-enforcement-actions/
+### 行业动态
+- TechCrunch Meta/Moltbook（2026-03）· Bumble/Geneva（2024-05）· Khoros Aurora AI（2026-04）
+- **站内**：[agent-to-agent.md](../agent/agent-to-agent.md)（Agent 网络专册）
+
+### 合规与治理
+- [DSA 透明度数据库](https://transparency.dsa.ec.europa.eu) · MHC.ie DSA 两年回顾 · Compact.nl DSA 下一阶段

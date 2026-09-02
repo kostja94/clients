@@ -1,17 +1,16 @@
 # AI Short Drama / AI 短剧平台 · 知识块（非线性笔记）
 
-**叙述主词**：**AI short drama platform / AI 短剧平台**（以 AI 驱动微短剧全流程创作——剧本→角色→分镜→视频生成→配音→多集续写——并面向竖屏消费场景分发的平台与工具）。与 **AI 视频生成**（`video-generator`）、**AI 动画生成**（`animation-generator`）、**AI 电影制作**（`filmmaking`）相邻但**采购与验收维度不同**——本页聚焦**多集叙事、角色一致性、竖屏分发、投流变现**的端到端短剧管线。
+**叙述主词 · 勿与…混买**：**AI short drama platform / AI 短剧平台**——AI 驱动微短剧全流程创作（剧本→角色→分镜→视频生成→配音→多集续写）并面向竖屏消费场景分发的平台与工具；验收以**多集叙事、角色一致性、竖屏分发、投流变现**为主。本页为 **短剧创作工具 + 分发平台 + 开源框架 SSOT**（完整 URL 与定价表仅此一处）；底层 Veo/Runway/Sora/Kling 等生成模型 → [video-generator.md](video-generator.md)；动漫全流程 Agent 对比 → [animation-generator.md](animation-generator.md)；电影级预演 → [filmmaking.md](filmmaking.md)。
 
-**材料范围**：公开网络检索（QYResearch 市场报告、DataEye 短剧数据、Sensor Tower 收入统计、厂商产品页、36Kr/澎湃新闻行业分析、GitHub 开源项目）；**未**将 Alignify 站内 Tools 正文 JSON 当作独立事实来源复述。网摘整理日期 **2026-06-24**（簇去重修订）。
+**材料范围**：公开网络检索（QYResearch 市场报告、DataEye 短剧数据、Sensor Tower 收入统计、厂商产品页、36Kr/澎湃新闻行业分析、GitHub 开源项目）；**未**将 Alignify 站内 Tools 正文 JSON 当作独立事实来源复述。**具体参数、定价与 API 条款以各官网为准**。网摘整理日期 **2026-06-24**（簇去重修订 **2026-09-02**）。
 
+**站内对照**：待上线 Tools 页时对齐 · slug **`short-drama`** · `/tools/short-drama` · `/zh/tools/short-drama`
+
+**Tools 关键词与 slug 映射**：待 `tools-pages-config` 收录 slug `short-drama` 后补全。
 
 **站内相邻**：[video.md](video.md) · [video-generator.md](video-generator.md) · [animation-generator.md](animation-generator.md) · [filmmaking.md](filmmaking.md)
 
-**勿与…混买**：本页 **竖屏多集+投流变现**；底层 Veo/Runway/Sora 见 video-generator；动漫全流程 Agent 对比见 animation-generator。
-
-**站内对照**：待上线 Tools 页时对齐。建议 slug **`short-drama`** · `/tools/short-drama` · `/zh/tools/short-drama`。
-
-**Tools 关键词与 slug 映射**：待 `tools-pages-config` 收录 slug `short-drama` 后补全。
+---
 
 ## 与相邻 slug 分流（避免混买混评）
 
@@ -22,7 +21,7 @@
 | **核心验收标准** | 角色一致性（跨集）、叙事连贯性、完播率、ROI | 单段视频质量、分辨率、时长 | 动漫风格还原度、逐帧质量 | 电影级画质、专业控制精度 |
 | **典型时长** | 每集 1–3 分钟 × 10–100 集 | 3 秒–3 分钟 | 数秒–数分钟 | 任意 |
 | **商业闭环** | 剧本→制作→分发→投流→付费变现 | 无（底层能力层） | 内容创作为主 | 影视预演为主 |
-| **代表性产品** | SkyReels、Topview Drama Studio、Dreamina AI | 底层模型见 video-generator | AniJam、DomoAI、Flova | LTX Studio、Melies |
+| **代表性产品** | 见 §外链索引 | 见 video-generator §外链索引 | AniJam、DomoAI、Flova | LTX Studio、Melies |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -32,7 +31,7 @@
 
 - **AI short drama（AI 短剧 / AI 微短剧）**：单集 1–3 分钟、多集连续、竖屏优先、由 AI 全流程或半流程生成的剧集内容。区别于传统微短剧——AI 短剧将制作成本从数万元/分钟压缩至 1000–2500 元/分钟，产能提升约 8 倍。中文"微短剧"在监管语境下有特定定义（单集≤3 分钟），本文件沿用此边界。
 - **AI motion comic（AI 漫剧）**：中国特有的 AI 短剧子品类——以 2D/3D 动漫或动态漫画风格输出，区别于真人风格的 AI 仿真人短剧。2025 年在播 AI 漫剧超 12 万部，是中国 AI 短剧市场的绝对主力形态。英文语境下常被归入"AI animated drama"或"AI motion comic"。
-- **Full-pipeline drama agent（全流程短剧 Agent）**：区别于单次文生视频的"一句话出片"——指从故事创意→剧本→角色设计→分镜拆解→关键帧/视频生成→配音→剪辑→多集续写的全链路 AI 自动编排。SkyReels 的 WorldEngine、Topview 的 Drama Studio 代表了两种不同的全流程实现范式。
+- **Full-pipeline drama agent（全流程短剧 Agent）**：区别于单次文生视频的"一句话出片"——指从故事创意→剧本→角色设计→分镜拆解→关键帧/视频生成→配音→剪辑→多集续写的全链路 AI 自动编排；实现范式见 §形态谱系 **Type A**。
 - **Character consistency（角色一致性）**：跨集外观统一——**第一验收标准**；技术路线（Face-lock、Reference 等）见 [image-to-video.md](image-to-video.md) 与 [video-generator.md](video-generator.md)，本页不展开模型细节。
 - **Vertical short drama（竖屏短剧）**：面向手机竖屏（9:16）消费场景的短剧格式。竖屏美学（Vertical Screen Aesthetics）强调怼脸特写、快速剪辑、视觉钩子前置——与横屏影视的构图逻辑完全不同。
 - **Pay-to-unlock（付费解锁）**：短剧的主流变现模式——前 10–15 集免费，后续每集或每 N 集付费解锁。ReelShort、DramaBox 等海外平台将其标准化为"Freemium + IAP"模型。北美用户 ARPPU 高达 $206/年。
@@ -50,14 +49,16 @@
 | **角色一致性** | 靠模型锁定（Seedance 2.0、Face-lock） | AI 素材库+模板复用 | 真人演员自然一致 |
 | **面部表演** | 模型生成，偶有"恐怖谷" | 卡通/二次元，容错率高 | 真人演技 |
 | **爆款率** | 极低（整体 0.12%） | 略高（门槛低、供给大） | 较高（成熟工业流程） |
-| **典型平台** | SkyReels、Topview、Kling | 巨日禄、Catimind Ani | 传统影视公司 |
+| **典型平台** | §外链索引 Type A/C | §外链索引 Type B | 传统影视公司 |
 
 | 维度 | **全流程 Agent 平台** | **底层视频模型 API** | **分发/消费平台** |
 |------|---------------------|-------------------|-----------------|
 | **核心交付** | 端到端短剧创作（剧本→分发） | 视频生成 API 调用的底层能力 | 短剧播放与付费解锁 |
 | **用户角色** | 短剧创作者、MCN | 开发者、平台方 | 终端观众 |
 | **商业模式** | SaaS 订阅/按量计费 | API 按 token/秒计费 | 单集付费/会员订阅/广告 |
-| **典型玩家** | SkyReels、Topview、Dreamina | Seedance 2.0、Veo 3.1、Kling | ReelShort、DramaBox、GoodShort |
+| **典型玩家** | §外链索引 Type A–B | 见 [video-generator.md](video-generator.md) | §外链索引 Type E |
+
+架构路线（Agent / 漫剧工作台 / 开源 / 分发）→ **§形态谱系**；产品规格、定价与 URL → **§外链索引**。
 
 ---
 
@@ -67,31 +68,37 @@
 - **短剧出海的结构性套利**：中国短剧制作成本远低于美国（$3,000–$15,000/部 vs $150,000–$300,000/部），但北美用户付费意愿极高（ARPPU $206）——AI 短剧进一步将成本压至传统短剧的 12.5%，结构性套利空间巨大。
 - **"Faceless Content"的升级**：YouTube 不出镜解说频道已是成熟品类，AI 短剧将其推向更高维度——不出镜、不用演员、不用拍摄场地，仅靠 AI 生成即可产出有角色、有剧情、有情感弧线的叙事内容。
 - **网文 IP 的视觉化变现**：中国年产出网文数百万部，其中仅极小比例能被改编为影视——AI 短剧将"文本→视觉"的转化门槛降低到零边际成本，为海量网文 IP 提供了新的变现出口。
-- **模型能力的临界点突破**：2025 年之前，"能生成一段不崩坏的 3 秒视频"已是高水平；2026 年，Seedance 2.0、Kling 3.0、Veo 3.1 已实现 60–180 秒连贯视频+角色一致性+原生音频——跨集叙事的 AI 短剧从"不可能"变为"可行但不完善"。
+- **模型能力的临界点突破**：2025 年之前，"能生成一段不崩坏的 3 秒视频"已是高水平；2026 年，底层视频模型（Seedance 2.0、Kling 3.0、Veo 3.1 等，见 video-generator）已实现 60–180 秒连贯视频+角色一致性+原生音频——跨集叙事的 AI 短剧从"不可能"变为"可行但不完善"。
 - **监管驱动下的规范化需求**：2025–2026 年中国密集出台微短剧备案、AIGC 标识、AI 魔改治理等政策——AI 短剧从"野蛮生长"进入"持证上岗"，合规能力成为平台选择的关键因素。
 
 ---
 
 ## 能力栈（概念拆分，非厂商功能表）
 
-- **剧本生成引擎**：AI 将故事创意/网文章节→标准化短剧剧本（含对白、场景描述、情绪标注）。SkyReels 的 SkyScript 基于亿级短剧数据集训练，专门优化"爽点密度""反转节奏"等短剧特有指标。区别于通用 LLM 剧本生成——短剧剧本对"每 30 秒一个钩子"的结构有极致要求。
-- **角色与场景资产库**：AI 生成并维护跨集一致的角色形象、场景设定、道具资产。技术路线包括 LoRA 微调（锁定特定人物面部特征）、ControlNet（锁定姿态/轮廓）、Face-lock（Kling AI 专有）。这是短剧区别于单次视频生成的第一技术分水岭。
-- **分镜拆解与调度**：将剧本自动拆解为分镜头序列（景别、运镜、角色站位、时长）。爱奇艺纳逗 Pro 在此维度突出——生成的分镜提示词包含专业影视术语（近景过肩、跟拍、荷兰角）。
-- **视频生成调度层**：将分镜调度到底层视频模型（Seedance 2.0、Kling 3.0、Veo 3.1 等）执行生成，并处理多模型 fallback、批量并行、失败重试。Topview Drama Studio 和纳米 AI 漫剧流水线的核心竞争力不在模型本身，而在这一调度层的工程效率。
-- **多集续写与叙事连贯性**：在已有剧集基础上生成后续内容，保持情节一致性。Kling AI 的 Extend 功能可达 3 分钟单链，SkyReels-V2 通过"扩散强迫"技术理论上可实现无限时长。但跨集叙事一致性（角色关系、情节线索、世界观）仍是所有平台的开放性挑战。
-- **音频生成与口型同步**：对话配音（TTS + 情感控制）、BGM 自动匹配、环境音合成、角色口型对齐。SkyReels-A3 是专用的音频驱动模型——将短剧配音从"后期手动对齐"升级为"生成即同步"。
+- **剧本生成引擎**：AI 将故事创意/网文章节→标准化短剧剧本（含对白、场景描述、情绪标注）。专用短剧 Agent 常基于亿级短剧数据集训练，优化"爽点密度""反转节奏"等短剧特有指标——区别于通用 LLM 剧本生成对"每 30 秒一个钩子"的结构要求。
+- **角色与场景资产库**：AI 生成并维护跨集一致的角色形象、场景设定、道具资产。技术路线包括 LoRA 微调（锁定特定人物面部特征）、ControlNet（锁定姿态/轮廓）、Face-lock 等——这是短剧区别于单次视频生成的第一技术分水岭；底层模型能力见 [video-generator.md](video-generator.md)。
+- **分镜拆解与调度**：将剧本自动拆解为分镜头序列（景别、运镜、角色站位、时长）；专业平台生成的分镜提示词可含影视术语（近景过肩、跟拍、荷兰角）。
+- **视频生成调度层**：将分镜调度到底层视频模型执行生成，并处理多模型 fallback、批量并行、失败重试——专用短剧平台的核心竞争力常不在模型本身，而在这一调度层的工程效率；**引擎选型见 video-generator，本页不列模型清单**。
+- **多集续写与叙事连贯性**：在已有剧集基础上生成后续内容，保持情节一致性；跨集叙事一致性（角色关系、情节线索、世界观）仍是所有平台的开放性挑战。
+- **音频生成与口型同步**：对话配音（TTS + 情感控制）、BGM 自动匹配、环境音合成、角色口型对齐——专用音频驱动模型可将配音从"后期手动对齐"升级为"生成即同步"。
 - **竖屏适配与输出优化**：自动 9:16 构图、怼脸特写智能裁剪、竖屏字幕样式、多分辨率输出（720p–4K）。竖屏适配不是简单旋转——竖屏剧的构图逻辑（人物占画面 60%+、快速切换、视觉重心上移）需要 AI 在生成阶段就以上述规则为约束。
-- **投流与变现分析**：部分平台（如天工短剧工作台）集成 ROI 预测、投流素材自动生成、A/B 测试叙事分析。这一层将短剧从"创作工具"延伸至"商业闭环"，是短剧平台区别于通用视频工具的独特能力。
+- **投流与变现分析**：部分工作台集成 ROI 预测、投流素材自动生成、A/B 测试叙事分析——将短剧从"创作工具"延伸至"商业闭环"，是短剧平台区别于通用视频工具的独特能力。
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **全流程 AI 短剧 Agent 平台**：从剧本到成片到分发的端到端创作平台。用户输入故事创意或网文链接，Agent 自动完成全链路——SkyReels 的 WorldEngine 和 Topview 的 Drama Studio 是该形态的代表。适合快速测剧起量的 MCN 和独立创作者。
-- **AI 漫剧专用工作台**：专为 2D/3D 动漫风格短剧设计的创作工具——封装动漫角色模板、风格滤镜、漫画字体和分镜预览。巨日禄、Catimind Ani 是该形态的典型。AI 漫剧因风格容错率高（卡通角色比仿真人更容易避免"恐怖谷"），是中国市场 AI 短剧的绝对主力形态。
-- **底层模型 + 轻量创作壳**：通用视频生成模型（Kling、Runway、Veo）搭配简易创作界面——没有专为短剧设计的 Agent 工作流，但模型质量高、灵活性强。适合已有短剧制作经验、需要精细控制每个镜头的专业团队。
-- **开源全栈短剧框架**：GitHub 上的开源短剧生成系统（火宝短剧 12.5k★、ArcReel 2.4k★、Jellyfish 3.7k★）——提供代码级定制能力，适合技术团队或需要私有化部署的企业。开源框架的优势在于训练数据自主可控（版权合规的核心诉求），代价是需要自行维护和部署。
-- **短剧分发/消费平台**：面向终端观众的短剧播放 App——提供单集付费/会员订阅/广告变现。ReelShort、DramaBox、GoodShort 构成海外三强。分发平台不是创作工具，但它们的"爆款公式"反向决定了 AI 短剧平台的剧本与叙事优化方向。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 故事创意→剧本→分镜→多集成片→可选分发的全链路 Agent | AI Short Drama Agent Platform | SkyReels、Topview Drama Studio |
+| **B** | 2D/3D 动漫风格专用——角色模板、风格滤镜、漫画分镜、批量渲染 | AI Motion Comic Workbench | 巨日禄、Catimind Ani、纳米 AI 漫剧流水线 |
+| **C** | 通用视频模型 + 简易创作壳，无专用短剧 Agent 工作流 | Underlying model + light shell | Dreamina AI（Seedance 原生壳）；其他模型见 video-generator |
+| **D** | GitHub 开源全栈，代码级定制与私有化部署 | Open-Source Short Drama Framework | 火宝短剧、ArcReel、Jellyfish |
+| **E** | 面向终端观众的播放 App，单集付费/会员/广告变现 | Short Drama Distribution Platform | ReelShort、DramaBox、GoodShort、ShortMax、FlexTV、MoboReels |
+
+**Type A vs B**：A 偏仿真人/通用 episodic Agent；B 专为中国 AI 漫剧市场优化——卡通容错率高，是 2025 在播 12 万+ AI 漫剧的主力形态。**Type C** 适合已有短剧经验、需精细控制每镜头的团队；**底层模型 SSOT 在 video-generator，不在此重复枚举**。
+
+**Type E 反向约束创作**：分发平台的"爆款公式"（前 10 集免费、黄金三分钟、Pay-to-unlock）反向决定 Agent 平台的剧本与叙事优化方向——采购创作工具时应与目标分发渠道对齐。
 
 ---
 
@@ -118,104 +125,81 @@
 
 ---
 
-## 工具与产品类型（避免读者将不同类型混为一谈）
+## 外链索引（产品 SSOT：URL + 规格 + 定价；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|------|------------|------|
-| **AI Short Drama Agent Platform** | SkyReels、Topview Drama Studio、Dreamina AI | 全流程 Agent——与 animation-generator 的动漫 Agent 对比见该页 |
-| **AI Motion Comic Workbench**（AI 漫剧专用工作台） | 巨日禄、Catimind Ani、纳米 AI 漫剧流水线 | 专为动漫风格短剧优化——模板化角色库、漫画分镜预览、批量渲染。中国市场独有品类 |
-| **Short Drama Distribution Platform**（短剧分发/消费平台） | ReelShort、DramaBox、GoodShort、ShortMax、FlexTV、MoboReels | 面向终端观众的播放+付费平台。6 个代表覆盖了海外付费短剧"RSDGMF"六巨头 |
-| **Open-Source Short Drama Framework**（开源短剧框架） | 火宝短剧（12.5k★）、ArcReel（2.4k★）、Jellyfish（3.7k★） | GitHub 开源项目——代码级定制、私有化部署、训练数据自主可控。技术团队首选 |
-| **Underlying Video Model** | （见 video-generator） | 引擎层不在此展开 |
+### 创作工具与漫剧工作台（Type A–C）
 
----
+| 名称 | Type | 公司/产地 | 核心引擎 | 国际化 | 定价参考 | 一句话 | URL |
+|------|------|---------|---------|--------|---------|--------|-----|
+| **SkyReels** | A | 昆仑万维（中国） | SkyScript + StoryboardGen + Sky3DGen + WorldEngine + 开源 V1/V2/A1/A2/A3 系列 | ★★★★★ 全球 Web+App，GitHub 开源 | 基础免费 + 企业定制 | 全球首个集成视频大模型与 3D 大模型的 AI 短剧平台，"一人一剧" | [官网](https://www.skyreels.ai) · [GitHub](https://github.com/SkyReelsAI/SkyReels) |
+| **Topview Drama Studio** | A | Topview（国际） | Seedance 2 + GPT-Image 2 | ★★★★ 国际 SaaS | SaaS 订阅 | 专注 episodic AI 剧集创作的 Agent 平台，支持多集模式与分镜预览 | [topview.ai](https://www.topview.ai) |
+| **Dreamina AI / 即梦 AI** | C | 字节跳动（中国） | Seedance 2.0 | ★★★★ | 免费 + $12–$85/月 | Seedance 原生创作壳，角色一致性强 | [dreamina.ai](https://www.dreamina.ai) |
+| **巨日禄** | B | 中国 | 动漫角色模板 + 批量渲染 | ★★★ 国内为主 | — | AI 漫剧专用工作台，角色一致性测评表现稳定 | — |
+| **Catimind Ani** | B | 中国 | 2D/3D 动漫风格短剧 | ★★★ 国内为主 | — | AI 漫剧创作工具，模板化角色库与漫画分镜预览 | — |
+| **纳米 AI 漫剧流水线** | B | 中国 | 漫剧批量生产调度 | ★★★ 国内为主 | — | 轻量级 AI 漫剧流水线，核心竞争力在调度层工程效率 | — |
 
-## 工具与产品谱系（5 个创作工具/平台 + 7 个分发平台）
+> **选择注记**：专用短剧 Agent（Type A）+ 漫剧工作台（Type B）+ 创作壳（Type C）。**通用生成模型**（Kling、Runway、Veo 等）见 [video-generator.md](video-generator.md) §外链索引。
 
-### 创作工具与底层模型（合并为短剧创作平台谱系）
+### 开源框架（Type D）
 
-| 产品 | 公司/产地 | 核心引擎 | 国际化程度 | 定价参考 | 一句话定位 |
-|------|---------|---------|----------|---------|----------|
-| **SkyReels** | 昆仑万维（中国） | SkyScript + StoryboardGen + Sky3DGen + WorldEngine + 开源 V1/V2/A1/A2/A3 系列 | ★★★★★ 全球 Web+App 上线，GitHub 开源 | 基础免费 + 企业定制 | 全球首个集成视频大模型与 3D 大模型的 AI 短剧平台，"一人一剧" |
-| **Topview Drama Studio** | Topview（国际） | Seedance 2 + GPT-Image 2 | ★★★★ 国际 SaaS | SaaS 订阅 | 专注 episodic AI 剧集创作的 Agent 平台，支持多集模式与分镜预览 |
-| **Dreamina AI / 即梦 AI** | 字节跳动（中国） | Seedance 2.0 | ★★★★ | 免费 + $12–$85/月 | Seedance 原生创作壳，角色一致性强 |
+| 名称 | Type | Stars | 一句话 | URL |
+|------|------|-------|--------|-----|
+| **火宝短剧 (huobao-drama)** | D | 12.5k★ | 代码级定制、私有化部署、训练数据自主可控 | [GitHub](https://github.com/huobao-drama) |
+| **ArcReel** | D | 2.4k★ | 开源 AI Agent 视频工作台 | [GitHub](https://github.com/arc-reel) |
+| **Jellyfish** | D | 3.7k★ | 开源短剧生成框架 | — |
 
-> **选择注记**：专用短剧平台（SkyReels、Topview）+ 创作壳（Dreamina）。**通用生成模型**（Kling、Runway、Veo 等）见 [video-generator.md](video-generator.md) §外链索引。
+### 短剧分发/消费平台（Type E）
 
-### 短剧分发/消费平台
+| 名称 | Type | 运营公司 | 2025 收入/地位 | 主攻市场 | 内容模式 | 一句话 | URL |
+|------|------|---------|-------------|---------|---------|--------|-----|
+| **ReelShort** | E | 枫叶互动（中国） | #1（23.14% 份额，~$5.5 亿） | 北美为主 | 本土定制剧 | 海外短剧收入之王，北美女性用户 ARPPU $206 | [reelshort.com](https://www.reelshort.com) |
+| **DramaBox** | E | 点众科技（中国） | #2（20.61% 份额，~$4.9 亿） | 全球 | 译制+本土 | 全球下载量冠军（+112% YoY），迪士尼投资背书 | [dramabox.com](https://www.dramabox.com) |
+| **GoodShort** | E | 新阅时代（中国） | #3（9.62% 份额，~$2.3 亿） | 美国+全球 | 自制+译制 | 2025 最大黑马，网文出海延伸至短剧 | [goodshort.com](https://www.goodshort.com) |
+| **ShortMax** | E | 九州文化（中国） | #6（5.50% 份额） | 东南亚+全球 | 译制剧为主 | 东南亚下载量最高，国内年产 400 部短剧母体 | [shortmax.com](https://www.shortmax.com) |
+| **FlexTV** | E | Mega Matrix / 安悦科技（NYSE:MPU） | Top10，Q1 营收 $870 万 | 东南亚+北美 | 自制+译制 | 全球唯一短剧美股上市公司，毛利率 60% | [flextv.com](https://www.flextv.com) |
+| **MoboReels** | E | 畅读科技（中国） | Top10 | 欧美+东南亚 | 网文 IP 改编 | 网文出海→短剧延伸，IP 储备壁垒 | [moboreels.com](https://www.moboreels.com) |
 
-| 平台 | 运营公司 | 2025 收入/地位 | 主攻市场 | 内容模式 | 一句话定位 |
-|------|---------|-------------|---------|---------|----------|
-| **ReelShort** | 枫叶互动（中国） | #1（23.14% 份额，~$5.5 亿） | 北美为主 | 本土定制剧 | 海外短剧收入之王，北美女性用户 ARPPU $206 |
-| **DramaBox** | 点众科技（中国） | #2（20.61% 份额，~$4.9 亿） | 全球 | 译制+本土 | 全球下载量冠军（+112% YoY），迪士尼投资背书 |
-| **GoodShort** | 新阅时代（中国） | #3（9.62% 份额，~$2.3 亿） | 美国+全球 | 自制+译制 | 2025 最大黑马，网文出海延伸至短剧 |
-| **ShortMax** | 九州文化（中国） | #6（5.50% 份额） | 东南亚+全球 | 译制剧为主 | 东南亚下载量最高，国内年产 400 部短剧母体 |
-| **FlexTV** | Mega Matrix / 安悦科技（NYSE:MPU） | Top10，Q1 营收 $870 万 | 东南亚+北美 | 自制+译制 | 全球唯一短剧美股上市公司，毛利率 60% |
-| **MoboReels** | 畅读科技（中国） | Top10 | 欧美+东南亚 | 网文 IP 改编 | 网文出海→短剧延伸，IP 储备壁垒 |
-
-> **选择注记**：以上 6 个覆盖了海外付费短剧的"RSDGMF"六巨头。国内市场以红果短剧（字节）、抖音为主，不单独列入国际化产品清单。
-
----
-
-## 外链索引
-
-| 名称 | 一句话 | URL |
-|------|--------|-----|
-| SkyReels 官网 | 昆仑万维 AI 短剧平台 | https://www.skyreels.ai |
-| SkyReels GitHub | 开源模型 SkyReels-V1/V2/A1/A2/A3 | https://github.com/SkyReelsAI/SkyReels |
-| Topview Drama Studio | Topview episodic AI drama 创作 | https://www.topview.ai |
-| Dreamina AI | 字节 Seedance 创作壳 | https://www.dreamina.ai |
-| ReelShort | 海外短剧分发 #1 | https://www.reelshort.com |
-| DramaBox | 海外短剧分发 #2 | https://www.dramabox.com |
-| GoodShort | 海外短剧分发 #3 | https://www.goodshort.com |
-| ShortMax | 九州文化海外短剧 | https://www.shortmax.com |
-| FlexTV | Mega Matrix 海外短剧（NYSE:MPU） | https://www.flextv.com |
-| MoboReels | 畅读科技海外短剧 | https://www.moboreels.com |
-| QYResearch: Global AI Short Drama Platform Market | 全球 AI 短剧平台市场规模与预测 | https://www.qyresearch.com |
-| DataEye 短剧数据 | 中国短剧市场行业数据 | https://www.dataeye.com |
-| Sensor Tower | 短剧应用收入与下载数据 | https://sensortower.com |
-| 火宝短剧 (huobao-drama) | GitHub 开源短剧生成（12.5k★） | https://github.com/huobao-drama |
-| ArcReel | GitHub 开源 AI Agent 视频工作台（2.4k★） | https://github.com/arc-reel |
-| 澎湃新闻: 20+ AI 短剧 Agent 测评 | 2026 年 4 月第三方深度测评 | https://www.thepaper.cn/newsDetail_forward_32991154 |
-| 经济参考报: AI 短剧爆发式增长 | 新华社旗下，2025.12 百亿级市场分析 | http://jjckb.xinhuanet.com/20251229/ |
+> **选择注记**：以上 6 个覆盖海外付费短剧"RSDGMF"六巨头。国内市场以红果短剧（字节）、抖音为主，不单独列入国际化产品清单。
 
 ### 对比与测评（第三方；观点非官方）
 
-- **澎湃新闻 2026.4 测评**（20+ AI 短剧 Agent 横向对比）结论：小云雀 AI 门槛最低（一句话出片）、万兴剧厂镜头衔接最自然、巨日禄角色一致性最稳、Seko AI 跨集连贯性最强。**共同短板**：所有平台的剧本仍需人工编剧深度调整，"一键出爆款"仍未实现。
+- **澎湃新闻 2026.4 测评**（[20+ AI 短剧 Agent 横向对比](https://www.thepaper.cn/newsDetail_forward_32991154)）结论：小云雀 AI 门槛最低（一句话出片）、万兴剧厂镜头衔接最自然、巨日禄角色一致性最稳、Seko AI 跨集连贯性最强。**共同短板**：所有平台的剧本仍需人工编剧深度调整，"一键出爆款"仍未实现。
 - **DataEye 2026.2 数据**：在播 AI 漫剧 12 万+部，破亿爆款仅 0.12%——生产成本低≠商业成功。AI 降低的是制作门槛而非创意门槛。
 - **36Kr 2026 行业综述**：AI 短剧已经从"做不做"的讨论进入"谁来做精品"的淘汰赛——单纯靠 AI 堆量已无利可图（ROI 跌至 1.1），精品化+IP 化是唯一出路。
 - 海外用户调研：**55%** 愿意为 AI 辅助的短剧付费，**49%** 愿意为完全 AI 生成的短剧付费——表明终端观众对 AI 短剧的接受度已越过临界点。
 
+*本小节为网摘与媒体观点综合，非 Alignify 实测。*
+
 ---
 
-## 延伸阅读 · 站内知识块
+## 延伸阅读 · 站内外
 
-- 底层：[video-generator.md](video-generator.md) · 动漫 Agent 对比：[animation-generator.md](animation-generator.md)
-- 并列：[filmmaking.md](filmmaking.md) · [video.md](video.md)
+**站外 · 市场报告**
 
-**站外**
+- QYResearch: [*Global AI Short Drama Platform Market Report*](https://www.qyresearch.com) (2025–2032) — 全球 AI 短剧平台市场规模 $12.52 亿（2025），预计 CAGR 13%
+- Sensor Tower: [*2025 年短剧应用市场洞察*](https://sensortower.com) — 全球短剧应用内购收入超 $28 亿（+116% YoY）
+- DataEye: [*2026 年 AI 漫剧行业白皮书*](https://www.dataeye.com) — 12 万+在播作品、0.12% 爆款率的行业全景
 
-### 市场报告
+**站外 · 行业分析（中文）**
 
-- QYResearch: *Global AI Short Drama Platform Market Report* (2025–2032) — 全球 AI 短剧平台市场规模 $12.52 亿（2025），预计 CAGR 13%
-- Sensor Tower: *2025 年短剧应用市场洞察* — 全球短剧应用内购收入超 $28 亿（+116% YoY）
-- DataEye: *2026 年 AI 漫剧行业白皮书* — 12 万+在播作品、0.12% 爆款率的行业全景
-
-### 行业分析（中文）
-
-- 新华社经济参考报 (2025.12.29): "AI 短剧爆发式增长，百亿级市场加速成势"
+- 新华社经济参考报 (2025.12.29): [「AI 短剧爆发式增长，百亿级市场加速成势」](http://jjckb.xinhuanet.com/20251229/)
 - 36Kr (2026): "模型厂、视频平台、内容公司齐入局，Agent 混战谁是赢家"
 - 虎嗅 (2025): "短剧出海市场规模达 36 亿美元，但 80%-90% 项目无法回本"
 - 21 世纪经济报道 (2026.4): "AI 短剧困在版权里？"
 
-### 法律与合规
+**站外 · 法律与合规**
 
 - 汇业律师事务所 (2026): "技术重塑文娱：AI 漫剧的行业生态、市场前瞻与合规应对"
-- 星瀚律师事务所 (2025): "技术狂飙与发展红线：解析 AI 漫剧的合规密码"
+- 星瀚律师事务所 (2025): "技术重塑与发展红线：解析 AI 漫剧的合规密码"
 - 2025.10.15 新《反不正当竞争法》正式施行——首次明确 AI 模型结构与参数可受竞争法保护
 
-### 技术论文与开源
+**站外 · 技术论文与开源**
 
 - SkyReals-V2 Technical Report (2025): 扩散强迫（Diffusion Forcing）技术实现无限时长视频生成
 - Seedance 2.0 (ByteDance, 2026): 多镜头角色一致性与原生音画同步
 - Wan 2.7 (Alibaba, 2026): 开源视频生成模型
+
+**站内**
+
+- 底层生成 SSOT：[video-generator.md](video-generator.md) · 动漫 Agent 对比：[animation-generator.md](animation-generator.md)
+- Hub / 并列：[video.md](video.md) · [filmmaking.md](filmmaking.md)

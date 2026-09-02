@@ -80,14 +80,14 @@ AI 家庭助手在实际选购中极易与以下三类混淆，核心分界点�
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
-- **Type A — 网格型（Calendar-First）**：日历 + 清单为主界面，**AI** 做导入、归纳、食谱/周餐草案等。行业里「经典组织器 + **AI** 订阅层」常见，例如 **Cozi** 的 **Cozi Max** 路线：邮件/传单进日历、食谱与周餐规划（见下方延伸阅读）。
-- **Type B — 智能收件箱型（Inbox-First）**：主入口是一个专属家庭邮箱地址或短信通道；AI 自动将入站邮件、通知照片、PDF 解析为结构化日历/任务条目——对「不爱装 app 的家人」门槛最低。Maple（**Maple Fast**）、Ohai.ai（邮件扫描 + SMS）、Cozi Max（AI Event Import）、Skylight Sidekick（Email Forwarding）的代表路线。
-- **Type C — 对话型（Conversation-First）**：聊天/语音推进，适合已在 **IM** 协调一切的家庭；对 **training**、**transcript**、导出删除要更敏感。Nori（「Hey Nori」唤醒词）是此形态的最新代表；Ohai.ai 可通过 SMS 交互。
-- **Type D — 语音优先伴侣型（Voice-First Companion）**：以唤醒词激活、强调语音交互与「家庭记忆」持久化——AI 记住偏好、约束与历史，成员可自然语言查询（「钢琴课几点？」「WiFi 密码是什么？」）。Nori 的「Hey Nori + Family Memory Bank」组合是目前最完整的表达。
-- **Type E — 硬件中枢型（Hardware Hub）**：壁挂常亮屏幕，全部家庭成员可见，无需掏出手机。Skylight Calendar（含 Sidekick AI）是已验证的商业模式（130 万+ 家庭、盈利、未融资）；Kora（壁挂 AI 助手，Kickstarter 未达标）；Nori Family Hub（计划 2026 Q2 发布）。
-- **Type F — 家居语境型（Home-Context）**：日程与灯、锁、场景绑定；先 **notify-only**，再谈静默 **automation**。Kora 的原愿景包含 full IoT integration；Nori 计划未来与 smart home 生态打通。
+- **Type A — 网格型（Calendar-First）**：日历 + 清单为主界面，AI 做导入与归纳。
+- **Type B — 智能收件箱型（Inbox-First）**：专属邮箱/SMS 入站解析为事件。
+- **Type C — 对话型（Conversation-First）**：聊天/语音推进。
+- **Type D — 语音优先伴侣型（Voice-First Companion）**：唤醒词 + Family Memory Bank。
+- **Type E — 硬件中枢型（Hardware Hub）**：壁挂常亮屏幕。
+- **Type F — 家居语境型（Home-Context）**：日程与 smart home 绑定。
 
 ---
 
@@ -123,8 +123,8 @@ AI 家庭助手在实际选购中极易与以下三类混淆，核心分界点�
 |----------------------|--------------|------|
 | **Shared family calendar** | 色分成员、重复规则、提醒、与外部日历 **sync / subscribe** | 可能是独立 **app**，也可能只是「全家共用一层 **Google Calendar**」 |
 | **Family organizer / all-in-one** | 日历 + **shopping list** + **to-do** + **meal plan** / **recipe** + 轻消息或公告 | 英文常直接搜 **family organizer**；与纯日历比，多了「生活行政 **admin**」 |
-| **Smart Inbox / Email-forward** | 专属家庭邮箱地址、AI 自动将入站邮件/通知照片/PDF 解析为日历事件或任务 | 对不爱装 app 的家人门槛最低；Maple Fast、Ohai.ai、Cozi Max、Skylight Sidekick 均以此为关键入口 |
-| **Hardware Family Hub** | 壁挂常亮触摸屏、语音交互、数字相框模式、全家可见 | Skylight Calendar（130 万+ 家庭、盈利）、Kora（Kickstarter 未达标）、Nori Family Hub（2026 Q2 计划） |
+| **Smart Inbox / Email-forward** | 专属家庭邮箱、AI 解析入站为事件 | 见 §外链索引（Maple、Ohai、Cozi Max、Skylight） |
+| **Hardware Family Hub** | 壁挂触摸屏、语音、全家可见 | 见 §外链索引 |
 | **Chores & allowance** | 家务分配、积分或奖励、零用钱/财商 | 常与 **family organizer** 合并，也可能单独成 **app**；注意「家务追踪」与「零用钱/财商」是两个不同模块——Maple 侧重前者而非后者 |
 | **Meal planning + grocery** | 周餐、食谱库、食材一键进清单 | **Cozi Max**、**Nori**、**Skylight Sidekick** 等把 **AI meal planner**、**AI recipe** 写进官方能力；Instacart 整合是加分项 |
 | **AI scheduling / time blocking** | 按优先级与截止自动塞日程、冲突预警 | 更偏个人/职业 **productivity**，也可覆盖家庭；代表讨论见 [Motion：家庭向共享日历评测文](https://www.usemotion.com/blog/best-shared-calendar-app-for-families.html) |
@@ -169,24 +169,15 @@ AI 家庭助手在实际选购中极易与以下三类混淆，核心分界点�
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- **Nori 官方发布**：「全球首个家庭 AI 平台」（2026.1.27），前字节/三星团队，定位家庭「第二大脑」。[Nori Introduces the World's First Family Brain (GlobeNewswire)](https://www.globenewswire.com/news-release/2026/01/28/3227793/0/en/Nori-Introduces-the-World-s-First-Family-Brain-Bringing-AI-Into-the-Center-of-Modern-Family-Life.html)
-- **Nori Google Play Story 专题**（2026.4）：发布两月即获 Google Play 编辑推荐，与 TickTick、Otter AI 等并列。[Meet the AI Family Butler That Google Play Story Featured](https://www.globenewswire.com/de/news-release/2026/04/30/3285313/0/en/meet-the-ai-family-butler-that-google-play-story-featured-just-two-months-after-launch.html)
-- **Cozi Max（传统家庭日历 + AI 功能官方说明）**：邮件/传单导入日历、**AI Recipe Creator**、**AI Meal Planner** 等——说明「网格型」产品如何把 **AI** 叠在已有日历/清单上。[Introducing Cozi Max: Organize Automatically \| Cozi Family Organizer](https://www.cozi.com/blog/introducing-cozi-max/)
-- **Ohai.ai 媒体报道**：Fast Company（2024.1，创始人 Sheila Lirio Marcelo 背景与产品愿景）、Axios（2024.1，启动轮报道）、Parents.com（2025 实测）。关注「Care.com 前 CEO 二次创业」叙事与「从 SMS 接入」的低摩擦设计。
-- **Maple 2025 Year in Review**：Web app 上线、Maple Fast（AI inbox）、Food tab、Apple App of the Day ×4。[2025 Maple in Review \| Maple Blog](https://www.growmaple.com/blog-posts/2025-maple-in-review)
-- **Skylight Sidekick 官方能力说明**：Photo-to-Event、Email Forwarding、Voice-to-Event、Recipe Import、Activity Planner。[Sidekick (Skylight Help Center)](https://skylight.zendesk.com/hc/en-us/articles/39335273393947-Sidekick)
-- **Skylight Calendar 2 发布**（2026.3.17，CES 2026 首秀）：新中号硬件、可换彩色边框、Instacart 整合。[Skylight Calendar 2 中文报道 (ChinaZ)](https://www.chinaz.com/ainews/24456.shtml)
-- **媒体侧对家庭类 AI 组织器的综述（产品举例与场景）**：[Apps that use AI to streamline your home life \| Mashable](https://mashable.com/article/family-organizer-app-review)
-- **家庭共享日历 + AI 调度视角（含 Motion 等）**：[Best shared calendar apps for families \| Motion Blog](https://www.usemotion.com/blog/best-shared-calendar-app-for-families.html)
-- **Skylight 硬件日历 + Sidekick（官方）**：[Sidekick](https://myskylight.com/lp/sidekick/) · [Skylight Calendar](https://myskylight.com/calendar/)
-- **短信 / 低摩擦与多产品对比**：[Best family shared calendars 2025 \| TextConcierge](https://textconcierge.ai/blog/articles/best-family-shared-calendars-2025/)
-- **自然语言 / 桌面向共享日历盘点**：[Sharing calendars app options \| Calendar0](https://www.calendar0.app/blog/sharing-calendars-app)
-- **儿童、数字环境与负责任创新（中文 PDF，治理与案例向）**：[中国科技企业如何借鉴和应用「服务儿童的负责任科技创新」和「设计保障儿童安全」原则（UNICEF 等）](https://www.unicef.cn/media/30656/file/%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E4%BC%81%E4%B8%9A%E5%A6%82%E4%BD%95%E5%80%9F%E9%89%B4%E5%92%8C%E5%BA%94%E7%94%A8%E2%80%9C%E6%9C%8D%E5%8A%A1%E5%84%BF%E7%AB%A5%E7%9A%84%E8%B4%9F%E8%B4%A3%E4%BB%BB%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E2%80%9D%E5%92%8C%E2%80%9C%E8%AE%BE%E8%AE%A1%E4%BF%9D%E9%9A%9C%E5%84%BF%E7%AB%A5%E5%AE%89%E5%85%A8%E2%80%9D%E5%8E%9F%E5%88%99.pdf)
-- **广义 AI 安全与治理（中文总报告，非家庭垂直）**：[2026 年国际人工智能安全报告（PDF）](https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026-zh.pdf)
-- **联合国儿童权利委员会 · 第 25 号一般性意见（数字环境中的儿童权利，2021）**  
-  - 英文索引页：[General comment No. 25 (2021) \| OHCHR](https://www.ohchr.org/en/documents/general-comments-and-recommendations/general-comment-no-25-2021-childrens-rights-relation)  
-  - 中文 PDF（条约数据库，符号 **CRC/C/GC/25**）：[CRC/C/GC/25 中文版下载](https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/Download.aspx?symbolno=CRC/C/GC/25&Lang=zh)
-- **全球 AI 智慧家庭市场趋势**：[AI in Smart Home Market 2026 (TBRC)](https://www.gii.tw/report/tbrc1978110-artificial-intelligence-ai-home-automation-global.html)
-- **Nori SaaS 评价与功能列表**（第三方目录）：[Nori - Features & Pricing (SaaSworthy)](https://www.saasworthy.com/product/nori-ai)
+**站外**（治理/市场研究；产品 URL 见 §外链索引）
+
+- [Mashable — AI streamline home life](https://mashable.com/article/family-organizer-app-review)
+- [UNICEF 儿童负责任创新原则（中文 PDF）](https://www.unicef.cn/media/30656/file/%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E4%BC%81%E4%B8%9A%E5%A6%82%E4%BD%95%E5%80%9F%E9%89%B4%E5%92%8C%E5%BA%94%E7%94%A8%E2%80%9C%E6%9C%8D%E5%8A%A1%E5%84%BF%E7%AB%A5%E7%9A%84%E8%B4%9F%E8%B4%A3%E4%BB%BB%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E2%80%9D%E5%92%8C%E2%80%9C%E8%AE%BE%E8%AE%A1%E4%BF%9D%E9%9A%9A%E5%84%BF%E7%AB%A5%E5%AE%89%E5%85%A8%E2%80%9D%E5%8E%9F%E5%88%99.pdf)
+- [2026 国际 AI 安全报告（中文）](https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026-zh.pdf)
+- [OHCHR CRC/C/GC/25](https://www.ohchr.org/en/documents/general-comments-and-recommendations/general-comment-no-25-2021-childrens-rights-relation)
+
+**站内**
+
+- [note-taker.md](productivity/note-taker.md) · [chatbot.md](chat-social/chatbot.md)

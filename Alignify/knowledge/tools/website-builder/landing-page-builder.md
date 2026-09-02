@@ -141,15 +141,15 @@
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- [Unbounce — What is a landing page](https://unbounce.com/landing-page-articles/what-is-a-landing-page/)（T0 定义）
-- [Unbounce — Pricing & MCP FAQ](https://unbounce.com/pricing/)（T0 定价）
-- [Unbounce — MCP Server](https://unbounce.com/product/mcp-server/)（T0 AI 工作流）
-- [Instapage — Plans](https://instapage.com/plans)（T0）
-- [Instapage — Drag-and-drop builder roundup](https://instapage.com/blog/drag-and-drop-landing-page-builder)（T0 类型谱）
-- [Leadpages — Platform](https://leadpages.com/platform/landing-page-builder)（T0）
+**站外**（产品 T0 页见 §外链索引，此处仅框架/市场类）
+
 - [Future Market Insights — Landing Page Builders Market](https://www.futuremarketinsights.com/reports/landing-page-builders-market)（T1 市场规模）
+- [Instapage — Drag-and-drop builder roundup](https://instapage.com/blog/drag-and-drop-landing-page-builder)（T0 类型谱）
+
+**站内 / 底稿**
+
 - 本次 Web Deep Search 全文：[landing-page-builder-web-search-2026-08-28.md](../../../temp/landing-page-builder-web-search-2026-08-28.md)
 
 ---

@@ -1,6 +1,6 @@
 # knowledgehub / tools · Alignify Tools slug 知识块分册
 
-本目录存放与 Alignify **Tools slug**（kebab-case 文件名）同名的 `*.md` 知识块；**142 个 slug 中 131 个**已按主题簇分子目录（见 §主题簇物理路径），如 [`website-builder/`](./website-builder/README.md)、[`cms/`](./cms/README.md)、[`image/`](./image/image.md)（Hub）；**slug 与路由不变**。KB 路径：`knowledge/tools/{cluster}/{slug}.md` 或根目录 `{slug}.md`（独立 slug）。便于与历史 **`/tools/[slug]`**、新文 **`/blog/[slug]`**（2026-06 起）及关键词表锚点对照。**路由策略**见 §路由与发布策略。
+本目录存放与 Alignify **Tools slug**（kebab-case 文件名）同名的 `*.md` 知识块；**144 个 slug 中 135 个**已按主题簇分子目录（见 §主题簇物理路径），如 [`website-builder/`](./website-builder/README.md)、[`cms/`](./cms/README.md)、[`image/`](./image/image.md)（Hub）；**slug 与路由不变**。KB 路径：`knowledge/tools/{cluster}/{slug}.md` 或根目录 `{slug}.md`（独立 slug）。便于与历史 **`/tools/[slug]`**、新文 **`/blog/[slug]`**（2026-06 起）及关键词表锚点对照。**路由策略**见 §路由与发布策略。
 
 **正式文章创作流程**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md) · 规范 [`skills/create-article/rules/`](../../skills/create-article/rules/)
 
@@ -23,11 +23,12 @@
 - **关键词与 Tools 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)
 - **与 SEO 专册分工**：[crawler.md](../seo/crawler.md)（访客机器人身份与治理） ↔ [web-scraping.md](web-data/web-scraping.md)（数据采集侧工具谱系）↔ 正式页 **`/seo/crawler`** 与 **`/tools/web-scraping`**；**四者边界总表**见 [knowledgehub README](../README.md) 章节「**Crawler / 网页抓取：内容边界**」。
 - **媒体生产链 · 静态图像（12 slug）**：Hub 为 [image.md](image/image.md)（Buyer 决策树 + **§内容分工**；无旗舰 URL 表）；生成层 SSOT 为 [image-generator.md](image/image-generator.md)（§共享事实速查 / §行业注记 / §外链索引）。管线 spoke（editor/enhancer/relighting）与任务 spoke（background/headshot/logo/poster/tattoo/avatar）互链去重；[image-to-video.md](video/image-to-video.md) 为静态图→视频相邻块。
-- **媒体生产链 · 视频簇（14 slug）**：Hub 为 [video.md](video/video.md)（含 **内容分工表** 与 **共享事实**）；生成层主归属 [video-generator.md](video/video-generator.md)。姊妹块按输入模态（T2V/I2V/V2V）与垂直场景（filmmaking/short-drama/animation/MV）互链，文首 `**站内相邻**` + 文末 `**延伸阅读 · 站内知识块**`。
+- **媒体生产链 · 视频簇（15 slug）**：Hub 为 [video.md](video/video.md)（含 **内容分工表** 与 **共享事实**）；离线生成层主归属 [video-generator.md](video/video-generator.md)；**实时交互长视频** SSOT [interactive-video.md](video/interactive-video.md)（Live Model / 无限流 steering，2026-09 新建）。姊妹块按输入模态（T2V/I2V/V2V）与垂直场景（filmmaking/short-drama/animation/MV）互链，文首 `**站内相邻**` + 文末 `**延伸阅读 · 站内知识块**`。
 - **媒体生产链 · 3D 簇（Hub + 5 spoke）**：Hub 为 [3d.md](3d-spatial/3d.md)（Buyer 决策树 + **§内容分工** + **§共享事实速查**）；生成 spoke [3d-model-generator.md](3d-spatial/3d-model-generator.md)；扫描 spoke [3d-scanner.md](3d-spatial/3d-scanner.md)（**3DGS/NeRF/摄影测量对比 SSOT**）；DCC 精修 spoke [3d-modelling.md](3d-spatial/3d-modelling.md)；工程 CAD spoke [cad.md](3d-spatial/cad.md)（传统 CAD/BIM + AI text-to-CAD；正式页 **`/blog/cad`**、**`/zh/blog/cad`**）。相邻 [world-model.md](world-model.md)、[virtual-staging.md](3d-spatial/virtual-staging.md)、[interior-design.md](3d-spatial/interior-design.md)。文首 `**内容边界**` + 文末 `**延伸阅读 · 站内知识块**`。
 - **媒体生产链 · 空间视觉（2 slug + image Hub）**：Listing 置景 SSOT [virtual-staging.md](3d-spatial/virtual-staging.md)（MLS 披露全文）；自住/redesign SSOT [interior-design.md](3d-spatial/interior-design.md)（正式页 **`/blog/interior-design`**、**`/zh/blog/interior-design`**）；Buyer 分流见 [image.md](image/image.md) §Buyer 决策树。与 [background-changer.md](image/background-changer.md)（抠图换底）分流。
 - **AI Video / 视频品类总览（`video`）**：[video.md](video/video.md) 归纳 **生成 / 编辑 / 特效 / 垂直场景分流**；不含旗舰模型 URL 表——深度见簇内专页。
-- **AI Video Generator / 视频生成（`video-generator`）**：[video-generator.md](video/video-generator.md) 归纳 **跨模态生成模型与 Agent 平台横评**；T2V/I2V 输入专论见 [text-to-video.md](video/text-to-video.md)、[image-to-video.md](video/image-to-video.md)。
+- **AI Video Generator / 视频生成（`video-generator`）**：[video-generator.md](video/video-generator.md) 归纳 **跨模态离线 clip 生成模型与 Agent 平台横评**；**生成中改 prompt / 无限流** 见 [interactive-video.md](video/interactive-video.md)；T2V/I2V 输入专论见 [text-to-video.md](video/text-to-video.md)、[image-to-video.md](video/image-to-video.md)。
+- **Interactive Video / 实时交互视频（`interactive-video`）**：[interactive-video.md](video/interactive-video.md) 归纳 **Query Model vs Live Model**、实时 steering、RTF>1 无限 TV 与交互世界流 API（Orbis、fal.live、Odyssey-2 Pro、HappyOyster、Krea Realtime 等）；与 [video-generator.md](video/video-generator.md)（离线 clip）、[world-model.md](world-model.md)（3D/仿真/Physical AI）分流；KB only（发文走 `/blog`）。
 - **Text-to-Video / 文生视频（`text-to-video`）**：[text-to-video.md](video/text-to-video.md) 归纳 **输入=文本/文档** 与 **AI 讲解视频 / 数字人播报** 子类；通用模型表见 video-generator。
 - **Image-to-Video / 图生视频（`image-to-video`）**：[image-to-video.md](video/image-to-video.md) 归纳 **输入=静态图**、Motion Brush、品牌保真与电商废片率；与 [text-to-video.md](video/text-to-video.md) 按输入模态分流。
 - **Video-to-Video / 视频转视频（`video-to-video`）**：[video-to-video.md](video/video-to-video.md) 归纳 **风格迁移与内容变换**、时间一致性；抠像/VFX 见 [video-effects.md](video/video-effects.md)。
@@ -39,10 +40,16 @@
 - **Affiliate Marketing / AI 联盟营销（`affiliate-marketing`）**：[affiliate-marketing.md](marketing-growth/affiliate-marketing.md) 归纳 **AI 辅助联盟营销、效果追踪、合作伙伴管理**工具；与 [influencer-marketing.md](marketing-growth/influencer-marketing.md)（网红营销）、[ugc.md](marketing-growth/ugc.md)（UGC/AI UGC 素材）相邻。
 - **UGC / 用户生成与 UGC 风营销（`ugc`）**：[ugc.md](marketing-growth/ugc.md) 归纳 **Traditional UGC · UGC Creator · AI UGC** 三分法、规模化创作者网络与 UGC 情报工具（Billo/Arcads/LightReel 等）；与 [influencer-marketing.md](marketing-growth/influencer-marketing.md)（买分发）、[advertising-agent.md](marketing-growth/advertising-agent.md)（管账户）、[affiliate-marketing.md](marketing-growth/affiliate-marketing.md)（管佣金）分流；KB only（发文走 `/blog`）。
 - **Social Media Tools / 社媒管理与排程（`social-media-tools`）**：[social-media-tools.md](marketing-growth/social-media-tools.md) 归纳 **跨平台排程、内容日历、跨发、Agent/MCP 排程、自托管 SMM**（Postiz/Buffer/Hootsuite/Later/Mixpost 等）；与 [linkedin.md](hr-recruiting/linkedin.md)（单平台 LinkedIn）、[community.md](chat-social/community.md)（自有社区）、[workflow.md](agent/workflow.md)（通用自动化）、[ugc.md](marketing-growth/ugc.md)（素材层）分流；KB only（发文走 `/blog`）。
-- **桌面智能体 / Agent on Desktop（`agent-for-desktop`）**：[agent-for-desktop.md](agent/agent-for-desktop.md) 归纳 **本机文件授权与 GUI、与纯云端对话差异、云端虚拟桌面型 computer-use**；含 Floatboat/Poly.app/Claude Cowork/Accomplish/Eigent 等 6 款产品；与 [browser.md](agent/browser.md)（浏览器内 AI）、[headless-browser.md](web-data/headless-browser.md)（托管远程浏览器会话）、[agent-skills.md](agent/agent-skills.md)（技能与 MCP）分工。
+- **桌面智能体 / Agent on Desktop（`agent-for-desktop`）**：[agent-for-desktop.md](agent/agent-for-desktop.md) 归纳 **本机文件授权与 GUI、与纯云端对话差异、云端虚拟桌面型 computer-use**；含 Floatboat/Poly.app/Accomplish/Eigent 等；**Cowork/WorkBuddy 等委派交付**见 [work-agent.md](agent/work-agent.md)。与 [browser.md](agent/browser.md)（浏览器内 AI）、[headless-browser.md](web-data/headless-browser.md)（托管远程浏览器会话）、[agent-skills.md](agent/agent-skills.md)（技能与 MCP）分工。
+- **Work Agent / 工作智能体（`work-agent`）**：[work-agent.md](agent/work-agent.md) 归纳 **知识工作委派·成果导向**（Claude Cowork、ChatGPT Work、Copilot Cowork、WorkBuddy、QwenWork、Doubao Work、Manus 等）；与 [ai-employee.md](agent/ai-employee.md)（IM 协作面）、[workspace-agent.md](agent/workspace-agent.md)（团队可复用 playbook）、[agent-for-desktop.md](agent/agent-for-desktop.md)（本机执行面）、[workflow.md](agent/workflow.md)（确定性 SaaS 管道）、[coding.md](coding/coding.md)（Coding Agent）分工。KB only（发文走 `/blog`）。
+- **AI Employee / IM 驻场 AI 员工（`ai-employee`）**：[ai-employee.md](agent/ai-employee.md) 归纳 **Slack/Teams/企微频道内共享 AI 同事**（Viktor、Claude Tag、Dash、Junior、Slackbot、WorkBuddy 企微等）；与 [work-agent.md](agent/work-agent.md)（交付物）、[workspace-agent.md](agent/workspace-agent.md)（playbook）、[chatbot.md](chat-social/chatbot.md)（纯对话）三分法；簇边界见 [`skills/knowledge-block/references/ai-employee-cluster.md`](../skills/knowledge-block/references/ai-employee-cluster.md)。KB only（发文走 `/blog/ai-employee`）。
+- **Workspace Agent / 工作区智能体（`workspace-agent`）**：[workspace-agent.md](agent/workspace-agent.md) 归纳 **组织内共享 Agent、定时/API/Slack 触发、RBAC**（OpenAI Workspace Agents、Notion Custom Agents 等）；与 [ai-employee.md](agent/ai-employee.md)（IM 频道体验）、[work-agent.md](agent/work-agent.md)（个人委派）、[multi-agent.md](agent/multi-agent.md)（编排框架 vs OpenAI 产品名消歧）分工。KB only（发文走 `/blog`）。
 - **Agent Skills 生态 / MCP 与插件（`agent-skills`）**：[agent-skills.md](agent/agent-skills.md) 归纳 **MCP 服务器、技能包、插件生态与 Agent 工具链**；与 [agent-for-desktop.md](agent/agent-for-desktop.md)（桌面执行端）、[openclaw-alternatives.md](agent/openclaw-alternatives.md)（开源 Agent 变体）分工；正式页 **`/tools/agent-skills`**、**`/zh/tools/agent-skills`**。
 - **Agent Memory / AI Agent 记忆层（`agent-memory`）**：[agent-memory.md](agent/agent-memory.md) 归纳 **Agent 跨会话持久记忆中间件**（Mem0、Zep/Graphiti、Letta、MemOS、MemU、claude-mem 等）；与 [memory.md](enterprise-knowledge/memory.md)（个人第二大脑/PKM）、[knowledge-base.md](enterprise-knowledge/knowledge-base.md)（企业 RAG 文档库）分流——agent-memory 解决「Agent 记住什么」；**Context 采集**（Rewind/AirJelly）待建 KB **`context`**。已发布 **`/blog/agent-memory`**（见 §路由与发布策略）。
-- **AI Agent 沙箱 / Agent Sandbox（`agent-sandbox`）**：[agent-sandbox.md](agent/agent-sandbox.md) 归纳 **Agent 隔离执行环境**（microVM/gVisor、Devbox、checkpoint）；含 E2B、Modal、Daytona、AgentCore 等；与 [agent-skills.md](agent/agent-skills.md)（工具/技能层）、[headless-browser.md](web-data/headless-browser.md)（浏览器会话）、[authentication.md](infrastructure/authentication.md)（出站授权）分流——agent-sandbox 解决「在哪安全跑」；正式页 **`/blog/agent-sandbox`**、**`/zh/blog/agent-sandbox`**。
+- **AI Agent 身份与访问治理 / Agent Identity（`agent-identity`）**：[agent-identity.md](agent/agent-identity.md) 归纳 **企业 Agent IAM / NHI / Agentic Access**（NewCore、Keycard、Oasis/Cyera AAM、Entra/Okta Agent ID 等）；与 [authentication.md](infrastructure/authentication.md)（人类 CIAM + 出站 OAuth/MCP）、[agent-runtime.md](agent/agent-runtime.md)（执行层）、[agent-sandbox.md](agent/agent-sandbox.md)（隔离执行）分流——agent-identity 解决「Agent 是谁、有何权限、凭证如何管」；**Arcade 规格保留 authentication Type H**；KB only（发文走 `/blog`）。
+- **Agent 商务栈 · 支付 vs 计费（4 slug）**：[agentic-commerce.md](agentic-commerce.md)（购物旅程）· [agentic-payments.md](agentic-payments.md)（**买方**动钱 / 协议栈）· **[agent-billing.md](agent-billing.md)**（**卖方**计费 / Paid·witn·Flexprice）· [vibe-coding-payments.md](vibe-coding-payments.md)（人类开发者 Stripe）；与 [agent-skills.md](agent/agent-skills.md)（skill 分发 ≠ 计费）分流；`agent-billing` KB only（发文走 `/blog/agent-billing`）。
+- **AI Agent 运行时 / Agent Runtime（`agent-runtime`）**：[agent-runtime.md](agent/agent-runtime.md) 归纳 **Agent 生产执行层**（agent loop、state、部署、durability、观测）；含 LangGraph、Bedrock AgentCore Runtime、Temporal、Foundry Hosted Agents、LangSmith Agent Server 等；与 [agent-sandbox.md](agent/agent-sandbox.md)（隔离执行面）、[agent-identity.md](agent/agent-identity.md)（身份/访问层）、[agent-memory.md](agent/agent-memory.md)（记忆组件）、[multi-agent.md](agent/multi-agent.md)（多 Agent 编排）、[workflow.md](agent/workflow.md)（确定性自动化）、[inference-infrastructure.md](infrastructure/inference-infrastructure.md)（模型推理）分流——agent-runtime 解决「如何可靠跑起来」；KB only（发文走 `/blog`）。
+- **AI Agent 沙箱 / Agent Sandbox（`agent-sandbox`）**：[agent-sandbox.md](agent/agent-sandbox.md) 归纳 **Agent 隔离执行环境**（microVM/gVisor、Devbox、checkpoint）；含 E2B、Modal、Daytona、AgentCore 等；与 [agent-runtime.md](agent/agent-runtime.md)（完整执行层）、[agent-skills.md](agent/agent-skills.md)（工具/技能层）、[headless-browser.md](web-data/headless-browser.md)（浏览器会话）、[authentication.md](infrastructure/authentication.md)（出站授权）分流——agent-sandbox 解决「在哪安全跑」；正式页 **`/blog/agent-sandbox`**、**`/zh/blog/agent-sandbox`**。
 - **AI 文档 / AI Documents（`ai-documents`）**：[ai-documents.md](enterprise-knowledge/ai-documents.md) 归纳 **文档格式替代、AI 原生编辑器、企业 IDP** 三层谱系；含 Factify/DocLang/Notion AI/Coda/Guse/Watto AI 6 款产品；与 [documentation.md](enterprise-knowledge/documentation.md)（开发者文档）、[legal.md](enterprise-knowledge/legal.md)（AI 法律）、[notes-generator.md](education/notes-generator.md)（笔记生成）分流。 新文优先 **`/blog/{slug}`**（见 §路由与发布策略）；历史 Tools 页见 `tools-pages-config`。
 - **AI Flashcards & Study Tools（`ai-flashcards`）**：[ai-flashcards.md](education/ai-flashcards.md) 归纳 **active recall + 间隔重复**学习工具谱系，以 **FSRS vs 基础自适应调度**为算法参照轴；含 Quizlet/Knowt 2 款产品（Anki 为核心参照）；与 [ai-homework-helper.md](education/ai-homework-helper.md)（解题）、[ai-language-learning.md](education/ai-language-learning.md)（语言习得）、[notes-generator.md](education/notes-generator.md)（笔记→闪卡）相邻。 新文优先 **`/blog/{slug}`**（见 §路由与发布策略）；历史 Tools 页见 `tools-pages-config`。
 - **AI for Science / AI 科研（`ai-for-science`）**：[ai-for-science.md](education/ai-for-science.md) 归纳 **AI 赋能科学研究**工具谱系——覆盖蛋白结构预测、材料发现、计算化学、科学云平台、自主实验室、学科专项六类（AlphaFold/RoseTTAFold/Boltz-2/MatterGen/Bohrium 等）；与 [healthcare.md](healthcare/healthcare.md)（临床 AI）、[world-model.md](world-model.md)（通用世界模型）相邻——ai-for-science 面向基础科研加速；**发布状态见 §文件清单**（当前 KB only；若发文走 `/blog`，见 §路由与发布策略）。
@@ -111,7 +118,7 @@
 - **Web Search API / 搜索 API（`web-search-api`）**：[web-search-api.md](web-data/web-search-api.md) 归纳 **供 AI/Agent 调用的搜索 API**（Brave/Serper/Tavily/Exa 等）；与 [web-fetch.md](web-data/web-fetch.md)（搜到后取回内容）、[search-engine.md](search-geo/search-engine.md)（面向人类的 AI 搜索产品）形成上下游；正式页 **`/tools/web-search-api`**、**`/zh/tools/web-search-api`**。
 - **Wireframing / AI 线框图（`wireframing`）**：[wireframing.md](design/wireframing.md) 归纳 **AI 辅助低保真线框图/结构设计**工具（Balsamiq/Whimsical/Wireframe.cc 等）；与 [ui-design.md](design/ui-design.md)（界面生成）、[prototyping.md](design/prototyping.md)（交互原型）形成 **wireframing → ui-design → prototyping** 设计递进链。 新文优先 **`/blog/{slug}`**（见 §路由与发布策略）；历史 Tools 页见 `tools-pages-config`。
 - **AI Workflow / AI 工作流自动化（`workflow`）**：[workflow.md](agent/workflow.md) 归纳 **AI 驱动的多步骤工作流编排与自动化**平台（含 RPA+AI、低代码 Agent 流）；与 [canvas-video.md](video/canvas-video.md)（视频工作流特化）、[agent-skills.md](agent/agent-skills.md)（Agent 技能链）相邻——workflow 侧重业务流程自动化，canvas-video 侧重创意视频管线；正式页 **`/tools/workflow`**、**`/zh/tools/workflow`**。
-- **World Models / 世界模型（`world-model`）**：[world-model.md](world-model.md) 归纳 **AI 对物理世界的理解与模拟**——从视频生成到具身智能的空间推理能力；与 [multimodal-llm.md](llm/multimodal-llm.md)（多模态理解）、站内 image/video 品类相邻——world-model 是底层能力，生成品类是其上层应用；正式页 **`/tools/world-model`**、**`/zh/tools/world-model`**。
+- **World Models / 世界模型（`world-model`）**：[world-model.md](world-model.md) 归纳 **AI 对物理世界的理解与模拟**——从视频生成到具身智能的空间推理能力；**实时交互 2D 视频流** 见 [interactive-video.md](video/interactive-video.md)；与 [multimodal-llm.md](llm/multimodal-llm.md)（多模态理解）、站内 image/video 品类相邻——world-model 是底层能力，生成品类是其上层应用；正式页 **`/tools/world-model`**、**`/zh/tools/world-model`**。
 
 ---
 
@@ -181,7 +188,7 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 | **设计链** | `design` | `wireframing`, `ui-design`, `prototyping`, `ux-design`, `user-research` | 低保真 → 高保真 → 交互 → 治理 |
 | **LLM 评测五轴** | `llm` | `llm-leaderboard-snapshots`（快变数字）, `llm-for-coding`, `llm-for-math`, `llm-for-reasoning`, `multimodal-llm` | hub + 快照 + 四个专轴 |
 | **编程工具链** | `coding` | `vibe-coding`, `cli`, `code-review`, `code-completion`, `ide`, `git-hosting`, `website-builder`, `ecommerce-website-builder`, `portfolio-website-builder`, `blog-website-builder`, `landing-page-builder`, `content-management-system`, `open-source-cms`, `headless-cms`, `enterprise-cms`, `app-builder`, `ai-components` | Agent → Copilot → CLI → 审查 → **托管** → **建站器 + CMS 两簇** → 组件供给 |
-| **Agent 执行链** | `agent-skills` | `agent-for-desktop`, `agent-sandbox`, `openclaw-alternatives`, `agent-to-agent`, `workflow`, `browser`, `expert-agent` | 技能 → 沙箱 → 桌面 → **Agent 相遇面** → 浏览器 |
+| **Agent 执行链** | `agent-skills` | `agent-identity`, `agent-runtime`, `work-agent`, `ai-employee`, `workspace-agent`, `agent-for-desktop`, `agent-sandbox`, `openclaw-alternatives`, `agent-to-agent`, `workflow`, `browser`, `expert-agent` | 技能 → **身份/访问** → **运行时** → **工作委派** → **IM 同事** → 团队 playbook → 沙箱 → 桌面 → **Agent 相遇面** → 浏览器 |
 | **媒体生产链** | `image-generator` | `video-generator`, `canvas-video`, `filmmaking`, `image-editor`, `video-editor`, `animation-generator` | 图像 → 视频 → 电影 |
 | **语音与声音** | `voice` | `voice-changer`, `text-to-speech`, `speech-to-text`, `accent-conversion`, `audio-translator`, `video-translator`, `lip-sync`, `music-generator` | TTS/ASR/变声/翻译 |
 | **招聘与 HR** | `recruiting` | `hr-assistant`, `linkedin`, `interview-assistant`（`resume-builder` 待建 KB） | HR 全流程 |
@@ -193,11 +200,11 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 
 ---
 
-## 文件清单（140 个知识块）
+## 文件清单（144 个知识块）
 
 > 体积仅供参考。档位（A/B/C）见 [territory-map.md](./territory-map.md)。
 > A 档不唯体积——`coding`（7.8KB）和 `llm`（7.7KB）虽小，但作为 Territory pillar 列入 A 档。
-> 下表 **139 行**为 slug 知识块；`_TEMPLATE.md` 与 `territory-map.md` 为 meta 文件，见 [territory-map.md §Meta 文件](./territory-map.md#meta-文件不计入-132-个知识块)。
+> 下表 **141 行**为 slug 知识块；`_TEMPLATE.md` 与 `territory-map.md` 为 meta 文件，见 [territory-map.md §Meta 文件](./territory-map.md#meta-文件不计入-132-个知识块)。
 > KB 结构完整 ≠ 文章 TLDR 完成（63 篇 TLDR 待优化，见 AUDIT）。
 
 ### 当前 backlog（2026-06-23）
@@ -223,7 +230,7 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 | [`voice-audio/`](./voice-audio/voice.md) | `voice` | 10 | `knowledge/tools/voice-audio/{slug}.md` |
 | [`web-data/`](./web-data/web-scraping.md) | `web-scraping` | 6 | `knowledge/tools/web-data/{slug}.md` |
 | [`search-geo/`](./search-geo/search-engine.md) | `search-engine` | 4 | `knowledge/tools/search-geo/{slug}.md` |
-| [`agent/`](./agent/agent-skills.md) | `agent-skills` | 10 | `knowledge/tools/agent/{slug}.md` |
+| [`agent/`](./agent/agent-skills.md) | `agent-skills` | 14 | `knowledge/tools/agent/{slug}.md` |
 | [`coding/`](./coding/coding.md) | `coding` | 9 | `knowledge/tools/coding/{slug}.md` |
 | [`design/`](./design/design.md) | `design` | 6 | `knowledge/tools/design/{slug}.md` |
 | [`marketing-growth/`](./marketing-growth/influencer-marketing.md) | `influencer-marketing` | 9 | `knowledge/tools/marketing-growth/{slug}.md` |
@@ -238,7 +245,7 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 | [`website-builder/`](./website-builder/README.md) | `website-builder` | 5 | `knowledge/tools/website-builder/{slug}.md` |
 | [`cms/`](./cms/README.md) | — | 1 | `knowledge/tools/cms/{slug}.md` |
 
-**独立根目录 slug**（11）：`agentic-commerce` · `agentic-payments` · `ai-shopping` · `animation-library` · `data-engineering-agent` · `family-assistant` · `fashion` · `lifetime-deals` · `religion` · `vibe-coding-payments` · `world-model` → `knowledge/tools/{slug}.md`
+**独立根目录 slug**（12）：`agent-billing` · `agentic-commerce` · `agentic-payments` · `ai-shopping` · `animation-library` · `data-engineering-agent` · `family-assistant` · `fashion` · `lifetime-deals` · `religion` · `vibe-coding-payments` · `world-model` → `knowledge/tools/{slug}.md`
 
 ### slug 清单（字母序）
 
@@ -253,10 +260,16 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 | `accent-conversion` | 27KB | EN · ZH · cfg | B |
 | `affiliate-marketing` | 19KB | EN · ZH · cfg | B |
 | `agent-for-desktop` | 15KB | EN · ZH · cfg | B |
+| `agent-identity` | ~14KB | KB only（发文走 `/blog`） | B |
+| `ai-employee` | ~12KB | KB only（发文走 `/blog/ai-employee`） | B |
+| `work-agent` | ~18KB | KB only（发文走 `/blog`） | B |
+| `workspace-agent` | ~12KB | KB only（发文走 `/blog`） | B |
 | `agent-memory` | 14KB | EN · ZH · blog cfg | B |
+| `agent-runtime` | ~14KB | KB only（发文走 `/blog`） | B |
 | `agent-sandbox` | 12KB | EN · ZH · blog cfg | B |
 | `agent-skills` | 11KB | EN · ZH · cfg | B |
 | `advertising-agent` | 16KB | KB only | C |
+| `agent-billing` | ~12KB | KB only（发文走 `/blog/agent-billing`） | C |
 | `agentic-commerce` | 9KB | EN · ZH · blog cfg | C |
 | `agentic-payments` | 10KB | EN · ZH · blog cfg | C |
 | `agent-to-agent` | 17KB | EN · ZH · blog cfg（`/blog/agent-to-agent`） | B |

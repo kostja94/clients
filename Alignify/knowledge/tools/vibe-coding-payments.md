@@ -11,7 +11,7 @@
 | slug | 典型读者问题 | 交付形态 | 与本 slug 的边界 |
 |------|-------------|---------|------------------|
 | **`how-to-add-payments-to-vibe-coded-app`（本页）** | 「我用 AI 搭了个 SaaS，怎么收钱？」 | 支付方案对比、安全实践、集成路径 | — |
-| **`agentic-payments`** | 「AI Agent 怎么授权、结算、走哪条协议？」 | x402/AP2/ACP/MPP 协议层、Agent Wallet | 本页 = **人类开发者**接支付；agentic-payments = **AI Agent** 代表用户花钱 |
+| **`agentic-payments`** | 「AI Agent 怎么授权、结算、走哪条协议？」 | x402/AP2/ACP/MPP 协议层、Agent Wallet | 本页 = **人类开发者**接支付；agentic-payments = **AI Agent** 代表用户花钱；**卖 Agent 向客户计费** → [agent-billing.md](agent-billing.md) |
 | **`coding`** | 「有哪些 AI 编码 / IDE 工具？」 | Cursor、Copilot、Claude Code 等工具目录 | 本页假设读者已有 AI coding 工具，讨论的是**产出物的变现** |
 | **`app-builder`** | 「有哪些 AI 应用构建器可以搭一个完整 App？」 | Lovable、Bolt、v0、Replit Agent 等平台目录 | 本页 = app builder **产出物**的支付层；app-builder = 平台**选型**本身（参考 kostja94/vibe-coding） |
 
@@ -276,17 +276,18 @@ Clink 走的是**「PCI L1 中间层」路线**——既不是传统的 Payment 
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
-| 类别 | 标题 / 链接 | 说明 |
-|------|-----------|------|
-| 支付架构 | Stripe · Webhook 签名验证官方文档 | https://docs.stripe.com/webhooks#verify-official-libraries |
-| 支付架构 | Stripe · Checkout 快速入门 | https://docs.stripe.com/checkout/quickstart |
-| 行业数据 | Fungies · Vibe Coding 2026 统计 | https://fungies.io/vibe-coding-payments-stripe-vs-merchant-of-record/ （含 92% 开发者用 AI、78% 支付是 #1 痛点的引用） |
-| 安全 | Stripe · 安全最佳实践（API keys、webhook） | https://docs.stripe.com/security |
-| 变现 | VibeUsers · 变现模型与定价指南 | https://vibeusers.io/blog/how-to-monetize-vibe-coded-app |
-| Stripe 收购 | Stripe 收购 Lemon Squeezy 公告（2024） | https://stripe.com/newsroom/news/lemon-squeezy-acquisition |
-| Vibe Coding 工具 | kostja94/vibe-coding · AI Builder 技术栈参考（MIT 开源） | https://github.com/kostja94/vibe-coding —— 覆盖 Lovable/v0/Bolt/Replit Agent/Base44/Firebase Studio 等的前端技术栈对比 + Lovable→Next.js 迁移 + 双仓库 SEO 方案 |
+**站外**（框架/安全；MoR 与 Builder 产品见 §外链索引）
+
+| 类别 | 链接 | 说明 |
+|------|------|------|
+| Stripe 官方 | [Webhook 签名验证](https://docs.stripe.com/webhooks#verify-official-libraries) · [Checkout 快速入门](https://docs.stripe.com/checkout/quickstart) · [安全最佳实践](https://docs.stripe.com/security) | webhook 验签 SSOT |
+| 收购动态 | [Stripe 收购 Lemon Squeezy（2024）](https://stripe.com/newsroom/news/lemon-squeezy-acquisition) | LS 未来迁移风险 |
+
+**站内**
+
+- [agentic-payments.md](agentic-payments.md) · [app-builder.md](coding/app-builder.md)
 
 ---
 

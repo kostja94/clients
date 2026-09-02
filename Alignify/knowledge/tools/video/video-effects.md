@@ -1,15 +1,16 @@
 # AI Video Effects · 知识块（非线性笔记）
 
+**叙述主词 · 勿与…混买**：**AI Video Effects / AI VFX**——对视频画面进行**像素级处理**（抠像、跟踪、物体移除、重打光等），**非时间线组织**；验收以 **遮罩精度、跟踪稳定性、物理一致性** 为主。本页为 **AI VFX 产品 SSOT**（完整 URL 表仅此一处）；**全片风格迁移 / anime 化** → [video-to-video.md](video-to-video.md)；**从零生成动漫** → [animation-generator.md](animation-generator.md)；时间线编辑 → [video-editor.md](video-editor.md)。
+
 **材料范围**：公开网络检索（厂商官网、CineD/CG Channel/AWN 等专业媒体评测、GII/HTF/SNS Insider 等第三方市场报告、Boris FX 官方博客与产品公告）；**未**引用 Alignify 站内文章或站内 JSON 内容稿。网摘整理日期 **2026-06-24**（簇去重修订）。
-
-
-**站内相邻**：[video.md](video.md) · [video-editor.md](video-editor.md) · [video-to-video.md](video-to-video.md) · [animation-generator.md](animation-generator.md)
-
-**勿与…混买**：**全片风格迁移 / anime 化**见 video-to-video；**从零生成动漫**见 animation-generator；本页侧重抠像、跟踪、物体移除。
 
 **站内对照**：[alignify.co/tools/video-effects](https://alignify.co/tools/video-effects) · `/tools/video-effects` · [alignify.co/zh/tools/video-effects](https://alignify.co/zh/tools/video-effects) · `/zh/tools/video-effects` · `content/tools/zh/video-effects.md`、`content/tools/en/video-effects.md` · slug **`video-effects`**
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-effects-tools`](../../product/alignify-keywords-tools.md#video-effects-tools)
+
+**站内相邻**：[video.md](video.md)（Hub）· [video-editor.md](video-editor.md) · [video-to-video.md](video-to-video.md) · [animation-generator.md](animation-generator.md) · [filmmaking.md](filmmaking.md)
+
+---
 
 ## 与相邻 slug 分流（避免混买混评）
 
@@ -49,6 +50,8 @@
 | **学习曲线** | 陡峭（需数月培训） | 平缓（文本提示或笔触标记） |
 | **典型工具** | Nuke、After Effects（手动流程）、Mocha Pro | Runway Aleph、MatAnyone 2、Boris FX ML 系列 |
 
+特效形态路线 → **§形态谱系**；产品规格与 URL → **§外链索引**。
+
 ---
 
 ## 问题域（为何会出现这类产品）
@@ -73,14 +76,18 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（架构 SSOT；与具体品牌解耦）
 
-- **Type A — 综合 AI VFX 平台**：在一个平台内覆盖物体移除、绿幕、风格迁移、重打光等多类特效。代表方向：Runway Aleph（Motion Brush 独有差异化）、Beeble SwitchX。
-- **Type B — AI 抠像专业工具**：聚焦「把主体从背景中完美分离」——以发丝级精度、长视频零闪烁为核心竞争力。代表方向：MatAnyone 2（CVPR 2026 开源基准最高）、Runway Green Screen、Unscreen。
-- **Type C — 传统后期插件 + AI 增强**：在专业后期软件中通过插件形式提供 AI 能力。代表方向：Boris FX Continuum ML 系列、Silhouette ML、DaVinci Magic Mask、AE Roto Brush 3.0。
-- **Type D — AI 跟踪与运动匹配**：聚焦平面/3D 相机与物体跟踪——面向合成、屏幕替换、运动图形。代表方向：Boris FX Mocha Pro（PowerMesh）、SynthEyes。
-- **Type E — 物理感知视频修复**：模拟物体移除后的物理后果（阴影变化、反射调整）。代表方向：Netflix VOID（开源 Apache 2.0）。
-- **Type F — 创意社交特效**：面向社交媒体创意的非写实特效——速度优先、模板丰富、低门槛。代表方向：Pika 2.5（Pikaffects）、CapCut Auto Cutout。
+| Type | 架构特征 | 英文常检索词 | 代表（规格见 §外链索引） |
+|------|----------|--------------|--------------------------|
+| **A** | 物体移除、绿幕、风格迁移、重打光等多类特效合一 | 综合 AI VFX 平台 / AI VFX suite | Runway Aleph、Beeble SwitchX |
+| **B** | 发丝级精度、长视频零闪烁，聚焦主体分离 | AI 抠像/去背 / video matting AI | MatAnyone 2、Runway Green Screen、Unscreen、CapCut Auto Cutout |
+| **C** | 嵌入专业后期软件的 AI 插件 | 传统后期 AI 插件 / AI rotoscoping tool | Boris FX Continuum/Silhouette、DaVinci Magic Mask、AE Roto Brush 3.0 |
+| **D** | 平面/3D 相机与物体跟踪，面向合成 | AI 跟踪与运动匹配 / planar tracker | Mocha Pro、SynthEyes |
+| **E** | 模拟物体移除后的物理后果（阴影/反射） | 物理感知修复 / physics-aware inpainting | Netflix VOID（Apache 2.0 开源） |
+| **F** | 速度优先、模板丰富、非写实创意特效 | 创意社交特效 / creative VFX | Pika 2.5（Pikaffects）、GoEnhance AI |
+
+**全片风格化**（anime 化、油画风等）→ [video-to-video.md](video-to-video.md)，非本页 Type A 的局部像素特效。
 
 ---
 
@@ -105,35 +112,22 @@
 
 ---
 
-## 工具与产品类型（「AI video effects」「remove object from video」「AI rotoscoping」「video background remover」等检索里常混在一起的品类；非穷尽）
+## 外链索引（产品 SSOT：URL + 规格；非广告、无排序优先级）
 
-| 类型（英文常检索词） | 典型包含什么 | 备注 |
-|------|--------------|------|
-| **综合 AI VFX 平台**（AI VFX suite, all-in-one video effects） | Runway Aleph、Beeble SwitchX | 覆盖多种特效，Motion Brush 独有 |
-| **AI 抠像/去背**（AI background remover, video matting AI） | MatAnyone 2、Runway Green Screen、Unscreen、CapCut Auto Cutout | 「绿幕已死」趋势的核心驱动力 |
-| **传统后期 AI 插件**（AI VFX plugins, AI rotoscoping tool） | Boris FX Continuum/Silhouette、DaVinci Magic Mask、AE Roto Brush 3.0 | 嵌入已有工作流，适合专业用户 |
-| **AI 跟踪与运动匹配**（AI object tracking, planar/3D tracker） | Mocha Pro、SynthEyes | 合成、屏幕替换的核心工具 |
-| **物理感知修复**（AI object removal video, physics-aware inpainting） | Netflix VOID（Apache 2.0 开源） | 前沿研究方向 |
-| **创意社交特效**（AI video effects for social, creative VFX） | Pika 2.5（Pikaffects）、GoEnhance AI | 速度优先、低门槛、社交媒体适用 |
-
----
-
-## 外链索引（工具与产品；无排序优先级）
-
-| 名称 | 一句话（据公开页面或综述归纳） | URL |
-|------|--------------------------|-----|
-| **Runway Aleph** | 综合 AI VFX 平台——Motion Brush（独有）、物体移除、绿幕、风格迁移、Gen-4 底座；$12-76/月 | [runwayml.com](https://runwayml.com) |
-| **Beeble SwitchX** | 可控生成式 VFX——改变背景/布光/道具/环境，保持主体一致；2K ~5 分钟出片 | [beeble.ai](https://beeble.ai) |
-| **Netflix VOID** | 开源（Apache 2.0）物理感知物体移除——Meta SAM2 + Gemini 3 Pro + CogVideoX 管线 | [github.com/insait-institute/void](https://github.com/insait-institute/void) |
-| **MatAnyone 2** | CVPR 2026 开源视频抠像——发丝级精度、长视频零闪烁、MQE 质量评估器 | [github.com/PeterL1n/MatAnyone](https://github.com/PeterL1n/MatAnyone) |
-| **Boris FX Continuum** | 专业 VFX 插件套——Object Brush ML、Matte Assist ML、Depth Map ML | [borisfx.com](https://borisfx.com/products/continuum/) |
-| **Boris FX Mocha Pro** | 行业标准平面跟踪——PowerMesh 有机表面跟踪、3D 相机解算 | [borisfx.com](https://borisfx.com/products/mocha-pro/) |
-| **DaVinci Resolve Studio** | Blackmagic 旗舰——Magic Mask v2 AI 抠像/跟踪、AI 语音隔离，一次性 $295 | [blackmagicdesign.com](https://www.blackmagicdesign.com/products/davinciresolve) |
-| **Adobe After Effects** | 行业标准合成——Roto Brush 3.0（Sensei 驱动）、Content-Aware Fill for Video | [adobe.com](https://www.adobe.com/products/aftereffects.html) |
-| **Pika 2.5** | 创意社交特效——Pikaffects（爆炸/融化/膨胀）、Turbo 模式 12 秒出片、$8/月 | [pika.art](https://pika.art) |
-| **CapCut Auto Cutout** | 免费社交视频去背——一键操作、30 秒内出结果、内置特效 | [capcut.com](https://www.capcut.com) |
-| **Unscreen** | 全自动一键去背景——上传即出结果，零设置 | [unscreen.com](https://www.unscreen.com) |
-| **Topaz Video AI** | 桌面端 AI 视频增强——升频、降噪、去隔行、帧率插值 | [topazlabs.com](https://www.topazlabs.com) |
+| 名称 | Type | 一句话（据公开页面或综述归纳） | URL |
+|------|------|--------------------------|-----|
+| **Runway Aleph** | A | 综合 AI VFX 平台——Motion Brush（独有）、物体移除、绿幕、风格迁移、Gen-4 底座；$12-76/月 | [runwayml.com](https://runwayml.com) |
+| **Beeble SwitchX** | A | 可控生成式 VFX——改变背景/布光/道具/环境，保持主体一致；2K ~5 分钟出片 | [beeble.ai](https://beeble.ai) |
+| **Netflix VOID** | E | 开源（Apache 2.0）物理感知物体移除——Meta SAM2 + Gemini 3 Pro + CogVideoX 管线 | [github.com/insait-institute/void](https://github.com/insait-institute/void) |
+| **MatAnyone 2** | B | CVPR 2026 开源视频抠像——发丝级精度、长视频零闪烁、MQE 质量评估器 | [github.com/PeterL1n/MatAnyone](https://github.com/PeterL1n/MatAnyone) |
+| **Boris FX Continuum** | C | 专业 VFX 插件套——Object Brush ML、Matte Assist ML、Depth Map ML | [borisfx.com](https://borisfx.com/products/continuum/) |
+| **Boris FX Mocha Pro** | D | 行业标准平面跟踪——PowerMesh 有机表面跟踪、3D 相机解算 | [borisfx.com](https://borisfx.com/products/mocha-pro/) |
+| **DaVinci Resolve Studio** | C | Blackmagic 旗舰——Magic Mask v2 AI 抠像/跟踪、AI 语音隔离，一次性 $295 | [blackmagicdesign.com](https://www.blackmagicdesign.com/products/davinciresolve) |
+| **Adobe After Effects** | C | 行业标准合成——Roto Brush 3.0（Sensei 驱动）、Content-Aware Fill for Video | [adobe.com](https://www.adobe.com/products/aftereffects.html) |
+| **Pika 2.5** | F | 创意社交特效——Pikaffects（爆炸/融化/膨胀）、Turbo 模式 12 秒出片、$8/月 | [pika.art](https://pika.art) |
+| **CapCut Auto Cutout** | B | 免费社交视频去背——一键操作、30 秒内出结果、内置特效 | [capcut.com](https://www.capcut.com) |
+| **Unscreen** | B | 全自动一键去背景——上传即出结果，零设置 | [unscreen.com](https://www.unscreen.com) |
+| **Topaz Video AI** | — | 桌面端 AI 视频增强——升频、降噪、去隔行、帧率插值 | [topazlabs.com](https://www.topazlabs.com) |
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -149,11 +143,7 @@ G2 2025 用户评测中的共识：AI 特效工具目前处于「足够好到让
 
 ---
 
-## 延伸阅读 · 站内知识块
-
-- 全片风格化：[video-to-video.md](video-to-video.md) · 从零动漫：[animation-generator.md](animation-generator.md)
-- 制片定制后期 AI（InterPositive 等）：[filmmaking.md](filmmaking.md) §行业注记
-- 并列：[video-editor.md](video-editor.md) · [video-generator.md](video-generator.md)
+## 延伸阅读 · 站内外
 
 **站外**
 
@@ -164,3 +154,9 @@ G2 2025 用户评测中的共识：AI 特效工具目前处于「足够好到让
 - [DaVinci Resolve's AI Leap (BroadcastPro ME)](https://www.broadcastprome.com/reviews/davinci-resolves-ai-leap/)
 - [Top AI Green Screen Removal Tools in 2026 (Analytics Insight)](https://www.analyticsinsight.net/artificial-intelligence/top-ai-green-screen-removal-tools-in-2026)
 - [Best AI Video Background Remover in 2026 (CyberLink)](https://www.cyberlink.com/blog/the-top-video-editors/1288/top-video-background-removers)
+
+**站内**
+
+- 全片风格化：[video-to-video.md](video-to-video.md) · 从零动漫：[animation-generator.md](animation-generator.md)
+- 制片定制后期 AI（InterPositive 等）：[filmmaking.md](filmmaking.md) §行业注记
+- 并列：[video-editor.md](video-editor.md) · [video-generator.md](video-generator.md)

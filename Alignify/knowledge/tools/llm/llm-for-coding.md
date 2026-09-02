@@ -179,7 +179,7 @@
 
 ### 对比与测评（第三方；观点非官方）
 
-2026 年中编程 LLM 共识：Claude 3.5 Sonnet 在 SWE-bench Verified 以 80.9% 领先；GPT-5 Pro 在 API 生态与 function calling 占优；开源方面 DeepSeek-R1 和 Qwen3-Coder 在 HumanEval+ 逼近闭源前沿。Coding Agent 与 Copilot 的区别在于「主动执行 vs 被动补全」。实时排行见 [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)。
+2026 年中编程轴共识（观点综合，**非**实时榜）：**SWE-bench Verified/Pro** 仍是企业 monorepo 主信号；**Terminal-Bench** 与 SWE 排序可反转；HumanEval 已饱和。**实时 Top N 与 %** 见 [llm-leaderboard-snapshots.md §Coding](../llm-leaderboard-snapshots.md)——勿在本页复制完整表格。Coding Agent（多文件 patch）与 Copilot（补全）验收维度不同。
 
 ---
 
@@ -195,7 +195,7 @@
 
 ---
 
-## 延伸阅读
+## 延伸阅读 · 站内外
 
 - [llm.md](llm.md) · [llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)
 - [vibe-coding.md](../coding/vibe-coding.md) · [code-review.md](../coding/code-review.md)

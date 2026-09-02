@@ -151,10 +151,10 @@ BYOK 品类（Janitor AI 系）在「自由度」维度上无出其右——用�
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- [Character.AI Community Guidelines](https://character.ai/community-guidelines)
-- [Tolan — OpenAI Customer Story (GPT-5.1 powered)](https://openai.com/index/tolan/)
+**站外**（产品 URL 见 §外链索引）
+
 - [Best AI Character Chatbots in 2026 (JotForm)](https://www.jotform.com/ai/best-ai-character-chatbot/)
 - [Best Character AI Alternatives 2026 (Toolworthy)](https://www.toolworthy.ai/blog/best-character-ai-alternatives)
 - [SillyTavern — Local AI Character Chat Frontend (GitHub)](https://github.com/SillyTavern/SillyTavern)

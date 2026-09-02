@@ -87,14 +87,14 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
-- **AI 购物代理/发现平台型（消费者侧）**：以对话或视觉交互替代传统搜索框，消费者向 AI 描述需求（文字/图片/自拍），AI 跨平台搜索并生成推荐。关键特征：不持有库存、不一定做交易闭环（多数跳转商家网站结账）、靠佣金或广告变现。ChatGPT Shopping 和 Glance 为两极——前者依托 8.1 亿 DAU 的对话入口，后者通过锁屏+电视屏保覆盖非搜索场景。Perplexity Shopping 和 Google Gemini AI Mode 为相邻竞争者。
-- **Agentic 转化基础设施型（零售商侧）**：为品牌/零售商提供 AI 驱动的实时个性化基础设施——动态生成着陆页、产品排序、文案和推荐。核心价值主张：让付费流量的每个点击都获得最大转化概率。Spangle 为此形态标杆。与 CXP 的区别：Agentic 转化层关注「每个独立访客的实时页面重构」，CXP 关注「跨触点的统一个性化引擎」。
-- **视频商务/可购物视频型**：将产品发现和购买嵌入视频体验——异步视频（Tolstoy）+ 直播购物（Firework, Bambuser, CommentSold）+ UGC 聚合（Taggbox, Videowise）。品类共通点：视频播放器内置产品热点 → 加购 → 结账，消除「看到→搜索→找到→下单」的多步摩擦。307% 转化提升（Tolstoy）和 20x ROI 是行业引用最多的数据。
-- **商务体验平台型（CXP）**：企业级 AI 引擎统一驱动站内搜索、商品推荐、内容个性化、A/B 测试和客户分析。Nosto、Bloomreach、Dynamic Yield（Mastercard 旗下）为此形态代表。客户通常年收入 $10M+，实施周期 8-16 周。核心壁垒：第一方数据积累 + AI 模型与特定品类的适配深度。争议：GMV-based 定价对增长期品牌可能反向惩罚。
-- **对话式 AI 销售助手型**：嵌入电商网站的 AI 聊天代理——主动识别购买意图、推荐产品、处理售后（退换货/查物流）。Rep AI（行为检测→主动出击）和 Zowie（销售技能引擎→对话内结账）为两极。与客服 chatbot 的关键区别：北极星指标是转化率和 AOV 而非工单解决率。2026 年趋势：销售和客服功能收敛至同一 AI 代理，按效果（per-resolution）而非工单数定价。
-- **AI 视觉搜索与发现型**：以图片而非文字作为搜索输入——上传自拍/截屏/街拍 → AI 识别视觉属性 → 返回相似或搭配商品。Syte（177% 转化提升，时尚/珠宝/家居专属）和 ViSenze（10 亿+月查询，5 个全球 Top 10 购物 App 使用）为此形态两极。与通用反向图片搜索（Google Lens）的区别：零售专用模型理解时尚语义（廓形、面料、风格流派）而非仅像素级匹配。
+- **AI 购物代理/发现平台型（消费者侧）**：对话或视觉交互替代搜索；多数不持有库存。
+- **Agentic 转化基础设施型（零售商侧）**：per-visitor 实时页面重构。
+- **视频商务/可购物视频型**：播放器内识别→加购→结账。
+- **商务体验平台型（CXP）**：企业级搜索+推荐+个性化统一引擎。
+- **对话式 AI 销售助手型**：北极星为转化率与 AOV。
+- **AI 视觉搜索与发现型**：图片输入→零售专用语义匹配。
 
 ---
 
@@ -192,31 +192,17 @@
 
 ### 对比与测评（第三方；观点非官方）
 
-2026 年 AI 购物市场正在经历从「AI 辅助人类」到「AI 代理自主」的范式迁移，四类玩家的竞争格局逐渐清晰。
-
-第一层——**AI 平台巨头的消费者入口争夺**。ChatGPT Shopping（8.1 亿 DAU）、Google Gemini AI Mode（Shopping Graph 500 亿+商品）、Amazon Rufus（封闭花园）、Perplexity Shopping（搅局者，被 Amazon 起诉）和 Microsoft Copilot 构成「五大 AI 购物代理」。FourWeekMBA 的市场地图将此列为 Tier 1，共识是 Google 拥有最强的底层数据（实时库存+价格+用户意图历史），但 ChatGPT 拥有最大的消费者 AI 使用惯性。Amazon 选择封闭路线——主动屏蔽 47+ AI 爬虫，将所有 AI 购物需求困在自家 Rufus 代理内。2026 年 3 月 OpenAI 从 Instant Checkout 撤退是重要信号——消费者还没准备好让 AI 替自己下单，但已习惯让 AI 帮自己发现和比较。
-
-第二层——**零售商的 AI 基础设施军备竞赛**。Spangle（ProductGPT 动态 storefront）、Nosto（四层 AI 个性化）、Dynamic Yield（Mastercard 数据驱动的推荐）和 Bloomreach（CDP+搜索+个性化统一）各自占据不同市场段位。Spangle 的 $21M 融资和 $100M 估值代表了市场对「per-visitor 实时页面生成」这一路线的高预期——不是优化推荐 widget 的点击率，而是让整个页面本身就是推荐。Nosto 在 Shopify 生态中最强（G2 4.6），但 GMV-based 定价和缺乏增量测量被社区批评。
-
-第三层——**视频商务和对话式商务的垂直深化**。Tolstoy 代表的 shoppable video 和 Rep/Zowie 代表的 AI 销售对话是两个增速最快的子品类。Tolstoy 的 AI Studio（自动生成产品视频）和虚拟试穿是差异化壁垒，但 Videowise 的 in-video checkout 是 Tolstoy 缺失的关键能力。对话式商务侧，Rep 的 Behavioral AI（主动检测购物犹豫→出击对话）和 Zowie 的 Sales Skills（对话内嵌入结账）代表了「AI 销售员」的两条路线——前者侧重触达时机，后者侧重转化流程。Gorgias 从 2020-2024 的 Shopify 默认选项正在被 LLM-native 竞品追赶——macro-based 自动化 vs LLM 自主推理之间的 AI 能力差距在拉大。
-
-第四层——**支付协议的标准战争**。ACP（OpenAI+Stripe）vs UCP（Google+20+合作伙伴含 Visa/Mastercard）决定 AI 代理如何与商家结算。a16z 将其类比为 AOL 封闭花园 vs HTTP 开放协议的历史重演。社区共识倾向于开放协议长期胜出，但短期（2026-2028）封闭策展提供更好的消费者体验。稳定币微支付（Agent Cash）vs 信用卡 2-3% 互换费的替代关系被 a16z 列为底层金融博弈，但支付行业资深人士指出信用卡在「非互联网→互联网」过渡期也存活下来，不应低估其惯性。
-
-品类共通的底线：2026 年是 agentic commerce 从 pilot 到 operational 的拐点——$205.7 亿美国市场（占电商 1.5%）、+4,700% AI 导流年增长、摩根士丹利预测 2030 年 AI 购物代理用户将超越传统电商用户。但「发现强、交易弱」的执行鸿沟（62% 用 AI 比价 vs 23% 用 AI 结账）和归因标准的缺失是品类尚未解决的两大核心瓶颈。
-
-*本小节为网摘与社区观点综合，非 Alignify 实测；**不**以各平台自有营销博文为论证主体。*
+2026 年 AI 购物市场正从「AI 辅助人类」向「AI 代理自主」迁移——平台入口（ChatGPT/Google/Amazon）、零售商基础设施（Spangle/Nosto）、视频/对话垂直（Tolstoy/Rep）与支付协议（ACP/UCP）四层竞争并存。共识：**发现强、交易弱**（62% 比价 vs 23% AI 结账）与归因缺失仍是瓶颈；OpenAI 2026-03 从 Instant Checkout 撤退是重要信号。产品细节见 §外链索引；协议层见 [agentic-payments.md](agentic-payments.md)。*网摘综合。*
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
 
-- **a16z Crypto · Open Agentic Commerce and the End of Ads (March 2026)**：Sam Ragsdale + Eddy Lazzarin 的品类定义性文章——两种 Agentic Commerce 模式、Headless Merchant 概念、稳定币 vs 信用卡的支付层博弈。[a16z.com/ai-shopping-online](https://a16z.com/ai-shopping-online/)
-- **FourWeekMBA · The AI Shopping Market Map 2026**：五层 AI 购物参与者的全景地图——从平台巨头（Tier 1）到支付协议（Tier 4），含市场份额和竞争定位。[fourweekmba.com/the-ai-shopping-market-map-2026](https://fourweekmba.com/the-ai-shopping-market-map-2026-who-controls-the-transaction-when-ai-agents-shop-for-us/)
-- **Morgan Stanley · Agentic Commerce Projection (2026)**：126M AI 购物代理用户预测（2030），传统电商用户从 264M 降至 149M。[fourweekmba.com/morgan-stanleys-agentic-commerce-projection](https://fourweekmba.com/morgan-stanleys-agentic-commerce-projection-126-million-ai-shopping-agents-by-2030-while-traditional-e-commerce-halves/)
-- **Deloitte · Asia Pacific Set to Lead the Agentic Future of Commerce (2026)**：APAC 74% 消费者已用 AI 购物发现，76% 企业两年内采用 agentic AI。[deloitte.com](https://www.deloitte.com/ap/en/about/press-room/apac-set-to-lead-the-agentic-future-of-commerce.html)
-- **commercetools · Agentic Commerce Stats 2026: Enterprise Guide**：企业采用数据和基础设施要求全景。[commercetools.com/blog/agentic-commerce-stats-enterprise-guide](https://commercetools.com/blog/agentic-commerce-stats-enterprise-guide)
-- **yStats · Global AI Shopping Agents and Agentic Commerce 2026**：全球市场研究报告——采用趋势和执行限制。[ystats.com](https://www.ystats.com/latest-reports/sample-report-global-ai-shopping-agents-and-agentic-commerce-2026-adoption-trends-and-execution-limits)
-- **Braze · How Retailers Can Capitalize on Agentic Commerce (2026)**：零售商落地指南——19%→46% 消费者采用预测（2025→2026 末）。[braze.com](https://www.braze.com/resources/articles/agentic-commerce-retail)
-- **Voyado · Top Nosto Competitors for 2026**：15 个 Nosto 替代品的横向对比——含定价模型和适用场景。[voyado.com](https://voyado.com/resources/blog/top-nosto-competitors/)
-- **Nine Best Shoppable Video Platforms for eCommerce (2026)**：eStreamly 出品的视频商务平台横向对比。[eStreamly](http://get.estreamly.com/marketing/9-best-shoppable-video-platforms-for-ecommerce-in-2026/)
-- **StayModern · The Complete Guide to AI Visual Search Software for Ecommerce**：Syte/ViSenze/Clarifai 深度对比。[staymodern.ai](https://www.staymodern.ai/articles/best-ai-visual-search-software/detailed)
+**站外**（市场研究/框架；产品 URL 见 §外链索引）
+
+- [a16z — Open Agentic Commerce](https://a16z.com/ai-shopping-online/) · [FourWeekMBA — AI Shopping Market Map 2026](https://fourweekmba.com/the-ai-shopping-market-map-2026-who-controls-the-transaction-when-ai-agents-shop-for-us/)
+- [Deloitte APAC Agentic Commerce](https://www.deloitte.com/ap/en/about/press-room/apac-set-to-lead-the-agentic-future-of-commerce.html) · [commercetools — Agentic Commerce Stats 2026](https://commercetools.com/blog/agentic-commerce-stats-enterprise-guide)
+
+**站内**
+
+- [agentic-commerce.md](agentic-commerce.md) · [agentic-payments.md](agentic-payments.md)

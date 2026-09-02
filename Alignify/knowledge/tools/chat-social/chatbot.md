@@ -30,7 +30,7 @@
 | **灵活度** | 可处理未见过的问题 | 仅处理预设流程 |
 | **幻觉风险** | 有（需 guardrails） | 无（不生成新内容） |
 | **上线速度** | 需训练/调优 | 拖放式搭建，小时级上线 |
-| **代表产品** | Intercom Fin, Tidio Lyro | Tidio Flows, Zendesk Answer Bot |
+| **代表产品** | 见 §外链索引 | 见 §外链索引 |
 | **价格** | 高（按解决量或 token） | 低（按对话量或固定月费） |
 | **趋势** | 融合：flow 负责结构化任务，LLM 负责开放式问答 |
 
@@ -57,13 +57,13 @@
 
 ---
 
-## 形态谱系（与具体品牌解耦）
+## 形态谱系（与具体品牌解耦 · 代表见 §外链索引）
 
-- **AI-first 客服代理型**：以 LLM-native AI agent 为核心，主打 resolution（彻底解决）而非 deflection（转移）。功能最深、价格最高。适合 SaaS 和中大型电商——客户问题复杂度高、客服人工成本高、AI 替代价值大。代表模式：Intercom Fin。
-- **轻量 live chat + AI 增强型**：以 live chat 为起点，AI 是增值功能而非产品灵魂。上线极快（数分钟到数小时），免费方案可用。适合小微企业和个人创业者——客服量不足以支撑 Intercom 的价格。代表模式：Tidio。
-- **企业工单+AI 型**：以工单系统（ticketing）为骨架，AI 是效率层。卖点是 SLA 管理、多品牌支持、合规审计——适合大型企业客服中心。代表模式：Zendesk。
-- **电商专注型**：深度绑定 Shopify/WooCommerce，产品内预置退货/换货/查单流程，客服直接在聊天窗口操作订单。代表模式：Gorgias、Tidio（电商方向）。
-- **开源/可自建型**：提供框架或代码库让开发者自建 chatbot——适合需要完全数据控制和无限定制的团队。代表模式：Rasa、Botpress。
+- **AI-first 客服代理型**：LLM-native，主打 resolution 而非 deflection；适合 SaaS/中大型电商。
+- **轻量 live chat + AI 增强型**：live chat 起点，AI 为增值；适合小微企业与个人创业者。
+- **企业工单+AI 型**：ticketing 骨架 + AI 效率层；适合大型企业客服中心。
+- **电商专注型**：深度绑定 Shopify/WooCommerce，聊天框直接操作订单。
+- **开源/可自建型**：框架或代码库自建 chatbot——Rasa、Botpress 等。
 
 ---
 
@@ -85,14 +85,14 @@
 
 ---
 
-## 工具与产品类型（"AI chatbot" / "customer service AI" 检索里常混在一起的品类；非穷尽）
+## 工具与产品类型（检索词分类 · 规格见 §外链索引）
 
 | 类型（英文常检索词） | 典型包含什么 | 备注 |
 |------|------------|------|
 | AI-first customer service agent | Intercom Fin | LLM-native，resolution 为核心指标 |
-| Live chat + AI (SMB) | Tidio, Crisp, Chatway | 轻量，免费方案可用，适合小微 |
+| Live chat + AI (SMB) | Tidio, Crisp, Chatway | 轻量，免费方案可用 |
 | Enterprise ticketing + AI | Zendesk, Freshdesk, Salesforce Service Cloud | 工单骨架，AI 为效率层 |
-| Ecommerce-focused | Gorgias, Tidio (电商方向) | Shopify 深度集成，聊天框直接操作订单 |
+| Ecommerce-focused | Gorgias, Tidio (电商方向) | Shopify 深度集成 |
 | Open-source framework | Rasa, Botpress | 自建，完全数据和部署控制 |
 
 ---
@@ -123,12 +123,14 @@ Zendesk 的叙事是「企业级工单基础设施，上面加了一层 AI」—
 
 ---
 
-## 延伸阅读与参考材料
+## 延伸阅读 · 站内外
+
+**站外**（第三方评测；产品见 §外链索引）
 
 - Trakkr：Tidio 替代品 AI 共识推荐（2026）— https://trakkr.ai/ai-recommends/tidio-alternatives
 - G2：最佳对话式客服平台（2026）— https://learn.g2.com/best-conversational-support-platforms-for-customer-service
 - Fin AI：客服 chatbot 全面评测（2026）— https://fin.ai/learn/best-ai-chatbots-customer-support
-- Ecommerce Paradise：Tidio AI 电商 chatbot 评测（2026）— https://ecommerceparadise.com/tidio-ai-review-2026-best-ai-chatbot-for-ecommerce-stores/
-- Duple：Tidio 评测与替代品分析（2026）— https://dupple.com/tools/tidio
-- Findstack：Tidio 评测与定价（2026）— https://findstack.com/products/tidio/reviews
-- 能力相邻知识块：[b2b.md](../marketing-growth/b2b.md)（B2B 营销工具）、[character-chat.md](character-chat.md)（AI 角色对话，相邻但品类不同）
+
+**站内**
+
+- [b2b.md](../marketing-growth/b2b.md) · [character-chat.md](character-chat.md)
