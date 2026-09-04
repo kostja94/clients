@@ -1,0 +1,626 @@
+[
+  {
+    "slug": "design",
+    "current_primary": "AI Design Tool",
+    "candidates_tested": [
+      {
+        "keyword": "AI design",
+        "bing_approx": "47300"
+      },
+      {
+        "keyword": "AI design tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI Design Tool",
+        "bing_approx": "34700"
+      },
+      {
+        "keyword": "design",
+        "bing_approx": "202000"
+      }
+    ],
+    "highest_volume_keyword": "AI design tools",
+    "verdict": "OK",
+    "recommended_primary": "AI Design Tool",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "prototyping",
+    "current_primary": "Prototyping / 交互原型",
+    "candidates_tested": [
+      {
+        "keyword": "Prototyping",
+        "bing_approx": "85500"
+      },
+      {
+        "keyword": "prototyping tools",
+        "bing_approx": "6090"
+      },
+      {
+        "keyword": "AI prototyping",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "Prototyping",
+        "bing_approx": "85500"
+      }
+    ],
+    "highest_volume_keyword": "AI prototyping",
+    "verdict": "OK",
+    "recommended_primary": "Prototyping",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "ui-design",
+    "current_primary": "AI UI Design / 界面设计",
+    "candidates_tested": [
+      {
+        "keyword": "AI UI Design",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI ui design tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI UI Design",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "ui design",
+        "bing_approx": "33900"
+      }
+    ],
+    "highest_volume_keyword": "AI UI Design",
+    "verdict": "OK",
+    "recommended_primary": "AI UI Design",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "user-research",
+    "current_primary": "AI User Research",
+    "candidates_tested": [
+      {
+        "keyword": "AI user research tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI User Research",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI user research",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "user research",
+        "bing_approx": "18500"
+      }
+    ],
+    "highest_volume_keyword": "AI user research tools",
+    "verdict": "OK",
+    "recommended_primary": "AI User Research",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "ux-design",
+    "current_primary": "UX Design / 体验设计",
+    "candidates_tested": [
+      {
+        "keyword": "UX Design",
+        "bing_approx": "145000"
+      },
+      {
+        "keyword": "UX Design",
+        "bing_approx": "145000"
+      },
+      {
+        "keyword": "AI ux design tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI ux design",
+        "bing_approx": "509000"
+      }
+    ],
+    "highest_volume_keyword": "AI ux design tools",
+    "verdict": "OK",
+    "recommended_primary": "UX Design",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "wireframing",
+    "current_primary": "Wireframing / 线框图",
+    "candidates_tested": [
+      {
+        "keyword": "Wireframing",
+        "bing_approx": "80300"
+      },
+      {
+        "keyword": "AI wireframing",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI wireframing tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "wireframing",
+        "bing_approx": "55"
+      }
+    ],
+    "highest_volume_keyword": "AI wireframing",
+    "verdict": "OK",
+    "recommended_primary": "Wireframing",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "evaluation",
+    "current_primary": "AI evaluation / LLM evaluation / AI 评测",
+    "candidates_tested": [
+      {
+        "keyword": "AI evaluation",
+        "bing_approx": "30800"
+      },
+      {
+        "keyword": "AI evaluation tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "evaluation",
+        "bing_approx": "52300"
+      },
+      {
+        "keyword": "AI evaluation",
+        "bing_approx": "30800"
+      }
+    ],
+    "highest_volume_keyword": "AI evaluation tools",
+    "verdict": "OK",
+    "recommended_primary": "AI evaluation",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "llm-for-coding",
+    "current_primary": "AI Coding LLM / 编程向大模型",
+    "candidates_tested": [
+      {
+        "keyword": "AI Coding LLM",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "llm for coding",
+        "bing_approx": "105000"
+      },
+      {
+        "keyword": "llm for coding tools",
+        "bing_approx": "105000"
+      },
+      {
+        "keyword": "AI llm for coding tools",
+        "bing_approx": "509000"
+      }
+    ],
+    "highest_volume_keyword": "AI Coding LLM",
+    "verdict": "OK",
+    "recommended_primary": "AI Coding LLM",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "llm-for-math",
+    "current_primary": "AI Math LLM / 数学向大模型",
+    "candidates_tested": [
+      {
+        "keyword": "AI Math LLM",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "llm for math",
+        "bing_approx": "105000"
+      },
+      {
+        "keyword": "AI llm for math",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "llm for math tools",
+        "bing_approx": "105000"
+      }
+    ],
+    "highest_volume_keyword": "AI Math LLM",
+    "verdict": "OK",
+    "recommended_primary": "AI Math LLM",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "llm-for-reasoning",
+    "current_primary": "AI Reasoning LLM / 推理向大模型",
+    "candidates_tested": [
+      {
+        "keyword": "AI Reasoning LLM",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "llm for reasoning tools",
+        "bing_approx": "105000"
+      },
+      {
+        "keyword": "AI Reasoning LLM",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI llm for reasoning",
+        "bing_approx": "509000"
+      }
+    ],
+    "highest_volume_keyword": "AI Reasoning LLM",
+    "verdict": "OK",
+    "recommended_primary": "AI Reasoning LLM",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "llm",
+    "current_primary": "Large Language Model",
+    "candidates_tested": [
+      {
+        "keyword": "llm",
+        "bing_approx": "105000"
+      },
+      {
+        "keyword": "AI llm",
+        "bing_approx": "58100"
+      },
+      {
+        "keyword": "AI llm tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "llm tools",
+        "bing_approx": "105000"
+      }
+    ],
+    "highest_volume_keyword": "AI llm tools",
+    "verdict": "SWITCH",
+    "recommended_primary": "AI llm tools",
+    "notes": "best=509000 vs current~105000"
+  },
+  {
+    "slug": "multimodal-llm",
+    "current_primary": "AI Multimodal LLM / 多模态大模型",
+    "candidates_tested": [
+      {
+        "keyword": "AI Multimodal LLM",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI multimodal llm",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI Multimodal LLM",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "multimodal llm",
+        "bing_approx": "74600"
+      }
+    ],
+    "highest_volume_keyword": "AI Multimodal LLM",
+    "verdict": "OK",
+    "recommended_primary": "AI Multimodal LLM",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "essay-writer",
+    "current_primary": "AI Essay Writer",
+    "candidates_tested": [
+      {
+        "keyword": "essay writer",
+        "bing_approx": "20700"
+      },
+      {
+        "keyword": "AI essay writer",
+        "bing_approx": "3870"
+      },
+      {
+        "keyword": "essay writer tools",
+        "bing_approx": "53500"
+      },
+      {
+        "keyword": "AI Essay Writer",
+        "bing_approx": "3870"
+      }
+    ],
+    "highest_volume_keyword": "essay writer tools",
+    "verdict": "SWITCH",
+    "recommended_primary": "essay writer tools",
+    "notes": "best=53500 vs current~3870"
+  },
+  {
+    "slug": "presentation-maker",
+    "current_primary": "AI Presentation Maker",
+    "candidates_tested": [
+      {
+        "keyword": "presentation maker tools",
+        "bing_approx": "76600"
+      },
+      {
+        "keyword": "AI presentation maker",
+        "bing_approx": "5600"
+      },
+      {
+        "keyword": "AI presentation maker tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "presentation maker",
+        "bing_approx": "15400"
+      }
+    ],
+    "highest_volume_keyword": "AI presentation maker tools",
+    "verdict": "OK",
+    "recommended_primary": "AI Presentation Maker",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "story-generator",
+    "current_primary": "AI Story Generator",
+    "candidates_tested": [
+      {
+        "keyword": "AI story generator",
+        "bing_approx": "10200"
+      },
+      {
+        "keyword": "story generator",
+        "bing_approx": "18500"
+      },
+      {
+        "keyword": "story generator AI",
+        "bing_approx": "1820000"
+      },
+      {
+        "keyword": "AI Story Generator",
+        "bing_approx": "10200"
+      }
+    ],
+    "highest_volume_keyword": "story generator AI",
+    "verdict": "SWITCH",
+    "recommended_primary": "story generator AI",
+    "notes": "best=1820000 vs current~10200"
+  },
+  {
+    "slug": "text-generator",
+    "current_primary": "AI Text Generator",
+    "candidates_tested": [
+      {
+        "keyword": "text generator AI",
+        "bing_approx": "147000"
+      },
+      {
+        "keyword": "AI text generator",
+        "bing_approx": "17200"
+      },
+      {
+        "keyword": "AI text generator tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI Text Generator",
+        "bing_approx": "17200"
+      }
+    ],
+    "highest_volume_keyword": "AI text generator tools",
+    "verdict": "OK",
+    "recommended_primary": "AI Text Generator",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "text-translator",
+    "current_primary": "AI text translation",
+    "candidates_tested": [
+      {
+        "keyword": "text translator",
+        "bing_approx": "147000"
+      },
+      {
+        "keyword": "AI text translation",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI text translator tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "text translator tools",
+        "bing_approx": "147000"
+      }
+    ],
+    "highest_volume_keyword": "AI text translation",
+    "verdict": "OK",
+    "recommended_primary": "AI text translation",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "text",
+    "current_primary": "AI Text Tools / AI Writing Tools",
+    "candidates_tested": [
+      {
+        "keyword": "AI Text Tools",
+        "bing_approx": "13300"
+      },
+      {
+        "keyword": "AI text",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "text",
+        "bing_approx": "147000"
+      },
+      {
+        "keyword": "text tools",
+        "bing_approx": "147000"
+      }
+    ],
+    "highest_volume_keyword": "AI text",
+    "verdict": "SWITCH",
+    "recommended_primary": "AI text",
+    "notes": "best=509000 vs current~13300"
+  },
+  {
+    "slug": "headless-browser",
+    "current_primary": "Headless browser / 云浏览器基础设施",
+    "candidates_tested": [
+      {
+        "keyword": "Headless browser",
+        "bing_approx": "48200"
+      },
+      {
+        "keyword": "AI headless browser tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "AI headless browser",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "Headless browser",
+        "bing_approx": "48200"
+      }
+    ],
+    "highest_volume_keyword": "AI headless browser tools",
+    "verdict": "OK",
+    "recommended_primary": "Headless browser",
+    "notes": "best=509000 vs current~509000"
+  },
+  {
+    "slug": "search-indexing",
+    "current_primary": "AI Search Indexing",
+    "candidates_tested": [
+      {
+        "keyword": "search indexing tools",
+        "bing_approx": "1470000"
+      },
+      {
+        "keyword": "AI search indexing tools",
+        "bing_approx": "66700"
+      },
+      {
+        "keyword": "search indexing",
+        "bing_approx": "1470000"
+      },
+      {
+        "keyword": "AI search indexing",
+        "bing_approx": "509000"
+      }
+    ],
+    "highest_volume_keyword": "search indexing tools",
+    "verdict": "SWITCH",
+    "recommended_primary": "search indexing tools",
+    "notes": "best=1470000 vs current~509000"
+  },
+  {
+    "slug": "technology-profiler",
+    "current_primary": "website technology profiler / 网站技术栈检测",
+    "candidates_tested": [
+      {
+        "keyword": "website technology profiler",
+        "bing_approx": "886000"
+      },
+      {
+        "keyword": "technology profiler",
+        "bing_approx": "134000"
+      },
+      {
+        "keyword": "AI technology profiler tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "technology profiler tools",
+        "bing_approx": "134000"
+      }
+    ],
+    "highest_volume_keyword": "website technology profiler",
+    "verdict": "OK",
+    "recommended_primary": "website technology profiler",
+    "notes": "best=886000 vs current~886000"
+  },
+  {
+    "slug": "web-fetch",
+    "current_primary": "Web Fetch",
+    "candidates_tested": [
+      {
+        "keyword": "AI web fetch",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "Web Fetch",
+        "bing_approx": "918000"
+      },
+      {
+        "keyword": "AI web fetch tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "web fetch tools",
+        "bing_approx": "918000"
+      }
+    ],
+    "highest_volume_keyword": "Web Fetch",
+    "verdict": "OK",
+    "recommended_primary": "Web Fetch",
+    "notes": "best=918000 vs current~918000"
+  },
+  {
+    "slug": "web-scraping",
+    "current_primary": "Web scraping / 网页抓取",
+    "candidates_tested": [
+      {
+        "keyword": "Web scraping",
+        "bing_approx": "28700"
+      },
+      {
+        "keyword": "web scraping",
+        "bing_approx": "28700"
+      },
+      {
+        "keyword": "web scraping tools",
+        "bing_approx": "918000"
+      },
+      {
+        "keyword": "AI web scraping",
+        "bing_approx": "509000"
+      }
+    ],
+    "highest_volume_keyword": "web scraping tools",
+    "verdict": "OK",
+    "recommended_primary": "Web scraping",
+    "notes": "best=918000 vs current~918000"
+  },
+  {
+    "slug": "web-search-api",
+    "current_primary": "Web Search API",
+    "candidates_tested": [
+      {
+        "keyword": "AI web search api",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "web search api tools",
+        "bing_approx": "918000"
+      },
+      {
+        "keyword": "AI web search api tools",
+        "bing_approx": "509000"
+      },
+      {
+        "keyword": "web search api",
+        "bing_approx": "918000"
+      }
+    ],
+    "highest_volume_keyword": "web search api tools",
+    "verdict": "OK",
+    "recommended_primary": "Web Search API",
+    "notes": "best=918000 vs current~918000"
+  }
+]

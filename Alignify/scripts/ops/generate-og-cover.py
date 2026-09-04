@@ -23,7 +23,6 @@ Live path (default):
 from __future__ import annotations
 
 import argparse
-import base64
 import hashlib
 import json
 import os
@@ -61,7 +60,7 @@ DEFAULT_DEPLOY_ROOTS = [
 ]
 
 FAL_ENDPOINT = "https://queue.fal.run/openai/gpt-image-2"
-APINEED_ENDPOINT = "https://apineed.com/v1/images/generations"
+APINEED_ENDPOINT = "https://apineed.com/v1/media/generations"
 OG_W, OG_H = 1200, 630
 GEN_W, GEN_H = 1216, 632
 GEN_QUALITY = "high"
@@ -384,90 +383,105 @@ def fal_generate(prompt: str, fal_key: str) -> bytes:
 
 
 def apineed_generate(prompt: str, api_key: str) -> bytes:
-    """OpenAI-compatible Images API — same quality/format as fal (high / jpeg / 1 image).
+    """OpenAI-compatible Images API via APINEED's async media endpoint.
 
-    Size: try fal's 1216x632 first; APINEED playground presets are 1024x1024 / 1536x1024.
-    HTTP goes through curl.exe — urllib is often dropped by Cloudflare (1010 / empty RST).
+    NOTE (2026-09): APINEED deprecated the synchronous /v1/images/generations
+    endpoint. New flow is POST /v1/media/generations with
+    {"workflow": "text_to_image", "model": ..., "input": {"prompt": ...}}
+    which returns a task id; poll GET /v1/media/generations/{id} until
+    status == "succeeded", then download outputs[0].url.
+
+    The API no longer accepts a size parameter (silently routes upstream);
+    the generated canvas follows the prompt, so keep the "wide 1200x630
+    landscape" phrasing in the prompt for OG-compatible output.
     """
     import subprocess
     import tempfile
+    import time
 
     quality = os.environ.get("OG_APINEED_QUALITY", GEN_QUALITY)
-    print(f"  APINEED quality={quality}")
+    print(f"  APINEED quality={quality} (async /v1/media/generations)")
 
-    def _request(size: str) -> dict:
-        quality = os.environ.get("OG_APINEED_QUALITY", GEN_QUALITY)
-        body = {
-            "model": "gpt-image-2",
-            "prompt": prompt,
-            "n": GEN_NUM_IMAGES,
-            "size": size,
-            "quality": quality,
-            "output_format": GEN_OUTPUT_FORMAT,
-        }
-        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as tmp:
-            json.dump(body, tmp, ensure_ascii=False)
-            tmp_path = tmp.name
-        try:
-            cmd = [
-                "curl.exe",
-                "-sS",
-                "--max-time",
-                "300",
-                "-X",
-                "POST",
-                APINEED_ENDPOINT,
-                "-H",
-                f"Authorization: Bearer {api_key}",
-                "-H",
-                "Content-Type: application/json",
-                "-H",
-                f"User-Agent: {HTTP_UA}",
-                "--data-binary",
-                f"@{tmp_path}",
-            ]
-            proc = subprocess.run(cmd, capture_output=True, text=True)
-        finally:
-            Path(tmp_path).unlink(missing_ok=True)
-        if proc.returncode != 0:
-            raise RuntimeError(f"APINEED curl failed ({proc.returncode}): {proc.stderr[:500]}")
-        if not proc.stdout.strip():
-            raise RuntimeError("APINEED empty response (connection dropped)")
-        try:
-            data = json.loads(proc.stdout)
-        except json.JSONDecodeError as e:
-            raise RuntimeError(f"APINEED non-JSON: {proc.stdout[:400]}") from e
-        if data.get("error"):
-            raise RuntimeError(f"APINEED error: {data['error']}")
-        return data
-
-    first_size = "1024x1024" if quality == "low" else "1536x1024"
-    try:
-        result = _request(first_size)
-    except RuntimeError as err:
-        msg = str(err).lower()
-        if first_size != "1024x1024" and ("524" in msg or "timeout" in msg or "size" in msg or "invalid" in msg):
-            print(f"  APINEED {first_size} failed, retrying 1024x1024...")
-            result = _request("1024x1024")
-        else:
-            raise
-
-    items = result.get("data") or []
-    if not items:
-        raise RuntimeError(f"No images in APINEED result: {result}")
-    item = items[0]
-    if item.get("b64_json"):
-        return base64.b64decode(item["b64_json"])
-    url = item.get("url")
-    if not url:
-        raise RuntimeError(f"APINEED item has neither url nor b64_json: {item}")
-    dl = subprocess.run(
-        ["curl.exe", "-sS", "--max-time", "120", "-L", "-A", HTTP_UA, url],
-        capture_output=True,
+    # Force a landscape 16:9-ish canvas for OG use (API ignores size params).
+    full_prompt = (
+        f"{prompt}\n\n"
+        "COMPOSITION: wide landscape 16:9 horizontal frame, 1200x630 social share card aspect. "
+        "Do NOT render a portrait or square image."
     )
-    if dl.returncode != 0 or not dl.stdout:
-        raise RuntimeError(f"APINEED image download failed: {dl.stderr[:400]}")
-    return dl.stdout
+
+    body = {
+        "workflow": "text_to_image",
+        "model": "gpt-image-2",
+        "input": {"prompt": full_prompt},
+    }
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as tmp:
+        json.dump(body, tmp, ensure_ascii=False)
+        tmp_path = tmp.name
+    try:
+        proc = subprocess.run(
+            [
+                "curl.exe", "-sS", "--max-time", "60",
+                "-X", "POST", APINEED_ENDPOINT,
+                "-H", f"Authorization: Bearer {api_key}",
+                "-H", "Content-Type: application/json",
+                "-H", f"User-Agent: {HTTP_UA}",
+                "--data-binary", f"@{tmp_path}",
+            ],
+            capture_output=True, text=True,
+        )
+    finally:
+        Path(tmp_path).unlink(missing_ok=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f"APINEED submit curl failed ({proc.returncode}): {proc.stderr[:500]}")
+    if not proc.stdout.strip():
+        raise RuntimeError("APINEED empty response (connection dropped)")
+    try:
+        data = json.loads(proc.stdout)
+    except json.JSONDecodeError as e:
+        raise RuntimeError(f"APINEED submit non-JSON: {proc.stdout[:400]}") from e
+    if data.get("error"):
+        raise RuntimeError(f"APINEED submit error: {data['error']}")
+    task_id = data.get("id")
+    if not task_id:
+        raise RuntimeError(f"APINEED no task id in submit: {data}")
+
+    # Poll until succeeded / failed.
+    deadline = time.time() + 300
+    while time.time() < deadline:
+        time.sleep(5)
+        poll = subprocess.run(
+            [
+                "curl.exe", "-sS", "--max-time", "30",
+                "-X", "GET", f"{APINEED_ENDPOINT}/{task_id}",
+                "-H", f"Authorization: Bearer {api_key}",
+            ],
+            capture_output=True, text=True,
+        )
+        if poll.returncode != 0 or not poll.stdout.strip():
+            raise RuntimeError(f"APINEED poll failed: {poll.stderr[:400]}")
+        try:
+            status = json.loads(poll.stdout)
+        except json.JSONDecodeError as e:
+            raise RuntimeError(f"APINEED poll non-JSON: {poll.stdout[:300]}") from e
+        state = status.get("status")
+        if state == "succeeded":
+            outputs = status.get("outputs") or []
+            if not outputs:
+                raise RuntimeError(f"APINEED succeeded with no outputs: {status}")
+            url = outputs[0].get("url")
+            if not url:
+                raise RuntimeError(f"APINEED output has no url: {outputs[0]}")
+            dl = subprocess.run(
+                ["curl.exe", "-sS", "--max-time", "120", "-L", "-A", HTTP_UA, url],
+                capture_output=True,
+            )
+            if dl.returncode != 0 or not dl.stdout:
+                raise RuntimeError(f"APINEED image download failed: {dl.stderr[:400]}")
+            print(f"  APINEED task {task_id} succeeded")
+            return dl.stdout
+        if state in ("failed", "cancelled"):
+            raise RuntimeError(f"APINEED task {state}: {status.get('error')}")
+    raise TimeoutError(f"APINEED task {task_id} timed out")
 
 
 def generate_image(provider: str, prompt: str, *, fal_key: str | None = None, apineed_key: str | None = None) -> bytes:

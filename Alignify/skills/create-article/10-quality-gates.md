@@ -1,7 +1,7 @@
 # Step 10 — SelfCheck & Gate C（→ audit-ready）
 
 > **清单**：[`rules/selfcheck.md`](./rules/selfcheck.md) · [`rules/quality-checklist.md`](./rules/quality-checklist.md) · [`rules/gate-rollback.md`](./rules/gate-rollback.md)  
-> **通过后**：移交 [`../audit-article/SKILL.md`](../audit-article/SKILL.md) — **不得跳过终审直接发布**
+> **通过后**：新会话执行 [`11-final-audit.md`](./11-final-audit.md) — **不得跳过终审直接发布**；禁止写稿同一会话终审
 
 ---
 
@@ -32,7 +32,7 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 
 **Gate C**：H0–H4 + 12 维 **全 Pass** → 状态 **audit-ready**
 
-任一 Fail → 回溯修复，**不得**进入 audit-article。
+任一 Fail → 回溯修复，**不得**进入 Step 11。
 
 ---
 
@@ -60,7 +60,7 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 
 > **Gate C 不依赖本节**。追求终审 ≥90 / S 级时再读。
 
-[`perfect-article-checklist.md`](./rules/perfect-article-checklist.md) — 标杆清单；与 `audit-article` 十维 ≥90 对齐。
+[`perfect-article-checklist.md`](./rules/perfect-article-checklist.md) — 标杆清单；与 Step 11 十维 ≥90 对齐。
 
 ---
 
@@ -69,5 +69,5 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 - [ ] `/blog/{slug}` 与 `/zh/blog/{slug}`（或对应 channel）可访问
 - [ ] 无 HowTo JSON-LD
 
-**audit-ready** → [`../audit-article/SKILL.md`](../audit-article/SKILL.md)  
+**audit-ready** → 新会话 [`11-final-audit.md`](./11-final-audit.md)  
 **publish-ready 后** → 人类发布；发布前复核 [`08-meta-config.md`](./08-meta-config.md) §发布日期

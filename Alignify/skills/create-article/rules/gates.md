@@ -11,7 +11,7 @@
 |------|------|----------|
 | **draft** | 成稿中 | Step 05–09 进行中 |
 | **audit-ready** | 可送终审 | Step 10 SelfCheck：H0–H4 + 12 维全 Pass + 脚本绿 |
-| **publish-ready** | 可发布 | [`audit-article`](../../audit-article/SKILL.md)：P0 Pass + 十维 ≥**80** |
+| **publish-ready** | 可发布 | [`11-final-audit.md`](../11-final-audit.md)：P0 Pass + 十维 ≥**80** |
 | **S 级（标杆）** | 旗舰标杆 | 十维 ≥**90** + Moat 兑现 + Excellence Yes + **零 P1** |
 
 > Alignify 默认发布门槛：**publish-ready（≥80）**；季度标杆文追求 **S 级（≥90）**。
@@ -28,7 +28,7 @@
 | **Outline 3.5** | Step 05 前（Brief `BatchCount ≥2`） | Step 01 大纲 / MERGE；单篇 → `N/A` |
 | **Gate C** | Step 10 SelfCheck | 见 [`gate-rollback.md`](./gate-rollback.md) |
 | **Cross 5.5** | Step 10 后（Brief `BatchCount ≥2`） | Step 05–06；单篇 → `N/A` |
-| **Final Audit** | audit-article | Step 05–09 按 P0/P1 项修复 |
+| **Final Audit** | Step 11（新会话） | Step 05–09 按 P0/P1 项修复 |
 | **Publish** | 人类发布 | P1 清零或 documented waive |
 
 ---

@@ -3,7 +3,7 @@
 > **SSOT**：[`rules/internal-links.md`](./rules/internal-links.md)  
 > **全类型必读**：Part 1–2（编辑层 + R1–R7）· Part 8（外链 UTM/Nofollow）  
 > **按类型追加**（见下表 · 一次只多读 **1 个** Part，遵守渐进加载）  
-> **存量批量优化**：Part 6–7 → [`optimize-internal-links`](../optimize-internal-links/SKILL.md)，**非**本 Step
+> **存量批量优化**：Part 6–7 → [`audit-optimize`](../audit-optimize/SKILL.md)，**非**本 Step
 
 ---
 

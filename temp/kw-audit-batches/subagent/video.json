@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "animation-generator",
+    "path": "tools/video/animation-generator.md",
+    "current_primary": "AI animation generator",
+    "keywordEn_full": "AI animation generator / AI anime generator",
+    "h1": "AI Animation & Anime Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "canvas-video",
+    "path": "tools/video/canvas-video.md",
+    "current_primary": "AI video canvas",
+    "keywordEn_full": "AI video canvas / node-based AI video workflow",
+    "h1": "Canvas Video · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "filmmaking",
+    "path": "tools/video/filmmaking.md",
+    "current_primary": "AI Filmmaking",
+    "keywordEn_full": "AI Filmmaking / AI 电影制作",
+    "h1": "AI Filmmaking · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "image-to-video",
+    "path": "tools/video/image-to-video.md",
+    "current_primary": "Image-to-Video",
+    "keywordEn_full": "Image-to-Video / I2V / 图生视频",
+    "h1": "AI Image-to-Video · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "interactive-video",
+    "path": "tools/video/interactive-video.md",
+    "current_primary": "Interactive video",
+    "keywordEn_full": "Interactive video / 实时交互视频",
+    "h1": "实时交互视频（Interactive Video / Live Video Generation）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "music-video-generator",
+    "path": "tools/video/music-video-generator.md",
+    "current_primary": "AI music video generator",
+    "keywordEn_full": "AI music video generator / MV 生成器",
+    "h1": "AI 音乐视频生成器（Music Video Generator）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "short-drama",
+    "path": "tools/video/short-drama.md",
+    "current_primary": "AI short drama platform",
+    "keywordEn_full": "AI short drama platform / AI 短剧平台",
+    "h1": "AI Short Drama / AI 短剧平台 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "text-to-video",
+    "path": "tools/video/text-to-video.md",
+    "current_primary": "Text-to-Video",
+    "keywordEn_full": "Text-to-Video (T2V) / 文生视频",
+    "h1": "AI Text-to-Video · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "video",
+    "path": "tools/video/video.md",
+    "current_primary": "AI Video",
+    "keywordEn_full": "",
+    "h1": "AI Video · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "video-clipping",
+    "path": "tools/video/video-clipping.md",
+    "current_primary": "AI Video Clipping",
+    "keywordEn_full": "AI Video Clipping / Repurposing",
+    "h1": "AI Video Clipping · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "video-editor",
+    "path": "tools/video/video-editor.md",
+    "current_primary": "AI Video Editor",
+    "keywordEn_full": "AI Video Editor / AI 视频编辑器",
+    "h1": "AI Video Editor · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "video-effects",
+    "path": "tools/video/video-effects.md",
+    "current_primary": "AI Video Effects",
+    "keywordEn_full": "AI Video Effects / AI VFX",
+    "h1": "AI Video Effects · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "video-generator",
+    "path": "tools/video/video-generator.md",
+    "current_primary": "AI video generator",
+    "keywordEn_full": "AI video generator / AI 视频生成器",
+    "h1": "AI Video Generator / AI 视频生成 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "video-to-video",
+    "path": "tools/video/video-to-video.md",
+    "current_primary": "Video-to-Video",
+    "keywordEn_full": "Video-to-Video (V2V) / 视频到视频",
+    "h1": "AI Video-to-Video · 知识块（非线性笔记）"
+  }
+]

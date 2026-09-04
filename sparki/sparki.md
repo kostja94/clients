@@ -9,7 +9,8 @@
 | [sparki-keywords.md](./sparki-keywords.md) | 关键词、目标 URL、待办 |
 | [sparki-use-cases.md](./sparki-use-cases.md) | Persona、场景（Vlog / Commentary / Montage / Talking-head） |
 | [sparki-competitors.md](./sparki-competitors.md) | 竞品与差异化 |
-| [sparki-site-structure.md](./sparki-site-structure.md) | 首页模块、IA 推断、内容机会 |
+| [sparki-site-structure.md](./sparki-site-structure.md) | 全站 URL 地图、/blog 线上结构审计、61 篇文章主表（OpenBlog 迁移基线） |
+| [sparki-blog-migration-plan.md](./sparki-blog-migration-plan.md) | **Blog 迁移**：Contentful → OpenBlog；部署于 `E:\客户部署项目\sparki-blog` |
 | [creators/](./creators/) | 红人 SEO 页面:聚合页/详情页结构、14 位已上线红人 |
 | [video-types/](./video-types/) | 剪辑视频类型多维分类 + Industries / Product Video / Gaming / Platforms 落地页 |
 | [ai-traffic-report/](./ai-traffic-report/) | **AI 助手引荐流量 + 全站页面流量** GA4 周报 Skill |

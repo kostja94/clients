@@ -1,0 +1,132 @@
+==== agent-billing
+  509000 | AI agent billing | POLLUTED_CAP OpenAI/Gemini generic
+  509000 | AI agent billing software | POLLUTED_CAP OpenAI/Gemini generic
+  4280 | agent monetization | MS fallback Microsoft Learn agents
+  4280 | agent billing | MS fallback Microsoft Learn agents
+  509000 | AI agent billing platform | POLLUTED_CAP OpenAI/Gemini generic
+==== agent-for-desktop
+  4280 | Agent on desktop | MS fallback
+  150000 | desktop AI agent | POLLUTED desktop computers Best Buy
+  509000 | AI desktop agent | POLLUTED_CAP OpenAI/Gemini generic
+  150000 | desktop agent | POLLUTED desktop computers Best Buy
+  271000 | computer use agent | POLLUTED Computer Wikipedia/Best Buy
+==== agent-identity
+  509000 | AI Agent Identity | POLLUTED_CAP
+  4280 | agent identity | MS fallback
+  4280 | agent IAM | MS fallback
+  84200 | agentic IAM | POLLUTED generic Agentic AI
+  509000 | AI agent identity management | POLLUTED_CAP
+==== agent-memory
+  4280 | Agent Memory Layer | MS fallback
+  509000 | AI agent memory | POLLUTED_CAP
+  13100 | agent memory | ON-INTENT GitHub agentmemory / TencentDB Agent Memory
+  150000 | memory layer for AI agents | POLLUTED Memory Wikipedia
+  105000 | LLM agent memory | POLLUTED LLM Wikipedia
+==== agent-runtime
+  509000 | AI Agent Runtime | POLLUTED_CAP
+  5140 | agent runtime | ON-INTENT Chinese/EN Agent Runtime explainers
+  509000 | AI agent runtime | POLLUTED_CAP
+  4280 | agent execution runtime | MS fallback
+  105000 | LLM agent runtime | POLLUTED LLM Wikipedia
+==== agent-sandbox
+  509000 | AI Agent Sandbox | POLLUTED_CAP
+  4280 | agent sandbox | MS fallback
+  509000 | AI agent sandbox | POLLUTED_CAP
+  39700 | sandbox for AI agents | POLLUTED The Sandbox Game
+  363000 | code sandbox AI agent | POLLUTED VS Code / Code.org
+==== agent-skills
+  43300 | Agent Skills | ON-INTENT GitHub agent-skills, SkillsMP marketplace
+  26200 | AI agent skills | ON-INTENT Awesome AI Agent Skills
+  59400 | Claude agent skills | BRAND Claude.ai only
+  18100 | agent skills marketplace | ON-INTENT SkillsMP marketplace
+  86900 | MCP skills | MIXED MCP protocol + CA DMV motor carrier
+==== agent-to-agent
+  92500 | A2A Agent Network | ON-INTENT A2A protocol GitHub (protocol not social network)
+  132000 | agent to agent | ON-INTENT A2A Protocol / Microsoft Learn / Google announce
+  26400 | A2A protocol | ON-INTENT a2a-protocol.org
+  4280 | agent-to-agent communication | MS fallback
+  2170000 | Google A2A | POLLUTED Google.com brand
+==== agentic-commerce
+  15600 | Agentic Commerce | ON-INTENT IBM / McKinsey category pages
+  84200 | agentic shopping | POLLUTED generic Agentic AI
+  509000 | AI agent commerce | POLLUTED_CAP
+  84200 | agentic checkout | POLLUTED generic Agentic AI
+  4280 | agent commerce | MS fallback
+==== agentic-payments
+  84200 | Agentic Payments | POLLUTED generic Agentic AI (Bing); WebSearch titles ON-INTENT Fireblocks/ACI/AWS
+  509000 | AI agent payments | POLLUTED_CAP
+  84200 | agentic payment | POLLUTED generic Agentic AI
+  4280 | agent payments | MS fallback
+  20700 | x402 payments | ON-INTENT x402 protocol pages
+==== ai-employee
+  509000 | AI Employee | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  58 | AI coworker | Rohan Paul on X: &quot;Looks like the AI coworker category is on fire. | Meet the new AI Coworker who won鈥檛 stop snitching to your boss 鈥?| 
+  48100 | AI teammate | Teammates 鈥?AI Teammates for Support, Sales &amp; Recruiting | Asana AI Teammates: Agents ready to work with your team | AI Teammate - AI Ag
+  211000 | digital employee | Digital - Wikipedia | DIGITAL Definition &amp; Meaning - Merriam-Webster | Digital media - Wikipedia | DIGITAL | English meaning - Cambridge
+  509000 | AI employees | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+==== ai-shopping
+  509000 | AI Shopping | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  2670 | AI shopping assistant | 5 AI Shopping Assistant Tools To Help You Shop Wisely | 5 Best AI Shopping Assistants in 2026 (Tested &amp; Ranked) | ChatGPT Shopping | AI 
+  509000 | AI shopping agent | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  465000 | shop with AI | Shop | Shopping designed around you | Explore - Shop | SHOP.COM | Walmart | Save Money. Live better. | Amazon.com. Spend less. Smile more.
+  509000 | AI product search | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+==== browser
+  61800 | AI browser | Best Agentic Browsers &amp; AI Browser Agents in 2026 | The Best AI Web Browsers We've Tested for 2026 | PCMag | Comet Browser: a Personal A
+  509000 | AI web browser | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  125000 | agentic browser | Best Agentic Browsers &amp; AI Browser Agents in 2026 | 10 Best Agentic Browsers in 2026 (Ranked) - brightdata.com | Agentic Browser | Brows
+  509000 | AI browsing | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  21600 | Comet browser | Comet Browser: a Personal AI Assistant | The browser that works as fast as you think - perplexity.ai | Comet Browser - AI-Powered Browser | 
+==== data-engineering-agent
+  296000 | Data Engineering Agent | Data - Wikipedia | Data.gov Home - Data.gov | DataOhio | Ohio.gov | What is data? - IBM | DATA Definition &amp; Meaning - Merriam-Webster
+  509000 | AI data engineer | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  84200 | agentic data engineering | What Is Agentic AI? Definition, 6 Levels &amp; Examples (2026) | Agentic AI, explained - MIT Sloan | AI agent - Wikipedia | 'Agentic' AI is 
+  296000 | data engineer agent | Data - Wikipedia | Data.gov Home - Data.gov | DataOhio | Ohio.gov | What is data? - IBM | DATA Definition &amp; Meaning - Merriam-Webster
+  509000 | AI data engineering agent | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+==== expert-agent
+  274000 | Expert Agent | EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning 
+  509000 | AI expert agent | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  274000 | expert AI agent | EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning 
+  509000 | AI expert network | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  274000 | expert agent marketplace | EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning 
+==== multi-agent
+  104000 | Multi-Agent Systems | Multi 鈥?one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionar
+  104000 | multi-agent AI | Multi 鈥?one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionar
+  104000 | multi agent system | Multi 鈥?one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionar
+  104000 | multi-agent orchestration | Multi 鈥?one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionar
+  509000 | AI multi-agent | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+==== openclaw-alternatives
+  78500 | OpenClaw alternatives | OpenClaw 鈥?Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - Ope
+  78500 | OpenClaw | OpenClaw 鈥?Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - Ope
+  92 | Clawdbot alternatives | Anmelden bei Hotmail | Microsoft Support | Change the refresh rate on your monitor in Windows | Microsoft Support | Windows 8.1 ISO download
+  9450 | Moltbot alternatives | MoltBot - Open Source Personal AI Assistant | Formerly ClawdBot | Moltbot - Personal AI Assistant That Actually Does Things | Moltbot - Open
+  78500 | OpenClaw vs | OpenClaw 鈥?Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - Ope
+==== vibe-coding-payments
+  119000 | vibe coding payments | Vibe - Mistral AI | VIBE.com 鈥?Hip-Hop, R&amp;B, Style, and Black Culture | VIBE Definition &amp; Meaning - Merriam-Webster | Vibe - Local A
+  163000 | add payments to vibe coded app | ADD vs. ADHD: How Are They Different? - Verywell Mind | ADD vs. ADHD: What's the Difference Between ADD &amp; ADHD? | ADD vs. ADHD Symptoms:
+  64700 | stripe vibe coding | Stripe Login | Sign in to the Stripe Dashboard | Stripe | Financial Infrastructure to Grow Your Revenue | Sign up and create a Stripe accoun
+  142000 | how to add payments to vibe coded app | wikiHow: How-to instructions you can trust. | HOW | English meaning - Cambridge Dictionary | HOW Definition &amp; Meaning - Merriam-Webster 
+  119000 | vibe coding Stripe | Vibe - Mistral AI | VIBE.com 鈥?Hip-Hop, R&amp;B, Style, and Black Culture | VIBE Definition &amp; Meaning - Merriam-Webster | Vibe - Local A
+==== work-agent
+  426000 | Work Agent | WORK Definition &amp; Meaning - Merriam-Webster | WorkInTexas | Rihanna - Work (Lyrics) ft. Drake - YouTube | Rihanna - Work (Explicit) ft. 
+  509000 | AI Work Agent | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  55 | AI work agent | 閫氳博銉汇儐銉儞銈枫儳銉冦償銉炽偘銇偡銉с儍銉椼儊銉ｃ兂銉嶃儷 | 鏈棩銇亰璨枫亜寰? 閫氳博銉汇儐銉儞銈枫儳銉冦償銉炽偘銇偡銉с儍銉椼儊銉ｃ兂銉嶃儷 | 銈枫儳銉冦儣銉併儯銉炽儘銉偒銉笺儔銇甒eb鏄庣窗銇仼銇撱仹纰鸿獚銇с亶銇俱仚銇?... | 浜ゆ彌銉昏繑鍝佸晢鍝併伄杩旈€佸厛浣忔墍銈掔⒑瑾嶃仐銇熴亜銇с仚銆?: 銈堛亸銇傘倠銇?... | 妞滅储绲愭灉锝溿儐銉儞
+  426000 | work AI agent | WORK Definition &amp; Meaning - Merriam-Webster | WorkInTexas | Rihanna - Work (Lyrics) ft. Drake - YouTube | Rihanna - Work (Explicit) ft. 
+  58900 | workplace agent | Workplace | Workplace from Meta | Workplace - Facebook | Workplace from Meta - Apps on Google Play | Workplace (software) - Wikipedia
+==== workflow
+  28000 | Workflow automation | Workflow automation: Definition, tutorial, and tools - Zapier | Power Automate: Business Process Workflow Automation | Microsoft 鈥?| Best Wo
+  45500 | AI workflow | 10 Best AI Workflow Tools Reviewed in 2026 - The Digital Project 鈥?| AI Workflow | IBM | 10 best AI workflow automation tools I'm using in 2
+  509000 | AI workflow automation | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  135000 | workflow AI | Creating a workflow | Microsoft Support | Workflow - Wikipedia | Workflows - Google Cloud | Getting started with Workflows | Microsoft Suppo
+  19000 | agentic workflow | What are agentic workflows? - IBM | Home | GitHub Agentic Workflows | What Are Agentic Workflows? A Complete Guide - Redis | A Practical Gui
+==== workspace-agent
+  92800 | Workspace Agent | Google Workspace: Secure Online Productivity &amp; Collaboration Tools | Google Workspace | 鍔炲叕搴旂敤 &amp; 鍗忎綔宸ュ叿 | Sign in - Google Accounts | Do
+  333000 | Team AI Agent | Microsoft Teams | Sign In | Microsoft Teams | Free Online Meetings &amp; Video Calls | Microsoft Teams | Download Teams Desktop and Mobile A
+  509000 | AI workspace agent | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  92800 | workspace AI agent | Google Workspace: Secure Online Productivity &amp; Collaboration Tools | Google Workspace | 鍔炲叕搴旂敤 &amp; 鍗忎綔宸ュ叿 | Sign in - Google Accounts | Do
+  156000 | custom GPT workspace | CUSTOM Definition &amp; Meaning - Merriam-Webster | CUSTOM | English meaning - Cambridge Dictionary | Custom - definition of custom by The F
+==== world-model
+  43100 | World model | 銆愪笘鐣屾ā鍨嬨€戜竴鏂囪鎳備笘鐣屾ā鍨嬶細浠庢牳蹇冨師鐞嗗埌鍓嶆部浜夎 - 鐭ヤ箮 | 涓栫晫妯″瀷 (World Models)娣卞害鐮旂┒锛氫粠鐞嗚鍒板簲鐢ㄧ殑鍏ㄦ櫙鎷嗚В | [1803.10122] World Models - arXiv.org | World Model锛氫粠寮哄寲瀛︿範鍒板叿韬櫤鑳界殑瀹屾暣鍏ラ棬 |
+  40700 | world models | [1803.10122] World Models - arXiv.org | World Models | 銆愪笘鐣屾ā鍨嬨€戜竴鏂囪鎳備笘鐣屾ā鍨嬶細浠庢牳蹇冨師鐞嗗埌鍓嶆部浜夎 - 鐭ヤ箮 | 涓栫晫妯″瀷 (World Models)娣卞害鐮旂┒锛氫粠鐞嗚鍒板簲鐢ㄧ殑鍏ㄦ櫙鎷嗚В | [2606.00133] W
+  509000 | AI world models | OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? 
+  1380000 | world model AI | World News: Top &amp; Breaking World News Today | AP News | World | Latest News &amp; Updates - BBC | World news: Latest news, breaking news
+  1380000 | world models machine learning | World News: Top &amp; Breaking World News Today | AP News | World | Latest News &amp; Updates - BBC | World news: Latest news, breaking news

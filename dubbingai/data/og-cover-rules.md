@@ -62,12 +62,12 @@ AI 画布上只允许 registry 里的标题文字，其余用图表达。
 | **生成参数** | `quality=high`, `output_format=jpeg`, `n=1` |
 | **后处理** | 居中裁切 → 验证 `img.size == (1200, 630)` → 叠加品牌 → 存 WebP |
 
-APINEED 请求尺寸为 `1536x1024`（high）或 `1024x1024`（low/fallback），脚本 **top-aligned trim** 裁切为 **1200×630**。
+APINEED 自 2026-09 起仅提供**异步接口**（`POST /v1/media/generations`，提交 + 轮询），**不再接受 `size` 参数**，输出比例由 prompt 控制。脚本在 prompt 内强制宽幅 16:9 画布（≈1200×630 比例），post-process 仅做**防御性 top-aligned trim** 到精确 **1200×630**。
 
 | 阶段 | 说明 |
 |------|------|
-| **Prompt** | 自动注入 `APINEED CROP SAFE ZONE`：标题区 10% top / 8% left 安全边距；主体避开底部将被裁掉的 band |
-| **裁切** | APINEED 用 `top` bias（保留顶部标题，裁底部）；fal 用 `center`（1216×632 ≈ OG 比例） |
+| **Prompt** | 自动注入 `APINEED ASPECT` 宽幅指令（16:9 直出 + 安全区）：标题区 10% top / 8% left 安全边距；主体避开画布外缘 band |
+| **裁切** | APINEED 用 `top` bias（防御性：画布偏高时保顶裁底，常规直出 16:9 几近无裁）；fal 用 `center`（1216×632 ≈ OG 比例） |
 | **质量** | 默认 `--quality high`；禁止依赖 `OG_APINEED_QUALITY=low` 除非调试 |
 
 **禁止**：标题贴边、两行超长 headline 超出左 48% 宽度 — 会导致裁切后或缩略图下「出界」。

@@ -1,0 +1,31 @@
+{
+  "slug": "llm-observability",
+  "current_primary": "LLM Observability",
+  "candidates_tested": [
+    {
+      "query": "LLM observability",
+      "approx_results": 105000
+    },
+    {
+      "query": "LLM tracing",
+      "approx_results": 105000
+    },
+    {
+      "query": "AI observability",
+      "approx_results": 509000
+    },
+    {
+      "query": "LLM monitoring",
+      "approx_results": 105000
+    },
+    {
+      "query": "observability for LLM applications",
+      "approx_results": 75900
+    }
+  ],
+  "highest": {
+    "query": "AI observability",
+    "approx_results": 509000
+  },
+  "verdict": "SWITCH"
+}

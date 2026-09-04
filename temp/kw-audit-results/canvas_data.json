@@ -1,0 +1,400 @@
+{
+  "verdict_summary": {
+    "OK": 86,
+    "SWITCH": 46,
+    "KEEP_INTENT": 25,
+    "AMBIGUOUS": 3
+  },
+  "by_batch": {
+    "agent": {
+      "count": 22,
+      "summary": {
+        "OK": 6,
+        "SWITCH": 14,
+        "KEEP_INTENT": 2
+      }
+    },
+    "video": {
+      "count": 14,
+      "summary": {
+        "OK": 7,
+        "SWITCH": 5,
+        "KEEP_INTENT": 1,
+        "AMBIGUOUS": 1
+      }
+    },
+    "image_3d": {
+      "count": 19,
+      "summary": {
+        "KEEP_INTENT": 5,
+        "SWITCH": 4,
+        "OK": 9,
+        "AMBIGUOUS": 1
+      }
+    },
+    "voice_coding": {
+      "count": 19,
+      "summary": {
+        "OK": 10,
+        "AMBIGUOUS": 1,
+        "SWITCH": 3,
+        "KEEP_INTENT": 5
+      }
+    },
+    "edu_hr_health": {
+      "count": 18,
+      "summary": {
+        "OK": 13,
+        "SWITCH": 3,
+        "KEEP_INTENT": 2
+      }
+    },
+    "mkt_design_text": {
+      "count": 21,
+      "summary": {
+        "SWITCH": 2,
+        "OK": 16,
+        "KEEP_INTENT": 3
+      }
+    },
+    "llm_enterprise": {
+      "count": 14,
+      "summary": {
+        "KEEP_INTENT": 2,
+        "SWITCH": 6,
+        "OK": 6
+      }
+    },
+    "infra_web_geo": {
+      "count": 14,
+      "summary": {
+        "KEEP_INTENT": 5,
+        "OK": 4,
+        "SWITCH": 5
+      }
+    },
+    "cms_builder_misc": {
+      "count": 19,
+      "summary": {
+        "OK": 15,
+        "SWITCH": 4
+      }
+    }
+  },
+  "ok_count": 86,
+  "high": [
+    {
+      "slug": "3d-model-generator",
+      "from": "Text-to-3D",
+      "to": "AI 3D model generator",
+      "batch": "image_3d"
+    },
+    {
+      "slug": "3d-modelling",
+      "from": "3D modelling",
+      "to": "3D modeling",
+      "batch": "image_3d"
+    },
+    {
+      "slug": "advertising-agent",
+      "from": "Advertising Agent",
+      "to": "Agentic advertising",
+      "batch": "mkt_design_text"
+    },
+    {
+      "slug": "agent-for-desktop",
+      "from": "Agent on desktop",
+      "to": "AI desktop agent",
+      "batch": "agent"
+    },
+    {
+      "slug": "agent-skills",
+      "from": "Agent Skills",
+      "to": "MCP agent skills",
+      "batch": "agent"
+    },
+    {
+      "slug": "ai-scheduling",
+      "from": "AI scheduling",
+      "to": "AI scheduling assistant",
+      "batch": "edu_hr_health"
+    },
+    {
+      "slug": "api",
+      "from": "Unified AI API Platform",
+      "to": "AI Gateway",
+      "batch": "infra_web_geo"
+    },
+    {
+      "slug": "audio-translator",
+      "from": "AI Audio Translation",
+      "to": "AI Audio Translator",
+      "batch": "voice_coding"
+    },
+    {
+      "slug": "avatar",
+      "from": "Talking avatar",
+      "to": "AI avatar generator",
+      "batch": "image_3d"
+    },
+    {
+      "slug": "browser",
+      "from": "AI browser",
+      "to": "agentic browser",
+      "batch": "agent"
+    },
+    {
+      "slug": "directory",
+      "from": "AI Directory",
+      "to": "AI tools directory",
+      "batch": "cms_builder_misc"
+    },
+    {
+      "slug": "ecommerce-website-builder",
+      "from": "Online store platform",
+      "to": "ecommerce website builder",
+      "batch": "cms_builder_misc"
+    },
+    {
+      "slug": "education",
+      "from": "AI Education",
+      "to": "AI in education",
+      "batch": "edu_hr_health"
+    },
+    {
+      "slug": "healthcare",
+      "from": "AI Healthcare",
+      "to": "AI in healthcare",
+      "batch": "edu_hr_health"
+    },
+    {
+      "slug": "image-to-video",
+      "from": "Image-to-Video",
+      "to": "image to video AI",
+      "batch": "video"
+    },
+    {
+      "slug": "inference-infrastructure",
+      "from": "AI Inference Infrastructure",
+      "to": "AI inference platform",
+      "batch": "infra_web_geo"
+    },
+    {
+      "slug": "interactive-video",
+      "from": "Interactive video",
+      "to": "live AI video generation",
+      "batch": "video"
+    },
+    {
+      "slug": "lip-sync",
+      "from": "AI lip sync",
+      "to": "lip sync AI",
+      "batch": "voice_coding"
+    },
+    {
+      "slug": "llm-for-coding",
+      "from": "AI Coding LLM",
+      "to": "LLM for coding",
+      "batch": "llm_enterprise"
+    },
+    {
+      "slug": "llm-for-math",
+      "from": "AI Math LLM",
+      "to": "LLM for math",
+      "batch": "llm_enterprise"
+    },
+    {
+      "slug": "llm-for-reasoning",
+      "from": "AI Reasoning LLM",
+      "to": "reasoning model",
+      "batch": "llm_enterprise"
+    },
+    {
+      "slug": "memory",
+      "from": "AI Memory",
+      "to": "AI second brain",
+      "batch": "llm_enterprise"
+    },
+    {
+      "slug": "multimodal-llm",
+      "from": "AI Multimodal LLM",
+      "to": "multimodal LLM",
+      "batch": "llm_enterprise"
+    },
+    {
+      "slug": "short-drama",
+      "from": "AI short drama platform",
+      "to": "AI short drama generator",
+      "batch": "video"
+    },
+    {
+      "slug": "social-cards-generator",
+      "from": "Social Cards Generator",
+      "to": "OG image generator",
+      "batch": "image_3d"
+    },
+    {
+      "slug": "text-to-video",
+      "from": "Text-to-Video",
+      "to": "text to video AI",
+      "batch": "video"
+    },
+    {
+      "slug": "text-translator",
+      "from": "AI text translation",
+      "to": "AI translator",
+      "batch": "mkt_design_text"
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "from": "vibe coding payments",
+      "to": "how to add payments to vibe coded app",
+      "batch": "agent"
+    },
+    {
+      "slug": "video-clipping",
+      "from": "AI Video Clipping",
+      "to": "AI video clipper",
+      "batch": "video"
+    },
+    {
+      "slug": "video-translator",
+      "from": "AI Video Translation",
+      "to": "AI Video Translator",
+      "batch": "voice_coding"
+    },
+    {
+      "slug": "web-fetch",
+      "from": "Web Fetch",
+      "to": "URL to Markdown",
+      "batch": "infra_web_geo"
+    },
+    {
+      "slug": "workflow",
+      "from": "Workflow automation",
+      "to": "AI workflow automation",
+      "batch": "agent"
+    },
+    {
+      "slug": "workspace-agent",
+      "from": "Workspace Agent",
+      "to": "Team AI Agent",
+      "batch": "agent"
+    },
+    {
+      "slug": "world-model",
+      "from": "World model",
+      "to": "world model AI",
+      "batch": "agent"
+    }
+  ],
+  "low": [
+    {
+      "slug": "agent-identity",
+      "from": "AI Agent Identity",
+      "to": "agentic IAM",
+      "batch": "agent"
+    },
+    {
+      "slug": "agent-memory",
+      "from": "Agent Memory Layer",
+      "to": "memory layer for AI agents",
+      "batch": "agent"
+    },
+    {
+      "slug": "agent-runtime",
+      "from": "AI Agent Runtime",
+      "to": "LLM agent runtime",
+      "batch": "agent"
+    },
+    {
+      "slug": "agent-sandbox",
+      "from": "AI Agent Sandbox",
+      "to": "code sandbox AI agent",
+      "batch": "agent"
+    },
+    {
+      "slug": "agent-to-agent",
+      "from": "A2A Agent Network",
+      "to": "Google A2A",
+      "batch": "agent"
+    },
+    {
+      "slug": "ai-employee",
+      "from": "AI Employee",
+      "to": "digital employee",
+      "batch": "agent"
+    },
+    {
+      "slug": "ai-shopping",
+      "from": "AI Shopping",
+      "to": "shop with AI",
+      "batch": "agent"
+    },
+    {
+      "slug": "community",
+      "from": "AI Community",
+      "to": "community platform",
+      "batch": "cms_builder_misc"
+    },
+    {
+      "slug": "documentation",
+      "from": "Developer documentation",
+      "to": "documentation platform",
+      "batch": "llm_enterprise"
+    },
+    {
+      "slug": "search-indexing",
+      "from": "AI Search Indexing",
+      "to": "website indexing",
+      "batch": "infra_web_geo"
+    },
+    {
+      "slug": "technology-profiler",
+      "from": "website technology profiler",
+      "to": "what CMS is this",
+      "batch": "infra_web_geo"
+    }
+  ],
+  "mid": [
+    {
+      "slug": "religion",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI Religion",
+      "recommended_primary": "AI religious tools",
+      "reason": "'AI Religion' SERP is AI-worship / syntheism, not this KB. On-intent titles use Bible/scripture/religious AI tools. Prefer the multi-faith 'AI religious tools' over the higher-clarity but Christian-only 'AI Bible'. Slug stays `religion`."
+    }
+  ],
+  "keep_intent": [
+    "3d",
+    "agentic-commerce",
+    "agentic-payments",
+    "ai-documents",
+    "ai-traffic-and-citation-sources",
+    "ai-training-data",
+    "authentication",
+    "cad",
+    "code-completion",
+    "design",
+    "geo",
+    "git-hosting",
+    "image",
+    "image-enhancer",
+    "interview-assistant",
+    "lead-generation",
+    "llm-observability",
+    "project-management",
+    "text",
+    "text-to-speech",
+    "video",
+    "virtual-staging",
+    "voice",
+    "voice-changer",
+    "web-search-api"
+  ],
+  "ambiguous": [
+    "ai-components",
+    "image-relighting",
+    "video-to-video"
+  ]
+}

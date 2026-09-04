@@ -1,6 +1,6 @@
 # Gate 失败回溯表
 
-> Step 10 SelfCheck 或 audit-article 任一 Fail 时，按本表回退。**随 create-article 分发。**
+> Step 10 SelfCheck 或 Step 11 Final Audit 任一 Fail 时，按本表回退。**随 create-article 分发。**
 
 ---
 

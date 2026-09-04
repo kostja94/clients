@@ -25,7 +25,7 @@
 | `text-content/` | `text-generator` | 6 |
 | `chat-social/` | `chatbot` | 5 |
 | `enterprise-knowledge/` | `knowledge-base` | 7 |
-| `infrastructure/` | `api` | 4 |
+| `infrastructure/` | `api` | 5 |
 | `healthcare/` | `healthcare` | 2 |
 | `productivity/` | `productivity` | 4 |
 | `website-builder/` | `website-builder` | 5 |
@@ -85,6 +85,7 @@
 | `audio-translator` | 语音与声音 | spoke |
 | `authentication` | 企业工具 | spoke |
 | `avatar` | 媒体生产链 | spoke |
+| `backend-as-a-service` | 企业工具 | spoke · KB only（发文走 `/blog/backend-as-a-service`）· 2026-09-03 |
 | `b2b` | 企业销售与营销 | spoke |
 | `background-changer` | 媒体生产链 | spoke |
 | `browser` | Agent 执行链 | spoke |
@@ -217,5 +218,5 @@
 
 ---
 
-**统计**：A=12 · B=113 · C=14 · **总计 139**（不含上表 2 个 meta 文件；`multi-agent` 在 B 档标注，计一次；2026-09-02 新增 `work-agent`、`workspace-agent`、`agent-runtime`、`ai-employee`、`agent-identity`）  
-Territory 归类：139/139 slug 已归入上表 A/B/C
+**统计**：A=12 · B=114 · C=14 · **总计 140**（不含上表 2 个 meta 文件；`multi-agent` 在 B 档标注，计一次；2026-09-03 新增 `backend-as-a-service`；此前含 `work-agent`、`workspace-agent`、`agent-runtime`、`ai-employee`、`agent-identity`）  
+Territory 归类：140/140 slug 已归入上表 A/B/C

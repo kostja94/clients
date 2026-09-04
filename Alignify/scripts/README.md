@@ -106,6 +106,8 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 
 规范见 `skills/create-article/rules/sections.md` Part 3.3。
 
+> **2026-09-04**：APINEED 已下线同步 `POST /v1/images/generations`，`--provider apineed` 改走**异步** `POST /v1/media/generations`（`workflow: text_to_image`，提交→轮询→下载 `outputs[0].url`）。新接口**不接受 `size` 参数**，宽幅 16:9 比例靠 prompt 指定（脚本已自动注入），post trim 到 1200×630 保留。`batch-generate-og-covers.py` 同通道。
+
 #### 产品 URL 审计
 
 脚本与报告已移至 **`C:\Users\zyjst\Downloads\alignify-product-url-audit\`**，详见该目录下 `README.md`。

@@ -1,0 +1,1102 @@
+{
+  "batch": "batch6_misc",
+  "clusters": [
+    "chat-social",
+    "website-builder",
+    "cms",
+    "hr-recruiting",
+    "infrastructure",
+    "productivity",
+    "search-geo",
+    "healthcare"
+  ],
+  "methodology": "Bing approximate result counts; primary vs 2-4 same-intent alternatives",
+  "audited_at": "2026-09-03T00:31:53",
+  "summary": {
+    "total": 32,
+    "OK": 18,
+    "SWITCH": 8,
+    "AMBIGUOUS": 5,
+    "NEEDS_REVIEW": 1
+  },
+  "switch_items": [
+    {
+      "slug": "chatbot",
+      "current_primary": "AI Chatbot",
+      "suggested_primary": "best AI chatbot",
+      "reason": "Alternative 'best AI chatbot' has ~110,000 vs primary ~47,500 (2.3x)"
+    },
+    {
+      "slug": "portfolio-website-builder",
+      "current_primary": "Portfolio website builder / Photography website builder",
+      "suggested_primary": "online portfolio maker",
+      "reason": "Alternative 'online portfolio maker' has ~956,000 vs primary ~138,000 (6.9x)"
+    },
+    {
+      "slug": "website-builder",
+      "current_primary": "Website Builder",
+      "suggested_primary": "website builder tool",
+      "reason": "Alternative 'website builder tool' has ~886,000 vs primary ~69,900 (12.7x)"
+    },
+    {
+      "slug": "content-management-system",
+      "current_primary": "Content Management System / CMS",
+      "suggested_primary": "best CMS",
+      "reason": "Alternative 'best CMS' has ~681,000 vs primary ~10,200 (66.8x)"
+    },
+    {
+      "slug": "enterprise-cms",
+      "current_primary": "Enterprise CMS / DXP / Digital Experience Platform",
+      "suggested_primary": "digital experience platform",
+      "reason": "Alternative 'digital experience platform' has ~211,000 vs primary ~88,700 (2.4x)"
+    },
+    {
+      "slug": "headless-cms",
+      "current_primary": "Headless CMS / API-first CMS",
+      "suggested_primary": "API-first CMS",
+      "reason": "Alternative 'API-first CMS' has ~170,000 vs primary ~29,600 (5.7x)"
+    },
+    {
+      "slug": "geo",
+      "current_primary": "GEO（生成式引擎优化 / Generative Engine Optimization）",
+      "suggested_primary": "GEO SEO",
+      "reason": "Alternative 'GEO SEO' has ~260,000 vs primary ~63,500 (4.1x)"
+    },
+    {
+      "slug": "healthcare",
+      "current_primary": "AI Healthcare",
+      "suggested_primary": "healthcare AI",
+      "reason": "Alternative 'healthcare AI' has ~139,000 vs primary ~40,500 (3.4x)"
+    }
+  ],
+  "results": [
+    {
+      "slug": "character-chat",
+      "path": "tools/chat-social/character-chat.md",
+      "current_primary": "Character Chat",
+      "search_primary": "character chat",
+      "primary": {
+        "query": "character chat",
+        "approx_results": 395000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI character chat",
+          "approx_results": 128000,
+          "status": "ok"
+        },
+        {
+          "query": "character AI chat",
+          "approx_results": 126000,
+          "status": "ok"
+        },
+        {
+          "query": "AI companion chat",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI companion chat' ~509,000 vs primary ~395,000"
+    },
+    {
+      "slug": "chatbot",
+      "path": "tools/chat-social/chatbot.md",
+      "current_primary": "AI Chatbot",
+      "search_primary": "AI chatbot",
+      "primary": {
+        "query": "AI chatbot",
+        "approx_results": 47500,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "chatbot",
+          "approx_results": 65000,
+          "status": "ok"
+        },
+        {
+          "query": "best AI chatbot",
+          "approx_results": 110000,
+          "status": "ok"
+        },
+        {
+          "query": "AI chat bot",
+          "approx_results": 51400,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "best AI chatbot",
+      "reason": "Alternative 'best AI chatbot' has ~110,000 vs primary ~47,500 (2.3x)"
+    },
+    {
+      "slug": "community",
+      "path": "tools/chat-social/community.md",
+      "current_primary": "AI 社区",
+      "search_primary": "AI community",
+      "primary": {
+        "query": "AI community",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI communities",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "artificial intelligence community",
+          "approx_results": 108000,
+          "status": "ok"
+        },
+        {
+          "query": "AI forum",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI communities' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "dating",
+      "path": "tools/chat-social/dating.md",
+      "current_primary": "AI Dating（AI 约会与匹配）",
+      "search_primary": "AI dating",
+      "primary": {
+        "query": "AI dating",
+        "approx_results": 12000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI dating app",
+          "approx_results": 4820,
+          "status": "ok"
+        },
+        {
+          "query": "AI matchmaking",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI dating platform",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "suggested_primary": null,
+      "reason": "Top alternatives close: 'AI matchmaking' (509,000) vs 'AI dating platform' (509,000); primary 12,000"
+    },
+    {
+      "slug": "directory",
+      "path": "tools/chat-social/directory.md",
+      "current_primary": "AI Directory / AI 工具导航",
+      "search_primary": "AI directory",
+      "primary": {
+        "query": "AI directory",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI tools directory",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI tool directory",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI tools list",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI tools directory' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "blog-website-builder",
+      "path": "tools/website-builder/blog-website-builder.md",
+      "current_primary": "Blog Website Builder / Website Builder for Blogs",
+      "search_primary": "blog website builder",
+      "primary": {
+        "query": "blog website builder",
+        "approx_results": 778000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "blogging platform",
+          "approx_results": 4000,
+          "status": "ok"
+        },
+        {
+          "query": "blog CMS",
+          "approx_results": 778000,
+          "status": "ok"
+        },
+        {
+          "query": "website builder for blogs",
+          "approx_results": 886000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'website builder for blogs' ~886,000 vs primary ~778,000",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: blog website builder > blogging platform; verify ~900k",
+        "ssot_still_holds": true
+      }
+    },
+    {
+      "slug": "ecommerce-website-builder",
+      "path": "tools/website-builder/ecommerce-website-builder.md",
+      "current_primary": "Online store platform / E-commerce website builder",
+      "search_primary": "online store platform",
+      "primary": {
+        "query": "online store platform",
+        "approx_results": 956000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "ecommerce website builder",
+          "approx_results": 6340,
+          "status": "ok"
+        },
+        {
+          "query": "e-commerce website builder",
+          "approx_results": 660000,
+          "status": "ok"
+        },
+        {
+          "query": "online store builder",
+          "approx_results": 956000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'online store builder' ~956,000 vs primary ~956,000",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: online store platform vs ecommerce website builder dual primary; store=956,000 ecom=6,340",
+        "ssot_still_holds": true
+      }
+    },
+    {
+      "slug": "landing-page-builder",
+      "path": "tools/website-builder/landing-page-builder.md",
+      "current_primary": "Landing Page Builder / Conversion Page Builder",
+      "search_primary": "landing page builder",
+      "primary": {
+        "query": "landing page builder",
+        "approx_results": 104000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "landing page software",
+          "approx_results": 104000,
+          "status": "ok"
+        },
+        {
+          "query": "conversion page builder",
+          "approx_results": 68600,
+          "status": "ok"
+        },
+        {
+          "query": "landing page creator",
+          "approx_results": 7970,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'landing page software' ~104,000 vs primary ~104,000",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: landing page builder primary",
+        "ssot_still_holds": true
+      }
+    },
+    {
+      "slug": "portfolio-website-builder",
+      "path": "tools/website-builder/portfolio-website-builder.md",
+      "current_primary": "Portfolio website builder / Photography website builder",
+      "search_primary": "portfolio website builder",
+      "primary": {
+        "query": "portfolio website builder",
+        "approx_results": 138000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "photography website builder",
+          "approx_results": 265000,
+          "status": "ok"
+        },
+        {
+          "query": "online portfolio maker",
+          "approx_results": 956000,
+          "status": "ok"
+        },
+        {
+          "query": "portfolio site builder",
+          "approx_results": 138000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "online portfolio maker",
+      "reason": "Alternative 'online portfolio maker' has ~956,000 vs primary ~138,000 (6.9x)",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: portfolio website builder; photography as secondary; portfolio=138,000 photography=265,000",
+        "ssot_still_holds": true
+      }
+    },
+    {
+      "slug": "website-builder",
+      "path": "tools/website-builder/website-builder.md",
+      "current_primary": "Website Builder",
+      "search_primary": "website builder",
+      "primary": {
+        "query": "website builder",
+        "approx_results": 69900,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI website builder",
+          "approx_results": 20100,
+          "status": "ok"
+        },
+        {
+          "query": "best website builder",
+          "approx_results": 51200,
+          "status": "ok"
+        },
+        {
+          "query": "website builder tool",
+          "approx_results": 886000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "website builder tool",
+      "reason": "Alternative 'website builder tool' has ~886,000 vs primary ~69,900 (12.7x)",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: website builder hub primary",
+        "ssot_still_holds": false
+      }
+    },
+    {
+      "slug": "content-management-system",
+      "path": "tools/cms/content-management-system.md",
+      "current_primary": "Content Management System / CMS",
+      "search_primary": "content management system",
+      "primary": {
+        "query": "content management system",
+        "approx_results": 10200,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "CMS",
+          "approx_results": 224000,
+          "status": "ok"
+        },
+        {
+          "query": "best CMS",
+          "approx_results": 681000,
+          "status": "ok"
+        },
+        {
+          "query": "content management software",
+          "approx_results": 4440,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "best CMS",
+      "reason": "Alternative 'best CMS' has ~681,000 vs primary ~10,200 (66.8x)",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: content management system / CMS hub",
+        "ssot_still_holds": false
+      }
+    },
+    {
+      "slug": "enterprise-cms",
+      "path": "tools/cms/enterprise-cms.md",
+      "current_primary": "Enterprise CMS / DXP / Digital Experience Platform",
+      "search_primary": "enterprise CMS",
+      "primary": {
+        "query": "enterprise CMS",
+        "approx_results": 88700,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "DXP",
+          "approx_results": 74500,
+          "status": "ok"
+        },
+        {
+          "query": "digital experience platform",
+          "approx_results": 211000,
+          "status": "ok"
+        },
+        {
+          "query": "enterprise content management",
+          "approx_results": 13500,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "digital experience platform",
+      "reason": "Alternative 'digital experience platform' has ~211,000 vs primary ~88,700 (2.4x)",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: enterprise CMS / DXP",
+        "ssot_still_holds": false
+      }
+    },
+    {
+      "slug": "headless-cms",
+      "path": "tools/cms/headless-cms.md",
+      "current_primary": "Headless CMS / API-first CMS",
+      "search_primary": "headless CMS",
+      "primary": {
+        "query": "headless CMS",
+        "approx_results": 29600,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "API-first CMS",
+          "approx_results": 170000,
+          "status": "ok"
+        },
+        {
+          "query": "headless content management",
+          "approx_results": 48200,
+          "status": "ok"
+        },
+        {
+          "query": "content API CMS",
+          "approx_results": 2860,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "API-first CMS",
+      "reason": "Alternative 'API-first CMS' has ~170,000 vs primary ~29,600 (5.7x)",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: headless CMS primary; headless=29,600 api-first=170,000",
+        "ssot_still_holds": false
+      }
+    },
+    {
+      "slug": "open-source-cms",
+      "path": "tools/cms/open-source-cms.md",
+      "current_primary": "Open Source CMS / OSS CMS",
+      "search_primary": "open source CMS",
+      "primary": {
+        "query": "open source CMS",
+        "approx_results": 1170000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "self-hosted CMS",
+          "approx_results": 132000,
+          "status": "ok"
+        },
+        {
+          "query": "open source content management system",
+          "approx_results": 1170000,
+          "status": "ok"
+        },
+        {
+          "query": "free CMS",
+          "approx_results": 61300,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'open source content management system' ~1,170,000 vs primary ~1,170,000",
+      "keyword_research_verification": {
+        "ssot_note": "SSOT: open source CMS primary",
+        "ssot_still_holds": true
+      }
+    },
+    {
+      "slug": "hr-assistant",
+      "path": "tools/hr-recruiting/hr-assistant.md",
+      "current_primary": "AI HR assistant / AI HR 助手",
+      "search_primary": "AI HR assistant",
+      "primary": {
+        "query": "AI HR assistant",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI HR tools",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "HR AI assistant",
+          "approx_results": 242000,
+          "status": "ok"
+        },
+        {
+          "query": "AI human resources assistant",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI HR tools' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "interview-assistant",
+      "path": "tools/hr-recruiting/interview-assistant.md",
+      "current_primary": "AI interview assistant / 面试助手",
+      "search_primary": "AI interview assistant",
+      "primary": {
+        "query": "AI interview assistant",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI interview tool",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "interview AI assistant",
+          "approx_results": 5210,
+          "status": "ok"
+        },
+        {
+          "query": "AI interview prep",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI interview tool' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "linkedin",
+      "path": "tools/hr-recruiting/linkedin.md",
+      "current_primary": "LinkedIn AI tools / LinkedIn 向 AI 工具",
+      "search_primary": "LinkedIn AI tools",
+      "primary": {
+        "query": "LinkedIn AI tools",
+        "approx_results": 74800,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI for LinkedIn",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "LinkedIn automation AI",
+          "approx_results": 74800,
+          "status": "ok"
+        },
+        {
+          "query": "AI LinkedIn assistant",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "suggested_primary": null,
+      "reason": "Top alternatives close: 'AI for LinkedIn' (509,000) vs 'AI LinkedIn assistant' (509,000); primary 74,800"
+    },
+    {
+      "slug": "recruiting",
+      "path": "tools/hr-recruiting/recruiting.md",
+      "current_primary": "AI recruiting / AI 人才获取",
+      "search_primary": "AI recruiting",
+      "primary": {
+        "query": "AI recruiting",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI recruitment tools",
+          "approx_results": 7020,
+          "status": "ok"
+        },
+        {
+          "query": "AI hiring tools",
+          "approx_results": 9300,
+          "status": "ok"
+        },
+        {
+          "query": "AI talent acquisition",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI talent acquisition' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "ai-training-data",
+      "path": "tools/infrastructure/ai-training-data.md",
+      "current_primary": "AI Training Data Platform",
+      "search_primary": "AI training data platform",
+      "primary": {
+        "query": "AI training data platform",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI training data",
+          "approx_results": 13200,
+          "status": "ok"
+        },
+        {
+          "query": "machine learning data platform",
+          "approx_results": 6880,
+          "status": "ok"
+        },
+        {
+          "query": "LLM training data",
+          "approx_results": 8800,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI training data' ~13,200 vs primary ~509,000"
+    },
+    {
+      "slug": "api",
+      "path": "tools/infrastructure/api.md",
+      "current_primary": "Unified AI API Platform / 统一 AI API",
+      "search_primary": "unified AI API",
+      "primary": {
+        "query": "unified AI API",
+        "approx_results": 67800,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI API platform",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "LLM API gateway",
+          "approx_results": 104000,
+          "status": "ok"
+        },
+        {
+          "query": "AI API aggregator",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "suggested_primary": null,
+      "reason": "Top alternatives close: 'AI API platform' (509,000) vs 'AI API aggregator' (509,000); primary 67,800"
+    },
+    {
+      "slug": "authentication",
+      "path": "tools/infrastructure/authentication.md",
+      "current_primary": "Authentication / CIAM / 应用身份",
+      "search_primary": "authentication",
+      "primary": {
+        "query": "authentication",
+        "approx_results": 354000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "CIAM",
+          "approx_results": 52200,
+          "status": "ok"
+        },
+        {
+          "query": "identity and access management",
+          "approx_results": 10800,
+          "status": "ok"
+        },
+        {
+          "query": "customer identity access management",
+          "approx_results": 3720,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'CIAM' ~52,200 vs primary ~354,000"
+    },
+    {
+      "slug": "inference-infrastructure",
+      "path": "tools/infrastructure/inference-infrastructure.md",
+      "current_primary": "AI Inference Infrastructure",
+      "search_primary": "AI inference infrastructure",
+      "primary": {
+        "query": "AI inference infrastructure",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI inference platform",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "LLM inference hosting",
+          "approx_results": 105000,
+          "status": "ok"
+        },
+        {
+          "query": "AI model hosting infrastructure",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI inference platform' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "ai-scheduling",
+      "path": "tools/productivity/ai-scheduling.md",
+      "current_primary": "AI scheduling / AI 日程安排",
+      "search_primary": "AI scheduling",
+      "primary": {
+        "query": "AI scheduling",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI calendar",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI scheduling assistant",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI meeting scheduler",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI calendar' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "note-taker",
+      "path": "tools/productivity/note-taker.md",
+      "current_primary": "AI note taker / AI meeting notes",
+      "search_primary": "AI note taker",
+      "primary": {
+        "query": "AI note taker",
+        "approx_results": 21400,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI meeting notes",
+          "approx_results": 12900,
+          "status": "ok"
+        },
+        {
+          "query": "AI meeting transcription",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI meeting assistant",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "suggested_primary": null,
+      "reason": "Top alternatives close: 'AI meeting transcription' (509,000) vs 'AI meeting assistant' (509,000); primary 21,400"
+    },
+    {
+      "slug": "productivity",
+      "path": "tools/productivity/productivity.md",
+      "current_primary": "AI productivity tools / AI 生产力工具",
+      "search_primary": "AI productivity tools",
+      "primary": {
+        "query": "AI productivity tools",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI productivity",
+          "approx_results": 32100,
+          "status": "ok"
+        },
+        {
+          "query": "best AI productivity tools",
+          "approx_results": 681000,
+          "status": "ok"
+        },
+        {
+          "query": "AI productivity software",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "suggested_primary": "best AI productivity tools",
+      "reason": "Alternative 'best AI productivity tools' moderately higher: ~681,000 vs ~509,000 (1.3x)"
+    },
+    {
+      "slug": "project-management",
+      "path": "tools/productivity/project-management.md",
+      "current_primary": "AI project management / AI 项目管理",
+      "search_primary": "AI project management",
+      "primary": {
+        "query": "AI project management",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI project management tools",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "project management AI",
+          "approx_results": 179000,
+          "status": "ok"
+        },
+        {
+          "query": "AI PM tools",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI project management tools' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "ai-traffic-and-citation-sources",
+      "path": "tools/search-geo/ai-traffic-and-citation-sources.md",
+      "current_primary": "AI 搜索平台与引用来源",
+      "search_primary": "AI traffic sources",
+      "primary": {
+        "query": "AI traffic sources",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI citation sources",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI search traffic",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI referral traffic",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI citation sources' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "ai-visibility",
+      "path": "tools/search-geo/ai-visibility.md",
+      "current_primary": "AI 可见度（AI Visibility）",
+      "search_primary": "AI visibility",
+      "primary": {
+        "query": "AI visibility",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI brand visibility",
+          "approx_results": 5730,
+          "status": "ok"
+        },
+        {
+          "query": "visibility in AI search",
+          "approx_results": 60800,
+          "status": "ok"
+        },
+        {
+          "query": "AI search visibility",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI search visibility' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "geo",
+      "path": "tools/search-geo/geo.md",
+      "current_primary": "GEO（生成式引擎优化 / Generative Engine Optimization）",
+      "search_primary": "generative engine optimization",
+      "primary": {
+        "query": "generative engine optimization",
+        "approx_results": 63500,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "GEO SEO",
+          "approx_results": 260000,
+          "status": "ok"
+        },
+        {
+          "query": "AI SEO",
+          "approx_results": 30000,
+          "status": "ok"
+        },
+        {
+          "query": "generative search optimization",
+          "approx_results": 57800,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "GEO SEO",
+      "reason": "Alternative 'GEO SEO' has ~260,000 vs primary ~63,500 (4.1x)"
+    },
+    {
+      "slug": "search-engine",
+      "path": "tools/search-geo/search-engine.md",
+      "current_primary": "AI search engine / 对话式 AI 搜索",
+      "search_primary": "AI search engine",
+      "primary": {
+        "query": "AI search engine",
+        "approx_results": 35600,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "conversational AI search",
+          "approx_results": 72900,
+          "status": "ok"
+        },
+        {
+          "query": "AI powered search",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI answer engine",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "suggested_primary": null,
+      "reason": "Top alternatives close: 'AI powered search' (509,000) vs 'AI answer engine' (509,000); primary 35,600"
+    },
+    {
+      "slug": "healthcare",
+      "path": "tools/healthcare/healthcare.md",
+      "current_primary": "AI Healthcare",
+      "search_primary": "AI healthcare",
+      "primary": {
+        "query": "AI healthcare",
+        "approx_results": 40500,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "AI in healthcare",
+          "approx_results": 40500,
+          "status": "ok"
+        },
+        {
+          "query": "healthcare AI",
+          "approx_results": 139000,
+          "status": "ok"
+        },
+        {
+          "query": "artificial intelligence healthcare",
+          "approx_results": 108000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "suggested_primary": "healthcare AI",
+      "reason": "Alternative 'healthcare AI' has ~139,000 vs primary ~40,500 (3.4x)"
+    },
+    {
+      "slug": "medical-scribe",
+      "path": "tools/healthcare/medical-scribe.md",
+      "current_primary": "AI Medical Scribe",
+      "search_primary": "AI medical scribe",
+      "primary": {
+        "query": "AI medical scribe",
+        "approx_results": 509000,
+        "status": "ok"
+      },
+      "alternatives": [
+        {
+          "query": "medical scribe AI",
+          "approx_results": 302000,
+          "status": "ok"
+        },
+        {
+          "query": "AI scribe for doctors",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "clinical documentation AI",
+          "approx_results": 61900,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "suggested_primary": null,
+      "reason": "Primary competitive; best alt 'AI scribe for doctors' ~509,000 vs primary ~509,000"
+    }
+  ]
+}

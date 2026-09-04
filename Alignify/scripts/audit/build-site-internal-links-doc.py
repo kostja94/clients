@@ -3,7 +3,7 @@
 
 Scans content/**/*.md, extracts internal links (Markdown + <a href>),
 computes outbound/inbound graphs, and writes:
-  - skills/optimize-internal-links/references/site-structure-internal-links.md
+  - skills/audit-optimize/references/site-structure-internal-links.md
   - scripts/reports/md-internal-links-status-YYYY-MM-DD.json
 """
 from __future__ import annotations
@@ -47,7 +47,7 @@ BLOG_GTM_SLUGS = frozenset(
 )
 OVER_LINKED_DISTINCT = 7
 BACKLOG_PATH = (
-    CTX / "skills/optimize-internal-links/references/marketing-internal-links-backlog.md"
+    CTX / "skills/audit-optimize/references/marketing-internal-links-backlog.md"
 )
 
 STATIC_EXT = re.compile(r"\.(jpe?g|png|gif|webp|svg|ico|pdf|zip|css|js|woff2?|mp4|webm|avif)$", re.I)
@@ -526,11 +526,11 @@ def main() -> None:
         "4. **改内链**：只改部署仓 `content/**/*.md` 正文；改后重跑本脚本更新快照",
         "5. **邻居选题**：SSOT 附录 B · [`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md)",
         "",
-        f"*自动生成 · {TODAY} · Alignify 上下文仓 · `skills/optimize-internal-links/references/`*",
+        f"*自动生成 · {TODAY} · Alignify 上下文仓 · `skills/audit-optimize/references/`*",
         "",
     ]
 
-    out_doc = CTX / "skills/optimize-internal-links/references/site-structure-internal-links.md"
+    out_doc = CTX / "skills/audit-optimize/references/site-structure-internal-links.md"
     out_doc.parent.mkdir(parents=True, exist_ok=True)
     out_doc.write_text("\n".join(lines), encoding="utf-8")
 

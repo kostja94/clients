@@ -20,7 +20,8 @@
 |------|---------|-----------|
 | **`api`** | 怎么统一调用多模型？ | 本页：**哪个更强**；api：**怎么接** |
 | **`inference-infrastructure`** | 怎么部署运行自己的模型？ | 本页：公开基准；infra：GPU/推理引擎 |
-| **`evaluation`** | 用什么评 **我的** AI 应用？ | 本页：厂商公开榜；evaluation：离线/在线评测工具 |
+| **`evaluation`** | 用什么 **打分/挡发布** 评 **我的** AI 应用？ | 本页：厂商公开榜；evaluation：scorer/CI；[llm-observability](llm-observability.md)：trace |
+| **`llm-observability`** | 线上请求 **发生了什么**、为何慢/贵？ | 本页：公开榜；llm-observability：trace/cost/prompt |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -120,7 +121,8 @@
 | 「哪个综合最强」印象 | 本页 + snapshots §Overall | Overall |
 | 统一 API 接入 | [api.md](../infrastructure/api.md) | — |
 | 自建 GPU 部署 | [inference-infrastructure.md](../infrastructure/inference-infrastructure.md) | — |
-| 评自己的应用质量 | [evaluation.md](evaluation.md) | — |
+| 评自己的应用质量（打分/CI） | [evaluation.md](evaluation.md) | — |
+| 线上 trace / 成本 / 调试 | [llm-observability.md](llm-observability.md) | — |
 
 ---
 
@@ -310,7 +312,8 @@
 | 数学 AIME / FrontierMath | [llm-for-math.md](llm-for-math.md) |
 | 推理 GPQA / HLE / ARC | [llm-for-reasoning.md](llm-for-reasoning.md) |
 | 多模态 MMMU / Video-MME | [multimodal-llm.md](multimodal-llm.md) |
-| 评自己的应用 | [evaluation.md](evaluation.md) |
+| 评自己的应用（打分/CI） | [evaluation.md](evaluation.md) |
+| 线上 trace / 成本 / 调试 | [llm-observability.md](llm-observability.md) |
 
 ### 对比与测评（第三方；观点非官方）
 
@@ -328,4 +331,4 @@
 
 - 快变数字：[llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md)
 - 专轴：[llm-for-coding.md](llm-for-coding.md) · [llm-for-math.md](llm-for-math.md) · [llm-for-reasoning.md](llm-for-reasoning.md) · [multimodal-llm.md](multimodal-llm.md)
-- 相邻：[api.md](../infrastructure/api.md) · [inference-infrastructure.md](../infrastructure/inference-infrastructure.md) · [evaluation.md](evaluation.md)
+- 相邻：[api.md](../infrastructure/api.md) · [inference-infrastructure.md](../infrastructure/inference-infrastructure.md) · [llm-observability.md](llm-observability.md) · [evaluation.md](evaluation.md)

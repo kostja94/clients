@@ -1,0 +1,1021 @@
+{
+  "summary": {
+    "batch": "batch3_voice_coding_marketing",
+    "total": 28,
+    "audit_date": "2026-09-03",
+    "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+    "caveat": "Bing frequently caps broad AI queries at ~509,000; capped counts flagged; SWITCH/OK based on non-capped comparisons where possible.",
+    "verdicts": {
+      "NEEDS_REVIEW": 11,
+      "SWITCH": 9,
+      "OK": 2,
+      "AMBIGUOUS": 6
+    },
+    "switch_recommendations": [
+      {
+        "slug": "lip-sync",
+        "from": "AI lip sync",
+        "to": "lip sync AI",
+        "rationale": "'lip sync AI' ~48,600 >> primary ~4,270 (>3x, non-capped)",
+        "flags": [
+          "alt_capped"
+        ]
+      },
+      {
+        "slug": "music-generator",
+        "from": "AI music generator",
+        "to": "text to music AI",
+        "rationale": "'text to music AI' ~147,000 >> primary ~7,670 (>3x, non-capped)",
+        "flags": [
+          "alt_capped"
+        ]
+      },
+      {
+        "slug": "voice-changer",
+        "from": "AI voice changer",
+        "to": "voice modifier AI",
+        "rationale": "'voice modifier AI' ~223,000 >> primary ~7,110 (>3x, non-capped)",
+        "flags": [
+          "alt_capped"
+        ]
+      },
+      {
+        "slug": "voice-cloning",
+        "from": "AI voice cloning",
+        "to": "voice clone AI",
+        "rationale": "'voice clone AI' ~223,000 >> primary ~50,400 (>3x, non-capped)",
+        "flags": []
+      },
+      {
+        "slug": "app-builder",
+        "from": "AI app builder",
+        "to": "no code app builder AI",
+        "rationale": "'no code app builder AI' ~253,000 >> primary ~12,600 (>3x, non-capped)",
+        "flags": [
+          "alt_capped"
+        ]
+      },
+      {
+        "slug": "git-hosting",
+        "from": "agent native git hosting",
+        "to": "code forge",
+        "rationale": "'code forge' ~363,000 >> primary ~4,280 (>3x, non-capped)",
+        "flags": [
+          "alt_capped"
+        ]
+      },
+      {
+        "slug": "vibe-coding",
+        "from": "vibe coding",
+        "to": "AI coding",
+        "rationale": "'AI coding' ~108,000 >> primary ~15,700 (>3x, non-capped)",
+        "flags": []
+      },
+      {
+        "slug": "referral-program",
+        "from": "referral program software",
+        "to": "referral marketing tools",
+        "rationale": "'referral marketing tools' ~41,900 >> primary ~12 (>3x, non-capped)",
+        "flags": [
+          "alt_capped",
+          "primary_suspicious_low"
+        ]
+      },
+      {
+        "slug": "social-media-tools",
+        "from": "social media management tools",
+        "to": "social media management software",
+        "rationale": "'social media management software' ~274,000 >> primary ~7,630 (>3x, non-capped)",
+        "flags": [
+          "alt_capped"
+        ]
+      }
+    ],
+    "ambiguous": [
+      "text-to-speech",
+      "video-translator",
+      "voice",
+      "cli",
+      "ide",
+      "ugc"
+    ],
+    "needs_review": [
+      "accent-conversion",
+      "audio-translator",
+      "ai-components",
+      "code-completion",
+      "code-review",
+      "advertising-agent",
+      "affiliate-marketing",
+      "b2b",
+      "fundraising",
+      "influencer-marketing",
+      "lead-generation"
+    ],
+    "ok": [
+      "speech-to-text",
+      "coding"
+    ]
+  },
+  "results": [
+    {
+      "slug": "accent-conversion",
+      "path": "tools/voice-audio/accent-conversion.md",
+      "current_primary": "AI 口音转换（Accent Conversion）",
+      "primary_query": "AI accent conversion",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "accent changer AI",
+          "approx_results": 113000,
+          "status": "ok"
+        },
+        {
+          "query": "AI accent modification",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "accent conversion tool",
+          "approx_results": 113000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'accent changer AI' ~113,000",
+      "recommended_primary": "accent changer AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "audio-translator",
+      "path": "tools/voice-audio/audio-translator.md",
+      "current_primary": "AI Audio Translation",
+      "primary_query": "AI audio translation",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "audio translator AI",
+          "approx_results": 314000,
+          "status": "ok"
+        },
+        {
+          "query": "AI voice translation",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "translate audio AI",
+          "approx_results": 34900,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'audio translator AI' ~314,000",
+      "recommended_primary": "audio translator AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "lip-sync",
+      "path": "tools/voice-audio/lip-sync.md",
+      "current_primary": "AI lip sync / AI 唇形同步",
+      "primary_query": "AI lip sync",
+      "primary_approx_results": 4270,
+      "alternatives": [
+        {
+          "query": "lip sync AI",
+          "approx_results": 48600,
+          "status": "ok"
+        },
+        {
+          "query": "AI lip sync tool",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "video lip sync AI",
+          "approx_results": 802000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'lip sync AI' ~48,600 >> primary ~4,270 (>3x, non-capped)",
+      "recommended_primary": "lip sync AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "music-generator",
+      "path": "tools/voice-audio/music-generator.md",
+      "current_primary": "AI Music Generator",
+      "primary_query": "AI music generator",
+      "primary_approx_results": 7670,
+      "alternatives": [
+        {
+          "query": "AI music maker",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "text to music AI",
+          "approx_results": 147000,
+          "status": "ok"
+        },
+        {
+          "query": "AI song generator",
+          "approx_results": 20800,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'text to music AI' ~147,000 >> primary ~7,670 (>3x, non-capped)",
+      "recommended_primary": "text to music AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "speech-to-text",
+      "path": "tools/voice-audio/speech-to-text.md",
+      "current_primary": "Speech-to-Text / ASR / 自动语音识别",
+      "primary_query": "speech to text AI",
+      "primary_approx_results": 100000,
+      "alternatives": [
+        {
+          "query": "AI transcription",
+          "approx_results": 23400,
+          "status": "ok"
+        },
+        {
+          "query": "automatic speech recognition",
+          "approx_results": 6810,
+          "status": "ok"
+        },
+        {
+          "query": "AI speech to text",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "rationale": "Primary ~100,000 dominates non-capped alts",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "text-to-speech",
+      "path": "tools/voice-audio/text-to-speech.md",
+      "current_primary": "AI Text-to-Speech / TTS / 文本转语音",
+      "primary_query": "text to speech AI",
+      "primary_approx_results": 10800,
+      "alternatives": [
+        {
+          "query": "AI voice generator",
+          "approx_results": 25400,
+          "status": "ok"
+        },
+        {
+          "query": "TTS AI",
+          "approx_results": 23500,
+          "status": "ok"
+        },
+        {
+          "query": "AI text to speech",
+          "approx_results": 10700,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "rationale": "Primary ~10,800 vs 'AI voice generator' ~25,400 within ~2x",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": []
+    },
+    {
+      "slug": "video-translator",
+      "path": "tools/voice-audio/video-translator.md",
+      "current_primary": "AI Video Translation",
+      "primary_query": "AI video translation",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "AI video dubbing",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "video translator AI",
+          "approx_results": 802000,
+          "status": "ok"
+        },
+        {
+          "query": "AI video localization",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "rationale": "Primary and all alts hit Bing ~509,000 cap — need SERP title review",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "voice-changer",
+      "path": "tools/voice-audio/voice-changer.md",
+      "current_primary": "AI Voice Changer（AI 变声器）",
+      "primary_query": "AI voice changer",
+      "primary_approx_results": 7110,
+      "alternatives": [
+        {
+          "query": "real-time voice changer",
+          "approx_results": 732,
+          "status": "ok"
+        },
+        {
+          "query": "voice modifier AI",
+          "approx_results": 223000,
+          "status": "ok"
+        },
+        {
+          "query": "AI voice converter",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'voice modifier AI' ~223,000 >> primary ~7,110 (>3x, non-capped)",
+      "recommended_primary": "voice modifier AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "voice-cloning",
+      "path": "tools/voice-audio/voice-cloning.md",
+      "current_primary": "AI Voice Cloning",
+      "primary_query": "AI voice cloning",
+      "primary_approx_results": 50400,
+      "alternatives": [
+        {
+          "query": "voice clone AI",
+          "approx_results": 223000,
+          "status": "ok"
+        },
+        {
+          "query": "AI voice clone",
+          "approx_results": 101000,
+          "status": "ok"
+        },
+        {
+          "query": "voice cloning tool",
+          "approx_results": 223000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'voice clone AI' ~223,000 >> primary ~50,400 (>3x, non-capped)",
+      "recommended_primary": "voice clone AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": []
+    },
+    {
+      "slug": "voice",
+      "path": "tools/voice-audio/voice.md",
+      "current_primary": "AI Voice",
+      "primary_query": "AI voice",
+      "primary_approx_results": 21900,
+      "alternatives": [
+        {
+          "query": "AI voice tools",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI voice generator",
+          "approx_results": 25400,
+          "status": "ok"
+        },
+        {
+          "query": "AI voice software",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "rationale": "Primary ~21,900 vs 'AI voice generator' ~25,400 within ~2x",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "ai-components",
+      "path": "tools/coding/ai-components.md",
+      "current_primary": "AI Components / Prompt-as-Component / Component Registry",
+      "primary_query": "AI components",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "prompt as component",
+          "approx_results": 40800,
+          "status": "ok"
+        },
+        {
+          "query": "AI component library",
+          "approx_results": 2210,
+          "status": "ok"
+        },
+        {
+          "query": "AI UI components",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'prompt as component' ~40,800",
+      "recommended_primary": "prompt as component",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "app-builder",
+      "path": "tools/coding/app-builder.md",
+      "current_primary": "AI App Builder / AI 应用构建器",
+      "primary_query": "AI app builder",
+      "primary_approx_results": 12600,
+      "alternatives": [
+        {
+          "query": "AI application builder",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "no code app builder AI",
+          "approx_results": 253000,
+          "status": "ok"
+        },
+        {
+          "query": "AI app maker",
+          "approx_results": 24100,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'no code app builder AI' ~253,000 >> primary ~12,600 (>3x, non-capped)",
+      "recommended_primary": "no code app builder AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "cli",
+      "path": "tools/coding/cli.md",
+      "current_primary": "AI CLI / Agentic CLI",
+      "primary_query": "AI CLI",
+      "primary_approx_results": 74100,
+      "alternatives": [
+        {
+          "query": "agentic CLI",
+          "approx_results": 84200,
+          "status": "ok"
+        },
+        {
+          "query": "AI command line tools",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI terminal agent",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "rationale": "Primary ~74,100 vs 'agentic CLI' ~84,200 within ~2x",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "code-completion",
+      "path": "tools/coding/code-completion.md",
+      "current_primary": "Code completion / AI code assistant",
+      "primary_query": "AI code completion",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "code completion AI",
+          "approx_results": 363000,
+          "status": "ok"
+        },
+        {
+          "query": "AI code assistant",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI autocomplete code",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'code completion AI' ~363,000",
+      "recommended_primary": "code completion AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "code-review",
+      "path": "tools/coding/code-review.md",
+      "current_primary": "AI code review / PR 审查",
+      "primary_query": "AI code review",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "automated code review AI",
+          "approx_results": 35900,
+          "status": "ok"
+        },
+        {
+          "query": "AI PR review",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI code review tool",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'automated code review AI' ~35,900",
+      "recommended_primary": "automated code review AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "coding",
+      "path": "tools/coding/coding.md",
+      "current_primary": "AI Coding Agent / 编程智能体",
+      "primary_query": "AI coding",
+      "primary_approx_results": 108000,
+      "alternatives": [
+        {
+          "query": "AI coding agent",
+          "approx_results": 32000,
+          "status": "ok"
+        },
+        {
+          "query": "AI programming assistant",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI code generator",
+          "approx_results": 17700,
+          "status": "ok"
+        }
+      ],
+      "verdict": "OK",
+      "rationale": "Primary ~108,000 dominates non-capped alts",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "git-hosting",
+      "path": "tools/coding/git-hosting.md",
+      "current_primary": "Agent-native Git hosting / Code forge",
+      "primary_query": "agent native git hosting",
+      "primary_approx_results": 4280,
+      "alternatives": [
+        {
+          "query": "AI git hosting",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "code forge",
+          "approx_results": 363000,
+          "status": "ok"
+        },
+        {
+          "query": "git hosting for AI agents",
+          "approx_results": 217000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'code forge' ~363,000 >> primary ~4,280 (>3x, non-capped)",
+      "recommended_primary": "code forge",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "ide",
+      "path": "tools/coding/ide.md",
+      "current_primary": "AI IDE / Agentic IDE",
+      "primary_query": "AI IDE",
+      "primary_approx_results": 60900,
+      "alternatives": [
+        {
+          "query": "agentic IDE",
+          "approx_results": 40900,
+          "status": "ok"
+        },
+        {
+          "query": "AI code editor",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI development environment",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "rationale": "Primary ~60,900 vs 'agentic IDE' ~40,900 within ~2x",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "vibe-coding",
+      "path": "tools/coding/vibe-coding.md",
+      "current_primary": "Vibe coding / 氛围编程",
+      "primary_query": "vibe coding",
+      "primary_approx_results": 15700,
+      "alternatives": [
+        {
+          "query": "AI coding",
+          "approx_results": 108000,
+          "status": "ok"
+        },
+        {
+          "query": "AI app builder",
+          "approx_results": 12600,
+          "status": "ok"
+        },
+        {
+          "query": "vibe coding AI",
+          "approx_results": 37000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'AI coding' ~108,000 >> primary ~15,700 (>3x, non-capped)",
+      "recommended_primary": "AI coding",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": []
+    },
+    {
+      "slug": "advertising-agent",
+      "path": "tools/marketing-growth/advertising-agent.md",
+      "current_primary": "Advertising Agent / AI 广告投放 Agent",
+      "primary_query": "AI advertising agent",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "advertising agent AI",
+          "approx_results": 192000,
+          "status": "ok"
+        },
+        {
+          "query": "AI ad automation",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "AI ads agent",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'advertising agent AI' ~192,000",
+      "recommended_primary": "advertising agent AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "affiliate-marketing",
+      "path": "tools/marketing-growth/affiliate-marketing.md",
+      "current_primary": "Affiliate marketing / 联盟营销",
+      "primary_query": "AI affiliate marketing",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "affiliate marketing tools",
+          "approx_results": 177000,
+          "status": "ok"
+        },
+        {
+          "query": "affiliate marketing software",
+          "approx_results": 9740,
+          "status": "ok"
+        },
+        {
+          "query": "affiliate marketing platform",
+          "approx_results": 177000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'affiliate marketing tools' ~177,000",
+      "recommended_primary": "affiliate marketing tools",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped"
+      ]
+    },
+    {
+      "slug": "b2b",
+      "path": "tools/marketing-growth/b2b.md",
+      "current_primary": "AI B2B Marketing Tools / B2B 营销 AI 工具",
+      "primary_query": "AI B2B marketing tools",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "B2B marketing AI",
+          "approx_results": 43400,
+          "status": "ok"
+        },
+        {
+          "query": "B2B marketing software",
+          "approx_results": 43400,
+          "status": "ok"
+        },
+        {
+          "query": "AI B2B marketing",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'B2B marketing AI' ~43,400",
+      "recommended_primary": "B2B marketing AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "fundraising",
+      "path": "tools/marketing-growth/fundraising.md",
+      "current_primary": "AI fundraising / AI 融资工具",
+      "primary_query": "AI fundraising",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "AI fundraising tools",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "startup fundraising AI",
+          "approx_results": 145000,
+          "status": "ok"
+        },
+        {
+          "query": "AI fundraising platform",
+          "approx_results": 509000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'startup fundraising AI' ~145,000",
+      "recommended_primary": "startup fundraising AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "influencer-marketing",
+      "path": "tools/marketing-growth/influencer-marketing.md",
+      "current_primary": "Influencer marketing / 网红营销",
+      "primary_query": "AI influencer marketing",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "influencer marketing tools",
+          "approx_results": 255000,
+          "status": "ok"
+        },
+        {
+          "query": "influencer marketing platform",
+          "approx_results": 255000,
+          "status": "ok"
+        },
+        {
+          "query": "influencer marketing software",
+          "approx_results": 2600,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'influencer marketing tools' ~255,000",
+      "recommended_primary": "influencer marketing tools",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped"
+      ]
+    },
+    {
+      "slug": "lead-generation",
+      "path": "tools/marketing-growth/lead-generation.md",
+      "current_primary": "AI Lead Generation / AI 线索生成",
+      "primary_query": "AI lead generation",
+      "primary_approx_results": 509000,
+      "alternatives": [
+        {
+          "query": "lead generation tools",
+          "approx_results": 7040,
+          "status": "ok"
+        },
+        {
+          "query": "AI sales leads",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "B2B lead generation AI",
+          "approx_results": 43400,
+          "status": "ok"
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "rationale": "Primary capped ~509,000; best non-capped alt 'B2B lead generation AI' ~43,400",
+      "recommended_primary": "B2B lead generation AI",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "referral-program",
+      "path": "tools/marketing-growth/referral-program.md",
+      "current_primary": "Referral program / 推荐计划",
+      "primary_query": "referral program software",
+      "primary_approx_results": 12,
+      "alternatives": [
+        {
+          "query": "referral marketing tools",
+          "approx_results": 41900,
+          "status": "ok"
+        },
+        {
+          "query": "AI referral program",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "referral program platform",
+          "approx_results": 41900,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'referral marketing tools' ~41,900 >> primary ~12 (>3x, non-capped)",
+      "recommended_primary": "referral marketing tools",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped",
+        "primary_suspicious_low"
+      ]
+    },
+    {
+      "slug": "social-media-tools",
+      "path": "tools/marketing-growth/social-media-tools.md",
+      "current_primary": "Social media management / scheduling tools（社媒管理与排程工具）",
+      "primary_query": "social media management tools",
+      "primary_approx_results": 7630,
+      "alternatives": [
+        {
+          "query": "social media scheduling tools",
+          "approx_results": 5870,
+          "status": "ok"
+        },
+        {
+          "query": "AI social media tools",
+          "approx_results": 509000,
+          "status": "ok"
+        },
+        {
+          "query": "social media management software",
+          "approx_results": 274000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "SWITCH",
+      "rationale": "'social media management software' ~274,000 >> primary ~7,630 (>3x, non-capped)",
+      "recommended_primary": "social media management software",
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "ugc",
+      "path": "tools/marketing-growth/ugc.md",
+      "current_primary": "UGC / User-Generated Content（营销语境）",
+      "primary_query": "UGC marketing",
+      "primary_approx_results": 174000,
+      "alternatives": [
+        {
+          "query": "user generated content tools",
+          "approx_results": 207000,
+          "status": "ok"
+        },
+        {
+          "query": "UGC platform",
+          "approx_results": 174000,
+          "status": "ok"
+        },
+        {
+          "query": "UGC marketing tools",
+          "approx_results": 174000,
+          "status": "ok"
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "rationale": "Primary ~174,000 vs 'user generated content tools' ~207,000 within ~2x",
+      "recommended_primary": null,
+      "audit_date": "2026-09-03",
+      "method": "Bing EN-US approximate result count (directional proxy, not MSV)",
+      "flags": []
+    }
+  ]
+}

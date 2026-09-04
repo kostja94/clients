@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "ai-flashcards",
+    "path": "tools/education/ai-flashcards.md",
+    "current_primary": "AI flashcards",
+    "keywordEn_full": "AI flashcards / 间隔重复学习工具",
+    "h1": "AI Flashcards & Study Tools · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-for-science",
+    "path": "tools/education/ai-for-science.md",
+    "current_primary": "AI for Science",
+    "keywordEn_full": "AI for Science / AI4S",
+    "h1": "AI for Science（AI 赋能科学研究）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-homework-helper",
+    "path": "tools/education/ai-homework-helper.md",
+    "current_primary": "AI homework helper",
+    "keywordEn_full": "AI homework helper / 拍照解题",
+    "h1": "AI Homework Helper · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-language-learning",
+    "path": "tools/education/ai-language-learning.md",
+    "current_primary": "AI language learning",
+    "keywordEn_full": "AI language learning / AI 语言学习 App",
+    "h1": "AI Language Learning · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-scheduling",
+    "path": "tools/productivity/ai-scheduling.md",
+    "current_primary": "AI scheduling",
+    "keywordEn_full": "AI scheduling / AI 日程安排",
+    "h1": "AI 日程安排 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-tutor",
+    "path": "tools/education/ai-tutor.md",
+    "current_primary": "AI tutor",
+    "keywordEn_full": "AI tutor / AI 家教",
+    "h1": "AI Tutor（AI 家教与智能辅导）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "education",
+    "path": "tools/education/education.md",
+    "current_primary": "AI Education",
+    "keywordEn_full": "AI Education / AI 教育工具（Hub）",
+    "h1": "AI Education · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "healthcare",
+    "path": "tools/healthcare/healthcare.md",
+    "current_primary": "AI Healthcare",
+    "keywordEn_full": "",
+    "h1": "AI Healthcare · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "hr-assistant",
+    "path": "tools/hr-recruiting/hr-assistant.md",
+    "current_primary": "AI HR assistant",
+    "keywordEn_full": "AI HR assistant / AI HR 助手",
+    "h1": "AI HR Assistant · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "interview-assistant",
+    "path": "tools/hr-recruiting/interview-assistant.md",
+    "current_primary": "AI interview assistant",
+    "keywordEn_full": "AI interview assistant / 面试助手",
+    "h1": "AI 面试助手 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "linkedin",
+    "path": "tools/hr-recruiting/linkedin.md",
+    "current_primary": "LinkedIn AI tools",
+    "keywordEn_full": "LinkedIn AI tools / LinkedIn 向 AI 工具",
+    "h1": "LinkedIn AI 工具 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "medical-scribe",
+    "path": "tools/healthcare/medical-scribe.md",
+    "current_primary": "AI Medical Scribe",
+    "keywordEn_full": "",
+    "h1": "AI Medical Scribe · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "note-taker",
+    "path": "tools/productivity/note-taker.md",
+    "current_primary": "AI note taker",
+    "keywordEn_full": "AI note taker / AI meeting notes",
+    "h1": "AI 会议记录 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "notes-generator",
+    "path": "tools/education/notes-generator.md",
+    "current_primary": "AI notes generator",
+    "keywordEn_full": "AI notes generator / PDF·视频→笔记",
+    "h1": "AI 笔记生成器 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "productivity",
+    "path": "tools/productivity/productivity.md",
+    "current_primary": "AI productivity tools",
+    "keywordEn_full": "AI productivity tools / AI 生产力工具",
+    "h1": "AI Productivity · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "project-management",
+    "path": "tools/productivity/project-management.md",
+    "current_primary": "AI project management",
+    "keywordEn_full": "AI project management / AI 项目管理",
+    "h1": "Project Management · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "quiz-generator",
+    "path": "tools/education/quiz-generator.md",
+    "current_primary": "AI quiz generator",
+    "keywordEn_full": "AI quiz generator / AI 测评生成",
+    "h1": "AI Quiz Generator（AI 出题与测评生成）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "recruiting",
+    "path": "tools/hr-recruiting/recruiting.md",
+    "current_primary": "AI recruiting",
+    "keywordEn_full": "AI recruiting / AI 人才获取",
+    "h1": "AI Recruiting · 知识块（非线性笔记）"
+  }
+]

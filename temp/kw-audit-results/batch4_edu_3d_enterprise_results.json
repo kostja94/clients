@@ -1,0 +1,945 @@
+{
+  "batch": "batch4_edu_3d_enterprise",
+  "methodology": "For each slug: Bing-search current primary vs 2–4 same-intent English alternatives; compare approximate result counts (sb_count). Counts ≥500k treated as Bing ceiling. Verdict: OK / SWITCH / AMBIGUOUS / NEEDS_REVIEW.",
+  "audited_at": "2026-09-03",
+  "summary": {
+    "total": 22,
+    "OK": 6,
+    "SWITCH": 3,
+    "AMBIGUOUS": 12,
+    "NEEDS_REVIEW": 1,
+    "switch_candidates": [
+      "ai-tutor",
+      "3d-model-generator",
+      "3d-modelling"
+    ],
+    "ambiguous": [
+      "ai-flashcards",
+      "ai-language-learning",
+      "education",
+      "notes-generator",
+      "quiz-generator",
+      "3d",
+      "cad",
+      "interior-design",
+      "ai-documents",
+      "documentation",
+      "legal",
+      "spreadsheet"
+    ],
+    "needs_review": [
+      "ai-for-science"
+    ]
+  },
+  "results": [
+    {
+      "slug": "ai-flashcards",
+      "path": "tools/education/ai-flashcards.md",
+      "current_primary": "AI flashcards",
+      "alternatives_tested": [
+        "AI flashcard maker",
+        "AI study flashcards",
+        "spaced repetition app"
+      ],
+      "bing_counts": {
+        "AI flashcards": 509000,
+        "AI flashcard maker": 4420,
+        "AI study flashcards": 509000,
+        "spaced repetition app": 2800
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI flashcards",
+          "count": 509000
+        },
+        {
+          "keyword": "AI study flashcards",
+          "count": 509000
+        },
+        {
+          "keyword": "AI flashcard maker",
+          "count": 4420
+        },
+        {
+          "keyword": "spaced repetition app",
+          "count": 2800
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI flashcards' and 1 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI flashcards",
+        "AI study flashcards"
+      ]
+    },
+    {
+      "slug": "ai-for-science",
+      "path": "tools/education/ai-for-science.md",
+      "current_primary": "AI for science",
+      "alternatives_tested": [
+        "AI4S",
+        "AI scientific research tools",
+        "AI for scientific discovery"
+      ],
+      "bing_counts": {
+        "AI for science": 509000,
+        "AI4S": 51,
+        "AI scientific research tools": 509000,
+        "AI for scientific discovery": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI for science",
+          "count": 509000
+        },
+        {
+          "keyword": "AI scientific research tools",
+          "count": 509000
+        },
+        {
+          "keyword": "AI for scientific discovery",
+          "count": 509000
+        },
+        {
+          "keyword": "AI4S",
+          "count": 51
+        }
+      ],
+      "verdict": "NEEDS_REVIEW",
+      "reason": "'AI4S' nearly zero volume (51). Keep 'AI for science'; avoid AI4S as primary keyword.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI for science",
+        "AI scientific research tools",
+        "AI for scientific discovery"
+      ]
+    },
+    {
+      "slug": "ai-homework-helper",
+      "path": "tools/education/ai-homework-helper.md",
+      "current_primary": "AI homework helper",
+      "alternatives_tested": [
+        "AI homework solver",
+        "photo math solver AI",
+        "AI math homework help"
+      ],
+      "bing_counts": {
+        "AI homework helper": 78900,
+        "AI homework solver": 509000,
+        "photo math solver AI": 554000,
+        "AI math homework help": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "photo math solver AI",
+          "count": 554000
+        },
+        {
+          "keyword": "AI homework solver",
+          "count": 509000
+        },
+        {
+          "keyword": "AI math homework help",
+          "count": 509000
+        },
+        {
+          "keyword": "AI homework helper",
+          "count": 78900
+        }
+      ],
+      "verdict": "OK",
+      "reason": "Current 'AI homework helper' (78,900) is the correct head term; higher counts for 'photo math solver' / 'AI homework solver' reflect adjacent calculator intent, not same SERP.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI homework solver",
+        "photo math solver AI",
+        "AI math homework help"
+      ]
+    },
+    {
+      "slug": "ai-language-learning",
+      "path": "tools/education/ai-language-learning.md",
+      "current_primary": "AI language learning",
+      "alternatives_tested": [
+        "AI language learning app",
+        "AI language tutor",
+        "AI language learning tools"
+      ],
+      "bing_counts": {
+        "AI language learning": 509000,
+        "AI language learning app": 509000,
+        "AI language tutor": 509000,
+        "AI language learning tools": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI language learning",
+          "count": 509000
+        },
+        {
+          "keyword": "AI language learning app",
+          "count": 509000
+        },
+        {
+          "keyword": "AI language tutor",
+          "count": 509000
+        },
+        {
+          "keyword": "AI language learning tools",
+          "count": 509000
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI language learning' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI language learning",
+        "AI language learning app",
+        "AI language tutor",
+        "AI language learning tools"
+      ]
+    },
+    {
+      "slug": "ai-tutor",
+      "path": "tools/education/ai-tutor.md",
+      "current_primary": "AI tutor",
+      "alternatives_tested": [
+        "AI tutoring",
+        "AI tutoring platform",
+        "online AI tutor"
+      ],
+      "bing_counts": {
+        "AI tutor": 46800,
+        "AI tutoring": 509000,
+        "AI tutoring platform": 509000,
+        "online AI tutor": 956000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "online AI tutor",
+          "count": 956000
+        },
+        {
+          "keyword": "AI tutoring",
+          "count": 509000
+        },
+        {
+          "keyword": "AI tutoring platform",
+          "count": 509000
+        },
+        {
+          "keyword": "AI tutor",
+          "count": 46800
+        }
+      ],
+      "verdict": "SWITCH",
+      "reason": "'AI tutoring' (~509k ceiling) and related forms dominate 'AI tutor' (46,800). Recommend primary 'AI tutoring' — distinct from homework-helper intent.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI tutoring",
+        "AI tutoring platform",
+        "online AI tutor"
+      ]
+    },
+    {
+      "slug": "education",
+      "path": "tools/education/education.md",
+      "current_primary": "AI education tools",
+      "alternatives_tested": [
+        "AI education",
+        "AI learning tools",
+        "AI tools for education"
+      ],
+      "bing_counts": {
+        "AI education tools": 509000,
+        "AI education": 509000,
+        "AI learning tools": 12100,
+        "AI tools for education": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI education tools",
+          "count": 509000
+        },
+        {
+          "keyword": "AI education",
+          "count": 509000
+        },
+        {
+          "keyword": "AI tools for education",
+          "count": 509000
+        },
+        {
+          "keyword": "AI learning tools",
+          "count": 12100
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI education tools' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI education tools",
+        "AI education",
+        "AI tools for education"
+      ]
+    },
+    {
+      "slug": "notes-generator",
+      "path": "tools/education/notes-generator.md",
+      "current_primary": "AI notes generator",
+      "alternatives_tested": [
+        "AI note taking from video",
+        "PDF to notes AI",
+        "AI lecture notes generator"
+      ],
+      "bing_counts": {
+        "AI notes generator": 509000,
+        "AI note taking from video": 509000,
+        "PDF to notes AI": 641000,
+        "AI lecture notes generator": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "PDF to notes AI",
+          "count": 641000
+        },
+        {
+          "keyword": "AI notes generator",
+          "count": 509000
+        },
+        {
+          "keyword": "AI note taking from video",
+          "count": 509000
+        },
+        {
+          "keyword": "AI lecture notes generator",
+          "count": 509000
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI notes generator' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI notes generator",
+        "AI note taking from video",
+        "PDF to notes AI",
+        "AI lecture notes generator"
+      ]
+    },
+    {
+      "slug": "quiz-generator",
+      "path": "tools/education/quiz-generator.md",
+      "current_primary": "AI quiz generator",
+      "alternatives_tested": [
+        "AI quiz maker",
+        "AI assessment generator",
+        "AI test generator"
+      ],
+      "bing_counts": {
+        "AI quiz generator": 7570,
+        "AI quiz maker": 10100,
+        "AI assessment generator": 509000,
+        "AI test generator": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI assessment generator",
+          "count": 509000
+        },
+        {
+          "keyword": "AI test generator",
+          "count": 509000
+        },
+        {
+          "keyword": "AI quiz maker",
+          "count": 10100
+        },
+        {
+          "keyword": "AI quiz generator",
+          "count": 7570
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "'AI quiz maker' (10,100) slightly beats 'AI quiz generator' (7,570); both are valid same-intent heads. 'AI assessment generator' hits ceiling but skews broader B2B intent.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI assessment generator",
+        "AI test generator"
+      ]
+    },
+    {
+      "slug": "3d-model-generator",
+      "path": "tools/3d-spatial/3d-model-generator.md",
+      "current_primary": "AI 3D model generator",
+      "alternatives_tested": [
+        "text to 3D",
+        "image to 3D",
+        "text to 3D AI"
+      ],
+      "bing_counts": {
+        "AI 3D model generator": 16700,
+        "text to 3D": 11800,
+        "image to 3D": 51500,
+        "text to 3D AI": 147000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "text to 3D AI",
+          "count": 147000
+        },
+        {
+          "keyword": "image to 3D",
+          "count": 51500
+        },
+        {
+          "keyword": "AI 3D model generator",
+          "count": 16700
+        },
+        {
+          "keyword": "text to 3D",
+          "count": 11800
+        }
+      ],
+      "verdict": "SWITCH",
+      "reason": "'text to 3D AI' (147,000) and 'image to 3D' (51,500) outperform 'AI 3D model generator' (16,700). Recommend dual primary: 'text to 3D / image to 3D' (matches current narrative).",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": []
+    },
+    {
+      "slug": "3d-modelling",
+      "path": "tools/3d-spatial/3d-modelling.md",
+      "current_primary": "3D modelling software",
+      "alternatives_tested": [
+        "3D modeling tools",
+        "DCC software",
+        "3D modelling tools"
+      ],
+      "bing_counts": {
+        "3D modelling software": 10700,
+        "3D modeling tools": 149000,
+        "DCC software": 142000,
+        "3D modelling tools": 149000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "3D modeling tools",
+          "count": 149000
+        },
+        {
+          "keyword": "3D modelling tools",
+          "count": 149000
+        },
+        {
+          "keyword": "DCC software",
+          "count": 142000
+        },
+        {
+          "keyword": "3D modelling software",
+          "count": 10700
+        }
+      ],
+      "verdict": "SWITCH",
+      "reason": "'3D modeling tools' (149,000) and 'DCC software' (142,000) far exceed '3D modelling software' (10,700). Recommend US spelling '3D modeling tools' as primary.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": []
+    },
+    {
+      "slug": "3d-scanner",
+      "path": "tools/3d-spatial/3d-scanner.md",
+      "current_primary": "AI 3D scanner",
+      "alternatives_tested": [
+        "3D scanning software",
+        "photogrammetry software",
+        "3D scan to model"
+      ],
+      "bing_counts": {
+        "AI 3D scanner": 509000,
+        "3D scanning software": 149000,
+        "photogrammetry software": 59000,
+        "3D scan to model": 149000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI 3D scanner",
+          "count": 509000
+        },
+        {
+          "keyword": "3D scanning software",
+          "count": 149000
+        },
+        {
+          "keyword": "3D scan to model",
+          "count": 149000
+        },
+        {
+          "keyword": "photogrammetry software",
+          "count": 59000
+        }
+      ],
+      "verdict": "OK",
+      "reason": "Current 'AI 3D scanner' hits Bing ceiling; no measurable alt beats it.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI 3D scanner"
+      ]
+    },
+    {
+      "slug": "3d",
+      "path": "tools/3d-spatial/3d.md",
+      "current_primary": "AI 3D tools",
+      "alternatives_tested": [
+        "AI 3D software",
+        "AI 3D generator",
+        "AI 3D modeling tools"
+      ],
+      "bing_counts": {
+        "AI 3D tools": 509000,
+        "AI 3D software": 509000,
+        "AI 3D generator": 509000,
+        "AI 3D modeling tools": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI 3D tools",
+          "count": 509000
+        },
+        {
+          "keyword": "AI 3D software",
+          "count": 509000
+        },
+        {
+          "keyword": "AI 3D generator",
+          "count": 509000
+        },
+        {
+          "keyword": "AI 3D modeling tools",
+          "count": 509000
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI 3D tools' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI 3D tools",
+        "AI 3D software",
+        "AI 3D generator",
+        "AI 3D modeling tools"
+      ]
+    },
+    {
+      "slug": "cad",
+      "path": "tools/3d-spatial/cad.md",
+      "current_primary": "AI CAD tools",
+      "alternatives_tested": [
+        "CAD software",
+        "AI CAD design",
+        "AI CAD software"
+      ],
+      "bing_counts": {
+        "AI CAD tools": 509000,
+        "CAD software": 13000,
+        "AI CAD design": 509000,
+        "AI CAD software": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI CAD tools",
+          "count": 509000
+        },
+        {
+          "keyword": "AI CAD design",
+          "count": 509000
+        },
+        {
+          "keyword": "AI CAD software",
+          "count": 509000
+        },
+        {
+          "keyword": "CAD software",
+          "count": 13000
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI CAD tools' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI CAD tools",
+        "AI CAD design",
+        "AI CAD software"
+      ]
+    },
+    {
+      "slug": "interior-design",
+      "path": "tools/3d-spatial/interior-design.md",
+      "current_primary": "AI interior design",
+      "alternatives_tested": [
+        "AI interior design software",
+        "AI room design",
+        "AI home design"
+      ],
+      "bing_counts": {
+        "AI interior design": 509000,
+        "AI interior design software": 509000,
+        "AI room design": 8810,
+        "AI home design": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI interior design",
+          "count": 509000
+        },
+        {
+          "keyword": "AI interior design software",
+          "count": 509000
+        },
+        {
+          "keyword": "AI home design",
+          "count": 509000
+        },
+        {
+          "keyword": "AI room design",
+          "count": 8810
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI interior design' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI interior design",
+        "AI interior design software",
+        "AI home design"
+      ]
+    },
+    {
+      "slug": "virtual-staging",
+      "path": "tools/3d-spatial/virtual-staging.md",
+      "current_primary": "AI virtual staging",
+      "alternatives_tested": [
+        "virtual staging software",
+        "virtual home staging",
+        "AI home staging"
+      ],
+      "bing_counts": {
+        "AI virtual staging": 509000,
+        "virtual staging software": 207000,
+        "virtual home staging": 207000,
+        "AI home staging": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI virtual staging",
+          "count": 509000
+        },
+        {
+          "keyword": "AI home staging",
+          "count": 509000
+        },
+        {
+          "keyword": "virtual staging software",
+          "count": 207000
+        },
+        {
+          "keyword": "virtual home staging",
+          "count": 207000
+        }
+      ],
+      "verdict": "OK",
+      "reason": "'AI virtual staging' hits Bing ceiling; measurable 'virtual staging software' (207,000) is lower. Keep AI-branded primary per listing-intent scope.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI virtual staging",
+        "AI home staging"
+      ]
+    },
+    {
+      "slug": "ai-documents",
+      "path": "tools/enterprise-knowledge/ai-documents.md",
+      "current_primary": "AI documents",
+      "alternatives_tested": [
+        "AI document management",
+        "intelligent document processing",
+        "AI document tools"
+      ],
+      "bing_counts": {
+        "AI documents": 509000,
+        "AI document management": 509000,
+        "intelligent document processing": 1930,
+        "AI document tools": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI documents",
+          "count": 509000
+        },
+        {
+          "keyword": "AI document management",
+          "count": 509000
+        },
+        {
+          "keyword": "AI document tools",
+          "count": 509000
+        },
+        {
+          "keyword": "intelligent document processing",
+          "count": 1930
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI documents' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI documents",
+        "AI document management",
+        "AI document tools"
+      ]
+    },
+    {
+      "slug": "documentation",
+      "path": "tools/enterprise-knowledge/documentation.md",
+      "current_primary": "developer documentation tools",
+      "alternatives_tested": [
+        "API documentation tools",
+        "technical documentation software",
+        "docs as code tools"
+      ],
+      "bing_counts": {
+        "developer documentation tools": 190000,
+        "API documentation tools": 170000,
+        "technical documentation software": 6390,
+        "docs as code tools": 323000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "docs as code tools",
+          "count": 323000
+        },
+        {
+          "keyword": "developer documentation tools",
+          "count": 190000
+        },
+        {
+          "keyword": "API documentation tools",
+          "count": 170000
+        },
+        {
+          "keyword": "technical documentation software",
+          "count": 6390
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "'docs as code tools' (323,000) leads but is a narrower sub-intent; 'developer documentation tools' (190,000) matches page scope. Keep current unless targeting docs-as-code niche.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": []
+    },
+    {
+      "slug": "knowledge-base",
+      "path": "tools/enterprise-knowledge/knowledge-base.md",
+      "current_primary": "AI knowledge base",
+      "alternatives_tested": [
+        "AI knowledge management",
+        "RAG knowledge base",
+        "enterprise knowledge base AI"
+      ],
+      "bing_counts": {
+        "AI knowledge base": 509000,
+        "AI knowledge management": 509000,
+        "RAG knowledge base": 70400,
+        "enterprise knowledge base AI": 88700
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI knowledge base",
+          "count": 509000
+        },
+        {
+          "keyword": "AI knowledge management",
+          "count": 509000
+        },
+        {
+          "keyword": "enterprise knowledge base AI",
+          "count": 88700
+        },
+        {
+          "keyword": "RAG knowledge base",
+          "count": 70400
+        }
+      ],
+      "verdict": "OK",
+      "reason": "'AI knowledge base' and 'AI knowledge management' both hit Bing ceiling — indistinguishable. Keep 'AI knowledge base' per Alignify convention (RAG knowledge base lower at 70,400).",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI knowledge base",
+        "AI knowledge management"
+      ]
+    },
+    {
+      "slug": "legal",
+      "path": "tools/enterprise-knowledge/legal.md",
+      "current_primary": "AI for lawyers",
+      "alternatives_tested": [
+        "legal AI tools",
+        "AI legal software",
+        "AI tools for legal professionals"
+      ],
+      "bing_counts": {
+        "AI for lawyers": 509000,
+        "legal AI tools": 121000,
+        "AI legal software": 509000,
+        "AI tools for legal professionals": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI for lawyers",
+          "count": 509000
+        },
+        {
+          "keyword": "AI legal software",
+          "count": 509000
+        },
+        {
+          "keyword": "AI tools for legal professionals",
+          "count": 509000
+        },
+        {
+          "keyword": "legal AI tools",
+          "count": 121000
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "'AI for lawyers' hits ceiling; measurable 'legal AI tools' (121,000) is strong alt. Either works; ceiling prevents clear winner.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI for lawyers",
+        "AI legal software",
+        "AI tools for legal professionals"
+      ]
+    },
+    {
+      "slug": "memory",
+      "path": "tools/enterprise-knowledge/memory.md",
+      "current_primary": "AI memory",
+      "alternatives_tested": [
+        "AI second brain",
+        "AI personal knowledge management",
+        "AI memory assistant"
+      ],
+      "bing_counts": {
+        "AI memory": 45300,
+        "AI second brain": 10800,
+        "AI personal knowledge management": 509000,
+        "AI memory assistant": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI personal knowledge management",
+          "count": 509000
+        },
+        {
+          "keyword": "AI memory assistant",
+          "count": 509000
+        },
+        {
+          "keyword": "AI memory",
+          "count": 45300
+        },
+        {
+          "keyword": "AI second brain",
+          "count": 10800
+        }
+      ],
+      "verdict": "OK",
+      "reason": "'AI memory' (45,300) leads among differentiated counts; 'AI second brain' (10,800) is lower. Ceiling hits on PKM variants are not same consumer intent.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI personal knowledge management",
+        "AI memory assistant"
+      ]
+    },
+    {
+      "slug": "ocr",
+      "path": "tools/enterprise-knowledge/ocr.md",
+      "current_primary": "OCR software",
+      "alternatives_tested": [
+        "AI OCR",
+        "optical character recognition tools",
+        "AI text recognition"
+      ],
+      "bing_counts": {
+        "OCR software": 92500,
+        "AI OCR": 509000,
+        "optical character recognition tools": 72100,
+        "AI text recognition": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI OCR",
+          "count": 509000
+        },
+        {
+          "keyword": "AI text recognition",
+          "count": 509000
+        },
+        {
+          "keyword": "OCR software",
+          "count": 92500
+        },
+        {
+          "keyword": "optical character recognition tools",
+          "count": 72100
+        }
+      ],
+      "verdict": "OK",
+      "reason": "'OCR software' (92,500) has solid volume; 'AI OCR' hits ceiling but page covers OCR category broadly. Keep 'OCR software' / 'AI OCR' dual acceptable.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI OCR",
+        "AI text recognition"
+      ]
+    },
+    {
+      "slug": "spreadsheet",
+      "path": "tools/enterprise-knowledge/spreadsheet.md",
+      "current_primary": "AI spreadsheet",
+      "alternatives_tested": [
+        "AI spreadsheet tools",
+        "AI for Excel",
+        "AI spreadsheet assistant"
+      ],
+      "bing_counts": {
+        "AI spreadsheet": 509000,
+        "AI spreadsheet tools": 509000,
+        "AI for Excel": 509000,
+        "AI spreadsheet assistant": 509000
+      },
+      "ranked_by_volume": [
+        {
+          "keyword": "AI spreadsheet",
+          "count": 509000
+        },
+        {
+          "keyword": "AI spreadsheet tools",
+          "count": 509000
+        },
+        {
+          "keyword": "AI for Excel",
+          "count": 509000
+        },
+        {
+          "keyword": "AI spreadsheet assistant",
+          "count": 509000
+        }
+      ],
+      "verdict": "AMBIGUOUS",
+      "reason": "Current 'AI spreadsheet' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+      "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+      "capped_keywords": [
+        "AI spreadsheet",
+        "AI spreadsheet tools",
+        "AI for Excel",
+        "AI spreadsheet assistant"
+      ]
+    }
+  ],
+  "bing_ceiling_threshold": 500000
+}

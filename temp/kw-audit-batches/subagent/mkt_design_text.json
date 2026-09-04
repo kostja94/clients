@@ -1,0 +1,149 @@
+[
+  {
+    "slug": "advertising-agent",
+    "path": "tools/marketing-growth/advertising-agent.md",
+    "current_primary": "Advertising Agent",
+    "keywordEn_full": "Advertising Agent / AI 广告投放 Agent",
+    "h1": "Advertising Agent · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "affiliate-marketing",
+    "path": "tools/marketing-growth/affiliate-marketing.md",
+    "current_primary": "Affiliate marketing",
+    "keywordEn_full": "Affiliate marketing / 联盟营销",
+    "h1": "Affiliate Marketing · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "b2b",
+    "path": "tools/marketing-growth/b2b.md",
+    "current_primary": "AI B2B Marketing Tools",
+    "keywordEn_full": "AI B2B Marketing Tools / B2B 营销 AI 工具",
+    "h1": "B2B Marketing · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "design",
+    "path": "tools/design/design.md",
+    "current_primary": "AI Design Tool",
+    "keywordEn_full": "AI Design Tool",
+    "h1": "AI Design（AI 设计工具）· 知识块（聚合 hub）"
+  },
+  {
+    "slug": "essay-writer",
+    "path": "tools/text-content/essay-writer.md",
+    "current_primary": "AI Essay Writer",
+    "keywordEn_full": "AI Essay Writer",
+    "h1": "AI Essay Writer · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "fundraising",
+    "path": "tools/marketing-growth/fundraising.md",
+    "current_primary": "AI fundraising",
+    "keywordEn_full": "AI fundraising / AI 融资工具",
+    "h1": "AI Fundraising · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "influencer-marketing",
+    "path": "tools/marketing-growth/influencer-marketing.md",
+    "current_primary": "Influencer marketing",
+    "keywordEn_full": "Influencer marketing / 网红营销",
+    "h1": "Influencer Marketing · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "lead-generation",
+    "path": "tools/marketing-growth/lead-generation.md",
+    "current_primary": "AI Lead Generation",
+    "keywordEn_full": "AI Lead Generation / AI 线索生成",
+    "h1": "Lead Generation · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "presentation-maker",
+    "path": "tools/text-content/presentation-maker.md",
+    "current_primary": "AI Presentation Maker",
+    "keywordEn_full": "AI Presentation Maker",
+    "h1": "AI Presentation Maker · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "prototyping",
+    "path": "tools/design/prototyping.md",
+    "current_primary": "Prototyping",
+    "keywordEn_full": "Prototyping / 交互原型",
+    "h1": "Prototyping（AI 交互原型）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "referral-program",
+    "path": "tools/marketing-growth/referral-program.md",
+    "current_primary": "Referral program",
+    "keywordEn_full": "Referral program / 推荐计划",
+    "h1": "Referral Program · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "social-media-tools",
+    "path": "tools/marketing-growth/social-media-tools.md",
+    "current_primary": "Social media management",
+    "keywordEn_full": "Social media management / scheduling tools（社媒管理与排程工具）",
+    "h1": "Social Media Tools · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "story-generator",
+    "path": "tools/text-content/story-generator.md",
+    "current_primary": "AI Story Generator",
+    "keywordEn_full": "AI Story Generator",
+    "h1": "AI Story Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "text",
+    "path": "tools/text-content/text.md",
+    "current_primary": "AI Text Tools",
+    "keywordEn_full": "AI Text Tools / AI Writing Tools",
+    "h1": "AI Text · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "text-generator",
+    "path": "tools/text-content/text-generator.md",
+    "current_primary": "AI Text Generator",
+    "keywordEn_full": "AI Text Generator",
+    "h1": "AI Text Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "text-translator",
+    "path": "tools/text-content/text-translator.md",
+    "current_primary": "AI text translation",
+    "keywordEn_full": "AI text translation",
+    "h1": "AI Text Translation · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ugc",
+    "path": "tools/marketing-growth/ugc.md",
+    "current_primary": "UGC",
+    "keywordEn_full": "UGC / User-Generated Content（营销语境）",
+    "h1": "UGC · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ui-design",
+    "path": "tools/design/ui-design.md",
+    "current_primary": "AI UI Design",
+    "keywordEn_full": "AI UI Design / 界面设计",
+    "h1": "AI UI Design（AI 界面设计）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "user-research",
+    "path": "tools/design/user-research.md",
+    "current_primary": "AI User Research",
+    "keywordEn_full": "AI User Research",
+    "h1": "AI User Research · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ux-design",
+    "path": "tools/design/ux-design.md",
+    "current_primary": "UX Design",
+    "keywordEn_full": "UX Design / 体验设计",
+    "h1": "AI UX Design（AI 体验设计）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "wireframing",
+    "path": "tools/design/wireframing.md",
+    "current_primary": "Wireframing",
+    "keywordEn_full": "Wireframing / 线框图",
+    "h1": "Wireframing（AI 线框图）· 知识块（非线性笔记）"
+  }
+]

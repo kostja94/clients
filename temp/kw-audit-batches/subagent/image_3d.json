@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "3d",
+    "path": "tools/3d-spatial/3d.md",
+    "current_primary": "AI 3D tools",
+    "keywordEn_full": "AI 3D 工具（Hub）",
+    "h1": "AI 3D Tools · 知识块（非线性笔记 · Hub）"
+  },
+  {
+    "slug": "3d-model-generator",
+    "path": "tools/3d-spatial/3d-model-generator.md",
+    "current_primary": "Text-to-3D",
+    "keywordEn_full": "Text-to-3D / Image-to-3D / 文图生 3D",
+    "h1": "AI 3D Model Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "3d-modelling",
+    "path": "tools/3d-spatial/3d-modelling.md",
+    "current_primary": "3D modelling",
+    "keywordEn_full": "3D modelling / DCC 精修",
+    "h1": "3D 建模工具（3D Modelling） · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "3d-scanner",
+    "path": "tools/3d-spatial/3d-scanner.md",
+    "current_primary": "AI 3D scanner",
+    "keywordEn_full": "AI 3D scanner / 实物数字化",
+    "h1": "AI 3D Scanner · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "avatar",
+    "path": "tools/image/avatar.md",
+    "current_primary": "Talking avatar",
+    "keywordEn_full": "Talking avatar / AI presenter / 数字人视频",
+    "h1": "AI Avatar Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "background-changer",
+    "path": "tools/image/background-changer.md",
+    "current_primary": "AI Background Changer",
+    "keywordEn_full": "",
+    "h1": "AI Background Changer · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "cad",
+    "path": "tools/3d-spatial/cad.md",
+    "current_primary": "CAD",
+    "keywordEn_full": "CAD / 工程几何",
+    "h1": "AI CAD Tools · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "headshot-generator",
+    "path": "tools/image/headshot-generator.md",
+    "current_primary": "AI Headshot Generator",
+    "keywordEn_full": "",
+    "h1": "AI Headshot Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "image",
+    "path": "tools/image/image.md",
+    "current_primary": "AI Image",
+    "keywordEn_full": "",
+    "h1": "AI Image · 知识块（非线性笔记 · Hub）"
+  },
+  {
+    "slug": "image-editor",
+    "path": "tools/image/image-editor.md",
+    "current_primary": "AI Image Editor",
+    "keywordEn_full": "",
+    "h1": "AI Image Editor · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "image-enhancer",
+    "path": "tools/image/image-enhancer.md",
+    "current_primary": "AI Image Enhancer",
+    "keywordEn_full": "",
+    "h1": "AI Image Enhancer · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "image-generator",
+    "path": "tools/image/image-generator.md",
+    "current_primary": "AI image generator",
+    "keywordEn_full": "AI image generator / 文生图（T2I）",
+    "h1": "AI Image Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "image-relighting",
+    "path": "tools/image/image-relighting.md",
+    "current_primary": "AI Image Relighting",
+    "keywordEn_full": "",
+    "h1": "AI Image Relighting · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "interior-design",
+    "path": "tools/3d-spatial/interior-design.md",
+    "current_primary": "AI interior design",
+    "keywordEn_full": "AI interior design / 自住改造可视化",
+    "h1": "AI Interior Design · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "logo-generator",
+    "path": "tools/image/logo-generator.md",
+    "current_primary": "AI logo generator",
+    "keywordEn_full": "AI logo generator / AI Logo 生成器",
+    "h1": "AI Logo Generator / AI Logo 生成器 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "poster-generator",
+    "path": "tools/image/poster-generator.md",
+    "current_primary": "AI Poster Generator",
+    "keywordEn_full": "",
+    "h1": "AI Poster Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "social-cards-generator",
+    "path": "tools/image/social-cards-generator.md",
+    "current_primary": "Social Cards Generator",
+    "keywordEn_full": "",
+    "h1": "Social Cards Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "tattoo-generator",
+    "path": "tools/image/tattoo-generator.md",
+    "current_primary": "AI Tattoo Generator",
+    "keywordEn_full": "",
+    "h1": "AI Tattoo Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "virtual-staging",
+    "path": "tools/3d-spatial/virtual-staging.md",
+    "current_primary": "AI virtual staging",
+    "keywordEn_full": "AI virtual staging / listing 虚拟置景",
+    "h1": "AI Virtual Staging · 知识块（非线性笔记）"
+  }
+]

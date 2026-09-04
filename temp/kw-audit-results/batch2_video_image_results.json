@@ -1,0 +1,626 @@
+[
+  {
+    "slug": "animation-generator",
+    "current_primary": "AI animation generator / AI anime generator",
+    "candidates_tested": [
+      {
+        "keyword": "AI animation generator",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI anime generator",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "animation generator AI",
+        "bing_approx": 172000
+      },
+      {
+        "keyword": "AI animated video generator",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "AI animation generator",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "AI animation generator",
+    "notes": "Primary 'AI animation generator' and alts hit Bing ~509,000 cap — SERP title review needed; capped: AI animation generator, AI anime generator, AI animated video generator"
+  },
+  {
+    "slug": "canvas-video",
+    "current_primary": "AI video canvas / node-based AI video workflow",
+    "candidates_tested": [
+      {
+        "keyword": "AI video canvas",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "node-based AI video workflow",
+        "bing_approx": 249000
+      },
+      {
+        "keyword": "canvas video AI",
+        "bing_approx": 65500
+      },
+      {
+        "keyword": "AI video workflow tool",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "AI video canvas",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "AI video canvas",
+    "notes": "Primary 'AI video canvas' and alts hit Bing ~509,000 cap — SERP title review needed; capped: AI video canvas, AI video workflow tool"
+  },
+  {
+    "slug": "filmmaking",
+    "current_primary": "AI Filmmaking / AI 电影制作",
+    "candidates_tested": [
+      {
+        "keyword": "AI filmmaking",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI filmmaking tools",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI film production",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI movie maker",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "AI filmmaking",
+    "verdict": "OK",
+    "recommended_primary": "AI filmmaking",
+    "notes": "best='AI filmmaking' ~509,000; primary='AI filmmaking' ~509,000; capped: AI filmmaking, AI filmmaking tools, AI film production, AI movie maker"
+  },
+  {
+    "slug": "image-to-video",
+    "current_primary": "Image-to-Video / I2V / 图生视频",
+    "candidates_tested": [
+      {
+        "keyword": "image to video",
+        "bing_approx": 627000
+      },
+      {
+        "keyword": "image-to-video",
+        "bing_approx": 627000
+      },
+      {
+        "keyword": "AI image to video",
+        "bing_approx": 27300
+      },
+      {
+        "keyword": "image to video AI generator",
+        "bing_approx": 15700
+      }
+    ],
+    "highest_volume_keyword": "image to video",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "image-to-video",
+    "notes": "Primary 'image-to-video' and alts hit Bing ~509,000 cap — SERP title review needed; capped: image to video, image-to-video"
+  },
+  {
+    "slug": "interactive-video",
+    "current_primary": "Interactive video / 实时交互视频",
+    "candidates_tested": [
+      {
+        "keyword": "interactive video",
+        "bing_approx": 127000
+      },
+      {
+        "keyword": "AI interactive video",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "live video generation",
+        "bing_approx": 711000
+      },
+      {
+        "keyword": "real-time interactive video",
+        "bing_approx": 732
+      }
+    ],
+    "highest_volume_keyword": "live video generation",
+    "verdict": "OK",
+    "recommended_primary": "interactive video",
+    "notes": "Primary 'interactive video' ~127,000 leads non-capped alts; capped: AI interactive video, live video generation"
+  },
+  {
+    "slug": "music-video-generator",
+    "current_primary": "AI music video generator / MV 生成器",
+    "candidates_tested": [
+      {
+        "keyword": "AI music video generator",
+        "bing_approx": 3630
+      },
+      {
+        "keyword": "music video generator AI",
+        "bing_approx": 1060000
+      },
+      {
+        "keyword": "AI music video maker",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "music video maker AI",
+        "bing_approx": 1060000
+      }
+    ],
+    "highest_volume_keyword": "music video generator AI",
+    "verdict": "OK",
+    "recommended_primary": "AI music video generator",
+    "notes": "Primary 'AI music video generator' ~3,630 leads non-capped alts; capped: music video generator AI, AI music video maker, music video maker AI"
+  },
+  {
+    "slug": "short-drama",
+    "current_primary": "AI short drama platform / AI 短剧平台",
+    "candidates_tested": [
+      {
+        "keyword": "AI short drama platform",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI short drama",
+        "bing_approx": 3850
+      },
+      {
+        "keyword": "AI short film platform",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI drama generator",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "AI short drama platform",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "AI short drama platform",
+    "notes": "Primary 'AI short drama platform' and alts hit Bing ~509,000 cap — SERP title review needed; capped: AI short drama platform, AI short film platform, AI drama generator"
+  },
+  {
+    "slug": "text-to-video",
+    "current_primary": "Text-to-Video (T2V) / 文生视频",
+    "candidates_tested": [
+      {
+        "keyword": "text to video",
+        "bing_approx": 147000
+      },
+      {
+        "keyword": "text-to-video",
+        "bing_approx": 147000
+      },
+      {
+        "keyword": "AI text to video",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "text to video AI generator",
+        "bing_approx": 147000
+      }
+    ],
+    "highest_volume_keyword": "AI text to video",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "text-to-video",
+    "notes": "Primary ~147,000; multiple alts within ~1.5x; capped: AI text to video"
+  },
+  {
+    "slug": "video-clipping",
+    "current_primary": "AI Video Clipping / Repurposing",
+    "candidates_tested": [
+      {
+        "keyword": "AI video clipping",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "video clipping",
+        "bing_approx": 802000
+      },
+      {
+        "keyword": "AI video repurposing",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI video clipper",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "video clipping",
+    "verdict": "NEEDS_REVIEW",
+    "recommended_primary": "video clipping",
+    "notes": "best='video clipping' ~802,000; primary='AI video clipping' ~509,000; capped: AI video clipping, video clipping, AI video repurposing, AI video clipper"
+  },
+  {
+    "slug": "video-editor",
+    "current_primary": "AI Video Editor / AI 视频编辑器",
+    "candidates_tested": [
+      {
+        "keyword": "AI video editor",
+        "bing_approx": 16700
+      },
+      {
+        "keyword": "AI video editor tools",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "video editor AI",
+        "bing_approx": 16800
+      },
+      {
+        "keyword": "AI video editing",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "AI video editor tools",
+    "verdict": "SWITCH",
+    "recommended_primary": "AI video editor tools",
+    "notes": "'AI video editor tools' ~509,000 >=2x primary ~16,700; capped: AI video editor tools, AI video editing"
+  },
+  {
+    "slug": "video-effects",
+    "current_primary": "AI Video Effects / AI VFX",
+    "candidates_tested": [
+      {
+        "keyword": "AI video effects",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI VFX",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "video effects",
+        "bing_approx": 40500
+      },
+      {
+        "keyword": "AI video VFX",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "AI video effects",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "AI video effects",
+    "notes": "Primary 'AI video effects' and alts hit Bing ~509,000 cap — SERP title review needed; capped: AI video effects, AI VFX, AI video VFX"
+  },
+  {
+    "slug": "video-generator",
+    "current_primary": "AI video generator / AI 视频生成器",
+    "candidates_tested": [
+      {
+        "keyword": "AI video generator",
+        "bing_approx": 22500
+      },
+      {
+        "keyword": "AI video generator tools",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "video generator AI",
+        "bing_approx": 22200
+      },
+      {
+        "keyword": "AI video maker",
+        "bing_approx": 15400
+      }
+    ],
+    "highest_volume_keyword": "AI video generator tools",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "AI video generator",
+    "notes": "Primary ~22,500; multiple alts within ~1.5x; capped: AI video generator tools"
+  },
+  {
+    "slug": "video-to-video",
+    "current_primary": "Video-to-Video (V2V) / 视频到视频",
+    "candidates_tested": [
+      {
+        "keyword": "video to video",
+        "bing_approx": 802000
+      },
+      {
+        "keyword": "video-to-video",
+        "bing_approx": 802000
+      },
+      {
+        "keyword": "AI video to video",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "video to video AI",
+        "bing_approx": 802000
+      }
+    ],
+    "highest_volume_keyword": "video to video",
+    "verdict": "OK",
+    "recommended_primary": "video-to-video",
+    "notes": "best='video to video' ~802,000; primary='video-to-video' ~802,000; capped: video to video, video-to-video, AI video to video, video to video AI"
+  },
+  {
+    "slug": "avatar",
+    "current_primary": "Talking avatar / AI presenter / 数字人视频",
+    "candidates_tested": [
+      {
+        "keyword": "talking avatar",
+        "bing_approx": 759000
+      },
+      {
+        "keyword": "AI avatar",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI presenter",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI digital human",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "talking avatar",
+    "verdict": "OK",
+    "recommended_primary": "talking avatar",
+    "notes": "best='talking avatar' ~759,000; primary='talking avatar' ~759,000; capped: talking avatar, AI avatar, AI presenter, AI digital human"
+  },
+  {
+    "slug": "background-changer",
+    "current_primary": "AI Background Changer",
+    "candidates_tested": [
+      {
+        "keyword": "AI background changer",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "background changer",
+        "bing_approx": 25300
+      },
+      {
+        "keyword": "AI background remover",
+        "bing_approx": 4060
+      },
+      {
+        "keyword": "change background AI",
+        "bing_approx": 202000
+      }
+    ],
+    "highest_volume_keyword": "AI background changer",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "AI background changer",
+    "notes": "Primary 'AI background changer' and alts hit Bing ~509,000 cap — SERP title review needed; capped: AI background changer"
+  },
+  {
+    "slug": "headshot-generator",
+    "current_primary": "AI Headshot Generator",
+    "candidates_tested": [
+      {
+        "keyword": "AI headshot generator",
+        "bing_approx": 6120
+      },
+      {
+        "keyword": "headshot generator",
+        "bing_approx": 18700
+      },
+      {
+        "keyword": "AI professional headshot",
+        "bing_approx": 77000
+      },
+      {
+        "keyword": "professional headshot AI",
+        "bing_approx": 108000
+      }
+    ],
+    "highest_volume_keyword": "professional headshot AI",
+    "verdict": "SWITCH",
+    "recommended_primary": "professional headshot AI",
+    "notes": "'professional headshot AI' ~108,000 >=2x primary 'AI headshot generator' ~6,120"
+  },
+  {
+    "slug": "image-editor",
+    "current_primary": "AI Image Editor",
+    "candidates_tested": [
+      {
+        "keyword": "AI image editor",
+        "bing_approx": 12800
+      },
+      {
+        "keyword": "image editor tools",
+        "bing_approx": 617000
+      },
+      {
+        "keyword": "AI photo editor",
+        "bing_approx": 6340
+      },
+      {
+        "keyword": "image editor AI",
+        "bing_approx": 617000
+      }
+    ],
+    "highest_volume_keyword": "image editor tools",
+    "verdict": "OK",
+    "recommended_primary": "AI image editor",
+    "notes": "Primary 'AI image editor' ~12,800 leads non-capped alts; capped: image editor tools, image editor AI"
+  },
+  {
+    "slug": "image-enhancer",
+    "current_primary": "AI Image Enhancer",
+    "candidates_tested": [
+      {
+        "keyword": "AI image enhancer",
+        "bing_approx": 7640
+      },
+      {
+        "keyword": "AI photo enhancer",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "image enhancer",
+        "bing_approx": 13500
+      },
+      {
+        "keyword": "AI image upscaler",
+        "bing_approx": 30100
+      }
+    ],
+    "highest_volume_keyword": "AI photo enhancer",
+    "verdict": "SWITCH",
+    "recommended_primary": "AI image upscaler",
+    "notes": "'AI image upscaler' ~30,100 >=2x primary 'AI image enhancer' ~7,640; capped: AI photo enhancer"
+  },
+  {
+    "slug": "image-generator",
+    "current_primary": "AI image generator / 文生图（T2I）",
+    "candidates_tested": [
+      {
+        "keyword": "AI image generator",
+        "bing_approx": 37900
+      },
+      {
+        "keyword": "text to image",
+        "bing_approx": 58000
+      },
+      {
+        "keyword": "AI art generator",
+        "bing_approx": 59000
+      },
+      {
+        "keyword": "text to image AI",
+        "bing_approx": 147000
+      }
+    ],
+    "highest_volume_keyword": "text to image AI",
+    "verdict": "SWITCH",
+    "recommended_primary": "text to image AI",
+    "notes": "'text to image AI' ~147,000 >=2x primary 'AI image generator' ~37,900"
+  },
+  {
+    "slug": "image-relighting",
+    "current_primary": "AI Image Relighting",
+    "candidates_tested": [
+      {
+        "keyword": "AI image relighting",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "image relighting",
+        "bing_approx": 617000
+      },
+      {
+        "keyword": "AI relighting",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "AI photo relighting",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "image relighting",
+    "verdict": "OK",
+    "recommended_primary": "AI image relighting",
+    "notes": "best='image relighting' ~617,000; primary='AI image relighting' ~509,000; capped: AI image relighting, image relighting, AI relighting, AI photo relighting"
+  },
+  {
+    "slug": "logo-generator",
+    "current_primary": "AI logo generator / AI Logo 生成器",
+    "candidates_tested": [
+      {
+        "keyword": "AI logo generator",
+        "bing_approx": 5770
+      },
+      {
+        "keyword": "logo generator AI",
+        "bing_approx": 673000
+      },
+      {
+        "keyword": "AI logo maker",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "logo maker AI",
+        "bing_approx": 8340
+      }
+    ],
+    "highest_volume_keyword": "logo generator AI",
+    "verdict": "NEEDS_REVIEW",
+    "recommended_primary": "logo maker AI",
+    "notes": "'logo maker AI' ~8,340 moderately above primary ~5,770; capped: logo generator AI, AI logo maker"
+  },
+  {
+    "slug": "poster-generator",
+    "current_primary": "AI Poster Generator",
+    "candidates_tested": [
+      {
+        "keyword": "AI poster generator",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "poster generator",
+        "bing_approx": 91000
+      },
+      {
+        "keyword": "AI poster maker",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "poster maker AI",
+        "bing_approx": 91000
+      }
+    ],
+    "highest_volume_keyword": "AI poster generator",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "AI poster generator",
+    "notes": "Primary 'AI poster generator' and alts hit Bing ~509,000 cap — SERP title review needed; capped: AI poster generator, AI poster maker"
+  },
+  {
+    "slug": "social-cards-generator",
+    "current_primary": "Social Cards Generator",
+    "candidates_tested": [
+      {
+        "keyword": "social cards generator",
+        "bing_approx": 274000
+      },
+      {
+        "keyword": "AI social cards generator",
+        "bing_approx": 509000
+      },
+      {
+        "keyword": "og image generator",
+        "bing_approx": 327000
+      },
+      {
+        "keyword": "social media card generator",
+        "bing_approx": 274000
+      }
+    ],
+    "highest_volume_keyword": "AI social cards generator",
+    "verdict": "AMBIGUOUS",
+    "recommended_primary": "social cards generator",
+    "notes": "Primary ~274,000; multiple alts within ~1.5x; capped: AI social cards generator"
+  },
+  {
+    "slug": "tattoo-generator",
+    "current_primary": "AI Tattoo Generator",
+    "candidates_tested": [
+      {
+        "keyword": "AI tattoo generator",
+        "bing_approx": 6460
+      },
+      {
+        "keyword": "tattoo generator",
+        "bing_approx": 50000
+      },
+      {
+        "keyword": "tattoo generator AI",
+        "bing_approx": 6930
+      },
+      {
+        "keyword": "AI tattoo design",
+        "bing_approx": 509000
+      }
+    ],
+    "highest_volume_keyword": "AI tattoo design",
+    "verdict": "SWITCH",
+    "recommended_primary": "tattoo generator",
+    "notes": "'tattoo generator' ~50,000 >=2x primary 'AI tattoo generator' ~6,460; capped: AI tattoo design"
+  }
+]

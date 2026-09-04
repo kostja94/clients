@@ -30,7 +30,7 @@
 | E12 | frontmatter 含 `howTo:` | **禁止**；HowTo 仅正文 section |
 | E13 | 跳过 Step 02 / 无 Brief | flagship 须 Gate 0R + Brief |
 | E14 | 无 Moat 或正文未兑现 | Brief Moat ≥1 + 正文显式体现 |
-| E15 | SelfCheck 未 Pass 送审 | 须 audit-ready 再 audit-article |
+| E15 | SelfCheck 未 Pass 送审 | 须 audit-ready 再跑 Step 11 |
 | E16 | 未终审直接发布 | 须 publish-ready（≥80 + P0） |
 
 ---

@@ -1,0 +1,596 @@
+{
+  "agent-billing": [
+    {
+      "keyword": "AI agent billing",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP OpenAI/Gemini generic"
+    },
+    {
+      "keyword": "AI agent billing software",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP OpenAI/Gemini generic"
+    },
+    {
+      "keyword": "agent monetization",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback Microsoft Learn agents"
+    },
+    {
+      "keyword": "agent billing",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback Microsoft Learn agents"
+    },
+    {
+      "keyword": "AI agent billing platform",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP OpenAI/Gemini generic"
+    }
+  ],
+  "agent-for-desktop": [
+    {
+      "keyword": "Agent on desktop",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "desktop AI agent",
+      "quoted_results": 150000,
+      "serp_titles": "POLLUTED desktop computers Best Buy"
+    },
+    {
+      "keyword": "AI desktop agent",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP OpenAI/Gemini generic"
+    },
+    {
+      "keyword": "desktop agent",
+      "quoted_results": 150000,
+      "serp_titles": "POLLUTED desktop computers Best Buy"
+    },
+    {
+      "keyword": "computer use agent",
+      "quoted_results": 271000,
+      "serp_titles": "POLLUTED Computer Wikipedia/Best Buy"
+    }
+  ],
+  "agent-identity": [
+    {
+      "keyword": "AI Agent Identity",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "agent identity",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "agent IAM",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "agentic IAM",
+      "quoted_results": 84200,
+      "serp_titles": "POLLUTED generic Agentic AI"
+    },
+    {
+      "keyword": "AI agent identity management",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    }
+  ],
+  "agent-memory": [
+    {
+      "keyword": "Agent Memory Layer",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "AI agent memory",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "agent memory",
+      "quoted_results": 13100,
+      "serp_titles": "ON-INTENT GitHub agentmemory / TencentDB Agent Memory"
+    },
+    {
+      "keyword": "memory layer for AI agents",
+      "quoted_results": 150000,
+      "serp_titles": "POLLUTED Memory Wikipedia"
+    },
+    {
+      "keyword": "LLM agent memory",
+      "quoted_results": 105000,
+      "serp_titles": "POLLUTED LLM Wikipedia"
+    }
+  ],
+  "agent-runtime": [
+    {
+      "keyword": "AI Agent Runtime",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "agent runtime",
+      "quoted_results": 5140,
+      "serp_titles": "ON-INTENT Chinese/EN Agent Runtime explainers"
+    },
+    {
+      "keyword": "AI agent runtime",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "agent execution runtime",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "LLM agent runtime",
+      "quoted_results": 105000,
+      "serp_titles": "POLLUTED LLM Wikipedia"
+    }
+  ],
+  "agent-sandbox": [
+    {
+      "keyword": "AI Agent Sandbox",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "agent sandbox",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "AI agent sandbox",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "sandbox for AI agents",
+      "quoted_results": 39700,
+      "serp_titles": "POLLUTED The Sandbox Game"
+    },
+    {
+      "keyword": "code sandbox AI agent",
+      "quoted_results": 363000,
+      "serp_titles": "POLLUTED VS Code / Code.org"
+    }
+  ],
+  "agent-skills": [
+    {
+      "keyword": "Agent Skills",
+      "quoted_results": 43300,
+      "serp_titles": "ON-INTENT GitHub agent-skills, SkillsMP marketplace"
+    },
+    {
+      "keyword": "AI agent skills",
+      "quoted_results": 26200,
+      "serp_titles": "ON-INTENT Awesome AI Agent Skills"
+    },
+    {
+      "keyword": "Claude agent skills",
+      "quoted_results": 59400,
+      "serp_titles": "BRAND Claude.ai only"
+    },
+    {
+      "keyword": "agent skills marketplace",
+      "quoted_results": 18100,
+      "serp_titles": "ON-INTENT SkillsMP marketplace"
+    },
+    {
+      "keyword": "MCP skills",
+      "quoted_results": 86900,
+      "serp_titles": "MIXED MCP protocol + CA DMV motor carrier"
+    }
+  ],
+  "agent-to-agent": [
+    {
+      "keyword": "A2A Agent Network",
+      "quoted_results": 92500,
+      "serp_titles": "ON-INTENT A2A protocol GitHub (protocol not social network)"
+    },
+    {
+      "keyword": "agent to agent",
+      "quoted_results": 132000,
+      "serp_titles": "ON-INTENT A2A Protocol / Microsoft Learn / Google announce"
+    },
+    {
+      "keyword": "A2A protocol",
+      "quoted_results": 26400,
+      "serp_titles": "ON-INTENT a2a-protocol.org"
+    },
+    {
+      "keyword": "agent-to-agent communication",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "Google A2A",
+      "quoted_results": 2170000,
+      "serp_titles": "POLLUTED Google.com brand"
+    }
+  ],
+  "agentic-commerce": [
+    {
+      "keyword": "Agentic Commerce",
+      "quoted_results": 15600,
+      "serp_titles": "ON-INTENT IBM / McKinsey category pages"
+    },
+    {
+      "keyword": "agentic shopping",
+      "quoted_results": 84200,
+      "serp_titles": "POLLUTED generic Agentic AI"
+    },
+    {
+      "keyword": "AI agent commerce",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "agentic checkout",
+      "quoted_results": 84200,
+      "serp_titles": "POLLUTED generic Agentic AI"
+    },
+    {
+      "keyword": "agent commerce",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    }
+  ],
+  "agentic-payments": [
+    {
+      "keyword": "Agentic Payments",
+      "quoted_results": 84200,
+      "serp_titles": "POLLUTED generic Agentic AI (Bing); WebSearch titles ON-INTENT Fireblocks/ACI/AWS"
+    },
+    {
+      "keyword": "AI agent payments",
+      "quoted_results": 509000,
+      "serp_titles": "POLLUTED_CAP"
+    },
+    {
+      "keyword": "agentic payment",
+      "quoted_results": 84200,
+      "serp_titles": "POLLUTED generic Agentic AI"
+    },
+    {
+      "keyword": "agent payments",
+      "quoted_results": 4280,
+      "serp_titles": "MS fallback"
+    },
+    {
+      "keyword": "x402 payments",
+      "quoted_results": 20700,
+      "serp_titles": "ON-INTENT x402 protocol pages"
+    }
+  ],
+  "ai-employee": [
+    {
+      "keyword": "AI Employee",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "AI coworker",
+      "quoted_results": 58,
+      "serp_titles": "Rohan Paul on X: &quot;Looks like the AI coworker category is on fire. | Meet the new AI Coworker who won’t stop snitching to your boss … | About Grok, Your Humorous AI Assistant on X - help.x.com | We Built Every Employee at Ramp Their Own AI Coworker | Developers Embrace Claude's Code and Cowork as AI Coworker"
+    },
+    {
+      "keyword": "AI teammate",
+      "quoted_results": 48100,
+      "serp_titles": "Teammates — AI Teammates for Support, Sales &amp; Recruiting | Asana AI Teammates: Agents ready to work with your team | AI Teammate - AI Agents That Control Robots, Tools &amp; Teams | AI Teammate | Atlassian | AI Agents for Work | Asana AI Teammates • Asana"
+    },
+    {
+      "keyword": "digital employee",
+      "quoted_results": 211000,
+      "serp_titles": "Digital - Wikipedia | DIGITAL Definition &amp; Meaning - Merriam-Webster | Digital media - Wikipedia | DIGITAL | English meaning - Cambridge Dictionary | What Is Digital? - Computer Hope"
+    },
+    {
+      "keyword": "AI employees",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    }
+  ],
+  "ai-shopping": [
+    {
+      "keyword": "AI Shopping",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "AI shopping assistant",
+      "quoted_results": 2670,
+      "serp_titles": "5 AI Shopping Assistant Tools To Help You Shop Wisely | 5 Best AI Shopping Assistants in 2026 (Tested &amp; Ranked) | ChatGPT Shopping | AI Shopping Assistant | The Ultimate Guide to AI Shopping Assistants - sobot.io | Top AI Shopping Assistants Revolutionizing eCommerce in 2026"
+    },
+    {
+      "keyword": "AI shopping agent",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "shop with AI",
+      "quoted_results": 465000,
+      "serp_titles": "Shop | Shopping designed around you | Explore - Shop | SHOP.COM | Walmart | Save Money. Live better. | Amazon.com. Spend less. Smile more."
+    },
+    {
+      "keyword": "AI product search",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    }
+  ],
+  "browser": [
+    {
+      "keyword": "AI browser",
+      "quoted_results": 61800,
+      "serp_titles": "Best Agentic Browsers &amp; AI Browser Agents in 2026 | The Best AI Web Browsers We've Tested for 2026 | PCMag | Comet Browser: a Personal AI Assistant | 11 Best AI Browsers in 2026 (Tested &amp; Compared) - testgrid.io | Polar: AI Browser"
+    },
+    {
+      "keyword": "AI web browser",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "agentic browser",
+      "quoted_results": 125000,
+      "serp_titles": "Best Agentic Browsers &amp; AI Browser Agents in 2026 | 10 Best Agentic Browsers in 2026 (Ranked) - brightdata.com | Agentic Browser | BrowserOS - Open-Source AI Browser | Privacy-First Alternative | GitHub - browseros-ai/BrowserOS: The open-source Agentic browser ..."
+    },
+    {
+      "keyword": "AI browsing",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "Comet browser",
+      "quoted_results": 21600,
+      "serp_titles": "Comet Browser: a Personal AI Assistant | The browser that works as fast as you think - perplexity.ai | Comet Browser - AI-Powered Browser | Comet Browser - Download | Comet Browser - Download and install on Windows | Microsoft Store"
+    }
+  ],
+  "data-engineering-agent": [
+    {
+      "keyword": "Data Engineering Agent",
+      "quoted_results": 296000,
+      "serp_titles": "Data - Wikipedia | Data.gov Home - Data.gov | DataOhio | Ohio.gov | What is data? - IBM | DATA Definition &amp; Meaning - Merriam-Webster"
+    },
+    {
+      "keyword": "AI data engineer",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "agentic data engineering",
+      "quoted_results": 84200,
+      "serp_titles": "What Is Agentic AI? Definition, 6 Levels &amp; Examples (2026) | Agentic AI, explained - MIT Sloan | AI agent - Wikipedia | 'Agentic' AI is a buzzword made up of marketing fluff and real promise ... | What is agentic AI? - IBM"
+    },
+    {
+      "keyword": "data engineer agent",
+      "quoted_results": 296000,
+      "serp_titles": "Data - Wikipedia | Data.gov Home - Data.gov | DataOhio | Ohio.gov | What is data? - IBM | DATA Definition &amp; Meaning - Merriam-Webster"
+    },
+    {
+      "keyword": "AI data engineering agent",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    }
+  ],
+  "expert-agent": [
+    {
+      "keyword": "Expert Agent",
+      "quoted_results": 274000,
+      "serp_titles": "EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning - Cambridge Dictionary | Expert - Wikipedia | Expert - Simple English Wikipedia, the free encyclopedia"
+    },
+    {
+      "keyword": "AI expert agent",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "expert AI agent",
+      "quoted_results": 274000,
+      "serp_titles": "EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning - Cambridge Dictionary | Expert - Wikipedia | Expert - Simple English Wikipedia, the free encyclopedia"
+    },
+    {
+      "keyword": "AI expert network",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "expert agent marketplace",
+      "quoted_results": 274000,
+      "serp_titles": "EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning - Cambridge Dictionary | Expert - Wikipedia | Expert - Simple English Wikipedia, the free encyclopedia"
+    }
+  ],
+  "multi-agent": [
+    {
+      "keyword": "Multi-Agent Systems",
+      "quoted_results": 104000,
+      "serp_titles": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia"
+    },
+    {
+      "keyword": "multi-agent AI",
+      "quoted_results": 104000,
+      "serp_titles": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia"
+    },
+    {
+      "keyword": "multi agent system",
+      "quoted_results": 104000,
+      "serp_titles": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia"
+    },
+    {
+      "keyword": "multi-agent orchestration",
+      "quoted_results": 104000,
+      "serp_titles": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia"
+    },
+    {
+      "keyword": "AI multi-agent",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    }
+  ],
+  "openclaw-alternatives": [
+    {
+      "keyword": "OpenClaw alternatives",
+      "quoted_results": 78500,
+      "serp_titles": "OpenClaw — Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - OpenClaw"
+    },
+    {
+      "keyword": "OpenClaw",
+      "quoted_results": 78500,
+      "serp_titles": "OpenClaw — Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - OpenClaw"
+    },
+    {
+      "keyword": "Clawdbot alternatives",
+      "quoted_results": 92,
+      "serp_titles": "Anmelden bei Hotmail | Microsoft Support | Change the refresh rate on your monitor in Windows | Microsoft Support | Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub | Released: July 2026 Exchange Server Security Updates | Microsoft ... | Close your Outlook.com account | Microsoft Support"
+    },
+    {
+      "keyword": "Moltbot alternatives",
+      "quoted_results": 9450,
+      "serp_titles": "MoltBot - Open Source Personal AI Assistant | Formerly ClawdBot | Moltbot - Personal AI Assistant That Actually Does Things | Moltbot - Open-Source AI Assistant for WhatsApp, Telegram &amp; Slack | MoltBot Personal AI Assistant| AI Agent for all your tasks | moltbot &#183; GitHub"
+    },
+    {
+      "keyword": "OpenClaw vs",
+      "quoted_results": 78500,
+      "serp_titles": "OpenClaw — Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - OpenClaw"
+    }
+  ],
+  "vibe-coding-payments": [
+    {
+      "keyword": "vibe coding payments",
+      "quoted_results": 119000,
+      "serp_titles": "Vibe - Mistral AI | VIBE.com – Hip-Hop, R&amp;B, Style, and Black Culture | VIBE Definition &amp; Meaning - Merriam-Webster | Vibe - Local Audio &amp; Video Transcription App - GitHub Pages | Vibe: Contextual AI Workspace | Vibe"
+    },
+    {
+      "keyword": "add payments to vibe coded app",
+      "quoted_results": 163000,
+      "serp_titles": "ADD vs. ADHD: How Are They Different? - Verywell Mind | ADD vs. ADHD: What's the Difference Between ADD &amp; ADHD? | ADD vs. ADHD Symptoms: 3 Types of Attention Deficit Disorder | What Is ADD - Symptoms, Differences, Treatments Guide | ADD vs. ADHD: What’s the Difference?"
+    },
+    {
+      "keyword": "stripe vibe coding",
+      "quoted_results": 64700,
+      "serp_titles": "Stripe Login | Sign in to the Stripe Dashboard | Stripe | Financial Infrastructure to Grow Your Revenue | Sign up and create a Stripe account | Stripe | Stripe, Inc. - Wikipedia | Stripe Payments | Global Payment Processing Platform"
+    },
+    {
+      "keyword": "how to add payments to vibe coded app",
+      "quoted_results": 142000,
+      "serp_titles": "wikiHow: How-to instructions you can trust. | HOW | English meaning - Cambridge Dictionary | HOW Definition &amp; Meaning - Merriam-Webster | How - Wikipedia | HowStuffWorks - Learn How Everything Works!"
+    },
+    {
+      "keyword": "vibe coding Stripe",
+      "quoted_results": 119000,
+      "serp_titles": "Vibe - Mistral AI | VIBE.com – Hip-Hop, R&amp;B, Style, and Black Culture | VIBE Definition &amp; Meaning - Merriam-Webster | Vibe - Local Audio &amp; Video Transcription App - GitHub Pages | Vibe: Contextual AI Workspace | Vibe"
+    }
+  ],
+  "work-agent": [
+    {
+      "keyword": "Work Agent",
+      "quoted_results": 426000,
+      "serp_titles": "WORK Definition &amp; Meaning - Merriam-Webster | WorkInTexas | Rihanna - Work (Lyrics) ft. Drake - YouTube | Rihanna - Work (Explicit) ft. Drake - YouTube | Log in to The Work Number"
+    },
+    {
+      "keyword": "AI Work Agent",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "AI work agent",
+      "quoted_results": 55,
+      "serp_titles": "通販・テレビショッピングのショップチャンネル | 本日のお買い得- 通販・テレビショッピングのショップチャンネル | ショップチャンネルカードのWeb明細はどこで確認できますか ... | 交換・返品商品の返送先住所を確認したいです。 : よくあるご ... | 検索結果｜テレビショッピングのショップチャンネル｜24時間365 ..."
+    },
+    {
+      "keyword": "work AI agent",
+      "quoted_results": 426000,
+      "serp_titles": "WORK Definition &amp; Meaning - Merriam-Webster | WorkInTexas | Rihanna - Work (Lyrics) ft. Drake - YouTube | Rihanna - Work (Explicit) ft. Drake - YouTube | Log in to The Work Number"
+    },
+    {
+      "keyword": "workplace agent",
+      "quoted_results": 58900,
+      "serp_titles": "Workplace | Workplace from Meta | Workplace - Facebook | Workplace from Meta - Apps on Google Play | Workplace (software) - Wikipedia"
+    }
+  ],
+  "workflow": [
+    {
+      "keyword": "Workflow automation",
+      "quoted_results": 28000,
+      "serp_titles": "Workflow automation: Definition, tutorial, and tools - Zapier | Power Automate: Business Process Workflow Automation | Microsoft … | Best Workflow Automation Software in 2026: Top 14 Tools Ranked | What is Workflow Automation? | Atlassian | Workflow Automation | Microsoft Copilot"
+    },
+    {
+      "keyword": "AI workflow",
+      "quoted_results": 45500,
+      "serp_titles": "10 Best AI Workflow Tools Reviewed in 2026 - The Digital Project … | AI Workflow | IBM | 10 best AI workflow automation tools I'm using in 2026 | What Is an AI Workflow? A Complete Guide for 2026 | AI Workflow Examples: 10 Real Use Cases Across Industries"
+    },
+    {
+      "keyword": "AI workflow automation",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "workflow AI",
+      "quoted_results": 135000,
+      "serp_titles": "Creating a workflow | Microsoft Support | Workflow - Wikipedia | Workflows - Google Cloud | Getting started with Workflows | Microsoft Support | What is a workflow? - IBM"
+    },
+    {
+      "keyword": "agentic workflow",
+      "quoted_results": 19000,
+      "serp_titles": "What are agentic workflows? - IBM | Home | GitHub Agentic Workflows | What Are Agentic Workflows? A Complete Guide - Redis | A Practical Guide for Designing, Developing, and Deploying … | What are agentic workflows? Design patterns &amp; when to use them"
+    }
+  ],
+  "workspace-agent": [
+    {
+      "keyword": "Workspace Agent",
+      "quoted_results": 92800,
+      "serp_titles": "Google Workspace: Secure Online Productivity &amp; Collaboration Tools | Google Workspace | 办公应用 &amp; 协作工具 | Sign in - Google Accounts | Download Citrix Workspace app - Citrix | 注册即可免费试用 Google Workspace"
+    },
+    {
+      "keyword": "Team AI Agent",
+      "quoted_results": 333000,
+      "serp_titles": "Microsoft Teams | Sign In | Microsoft Teams | Free Online Meetings &amp; Video Calls | Microsoft Teams | Download Teams Desktop and Mobile Apps | Microsoft Teams | Microsoft Teams - Download and install on Windows | Microsoft Store"
+    },
+    {
+      "keyword": "AI workspace agent",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "workspace AI agent",
+      "quoted_results": 92800,
+      "serp_titles": "Google Workspace: Secure Online Productivity &amp; Collaboration Tools | Google Workspace | 办公应用 &amp; 协作工具 | Sign in - Google Accounts | Download Citrix Workspace app - Citrix | 注册即可免费试用 Google Workspace"
+    },
+    {
+      "keyword": "custom GPT workspace",
+      "quoted_results": 156000,
+      "serp_titles": "CUSTOM Definition &amp; Meaning - Merriam-Webster | CUSTOM | English meaning - Cambridge Dictionary | Custom - definition of custom by The Free Dictionary | Custom - Definition, Meaning &amp; Synonyms | Vocabulary.com | CUSTOM Definition &amp; Meaning | Dictionary.com"
+    }
+  ],
+  "world-model": [
+    {
+      "keyword": "World model",
+      "quoted_results": 43100,
+      "serp_titles": "【世界模型】一文读懂世界模型：从核心原理到前沿争议 - 知乎 | 世界模型 (World Models)深度研究：从理论到应用的全景拆解 | [1803.10122] World Models - arXiv.org | World Model：从强化学习到具身智能的完整入门 | Yang Li | AI世界模型（World Model）全解析：技术原理、研究进展与产业落地_ …"
+    },
+    {
+      "keyword": "world models",
+      "quoted_results": 40700,
+      "serp_titles": "[1803.10122] World Models - arXiv.org | World Models | 【世界模型】一文读懂世界模型：从核心原理到前沿争议 - 知乎 | 世界模型 (World Models)深度研究：从理论到应用的全景拆解 | [2606.00133] World Models: A Comprehensive Survey of Architectures ..."
+    },
+    {
+      "keyword": "AI world models",
+      "quoted_results": 509000,
+      "serp_titles": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone"
+    },
+    {
+      "keyword": "world model AI",
+      "quoted_results": 1380000,
+      "serp_titles": "World News: Top &amp; Breaking World News Today | AP News | World | Latest News &amp; Updates - BBC | World news: Latest news, breaking news, today's news stories from ... | World News Today Updates &amp; Daily Headlines | Fox News | World News - The New York Times International"
+    },
+    {
+      "keyword": "world models machine learning",
+      "quoted_results": 1380000,
+      "serp_titles": "World News: Top &amp; Breaking World News Today | AP News | World | Latest News &amp; Updates - BBC | World news: Latest news, breaking news, today's news stories from ... | World News Today Updates &amp; Daily Headlines | Fox News | World News - The New York Times International"
+    }
+  ]
+}

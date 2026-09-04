@@ -165,3 +165,4 @@
 - **生产力实证**：**METR** 等组织对开发者使用生成式编程工具的试验；适合作为「工具是否让资深开发者更快」的**参考数据点**。
 - **广义 AI 治理（非编程垂直）**：[2026 年国际人工智能安全报告（中文 PDF）](https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026-zh.pdf)
 - **Agent 视觉语言（DESIGN.md）**：[getdesign.md](https://getdesign.md/)——vibe 建站前先选设计 brief；[`ux-design.md`](../design/ux-design.md) · [`ui-design.md`](../design/ui-design.md)
+- **BaaS 选型（Supabase / Firebase / Convex）**：[backend-as-a-service.md](../infrastructure/backend-as-a-service.md)——Vibe 全栈常绑 BaaS；品类地图与 Type A–D 分流见该页

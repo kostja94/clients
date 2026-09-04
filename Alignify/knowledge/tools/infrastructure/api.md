@@ -10,12 +10,12 @@
 
 ## 与相邻 slug 分流
 
-| 维度 | **api（本文）** | **llm** | **image-generator** | **agent-skills** | **workflow** |
-|------|-----|------|------|------|------|
-| 核心问题 | 怎么**统一调用**多模型/多模态 AI 能力（协议、路由、部署） | **哪个**模型能力强（评测、排行） | 怎么**生成**图像/视频/3D（模型选型） | 怎么**扩展** Agent 能力（MCP/插件） | 怎么**编排**多步 AI 流程 |
-| 典型读者 | 后端工程师、平台架构师、集成开发团队 | 模型选型者、CTO | 设计师、内容创作者 | Agent 开发者 | 自动化工程师 |
-| 交付形态 | API endpoint、SDK、统一网关、推理托管平台 | 基准数字、Elo 排行 | 图像/视频/3D 生成工具 | MCP 服务器、技能包 | 低代码/无代码编排器 |
-| 验收核心 | 延迟（TTFT）、吞吐（tok/s 或 img/s）、$/unit、多模态覆盖、可用性 | Arena Elo、MMLU、SWE-bench | 生成质量、风格一致性、分辨率 | 工具数量、协议兼容性 | 流程成功率、异常处理 |
+| 维度 | **api（本文）** | **backend-as-a-service** | **llm** | **image-generator** | **agent-skills** | **workflow** |
+|------|-----|------|------|------|------|------|
+| 核心问题 | 怎么**统一调用**多模型/多模态 AI 能力（协议、路由、部署） | App **后端积木**（库/鉴权/文件/实时）托管在哪 | **哪个**模型能力强（评测、排行） | 怎么**生成**图像/视频/3D（模型选型） | 怎么**扩展** Agent 能力（MCP/插件） | 怎么**编排**多步 AI 流程 |
+| 典型读者 | 后端工程师、平台架构师、集成开发团队 | 全栈 / Vibe / Agent 写 App | 模型选型者、CTO | 设计师、内容创作者 | Agent 开发者 | 自动化工程师 |
+| 交付形态 | API endpoint、SDK、统一网关、推理托管平台 | BaaS SDK（Supabase/Convex/Firebase） | 基准数字、Elo 排行 | 图像/视频/3D 生成工具 | MCP 服务器、技能包 | 低代码/无代码编排器 |
+| 验收核心 | 延迟（TTFT）、吞吐（tok/s 或 img/s）、$/unit、多模态覆盖、可用性 | 数据模型、realtime、锁定、定价 | Arena Elo、MMLU、SWE-bench | 生成质量、风格一致性、分辨率 | 工具数量、协议兼容性 | 流程成功率、异常处理 |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -203,3 +203,4 @@ OpenRouter 的 **Auto Exacto** 功能（2026 年 4 月增强版：每 5 分钟�
 - **Alignify · AI 图像生成器**（知识块，与本文互补）：[`image-generator.md`](../image/image-generator.md)——图像生成工具与模型选型；本文提供 API 基础设施层视角。  
 - **Alignify · Agent Skills 生态**（知识块，与本文互补）：[`agent-skills.md`](../agent/agent-skills.md)——MCP 协议与工具链；本文提供统一 API 基础设施支撑。  
 - **Alignify · AI 工作流工具**（知识块，与本文互补）：[`workflow.md`](../agent/workflow.md)——多步 AI 流程编排；本文的 API 平台是编排器下游的执行层。
+- **Alignify · Backend as a Service**（知识块，与本文互补）：[`backend-as-a-service.md`](backend-as-a-service.md)——App 态 BaaS；本文是「怎么调模型」，BaaS 是「App 状态放哪」。

@@ -1,0 +1,666 @@
+{
+  "batch": "cms_builder_misc",
+  "audit_date": "2026-09-03",
+  "methodology": "Same-intent English primary audit. Volumes are directional (cited MSV or SERP-title proxy), not exact Keyword Planner exports. Never change slug; only keywordEn primary.",
+  "slug_count": 19,
+  "summary": {
+    "OK": 15,
+    "SWITCH": 4,
+    "KEEP_INTENT": 0,
+    "AMBIGUOUS": 0
+  },
+  "results": [
+    {
+      "slug": "animation-library",
+      "current_primary": "Animation Library",
+      "candidates": [
+        {
+          "keyword": "Animation Library",
+          "volume_signal": "no published MSV; phrase already returns GSAP / Anime.js / Motion comparison SERP",
+          "source": "WebSearch SERP 2026-09-03 (gsap.com, ICS MEDIA, Good Fella Lab)",
+          "serp_title_note": "On-intent: GSAP homepage and 2026 comparisons treat this as the web UI animation-library class (not AE packs or video FX)."
+        },
+        {
+          "keyword": "JavaScript animation library",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase + GSAP H1 'A wildly robust JavaScript animation library'",
+          "serp_title_note": "Title qualifier used by GSAP and production-use roundups; same GSAP/Anime/Motion set, not a different job."
+        },
+        {
+          "keyword": "GSAP",
+          "volume_signal": "no category MSV; GitHub ~25k stars — brand, not a replaceable primary",
+          "source": "WebSearch / LibHunt GSAP vs anime.js",
+          "serp_title_note": "Brand head. Collides with unrelated GSAP acronyms. Do not replace the category phrase."
+        },
+        {
+          "keyword": "Lottie animation library",
+          "volume_signal": "no published MSV",
+          "source": "KB vocabulary + SERP check",
+          "serp_title_note": "Subset (JSON/AE playback), not the full tween/timeline library class."
+        }
+      ],
+      "highest_volume_same_intent": "Animation Library",
+      "verdict": "OK",
+      "recommended_primary": "Animation Library",
+      "reason": "Current phrase already lands the GSAP/Anime/Motion SERP. 'JavaScript animation library' is the same-intent title qualifier without a ≥2× MSV cite. Do not switch to the GSAP brand."
+    },
+    {
+      "slug": "blog-website-builder",
+      "current_primary": "Blog Website Builder",
+      "candidates": [
+        {
+          "keyword": "Blog Website Builder",
+          "volume_signal": "Bing ~898k–900k result-count proxy (2026-08-28); no fresh exact MSV",
+          "source": "Alignify website-builder/KEYWORD-RESEARCH.md + intent-near-keyword-volume.md; WebSearch SERP 2026-09-03 (emergent.sh '5 Best Blog Website Builders')",
+          "serp_title_note": "Listicles title 'blog website builders' and mix Wix/WP/Squarespace/Ghost — matches KB same-SERP rule."
+        },
+        {
+          "keyword": "blogging platform",
+          "volume_signal": "Bing ~45.5k result-count proxy (2026-08-28); no fresh MSV",
+          "source": "intent-near-keyword-volume.md; WebSearch SERP (Ghost, beehiiv, WordPress, Medium)",
+          "serp_title_note": "Same-SERP overlap (newsletter + blog hosts). Secondary, not a second slug."
+        },
+        {
+          "keyword": "blog CMS",
+          "volume_signal": "Bing ~898k — same-SERP twin of blog website builder",
+          "source": "intent-near-keyword-volume.md",
+          "serp_title_note": "Same listicle SERP; cover in-article, do not split slug."
+        },
+        {
+          "keyword": "website builder for blogs",
+          "volume_signal": "no published MSV; already in keywordEn_full",
+          "source": "KB keywordEn dual + SERP 'best website builder for blogs'",
+          "serp_title_note": "Natural long-tail of the same head; OK as secondary, not a switch."
+        }
+      ],
+      "highest_volume_same_intent": "Blog Website Builder",
+      "verdict": "OK",
+      "recommended_primary": "Blog Website Builder",
+      "reason": "SERP titles and the 2026-08-28 Bing proxy treat 'blog website builder' as the spoke head. 'Blogging platform' / 'blog CMS' share the same listicle SERP — dual coverage, not an extra slug or a primary switch."
+    },
+    {
+      "slug": "character-chat",
+      "current_primary": "Character Chat",
+      "candidates": [
+        {
+          "keyword": "Character Chat",
+          "volume_signal": "no exact-phrase MSV; category traffic is huge at the brand layer",
+          "source": "WebSearch SERP 2026-09-03 (Character.AI store listings, PolyBuzz, CrushOn, Reverie)",
+          "serp_title_note": "Product titles: 'AI Character Chat', 'Character AI Chat', UGC persona RP — matches KB, not CS chatbots."
+        },
+        {
+          "keyword": "AI character chat",
+          "volume_signal": "no published exact MSV",
+          "source": "WebSearch '\"AI character chat\" monthly search volume'; onelittleweb.com category traffic (JanitorAI 173M / Character.AI 165M visits, June 2026)",
+          "serp_title_note": "Same-intent AI prefix; titles use both forms. No ≥2× MSV to force a switch."
+        },
+        {
+          "keyword": "character ai",
+          "volume_signal": "3.27M/mo (reported as top keyword for Character.AI)",
+          "source": "topaitoolsreview.com/tool/character-ai keyword table",
+          "serp_title_note": "Brand / navigational. Keep as associated, not category primary."
+        },
+        {
+          "keyword": "AI girlfriend",
+          "volume_signal": "DailySearchVolume avg ~797k/mo EN-US (2026-08); Wordstream historically 49.5k — sources disagree in magnitude",
+          "source": "dailysearchvolume.com/keyword/en-us/ai%20girlfriend; Forbes/Wordstream 2023 cite",
+          "serp_title_note": "Companion / NSFW romance — character-chat adjacent, not the UGC multi-character RP class. Fence to this slug only as a note."
+        }
+      ],
+      "highest_volume_same_intent": "Character Chat",
+      "verdict": "OK",
+      "recommended_primary": "Character Chat",
+      "reason": "SERP titles already name the product class 'character chat' / 'AI character chat'. 'character ai' volume is brand. 'AI girlfriend' is higher raw demand but different companion intent — do not steal it as this slug's primary."
+    },
+    {
+      "slug": "chatbot",
+      "current_primary": "AI Chatbot",
+      "candidates": [
+        {
+          "keyword": "AI Chatbot",
+          "volume_signal": "no exact public MSV in this pass; commercial SERP is Intercom/Zendesk/Tidio/Ada",
+          "source": "WebSearch SERP 2026-09-03 (Zendesk CS chatbot guide, Botpress AI agents, Tidio/Gorgias listicles)",
+          "serp_title_note": "When qualified (website / customer service), titles are on-intent CS agents. Bare 'AI chatbot' also pulls DIY SDK tutorials."
+        },
+        {
+          "keyword": "chatbot",
+          "volume_signal": "no cited exact MSV; wider than AI-native CS",
+          "source": "WebSearch 'chatbot monthly search volume'",
+          "serp_title_note": "Includes rule-based / FAQ bots. Broader than this KB's LLM-native CS/sales fence."
+        },
+        {
+          "keyword": "AI chatbot for website",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch 'best AI chatbot for website customer service'",
+          "serp_title_note": "Same buyer job (embed on site, handoff, tickets). Long-tail of the current head."
+        },
+        {
+          "keyword": "customer service chatbot",
+          "volume_signal": "no published MSV",
+          "source": "zendesk.com/service/ai/chatbots-customer-service/",
+          "serp_title_note": "On-intent CS subset; not a higher-volume replacement for the category primary."
+        }
+      ],
+      "highest_volume_same_intent": "AI Chatbot",
+      "verdict": "OK",
+      "recommended_primary": "AI Chatbot",
+      "reason": "Current phrase is the commercial category name for CS/sales bots. Do not add 'best' or 'tool'. Do not collapse into character-chat. Bare 'chatbot' is wider and mixed-intent."
+    },
+    {
+      "slug": "community",
+      "current_primary": "AI Community",
+      "candidates": [
+        {
+          "keyword": "AI Community",
+          "volume_signal": "no published MSV; SERP is occupied by a meetup org",
+          "source": "WebSearch SERP 2026-09-03 (globalai.community, AI Tinkerers)",
+          "serp_title_note": "Titles: 'world's largest AI developer community' — chapters/meetups, not Circle/Skool/Discourse product selection."
+        },
+        {
+          "keyword": "community platform",
+          "volume_signal": "no published exact MSV; title-proven category head",
+          "source": "WebSearch 'Circle vs Skool community platform' (whichcommunity.com, skoolprep, WebinarKit)",
+          "serp_title_note": "Every 2026 Circle/Skool listicle titles 'community platform'. Matches KB (Circle, Skool, Mighty, Discourse)."
+        },
+        {
+          "keyword": "online community software",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch 'community platform software' (Discourse, Flarum, NodeBB)",
+          "serp_title_note": "Same buyer job; slightly more self-host/forum-leaning than SaaS Circle/Skool."
+        },
+        {
+          "keyword": "AI community platform",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "AI-prefix of the product class; not what comparison titles actually use."
+        }
+      ],
+      "highest_volume_same_intent": "community platform",
+      "verdict": "SWITCH",
+      "recommended_primary": "community platform",
+      "reason": "Method B: 'AI Community' SERP is a developer-meetup brand, not this KB. Circle/Skool/Discourse titles repeatedly use 'community platform' as the product-class query. Slug stays `community`."
+    },
+    {
+      "slug": "content-management-system",
+      "current_primary": "Content Management System",
+      "candidates": [
+        {
+          "keyword": "Content Management System",
+          "volume_signal": "KeywordSpy (undated/legacy) 301k/mo; treat as stale. Hub definitional SERP is stable.",
+          "source": "labs.keywordspy.com/overview/keyword.aspx?q=cms; WebSearch SERP (IBM, Wikipedia, Sitecore 'What is a CMS')",
+          "serp_title_note": "Titles expand CMS → 'Content Management System (CMS)'. Matches Hub 'what is' intent."
+        },
+        {
+          "keyword": "CMS",
+          "volume_signal": "KeywordSpy legacy 6.12M/mo — acronym, highly ambiguous",
+          "source": "same KeywordSpy page",
+          "serp_title_note": "Collides with Centers for Medicare & Medicaid Services and other CMS acronyms. Keep as dual/secondary, not sole primary."
+        },
+        {
+          "keyword": "CMS software",
+          "volume_signal": "KeywordSpy legacy 27.1k/mo",
+          "source": "KeywordSpy related table",
+          "serp_title_note": "'software' suffix; same class, not a better head."
+        },
+        {
+          "keyword": "best CMS",
+          "volume_signal": "no fresh MSV this pass; Bing proxy in an older misc audit was inflated by the 'best' modifier",
+          "source": "methodology suffix/modifier rule",
+          "serp_title_note": "Listicle modifier, not a replacement Hub primary."
+        }
+      ],
+      "highest_volume_same_intent": "Content Management System",
+      "verdict": "OK",
+      "recommended_primary": "Content Management System",
+      "reason": "Definitional SERP still uses the full phrase (often with CMS in parentheses). Bare 'CMS' volume is acronym-noisy. Do not compare to headless / enterprise / open-source — those stay separate slugs."
+    },
+    {
+      "slug": "dating",
+      "current_primary": "AI Dating",
+      "candidates": [
+        {
+          "keyword": "AI Dating",
+          "volume_signal": "no exact-phrase MSV; SERP is on-intent real-person matchmaking",
+          "source": "WebSearch SERP 2026-09-03 (Lamp, Simmer, TechCrunch Ditto, Bumble Bee)",
+          "serp_title_note": "Titles: 'AI dating app for real relationships', 'AI matchmaking' — human dates, matches KB fence vs companions."
+        },
+        {
+          "keyword": "AI dating app",
+          "volume_signal": "no published exact MSV",
+          "source": "same SERP + allaboutai.com AI dating stats page",
+          "serp_title_note": "Same intent, product-suffix variant. No ≥2× MSV cite."
+        },
+        {
+          "keyword": "AI matchmaking",
+          "volume_signal": "no published MSV",
+          "source": "TechCrunch 2026-08-06 Ditto piece",
+          "serp_title_note": "On-intent subset (algorithmic matching). Not a higher-volume head."
+        },
+        {
+          "keyword": "AI girlfriend",
+          "volume_signal": "~797k/mo EN-US avg (DailySearchVolume, 2026-08); other cites 49.5k–1.63M annual/global — magnitude disagrees",
+          "source": "dailysearchvolume.com; allaboutai.com/resources/ai-statistics/ai-dating",
+          "serp_title_note": "Virtual companion, not real-person dating. Different slug (character-chat)."
+        }
+      ],
+      "highest_volume_same_intent": "AI Dating",
+      "verdict": "OK",
+      "recommended_primary": "AI Dating",
+      "reason": "SERP for 'AI Dating' is Lamp/Ditto/Bumble-class real matching. 'AI girlfriend' is much larger raw demand but companion intent — KEEP that out of this primary."
+    },
+    {
+      "slug": "directory",
+      "current_primary": "AI Directory",
+      "candidates": [
+        {
+          "keyword": "AI Directory",
+          "volume_signal": "no published exact MSV",
+          "source": "WebSearch SERP 2026-09-03 (AIDIRECTORY, AI Scanner, AIE Network)",
+          "serp_title_note": "On-intent directories, but titles prefer the longer 'AI Tools Directory'."
+        },
+        {
+          "keyword": "AI tools directory",
+          "volume_signal": "20,180/mo (Futurepedia ranking-keyword table)",
+          "source": "directorygems.com/case-study/futurepedia-io (Jan 2026 metrics table)",
+          "serp_title_note": "The phrase Futurepedia/There's An AI For That/Toolify compete for. KB's own definition uses 'AI Tools Directory'."
+        },
+        {
+          "keyword": "best AI tools",
+          "volume_signal": "14,800/mo (same Futurepedia table)",
+          "source": "directorygems.com/case-study/futurepedia-io",
+          "serp_title_note": "Roundup intent, not 'directory as a product class'."
+        },
+        {
+          "keyword": "AI tools",
+          "volume_signal": "~40.5k/mo category (Treendly 'AI Tools') — too wide",
+          "source": "treendly.com/trend/AI-Tools",
+          "serp_title_note": "Umbrella discovery, not this slug's directory/aggregator job."
+        }
+      ],
+      "highest_volume_same_intent": "AI tools directory",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI tools directory",
+      "reason": "Cited 20.2k/mo MSV plus SERP titles repeatedly use 'AI tools directory'. Current 'AI Directory' is the same job but not the head phrase. Slug stays `directory`."
+    },
+    {
+      "slug": "ecommerce-website-builder",
+      "current_primary": "Online store platform",
+      "candidates": [
+        {
+          "keyword": "Online store platform",
+          "volume_signal": "no exact-phrase MSV; nearest 'best online store platforms' 3,500 global",
+          "source": "adtargeting.io/industry/ecommerce-keywords (Google Ads-derived table); WebSearch SERP for the phrase",
+          "serp_title_note": "Query does not title-match. Results rewrite to 'ecommerce platform' / 'ecommerce website builder'."
+        },
+        {
+          "keyword": "ecommerce website builder",
+          "volume_signal": "78,700/mo global; 'best ecommerce website builder' 5,000",
+          "source": "adtargeting.io long-tail table (Google Ads); BigCommerce/Zapier 2026 listicles",
+          "serp_title_note": "Titles: 'best ecommerce website builders', Shopify/Wix/Woo/BigCommerce — exact KB job."
+        },
+        {
+          "keyword": "online store builder",
+          "volume_signal": "9,300/mo global; 'online store website builder' 4,100",
+          "source": "adtargeting.io long-tail table",
+          "serp_title_note": "Same intent, ~8× below ecommerce website builder."
+        },
+        {
+          "keyword": "ecommerce platform",
+          "volume_signal": "33,300/mo global; 'best ecommerce platform' 13,100",
+          "source": "adtargeting.io head + long-tail tables",
+          "serp_title_note": "Same storefront job, slightly more mid-market/enterprise wording. Valid secondary, not required over the slug-aligned builder phrase."
+        },
+        {
+          "keyword": "Shopify alternative",
+          "volume_signal": "8,900/mo global",
+          "source": "adtargeting.io rank 38",
+          "serp_title_note": "Brand-alternative cluster. Cover in-article; not a category primary."
+        }
+      ],
+      "highest_volume_same_intent": "ecommerce website builder",
+      "verdict": "SWITCH",
+      "recommended_primary": "ecommerce website builder",
+      "reason": "AdTargeting/Google Ads: 78.7k vs no usable MSV for 'Online store platform' (nearest 3.5k). SERP titles never use the current phrase. 'Shopify alternative' is same-cluster but brand-shaped. Slug unchanged."
+    },
+    {
+      "slug": "enterprise-cms",
+      "current_primary": "Enterprise CMS",
+      "candidates": [
+        {
+          "keyword": "Enterprise CMS",
+          "volume_signal": "no standalone MSV; sits inside a 15-term US basket ~15.2k combined (Jul 2026)",
+          "source": "replatformradar.com/blog/platform-shopping-has-cooled; WebSearch SERP (CoreMedia 'best enterprise CMS', Contentful, Liferay)",
+          "serp_title_note": "Listicles and vendor pages title 'enterprise CMS' for Sitecore/AEM/Liferay-class selection."
+        },
+        {
+          "keyword": "Digital Experience Platform",
+          "volume_signal": "in the same 15-term basket (with DXP platform); no split MSV",
+          "source": "Replatform Radar term list; Gartner Peer Insights DXP market page",
+          "serp_title_note": "Gartner suite (CMS + personalization + commerce). Broader than this CMS spoke. Keep as secondary / keywordEn_full."
+        },
+        {
+          "keyword": "DXP",
+          "volume_signal": "acronym; no isolated MSV",
+          "source": "same Replatform Radar basket",
+          "serp_title_note": "Analyst shorthand, not a clearer primary than Enterprise CMS."
+        },
+        {
+          "keyword": "enterprise content management",
+          "volume_signal": "no isolated MSV this pass (market-size reports, not query MSV)",
+          "source": "theinsightpartners ECM market page",
+          "serp_title_note": "Often document/records ECM, not web CMS/DXP. Different procurement."
+        }
+      ],
+      "highest_volume_same_intent": "Enterprise CMS",
+      "verdict": "OK",
+      "recommended_primary": "Enterprise CMS",
+      "reason": "SERP titles for this spoke are 'enterprise CMS'. DXP/Digital Experience Platform may be louder in analyst copy but is a wider suite — keep dual in keywordEn_full, do not replace the CMS primary. Do not merge with headless or Hub CMS."
+    },
+    {
+      "slug": "family-assistant",
+      "current_primary": "AI family assistant",
+      "candidates": [
+        {
+          "keyword": "AI family assistant",
+          "volume_signal": "no published exact MSV; SERP is on-intent AI products",
+          "source": "WebSearch SERP 2026-09-03 (Famori, Andi.ai, familymind, Peeta, Carly parent roundup)",
+          "serp_title_note": "Titles: 'AI Family Assistant', 'Family AI', 'AI copilot for busy parents' — shared calendar + LLM mental-load, matches KB."
+        },
+        {
+          "keyword": "family organizer app",
+          "volume_signal": "App Store ASO volume ~4,605 for 'family organizer app'; ChatGPT prompt demand ~550/mo (Keywords Everywhere modeled)",
+          "source": "asotools.io Family Organizer keyword tables; aibrandtracker.keywordseverywhere.com/prompt-category/family-organizer-app",
+          "serp_title_note": "Cozi/TimeTree/FamilyWall — shared calendar incumbents, mostly not AI-native. Higher established demand, different product generation."
+        },
+        {
+          "keyword": "family organizer",
+          "volume_signal": "ASO volume ~4,614",
+          "source": "asotools.io Cozi keyword table",
+          "serp_title_note": "Same Cozi-class SERP as above."
+        },
+        {
+          "keyword": "Copilot family",
+          "volume_signal": "no category MSV; brand/plan query",
+          "source": "WebSearch 'Microsoft Copilot family organizer' → Microsoft 365 Family + Copilot licensing",
+          "serp_title_note": "Microsoft 365 Family seat / Copilot sharing FAQ — not a household OS product class."
+        }
+      ],
+      "highest_volume_same_intent": "AI family assistant",
+      "verdict": "OK",
+      "recommended_primary": "AI family assistant",
+      "reason": "On-intent SERP already uses 'AI family assistant'. 'Family organizer app' is larger incumbent demand but Cozi-class, not this AI-first job. Copilot Family is a Microsoft plan name."
+    },
+    {
+      "slug": "fashion",
+      "current_primary": "AI fashion",
+      "candidates": [
+        {
+          "keyword": "AI fashion",
+          "volume_signal": "no published exact MSV",
+          "source": "WebSearch SERP 2026-09-03 (The F* Word, Skyber, TOMOKO, LA VIPÈRE)",
+          "serp_title_note": "Titles: 'AI Fashion Workflow', 'AI‑Fashion Design', 'AI Fashion Designer Agent' — apparel design/try-on/catalog, matches KB umbrella."
+        },
+        {
+          "keyword": "fashion AI",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Word-order flip; same cluster, no title or volume reason to switch."
+        },
+        {
+          "keyword": "virtual try-on",
+          "volume_signal": "MicroSaaSHQ 'virtual try on makeup' ~3.6k/mo; clothing VTO has industry reports but no clean EN head MSV",
+          "source": "microsaashq.com/keyword-research/virtual-try-on-makeup; genlook.app Q2 2026 VTO report (usage, not query MSV)",
+          "serp_title_note": "Core KB job but a subset (plus makeup collision). Do not replace the fashion umbrella."
+        },
+        {
+          "keyword": "AI fashion design",
+          "volume_signal": "no published MSV",
+          "source": "same B2B SERP",
+          "serp_title_note": "Tech-pack / CAD slice of the same category."
+        }
+      ],
+      "highest_volume_same_intent": "AI fashion",
+      "verdict": "OK",
+      "recommended_primary": "AI fashion",
+      "reason": "Product titles use 'AI fashion' as the apparel-AI umbrella. Virtual try-on is a high-value spoke inside the KB, not a ≥2× same-intent head to switch to."
+    },
+    {
+      "slug": "headless-cms",
+      "current_primary": "Headless CMS",
+      "candidates": [
+        {
+          "keyword": "Headless CMS",
+          "volume_signal": "inside Replatform Radar 15-term US basket (~15.2k combined Jul 2026); Bing ~48k result proxy (2026-08-28)",
+          "source": "replatformradar.com; Alignify cms/KEYWORD-RESEARCH.md; WebSearch SERP (AWS, Sanity, Contentful, Salesforce)",
+          "serp_title_note": "Every definitional title is 'Headless CMS' / 'What is a Headless CMS?'."
+        },
+        {
+          "keyword": "API-first CMS",
+          "volume_signal": "in the same 15-term basket; no split that beats headless",
+          "source": "Replatform Radar term list ('api-first CMS')",
+          "serp_title_note": "Vendor synonym. Not the Google head — titles still say headless."
+        },
+        {
+          "keyword": "composable CMS",
+          "volume_signal": "in the same cooling basket (peaked 2025)",
+          "source": "Replatform Radar",
+          "serp_title_note": "Hype-cycle cousin; do not replace headless as primary."
+        }
+      ],
+      "highest_volume_same_intent": "Headless CMS",
+      "verdict": "OK",
+      "recommended_primary": "Headless CMS",
+      "reason": "SERP titles are uniformly 'Headless CMS'. API-first is a synonym without a standalone volume win. Keep enterprise/open-source/Hub on their own slugs."
+    },
+    {
+      "slug": "landing-page-builder",
+      "current_primary": "Landing Page Builder",
+      "candidates": [
+        {
+          "keyword": "Landing Page Builder",
+          "volume_signal": "Bing ~171k result proxy (2026-08-28); Keywords Everywhere ChatGPT prompt 'what is the best landing page builder' modeled ~2/mo (tiny)",
+          "source": "Alignify website-builder/KEYWORD-RESEARCH.md; aibrandtracker.keywordseverywhere.com/prompt-category/landing-page-builder; WebSearch SERP (Leadpages, Unbounce, Zapier, Wix)",
+          "serp_title_note": "Titles: 'Landing Page Builder', 'best landing page builders' — Unbounce/Leadpages/Instapage/Carrd. Natural query."
+        },
+        {
+          "keyword": "conversion page builder",
+          "volume_signal": "no published MSV; not used in titles",
+          "source": "WebSearch 'conversion page builder'",
+          "serp_title_note": "Results still title landing page builder. Not a SERP head."
+        },
+        {
+          "keyword": "landing page maker",
+          "volume_signal": "ChatGPT prompt 'best landing page maker' modeled ~2/mo",
+          "source": "Keywords Everywhere ClickFunnels prompt table",
+          "serp_title_note": "Same-intent suffix; no volume reason to switch."
+        },
+        {
+          "keyword": "landing page software",
+          "volume_signal": "no published MSV; 'software' suffix risk",
+          "source": "KEYWORD-RESEARCH.md secondary note",
+          "serp_title_note": "Same CRO job; suffix, not a better primary."
+        }
+      ],
+      "highest_volume_same_intent": "Landing Page Builder",
+      "verdict": "OK",
+      "recommended_primary": "Landing Page Builder",
+      "reason": "SERP titles are unanimously 'landing page builder'. 'Conversion page builder' does not appear as the natural query."
+    },
+    {
+      "slug": "lifetime-deals",
+      "current_primary": "Lifetime Deals",
+      "candidates": [
+        {
+          "keyword": "Lifetime Deals",
+          "volume_signal": "no published exact MSV; SERP is the LTD marketplace class",
+          "source": "WebSearch SERP 2026-09-03 (lifetimedealtech, LTD Marketplace, Dealify, DealKeep)",
+          "serp_title_note": "Titles: 'SaaS Lifetime Deals', 'Lifetime Deals Platform', 'Are Lifetime Deals Worth It'."
+        },
+        {
+          "keyword": "SaaS lifetime deals",
+          "volume_signal": "no published MSV",
+          "source": "same SERP",
+          "serp_title_note": "Qualifier of the current head; same AppSumo/PitchGround job."
+        },
+        {
+          "keyword": "AppSumo",
+          "volume_signal": "no MSV pulled this pass; brand/navigational",
+          "source": "KB + AppSumo product SERP (earlier volume query hit AppSumo deal pages, not query MSV)",
+          "serp_title_note": "Marketplace brand, not a category primary."
+        },
+        {
+          "keyword": "software lifetime deal",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Singular/long-tail of the same LTD intent."
+        }
+      ],
+      "highest_volume_same_intent": "Lifetime Deals",
+      "verdict": "OK",
+      "recommended_primary": "Lifetime Deals",
+      "reason": "Category SERP already uses 'Lifetime Deals' / 'SaaS lifetime deals'. Do not replace with the AppSumo brand."
+    },
+    {
+      "slug": "open-source-cms",
+      "current_primary": "Open Source CMS",
+      "candidates": [
+        {
+          "keyword": "Open Source CMS",
+          "volume_signal": "Bing ~1.3M result proxy (2026-08-28); no fresh exact MSV",
+          "source": "Alignify cms/KEYWORD-RESEARCH.md; WebSearch 'best open source CMS WordPress Drupal'",
+          "serp_title_note": "WP vs Drupal listicles title 'open source CMS' / 'open-source PHP CMS'."
+        },
+        {
+          "keyword": "OSS CMS",
+          "volume_signal": "no published MSV",
+          "source": "KB keywordEn_full",
+          "serp_title_note": "Insider jargon; not a Google head."
+        },
+        {
+          "keyword": "open source content management system",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Long form of the same head; titles prefer the short 'open source CMS'."
+        },
+        {
+          "keyword": "open source headless CMS",
+          "volume_signal": "no isolated MSV; first 'Open Source CMS' SERP leaned Strapi/Payload",
+          "source": "WebSearch 'Open Source CMS' (Strapi, Payload, Wagtail)",
+          "serp_title_note": "Crosses into the headless slug. Keep self-hosted WP/Drupal/Joomla here; send Strapi/Payload comparisons to headless when the job is API-first."
+        }
+      ],
+      "highest_volume_same_intent": "Open Source CMS",
+      "verdict": "OK",
+      "recommended_primary": "Open Source CMS",
+      "reason": "The spoke head is still 'open source CMS' (WordPress/Drupal). 'OSS CMS' is not a search head. Headless OSS belongs on `headless-cms`, not a primary switch."
+    },
+    {
+      "slug": "portfolio-website-builder",
+      "current_primary": "Portfolio website builder",
+      "candidates": [
+        {
+          "keyword": "Portfolio website builder",
+          "volume_signal": "no exact Google MSV; Etsy 'portfolio website' 110k/mo is marketplace not Google. Bing portfolio literal was historically weak vs photography.",
+          "source": "rankhero.com/keywords/portfolio-website (Etsy); Alignify KEYWORD-RESEARCH.md; WebSearch SERP (vecosys, Pixpa H1)",
+          "serp_title_note": "Titles: 'Best Website Builders for Portfolio Sites', Pixpa 'Portfolio Website Builder & Online Portfolio Maker'."
+        },
+        {
+          "keyword": "photography website builder",
+          "volume_signal": "Etsy 'photography website' 9,900/mo (not Google); Bing photography spoke historically ~278k result proxy",
+          "source": "rankhero.com/keywords/photography-website; KEYWORD-RESEARCH.md; Creative Bloq / Entro photographer listicles",
+          "serp_title_note": "Same-SERP creative-portfolio family (Format, Pixpa, SmugMug). Secondary already in keywordEn_full — not a new slug."
+        },
+        {
+          "keyword": "online portfolio maker",
+          "volume_signal": "no Google MSV this pass; 'maker' suffix can inflate index counts",
+          "source": "methodology suffix rule; Pixpa title uses both builder and maker",
+          "serp_title_note": "Same job. Prefer builder unless a ≥2× Google MSV appears."
+        },
+        {
+          "keyword": "portfolio website",
+          "volume_signal": "Etsy 110k/mo — template-shopping intent, not builder-category Google MSV",
+          "source": "rankhero.com",
+          "serp_title_note": "Too wide (examples, inspiration, templates). Keep as related, not primary."
+        }
+      ],
+      "highest_volume_same_intent": "Portfolio website builder",
+      "verdict": "OK",
+      "recommended_primary": "Portfolio website builder",
+      "reason": "Google SERP titles treat 'portfolio website builder' as the class; photography is the same-SERP creative spoke already listed as secondary. Do not switch to 'online portfolio maker' on index-count or Etsy volume."
+    },
+    {
+      "slug": "religion",
+      "current_primary": "AI Religion",
+      "candidates": [
+        {
+          "keyword": "AI Religion",
+          "volume_signal": "no published MSV; SERP is occupied by AI-as-deity coverage",
+          "source": "WebSearch SERP 2026-09-03 (Way of the Future Wikipedia, Decrypt Robotheism, Forbes Crustafarianism, America Magazine AI clergy)",
+          "serp_title_note": "Titles: 'AI religious movement', 'worshipping AI', 'AI agents created their own religion' — not scripture-grounded study tools."
+        },
+        {
+          "keyword": "AI religious tools",
+          "volume_signal": "no published MSV; on-intent product SERP",
+          "source": "WebSearch 'AI bible app religious chatbot' (Polaris Bible, Sanctuary, faith.tools Christian AI)",
+          "serp_title_note": "Matches KB: scripture grounding, virtual clergy, spiritual companion — across faiths if kept generic."
+        },
+        {
+          "keyword": "AI Bible",
+          "volume_signal": "no published MSV; strong Christian-product SERP",
+          "source": "same faith.tools / Polaris / Sanctuary SERP",
+          "serp_title_note": "Highest-clarity product query but Christian-only — narrower than the multi-faith KB."
+        },
+        {
+          "keyword": "Christian AI",
+          "volume_signal": "no published MSV",
+          "source": "faith.tools/artificial-intelligence-ai",
+          "serp_title_note": "Denomination slice, not the full religion slug."
+        }
+      ],
+      "highest_volume_same_intent": "AI religious tools",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI religious tools",
+      "reason": "'AI Religion' SERP is AI-worship / syntheism, not this KB. On-intent titles use Bible/scripture/religious AI tools. Prefer the multi-faith 'AI religious tools' over the higher-clarity but Christian-only 'AI Bible'. Slug stays `religion`."
+    },
+    {
+      "slug": "website-builder",
+      "current_primary": "Website Builder",
+      "candidates": [
+        {
+          "keyword": "Website Builder",
+          "volume_signal": "Bing ~115k result proxy (2026-08-28); Semrush shows 'wix website builder' 49,500 (brand+class). No clean unbranded exact MSV this pass.",
+          "source": "Alignify KEYWORD-RESEARCH.md; semrush.com websitebuilderexpert.com overview; WebSearch SERP (Wix H1, TechRadar, WebsiteBuilderExpert)",
+          "serp_title_note": "Hub listicles title 'best website builders'. Wix H1: 'leading website builder'. This is the natural category query."
+        },
+        {
+          "keyword": "AI website builder",
+          "volume_signal": "15,000/mo US (Ahrefs, May 2026, Pronto Marketing). MicroSaaSHQ lists 90.5k/mo on the idea card — treat as clustered/noisy vs Pronto's exact-query Ahrefs figure.",
+          "source": "prontomarketing.com May 2026 Ahrefs study; microsaashq.com/saas-ideas/ai-website-builder-18",
+          "serp_title_note": "Rising subset (Wix Harmony, Framer AI). Not a replacement for the unbranded hub head."
+        },
+        {
+          "keyword": "website builder tool",
+          "volume_signal": "no cited MSV; 'tool' suffix inflates index counts",
+          "source": "user/methodology suffix rule; SERP titles do not use this as the head",
+          "serp_title_note": "Not the natural query. KEEP as a non-primary variant."
+        },
+        {
+          "keyword": "website maker",
+          "volume_signal": "no published MSV this pass",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Casual synonym; titles still say website builder."
+        },
+        {
+          "keyword": "best website builder for small business",
+          "volume_signal": "6,500/mo US (Ahrefs, May 2026)",
+          "source": "Pronto Marketing Ahrefs table",
+          "serp_title_note": "Long-tail of the current head. Keep as supporting, not a switch."
+        }
+      ],
+      "highest_volume_same_intent": "Website Builder",
+      "verdict": "OK",
+      "recommended_primary": "Website Builder",
+      "reason": "SERP titles prove 'website builder' is the hub query. 'AI website builder' is a real 15k US rising subset, not the category replacement. 'website builder tool' is a suffix inflation — do not switch."
+    }
+  ]
+}

@@ -1,0 +1,1004 @@
+{
+  "batch": "agent",
+  "audit_date": "2026-09-03",
+  "methodology": "Bing quoted About-N + SERP pollution filter + intent overrides; directional proxy not MSV",
+  "slug_count": 22,
+  "summary": {
+    "OK": 3,
+    "SWITCH": 5,
+    "KEEP_INTENT": 12,
+    "AMBIGUOUS": 2
+  },
+  "results": [
+    {
+      "slug": "agent-billing",
+      "current_primary": "AI agent billing",
+      "candidates": [
+        {
+          "keyword": "AI agent billing",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP OpenAI/Gemini generic",
+          "usable_score": null
+        },
+        {
+          "keyword": "AI agent billing software",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP OpenAI/Gemini generic",
+          "usable_score": null
+        },
+        {
+          "keyword": "agent monetization",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback Microsoft Learn agents",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "agent billing",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback Microsoft Learn agents",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "AI agent billing platform",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP OpenAI/Gemini generic",
+          "usable_score": null
+        }
+      ],
+      "highest_volume_same_intent": "agent monetization",
+      "verdict": "OK",
+      "recommended_primary": "AI agent billing",
+      "reason": "Prior same-intent deep research: 'AI agent billing'/'AI agent billing software' is the natural commercial head; 'agent monetization' (~4.3k) is weak and fuzzy. Bing 509k caps are generic-AI pollution, not evidence either way."
+    },
+    {
+      "slug": "agent-for-desktop",
+      "current_primary": "Agent on desktop",
+      "candidates": [
+        {
+          "keyword": "Agent on desktop",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "desktop AI agent",
+          "volume_signal": 150000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED desktop computers Best Buy",
+          "usable_score": 150000.0
+        },
+        {
+          "keyword": "AI desktop agent",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP OpenAI/Gemini generic",
+          "usable_score": null
+        },
+        {
+          "keyword": "desktop agent",
+          "volume_signal": 150000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED desktop computers Best Buy",
+          "usable_score": 150000.0
+        },
+        {
+          "keyword": "computer use agent",
+          "volume_signal": 271000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED Computer Wikipedia/Best Buy",
+          "usable_score": 271000.0
+        }
+      ],
+      "highest_volume_same_intent": "computer use agent",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI desktop agent",
+      "reason": "Bing has no clean signal ('Agent on desktop' = MS fallback; 'AI desktop agent' capped by generic AI). Word-order + prior audit favor 'AI desktop agent' as the natural category head."
+    },
+    {
+      "slug": "agent-identity",
+      "current_primary": "AI Agent Identity",
+      "candidates": [
+        {
+          "keyword": "AI Agent Identity",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "agent identity",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "agent IAM",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "agentic IAM",
+          "volume_signal": 84200,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED generic Agentic AI",
+          "usable_score": 84200.0
+        },
+        {
+          "keyword": "AI agent identity management",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        }
+      ],
+      "highest_volume_same_intent": "agentic IAM",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Agent Identity",
+      "reason": "All candidates are polluted or MS fallback (agentic IAM = generic Agentic AI). Emerging category with no usable Bing/MSV; keep current term, re-audit later."
+    },
+    {
+      "slug": "agent-memory",
+      "current_primary": "Agent Memory Layer",
+      "candidates": [
+        {
+          "keyword": "Agent Memory Layer",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "AI agent memory",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "agent memory",
+          "volume_signal": 13100,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT GitHub agentmemory / TencentDB Agent Memory",
+          "usable_score": 13100.0
+        },
+        {
+          "keyword": "memory layer for AI agents",
+          "volume_signal": 150000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED Memory Wikipedia",
+          "usable_score": 150000.0
+        },
+        {
+          "keyword": "LLM agent memory",
+          "volume_signal": 105000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED LLM Wikipedia",
+          "usable_score": 105000.0
+        }
+      ],
+      "highest_volume_same_intent": "memory layer for AI agents",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI agent memory",
+      "reason": "Cleanest on-intent signal is 'agent memory' (~13.1k, GitHub agentmemory/TencentDB) vs current 'Agent Memory Layer' (MS fallback, not a natural query). Use 'AI agent memory' as branded head + 'agent memory' secondary."
+    },
+    {
+      "slug": "agent-runtime",
+      "current_primary": "AI Agent Runtime",
+      "candidates": [
+        {
+          "keyword": "AI Agent Runtime",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "agent runtime",
+          "volume_signal": 5140,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT Chinese/EN Agent Runtime explainers",
+          "usable_score": 5140.0
+        },
+        {
+          "keyword": "AI agent runtime",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "agent execution runtime",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "LLM agent runtime",
+          "volume_signal": 105000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED LLM Wikipedia",
+          "usable_score": 105000.0
+        }
+      ],
+      "highest_volume_same_intent": "LLM agent runtime",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Agent Runtime",
+      "reason": "Bing capped/polluted across candidates ('agent runtime' 5.1k on-intent but low). Term is the accepted category name; keep."
+    },
+    {
+      "slug": "agent-sandbox",
+      "current_primary": "AI Agent Sandbox",
+      "candidates": [
+        {
+          "keyword": "AI Agent Sandbox",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "agent sandbox",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "AI agent sandbox",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "sandbox for AI agents",
+          "volume_signal": 39700,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED The Sandbox Game",
+          "usable_score": 39700.0
+        },
+        {
+          "keyword": "code sandbox AI agent",
+          "volume_signal": 363000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED VS Code / Code.org",
+          "usable_score": 363000.0
+        }
+      ],
+      "highest_volume_same_intent": "code sandbox AI agent",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Agent Sandbox",
+      "reason": "All candidates polluted (game/VS Code/generic AI) or fallback. Emerging term; keep current."
+    },
+    {
+      "slug": "agent-skills",
+      "current_primary": "Agent Skills",
+      "candidates": [
+        {
+          "keyword": "Agent Skills",
+          "volume_signal": 43300,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT GitHub agent-skills, SkillsMP marketplace",
+          "usable_score": 43300.0
+        },
+        {
+          "keyword": "AI agent skills",
+          "volume_signal": 26200,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT Awesome AI Agent Skills",
+          "usable_score": 26200.0
+        },
+        {
+          "keyword": "Claude agent skills",
+          "volume_signal": 59400,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "BRAND Claude.ai only",
+          "usable_score": 59400.0
+        },
+        {
+          "keyword": "agent skills marketplace",
+          "volume_signal": 18100,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT SkillsMP marketplace",
+          "usable_score": 18100.0
+        },
+        {
+          "keyword": "MCP skills",
+          "volume_signal": 86900,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MIXED MCP protocol + CA DMV motor carrier",
+          "usable_score": 86900.0
+        }
+      ],
+      "highest_volume_same_intent": "MCP skills",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Agent Skills",
+      "reason": "'Agent Skills' ~43.3k is the cleanest on-intent signal (GitHub agent-skills / SkillsMP); 'MCP skills' 86.9k is MIXED (protocol + motor-carrier), 'Claude agent skills' is brand. Keep 'Agent Skills' head."
+    },
+    {
+      "slug": "agent-to-agent",
+      "current_primary": "A2A Agent Network",
+      "candidates": [
+        {
+          "keyword": "A2A Agent Network",
+          "volume_signal": 92500,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT A2A protocol GitHub (protocol not social network)",
+          "usable_score": 92500.0
+        },
+        {
+          "keyword": "agent to agent",
+          "volume_signal": 132000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT A2A Protocol / Microsoft Learn / Google announce",
+          "usable_score": 132000.0
+        },
+        {
+          "keyword": "A2A protocol",
+          "volume_signal": 26400,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT a2a-protocol.org",
+          "usable_score": 26400.0
+        },
+        {
+          "keyword": "agent-to-agent communication",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "Google A2A",
+          "volume_signal": 2170000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED Google.com brand",
+          "usable_score": 450000
+        }
+      ],
+      "highest_volume_same_intent": "Google A2A",
+      "verdict": "SWITCH",
+      "recommended_primary": "agent to agent",
+      "reason": "'agent to agent' ~132k on-intent (A2A protocol/Microsoft Learn/Google) > 'A2A Agent Network' ~92.5k. Google A2A 2.17M is brand pollution — never use. Use 'agent to agent' head, A2A as secondary."
+    },
+    {
+      "slug": "agentic-commerce",
+      "current_primary": "Agentic Commerce",
+      "candidates": [
+        {
+          "keyword": "Agentic Commerce",
+          "volume_signal": 15600,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT IBM / McKinsey category pages",
+          "usable_score": 15600.0
+        },
+        {
+          "keyword": "agentic shopping",
+          "volume_signal": 84200,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED generic Agentic AI",
+          "usable_score": 84200.0
+        },
+        {
+          "keyword": "AI agent commerce",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "agentic checkout",
+          "volume_signal": 84200,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED generic Agentic AI",
+          "usable_score": 84200.0
+        },
+        {
+          "keyword": "agent commerce",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        }
+      ],
+      "highest_volume_same_intent": "agentic shopping",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Agentic Commerce",
+      "reason": "Category term matches IBM/McKinsey on-intent pages (~15.6k); 'agentic shopping/checkout' are generic-Agentic-AI pollution. Keep."
+    },
+    {
+      "slug": "agentic-payments",
+      "current_primary": "Agentic Payments",
+      "candidates": [
+        {
+          "keyword": "Agentic Payments",
+          "volume_signal": 84200,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED generic Agentic AI (Bing); WebSearch titles ON-INTENT Fireblocks/ACI/AWS",
+          "usable_score": 84200.0
+        },
+        {
+          "keyword": "AI agent payments",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED_CAP",
+          "usable_score": null
+        },
+        {
+          "keyword": "agentic payment",
+          "volume_signal": 84200,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "POLLUTED generic Agentic AI",
+          "usable_score": 84200.0
+        },
+        {
+          "keyword": "agent payments",
+          "volume_signal": 4280,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MS fallback",
+          "usable_score": 4280.0
+        },
+        {
+          "keyword": "x402 payments",
+          "volume_signal": 20700,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ON-INTENT x402 protocol pages",
+          "usable_score": 20700.0
+        }
+      ],
+      "highest_volume_same_intent": "Agentic Payments",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Agentic Payments",
+      "reason": "Bing polluted but WebSearch titles are on-intent (Fireblocks/ACI/AWS). 'x402 payments' 20.7k is a protocol subset. Keep category head."
+    },
+    {
+      "slug": "ai-employee",
+      "current_primary": "AI Employee",
+      "candidates": [
+        {
+          "keyword": "AI Employee",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "AI coworker",
+          "volume_signal": 58,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Rohan Paul on X: &quot;Looks like the AI coworker category is on fire. | Meet the new AI Coworker who won’t stop snitching to your boss … | About Grok, Your Humorous AI Assistant on X - help.x.com | We Built Every Employee at Ramp Their Own",
+          "usable_score": 58.0
+        },
+        {
+          "keyword": "AI teammate",
+          "volume_signal": 48100,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Teammates — AI Teammates for Support, Sales &amp; Recruiting | Asana AI Teammates: Agents ready to work with your team | AI Teammate - AI Agents That Control Robots, Tools &amp; Teams | AI Teammate | Atlassian | AI Agents for Work | Asana A",
+          "usable_score": 48100.0
+        },
+        {
+          "keyword": "digital employee",
+          "volume_signal": 211000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Digital - Wikipedia | DIGITAL Definition &amp; Meaning - Merriam-Webster | Digital media - Wikipedia | DIGITAL | English meaning - Cambridge Dictionary | What Is Digital? - Computer Hope",
+          "usable_score": 211000.0
+        },
+        {
+          "keyword": "AI employees",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        }
+      ],
+      "highest_volume_same_intent": "digital employee",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Employee",
+      "reason": "'digital employee' 211k is dictionary pollution; 'AI teammate' ~48.1k is on-intent (Asana/Salesforce) but narrower chat-native subset; 'AI coworker' 58. AI Employee stays the brand/站内 term — add 'AI teammate' as secondary."
+    },
+    {
+      "slug": "ai-shopping",
+      "current_primary": "AI Shopping",
+      "candidates": [
+        {
+          "keyword": "AI Shopping",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "AI shopping assistant",
+          "volume_signal": 2670,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "5 AI Shopping Assistant Tools To Help You Shop Wisely | 5 Best AI Shopping Assistants in 2026 (Tested &amp; Ranked) | ChatGPT Shopping | AI Shopping Assistant | The Ultimate Guide to AI Shopping Assistants - sobot.io | Top AI Shopping Assis",
+          "usable_score": 2670.0
+        },
+        {
+          "keyword": "AI shopping agent",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "shop with AI",
+          "volume_signal": 465000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Shop | Shopping designed around you | Explore - Shop | SHOP.COM | Walmart | Save Money. Live better. | Amazon.com. Spend less. Smile more.",
+          "usable_score": 450000
+        },
+        {
+          "keyword": "AI product search",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        }
+      ],
+      "highest_volume_same_intent": "shop with AI",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Shopping",
+      "reason": "All candidates polluted ('shop with AI' = SHOP.COM/Walmart; others generic-AI cap). Keep constructed but internally-consistent head; re-audit with SERP tools later."
+    },
+    {
+      "slug": "browser",
+      "current_primary": "AI browser",
+      "candidates": [
+        {
+          "keyword": "AI browser",
+          "volume_signal": 61800,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Best Agentic Browsers &amp; AI Browser Agents in 2026 | The Best AI Web Browsers We've Tested for 2026 | PCMag | Comet Browser: a Personal AI Assistant | 11 Best AI Browsers in 2026 (Tested &amp; Compared) - testgrid.io | Polar: AI Browser",
+          "usable_score": 61800.0
+        },
+        {
+          "keyword": "AI web browser",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "agentic browser",
+          "volume_signal": 125000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Best Agentic Browsers &amp; AI Browser Agents in 2026 | 10 Best Agentic Browsers in 2026 (Ranked) - brightdata.com | Agentic Browser | BrowserOS - Open-Source AI Browser | Privacy-First Alternative | GitHub - browseros-ai/BrowserOS: The ope",
+          "usable_score": 125000.0
+        },
+        {
+          "keyword": "AI browsing",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "Comet browser",
+          "volume_signal": 21600,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Comet Browser: a Personal AI Assistant | The browser that works as fast as you think - perplexity.ai | Comet Browser - AI-Powered Browser | Comet Browser - Download | Comet Browser - Download and install on Windows | Microsoft Store",
+          "usable_score": 21600.0
+        }
+      ],
+      "highest_volume_same_intent": "agentic browser",
+      "verdict": "SWITCH",
+      "recommended_primary": "agentic browser",
+      "reason": "'agentic browser' ~125k on-intent vs 'AI browser' ~61.8k on-intent; KB covers built-in agentic browsers. Switch head, keep 'AI browser' secondary."
+    },
+    {
+      "slug": "data-engineering-agent",
+      "current_primary": "Data Engineering Agent",
+      "candidates": [
+        {
+          "keyword": "Data Engineering Agent",
+          "volume_signal": 296000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Data - Wikipedia | Data.gov Home - Data.gov | DataOhio | Ohio.gov | What is data? - IBM | DATA Definition &amp; Meaning - Merriam-Webster",
+          "usable_score": 296000.0
+        },
+        {
+          "keyword": "AI data engineer",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "agentic data engineering",
+          "volume_signal": 84200,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "What Is Agentic AI? Definition, 6 Levels &amp; Examples (2026) | Agentic AI, explained - MIT Sloan | AI agent - Wikipedia | 'Agentic' AI is a buzzword made up of marketing fluff and real promise ... | What is agentic AI? - IBM",
+          "usable_score": 84200.0
+        },
+        {
+          "keyword": "data engineer agent",
+          "volume_signal": 296000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Data - Wikipedia | Data.gov Home - Data.gov | DataOhio | Ohio.gov | What is data? - IBM | DATA Definition &amp; Meaning - Merriam-Webster",
+          "usable_score": 296000.0
+        },
+        {
+          "keyword": "AI data engineering agent",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        }
+      ],
+      "highest_volume_same_intent": "Data Engineering Agent",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "Data Engineering Agent",
+      "reason": "Bing unusable: 'Data Engineering Agent' 296k is 'data'-word dictionary pollution; AI variants capped by generic AI. New category — keep current until reliable MSV exists."
+    },
+    {
+      "slug": "expert-agent",
+      "current_primary": "Expert Agent",
+      "candidates": [
+        {
+          "keyword": "Expert Agent",
+          "volume_signal": 274000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning - Cambridge Dictionary | Expert - Wikipedia | Expert - Simple English Wikipedia, the free encycloped",
+          "usable_score": 274000.0
+        },
+        {
+          "keyword": "AI expert agent",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "expert AI agent",
+          "volume_signal": 274000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning - Cambridge Dictionary | Expert - Wikipedia | Expert - Simple English Wikipedia, the free encycloped",
+          "usable_score": 274000.0
+        },
+        {
+          "keyword": "AI expert network",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "expert agent marketplace",
+          "volume_signal": 274000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "EXPERT Definition &amp; Meaning - Merriam-Webster | Expert - Definition, Meaning &amp; Synonyms | Vocabulary.com | EXPERT | English meaning - Cambridge Dictionary | Expert - Wikipedia | Expert - Simple English Wikipedia, the free encycloped",
+          "usable_score": 274000.0
+        }
+      ],
+      "highest_volume_same_intent": "Expert Agent",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "Expert Agent",
+      "reason": "'Expert Agent'/'expert AI agent' 274k are dictionary-expert pollution; AI variants capped. Emerging term; keep."
+    },
+    {
+      "slug": "multi-agent",
+      "current_primary": "Multi-Agent Systems",
+      "candidates": [
+        {
+          "keyword": "Multi-Agent Systems",
+          "volume_signal": 104000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia",
+          "usable_score": 104000.0
+        },
+        {
+          "keyword": "multi-agent AI",
+          "volume_signal": 104000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia",
+          "usable_score": 104000.0
+        },
+        {
+          "keyword": "multi agent system",
+          "volume_signal": 104000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia",
+          "usable_score": 104000.0
+        },
+        {
+          "keyword": "multi-agent orchestration",
+          "volume_signal": 104000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Multi — one task, the right AI workflow | MULTI- Definition &amp; Meaning - Merriam-Webster | MULTI- | English meaning - Cambridge Dictionary | MULTI- | definition in the Cambridge English Dictionary | Multi - Wikipedia",
+          "usable_score": 104000.0
+        },
+        {
+          "keyword": "AI multi-agent",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        }
+      ],
+      "highest_volume_same_intent": "Multi-Agent Systems",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Multi-Agent Systems",
+      "reason": "'Multi-Agent Systems' 104k (Multi- dictionary heavy but term is the standard academic/category head); 'AI multi-agent' capped. Keep."
+    },
+    {
+      "slug": "openclaw-alternatives",
+      "current_primary": "OpenClaw alternatives",
+      "candidates": [
+        {
+          "keyword": "OpenClaw alternatives",
+          "volume_signal": 78500,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenClaw — Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - OpenClaw",
+          "usable_score": 78500.0
+        },
+        {
+          "keyword": "OpenClaw",
+          "volume_signal": 78500,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenClaw — Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - OpenClaw",
+          "usable_score": 78500.0
+        },
+        {
+          "keyword": "Clawdbot alternatives",
+          "volume_signal": 92,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Anmelden bei Hotmail | Microsoft Support | Change the refresh rate on your monitor in Windows | Microsoft Support | Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub | Released: July 2026 Exchange Server Security Updates ",
+          "usable_score": 92.0
+        },
+        {
+          "keyword": "Moltbot alternatives",
+          "volume_signal": 9450,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "MoltBot - Open Source Personal AI Assistant | Formerly ClawdBot | Moltbot - Personal AI Assistant That Actually Does Things | Moltbot - Open-Source AI Assistant for WhatsApp, Telegram &amp; Slack | MoltBot Personal AI Assistant| AI Agent fo",
+          "usable_score": 9450.0
+        },
+        {
+          "keyword": "OpenClaw vs",
+          "volume_signal": 78500,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenClaw — Open-Source AI Assistant | OpenClaw | The AI That Actually Does Things | OpenClaw - Wikipedia | openclaw - GitHub | Install - OpenClaw",
+          "usable_score": 78500.0
+        }
+      ],
+      "highest_volume_same_intent": "OpenClaw alternatives",
+      "verdict": "OK",
+      "recommended_primary": "OpenClaw alternatives",
+      "reason": "~78.5k on-intent (OpenClaw brand pages); alternatives query matches page intent. Keep."
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "current_primary": "vibe coding payments",
+      "candidates": [
+        {
+          "keyword": "vibe coding payments",
+          "volume_signal": 119000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Vibe - Mistral AI | VIBE.com – Hip-Hop, R&amp;B, Style, and Black Culture | VIBE Definition &amp; Meaning - Merriam-Webster | Vibe - Local Audio &amp; Video Transcription App - GitHub Pages | Vibe: Contextual AI Workspace | Vibe",
+          "usable_score": 119000.0
+        },
+        {
+          "keyword": "add payments to vibe coded app",
+          "volume_signal": 163000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "ADD vs. ADHD: How Are They Different? - Verywell Mind | ADD vs. ADHD: What's the Difference Between ADD &amp; ADHD? | ADD vs. ADHD Symptoms: 3 Types of Attention Deficit Disorder | What Is ADD - Symptoms, Differences, Treatments Guide | ADD",
+          "usable_score": 163000.0
+        },
+        {
+          "keyword": "stripe vibe coding",
+          "volume_signal": 64700,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Stripe Login | Sign in to the Stripe Dashboard | Stripe | Financial Infrastructure to Grow Your Revenue | Sign up and create a Stripe account | Stripe | Stripe, Inc. - Wikipedia | Stripe Payments | Global Payment Processing Platform",
+          "usable_score": 64700.0
+        },
+        {
+          "keyword": "how to add payments to vibe coded app",
+          "volume_signal": 142000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "wikiHow: How-to instructions you can trust. | HOW | English meaning - Cambridge Dictionary | HOW Definition &amp; Meaning - Merriam-Webster | How - Wikipedia | HowStuffWorks - Learn How Everything Works!",
+          "usable_score": 142000.0
+        },
+        {
+          "keyword": "vibe coding Stripe",
+          "volume_signal": 119000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Vibe - Mistral AI | VIBE.com – Hip-Hop, R&amp;B, Style, and Black Culture | VIBE Definition &amp; Meaning - Merriam-Webster | Vibe - Local Audio &amp; Video Transcription App - GitHub Pages | Vibe: Contextual AI Workspace | Vibe",
+          "usable_score": 119000.0
+        }
+      ],
+      "highest_volume_same_intent": "add payments to vibe coded app",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "how to add payments to vibe coded app",
+      "reason": "All vibe-coding-payment queries polluted (Vibe music app / VIBE.com / ADD-vs-ADHD). Page maps to a how-to route; keep natural how-to phrasing as keyword intent, no reliable MSV yet."
+    },
+    {
+      "slug": "work-agent",
+      "current_primary": "Work Agent",
+      "candidates": [
+        {
+          "keyword": "Work Agent",
+          "volume_signal": 426000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "WORK Definition &amp; Meaning - Merriam-Webster | WorkInTexas | Rihanna - Work (Lyrics) ft. Drake - YouTube | Rihanna - Work (Explicit) ft. Drake - YouTube | Log in to The Work Number",
+          "usable_score": 426000.0
+        },
+        {
+          "keyword": "AI Work Agent",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "AI work agent",
+          "volume_signal": 55,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "通販・テレビショッピングのショップチャンネル | 本日のお買い得- 通販・テレビショッピングのショップチャンネル | ショップチャンネルカードのWeb明細はどこで確認できますか ... | 交換・返品商品の返送先住所を確認したいです。 : よくあるご ... | 検索結果｜テレビショッピングのショップチャンネル｜24時間365 ...",
+          "usable_score": 55.0
+        },
+        {
+          "keyword": "work AI agent",
+          "volume_signal": 426000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "WORK Definition &amp; Meaning - Merriam-Webster | WorkInTexas | Rihanna - Work (Lyrics) ft. Drake - YouTube | Rihanna - Work (Explicit) ft. Drake - YouTube | Log in to The Work Number",
+          "usable_score": 426000.0
+        },
+        {
+          "keyword": "workplace agent",
+          "volume_signal": 58900,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Workplace | Workplace from Meta | Workplace - Facebook | Workplace from Meta - Apps on Google Play | Workplace (software) - Wikipedia",
+          "usable_score": 58900.0
+        }
+      ],
+      "highest_volume_same_intent": "Work Agent",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Work Agent",
+      "reason": "'Work Agent'/'work AI agent' 426k are WORK-dictionary/Rihanna pollution; 'AI Work Agent' capped. Keep head; no usable SERP signal for this new category."
+    },
+    {
+      "slug": "workflow",
+      "current_primary": "Workflow automation",
+      "candidates": [
+        {
+          "keyword": "Workflow automation",
+          "volume_signal": 28000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Workflow automation: Definition, tutorial, and tools - Zapier | Power Automate: Business Process Workflow Automation | Microsoft … | Best Workflow Automation Software in 2026: Top 14 Tools Ranked | What is Workflow Automation? | Atlassian |",
+          "usable_score": 28000.0
+        },
+        {
+          "keyword": "AI workflow",
+          "volume_signal": 45500,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "10 Best AI Workflow Tools Reviewed in 2026 - The Digital Project … | AI Workflow | IBM | 10 best AI workflow automation tools I'm using in 2026 | What Is an AI Workflow? A Complete Guide for 2026 | AI Workflow Examples: 10 Real Use Cases Ac",
+          "usable_score": 45500.0
+        },
+        {
+          "keyword": "AI workflow automation",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "workflow AI",
+          "volume_signal": 135000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Creating a workflow | Microsoft Support | Workflow - Wikipedia | Workflows - Google Cloud | Getting started with Workflows | Microsoft Support | What is a workflow? - IBM",
+          "usable_score": 135000.0
+        },
+        {
+          "keyword": "agentic workflow",
+          "volume_signal": 19000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "What are agentic workflows? - IBM | Home | GitHub Agentic Workflows | What Are Agentic Workflows? A Complete Guide - Redis | A Practical Guide for Designing, Developing, and Deploying … | What are agentic workflows? Design patterns &amp; wh",
+          "usable_score": 19000.0
+        }
+      ],
+      "highest_volume_same_intent": "workflow AI",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI workflow",
+      "reason": "'AI workflow' ~45.5k on-intent (2026 reviews) > 'Workflow automation' ~28k (Zapier-class, broader non-AI). 'AI workflow automation' capped/polluted. Use 'AI workflow' as head."
+    },
+    {
+      "slug": "workspace-agent",
+      "current_primary": "Workspace Agent",
+      "candidates": [
+        {
+          "keyword": "Workspace Agent",
+          "volume_signal": 92800,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Google Workspace: Secure Online Productivity &amp; Collaboration Tools | Google Workspace | 办公应用 &amp; 协作工具 | Sign in - Google Accounts | Download Citrix Workspace app - Citrix | 注册即可免费试用 Google Workspace",
+          "usable_score": 92800.0
+        },
+        {
+          "keyword": "Team AI Agent",
+          "volume_signal": 333000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Microsoft Teams | Sign In | Microsoft Teams | Free Online Meetings &amp; Video Calls | Microsoft Teams | Download Teams Desktop and Mobile Apps | Microsoft Teams | Microsoft Teams - Download and install on Windows | Microsoft Store",
+          "usable_score": 333000.0
+        },
+        {
+          "keyword": "AI workspace agent",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "workspace AI agent",
+          "volume_signal": 92800,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "Google Workspace: Secure Online Productivity &amp; Collaboration Tools | Google Workspace | 办公应用 &amp; 协作工具 | Sign in - Google Accounts | Download Citrix Workspace app - Citrix | 注册即可免费试用 Google Workspace",
+          "usable_score": 92800.0
+        },
+        {
+          "keyword": "custom GPT workspace",
+          "volume_signal": 156000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "CUSTOM Definition &amp; Meaning - Merriam-Webster | CUSTOM | English meaning - Cambridge Dictionary | Custom - definition of custom by The Free Dictionary | Custom - Definition, Meaning &amp; Synonyms | Vocabulary.com | CUSTOM Definition &a",
+          "usable_score": 156000.0
+        }
+      ],
+      "highest_volume_same_intent": "Team AI Agent",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Workspace Agent",
+      "reason": "Bing polluted by Google Workspace / Microsoft Teams brands ('Team AI Agent' 333k = Microsoft Teams). OpenAI Workspace Agents supports the term; keep."
+    },
+    {
+      "slug": "world-model",
+      "current_primary": "World model",
+      "candidates": [
+        {
+          "keyword": "World model",
+          "volume_signal": 43100,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "【世界模型】一文读懂世界模型：从核心原理到前沿争议 - 知乎 | 世界模型 (World Models)深度研究：从理论到应用的全景拆解 | [1803.10122] World Models - arXiv.org | World Model：从强化学习到具身智能的完整入门 | Yang Li | AI世界模型（World Model）全解析：技术原理、研究进展与产业落地_ …",
+          "usable_score": 43100.0
+        },
+        {
+          "keyword": "world models",
+          "volume_signal": 40700,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "[1803.10122] World Models - arXiv.org | World Models | 【世界模型】一文读懂世界模型：从核心原理到前沿争议 - 知乎 | 世界模型 (World Models)深度研究：从理论到应用的全景拆解 | [2606.00133] World Models: A Comprehensive Survey of Architectures ...",
+          "usable_score": 40700.0
+        },
+        {
+          "keyword": "AI world models",
+          "volume_signal": 509000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "OpenAI | Research &amp; Deployment | Google Gemini | ChatGPT: Chat, Work, Create &amp; Code with AI | What is artificial intelligence (AI)? - IBM | Google AI - How we're making AI helpful for everyone",
+          "usable_score": null
+        },
+        {
+          "keyword": "world model AI",
+          "volume_signal": 1380000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "World News: Top &amp; Breaking World News Today | AP News | World | Latest News &amp; Updates - BBC | World news: Latest news, breaking news, today's news stories from ... | World News Today Updates &amp; Daily Headlines | Fox News | World ",
+          "usable_score": 450000
+        },
+        {
+          "keyword": "world models machine learning",
+          "volume_signal": 1380000,
+          "source": "Bing quoted About-N (proxy)",
+          "serp_title_note": "World News: Top &amp; Breaking World News Today | AP News | World | Latest News &amp; Updates - BBC | World news: Latest news, breaking news, today's news stories from ... | World News Today Updates &amp; Daily Headlines | Fox News | World ",
+          "usable_score": 450000
+        }
+      ],
+      "highest_volume_same_intent": "world model AI",
+      "verdict": "OK",
+      "recommended_primary": "World model",
+      "reason": "'World model'/'world models' ~40-43k on-intent (arXiv/知乎/学术); 'world model AI' 1.38M is world-news pollution. Keep academic head."
+    }
+  ]
+}

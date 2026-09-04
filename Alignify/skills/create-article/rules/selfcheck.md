@@ -34,7 +34,7 @@
 | 11 | **Architecture** | 内容驱动大纲 intentional；主体节完整 |
 | 12 | **Flagship extras** | Extractability Pass；Excellence 类型已标注 |
 
-**Gate C**：12 维 + H0–H4 全 Pass → 输出 **audit-ready**，移交 [`audit-article`](../../audit-article/SKILL.md)。
+**Gate C**：12 维 + H0–H4 全 Pass → 输出 **audit-ready**，移交新会话 [`11-final-audit.md`](../11-final-audit.md)。
 
 ---
 
@@ -59,10 +59,10 @@ python ../../clients/Alignify/scripts/audit/audit-tools-internal-links.py --slug
 3. Source Map（`source-map-template.md`）  
 4. Internal Link Plan（distinct slug 列表 + 锚文本）  
 5. SERP Fit 最终版  
-6. **终审指令**（复制给 audit-article）：
+6. **终审指令**（复制到新会话跑 Step 11）：
 
 ```markdown
-请按 Alignify audit-article skill 终审：
+请按 Alignify create-article Step 11 终审：
 - ZH：content/{channel}/zh/{slug}.md
 - EN：content/{channel}/en/{slug}.md
 - Primary keyword：{kw}

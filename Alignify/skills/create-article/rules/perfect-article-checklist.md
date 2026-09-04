@@ -10,7 +10,7 @@
 | 项 | 要求 |
 |----|------|
 | P0 Gate | Pass |
-| 十维总分 | **≥90**（见 audit-article `final-audit.md`） |
+| 十维总分 | **≥90**（见 [`final-audit.md`](./final-audit.md)） |
 | Excellence | **Yes**（Brief 中 Excellence type 在正文可见） |
 | Moat Asset | Brief ≥1 项 **已兑现** |
 | P1 | **零未修复** |

@@ -34,7 +34,7 @@
 ```
 
 **Fail** → 回 Step 05–06 或 MERGE  
-**Pass** → 可批量送 audit-article
+**Pass** → 可批量送 Step 11 Final Audit（新会话）
 
 ---
 

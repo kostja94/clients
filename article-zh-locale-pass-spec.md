@@ -1,13 +1,13 @@
 # Article ZH Locale Pass 生成规范（元文档）
 
-> **定位**：Alignify 文章创建流程的**独立后置轮**——在 Step 10 / audit-article 通过后，对中文正文做**地道化 + 英混清理**，使 ZH 读起来像中文作者写的行业长文，而非 EN Brief 直译。
+> **定位**：Alignify 文章创建流程的**独立后置轮**——在 Step 10 / Step 11 通过后，对中文正文做**地道化 + 英混清理**，使 ZH 读起来像中文作者写的行业长文，而非 EN Brief 直译。
 > **位置**：`clients/article-zh-locale-pass-spec.md`（本文件）
 > **版本**：v1.0 · 2026-08-29
 > **关联**：
 > - [`Alignify/skills/create-article/rules/content-locale.md`](Alignify/skills/create-article/rules/content-locale.md) Part 3（Step 06）
 > - [`Alignify/skills/create-article/rules/zh-en-mixing.md`](Alignify/skills/create-article/rules/zh-en-mixing.md)
 > - [`Alignify/skills/create-article/rules/gtm-prose-voice.md`](Alignify/skills/create-article/rules/gtm-prose-voice.md)
-> - [`Alignify/skills/audit-article/SKILL.md`](Alignify/skills/audit-article/SKILL.md)（前置：须 audit-ready 或 publish-ready）
+> - [`Alignify/skills/create-article/11-final-audit.md`](Alignify/skills/create-article/11-final-audit.md)（前置：须 audit-ready 或 publish-ready）
 > - 参考实例：[`stealth-model-preview`](Alignify/knowledge/marketing/_briefs/stealth-model-preview.md) · 2026-08-29 ZH Pass
 
 ---
@@ -39,7 +39,7 @@
 | 适用 | 不适用 |
 |------|--------|
 | `content/blog/zh/` · `content/marketing/zh/` GTM/策略文 | Tools 评测 Hub（仅跑 `audit-locale-voice`，通常无需本 Pass） |
-| 用户反馈「中文不地道 / 英文过多」 | 事实错误、结构问题（回 create-article / audit-article） |
+| 用户反馈「中文不地道 / 英文过多」 | 事实错误、结构问题（回 create-article Step 05–11 / audit-optimize） |
 | audit-locale-voice PASS 但朗读仍像英译稿 | 仅需改 EN 轨 |
 | 存量文 touch 时一并优化 ZH | 纯 SEO 技术文且术语本当保留英文 |
 

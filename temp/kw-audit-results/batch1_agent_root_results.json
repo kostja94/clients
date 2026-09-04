@@ -1,0 +1,788 @@
+{
+  "batch": "batch1_agent_root",
+  "methodology": "intent-near-keyword-volume via Bing EN-US approximate result counts (directional, not MSV)",
+  "audit_date": "2026-09-03",
+  "slug_count": 27,
+  "summary": {
+    "OK": 14,
+    "SWITCH": 10,
+    "AMBIGUOUS": 3,
+    "NEEDS_REVIEW": 0
+  },
+  "switch_items": [
+    {
+      "slug": "agent-for-desktop",
+      "current_primary": "Agent on desktop / 桌面智能体",
+      "recommended_primary": "AI desktop agent",
+      "highest_volume_keyword": "AI desktop agent",
+      "notes": "'AI desktop agent' ~509,000 is >=2x current 'desktop AI agent' ~150,000"
+    },
+    {
+      "slug": "agent-skills",
+      "current_primary": "Agent Skills / 技能生态",
+      "recommended_primary": "MCP agent skills",
+      "highest_volume_keyword": "MCP agent skills",
+      "notes": "'MCP agent skills' ~86,900 is >=2x current 'agent skills' ~43,300"
+    },
+    {
+      "slug": "browser",
+      "current_primary": "AI browser / 人工智能浏览器",
+      "recommended_primary": "AI web browser",
+      "highest_volume_keyword": "AI web browser",
+      "notes": "'AI web browser' ~509,000 is >=2x current 'AI browser' ~61,800"
+    },
+    {
+      "slug": "workspace-agent",
+      "current_primary": "Workspace Agent / Team AI Agent",
+      "recommended_primary": "team AI agent",
+      "highest_volume_keyword": "team AI agent",
+      "notes": "'team AI agent' ~333,000 is >=2x current 'workspace agent' ~92,800"
+    },
+    {
+      "slug": "agentic-commerce",
+      "current_primary": "Agentic Commerce",
+      "recommended_primary": "AI agent commerce",
+      "highest_volume_keyword": "AI agent commerce",
+      "notes": "'AI agent commerce' ~509,000 is >=2x current 'agentic commerce' ~14,400"
+    },
+    {
+      "slug": "agentic-payments",
+      "current_primary": "Agentic Payments",
+      "recommended_primary": "AI agent payments",
+      "highest_volume_keyword": "AI agent payments",
+      "notes": "'AI agent payments' ~509,000 is >=2x current 'agentic payments' ~84,200"
+    },
+    {
+      "slug": "family-assistant",
+      "current_primary": "AI 家庭助手",
+      "recommended_primary": "family AI assistant",
+      "highest_volume_keyword": "family AI assistant",
+      "notes": "'family AI assistant' ~1,090,000 is >=2x current 'AI family assistant' ~509,000"
+    },
+    {
+      "slug": "lifetime-deals",
+      "current_primary": "Lifetime Deals",
+      "recommended_primary": "software lifetime deals",
+      "highest_volume_keyword": "software lifetime deals",
+      "notes": "'software lifetime deals' ~298,000 is >=2x current 'lifetime deals' ~58,400"
+    },
+    {
+      "slug": "religion",
+      "current_primary": "AI Religion",
+      "recommended_primary": "AI spiritual assistant",
+      "highest_volume_keyword": "AI spiritual assistant",
+      "notes": "'AI spiritual assistant' ~509,000 is >=2x current 'AI religion' ~11,600"
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "current_primary": "Vibe Coding 支付集成",
+      "recommended_primary": "AI app builder payments",
+      "highest_volume_keyword": "AI app builder payments",
+      "notes": "'AI app builder payments' ~509,000 is >=2x current 'vibe coding payments' ~119,000"
+    }
+  ],
+  "results": [
+    {
+      "slug": "agent-for-desktop",
+      "current_primary": "Agent on desktop / 桌面智能体",
+      "candidates_tested": [
+        {
+          "keyword": "desktop AI agent",
+          "bing_approx": "About 150,000 results"
+        },
+        {
+          "keyword": "AI desktop agent",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "computer use agent",
+          "bing_approx": "About 271,000 results"
+        },
+        {
+          "keyword": "AI agent for desktop",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI desktop agent",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI desktop agent",
+      "notes": "'AI desktop agent' ~509,000 is >=2x current 'desktop AI agent' ~150,000"
+    },
+    {
+      "slug": "agent-identity",
+      "current_primary": "AI Agent Identity",
+      "candidates_tested": [
+        {
+          "keyword": "AI agent identity",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agent identity management",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "AI agent IAM",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agentic access control",
+          "bing_approx": "About 84,200 results"
+        }
+      ],
+      "highest_volume_keyword": "AI agent identity",
+      "verdict": "OK",
+      "recommended_primary": "AI agent identity",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-memory",
+      "current_primary": "Agent Memory Layer / Agent 记忆层",
+      "candidates_tested": [
+        {
+          "keyword": "AI agent memory",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agent memory layer",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "AI agent memory tools",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "LLM agent memory",
+          "bing_approx": "About 105,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI agent memory",
+      "verdict": "OK",
+      "recommended_primary": "AI agent memory",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-runtime",
+      "current_primary": "AI Agent Runtime",
+      "candidates_tested": [
+        {
+          "keyword": "AI agent runtime",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agent runtime platform",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "AI agent orchestration",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agent execution runtime",
+          "bing_approx": "About 4,280 results"
+        }
+      ],
+      "highest_volume_keyword": "AI agent runtime",
+      "verdict": "OK",
+      "recommended_primary": "AI agent runtime",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-sandbox",
+      "current_primary": "AI Agent Sandbox / Agent 沙箱",
+      "candidates_tested": [
+        {
+          "keyword": "AI agent sandbox",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agent sandbox environment",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "AI agent isolation",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "secure agent sandbox",
+          "bing_approx": "About 302,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI agent sandbox",
+      "verdict": "OK",
+      "recommended_primary": "AI agent sandbox",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-skills",
+      "current_primary": "Agent Skills / 技能生态",
+      "candidates_tested": [
+        {
+          "keyword": "agent skills",
+          "bing_approx": "About 43,300 results"
+        },
+        {
+          "keyword": "AI agent skills",
+          "bing_approx": "About 26,200 results"
+        },
+        {
+          "keyword": "agent skill marketplace",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "MCP agent skills",
+          "bing_approx": "About 86,900 results"
+        }
+      ],
+      "highest_volume_keyword": "MCP agent skills",
+      "verdict": "SWITCH",
+      "recommended_primary": "MCP agent skills",
+      "notes": "'MCP agent skills' ~86,900 is >=2x current 'agent skills' ~43,300"
+    },
+    {
+      "slug": "agent-to-agent",
+      "current_primary": "A2A Agent Network / Agent 互联网络",
+      "candidates_tested": [
+        {
+          "keyword": "agent to agent protocol",
+          "bing_approx": "About 130,000 results"
+        },
+        {
+          "keyword": "A2A agent protocol",
+          "bing_approx": "About 92,500 results"
+        },
+        {
+          "keyword": "multi-agent communication",
+          "bing_approx": "About 104,000 results"
+        },
+        {
+          "keyword": "agent interoperability",
+          "bing_approx": "About 4,280 results"
+        }
+      ],
+      "highest_volume_keyword": "agent to agent protocol",
+      "verdict": "OK",
+      "recommended_primary": "agent to agent protocol",
+      "notes": "Current tied for top at 130,000 results"
+    },
+    {
+      "slug": "ai-employee",
+      "current_primary": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+      "candidates_tested": [
+        {
+          "keyword": "AI employee",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "AI coworker",
+          "bing_approx": "About 58 results"
+        },
+        {
+          "keyword": "AI teammate",
+          "bing_approx": "About 48,100 results"
+        },
+        {
+          "keyword": "AI employee software",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI employee",
+      "verdict": "OK",
+      "recommended_primary": "AI employee",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "browser",
+      "current_primary": "AI browser / 人工智能浏览器",
+      "candidates_tested": [
+        {
+          "keyword": "AI browser",
+          "bing_approx": "About 61,800 results"
+        },
+        {
+          "keyword": "AI web browser",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agentic browser",
+          "bing_approx": "About 125,000 results"
+        },
+        {
+          "keyword": "AI browsing agent",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI web browser",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI web browser",
+      "notes": "'AI web browser' ~509,000 is >=2x current 'AI browser' ~61,800"
+    },
+    {
+      "slug": "expert-agent",
+      "current_primary": "Expert Agent / 专家网络与 AI Agent 市场",
+      "candidates_tested": [
+        {
+          "keyword": "expert AI agent",
+          "bing_approx": "About 274,000 results"
+        },
+        {
+          "keyword": "AI expert agent",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "expert agent marketplace",
+          "bing_approx": "About 274,000 results"
+        },
+        {
+          "keyword": "AI agent marketplace",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI expert agent",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "expert AI agent",
+      "notes": "Multiple strong candidates: AI expert agent (509,000), AI agent marketplace (509,000); current 274,000"
+    },
+    {
+      "slug": "multi-agent",
+      "current_primary": "Multi-Agent Systems / 多智能体系统",
+      "candidates_tested": [
+        {
+          "keyword": "multi-agent systems",
+          "bing_approx": "About 104,000 results"
+        },
+        {
+          "keyword": "multi-agent AI",
+          "bing_approx": "About 15,100 results"
+        },
+        {
+          "keyword": "multi-agent framework",
+          "bing_approx": "About 104,000 results"
+        },
+        {
+          "keyword": "multi-agent orchestration",
+          "bing_approx": "About 104,000 results"
+        }
+      ],
+      "highest_volume_keyword": "multi-agent systems",
+      "verdict": "OK",
+      "recommended_primary": "multi-agent systems",
+      "notes": "Current tied for top at 104,000 results"
+    },
+    {
+      "slug": "openclaw-alternatives",
+      "current_primary": "OpenClaw 系谱 / alternatives 检索意图",
+      "candidates_tested": [
+        {
+          "keyword": "OpenClaw alternatives",
+          "bing_approx": "About 78,500 results"
+        },
+        {
+          "keyword": "OpenClaw AI agent",
+          "bing_approx": "About 59,500 results"
+        },
+        {
+          "keyword": "OpenClaw fork",
+          "bing_approx": "About 78,500 results"
+        },
+        {
+          "keyword": "OpenClaw similar tools",
+          "bing_approx": "About 78,500 results"
+        }
+      ],
+      "highest_volume_keyword": "OpenClaw alternatives",
+      "verdict": "OK",
+      "recommended_primary": "OpenClaw alternatives",
+      "notes": "Current tied for top at 78,500 results"
+    },
+    {
+      "slug": "work-agent",
+      "current_primary": "Work Agent / AI Work Agent",
+      "candidates_tested": [
+        {
+          "keyword": "work agent",
+          "bing_approx": "About 426,000 results"
+        },
+        {
+          "keyword": "AI work agent",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "workplace AI agent",
+          "bing_approx": "About 58,300 results"
+        },
+        {
+          "keyword": "business AI agent",
+          "bing_approx": "About 303,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI work agent",
+      "verdict": "OK",
+      "recommended_primary": "work agent",
+      "notes": "Current within 25% of top (426,000 vs 509,000)"
+    },
+    {
+      "slug": "workflow",
+      "current_primary": "Workflow automation / 工作流自动化",
+      "candidates_tested": [
+        {
+          "keyword": "AI workflow automation",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "AI workflow",
+          "bing_approx": "About 45,500 results"
+        },
+        {
+          "keyword": "agent workflow automation",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "AI agent workflow",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI workflow automation",
+      "verdict": "OK",
+      "recommended_primary": "AI workflow automation",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "workspace-agent",
+      "current_primary": "Workspace Agent / Team AI Agent",
+      "candidates_tested": [
+        {
+          "keyword": "workspace agent",
+          "bing_approx": "About 92,800 results"
+        },
+        {
+          "keyword": "team AI agent",
+          "bing_approx": "About 333,000 results"
+        },
+        {
+          "keyword": "workspace AI agent",
+          "bing_approx": "About 92,800 results"
+        },
+        {
+          "keyword": "collaborative AI agent",
+          "bing_approx": "About 27,200 results"
+        }
+      ],
+      "highest_volume_keyword": "team AI agent",
+      "verdict": "SWITCH",
+      "recommended_primary": "team AI agent",
+      "notes": "'team AI agent' ~333,000 is >=2x current 'workspace agent' ~92,800"
+    },
+    {
+      "slug": "agent-billing",
+      "current_primary": "Agent Billing / AI Agent 计费",
+      "candidates_tested": [
+        {
+          "keyword": "AI agent billing",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agent billing software",
+          "bing_approx": "About 297,000 results"
+        },
+        {
+          "keyword": "agent monetization",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "AI agent billing platform",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI agent billing",
+      "verdict": "OK",
+      "recommended_primary": "AI agent billing",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agentic-commerce",
+      "current_primary": "Agentic Commerce",
+      "candidates_tested": [
+        {
+          "keyword": "agentic commerce",
+          "bing_approx": "About 14,400 results"
+        },
+        {
+          "keyword": "AI agent commerce",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agentic shopping",
+          "bing_approx": "About 84,200 results"
+        },
+        {
+          "keyword": "AI commerce agents",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI agent commerce",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI agent commerce",
+      "notes": "'AI agent commerce' ~509,000 is >=2x current 'agentic commerce' ~14,400"
+    },
+    {
+      "slug": "agentic-payments",
+      "current_primary": "Agentic Payments",
+      "candidates_tested": [
+        {
+          "keyword": "agentic payments",
+          "bing_approx": "About 84,200 results"
+        },
+        {
+          "keyword": "AI agent payments",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "agent payment infrastructure",
+          "bing_approx": "About 4,280 results"
+        },
+        {
+          "keyword": "AI payment agents",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI agent payments",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI agent payments",
+      "notes": "'AI agent payments' ~509,000 is >=2x current 'agentic payments' ~84,200"
+    },
+    {
+      "slug": "ai-shopping",
+      "current_primary": "AI Shopping",
+      "candidates_tested": [
+        {
+          "keyword": "AI shopping",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "AI shopping assistant",
+          "bing_approx": "About 2,670 results"
+        },
+        {
+          "keyword": "AI shopping agent",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "AI product discovery",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI shopping",
+      "verdict": "OK",
+      "recommended_primary": "AI shopping",
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "animation-library",
+      "current_primary": "Animation Library",
+      "candidates_tested": [
+        {
+          "keyword": "animation library",
+          "bing_approx": "About 172,000 results"
+        },
+        {
+          "keyword": "Lottie animation library",
+          "bing_approx": "About 78,100 results"
+        },
+        {
+          "keyword": "UI animation library",
+          "bing_approx": "About 170,000 results"
+        },
+        {
+          "keyword": "motion design library",
+          "bing_approx": "About 132,000 results"
+        }
+      ],
+      "highest_volume_keyword": "animation library",
+      "verdict": "OK",
+      "recommended_primary": "animation library",
+      "notes": "Current tied for top at 172,000 results"
+    },
+    {
+      "slug": "data-engineering-agent",
+      "current_primary": "Data Engineering Agent",
+      "candidates_tested": [
+        {
+          "keyword": "data engineering agent",
+          "bing_approx": "About 296,000 results"
+        },
+        {
+          "keyword": "AI data engineering agent",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "data pipeline agent",
+          "bing_approx": "About 296,000 results"
+        },
+        {
+          "keyword": "AI data agent",
+          "bing_approx": "About 509,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI data engineering agent",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "data engineering agent",
+      "notes": "Multiple strong candidates: AI data engineering agent (509,000), AI data agent (509,000); current 296,000"
+    },
+    {
+      "slug": "family-assistant",
+      "current_primary": "AI 家庭助手",
+      "candidates_tested": [
+        {
+          "keyword": "AI family assistant",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "family AI assistant",
+          "bing_approx": "About 1,090,000 results"
+        },
+        {
+          "keyword": "AI home assistant for families",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "family organizer AI",
+          "bing_approx": "About 1,090,000 results"
+        }
+      ],
+      "highest_volume_keyword": "family AI assistant",
+      "verdict": "SWITCH",
+      "recommended_primary": "family AI assistant",
+      "notes": "'family AI assistant' ~1,090,000 is >=2x current 'AI family assistant' ~509,000"
+    },
+    {
+      "slug": "fashion",
+      "current_primary": "AI fashion / AI 时尚工具",
+      "candidates_tested": [
+        {
+          "keyword": "AI fashion tools",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "AI fashion",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "AI fashion design software",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "fashion AI generator",
+          "bing_approx": "About 736,000 results"
+        }
+      ],
+      "highest_volume_keyword": "fashion AI generator",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "AI fashion tools",
+      "notes": "Top 'fashion AI generator' (736,000) moderately beats current (509,000) but <2x"
+    },
+    {
+      "slug": "lifetime-deals",
+      "current_primary": "Lifetime Deals",
+      "candidates_tested": [
+        {
+          "keyword": "lifetime deals",
+          "bing_approx": "About 58,400 results"
+        },
+        {
+          "keyword": "SaaS lifetime deals",
+          "bing_approx": "About 114,000 results"
+        },
+        {
+          "keyword": "software lifetime deals",
+          "bing_approx": "About 298,000 results"
+        },
+        {
+          "keyword": "AppSumo lifetime deals",
+          "bing_approx": "About 4,030 results"
+        }
+      ],
+      "highest_volume_keyword": "software lifetime deals",
+      "verdict": "SWITCH",
+      "recommended_primary": "software lifetime deals",
+      "notes": "'software lifetime deals' ~298,000 is >=2x current 'lifetime deals' ~58,400"
+    },
+    {
+      "slug": "religion",
+      "current_primary": "AI Religion",
+      "candidates_tested": [
+        {
+          "keyword": "AI religion",
+          "bing_approx": "About 11,600 results"
+        },
+        {
+          "keyword": "AI spiritual assistant",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "AI faith tools",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "religious AI chatbot",
+          "bing_approx": "About 127,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI spiritual assistant",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI spiritual assistant",
+      "notes": "'AI spiritual assistant' ~509,000 is >=2x current 'AI religion' ~11,600"
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "current_primary": "Vibe Coding 支付集成",
+      "candidates_tested": [
+        {
+          "keyword": "vibe coding payments",
+          "bing_approx": "About 119,000 results"
+        },
+        {
+          "keyword": "AI app builder payments",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "no-code app payments integration",
+          "bing_approx": "About 253,000 results"
+        },
+        {
+          "keyword": "vibe coding Stripe",
+          "bing_approx": "About 119,000 results"
+        }
+      ],
+      "highest_volume_keyword": "AI app builder payments",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI app builder payments",
+      "notes": "'AI app builder payments' ~509,000 is >=2x current 'vibe coding payments' ~119,000"
+    },
+    {
+      "slug": "world-model",
+      "current_primary": "World model / 世界模型",
+      "candidates_tested": [
+        {
+          "keyword": "world models AI",
+          "bing_approx": "About 1,380,000 results"
+        },
+        {
+          "keyword": "AI world model",
+          "bing_approx": "About 509,000 results"
+        },
+        {
+          "keyword": "world model machine learning",
+          "bing_approx": "About 1,380,000 results"
+        },
+        {
+          "keyword": "world models robotics",
+          "bing_approx": "About 1,380,000 results"
+        }
+      ],
+      "highest_volume_keyword": "world models AI",
+      "verdict": "OK",
+      "recommended_primary": "world models AI",
+      "notes": "Current tied for top at 1,380,000 results"
+    }
+  ]
+}

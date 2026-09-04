@@ -1,10 +1,10 @@
 # Create Article — Alignify 统一文章创建 Skill
 
-> **版本**：v2.5 · 2026-08-27  
+> **版本**：v2.6 · 2026-09-03  
 > **质量档位**：**每篇均为 flagship** — 无 lite/standard 降级；Research、Moat、BLUF、SelfCheck、终审全链路必过。  
 > **部署仓**：`E:\自有部署项目\alignify production`  
 > **上下文仓**：`E:\clients\Alignify`  
-> **终审**：Step 10 → audit-ready → [`../audit-article/SKILL.md`](../audit-article/SKILL.md) → publish-ready
+> **终审**：Step 10 → audit-ready → **新会话** [`11-final-audit.md`](./11-final-audit.md) → publish-ready
 
 ---
 
@@ -15,7 +15,7 @@
 3. **双轨 native 成稿** — ZH/EN **各自独立撰写**（可并行 Subagent），共享 Brief + 锚点 id；**禁止**先写一语种再翻译另一语种。Step 09c 做信息对等对比。见 [`rules/content-locale.md`](./rules/content-locale.md)。  
 4. **知识块 ≠ 文章** — 素材须重写，禁止整段复制。  
 4b. **仅调研 ≠ 成文** — 用户说「只调研 / 我说写才写」时，禁止擅自新建 KB 或部署仓正文；见 [`../knowledge-block/references/research-only-gate.md`](../knowledge-block/references/research-only-gate.md)。  
-5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类** 跑 audit-article → publish-ready。  
+5. **创作 / 终审分离** — Step 10 自审 → audit-ready；**另一 Agent 或人类**（新会话）跑 [`11-final-audit.md`](./11-final-audit.md) → publish-ready。禁止写稿同一会话终审。  
 6. **素材源可外置** — 个人知识库为 campaign SSOT；Brief 登记路径即可。  
 7. **TL;DR/FAQ/Refs → JSON** — Brief 采用则 Step 08 注册三 JSON 侧车（E10）；**不写 md**；见 `anatomy.md` §二·一。  
 8. **不清楚就问用户** — 对主叙事、中文主称、slug、结构、是否写 Author POV 等**任何不确定项**，在聊天中问用户后再继续；禁止静默假设。见 [`rules/intake-questions.md`](./rules/intake-questions.md)。  
@@ -30,7 +30,8 @@
   - **外部知识库**（如 `E:\个人知识库\…\{slug}.md`）— 在 Brief 中登记路径，**不强制**迁入 `knowledge/`
 - [ ] 新建或重写正式页；slug 未注册
 
-**不适用**：素材未完成 · 仅内链优化 · 仅 Meta 微调 · 已 audit-ready 仅需终审（→ audit-article）
+**不适用**：素材未完成 · 仅内链优化 · 仅 Meta 微调 · 已发稿局部刷新（→ [`../audit-optimize/SKILL.md`](../audit-optimize/SKILL.md)）  
+**终审**：已 audit-ready → 本 skill [`11-final-audit.md`](./11-final-audit.md)（**须新会话**）
 
 ---
 
@@ -65,7 +66,7 @@
 10 SelfCheck — Gate C → audit-ready
     └─ [Cross-Article 5.5] — **同批 ≥2 篇** audit-ready；单篇标 N/A
     ↓
-audit-article — Final ≥80 → publish-ready
+11 Final Audit（**新会话**）— P0 + 十维 ≥80 → publish-ready → [`11-final-audit.md`](./11-final-audit.md)
     ↓
 [可选] article-zh-locale-pass — 中文地道化后置轮 → [`../../article-zh-locale-pass-spec.md`](../../article-zh-locale-pass-spec.md)
     ↓
@@ -98,10 +99,10 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 08 | [`08-meta-config.md`](./08-meta-config.md) | Meta + config + Final CTA + **publishDate/modifiedDate** |
 | 09–09c | [`rules/content-locale.md`](./rules/content-locale.md) Part 4–5 | EN 独立成稿 + 对等对比 |
 | 10 | [`10-quality-gates.md`](./10-quality-gates.md) | Gate C → audit-ready |
-| — | [`../audit-article/SKILL.md`](../audit-article/SKILL.md) | publish-ready |
+| 11 | [`11-final-audit.md`](./11-final-audit.md) | **新会话**终审 → publish-ready |
 | —（可选） | [`../../article-zh-locale-pass-spec.md`](../../article-zh-locale-pass-spec.md) | ZH 地道化后置轮 |
 
-> **步骤编号说明**：01–04 独立文档 · 05–06 / 09–09c → [`content-locale.md`](./rules/content-locale.md) · 07 内链 · **08 = Meta + 日期 + CTA**（无 Step 11/12）· 10 自审 · 终审后人类发布。
+> **步骤编号说明**：01–04 独立文档 · 05–06 / 09–09c → [`content-locale.md`](./rules/content-locale.md) · 07 内链 · **08 = Meta + 日期 + CTA** · 10 自审 · **11 = 终审（新会话）** · 终审后人类发布。
 
 ---
 
@@ -136,7 +137,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 
 ## 渐进式加载
 
-默认只读本 `SKILL.md` + 当前 Step 文档。**双语正文**（05–06 / 09–09c）读 [`rules/content-locale.md`](./rules/content-locale.md) **对应 Part**；术语查 [`rules/locale-glossary.md`](./rules/locale-glossary.md) Part 1–3。**一次最多再读 2 个** 其他 `rules/` 文件。禁止一次性加载全部 references。
+默认只读本 `SKILL.md` + 当前 Step 文档。**双语正文**（05–06 / 09–09c）读 [`rules/content-locale.md`](./rules/content-locale.md) **对应 Part**；术语查 [`rules/locale-glossary.md`](./rules/locale-glossary.md) Part 1–3。**终审会话**只读 [`11-final-audit.md`](./11-final-audit.md) + [`rules/final-audit.md`](./rules/final-audit.md)，不加载 01–09。**一次最多再读 2 个** 其他 `rules/` 文件。禁止一次性加载全部 references。
 
 **文档层级**（避免把可选当 Gate）：
 
@@ -157,7 +158,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 - ❌ frontmatter `heroHtml:` / `heroContent:` / `howTo:`（E44 — 全站禁止）
 - ❌ Brief 采用 TL;DR/FAQ/Refs 但未注册 JSON，或 Brief 省略但 JSON 仍留键（E10）
 - ❌ 表前短桥接 / 孤立标签 / 免责声明独段（E40–E42；须跑 `audit-marketing-md-render.py`）
-- ❌ 自审后直接发布（须 audit-article）· ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
+- ❌ 自审后直接发布（须新会话 Step 11）· ❌ 写稿同一会话跑终审 · ❌ Investment Score <3.0 仍 KEEP（须 MERGE/STOP 或改角）  
 - ❌ P0 数字无 Source Map 行 · ❌ 为凑节加空章
 - ❌ **新 slug** publishDate 与全站已有 slug 重复（须 Step 08 跑 `next-publish-date.mjs --check`；见 `08-meta-config.md` §发布日期）
 - ❌ 把 skill 示例日期当「今天」——以执行 Step 08 的实际 UTC+8 日历日为准
@@ -179,4 +180,4 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 
 ---
 
-*create-article · v2.5 · 2026-08-27 · complements audit-article*
+*create-article · v2.6 · 2026-09-03 · 终审并入 Step 11；存量优化见 audit-optimize*

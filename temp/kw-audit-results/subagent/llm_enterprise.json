@@ -1,0 +1,495 @@
+{
+  "batch": "llm_enterprise",
+  "audited_at": "2026-09-03",
+  "methodology_note": "Directional signals only — not Keyword Planner MSV. Volume from cited Semrush/Glimpse/MicroSaaSHQ/Concurate/Lilach snippets where present; otherwise SERP-title / category-page proxy. Bing About-N not used (WebSearch does not return it).",
+  "results": [
+    {
+      "slug": "ai-documents",
+      "current_primary": "AI Documents",
+      "candidates": [
+        {
+          "keyword": "AI Documents",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Mixed: Gamma AI document generator, Google Document AI (extract/OCR), Autype/Deckary editor-automation. Not a clean intelligent-doc format SERP."
+        },
+        {
+          "keyword": "AI document generator",
+          "volume_signal": "6.6K/mo",
+          "source": "MicroSaaSHQ saas-ideas/ai-document-generator-37 (page title + Monthly Searches 6.6K/mo)",
+          "serp_title_note": "One-shot generate reports/proposals (Gamma, Deckary). Higher cited volume but generation, not living intelligent-doc format/editor."
+        },
+        {
+          "keyword": "AI document editor",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Word add-ins (Deckary, Word Model, Paperpal, Claude for Word) — closer to KB editor layer than generator."
+        },
+        {
+          "keyword": "Document AI",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Google Cloud Document AI SERP",
+          "serp_title_note": "IDP/extraction/OCR — adjacent to ocr.md, not this slug."
+        }
+      ],
+      "highest_volume_same_intent": "AI Documents",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Documents",
+      "reason": "Cited head 'AI document generator' is 6.6K/mo (MicroSaaSHQ) but SERP is one-shot generation, not the KB's intelligent-format + in-doc editor intent. Document AI is OCR/IDP. Keep current; do not chase generator volume."
+    },
+    {
+      "slug": "documentation",
+      "current_primary": "Developer documentation",
+      "candidates": [
+        {
+          "keyword": "Developer documentation",
+          "volume_signal": "no public MSV; volume queries returned in-site docs analytics, not Google MSV",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "How-to-write-docs (Mintlify best-practices, GitHub Blog, Reclear) — content craft, not a product category."
+        },
+        {
+          "keyword": "documentation platform",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch + comparison pages 2026-09-03",
+          "serp_title_note": "Repeated category head in Mintlify vs GitBook vs ReadMe vs Docusaurus comparisons; AWS Marketplace lists 'Mintlify Documentation Platform'."
+        },
+        {
+          "keyword": "developer documentation platform",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Mintlify use-cases + comparison titles",
+          "serp_title_note": "Same Mintlify/ReadMe/GitBook cluster; more precise than unprefixed 'documentation platform'."
+        },
+        {
+          "keyword": "API documentation",
+          "volume_signal": "no public MSV in snippets",
+          "source": "ReadMe-focused comparison SERP",
+          "serp_title_note": "Narrows to API playground vendors; misses full docs-as-code sites."
+        }
+      ],
+      "highest_volume_same_intent": "documentation platform",
+      "verdict": "SWITCH",
+      "recommended_primary": "documentation platform",
+      "reason": "Current phrase's SERP is writing-howto, not Mintlify/GitBook/ReadMe/Docusaurus tool-pick. Comparison titles repeatedly use 'documentation platform' as the category query (method B). Do not switch to generic AI documents."
+    },
+    {
+      "slug": "evaluation",
+      "current_primary": "AI evaluation",
+      "candidates": [
+        {
+          "keyword": "AI evaluation",
+          "volume_signal": "no phrase MSV; Toolbit category traffic (LangSmith 3.4M visits, Braintrust 284.8K) is product traffic not query volume",
+          "source": "toolbit.ai/ranking/top-ai-by-category/ai-evaluation",
+          "serp_title_note": "Mixed: agent-eval papers, LMSys Arena (model-pick fence), plus LangSmith/Braintrust quality platforms. Category pages still title 'AI Evaluation'."
+        },
+        {
+          "keyword": "LLM evaluation",
+          "volume_signal": "no public MSV; volume query hijacked by GEO 'LLM search volume' articles",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Cleaner score-your-app SERP: RAGAS, faithfulness, CI quality gates — matches evaluation.md fence vs observability."
+        },
+        {
+          "keyword": "LLM eval",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch (via LLM evaluation cluster)",
+          "serp_title_note": "Shorthand for same engineering-eval cluster; less title-canonical than LLM evaluation."
+        },
+        {
+          "keyword": "AI agent evaluation",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Databricks 'What is AI Agent Evaluation' SERP",
+          "serp_title_note": "Trajectory/agent subset; narrower than the KB's app+agent scorer SSOT."
+        }
+      ],
+      "highest_volume_same_intent": "AI evaluation",
+      "verdict": "OK",
+      "recommended_primary": "AI evaluation",
+      "reason": "No cited MSV gap ≥2×. Toolbit/vendor category still names 'AI evaluation'; 'LLM evaluation' is a cleaner same-intent synonym but not proven as the volume head. Keep current; do not collapse into Arena/model-pick or observability."
+    },
+    {
+      "slug": "knowledge-base",
+      "current_primary": "AI Knowledge Base",
+      "candidates": [
+        {
+          "keyword": "AI Knowledge Base",
+          "volume_signal": "~363/mo modeled ChatGPT 'which AI knowledge base is best' (Keywords Everywhere Brand Tracker); no Google MSV for the exact phrase",
+          "source": "aibrandtracker.keywordseverywhere.com/prompt-category/ai-knowledge-base",
+          "serp_title_note": "Clean product SERP: Knowbase, Zendesk, Slite, Bedrock Knowledge Bases — ingest/chunk/cited Q&A."
+        },
+        {
+          "keyword": "RAG knowledge base",
+          "volume_signal": "no public MSV; volume query returned corpus-size/ops docs not keyword volume",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Builder/infra (Bedrock, Azure chunking) not buyer category. Same technical intent, weaker commercial head."
+        },
+        {
+          "keyword": "AI knowledge base software",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch (software suffix)",
+          "serp_title_note": "tools/software suffix — methodology treats as volume-inflating, not a switch target."
+        },
+        {
+          "keyword": "AI Knowledge Base Chatbot",
+          "volume_signal": "110/mo",
+          "source": "MicroSaaSHQ saas-ideas/ai-knowledge-base-chatbot-775",
+          "serp_title_note": "Support-chatbot long-tail; narrower than corpus RAG KB."
+        }
+      ],
+      "highest_volume_same_intent": "AI Knowledge Base",
+      "verdict": "OK",
+      "recommended_primary": "AI Knowledge Base",
+      "reason": "SERP titles match the KB (private corpus, citations, RAG). RAG-prefixed variants are builder jargon without higher cited volume. Keep current."
+    },
+    {
+      "slug": "legal",
+      "current_primary": "Legal AI",
+      "candidates": [
+        {
+          "keyword": "Legal AI",
+          "volume_signal": "~4,700/mo (prose) / 8,470 listed in keyword table — same Concurate Harvey analysis",
+          "source": "concurate.com/harvey-content-marketing-strategy/",
+          "serp_title_note": "Harvey, CoCounsel, Lexis+ Protégé, Spellbook comparison pages — exact vertical-suite intent."
+        },
+        {
+          "keyword": "AI for lawyers",
+          "volume_signal": "2,400/mo US (down 20% from Jan 2025 peak 6,600)",
+          "source": "lilachbullock.com/ai-search-demand-report-2026/",
+          "serp_title_note": "Same buyer cluster (Lexis, Harvey, Clio). Lower cited MSV than Legal AI."
+        },
+        {
+          "keyword": "AI lawyer",
+          "volume_signal": "~2,700/mo (prose) / 6,070 in table",
+          "source": "Concurate Harvey keyword table",
+          "serp_title_note": "Consumer-ish 'AI lawyer' vs firm suite; related but slightly different."
+        },
+        {
+          "keyword": "legal tech AI",
+          "volume_signal": "no standalone MSV; 'legal it services' 2,200 in same table is adjacent not same",
+          "source": "Concurate table",
+          "serp_title_note": "Legaltech ops/IT, not GenAI research/review suite."
+        },
+        {
+          "keyword": "best AI for lawyers",
+          "volume_signal": "400/mo",
+          "source": "Concurate keyword table",
+          "serp_title_note": "Comparison modifier of the same intent; far below Legal AI."
+        }
+      ],
+      "highest_volume_same_intent": "Legal AI",
+      "verdict": "OK",
+      "recommended_primary": "Legal AI",
+      "reason": "Concurate + Lilach citations put Legal AI above AI for lawyers (2.4K) and best AI for lawyers (400). SERP is the vertical suite the KB covers. Keep current."
+    },
+    {
+      "slug": "llm",
+      "current_primary": "Large Language Model",
+      "candidates": [
+        {
+          "keyword": "Large Language Model",
+          "volume_signal": "no public MSV; volume query hijacked by GEO 'LLM search volume' explainers",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Bare phrase drifted to interpretability papers; 'what is LLM / large language model' lands Wikipedia, IBM, Stanford, TechTarget — definitional hub."
+        },
+        {
+          "keyword": "LLM",
+          "volume_signal": "no public Google MSV in snippets (GEO articles dominate)",
+          "source": "Wikipedia + IBM/Stanford definition SERP",
+          "serp_title_note": "Every definitional title uses LLM as the acronym of the same lemma. Not a different intent."
+        },
+        {
+          "keyword": "best LLM",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Artificial Analysis / BenchLM model-pick leaderboards — matches hub 'model pick' fence. Modifier of LLM, not a new category."
+        },
+        {
+          "keyword": "large language models",
+          "volume_signal": "no public MSV in snippets",
+          "source": "IBM/Google Developers definition pages",
+          "serp_title_note": "Plural of the same Wikipedia term."
+        }
+      ],
+      "highest_volume_same_intent": "Large Language Model",
+      "verdict": "OK",
+      "recommended_primary": "Large Language Model",
+      "reason": "LLM / Large Language Model are the same lemma (Wikipedia/IBM titles). No cited ≥2× MSV for a different same-intent phrase. Do not switch to 'AI llm tools' (tools suffix + different intent) or collapse spokes into this hub."
+    },
+    {
+      "slug": "llm-for-coding",
+      "current_primary": "AI Coding LLM",
+      "candidates": [
+        {
+          "keyword": "AI Coding LLM",
+          "volume_signal": "no public MSV; zero title matches for the exact manufactured phrase",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Not used as a page title. Category pages say 'Best LLM for Coding' / 'Best LLMs for Coding'."
+        },
+        {
+          "keyword": "LLM for coding",
+          "volume_signal": "no public MSV in snippets",
+          "source": "whatllm.org, vellum.ai, onyx.app, graphify.net",
+          "serp_title_note": "Natural spoke query; SWE-bench / LiveCodeBench model-pick, not vibe-coding IDE."
+        },
+        {
+          "keyword": "best LLM for coding",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch titles 2026-09-03",
+          "serp_title_note": "Dominant H1 pattern (WhatLLM, Vellum, Graphify, llm-stats). Same intent with 'best' modifier."
+        },
+        {
+          "keyword": "coding LLM",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Qwen3-Coder / open-weight coding-model articles",
+          "serp_title_note": "Same spoke; slightly more SKU/open-weight flavored."
+        }
+      ],
+      "highest_volume_same_intent": "LLM for coding",
+      "verdict": "SWITCH",
+      "recommended_primary": "LLM for coding",
+      "reason": "Current 'AI Coding LLM' is not a natural query (no SERP titles). Titles repeatedly use 'LLM for coding' / 'best LLM for coding'. Keep the coding spoke — do not collapse into hub 'LLM'."
+    },
+    {
+      "slug": "llm-for-math",
+      "current_primary": "AI Math LLM",
+      "candidates": [
+        {
+          "keyword": "AI Math LLM",
+          "volume_signal": "no public MSV; no title matches",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Manufactured phrase. Pages title 'best open source LLM for math' / math-prover models."
+        },
+        {
+          "keyword": "LLM for math",
+          "volume_signal": "no public MSV; volume query hijacked by GEO 'LLM search volume'",
+          "source": "siliconflow.com/articles/best-open-source-llm-for-math",
+          "serp_title_note": "Natural spoke: AIME/FrontierMath/prover rankings, not generic LLM."
+        },
+        {
+          "keyword": "best math LLM",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch 'best math LLM'",
+          "serp_title_note": "Same comparison intent; titles mix math LLM with general reasoning leaderboards — watch fence vs llm-for-reasoning."
+        },
+        {
+          "keyword": "math LLM",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Goedel-Prover / Seed-Prover SERP",
+          "serp_title_note": "Formal-prover subset of the math spoke."
+        }
+      ],
+      "highest_volume_same_intent": "LLM for math",
+      "verdict": "SWITCH",
+      "recommended_primary": "LLM for math",
+      "reason": "'AI Math LLM' does not appear in SERP titles. Same-intent head is 'LLM for math' / 'best … LLM for math'. Do not merge into reasoning-model or hub LLM."
+    },
+    {
+      "slug": "llm-for-reasoning",
+      "current_primary": "AI Reasoning LLM",
+      "candidates": [
+        {
+          "keyword": "AI Reasoning LLM",
+          "volume_signal": "no public MSV; no title matches",
+          "source": "WebSearch 2026-09-03",
+          "serp_title_note": "Manufactured. Industry copy says reasoning model / reasoning LLM / o-series."
+        },
+        {
+          "keyword": "reasoning model",
+          "volume_signal": "94K searches/mo; +87% YoY (as of last month vs Mar 2025 snapshot on page)",
+          "source": "meetglimpse.com/trend/reasoning-model/",
+          "serp_title_note": "OpenAI API 'Reasoning models', OpenRouter token-share charts, Zylos 'AI Reasoning Models 2026' — exact spoke (thinking / R1 / o-series)."
+        },
+        {
+          "keyword": "reasoning LLM",
+          "volume_signal": "no public MSV (one WebSearch call failed; retry not needed given Glimpse + OpenAI titles)",
+          "source": "OpenRouter State of AI + Zylos",
+          "serp_title_note": "Same cluster as reasoning model; less title-canonical than 'reasoning model'."
+        },
+        {
+          "keyword": "best reasoning LLM",
+          "volume_signal": "no public MSV in snippets",
+          "source": "llm-stats / Artificial Analysis reasoning columns",
+          "serp_title_note": "Comparison modifier of the same spoke."
+        }
+      ],
+      "highest_volume_same_intent": "reasoning model",
+      "verdict": "SWITCH",
+      "recommended_primary": "reasoning model",
+      "reason": "Glimpse cites 94K/mo for 'reasoning model' vs zero title/MSV support for 'AI Reasoning LLM'. Same spoke (test-time compute / o-series / R1), not a collapse into hub LLM or math."
+    },
+    {
+      "slug": "llm-observability",
+      "current_primary": "LLM Observability",
+      "candidates": [
+        {
+          "keyword": "LLM Observability",
+          "volume_signal": "no public MSV; volume query hijacked by GEO 'LLM search volume'",
+          "source": "IBM Think, AlphaCorp 2026 guide, OTel GenAI posts",
+          "serp_title_note": "Clean traces/cost/token SERP (IBM, Langfuse, Datadog LLM Observability, OpenTelemetry). Matches fence vs evaluation."
+        },
+        {
+          "keyword": "AI observability",
+          "volume_signal": "no public MSV; prior Bing proxy ~509k vs ~105k is index-count not MSV",
+          "source": "MLflow AI observability page + OTel agent posts",
+          "serp_title_note": "Broader umbrella: MLflow defines it as LLM observability + agent observability. Mixed-intent vs this slug."
+        },
+        {
+          "keyword": "LLM tracing",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Langfuse, Braintrust, Iguazio glossary",
+          "serp_title_note": "Core technique inside observability, not a wider category. Same intent, not a proven volume head."
+        },
+        {
+          "keyword": "LLM monitoring",
+          "volume_signal": "no public MSV in snippets",
+          "source": "AlphaCorp LLM observability vs monitoring guide",
+          "serp_title_note": "Narrower (latency/error); vendors treat monitoring as subset of observability."
+        }
+      ],
+      "highest_volume_same_intent": "LLM Observability",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "LLM Observability",
+      "reason": "'AI observability' may index higher but SERP/definitions are a wider AI/agent umbrella. Keep LLM Observability as the traces/cost head; do not steal evaluation or hub LLM."
+    },
+    {
+      "slug": "memory",
+      "current_primary": "AI Memory",
+      "candidates": [
+        {
+          "keyword": "AI Memory",
+          "volume_signal": "no public MSV in snippets",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Almost entirely agent-memory (IBM 'AI Agent Memory', Cognee, ACL AgeMem/MAGMA). Violates personal-second-brain fence."
+        },
+        {
+          "keyword": "AI second brain",
+          "volume_signal": "no exact-phrase MSV; category pages + tool traffic (Saner.ai 298K visits, Eden 385.8K visits) are site traffic not query volume",
+          "source": "bestfor.ai/best-ai-tools-for-second-brain; toolchase.com 2026 roundup",
+          "serp_title_note": "Personal PKM: Notion/Obsidian/Mem/Tana 'second brain' apps — matches memory.md, not agent-memory.md."
+        },
+        {
+          "keyword": "second brain app",
+          "volume_signal": "Keywords Everywhere discovery prompts often volume=0; branded note-taking apps carry the demand (e.g. NotebookLM ~246K/mo AU Treendly)",
+          "source": "aiseo.keywordseverywhere.com/brand/obsidian; treendly.com/trend/notebooklm",
+          "serp_title_note": "Same PKM cluster. 'second brain app' is the consumer phrasing."
+        },
+        {
+          "keyword": "personal knowledge management AI",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Logseq/Obsidian AI visibility reports",
+          "serp_title_note": "Correct intent, longer and less title-used than AI second brain."
+        }
+      ],
+      "highest_volume_same_intent": "AI second brain",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI second brain",
+      "reason": "'AI Memory' SERP is agent-memory middleware (Mem0/Zep class), which the fence forbids. Same-intent consumer head is 'AI second brain' (Mem, Obsidian, PKM roundups)."
+    },
+    {
+      "slug": "multimodal-llm",
+      "current_primary": "AI Multimodal LLM",
+      "candidates": [
+        {
+          "keyword": "AI Multimodal LLM",
+          "volume_signal": "no public MSV; no title matches",
+          "source": "WebSearch 2026-09-03",
+          "serp_title_note": "Manufactured. Canonical pages say Multimodal LLM / MLLM."
+        },
+        {
+          "keyword": "multimodal LLM",
+          "volume_signal": "no public MSV; volume query hijacked by GEO LLM-search-volume articles",
+          "source": "IBM Think 'What is a Multimodal LLM (MLLM)?'; Azure glossary",
+          "serp_title_note": "Wikipedia-adjacent definition + MMMU/VLM understanding spoke. Natural query."
+        },
+        {
+          "keyword": "vision language model",
+          "volume_signal": "no public MSV in snippets",
+          "source": "NVIDIA glossary; Wikipedia Vision-language model",
+          "serp_title_note": "Image+text subset (VLM). Narrower than multimodal (audio/video); do not replace unless slug narrows."
+        },
+        {
+          "keyword": "MLLM",
+          "volume_signal": "no public MSV in snippets",
+          "source": "IBM / arXiv MLLM reviews",
+          "serp_title_note": "Acronym of multimodal LLM; less standalone-searchable."
+        }
+      ],
+      "highest_volume_same_intent": "multimodal LLM",
+      "verdict": "SWITCH",
+      "recommended_primary": "multimodal LLM",
+      "reason": "'AI Multimodal LLM' is not used in titles. IBM/Azure/papers standardize on 'multimodal LLM' (MLLM). Keep the spoke — do not fold into hub LLM or image generators. VLM is a narrower subset."
+    },
+    {
+      "slug": "ocr",
+      "current_primary": "OCR",
+      "candidates": [
+        {
+          "keyword": "OCR",
+          "volume_signal": "2,900/mo (Semrush keyword row where ocr.space ranks #3, Jul 2026 — likely market-sliced, treat as directional)",
+          "source": "semrush.com/website/ocr.space/overview/",
+          "serp_title_note": "Wikipedia Optical character recognition, PaddleOCR, Cloud Vision OCR — generic extract-text head. Matches slug SSOT."
+        },
+        {
+          "keyword": "OCR software",
+          "volume_signal": "no public MSV in snippets (volume query returned Keyword Planner how-tos)",
+          "source": "WebSearch 'OCR software'",
+          "serp_title_note": "Dev-biased (Tesseract/Paddle/Python). software suffix — do not switch on index inflation."
+        },
+        {
+          "keyword": "optical character recognition",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Wikipedia + Cloud Vision docs",
+          "serp_title_note": "Expanded form of OCR; definitional, same intent, typically lower query share than the acronym."
+        },
+        {
+          "keyword": "AI OCR",
+          "volume_signal": "no public MSV in snippets",
+          "source": "freeocr.ai; Vietnamese vendor explainers; HunyuanOCR/PaddleOCR-VL",
+          "serp_title_note": "VLM/deep OCR sub-SERP. Same extraction job, more 'AI-native' marketing. Not a different product class."
+        },
+        {
+          "keyword": "ocr online",
+          "volume_signal": "1,000–3,600/mo (ocr.space 1,000; newocr.com 3,600)",
+          "source": "Semrush site-overview keyword tables Jun–Jul 2026",
+          "serp_title_note": "Free web converters — consumer utility, not enterprise engine SSOT."
+        }
+      ],
+      "highest_volume_same_intent": "OCR",
+      "verdict": "OK",
+      "recommended_primary": "OCR",
+      "reason": "Acronym is the Wikipedia/head query. Semrush rows show OCR and ocr online in the same few-thousand band; AI OCR is a qualifier, not a proven ≥2× head. Keep OCR; do not retarget to online converters or Document AI."
+    },
+    {
+      "slug": "spreadsheet",
+      "current_primary": "AI spreadsheet",
+      "candidates": [
+        {
+          "keyword": "AI spreadsheet",
+          "volume_signal": "no exact-phrase Google MSV; Keywords Everywhere tracks many 'best AI spreadsheet tool/generator' prompt variants (per-site ChatGPT estimates near 0)",
+          "source": "WebSearch + aibrandtracker Excelmatic/Sheetplus pages",
+          "serp_title_note": "Clean category: Deckary/Dupple/Coursiv compare Excel agents vs native AI spreadsheets (Rows, Quadratic, Copilot)."
+        },
+        {
+          "keyword": "AI spreadsheet tool",
+          "volume_signal": "no public MSV; WorthBuild notes 'high search interest growing at 21.1%' without a phrase MSV",
+          "source": "dupple.com/learn/best-ai-spreadsheet-tools; worthbuild.io report",
+          "serp_title_note": "Same intent + tools suffix. Methodology: do not switch for suffix inflation."
+        },
+        {
+          "keyword": "AI Excel",
+          "volume_signal": "no public MSV in snippets",
+          "source": "Deckary Excel AI tool guide",
+          "serp_title_note": "Excel-native add-in subset; KB also covers Sheets-native and new grids."
+        },
+        {
+          "keyword": "spreadsheet AI",
+          "volume_signal": "no public MSV in snippets",
+          "source": "deckary.com/blog/spreadsheet-ai",
+          "serp_title_note": "Word-order flip of the same category; titles use both."
+        }
+      ],
+      "highest_volume_same_intent": "AI spreadsheet",
+      "verdict": "OK",
+      "recommended_primary": "AI spreadsheet",
+      "reason": "SERP matches the KB (NL→formula, column AI, Excel/Sheets-native vs new grids). No cited ≥2× same-intent head. Keep current; AI Excel is a platform subset."
+    }
+  ]
+}

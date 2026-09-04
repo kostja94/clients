@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "accent-conversion",
+    "path": "tools/voice-audio/accent-conversion.md",
+    "current_primary": "AI accent conversion",
+    "keywordEn_full": "",
+    "h1": "AI 口音转换（Accent Conversion） · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-components",
+    "path": "tools/coding/ai-components.md",
+    "current_primary": "AI Components",
+    "keywordEn_full": "AI Components / Prompt-as-Component / Component Registry",
+    "h1": "AI Components / AI 组件 Prompt 库与 Registry · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "app-builder",
+    "path": "tools/coding/app-builder.md",
+    "current_primary": "AI App Builder",
+    "keywordEn_full": "AI App Builder / AI 应用构建器",
+    "h1": "App Builder · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "audio-translator",
+    "path": "tools/voice-audio/audio-translator.md",
+    "current_primary": "AI Audio Translation",
+    "keywordEn_full": "",
+    "h1": "AI Audio Translation · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "cli",
+    "path": "tools/coding/cli.md",
+    "current_primary": "AI CLI",
+    "keywordEn_full": "AI CLI / Agentic CLI",
+    "h1": "AI CLI Tools · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "code-completion",
+    "path": "tools/coding/code-completion.md",
+    "current_primary": "Code completion",
+    "keywordEn_full": "Code completion / AI code assistant",
+    "h1": "AI 代码补全（Code Completion） · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "code-review",
+    "path": "tools/coding/code-review.md",
+    "current_primary": "AI code review",
+    "keywordEn_full": "AI code review / PR 审查",
+    "h1": "AI 代码审查（Code review / 代码质量检查）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "coding",
+    "path": "tools/coding/coding.md",
+    "current_primary": "AI Coding Agent",
+    "keywordEn_full": "AI Coding Agent / 编程智能体",
+    "h1": "AI Coding · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "git-hosting",
+    "path": "tools/coding/git-hosting.md",
+    "current_primary": "Agent-native Git hosting",
+    "keywordEn_full": "Agent-native Git hosting / Code forge",
+    "h1": "Agent 时代 Git 托管 / Code Forge · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ide",
+    "path": "tools/coding/ide.md",
+    "current_primary": "AI IDE",
+    "keywordEn_full": "AI IDE / Agentic IDE",
+    "h1": "AI IDE · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "lip-sync",
+    "path": "tools/voice-audio/lip-sync.md",
+    "current_primary": "AI lip sync",
+    "keywordEn_full": "AI lip sync / AI 唇形同步",
+    "h1": "AI Lip Sync / AI 唇形同步 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "music-generator",
+    "path": "tools/voice-audio/music-generator.md",
+    "current_primary": "AI Music Generator",
+    "keywordEn_full": "",
+    "h1": "AI Music Generator · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "speech-to-text",
+    "path": "tools/voice-audio/speech-to-text.md",
+    "current_primary": "Speech-to-Text",
+    "keywordEn_full": "Speech-to-Text / ASR / 自动语音识别",
+    "h1": "AI Speech-to-Text（ASR / STT / 语音转文字）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "text-to-speech",
+    "path": "tools/voice-audio/text-to-speech.md",
+    "current_primary": "AI Text-to-Speech",
+    "keywordEn_full": "AI Text-to-Speech / TTS / 文本转语音",
+    "h1": "AI Text-to-Speech（TTS / 文本转语音）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "vibe-coding",
+    "path": "tools/coding/vibe-coding.md",
+    "current_primary": "Vibe coding",
+    "keywordEn_full": "Vibe coding / 氛围编程",
+    "h1": "Vibe coding（氛围编程）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "video-translator",
+    "path": "tools/voice-audio/video-translator.md",
+    "current_primary": "AI Video Translation",
+    "keywordEn_full": "",
+    "h1": "AI Video Translation · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "voice",
+    "path": "tools/voice-audio/voice.md",
+    "current_primary": "AI Voice",
+    "keywordEn_full": "",
+    "h1": "AI Voice · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "voice-changer",
+    "path": "tools/voice-audio/voice-changer.md",
+    "current_primary": "AI Voice Changer",
+    "keywordEn_full": "",
+    "h1": "AI Voice Changer（AI 变声器）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "voice-cloning",
+    "path": "tools/voice-audio/voice-cloning.md",
+    "current_primary": "AI Voice Cloning",
+    "keywordEn_full": "",
+    "h1": "AI Voice Cloning · 知识块（非线性笔记）"
+  }
+]

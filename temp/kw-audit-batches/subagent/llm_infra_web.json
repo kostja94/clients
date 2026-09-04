@@ -1,0 +1,198 @@
+[
+  {
+    "slug": "ai-documents",
+    "path": "tools/enterprise-knowledge/ai-documents.md",
+    "current_primary": "AI Documents",
+    "keywordEn_full": "AI Documents / 智能文档",
+    "h1": "AI 文档（AI Documents）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-traffic-and-citation-sources",
+    "path": "tools/search-geo/ai-traffic-and-citation-sources.md",
+    "current_primary": "AI 搜索平台与引用来源",
+    "keywordEn_full": "",
+    "h1": "AI 搜索平台与引用来源 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-training-data",
+    "path": "tools/infrastructure/ai-training-data.md",
+    "current_primary": "AI Training Data Platform",
+    "keywordEn_full": "AI Training Data Platform",
+    "h1": "大模型训练数据平台 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-visibility",
+    "path": "tools/search-geo/ai-visibility.md",
+    "current_primary": "AI 可见度",
+    "keywordEn_full": "",
+    "h1": "AI 可见度（AI Visibility）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "api",
+    "path": "tools/infrastructure/api.md",
+    "current_primary": "Unified AI API Platform",
+    "keywordEn_full": "Unified AI API Platform / 统一 AI API",
+    "h1": "统一 AI API 平台 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "authentication",
+    "path": "tools/infrastructure/authentication.md",
+    "current_primary": "Authentication",
+    "keywordEn_full": "Authentication / CIAM / 应用身份",
+    "h1": "身份认证与访问管理（Authentication / IAM）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "documentation",
+    "path": "tools/enterprise-knowledge/documentation.md",
+    "current_primary": "Developer documentation",
+    "keywordEn_full": "Developer documentation / 开发者文档",
+    "h1": "开发者文档与 Agent 时代 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "evaluation",
+    "path": "tools/llm/evaluation.md",
+    "current_primary": "AI evaluation",
+    "keywordEn_full": "AI evaluation / LLM evaluation / AI 应用评测",
+    "h1": "AI Evaluation / LLM 应用评测 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "geo",
+    "path": "tools/search-geo/geo.md",
+    "current_primary": "GEO（生成式引擎优化",
+    "keywordEn_full": "",
+    "h1": "GEO（生成式引擎优化 / Generative Engine Optimization）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "headless-browser",
+    "path": "tools/web-data/headless-browser.md",
+    "current_primary": "Headless browser",
+    "keywordEn_full": "Headless browser / 云浏览器基础设施",
+    "h1": "无头浏览器与云浏览器基础设施（Headless / BaaS / Agent 向）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "inference-infrastructure",
+    "path": "tools/infrastructure/inference-infrastructure.md",
+    "current_primary": "AI Inference Infrastructure",
+    "keywordEn_full": "AI Inference Infrastructure",
+    "h1": "AI 推理基础设施 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "knowledge-base",
+    "path": "tools/enterprise-knowledge/knowledge-base.md",
+    "current_primary": "AI Knowledge Base",
+    "keywordEn_full": "AI Knowledge Base / RAG 知识库",
+    "h1": "AI Knowledge Base · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "legal",
+    "path": "tools/enterprise-knowledge/legal.md",
+    "current_primary": "Legal AI",
+    "keywordEn_full": "Legal AI / AI for lawyers",
+    "h1": "AI Tools for Lawyers（律师用 AI 工具）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm",
+    "path": "tools/llm/llm.md",
+    "current_primary": "Large Language Model",
+    "keywordEn_full": "Large Language Model",
+    "h1": "Large Language Model / 通用大语言模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-for-coding",
+    "path": "tools/llm/llm-for-coding.md",
+    "current_primary": "AI Coding LLM",
+    "keywordEn_full": "",
+    "h1": "AI Coding LLM / 编程向大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-for-math",
+    "path": "tools/llm/llm-for-math.md",
+    "current_primary": "AI Math LLM",
+    "keywordEn_full": "",
+    "h1": "AI Math LLM / 数学向大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-for-reasoning",
+    "path": "tools/llm/llm-for-reasoning.md",
+    "current_primary": "AI Reasoning LLM",
+    "keywordEn_full": "",
+    "h1": "AI Reasoning LLM / 推理向大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-observability",
+    "path": "tools/llm/llm-observability.md",
+    "current_primary": "LLM Observability",
+    "keywordEn_full": "LLM Observability",
+    "h1": "LLM 可观测性 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "memory",
+    "path": "tools/enterprise-knowledge/memory.md",
+    "current_primary": "AI Memory",
+    "keywordEn_full": "AI Memory / 个人第二大脑",
+    "h1": "AI Memory · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "multimodal-llm",
+    "path": "tools/llm/multimodal-llm.md",
+    "current_primary": "AI Multimodal LLM",
+    "keywordEn_full": "",
+    "h1": "AI Multimodal LLM / 多模态大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ocr",
+    "path": "tools/enterprise-knowledge/ocr.md",
+    "current_primary": "OCR",
+    "keywordEn_full": "OCR / 光学字符识别",
+    "h1": "AI OCR（文字识别）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "search-engine",
+    "path": "tools/search-geo/search-engine.md",
+    "current_primary": "AI search engine",
+    "keywordEn_full": "AI search engine / 对话式 AI 搜索",
+    "h1": "AI 搜索引擎 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "search-indexing",
+    "path": "tools/web-data/search-indexing.md",
+    "current_primary": "AI Search Indexing",
+    "keywordEn_full": "AI Search Indexing",
+    "h1": "AI Search Indexing · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "spreadsheet",
+    "path": "tools/enterprise-knowledge/spreadsheet.md",
+    "current_primary": "AI spreadsheet",
+    "keywordEn_full": "AI spreadsheet / AI 表格",
+    "h1": "AI 表格 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "technology-profiler",
+    "path": "tools/web-data/technology-profiler.md",
+    "current_primary": "website technology profiler",
+    "keywordEn_full": "website technology profiler / 网站技术栈检测",
+    "h1": "网站技术检测与画像工具 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "web-fetch",
+    "path": "tools/web-data/web-fetch.md",
+    "current_primary": "Web Fetch",
+    "keywordEn_full": "Web Fetch",
+    "h1": "Web Fetch（URL 转 AI 可读内容）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "web-scraping",
+    "path": "tools/web-data/web-scraping.md",
+    "current_primary": "Web scraping",
+    "keywordEn_full": "Web scraping / 网页抓取",
+    "h1": ""
+  },
+  {
+    "slug": "web-search-api",
+    "path": "tools/web-data/web-search-api.md",
+    "current_primary": "Web Search API",
+    "keywordEn_full": "Web Search API",
+    "h1": "Web Search API · 知识块（非线性笔记）"
+  }
+]

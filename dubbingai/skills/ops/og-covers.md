@@ -17,8 +17,8 @@
 
 阶段 A — 生图（APINEED 默认）
   generate-og-cover.py（注入 brief + QUALITY 指令）
-    → APINEED gpt-image-2 (high / jpeg)
-    → 居中裁切 → 严格 1200×630 WebP
+    → APINEED gpt-image-2 (异步 / high)
+    → top-bias 裁切 → 严格 1200×630 WebP
     → blog/images/og/{slug}/{slug}-og-en.webp
     → 目视验收 → registry status=approved
 
@@ -57,9 +57,9 @@ editorial-collage 默认 — 纸拼贴 zine 封面感 + gaming/streaming 年轻�
 | **Provider** | APINEED（唯一默认） |
 | **Model** | `gpt-image-2` |
 | **Quality** | `high` |
-| **API size** | `1536x1024`（fallback `1024x1024`） |
-| **最终尺寸** | **1200×630** WebP（APINEED：top-aligned trim；fal：center crop） |
-| **APINEED raw** | high → `1536x1024` · prompt 含 CROP SAFE ZONE · 标题 10%/8% 安全边距 |
+| **API** | 异步 `media/generations`（2026-09 起；无 `size` 参数，比例由 prompt 控制） |
+| **最终尺寸** | **1200×630** WebP（APINEED：防御性 top bias；fal：center crop） |
+| **APINEED raw** | 直出 ~16:9 宽幅 · prompt 含 `APINEED ASPECT` 指令 · 标题 10%/8% 安全边距 |
 
 ---
 

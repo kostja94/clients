@@ -1,6 +1,6 @@
 # knowledgehub / tools · Alignify Tools slug 知识块分册
 
-本目录存放与 Alignify **Tools slug**（kebab-case 文件名）同名的 `*.md` 知识块；**144 个 slug 中 135 个**已按主题簇分子目录（见 §主题簇物理路径），如 [`website-builder/`](./website-builder/README.md)、[`cms/`](./cms/README.md)、[`image/`](./image/image.md)（Hub）；**slug 与路由不变**。KB 路径：`knowledge/tools/{cluster}/{slug}.md` 或根目录 `{slug}.md`（独立 slug）。便于与历史 **`/tools/[slug]`**、新文 **`/blog/[slug]`**（2026-06 起）及关键词表锚点对照。**路由策略**见 §路由与发布策略。
+本目录存放与 Alignify **Tools slug**（kebab-case 文件名）同名的 `*.md` 知识块；**145 个 slug 中 136 个**已按主题簇分子目录（见 §主题簇物理路径），如 [`website-builder/`](./website-builder/README.md)、[`cms/`](./cms/README.md)、[`image/`](./image/image.md)（Hub）；**slug 与路由不变**。KB 路径：`knowledge/tools/{cluster}/{slug}.md` 或根目录 `{slug}.md`（独立 slug）。便于与历史 **`/tools/[slug]`**、新文 **`/blog/[slug]`**（2026-06 起）及关键词表锚点对照。**路由策略**见 §路由与发布策略。
 
 **正式文章创作流程**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md) · 规范 [`skills/create-article/rules/`](../../skills/create-article/rules/)
 
@@ -64,6 +64,7 @@
 - **统一 AI API 平台 / Unified AI API Platforms（`api`）**：[api.md](infrastructure/api.md) 归纳 **统一 AI API 平台**——通过单一接口提供多模型、多模态 AI 能力访问（LLM 聚合路由、生成式媒体 API、模型部署、企业网关）；推理托管平台的独立谱系见 [inference-infrastructure.md](infrastructure/inference-infrastructure.md)；与 [llm.md](llm/llm.md)（模型评测）、[image-generator.md](image/image-generator.md)（图像生成工具）、[agent-skills.md](agent/agent-skills.md)（Agent 技能生态）相邻——api 是"怎么调用"，llm 是"哪个更强"；正式页 **`/tools/api`**、**`/zh/tools/api`**。
 - **身份认证 / IAM（`authentication`）**：[authentication.md](infrastructure/authentication.md) 归纳 **AuthN/AuthZ、CIAM、OIDC/OAuth、托管 IdP 与 TS 认证库**；正式页 **`/tools/authentication`**、**`/zh/tools/authentication`**（`tools-pages-config` 已收录 slug **`authentication`**）。
 - **AI Avatar Generator / AI 数字人（`avatar`）**：[avatar.md](image/avatar.md) 归纳 **AI 生成虚拟形象/数字人**；与 [headshot-generator.md](image/headshot-generator.md)（真人头像）、[character-chat.md](chat-social/character-chat.md)（文本角色扮演）分流——avatar 侧重视觉呈现；正式页 **`/tools/avatar`**、**`/zh/tools/avatar`**。
+- **Backend as a Service / 后端即服务（`backend-as-a-service`）**：[backend-as-a-service.md](infrastructure/backend-as-a-service.md) 归纳 **BaaS（非 Banking）**——Auth+DB+Storage+Functions+Realtime；Type A Reactive（Convex）· B Postgres（Supabase）· C Document（Firebase）· D Sync Engine 注记；与 [authentication.md](infrastructure/authentication.md)（专精登录）、[agent-runtime.md](agent/agent-runtime.md)（Agent 怎么跑）、[workflow.md](agent/workflow.md)（长任务）、[api.md](infrastructure/api.md)（调模型）、[vibe-coding.md](coding/vibe-coding.md)（全栈绑定）分流；簇边界见 [`skills/knowledge-block/references/backend-as-a-service-cluster.md`](../skills/knowledge-block/references/backend-as-a-service-cluster.md)。KB only（发文走 `/blog/backend-as-a-service`）。
 - **AI Background Changer / AI 换背景（`background-changer`）**：[background-changer.md](image/background-changer.md) 归纳 **AI 替换/移除图片背景**工具谱系；与 [image-generator.md](image/image-generator.md)（文生图）、[image-editor.md](image/image-editor.md)（通用编辑）分工；正式页 **`/tools/background-changer`**、**`/zh/tools/background-changer`**。
 - **AI 浏览器 / AI Browser（`browser`）**：[browser.md](agent/browser.md) 归纳 **内嵌 AI 的浏览器产品**——AI 搜索、页面摘要、自动化操作；与 [headless-browser.md](web-data/headless-browser.md)（无头/远程浏览器）、[search-engine.md](search-geo/search-engine.md)（AI 搜索引擎）分流；正式页 **`/tools/browser`**、**`/zh/tools/browser`**。
 - **Canvas Video / 节点式 AI 视频画布（`canvas-video`）**：[canvas-video.md](video/canvas-video.md) 归纳 **可视化节点画布 + 多模型视频编排**光谱，覆盖 ComfyUI/Figma Weave/Krea Nodes/Flora/Mosaic 等 20+ 产品；与 [video-generator.md](video/video-generator.md)（单次生视频）、[video-editor.md](video/video-editor.md)（时间线剪辑）、[text-to-video.md](video/text-to-video.md)（文生视频）、[image-to-video.md](video/image-to-video.md)（图生视频）、[workflow.md](agent/workflow.md)（通用业务自动化）、[filmmaking.md](video/filmmaking.md)（电影级全流程）分工；正式页 **`/tools/canvas-video`**、**`/zh/tools/canvas-video`**。
@@ -200,11 +201,11 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 
 ---
 
-## 文件清单（144 个知识块）
+## 文件清单（145 个知识块）
 
 > 体积仅供参考。档位（A/B/C）见 [territory-map.md](./territory-map.md)。
 > A 档不唯体积——`coding`（7.8KB）和 `llm`（7.7KB）虽小，但作为 Territory pillar 列入 A 档。
-> 下表 **141 行**为 slug 知识块；`_TEMPLATE.md` 与 `territory-map.md` 为 meta 文件，见 [territory-map.md §Meta 文件](./territory-map.md#meta-文件不计入-132-个知识块)。
+> 下表 **142 行**为 slug 知识块；`_TEMPLATE.md` 与 `territory-map.md` 为 meta 文件，见 [territory-map.md §Meta 文件](./territory-map.md#meta-文件不计入-132-个知识块)。
 > KB 结构完整 ≠ 文章 TLDR 完成（63 篇 TLDR 待优化，见 AUDIT）。
 
 ### 当前 backlog（2026-06-23）
@@ -239,7 +240,7 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 | [`text-content/`](./text-content/text-generator.md) | `text-generator` | 6 | `knowledge/tools/text-content/{slug}.md` |
 | [`chat-social/`](./chat-social/chatbot.md) | `chatbot` | 5 | `knowledge/tools/chat-social/{slug}.md` |
 | [`enterprise-knowledge/`](./enterprise-knowledge/knowledge-base.md) | `knowledge-base` | 7 | `knowledge/tools/enterprise-knowledge/{slug}.md` |
-| [`infrastructure/`](./infrastructure/api.md) | `api` | 4 | `knowledge/tools/infrastructure/{slug}.md` |
+| [`infrastructure/`](./infrastructure/api.md) | `api` | 5 | `knowledge/tools/infrastructure/{slug}.md` |
 | [`healthcare/`](./healthcare/healthcare.md) | `healthcare` | 2 | `knowledge/tools/healthcare/{slug}.md` |
 | [`productivity/`](./productivity/productivity.md) | `productivity` | 4 | `knowledge/tools/productivity/{slug}.md` |
 | [`website-builder/`](./website-builder/README.md) | `website-builder` | 5 | `knowledge/tools/website-builder/{slug}.md` |
@@ -290,6 +291,7 @@ KB 保品类框架与分流逻辑——「这个品类为什么存在、怎么�
 | `audio-translator` | 15KB | EN · ZH · cfg | B |
 | `authentication` | 20KB | EN · ZH · cfg | B |
 | `avatar` | 13KB | EN · ZH · cfg | B |
+| `backend-as-a-service` | ~14KB | KB only（发文走 `/blog/backend-as-a-service`） | B |
 | `b2b` | 20KB | EN · ZH · cfg | B |
 | `background-changer` | 19KB | EN · ZH · cfg | B |
 | `browser` | 11KB | EN · ZH · cfg | B |

@@ -1,7 +1,7 @@
 # Alignify Skills 索引
 
 > **部署仓**：`E:\自有部署项目\alignify production` · **上下文仓**：`E:\clients\Alignify`  
-> **最后更新**：2026-09-02
+> **最后更新**：2026-09-03
 
 ---
 
@@ -9,13 +9,13 @@
 
 | Skill | 用途 |
 |-------|------|
-| [`create-article/`](./create-article/SKILL.md) | 新建/重写文章（flagship 流程，见下表） |
+| [`create-article/`](./create-article/SKILL.md) | **构建新文章**（flagship：01–10 成稿 + Step 11 新会话终审） |
+| [`audit-optimize/`](./audit-optimize/SKILL.md) | **审核并优化老文章**：retro · 内链 · refresh · page-audit |
 | [`knowledge-block/`](./knowledge-block/SKILL.md) | **知识块**维护：slug 分流、keyword 映射、**垂类产品池**、SSOT、站内相邻；**Tools 簇临时 brief 成稿后删除**（非成稿） |
-| [`audit-article/`](./audit-article/SKILL.md) | audit-ready → publish-ready 终审 |
-| [`optimize-internal-links/`](./optimize-internal-links/SKILL.md) | 存量内链：[`workflow.md`](./optimize-internal-links/workflow.md) + [**全站快照**](./optimize-internal-links/references/site-structure-internal-links.md) |
 | [`ops/`](./ops/README.md) | 发布后 SEO / 索引 / OG / RSS |
 
-> **已合并进 create-article**：`create-blog-article` · `create-tools-article` · `localize-content-zh`
+> **已合并进 create-article**：`create-blog-article` · `create-tools-article` · `localize-content-zh` · **`audit-article` 终审轨（→ Step 11）**  
+> **已合并进 audit-optimize**：`audit-article` retro · `optimize-internal-links`
 
 ---
 
@@ -32,10 +32,20 @@
 | 08 | [`08-meta-config.md`](./create-article/08-meta-config.md) | Meta · JSON 侧车 · **publishDate/modifiedDate** · Final CTA |
 | 09–09c | [`content-locale.md`](./create-article/rules/content-locale.md) Part 4–5 | EN 独立成稿 + 对等对比 |
 | 10 | [`10-quality-gates.md`](./create-article/10-quality-gates.md) | Gate C → audit-ready |
-| — | [`audit-article/SKILL.md`](./audit-article/SKILL.md) | publish-ready |
+| 11 | [`11-final-audit.md`](./create-article/11-final-audit.md) | **新会话**终审 → publish-ready |
 | 发布 | — | 人类发布（复核 Step 08 日期） |
 
-**无 Step 11/12** — 日期与 meta 同属 Step 08。
+---
+
+## audit-optimize 模式
+
+| 模式 | 文档 | 说明 |
+|------|------|------|
+| retro | [`01-retro.md`](./audit-optimize/01-retro.md) | 已发稿健康检查 |
+| links | [`02-links.md`](./audit-optimize/02-links.md) · [`workflow.md`](./audit-optimize/workflow.md) | 存量内链 |
+| refresh | [`03-refresh.md`](./audit-optimize/03-refresh.md) | 事实 / SERP / Meta / 结构刷新 |
+| 质检 | [`rules/page-audit.md`](./audit-optimize/rules/page-audit.md) | P0 + 十维（与新文终审阈值对齐） |
+| 快照 | [`site-structure-internal-links.md`](./audit-optimize/references/site-structure-internal-links.md) | 全站内链快照 |
 
 ---
 
@@ -66,7 +76,7 @@
 | Meta | [`meta.md`](./create-article/rules/meta.md) |
 | 内链 Marketing M1–M11 | [`internal-links.md` Part 4.5](./create-article/rules/internal-links.md#part-45-marketing-频道内链) |
 | 外链 UTM/Nofollow | [`internal-links.md` Part 8](./create-article/rules/internal-links.md#part-8-外链utm-与-nofollow) |
-| 全站内链快照 | [`site-structure-internal-links.md`](./optimize-internal-links/references/site-structure-internal-links.md) |
+| 全站内链快照 | [`site-structure-internal-links.md`](./audit-optimize/references/site-structure-internal-links.md) |
 
 ---
 
@@ -74,6 +84,8 @@
 
 | 旧路径 | 现 SSOT |
 |--------|---------|
+| `audit-article/` | 终审 → [`create-article/11-final-audit.md`](./create-article/11-final-audit.md)；retro → [`audit-optimize/01-retro.md`](./audit-optimize/01-retro.md) |
+| `optimize-internal-links/` | [`audit-optimize/`](./audit-optimize/SKILL.md) |
 | `05-zh-content.md` · `06-localize-zh.md` · `09-en-content.md` · `localization-quality.md` | [`content-locale.md`](./create-article/rules/content-locale.md) |
 | `terminology.md` · `terminology-glossary.md` · `marketing-glossary.json` | [`locale-glossary.md`](./create-article/rules/locale-glossary.md) + `.json` |
 | `11-publish-dates.md` · `12-legacy-tools-dates.md` | [`08-meta-config.md`](./create-article/08-meta-config.md) §发布日期 |
@@ -85,4 +97,4 @@
 
 ---
 
-*skills README · v2.0 · 2026-08-27*
+*skills README · v3.0 · 2026-09-03*

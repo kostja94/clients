@@ -10,10 +10,10 @@
 
 ## 与相邻 slug 分流（避免混买混评）
 
-| 维度 | **`authentication`（本页）** | **`api`** | **`inference-infrastructure`** |
-|------|-----------------------------|----------|-------------------------------|
-| **典型买家问题** | 「用户怎么安全登录我的应用？」 | 「怎么统一调用多模型？」 | 「怎么部署运行自己的模型？」 |
-| **核心能力** | AuthN/AuthZ、CIAM、OIDC/OAuth | 多模型 API 路由与聚合 | GPU 推理部署与运维 |
+| 维度 | **`authentication`（本页）** | **`backend-as-a-service`** | **`api`** | **`inference-infrastructure`** |
+|------|-----------------------------|---------------------------|----------|-------------------------------|
+| **典型买家问题** | 「用户怎么安全登录我的应用？」 | 「App 后端（库+鉴权+文件+实时）托管在哪？」 | 「怎么统一调用多模型？」 | 「怎么部署运行自己的模型？」 |
+| **核心能力** | AuthN/AuthZ、CIAM、OIDC/OAuth | Auth+DB+Storage+Functions+Realtime | 多模型 API 路由与聚合 | GPU 推理部署与运维 |
 
 以下条目可任意顺序阅读；**不是**文章体例，无叙事主线。
 
@@ -199,3 +199,4 @@
 
 - [agent-identity.md](../agent/agent-identity.md) — **企业 Agent IAM / NHI / AAM**（L1–L3）；与本文 A/B/C **正交**
 - [agent-runtime.md](../agent/agent-runtime.md) — Agent **执行层**；与身份层分工
+- [backend-as-a-service.md](backend-as-a-service.md) — **BaaS 全家桶**（内置 Auth 仅能力栈）；专精 CIAM 仍以本页为准

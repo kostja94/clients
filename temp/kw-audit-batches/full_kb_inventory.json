@@ -1,0 +1,1474 @@
+{
+  "with_keywordEn": [
+    {
+      "slug": "agent-identity",
+      "path": "tools/agent/agent-identity.md",
+      "channel": "tools",
+      "keywordEn": "AI Agent Identity",
+      "primary_test": "AI Agent Identity",
+      "h1": "AI Agent 身份与访问治理 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "agent-runtime",
+      "path": "tools/agent/agent-runtime.md",
+      "channel": "tools",
+      "keywordEn": "AI Agent Runtime",
+      "primary_test": "AI Agent Runtime",
+      "h1": "AI Agent 运行时 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "ai-employee",
+      "path": "tools/agent/ai-employee.md",
+      "channel": "tools",
+      "keywordEn": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+      "primary_test": "AI Employee",
+      "h1": "AI Employee（AI 员工）· 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "work-agent",
+      "path": "tools/agent/work-agent.md",
+      "channel": "tools",
+      "keywordEn": "Work Agent / AI Work Agent",
+      "primary_test": "Work Agent",
+      "h1": "Work Agent（工作智能体）· 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "workspace-agent",
+      "path": "tools/agent/workspace-agent.md",
+      "channel": "tools",
+      "keywordEn": "Workspace Agent / Team AI Agent",
+      "primary_test": "Workspace Agent",
+      "h1": "Workspace Agent（工作区智能体）· 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "agent-billing",
+      "path": "tools/agent-billing.md",
+      "channel": "tools",
+      "keywordEn": "AI agent billing",
+      "primary_test": "AI agent billing",
+      "h1": "Agent Billing · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "agentic-commerce",
+      "path": "tools/agentic-commerce.md",
+      "channel": "tools",
+      "keywordEn": "Agentic Commerce",
+      "primary_test": "Agentic Commerce",
+      "h1": "Agentic Commerce · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "agentic-payments",
+      "path": "tools/agentic-payments.md",
+      "channel": "tools",
+      "keywordEn": "Agentic Payments",
+      "primary_test": "Agentic Payments",
+      "h1": "Agentic Payments · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "content-management-system",
+      "path": "tools/cms/content-management-system.md",
+      "channel": "tools",
+      "keywordEn": "Content Management System / CMS",
+      "primary_test": "Content Management System",
+      "h1": "Content Management System / 内容管理系统 · 知识块（Hub · 非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "enterprise-cms",
+      "path": "tools/cms/enterprise-cms.md",
+      "channel": "tools",
+      "keywordEn": "Enterprise CMS / DXP / Digital Experience Platform",
+      "primary_test": "Enterprise CMS",
+      "h1": "Enterprise CMS / DXP · 企业内容管理系统 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "headless-cms",
+      "path": "tools/cms/headless-cms.md",
+      "channel": "tools",
+      "keywordEn": "Headless CMS / API-first CMS",
+      "primary_test": "Headless CMS",
+      "h1": "Headless CMS / 无头内容管理系统 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "open-source-cms",
+      "path": "tools/cms/open-source-cms.md",
+      "channel": "tools",
+      "keywordEn": "Open Source CMS / OSS CMS",
+      "primary_test": "Open Source CMS",
+      "h1": "Open Source CMS / 开源 CMS · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "git-hosting",
+      "path": "tools/coding/git-hosting.md",
+      "channel": "tools",
+      "keywordEn": "Agent-native Git hosting / Code forge",
+      "primary_test": "Agent-native Git hosting",
+      "h1": "Agent 时代 Git 托管 / Code Forge · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "ai-training-data",
+      "path": "tools/infrastructure/ai-training-data.md",
+      "channel": "tools",
+      "keywordEn": "AI Training Data Platform",
+      "primary_test": "AI Training Data Platform",
+      "h1": "大模型训练数据平台 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "inference-infrastructure",
+      "path": "tools/infrastructure/inference-infrastructure.md",
+      "channel": "tools",
+      "keywordEn": "AI Inference Infrastructure",
+      "primary_test": "AI Inference Infrastructure",
+      "h1": "AI 推理基础设施 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "llm-observability",
+      "path": "tools/llm/llm-observability.md",
+      "channel": "tools",
+      "keywordEn": "LLM Observability",
+      "primary_test": "LLM Observability",
+      "h1": "LLM 可观测性 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "llm",
+      "path": "tools/llm/llm.md",
+      "channel": "tools",
+      "keywordEn": "Large Language Model",
+      "primary_test": "Large Language Model",
+      "h1": "Large Language Model / 通用大语言模型 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "blog-website-builder",
+      "path": "tools/website-builder/blog-website-builder.md",
+      "channel": "tools",
+      "keywordEn": "Blog Website Builder / Website Builder for Blogs",
+      "primary_test": "Blog Website Builder",
+      "h1": "Blog Website Builder / 博客建站 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "ecommerce-website-builder",
+      "path": "tools/website-builder/ecommerce-website-builder.md",
+      "channel": "tools",
+      "keywordEn": "Online store platform / E-commerce website builder",
+      "primary_test": "Online store platform",
+      "h1": "E-commerce Website Builder / 电商建站平台 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "landing-page-builder",
+      "path": "tools/website-builder/landing-page-builder.md",
+      "channel": "tools",
+      "keywordEn": "Landing Page Builder / Conversion Page Builder",
+      "primary_test": "Landing Page Builder",
+      "h1": "Landing Page Builder / 落地页构建器 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    },
+    {
+      "slug": "portfolio-website-builder",
+      "path": "tools/website-builder/portfolio-website-builder.md",
+      "channel": "tools",
+      "keywordEn": "Portfolio website builder / Photography website builder",
+      "primary_test": "Portfolio website builder",
+      "h1": "Portfolio Website Builder / 作品集建站 · 知识块（非线性笔记）",
+      "has_keywordEn": true
+    }
+  ],
+  "without_keywordEn": [
+    {
+      "slug": "3d-model-generator",
+      "path": "tools/3d-spatial/3d-model-generator.md",
+      "channel": "tools",
+      "h1": "AI 3D Model Generator · 知识块（非线性笔记）",
+      "narr": "Text-to-3D / Image-to-3D / 文图生 3D",
+      "inferred_primary": "Text-to-3D",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "3d-modelling",
+      "path": "tools/3d-spatial/3d-modelling.md",
+      "channel": "tools",
+      "h1": "3D 建模工具（3D Modelling） · 知识块（非线性笔记）",
+      "narr": "3D modelling / DCC 精修",
+      "inferred_primary": "3D modelling",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "3d-scanner",
+      "path": "tools/3d-spatial/3d-scanner.md",
+      "channel": "tools",
+      "h1": "AI 3D Scanner · 知识块（非线性笔记）",
+      "narr": "AI 3D scanner / 实物数字化",
+      "inferred_primary": "AI 3D scanner",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "3d",
+      "path": "tools/3d-spatial/3d.md",
+      "channel": "tools",
+      "h1": "AI 3D Tools · 知识块（非线性笔记 · Hub）",
+      "narr": "AI 3D 工具（Hub）",
+      "inferred_primary": "AI 3D 工具（Hub）",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "cad",
+      "path": "tools/3d-spatial/cad.md",
+      "channel": "tools",
+      "h1": "AI CAD Tools · 知识块（非线性笔记）",
+      "narr": "CAD / 工程几何",
+      "inferred_primary": "CAD",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "interior-design",
+      "path": "tools/3d-spatial/interior-design.md",
+      "channel": "tools",
+      "h1": "AI Interior Design · 知识块（非线性笔记）",
+      "narr": "AI interior design / 自住改造可视化",
+      "inferred_primary": "AI interior design",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "virtual-staging",
+      "path": "tools/3d-spatial/virtual-staging.md",
+      "channel": "tools",
+      "h1": "AI Virtual Staging · 知识块（非线性笔记）",
+      "narr": "AI virtual staging / listing 虚拟置景",
+      "inferred_primary": "AI virtual staging",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "agent-for-desktop",
+      "path": "tools/agent/agent-for-desktop.md",
+      "channel": "tools",
+      "h1": "桌面智能体（Agent on Desktop）· 知识块（非线性笔记）",
+      "narr": "Agent on desktop / 桌面智能体",
+      "inferred_primary": "Agent on desktop",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "agent-memory",
+      "path": "tools/agent/agent-memory.md",
+      "channel": "tools",
+      "h1": "AI Agent 记忆层 · 知识块（非线性笔记）",
+      "narr": "Agent Memory Layer / Agent 记忆层",
+      "inferred_primary": "Agent Memory Layer",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "agent-sandbox",
+      "path": "tools/agent/agent-sandbox.md",
+      "channel": "tools",
+      "h1": "AI Agent 沙箱 · 知识块（非线性笔记）",
+      "narr": "AI Agent Sandbox / Agent 沙箱",
+      "inferred_primary": "AI Agent Sandbox",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "agent-skills",
+      "path": "tools/agent/agent-skills.md",
+      "channel": "tools",
+      "h1": "Agent Skills 生态 · 知识块（非线性笔记）",
+      "narr": "Agent Skills / 技能生态",
+      "inferred_primary": "Agent Skills",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "agent-to-agent",
+      "path": "tools/agent/agent-to-agent.md",
+      "channel": "tools",
+      "h1": "Agent-to-Agent Network / Agent 互联网络 · 知识块（非线性笔记）",
+      "narr": "A2A Agent Network / Agent 互联网络",
+      "inferred_primary": "A2A Agent Network",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "browser",
+      "path": "tools/agent/browser.md",
+      "channel": "tools",
+      "h1": "AI 浏览器 · 知识块（非线性笔记）",
+      "narr": "AI browser / 人工智能浏览器",
+      "inferred_primary": "AI browser",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "expert-agent",
+      "path": "tools/agent/expert-agent.md",
+      "channel": "tools",
+      "h1": "AI Expert Agent · 知识块（非线性笔记）",
+      "narr": "Expert Agent / 专家网络与 AI Agent 市场",
+      "inferred_primary": "Expert Agent",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "multi-agent",
+      "path": "tools/agent/multi-agent.md",
+      "channel": "tools",
+      "h1": "多智能体系统 · 知识块（非线性笔记）",
+      "narr": "Multi-Agent Systems / 多智能体系统",
+      "inferred_primary": "Multi-Agent Systems",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "openclaw-alternatives",
+      "path": "tools/agent/openclaw-alternatives.md",
+      "channel": "tools",
+      "h1": "OpenClaw 系谱与变体对照 · 知识块（非线性笔记）",
+      "narr": "OpenClaw 系谱 / alternatives 检索意图",
+      "inferred_primary": "OpenClaw 系谱",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "workflow",
+      "path": "tools/agent/workflow.md",
+      "channel": "tools",
+      "h1": "AI Workflow · 知识块（非线性笔记）",
+      "narr": "Workflow automation / 工作流自动化",
+      "inferred_primary": "Workflow automation",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-shopping",
+      "path": "tools/ai-shopping.md",
+      "channel": "tools",
+      "h1": "AI Shopping · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Shopping",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "animation-library",
+      "path": "tools/animation-library.md",
+      "channel": "tools",
+      "h1": "Animation Library · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "Animation Library",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "character-chat",
+      "path": "tools/chat-social/character-chat.md",
+      "channel": "tools",
+      "h1": "Character Chat / AI 角色对话 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "Character Chat",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "chatbot",
+      "path": "tools/chat-social/chatbot.md",
+      "channel": "tools",
+      "h1": "AI Chatbot · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Chatbot",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "community",
+      "path": "tools/chat-social/community.md",
+      "channel": "tools",
+      "h1": "AI 社区 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI 社区",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "dating",
+      "path": "tools/chat-social/dating.md",
+      "channel": "tools",
+      "h1": "AI Dating（AI 约会与匹配）· 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Dating（AI 约会与匹配）",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "directory",
+      "path": "tools/chat-social/directory.md",
+      "channel": "tools",
+      "h1": "AI Directory / AI 工具导航 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Directory",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-components",
+      "path": "tools/coding/ai-components.md",
+      "channel": "tools",
+      "h1": "AI Components / AI 组件 Prompt 库与 Registry · 知识块（非线性笔记）",
+      "narr": "AI Components / Prompt-as-Component / Component Registry",
+      "inferred_primary": "AI Components",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "app-builder",
+      "path": "tools/coding/app-builder.md",
+      "channel": "tools",
+      "h1": "App Builder · 知识块（非线性笔记）",
+      "narr": "AI App Builder / AI 应用构建器",
+      "inferred_primary": "AI App Builder",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "cli",
+      "path": "tools/coding/cli.md",
+      "channel": "tools",
+      "h1": "AI CLI Tools · 知识块（非线性笔记）",
+      "narr": "AI CLI / Agentic CLI",
+      "inferred_primary": "AI CLI",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "code-completion",
+      "path": "tools/coding/code-completion.md",
+      "channel": "tools",
+      "h1": "AI 代码补全（Code Completion） · 知识块（非线性笔记）",
+      "narr": "Code completion / AI code assistant",
+      "inferred_primary": "Code completion",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "code-review",
+      "path": "tools/coding/code-review.md",
+      "channel": "tools",
+      "h1": "AI 代码审查（Code review / 代码质量检查）· 知识块（非线性笔记）",
+      "narr": "AI code review / PR 审查",
+      "inferred_primary": "AI code review",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "coding",
+      "path": "tools/coding/coding.md",
+      "channel": "tools",
+      "h1": "AI Coding · 知识块（非线性笔记）",
+      "narr": "AI Coding Agent / 编程智能体",
+      "inferred_primary": "AI Coding Agent",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ide",
+      "path": "tools/coding/ide.md",
+      "channel": "tools",
+      "h1": "AI IDE · 知识块（非线性笔记）",
+      "narr": "AI IDE / Agentic IDE",
+      "inferred_primary": "AI IDE",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "vibe-coding",
+      "path": "tools/coding/vibe-coding.md",
+      "channel": "tools",
+      "h1": "Vibe coding（氛围编程）· 知识块（非线性笔记）",
+      "narr": "Vibe coding / 氛围编程",
+      "inferred_primary": "Vibe coding",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "data-engineering-agent",
+      "path": "tools/data-engineering-agent.md",
+      "channel": "tools",
+      "h1": "Data Engineering Agent · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "Data Engineering Agent",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "design",
+      "path": "tools/design/design.md",
+      "channel": "tools",
+      "h1": "AI Design（AI 设计工具）· 知识块（聚合 hub）",
+      "narr": "AI Design Tool",
+      "inferred_primary": "AI Design Tool",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "prototyping",
+      "path": "tools/design/prototyping.md",
+      "channel": "tools",
+      "h1": "Prototyping（AI 交互原型）· 知识块（非线性笔记）",
+      "narr": "Prototyping / 交互原型",
+      "inferred_primary": "Prototyping",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ui-design",
+      "path": "tools/design/ui-design.md",
+      "channel": "tools",
+      "h1": "AI UI Design（AI 界面设计）· 知识块（非线性笔记）",
+      "narr": "AI UI Design / 界面设计",
+      "inferred_primary": "AI UI Design",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "user-research",
+      "path": "tools/design/user-research.md",
+      "channel": "tools",
+      "h1": "AI User Research · 知识块（非线性笔记）",
+      "narr": "AI User Research",
+      "inferred_primary": "AI User Research",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ux-design",
+      "path": "tools/design/ux-design.md",
+      "channel": "tools",
+      "h1": "AI UX Design（AI 体验设计）· 知识块（非线性笔记）",
+      "narr": "UX Design / 体验设计",
+      "inferred_primary": "UX Design",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "wireframing",
+      "path": "tools/design/wireframing.md",
+      "channel": "tools",
+      "h1": "Wireframing（AI 线框图）· 知识块（非线性笔记）",
+      "narr": "Wireframing / 线框图",
+      "inferred_primary": "Wireframing",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-flashcards",
+      "path": "tools/education/ai-flashcards.md",
+      "channel": "tools",
+      "h1": "AI Flashcards & Study Tools · 知识块（非线性笔记）",
+      "narr": "AI flashcards / 间隔重复学习工具",
+      "inferred_primary": "AI flashcards",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-for-science",
+      "path": "tools/education/ai-for-science.md",
+      "channel": "tools",
+      "h1": "AI for Science（AI 赋能科学研究）· 知识块（非线性笔记）",
+      "narr": "AI for Science / AI4S",
+      "inferred_primary": "AI for Science",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-homework-helper",
+      "path": "tools/education/ai-homework-helper.md",
+      "channel": "tools",
+      "h1": "AI Homework Helper · 知识块（非线性笔记）",
+      "narr": "AI homework helper / 拍照解题",
+      "inferred_primary": "AI homework helper",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-language-learning",
+      "path": "tools/education/ai-language-learning.md",
+      "channel": "tools",
+      "h1": "AI Language Learning · 知识块（非线性笔记）",
+      "narr": "AI language learning / AI 语言学习 App",
+      "inferred_primary": "AI language learning",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-tutor",
+      "path": "tools/education/ai-tutor.md",
+      "channel": "tools",
+      "h1": "AI Tutor（AI 家教与智能辅导）· 知识块（非线性笔记）",
+      "narr": "AI tutor / AI 家教",
+      "inferred_primary": "AI tutor",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "education",
+      "path": "tools/education/education.md",
+      "channel": "tools",
+      "h1": "AI Education · 知识块（非线性笔记）",
+      "narr": "AI Education / AI 教育工具（Hub）",
+      "inferred_primary": "AI Education",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "notes-generator",
+      "path": "tools/education/notes-generator.md",
+      "channel": "tools",
+      "h1": "AI 笔记生成器 · 知识块（非线性笔记）",
+      "narr": "AI notes generator / PDF·视频→笔记",
+      "inferred_primary": "AI notes generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "quiz-generator",
+      "path": "tools/education/quiz-generator.md",
+      "channel": "tools",
+      "h1": "AI Quiz Generator（AI 出题与测评生成）· 知识块（非线性笔记）",
+      "narr": "AI quiz generator / AI 测评生成",
+      "inferred_primary": "AI quiz generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-documents",
+      "path": "tools/enterprise-knowledge/ai-documents.md",
+      "channel": "tools",
+      "h1": "AI 文档（AI Documents）· 知识块（非线性笔记）",
+      "narr": "AI Documents / 智能文档",
+      "inferred_primary": "AI Documents",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "documentation",
+      "path": "tools/enterprise-knowledge/documentation.md",
+      "channel": "tools",
+      "h1": "开发者文档与 Agent 时代 · 知识块（非线性笔记）",
+      "narr": "Developer documentation / 开发者文档",
+      "inferred_primary": "Developer documentation",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "knowledge-base",
+      "path": "tools/enterprise-knowledge/knowledge-base.md",
+      "channel": "tools",
+      "h1": "AI Knowledge Base · 知识块（非线性笔记）",
+      "narr": "AI Knowledge Base / RAG 知识库",
+      "inferred_primary": "AI Knowledge Base",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "legal",
+      "path": "tools/enterprise-knowledge/legal.md",
+      "channel": "tools",
+      "h1": "AI Tools for Lawyers（律师用 AI 工具）· 知识块（非线性笔记）",
+      "narr": "Legal AI / AI for lawyers",
+      "inferred_primary": "Legal AI",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "memory",
+      "path": "tools/enterprise-knowledge/memory.md",
+      "channel": "tools",
+      "h1": "AI Memory · 知识块（非线性笔记）",
+      "narr": "AI Memory / 个人第二大脑",
+      "inferred_primary": "AI Memory",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ocr",
+      "path": "tools/enterprise-knowledge/ocr.md",
+      "channel": "tools",
+      "h1": "AI OCR（文字识别）· 知识块（非线性笔记）",
+      "narr": "OCR / 光学字符识别",
+      "inferred_primary": "OCR",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "spreadsheet",
+      "path": "tools/enterprise-knowledge/spreadsheet.md",
+      "channel": "tools",
+      "h1": "AI 表格 · 知识块（非线性笔记）",
+      "narr": "AI spreadsheet / AI 表格",
+      "inferred_primary": "AI spreadsheet",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "family-assistant",
+      "path": "tools/family-assistant.md",
+      "channel": "tools",
+      "h1": "AI 家庭助手 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI 家庭助手",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "fashion",
+      "path": "tools/fashion.md",
+      "channel": "tools",
+      "h1": "AI Fashion / AI 时尚 · 知识块（非线性笔记）",
+      "narr": "AI fashion / AI 时尚工具",
+      "inferred_primary": "AI fashion",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "healthcare",
+      "path": "tools/healthcare/healthcare.md",
+      "channel": "tools",
+      "h1": "AI Healthcare · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Healthcare",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "medical-scribe",
+      "path": "tools/healthcare/medical-scribe.md",
+      "channel": "tools",
+      "h1": "AI Medical Scribe · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Medical Scribe",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "hr-assistant",
+      "path": "tools/hr-recruiting/hr-assistant.md",
+      "channel": "tools",
+      "h1": "AI HR Assistant · 知识块（非线性笔记）",
+      "narr": "AI HR assistant / AI HR 助手",
+      "inferred_primary": "AI HR assistant",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "interview-assistant",
+      "path": "tools/hr-recruiting/interview-assistant.md",
+      "channel": "tools",
+      "h1": "AI 面试助手 · 知识块（非线性笔记）",
+      "narr": "AI interview assistant / 面试助手",
+      "inferred_primary": "AI interview assistant",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "linkedin",
+      "path": "tools/hr-recruiting/linkedin.md",
+      "channel": "tools",
+      "h1": "LinkedIn AI 工具 · 知识块（非线性笔记）",
+      "narr": "LinkedIn AI tools / LinkedIn 向 AI 工具",
+      "inferred_primary": "LinkedIn AI tools",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "recruiting",
+      "path": "tools/hr-recruiting/recruiting.md",
+      "channel": "tools",
+      "h1": "AI Recruiting · 知识块（非线性笔记）",
+      "narr": "AI recruiting / AI 人才获取",
+      "inferred_primary": "AI recruiting",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "avatar",
+      "path": "tools/image/avatar.md",
+      "channel": "tools",
+      "h1": "AI Avatar Generator · 知识块（非线性笔记）",
+      "narr": "Talking avatar / AI presenter / 数字人视频",
+      "inferred_primary": "Talking avatar",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "background-changer",
+      "path": "tools/image/background-changer.md",
+      "channel": "tools",
+      "h1": "AI Background Changer · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Background Changer",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "headshot-generator",
+      "path": "tools/image/headshot-generator.md",
+      "channel": "tools",
+      "h1": "AI Headshot Generator · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Headshot Generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "image-editor",
+      "path": "tools/image/image-editor.md",
+      "channel": "tools",
+      "h1": "AI Image Editor · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Image Editor",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "image-enhancer",
+      "path": "tools/image/image-enhancer.md",
+      "channel": "tools",
+      "h1": "AI Image Enhancer · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Image Enhancer",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "image-generator",
+      "path": "tools/image/image-generator.md",
+      "channel": "tools",
+      "h1": "AI Image Generator · 知识块（非线性笔记）",
+      "narr": "AI image generator / 文生图（T2I）",
+      "inferred_primary": "AI image generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "image-relighting",
+      "path": "tools/image/image-relighting.md",
+      "channel": "tools",
+      "h1": "AI Image Relighting · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Image Relighting",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "image",
+      "path": "tools/image/image.md",
+      "channel": "tools",
+      "h1": "AI Image · 知识块（非线性笔记 · Hub）",
+      "narr": "",
+      "inferred_primary": "AI Image",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "logo-generator",
+      "path": "tools/image/logo-generator.md",
+      "channel": "tools",
+      "h1": "AI Logo Generator / AI Logo 生成器 · 知识块（非线性笔记）",
+      "narr": "AI logo generator / AI Logo 生成器",
+      "inferred_primary": "AI logo generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "poster-generator",
+      "path": "tools/image/poster-generator.md",
+      "channel": "tools",
+      "h1": "AI Poster Generator · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Poster Generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "social-cards-generator",
+      "path": "tools/image/social-cards-generator.md",
+      "channel": "tools",
+      "h1": "Social Cards Generator · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "Social Cards Generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "tattoo-generator",
+      "path": "tools/image/tattoo-generator.md",
+      "channel": "tools",
+      "h1": "AI Tattoo Generator · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Tattoo Generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "api",
+      "path": "tools/infrastructure/api.md",
+      "channel": "tools",
+      "h1": "统一 AI API 平台 · 知识块（非线性笔记）",
+      "narr": "Unified AI API Platform / 统一 AI API",
+      "inferred_primary": "Unified AI API Platform",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "authentication",
+      "path": "tools/infrastructure/authentication.md",
+      "channel": "tools",
+      "h1": "身份认证与访问管理（Authentication / IAM）· 知识块（非线性笔记）",
+      "narr": "Authentication / CIAM / 应用身份",
+      "inferred_primary": "Authentication",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "lifetime-deals",
+      "path": "tools/lifetime-deals.md",
+      "channel": "tools",
+      "h1": "Lifetime Deals · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "Lifetime Deals",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "evaluation",
+      "path": "tools/llm/evaluation.md",
+      "channel": "tools",
+      "h1": "AI Evaluation / LLM 应用评测 · 知识块（非线性笔记）",
+      "narr": "AI evaluation / LLM evaluation / AI 应用评测",
+      "inferred_primary": "AI evaluation",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "llm-for-coding",
+      "path": "tools/llm/llm-for-coding.md",
+      "channel": "tools",
+      "h1": "AI Coding LLM / 编程向大模型 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Coding LLM",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "llm-for-math",
+      "path": "tools/llm/llm-for-math.md",
+      "channel": "tools",
+      "h1": "AI Math LLM / 数学向大模型 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Math LLM",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "llm-for-reasoning",
+      "path": "tools/llm/llm-for-reasoning.md",
+      "channel": "tools",
+      "h1": "AI Reasoning LLM / 推理向大模型 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Reasoning LLM",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "multimodal-llm",
+      "path": "tools/llm/multimodal-llm.md",
+      "channel": "tools",
+      "h1": "AI Multimodal LLM / 多模态大模型 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Multimodal LLM",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "llm-leaderboard-snapshots",
+      "path": "tools/llm-leaderboard-snapshots.md",
+      "channel": "tools",
+      "h1": "LLM 评测排行快照 · 快变事实层",
+      "narr": "",
+      "inferred_primary": "LLM 评测排行快照",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "advertising-agent",
+      "path": "tools/marketing-growth/advertising-agent.md",
+      "channel": "tools",
+      "h1": "Advertising Agent · 知识块（非线性笔记）",
+      "narr": "Advertising Agent / AI 广告投放 Agent",
+      "inferred_primary": "Advertising Agent",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "affiliate-marketing",
+      "path": "tools/marketing-growth/affiliate-marketing.md",
+      "channel": "tools",
+      "h1": "Affiliate Marketing · 知识块（非线性笔记）",
+      "narr": "Affiliate marketing / 联盟营销",
+      "inferred_primary": "Affiliate marketing",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "b2b",
+      "path": "tools/marketing-growth/b2b.md",
+      "channel": "tools",
+      "h1": "B2B Marketing · 知识块（非线性笔记）",
+      "narr": "AI B2B Marketing Tools / B2B 营销 AI 工具",
+      "inferred_primary": "AI B2B Marketing Tools",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "fundraising",
+      "path": "tools/marketing-growth/fundraising.md",
+      "channel": "tools",
+      "h1": "AI Fundraising · 知识块（非线性笔记）",
+      "narr": "AI fundraising / AI 融资工具",
+      "inferred_primary": "AI fundraising",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "influencer-marketing",
+      "path": "tools/marketing-growth/influencer-marketing.md",
+      "channel": "tools",
+      "h1": "Influencer Marketing · 知识块（非线性笔记）",
+      "narr": "Influencer marketing / 网红营销",
+      "inferred_primary": "Influencer marketing",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "lead-generation",
+      "path": "tools/marketing-growth/lead-generation.md",
+      "channel": "tools",
+      "h1": "Lead Generation · 知识块（非线性笔记）",
+      "narr": "AI Lead Generation / AI 线索生成",
+      "inferred_primary": "AI Lead Generation",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "referral-program",
+      "path": "tools/marketing-growth/referral-program.md",
+      "channel": "tools",
+      "h1": "Referral Program · 知识块（非线性笔记）",
+      "narr": "Referral program / 推荐计划",
+      "inferred_primary": "Referral program",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "social-media-tools",
+      "path": "tools/marketing-growth/social-media-tools.md",
+      "channel": "tools",
+      "h1": "Social Media Tools · 知识块（非线性笔记）",
+      "narr": "Social media management / scheduling tools（社媒管理与排程工具）",
+      "inferred_primary": "Social media management",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ugc",
+      "path": "tools/marketing-growth/ugc.md",
+      "channel": "tools",
+      "h1": "UGC · 知识块（非线性笔记）",
+      "narr": "UGC / User-Generated Content（营销语境）",
+      "inferred_primary": "UGC",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-scheduling",
+      "path": "tools/productivity/ai-scheduling.md",
+      "channel": "tools",
+      "h1": "AI 日程安排 · 知识块（非线性笔记）",
+      "narr": "AI scheduling / AI 日程安排",
+      "inferred_primary": "AI scheduling",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "note-taker",
+      "path": "tools/productivity/note-taker.md",
+      "channel": "tools",
+      "h1": "AI 会议记录 · 知识块（非线性笔记）",
+      "narr": "AI note taker / AI meeting notes",
+      "inferred_primary": "AI note taker",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "productivity",
+      "path": "tools/productivity/productivity.md",
+      "channel": "tools",
+      "h1": "AI Productivity · 知识块（非线性笔记）",
+      "narr": "AI productivity tools / AI 生产力工具",
+      "inferred_primary": "AI productivity tools",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "project-management",
+      "path": "tools/productivity/project-management.md",
+      "channel": "tools",
+      "h1": "Project Management · 知识块（非线性笔记）",
+      "narr": "AI project management / AI 项目管理",
+      "inferred_primary": "AI project management",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "religion",
+      "path": "tools/religion.md",
+      "channel": "tools",
+      "h1": "AI Religion · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Religion",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-traffic-and-citation-sources",
+      "path": "tools/search-geo/ai-traffic-and-citation-sources.md",
+      "channel": "tools",
+      "h1": "AI 搜索平台与引用来源 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI 搜索平台与引用来源",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "ai-visibility",
+      "path": "tools/search-geo/ai-visibility.md",
+      "channel": "tools",
+      "h1": "AI 可见度（AI Visibility）· 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI 可见度（AI Visibility）",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "geo",
+      "path": "tools/search-geo/geo.md",
+      "channel": "tools",
+      "h1": "GEO（生成式引擎优化 / Generative Engine Optimization）· 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "GEO（生成式引擎优化",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "search-engine",
+      "path": "tools/search-geo/search-engine.md",
+      "channel": "tools",
+      "h1": "AI 搜索引擎 · 知识块（非线性笔记）",
+      "narr": "AI search engine / 对话式 AI 搜索",
+      "inferred_primary": "AI search engine",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "territory-map",
+      "path": "tools/territory-map.md",
+      "channel": "tools",
+      "h1": "Territory Map — Knowledge Block Tiers & Clusters",
+      "narr": "",
+      "inferred_primary": "Territory Map — Knowledge Block Tiers & Clusters",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "essay-writer",
+      "path": "tools/text-content/essay-writer.md",
+      "channel": "tools",
+      "h1": "AI Essay Writer · 知识块（非线性笔记）",
+      "narr": "AI Essay Writer",
+      "inferred_primary": "AI Essay Writer",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "presentation-maker",
+      "path": "tools/text-content/presentation-maker.md",
+      "channel": "tools",
+      "h1": "AI Presentation Maker · 知识块（非线性笔记）",
+      "narr": "AI Presentation Maker",
+      "inferred_primary": "AI Presentation Maker",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "story-generator",
+      "path": "tools/text-content/story-generator.md",
+      "channel": "tools",
+      "h1": "AI Story Generator · 知识块（非线性笔记）",
+      "narr": "AI Story Generator",
+      "inferred_primary": "AI Story Generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "text-generator",
+      "path": "tools/text-content/text-generator.md",
+      "channel": "tools",
+      "h1": "AI Text Generator · 知识块（非线性笔记）",
+      "narr": "AI Text Generator",
+      "inferred_primary": "AI Text Generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "text-translator",
+      "path": "tools/text-content/text-translator.md",
+      "channel": "tools",
+      "h1": "AI Text Translation · 知识块（非线性笔记）",
+      "narr": "AI text translation",
+      "inferred_primary": "AI text translation",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "text",
+      "path": "tools/text-content/text.md",
+      "channel": "tools",
+      "h1": "AI Text · 知识块（非线性笔记）",
+      "narr": "AI Text Tools / AI Writing Tools",
+      "inferred_primary": "AI Text Tools",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "path": "tools/vibe-coding-payments.md",
+      "channel": "tools",
+      "h1": "Vibe Coding 支付集成 · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "Vibe Coding 支付集成",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "animation-generator",
+      "path": "tools/video/animation-generator.md",
+      "channel": "tools",
+      "h1": "AI Animation & Anime Generator · 知识块（非线性笔记）",
+      "narr": "AI animation generator / AI anime generator",
+      "inferred_primary": "AI animation generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "canvas-video",
+      "path": "tools/video/canvas-video.md",
+      "channel": "tools",
+      "h1": "Canvas Video · 知识块（非线性笔记）",
+      "narr": "AI video canvas / node-based AI video workflow",
+      "inferred_primary": "AI video canvas",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "filmmaking",
+      "path": "tools/video/filmmaking.md",
+      "channel": "tools",
+      "h1": "AI Filmmaking · 知识块（非线性笔记）",
+      "narr": "AI Filmmaking / AI 电影制作",
+      "inferred_primary": "AI Filmmaking",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "image-to-video",
+      "path": "tools/video/image-to-video.md",
+      "channel": "tools",
+      "h1": "AI Image-to-Video · 知识块（非线性笔记）",
+      "narr": "Image-to-Video / I2V / 图生视频",
+      "inferred_primary": "Image-to-Video",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "interactive-video",
+      "path": "tools/video/interactive-video.md",
+      "channel": "tools",
+      "h1": "实时交互视频（Interactive Video / Live Video Generation）· 知识块（非线性笔记）",
+      "narr": "Interactive video / 实时交互视频",
+      "inferred_primary": "Interactive video",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "music-video-generator",
+      "path": "tools/video/music-video-generator.md",
+      "channel": "tools",
+      "h1": "AI 音乐视频生成器（Music Video Generator）· 知识块（非线性笔记）",
+      "narr": "AI music video generator / MV 生成器",
+      "inferred_primary": "AI music video generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "short-drama",
+      "path": "tools/video/short-drama.md",
+      "channel": "tools",
+      "h1": "AI Short Drama / AI 短剧平台 · 知识块（非线性笔记）",
+      "narr": "AI short drama platform / AI 短剧平台",
+      "inferred_primary": "AI short drama platform",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "text-to-video",
+      "path": "tools/video/text-to-video.md",
+      "channel": "tools",
+      "h1": "AI Text-to-Video · 知识块（非线性笔记）",
+      "narr": "Text-to-Video (T2V) / 文生视频",
+      "inferred_primary": "Text-to-Video (T2V)",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "video-clipping",
+      "path": "tools/video/video-clipping.md",
+      "channel": "tools",
+      "h1": "AI Video Clipping · 知识块（非线性笔记）",
+      "narr": "AI Video Clipping / Repurposing",
+      "inferred_primary": "AI Video Clipping",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "video-editor",
+      "path": "tools/video/video-editor.md",
+      "channel": "tools",
+      "h1": "AI Video Editor · 知识块（非线性笔记）",
+      "narr": "AI Video Editor / AI 视频编辑器",
+      "inferred_primary": "AI Video Editor",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "video-effects",
+      "path": "tools/video/video-effects.md",
+      "channel": "tools",
+      "h1": "AI Video Effects · 知识块（非线性笔记）",
+      "narr": "AI Video Effects / AI VFX",
+      "inferred_primary": "AI Video Effects",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "video-generator",
+      "path": "tools/video/video-generator.md",
+      "channel": "tools",
+      "h1": "AI Video Generator / AI 视频生成 · 知识块（非线性笔记）",
+      "narr": "AI video generator / AI 视频生成器",
+      "inferred_primary": "AI video generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "video-to-video",
+      "path": "tools/video/video-to-video.md",
+      "channel": "tools",
+      "h1": "AI Video-to-Video · 知识块（非线性笔记）",
+      "narr": "Video-to-Video (V2V) / 视频到视频",
+      "inferred_primary": "Video-to-Video (V2V)",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "video",
+      "path": "tools/video/video.md",
+      "channel": "tools",
+      "h1": "AI Video · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Video",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "accent-conversion",
+      "path": "tools/voice-audio/accent-conversion.md",
+      "channel": "tools",
+      "h1": "AI 口音转换（Accent Conversion） · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI 口音转换（Accent Conversion）",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "audio-translator",
+      "path": "tools/voice-audio/audio-translator.md",
+      "channel": "tools",
+      "h1": "AI Audio Translation · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Audio Translation",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "lip-sync",
+      "path": "tools/voice-audio/lip-sync.md",
+      "channel": "tools",
+      "h1": "AI Lip Sync / AI 唇形同步 · 知识块（非线性笔记）",
+      "narr": "AI lip sync / AI 唇形同步",
+      "inferred_primary": "AI lip sync",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "music-generator",
+      "path": "tools/voice-audio/music-generator.md",
+      "channel": "tools",
+      "h1": "AI Music Generator · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Music Generator",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "speech-to-text",
+      "path": "tools/voice-audio/speech-to-text.md",
+      "channel": "tools",
+      "h1": "AI Speech-to-Text（ASR / STT / 语音转文字）· 知识块（非线性笔记）",
+      "narr": "Speech-to-Text / ASR / 自动语音识别",
+      "inferred_primary": "Speech-to-Text",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "text-to-speech",
+      "path": "tools/voice-audio/text-to-speech.md",
+      "channel": "tools",
+      "h1": "AI Text-to-Speech（TTS / 文本转语音）· 知识块（非线性笔记）",
+      "narr": "AI Text-to-Speech / TTS / 文本转语音",
+      "inferred_primary": "AI Text-to-Speech",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "video-translator",
+      "path": "tools/voice-audio/video-translator.md",
+      "channel": "tools",
+      "h1": "AI Video Translation · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Video Translation",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "voice-changer",
+      "path": "tools/voice-audio/voice-changer.md",
+      "channel": "tools",
+      "h1": "AI Voice Changer（AI 变声器）· 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Voice Changer（AI 变声器）",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "voice-cloning",
+      "path": "tools/voice-audio/voice-cloning.md",
+      "channel": "tools",
+      "h1": "AI Voice Cloning · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Voice Cloning",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "voice",
+      "path": "tools/voice-audio/voice.md",
+      "channel": "tools",
+      "h1": "AI Voice · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "AI Voice",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "headless-browser",
+      "path": "tools/web-data/headless-browser.md",
+      "channel": "tools",
+      "h1": "无头浏览器与云浏览器基础设施（Headless / BaaS / Agent 向）· 知识块（非线性笔记）",
+      "narr": "Headless browser / 云浏览器基础设施",
+      "inferred_primary": "Headless browser",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "search-indexing",
+      "path": "tools/web-data/search-indexing.md",
+      "channel": "tools",
+      "h1": "AI Search Indexing · 知识块（非线性笔记）",
+      "narr": "AI Search Indexing",
+      "inferred_primary": "AI Search Indexing",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "technology-profiler",
+      "path": "tools/web-data/technology-profiler.md",
+      "channel": "tools",
+      "h1": "网站技术检测与画像工具 · 知识块（非线性笔记）",
+      "narr": "website technology profiler / 网站技术栈检测",
+      "inferred_primary": "website technology profiler",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "web-fetch",
+      "path": "tools/web-data/web-fetch.md",
+      "channel": "tools",
+      "h1": "Web Fetch（URL 转 AI 可读内容）· 知识块（非线性笔记）",
+      "narr": "Web Fetch",
+      "inferred_primary": "Web Fetch",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "web-scraping",
+      "path": "tools/web-data/web-scraping.md",
+      "channel": "tools",
+      "h1": "",
+      "narr": "Web scraping / 网页抓取",
+      "inferred_primary": "Web scraping",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "web-search-api",
+      "path": "tools/web-data/web-search-api.md",
+      "channel": "tools",
+      "h1": "Web Search API · 知识块（非线性笔记）",
+      "narr": "Web Search API",
+      "inferred_primary": "Web Search API",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "website-builder",
+      "path": "tools/website-builder/website-builder.md",
+      "channel": "tools",
+      "h1": "Website Builder · 知识块（非线性笔记）",
+      "narr": "",
+      "inferred_primary": "Website Builder",
+      "has_keywordEn": false
+    },
+    {
+      "slug": "world-model",
+      "path": "tools/world-model.md",
+      "channel": "tools",
+      "h1": "世界模型（World Models）· 知识块（非线性笔记）",
+      "narr": "World model / 世界模型",
+      "inferred_primary": "World model",
+      "has_keywordEn": false
+    }
+  ],
+  "counts": {
+    "with": 21,
+    "without": 141,
+    "channels_with": {
+      "tools": 21
+    },
+    "channels_without": {
+      "tools": 141
+    }
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "batch": "voice_coding",
+  "audit_date": "2026-09-03",
+  "method": "WebSearch SERP titles + cited MSV (Semrush/Inpages/MicroSaaSHQ/TopTrending/Similarweb/Navtools/DataForSEO) + Bing EN-US About-N-results proxy (cap ~509,000). Proxy is directional, not MSV.",
+  "slug_count": 19,
+  "verdict_counts": {
+    "OK": 10,
+    "SWITCH": 3,
+    "KEEP_INTENT": 5,
+    "AMBIGUOUS": 1
+  },
+  "results": [
+    {
+      "slug": "accent-conversion",
+      "current_primary": "AI accent conversion",
+      "candidates": [
+        {
+          "keyword": "AI accent conversion",
+          "volume_signal": "Bing ~509,000 (capped); no public MSV in snippets",
+          "source": "Bing EN-US proxy 2026-09-03; WebSearch SERP",
+          "serp_title_note": "Krisp/Utell/Altered product pages and arXiv all title the category Accent Conversion / AI Accent Conversion. Not a consumer 'accent changer' SERP."
+        },
+        {
+          "keyword": "accent conversion",
+          "volume_signal": "Bing ~113,000",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Same research/product category without AI prefix; lower proxy than capped AI form."
+        },
+        {
+          "keyword": "AI accent converter",
+          "volume_signal": "Bing ~509,000 (capped); no MSV",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Tool-noun variant; same call-center intelligibility intent."
+        },
+        {
+          "keyword": "foreign accent conversion",
+          "volume_signal": "no cited MSV; academic FAC papers dominate",
+          "source": "WebSearch SERP (arxiv FAC papers)",
+          "serp_title_note": "Research synonym (FAC); same technical task, not a commercial head query."
+        },
+        {
+          "keyword": "accent changer AI",
+          "volume_signal": "not used as SWITCH candidate (fence)",
+          "source": "intent fence vs voice-changer",
+          "serp_title_note": "Reads as identity/role voice-changer, not same-language accent preservation."
+        }
+      ],
+      "highest_volume_same_intent": "AI accent conversion",
+      "verdict": "OK",
+      "recommended_primary": "AI accent conversion",
+      "reason": "Vendor and research titles repeatedly use Accent Conversion / AI Accent Conversion. Word-order and converter variants do not beat the current phrase on SERP or uncapped proxy; 'accent changer' is a voice-changer fence."
+    },
+    {
+      "slug": "ai-components",
+      "current_primary": "AI Components",
+      "candidates": [
+        {
+          "keyword": "AI Components",
+          "volume_signal": "Bing ~509,000 (capped); no public MSV",
+          "source": "Bing EN-US proxy 2026-09-03; WebSearch",
+          "serp_title_note": "SERP is mixed: shadcn registry, Vercel AI Elements (React AI UI kits), not primarily prompt-as-component libraries."
+        },
+        {
+          "keyword": "prompt as component",
+          "volume_signal": "Bing ~40,800",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Closer to KB jargon (Prompt-as-Component) but much smaller index; not the commercial head."
+        },
+        {
+          "keyword": "AI component registry",
+          "volume_signal": "Bing ~509,000 (capped); no MSV",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Overlaps shadcn/v0 registry docs; still not a distinct buyer query from generic registries."
+        },
+        {
+          "keyword": "AI UI components",
+          "volume_signal": "no cited MSV; Bing historically capped in prior batch",
+          "source": "WebSearch SERP (Vercel AI Elements)",
+          "serp_title_note": "Different buyer: React/shadcn AI chat UI kits, not prompt packs for Bolt/Lovable/v0."
+        }
+      ],
+      "highest_volume_same_intent": "AI Components",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "AI Components",
+      "reason": "Current phrase is Bing-capped and the live SERP is AI-UI kits / shadcn registries, not prompt-as-component packs. More precise jargon ('prompt as component') has far lower proxy and is not a proven head query. No clean same-intent winner."
+    },
+    {
+      "slug": "app-builder",
+      "current_primary": "AI App Builder",
+      "candidates": [
+        {
+          "keyword": "AI App Builder",
+          "volume_signal": "~22,200/mo (MicroSaaSHQ); ~12,100 US/mo (vibecoding.app citing DataForSEO/GKP)",
+          "source": "MicroSaaSHQ saas-ideas/ai-app-builder-863; vibecoding.app/blog/state-of-vibe-coding-2026",
+          "serp_title_note": "2026 roundups title the category AI (mobile) app builder; Lovable/Bolt/v0/Rork sit in this SERP."
+        },
+        {
+          "keyword": "AI app maker",
+          "volume_signal": "no fresh MSV this pass; prior Bing ~24,100",
+          "source": "WebSearch SERP synonym check",
+          "serp_title_note": "Same builder intent, less common in comparison titles than builder."
+        },
+        {
+          "keyword": "AI application builder",
+          "volume_signal": "Bing historically capped ~509,000; no MSV",
+          "source": "prior Bing proxy (not re-used as SWITCH)",
+          "serp_title_note": "Longer synonym; titles prefer 'app builder'."
+        },
+        {
+          "keyword": "no-code app builder",
+          "volume_signal": "higher raw category (Bubble/Adalo lists); not same-intent",
+          "source": "WebSearch SERP (Choicely/Adalo no-code lists)",
+          "serp_title_note": "Generic no-code canvas buyers, not NL→full-stack AI builders. Intent fence vs app-builder."
+        }
+      ],
+      "highest_volume_same_intent": "AI App Builder",
+      "verdict": "OK",
+      "recommended_primary": "AI App Builder",
+      "reason": "Cited MSV (~12k–22k) and commercial titles already use AI App Builder. Do not steal volume from generic no-code app builder — different buyer question."
+    },
+    {
+      "slug": "audio-translator",
+      "current_primary": "AI Audio Translation",
+      "candidates": [
+        {
+          "keyword": "AI Audio Translation",
+          "volume_signal": "Bing ~509,000 (capped); no standalone MSV in snippets",
+          "source": "Bing EN-US proxy 2026-09-03; WebSearch volume query",
+          "serp_title_note": "Used as a capability label; fewer product H1s than the translator noun."
+        },
+        {
+          "keyword": "AI audio translator",
+          "volume_signal": "Bing ~509,000 (capped); Wordly ranks for 'ai audio translator'; no exact MSV",
+          "source": "Bing EN-US proxy; b2bsaas.com/wordly keyword table",
+          "serp_title_note": "Vozo, Voomo, Maestra, ElevenLabs translate-audio pages title AI Audio Translator / Translate Audio."
+        },
+        {
+          "keyword": "speech translator",
+          "volume_signal": "no cited MSV this pass",
+          "source": "WebSearch SERP (KUDO live speech translation)",
+          "serp_title_note": "Same cross-language speech job; live-interpretation vendors prefer 'speech translation'."
+        },
+        {
+          "keyword": "translate audio to text",
+          "volume_signal": "~60,500/mo India (Voqusa)",
+          "source": "voqusa.com AI audio translation guide",
+          "serp_title_note": "STT / transcribe intent, not speech-to-speech translation. Fence vs speech-to-text."
+        }
+      ],
+      "highest_volume_same_intent": "AI audio translator",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI Audio Translator",
+      "reason": "Same-intent commercial SERP consistently uses the tool noun AI Audio Translator, not the abstract 'translation'. Bing both hit the cap, so the switch is title-led (method B), not a 2× MSV gap."
+    },
+    {
+      "slug": "cli",
+      "current_primary": "AI CLI",
+      "candidates": [
+        {
+          "keyword": "AI CLI",
+          "volume_signal": "Bing ~74,100; no Google MSV (volume query hit npm 'ai-cli' downloads, not search)",
+          "source": "Bing EN-US proxy 2026-09-03; WebSearch",
+          "serp_title_note": "Ambiguous vs npm package name; 2026 editorial titles prefer CLI coding agent / agentic CLI."
+        },
+        {
+          "keyword": "agentic CLI",
+          "volume_signal": "Bing ~84,200 (1.14× current, <1.5×)",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "aimultiple.com and similar use Agentic CLI Tools; same terminal-agent buyer."
+        },
+        {
+          "keyword": "CLI coding agent",
+          "volume_signal": "Bing ~60,600; no MSV",
+          "source": "Bing EN-US proxy 2026-09-03; WebSearch (kilo.ai, agenticoding.ai)",
+          "serp_title_note": "Dominant 2026 comparison phrasing (Claude Code / Codex CLI / OpenCode). Stays on the cli side of the coding-agent fence."
+        },
+        {
+          "keyword": "AI command line",
+          "volume_signal": "no cited MSV; 'tools' suffix historically Bing-capped",
+          "source": "methodology: avoid tools/software inflation",
+          "serp_title_note": "Broader than coding/shell agents."
+        }
+      ],
+      "highest_volume_same_intent": "agentic CLI",
+      "verdict": "OK",
+      "recommended_primary": "AI CLI",
+      "reason": "Agentic CLI is only ~1.14× on Bing and CLI coding agent is lower. Current remains a valid natural query; no ≥2× same-intent winner. Do not collapse into generic AI coding."
+    },
+    {
+      "slug": "code-completion",
+      "current_primary": "Code completion",
+      "candidates": [
+        {
+          "keyword": "Code completion",
+          "volume_signal": "Bing ~363,000; no isolated GKP MSV this pass",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Classic IDE feature query (includes pre-AI IntelliSense). KB is the AI slice of this noun."
+        },
+        {
+          "keyword": "AI code completion",
+          "volume_signal": "Bing ~509,000 (capped); Fonzy long-tail 'AI code completion for JetBrains IDEs' ~750/mo",
+          "source": "Bing EN-US proxy; fonzy.ai SEO playbook",
+          "serp_title_note": "Closer AI-tool phrasing; comparison SERPs often slide into assistants/agents."
+        },
+        {
+          "keyword": "AI coding assistant",
+          "volume_signal": "~18,100/mo (MicroSaaSHQ cluster page)",
+          "source": "microsaashq.com/saas-ideas/ai-coding-assistant-5",
+          "serp_title_note": "Broader than inline completion — chat/agent/scaffold. Fence vs coding agent / IDE."
+        },
+        {
+          "keyword": "GitHub Copilot",
+          "volume_signal": "~550,000/mo (MicroSaaSHQ related); Copilot head term 4.09M US GKP is brand-mixed",
+          "source": "MicroSaaSHQ; ccleaks.com Keyword Planner Aug 2026",
+          "serp_title_note": "Brand, not a generic primary. Do not replace the category keyword."
+        }
+      ],
+      "highest_volume_same_intent": "Code completion",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Code completion",
+      "reason": "Higher-volume neighbors are brand (Copilot) or a wider assistant/agent question. AI code completion is same-intent but Bing-capped, so not a clean ≥2× SWITCH. Keep the precise completion noun."
+    },
+    {
+      "slug": "code-review",
+      "current_primary": "AI code review",
+      "candidates": [
+        {
+          "keyword": "AI code review",
+          "volume_signal": "~13,000/mo heuristic (EarlyTerms); Google Trends +310% mid-2025 to Q1 2026 (IdeaPlan)",
+          "source": "earlyterms.com/term/open-code-review; ideaplan.io AI code review market share 2026",
+          "serp_title_note": "CodeRabbit, LogRocket, Qodo pages and roundups all use AI code review as the category H1."
+        },
+        {
+          "keyword": "AI PR review",
+          "volume_signal": "no isolated MSV; Bing historically capped",
+          "source": "WebSearch SERP",
+          "serp_title_note": "Same workflow (PR/MR review); titles still default to AI code review."
+        },
+        {
+          "keyword": "automated code review",
+          "volume_signal": "no fresh MSV; prior Bing ~35,900 for 'automated code review AI'",
+          "source": "prior Bing (directional only)",
+          "serp_title_note": "Includes classic static-analysis (Sonar) plus AI; slightly broader."
+        },
+        {
+          "keyword": "code review AI",
+          "volume_signal": "no isolated MSV this pass",
+          "source": "WebSearch word-order check",
+          "serp_title_note": "Same intent flip; fewer category titles than AI-first order."
+        }
+      ],
+      "highest_volume_same_intent": "AI code review",
+      "verdict": "OK",
+      "recommended_primary": "AI code review",
+      "reason": "SERP head and cited demand already sit on AI code review. Alternatives are the same job or a wider SAST category without a proven 2× gap."
+    },
+    {
+      "slug": "coding",
+      "current_primary": "AI Coding Agent",
+      "candidates": [
+        {
+          "keyword": "AI coding agent",
+          "volume_signal": "~8,100/mo (TopTrending; also listed as 'ai coding agent' / 'AI coding agents' 8.1K)",
+          "source": "toptrending.now/ai-code-agent and AI Coding Agents Market Report 2026",
+          "serp_title_note": "Vellum, HyScaler, Toolchase 2026 comparisons title AI coding agents (Claude Code, Devin, Codex, Cursor agent)."
+        },
+        {
+          "keyword": "coding agents",
+          "volume_signal": "~9,900/mo (TopTrending); EarlyTerms ~3,900/mo heuristic",
+          "source": "TopTrending market report 2026; earlyterms.com/term/coding-agents",
+          "serp_title_note": "Same category, slightly higher short head. 9.9K/8.1K = 1.22×, under 1.5×."
+        },
+        {
+          "keyword": "ai code agent",
+          "volume_signal": "~8,100/mo",
+          "source": "toptrending.now/ai-code-agent",
+          "serp_title_note": "Same commercial cluster as AI coding agent."
+        },
+        {
+          "keyword": "AI coding",
+          "volume_signal": "materially higher generic (do not use as primary)",
+          "source": "intent fence: coding vs vibe-coding / ide / completion",
+          "serp_title_note": "Umbrella for Copilot, IDEs, vibe tools — not the autonomous repo-agent buyer question."
+        },
+        {
+          "keyword": "AI software engineer",
+          "volume_signal": "not measured as SWITCH (job-title SERP)",
+          "source": "intent check",
+          "serp_title_note": "Mostly hiring/career, not a tool category."
+        }
+      ],
+      "highest_volume_same_intent": "coding agents",
+      "verdict": "OK",
+      "recommended_primary": "AI Coding Agent",
+      "reason": "Current matches the 8.1K commercial cluster and 2026 SERP titles. 'Coding agents' is only ~1.2×. Do not switch to generic AI coding — different buyer than this slug."
+    },
+    {
+      "slug": "git-hosting",
+      "current_primary": "Agent-native Git hosting",
+      "candidates": [
+        {
+          "keyword": "Agent-native Git hosting",
+          "volume_signal": "Bing ~4,280; no public MSV",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "KB coinage. Live articles say Git hosting for AI agents / Git forge for the agentic era (Cursor Origin)."
+        },
+        {
+          "keyword": "code forge",
+          "volume_signal": "Bing ~363,000 (~85× current proxy); no public MSV",
+          "source": "Bing EN-US proxy 2026-09-03; WebSearch volume query",
+          "serp_title_note": "Generic SCM (Forgejo/GitLab/Gitea) plus a CLI product named Forge Code — not specifically agent-native hosting."
+        },
+        {
+          "keyword": "AI git hosting",
+          "volume_signal": "Bing ~509,000 (capped); no MSV",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Vague; not the established category phrase."
+        },
+        {
+          "keyword": "Git forge for AI agents",
+          "volume_signal": "no MSV; SERP-title phrase only",
+          "source": "WebSearch (Eigent, o-mega, Cursor Origin coverage)",
+          "serp_title_note": "Natural 2026 wording for this exact buyer question, but unmeasured volume."
+        }
+      ],
+      "highest_volume_same_intent": "Agent-native Git hosting",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Agent-native Git hosting",
+      "reason": "Code forge / generic git hosting dwarf the current phrase on Bing but answer 'where do humans host git', not 'agent-native forge'. Do not swap a narrow tool keyword for that generic."
+    },
+    {
+      "slug": "ide",
+      "current_primary": "AI IDE",
+      "candidates": [
+        {
+          "keyword": "AI IDE",
+          "volume_signal": "Bing ~60,900; no public MSV for the exact phrase",
+          "source": "Bing EN-US proxy 2026-09-03; WebSearch",
+          "serp_title_note": "Roundups and free-tier lists label Cursor/Windsurf as AI IDE / AI-native IDE."
+        },
+        {
+          "keyword": "agentic IDE",
+          "volume_signal": "Bing ~40,900",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "2026 comparison headline (Cursor vs Windsurf vs Claude Code). Same editor-agent job, lower proxy."
+        },
+        {
+          "keyword": "AI code editor",
+          "volume_signal": "Bing ~509,000 (capped); Cursor AI brand ~99,000/mo US (DailySearchVolume)",
+          "source": "Bing EN-US proxy; dailysearchvolume.com cursor ai",
+          "serp_title_note": "Same surface as IDE; cap plus brand leakage (Cursor). Not a clean ≥2× same-intent MSV."
+        },
+        {
+          "keyword": "AI-powered IDE",
+          "volume_signal": "no isolated MSV",
+          "source": "WebSearch synonym",
+          "serp_title_note": "Adjective form of the current head."
+        }
+      ],
+      "highest_volume_same_intent": "AI IDE",
+      "verdict": "OK",
+      "recommended_primary": "AI IDE",
+      "reason": "Uncapped same-intent alts (agentic IDE) are lower. Capped 'AI code editor' is not trustworthy enough to SWITCH. Stay on the IDE side of the cli / coding-agent / vibe-coding fence."
+    },
+    {
+      "slug": "lip-sync",
+      "current_primary": "AI lip sync",
+      "candidates": [
+        {
+          "keyword": "AI lip sync",
+          "volume_signal": "Bing ~4,270; no cited MSV row",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Used in product copy; keyword tables list the flipped order instead."
+        },
+        {
+          "keyword": "lip sync AI",
+          "volume_signal": "Bing ~48,600 (~11×); Semrush-style ~2,400 (lipsync.video); Navtools Vozo keyword ~8,300",
+          "source": "Bing EN-US proxy 2026-09-03; mtsemru lipsync.video overview; navtools.ai/tool/vozo-ai",
+          "serp_title_note": "Commercial keyword tables and tool SEO use lip sync AI / lipsync AI."
+        },
+        {
+          "keyword": "lipsync AI",
+          "volume_signal": "Semrush-style ~1,900",
+          "source": "lipsync.video organic keyword table",
+          "serp_title_note": "Closed-compound variant of the same query."
+        },
+        {
+          "keyword": "AI lip sync generator",
+          "volume_signal": "no isolated MSV; 'generator/tool' suffix inflates index",
+          "source": "methodology suffix rule",
+          "serp_title_note": "Same job with a vanity suffix."
+        }
+      ],
+      "highest_volume_same_intent": "lip sync AI",
+      "verdict": "SWITCH",
+      "recommended_primary": "lip sync AI",
+      "reason": "Same-intent word-order flip. Bing proxy is ~11× (4.3k vs 48.6k) and Semrush/Navtools rows exist for lip sync AI, not for AI lip sync."
+    },
+    {
+      "slug": "music-generator",
+      "current_primary": "AI Music Generator",
+      "candidates": [
+        {
+          "keyword": "AI music generator",
+          "volume_signal": "Semrush ~60,500 (musicgpt.com / musicgeneratorai.com Jul 2026); RisingTrends topic ~90,500",
+          "source": "semrush.com website overviews Jun–Jul 2026; risingtrends.co music industry trends 2026",
+          "serp_title_note": "Suno, Gemini Lyria, Neume H1s: AI Music Generator / AI song generator. Clear commercial head."
+        },
+        {
+          "keyword": "AI music maker",
+          "volume_signal": "Semrush ~8,100",
+          "source": "musicgpt.com Semrush keyword table Jun 2026",
+          "serp_title_note": "Same intent, ~7× smaller than AI music generator."
+        },
+        {
+          "keyword": "AI song generator",
+          "volume_signal": "no isolated MSV this pass; SERP synonym on Suno/Neume",
+          "source": "WebSearch SERP",
+          "serp_title_note": "Vocal-track slant of the same generator job."
+        },
+        {
+          "keyword": "text to music AI",
+          "volume_signal": "no cited MSV; KB synonym T2M",
+          "source": "KB + WebSearch",
+          "serp_title_note": "Technical/academic framing; consumer titles stay on AI music generator."
+        },
+        {
+          "keyword": "music maker",
+          "volume_signal": "Semrush ~74,000",
+          "source": "musicgpt.com Semrush table",
+          "serp_title_note": "Pre-AI DAW/loop apps. Different buyer. KEEP_INTENT."
+        }
+      ],
+      "highest_volume_same_intent": "AI music generator",
+      "verdict": "OK",
+      "recommended_primary": "AI Music Generator",
+      "reason": "Semrush puts AI music generator at ~60.5k, above maker/song/T2M variants. Do not switch to generic music maker or a research-y text-to-music phrase."
+    },
+    {
+      "slug": "speech-to-text",
+      "current_primary": "Speech-to-Text",
+      "candidates": [
+        {
+          "keyword": "Speech to Text",
+          "volume_signal": "~201,000/mo (MicroSaaSHQ)",
+          "source": "microsaashq.com/saas-ideas/speech-to-text-839",
+          "serp_title_note": "Provider docs (ElevenLabs, Deepgram, AssemblyAI) and benchmarks all use Speech-to-Text / STT."
+        },
+        {
+          "keyword": "convert speech to text",
+          "volume_signal": "~27,100/mo",
+          "source": "MicroSaaSHQ speech-to-text and voice-to-text idea pages",
+          "serp_title_note": "Same intent, long-tail of the head."
+        },
+        {
+          "keyword": "voice to text",
+          "volume_signal": "~110,000/mo cluster (MicroSaaSHQ Voice to Text page)",
+          "source": "microsaashq.com/saas-ideas/voice-to-text-965",
+          "serp_title_note": "Same buyer question (speech→text); lower than Speech to Text 201k."
+        },
+        {
+          "keyword": "AI transcription",
+          "volume_signal": "no isolated MSV this pass; prior Bing ~23,400",
+          "source": "WebSearch SERP (meeting/podcast transcription tools)",
+          "serp_title_note": "Same conversion job; more meeting-notes flavored. Still below the STT head."
+        },
+        {
+          "keyword": "automatic speech recognition",
+          "volume_signal": "no fresh MSV; prior Bing ~6,810",
+          "source": "KB synonym ASR",
+          "serp_title_note": "Engineer/API jargon, not the consumer/SaaS head."
+        }
+      ],
+      "highest_volume_same_intent": "Speech to Text",
+      "verdict": "OK",
+      "recommended_primary": "Speech-to-Text",
+      "reason": "Cited ~201k MSV and vendor titles already use Speech-to-Text. Voice-to-text and transcription are same-intent but smaller. Do not jump to note-taker or audio-translator queries."
+    },
+    {
+      "slug": "text-to-speech",
+      "current_primary": "AI Text-to-Speech",
+      "candidates": [
+        {
+          "keyword": "AI Text-to-Speech",
+          "volume_signal": "Bing ~10,700; no isolated MSV",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "API/comparison articles use Text-to-Speech / TTS; AI prefix is optional."
+        },
+        {
+          "keyword": "text to speech",
+          "volume_signal": "Semrush ~246,000 (text2speech.org Jul 2026); Inpages ~286,000+",
+          "source": "semrush.downloader.la text2speech.org; inpages.ai ElevenLabs vs Murf",
+          "serp_title_note": "True head term. SERP mixes AI vendors (ElevenLabs #1–4) with OS/accessibility TTS (Google, Windows, NaturalReader)."
+        },
+        {
+          "keyword": "text to speech AI",
+          "volume_signal": "Bing ~10,800 (≈ current)",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "AI-flavored flip of the current phrase; no volume win."
+        },
+        {
+          "keyword": "AI voice generator",
+          "volume_signal": "Inpages ~109,500–110,000; Kling competitor table ~91,000",
+          "source": "inpages.ai ElevenLabs vs Murf / vs OpenAI; seeto.ai kling analysis",
+          "serp_title_note": "Often the same TTS SERP, but also cloning/hub 'make a voice' intent. Fence: tts vs voice vs voice-cloning."
+        },
+        {
+          "keyword": "TTS",
+          "volume_signal": "acronym; not used as primary",
+          "source": "KB synonym",
+          "serp_title_note": "Ambiguous abbreviation."
+        }
+      ],
+      "highest_volume_same_intent": "text to speech",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Text-to-Speech",
+      "reason": "text to speech (~246k–286k) and AI voice generator (~110k) are larger, but the former mixes OS/accessibility TTS and the latter crosses the voice / voice-cloning fence. Keep the AI TTS primary for this spoke."
+    },
+    {
+      "slug": "vibe-coding",
+      "current_primary": "Vibe coding",
+      "candidates": [
+        {
+          "keyword": "vibe coding",
+          "volume_signal": "~110,000 US/mo (DataForSEO/GKP via vibecoding.app; also developereducators.com); peak ~165,000 Mar 2026; TopTrending lists 550,000 (treat as outlier/global)",
+          "source": "vibecoding.app/blog/state-of-vibe-coding-2026; developereducators.com; toptrending.now/vibe-coding",
+          "serp_title_note": "Wikipedia, Cloudflare, IBM, Forbes all use the exact coinage. Collins WOTY 2025."
+        },
+        {
+          "keyword": "what is vibe coding",
+          "volume_signal": "~60,500/mo",
+          "source": "vibecoding.app state-of 2026 table",
+          "serp_title_note": "Definitional long-tail of the same term."
+        },
+        {
+          "keyword": "vibe coding tools",
+          "volume_signal": "~3,600/mo",
+          "source": "vibecoding.app; developereducators.com",
+          "serp_title_note": "Directory intent; tools suffix, not a replacement head."
+        },
+        {
+          "keyword": "AI coding",
+          "volume_signal": "higher generic umbrella",
+          "source": "intent fence vs coding / ide / completion",
+          "serp_title_note": "Professional AI-assisted engineering, not the vibe-coding buyer question. Do not SWITCH."
+        }
+      ],
+      "highest_volume_same_intent": "vibe coding",
+      "verdict": "OK",
+      "recommended_primary": "Vibe coding",
+      "reason": "The coined phrase is the head (~110k US). Adjacent 'what is' / 'tools' queries are smaller. Switching to AI coding would violate the coding vs vibe-coding fence."
+    },
+    {
+      "slug": "video-translator",
+      "current_primary": "AI Video Translation",
+      "candidates": [
+        {
+          "keyword": "AI Video Translation",
+          "volume_signal": "Bing ~509,000 (capped); no MSV row in tool keyword tables",
+          "source": "Bing EN-US proxy 2026-09-03",
+          "serp_title_note": "Capability wording; product H1s prefer translator."
+        },
+        {
+          "keyword": "AI video translator",
+          "volume_signal": "Navtools ~4,100; Bing ~509,000 (capped)",
+          "source": "navtools.ai/tool/vozo-ai; Bing EN-US proxy",
+          "serp_title_note": "HeyGen and Rask title AI Video Translator. Category directories use the same noun."
+        },
+        {
+          "keyword": "video translator",
+          "volume_signal": "Navtools ~15,400",
+          "source": "navtools.ai/tool/vozo-ai",
+          "serp_title_note": "Same job, sometimes includes non-AI localization shops. Still the commercial head noun."
+        },
+        {
+          "keyword": "AI video dubbing",
+          "volume_signal": "no isolated web MSV this pass (Play ASO tracks 'ai dubbing')",
+          "source": "WebSearch SERP; applyra ASO audit",
+          "serp_title_note": "Dubbing-only slice of the full translate+lipsync+subs pipeline. Close, not a drop-in replacement."
+        }
+      ],
+      "highest_volume_same_intent": "video translator",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI Video Translator",
+      "reason": "Vendors and keyword tables use the tool noun (video translator / AI video translator ~4.1k–15.4k), not 'AI Video Translation'. Keep the AI prefix so we do not collapse into generic localization services."
+    },
+    {
+      "slug": "voice",
+      "current_primary": "AI Voice",
+      "candidates": [
+        {
+          "keyword": "AI voice",
+          "volume_signal": "~53,000 (Systemaic); Navtools Voice.ai ~45,400",
+          "source": "systemaic.com/teardowns/voice; navtools.ai/tool/voice-ai",
+          "serp_title_note": "Hub-level phrase; SERP is flooded by generators, changers, and ElevenLabs."
+        },
+        {
+          "keyword": "voice AI",
+          "volume_signal": "~64,000 (Systemaic); Navtools ~67,700",
+          "source": "Systemaic; navtools.ai/tool/voice-ai",
+          "serp_title_note": "Industry order (voice AI agents/platforms). 64k/53k = 1.21×, under 1.5×."
+        },
+        {
+          "keyword": "AI voice generator",
+          "volume_signal": "~109,500–110,000 (Inpages)",
+          "source": "inpages.ai ElevenLabs vs Murf",
+          "serp_title_note": "TTS spoke, not the territory hub. Fence: voice vs text-to-speech vs voice-cloning."
+        },
+        {
+          "keyword": "AI voice tools",
+          "volume_signal": "Bing historically capped; tools suffix",
+          "source": "methodology suffix rule",
+          "serp_title_note": "Index inflation, not a better head."
+        }
+      ],
+      "highest_volume_same_intent": "voice AI",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Voice",
+      "reason": "Voice AI is only ~1.2×. Larger terms (AI voice generator ~110k, voice changer ~212k) belong to TTS/changer spokes. Keep the hub primary."
+    },
+    {
+      "slug": "voice-changer",
+      "current_primary": "AI Voice Changer",
+      "candidates": [
+        {
+          "keyword": "AI voice changer",
+          "volume_signal": "Similarweb/Oryndex ~28,780 (Murf organic keyword)",
+          "source": "oryndex.co/tools/murf-ai/market-signals (Similarweb)",
+          "serp_title_note": "Voicemod, Voice.ai, EaseUS, ElevenLabs voice-changer pages all use AI Voice Changer / Real-Time AI Voice Changer."
+        },
+        {
+          "keyword": "voice changer",
+          "volume_signal": "~212,000–229,000 (Systemaic 212k; Navtools/Toolbit ~229k; Oryndex 223k)",
+          "source": "Systemaic; navtools Voice.ai & Voicemod; Oryndex Murf; Ahrefs US ~119k on Capgo blog",
+          "serp_title_note": "Includes non-AI pitch-shift/gaming soundboard demand. Same noun, wider intent."
+        },
+        {
+          "keyword": "voice changer AI",
+          "volume_signal": "no isolated MSV this pass",
+          "source": "WebSearch word-order",
+          "serp_title_note": "Same AI product SERP as AI-first order."
+        },
+        {
+          "keyword": "real-time voice changer",
+          "volume_signal": "no cited MSV; prior Bing ~732",
+          "source": "WebSearch SERP (Voicemod/Echo)",
+          "serp_title_note": "Latency modifier of the same real-time S2S job."
+        },
+        {
+          "keyword": "voice modifier AI",
+          "volume_signal": "not a commercial head (avoid)",
+          "source": "intent/SERP check",
+          "serp_title_note": "Not what product pages or keyword tables use. Do not SWITCH here."
+        }
+      ],
+      "highest_volume_same_intent": "AI voice changer",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Voice Changer",
+      "reason": "Bare 'voice changer' is ~8× larger (~212k–229k) but includes non-AI gaming modulators. The AI-specific head with cited MSV is AI voice changer (~28.8k). Stay off voice-cloning."
+    },
+    {
+      "slug": "voice-cloning",
+      "current_primary": "AI Voice Cloning",
+      "candidates": [
+        {
+          "keyword": "AI voice cloning",
+          "volume_signal": "~22,200/mo (MicroSaaSHQ); Inpages PlayHT row ~6,600 (likely geo slice)",
+          "source": "microsaashq.com/keyword-research/ai-voice-cloning; inpages.ai ElevenLabs vs PlayHT",
+          "serp_title_note": "Legal, vendor, and stats pages title AI Voice Cloning. Clear spoke head."
+        },
+        {
+          "keyword": "voice cloning",
+          "volume_signal": "Inpages ElevenLabs ~2,982",
+          "source": "inpages.ai ElevenLabs marketing-strategy breakdown",
+          "serp_title_note": "Same intent without AI; smaller than the AI-prefixed commercial query."
+        },
+        {
+          "keyword": "voice clone",
+          "volume_signal": "Inpages PlayHT ~2,300–3,800",
+          "source": "inpages.ai ElevenLabs vs PlayHT",
+          "serp_title_note": "Shorter synonym; app-store 'voice clone' listings, not a 2× web head."
+        },
+        {
+          "keyword": "voice clone AI",
+          "volume_signal": "no cited MSV this pass",
+          "source": "WebSearch volume query",
+          "serp_title_note": "Word-order variant; not the tabled head vs AI voice cloning 22.2k."
+        },
+        {
+          "keyword": "AI voice generator",
+          "volume_signal": "~109,500–110,000",
+          "source": "inpages.ai",
+          "serp_title_note": "TTS/library voices more than clone-my-voice. Fence vs text-to-speech / voice hub."
+        }
+      ],
+      "highest_volume_same_intent": "AI voice cloning",
+      "verdict": "OK",
+      "recommended_primary": "AI Voice Cloning",
+      "reason": "Cited ~22.2k MSV and SERP titles already match. Shorter clone phrasings are smaller; AI voice generator is a different spoke."
+    }
+  ]
+}

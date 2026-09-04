@@ -8,7 +8,7 @@
 
 **Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 [`#app-builder-tools`](../../keywords/alignify-keywords-tools.md#app-builder-tools)
 
-**站内相邻**：[vibe-coding.md](vibe-coding.md) · [coding.md](coding.md) · [ide.md](ide.md) · [ui-design.md](../design/ui-design.md) · [website-builder/website-builder.md](../website-builder/website-builder.md)
+**站内相邻**：[vibe-coding.md](vibe-coding.md) · [coding.md](coding.md) · [ide.md](ide.md) · [backend-as-a-service.md](../infrastructure/backend-as-a-service.md) · [ui-design.md](../design/ui-design.md) · [website-builder/website-builder.md](../website-builder/website-builder.md)
 
 ---
 
@@ -143,4 +143,4 @@ Type 与 URL → **§形态谱系**、**§外链索引**。
 
 **站内**
 
-- [vibe-coding.md](vibe-coding.md) · [coding.md](coding.md) · [ide.md](ide.md) · [ui-design.md](../design/ui-design.md) · [website-builder/website-builder.md](../website-builder/website-builder.md)
+- [vibe-coding.md](vibe-coding.md) · [coding.md](coding.md) · [ide.md](ide.md) · [backend-as-a-service.md](../infrastructure/backend-as-a-service.md) · [ui-design.md](../design/ui-design.md) · [website-builder/website-builder.md](../website-builder/website-builder.md)

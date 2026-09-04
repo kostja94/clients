@@ -173,7 +173,7 @@ def parse_count(html: str) -> int | None:
     return None
 
 
-def bing_count(query: str, retries: int = 3) -> dict:
+def bing_count(query: str, retries: int = 2) -> dict:
     url = "https://www.bing.com/search?q=" + urllib.parse.quote(query)
     last_err = None
     for attempt in range(retries):
@@ -181,14 +181,18 @@ def bing_count(query: str, retries: int = 3) -> dict:
             req = urllib.request.Request(
                 url, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"}
             )
-            with urllib.request.urlopen(req, timeout=20) as resp:
+            with urllib.request.urlopen(req, timeout=25) as resp:
                 html = resp.read().decode("utf-8", errors="replace")
             count = parse_count(html)
             return {"query": query, "approx_results": count, "status": "ok" if count else "no_count"}
         except Exception as e:
             last_err = str(e)
-            time.sleep(1.5 * (attempt + 1))
+            time.sleep(1.0 * (attempt + 1))
     return {"query": query, "approx_results": None, "status": f"error: {last_err}"}
+
+
+def log(msg: str) -> None:
+    print(msg, flush=True)
 
 
 def verdict(primary_count: int | None, alt_counts: list[tuple[str, int | None]]) -> tuple[str, str | None, str]:
@@ -296,15 +300,15 @@ def main():
             continue
 
         primary_q, alts = km
-        print(f"[{i+1}/{len(batch)}] {slug}: primary='{primary_q}'")
+        log(f"[{i+1}/{len(batch)}] {slug}: primary='{primary_q}'")
 
         primary_res = bing_count(primary_q)
-        time.sleep(0.8)
+        time.sleep(0.4)
         alt_results = []
         for alt in alts:
             r = bing_count(alt)
             alt_results.append(r)
-            time.sleep(0.8)
+            time.sleep(0.4)
 
         alt_pairs = [(r["query"], r["approx_results"]) for r in alt_results]
         v, suggested, reason = verdict(primary_res["approx_results"], alt_pairs)
@@ -337,7 +341,18 @@ def main():
                     "reason": reason,
                 }
             )
-        print(f"  -> {v}: {reason}")
+        log(f"  -> {v}: {reason}")
+
+        # incremental save
+        OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        partial = {
+            "batch": "batch6_misc",
+            "partial": True,
+            "completed": i + 1,
+            "total": len(batch),
+            "results": results,
+        }
+        OUT_PATH.write_text(json.dumps(partial, indent=2, ensure_ascii=False), encoding="utf-8")
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     output = {
@@ -359,12 +374,12 @@ def main():
         "results": results,
     }
     OUT_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
-    print("\nWrote", OUT_PATH)
-    print(json.dumps(summary, indent=2))
+    log(f"\nWrote {OUT_PATH}")
+    log(json.dumps(summary, indent=2))
     if switch_items:
-        print("\nSWITCH items:")
+        log("\nSWITCH items:")
         for s in switch_items:
-            print(f"  - {s['slug']}: {s['suggested_primary']}")
+            log(f"  - {s['slug']}: {s['suggested_primary']}")
 
 
 if __name__ == "__main__":

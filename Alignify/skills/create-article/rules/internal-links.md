@@ -4,7 +4,7 @@
 > **站点**：[alignify.co](https://alignify.co)  
 > **部署仓正文**：`alignify-by-kostja/content/**/*.md`（Markdown + frontmatter + block 标记）  
 > **Last updated**: 2026-08-27  
-> **说明**：Alignify 所有**站内内链**与**站外外链**规则（含 Marketing M1–M11、FAQ、R1–R7、UTM、Nofollow）、编辑方法论、Tools/SEO 拓扑、邻居表与验收标准**仅在本文件维护**。存量优化**执行流程**见 [`optimize-internal-links/workflow.md`](../../optimize-internal-links/workflow.md)。
+> **说明**：Alignify 所有**站内内链**与**站外外链**规则（含 Marketing M1–M11、FAQ、R1–R7、UTM、Nofollow）、编辑方法论、Tools/SEO 拓扑、邻居表与验收标准**仅在本文件维护**。存量优化**执行流程**见 [`audit-optimize/workflow.md`](../../audit-optimize/workflow.md)。
 
 ---
 
@@ -29,7 +29,7 @@
 | `seo-guide` | [Part 4](#part-4-seo-频道内链) |
 | `insights-analysis` | [Part 5](#part-5-insights--其他频道) |
 
-Part 6–7 归属 [`optimize-internal-links`](../../optimize-internal-links/SKILL.md)，**非** create-article Step 07。
+Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** create-article Step 07。
 
 ---
 
@@ -181,7 +181,7 @@ Part 6–7 归属 [`optimize-internal-links`](../../optimize-internal-links/SKIL
 
 ## 七、单篇 / 批量工作流
 
-> **执行 SSOT**（审计命令、单页 loop、快照刷新）：[`optimize-internal-links/workflow.md`](../../optimize-internal-links/workflow.md)  
+> **执行 SSOT**（审计命令、单页 loop、快照刷新）：[`audit-optimize/workflow.md`](../../audit-optimize/workflow.md)  
 > 本节 Part 1 §一–§六 为**编辑原则**；不在此重复维护操作清单与脚本命令。
 
 ---
@@ -222,7 +222,7 @@ Part 6–7 归属 [`optimize-internal-links`](../../optimize-internal-links/SKIL
 
 ## 十一、批量推进
 
-见 [`optimize-internal-links/workflow.md`](../../optimize-internal-links/workflow.md) §1 baseline 与 [`reverse-links.md`](../../optimize-internal-links/reverse-links.md)。邻居表：本文附录 B。
+见 [`audit-optimize/workflow.md`](../../audit-optimize/workflow.md) §1 baseline 与 [`reverse-links.md`](../../audit-optimize/reverse-links.md)。邻居表：本文附录 B。
 
 ---
 
@@ -487,7 +487,7 @@ Hub 合计 **106** slug（`tools-pages-config` 100 + Blog 中 `category` 映射�
 | **P2** | 中流量 ~30 | 附录 B 已列其余 slug + territory-map B 档（如 `note-taker`、`web-scraping` 邻居簇、`image-generator` 媒体链等） |
 | **P3** | 长尾 | 未列入 P0–P2 的剩余 `/tools` slug；清理 R4 / 机械指路链 |
 
-执行 Skill：[`optimize-internal-links`](../../optimize-internal-links/SKILL.md)；批次脚本：`batch-internal-links-wave.py`（`wave0_blog` / `p0` / `p1` / `p2` / `p3`）。
+执行 Skill：[`audit-optimize`](../../audit-optimize/SKILL.md)；批次脚本：`batch-internal-links-wave.py`（`wave0_blog` / `p0` / `p1` / `p2` / `p3`）。
 
 #### 1.5.6 审计脚本与执行
 
@@ -2435,7 +2435,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 日期 | 说明 |
 |------|------|
-| 2026-08-27 | **SSOT 合并**：Marketing M1–M11 迁入 Part 4.5；FAQ **允许**内链、**计入正文**、R4 全文 1 次；`marketing-internal-links.md` / `rules-quickref.md` 改为跳转 stub；Part 1 §七–§十一 执行流程指向 `optimize-internal-links/workflow.md` |
+| 2026-08-27 | **SSOT 合并**：Marketing M1–M11 迁入 Part 4.5；FAQ **允许**内链、**计入正文**、R4 全文 1 次；`marketing-internal-links.md` / `rules-quickref.md` 改为跳转 stub；Part 1 §七–§十一 执行流程指向 `audit-optimize/workflow.md` |
 | 2026-06-23 | 附录 B：新增 **`multi-agent`**（`/blog/`）；`agent-skills`、`agent-for-desktop`、`openclaw-alternatives` 邻居增 multi-agent。附录 C：新增 **§blog-multi-agent**（正文各 6 + FAQ 各 2）。知识块 `knowledge/tools/agent/multi-agent.md` + 部署仓 `content/blog/{en|zh}/multi-agent.md`。 |
 | 2026-06-23 | 附录 B/C：新增 **`agent-memory`**（`/blog/`）；`agent-skills`、`memory` 邻居增 agent-memory。
 | 2026-06-23 | 附录 B：新增 **`agent-sandbox`**（`/blog/`）；`agent-skills`、`agent-for-desktop` 邻居增 agent-sandbox。附录 C：新增 **§blog-agent-sandbox**（正文各 5 + FAQ 各 3，共 8 distinct href）。规范：`create-tools-article` / `section-faq` 统一允许 Tools/Blog JSON FAQ 内链。 |
@@ -2935,8 +2935,8 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 # Part 4.5 · Marketing 频道内链（M1–M11）
 
-> **逐页执行表**：[`skills/optimize-internal-links/references/site-structure-internal-links.md`](../../../skills/optimize-internal-links/references/site-structure-internal-links.md) **§七** · [`marketing-internal-links-backlog.md`](../../../skills/optimize-internal-links/references/marketing-internal-links-backlog.md)  
-> **全站快照**：[`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md)  
+> **逐页执行表**：[`skills/audit-optimize/references/site-structure-internal-links.md`](../../../skills/audit-optimize/references/site-structure-internal-links.md) **§七** · [`marketing-internal-links-backlog.md`](../../../skills/audit-optimize/references/marketing-internal-links-backlog.md)  
+> **全站快照**：[`../../audit-optimize/references/site-structure-internal-links.md`](../../audit-optimize/references/site-structure-internal-links.md)  
 > **Last updated**：2026-08-27
 
 > **代号消歧**：本节 **M1–M11** = Marketing **内链**规则；[`copy-quality.md`](./copy-quality.md) Part 0.2 的 **Copy mode M1/M2/M3** = 成稿五维模式。**二者无关**。
@@ -3063,11 +3063,11 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 ## 七、新建 / 改版工作流
 
-1. 查 [`site-structure-internal-links.md` §7.3–7.4](../../../skills/optimize-internal-links/references/site-structure-internal-links.md) 或 [`marketing-internal-links-backlog.md`](../../../skills/optimize-internal-links/references/marketing-internal-links-backlog.md) 该 slug 的「应链向 / 应被链自」  
+1. 查 [`site-structure-internal-links.md` §7.3–7.4](../../../skills/audit-optimize/references/site-structure-internal-links.md) 或 [`marketing-internal-links-backlog.md`](../../../skills/audit-optimize/references/marketing-internal-links-backlog.md) 该 slug 的「应链向 / 应被链自」  
 2. 写 **Internal Link Plan** 表（见 [`07-internal-links.md`](../07-internal-links.md)）— 锚文本 / 目标 / 段落 / 点击意图  
 3. 落稿：先写无链正文，再按 M7 节奏插入  
 4. 自检：M1–M11 + 三问  
-5. 刷新 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md)
+5. 刷新 [`../../audit-optimize/references/site-structure-internal-links.md`](../../audit-optimize/references/site-structure-internal-links.md)
 
 ---
 
@@ -3281,8 +3281,8 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 # Part 6 · 创建与存量优化工作流
 
-> **执行 SSOT**：[`../../optimize-internal-links/workflow.md`](../../optimize-internal-links/workflow.md) · [`../../optimize-internal-links/SKILL.md`](../../optimize-internal-links/SKILL.md)  
-> **全站快照**：[`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md)  
+> **执行 SSOT**：[`../../audit-optimize/workflow.md`](../../audit-optimize/workflow.md) · [`../../audit-optimize/SKILL.md`](../../audit-optimize/SKILL.md)  
+> **全站快照**：[`../../audit-optimize/references/site-structure-internal-links.md`](../../audit-optimize/references/site-structure-internal-links.md)  
 > **新文 Step 7**：[`../07-internal-links.md`](../07-internal-links.md)
 
 验收（部署仓）：`audit-tools-internal-links.py` · `verify:content-json` · `build`。存量修复编辑模式见任务 Brief（本 skill 不预设 R-LINK-ONLY）。

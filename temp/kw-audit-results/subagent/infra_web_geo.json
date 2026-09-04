@@ -1,0 +1,580 @@
+{
+  "batch": "infra_web_geo",
+  "audit_date": "2026-09-03",
+  "methodology": "WebSearch phrase SERP titles (method B) + quoted monthly search volume / keyword volume lookups. Volumes are directional proxies, not exact MSV.",
+  "slug_count": 14,
+  "verdict_summary": {
+    "OK": 4,
+    "SWITCH": 5,
+    "KEEP_INTENT": 5,
+    "AMBIGUOUS": 0
+  },
+  "results": [
+    {
+      "slug": "ai-traffic-and-citation-sources",
+      "current_primary": "AI search citation sources",
+      "candidates": [
+        {
+          "keyword": "AI search citation sources",
+          "volume_signal": "no published MSV; SERP is how-engines-choose-sources research, not a category page",
+          "source": "WebSearch phrase SERP (Machine Relations, Surfer, Searchless Journal)",
+          "serp_title_note": "Titles are 'AI Citations: How Answer Engines Select Sources' / 'How AI Search Engines Choose Which Sources to Cite' — not a product-category head term."
+        },
+        {
+          "keyword": "AI citations",
+          "volume_signal": "no exact MSV; high SERP density of GEO how-to playbooks",
+          "source": "WebSearch \"AI citations\" monthly search volume",
+          "serp_title_note": "Buyer is 'how do I get cited', not 'which platforms/sources dominate AI answers'."
+        },
+        {
+          "keyword": "AI referral traffic",
+          "volume_signal": "no numeric MSV; Semrush has a dedicated commercial guide — stronger query than current",
+          "source": "WebSearch phrase SERP (Semrush blog 'How to Track, Measure, and Boost AI Referral Traffic')",
+          "serp_title_note": "Analytics/GA4 tracking intent (clicks from ChatGPT/Perplexity), not citation-source landscape."
+        },
+        {
+          "keyword": "ChatGPT citations",
+          "volume_signal": "no keyword MSV; Similarweb reports ChatGPT web-citation rate 6.8% of answers (May 2026) — usage stat, not query volume",
+          "source": "Keywords Everywhere ChatGPT Updates 2026 / Similarweb",
+          "serp_title_note": "Engine-specific; too narrow vs this slug's multi-platform traffic + source-spectrum job."
+        },
+        {
+          "keyword": "AI search traffic",
+          "volume_signal": "no published MSV; overlaps AI referral + Gen AI tracker traffic",
+          "source": "WebSearch \"AI referral traffic\" monthly search volume",
+          "serp_title_note": "Traffic-channel query; misses citation-domain analysis that is this KB's other half."
+        }
+      ],
+      "highest_volume_same_intent": "AI search citation sources",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI search citation sources",
+      "reason": "No published MSV for the current long-tail. Higher-visibility neighbors (AI referral traffic, AI citations) serve different buyers — GA4 click tracking vs how-to-get-cited GEO — so they must not replace this slug's platform-traffic + citation-source landscape primary."
+    },
+    {
+      "slug": "ai-training-data",
+      "current_primary": "AI Training Data Platform",
+      "candidates": [
+        {
+          "keyword": "AI Training Data Platform",
+          "volume_signal": "no published MSV; vendor homepages use the exact phrase",
+          "source": "WebSearch phrase SERP (Defined.ai, Shaip, LXT, Welo Data)",
+          "serp_title_note": "Titles: 'AI Training Data Platform for Enterprise AI' (Defined.ai), 'Top AI Training Data Platform' (Shaip) — natural B2B category query."
+        },
+        {
+          "keyword": "AI training data",
+          "volume_signal": "no exact MSV in snippets; shorter same-intent head",
+          "source": "WebSearch \"AI training data\" monthly search volume keyword",
+          "serp_title_note": "Same vendor cluster; slightly broader (datasets + services, not only platforms)."
+        },
+        {
+          "keyword": "data labeling platform",
+          "volume_signal": "brand proxies: Labelbox 5,400; Encord ~6,810–22,000 branded; Label Studio 15,300 branded",
+          "source": "Semrush labelbox.com organic keywords (Apr 2026); navtools.ai / TechList.ai brand keyword tables",
+          "serp_title_note": "Self-serve labeling MLOps (Labelbox/Encord) — Type II in the KB, not the full training-data lab + licensed marketplace + synthetic stack."
+        },
+        {
+          "keyword": "data annotation",
+          "volume_signal": "436,800 (keyword traffic listed on Encord tool page)",
+          "source": "navtools.ai/tool/encord Top Keywords table",
+          "serp_title_note": "Huge generic (CV boxes, transcription, NLP). Different buyer than LLM/RLHF training-data procurement."
+        },
+        {
+          "keyword": "AI training data infrastructure",
+          "volume_signal": "no published MSV",
+          "source": "KB synonym; WebSearch did not return keyword-tool figures",
+          "serp_title_note": "Infrastructure wording; titles prefer 'platform' / 'training data'."
+        }
+      ],
+      "highest_volume_same_intent": "AI Training Data Platform",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Training Data Platform",
+      "reason": "'data annotation' (~436.8K) dwarfs the current phrase but is a wider labeling category (especially computer vision). SERP titles for the current primary already match enterprise training-data vendors, so keep it; do not steal volume from a different buyer."
+    },
+    {
+      "slug": "ai-visibility",
+      "current_primary": "AI Visibility",
+      "candidates": [
+        {
+          "keyword": "AI Visibility",
+          "volume_signal": "no exact-match MSV; category name in titles (Frase, Conductor)",
+          "source": "WebSearch phrase SERP; WebPossible SE Ranking US mid-2026",
+          "serp_title_note": "Guides titled 'What Is AI Visibility?' — this is the natural category query for mention/citation monitoring."
+        },
+        {
+          "keyword": "AI visibility tools",
+          "volume_signal": "590 US monthly (SE Ranking, mid-2026); CPC $12.66",
+          "source": "webpossible.com/ai-search-demand-report (SE Ranking US)",
+          "serp_title_note": "Product-list intent. 'tools' suffix inflates commercial SERPs; methodology treats this as suffix inflation vs the category head."
+        },
+        {
+          "keyword": "AI visibility platform",
+          "volume_signal": "590 US monthly; CPC $13.66",
+          "source": "WebPossible SE Ranking US mid-2026",
+          "serp_title_note": "Same cluster as tools; buyer-intent CPC is high."
+        },
+        {
+          "keyword": "AI search visibility",
+          "volume_signal": "390 US monthly; CPC $16.18 (highest CPC in that report's visibility cluster)",
+          "source": "WebPossible SE Ranking US mid-2026",
+          "serp_title_note": "Same monitoring intent; lower volume than 'AI visibility tools'."
+        },
+        {
+          "keyword": "AI search monitoring",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch \"AI search monitoring\" monthly search volume",
+          "serp_title_note": "Used in tool roundups; not the SERP head vs 'AI visibility'."
+        },
+        {
+          "keyword": "GEO tracking",
+          "volume_signal": "no usable MSV; geography/GPS pollution",
+          "source": "WebSearch \"GEO tracking\" monthly search volume",
+          "serp_title_note": "Ambiguous with location tracking; not a clean AI-visibility query."
+        }
+      ],
+      "highest_volume_same_intent": "AI Visibility",
+      "verdict": "OK",
+      "recommended_primary": "AI Visibility",
+      "reason": "US SE Ranking gives 390–590 to 'AI search visibility' / 'AI visibility tools', which is not ≥2× a category head and the 'tools' suffix is the classic volume inflator. SERP titles already treat 'AI Visibility' as the name of the monitoring category this KB covers."
+    },
+    {
+      "slug": "api",
+      "current_primary": "Unified AI API Platform",
+      "candidates": [
+        {
+          "keyword": "Unified AI API Platform",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch \"unified AI API\" monthly search volume; phrase SERP",
+          "serp_title_note": "Almost no exact-match titles. Roundups rewrite it as 'Unified AI API Gateways'."
+        },
+        {
+          "keyword": "AI gateway",
+          "volume_signal": "no exact US MSV in Ahrefs snippets; Seeklab lists it as a High-priority category page for this product type",
+          "source": "WebSearch keyword overview \"AI gateway\"; seeklab.io AI-gateway SEO roadmap; 2026 comparison SERP",
+          "serp_title_note": "Dominant 2026 title pattern: 'Best Unified AI API Gateways', 'AI Gateway Pricing Comparison', 'Vercel AI Gateway vs OpenRouter vs LiteLLM vs Portkey'."
+        },
+        {
+          "keyword": "LLM gateway",
+          "volume_signal": "7,400 (Toolify top keyword for llmgateway.io, CPC $8.89)",
+          "source": "toolify.ai/tool/llm-gateway/ Top Keywords",
+          "serp_title_note": "Product/category overlap with AI gateway; slightly more LLM-only than multimodal unified API."
+        },
+        {
+          "keyword": "unified LLM API",
+          "volume_signal": "no published MSV; OpenRouter self-describes as 'unified LLM API'",
+          "source": "WebSearch \"unified LLM API\" keyword volume; OpenRouter/TechFlow coverage",
+          "serp_title_note": "Aggregator wording; titles still prefer 'gateway' in comparison content."
+        },
+        {
+          "keyword": "LLM API aggregator",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch \"LLM API\" aggregator monthly search volume",
+          "serp_title_note": "Used descriptively for OpenRouter; not the SERP head vs gateway."
+        }
+      ],
+      "highest_volume_same_intent": "AI gateway",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI Gateway",
+      "reason": "Current 'Unified AI API Platform' is a constructed phrase with no MSV and almost no exact-match titles. 2026 SERPs and vendor comparisons standardize on 'AI Gateway' (OpenRouter, LiteLLM, Portkey, Cloudflare, Vercel); Toolify also reports 7.4K for the near-synonym 'llm gateway'."
+    },
+    {
+      "slug": "authentication",
+      "current_primary": "Authentication",
+      "candidates": [
+        {
+          "keyword": "Authentication",
+          "volume_signal": "head-term; Bing index proxy ~354,000 (prior batch); product SERP is Auth0/Clerk login-for-your-app",
+          "source": "WebSearch phrase SERP (Auth0, Clerk comparisons); prior Bing proxy in batch6_misc_results.json as secondary",
+          "serp_title_note": "Titles: 'Auth0 vs Clerk: Modern Authentication…', Auth0 homepage 'User authentication'. English retrieval head for app login."
+        },
+        {
+          "keyword": "CIAM",
+          "volume_signal": "DE ~880 for 'CIAM'; related 'customer identity management' DE 50; Bing proxy ~52,200 (prior batch)",
+          "source": "performance-suite.io keyword-db de-de/ciam; prior Bing proxy",
+          "serp_title_note": "Industry acronym for customer IAM. Same product family (Auth0/Clerk) but fewer searches than 'authentication'."
+        },
+        {
+          "keyword": "customer identity and access management",
+          "volume_signal": "low; DE 'customer identity management' 50",
+          "source": "performance-suite.io CIAM keyword table",
+          "serp_title_note": "Long-form CIAM; not the developer query for 'how do users log into my app'."
+        },
+        {
+          "keyword": "identity and access management",
+          "volume_signal": "Keycloak branded 8,100/mo; ChatGPT prompt 'best IAM tools' modeled ~200/mo; Bing proxy ~10,800 (prior batch)",
+          "source": "treendly.com/trend/Keycloak; Keywords Everywhere AI Brand Tracker; prior Bing proxy",
+          "serp_title_note": "Okta/Ping/SailPoint/CyberArk enterprise IAM — workforce IdP, not CIAM/app auth. Different buyer."
+        },
+        {
+          "keyword": "user authentication",
+          "volume_signal": "no new MSV; Auth0 uses this on the homepage",
+          "source": "auth0.com SERP",
+          "serp_title_note": "Same intent, slightly more specific; not shown to be ≥2× 'authentication'."
+        }
+      ],
+      "highest_volume_same_intent": "Authentication",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Authentication",
+      "reason": "IAM / identity and access management is a different buyer (workforce IdP vs app login/CIAM). CIAM is the right industry label but lower volume. Keep Authentication as the English head for Auth0/Clerk/Logto-style app identity."
+    },
+    {
+      "slug": "geo",
+      "current_primary": "Generative Engine Optimization",
+      "candidates": [
+        {
+          "keyword": "Generative Engine Optimization",
+          "volume_signal": "22,200 global monthly (Ubersuggest via Geogen, retrieved Aug 2026); grew 9,900→22,200 (+124%) over 13 months; TopTrending.now 22,200 / KD 57",
+          "source": "Geogen LinkedIn (Ubersuggest, Aug 1); toptrending.now/generative-engine-optimization",
+          "serp_title_note": "HubSpot, Princeton-paper citations, and 2026 playbooks all title the category 'Generative Engine Optimization (GEO)'."
+        },
+        {
+          "keyword": "GEO",
+          "volume_signal": "acronym is contested with geography; 'geo seo' 2,400; 'geo optimization' ~1,000–1,300 US (Google Ads, Jun 2025–May 2026)",
+          "source": "myagenticseo.com GEO guide (Google Ads US)",
+          "serp_title_note": "Bare 'GEO' still collides with local/geo SEO; full phrase disambiguates."
+        },
+        {
+          "keyword": "AI SEO",
+          "volume_signal": "33,100 global (Ubersuggest/Geogen, flat YoY); 6,600 US (SE Ranking, mid-2026)",
+          "source": "Geogen Ubersuggest global; WebPossible SE Ranking US",
+          "serp_title_note": "Also means 'using AI to do SEO' (ChatGPT for keyword research). Mixed intent vs optimizing for generative engines."
+        },
+        {
+          "keyword": "Answer Engine Optimization",
+          "volume_signal": "6,600 global (Ubersuggest/Geogen, from 4,400); US 'what is answer engine optimization' 260; 'answer engine optimization services' 390",
+          "source": "Geogen Ubersuggest; WebPossible SE Ranking US",
+          "serp_title_note": "Same-intent sibling; HubSpot uses AEO heavily; volume is ~0.3× GEO full phrase."
+        },
+        {
+          "keyword": "AEO",
+          "volume_signal": "acronym; below Answer Engine Optimization long form",
+          "source": "Geogen basket + WebPossible",
+          "serp_title_note": "Also Association of Exhibition Organisers / other AEO expansions."
+        }
+      ],
+      "highest_volume_same_intent": "Generative Engine Optimization",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Generative Engine Optimization",
+      "reason": "'AI SEO' is ~1.5× GEO globally (33.1K vs 22.2K) but mixed intent (AI-assisted SEO vs optimizing for answer engines). AEO is clearly smaller (6.6K). Current phrase is the academic/industry head (Princeton GEO paper) and the SERP title standard."
+    },
+    {
+      "slug": "headless-browser",
+      "current_primary": "Headless browser",
+      "candidates": [
+        {
+          "keyword": "Headless browser",
+          "volume_signal": "5,400/mo; CPC $0.71; Low difficulty",
+          "source": "microsaashq.com/saas-ideas/browser-automation-tool-748 (keyword table)",
+          "serp_title_note": "Wikipedia #1; Browserbase 'What is a headless browser?'; Lightpanda 'The headless browser'. Undisputed category name."
+        },
+        {
+          "keyword": "browser automation",
+          "volume_signal": "2,900/mo; CPC $1.16",
+          "source": "MicroSaaSHQ same keyword table",
+          "serp_title_note": "Broader (Playwright/Selenium testing); lower volume than headless browser."
+        },
+        {
+          "keyword": "headless chrome",
+          "volume_signal": "no separate MSV in snippets; Chrome for Developers docs rank",
+          "source": "WebSearch \"headless chrome\" monthly search volume keyword",
+          "serp_title_note": "Implementation-specific (Chromium), not the BaaS/cloud-browser category."
+        },
+        {
+          "keyword": "browser as a service",
+          "volume_signal": "no published MSV; Browserless/Browserbase product language",
+          "source": "WebSearch cloud browser / BaaS volume; DevTune Browserless/Browserbase pages",
+          "serp_title_note": "Hosted subset of headless; titles still lead with headless browser / cloud browsers."
+        },
+        {
+          "keyword": "cloud browser",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch; MicroSaaSHQ long-tail list includes 'cloud browser instances'",
+          "serp_title_note": "Long-tail; stay split from web-scraping / web-fetch per cluster rules."
+        }
+      ],
+      "highest_volume_same_intent": "Headless browser",
+      "verdict": "OK",
+      "recommended_primary": "Headless browser",
+      "reason": "Documented 5.4K/mo beats 'browser automation' (2.9K). Wikipedia and vendor explainers already use Headless browser as the head term; BaaS/cloud-browser are product-shape variants, not a 2× replacement."
+    },
+    {
+      "slug": "inference-infrastructure",
+      "current_primary": "AI Inference Infrastructure",
+      "candidates": [
+        {
+          "keyword": "AI Inference Infrastructure",
+          "volume_signal": "no published MSV; OppAlerts related-search score 4.43 / 23 appearances",
+          "source": "WebSearch phrase SERP; oppalerts.com GPU AI infrastructure related searches",
+          "serp_title_note": "Titles are architecture/playbook docs (AWS Prescriptive Guidance, 'Enterprise Inference Architecture'), not the Together/Fireworks/Baseten product category."
+        },
+        {
+          "keyword": "AI inference",
+          "volume_signal": "no exact MSV; market reports size inference-as-a-service in tens of billions USD (category demand, not query volume)",
+          "source": "Fortune DataVista AI Inference-as-a-Service market note",
+          "serp_title_note": "Broader than hosting platforms (chips, on-device, hyperscaler endpoints)."
+        },
+        {
+          "keyword": "AI inference platform",
+          "volume_signal": "no numeric MSV; OppAlerts related-search score 1.40 / 8 appearances; unCited.ai treats 'Managed AI Inference' as the buyer category",
+          "source": "rywalker.com/research/ai-inference-platforms; uncited.ai/categories/managed-ai-inference; DevTune LLM inference vertical",
+          "serp_title_note": "Commercial roundups: Together, Fireworks, Modal, Baseten, Groq — matches this KB's inference-hosting SSOT."
+        },
+        {
+          "keyword": "LLM inference",
+          "volume_signal": "no published MSV; DevTune vertical named 'LLM Inference & Serverless GPU'",
+          "source": "devtune.ai/verticals/llm-inference-serverless-gpu",
+          "serp_title_note": "Narrower (text LLMs only); KB also covers media/custom-model GPU hosting."
+        },
+        {
+          "keyword": "GPU inference platform",
+          "volume_signal": "no published MSV; related searches like 'gpu cluster for ai' appear in OppAlerts",
+          "source": "OppAlerts GPU AI infrastructure related searches",
+          "serp_title_note": "Hardware-leaning; overlaps neocloud/GPU rental more than OpenAI-compatible inference APIs."
+        }
+      ],
+      "highest_volume_same_intent": "AI inference platform",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI inference platform",
+      "reason": "SERP for the current phrase is architecture documentation, not the hosted inference market (Together, Fireworks, Baseten, Modal). Buyer-facing pages and AI-discovery taxonomies use 'AI inference platform' / managed AI inference — same intent, natural commercial query."
+    },
+    {
+      "slug": "search-engine",
+      "current_primary": "AI search engine",
+      "candidates": [
+        {
+          "keyword": "AI search engine",
+          "volume_signal": "no exact MSV in snippets; IBM explainer + DigitalOcean 'Best AI Search Engines' roundup",
+          "source": "WebSearch phrase SERP (IBM Think; DigitalOcean 2025/26 roundup)",
+          "serp_title_note": "Titles match the KB: Perplexity/Brave-style consumer answer engines, not enterprise Glean."
+        },
+        {
+          "keyword": "AI search",
+          "volume_signal": "broader; no isolated MSV; collides with enterprise search + GEO",
+          "source": "WebSearch AI search engine vs AI search titles",
+          "serp_title_note": "Too wide (Google AI Mode, enterprise search, GEO). Keep the 'engine' noun."
+        },
+        {
+          "keyword": "answer engine",
+          "volume_signal": "tied to AEO; lower than GEO cluster (see geo slug)",
+          "source": "GEO/AEO volume basket (Geogen)",
+          "serp_title_note": "Marketing synonym; roundups still say 'AI search engine'."
+        },
+        {
+          "keyword": "conversational search",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch",
+          "serp_title_note": "Feature language, not the product category."
+        },
+        {
+          "keyword": "generative search",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch",
+          "serp_title_note": "Overlaps Google AI Overviews more than independent AI search products."
+        }
+      ],
+      "highest_volume_same_intent": "AI search engine",
+      "verdict": "OK",
+      "recommended_primary": "AI search engine",
+      "reason": "IBM and consumer roundups already use this as the category name for Perplexity-class products. Shorter 'AI search' and enterprise-search SERPs are different buyers (Glean/RAG vs human answer engines); stay split from web-search-api."
+    },
+    {
+      "slug": "search-indexing",
+      "current_primary": "AI Search Indexing",
+      "candidates": [
+        {
+          "keyword": "AI Search Indexing",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase SERP",
+          "serp_title_note": "Collision: Cloudflare AI Search, Databricks AI Search, vector/HNSW indexing explainers — RAG embedding indexes, not URL submission / IndexNow / GSC."
+        },
+        {
+          "keyword": "website indexing",
+          "volume_signal": "no exact MSV; Google Search Central / GSC URL Inspection dominate SERP",
+          "source": "WebSearch \"website indexing\" OR \"google indexing\" monthly search volume",
+          "serp_title_note": "Correct SEO intent: get URLs crawled and stored. Matches IndexNow + GSC tools in the KB."
+        },
+        {
+          "keyword": "Google indexing",
+          "volume_signal": "no exact MSV; official docs are the SERP",
+          "source": "Google Search Central 'Ask Google to recrawl'",
+          "serp_title_note": "Google-only; KB also covers IndexNow/Bing — slightly too narrow as sole primary."
+        },
+        {
+          "keyword": "IndexNow",
+          "volume_signal": "no published MSV in snippets",
+          "source": "WebSearch \"IndexNow\" monthly search volume keyword",
+          "serp_title_note": "Protocol, not the full 'submit/monitor index health' category. Google does not support it."
+        },
+        {
+          "keyword": "submit website to search engines",
+          "volume_signal": "450 US monthly (Ahrefs example in keyword-data blog)",
+          "source": "ahrefs.com/blog/keyword-data-improvements (Ahrefs US figure for this phrase)",
+          "serp_title_note": "Same intent, dated wording; 450 is a floor for this cluster."
+        }
+      ],
+      "highest_volume_same_intent": "website indexing",
+      "verdict": "SWITCH",
+      "recommended_primary": "website indexing",
+      "reason": "Current 'AI Search Indexing' loses the SERP to vector/RAG AI-search indexes (Cloudflare, Databricks), which is a different product. The KB's job is URL submission, IndexNow, and index health — that maps to 'website indexing' / GSC language, not the AI-prefixed coinage."
+    },
+    {
+      "slug": "technology-profiler",
+      "current_primary": "website technology profiler",
+      "candidates": [
+        {
+          "keyword": "website technology profiler",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase SERP",
+          "serp_title_note": "Almost unused in titles. Products say 'Tech Stack Detector', 'Website Technology Detection', 'What CMS Is This Website Using?' Keywords Everywhere's PoweredBy calls itself 'The Free Technology Profiler' — rare."
+        },
+        {
+          "keyword": "what CMS is this",
+          "volume_signal": "2,400/mo ('what cms is this'); 2,900/mo ('what cms'); CPC ~$7.89–$10.81",
+          "source": "Semrush organic keywords for whatcms.org (June 2026) via srush.toolspur.com mirror",
+          "serp_title_note": "The question people actually type; ranking tools still return full stacks (CMS + server + CDN)."
+        },
+        {
+          "keyword": "cms detector",
+          "volume_signal": "1,900/mo; CPC $2.59; commercial/informational",
+          "source": "Same whatcms.org Semrush keyword table (June 2026)",
+          "serp_title_note": "Tool-shaped; slightly CMS-narrow vs full technographics."
+        },
+        {
+          "keyword": "tech stack detector",
+          "volume_signal": "no published MSV; product domains use this exact positioning",
+          "source": "techstackdetector.com; whatstack.ai SERP",
+          "serp_title_note": "Best category label for full-stack (CMS/frameworks/analytics/CDN), but no MSV vs the CMS queries."
+        },
+        {
+          "keyword": "BuiltWith",
+          "volume_signal": "13,800 US monthly visits from branded 'builtwith' (Ahrefs-style site overview, Jun 2026); site ~1.5M search visits",
+          "source": "ahrefstop.com/websites/builtwith.com",
+          "serp_title_note": "Brand, not a transferable primary. Do not switch slug or primary to a vendor name."
+        }
+      ],
+      "highest_volume_same_intent": "what CMS is this",
+      "verdict": "SWITCH",
+      "recommended_primary": "what CMS is this",
+      "reason": "Current 'website technology profiler' is jargon with no MSV and almost no title usage. Semrush shows 'what cms' 2,900 and 'what cms is this' 2,400 as the live queries; those SERPs still deliver full-stack detectors (Wappalyzer/BuiltWith-class), matching this KB."
+    },
+    {
+      "slug": "web-fetch",
+      "current_primary": "Web Fetch",
+      "candidates": [
+        {
+          "keyword": "Web Fetch",
+          "volume_signal": "no published MSV; Anthropic/MCP tool name",
+          "source": "WebSearch phrase SERP",
+          "serp_title_note": "Mixes generic HTTP fetch with agent tools. Category pages prefer URL/website-to-markdown."
+        },
+        {
+          "keyword": "URL to Markdown",
+          "volume_signal": "no numeric MSV; Firecrawl, Jina Reader, Neo Reader, SEOTesting all productize this phrase",
+          "source": "WebSearch phrase SERP (Firecrawl 'Website to Markdown', Jina Reader, Neo Reader, ctokx/url-to-markdown)",
+          "serp_title_note": "The job-to-be-done query: convert a known URL into LLM-ready Markdown. Distinct from scrape/search/headless."
+        },
+        {
+          "keyword": "web fetch API",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch",
+          "serp_title_note": "Collides with Fetch API (browser standard)."
+        },
+        {
+          "keyword": "Jina Reader",
+          "volume_signal": "brand; GitHub jina-ai/reader is the category-defining product",
+          "source": "github.com/jina-ai/reader; jina.ai/reader",
+          "serp_title_note": "Brand, not a generic primary."
+        },
+        {
+          "keyword": "LLM-ready web data",
+          "volume_signal": "no published MSV",
+          "source": "KB vocabulary",
+          "serp_title_note": "Marketing language; titles use URL-to-markdown."
+        }
+      ],
+      "highest_volume_same_intent": "URL to Markdown",
+      "verdict": "SWITCH",
+      "recommended_primary": "URL to Markdown",
+      "reason": "'Web Fetch' is an Anthropic/MCP tool label and collides with the Fetch API. Product SERPs (Jina, Firecrawl, Neo Reader) standardize on URL/website-to-Markdown — same single-URL→LLM-content intent, still split from scraping, headless, and search APIs."
+    },
+    {
+      "slug": "web-scraping",
+      "current_primary": "Web scraping",
+      "candidates": [
+        {
+          "keyword": "Web scraping",
+          "volume_signal": "no fresh Ahrefs/Semrush number in this pass; Wikipedia + ScraperAPI/Real Python own the SERP as the category head. Prior Bing proxy ~28,700 (not used as MSV).",
+          "source": "WebSearch phrase SERP (Wikipedia; ScraperAPI complete guide; Real Python)",
+          "serp_title_note": "Unambiguous encyclopedia + tutorial head term."
+        },
+        {
+          "keyword": "web scraper",
+          "volume_signal": "no isolated MSV; tool-shaped",
+          "source": "WebSearch \"web scraping API\" OR \"web scraper\" monthly search volume",
+          "serp_title_note": "Product noun; same intent family, titles still say scraping."
+        },
+        {
+          "keyword": "web crawling",
+          "volume_signal": "no isolated MSV this pass",
+          "source": "KB crawl vs scrape split",
+          "serp_title_note": "Discovery/traversal, not extraction. Stay split."
+        },
+        {
+          "keyword": "web scraping API",
+          "volume_signal": "no isolated MSV; hosted-API subset",
+          "source": "WebSearch",
+          "serp_title_note": "One morphology in the KB (Zyte/ScrapingBee), not the whole stack."
+        },
+        {
+          "keyword": "data scraping",
+          "volume_signal": "no isolated MSV; broader than web",
+          "source": "WebSearch",
+          "serp_title_note": "Includes PDFs/databases; keep web-specific primary."
+        }
+      ],
+      "highest_volume_same_intent": "Web scraping",
+      "verdict": "OK",
+      "recommended_primary": "Web scraping",
+      "reason": "Wikipedia and vendor guides treat Web scraping as the English head. Crawling, fetch, and headless are adjacent layers this cluster must keep split; none showed a same-intent ≥2× replacement."
+    },
+    {
+      "slug": "web-search-api",
+      "current_primary": "Web Search API",
+      "candidates": [
+        {
+          "keyword": "Web Search API",
+          "volume_signal": "no exact MSV; Brave, NewsCatcher, Parallel document this as the developer category",
+          "source": "WebSearch phrase SERP (NewsCatcher guide; Brave Search API; Parallel web-RAG)",
+          "serp_title_note": "Titles: 'What Is a Web Search API?'; Brave 'Search API' for agents. Matches KB (programmatic public-web retrieval)."
+        },
+        {
+          "keyword": "Search Engine API",
+          "volume_signal": "no published MSV; KB already treats as marketing synonym",
+          "source": "KB vocabulary + Brave 'what is a search engine API'",
+          "serp_title_note": "Same class; not shown to outrank Web Search API in titles."
+        },
+        {
+          "keyword": "SERP API",
+          "volume_signal": "no numeric MSV; SerpApi is a large branded SERP",
+          "source": "WebSearch \"SERP API\" monthly search volume; serpapi.com",
+          "serp_title_note": "SEO/intelligence scrape of Google SERP features — different buyer than Agent/RAG web search APIs (Tavily/Exa/Brave)."
+        },
+        {
+          "keyword": "search API",
+          "volume_signal": "too generic (Algolia, site search, vector search)",
+          "source": "KB warning on Search API ambiguity",
+          "serp_title_note": "Not same intent."
+        },
+        {
+          "keyword": "programmatic search API",
+          "volume_signal": "no published MSV",
+          "source": "KB synonym",
+          "serp_title_note": "Rare in titles vs Web Search API."
+        }
+      ],
+      "highest_volume_same_intent": "Web Search API",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "Web Search API",
+      "reason": "SERP API is the higher-profile commercial cousin but is an SEO-SERP scrape SKU, not the Agent/RAG web-index API this KB is for. Keep Web Search API so this slug stays split from search-engine (consumer apps) and from SERP-intel tools."
+    }
+  ]
+}

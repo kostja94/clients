@@ -20,7 +20,7 @@
 | 场景 | 改用 |
 |------|------|
 | 写 `/blog/` 或 `/tools/` 正式正文 | create-article |
-| 存量页内链优化 | optimize-internal-links |
+| 存量页内链优化 | audit-optimize |
 | 仅 Marketing 长文（非 KB） | create-article + `knowledge/marketing/` 长文 |
 | SEO 专册 + 外部 GSC KB | create-article + [`seo-slug-notes/`](../create-article/rules/seo-slug-notes/) · Brief 登记路径 |
 
@@ -54,6 +54,8 @@
 
 **AI Employee 簇范例**（IM 协作三分法 / 产品独占）：[`references/ai-employee-cluster.md`](./references/ai-employee-cluster.md)
 
+**BaaS 簇范例**（Backend as a Service / Type A–D）：[`references/backend-as-a-service-cluster.md`](./references/backend-as-a-service-cluster.md)
+
 ---
 
 ## 参考文档（按需加载）
@@ -63,6 +65,7 @@
 | **Tools 簇临时 Brief + 删除规则** | [`references/tools-cluster-ephemeral-brief.md`](./references/tools-cluster-ephemeral-brief.md) |
 | **Work Agent 簇 SSOT** | [`references/work-agent-cluster.md`](./references/work-agent-cluster.md) |
 | **AI Employee 簇 SSOT** | [`references/ai-employee-cluster.md`](./references/ai-employee-cluster.md) |
+| **BaaS 簇 SSOT** | [`references/backend-as-a-service-cluster.md`](./references/backend-as-a-service-cluster.md) |
 | **同意图关键词 · 搜索量快判** | [`references/intent-near-keyword-volume.md`](./references/intent-near-keyword-volume.md) |
 | 知识块结构模板 | [`knowledge/tools/_TEMPLATE.md`](../../knowledge/tools/_TEMPLATE.md) |
 | 全目录约定 | [`knowledge/tools/README.md`](../../knowledge/tools/README.md) |

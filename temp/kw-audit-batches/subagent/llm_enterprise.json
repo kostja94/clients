@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "ai-documents",
+    "path": "tools/enterprise-knowledge/ai-documents.md",
+    "current_primary": "AI Documents",
+    "keywordEn_full": "AI Documents / 智能文档",
+    "h1": "AI 文档（AI Documents）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "documentation",
+    "path": "tools/enterprise-knowledge/documentation.md",
+    "current_primary": "Developer documentation",
+    "keywordEn_full": "Developer documentation / 开发者文档",
+    "h1": "开发者文档与 Agent 时代 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "evaluation",
+    "path": "tools/llm/evaluation.md",
+    "current_primary": "AI evaluation",
+    "keywordEn_full": "AI evaluation / LLM evaluation / AI 应用评测",
+    "h1": "AI Evaluation / LLM 应用评测 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "knowledge-base",
+    "path": "tools/enterprise-knowledge/knowledge-base.md",
+    "current_primary": "AI Knowledge Base",
+    "keywordEn_full": "AI Knowledge Base / RAG 知识库",
+    "h1": "AI Knowledge Base · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "legal",
+    "path": "tools/enterprise-knowledge/legal.md",
+    "current_primary": "Legal AI",
+    "keywordEn_full": "Legal AI / AI for lawyers",
+    "h1": "AI Tools for Lawyers（律师用 AI 工具）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm",
+    "path": "tools/llm/llm.md",
+    "current_primary": "Large Language Model",
+    "keywordEn_full": "Large Language Model",
+    "h1": "Large Language Model / 通用大语言模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-for-coding",
+    "path": "tools/llm/llm-for-coding.md",
+    "current_primary": "AI Coding LLM",
+    "keywordEn_full": "",
+    "h1": "AI Coding LLM / 编程向大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-for-math",
+    "path": "tools/llm/llm-for-math.md",
+    "current_primary": "AI Math LLM",
+    "keywordEn_full": "",
+    "h1": "AI Math LLM / 数学向大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-for-reasoning",
+    "path": "tools/llm/llm-for-reasoning.md",
+    "current_primary": "AI Reasoning LLM",
+    "keywordEn_full": "",
+    "h1": "AI Reasoning LLM / 推理向大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "llm-observability",
+    "path": "tools/llm/llm-observability.md",
+    "current_primary": "LLM Observability",
+    "keywordEn_full": "LLM Observability",
+    "h1": "LLM 可观测性 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "memory",
+    "path": "tools/enterprise-knowledge/memory.md",
+    "current_primary": "AI Memory",
+    "keywordEn_full": "AI Memory / 个人第二大脑",
+    "h1": "AI Memory · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "multimodal-llm",
+    "path": "tools/llm/multimodal-llm.md",
+    "current_primary": "AI Multimodal LLM",
+    "keywordEn_full": "",
+    "h1": "AI Multimodal LLM / 多模态大模型 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ocr",
+    "path": "tools/enterprise-knowledge/ocr.md",
+    "current_primary": "OCR",
+    "keywordEn_full": "OCR / 光学字符识别",
+    "h1": "AI OCR（文字识别）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "spreadsheet",
+    "path": "tools/enterprise-knowledge/spreadsheet.md",
+    "current_primary": "AI spreadsheet",
+    "keywordEn_full": "AI spreadsheet / AI 表格",
+    "h1": "AI 表格 · 知识块（非线性笔记）"
+  }
+]

@@ -1,6 +1,6 @@
 # Create Article — 规范索引
 
-> Alignify **每篇 flagship**。内容决定架构；质量全链路见 Gate / SelfCheck / audit-article。
+> Alignify **每篇 flagship**。内容决定架构；质量全链路见 Gate / SelfCheck / Step 11 Final Audit。
 
 ---
 
@@ -13,6 +13,7 @@
 | 07 | [`07-internal-links.md`](../07-internal-links.md) · [`internal-links.md`](./internal-links.md) |
 | 08 | [`08-meta-config.md`](../08-meta-config.md)（Meta + **日期** + CTA + JSON 侧车） |
 | 10 | [`10-quality-gates.md`](../10-quality-gates.md) |
+| 11 | [`11-final-audit.md`](../11-final-audit.md) · [`final-audit.md`](./final-audit.md)（**新会话**） |
 
 ---
 
@@ -39,10 +40,10 @@
 | Step 02 Brief | [`article-brief.md`](./article-brief.md) · [`research-triangle.md`](./research-triangle.md) · [`product-coverage.md`](./product-coverage.md) · [`copy-quality.md`](./copy-quality.md) 附录 A |
 | Step 03 关键词 | [`03-keywords.md`](../03-keywords.md) · Brief `Primary keyword`（须与 KB keyword 映射一致，见 [`knowledge-block/SKILL.md`](../../knowledge-block/SKILL.md)） |
 | Step 05–06 / 09–09c 双语正文 | [`content-locale.md`](./content-locale.md) Part 2–5 · [`locale-glossary.md`](./locale-glossary.md) · [`gtm-prose-voice.md`](./gtm-prose-voice.md) · [`presentation.md`](./presentation.md) · [`copy-quality.md`](./copy-quality.md) Part 2·4 |
-| Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md)（**按 articleType** 选 Part 3/4/4.5/5）· [`internal-links.md`](./internal-links.md) Part 1–2 + Part 8 · 快照 [`../../optimize-internal-links/references/site-structure-internal-links.md`](../../optimize-internal-links/references/site-structure-internal-links.md) |
+| Step 07 内链 | [`07-internal-links.md`](../07-internal-links.md)（**按 articleType** 选 Part 3/4/4.5/5）· [`internal-links.md`](./internal-links.md) Part 1–2 + Part 8 · 快照 [`../../audit-optimize/references/site-structure-internal-links.md`](../../audit-optimize/references/site-structure-internal-links.md) |
 | Step 08 注册 | [`meta.md`](./meta.md) · [`sections.md`](./sections.md) Part 5 · [`08-meta-config.md`](../08-meta-config.md) §发布日期 · `next-publish-date.mjs` |
 | Step 10 自审 | [`selfcheck.md`](./selfcheck.md) · [`quality-checklist.md`](./quality-checklist.md) · [`common-errors.md`](./common-errors.md) |
-| 终审 | [`../../audit-article/SKILL.md`](../../audit-article/SKILL.md) · [`perfect-article-checklist.md`](./perfect-article-checklist.md)（S 级 · **可选**） |
+| 终审 | [`../11-final-audit.md`](../11-final-audit.md) · [`final-audit.md`](./final-audit.md) · [`perfect-article-checklist.md`](./perfect-article-checklist.md)（S 级 · **可选**） |
 | 同批 ≥2 篇 | [`outline-cross-check.md`](./outline-cross-check.md) · [`cross-article-audit.md`](./cross-article-audit.md) · [`copy-quality.md`](./copy-quality.md) M2 |
 
 ---
@@ -71,7 +72,7 @@
 | [cross-article-audit.md](./cross-article-audit.md) | 同批 5.5 |
 | [product-coverage.md](./product-coverage.md) | 垂类选题 · 产品数量 · 全站独占 |
 
-**终审**：[`../../audit-article/SKILL.md`](../../audit-article/SKILL.md)
+**终审**：[`../11-final-audit.md`](../11-final-audit.md) · [`final-audit.md`](./final-audit.md)
 
 ---
 

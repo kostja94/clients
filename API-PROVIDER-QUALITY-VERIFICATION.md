@@ -68,6 +68,8 @@ python Alignify/scripts/ops/generate-og-cover.py --provider apineed --section to
 
 将两次输出的 raw/crop/final 与 `prompt.txt` 复制到 `api-quality-probes/{YYYY-MM-DD}_{slug}/` 存档（见 §3.3）。
 
+> **2026-09 起**：APINEED 通道为**异步提交**（`media/generations`，无 `size` 参数，比例由 prompt 控制）——与 fal 的固定 `1216×632` 请求不再同构，对照结论请同步见 §11.2。
+
 ### 3.2 实验矩阵（最少 3 次调用 / 提供方）
 
 | # | 类型 | prompt | 目的 |
@@ -231,6 +233,17 @@ Authorization: Bearer {key}
 
 - 默认：**fal** `openai/gpt-image-2` + Alignify 流程（`generate-og-cover.py --provider fal`）
 - APINEED：成本备选（`--provider apineed`）；**每次换 prompt 风格或 size 需重跑 §3 探针 B**
+
+### 11.2 APINEED 接口迁移（2026-09-04）
+
+| 项 | 说明 |
+|----|------|
+| 触发 | 网关下线同步 `POST /v1/images/generations`（`synchronous_image_generation_unavailable`），全部 APINEED 通道切至**异步** `POST /v1/media/generations` |
+| 请求形态 | `{"workflow":"text_to_image","model":"gpt-image-2","input":{"prompt":...}}` → 返回 `id`（task）→ `GET /v1/media/generations/{id}` 轮询 → `outputs[0].url` |
+| 参数限制 | 新接口**不接受 `size` / `quality` / `output_format`**；输出画布随 prompt 构图 |
+| 实测 | prompt 显式要求 16:9 宽幅 → 直出 **1730×909**（≈1.9:1）；未指定则偏竖版（1122×1402） |
+| 对策 | 脚本已自动在 prompt 追加宽幅 1200×630 比例指令；post trim 到 1200×630 保留 |
+| 旧结论 | 11.1「静默 size（请求 1216×632 → 返回 1536×1024）」**仅适用于旧同步网关**，已失效 |
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **版本**：v3.0 · 2026-08-26  
 > **质量档位**：Alignify **每篇 flagship**  
-> **Gate 语义**：Step 10 SelfCheck → **audit-ready** → audit-article → **publish-ready**
+> **Gate 语义**：Step 10 SelfCheck → **audit-ready** → Step 11 Final Audit（新会话）→ **publish-ready**
 
 ---
 
@@ -11,7 +11,7 @@
 | 状态 | 达成 |
 |------|------|
 | audit-ready | [`selfcheck.md`](./selfcheck.md) H0–H4 + 12 维全 Pass + 脚本绿 |
-| publish-ready | [`../../audit-article/rules/final-audit.md`](../../audit-article/rules/final-audit.md) P0 Pass + 十维 ≥**80** |
+| publish-ready | [`final-audit.md`](./final-audit.md) P0 Pass + 十维 ≥**80** |
 | S 级 | 十维 ≥**90** + Moat + Excellence + 零 P1 |
 
 ---

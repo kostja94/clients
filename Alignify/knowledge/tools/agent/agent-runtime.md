@@ -8,12 +8,12 @@
 
 ## 与相邻 slug 分流
 
-| 维度 | **agent-runtime（本文）** | **agent-sandbox** | **agent-memory** | **multi-agent** | **workflow** | **inference-infrastructure** |
-|------|---------------------------|-------------------|------------------|-----------------|--------------|--------------------------------|
-| 核心问题 | Agent **如何可靠执行**（loop、state、部署、recovery、观测） | **在哪隔离跑**不可信代码/Shell | Agent **跨会话记住什么** | 多 Agent **谁做什么、如何 handoff** | **IF/THEN** 确定性流程自动化 | **模型推理**在哪跑（GPU/token） |
-| 典型读者 | Agent 平台工程师、架构师 | 安全/基础设施工程师 | Agent 应用开发者 | 架构师、Team Lead | 运营/集成工程师 | MLOps、平台架构师 |
-| 交付形态 | Runtime SDK、托管 Agent Server、云 Runtime API | 隔离 VM/容器 API | Memory SDK/MCP | 编排图、Supervisor、A2A | Zapier/n8n 式流程 | 推理端点、GPU 集群 |
-| 验收核心 | 耐久性、HITL、多租户、trace、部署 SLA | 隔离等级、冷启动、TTL | 检索准确率、scope 治理 | 任务分解、handoff 质量 | 流程成功率 | TTFT、$/1M tokens |
+| 维度 | **agent-runtime（本文）** | **backend-as-a-service** | **agent-sandbox** | **agent-memory** | **multi-agent** | **workflow** | **inference-infrastructure** |
+|------|---------------------------|--------------------------|-------------------|------------------|-----------------|--------------|--------------------------------|
+| 核心问题 | Agent **如何可靠执行**（loop、state、部署、recovery、观测） | **App 共享状态**托管在哪（BaaS） | **在哪隔离跑**不可信代码/Shell | Agent **跨会话记住什么** | 多 Agent **谁做什么、如何 handoff** | **IF/THEN** 确定性流程自动化 | **模型推理**在哪跑（GPU/token） |
+| 典型读者 | Agent 平台工程师、架构师 | 全栈 / Vibe / Agent 写 App | 安全/基础设施工程师 | Agent 应用开发者 | 架构师、Team Lead | 运营/集成工程师 | MLOps、平台架构师 |
+| 交付形态 | Runtime SDK、托管 Agent Server、云 Runtime API | Auth+DB+Storage+Realtime SDK | 隔离 VM/容器 API | Memory SDK/MCP | 编排图、Supervisor、A2A | Zapier/n8n 式流程 | 推理端点、GPU 集群 |
+| 验收核心 | 耐久性、HITL、多租户、trace、部署 SLA | 数据模型、realtime、锁定 | 隔离等级、冷启动、TTL | 检索准确率、scope 治理 | 任务分解、handoff 质量 | 流程成功率 | TTFT、$/1M tokens |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -84,7 +84,7 @@
 - **Human-in-the-loop**：interrupt/resume、approval gate、零成本长等待（Temporal `wait_condition`）。
 - **Streaming & Concurrency**：token 流、double-texting 控制（LangSmith Deployment）。
 - **Multi-tenancy & Auth**：RBAC、Agent Auth、OAuth connection——LangSmith、AgentCore Identity、Foundry。
-- **Observability**：OpenTelemetry trace、time travel、run 级 audit——LangSmith、Foundry、AgentCore Observability。
+- **Observability**：OpenTelemetry trace、time travel、run 级 audit——LangSmith、Foundry、AgentCore Observability；**Obs 平台选型 SSOT** → [llm-observability.md](../llm/llm-observability.md)（trace/cost/prompt）；**scorer/CI gate** → [evaluation.md](../llm/evaluation.md)。
 - **Deployment & Scaling**：容器/zip 部署、queue worker 水平扩展、API server 与 worker 分离（LangSmith Agent Server 架构）。
 - **Sandbox 集成**：Runtime 编排调用隔离执行面——见 [agent-sandbox.md](agent-sandbox.md)；AgentCore Code Interpreter/Browser 为 bundled tool runtime。
 
@@ -203,5 +203,8 @@ LangGraph 属 **State-graph**；Temporal 常以 **Task-queue/Workflow** 包装�
 - [agent-memory.md](agent-memory.md) — Runtime 的 **Memory** 组件；Mem0/Zep/Letta
 - [multi-agent.md](multi-agent.md) — 多 Agent **编排拓扑**；与 runtime 执行基底分工
 - [workflow.md](workflow.md) — **确定性**流程自动化；非 agent loop
+- [backend-as-a-service.md](../infrastructure/backend-as-a-service.md) — **App 态** BaaS（Convex/Supabase）；非 Agent Runtime
 - [agent-skills.md](agent-skills.md) — MCP/技能层；Runtime 调用的能力面
+- [llm-observability.md](../llm/llm-observability.md) — **Observe 层** SSOT：trace/span/cost/prompt；与 runtime **telemetry 出口**对齐
+- [evaluation.md](../llm/evaluation.md) — **Eval 层**：scorer/CI；生产 trace 采样打分（与 obs 接缝）
 - [inference-infrastructure.md](../infrastructure/inference-infrastructure.md) — **模型推理**托管；与 agent orchestration 分流

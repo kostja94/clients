@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "agent-identity",
+    "path": "tools/agent/agent-identity.md",
+    "keywordEn": "AI Agent Identity",
+    "primary_test": "AI Agent Identity"
+  },
+  {
+    "slug": "agent-runtime",
+    "path": "tools/agent/agent-runtime.md",
+    "keywordEn": "AI Agent Runtime",
+    "primary_test": "AI Agent Runtime"
+  },
+  {
+    "slug": "ai-employee",
+    "path": "tools/agent/ai-employee.md",
+    "keywordEn": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+    "primary_test": "AI Employee"
+  },
+  {
+    "slug": "work-agent",
+    "path": "tools/agent/work-agent.md",
+    "keywordEn": "Work Agent / AI Work Agent",
+    "primary_test": "Work Agent"
+  },
+  {
+    "slug": "workspace-agent",
+    "path": "tools/agent/workspace-agent.md",
+    "keywordEn": "Workspace Agent / Team AI Agent",
+    "primary_test": "Workspace Agent"
+  },
+  {
+    "slug": "agent-billing",
+    "path": "tools/agent-billing.md",
+    "keywordEn": "AI agent billing",
+    "primary_test": "AI agent billing"
+  },
+  {
+    "slug": "agentic-commerce",
+    "path": "tools/agentic-commerce.md",
+    "keywordEn": "Agentic Commerce",
+    "primary_test": "Agentic Commerce"
+  },
+  {
+    "slug": "agentic-payments",
+    "path": "tools/agentic-payments.md",
+    "keywordEn": "Agentic Payments",
+    "primary_test": "Agentic Payments"
+  },
+  {
+    "slug": "content-management-system",
+    "path": "tools/cms/content-management-system.md",
+    "keywordEn": "Content Management System / CMS",
+    "primary_test": "Content Management System"
+  },
+  {
+    "slug": "enterprise-cms",
+    "path": "tools/cms/enterprise-cms.md",
+    "keywordEn": "Enterprise CMS / DXP / Digital Experience Platform",
+    "primary_test": "Enterprise CMS"
+  },
+  {
+    "slug": "headless-cms",
+    "path": "tools/cms/headless-cms.md",
+    "keywordEn": "Headless CMS / API-first CMS",
+    "primary_test": "Headless CMS"
+  },
+  {
+    "slug": "open-source-cms",
+    "path": "tools/cms/open-source-cms.md",
+    "keywordEn": "Open Source CMS / OSS CMS",
+    "primary_test": "Open Source CMS"
+  },
+  {
+    "slug": "git-hosting",
+    "path": "tools/coding/git-hosting.md",
+    "keywordEn": "Agent-native Git hosting / Code forge",
+    "primary_test": "Agent-native Git hosting"
+  },
+  {
+    "slug": "ai-training-data",
+    "path": "tools/infrastructure/ai-training-data.md",
+    "keywordEn": "AI Training Data Platform",
+    "primary_test": "AI Training Data Platform"
+  },
+  {
+    "slug": "inference-infrastructure",
+    "path": "tools/infrastructure/inference-infrastructure.md",
+    "keywordEn": "AI Inference Infrastructure",
+    "primary_test": "AI Inference Infrastructure"
+  },
+  {
+    "slug": "llm-observability",
+    "path": "tools/llm/llm-observability.md",
+    "keywordEn": "LLM Observability",
+    "primary_test": "LLM Observability"
+  },
+  {
+    "slug": "llm",
+    "path": "tools/llm/llm.md",
+    "keywordEn": "Large Language Model",
+    "primary_test": "Large Language Model"
+  },
+  {
+    "slug": "blog-website-builder",
+    "path": "tools/website-builder/blog-website-builder.md",
+    "keywordEn": "Blog Website Builder / Website Builder for Blogs",
+    "primary_test": "Blog Website Builder"
+  },
+  {
+    "slug": "ecommerce-website-builder",
+    "path": "tools/website-builder/ecommerce-website-builder.md",
+    "keywordEn": "Online store platform / E-commerce website builder",
+    "primary_test": "Online store platform"
+  },
+  {
+    "slug": "landing-page-builder",
+    "path": "tools/website-builder/landing-page-builder.md",
+    "keywordEn": "Landing Page Builder / Conversion Page Builder",
+    "primary_test": "Landing Page Builder"
+  },
+  {
+    "slug": "portfolio-website-builder",
+    "path": "tools/website-builder/portfolio-website-builder.md",
+    "keywordEn": "Portfolio website builder / Photography website builder",
+    "primary_test": "Portfolio website builder"
+  }
+]

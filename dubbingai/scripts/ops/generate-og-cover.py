@@ -2,7 +2,9 @@
 """
 Generate Dubbing AI blog OG covers via GPT Image 2 (APINEED default).
 
-APINEED params: quality=high, jpeg, 1 image, then center-crop to exactly 1200x630 WebP.
+APINEED (2026-09+) uses its async /v1/media/generations endpoint (submit + poll);
+no size parameter — prompt mandates a native 16:9 wide canvas, then post-process
+trims to exactly 1200x630 WebP.
 
 Default output: context repo blog/images/og/ (use --deploy when DUBBINGAI_DEPLOY_ROOT is set).
 
@@ -17,7 +19,6 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import base64
 import hashlib
 import json
 import os
@@ -54,7 +55,7 @@ from og_brief_lib import (  # noqa: E402
 
 BRAND_LOGO = DUBBINGAI_CTX / "assets" / "brand" / "icon-192x192.png"
 
-APINEED_ENDPOINT = "https://apineed.com/v1/images/generations"
+APINEED_ENDPOINT = "https://apineed.com/v1/media/generations"
 FAL_ENDPOINT = "https://queue.fal.run/openai/gpt-image-2"
 GEN_W, GEN_H = 1216, 632
 GEN_QUALITY = "high"
@@ -95,8 +96,9 @@ TEXT_SAFE_ZONE_RULES = (
     "- Subtitle sits directly under headline, same left inset, also fully inside margins.\n"
 )
 
-# APINEED returns taller canvases than 1200x630; post-process top-trims to OG size.
-APINEED_API_SIZES = {"high": (1536, 1024), "low": (1024, 1024)}
+# NOTE (2026-09): APINEED's async gateway no longer accepts a `size` parameter —
+# output aspect follows the prompt, so `apineed_crop_directive` mandates a native
+# wide 16:9 canvas and the post-trim is only defensive (top bias kept for safety).
 
 
 def resolve_apineed_quality(cli_quality: str | None = None) -> str:
@@ -106,21 +108,20 @@ def resolve_apineed_quality(cli_quality: str | None = None) -> str:
 
 
 def apineed_crop_directive(quality: str = "high") -> str:
-    """Prompt block: compose for APINEED raw size → 1200x630 top-aligned crop."""
-    w, h = APINEED_API_SIZES.get(quality, APINEED_API_SIZES["high"])
-    scale = max(OG_W / w, OG_H / h)
-    scaled_h = int(h * scale)
-    trim_bottom = max(0, scaled_h - OG_H)
-    trim_pct = round(100 * trim_bottom / scaled_h) if scaled_h else 0
+    """Prompt block: force a native wide 1200x630-compatible 16:9 canvas.
 
+    quality is retained for logging only — it no longer selects a preset size.
+    """
     return (
-        f"APINEED CROP SAFE ZONE (critical — API raw {w}x{h} → trimmed to exactly 1200x630):\n"
-        f"- Raw canvas is taller than final OG (~{trim_pct}% of bottom band may be trimmed; top edge preserved).\n"
-        f"- Compose for the final 1200x630 wide frame (1.91:1) — do NOT place important content in the bottom {trim_pct}%.\n"
+        "APINEED ASPECT (critical — output is post-trimmed to exactly 1200x630):\n"
+        "- The raw canvas MUST be a wide landscape 1200x630 social share card (16:9, 1.91:1). "
+        "Do NOT output a square or portrait image.\n"
+        "- Final trim is minimal: keep every readable element inside the middle 92% height "
+        "and middle 96% width.\n"
         "- Headline + subtitle: upper-left safe inset (10% top, 8% left) — fully visible, no border bleed.\n"
         "- Hero visuals (phone, flow diagram): center-right and middle vertical band — not flush to bottom edge.\n"
-        "- Decorative waveforms/stopwatch: may sit lower but keep key labels inside the middle 85% height.\n"
-        "- Think 'title slide safe area': all readable text well inside margins before any crop happens.\n"
+        "- Decorative waveforms/stopwatch: may sit lower but keep key labels above the bottom 8%.\n"
+        "- Think 'title slide safe area': all readable text well inside margins before any trim happens.\n"
     )
 
 LOGO_INNER_HEIGHT = 44
@@ -268,85 +269,102 @@ def build_prompt(
 
 
 def apineed_generate(prompt: str, api_key: str, quality: str | None = None) -> bytes:
+    """OpenAI-compatible Images API via APINEED's async media endpoint.
+
+    NOTE (2026-09): APINEED deprecated the synchronous /v1/images/generations
+    endpoint. New flow: POST /v1/media/generations
+    {"workflow": "text_to_image", "model": ..., "input": {"prompt": ...}}
+    returns a task id; poll GET /v1/media/generations/{id} until
+    status == "succeeded", then download outputs[0].url.
+
+    The gateway no longer accepts a size parameter, so a wide-landscape
+    framing directive is appended to the prompt for OG output.
+    """
     import subprocess
     import tempfile
 
     quality = quality or resolve_apineed_quality(None)
-    print(f"  APINEED quality={quality} size={'1536x1024' if quality != 'low' else '1024x1024'}")
+    print(f"  APINEED quality={quality} (async /v1/media/generations)")
 
-    def _request(size: str) -> dict:
-        q = quality or resolve_apineed_quality(None)
-        body = {
-            "model": "gpt-image-2",
-            "prompt": prompt,
-            "n": GEN_NUM_IMAGES,
-            "size": size,
-            "quality": q,
-            "output_format": GEN_OUTPUT_FORMAT,
-        }
-        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as tmp:
-            json.dump(body, tmp, ensure_ascii=False)
-            tmp_path = tmp.name
-        try:
-            cmd = [
-                "curl.exe",
-                "-sS",
-                "--max-time",
-                "300",
-                "-X",
-                "POST",
-                APINEED_ENDPOINT,
-                "-H",
-                f"Authorization: Bearer {api_key}",
-                "-H",
-                "Content-Type: application/json",
-                "-H",
-                f"User-Agent: {HTTP_UA}",
-                "--data-binary",
-                f"@{tmp_path}",
-            ]
-            proc = subprocess.run(cmd, capture_output=True, text=True)
-        finally:
-            Path(tmp_path).unlink(missing_ok=True)
-        if proc.returncode != 0:
-            raise RuntimeError(f"APINEED curl failed ({proc.returncode}): {proc.stderr[:500]}")
-        if not proc.stdout.strip():
-            raise RuntimeError("APINEED empty response (connection dropped)")
-        try:
-            data = json.loads(proc.stdout)
-        except json.JSONDecodeError as e:
-            raise RuntimeError(f"APINEED non-JSON: {proc.stdout[:400]}") from e
-        if data.get("error"):
-            raise RuntimeError(f"APINEED error: {data['error']}")
-        return data
-
-    first_size = "1024x1024" if quality == "low" else "1536x1024"
-    try:
-        result = _request(first_size)
-    except RuntimeError as err:
-        msg = str(err).lower()
-        if first_size != "1024x1024" and ("524" in msg or "timeout" in msg or "size" in msg or "invalid" in msg):
-            print(f"  APINEED {first_size} failed, retrying 1024x1024...")
-            result = _request("1024x1024")
-        else:
-            raise
-
-    items = result.get("data") or []
-    if not items:
-        raise RuntimeError(f"No images in APINEED result: {result}")
-    item = items[0]
-    if item.get("b64_json"):
-        return base64.b64decode(item["b64_json"])
-    url = item.get("url")
-    if not url:
-        raise RuntimeError(f"APINEED item has neither url nor b64_json: {item}")
-    dl = subprocess.run(
-        ["curl.exe", "-sS", "--max-time", "120", "-L", "-A", HTTP_UA, url],
-        capture_output=True,
+    # Force a landscape 16:9 canvas (async gateway ignores size params).
+    full_prompt = (
+        f"{prompt}\n\n"
+        "OUTPUT FRAME: wide landscape 16:9 horizontal frame, a 1200x630 social "
+        "share card aspect. Do NOT render a portrait or square image."
     )
-    if dl.returncode != 0 or not dl.stdout:
-        raise RuntimeError(f"APINEED image download failed: {dl.stderr[:400]}")
-    return dl.stdout
+
+    body = {
+        "workflow": "text_to_image",
+        "model": "gpt-image-2",
+        "input": {"prompt": full_prompt},
+    }
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as tmp:
+        json.dump(body, tmp, ensure_ascii=False)
+        tmp_path = tmp.name
+    try:
+        proc = subprocess.run(
+            [
+                "curl.exe", "-sS", "--max-time", "60",
+                "-X", "POST", APINEED_ENDPOINT,
+                "-H", f"Authorization: Bearer {api_key}",
+                "-H", "Content-Type: application/json",
+                "-H", f"User-Agent: {HTTP_UA}",
+                "--data-binary", f"@{tmp_path}",
+            ],
+            capture_output=True, text=True,
+        )
+    finally:
+        Path(tmp_path).unlink(missing_ok=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f"APINEED submit curl failed ({proc.returncode}): {proc.stderr[:500]}")
+    if not proc.stdout.strip():
+        raise RuntimeError("APINEED empty response (connection dropped)")
+    try:
+        data = json.loads(proc.stdout)
+    except json.JSONDecodeError as e:
+        raise RuntimeError(f"APINEED submit non-JSON: {proc.stdout[:400]}") from e
+    if data.get("error"):
+        raise RuntimeError(f"APINEED submit error: {data['error']}")
+    task_id = data.get("id")
+    if not task_id:
+        raise RuntimeError(f"APINEED no task id in submit: {data}")
+
+    # Poll until succeeded / failed.
+    deadline = time.time() + 300
+    while time.time() < deadline:
+        time.sleep(5)
+        poll = subprocess.run(
+            [
+                "curl.exe", "-sS", "--max-time", "30",
+                "-X", "GET", f"{APINEED_ENDPOINT}/{task_id}",
+                "-H", f"Authorization: Bearer {api_key}",
+            ],
+            capture_output=True, text=True,
+        )
+        if poll.returncode != 0 or not poll.stdout.strip():
+            raise RuntimeError(f"APINEED poll failed: {poll.stderr[:400]}")
+        try:
+            status = json.loads(poll.stdout)
+        except json.JSONDecodeError as e:
+            raise RuntimeError(f"APINEED poll non-JSON: {poll.stdout[:300]}") from e
+        if status.get("status") == "succeeded":
+            outputs = status.get("outputs") or []
+            if not outputs:
+                raise RuntimeError(f"APINEED succeeded with no outputs: {status}")
+            url = outputs[0].get("url")
+            if not url:
+                raise RuntimeError(f"APINEED output has no url: {outputs[0]}")
+            dl = subprocess.run(
+                ["curl.exe", "-sS", "--max-time", "120", "-L", "-A", HTTP_UA, url],
+                capture_output=True,
+            )
+            if dl.returncode != 0 or not dl.stdout:
+                raise RuntimeError(f"APINEED image download failed: {dl.stderr[:400]}")
+            print(f"  APINEED task {task_id} succeeded")
+            return dl.stdout
+        if status.get("status") in ("failed", "cancelled"):
+            raise RuntimeError(f"APINEED task {status.get('status')}: {status.get('error')}")
+    raise TimeoutError(f"APINEED task {task_id} timed out")
 
 
 def fal_generate(prompt: str, fal_key: str) -> bytes:
@@ -435,7 +453,7 @@ def generate_image(
 
 
 def crop_bias_for_provider(provider: str) -> str:
-    # APINEED: taller raw canvas → preserve top (headline zone)
+    # APINEED: prompt-driven canvas — top bias defensively preserves the headline zone
     # fal: ~1216x632 ≈ OG aspect → center crop is fine
     return "top" if provider == "apineed" else "center"
 
@@ -443,8 +461,9 @@ def crop_bias_for_provider(provider: str) -> str:
 def crop_to_og(raw: bytes, *, vertical_bias: str = "center") -> Image.Image:
     """Scale-to-cover then crop to 1200x630.
 
-    APINEED raw frames are taller than OG — use vertical_bias='top' to keep headline
-    and trim excess from the bottom instead of center-slice.
+    APINEED async output is prompt-driven (~16:9), so vertical_bias is defensive:
+    if a canvas comes back slightly taller than OG, bias 'top' keeps the headline
+    zone and trims excess from the bottom instead of center-slicing.
     """
     img = Image.open(BytesIO(raw)).convert("RGB")
     scale = max(OG_W / img.width, OG_H / img.height)

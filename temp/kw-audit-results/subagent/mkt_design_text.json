@@ -1,0 +1,728 @@
+{
+  "batch": "mkt_design_text",
+  "audited_at": "2026-09-03",
+  "slug_count": 21,
+  "method": "WebSearch phrase SERP (method B) + quoted monthly search volume / Semrush-Ahrefs-KeySearch-MicroSaaSHQ cites. Result counts are directional only; Bing ~509k cap noted where relevant. Never change slug — only keywordEn primary.",
+  "summary": {
+    "OK": 16,
+    "SWITCH": 2,
+    "KEEP_INTENT": 3,
+    "AMBIGUOUS": 0
+  },
+  "results": [
+    {
+      "slug": "advertising-agent",
+      "current_primary": "Advertising Agent",
+      "candidates": [
+        {
+          "keyword": "Advertising Agent",
+          "volume_signal": "No product-class MSV cite. SERP is occupational: BLS Advertising Sales Agents (103,700 jobs, 2024), Indeed career pages. High raw demand is job-title, not autonomous ad-ops software.",
+          "source": "WebSearch 'Advertising Agent' 2026-09-03; bls.gov/ooh/sales/advertising-sales-agents.htm",
+          "serp_title_note": "Titles: 'Advertising Sales Agents : Occupational Outlook Handbook', 'How to become an advertising sales agent', 'What Does an Advertising Agent Do?'"
+        },
+        {
+          "keyword": "Agentic advertising",
+          "volume_signal": "No isolated MSV. Category definition pages and AdCP/Amazon Ads/Junior use this as the product-class name. Broader 'agentic AI' is ~110k–122k/mo US (DataForSEO / Ahrefs) — different, field-wide intent.",
+          "source": "WebSearch '\"AI advertising agent\" OR \"agentic advertising\"'; advertising.amazon.com; junior.so; adcontextprotocol.org; cdp.com/glossary/agentic-advertising; lilachbullock.com AI Search Demand Report 2026",
+          "serp_title_note": "Titles: 'Agentic Advertising, AI That Manages Your Ad Campaigns', 'Agentic Ads: A Practical Guide', 'AgenticAdvertising.org', 'Agentic Advertising: Definition & Examples'"
+        },
+        {
+          "keyword": "AI advertising agent",
+          "volume_signal": "No public MSV. Same product intent as agentic advertising; titles mix 'ads agent' skills and Gumloop-style account agents.",
+          "source": "WebSearch '\"Advertising Agent\" monthly search volume semrush' 2026-09-03",
+          "serp_title_note": "Skill/repo titles (ai-ads-agent) plus generic Semrush landing pages; weaker category head than 'agentic advertising'"
+        },
+        {
+          "keyword": "agentic AI",
+          "volume_signal": "~110,000 US/mo (DataForSEO via Bullock/Corewire 2026); Ahrefs cite 122,175 US May 2026. Far higher raw volume.",
+          "source": "lilachbullock.com/ai-search-demand-report-2026; corewire.news; Ahrefs Keywords Explorer cited on blog.aimactgrow.com",
+          "serp_title_note": "Field-wide agent term, not paid-media account agents"
+        }
+      ],
+      "highest_volume_same_intent": "Agentic advertising",
+      "verdict": "SWITCH",
+      "recommended_primary": "Agentic advertising",
+      "reason": "Current 'Advertising Agent' SERP is the BLS/Indeed sales-job title, not Alignify's autonomous ad-account Agent class. Same-intent titles already standardize on 'agentic advertising'. Do not chase 'agentic AI' (~110k) — different field intent."
+    },
+    {
+      "slug": "affiliate-marketing",
+      "current_primary": "Affiliate marketing",
+      "candidates": [
+        {
+          "keyword": "Affiliate marketing",
+          "volume_signal": "Global ~550k–673k/mo (Skoatch; KeySearch lists 673,000). Syscality example table also shows 8,100 on a different (likely US/local) extract.",
+          "source": "skoatch.com affiliate-marketing-keywords guide; keysearch.co/top-keywords/marketing-keywords; WebSearch 'Affiliate marketing' 2026-09-03",
+          "serp_title_note": "Wikipedia + Shopify + Impact + Ahrefs blog: natural category head"
+        },
+        {
+          "keyword": "affiliate marketing for beginners",
+          "volume_signal": "~9,900/mo (Skoatch)",
+          "source": "skoatch.com/en/blog/affiliate-marketing-keywords-seo-list-best-keyword-research-guide-1080590",
+          "serp_title_note": "Informational long-tail, same topic, not the head"
+        },
+        {
+          "keyword": "affiliate marketing tools",
+          "volume_signal": "Example cluster cite ~200/mo (Syscality beginner table). Far below the head term.",
+          "source": "syscality.com/keyword-research-for-beginners",
+          "serp_title_note": "Tool-suffix; same commercial intent but not the SERP head"
+        },
+        {
+          "keyword": "AI affiliate marketing",
+          "volume_signal": "No cited MSV in this pass.",
+          "source": "WebSearch '\"affiliate marketing tools\" monthly search volume' 2026-09-03",
+          "serp_title_note": "Modifier, not a replacement head"
+        }
+      ],
+      "highest_volume_same_intent": "Affiliate marketing",
+      "verdict": "OK",
+      "recommended_primary": "Affiliate marketing",
+      "reason": "Current primary is the Wikipedia/Shopify head with ~550k–673k global MSV. Tools/AI suffixes are same-intent but far smaller. Do not jump to generic 'marketing tools'."
+    },
+    {
+      "slug": "b2b",
+      "current_primary": "AI B2B Marketing Tools",
+      "candidates": [
+        {
+          "keyword": "AI B2B Marketing Tools",
+          "volume_signal": "No public exact MSV. Exact-phrase SERP is product/ABM-agent landings (YEpsilon, Userled, Abmatic, RevSure) — commercial tool intent matches the hub.",
+          "source": "WebSearch 'AI B2B Marketing Tools' 2026-09-03",
+          "serp_title_note": "Titles: 'AI Agent for B2B Marketing', 'Agentic ABM Platform', 'Transforming Account-Based Marketing'"
+        },
+        {
+          "keyword": "B2B marketing tools",
+          "volume_signal": "No isolated MSV. B2B keywords often sit 50–500/mo with high intent (Otrenix / Rudo). Longer AI-prefixed phrase is the page's product class.",
+          "source": "WebSearch '\"B2B marketing tools\" search volume monthly'; otrenix.com/b2b-seo-marketing-strategy",
+          "serp_title_note": "Broader stack (CRM/ABM/analytics), still same hub, no ≥2× cite vs current"
+        },
+        {
+          "keyword": "AI B2B marketing",
+          "volume_signal": "No cited MSV. Word-order variant of current.",
+          "source": "WebSearch '\"AI B2B marketing\" OR \"B2B marketing tools\" monthly search volume semrush'",
+          "serp_title_note": "Same pipeline-AI intent"
+        },
+        {
+          "keyword": "marketing tools",
+          "volume_signal": "Higher raw consumer volume; intent fence.",
+          "source": "Methodology intent fence",
+          "serp_title_note": "Generic category — do not use"
+        }
+      ],
+      "highest_volume_same_intent": "AI B2B Marketing Tools",
+      "verdict": "OK",
+      "recommended_primary": "AI B2B Marketing Tools",
+      "reason": "Exact-phrase SERP already returns full-funnel B2B/ABM AI products. No same-intent phrase has a ≥2× MSV cite. Do not switch to generic 'marketing tools' or collapse into lead-generation."
+    },
+    {
+      "slug": "design",
+      "current_primary": "AI Design Tool",
+      "candidates": [
+        {
+          "keyword": "AI Design Tool",
+          "volume_signal": "~5.4k/mo (MicroSaaSHQ keyword page). 12-mo bars 3.6k–8.1k.",
+          "source": "microsaashq.com/keyword-research/ai-design-tool",
+          "serp_title_note": "Figma/Claude/UX Pilot product pages treat 'AI design tool/agent/generator' as the hub query"
+        },
+        {
+          "keyword": "AI design tools",
+          "volume_signal": "Google Trends (Accio): 'AI design tools' consistently leads 'AI design software' through 2025 (index peak 100 vs 61–66). No exact plural MSV.",
+          "source": "accio.com/business/ai-design-trends",
+          "serp_title_note": "Roundup titles prefer plural 'AI design tools'; same hub intent, not ≥2× proven vs singular"
+        },
+        {
+          "keyword": "AI design generator",
+          "volume_signal": "~22.2k/mo (MicroSaaSHQ idea page) — higher raw than current.",
+          "source": "microsaashq.com/saas-ideas/ai-design-generator-855",
+          "serp_title_note": "Generator/logo/mockup spoke, not the design hub"
+        },
+        {
+          "keyword": "AI creator",
+          "volume_signal": "~49.5k/mo (MicroSaaSHQ) — different creator-economy intent.",
+          "source": "microsaashq.com/keyword-research/ai-creator",
+          "serp_title_note": "Not UI/UX/wireframe hub"
+        }
+      ],
+      "highest_volume_same_intent": "AI design tools",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Design Tool",
+      "reason": "Plural 'AI design tools' is the Trends/roundup head but lacks a ≥2× MSV cite vs 5.4k singular. 'AI design generator' (~22k) and 'AI creator' (~49.5k) are higher raw volume but spoke/other-intent — keep the hub primary."
+    },
+    {
+      "slug": "essay-writer",
+      "current_primary": "AI Essay Writer",
+      "candidates": [
+        {
+          "keyword": "AI Essay Writer",
+          "volume_signal": "~40.5k/mo (MicroSaaSHQ); 12-mo bars 22.2k–74k. Yomu: AI-essay cluster +537% Jan 2023–Jan 2025 (aggregate, not exact-match).",
+          "source": "microsaashq.com/keyword-research/ai-essay-writer; yomu.ai search-trends article",
+          "serp_title_note": "Product titles lock to 'AI Essay Writer' (EssayAI, MyEssayWriter, EduWriter, EssayGenius)"
+        },
+        {
+          "keyword": "AI essay generator",
+          "volume_signal": "Bundled in Yomu's AI-essay cluster; no separate ≥2× cite vs writer.",
+          "source": "yomu.ai/resources/search-trends-show-ai-essay-writer-is-replacing-essay-writing-services-why",
+          "serp_title_note": "Same academic-draft intent; titles still lead with writer"
+        },
+        {
+          "keyword": "essay writing AI",
+          "volume_signal": "ChatGPT commercial prompt ~1.2k people asking/mo (Keywords Everywhere).",
+          "source": "aibrandtracker.keywordseverywhere.com/prompt-category/essay-writing-ai",
+          "serp_title_note": "Prompt variant, not the Google head"
+        },
+        {
+          "keyword": "AI writing tools",
+          "volume_signal": "Hub/generic; 'best ai writing tools' ~1,000/mo US (AI Tools Stats 2026).",
+          "source": "aitoolsbreakdown.com/productivity/ai-tools-stats-2026",
+          "serp_title_note": "Text hub — intent fence"
+        }
+      ],
+      "highest_volume_same_intent": "AI Essay Writer",
+      "verdict": "OK",
+      "recommended_primary": "AI Essay Writer",
+      "reason": "40.5k/mo plus product SERP titles already use this exact phrase. Generator is a synonym without a ≥2× cite. Do not absorb into the text hub."
+    },
+    {
+      "slug": "fundraising",
+      "current_primary": "AI fundraising",
+      "candidates": [
+        {
+          "keyword": "AI fundraising",
+          "volume_signal": "No public exact MSV. SERP splits nonprofit donor AI (Blackbaud, Funraise, Kindsight) and founder/VC matching (raise(fn), Evalyze, Qubit) — both in-scope for the KB.",
+          "source": "WebSearch 'AI fundraising' and '\"AI fundraising\" monthly search volume semrush' 2026-09-03",
+          "serp_title_note": "Titles: 'How to Harness the Power of AI Fundraising', 'AI for fundraising: 10 ways', 'Blackbaud Development Agent', plus founder-tool pages when query includes startup/investor"
+        },
+        {
+          "keyword": "AI fundraising tools",
+          "volume_signal": "No cited MSV. Tool-suffix of current.",
+          "source": "WebSearch '\"AI fundraising\" monthly search volume semrush'",
+          "serp_title_note": "Same class, no volume win"
+        },
+        {
+          "keyword": "AI investor matching",
+          "volume_signal": "No cited MSV. Founder-only slice of the page.",
+          "source": "evalyze.ai/blog/use-AI-for-fundraising; raisefn.com",
+          "serp_title_note": "Drops nonprofit donor intelligence"
+        },
+        {
+          "keyword": "fundraising software",
+          "volume_signal": "Likely higher raw CRM/nonprofit volume; generic suffix inflate.",
+          "source": "Methodology KEEP_INTENT vs software suffix",
+          "serp_title_note": "Bloomerang/Blackbaud CRM, not specifically AI raise tooling"
+        }
+      ],
+      "highest_volume_same_intent": "AI fundraising",
+      "verdict": "OK",
+      "recommended_primary": "AI fundraising",
+      "reason": "Current phrase is the natural query for both nonprofit and founder raise tools the KB covers. No same-intent alt has a ≥2× MSV cite. Do not switch to generic fundraising software or investor-matching-only."
+    },
+    {
+      "slug": "influencer-marketing",
+      "current_primary": "Influencer marketing",
+      "candidates": [
+        {
+          "keyword": "Influencer marketing",
+          "volume_signal": "Global ~74,000 (KeySearch). US ~12,100 (Blogging Wizard / Treendly). UK Ahrefs ~16,000 (Fabulate).",
+          "source": "keysearch.co/top-keywords/marketing-keywords; bloggingwizard.com; treendly.com/trend/influencer-marketing; fabulate.co UK query study",
+          "serp_title_note": "Influencer Marketing Hub + Springer + Later: undisputed category head"
+        },
+        {
+          "keyword": "influencer marketing platform",
+          "volume_signal": "No head-level cite; 'influencer marketing agency' UK ~1,600/mo (Fabulate).",
+          "source": "fabulate.co/au/blog/influencer-marketing-in-the-uk-what-1-700-search-queries-tell-us",
+          "serp_title_note": "Software/agency suffix, not the practice head"
+        },
+        {
+          "keyword": "AI influencer marketing",
+          "volume_signal": "UK AI-influencer cluster ~4,140/mo; 'AI influencer' ~1,500 (Fabulate/Ahrefs).",
+          "source": "fabulate.co Ahrefs UK study",
+          "serp_title_note": "Virtual-influencer / discovery-AI slice, not the platform category"
+        },
+        {
+          "keyword": "UGC",
+          "volume_signal": "Separate fence. Ahrefs US 'ai ugc' ~3.7k–7.3k.",
+          "source": "dev.to Ahrefs API Aug 2026",
+          "serp_title_note": "Asset/creator-for-ads, not KOL distribution"
+        }
+      ],
+      "highest_volume_same_intent": "Influencer marketing",
+      "verdict": "OK",
+      "recommended_primary": "Influencer marketing",
+      "reason": "74k global / ~12k US head term; SERP is the practice. Platform/AI suffixes and UGC are lower or different intent."
+    },
+    {
+      "slug": "lead-generation",
+      "current_primary": "AI Lead Generation",
+      "candidates": [
+        {
+          "keyword": "AI Lead Generation",
+          "volume_signal": "~4.4k/mo (MicroSaaSHQ). ChatGPT prompt 'best AI lead generation tool' ~550 asking/mo (Keywords Everywhere).",
+          "source": "microsaashq.com/saas-ideas/lead-search-engine-603; aibrandtracker.keywordseverywhere.com/prompt-category/ai-lead-generation",
+          "serp_title_note": "Salesforce/AI-SDR explainers: 'AI lead generation' is the product-class phrase"
+        },
+        {
+          "keyword": "lead generation tool",
+          "volume_signal": "~9.9k/mo (MicroSaaSHQ) — ~2.25× current.",
+          "source": "microsaashq.com/saas-ideas/lead-search-engine-603",
+          "serp_title_note": "Includes non-AI databases; drops the AI/Agent framing of the KB"
+        },
+        {
+          "keyword": "lead generation software",
+          "volume_signal": "~3.6k/mo (MicroSaaSHQ)",
+          "source": "microsaashq.com/saas-ideas/lead-search-engine-603",
+          "serp_title_note": "Software suffix, below current"
+        },
+        {
+          "keyword": "lead generation",
+          "volume_signal": "Global ~74,000 (KeySearch). How-to + agency + course mix.",
+          "source": "keysearch.co/top-keywords/marketing-keywords",
+          "serp_title_note": "Generic practice, not AI enrichment/SDR tools"
+        }
+      ],
+      "highest_volume_same_intent": "AI Lead Generation",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Lead Generation",
+      "reason": "Bare 'lead generation' (~74k) and 'lead generation tool' (~9.9k) out-volume the AI phrase, but they are generic how-to/database queries. The KB is AI discovery→enrichment→outreach. Keep the AI product-class primary."
+    },
+    {
+      "slug": "presentation-maker",
+      "current_primary": "AI Presentation Maker",
+      "candidates": [
+        {
+          "keyword": "AI Presentation Maker",
+          "volume_signal": "'best ai presentation maker' ~1,000/mo US (AI Tools Stats 2026). Category seed in Instant Deck Keyword Planner pull. No isolated head MSV.",
+          "source": "aitoolsbreakdown.com/productivity/ai-tools-stats-2026; instantdeckai.com/reports/state-of-ai-presentations-2026",
+          "serp_title_note": "Gamma homepage + Beautiful.ai + Prezent + is4.ai: 'Best AI Presentation Maker' is the roundup head"
+        },
+        {
+          "keyword": "AI PPT maker",
+          "volume_signal": "~60,500/mo on presentations.ai organic table (Semrush-style dump).",
+          "source": "semtest.toolsnovintrend.ir/website/presentations.ai/overview",
+          "serp_title_note": "Colloquial synonym; titles still lead with presentation maker"
+        },
+        {
+          "keyword": "presentation ai",
+          "volume_signal": "~60,500 (same dump) to ~98,800–119k (Oryndex/TechList Similarweb).",
+          "source": "oryndex.co/tools/presentationsai/market-signals; techlist.ai/presentations.ai",
+          "serp_title_note": "Word-order / brand-adjacent; same deck-generation intent"
+        },
+        {
+          "keyword": "AI slideshow generator",
+          "volume_signal": "No cited MSV. Used in Gamma/product copy as synonym.",
+          "source": "collidu.com top-ai-presentation-makers",
+          "serp_title_note": "Same intent, not the SERP head"
+        }
+      ],
+      "highest_volume_same_intent": "AI Presentation Maker",
+      "verdict": "OK",
+      "recommended_primary": "AI Presentation Maker",
+      "reason": "SERP titles treat this as the category query (Gamma, Beautiful.ai, roundups). 'AI PPT maker' / 'presentation ai' show large cited volumes but are aliases without a clean ≥2× win over the title-head, and PPT is regional slang. Do not collapse into text-generator."
+    },
+    {
+      "slug": "prototyping",
+      "current_primary": "Prototyping",
+      "candidates": [
+        {
+          "keyword": "Prototyping",
+          "volume_signal": "No isolated MSV this pass. SERP is the interaction-design field plus tool roundups.",
+          "source": "WebSearch 'Prototyping tools' 2026-09-03",
+          "serp_title_note": "UXPin/Built In: 'Top Prototyping Tools' — field name is the natural query"
+        },
+        {
+          "keyword": "AI prototyping",
+          "volume_signal": "Google Trends index 99 in Aug 2025 GPT-5 spike (Lazarev). No monthly MSV.",
+          "source": "lazarev.agency/articles/ai-design-google-trends",
+          "serp_title_note": "Modifier on the same field; not proven ≥2×"
+        },
+        {
+          "keyword": "prototype tool",
+          "volume_signal": "No cited MSV. Tool suffix.",
+          "source": "uxpin.com/studio/blog/top-prototyping-tools",
+          "serp_title_note": "Same commercial intent, not the head"
+        },
+        {
+          "keyword": "Wireframing",
+          "volume_signal": "Adjacent spoke — intent fence.",
+          "source": "KB design fence",
+          "serp_title_note": "Low-fi structure, not clickable behavior"
+        }
+      ],
+      "highest_volume_same_intent": "Prototyping",
+      "verdict": "OK",
+      "recommended_primary": "Prototyping",
+      "reason": "Field name matches tool-roundup SERP. AI-prefix spiked on Trends but has no ≥2× MSV cite. Do not switch to wireframing or UI design."
+    },
+    {
+      "slug": "referral-program",
+      "current_primary": "Referral program",
+      "candidates": [
+        {
+          "keyword": "Referral program",
+          "volume_signal": "~14.8k/mo (MicroSaaSHQ idea page; 12-mo 12.1k–18.1k). InstantDomainSearch US-style 'referral programs' SV 720 (narrower extract).",
+          "source": "microsaashq.com/saas-ideas/referral-program-251; instantdomainsearch.com/directory/referralcandy.com",
+          "serp_title_note": "Software roundups still title around 'referral program software' but the practice head is 'referral program'"
+        },
+        {
+          "keyword": "referral program software",
+          "volume_signal": "MicroGaps ~10,000/mo; MicroSaaSHQ keyword page ~1.6k/mo. Conflicting cites, both ≤ current 14.8k.",
+          "source": "microgaps.com/gaps/saas-customer-referral-widget-indie-founders; microsaashq.com/keyword-research/referral-program-software",
+          "serp_title_note": "Buyer-guide titles; software suffix would inflate index counts"
+        },
+        {
+          "keyword": "referral marketing",
+          "volume_signal": "~4k/mo related (MicroSaaSHQ). MicroGaps 'referral marketing software' ~8,000.",
+          "source": "microsaashq.com/saas-ideas/referral-program-251; microgaps.com",
+          "serp_title_note": "Broader advocacy/loyalty overlap"
+        },
+        {
+          "keyword": "refer a friend program",
+          "volume_signal": "~5,000/mo (MicroGaps)",
+          "source": "microgaps.com",
+          "serp_title_note": "Consumer phrasing, same mechanism"
+        }
+      ],
+      "highest_volume_same_intent": "Referral program",
+      "verdict": "OK",
+      "recommended_primary": "Referral program",
+      "reason": "14.8k head beats software/marketing suffixes on the stronger cite. Keep the practice name; do not merge into affiliate-marketing."
+    },
+    {
+      "slug": "social-media-tools",
+      "current_primary": "Social media management",
+      "candidates": [
+        {
+          "keyword": "Social media management",
+          "volume_signal": "49,500 global (Seopital keyword table, Jan 2025).",
+          "source": "seopital.co/blog/the-best-social-media-seo-keywords",
+          "serp_title_note": "Hootsuite/Sprout/HubSpot: category is 'social media management'"
+        },
+        {
+          "keyword": "social media scheduler",
+          "volume_signal": "9,900 (Seopital). 'best social media scheduler' ~1.0k–1.6k (MicroSaaSHQ / Seopital).",
+          "source": "seopital.co; microsaashq.com/keyword-research/best-social-media-scheduler",
+          "serp_title_note": "Narrower publish-queue intent; KB covers calendar+inbox+analytics"
+        },
+        {
+          "keyword": "social media management platforms",
+          "volume_signal": "5,400 (Seopital)",
+          "source": "seopital.co/blog/the-best-social-media-seo-keywords",
+          "serp_title_note": "Platform suffix, lower volume"
+        },
+        {
+          "keyword": "social media management software",
+          "volume_signal": "No fresh MSV this pass. Prior Bing-proxy audits inflated this suffix; Seopital table does not show it beating 49.5k.",
+          "source": "Seopital table vs methodology (avoid tools/software inflate)",
+          "serp_title_note": "Same class, suffix inflate"
+        }
+      ],
+      "highest_volume_same_intent": "Social media management",
+      "verdict": "OK",
+      "recommended_primary": "Social media management",
+      "reason": "49.5k vs scheduler 9.9k (~5×). Current is the Hootsuite-class head. Do not switch to scheduler or a software suffix, and do not jump to influencer/UGC."
+    },
+    {
+      "slug": "story-generator",
+      "current_primary": "AI Story Generator",
+      "candidates": [
+        {
+          "keyword": "AI Story Generator",
+          "volume_signal": "MicroSaaSHQ 201k/mo; Jenova/Pleasur.ai DataForSEO ~90,500 (2026); Ahrefs via aijourn ranking table 53,000. Spread is large but all treat this exact phrase as the head.",
+          "source": "microsaashq.com/saas-ideas/ai-story-generator-3; jenova.ai/en/resources/story-generator-free; ahrefstop.com/websites/aijourn.com",
+          "serp_title_note": "Quillbot, Musely, Free.ai, Sudowrite SEO: 'AI Story Generator'"
+        },
+        {
+          "keyword": "AI story writer",
+          "volume_signal": "No separate ≥2× cite vs generator.",
+          "source": "WebSearch '\"AI story generator\" \"search volume\" monthly'",
+          "serp_title_note": "Synonym in product copy"
+        },
+        {
+          "keyword": "AI text generator",
+          "volume_signal": "135k/mo on the same MicroSaaSHQ table — text-generator spoke.",
+          "source": "microsaashq.com/saas-ideas/ai-story-generator-3",
+          "serp_title_note": "Marketing/blog generation, not narrative"
+        }
+      ],
+      "highest_volume_same_intent": "AI Story Generator",
+      "verdict": "OK",
+      "recommended_primary": "AI Story Generator",
+      "reason": "Exact phrase is the product SERP head with the highest same-intent cites (53k–201k depending on source). Do not merge into text-generator."
+    },
+    {
+      "slug": "text",
+      "current_primary": "AI Text Tools",
+      "candidates": [
+        {
+          "keyword": "AI Text Tools",
+          "volume_signal": "No isolated MSV. Hub phrase in keywordEn_full.",
+          "source": "WebSearch 'AI Text Tools' 2026-09-03",
+          "serp_title_note": "Query leans into writing-tool guides more than a 'text tools' directory"
+        },
+        {
+          "keyword": "AI Writing Tools",
+          "volume_signal": "'best ai writing tools' ~1,000/mo US (AI Tools Stats 2026). 'AI writing software' ~1.6k–1.9k (Treendly / MicroSaaSHQ). Alias already in keywordEn_full.",
+          "source": "aitoolsbreakdown.com; treendly.com/trend/ai-writing-software; microsaashq.com/keyword-research/ai-writing-software",
+          "serp_title_note": "easymcpai 'AI Writing Tools: The Complete Guide' — natural hub title"
+        },
+        {
+          "keyword": "AI text generator",
+          "volume_signal": "135k/mo (MicroSaaSHQ) — spoke, not hub.",
+          "source": "microsaashq.com/saas-ideas/ai-story-generator-3",
+          "serp_title_note": "Prompt→new copy; excludes grammar/translate/detect"
+        },
+        {
+          "keyword": "AI writer",
+          "volume_signal": "No isolated MSV this pass. SEJ/G2 use 'AI writers & content generators'.",
+          "source": "searchenginejournal.com/ai-writers-content-generators",
+          "serp_title_note": "Closer to text-generator spoke"
+        }
+      ],
+      "highest_volume_same_intent": "AI Writing Tools",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Text Tools",
+      "reason": "Writing-tools titles are the more common hub language, but cited volumes (~1–2k) are not ≥2× current and would still sit under 'AI text generator' (135k), which is a spoke. Keep the broader hub primary so translation/detection/grammar stay in-scope."
+    },
+    {
+      "slug": "text-generator",
+      "current_primary": "AI Text Generator",
+      "candidates": [
+        {
+          "keyword": "AI Text Generator",
+          "volume_signal": "~135k/mo (MicroSaaSHQ, repeated on story-generator and book-writer idea pages).",
+          "source": "microsaashq.com/saas-ideas/ai-story-generator-3",
+          "serp_title_note": "Free.ai, Quillbot, Jotform, Zapier: 'AI text generator' / 'AI writing generator'"
+        },
+        {
+          "keyword": "AI content generator",
+          "volume_signal": "No isolated MSV. Market-report language.",
+          "source": "valuates.com AI content generation report",
+          "serp_title_note": "Often includes image/video — broader than this spoke"
+        },
+        {
+          "keyword": "AI writer",
+          "volume_signal": "No isolated MSV. SEJ comparison title.",
+          "source": "searchenginejournal.com/ai-writers-content-generators/448782",
+          "serp_title_note": "Same commercial-copy intent"
+        },
+        {
+          "keyword": "AI writing tools",
+          "volume_signal": "~1k for 'best ai writing tools' — hub.",
+          "source": "aitoolsbreakdown.com",
+          "serp_title_note": "Text hub fence"
+        }
+      ],
+      "highest_volume_same_intent": "AI Text Generator",
+      "verdict": "OK",
+      "recommended_primary": "AI Text Generator",
+      "reason": "135k/mo plus product SERP already use this phrase. Do not absorb essay/story/hub terms."
+    },
+    {
+      "slug": "text-translator",
+      "current_primary": "AI text translation",
+      "candidates": [
+        {
+          "keyword": "AI text translation",
+          "volume_signal": "No cited MSV. Phrase SERP is Cloud Translation / DeepL API developer docs, not consumer tool roundups.",
+          "source": "WebSearch 'AI text translation' 2026-09-03",
+          "serp_title_note": "Google Cloud Translation API, DeepL 'choosing a translation API'"
+        },
+        {
+          "keyword": "AI translator",
+          "volume_signal": "DeepL organic keyword table 18,100; navtools 19.3k; Wordvice Semrush-style table 12,100. Consistent mid-teens thousands.",
+          "source": "resources.clicks.so/top-websites/deepl.com; navtools.ai/tool/aitranslator-com; srush.toolspur.com/website/wordvice.ai/overview",
+          "serp_title_note": "SeekTool category 'AI Translators' (67 tools). DeepL ranks for this query."
+        },
+        {
+          "keyword": "AI translate",
+          "volume_signal": "~9,000 (navtools)",
+          "source": "navtools.ai/tool/aitranslator-com",
+          "serp_title_note": "Shorter variant, lower than AI translator"
+        },
+        {
+          "keyword": "AI translation software",
+          "volume_signal": "Google Trends leader vs devices (Accio, 2025) — relative index only.",
+          "source": "accio.com/business/ai-translation-trends",
+          "serp_title_note": "Software suffix; also collides with earbuds/devices"
+        },
+        {
+          "keyword": "translate",
+          "volume_signal": "~124,000,000 (DeepL keyword table) — generic Google Translate intent.",
+          "source": "resources.clicks.so/top-websites/deepl.com",
+          "serp_title_note": "Not the AI-tool class; KEEP_INTENT if anyone chases it"
+        }
+      ],
+      "highest_volume_same_intent": "AI translator",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI translator",
+      "reason": "Current 'AI text translation' has no MSV and its SERP is developer APIs. 'AI translator' is the SeekTool/DeepL head at ~12k–18k/mo. Stay text-only — do not take audio devices or video dubbing."
+    },
+    {
+      "slug": "ugc",
+      "current_primary": "UGC",
+      "candidates": [
+        {
+          "keyword": "UGC",
+          "volume_signal": "MicroSaaSHQ lists 1M/mo at $0.01 CPC (acronym is noisy: Wikipedia + gaming + marketing). Still the token brands/media buyers type.",
+          "source": "microsaashq.com/saas-ideas/user-generated-content-marketing-67",
+          "serp_title_note": "Emplifi/Cohley/Duel product titles: 'UGC platform'"
+        },
+        {
+          "keyword": "user generated content",
+          "volume_signal": "No clean isolated MSV this pass (the 823k row on the same MicroSaaSHQ page is labeled 'Generator', not this phrase).",
+          "source": "microsaashq.com/saas-ideas/user-generated-content-marketing-67",
+          "serp_title_note": "Definitional/Wikipedia; marketers still say UGC"
+        },
+        {
+          "keyword": "AI UGC",
+          "volume_signal": "Ahrefs US: 7,300 (Jul 2026) / table avg 3,700. Hockey-stick from 44 (Jan 2023).",
+          "source": "dev.to/jack_miller Ahrefs API Aug 2026",
+          "serp_title_note": "AI-avatar ads subset of this page, not the whole UGC class"
+        },
+        {
+          "keyword": "UGC ads",
+          "volume_signal": "~1,100/mo US (Ahrefs table)",
+          "source": "dev.to Ahrefs API Aug 2026",
+          "serp_title_note": "Paid-social creative slice"
+        },
+        {
+          "keyword": "Influencer marketing",
+          "volume_signal": "~74k global — different fence (distribution vs assets).",
+          "source": "keysearch.co",
+          "serp_title_note": "Do not switch"
+        }
+      ],
+      "highest_volume_same_intent": "UGC",
+      "verdict": "OK",
+      "recommended_primary": "UGC",
+      "reason": "Marketers and product SERPs use the acronym. AI UGC / UGC ads are smaller same-family slices. Do not switch to influencer-marketing or affiliate despite higher raw heads."
+    },
+    {
+      "slug": "ui-design",
+      "current_primary": "AI UI Design",
+      "candidates": [
+        {
+          "keyword": "AI UI Design",
+          "volume_signal": "No isolated MSV. Google Trends hit index 100 (Aug 2025, Lazarev). SeekTool/Toolworthy treat it as a category.",
+          "source": "lazarev.agency/articles/ai-design-google-trends; toolworthy.ai/category/ai-ui-design",
+          "serp_title_note": "Netguru/UX Pilot/Magic Patterns: 'AI UI design tools' / 'AI UI generator'"
+        },
+        {
+          "keyword": "AI UI generator",
+          "volume_signal": "No cited MSV. Strong product-title synonym.",
+          "source": "WebSearch 'AI UI Design'; superdesign.dev; visily.ai",
+          "serp_title_note": "Same prompt-to-screen intent"
+        },
+        {
+          "keyword": "UI design",
+          "volume_signal": "Field/career volume higher (agency tables show UI/UX agency terms 34k–41k). Different or broader than AI generation.",
+          "source": "seosandwitch.com/keywords-for-ui-ux-design-companies",
+          "serp_title_note": "Career + visual craft, not text-to-UI tools"
+        },
+        {
+          "keyword": "UX Design",
+          "volume_signal": "Adjacent spoke — fence.",
+          "source": "KB design fence",
+          "serp_title_note": "System/IA vs high-fi visuals"
+        }
+      ],
+      "highest_volume_same_intent": "AI UI Design",
+      "verdict": "OK",
+      "recommended_primary": "AI UI Design",
+      "reason": "Product SERP already uses this AI-prefixed class. Bare 'UI design' is career/field volume — keep the AI product primary. Do not steal UX/wireframe/prototype."
+    },
+    {
+      "slug": "user-research",
+      "current_primary": "AI User Research",
+      "candidates": [
+        {
+          "keyword": "AI User Research",
+          "volume_signal": "No isolated MSV. Trends index 100 (Aug 2025). Greylock/The Good/Articos use this exact category name.",
+          "source": "lazarev.agency; greylock.com/blog/ai-user-research; thegood.com/insights/ai-research-tools",
+          "serp_title_note": "Titles: 'The Rise of AI-Native User Research', 'How AI Is Changing User Research'"
+        },
+        {
+          "keyword": "AI UX research",
+          "volume_signal": "No cited MSV. Synonym.",
+          "source": "designrush.com how-to-use-ai-for-user-experience-research",
+          "serp_title_note": "Same qualitative-research tools"
+        },
+        {
+          "keyword": "user research",
+          "volume_signal": "Field term; 'UX research agency' ~19.5k on one agency-keyword table. Broader methods/career.",
+          "source": "seosandwitch.com/keywords-for-ui-ux-design-companies",
+          "serp_title_note": "Human interviews/surveys, not specifically AI-moderated/synthetic"
+        }
+      ],
+      "highest_volume_same_intent": "AI User Research",
+      "verdict": "OK",
+      "recommended_primary": "AI User Research",
+      "reason": "Category explainers already use this phrase. Bare 'user research' is the wider practice. Do not fold into UX design or analytics/session-replay."
+    },
+    {
+      "slug": "ux-design",
+      "current_primary": "UX Design",
+      "candidates": [
+        {
+          "keyword": "UX Design",
+          "volume_signal": "No clean isolated MSV this pass. SERP is the field definition (Figma) plus career guides — which is what a practice-head query looks like. Agency table: 'UX design agency' ~41.8k.",
+          "source": "WebSearch 'UX Design'; figma.com/resource-library/what-is-ux-design; seosandwitch.com",
+          "serp_title_note": "Figma 'What Is User Experience (UX) Design?' plus career-path titles"
+        },
+        {
+          "keyword": "AI UX Design",
+          "volume_signal": "Trends index 100 (Aug 2025). SeekTool lists 30 'AI UX Design' tools. No ≥2× MSV vs the field head.",
+          "source": "lazarev.agency; seektool.ai/ranking/categories/ai_ux_design",
+          "serp_title_note": "Tool directories; KB chose the unprefixed field name on purpose"
+        },
+        {
+          "keyword": "UX design tools",
+          "volume_signal": "No cited MSV. Tool suffix.",
+          "source": "WebSearch '\"UX design\" vs \"AI UX design\" search volume monthly'",
+          "serp_title_note": "Same spoke, suffix inflate"
+        },
+        {
+          "keyword": "UI design",
+          "volume_signal": "Adjacent visual spoke — fence.",
+          "source": "KB design fence",
+          "serp_title_note": "Interface look vs system/IA"
+        }
+      ],
+      "highest_volume_same_intent": "UX Design",
+      "verdict": "OK",
+      "recommended_primary": "UX Design",
+      "reason": "Current is the field head the KB uses for IA/systems/accessibility. AI-prefix is a Trends spike without a ≥2× MSV cite. Do not switch to UI, wireframe, or user-research."
+    },
+    {
+      "slug": "wireframing",
+      "current_primary": "Wireframing",
+      "candidates": [
+        {
+          "keyword": "Wireframing",
+          "volume_signal": "No isolated MSV. SERP is process/how-to (MockFlow, Slickplan, wireframingtools.org) — field head.",
+          "source": "WebSearch 'Wireframing' 2026-09-03",
+          "serp_title_note": "Guides: 'Wireframing Process', 'Wireframing in 2026', 'How to Create a Wireframe'"
+        },
+        {
+          "keyword": "AI wireframing",
+          "volume_signal": "Trends index 94 (Aug 2025). Anima/Glyphsignal roundups exist. No ≥2× MSV.",
+          "source": "lazarev.agency; animaapp.com/blog/ai-design-en/wireframe-tools",
+          "serp_title_note": "AI-tool subset of the same low-fi structure intent"
+        },
+        {
+          "keyword": "wireframe tool",
+          "volume_signal": "No cited MSV. Canva/Balsamiq commercial pages.",
+          "source": "canva.com/online-whiteboard/wireframes",
+          "serp_title_note": "Tool suffix"
+        },
+        {
+          "keyword": "Prototyping",
+          "volume_signal": "Adjacent spoke — fence.",
+          "source": "KB design fence",
+          "serp_title_note": "Interactive behavior vs grey-box structure"
+        }
+      ],
+      "highest_volume_same_intent": "Wireframing",
+      "verdict": "OK",
+      "recommended_primary": "Wireframing",
+      "reason": "Field name is the how-to SERP head. AI-prefix is not proven ≥2×. Do not switch to prototyping or AI UI design."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "slug": "agent-billing",
+    "path": "tools/agent-billing.md",
+    "current_primary": "AI agent billing",
+    "keywordEn_full": "AI agent billing",
+    "h1": "Agent Billing · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agent-for-desktop",
+    "path": "tools/agent/agent-for-desktop.md",
+    "current_primary": "Agent on desktop",
+    "keywordEn_full": "Agent on desktop / 桌面智能体",
+    "h1": "桌面智能体（Agent on Desktop）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agent-identity",
+    "path": "tools/agent/agent-identity.md",
+    "current_primary": "AI Agent Identity",
+    "keywordEn_full": "AI Agent Identity",
+    "h1": "AI Agent 身份与访问治理 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agent-memory",
+    "path": "tools/agent/agent-memory.md",
+    "current_primary": "Agent Memory Layer",
+    "keywordEn_full": "Agent Memory Layer / Agent 记忆层",
+    "h1": "AI Agent 记忆层 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agent-runtime",
+    "path": "tools/agent/agent-runtime.md",
+    "current_primary": "AI Agent Runtime",
+    "keywordEn_full": "AI Agent Runtime",
+    "h1": "AI Agent 运行时 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agent-sandbox",
+    "path": "tools/agent/agent-sandbox.md",
+    "current_primary": "AI Agent Sandbox",
+    "keywordEn_full": "AI Agent Sandbox / Agent 沙箱",
+    "h1": "AI Agent 沙箱 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agent-skills",
+    "path": "tools/agent/agent-skills.md",
+    "current_primary": "Agent Skills",
+    "keywordEn_full": "Agent Skills / 技能生态",
+    "h1": "Agent Skills 生态 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agent-to-agent",
+    "path": "tools/agent/agent-to-agent.md",
+    "current_primary": "A2A Agent Network",
+    "keywordEn_full": "A2A Agent Network / Agent 互联网络",
+    "h1": "Agent-to-Agent Network / Agent 互联网络 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agentic-commerce",
+    "path": "tools/agentic-commerce.md",
+    "current_primary": "Agentic Commerce",
+    "keywordEn_full": "Agentic Commerce",
+    "h1": "Agentic Commerce · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "agentic-payments",
+    "path": "tools/agentic-payments.md",
+    "current_primary": "Agentic Payments",
+    "keywordEn_full": "Agentic Payments",
+    "h1": "Agentic Payments · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-employee",
+    "path": "tools/agent/ai-employee.md",
+    "current_primary": "AI Employee",
+    "keywordEn_full": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+    "h1": "AI Employee（AI 员工）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "ai-shopping",
+    "path": "tools/ai-shopping.md",
+    "current_primary": "AI Shopping",
+    "keywordEn_full": "",
+    "h1": "AI Shopping · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "browser",
+    "path": "tools/agent/browser.md",
+    "current_primary": "AI browser",
+    "keywordEn_full": "AI browser / 人工智能浏览器",
+    "h1": "AI 浏览器 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "data-engineering-agent",
+    "path": "tools/data-engineering-agent.md",
+    "current_primary": "Data Engineering Agent",
+    "keywordEn_full": "",
+    "h1": "Data Engineering Agent · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "expert-agent",
+    "path": "tools/agent/expert-agent.md",
+    "current_primary": "Expert Agent",
+    "keywordEn_full": "Expert Agent / 专家网络与 AI Agent 市场",
+    "h1": "AI Expert Agent · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "multi-agent",
+    "path": "tools/agent/multi-agent.md",
+    "current_primary": "Multi-Agent Systems",
+    "keywordEn_full": "Multi-Agent Systems / 多智能体系统",
+    "h1": "多智能体系统 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "openclaw-alternatives",
+    "path": "tools/agent/openclaw-alternatives.md",
+    "current_primary": "OpenClaw alternatives",
+    "keywordEn_full": "OpenClaw 系谱 / alternatives 检索意图",
+    "h1": "OpenClaw 系谱与变体对照 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "vibe-coding-payments",
+    "path": "tools/vibe-coding-payments.md",
+    "current_primary": "vibe coding payments",
+    "keywordEn_full": "",
+    "h1": "Vibe Coding 支付集成 · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "work-agent",
+    "path": "tools/agent/work-agent.md",
+    "current_primary": "Work Agent",
+    "keywordEn_full": "Work Agent / AI Work Agent",
+    "h1": "Work Agent（工作智能体）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "workflow",
+    "path": "tools/agent/workflow.md",
+    "current_primary": "Workflow automation",
+    "keywordEn_full": "Workflow automation / 工作流自动化",
+    "h1": "AI Workflow · 知识块（非线性笔记）"
+  },
+  {
+    "slug": "workspace-agent",
+    "path": "tools/agent/workspace-agent.md",
+    "current_primary": "Workspace Agent",
+    "keywordEn_full": "Workspace Agent / Team AI Agent",
+    "h1": "Workspace Agent（工作区智能体）· 知识块（非线性笔记）"
+  },
+  {
+    "slug": "world-model",
+    "path": "tools/world-model.md",
+    "current_primary": "World model",
+    "keywordEn_full": "World model / 世界模型",
+    "h1": "世界模型（World Models）· 知识块（非线性笔记）"
+  }
+]

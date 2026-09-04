@@ -1,0 +1,1450 @@
+{
+  "digest": [
+    {
+      "slug": "3d",
+      "batch": "image_3d",
+      "current_primary": "AI 3D tools",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI 3D tools",
+      "note": "Raw demand sits on 'AI 3D model generator' (~27–29k), but that is the generator spoke. Hub primary stays 'AI 3D tools' so it does not steal 3d-model-generator.",
+      "path": null
+    },
+    {
+      "slug": "3d-model-generator",
+      "batch": "image_3d",
+      "current_primary": "Text-to-3D",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI 3D model generator",
+      "note": "Current 'Text-to-3D' is a modality, not the category head. 'image to 3D' has the highest MSV (~33–40k) but is the other half of a dual-intent pair; SERP titles unify both under 'AI 3D model generator' (~27–29k, within ~1.5× of image-to-3D). Switch keywordEn to that umbrella, not the image-only phrase.",
+      "path": null
+    },
+    {
+      "slug": "3d-modelling",
+      "batch": "image_3d",
+      "current_primary": "3D modelling",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "3D modeling",
+      "note": "Same DCC intent (Blender/Maya/ZBrush), but US '3D modeling' is the SERP title spelling and beats British 'modelling' on the only numeric pair (App Store 40 vs 24). Do not take '3D modeling software' (suffix) or CAD.",
+      "path": null
+    },
+    {
+      "slug": "3d-scanner",
+      "batch": "image_3d",
+      "current_primary": "AI 3D scanner",
+      "final_verdict": "OK",
+      "recommended_primary": "AI 3D scanner",
+      "note": "Generic '3D scanner' is the hardware category and would mix metrology SKUs. Current phrase is what product titles use for AI-assisted capture apps and devices; no same-intent alternative showed ≥2× MSV.",
+      "path": null
+    },
+    {
+      "slug": "accent-conversion",
+      "batch": "voice_coding",
+      "current_primary": "AI accent conversion",
+      "final_verdict": "OK",
+      "recommended_primary": "AI accent conversion",
+      "note": "Vendor and research titles repeatedly use Accent Conversion / AI Accent Conversion. Word-order and converter variants do not beat the current phrase on SERP or uncapped proxy; 'accent changer' is a voice-changer fence.",
+      "path": null
+    },
+    {
+      "slug": "advertising-agent",
+      "batch": "mkt_design_text",
+      "current_primary": "Advertising Agent",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "Agentic advertising",
+      "note": "Current 'Advertising Agent' SERP is the BLS/Indeed sales-job title, not Alignify's autonomous ad-account Agent class. Same-intent titles already standardize on 'agentic advertising'. Do not chase 'agentic AI' (~110k) — different field intent.",
+      "path": null
+    },
+    {
+      "slug": "affiliate-marketing",
+      "batch": "mkt_design_text",
+      "current_primary": "Affiliate marketing",
+      "final_verdict": "OK",
+      "recommended_primary": "Affiliate marketing",
+      "note": "Current primary is the Wikipedia/Shopify head with ~550k–673k global MSV. Tools/AI suffixes are same-intent but far smaller. Do not jump to generic 'marketing tools'.",
+      "path": null
+    },
+    {
+      "slug": "agent-billing",
+      "batch": "agent",
+      "current_primary": "AI agent billing",
+      "final_verdict": "OK",
+      "recommended_primary": "AI agent billing",
+      "note": "Prior same-intent deep research: 'AI agent billing'/'AI agent billing software' is the natural commercial head; 'agent monetization' (~4.3k) is weak and fuzzy. Bing 509k caps are generic-AI pollution, not evidence either way.",
+      "path": null
+    },
+    {
+      "slug": "agent-for-desktop",
+      "batch": "agent",
+      "current_primary": "Agent on desktop",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI desktop agent",
+      "note": "Bing has no clean signal ('Agent on desktop' = MS fallback; 'AI desktop agent' capped by generic AI). Word-order + prior audit favor 'AI desktop agent' as the natural category head.",
+      "path": null
+    },
+    {
+      "slug": "agent-identity",
+      "batch": "agent",
+      "current_primary": "AI Agent Identity",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Agent Identity",
+      "note": "All candidates are polluted or MS fallback (agentic IAM = generic Agentic AI). Emerging category with no usable Bing/MSV; keep current term, re-audit later.",
+      "path": null
+    },
+    {
+      "slug": "agent-memory",
+      "batch": "agent",
+      "current_primary": "Agent Memory Layer",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI agent memory",
+      "note": "Cleanest on-intent signal is 'agent memory' (~13.1k, GitHub agentmemory/TencentDB) vs current 'Agent Memory Layer' (MS fallback, not a natural query). Use 'AI agent memory' as branded head + 'agent memory' secondary.",
+      "path": null
+    },
+    {
+      "slug": "agent-runtime",
+      "batch": "agent",
+      "current_primary": "AI Agent Runtime",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Agent Runtime",
+      "note": "Bing capped/polluted across candidates ('agent runtime' 5.1k on-intent but low). Term is the accepted category name; keep.",
+      "path": null
+    },
+    {
+      "slug": "agent-sandbox",
+      "batch": "agent",
+      "current_primary": "AI Agent Sandbox",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Agent Sandbox",
+      "note": "All candidates polluted (game/VS Code/generic AI) or fallback. Emerging term; keep current.",
+      "path": null
+    },
+    {
+      "slug": "agent-skills",
+      "batch": "agent",
+      "current_primary": "Agent Skills",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Agent Skills",
+      "note": "'Agent Skills' ~43.3k is the cleanest on-intent signal (GitHub agent-skills / SkillsMP); 'MCP skills' 86.9k is MIXED (protocol + motor-carrier), 'Claude agent skills' is brand. Keep 'Agent Skills' head.",
+      "path": null
+    },
+    {
+      "slug": "agent-to-agent",
+      "batch": "agent",
+      "current_primary": "A2A Agent Network",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "agent to agent",
+      "note": "'agent to agent' ~132k on-intent (A2A protocol/Microsoft Learn/Google) > 'A2A Agent Network' ~92.5k. Google A2A 2.17M is brand pollution — never use. Use 'agent to agent' head, A2A as secondary.",
+      "path": null
+    },
+    {
+      "slug": "agentic-commerce",
+      "batch": "agent",
+      "current_primary": "Agentic Commerce",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Agentic Commerce",
+      "note": "Category term matches IBM/McKinsey on-intent pages (~15.6k); 'agentic shopping/checkout' are generic-Agentic-AI pollution. Keep.",
+      "path": null
+    },
+    {
+      "slug": "agentic-payments",
+      "batch": "agent",
+      "current_primary": "Agentic Payments",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Agentic Payments",
+      "note": "Bing polluted but WebSearch titles are on-intent (Fireblocks/ACI/AWS). 'x402 payments' 20.7k is a protocol subset. Keep category head.",
+      "path": null
+    },
+    {
+      "slug": "ai-components",
+      "batch": "voice_coding",
+      "current_primary": "AI Components",
+      "final_verdict": "AMBIGUOUS",
+      "recommended_primary": "AI Components",
+      "note": "Current phrase is Bing-capped and the live SERP is AI-UI kits / shadcn registries, not prompt-as-component packs. More precise jargon ('prompt as component') has far lower proxy and is not a proven head query. No clean same-intent winner.",
+      "path": null
+    },
+    {
+      "slug": "ai-documents",
+      "batch": "llm_enterprise",
+      "current_primary": "AI Documents",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Documents",
+      "note": "Cited head 'AI document generator' is 6.6K/mo (MicroSaaSHQ) but SERP is one-shot generation, not the KB's intelligent-format + in-doc editor intent. Document AI is OCR/IDP. Keep current; do not chase generator volume.",
+      "path": null
+    },
+    {
+      "slug": "ai-employee",
+      "batch": "agent",
+      "current_primary": "AI Employee",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Employee",
+      "note": "'digital employee' 211k is dictionary pollution; 'AI teammate' ~48.1k is on-intent (Asana/Salesforce) but narrower chat-native subset; 'AI coworker' 58. AI Employee stays the brand/站内 term — add 'AI teammate' as secondary.",
+      "path": null
+    },
+    {
+      "slug": "ai-flashcards",
+      "batch": "edu_hr_health",
+      "current_primary": "AI flashcards",
+      "final_verdict": "OK",
+      "recommended_primary": "AI flashcards",
+      "note": "SERP titles already treat 'AI flashcards' as the natural product query. Maker/generator are same-intent suffixes without a ≥2× MSV cite. Anki/Quizlet volumes are brand or generic flashcards, not this AI-generation class.",
+      "path": null
+    },
+    {
+      "slug": "ai-for-science",
+      "batch": "edu_hr_health",
+      "current_primary": "AI for Science",
+      "final_verdict": "OK",
+      "recommended_primary": "AI for Science",
+      "note": "Field titles still use 'AI for Science'. AI4S is not a search head. 'AI for research' is higher raw volume but different intent (paper Q&A vs scientific discovery).",
+      "path": null
+    },
+    {
+      "slug": "ai-homework-helper",
+      "batch": "edu_hr_health",
+      "current_primary": "AI homework helper",
+      "final_verdict": "OK",
+      "recommended_primary": "AI homework helper",
+      "note": "Cited MSV for 'AI homework helper' (~21–24K) is an order of magnitude above 'AI homework solver' (~1.8K). SERP titles match. Keep fence vs Socratic 'AI tutor'.",
+      "path": null
+    },
+    {
+      "slug": "ai-language-learning",
+      "batch": "edu_hr_health",
+      "current_primary": "AI language learning",
+      "final_verdict": "OK",
+      "recommended_primary": "AI language learning",
+      "note": "Category directories and the KB use this as the language-app class. Higher 'language learning apps' is too wide; 'AI language tutor' / 'AI tutor' collide with the Socratic tutor slug.",
+      "path": null
+    },
+    {
+      "slug": "ai-scheduling",
+      "batch": "edu_hr_health",
+      "current_primary": "AI scheduling",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI scheduling assistant",
+      "note": "2026 comparison SERPs repeatedly title the class 'AI scheduling assistant' (2.4K/mo cited). Bare 'AI scheduling' has no MSV cite and is not the H1 pattern. Keep fence vs Calendly-style booking links and vs note-taker.",
+      "path": null
+    },
+    {
+      "slug": "ai-shopping",
+      "batch": "agent",
+      "current_primary": "AI Shopping",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Shopping",
+      "note": "All candidates polluted ('shop with AI' = SHOP.COM/Walmart; others generic-AI cap). Keep constructed but internally-consistent head; re-audit with SERP tools later.",
+      "path": null
+    },
+    {
+      "slug": "ai-traffic-and-citation-sources",
+      "batch": "infra_web_geo",
+      "current_primary": "AI search citation sources",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI search citation sources",
+      "note": "No published MSV for the current long-tail. Higher-visibility neighbors (AI referral traffic, AI citations) serve different buyers — GA4 click tracking vs how-to-get-cited GEO — so they must not replace this slug's platform-traffic + citation-source landscape primary.",
+      "path": null
+    },
+    {
+      "slug": "ai-training-data",
+      "batch": "infra_web_geo",
+      "current_primary": "AI Training Data Platform",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Training Data Platform",
+      "note": "'data annotation' (~436.8K) dwarfs the current phrase but is a wider labeling category (especially computer vision). SERP titles for the current primary already match enterprise training-data vendors, so keep it; do not steal volume from a different buyer.",
+      "path": null
+    },
+    {
+      "slug": "ai-tutor",
+      "batch": "edu_hr_health",
+      "current_primary": "AI tutor",
+      "final_verdict": "OK",
+      "recommended_primary": "AI tutor",
+      "note": "DataForSEO cites 8.1K/mo and product titles match. Do not steal homework-helper volume.",
+      "path": null
+    },
+    {
+      "slug": "ai-visibility",
+      "batch": "infra_web_geo",
+      "current_primary": "AI Visibility",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Visibility",
+      "note": "US SE Ranking gives 390–590 to 'AI search visibility' / 'AI visibility tools', which is not ≥2× a category head and the 'tools' suffix is the classic volume inflator. SERP titles already treat 'AI Visibility' as the name of the monitoring category this KB covers.",
+      "path": null
+    },
+    {
+      "slug": "animation-generator",
+      "batch": "video",
+      "current_primary": "AI animation generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI animation generator",
+      "note": "SERP titles treat 'AI animation generator' as the product-category query. 'AI anime generator' may show a higher MicroSaaSHQ figure but SERP leans still-image anime, so it is not a same-intent upgrade.",
+      "path": null
+    },
+    {
+      "slug": "animation-library",
+      "batch": "cms_builder_misc",
+      "current_primary": "Animation Library",
+      "final_verdict": "OK",
+      "recommended_primary": "Animation Library",
+      "note": "Current phrase already lands the GSAP/Anime/Motion SERP. 'JavaScript animation library' is the same-intent title qualifier without a ≥2× MSV cite. Do not switch to the GSAP brand.",
+      "path": null
+    },
+    {
+      "slug": "api",
+      "batch": "infra_web_geo",
+      "current_primary": "Unified AI API Platform",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI Gateway",
+      "note": "Current 'Unified AI API Platform' is a constructed phrase with no MSV and almost no exact-match titles. 2026 SERPs and vendor comparisons standardize on 'AI Gateway' (OpenRouter, LiteLLM, Portkey, Cloudflare, Vercel); Toolify also reports 7.4K for the near-synonym 'llm gateway'.",
+      "path": null
+    },
+    {
+      "slug": "app-builder",
+      "batch": "voice_coding",
+      "current_primary": "AI App Builder",
+      "final_verdict": "OK",
+      "recommended_primary": "AI App Builder",
+      "note": "Cited MSV (~12k–22k) and commercial titles already use AI App Builder. Do not steal volume from generic no-code app builder — different buyer question.",
+      "path": null
+    },
+    {
+      "slug": "audio-translator",
+      "batch": "voice_coding",
+      "current_primary": "AI Audio Translation",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI Audio Translator",
+      "note": "Same-intent commercial SERP consistently uses the tool noun AI Audio Translator, not the abstract 'translation'. Bing both hit the cap, so the switch is title-led (method B), not a 2× MSV gap.",
+      "path": null
+    },
+    {
+      "slug": "authentication",
+      "batch": "infra_web_geo",
+      "current_primary": "Authentication",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Authentication",
+      "note": "IAM / identity and access management is a different buyer (workforce IdP vs app login/CIAM). CIAM is the right industry label but lower volume. Keep Authentication as the English head for Auth0/Clerk/Logto-style app identity.",
+      "path": null
+    },
+    {
+      "slug": "avatar",
+      "batch": "image_3d",
+      "current_primary": "Talking avatar",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI avatar generator",
+      "note": "SERP for 'AI avatar generator' is Synthesia/HeyGen talking-video (same intent as this slug, not headshots). 18.1k vs ~1.8k for 'talking avatar' is ~10×. Keep headshot-generator fenced off.",
+      "path": null
+    },
+    {
+      "slug": "b2b",
+      "batch": "mkt_design_text",
+      "current_primary": "AI B2B Marketing Tools",
+      "final_verdict": "OK",
+      "recommended_primary": "AI B2B Marketing Tools",
+      "note": "Exact-phrase SERP already returns full-funnel B2B/ABM AI products. No same-intent phrase has a ≥2× MSV cite. Do not switch to generic 'marketing tools' or collapse into lead-generation.",
+      "path": null
+    },
+    {
+      "slug": "background-changer",
+      "batch": "image_3d",
+      "current_primary": "AI Background Changer",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Background Changer",
+      "note": "Closest same-intent variant ('background change AI' 12.1k) is <1.5× vs Semrush 9.9k for the current phrase. Remover terms are higher (14.8k / 3.8M) but are cutout intent, not replace.",
+      "path": null
+    },
+    {
+      "slug": "blog-website-builder",
+      "batch": "cms_builder_misc",
+      "current_primary": "Blog Website Builder",
+      "final_verdict": "OK",
+      "recommended_primary": "Blog Website Builder",
+      "note": "SERP titles and the 2026-08-28 Bing proxy treat 'blog website builder' as the spoke head. 'Blogging platform' / 'blog CMS' share the same listicle SERP — dual coverage, not an extra slug or a primary switch.",
+      "path": null
+    },
+    {
+      "slug": "browser",
+      "batch": "agent",
+      "current_primary": "AI browser",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "agentic browser",
+      "note": "'agentic browser' ~125k on-intent vs 'AI browser' ~61.8k on-intent; KB covers built-in agentic browsers. Switch head, keep 'AI browser' secondary.",
+      "path": null
+    },
+    {
+      "slug": "cad",
+      "batch": "image_3d",
+      "current_primary": "CAD",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "CAD",
+      "note": "'CAD software' at 673k is the inflated software-suffix category, not an Alignify AI-tools head. 'AI CAD' matches the page but has negligible measured demand. Keep engineering 'CAD'; do not bleed into DCC 3D.",
+      "path": null
+    },
+    {
+      "slug": "canvas-video",
+      "batch": "video",
+      "current_primary": "AI video canvas",
+      "final_verdict": "OK",
+      "recommended_primary": "AI video canvas",
+      "note": "No cited MSV beats the current phrase; product titles already use 'AI video canvas' for node-based multi-model pipelines. Do not widen to generic video editor.",
+      "path": null
+    },
+    {
+      "slug": "character-chat",
+      "batch": "cms_builder_misc",
+      "current_primary": "Character Chat",
+      "final_verdict": "OK",
+      "recommended_primary": "Character Chat",
+      "note": "SERP titles already name the product class 'character chat' / 'AI character chat'. 'character ai' volume is brand. 'AI girlfriend' is higher raw demand but different companion intent — do not steal it as this slug's primary.",
+      "path": null
+    },
+    {
+      "slug": "chatbot",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI Chatbot",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Chatbot",
+      "note": "Current phrase is the commercial category name for CS/sales bots. Do not add 'best' or 'tool'. Do not collapse into character-chat. Bare 'chatbot' is wider and mixed-intent.",
+      "path": null
+    },
+    {
+      "slug": "cli",
+      "batch": "voice_coding",
+      "current_primary": "AI CLI",
+      "final_verdict": "OK",
+      "recommended_primary": "AI CLI",
+      "note": "Agentic CLI is only ~1.14× on Bing and CLI coding agent is lower. Current remains a valid natural query; no ≥2× same-intent winner. Do not collapse into generic AI coding.",
+      "path": null
+    },
+    {
+      "slug": "code-completion",
+      "batch": "voice_coding",
+      "current_primary": "Code completion",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Code completion",
+      "note": "Higher-volume neighbors are brand (Copilot) or a wider assistant/agent question. AI code completion is same-intent but Bing-capped, so not a clean ≥2× SWITCH. Keep the precise completion noun.",
+      "path": null
+    },
+    {
+      "slug": "code-review",
+      "batch": "voice_coding",
+      "current_primary": "AI code review",
+      "final_verdict": "OK",
+      "recommended_primary": "AI code review",
+      "note": "SERP head and cited demand already sit on AI code review. Alternatives are the same job or a wider SAST category without a proven 2× gap.",
+      "path": null
+    },
+    {
+      "slug": "coding",
+      "batch": "voice_coding",
+      "current_primary": "AI Coding Agent",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Coding Agent",
+      "note": "Current matches the 8.1K commercial cluster and 2026 SERP titles. 'Coding agents' is only ~1.2×. Do not switch to generic AI coding — different buyer than this slug.",
+      "path": null
+    },
+    {
+      "slug": "community",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI Community",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Community",
+      "note": "KB category=marketing、keywordEn 已配 AI Community；community platform 只是产品类（Circle/Skool），弱化 AI 角 → 主词保留，platform 入 Secondary。",
+      "path": null
+    },
+    {
+      "slug": "content-management-system",
+      "batch": "cms_builder_misc",
+      "current_primary": "Content Management System",
+      "final_verdict": "OK",
+      "recommended_primary": "Content Management System",
+      "note": "Definitional SERP still uses the full phrase (often with CMS in parentheses). Bare 'CMS' volume is acronym-noisy. Do not compare to headless / enterprise / open-source — those stay separate slugs.",
+      "path": null
+    },
+    {
+      "slug": "data-engineering-agent",
+      "batch": "agent",
+      "current_primary": "Data Engineering Agent",
+      "final_verdict": "AMBIGUOUS",
+      "recommended_primary": "Data Engineering Agent",
+      "note": "Bing unusable: 'Data Engineering Agent' 296k is 'data'-word dictionary pollution; AI variants capped by generic AI. New category — keep current until reliable MSV exists.",
+      "path": null
+    },
+    {
+      "slug": "dating",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI Dating",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Dating",
+      "note": "SERP for 'AI Dating' is Lamp/Ditto/Bumble-class real matching. 'AI girlfriend' is much larger raw demand but companion intent — KEEP that out of this primary.",
+      "path": null
+    },
+    {
+      "slug": "design",
+      "batch": "mkt_design_text",
+      "current_primary": "AI Design Tool",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Design Tool",
+      "note": "Plural 'AI design tools' is the Trends/roundup head but lacks a ≥2× MSV cite vs 5.4k singular. 'AI design generator' (~22k) and 'AI creator' (~49.5k) are higher raw volume but spoke/other-intent — keep the hub primary.",
+      "path": null
+    },
+    {
+      "slug": "directory",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI Directory",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI tools directory",
+      "note": "Cited 20.2k/mo MSV plus SERP titles repeatedly use 'AI tools directory'. Current 'AI Directory' is the same job but not the head phrase. Slug stays `directory`.",
+      "path": null
+    },
+    {
+      "slug": "documentation",
+      "batch": "llm_enterprise",
+      "current_primary": "Developer documentation",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Developer documentation",
+      "note": "页面定位 Mintlify/GitBook/Docusaurus 开发者文档站；documentation platform 多用于 ReadMe 类，Mintlify/Docusaurus 不自称 platform → 保留现主词，复核后再定。",
+      "path": null
+    },
+    {
+      "slug": "ecommerce-website-builder",
+      "batch": "cms_builder_misc",
+      "current_primary": "Online store platform",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "ecommerce website builder",
+      "note": "AdTargeting/Google Ads: 78.7k vs no usable MSV for 'Online store platform' (nearest 3.5k). SERP titles never use the current phrase. 'Shopify alternative' is same-cluster but brand-shaped. Slug unchanged.",
+      "path": null
+    },
+    {
+      "slug": "education",
+      "batch": "edu_hr_health",
+      "current_primary": "AI Education",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI in education",
+      "note": "UpperRank cites 12.1K/mo for 'AI in education'. Bare 'AI Education' SERP is AI literacy, not the tools Hub. Do not use spoke terms (tutor/homework).",
+      "path": null
+    },
+    {
+      "slug": "enterprise-cms",
+      "batch": "cms_builder_misc",
+      "current_primary": "Enterprise CMS",
+      "final_verdict": "OK",
+      "recommended_primary": "Enterprise CMS",
+      "note": "SERP titles for this spoke are 'enterprise CMS'. DXP/Digital Experience Platform may be louder in analyst copy but is a wider suite — keep dual in keywordEn_full, do not replace the CMS primary. Do not merge with headless or Hub CMS.",
+      "path": null
+    },
+    {
+      "slug": "essay-writer",
+      "batch": "mkt_design_text",
+      "current_primary": "AI Essay Writer",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Essay Writer",
+      "note": "40.5k/mo plus product SERP titles already use this exact phrase. Generator is a synonym without a ≥2× cite. Do not absorb into the text hub.",
+      "path": null
+    },
+    {
+      "slug": "evaluation",
+      "batch": "llm_enterprise",
+      "current_primary": "AI evaluation",
+      "final_verdict": "OK",
+      "recommended_primary": "AI evaluation",
+      "note": "No cited MSV gap ≥2×. Toolbit/vendor category still names 'AI evaluation'; 'LLM evaluation' is a cleaner same-intent synonym but not proven as the volume head. Keep current; do not collapse into Arena/model-pick or observability.",
+      "path": null
+    },
+    {
+      "slug": "expert-agent",
+      "batch": "agent",
+      "current_primary": "Expert Agent",
+      "final_verdict": "AMBIGUOUS",
+      "recommended_primary": "Expert Agent",
+      "note": "'Expert Agent'/'expert AI agent' 274k are dictionary-expert pollution; AI variants capped. Emerging term; keep.",
+      "path": null
+    },
+    {
+      "slug": "family-assistant",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI family assistant",
+      "final_verdict": "OK",
+      "recommended_primary": "AI family assistant",
+      "note": "On-intent SERP already uses 'AI family assistant'. 'Family organizer app' is larger incumbent demand but Cozi-class, not this AI-first job. Copilot Family is a Microsoft plan name.",
+      "path": null
+    },
+    {
+      "slug": "fashion",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI fashion",
+      "final_verdict": "OK",
+      "recommended_primary": "AI fashion",
+      "note": "Product titles use 'AI fashion' as the apparel-AI umbrella. Virtual try-on is a high-value spoke inside the KB, not a ≥2× same-intent head to switch to.",
+      "path": null
+    },
+    {
+      "slug": "filmmaking",
+      "batch": "video",
+      "current_primary": "AI Filmmaking",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Filmmaking",
+      "note": "Titles already treat 'AI Filmmaking' as the pipeline head term. Higher-looking alternatives are either a 'tools' suffix or a short-film/generator job.",
+      "path": null
+    },
+    {
+      "slug": "fundraising",
+      "batch": "mkt_design_text",
+      "current_primary": "AI fundraising",
+      "final_verdict": "OK",
+      "recommended_primary": "AI fundraising",
+      "note": "Current phrase is the natural query for both nonprofit and founder raise tools the KB covers. No same-intent alt has a ≥2× MSV cite. Do not switch to generic fundraising software or investor-matching-only.",
+      "path": null
+    },
+    {
+      "slug": "geo",
+      "batch": "infra_web_geo",
+      "current_primary": "Generative Engine Optimization",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Generative Engine Optimization",
+      "note": "'AI SEO' is ~1.5× GEO globally (33.1K vs 22.2K) but mixed intent (AI-assisted SEO vs optimizing for answer engines). AEO is clearly smaller (6.6K). Current phrase is the academic/industry head (Princeton GEO paper) and the SERP title standard.",
+      "path": null
+    },
+    {
+      "slug": "git-hosting",
+      "batch": "voice_coding",
+      "current_primary": "Agent-native Git hosting",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Agent-native Git hosting",
+      "note": "Code forge / generic git hosting dwarf the current phrase on Bing but answer 'where do humans host git', not 'agent-native forge'. Do not swap a narrow tool keyword for that generic.",
+      "path": null
+    },
+    {
+      "slug": "headless-browser",
+      "batch": "infra_web_geo",
+      "current_primary": "Headless browser",
+      "final_verdict": "OK",
+      "recommended_primary": "Headless browser",
+      "note": "Documented 5.4K/mo beats 'browser automation' (2.9K). Wikipedia and vendor explainers already use Headless browser as the head term; BaaS/cloud-browser are product-shape variants, not a 2× replacement.",
+      "path": null
+    },
+    {
+      "slug": "headless-cms",
+      "batch": "cms_builder_misc",
+      "current_primary": "Headless CMS",
+      "final_verdict": "OK",
+      "recommended_primary": "Headless CMS",
+      "note": "SERP titles are uniformly 'Headless CMS'. API-first is a synonym without a standalone volume win. Keep enterprise/open-source/Hub on their own slugs.",
+      "path": null
+    },
+    {
+      "slug": "headshot-generator",
+      "batch": "image_3d",
+      "current_primary": "AI Headshot Generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Headshot Generator",
+      "note": "Semrush/Similarweb put the current phrase at ~22–27k, above free/long-tail variants. Distinct from talking-avatar and generic image-generator.",
+      "path": null
+    },
+    {
+      "slug": "healthcare",
+      "batch": "edu_hr_health",
+      "current_primary": "AI Healthcare",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI in healthcare",
+      "note": "Cited GKP/Dataconomy volume for 'AI in healthcare' (27.1K in 2023, still the natural category query) dwarfs unsourced 'AI Healthcare'. Keep medical-scribe as the ambient-documentation spoke.",
+      "path": null
+    },
+    {
+      "slug": "hr-assistant",
+      "batch": "edu_hr_health",
+      "current_primary": "AI HR assistant",
+      "final_verdict": "OK",
+      "recommended_primary": "AI HR assistant",
+      "note": "SERP titles match the post-hire helpdesk class. 'HR chatbot' is lower/older. Do not take recruiting volume.",
+      "path": null
+    },
+    {
+      "slug": "ide",
+      "batch": "voice_coding",
+      "current_primary": "AI IDE",
+      "final_verdict": "OK",
+      "recommended_primary": "AI IDE",
+      "note": "Uncapped same-intent alts (agentic IDE) are lower. Capped 'AI code editor' is not trustworthy enough to SWITCH. Stay on the IDE side of the cli / coding-agent / vibe-coding fence.",
+      "path": null
+    },
+    {
+      "slug": "image",
+      "batch": "image_3d",
+      "current_primary": "AI Image",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Image",
+      "note": "Hub map. Highest raw queries are image-generator / editor / enhancer spokes. Do not retarget keywordEn to those heads.",
+      "path": null
+    },
+    {
+      "slug": "image-editor",
+      "batch": "image_3d",
+      "current_primary": "AI Image Editor",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Image Editor",
+      "note": "Current phrase is the volume head (~91–137k), tied with 'AI photo editor' (~132k). Stay split from generator and enhancer.",
+      "path": null
+    },
+    {
+      "slug": "image-enhancer",
+      "batch": "image_3d",
+      "current_primary": "AI Image Enhancer",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Image Enhancer",
+      "note": "'image enhancer' (385k) and upscaler terms are raw-higher but either drop AI or narrow to resolution. Same-intent AI head is the current phrase (~89k).",
+      "path": null
+    },
+    {
+      "slug": "image-generator",
+      "batch": "image_3d",
+      "current_primary": "AI image generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI image generator",
+      "note": "SERP titles and related-keyword tables treat this as the T2I head. 'AI art generator' (201k) is lower and more artistic; text-to-image is the modality label, not the tool query.",
+      "path": null
+    },
+    {
+      "slug": "image-relighting",
+      "batch": "image_3d",
+      "current_primary": "AI Image Relighting",
+      "final_verdict": "AMBIGUOUS",
+      "recommended_primary": "AI Image Relighting",
+      "note": "No usable MSV; SERP is papers + IC-Light brand, not a competing commercial phrase with ≥2× demand. Keep the precise intent label; do not switch to a model name.",
+      "path": null
+    },
+    {
+      "slug": "image-to-video",
+      "batch": "video",
+      "current_primary": "Image-to-Video",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "image to video AI",
+      "note": "Cited US/global figures put 'image to video AI' at ~42–68K vs ~10K for 'image to video' / Image-to-Video — ≥2× same I2V intent, without crossing into the video-generator hub.",
+      "path": null
+    },
+    {
+      "slug": "inference-infrastructure",
+      "batch": "infra_web_geo",
+      "current_primary": "AI Inference Infrastructure",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI inference platform",
+      "note": "SERP for the current phrase is architecture documentation, not the hosted inference market (Together, Fireworks, Baseten, Modal). Buyer-facing pages and AI-discovery taxonomies use 'AI inference platform' / managed AI inference — same intent, natural commercial query.",
+      "path": null
+    },
+    {
+      "slug": "influencer-marketing",
+      "batch": "mkt_design_text",
+      "current_primary": "Influencer marketing",
+      "final_verdict": "OK",
+      "recommended_primary": "Influencer marketing",
+      "note": "74k global / ~12k US head term; SERP is the practice. Platform/AI suffixes and UGC are lower or different intent.",
+      "path": null
+    },
+    {
+      "slug": "interactive-video",
+      "batch": "video",
+      "current_primary": "Interactive video",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Interactive video",
+      "note": "live AI video generation 是 PR/产品词无消费 MSV；Interactive video 虽是 e-learning 头词但本页禁止追逐 → 保留叙述主词，real-time/live 词作 Secondary。",
+      "path": null
+    },
+    {
+      "slug": "interior-design",
+      "batch": "image_3d",
+      "current_primary": "AI interior design",
+      "final_verdict": "OK",
+      "recommended_primary": "AI interior design",
+      "note": "Treendly puts the current category phrase at 27.1k, above room-redesign/room-design variants. Stay split from virtual-staging (listing/MLS).",
+      "path": null
+    },
+    {
+      "slug": "interview-assistant",
+      "batch": "edu_hr_health",
+      "current_primary": "AI interview assistant",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI interview assistant",
+      "note": "'AI interview' / 'interview AI' show higher raw navtools volumes but mix employer interviewers with candidate copilots. Keep the current phrase, which SERP titles use for the candidate-side class.",
+      "path": null
+    },
+    {
+      "slug": "knowledge-base",
+      "batch": "llm_enterprise",
+      "current_primary": "AI Knowledge Base",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Knowledge Base",
+      "note": "SERP titles match the KB (private corpus, citations, RAG). RAG-prefixed variants are builder jargon without higher cited volume. Keep current.",
+      "path": null
+    },
+    {
+      "slug": "landing-page-builder",
+      "batch": "cms_builder_misc",
+      "current_primary": "Landing Page Builder",
+      "final_verdict": "OK",
+      "recommended_primary": "Landing Page Builder",
+      "note": "SERP titles are unanimously 'landing page builder'. 'Conversion page builder' does not appear as the natural query.",
+      "path": null
+    },
+    {
+      "slug": "lead-generation",
+      "batch": "mkt_design_text",
+      "current_primary": "AI Lead Generation",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Lead Generation",
+      "note": "Bare 'lead generation' (~74k) and 'lead generation tool' (~9.9k) out-volume the AI phrase, but they are generic how-to/database queries. The KB is AI discovery→enrichment→outreach. Keep the AI product-class primary.",
+      "path": null
+    },
+    {
+      "slug": "legal",
+      "batch": "llm_enterprise",
+      "current_primary": "Legal AI",
+      "final_verdict": "OK",
+      "recommended_primary": "Legal AI",
+      "note": "Concurate + Lilach citations put Legal AI above AI for lawyers (2.4K) and best AI for lawyers (400). SERP is the vertical suite the KB covers. Keep current.",
+      "path": null
+    },
+    {
+      "slug": "lifetime-deals",
+      "batch": "cms_builder_misc",
+      "current_primary": "Lifetime Deals",
+      "final_verdict": "OK",
+      "recommended_primary": "Lifetime Deals",
+      "note": "Category SERP already uses 'Lifetime Deals' / 'SaaS lifetime deals'. Do not replace with the AppSumo brand.",
+      "path": null
+    },
+    {
+      "slug": "linkedin",
+      "batch": "edu_hr_health",
+      "current_primary": "LinkedIn AI tools",
+      "final_verdict": "OK",
+      "recommended_primary": "LinkedIn AI tools",
+      "note": "Roundups use 'LinkedIn AI tools' / 'AI tools for LinkedIn' interchangeably with no ≥2× MSV. Stay off recruiting/HR-assistant primaries. Native Navigator pollution is expected, not a reason to rename.",
+      "path": null
+    },
+    {
+      "slug": "lip-sync",
+      "batch": "voice_coding",
+      "current_primary": "AI lip sync",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "lip sync AI",
+      "note": "Same-intent word-order flip. Bing proxy is ~11× (4.3k vs 48.6k) and Semrush/Navtools rows exist for lip sync AI, not for AI lip sync.",
+      "path": null
+    },
+    {
+      "slug": "llm",
+      "batch": "llm_enterprise",
+      "current_primary": "Large Language Model",
+      "final_verdict": "OK",
+      "recommended_primary": "Large Language Model",
+      "note": "LLM / Large Language Model are the same lemma (Wikipedia/IBM titles). No cited ≥2× MSV for a different same-intent phrase. Do not switch to 'AI llm tools' (tools suffix + different intent) or collapse spokes into this hub.",
+      "path": null
+    },
+    {
+      "slug": "llm-for-coding",
+      "batch": "llm_enterprise",
+      "current_primary": "AI Coding LLM",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "LLM for coding",
+      "note": "Current 'AI Coding LLM' is not a natural query (no SERP titles). Titles repeatedly use 'LLM for coding' / 'best LLM for coding'. Keep the coding spoke — do not collapse into hub 'LLM'.",
+      "path": null
+    },
+    {
+      "slug": "llm-for-math",
+      "batch": "llm_enterprise",
+      "current_primary": "AI Math LLM",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "LLM for math",
+      "note": "'AI Math LLM' does not appear in SERP titles. Same-intent head is 'LLM for math' / 'best … LLM for math'. Do not merge into reasoning-model or hub LLM.",
+      "path": null
+    },
+    {
+      "slug": "llm-for-reasoning",
+      "batch": "llm_enterprise",
+      "current_primary": "AI Reasoning LLM",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "reasoning model",
+      "note": "Glimpse cites 94K/mo for 'reasoning model' vs zero title/MSV support for 'AI Reasoning LLM'. Same spoke (test-time compute / o-series / R1), not a collapse into hub LLM or math.",
+      "path": null
+    },
+    {
+      "slug": "llm-observability",
+      "batch": "llm_enterprise",
+      "current_primary": "LLM Observability",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "LLM Observability",
+      "note": "'AI observability' may index higher but SERP/definitions are a wider AI/agent umbrella. Keep LLM Observability as the traces/cost head; do not steal evaluation or hub LLM.",
+      "path": null
+    },
+    {
+      "slug": "logo-generator",
+      "batch": "image_3d",
+      "current_primary": "AI logo generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI logo generator",
+      "note": "AI-prefixed head (~50–74k) beats maker flips (~18–37k). Unprefixed 'logo generator' (115k) is generic non-AI demand — keep intent.",
+      "path": null
+    },
+    {
+      "slug": "medical-scribe",
+      "batch": "edu_hr_health",
+      "current_primary": "AI Medical Scribe",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Medical Scribe",
+      "note": "Buyer SERP and vendor H1s match. Bare 'AI scribe' is same 6.6K but vaguer. Keep fence vs healthcare Hub and generic note-taker.",
+      "path": null
+    },
+    {
+      "slug": "memory",
+      "batch": "llm_enterprise",
+      "current_primary": "AI Memory",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI second brain",
+      "note": "'AI Memory' SERP is agent-memory middleware (Mem0/Zep class), which the fence forbids. Same-intent consumer head is 'AI second brain' (Mem, Obsidian, PKM roundups).",
+      "path": null
+    },
+    {
+      "slug": "multi-agent",
+      "batch": "agent",
+      "current_primary": "Multi-Agent Systems",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Multi-Agent Systems",
+      "note": "'Multi-Agent Systems' 104k (Multi- dictionary heavy but term is the standard academic/category head); 'AI multi-agent' capped. Keep.",
+      "path": null
+    },
+    {
+      "slug": "multimodal-llm",
+      "batch": "llm_enterprise",
+      "current_primary": "AI Multimodal LLM",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "multimodal LLM",
+      "note": "'AI Multimodal LLM' is not used in titles. IBM/Azure/papers standardize on 'multimodal LLM' (MLLM). Keep the spoke — do not fold into hub LLM or image generators. VLM is a narrower subset.",
+      "path": null
+    },
+    {
+      "slug": "music-generator",
+      "batch": "voice_coding",
+      "current_primary": "AI Music Generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Music Generator",
+      "note": "Semrush puts AI music generator at ~60.5k, above maker/song/T2M variants. Do not switch to generic music maker or a research-y text-to-music phrase.",
+      "path": null
+    },
+    {
+      "slug": "music-video-generator",
+      "batch": "video",
+      "current_primary": "AI music video generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI music video generator",
+      "note": "Cited ~10–12K MSV plus exact-match product titles. Maker/MV variants are same intent but not materially larger.",
+      "path": null
+    },
+    {
+      "slug": "note-taker",
+      "batch": "edu_hr_health",
+      "current_primary": "AI note taker",
+      "final_verdict": "OK",
+      "recommended_primary": "AI note taker",
+      "note": "49.5K/mo is the same-intent head vs 'AI meeting notes' 6.6K. SERP is meetings, which is the fence vs notes-generator (PDF/video→study notes).",
+      "path": null
+    },
+    {
+      "slug": "notes-generator",
+      "batch": "edu_hr_health",
+      "current_primary": "AI notes generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI notes generator",
+      "note": "'AI note taker' is higher volume but meetings, not PDF/video→notes. 'PDF to notes' is same intent but only ~1.6–1.8K. Keep the current class name.",
+      "path": null
+    },
+    {
+      "slug": "ocr",
+      "batch": "llm_enterprise",
+      "current_primary": "OCR",
+      "final_verdict": "OK",
+      "recommended_primary": "OCR",
+      "note": "Acronym is the Wikipedia/head query. Semrush rows show OCR and ocr online in the same few-thousand band; AI OCR is a qualifier, not a proven ≥2× head. Keep OCR; do not retarget to online converters or Document AI.",
+      "path": null
+    },
+    {
+      "slug": "open-source-cms",
+      "batch": "cms_builder_misc",
+      "current_primary": "Open Source CMS",
+      "final_verdict": "OK",
+      "recommended_primary": "Open Source CMS",
+      "note": "The spoke head is still 'open source CMS' (WordPress/Drupal). 'OSS CMS' is not a search head. Headless OSS belongs on `headless-cms`, not a primary switch.",
+      "path": null
+    },
+    {
+      "slug": "openclaw-alternatives",
+      "batch": "agent",
+      "current_primary": "OpenClaw alternatives",
+      "final_verdict": "OK",
+      "recommended_primary": "OpenClaw alternatives",
+      "note": "~78.5k on-intent (OpenClaw brand pages); alternatives query matches page intent. Keep.",
+      "path": null
+    },
+    {
+      "slug": "portfolio-website-builder",
+      "batch": "cms_builder_misc",
+      "current_primary": "Portfolio website builder",
+      "final_verdict": "OK",
+      "recommended_primary": "Portfolio website builder",
+      "note": "Google SERP titles treat 'portfolio website builder' as the class; photography is the same-SERP creative spoke already listed as secondary. Do not switch to 'online portfolio maker' on index-count or Etsy volume.",
+      "path": null
+    },
+    {
+      "slug": "poster-generator",
+      "batch": "image_3d",
+      "current_primary": "AI Poster Generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Poster Generator",
+      "note": "Current phrase leads the same-intent set (11.8k vs maker 10.2k).",
+      "path": null
+    },
+    {
+      "slug": "presentation-maker",
+      "batch": "mkt_design_text",
+      "current_primary": "AI Presentation Maker",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Presentation Maker",
+      "note": "SERP titles treat this as the category query (Gamma, Beautiful.ai, roundups). 'AI PPT maker' / 'presentation ai' show large cited volumes but are aliases without a clean ≥2× win over the title-head, and PPT is regional slang. Do not collapse into text-generator.",
+      "path": null
+    },
+    {
+      "slug": "productivity",
+      "batch": "edu_hr_health",
+      "current_primary": "AI productivity tools",
+      "final_verdict": "OK",
+      "recommended_primary": "AI productivity tools",
+      "note": "This page is the Hub; 'tools' is the category query directories use, not a vanity suffix. Do not collapse onto scheduling / note-taker / PM spokes.",
+      "path": null
+    },
+    {
+      "slug": "project-management",
+      "batch": "edu_hr_health",
+      "current_primary": "AI project management",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI project management",
+      "note": "'AI project manager' is 9.9K but collides with job-title searches. Product SERPs use the category 'AI project management'. Keep current.",
+      "path": null
+    },
+    {
+      "slug": "prototyping",
+      "batch": "mkt_design_text",
+      "current_primary": "Prototyping",
+      "final_verdict": "OK",
+      "recommended_primary": "Prototyping",
+      "note": "Field name matches tool-roundup SERP. AI-prefix spiked on Trends but has no ≥2× MSV cite. Do not switch to wireframing or UI design.",
+      "path": null
+    },
+    {
+      "slug": "quiz-generator",
+      "batch": "edu_hr_health",
+      "current_primary": "AI quiz generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI quiz generator",
+      "note": "DataForSEO ~3.6K (seasonal to 6.6K) plus directory/product titles. Maker/test-generator lack a ≥2× cite.",
+      "path": null
+    },
+    {
+      "slug": "recruiting",
+      "batch": "edu_hr_health",
+      "current_primary": "AI recruiting",
+      "final_verdict": "OK",
+      "recommended_primary": "AI recruiting",
+      "note": "12.1K/mo cited and US roundups use recruiting. Recruitment is a spelling variant, not a proven head. Keep fences vs interview-assistant, hr-assistant, LinkedIn.",
+      "path": null
+    },
+    {
+      "slug": "referral-program",
+      "batch": "mkt_design_text",
+      "current_primary": "Referral program",
+      "final_verdict": "OK",
+      "recommended_primary": "Referral program",
+      "note": "14.8k head beats software/marketing suffixes on the stronger cite. Keep the practice name; do not merge into affiliate-marketing.",
+      "path": null
+    },
+    {
+      "slug": "religion",
+      "batch": "cms_builder_misc",
+      "current_primary": "AI Religion",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI religious tools",
+      "note": "AI Religion SERP 被 AI-as-deity 占据；AI religious tools 多信仰产品词更贴本页。",
+      "path": null
+    },
+    {
+      "slug": "search-engine",
+      "batch": "infra_web_geo",
+      "current_primary": "AI search engine",
+      "final_verdict": "OK",
+      "recommended_primary": "AI search engine",
+      "note": "IBM and consumer roundups already use this as the category name for Perplexity-class products. Shorter 'AI search' and enterprise-search SERPs are different buyers (Glean/RAG vs human answer engines); stay split from web-search-api.",
+      "path": null
+    },
+    {
+      "slug": "search-indexing",
+      "batch": "infra_web_geo",
+      "current_primary": "AI Search Indexing",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Search Indexing",
+      "note": "KB 主轴=收录加速/IndexNow/AI 引擎可见性；website indexing 是传统 GSC 语言，会与站内 seo/website-indexing 域冲突 → 保持现主词。",
+      "path": null
+    },
+    {
+      "slug": "short-drama",
+      "batch": "video",
+      "current_primary": "AI short drama platform",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI short drama generator",
+      "note": "生产侧（Teleplay/Dramily/StoryShort）SERP 标题收敛于 AI short drama generator 而非 platform。",
+      "path": null
+    },
+    {
+      "slug": "social-cards-generator",
+      "batch": "image_3d",
+      "current_primary": "Social Cards Generator",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "OG image generator",
+      "note": "'Social Cards Generator' has no measurable demand. 'OG image generator' (~2k) is the developer/product query for the same 1200×630 share-preview job. Do not steal generic AI image generator.",
+      "path": null
+    },
+    {
+      "slug": "social-media-tools",
+      "batch": "mkt_design_text",
+      "current_primary": "Social media management",
+      "final_verdict": "OK",
+      "recommended_primary": "Social media management",
+      "note": "49.5k vs scheduler 9.9k (~5×). Current is the Hootsuite-class head. Do not switch to scheduler or a software suffix, and do not jump to influencer/UGC.",
+      "path": null
+    },
+    {
+      "slug": "speech-to-text",
+      "batch": "voice_coding",
+      "current_primary": "Speech-to-Text",
+      "final_verdict": "OK",
+      "recommended_primary": "Speech-to-Text",
+      "note": "Cited ~201k MSV and vendor titles already use Speech-to-Text. Voice-to-text and transcription are same-intent but smaller. Do not jump to note-taker or audio-translator queries.",
+      "path": null
+    },
+    {
+      "slug": "spreadsheet",
+      "batch": "llm_enterprise",
+      "current_primary": "AI spreadsheet",
+      "final_verdict": "OK",
+      "recommended_primary": "AI spreadsheet",
+      "note": "SERP matches the KB (NL→formula, column AI, Excel/Sheets-native vs new grids). No cited ≥2× same-intent head. Keep current; AI Excel is a platform subset.",
+      "path": null
+    },
+    {
+      "slug": "story-generator",
+      "batch": "mkt_design_text",
+      "current_primary": "AI Story Generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Story Generator",
+      "note": "Exact phrase is the product SERP head with the highest same-intent cites (53k–201k depending on source). Do not merge into text-generator.",
+      "path": null
+    },
+    {
+      "slug": "tattoo-generator",
+      "batch": "image_3d",
+      "current_primary": "AI Tattoo Generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Tattoo Generator",
+      "note": "US demand cited at ~98k for the current phrase; SERP titles match. No same-intent alternative showed a higher head.",
+      "path": null
+    },
+    {
+      "slug": "technology-profiler",
+      "batch": "infra_web_geo",
+      "current_primary": "website technology profiler",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "website technology profiler",
+      "note": "what CMS is this 仅 2.4-2.9k 且只覆盖 CMS 检测，KB 覆盖 Wappalyzer/BuiltWith 全栈检测 → 作 Secondary，主词保留。",
+      "path": null
+    },
+    {
+      "slug": "text",
+      "batch": "mkt_design_text",
+      "current_primary": "AI Text Tools",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Text Tools",
+      "note": "Writing-tools titles are the more common hub language, but cited volumes (~1–2k) are not ≥2× current and would still sit under 'AI text generator' (135k), which is a spoke. Keep the broader hub primary so translation/detection/grammar stay in-scope.",
+      "path": null
+    },
+    {
+      "slug": "text-generator",
+      "batch": "mkt_design_text",
+      "current_primary": "AI Text Generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Text Generator",
+      "note": "135k/mo plus product SERP already use this phrase. Do not absorb essay/story/hub terms.",
+      "path": null
+    },
+    {
+      "slug": "text-to-speech",
+      "batch": "voice_coding",
+      "current_primary": "AI Text-to-Speech",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Text-to-Speech",
+      "note": "text to speech (~246k–286k) and AI voice generator (~110k) are larger, but the former mixes OS/accessibility TTS and the latter crosses the voice / voice-cloning fence. Keep the AI TTS primary for this spoke.",
+      "path": null
+    },
+    {
+      "slug": "text-to-video",
+      "batch": "video",
+      "current_primary": "Text-to-Video",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "text to video AI",
+      "note": "165K cited for 'text to video AI' vs no comparable MSV for the technical 'Text-to-Video' label. Same T2V intent; do not switch the slug to video-generator.",
+      "path": null
+    },
+    {
+      "slug": "text-translator",
+      "batch": "mkt_design_text",
+      "current_primary": "AI text translation",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI translator",
+      "note": "Current 'AI text translation' has no MSV and its SERP is developer APIs. 'AI translator' is the SeekTool/DeepL head at ~12k–18k/mo. Stay text-only — do not take audio devices or video dubbing.",
+      "path": null
+    },
+    {
+      "slug": "ugc",
+      "batch": "mkt_design_text",
+      "current_primary": "UGC",
+      "final_verdict": "OK",
+      "recommended_primary": "UGC",
+      "note": "Marketers and product SERPs use the acronym. AI UGC / UGC ads are smaller same-family slices. Do not switch to influencer-marketing or affiliate despite higher raw heads.",
+      "path": null
+    },
+    {
+      "slug": "ui-design",
+      "batch": "mkt_design_text",
+      "current_primary": "AI UI Design",
+      "final_verdict": "OK",
+      "recommended_primary": "AI UI Design",
+      "note": "Product SERP already uses this AI-prefixed class. Bare 'UI design' is career/field volume — keep the AI product primary. Do not steal UX/wireframe/prototype.",
+      "path": null
+    },
+    {
+      "slug": "user-research",
+      "batch": "mkt_design_text",
+      "current_primary": "AI User Research",
+      "final_verdict": "OK",
+      "recommended_primary": "AI User Research",
+      "note": "Category explainers already use this phrase. Bare 'user research' is the wider practice. Do not fold into UX design or analytics/session-replay.",
+      "path": null
+    },
+    {
+      "slug": "ux-design",
+      "batch": "mkt_design_text",
+      "current_primary": "UX Design",
+      "final_verdict": "OK",
+      "recommended_primary": "UX Design",
+      "note": "Current is the field head the KB uses for IA/systems/accessibility. AI-prefix is a Trends spike without a ≥2× MSV cite. Do not switch to UI, wireframe, or user-research.",
+      "path": null
+    },
+    {
+      "slug": "vibe-coding",
+      "batch": "voice_coding",
+      "current_primary": "Vibe coding",
+      "final_verdict": "OK",
+      "recommended_primary": "Vibe coding",
+      "note": "The coined phrase is the head (~110k US). Adjacent 'what is' / 'tools' queries are smaller. Switching to AI coding would violate the coding vs vibe-coding fence.",
+      "path": null
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "batch": "agent",
+      "current_primary": "vibe coding payments",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "how to add payments to vibe coded app",
+      "note": "All vibe-coding-payment queries polluted (Vibe music app / VIBE.com / ADD-vs-ADHD). Page maps to a how-to route; keep natural how-to phrasing as keyword intent, no reliable MSV yet.",
+      "path": null
+    },
+    {
+      "slug": "video",
+      "batch": "video",
+      "current_primary": "AI Video",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Video",
+      "note": "'AI video generator' is ~20× larger but is the product-tools slug. Hub primary stays 'AI Video' (~11K 'AI videos') to keep the fence.",
+      "path": null
+    },
+    {
+      "slug": "video-clipping",
+      "batch": "video",
+      "current_primary": "AI Video Clipping",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI video clipper",
+      "note": "Titles and a cited ~1K head query use 'clipper', not gerund 'clipping'. Same long-video→social-shorts intent; 'repurposing' is wider.",
+      "path": null
+    },
+    {
+      "slug": "video-editor",
+      "batch": "video",
+      "current_primary": "AI Video Editor",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Video Editor",
+      "note": "165K cited for the current phrase vs 14.8K for 'AI video editing'. Keep AI in the string so it does not collapse into generic NLE.",
+      "path": null
+    },
+    {
+      "slug": "video-effects",
+      "batch": "video",
+      "current_primary": "AI Video Effects",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Video Effects",
+      "note": "SERP is on-intent for pixel VFX. 'AI VFX' is a synonym without a cited volume advantage; do not migrate to V2V restyle or editor.",
+      "path": null
+    },
+    {
+      "slug": "video-generator",
+      "batch": "video",
+      "current_primary": "AI video generator",
+      "final_verdict": "OK",
+      "recommended_primary": "AI video generator",
+      "note": "Repeated Ahrefs ~247K makes this the cluster head. Maker/creator are same-intent but lower; do not steal T2V/I2V modality primaries.",
+      "path": null
+    },
+    {
+      "slug": "video-to-video",
+      "batch": "video",
+      "current_primary": "Video-to-Video",
+      "final_verdict": "AMBIGUOUS",
+      "recommended_primary": "Video-to-Video",
+      "note": "Commercial 'video to video AI' looks like the T2V/I2V pattern but no MSV or title-head proof ≥2×. Bare 'video to video' also means search/retrieval. Keep the modality label until a volume source appears.",
+      "path": null
+    },
+    {
+      "slug": "video-translator",
+      "batch": "voice_coding",
+      "current_primary": "AI Video Translation",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI Video Translator",
+      "note": "Vendors and keyword tables use the tool noun (video translator / AI video translator ~4.1k–15.4k), not 'AI Video Translation'. Keep the AI prefix so we do not collapse into generic localization services.",
+      "path": null
+    },
+    {
+      "slug": "virtual-staging",
+      "batch": "image_3d",
+      "current_primary": "AI virtual staging",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI virtual staging",
+      "note": "Unprefixed 'virtual staging' (5.4k) mixes human staging vendors. Keep the AI listing-staging phrase and stay split from interior-design.",
+      "path": null
+    },
+    {
+      "slug": "voice",
+      "batch": "voice_coding",
+      "current_primary": "AI Voice",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Voice",
+      "note": "Voice AI is only ~1.2×. Larger terms (AI voice generator ~110k, voice changer ~212k) belong to TTS/changer spokes. Keep the hub primary.",
+      "path": null
+    },
+    {
+      "slug": "voice-changer",
+      "batch": "voice_coding",
+      "current_primary": "AI Voice Changer",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Voice Changer",
+      "note": "Bare 'voice changer' is ~8× larger (~212k–229k) but includes non-AI gaming modulators. The AI-specific head with cited MSV is AI voice changer (~28.8k). Stay off voice-cloning.",
+      "path": null
+    },
+    {
+      "slug": "voice-cloning",
+      "batch": "voice_coding",
+      "current_primary": "AI Voice Cloning",
+      "final_verdict": "OK",
+      "recommended_primary": "AI Voice Cloning",
+      "note": "Cited ~22.2k MSV and SERP titles already match. Shorter clone phrasings are smaller; AI voice generator is a different spoke.",
+      "path": null
+    },
+    {
+      "slug": "web-fetch",
+      "batch": "infra_web_geo",
+      "current_primary": "Web Fetch",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "URL to Markdown",
+      "note": "'Web Fetch' is an Anthropic/MCP tool label and collides with the Fetch API. Product SERPs (Jina, Firecrawl, Neo Reader) standardize on URL/website-to-Markdown — same single-URL→LLM-content intent, still split from scraping, headless, and search APIs.",
+      "path": null
+    },
+    {
+      "slug": "web-scraping",
+      "batch": "infra_web_geo",
+      "current_primary": "Web scraping",
+      "final_verdict": "OK",
+      "recommended_primary": "Web scraping",
+      "note": "Wikipedia and vendor guides treat Web scraping as the English head. Crawling, fetch, and headless are adjacent layers this cluster must keep split; none showed a same-intent ≥2× replacement.",
+      "path": null
+    },
+    {
+      "slug": "web-search-api",
+      "batch": "infra_web_geo",
+      "current_primary": "Web Search API",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Web Search API",
+      "note": "SERP API is the higher-profile commercial cousin but is an SEO-SERP scrape SKU, not the Agent/RAG web-index API this KB is for. Keep Web Search API so this slug stays split from search-engine (consumer apps) and from SERP-intel tools.",
+      "path": null
+    },
+    {
+      "slug": "website-builder",
+      "batch": "cms_builder_misc",
+      "current_primary": "Website Builder",
+      "final_verdict": "OK",
+      "recommended_primary": "Website Builder",
+      "note": "SERP titles prove 'website builder' is the hub query. 'AI website builder' is a real 15k US rising subset, not the category replacement. 'website builder tool' is a suffix inflation — do not switch.",
+      "path": null
+    },
+    {
+      "slug": "wireframing",
+      "batch": "mkt_design_text",
+      "current_primary": "Wireframing",
+      "final_verdict": "OK",
+      "recommended_primary": "Wireframing",
+      "note": "Field name is the how-to SERP head. AI-prefix is not proven ≥2×. Do not switch to prototyping or AI UI design.",
+      "path": null
+    },
+    {
+      "slug": "work-agent",
+      "batch": "agent",
+      "current_primary": "Work Agent",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Work Agent",
+      "note": "'Work Agent'/'work AI agent' 426k are WORK-dictionary/Rihanna pollution; 'AI Work Agent' capped. Keep head; no usable SERP signal for this new category.",
+      "path": null
+    },
+    {
+      "slug": "workflow",
+      "batch": "agent",
+      "current_primary": "Workflow automation",
+      "final_verdict": "SWITCH",
+      "recommended_primary": "AI workflow",
+      "note": "'AI workflow' ~45.5k on-intent (2026 reviews) > 'Workflow automation' ~28k (Zapier-class, broader non-AI). 'AI workflow automation' capped/polluted. Use 'AI workflow' as head.",
+      "path": null
+    },
+    {
+      "slug": "workspace-agent",
+      "batch": "agent",
+      "current_primary": "Workspace Agent",
+      "final_verdict": "KEEP_INTENT",
+      "recommended_primary": "Workspace Agent",
+      "note": "Bing polluted by Google Workspace / Microsoft Teams brands ('Team AI Agent' 333k = Microsoft Teams). OpenAI Workspace Agents supports the term; keep.",
+      "path": null
+    },
+    {
+      "slug": "world-model",
+      "batch": "agent",
+      "current_primary": "World model",
+      "final_verdict": "OK",
+      "recommended_primary": "World model",
+      "note": "'World model'/'world models' ~40-43k on-intent (arXiv/知乎/学术); 'world model AI' 1.38M is world-news pollution. Keep academic head.",
+      "path": null
+    }
+  ],
+  "counts": {
+    "KEEP_INTENT": 40,
+    "SWITCH": 32,
+    "OK": 83,
+    "AMBIGUOUS": 5
+  }
+}

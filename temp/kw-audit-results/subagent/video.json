@@ -1,0 +1,568 @@
+{
+  "batch": "video",
+  "audit_date": "2026-09-03",
+  "methodology": "Same-intent English primary audit. Volumes are directional (cited MSV or SERP-title proxy), not exact Keyword Planner exports. Never change slug; only keywordEn primary.",
+  "slug_count": 14,
+  "results": [
+    {
+      "slug": "animation-generator",
+      "current_primary": "AI animation generator",
+      "candidates": [
+        {
+          "keyword": "AI animation generator",
+          "volume_signal": "no published MSV; SERP titles exact-match product pages",
+          "source": "WebSearch SERP (HeyGen, Higgsfield, Anijam)",
+          "serp_title_note": "Titles repeatedly use 'AI Animation Generator' for prompt/image → animated video tools — matches KB (anime/animation video platforms, not GSAP)."
+        },
+        {
+          "keyword": "AI anime generator",
+          "volume_signal": "27.1K/mo (MicroSaaSHQ); 3.2K traffic (navtools) — sources disagree",
+          "source": "MicroSaaSHQ saas-ideas/ai-anime-generator-907; navtools.ai/tool/ai-anime",
+          "serp_title_note": "Often still-image anime art (PixAI/NovelAI-class), not full-pipeline animation video — narrower / mixed intent vs this KB."
+        },
+        {
+          "keyword": "AI animation maker",
+          "volume_signal": "no MSV; nearby 'animation maker' 22.7–23.45K/mo is generic Animaker",
+          "source": "TopAITools / NavifyAI keyword tables for Animaker",
+          "serp_title_note": "Maker/Animaker SERP is template explainer-video, not generative anime agents."
+        },
+        {
+          "keyword": "AI cartoon video generator",
+          "volume_signal": "3.0K/mo",
+          "source": "navtools.ai/tool/krikey-ai keyword table",
+          "serp_title_note": "On-intent cartoon video, but narrower than animation+anime platform."
+        },
+        {
+          "keyword": "text to animation AI",
+          "volume_signal": "no numeric MSV; listed as 2026 SEO cluster phrase",
+          "source": "vvideo.co AI script-to-animation SEO article",
+          "serp_title_note": "Same generation job, less established as a head term than 'AI animation generator'."
+        }
+      ],
+      "highest_volume_same_intent": "AI animation generator",
+      "verdict": "OK",
+      "recommended_primary": "AI animation generator",
+      "reason": "SERP titles treat 'AI animation generator' as the product-category query. 'AI anime generator' may show a higher MicroSaaSHQ figure but SERP leans still-image anime, so it is not a same-intent upgrade."
+    },
+    {
+      "slug": "canvas-video",
+      "current_primary": "AI video canvas",
+      "candidates": [
+        {
+          "keyword": "AI video canvas",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch SERP (Topview Canvas, Crevas)",
+          "serp_title_note": "Product H1s use 'AI video canvas' / 'The AI Video Canvas' for multi-model visual workspaces — matches node/canvas KB, not timeline editors."
+        },
+        {
+          "keyword": "node-based video generation",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch SERP (Wireflow, Higgsfield Canvas, Krea Nodes)",
+          "serp_title_note": "Same node-graph intent; titles are on-intent but not a higher-volume head vs 'AI video canvas'."
+        },
+        {
+          "keyword": "node-based AI video",
+          "volume_signal": "no published MSV; volume query returned no Semrush/Ahrefs figure",
+          "source": "WebSearch '\"node-based AI video\" monthly search volume'",
+          "serp_title_note": "KB synonym; used in analyst/product copy, not a dominant Google head."
+        },
+        {
+          "keyword": "canvas video generator",
+          "volume_signal": "no published MSV",
+          "source": "KB associated-keyword table + SERP check",
+          "serp_title_note": "Risk of mixing generic 'canvas' editors; weaker category signal than 'AI video canvas'."
+        },
+        {
+          "keyword": "ComfyUI video",
+          "volume_signal": "brand traffic (comfy.org ~623K monthly visits), not a category MSV",
+          "source": "hypestat.com/info/comfy.org",
+          "serp_title_note": "Brand/workflow query, not a replaceable category primary."
+        }
+      ],
+      "highest_volume_same_intent": "AI video canvas",
+      "verdict": "OK",
+      "recommended_primary": "AI video canvas",
+      "reason": "No cited MSV beats the current phrase; product titles already use 'AI video canvas' for node-based multi-model pipelines. Do not widen to generic video editor."
+    },
+    {
+      "slug": "filmmaking",
+      "current_primary": "AI Filmmaking",
+      "candidates": [
+        {
+          "keyword": "AI Filmmaking",
+          "volume_signal": "no published exact MSV; category listicles dominate SERP",
+          "source": "WebSearch SERP (M Studio, Raindance, ScreenWeaver)",
+          "serp_title_note": "Titles: 'AI Filmmaking Tools', 'Top AI Filmmaking Tools' — script-to-export pipeline, matches KB (LTX/Melies-class), not single-clip generators."
+        },
+        {
+          "keyword": "AI filmmaking tools",
+          "volume_signal": "no incremental MSV; 'tools' suffix inflates index counts",
+          "source": "same SERP + METHODOLOGY suffix rule",
+          "serp_title_note": "Same intent as current; suffix is listing language, not a better primary."
+        },
+        {
+          "keyword": "AI film making",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch '\"AI film making\" monthly search volume'",
+          "serp_title_note": "Spelling variant; no title or volume evidence it outranks 'AI Filmmaking'."
+        },
+        {
+          "keyword": "AI movie making",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Casual synonym; SERP weaker / more hobbyist than filmmaking pipeline."
+        },
+        {
+          "keyword": "AI short film generator",
+          "volume_signal": "no numeric MSV; SEO blogs call the cluster 'high volume' without a figure",
+          "source": "vvideo.co AI short film generators article",
+          "serp_title_note": "Closer to one-off short films / generator tools than full pre→post filmmaking — different fence."
+        }
+      ],
+      "highest_volume_same_intent": "AI Filmmaking",
+      "verdict": "OK",
+      "recommended_primary": "AI Filmmaking",
+      "reason": "Titles already treat 'AI Filmmaking' as the pipeline head term. Higher-looking alternatives are either a 'tools' suffix or a short-film/generator job."
+    },
+    {
+      "slug": "image-to-video",
+      "current_primary": "Image-to-Video",
+      "candidates": [
+        {
+          "keyword": "Image-to-Video",
+          "volume_signal": "Ahrefs US ~10K for unhyphenated 'image to video' (hyphenation treated as same query family)",
+          "source": "capgo.ai Ahrefs US table (Aug 2026)",
+          "serp_title_note": "Comparison posts use 'Image to Video AI Tools' / 'AI Image to Video Generator' more than bare 'Image-to-Video'."
+        },
+        {
+          "keyword": "image to video AI",
+          "volume_signal": "Ahrefs US ~42K; navtools keyword traffic 66.1–68.2K; CPC ~$0.46–0.49",
+          "source": "capgo.ai Ahrefs US; navtools.ai/tool/aiimagetovideo-pro; aitrustlist.com/ai/ai-image-to-video",
+          "serp_title_note": "Dominant commercial I2V query; SERP is animate-a-photo tools, not generic AI video generators."
+        },
+        {
+          "keyword": "AI image to video",
+          "volume_signal": "Ahrefs US ~18K; navtools 14.1–17.2K",
+          "source": "capgo.ai; navtools / AITrustList keyword tables",
+          "serp_title_note": "Same I2V intent, lower than 'image to video AI'."
+        },
+        {
+          "keyword": "image to video",
+          "volume_signal": "Ahrefs US ~10K",
+          "source": "capgo.ai Ahrefs US table",
+          "serp_title_note": "Same modality, but without AI it can mix Ken Burns / slideshow converters."
+        },
+        {
+          "keyword": "AI video generator from image",
+          "volume_signal": "33.1K/mo",
+          "source": "microsaashq.com/keyword-research/ai-video-generator-from-image",
+          "serp_title_note": "Same I2V job but leans generator-hub wording; keep behind the modality phrase."
+        }
+      ],
+      "highest_volume_same_intent": "image to video AI",
+      "verdict": "SWITCH",
+      "recommended_primary": "image to video AI",
+      "reason": "Cited US/global figures put 'image to video AI' at ~42–68K vs ~10K for 'image to video' / Image-to-Video — ≥2× same I2V intent, without crossing into the video-generator hub."
+    },
+    {
+      "slug": "interactive-video",
+      "current_primary": "Interactive video",
+      "candidates": [
+        {
+          "keyword": "Interactive video",
+          "volume_signal": "likely high (legacy marketing/e-learning head); no trustworthy exact MSV in snippets; SERP is off-intent",
+          "source": "WebSearch SERP (Idomoo, LiveAPI, Forasoft e-learning)",
+          "serp_title_note": "Hotspots, branching quizzes, shoppable video — NOT live generative steering. Fence: do not keep this as primary."
+        },
+        {
+          "keyword": "live AI video generation",
+          "volume_signal": "no published MSV; product/PR category language",
+          "source": "Akool Live Camera PR / TIME branded feature ('Live AI Video Generation')",
+          "serp_title_note": "On-intent: realtime generative stream, not OBS livestream and not e-learning overlays."
+        },
+        {
+          "keyword": "live video generation",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch '\"live video generation\" monthly search volume'; KB H1 'Live Video Generation'",
+          "serp_title_note": "Matches KB English subtitle; without 'AI' can collide with live encoding/streaming."
+        },
+        {
+          "keyword": "real-time interactive video generation",
+          "volume_signal": "no consumer MSV; academic/product-paper head",
+          "source": "WebSearch SERP (LongLive arXiv, Vidu S1, Visko Orbis, MotionStream)",
+          "serp_title_note": "Exact KB job (in-generation prompt switch / RTF≈1). Low commercial volume, perfect intent."
+        },
+        {
+          "keyword": "interactive AI video",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Still risks shoppable/branching 'interactive video' + AI overlay."
+        }
+      ],
+      "highest_volume_same_intent": "live AI video generation",
+      "verdict": "SWITCH",
+      "recommended_primary": "live AI video generation",
+      "reason": "Current 'Interactive video' SERP is e-learning/shoppable, which the fence forbids. Switch to the live-generative phrase used in product copy; do not chase the off-intent head term."
+    },
+    {
+      "slug": "music-video-generator",
+      "current_primary": "AI music video generator",
+      "candidates": [
+        {
+          "keyword": "AI music video generator",
+          "volume_signal": "12.1K/mo (MicroSaaSHQ); 9.9K keyword traffic / $3.26 CPC (navtools)",
+          "source": "microsaashq.com/keyword-research/ai-music-video-generator; navtools.ai/tool/vidmuse-ai",
+          "serp_title_note": "Neural Frames, Toonkit, Atlabs, Yolly H1s use this exact phrase for song→beat-synced MV."
+        },
+        {
+          "keyword": "AI music video maker",
+          "volume_signal": "no cited MSV above generator; Creati.ai tags both phrases as category labels",
+          "source": "WebSearch '\"AI music video maker\" monthly search volume'; creati.ai ranking page",
+          "serp_title_note": "Same music-first intent; no evidence ≥2× current."
+        },
+        {
+          "keyword": "music video generator",
+          "volume_signal": "no isolated MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Without AI, mixes lyric-video templates / After Effects packs."
+        },
+        {
+          "keyword": "AI MV generator",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Niche abbreviation; not a SERP head."
+        },
+        {
+          "keyword": "song to video AI",
+          "volume_signal": "no published MSV",
+          "source": "product copy (Atlabs/Neural Frames workflows)",
+          "serp_title_note": "Same job, long-tail vs established generator head."
+        }
+      ],
+      "highest_volume_same_intent": "AI music video generator",
+      "verdict": "OK",
+      "recommended_primary": "AI music video generator",
+      "reason": "Cited ~10–12K MSV plus exact-match product titles. Maker/MV variants are same intent but not materially larger."
+    },
+    {
+      "slug": "short-drama",
+      "current_primary": "AI short drama platform",
+      "candidates": [
+        {
+          "keyword": "AI short drama platform",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch SERP + volume query",
+          "serp_title_note": "On-intent when it ranks (Alignify/PopShort), but almost no product H1 uses 'platform' as the query."
+        },
+        {
+          "keyword": "AI short drama generator",
+          "volume_signal": "no numeric MSV; strongest title-head in production SERP",
+          "source": "WebSearch SERP (Teleplay, Dramily, StoryShort, PopShort, OpenArt)",
+          "serp_title_note": "Repeated H1: 'AI Short Drama Generator' for vertical episodic production — same KB job, not generic T2V."
+        },
+        {
+          "keyword": "AI short drama",
+          "volume_signal": "no published MSV; industry/news head",
+          "source": "QYResearch / Caixin / Global Times coverage",
+          "serp_title_note": "Mixes watching ReelShort/DramaBox with making dramas — consumption + production."
+        },
+        {
+          "keyword": "AI micro drama",
+          "volume_signal": "no published MSV",
+          "source": "invideo.io/blog/how-to-make-ai-micro-drama; OpenArt drama generator",
+          "serp_title_note": "English editorial synonym (micro-drama); same format, less consistent as a tools head than 'short drama generator'."
+        },
+        {
+          "keyword": "AI short film",
+          "volume_signal": "no published MSV",
+          "source": "vvideo.co AI short film generators article",
+          "serp_title_note": "Indie/festival short films — not vertical multi-episode paywall drama. Crosses fence."
+        }
+      ],
+      "highest_volume_same_intent": "AI short drama generator",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI short drama generator",
+      "reason": "Method B: production SERP titles converge on 'AI short drama generator', not 'platform'. Keep away from 'AI short film' and bare 'AI short drama' (watch-app intent)."
+    },
+    {
+      "slug": "text-to-video",
+      "current_primary": "Text-to-Video",
+      "candidates": [
+        {
+          "keyword": "Text-to-Video",
+          "volume_signal": "no isolated MSV; Wikipedia/model-leaderboard category label",
+          "source": "WebSearch SERP (Wikipedia 'Text-to-video model'; Magic Hour / CreateVision leaderboards)",
+          "serp_title_note": "Technical T2V SERP is on-intent, but commercial titles prefer 'text to video AI'."
+        },
+        {
+          "keyword": "text to video AI",
+          "volume_signal": "165K/mo",
+          "source": "MicroSaaSHQ saas-ideas/ai-video-creator-56 and saas-ideas/ai-video-generator-995 keyword tables",
+          "serp_title_note": "Same T2V modality; tool-seeker wording. Do not confuse with 'AI video generator' (product hub)."
+        },
+        {
+          "keyword": "text to video",
+          "volume_signal": "no separate cited MSV vs hyphenated form; 'text to video creator' 22.2K",
+          "source": "microsaashq.com/keyword-research/text-to-video-creator",
+          "serp_title_note": "Unqualified form mixes Lumen5 blog-to-slides with generative T2V."
+        },
+        {
+          "keyword": "AI text to video",
+          "volume_signal": "no separate figure; treated as sibling of 165K 'text to video AI'",
+          "source": "MicroSaaSHQ related-keyword lists",
+          "serp_title_note": "Same intent, word-order flip; 165K citation is on 'text to video AI'."
+        },
+        {
+          "keyword": "AI video generator from text",
+          "volume_signal": "18.1K/mo",
+          "source": "microsaashq.com/keyword-research/ai-video-generator-from-text",
+          "serp_title_note": "Leans video-generator hub; keep as supporting, not primary, for this modality slug."
+        }
+      ],
+      "highest_volume_same_intent": "text to video AI",
+      "verdict": "SWITCH",
+      "recommended_primary": "text to video AI",
+      "reason": "165K cited for 'text to video AI' vs no comparable MSV for the technical 'Text-to-Video' label. Same T2V intent; do not switch the slug to video-generator."
+    },
+    {
+      "slug": "video",
+      "current_primary": "AI Video",
+      "candidates": [
+        {
+          "keyword": "AI Video",
+          "volume_signal": "Ahrefs US 'AI videos' ~11K; Semrush snippet 'ai video' 2.9K (one domain table)",
+          "source": "capgo.ai Ahrefs US; semrush.com/website/aivideo.com/overview keyword row",
+          "serp_title_note": "Bare 'AI Video' SERP collapses into generator listicles — hub page must stay broader than that SERP."
+        },
+        {
+          "keyword": "AI video generator",
+          "volume_signal": "Ahrefs US 246–247K; Seeto/Ahrefs 246K; CPC ~$1.10 KD 81",
+          "source": "capgo.ai; DEV Community Ahrefs pull (jack_miller, Aug 2026); seeto.ai descript vs invideo",
+          "serp_title_note": "Product-tools head — belongs to video-generator, not this hub."
+        },
+        {
+          "keyword": "AI video tools",
+          "volume_signal": "no clean MSV; 'tools' suffix inflates",
+          "source": "METHODOLOGY suffix rule",
+          "serp_title_note": "Directory/list intent, still generator-heavy."
+        },
+        {
+          "keyword": "AI generated videos",
+          "volume_signal": "Ahrefs US ~4.3K",
+          "source": "capgo.ai Ahrefs US table",
+          "serp_title_note": "Output-noun, not a category hub query."
+        },
+        {
+          "keyword": "generative AI video",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Analyst/category phrasing; weaker than 'AI Video' as a hub label."
+        }
+      ],
+      "highest_volume_same_intent": "AI Video",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Video",
+      "reason": "'AI video generator' is ~20× larger but is the product-tools slug. Hub primary stays 'AI Video' (~11K 'AI videos') to keep the fence."
+    },
+    {
+      "slug": "video-clipping",
+      "current_primary": "AI Video Clipping",
+      "candidates": [
+        {
+          "keyword": "AI Video Clipping",
+          "volume_signal": "no isolated MSV; category reports exist without a head-term figure",
+          "source": "clipperz.ai State of AI Video Clipping 2026; WebSearch volume query",
+          "serp_title_note": "Used in report/listicle titles; product pages prefer 'clipper'."
+        },
+        {
+          "keyword": "AI video clipper",
+          "volume_signal": "~1,000/mo global (founder-cited); cluster traffic potential ~60K claimed",
+          "source": "vugolaai.com/blog/best-ai-video-clipping-tools-2026",
+          "serp_title_note": "Author states this is the searched phrase; SERP is Opus/Vizard/VEED-class long→shorts tools. Same KB job."
+        },
+        {
+          "keyword": "AI clip generator",
+          "volume_signal": "no separate MSV; treated as same Google intent as clipper",
+          "source": "Vugola + Ascynd clipper roundups",
+          "serp_title_note": "Same long-to-shorts job; slightly more 'make a clip from scratch' ambiguity."
+        },
+        {
+          "keyword": "AI video repurposing",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch '\"AI video repurposing\" monthly search volume'",
+          "serp_title_note": "KB synonym; can widen to blog/thread repurposing, not only clip cutting."
+        },
+        {
+          "keyword": "video repurposing tool",
+          "volume_signal": "25K+ claimed in an unsourced gist — not used as a SWITCH basis",
+          "source": "gist.github.com/mittalsam98 (unverified); ignored for verdict math",
+          "serp_title_note": "Broader than AI clipping (cross-posting, blog-from-video)."
+        }
+      ],
+      "highest_volume_same_intent": "AI video clipper",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI video clipper",
+      "reason": "Titles and a cited ~1K head query use 'clipper', not gerund 'clipping'. Same long-video→social-shorts intent; 'repurposing' is wider."
+    },
+    {
+      "slug": "video-editor",
+      "current_primary": "AI Video Editor",
+      "candidates": [
+        {
+          "keyword": "AI Video Editor",
+          "volume_signal": "165K/mo (repeated MicroSaaSHQ tables)",
+          "source": "microsaashq.com saas-ideas/ai-video-creator-56 and saas-ideas/ai-video-generator-995",
+          "serp_title_note": "Palmier, AVE, Adobe Firefly, monday.com roundups — timeline/edit-existing-footage. Some Runway 'editor' pages bleed into generative VFX; still the editor head term."
+        },
+        {
+          "keyword": "AI video editing",
+          "volume_signal": "14.8K/mo",
+          "source": "MicroSaaSHQ ai-video-generator-995 keyword table",
+          "serp_title_note": "Same job, gerund form, much lower cited volume."
+        },
+        {
+          "keyword": "AI video editing software",
+          "volume_signal": "no extra cited MSV; software suffix inflates",
+          "source": "METHODOLOGY suffix rule; ReelMind trending-keywords article mentions the phrase",
+          "serp_title_note": "Same intent, suffix-inflated — do not switch."
+        },
+        {
+          "keyword": "AI video editor online",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Long-tail of current head."
+        },
+        {
+          "keyword": "video editor",
+          "volume_signal": "165K/mo page cluster (generic CapCut/Premiere)",
+          "source": "microsaashq.com/saas-ideas/video-editor-315",
+          "serp_title_note": "Non-AI NLE intent — different fence from AI timeline editors."
+        }
+      ],
+      "highest_volume_same_intent": "AI Video Editor",
+      "verdict": "OK",
+      "recommended_primary": "AI Video Editor",
+      "reason": "165K cited for the current phrase vs 14.8K for 'AI video editing'. Keep AI in the string so it does not collapse into generic NLE."
+    },
+    {
+      "slug": "video-effects",
+      "current_primary": "AI Video Effects",
+      "candidates": [
+        {
+          "keyword": "AI Video Effects",
+          "volume_signal": "no numeric MSV; listed among trending post-production queries",
+          "source": "reelmind.ai trending AI keywords article; WebSearch SERP",
+          "serp_title_note": "OpenArt VFX, Revid, Kling effects guides — pixel-level effects on existing footage, not timeline editors or full V2V restyle."
+        },
+        {
+          "keyword": "AI VFX",
+          "volume_signal": "no published MSV; SEO blogs claim large YoY growth without a base number",
+          "source": "vvideo.co AI VFX generators posts; Revid 'AI VFX Editor'",
+          "serp_title_note": "KB synonym; titles use both. No ≥2× volume proof vs current."
+        },
+        {
+          "keyword": "AI video effects generator",
+          "volume_signal": "no published MSV",
+          "source": "Revid tool page wording",
+          "serp_title_note": "Same job + generator suffix; not a better primary."
+        },
+        {
+          "keyword": "AI visual effects",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Can widen to Hollywood VFX houses / cinema, not SaaS effects tools."
+        },
+        {
+          "keyword": "AI-powered VFX tools",
+          "volume_signal": "no MSV; 'tools' suffix",
+          "source": "vvideo.co 'AI-Powered VFX Tools' article",
+          "serp_title_note": "Listing language, not a user head query."
+        }
+      ],
+      "highest_volume_same_intent": "AI Video Effects",
+      "verdict": "OK",
+      "recommended_primary": "AI Video Effects",
+      "reason": "SERP is on-intent for pixel VFX. 'AI VFX' is a synonym without a cited volume advantage; do not migrate to V2V restyle or editor."
+    },
+    {
+      "slug": "video-generator",
+      "current_primary": "AI video generator",
+      "candidates": [
+        {
+          "keyword": "AI video generator",
+          "volume_signal": "Ahrefs US 246–247K; Seeto 246K; MicroSaaSHQ idea page titled 1.2M (cluster, not exact-match)",
+          "source": "capgo.ai Ahrefs US; seeto.ai; DEV Community Ahrefs table; microsaashq.ai-video-generator-995",
+          "serp_title_note": "Unambiguous product-tools head (Veo/Kling/Sora/Runway listicles). Correct fence vs hub and vs T2V/I2V."
+        },
+        {
+          "keyword": "AI video maker",
+          "volume_signal": "110K/mo (MicroSaaSHQ); 49.7K traffic (navtools); Semrush domain tables 720–880 (likely geo-subset)",
+          "source": "MicroSaaSHQ ai-video-creator-56; navtools.ai/tool/ai-video-maker; Semrush aivideo.com overview",
+          "serp_title_note": "Same generate-a-clip job; cited volume below generator."
+        },
+        {
+          "keyword": "AI video creator",
+          "volume_signal": "40.5K/mo",
+          "source": "microsaashq.com/saas-ideas/ai-video-creator-56",
+          "serp_title_note": "Often Lumen5/avatar explainers — overlapping but not the 2026 generative-model head."
+        },
+        {
+          "keyword": "video generator AI",
+          "volume_signal": "Semrush snippet 1.3K on one domain table — incomplete",
+          "source": "semrush.com/website/aivideo.com/overview",
+          "serp_title_note": "Word-order flip; titles prefer 'AI video generator'."
+        },
+        {
+          "keyword": "free AI video generator",
+          "volume_signal": "74K/mo (Seeto/Invideo competitive table)",
+          "source": "seeto.ai descript vs invideo keyword rankings",
+          "serp_title_note": "Same category + free modifier; not a better primary."
+        }
+      ],
+      "highest_volume_same_intent": "AI video generator",
+      "verdict": "OK",
+      "recommended_primary": "AI video generator",
+      "reason": "Repeated Ahrefs ~247K makes this the cluster head. Maker/creator are same-intent but lower; do not steal T2V/I2V modality primaries."
+    },
+    {
+      "slug": "video-to-video",
+      "current_primary": "Video-to-Video",
+      "candidates": [
+        {
+          "keyword": "Video-to-Video",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch SERP (PickStyle, StreamV2V, EchoStyle papers)",
+          "serp_title_note": "Academic/product V2V style-transfer SERP preserves motion — matches KB. Weak commercial packaging."
+        },
+        {
+          "keyword": "video to video AI",
+          "volume_signal": "no published MSV (volume query returned no Semrush/Ahrefs figure)",
+          "source": "WebSearch '\"video to video AI\" monthly search volume'; Vuela/AI Video Pipeline feature blurbs",
+          "serp_title_note": "Commercial restyle/upscale pages; same V2V job. No ≥2× number vs current."
+        },
+        {
+          "keyword": "video to video",
+          "volume_signal": "no published MSV; also used for reverse-video-search / similarity APIs",
+          "source": "OpusClip reverse-video-search guide (video-to-video search API)",
+          "serp_title_note": "Ambiguous: generative restyle vs retrieval/search."
+        },
+        {
+          "keyword": "AI video style transfer",
+          "volume_signal": "no published MSV",
+          "source": "Wan 2.1 / UniVST style-transfer guides",
+          "serp_title_note": "Subset of V2V (style only), not full content rewrite."
+        },
+        {
+          "keyword": "AI video to video",
+          "volume_signal": "no published MSV",
+          "source": "WebSearch phrase check",
+          "serp_title_note": "Same modality + AI; titles do not clearly outrank 'Video-to-Video'."
+        }
+      ],
+      "highest_volume_same_intent": "Video-to-Video",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "Video-to-Video",
+      "reason": "Commercial 'video to video AI' looks like the T2V/I2V pattern but no MSV or title-head proof ≥2×. Bare 'video to video' also means search/retrieval. Keep the modality label until a volume source appears."
+    }
+  ]
+}

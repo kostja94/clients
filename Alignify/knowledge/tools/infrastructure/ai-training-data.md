@@ -1,6 +1,6 @@
 # 大模型训练数据平台 · 知识块（非线性笔记）
 
-**叙述主词 · 勿与…混买**：**AI Training Data Platform / 训练数据基础设施**——采购、生产、质检与交付**可训语料**（标注、RLHF、授权语料、合成数据），验收以 **rubric、版权链、IAA、模态覆盖** 为主。本页为 **训练数据平台 SSOT**（完整 URL 表仅此一处）；原始抓取 → [web-scraping.md](../web-data/web-scraping.md)；训后评测 → [evaluation.md](../llm/evaluation.md)。
+**叙述主词 · 勿与…混买**：**AI Training Data Platform / 训练数据基础设施**——采购、生产、质检与交付**可训语料**（标注、RLHF、授权语料、合成数据），验收以 **rubric、版权链、IAA、模态覆盖** 为主。本页为 **训练数据平台 SSOT**（完整 URL 表仅此一处）；原始抓取 → [web-scraping.md](../web-data/web-scraping.md)；训后评测 → [evaluation.md](../llm/evaluation.md)；生产 trace 回流语料 → [llm-observability.md](../llm/llm-observability.md)。
 
 **材料范围**：公开网络检索（厂商官网与产品文档、融资新闻、TechCrunch/The Information 等行业报道、Research and Markets / IDC 类市场摘要、Anthropic/OpenAI 公开 RLHF 说明、arXiv 预印本）；归纳 **AI 训练数据平台 / AI training data infrastructure**——为 LLM 与多模态模型采购、生产、质检与交付可训练语料的全栈系统，覆盖数据标注 Lab、标注 MLOps 平台、授权语料市场、合成数据管线。**未**引用 Alignify 站内文章或站内 JSON 内容稿。具体定价、合同条款与数据许可以各官网为准。网摘整理日期 **2026-06-23**。
 
@@ -10,12 +10,12 @@
 
 ## 与相邻 slug 分流
 
-| 维度 | **ai-training-data（本文）** | **web-scraping** | **evaluation** | **inference-infrastructure** |
-|------|------------------------------|------------------|----------------|-------------------------------|
-| 核心问题 | 怎么**采购/生产/交付**可训数据 | 怎么**抓取**网页/API 原始数据 | 怎么**评测**已训模型/应用 | 怎么**部署运行**模型 |
-| 典型读者 | AI Lab、MLOps、数据平台负责人 | 数据工程师、Agent 开发者 | AI 工程师、QA | 平台架构师 |
-| 交付形态 | 标注集、RLHF 偏好对、授权语料包、多模态数据 API | 原始 HTML/JSON、托管 scrape API | 评分报告、在线监控 | 推理端点、GPU 集群 |
-| 验收核心 | 质量 rubric、版权链、规模、模态覆盖 | 抽取准确率、合规 | 基准通过率、幻觉率 | tok/s、$/1M tokens |
+| 维度 | **ai-training-data（本文）** | **web-scraping** | **evaluation** | **llm-observability** | **inference-infrastructure** |
+|------|------------------------------|------------------|----------------|-------------------------|--------------------------------|
+| 核心问题 | 怎么**采购/生产/交付**可训数据 | 怎么**抓取**网页/API 原始数据 | 应用输出 **好不好**、能否挡发布 | 线上 **发生了什么**（trace） | 怎么**部署运行**模型 |
+| 典型读者 | AI Lab、MLOps、数据平台负责人 | 数据工程师、Agent 开发者 | AI 工程师、QA | 平台工程师、SRE | 平台架构师 |
+| 交付形态 | 标注集、RLHF 偏好对、授权语料包、多模态数据 API | 原始 HTML/JSON、托管 scrape API | 评分报告、CI gate | Trace 仪表盘、cost 归因 | 推理端点、GPU 集群 |
+| 验收核心 | 质量 rubric、版权链、规模、模态覆盖 | 抽取准确率、合规 | 基准通过率、guardrail | 全链路可见、prompt 版本 | tok/s、$/1M tokens |
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 
@@ -156,5 +156,6 @@
 - **Training Data for AI Models — market reports**（Research and Markets / 同类机构摘要）：AI 训练数据市场规模与 CAGR 预测（引用时以报告原文为准）。
 - **Alignify · Web 抓取**（知识块）：[`web-scraping.md`](../web-data/web-scraping.md)——raw 采集侧；本文是 curated 训练交付。
 - **Alignify · AI 评测**：[`evaluation.md`](../llm/evaluation.md)——训后质量；本文是训前数据。
+- **Alignify · LLM 可观测性**：[`llm-observability.md`](../llm/llm-observability.md)——生产 trace；trace→dataset promote 与训前 rubric 对齐。
 - **Alignify · AI 推理基础设施**：[`inference-infrastructure.md`](inference-infrastructure.md)——模型部署；与训练数据为上下游。
 - **Alignify · 世界模型**：[`world-model.md`](../world-model.md)——多模态/视频训练需求场景。

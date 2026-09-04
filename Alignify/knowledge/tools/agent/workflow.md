@@ -53,6 +53,7 @@
 | **`workspace-agent`** | 「把团队 SOP 做成共享 Agent」 | **固定 API 图** vs **LLM playbook + org 治理** |
 | **`work-agent`** | 「帮我做完这一份 deck/报告」 | **不**以「交稿」为默认成功标准 |
 | **`ai-employee`** | 「在 Slack 里 @ 一个共享同事干活」 | **IM 协作面** vs **跨 SaaS API 管道** |
+| **`backend-as-a-service`** | 「App 的库/鉴权/实时托管在哪？」 | **应用态 BaaS** vs **跨应用自动化管道** |
 | **`browser`** | 「AI 能否帮我浏览网页、填表」 | **人向浏览体验** vs **自动化后台管线** |
 
 ---
@@ -170,3 +171,4 @@ Opal（Google）差异化在 Gemini 模型的原生集成和 Google 生态深度
 - Work Agent：[work-agent.md](work-agent.md)
 - AI Employee（IM 协作）：[ai-employee.md](ai-employee.md)
 - Agent Skills：[agent-skills.md](agent-skills.md)
+- BaaS / App 态：[backend-as-a-service.md](../infrastructure/backend-as-a-service.md)

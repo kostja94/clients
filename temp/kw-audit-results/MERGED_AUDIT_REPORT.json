@@ -1,0 +1,6020 @@
+{
+  "audit_date": "2026-09-03",
+  "methodology": "Bing EN-US approximate result counts (directional proxy per intent-near-keyword-volume.md; NOT precise MSV)",
+  "caveat": "Bing caps many broad AI queries at ~509,000; SWITCH on capped counts requires SERP title review",
+  "total_slugs": 159,
+  "verdict_summary": {
+    "SWITCH": 40,
+    "OK": 80,
+    "AMBIGUOUS": 26,
+    "NEEDS_REVIEW": 13
+  },
+  "switch_recommendations": [
+    {
+      "slug": "3d-model-generator",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "SWITCH",
+      "raw": {
+        "slug": "3d-model-generator",
+        "path": "tools/3d-spatial/3d-model-generator.md",
+        "current_primary": "AI 3D model generator",
+        "alternatives_tested": [
+          "text to 3D",
+          "image to 3D",
+          "text to 3D AI"
+        ],
+        "bing_counts": {
+          "AI 3D model generator": 16700,
+          "text to 3D": 11800,
+          "image to 3D": 51500,
+          "text to 3D AI": 147000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "text to 3D AI",
+            "count": 147000
+          },
+          {
+            "keyword": "image to 3D",
+            "count": 51500
+          },
+          {
+            "keyword": "AI 3D model generator",
+            "count": 16700
+          },
+          {
+            "keyword": "text to 3D",
+            "count": 11800
+          }
+        ],
+        "verdict": "SWITCH",
+        "reason": "'text to 3D AI' (147,000) and 'image to 3D' (51,500) outperform 'AI 3D model generator' (16,700). Recommend dual primary: 'text to 3D / image to 3D' (matches current narrative).",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": []
+      }
+    },
+    {
+      "slug": "3d-modelling",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "SWITCH",
+      "raw": {
+        "slug": "3d-modelling",
+        "path": "tools/3d-spatial/3d-modelling.md",
+        "current_primary": "3D modelling software",
+        "alternatives_tested": [
+          "3D modeling tools",
+          "DCC software",
+          "3D modelling tools"
+        ],
+        "bing_counts": {
+          "3D modelling software": 10700,
+          "3D modeling tools": 149000,
+          "DCC software": 142000,
+          "3D modelling tools": 149000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "3D modeling tools",
+            "count": 149000
+          },
+          {
+            "keyword": "3D modelling tools",
+            "count": 149000
+          },
+          {
+            "keyword": "DCC software",
+            "count": 142000
+          },
+          {
+            "keyword": "3D modelling software",
+            "count": 10700
+          }
+        ],
+        "verdict": "SWITCH",
+        "reason": "'3D modeling tools' (149,000) and 'DCC software' (142,000) far exceed '3D modelling software' (10,700). Recommend US spelling '3D modeling tools' as primary.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": []
+      }
+    },
+    {
+      "slug": "agent-for-desktop",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agent on desktop / 桌面智能体",
+      "recommended_primary": "AI desktop agent",
+      "highest_volume_keyword": "AI desktop agent",
+      "candidates": [
+        {
+          "query": "desktop AI agent",
+          "approx_results": 150000
+        },
+        {
+          "query": "AI desktop agent",
+          "approx_results": 509000
+        },
+        {
+          "query": "computer use agent",
+          "approx_results": 271000
+        },
+        {
+          "query": "AI agent for desktop",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI desktop agent' ~509,000 is >=2x current 'desktop AI agent' ~150,000"
+    },
+    {
+      "slug": "agent-skills",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agent Skills / 技能生态",
+      "recommended_primary": "MCP agent skills",
+      "highest_volume_keyword": "MCP agent skills",
+      "candidates": [
+        {
+          "query": "agent skills",
+          "approx_results": 43300
+        },
+        {
+          "query": "AI agent skills",
+          "approx_results": 26200
+        },
+        {
+          "query": "agent skill marketplace",
+          "approx_results": 4280
+        },
+        {
+          "query": "MCP agent skills",
+          "approx_results": 86900
+        }
+      ],
+      "notes": "'MCP agent skills' ~86,900 is >=2x current 'agent skills' ~43,300"
+    },
+    {
+      "slug": "agentic-commerce",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agentic Commerce",
+      "recommended_primary": "AI agent commerce",
+      "highest_volume_keyword": "AI agent commerce",
+      "candidates": [
+        {
+          "query": "agentic commerce",
+          "approx_results": 15600
+        },
+        {
+          "query": "AI agent commerce",
+          "approx_results": 509000
+        },
+        {
+          "query": "agentic shopping",
+          "approx_results": 84200
+        },
+        {
+          "query": "AI commerce agents",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI agent commerce' ~509,000 is >=2x current 'agentic commerce' ~15,600"
+    },
+    {
+      "slug": "agentic-payments",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agentic Payments",
+      "recommended_primary": "AI agent payments",
+      "highest_volume_keyword": "AI agent payments",
+      "candidates": [
+        {
+          "query": "agentic payments",
+          "approx_results": 84200
+        },
+        {
+          "query": "AI agent payments",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent payment infrastructure",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI payment agents",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI agent payments' ~509,000 is >=2x current 'agentic payments' ~84,200"
+    },
+    {
+      "slug": "ai-tutor",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "SWITCH",
+      "raw": {
+        "slug": "ai-tutor",
+        "path": "tools/education/ai-tutor.md",
+        "current_primary": "AI tutor",
+        "alternatives_tested": [
+          "AI tutoring",
+          "AI tutoring platform",
+          "online AI tutor"
+        ],
+        "bing_counts": {
+          "AI tutor": 46800,
+          "AI tutoring": 509000,
+          "AI tutoring platform": 509000,
+          "online AI tutor": 956000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "online AI tutor",
+            "count": 956000
+          },
+          {
+            "keyword": "AI tutoring",
+            "count": 509000
+          },
+          {
+            "keyword": "AI tutoring platform",
+            "count": 509000
+          },
+          {
+            "keyword": "AI tutor",
+            "count": 46800
+          }
+        ],
+        "verdict": "SWITCH",
+        "reason": "'AI tutoring' (~509k ceiling) and related forms dominate 'AI tutor' (46,800). Recommend primary 'AI tutoring' — distinct from homework-helper intent.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI tutoring",
+          "AI tutoring platform",
+          "online AI tutor"
+        ]
+      }
+    },
+    {
+      "slug": "app-builder",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI App Builder / AI 应用构建器",
+      "recommended_primary": "no code app builder AI",
+      "highest_volume_keyword": "AI application builder",
+      "candidates": [
+        {
+          "query": "AI app builder",
+          "approx_results": 12600
+        },
+        {
+          "query": "AI application builder",
+          "approx_results": 509000
+        },
+        {
+          "query": "no code app builder AI",
+          "approx_results": 253000
+        },
+        {
+          "query": "AI app maker",
+          "approx_results": 24100
+        }
+      ],
+      "notes": "'no code app builder AI' ~253,000 >> primary ~12,600 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "browser",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "AI browser / 人工智能浏览器",
+      "recommended_primary": "AI web browser",
+      "highest_volume_keyword": "AI web browser",
+      "candidates": [
+        {
+          "query": "AI browser",
+          "approx_results": 61800
+        },
+        {
+          "query": "AI web browser",
+          "approx_results": 509000
+        },
+        {
+          "query": "agentic browser",
+          "approx_results": 125000
+        },
+        {
+          "query": "AI browsing agent",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI web browser' ~509,000 is >=2x current 'AI browser' ~61,800"
+    },
+    {
+      "slug": "chatbot",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "AI Chatbot",
+      "recommended_primary": "best AI chatbot",
+      "highest_volume_keyword": "best AI chatbot",
+      "candidates": [
+        {
+          "query": "AI chatbot",
+          "approx_results": 47500
+        },
+        {
+          "query": "chatbot",
+          "approx_results": 65000
+        },
+        {
+          "query": "best AI chatbot",
+          "approx_results": 110000
+        },
+        {
+          "query": "AI chat bot",
+          "approx_results": 51400
+        }
+      ],
+      "notes": "Alternative 'best AI chatbot' has ~110,000 vs primary ~47,500 (2.3x)"
+    },
+    {
+      "slug": "content-management-system",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Content Management System / CMS",
+      "recommended_primary": "best CMS",
+      "highest_volume_keyword": "best CMS",
+      "candidates": [
+        {
+          "query": "content management system",
+          "approx_results": 10200
+        },
+        {
+          "query": "CMS",
+          "approx_results": 224000
+        },
+        {
+          "query": "best CMS",
+          "approx_results": 681000
+        },
+        {
+          "query": "content management software",
+          "approx_results": 4440
+        }
+      ],
+      "notes": "Alternative 'best CMS' has ~681,000 vs primary ~10,200 (66.8x)"
+    },
+    {
+      "slug": "enterprise-cms",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Enterprise CMS / DXP / Digital Experience Platform",
+      "recommended_primary": "digital experience platform",
+      "highest_volume_keyword": "digital experience platform",
+      "candidates": [
+        {
+          "query": "enterprise CMS",
+          "approx_results": 88700
+        },
+        {
+          "query": "DXP",
+          "approx_results": 74500
+        },
+        {
+          "query": "digital experience platform",
+          "approx_results": 211000
+        },
+        {
+          "query": "enterprise content management",
+          "approx_results": 13500
+        }
+      ],
+      "notes": "Alternative 'digital experience platform' has ~211,000 vs primary ~88,700 (2.4x)"
+    },
+    {
+      "slug": "essay-writer",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Essay Writer",
+      "recommended_primary": "essay writer tools",
+      "highest_volume_keyword": "essay writer tools",
+      "candidates": [
+        {
+          "query": "essay writer",
+          "approx_results": null
+        },
+        {
+          "query": "AI essay writer",
+          "approx_results": null
+        },
+        {
+          "query": "essay writer tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Essay Writer",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=53500 vs current~3870"
+    },
+    {
+      "slug": "family-assistant",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "AI 家庭助手",
+      "recommended_primary": "family AI assistant",
+      "highest_volume_keyword": "family AI assistant",
+      "candidates": [
+        {
+          "query": "AI family assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "family AI assistant",
+          "approx_results": 1090000
+        },
+        {
+          "query": "AI home assistant for families",
+          "approx_results": 509000
+        },
+        {
+          "query": "family organizer AI",
+          "approx_results": 1090000
+        }
+      ],
+      "notes": "'family AI assistant' ~1,090,000 is >=2x current 'AI family assistant' ~509,000"
+    },
+    {
+      "slug": "geo",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "GEO（生成式引擎优化 / Generative Engine Optimization）",
+      "recommended_primary": "GEO SEO",
+      "highest_volume_keyword": "GEO SEO",
+      "candidates": [
+        {
+          "query": "generative engine optimization",
+          "approx_results": 63500
+        },
+        {
+          "query": "GEO SEO",
+          "approx_results": 260000
+        },
+        {
+          "query": "AI SEO",
+          "approx_results": 30000
+        },
+        {
+          "query": "generative search optimization",
+          "approx_results": 57800
+        }
+      ],
+      "notes": "Alternative 'GEO SEO' has ~260,000 vs primary ~63,500 (4.1x)"
+    },
+    {
+      "slug": "git-hosting",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Agent-native Git hosting / Code forge",
+      "recommended_primary": "code forge",
+      "highest_volume_keyword": "AI git hosting",
+      "candidates": [
+        {
+          "query": "agent native git hosting",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI git hosting",
+          "approx_results": 509000
+        },
+        {
+          "query": "code forge",
+          "approx_results": 363000
+        },
+        {
+          "query": "git hosting for AI agents",
+          "approx_results": 217000
+        }
+      ],
+      "notes": "'code forge' ~363,000 >> primary ~4,280 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "headless-cms",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Headless CMS / API-first CMS",
+      "recommended_primary": "API-first CMS",
+      "highest_volume_keyword": "API-first CMS",
+      "candidates": [
+        {
+          "query": "headless CMS",
+          "approx_results": 29600
+        },
+        {
+          "query": "API-first CMS",
+          "approx_results": 170000
+        },
+        {
+          "query": "headless content management",
+          "approx_results": 48200
+        },
+        {
+          "query": "content API CMS",
+          "approx_results": 2860
+        }
+      ],
+      "notes": "Alternative 'API-first CMS' has ~170,000 vs primary ~29,600 (5.7x)"
+    },
+    {
+      "slug": "healthcare",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "AI Healthcare",
+      "recommended_primary": "healthcare AI",
+      "highest_volume_keyword": "healthcare AI",
+      "candidates": [
+        {
+          "query": "AI healthcare",
+          "approx_results": 40500
+        },
+        {
+          "query": "AI in healthcare",
+          "approx_results": 40500
+        },
+        {
+          "query": "healthcare AI",
+          "approx_results": 139000
+        },
+        {
+          "query": "artificial intelligence healthcare",
+          "approx_results": 108000
+        }
+      ],
+      "notes": "Alternative 'healthcare AI' has ~139,000 vs primary ~40,500 (3.4x)"
+    },
+    {
+      "slug": "lifetime-deals",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Lifetime Deals",
+      "recommended_primary": "software lifetime deals",
+      "highest_volume_keyword": "software lifetime deals",
+      "candidates": [
+        {
+          "query": "lifetime deals",
+          "approx_results": 58400
+        },
+        {
+          "query": "SaaS lifetime deals",
+          "approx_results": 114000
+        },
+        {
+          "query": "software lifetime deals",
+          "approx_results": 298000
+        },
+        {
+          "query": "AppSumo lifetime deals",
+          "approx_results": 4030
+        }
+      ],
+      "notes": "'software lifetime deals' ~298,000 is >=2x current 'lifetime deals' ~58,400"
+    },
+    {
+      "slug": "lip-sync",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI lip sync / AI 唇形同步",
+      "recommended_primary": "lip sync AI",
+      "highest_volume_keyword": "video lip sync AI",
+      "candidates": [
+        {
+          "query": "AI lip sync",
+          "approx_results": 4270
+        },
+        {
+          "query": "lip sync AI",
+          "approx_results": 48600
+        },
+        {
+          "query": "AI lip sync tool",
+          "approx_results": 509000
+        },
+        {
+          "query": "video lip sync AI",
+          "approx_results": 802000
+        }
+      ],
+      "notes": "'lip sync AI' ~48,600 >> primary ~4,270 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "llm",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "Large Language Model",
+      "recommended_primary": "AI llm tools",
+      "highest_volume_keyword": "AI llm tools",
+      "candidates": [
+        {
+          "query": "llm",
+          "approx_results": null
+        },
+        {
+          "query": "AI llm",
+          "approx_results": null
+        },
+        {
+          "query": "AI llm tools",
+          "approx_results": null
+        },
+        {
+          "query": "llm tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~105000"
+    },
+    {
+      "slug": "music-generator",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Music Generator",
+      "recommended_primary": "text to music AI",
+      "highest_volume_keyword": "AI music maker",
+      "candidates": [
+        {
+          "query": "AI music generator",
+          "approx_results": 7670
+        },
+        {
+          "query": "AI music maker",
+          "approx_results": 509000
+        },
+        {
+          "query": "text to music AI",
+          "approx_results": 147000
+        },
+        {
+          "query": "AI song generator",
+          "approx_results": 20800
+        }
+      ],
+      "notes": "'text to music AI' ~147,000 >> primary ~7,670 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "music-video-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI music video generator / MV 生成器",
+      "recommended_primary": "music video generator AI",
+      "highest_volume_keyword": "music video generator AI",
+      "candidates": [
+        {
+          "query": "AI music video generator",
+          "approx_results": null
+        },
+        {
+          "query": "music video generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "AI music video generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI music video generator tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=1060000 vs current~509000"
+    },
+    {
+      "slug": "portfolio-website-builder",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Portfolio website builder / Photography website builder",
+      "recommended_primary": "online portfolio maker",
+      "highest_volume_keyword": "online portfolio maker",
+      "candidates": [
+        {
+          "query": "portfolio website builder",
+          "approx_results": 138000
+        },
+        {
+          "query": "photography website builder",
+          "approx_results": 265000
+        },
+        {
+          "query": "online portfolio maker",
+          "approx_results": 956000
+        },
+        {
+          "query": "portfolio site builder",
+          "approx_results": 138000
+        }
+      ],
+      "notes": "Alternative 'online portfolio maker' has ~956,000 vs primary ~138,000 (6.9x)"
+    },
+    {
+      "slug": "referral-program",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Referral program / 推荐计划",
+      "recommended_primary": "referral marketing tools",
+      "highest_volume_keyword": "AI referral program",
+      "candidates": [
+        {
+          "query": "referral program software",
+          "approx_results": 12
+        },
+        {
+          "query": "referral marketing tools",
+          "approx_results": 41900
+        },
+        {
+          "query": "AI referral program",
+          "approx_results": 509000
+        },
+        {
+          "query": "referral program platform",
+          "approx_results": 41900
+        }
+      ],
+      "notes": "'referral marketing tools' ~41,900 >> primary ~12 (>3x, non-capped)",
+      "flags": [
+        "alt_capped",
+        "primary_suspicious_low"
+      ]
+    },
+    {
+      "slug": "religion",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "AI Religion",
+      "recommended_primary": "AI spiritual assistant",
+      "highest_volume_keyword": "AI spiritual assistant",
+      "candidates": [
+        {
+          "query": "AI religion",
+          "approx_results": 11600
+        },
+        {
+          "query": "AI spiritual assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI faith tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "religious AI chatbot",
+          "approx_results": 127000
+        }
+      ],
+      "notes": "'AI spiritual assistant' ~509,000 is >=2x current 'AI religion' ~11,600"
+    },
+    {
+      "slug": "search-indexing",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Search Indexing",
+      "recommended_primary": "search indexing tools",
+      "highest_volume_keyword": "search indexing tools",
+      "candidates": [
+        {
+          "query": "search indexing tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI search indexing tools",
+          "approx_results": null
+        },
+        {
+          "query": "search indexing",
+          "approx_results": null
+        },
+        {
+          "query": "AI search indexing",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=1470000 vs current~509000"
+    },
+    {
+      "slug": "social-media-tools",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Social media management / scheduling tools（社媒管理与排程工具）",
+      "recommended_primary": "social media management software",
+      "highest_volume_keyword": "AI social media tools",
+      "candidates": [
+        {
+          "query": "social media management tools",
+          "approx_results": 7630
+        },
+        {
+          "query": "social media scheduling tools",
+          "approx_results": 5870
+        },
+        {
+          "query": "AI social media tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "social media management software",
+          "approx_results": 274000
+        }
+      ],
+      "notes": "'social media management software' ~274,000 >> primary ~7,630 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "story-generator",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Story Generator",
+      "recommended_primary": "story generator AI",
+      "highest_volume_keyword": "story generator AI",
+      "candidates": [
+        {
+          "query": "AI story generator",
+          "approx_results": null
+        },
+        {
+          "query": "story generator",
+          "approx_results": null
+        },
+        {
+          "query": "story generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "AI Story Generator",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=1820000 vs current~10200"
+    },
+    {
+      "slug": "text",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Text Tools / AI Writing Tools",
+      "recommended_primary": "AI text",
+      "highest_volume_keyword": "AI text",
+      "candidates": [
+        {
+          "query": "AI Text Tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI text",
+          "approx_results": null
+        },
+        {
+          "query": "text",
+          "approx_results": null
+        },
+        {
+          "query": "text tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~13300"
+    },
+    {
+      "slug": "text-to-video",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "Text-to-Video (T2V) / 文生视频",
+      "recommended_primary": "AI text to video tools",
+      "highest_volume_keyword": "AI text to video tools",
+      "candidates": [
+        {
+          "query": "Text-to-Video (T2V)",
+          "approx_results": null
+        },
+        {
+          "query": "AI text to video tools",
+          "approx_results": null
+        },
+        {
+          "query": "text to video tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI text to video",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~147000"
+    },
+    {
+      "slug": "vibe-coding",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Vibe coding / 氛围编程",
+      "recommended_primary": "AI coding",
+      "highest_volume_keyword": "AI coding",
+      "candidates": [
+        {
+          "query": "vibe coding",
+          "approx_results": 15700
+        },
+        {
+          "query": "AI coding",
+          "approx_results": 108000
+        },
+        {
+          "query": "AI app builder",
+          "approx_results": 12600
+        },
+        {
+          "query": "vibe coding AI",
+          "approx_results": 37000
+        }
+      ],
+      "notes": "'AI coding' ~108,000 >> primary ~15,700 (>3x, non-capped)",
+      "flags": []
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Vibe Coding 支付集成",
+      "recommended_primary": "AI app builder payments",
+      "highest_volume_keyword": "AI app builder payments",
+      "candidates": [
+        {
+          "query": "vibe coding payments",
+          "approx_results": 92
+        },
+        {
+          "query": "AI app builder payments",
+          "approx_results": 509000
+        },
+        {
+          "query": "no-code app payments integration",
+          "approx_results": 253000
+        },
+        {
+          "query": "vibe coding Stripe",
+          "approx_results": 143000
+        }
+      ],
+      "notes": "'AI app builder payments' ~509,000 is >=2x current 'vibe coding payments' ~92"
+    },
+    {
+      "slug": "video",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Video",
+      "recommended_primary": "video",
+      "highest_volume_keyword": "video",
+      "candidates": [
+        {
+          "query": "AI video tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Video",
+          "approx_results": null
+        },
+        {
+          "query": "video",
+          "approx_results": null
+        },
+        {
+          "query": "AI video",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=802000 vs current~110000"
+    },
+    {
+      "slug": "video-clipping",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Video Clipping / Repurposing",
+      "recommended_primary": "video clipping",
+      "highest_volume_keyword": "video clipping",
+      "candidates": [
+        {
+          "query": "AI Video Clipping",
+          "approx_results": null
+        },
+        {
+          "query": "AI video clipping",
+          "approx_results": null
+        },
+        {
+          "query": "video clipping",
+          "approx_results": null
+        },
+        {
+          "query": "AI Video Clipping",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=802000 vs current~509000"
+    },
+    {
+      "slug": "video-effects",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Video Effects / AI VFX",
+      "recommended_primary": "video effects tools",
+      "highest_volume_keyword": "video effects tools",
+      "candidates": [
+        {
+          "query": "AI Video Effects",
+          "approx_results": null
+        },
+        {
+          "query": "video effects tools",
+          "approx_results": null
+        },
+        {
+          "query": "video effects",
+          "approx_results": null
+        },
+        {
+          "query": "AI video effects",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=802000 vs current~509000"
+    },
+    {
+      "slug": "voice-changer",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Voice Changer（AI 变声器）",
+      "recommended_primary": "voice modifier AI",
+      "highest_volume_keyword": "AI voice converter",
+      "candidates": [
+        {
+          "query": "AI voice changer",
+          "approx_results": 7110
+        },
+        {
+          "query": "real-time voice changer",
+          "approx_results": 732
+        },
+        {
+          "query": "voice modifier AI",
+          "approx_results": 223000
+        },
+        {
+          "query": "AI voice converter",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'voice modifier AI' ~223,000 >> primary ~7,110 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "voice-cloning",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Voice Cloning",
+      "recommended_primary": "voice clone AI",
+      "highest_volume_keyword": "voice clone AI",
+      "candidates": [
+        {
+          "query": "AI voice cloning",
+          "approx_results": 50400
+        },
+        {
+          "query": "voice clone AI",
+          "approx_results": 223000
+        },
+        {
+          "query": "AI voice clone",
+          "approx_results": 101000
+        },
+        {
+          "query": "voice cloning tool",
+          "approx_results": 223000
+        }
+      ],
+      "notes": "'voice clone AI' ~223,000 >> primary ~50,400 (>3x, non-capped)",
+      "flags": []
+    },
+    {
+      "slug": "website-builder",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Website Builder",
+      "recommended_primary": "website builder tool",
+      "highest_volume_keyword": "website builder tool",
+      "candidates": [
+        {
+          "query": "website builder",
+          "approx_results": 69900
+        },
+        {
+          "query": "AI website builder",
+          "approx_results": 20100
+        },
+        {
+          "query": "best website builder",
+          "approx_results": 51200
+        },
+        {
+          "query": "website builder tool",
+          "approx_results": 886000
+        }
+      ],
+      "notes": "Alternative 'website builder tool' has ~886,000 vs primary ~69,900 (12.7x)"
+    },
+    {
+      "slug": "workspace-agent",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Workspace Agent / Team AI Agent",
+      "recommended_primary": "team AI agent",
+      "highest_volume_keyword": "team AI agent",
+      "candidates": [
+        {
+          "query": "workspace agent",
+          "approx_results": 92800
+        },
+        {
+          "query": "team AI agent",
+          "approx_results": 333000
+        },
+        {
+          "query": "workspace AI agent",
+          "approx_results": 92800
+        },
+        {
+          "query": "collaborative AI agent",
+          "approx_results": 27200
+        }
+      ],
+      "notes": "'team AI agent' ~333,000 is >=2x current 'workspace agent' ~92,800"
+    }
+  ],
+  "ambiguous_slugs": [
+    "3d",
+    "ai-documents",
+    "ai-flashcards",
+    "ai-language-learning",
+    "api",
+    "cad",
+    "cli",
+    "data-engineering-agent",
+    "dating",
+    "documentation",
+    "education",
+    "expert-agent",
+    "fashion",
+    "ide",
+    "interior-design",
+    "legal",
+    "linkedin",
+    "note-taker",
+    "notes-generator",
+    "quiz-generator",
+    "search-engine",
+    "spreadsheet",
+    "text-to-speech",
+    "ugc",
+    "video-translator",
+    "voice"
+  ],
+  "needs_review_slugs": [
+    "accent-conversion",
+    "advertising-agent",
+    "affiliate-marketing",
+    "ai-components",
+    "ai-for-science",
+    "audio-translator",
+    "b2b",
+    "code-completion",
+    "code-review",
+    "fundraising",
+    "influencer-marketing",
+    "lead-generation",
+    "productivity"
+  ],
+  "ok_count": 80,
+  "results": [
+    {
+      "slug": "3d",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "3d",
+        "path": "tools/3d-spatial/3d.md",
+        "current_primary": "AI 3D tools",
+        "alternatives_tested": [
+          "AI 3D software",
+          "AI 3D generator",
+          "AI 3D modeling tools"
+        ],
+        "bing_counts": {
+          "AI 3D tools": 509000,
+          "AI 3D software": 509000,
+          "AI 3D generator": 509000,
+          "AI 3D modeling tools": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI 3D tools",
+            "count": 509000
+          },
+          {
+            "keyword": "AI 3D software",
+            "count": 509000
+          },
+          {
+            "keyword": "AI 3D generator",
+            "count": 509000
+          },
+          {
+            "keyword": "AI 3D modeling tools",
+            "count": 509000
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI 3D tools' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI 3D tools",
+          "AI 3D software",
+          "AI 3D generator",
+          "AI 3D modeling tools"
+        ]
+      }
+    },
+    {
+      "slug": "3d-model-generator",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "SWITCH",
+      "raw": {
+        "slug": "3d-model-generator",
+        "path": "tools/3d-spatial/3d-model-generator.md",
+        "current_primary": "AI 3D model generator",
+        "alternatives_tested": [
+          "text to 3D",
+          "image to 3D",
+          "text to 3D AI"
+        ],
+        "bing_counts": {
+          "AI 3D model generator": 16700,
+          "text to 3D": 11800,
+          "image to 3D": 51500,
+          "text to 3D AI": 147000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "text to 3D AI",
+            "count": 147000
+          },
+          {
+            "keyword": "image to 3D",
+            "count": 51500
+          },
+          {
+            "keyword": "AI 3D model generator",
+            "count": 16700
+          },
+          {
+            "keyword": "text to 3D",
+            "count": 11800
+          }
+        ],
+        "verdict": "SWITCH",
+        "reason": "'text to 3D AI' (147,000) and 'image to 3D' (51,500) outperform 'AI 3D model generator' (16,700). Recommend dual primary: 'text to 3D / image to 3D' (matches current narrative).",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": []
+      }
+    },
+    {
+      "slug": "3d-modelling",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "SWITCH",
+      "raw": {
+        "slug": "3d-modelling",
+        "path": "tools/3d-spatial/3d-modelling.md",
+        "current_primary": "3D modelling software",
+        "alternatives_tested": [
+          "3D modeling tools",
+          "DCC software",
+          "3D modelling tools"
+        ],
+        "bing_counts": {
+          "3D modelling software": 10700,
+          "3D modeling tools": 149000,
+          "DCC software": 142000,
+          "3D modelling tools": 149000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "3D modeling tools",
+            "count": 149000
+          },
+          {
+            "keyword": "3D modelling tools",
+            "count": 149000
+          },
+          {
+            "keyword": "DCC software",
+            "count": 142000
+          },
+          {
+            "keyword": "3D modelling software",
+            "count": 10700
+          }
+        ],
+        "verdict": "SWITCH",
+        "reason": "'3D modeling tools' (149,000) and 'DCC software' (142,000) far exceed '3D modelling software' (10,700). Recommend US spelling '3D modeling tools' as primary.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": []
+      }
+    },
+    {
+      "slug": "3d-scanner",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "OK",
+      "raw": {
+        "slug": "3d-scanner",
+        "path": "tools/3d-spatial/3d-scanner.md",
+        "current_primary": "AI 3D scanner",
+        "alternatives_tested": [
+          "3D scanning software",
+          "photogrammetry software",
+          "3D scan to model"
+        ],
+        "bing_counts": {
+          "AI 3D scanner": 509000,
+          "3D scanning software": 149000,
+          "photogrammetry software": 59000,
+          "3D scan to model": 149000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI 3D scanner",
+            "count": 509000
+          },
+          {
+            "keyword": "3D scanning software",
+            "count": 149000
+          },
+          {
+            "keyword": "3D scan to model",
+            "count": 149000
+          },
+          {
+            "keyword": "photogrammetry software",
+            "count": 59000
+          }
+        ],
+        "verdict": "OK",
+        "reason": "Current 'AI 3D scanner' hits Bing ceiling; no measurable alt beats it.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI 3D scanner"
+        ]
+      }
+    },
+    {
+      "slug": "accent-conversion",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI 口音转换（Accent Conversion）",
+      "recommended_primary": "accent changer AI",
+      "highest_volume_keyword": "AI accent conversion",
+      "candidates": [
+        {
+          "query": "AI accent conversion",
+          "approx_results": 509000
+        },
+        {
+          "query": "accent changer AI",
+          "approx_results": 113000
+        },
+        {
+          "query": "AI accent modification",
+          "approx_results": 509000
+        },
+        {
+          "query": "accent conversion tool",
+          "approx_results": 113000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'accent changer AI' ~113,000",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "advertising-agent",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "Advertising Agent / AI 广告投放 Agent",
+      "recommended_primary": "advertising agent AI",
+      "highest_volume_keyword": "AI advertising agent",
+      "candidates": [
+        {
+          "query": "AI advertising agent",
+          "approx_results": 509000
+        },
+        {
+          "query": "advertising agent AI",
+          "approx_results": 192000
+        },
+        {
+          "query": "AI ad automation",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI ads agent",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'advertising agent AI' ~192,000",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "affiliate-marketing",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "Affiliate marketing / 联盟营销",
+      "recommended_primary": "affiliate marketing tools",
+      "highest_volume_keyword": "AI affiliate marketing",
+      "candidates": [
+        {
+          "query": "AI affiliate marketing",
+          "approx_results": 509000
+        },
+        {
+          "query": "affiliate marketing tools",
+          "approx_results": 177000
+        },
+        {
+          "query": "affiliate marketing software",
+          "approx_results": 9740
+        },
+        {
+          "query": "affiliate marketing platform",
+          "approx_results": 177000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'affiliate marketing tools' ~177,000",
+      "flags": [
+        "primary_capped"
+      ]
+    },
+    {
+      "slug": "agent-billing",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "Agent Billing / AI Agent 计费",
+      "recommended_primary": "AI agent billing",
+      "highest_volume_keyword": "AI agent billing",
+      "candidates": [
+        {
+          "query": "AI agent billing",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent billing software",
+          "approx_results": 4280
+        },
+        {
+          "query": "agent monetization",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI agent billing platform",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-for-desktop",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agent on desktop / 桌面智能体",
+      "recommended_primary": "AI desktop agent",
+      "highest_volume_keyword": "AI desktop agent",
+      "candidates": [
+        {
+          "query": "desktop AI agent",
+          "approx_results": 150000
+        },
+        {
+          "query": "AI desktop agent",
+          "approx_results": 509000
+        },
+        {
+          "query": "computer use agent",
+          "approx_results": 271000
+        },
+        {
+          "query": "AI agent for desktop",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI desktop agent' ~509,000 is >=2x current 'desktop AI agent' ~150,000"
+    },
+    {
+      "slug": "agent-identity",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "AI Agent Identity",
+      "recommended_primary": "AI agent identity",
+      "highest_volume_keyword": "AI agent identity",
+      "candidates": [
+        {
+          "query": "AI agent identity",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent identity management",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI agent IAM",
+          "approx_results": 509000
+        },
+        {
+          "query": "agentic access control",
+          "approx_results": 84200
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-memory",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "Agent Memory Layer / Agent 记忆层",
+      "recommended_primary": "AI agent memory",
+      "highest_volume_keyword": "AI agent memory",
+      "candidates": [
+        {
+          "query": "AI agent memory",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent memory layer",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI agent memory tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "LLM agent memory",
+          "approx_results": 105000
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-runtime",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "AI Agent Runtime",
+      "recommended_primary": "AI agent runtime",
+      "highest_volume_keyword": "AI agent runtime",
+      "candidates": [
+        {
+          "query": "AI agent runtime",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent runtime platform",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI agent orchestration",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent execution runtime",
+          "approx_results": 4280
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-sandbox",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "AI Agent Sandbox / Agent 沙箱",
+      "recommended_primary": "AI agent sandbox",
+      "highest_volume_keyword": "AI agent sandbox",
+      "candidates": [
+        {
+          "query": "AI agent sandbox",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent sandbox environment",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI agent isolation",
+          "approx_results": 509000
+        },
+        {
+          "query": "secure agent sandbox",
+          "approx_results": 302000
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "agent-skills",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agent Skills / 技能生态",
+      "recommended_primary": "MCP agent skills",
+      "highest_volume_keyword": "MCP agent skills",
+      "candidates": [
+        {
+          "query": "agent skills",
+          "approx_results": 43300
+        },
+        {
+          "query": "AI agent skills",
+          "approx_results": 26200
+        },
+        {
+          "query": "agent skill marketplace",
+          "approx_results": 4280
+        },
+        {
+          "query": "MCP agent skills",
+          "approx_results": 86900
+        }
+      ],
+      "notes": "'MCP agent skills' ~86,900 is >=2x current 'agent skills' ~43,300"
+    },
+    {
+      "slug": "agent-to-agent",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "A2A Agent Network / Agent 互联网络",
+      "recommended_primary": "agent to agent protocol",
+      "highest_volume_keyword": "agent to agent protocol",
+      "candidates": [
+        {
+          "query": "agent to agent protocol",
+          "approx_results": 130000
+        },
+        {
+          "query": "A2A agent protocol",
+          "approx_results": 92500
+        },
+        {
+          "query": "multi-agent communication",
+          "approx_results": 104000
+        },
+        {
+          "query": "agent interoperability",
+          "approx_results": 4280
+        }
+      ],
+      "notes": "Current tied for top at 130,000 results"
+    },
+    {
+      "slug": "agentic-commerce",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agentic Commerce",
+      "recommended_primary": "AI agent commerce",
+      "highest_volume_keyword": "AI agent commerce",
+      "candidates": [
+        {
+          "query": "agentic commerce",
+          "approx_results": 15600
+        },
+        {
+          "query": "AI agent commerce",
+          "approx_results": 509000
+        },
+        {
+          "query": "agentic shopping",
+          "approx_results": 84200
+        },
+        {
+          "query": "AI commerce agents",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI agent commerce' ~509,000 is >=2x current 'agentic commerce' ~15,600"
+    },
+    {
+      "slug": "agentic-payments",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Agentic Payments",
+      "recommended_primary": "AI agent payments",
+      "highest_volume_keyword": "AI agent payments",
+      "candidates": [
+        {
+          "query": "agentic payments",
+          "approx_results": 84200
+        },
+        {
+          "query": "AI agent payments",
+          "approx_results": 509000
+        },
+        {
+          "query": "agent payment infrastructure",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI payment agents",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI agent payments' ~509,000 is >=2x current 'agentic payments' ~84,200"
+    },
+    {
+      "slug": "ai-components",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI Components / Prompt-as-Component / Component Registry",
+      "recommended_primary": "prompt as component",
+      "highest_volume_keyword": "AI components",
+      "candidates": [
+        {
+          "query": "AI components",
+          "approx_results": 509000
+        },
+        {
+          "query": "prompt as component",
+          "approx_results": 40800
+        },
+        {
+          "query": "AI component library",
+          "approx_results": 2210
+        },
+        {
+          "query": "AI UI components",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'prompt as component' ~40,800",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "ai-documents",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "ai-documents",
+        "path": "tools/enterprise-knowledge/ai-documents.md",
+        "current_primary": "AI documents",
+        "alternatives_tested": [
+          "AI document management",
+          "intelligent document processing",
+          "AI document tools"
+        ],
+        "bing_counts": {
+          "AI documents": 509000,
+          "AI document management": 509000,
+          "intelligent document processing": 1930,
+          "AI document tools": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI documents",
+            "count": 509000
+          },
+          {
+            "keyword": "AI document management",
+            "count": 509000
+          },
+          {
+            "keyword": "AI document tools",
+            "count": 509000
+          },
+          {
+            "keyword": "intelligent document processing",
+            "count": 1930
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI documents' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI documents",
+          "AI document management",
+          "AI document tools"
+        ]
+      }
+    },
+    {
+      "slug": "ai-employee",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "AI Employee / AI Coworker in Slack / Chat-native AI Teammate",
+      "recommended_primary": "AI employee",
+      "highest_volume_keyword": "AI employee",
+      "candidates": [
+        {
+          "query": "AI employee",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI coworker",
+          "approx_results": 58
+        },
+        {
+          "query": "AI teammate",
+          "approx_results": 48100
+        },
+        {
+          "query": "AI employee software",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "ai-flashcards",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "ai-flashcards",
+        "path": "tools/education/ai-flashcards.md",
+        "current_primary": "AI flashcards",
+        "alternatives_tested": [
+          "AI flashcard maker",
+          "AI study flashcards",
+          "spaced repetition app"
+        ],
+        "bing_counts": {
+          "AI flashcards": 509000,
+          "AI flashcard maker": 4420,
+          "AI study flashcards": 509000,
+          "spaced repetition app": 2800
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI flashcards",
+            "count": 509000
+          },
+          {
+            "keyword": "AI study flashcards",
+            "count": 509000
+          },
+          {
+            "keyword": "AI flashcard maker",
+            "count": 4420
+          },
+          {
+            "keyword": "spaced repetition app",
+            "count": 2800
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI flashcards' and 1 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI flashcards",
+          "AI study flashcards"
+        ]
+      }
+    },
+    {
+      "slug": "ai-for-science",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "NEEDS_REVIEW",
+      "raw": {
+        "slug": "ai-for-science",
+        "path": "tools/education/ai-for-science.md",
+        "current_primary": "AI for science",
+        "alternatives_tested": [
+          "AI4S",
+          "AI scientific research tools",
+          "AI for scientific discovery"
+        ],
+        "bing_counts": {
+          "AI for science": 509000,
+          "AI4S": 51,
+          "AI scientific research tools": 509000,
+          "AI for scientific discovery": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI for science",
+            "count": 509000
+          },
+          {
+            "keyword": "AI scientific research tools",
+            "count": 509000
+          },
+          {
+            "keyword": "AI for scientific discovery",
+            "count": 509000
+          },
+          {
+            "keyword": "AI4S",
+            "count": 51
+          }
+        ],
+        "verdict": "NEEDS_REVIEW",
+        "reason": "'AI4S' nearly zero volume (51). Keep 'AI for science'; avoid AI4S as primary keyword.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI for science",
+          "AI scientific research tools",
+          "AI for scientific discovery"
+        ]
+      }
+    },
+    {
+      "slug": "ai-homework-helper",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "OK",
+      "raw": {
+        "slug": "ai-homework-helper",
+        "path": "tools/education/ai-homework-helper.md",
+        "current_primary": "AI homework helper",
+        "alternatives_tested": [
+          "AI homework solver",
+          "photo math solver AI",
+          "AI math homework help"
+        ],
+        "bing_counts": {
+          "AI homework helper": 78900,
+          "AI homework solver": 509000,
+          "photo math solver AI": 554000,
+          "AI math homework help": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "photo math solver AI",
+            "count": 554000
+          },
+          {
+            "keyword": "AI homework solver",
+            "count": 509000
+          },
+          {
+            "keyword": "AI math homework help",
+            "count": 509000
+          },
+          {
+            "keyword": "AI homework helper",
+            "count": 78900
+          }
+        ],
+        "verdict": "OK",
+        "reason": "Current 'AI homework helper' (78,900) is the correct head term; higher counts for 'photo math solver' / 'AI homework solver' reflect adjacent calculator intent, not same SERP.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI homework solver",
+          "photo math solver AI",
+          "AI math homework help"
+        ]
+      }
+    },
+    {
+      "slug": "ai-language-learning",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "ai-language-learning",
+        "path": "tools/education/ai-language-learning.md",
+        "current_primary": "AI language learning",
+        "alternatives_tested": [
+          "AI language learning app",
+          "AI language tutor",
+          "AI language learning tools"
+        ],
+        "bing_counts": {
+          "AI language learning": 509000,
+          "AI language learning app": 509000,
+          "AI language tutor": 509000,
+          "AI language learning tools": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI language learning",
+            "count": 509000
+          },
+          {
+            "keyword": "AI language learning app",
+            "count": 509000
+          },
+          {
+            "keyword": "AI language tutor",
+            "count": 509000
+          },
+          {
+            "keyword": "AI language learning tools",
+            "count": 509000
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI language learning' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI language learning",
+          "AI language learning app",
+          "AI language tutor",
+          "AI language learning tools"
+        ]
+      }
+    },
+    {
+      "slug": "ai-scheduling",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI scheduling / AI 日程安排",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI scheduling",
+      "candidates": [
+        {
+          "query": "AI scheduling",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI calendar",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI scheduling assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI meeting scheduler",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI calendar' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "ai-shopping",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "AI Shopping",
+      "recommended_primary": "AI shopping",
+      "highest_volume_keyword": "AI shopping",
+      "candidates": [
+        {
+          "query": "AI shopping",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI shopping assistant",
+          "approx_results": 2670
+        },
+        {
+          "query": "AI shopping agent",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI product discovery",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "ai-traffic-and-citation-sources",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI 搜索平台与引用来源",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI traffic sources",
+      "candidates": [
+        {
+          "query": "AI traffic sources",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI citation sources",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI search traffic",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI referral traffic",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI citation sources' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "ai-training-data",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI Training Data Platform",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI training data platform",
+      "candidates": [
+        {
+          "query": "AI training data platform",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI training data",
+          "approx_results": 13200
+        },
+        {
+          "query": "machine learning data platform",
+          "approx_results": 6880
+        },
+        {
+          "query": "LLM training data",
+          "approx_results": 8800
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI training data' ~13,200 vs primary ~509,000"
+    },
+    {
+      "slug": "ai-tutor",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "SWITCH",
+      "raw": {
+        "slug": "ai-tutor",
+        "path": "tools/education/ai-tutor.md",
+        "current_primary": "AI tutor",
+        "alternatives_tested": [
+          "AI tutoring",
+          "AI tutoring platform",
+          "online AI tutor"
+        ],
+        "bing_counts": {
+          "AI tutor": 46800,
+          "AI tutoring": 509000,
+          "AI tutoring platform": 509000,
+          "online AI tutor": 956000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "online AI tutor",
+            "count": 956000
+          },
+          {
+            "keyword": "AI tutoring",
+            "count": 509000
+          },
+          {
+            "keyword": "AI tutoring platform",
+            "count": 509000
+          },
+          {
+            "keyword": "AI tutor",
+            "count": 46800
+          }
+        ],
+        "verdict": "SWITCH",
+        "reason": "'AI tutoring' (~509k ceiling) and related forms dominate 'AI tutor' (46,800). Recommend primary 'AI tutoring' — distinct from homework-helper intent.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI tutoring",
+          "AI tutoring platform",
+          "online AI tutor"
+        ]
+      }
+    },
+    {
+      "slug": "ai-visibility",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI 可见度（AI Visibility）",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI visibility",
+      "candidates": [
+        {
+          "query": "AI visibility",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI brand visibility",
+          "approx_results": 5730
+        },
+        {
+          "query": "visibility in AI search",
+          "approx_results": 60800
+        },
+        {
+          "query": "AI search visibility",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI search visibility' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "animation-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI animation generator / AI anime generator",
+      "recommended_primary": "AI animation generator",
+      "highest_volume_keyword": "AI animation generator",
+      "candidates": [
+        {
+          "query": "AI animation generator",
+          "approx_results": null
+        },
+        {
+          "query": "animation generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "AI animation generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "animation generator tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "animation-library",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "Animation Library",
+      "recommended_primary": "animation library",
+      "highest_volume_keyword": "animation library",
+      "candidates": [
+        {
+          "query": "animation library",
+          "approx_results": 172000
+        },
+        {
+          "query": "Lottie animation library",
+          "approx_results": 78100
+        },
+        {
+          "query": "UI animation library",
+          "approx_results": 170000
+        },
+        {
+          "query": "motion design library",
+          "approx_results": 132000
+        }
+      ],
+      "notes": "Current tied for top at 172,000 results"
+    },
+    {
+      "slug": "api",
+      "batch": "batch6_misc",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "Unified AI API Platform / 统一 AI API",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI API platform",
+      "candidates": [
+        {
+          "query": "unified AI API",
+          "approx_results": 67800
+        },
+        {
+          "query": "AI API platform",
+          "approx_results": 509000
+        },
+        {
+          "query": "LLM API gateway",
+          "approx_results": 104000
+        },
+        {
+          "query": "AI API aggregator",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Top alternatives close: 'AI API platform' (509,000) vs 'AI API aggregator' (509,000); primary 67,800"
+    },
+    {
+      "slug": "app-builder",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI App Builder / AI 应用构建器",
+      "recommended_primary": "no code app builder AI",
+      "highest_volume_keyword": "AI application builder",
+      "candidates": [
+        {
+          "query": "AI app builder",
+          "approx_results": 12600
+        },
+        {
+          "query": "AI application builder",
+          "approx_results": 509000
+        },
+        {
+          "query": "no code app builder AI",
+          "approx_results": 253000
+        },
+        {
+          "query": "AI app maker",
+          "approx_results": 24100
+        }
+      ],
+      "notes": "'no code app builder AI' ~253,000 >> primary ~12,600 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "audio-translator",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI Audio Translation",
+      "recommended_primary": "audio translator AI",
+      "highest_volume_keyword": "AI audio translation",
+      "candidates": [
+        {
+          "query": "AI audio translation",
+          "approx_results": 509000
+        },
+        {
+          "query": "audio translator AI",
+          "approx_results": 314000
+        },
+        {
+          "query": "AI voice translation",
+          "approx_results": 509000
+        },
+        {
+          "query": "translate audio AI",
+          "approx_results": 34900
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'audio translator AI' ~314,000",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "authentication",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "Authentication / CIAM / 应用身份",
+      "recommended_primary": null,
+      "highest_volume_keyword": "authentication",
+      "candidates": [
+        {
+          "query": "authentication",
+          "approx_results": 354000
+        },
+        {
+          "query": "CIAM",
+          "approx_results": 52200
+        },
+        {
+          "query": "identity and access management",
+          "approx_results": 10800
+        },
+        {
+          "query": "customer identity access management",
+          "approx_results": 3720
+        }
+      ],
+      "notes": "Primary competitive; best alt 'CIAM' ~52,200 vs primary ~354,000"
+    },
+    {
+      "slug": "avatar",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "Talking avatar / AI presenter / 数字人视频",
+      "recommended_primary": "Talking avatar",
+      "highest_volume_keyword": "Talking avatar",
+      "candidates": [
+        {
+          "query": "Talking avatar",
+          "approx_results": null
+        },
+        {
+          "query": "avatar",
+          "approx_results": null
+        },
+        {
+          "query": "AI avatar",
+          "approx_results": null
+        },
+        {
+          "query": "AI avatar tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=759000 vs current~759000"
+    },
+    {
+      "slug": "b2b",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI B2B Marketing Tools / B2B 营销 AI 工具",
+      "recommended_primary": "B2B marketing AI",
+      "highest_volume_keyword": "AI B2B marketing tools",
+      "candidates": [
+        {
+          "query": "AI B2B marketing tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "B2B marketing AI",
+          "approx_results": 43400
+        },
+        {
+          "query": "B2B marketing software",
+          "approx_results": 43400
+        },
+        {
+          "query": "AI B2B marketing",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'B2B marketing AI' ~43,400",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "background-changer",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Background Changer",
+      "recommended_primary": "AI Background Changer",
+      "highest_volume_keyword": "AI Background Changer",
+      "candidates": [
+        {
+          "query": "background changer tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Background Changer",
+          "approx_results": null
+        },
+        {
+          "query": "AI background changer",
+          "approx_results": null
+        },
+        {
+          "query": "background changer",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "blog-website-builder",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "Blog Website Builder / Website Builder for Blogs",
+      "recommended_primary": null,
+      "highest_volume_keyword": "website builder for blogs",
+      "candidates": [
+        {
+          "query": "blog website builder",
+          "approx_results": 778000
+        },
+        {
+          "query": "blogging platform",
+          "approx_results": 4000
+        },
+        {
+          "query": "blog CMS",
+          "approx_results": 778000
+        },
+        {
+          "query": "website builder for blogs",
+          "approx_results": 886000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'website builder for blogs' ~886,000 vs primary ~778,000"
+    },
+    {
+      "slug": "browser",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "AI browser / 人工智能浏览器",
+      "recommended_primary": "AI web browser",
+      "highest_volume_keyword": "AI web browser",
+      "candidates": [
+        {
+          "query": "AI browser",
+          "approx_results": 61800
+        },
+        {
+          "query": "AI web browser",
+          "approx_results": 509000
+        },
+        {
+          "query": "agentic browser",
+          "approx_results": 125000
+        },
+        {
+          "query": "AI browsing agent",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'AI web browser' ~509,000 is >=2x current 'AI browser' ~61,800"
+    },
+    {
+      "slug": "cad",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "cad",
+        "path": "tools/3d-spatial/cad.md",
+        "current_primary": "AI CAD tools",
+        "alternatives_tested": [
+          "CAD software",
+          "AI CAD design",
+          "AI CAD software"
+        ],
+        "bing_counts": {
+          "AI CAD tools": 509000,
+          "CAD software": 13000,
+          "AI CAD design": 509000,
+          "AI CAD software": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI CAD tools",
+            "count": 509000
+          },
+          {
+            "keyword": "AI CAD design",
+            "count": 509000
+          },
+          {
+            "keyword": "AI CAD software",
+            "count": 509000
+          },
+          {
+            "keyword": "CAD software",
+            "count": 13000
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI CAD tools' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI CAD tools",
+          "AI CAD design",
+          "AI CAD software"
+        ]
+      }
+    },
+    {
+      "slug": "canvas-video",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI video canvas / node-based AI video workflow",
+      "recommended_primary": "AI video canvas",
+      "highest_volume_keyword": "AI video canvas",
+      "candidates": [
+        {
+          "query": "AI video canvas",
+          "approx_results": null
+        },
+        {
+          "query": "AI video canvas",
+          "approx_results": null
+        },
+        {
+          "query": "canvas video",
+          "approx_results": null
+        },
+        {
+          "query": "AI canvas video tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "character-chat",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "Character Chat",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI companion chat",
+      "candidates": [
+        {
+          "query": "character chat",
+          "approx_results": 395000
+        },
+        {
+          "query": "AI character chat",
+          "approx_results": 128000
+        },
+        {
+          "query": "character AI chat",
+          "approx_results": 126000
+        },
+        {
+          "query": "AI companion chat",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI companion chat' ~509,000 vs primary ~395,000"
+    },
+    {
+      "slug": "chatbot",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "AI Chatbot",
+      "recommended_primary": "best AI chatbot",
+      "highest_volume_keyword": "best AI chatbot",
+      "candidates": [
+        {
+          "query": "AI chatbot",
+          "approx_results": 47500
+        },
+        {
+          "query": "chatbot",
+          "approx_results": 65000
+        },
+        {
+          "query": "best AI chatbot",
+          "approx_results": 110000
+        },
+        {
+          "query": "AI chat bot",
+          "approx_results": 51400
+        }
+      ],
+      "notes": "Alternative 'best AI chatbot' has ~110,000 vs primary ~47,500 (2.3x)"
+    },
+    {
+      "slug": "cli",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI CLI / Agentic CLI",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI command line tools",
+      "candidates": [
+        {
+          "query": "AI CLI",
+          "approx_results": 74100
+        },
+        {
+          "query": "agentic CLI",
+          "approx_results": 84200
+        },
+        {
+          "query": "AI command line tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI terminal agent",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary ~74,100 vs 'agentic CLI' ~84,200 within ~2x",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "code-completion",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "Code completion / AI code assistant",
+      "recommended_primary": "code completion AI",
+      "highest_volume_keyword": "AI code completion",
+      "candidates": [
+        {
+          "query": "AI code completion",
+          "approx_results": 509000
+        },
+        {
+          "query": "code completion AI",
+          "approx_results": 363000
+        },
+        {
+          "query": "AI code assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI autocomplete code",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'code completion AI' ~363,000",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "code-review",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI code review / PR 审查",
+      "recommended_primary": "automated code review AI",
+      "highest_volume_keyword": "AI code review",
+      "candidates": [
+        {
+          "query": "AI code review",
+          "approx_results": 509000
+        },
+        {
+          "query": "automated code review AI",
+          "approx_results": 35900
+        },
+        {
+          "query": "AI PR review",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI code review tool",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'automated code review AI' ~35,900",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "coding",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "OK",
+      "current_primary": "AI Coding Agent / 编程智能体",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI programming assistant",
+      "candidates": [
+        {
+          "query": "AI coding",
+          "approx_results": 108000
+        },
+        {
+          "query": "AI coding agent",
+          "approx_results": 32000
+        },
+        {
+          "query": "AI programming assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI code generator",
+          "approx_results": 17700
+        }
+      ],
+      "notes": "Primary ~108,000 dominates non-capped alts",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "community",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI 社区",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI community",
+      "candidates": [
+        {
+          "query": "AI community",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI communities",
+          "approx_results": 509000
+        },
+        {
+          "query": "artificial intelligence community",
+          "approx_results": 108000
+        },
+        {
+          "query": "AI forum",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI communities' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "content-management-system",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Content Management System / CMS",
+      "recommended_primary": "best CMS",
+      "highest_volume_keyword": "best CMS",
+      "candidates": [
+        {
+          "query": "content management system",
+          "approx_results": 10200
+        },
+        {
+          "query": "CMS",
+          "approx_results": 224000
+        },
+        {
+          "query": "best CMS",
+          "approx_results": 681000
+        },
+        {
+          "query": "content management software",
+          "approx_results": 4440
+        }
+      ],
+      "notes": "Alternative 'best CMS' has ~681,000 vs primary ~10,200 (66.8x)"
+    },
+    {
+      "slug": "data-engineering-agent",
+      "batch": "batch1_agent_root",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "Data Engineering Agent",
+      "recommended_primary": "data engineering agent",
+      "highest_volume_keyword": "AI data engineering agent",
+      "candidates": [
+        {
+          "query": "data engineering agent",
+          "approx_results": 296000
+        },
+        {
+          "query": "AI data engineering agent",
+          "approx_results": 509000
+        },
+        {
+          "query": "data pipeline agent",
+          "approx_results": 296000
+        },
+        {
+          "query": "AI data agent",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Multiple strong candidates: AI data engineering agent (509,000), AI data agent (509,000); current 296,000"
+    },
+    {
+      "slug": "dating",
+      "batch": "batch6_misc",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI Dating（AI 约会与匹配）",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI matchmaking",
+      "candidates": [
+        {
+          "query": "AI dating",
+          "approx_results": 12000
+        },
+        {
+          "query": "AI dating app",
+          "approx_results": 4820
+        },
+        {
+          "query": "AI matchmaking",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI dating platform",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Top alternatives close: 'AI matchmaking' (509,000) vs 'AI dating platform' (509,000); primary 12,000"
+    },
+    {
+      "slug": "design",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI Design Tool",
+      "recommended_primary": "AI Design Tool",
+      "highest_volume_keyword": "AI design tools",
+      "candidates": [
+        {
+          "query": "AI design",
+          "approx_results": null
+        },
+        {
+          "query": "AI design tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Design Tool",
+          "approx_results": null
+        },
+        {
+          "query": "design",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "directory",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI Directory / AI 工具导航",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI directory",
+      "candidates": [
+        {
+          "query": "AI directory",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI tools directory",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI tool directory",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI tools list",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI tools directory' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "documentation",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "documentation",
+        "path": "tools/enterprise-knowledge/documentation.md",
+        "current_primary": "developer documentation tools",
+        "alternatives_tested": [
+          "API documentation tools",
+          "technical documentation software",
+          "docs as code tools"
+        ],
+        "bing_counts": {
+          "developer documentation tools": 190000,
+          "API documentation tools": 170000,
+          "technical documentation software": 6390,
+          "docs as code tools": 323000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "docs as code tools",
+            "count": 323000
+          },
+          {
+            "keyword": "developer documentation tools",
+            "count": 190000
+          },
+          {
+            "keyword": "API documentation tools",
+            "count": 170000
+          },
+          {
+            "keyword": "technical documentation software",
+            "count": 6390
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "'docs as code tools' (323,000) leads but is a narrower sub-intent; 'developer documentation tools' (190,000) matches page scope. Keep current unless targeting docs-as-code niche.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": []
+      }
+    },
+    {
+      "slug": "ecommerce-website-builder",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "Online store platform / E-commerce website builder",
+      "recommended_primary": null,
+      "highest_volume_keyword": "online store platform",
+      "candidates": [
+        {
+          "query": "online store platform",
+          "approx_results": 956000
+        },
+        {
+          "query": "ecommerce website builder",
+          "approx_results": 6340
+        },
+        {
+          "query": "e-commerce website builder",
+          "approx_results": 660000
+        },
+        {
+          "query": "online store builder",
+          "approx_results": 956000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'online store builder' ~956,000 vs primary ~956,000"
+    },
+    {
+      "slug": "education",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "education",
+        "path": "tools/education/education.md",
+        "current_primary": "AI education tools",
+        "alternatives_tested": [
+          "AI education",
+          "AI learning tools",
+          "AI tools for education"
+        ],
+        "bing_counts": {
+          "AI education tools": 509000,
+          "AI education": 509000,
+          "AI learning tools": 12100,
+          "AI tools for education": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI education tools",
+            "count": 509000
+          },
+          {
+            "keyword": "AI education",
+            "count": 509000
+          },
+          {
+            "keyword": "AI tools for education",
+            "count": 509000
+          },
+          {
+            "keyword": "AI learning tools",
+            "count": 12100
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI education tools' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI education tools",
+          "AI education",
+          "AI tools for education"
+        ]
+      }
+    },
+    {
+      "slug": "enterprise-cms",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Enterprise CMS / DXP / Digital Experience Platform",
+      "recommended_primary": "digital experience platform",
+      "highest_volume_keyword": "digital experience platform",
+      "candidates": [
+        {
+          "query": "enterprise CMS",
+          "approx_results": 88700
+        },
+        {
+          "query": "DXP",
+          "approx_results": 74500
+        },
+        {
+          "query": "digital experience platform",
+          "approx_results": 211000
+        },
+        {
+          "query": "enterprise content management",
+          "approx_results": 13500
+        }
+      ],
+      "notes": "Alternative 'digital experience platform' has ~211,000 vs primary ~88,700 (2.4x)"
+    },
+    {
+      "slug": "essay-writer",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Essay Writer",
+      "recommended_primary": "essay writer tools",
+      "highest_volume_keyword": "essay writer tools",
+      "candidates": [
+        {
+          "query": "essay writer",
+          "approx_results": null
+        },
+        {
+          "query": "AI essay writer",
+          "approx_results": null
+        },
+        {
+          "query": "essay writer tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Essay Writer",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=53500 vs current~3870"
+    },
+    {
+      "slug": "evaluation",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI evaluation / LLM evaluation / AI 评测",
+      "recommended_primary": "AI evaluation",
+      "highest_volume_keyword": "AI evaluation tools",
+      "candidates": [
+        {
+          "query": "AI evaluation",
+          "approx_results": null
+        },
+        {
+          "query": "AI evaluation tools",
+          "approx_results": null
+        },
+        {
+          "query": "evaluation",
+          "approx_results": null
+        },
+        {
+          "query": "AI evaluation",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "expert-agent",
+      "batch": "batch1_agent_root",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "Expert Agent / 专家网络与 AI Agent 市场",
+      "recommended_primary": "expert AI agent",
+      "highest_volume_keyword": "AI expert agent",
+      "candidates": [
+        {
+          "query": "expert AI agent",
+          "approx_results": 274000
+        },
+        {
+          "query": "AI expert agent",
+          "approx_results": 509000
+        },
+        {
+          "query": "expert agent marketplace",
+          "approx_results": 274000
+        },
+        {
+          "query": "AI agent marketplace",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Multiple strong candidates: AI expert agent (509,000), AI agent marketplace (509,000); current 274,000"
+    },
+    {
+      "slug": "family-assistant",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "AI 家庭助手",
+      "recommended_primary": "family AI assistant",
+      "highest_volume_keyword": "family AI assistant",
+      "candidates": [
+        {
+          "query": "AI family assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "family AI assistant",
+          "approx_results": 1090000
+        },
+        {
+          "query": "AI home assistant for families",
+          "approx_results": 509000
+        },
+        {
+          "query": "family organizer AI",
+          "approx_results": 1090000
+        }
+      ],
+      "notes": "'family AI assistant' ~1,090,000 is >=2x current 'AI family assistant' ~509,000"
+    },
+    {
+      "slug": "fashion",
+      "batch": "batch1_agent_root",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI fashion / AI 时尚工具",
+      "recommended_primary": "AI fashion tools",
+      "highest_volume_keyword": "fashion AI generator",
+      "candidates": [
+        {
+          "query": "AI fashion tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI fashion",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI fashion design software",
+          "approx_results": 509000
+        },
+        {
+          "query": "fashion AI generator",
+          "approx_results": 736000
+        }
+      ],
+      "notes": "Top 'fashion AI generator' (736,000) moderately beats current (509,000) but <2x"
+    },
+    {
+      "slug": "filmmaking",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Filmmaking / AI 电影制作",
+      "recommended_primary": "AI Filmmaking",
+      "highest_volume_keyword": "AI Filmmaking",
+      "candidates": [
+        {
+          "query": "AI Filmmaking",
+          "approx_results": null
+        },
+        {
+          "query": "filmmaking",
+          "approx_results": null
+        },
+        {
+          "query": "AI filmmaking",
+          "approx_results": null
+        },
+        {
+          "query": "AI filmmaking tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "fundraising",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI fundraising / AI 融资工具",
+      "recommended_primary": "startup fundraising AI",
+      "highest_volume_keyword": "AI fundraising",
+      "candidates": [
+        {
+          "query": "AI fundraising",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI fundraising tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "startup fundraising AI",
+          "approx_results": 145000
+        },
+        {
+          "query": "AI fundraising platform",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'startup fundraising AI' ~145,000",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "geo",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "GEO（生成式引擎优化 / Generative Engine Optimization）",
+      "recommended_primary": "GEO SEO",
+      "highest_volume_keyword": "GEO SEO",
+      "candidates": [
+        {
+          "query": "generative engine optimization",
+          "approx_results": 63500
+        },
+        {
+          "query": "GEO SEO",
+          "approx_results": 260000
+        },
+        {
+          "query": "AI SEO",
+          "approx_results": 30000
+        },
+        {
+          "query": "generative search optimization",
+          "approx_results": 57800
+        }
+      ],
+      "notes": "Alternative 'GEO SEO' has ~260,000 vs primary ~63,500 (4.1x)"
+    },
+    {
+      "slug": "git-hosting",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Agent-native Git hosting / Code forge",
+      "recommended_primary": "code forge",
+      "highest_volume_keyword": "AI git hosting",
+      "candidates": [
+        {
+          "query": "agent native git hosting",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI git hosting",
+          "approx_results": 509000
+        },
+        {
+          "query": "code forge",
+          "approx_results": 363000
+        },
+        {
+          "query": "git hosting for AI agents",
+          "approx_results": 217000
+        }
+      ],
+      "notes": "'code forge' ~363,000 >> primary ~4,280 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "headless-browser",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "Headless browser / 云浏览器基础设施",
+      "recommended_primary": "Headless browser",
+      "highest_volume_keyword": "AI headless browser tools",
+      "candidates": [
+        {
+          "query": "Headless browser",
+          "approx_results": null
+        },
+        {
+          "query": "AI headless browser tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI headless browser",
+          "approx_results": null
+        },
+        {
+          "query": "Headless browser",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "headless-cms",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Headless CMS / API-first CMS",
+      "recommended_primary": "API-first CMS",
+      "highest_volume_keyword": "API-first CMS",
+      "candidates": [
+        {
+          "query": "headless CMS",
+          "approx_results": 29600
+        },
+        {
+          "query": "API-first CMS",
+          "approx_results": 170000
+        },
+        {
+          "query": "headless content management",
+          "approx_results": 48200
+        },
+        {
+          "query": "content API CMS",
+          "approx_results": 2860
+        }
+      ],
+      "notes": "Alternative 'API-first CMS' has ~170,000 vs primary ~29,600 (5.7x)"
+    },
+    {
+      "slug": "headshot-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Headshot Generator",
+      "recommended_primary": "AI Headshot Generator",
+      "highest_volume_keyword": "AI headshot generator tools",
+      "candidates": [
+        {
+          "query": "headshot generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI headshot generator",
+          "approx_results": null
+        },
+        {
+          "query": "headshot generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI headshot generator tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "healthcare",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "AI Healthcare",
+      "recommended_primary": "healthcare AI",
+      "highest_volume_keyword": "healthcare AI",
+      "candidates": [
+        {
+          "query": "AI healthcare",
+          "approx_results": 40500
+        },
+        {
+          "query": "AI in healthcare",
+          "approx_results": 40500
+        },
+        {
+          "query": "healthcare AI",
+          "approx_results": 139000
+        },
+        {
+          "query": "artificial intelligence healthcare",
+          "approx_results": 108000
+        }
+      ],
+      "notes": "Alternative 'healthcare AI' has ~139,000 vs primary ~40,500 (3.4x)"
+    },
+    {
+      "slug": "hr-assistant",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI HR assistant / AI HR 助手",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI HR assistant",
+      "candidates": [
+        {
+          "query": "AI HR assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI HR tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "HR AI assistant",
+          "approx_results": 242000
+        },
+        {
+          "query": "AI human resources assistant",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI HR tools' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "ide",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI IDE / Agentic IDE",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI code editor",
+      "candidates": [
+        {
+          "query": "AI IDE",
+          "approx_results": 60900
+        },
+        {
+          "query": "agentic IDE",
+          "approx_results": 40900
+        },
+        {
+          "query": "AI code editor",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI development environment",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary ~60,900 vs 'agentic IDE' ~40,900 within ~2x",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "image",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Image",
+      "recommended_primary": "AI Image",
+      "highest_volume_keyword": "image tools",
+      "candidates": [
+        {
+          "query": "AI Image",
+          "approx_results": null
+        },
+        {
+          "query": "AI image",
+          "approx_results": null
+        },
+        {
+          "query": "AI image tools",
+          "approx_results": null
+        },
+        {
+          "query": "image tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=617000 vs current~509000"
+    },
+    {
+      "slug": "image-editor",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Image Editor",
+      "recommended_primary": "AI Image Editor",
+      "highest_volume_keyword": "image editor tools",
+      "candidates": [
+        {
+          "query": "AI image editor",
+          "approx_results": null
+        },
+        {
+          "query": "AI Image Editor",
+          "approx_results": null
+        },
+        {
+          "query": "image editor tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI image editor tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=617000 vs current~509000"
+    },
+    {
+      "slug": "image-enhancer",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Image Enhancer",
+      "recommended_primary": "AI Image Enhancer",
+      "highest_volume_keyword": "AI image enhancer tools",
+      "candidates": [
+        {
+          "query": "AI Image Enhancer",
+          "approx_results": null
+        },
+        {
+          "query": "AI image enhancer tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI image enhancer",
+          "approx_results": null
+        },
+        {
+          "query": "image enhancer",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "image-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI image generator / 文生图（T2I）",
+      "recommended_primary": "AI image generator",
+      "highest_volume_keyword": "AI image generator tools",
+      "candidates": [
+        {
+          "query": "AI image generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI image generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "文生图（T2I）",
+          "approx_results": null
+        },
+        {
+          "query": "image generator AI",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "image-relighting",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Image Relighting",
+      "recommended_primary": "AI Image Relighting",
+      "highest_volume_keyword": "image relighting tools",
+      "candidates": [
+        {
+          "query": "AI image relighting",
+          "approx_results": null
+        },
+        {
+          "query": "image relighting tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Image Relighting",
+          "approx_results": null
+        },
+        {
+          "query": "image relighting",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=617000 vs current~509000"
+    },
+    {
+      "slug": "image-to-video",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "Image-to-Video / I2V / 图生视频",
+      "recommended_primary": "Image-to-Video",
+      "highest_volume_keyword": "Image-to-Video",
+      "candidates": [
+        {
+          "query": "Image-to-Video",
+          "approx_results": null
+        },
+        {
+          "query": "AI image to video",
+          "approx_results": null
+        },
+        {
+          "query": "Image-to-Video",
+          "approx_results": null
+        },
+        {
+          "query": "image to video",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=627000 vs current~627000"
+    },
+    {
+      "slug": "inference-infrastructure",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI Inference Infrastructure",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI inference infrastructure",
+      "candidates": [
+        {
+          "query": "AI inference infrastructure",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI inference platform",
+          "approx_results": 509000
+        },
+        {
+          "query": "LLM inference hosting",
+          "approx_results": 105000
+        },
+        {
+          "query": "AI model hosting infrastructure",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI inference platform' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "influencer-marketing",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "Influencer marketing / 网红营销",
+      "recommended_primary": "influencer marketing tools",
+      "highest_volume_keyword": "AI influencer marketing",
+      "candidates": [
+        {
+          "query": "AI influencer marketing",
+          "approx_results": 509000
+        },
+        {
+          "query": "influencer marketing tools",
+          "approx_results": 255000
+        },
+        {
+          "query": "influencer marketing platform",
+          "approx_results": 255000
+        },
+        {
+          "query": "influencer marketing software",
+          "approx_results": 2600
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'influencer marketing tools' ~255,000",
+      "flags": [
+        "primary_capped"
+      ]
+    },
+    {
+      "slug": "interactive-video",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "Interactive video / 实时交互视频",
+      "recommended_primary": "Interactive video",
+      "highest_volume_keyword": "AI interactive video",
+      "candidates": [
+        {
+          "query": "Interactive video",
+          "approx_results": null
+        },
+        {
+          "query": "Interactive video",
+          "approx_results": null
+        },
+        {
+          "query": "AI interactive video",
+          "approx_results": null
+        },
+        {
+          "query": "interactive video",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "interior-design",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "interior-design",
+        "path": "tools/3d-spatial/interior-design.md",
+        "current_primary": "AI interior design",
+        "alternatives_tested": [
+          "AI interior design software",
+          "AI room design",
+          "AI home design"
+        ],
+        "bing_counts": {
+          "AI interior design": 509000,
+          "AI interior design software": 509000,
+          "AI room design": 8810,
+          "AI home design": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI interior design",
+            "count": 509000
+          },
+          {
+            "keyword": "AI interior design software",
+            "count": 509000
+          },
+          {
+            "keyword": "AI home design",
+            "count": 509000
+          },
+          {
+            "keyword": "AI room design",
+            "count": 8810
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI interior design' and 2 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI interior design",
+          "AI interior design software",
+          "AI home design"
+        ]
+      }
+    },
+    {
+      "slug": "interview-assistant",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI interview assistant / 面试助手",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI interview assistant",
+      "candidates": [
+        {
+          "query": "AI interview assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI interview tool",
+          "approx_results": 509000
+        },
+        {
+          "query": "interview AI assistant",
+          "approx_results": 5210
+        },
+        {
+          "query": "AI interview prep",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI interview tool' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "knowledge-base",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "OK",
+      "raw": {
+        "slug": "knowledge-base",
+        "path": "tools/enterprise-knowledge/knowledge-base.md",
+        "current_primary": "AI knowledge base",
+        "alternatives_tested": [
+          "AI knowledge management",
+          "RAG knowledge base",
+          "enterprise knowledge base AI"
+        ],
+        "bing_counts": {
+          "AI knowledge base": 509000,
+          "AI knowledge management": 509000,
+          "RAG knowledge base": 70400,
+          "enterprise knowledge base AI": 88700
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI knowledge base",
+            "count": 509000
+          },
+          {
+            "keyword": "AI knowledge management",
+            "count": 509000
+          },
+          {
+            "keyword": "enterprise knowledge base AI",
+            "count": 88700
+          },
+          {
+            "keyword": "RAG knowledge base",
+            "count": 70400
+          }
+        ],
+        "verdict": "OK",
+        "reason": "'AI knowledge base' and 'AI knowledge management' both hit Bing ceiling — indistinguishable. Keep 'AI knowledge base' per Alignify convention (RAG knowledge base lower at 70,400).",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI knowledge base",
+          "AI knowledge management"
+        ]
+      }
+    },
+    {
+      "slug": "landing-page-builder",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "Landing Page Builder / Conversion Page Builder",
+      "recommended_primary": null,
+      "highest_volume_keyword": "landing page builder",
+      "candidates": [
+        {
+          "query": "landing page builder",
+          "approx_results": 104000
+        },
+        {
+          "query": "landing page software",
+          "approx_results": 104000
+        },
+        {
+          "query": "conversion page builder",
+          "approx_results": 68600
+        },
+        {
+          "query": "landing page creator",
+          "approx_results": 7970
+        }
+      ],
+      "notes": "Primary competitive; best alt 'landing page software' ~104,000 vs primary ~104,000"
+    },
+    {
+      "slug": "lead-generation",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI Lead Generation / AI 线索生成",
+      "recommended_primary": "B2B lead generation AI",
+      "highest_volume_keyword": "AI lead generation",
+      "candidates": [
+        {
+          "query": "AI lead generation",
+          "approx_results": 509000
+        },
+        {
+          "query": "lead generation tools",
+          "approx_results": 7040
+        },
+        {
+          "query": "AI sales leads",
+          "approx_results": 509000
+        },
+        {
+          "query": "B2B lead generation AI",
+          "approx_results": 43400
+        }
+      ],
+      "notes": "Primary capped ~509,000; best non-capped alt 'B2B lead generation AI' ~43,400",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "legal",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "legal",
+        "path": "tools/enterprise-knowledge/legal.md",
+        "current_primary": "AI for lawyers",
+        "alternatives_tested": [
+          "legal AI tools",
+          "AI legal software",
+          "AI tools for legal professionals"
+        ],
+        "bing_counts": {
+          "AI for lawyers": 509000,
+          "legal AI tools": 121000,
+          "AI legal software": 509000,
+          "AI tools for legal professionals": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI for lawyers",
+            "count": 509000
+          },
+          {
+            "keyword": "AI legal software",
+            "count": 509000
+          },
+          {
+            "keyword": "AI tools for legal professionals",
+            "count": 509000
+          },
+          {
+            "keyword": "legal AI tools",
+            "count": 121000
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "'AI for lawyers' hits ceiling; measurable 'legal AI tools' (121,000) is strong alt. Either works; ceiling prevents clear winner.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI for lawyers",
+          "AI legal software",
+          "AI tools for legal professionals"
+        ]
+      }
+    },
+    {
+      "slug": "lifetime-deals",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Lifetime Deals",
+      "recommended_primary": "software lifetime deals",
+      "highest_volume_keyword": "software lifetime deals",
+      "candidates": [
+        {
+          "query": "lifetime deals",
+          "approx_results": 58400
+        },
+        {
+          "query": "SaaS lifetime deals",
+          "approx_results": 114000
+        },
+        {
+          "query": "software lifetime deals",
+          "approx_results": 298000
+        },
+        {
+          "query": "AppSumo lifetime deals",
+          "approx_results": 4030
+        }
+      ],
+      "notes": "'software lifetime deals' ~298,000 is >=2x current 'lifetime deals' ~58,400"
+    },
+    {
+      "slug": "linkedin",
+      "batch": "batch6_misc",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "LinkedIn AI tools / LinkedIn 向 AI 工具",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI for LinkedIn",
+      "candidates": [
+        {
+          "query": "LinkedIn AI tools",
+          "approx_results": 74800
+        },
+        {
+          "query": "AI for LinkedIn",
+          "approx_results": 509000
+        },
+        {
+          "query": "LinkedIn automation AI",
+          "approx_results": 74800
+        },
+        {
+          "query": "AI LinkedIn assistant",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Top alternatives close: 'AI for LinkedIn' (509,000) vs 'AI LinkedIn assistant' (509,000); primary 74,800"
+    },
+    {
+      "slug": "lip-sync",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI lip sync / AI 唇形同步",
+      "recommended_primary": "lip sync AI",
+      "highest_volume_keyword": "video lip sync AI",
+      "candidates": [
+        {
+          "query": "AI lip sync",
+          "approx_results": 4270
+        },
+        {
+          "query": "lip sync AI",
+          "approx_results": 48600
+        },
+        {
+          "query": "AI lip sync tool",
+          "approx_results": 509000
+        },
+        {
+          "query": "video lip sync AI",
+          "approx_results": 802000
+        }
+      ],
+      "notes": "'lip sync AI' ~48,600 >> primary ~4,270 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "llm",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "Large Language Model",
+      "recommended_primary": "AI llm tools",
+      "highest_volume_keyword": "AI llm tools",
+      "candidates": [
+        {
+          "query": "llm",
+          "approx_results": null
+        },
+        {
+          "query": "AI llm",
+          "approx_results": null
+        },
+        {
+          "query": "AI llm tools",
+          "approx_results": null
+        },
+        {
+          "query": "llm tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~105000"
+    },
+    {
+      "slug": "llm-for-coding",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI Coding LLM / 编程向大模型",
+      "recommended_primary": "AI Coding LLM",
+      "highest_volume_keyword": "AI Coding LLM",
+      "candidates": [
+        {
+          "query": "AI Coding LLM",
+          "approx_results": null
+        },
+        {
+          "query": "llm for coding",
+          "approx_results": null
+        },
+        {
+          "query": "llm for coding tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI llm for coding tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "llm-for-math",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI Math LLM / 数学向大模型",
+      "recommended_primary": "AI Math LLM",
+      "highest_volume_keyword": "AI Math LLM",
+      "candidates": [
+        {
+          "query": "AI Math LLM",
+          "approx_results": null
+        },
+        {
+          "query": "llm for math",
+          "approx_results": null
+        },
+        {
+          "query": "AI llm for math",
+          "approx_results": null
+        },
+        {
+          "query": "llm for math tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "llm-for-reasoning",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI Reasoning LLM / 推理向大模型",
+      "recommended_primary": "AI Reasoning LLM",
+      "highest_volume_keyword": "AI Reasoning LLM",
+      "candidates": [
+        {
+          "query": "AI Reasoning LLM",
+          "approx_results": null
+        },
+        {
+          "query": "llm for reasoning tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Reasoning LLM",
+          "approx_results": null
+        },
+        {
+          "query": "AI llm for reasoning",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "logo-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI logo generator / AI Logo 生成器",
+      "recommended_primary": "AI logo generator",
+      "highest_volume_keyword": "logo generator AI",
+      "candidates": [
+        {
+          "query": "AI logo generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI logo generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "logo generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "logo generator",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=673000 vs current~509000"
+    },
+    {
+      "slug": "medical-scribe",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI Medical Scribe",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI medical scribe",
+      "candidates": [
+        {
+          "query": "AI medical scribe",
+          "approx_results": 509000
+        },
+        {
+          "query": "medical scribe AI",
+          "approx_results": 302000
+        },
+        {
+          "query": "AI scribe for doctors",
+          "approx_results": 509000
+        },
+        {
+          "query": "clinical documentation AI",
+          "approx_results": 61900
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI scribe for doctors' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "memory",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "OK",
+      "raw": {
+        "slug": "memory",
+        "path": "tools/enterprise-knowledge/memory.md",
+        "current_primary": "AI memory",
+        "alternatives_tested": [
+          "AI second brain",
+          "AI personal knowledge management",
+          "AI memory assistant"
+        ],
+        "bing_counts": {
+          "AI memory": 45300,
+          "AI second brain": 10800,
+          "AI personal knowledge management": 509000,
+          "AI memory assistant": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI personal knowledge management",
+            "count": 509000
+          },
+          {
+            "keyword": "AI memory assistant",
+            "count": 509000
+          },
+          {
+            "keyword": "AI memory",
+            "count": 45300
+          },
+          {
+            "keyword": "AI second brain",
+            "count": 10800
+          }
+        ],
+        "verdict": "OK",
+        "reason": "'AI memory' (45,300) leads among differentiated counts; 'AI second brain' (10,800) is lower. Ceiling hits on PKM variants are not same consumer intent.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI personal knowledge management",
+          "AI memory assistant"
+        ]
+      }
+    },
+    {
+      "slug": "multi-agent",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "Multi-Agent Systems / 多智能体系统",
+      "recommended_primary": "multi-agent systems",
+      "highest_volume_keyword": "multi-agent systems",
+      "candidates": [
+        {
+          "query": "multi-agent systems",
+          "approx_results": 104000
+        },
+        {
+          "query": "multi-agent AI",
+          "approx_results": 15100
+        },
+        {
+          "query": "multi-agent framework",
+          "approx_results": 104000
+        },
+        {
+          "query": "multi-agent orchestration",
+          "approx_results": 104000
+        }
+      ],
+      "notes": "Current tied for top at 104,000 results"
+    },
+    {
+      "slug": "multimodal-llm",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI Multimodal LLM / 多模态大模型",
+      "recommended_primary": "AI Multimodal LLM",
+      "highest_volume_keyword": "AI Multimodal LLM",
+      "candidates": [
+        {
+          "query": "AI Multimodal LLM",
+          "approx_results": null
+        },
+        {
+          "query": "AI multimodal llm",
+          "approx_results": null
+        },
+        {
+          "query": "AI Multimodal LLM",
+          "approx_results": null
+        },
+        {
+          "query": "multimodal llm",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "music-generator",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Music Generator",
+      "recommended_primary": "text to music AI",
+      "highest_volume_keyword": "AI music maker",
+      "candidates": [
+        {
+          "query": "AI music generator",
+          "approx_results": 7670
+        },
+        {
+          "query": "AI music maker",
+          "approx_results": 509000
+        },
+        {
+          "query": "text to music AI",
+          "approx_results": 147000
+        },
+        {
+          "query": "AI song generator",
+          "approx_results": 20800
+        }
+      ],
+      "notes": "'text to music AI' ~147,000 >> primary ~7,670 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "music-video-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI music video generator / MV 生成器",
+      "recommended_primary": "music video generator AI",
+      "highest_volume_keyword": "music video generator AI",
+      "candidates": [
+        {
+          "query": "AI music video generator",
+          "approx_results": null
+        },
+        {
+          "query": "music video generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "AI music video generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI music video generator tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=1060000 vs current~509000"
+    },
+    {
+      "slug": "note-taker",
+      "batch": "batch6_misc",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI note taker / AI meeting notes",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI meeting transcription",
+      "candidates": [
+        {
+          "query": "AI note taker",
+          "approx_results": 21400
+        },
+        {
+          "query": "AI meeting notes",
+          "approx_results": 12900
+        },
+        {
+          "query": "AI meeting transcription",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI meeting assistant",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Top alternatives close: 'AI meeting transcription' (509,000) vs 'AI meeting assistant' (509,000); primary 21,400"
+    },
+    {
+      "slug": "notes-generator",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "notes-generator",
+        "path": "tools/education/notes-generator.md",
+        "current_primary": "AI notes generator",
+        "alternatives_tested": [
+          "AI note taking from video",
+          "PDF to notes AI",
+          "AI lecture notes generator"
+        ],
+        "bing_counts": {
+          "AI notes generator": 509000,
+          "AI note taking from video": 509000,
+          "PDF to notes AI": 641000,
+          "AI lecture notes generator": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "PDF to notes AI",
+            "count": 641000
+          },
+          {
+            "keyword": "AI notes generator",
+            "count": 509000
+          },
+          {
+            "keyword": "AI note taking from video",
+            "count": 509000
+          },
+          {
+            "keyword": "AI lecture notes generator",
+            "count": 509000
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI notes generator' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI notes generator",
+          "AI note taking from video",
+          "PDF to notes AI",
+          "AI lecture notes generator"
+        ]
+      }
+    },
+    {
+      "slug": "ocr",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "OK",
+      "raw": {
+        "slug": "ocr",
+        "path": "tools/enterprise-knowledge/ocr.md",
+        "current_primary": "OCR software",
+        "alternatives_tested": [
+          "AI OCR",
+          "optical character recognition tools",
+          "AI text recognition"
+        ],
+        "bing_counts": {
+          "OCR software": 92500,
+          "AI OCR": 509000,
+          "optical character recognition tools": 72100,
+          "AI text recognition": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI OCR",
+            "count": 509000
+          },
+          {
+            "keyword": "AI text recognition",
+            "count": 509000
+          },
+          {
+            "keyword": "OCR software",
+            "count": 92500
+          },
+          {
+            "keyword": "optical character recognition tools",
+            "count": 72100
+          }
+        ],
+        "verdict": "OK",
+        "reason": "'OCR software' (92,500) has solid volume; 'AI OCR' hits ceiling but page covers OCR category broadly. Keep 'OCR software' / 'AI OCR' dual acceptable.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI OCR",
+          "AI text recognition"
+        ]
+      }
+    },
+    {
+      "slug": "open-source-cms",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "Open Source CMS / OSS CMS",
+      "recommended_primary": null,
+      "highest_volume_keyword": "open source CMS",
+      "candidates": [
+        {
+          "query": "open source CMS",
+          "approx_results": 1170000
+        },
+        {
+          "query": "self-hosted CMS",
+          "approx_results": 132000
+        },
+        {
+          "query": "open source content management system",
+          "approx_results": 1170000
+        },
+        {
+          "query": "free CMS",
+          "approx_results": 61300
+        }
+      ],
+      "notes": "Primary competitive; best alt 'open source content management system' ~1,170,000 vs primary ~1,170,000"
+    },
+    {
+      "slug": "openclaw-alternatives",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "OpenClaw 系谱 / alternatives 检索意图",
+      "recommended_primary": "OpenClaw alternatives",
+      "highest_volume_keyword": "OpenClaw alternatives",
+      "candidates": [
+        {
+          "query": "OpenClaw alternatives",
+          "approx_results": 78500
+        },
+        {
+          "query": "OpenClaw AI agent",
+          "approx_results": 59600
+        },
+        {
+          "query": "OpenClaw fork",
+          "approx_results": 78500
+        },
+        {
+          "query": "OpenClaw similar tools",
+          "approx_results": 78500
+        }
+      ],
+      "notes": "Current tied for top at 78,500 results"
+    },
+    {
+      "slug": "portfolio-website-builder",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Portfolio website builder / Photography website builder",
+      "recommended_primary": "online portfolio maker",
+      "highest_volume_keyword": "online portfolio maker",
+      "candidates": [
+        {
+          "query": "portfolio website builder",
+          "approx_results": 138000
+        },
+        {
+          "query": "photography website builder",
+          "approx_results": 265000
+        },
+        {
+          "query": "online portfolio maker",
+          "approx_results": 956000
+        },
+        {
+          "query": "portfolio site builder",
+          "approx_results": 138000
+        }
+      ],
+      "notes": "Alternative 'online portfolio maker' has ~956,000 vs primary ~138,000 (6.9x)"
+    },
+    {
+      "slug": "poster-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Poster Generator",
+      "recommended_primary": "AI Poster Generator",
+      "highest_volume_keyword": "AI poster generator",
+      "candidates": [
+        {
+          "query": "poster generator",
+          "approx_results": null
+        },
+        {
+          "query": "poster generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "poster generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "AI poster generator",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "presentation-maker",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI Presentation Maker",
+      "recommended_primary": "AI Presentation Maker",
+      "highest_volume_keyword": "AI presentation maker tools",
+      "candidates": [
+        {
+          "query": "presentation maker tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI presentation maker",
+          "approx_results": null
+        },
+        {
+          "query": "AI presentation maker tools",
+          "approx_results": null
+        },
+        {
+          "query": "presentation maker",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "productivity",
+      "batch": "batch6_misc",
+      "verdict": "NEEDS_REVIEW",
+      "current_primary": "AI productivity tools / AI 生产力工具",
+      "recommended_primary": "best AI productivity tools",
+      "highest_volume_keyword": "best AI productivity tools",
+      "candidates": [
+        {
+          "query": "AI productivity tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI productivity",
+          "approx_results": 32100
+        },
+        {
+          "query": "best AI productivity tools",
+          "approx_results": 681000
+        },
+        {
+          "query": "AI productivity software",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Alternative 'best AI productivity tools' moderately higher: ~681,000 vs ~509,000 (1.3x)"
+    },
+    {
+      "slug": "project-management",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI project management / AI 项目管理",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI project management",
+      "candidates": [
+        {
+          "query": "AI project management",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI project management tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "project management AI",
+          "approx_results": 179000
+        },
+        {
+          "query": "AI PM tools",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI project management tools' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "prototyping",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "Prototyping / 交互原型",
+      "recommended_primary": "Prototyping",
+      "highest_volume_keyword": "AI prototyping",
+      "candidates": [
+        {
+          "query": "Prototyping",
+          "approx_results": null
+        },
+        {
+          "query": "prototyping tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI prototyping",
+          "approx_results": null
+        },
+        {
+          "query": "Prototyping",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "quiz-generator",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "quiz-generator",
+        "path": "tools/education/quiz-generator.md",
+        "current_primary": "AI quiz generator",
+        "alternatives_tested": [
+          "AI quiz maker",
+          "AI assessment generator",
+          "AI test generator"
+        ],
+        "bing_counts": {
+          "AI quiz generator": 7570,
+          "AI quiz maker": 10100,
+          "AI assessment generator": 509000,
+          "AI test generator": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI assessment generator",
+            "count": 509000
+          },
+          {
+            "keyword": "AI test generator",
+            "count": 509000
+          },
+          {
+            "keyword": "AI quiz maker",
+            "count": 10100
+          },
+          {
+            "keyword": "AI quiz generator",
+            "count": 7570
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "'AI quiz maker' (10,100) slightly beats 'AI quiz generator' (7,570); both are valid same-intent heads. 'AI assessment generator' hits ceiling but skews broader B2B intent.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI assessment generator",
+          "AI test generator"
+        ]
+      }
+    },
+    {
+      "slug": "recruiting",
+      "batch": "batch6_misc",
+      "verdict": "OK",
+      "current_primary": "AI recruiting / AI 人才获取",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI recruiting",
+      "candidates": [
+        {
+          "query": "AI recruiting",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI recruitment tools",
+          "approx_results": 7020
+        },
+        {
+          "query": "AI hiring tools",
+          "approx_results": 9300
+        },
+        {
+          "query": "AI talent acquisition",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary competitive; best alt 'AI talent acquisition' ~509,000 vs primary ~509,000"
+    },
+    {
+      "slug": "referral-program",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Referral program / 推荐计划",
+      "recommended_primary": "referral marketing tools",
+      "highest_volume_keyword": "AI referral program",
+      "candidates": [
+        {
+          "query": "referral program software",
+          "approx_results": 12
+        },
+        {
+          "query": "referral marketing tools",
+          "approx_results": 41900
+        },
+        {
+          "query": "AI referral program",
+          "approx_results": 509000
+        },
+        {
+          "query": "referral program platform",
+          "approx_results": 41900
+        }
+      ],
+      "notes": "'referral marketing tools' ~41,900 >> primary ~12 (>3x, non-capped)",
+      "flags": [
+        "alt_capped",
+        "primary_suspicious_low"
+      ]
+    },
+    {
+      "slug": "religion",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "AI Religion",
+      "recommended_primary": "AI spiritual assistant",
+      "highest_volume_keyword": "AI spiritual assistant",
+      "candidates": [
+        {
+          "query": "AI religion",
+          "approx_results": 11600
+        },
+        {
+          "query": "AI spiritual assistant",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI faith tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "religious AI chatbot",
+          "approx_results": 127000
+        }
+      ],
+      "notes": "'AI spiritual assistant' ~509,000 is >=2x current 'AI religion' ~11,600"
+    },
+    {
+      "slug": "search-engine",
+      "batch": "batch6_misc",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI search engine / 对话式 AI 搜索",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI powered search",
+      "candidates": [
+        {
+          "query": "AI search engine",
+          "approx_results": 35600
+        },
+        {
+          "query": "conversational AI search",
+          "approx_results": 72900
+        },
+        {
+          "query": "AI powered search",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI answer engine",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Top alternatives close: 'AI powered search' (509,000) vs 'AI answer engine' (509,000); primary 35,600"
+    },
+    {
+      "slug": "search-indexing",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Search Indexing",
+      "recommended_primary": "search indexing tools",
+      "highest_volume_keyword": "search indexing tools",
+      "candidates": [
+        {
+          "query": "search indexing tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI search indexing tools",
+          "approx_results": null
+        },
+        {
+          "query": "search indexing",
+          "approx_results": null
+        },
+        {
+          "query": "AI search indexing",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=1470000 vs current~509000"
+    },
+    {
+      "slug": "short-drama",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI short drama platform / AI 短剧平台",
+      "recommended_primary": "AI short drama platform",
+      "highest_volume_keyword": "AI short drama platform",
+      "candidates": [
+        {
+          "query": "AI short drama platform",
+          "approx_results": null
+        },
+        {
+          "query": "AI short drama platform",
+          "approx_results": null
+        },
+        {
+          "query": "short drama",
+          "approx_results": null
+        },
+        {
+          "query": "AI short drama tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "social-cards-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "Social Cards Generator",
+      "recommended_primary": "Social Cards Generator",
+      "highest_volume_keyword": "AI social cards generator",
+      "candidates": [
+        {
+          "query": "social cards generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "social cards generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI social cards generator",
+          "approx_results": null
+        },
+        {
+          "query": "Social Cards Generator",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "social-media-tools",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Social media management / scheduling tools（社媒管理与排程工具）",
+      "recommended_primary": "social media management software",
+      "highest_volume_keyword": "AI social media tools",
+      "candidates": [
+        {
+          "query": "social media management tools",
+          "approx_results": 7630
+        },
+        {
+          "query": "social media scheduling tools",
+          "approx_results": 5870
+        },
+        {
+          "query": "AI social media tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "social media management software",
+          "approx_results": 274000
+        }
+      ],
+      "notes": "'social media management software' ~274,000 >> primary ~7,630 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "speech-to-text",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "OK",
+      "current_primary": "Speech-to-Text / ASR / 自动语音识别",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI speech to text",
+      "candidates": [
+        {
+          "query": "speech to text AI",
+          "approx_results": 100000
+        },
+        {
+          "query": "AI transcription",
+          "approx_results": 23400
+        },
+        {
+          "query": "automatic speech recognition",
+          "approx_results": 6810
+        },
+        {
+          "query": "AI speech to text",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary ~100,000 dominates non-capped alts",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "spreadsheet",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "AMBIGUOUS",
+      "raw": {
+        "slug": "spreadsheet",
+        "path": "tools/enterprise-knowledge/spreadsheet.md",
+        "current_primary": "AI spreadsheet",
+        "alternatives_tested": [
+          "AI spreadsheet tools",
+          "AI for Excel",
+          "AI spreadsheet assistant"
+        ],
+        "bing_counts": {
+          "AI spreadsheet": 509000,
+          "AI spreadsheet tools": 509000,
+          "AI for Excel": 509000,
+          "AI spreadsheet assistant": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI spreadsheet",
+            "count": 509000
+          },
+          {
+            "keyword": "AI spreadsheet tools",
+            "count": 509000
+          },
+          {
+            "keyword": "AI for Excel",
+            "count": 509000
+          },
+          {
+            "keyword": "AI spreadsheet assistant",
+            "count": 509000
+          }
+        ],
+        "verdict": "AMBIGUOUS",
+        "reason": "Current 'AI spreadsheet' and 3 alt(s) hit Bing ~509k+ ceiling — cannot rank at this granularity.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI spreadsheet",
+          "AI spreadsheet tools",
+          "AI for Excel",
+          "AI spreadsheet assistant"
+        ]
+      }
+    },
+    {
+      "slug": "story-generator",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Story Generator",
+      "recommended_primary": "story generator AI",
+      "highest_volume_keyword": "story generator AI",
+      "candidates": [
+        {
+          "query": "AI story generator",
+          "approx_results": null
+        },
+        {
+          "query": "story generator",
+          "approx_results": null
+        },
+        {
+          "query": "story generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "AI Story Generator",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=1820000 vs current~10200"
+    },
+    {
+      "slug": "tattoo-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Tattoo Generator",
+      "recommended_primary": "AI Tattoo Generator",
+      "highest_volume_keyword": "AI tattoo generator tools",
+      "candidates": [
+        {
+          "query": "tattoo generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI tattoo generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Tattoo Generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI tattoo generator",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "technology-profiler",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "website technology profiler / 网站技术栈检测",
+      "recommended_primary": "website technology profiler",
+      "highest_volume_keyword": "website technology profiler",
+      "candidates": [
+        {
+          "query": "website technology profiler",
+          "approx_results": null
+        },
+        {
+          "query": "technology profiler",
+          "approx_results": null
+        },
+        {
+          "query": "AI technology profiler tools",
+          "approx_results": null
+        },
+        {
+          "query": "technology profiler tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=886000 vs current~886000"
+    },
+    {
+      "slug": "text",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Text Tools / AI Writing Tools",
+      "recommended_primary": "AI text",
+      "highest_volume_keyword": "AI text",
+      "candidates": [
+        {
+          "query": "AI Text Tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI text",
+          "approx_results": null
+        },
+        {
+          "query": "text",
+          "approx_results": null
+        },
+        {
+          "query": "text tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~13300"
+    },
+    {
+      "slug": "text-generator",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI Text Generator",
+      "recommended_primary": "AI Text Generator",
+      "highest_volume_keyword": "AI text generator tools",
+      "candidates": [
+        {
+          "query": "text generator AI",
+          "approx_results": null
+        },
+        {
+          "query": "AI text generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI text generator tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Text Generator",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "text-to-speech",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI Text-to-Speech / TTS / 文本转语音",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI voice generator",
+      "candidates": [
+        {
+          "query": "text to speech AI",
+          "approx_results": 10800
+        },
+        {
+          "query": "AI voice generator",
+          "approx_results": 25400
+        },
+        {
+          "query": "TTS AI",
+          "approx_results": 23500
+        },
+        {
+          "query": "AI text to speech",
+          "approx_results": 10700
+        }
+      ],
+      "notes": "Primary ~10,800 vs 'AI voice generator' ~25,400 within ~2x",
+      "flags": []
+    },
+    {
+      "slug": "text-to-video",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "Text-to-Video (T2V) / 文生视频",
+      "recommended_primary": "AI text to video tools",
+      "highest_volume_keyword": "AI text to video tools",
+      "candidates": [
+        {
+          "query": "Text-to-Video (T2V)",
+          "approx_results": null
+        },
+        {
+          "query": "AI text to video tools",
+          "approx_results": null
+        },
+        {
+          "query": "text to video tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI text to video",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~147000"
+    },
+    {
+      "slug": "text-translator",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI text translation",
+      "recommended_primary": "AI text translation",
+      "highest_volume_keyword": "AI text translation",
+      "candidates": [
+        {
+          "query": "text translator",
+          "approx_results": null
+        },
+        {
+          "query": "AI text translation",
+          "approx_results": null
+        },
+        {
+          "query": "AI text translator tools",
+          "approx_results": null
+        },
+        {
+          "query": "text translator tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "ugc",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "UGC / User-Generated Content（营销语境）",
+      "recommended_primary": null,
+      "highest_volume_keyword": "user generated content tools",
+      "candidates": [
+        {
+          "query": "UGC marketing",
+          "approx_results": 174000
+        },
+        {
+          "query": "user generated content tools",
+          "approx_results": 207000
+        },
+        {
+          "query": "UGC platform",
+          "approx_results": 174000
+        },
+        {
+          "query": "UGC marketing tools",
+          "approx_results": 174000
+        }
+      ],
+      "notes": "Primary ~174,000 vs 'user generated content tools' ~207,000 within ~2x",
+      "flags": []
+    },
+    {
+      "slug": "ui-design",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI UI Design / 界面设计",
+      "recommended_primary": "AI UI Design",
+      "highest_volume_keyword": "AI UI Design",
+      "candidates": [
+        {
+          "query": "AI UI Design",
+          "approx_results": null
+        },
+        {
+          "query": "AI ui design tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI UI Design",
+          "approx_results": null
+        },
+        {
+          "query": "ui design",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "user-research",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "AI User Research",
+      "recommended_primary": "AI User Research",
+      "highest_volume_keyword": "AI user research tools",
+      "candidates": [
+        {
+          "query": "AI user research tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI User Research",
+          "approx_results": null
+        },
+        {
+          "query": "AI user research",
+          "approx_results": null
+        },
+        {
+          "query": "user research",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "ux-design",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "UX Design / 体验设计",
+      "recommended_primary": "UX Design",
+      "highest_volume_keyword": "AI ux design tools",
+      "candidates": [
+        {
+          "query": "UX Design",
+          "approx_results": null
+        },
+        {
+          "query": "UX Design",
+          "approx_results": null
+        },
+        {
+          "query": "AI ux design tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI ux design",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "vibe-coding",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "Vibe coding / 氛围编程",
+      "recommended_primary": "AI coding",
+      "highest_volume_keyword": "AI coding",
+      "candidates": [
+        {
+          "query": "vibe coding",
+          "approx_results": 15700
+        },
+        {
+          "query": "AI coding",
+          "approx_results": 108000
+        },
+        {
+          "query": "AI app builder",
+          "approx_results": 12600
+        },
+        {
+          "query": "vibe coding AI",
+          "approx_results": 37000
+        }
+      ],
+      "notes": "'AI coding' ~108,000 >> primary ~15,700 (>3x, non-capped)",
+      "flags": []
+    },
+    {
+      "slug": "vibe-coding-payments",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Vibe Coding 支付集成",
+      "recommended_primary": "AI app builder payments",
+      "highest_volume_keyword": "AI app builder payments",
+      "candidates": [
+        {
+          "query": "vibe coding payments",
+          "approx_results": 92
+        },
+        {
+          "query": "AI app builder payments",
+          "approx_results": 509000
+        },
+        {
+          "query": "no-code app payments integration",
+          "approx_results": 253000
+        },
+        {
+          "query": "vibe coding Stripe",
+          "approx_results": 143000
+        }
+      ],
+      "notes": "'AI app builder payments' ~509,000 is >=2x current 'vibe coding payments' ~92"
+    },
+    {
+      "slug": "video",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Video",
+      "recommended_primary": "video",
+      "highest_volume_keyword": "video",
+      "candidates": [
+        {
+          "query": "AI video tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI Video",
+          "approx_results": null
+        },
+        {
+          "query": "video",
+          "approx_results": null
+        },
+        {
+          "query": "AI video",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=802000 vs current~110000"
+    },
+    {
+      "slug": "video-clipping",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Video Clipping / Repurposing",
+      "recommended_primary": "video clipping",
+      "highest_volume_keyword": "video clipping",
+      "candidates": [
+        {
+          "query": "AI Video Clipping",
+          "approx_results": null
+        },
+        {
+          "query": "AI video clipping",
+          "approx_results": null
+        },
+        {
+          "query": "video clipping",
+          "approx_results": null
+        },
+        {
+          "query": "AI Video Clipping",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=802000 vs current~509000"
+    },
+    {
+      "slug": "video-editor",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI Video Editor / AI 视频编辑器",
+      "recommended_primary": "AI Video Editor",
+      "highest_volume_keyword": "AI video editor tools",
+      "candidates": [
+        {
+          "query": "AI Video Editor",
+          "approx_results": null
+        },
+        {
+          "query": "AI video editor tools",
+          "approx_results": null
+        },
+        {
+          "query": "video editor",
+          "approx_results": null
+        },
+        {
+          "query": "AI Video Editor",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "video-effects",
+      "batch": "batch2_video_image_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Video Effects / AI VFX",
+      "recommended_primary": "video effects tools",
+      "highest_volume_keyword": "video effects tools",
+      "candidates": [
+        {
+          "query": "AI Video Effects",
+          "approx_results": null
+        },
+        {
+          "query": "video effects tools",
+          "approx_results": null
+        },
+        {
+          "query": "video effects",
+          "approx_results": null
+        },
+        {
+          "query": "AI video effects",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=802000 vs current~509000"
+    },
+    {
+      "slug": "video-generator",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "AI video generator / AI 视频生成器",
+      "recommended_primary": "AI video generator",
+      "highest_volume_keyword": "AI video generator tools",
+      "candidates": [
+        {
+          "query": "AI video generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI video generator",
+          "approx_results": null
+        },
+        {
+          "query": "video generator",
+          "approx_results": null
+        },
+        {
+          "query": "AI video generator tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "video-to-video",
+      "batch": "batch2_video_image_results",
+      "verdict": "OK",
+      "current_primary": "Video-to-Video (V2V) / 视频到视频",
+      "recommended_primary": "Video-to-Video (V2V)",
+      "highest_volume_keyword": "Video-to-Video (V2V)",
+      "candidates": [
+        {
+          "query": "Video-to-Video (V2V)",
+          "approx_results": null
+        },
+        {
+          "query": "video to video",
+          "approx_results": null
+        },
+        {
+          "query": "AI video to video",
+          "approx_results": null
+        },
+        {
+          "query": "Video-to-Video (V2V)",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=802000 vs current~802000"
+    },
+    {
+      "slug": "video-translator",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI Video Translation",
+      "recommended_primary": null,
+      "highest_volume_keyword": "video translator AI",
+      "candidates": [
+        {
+          "query": "AI video translation",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI video dubbing",
+          "approx_results": 509000
+        },
+        {
+          "query": "video translator AI",
+          "approx_results": 802000
+        },
+        {
+          "query": "AI video localization",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary and all alts hit Bing ~509,000 cap — need SERP title review",
+      "flags": [
+        "primary_capped",
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "virtual-staging",
+      "batch": "batch4_edu_3d_enterprise",
+      "verdict": "OK",
+      "raw": {
+        "slug": "virtual-staging",
+        "path": "tools/3d-spatial/virtual-staging.md",
+        "current_primary": "AI virtual staging",
+        "alternatives_tested": [
+          "virtual staging software",
+          "virtual home staging",
+          "AI home staging"
+        ],
+        "bing_counts": {
+          "AI virtual staging": 509000,
+          "virtual staging software": 207000,
+          "virtual home staging": 207000,
+          "AI home staging": 509000
+        },
+        "ranked_by_volume": [
+          {
+            "keyword": "AI virtual staging",
+            "count": 509000
+          },
+          {
+            "keyword": "AI home staging",
+            "count": 509000
+          },
+          {
+            "keyword": "virtual staging software",
+            "count": 207000
+          },
+          {
+            "keyword": "virtual home staging",
+            "count": 207000
+          }
+        ],
+        "verdict": "OK",
+        "reason": "'AI virtual staging' hits Bing ceiling; measurable 'virtual staging software' (207,000) is lower. Keep AI-branded primary per listing-intent scope.",
+        "bing_ceiling_note": "Counts ≥500,000 treated as Bing approximate ceiling (underreporting differentiation).",
+        "capped_keywords": [
+          "AI virtual staging",
+          "AI home staging"
+        ]
+      }
+    },
+    {
+      "slug": "voice",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "AMBIGUOUS",
+      "current_primary": "AI Voice",
+      "recommended_primary": null,
+      "highest_volume_keyword": "AI voice tools",
+      "candidates": [
+        {
+          "query": "AI voice",
+          "approx_results": 21900
+        },
+        {
+          "query": "AI voice tools",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI voice generator",
+          "approx_results": 25400
+        },
+        {
+          "query": "AI voice software",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Primary ~21,900 vs 'AI voice generator' ~25,400 within ~2x",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "voice-changer",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Voice Changer（AI 变声器）",
+      "recommended_primary": "voice modifier AI",
+      "highest_volume_keyword": "AI voice converter",
+      "candidates": [
+        {
+          "query": "AI voice changer",
+          "approx_results": 7110
+        },
+        {
+          "query": "real-time voice changer",
+          "approx_results": 732
+        },
+        {
+          "query": "voice modifier AI",
+          "approx_results": 223000
+        },
+        {
+          "query": "AI voice converter",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "'voice modifier AI' ~223,000 >> primary ~7,110 (>3x, non-capped)",
+      "flags": [
+        "alt_capped"
+      ]
+    },
+    {
+      "slug": "voice-cloning",
+      "batch": "batch3_voice_coding_marketing_results",
+      "verdict": "SWITCH",
+      "current_primary": "AI Voice Cloning",
+      "recommended_primary": "voice clone AI",
+      "highest_volume_keyword": "voice clone AI",
+      "candidates": [
+        {
+          "query": "AI voice cloning",
+          "approx_results": 50400
+        },
+        {
+          "query": "voice clone AI",
+          "approx_results": 223000
+        },
+        {
+          "query": "AI voice clone",
+          "approx_results": 101000
+        },
+        {
+          "query": "voice cloning tool",
+          "approx_results": 223000
+        }
+      ],
+      "notes": "'voice clone AI' ~223,000 >> primary ~50,400 (>3x, non-capped)",
+      "flags": []
+    },
+    {
+      "slug": "web-fetch",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "Web Fetch",
+      "recommended_primary": "Web Fetch",
+      "highest_volume_keyword": "Web Fetch",
+      "candidates": [
+        {
+          "query": "AI web fetch",
+          "approx_results": null
+        },
+        {
+          "query": "Web Fetch",
+          "approx_results": null
+        },
+        {
+          "query": "AI web fetch tools",
+          "approx_results": null
+        },
+        {
+          "query": "web fetch tools",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=918000 vs current~918000"
+    },
+    {
+      "slug": "web-scraping",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "Web scraping / 网页抓取",
+      "recommended_primary": "Web scraping",
+      "highest_volume_keyword": "web scraping tools",
+      "candidates": [
+        {
+          "query": "Web scraping",
+          "approx_results": null
+        },
+        {
+          "query": "web scraping",
+          "approx_results": null
+        },
+        {
+          "query": "web scraping tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI web scraping",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=918000 vs current~918000"
+    },
+    {
+      "slug": "web-search-api",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "Web Search API",
+      "recommended_primary": "Web Search API",
+      "highest_volume_keyword": "web search api tools",
+      "candidates": [
+        {
+          "query": "AI web search api",
+          "approx_results": null
+        },
+        {
+          "query": "web search api tools",
+          "approx_results": null
+        },
+        {
+          "query": "AI web search api tools",
+          "approx_results": null
+        },
+        {
+          "query": "web search api",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=918000 vs current~918000"
+    },
+    {
+      "slug": "website-builder",
+      "batch": "batch6_misc",
+      "verdict": "SWITCH",
+      "current_primary": "Website Builder",
+      "recommended_primary": "website builder tool",
+      "highest_volume_keyword": "website builder tool",
+      "candidates": [
+        {
+          "query": "website builder",
+          "approx_results": 69900
+        },
+        {
+          "query": "AI website builder",
+          "approx_results": 20100
+        },
+        {
+          "query": "best website builder",
+          "approx_results": 51200
+        },
+        {
+          "query": "website builder tool",
+          "approx_results": 886000
+        }
+      ],
+      "notes": "Alternative 'website builder tool' has ~886,000 vs primary ~69,900 (12.7x)"
+    },
+    {
+      "slug": "wireframing",
+      "batch": "batch5_design_llm_text_web_results",
+      "verdict": "OK",
+      "current_primary": "Wireframing / 线框图",
+      "recommended_primary": "Wireframing",
+      "highest_volume_keyword": "AI wireframing",
+      "candidates": [
+        {
+          "query": "Wireframing",
+          "approx_results": null
+        },
+        {
+          "query": "AI wireframing",
+          "approx_results": null
+        },
+        {
+          "query": "AI wireframing tools",
+          "approx_results": null
+        },
+        {
+          "query": "wireframing",
+          "approx_results": null
+        }
+      ],
+      "notes": "best=509000 vs current~509000"
+    },
+    {
+      "slug": "work-agent",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "Work Agent / AI Work Agent",
+      "recommended_primary": "work agent",
+      "highest_volume_keyword": "AI work agent",
+      "candidates": [
+        {
+          "query": "work agent",
+          "approx_results": 426000
+        },
+        {
+          "query": "AI work agent",
+          "approx_results": 509000
+        },
+        {
+          "query": "workplace AI agent",
+          "approx_results": 58300
+        },
+        {
+          "query": "business AI agent",
+          "approx_results": 303000
+        }
+      ],
+      "notes": "Current within 25% of top (426,000 vs 509,000)"
+    },
+    {
+      "slug": "workflow",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "Workflow automation / 工作流自动化",
+      "recommended_primary": "AI workflow automation",
+      "highest_volume_keyword": "AI workflow automation",
+      "candidates": [
+        {
+          "query": "AI workflow automation",
+          "approx_results": 509000
+        },
+        {
+          "query": "AI workflow",
+          "approx_results": 45500
+        },
+        {
+          "query": "agent workflow automation",
+          "approx_results": 4280
+        },
+        {
+          "query": "AI agent workflow",
+          "approx_results": 509000
+        }
+      ],
+      "notes": "Current tied for top at 509,000 results"
+    },
+    {
+      "slug": "workspace-agent",
+      "batch": "batch1_agent_root",
+      "verdict": "SWITCH",
+      "current_primary": "Workspace Agent / Team AI Agent",
+      "recommended_primary": "team AI agent",
+      "highest_volume_keyword": "team AI agent",
+      "candidates": [
+        {
+          "query": "workspace agent",
+          "approx_results": 92800
+        },
+        {
+          "query": "team AI agent",
+          "approx_results": 333000
+        },
+        {
+          "query": "workspace AI agent",
+          "approx_results": 92800
+        },
+        {
+          "query": "collaborative AI agent",
+          "approx_results": 27200
+        }
+      ],
+      "notes": "'team AI agent' ~333,000 is >=2x current 'workspace agent' ~92,800"
+    },
+    {
+      "slug": "world-model",
+      "batch": "batch1_agent_root",
+      "verdict": "OK",
+      "current_primary": "World model / 世界模型",
+      "recommended_primary": "world models AI",
+      "highest_volume_keyword": "world models AI",
+      "candidates": [
+        {
+          "query": "world models AI",
+          "approx_results": 1380000
+        },
+        {
+          "query": "AI world model",
+          "approx_results": 509000
+        },
+        {
+          "query": "world model machine learning",
+          "approx_results": 1380000
+        },
+        {
+          "query": "world models robotics",
+          "approx_results": 1380000
+        }
+      ],
+      "notes": "Current tied for top at 1,380,000 results"
+    }
+  ]
+}

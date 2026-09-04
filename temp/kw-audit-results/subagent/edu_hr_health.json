@@ -1,0 +1,613 @@
+{
+  "batch": "edu_hr_health",
+  "audited_at": "2026-09-03",
+  "slug_count": 18,
+  "summary": {
+    "OK": 13,
+    "SWITCH": 3,
+    "KEEP_INTENT": 2,
+    "AMBIGUOUS": 0
+  },
+  "results": [
+    {
+      "slug": "ai-flashcards",
+      "current_primary": "AI flashcards",
+      "candidates": [
+        {
+          "keyword": "AI flashcards",
+          "volume_signal": "SERP titles repeatedly use this phrase; ChatGPT commercial prompt 'best AI flashcard generator' ~550/mo (Keywords Everywhere)",
+          "source": "WebSearch SERP 2026-09-03; aibrandtracker.keywordseverywhere.com/prompt-category/ai-flashcard-generator",
+          "serp_title_note": "Product/roundup titles: Recallit 'AI flashcards', Laxu 'AI generates flashcards', SeekTool category 'AI Flashcard Maker'"
+        },
+        {
+          "keyword": "AI flashcard generator",
+          "volume_signal": "ChatGPT prompt demand ~550/mo (modeled); lower than Anki brand; tool-suffix variant",
+          "source": "aibrandtracker.keywordseverywhere.com/prompt-category/ai-flashcard-generator",
+          "serp_title_note": "Used in product copy and 'best AI flashcard generator' prompts; same ingest→cards intent"
+        },
+        {
+          "keyword": "AI flashcard maker",
+          "volume_signal": "ChatGPT prompt 'best AI flashcard maker' modeled ~12 share visits; SeekTool lists 47 tools in this category",
+          "source": "aibrandtracker.keywordseverywhere.com/prompt-category/ai-flashcard-maker; seektool.ai/ranking/categories/ai_flashcard_maker",
+          "serp_title_note": "Directory label; same generation intent as current"
+        },
+        {
+          "keyword": "Anki flashcards",
+          "volume_signal": "~49.8K–74K/mo (navtools.ai / MicroSaaSHQ); Anki brand ~849K",
+          "source": "navtools.ai/tool/anki-decks; microsaashq.com/saas-ideas/flashcard-app-909",
+          "serp_title_note": "Brand + generic SRS, not the AI-generation product class"
+        }
+      ],
+      "highest_volume_same_intent": "AI flashcards",
+      "verdict": "OK",
+      "recommended_primary": "AI flashcards",
+      "reason": "SERP titles already treat 'AI flashcards' as the natural product query. Maker/generator are same-intent suffixes without a ≥2× MSV cite. Anki/Quizlet volumes are brand or generic flashcards, not this AI-generation class."
+    },
+    {
+      "slug": "ai-for-science",
+      "current_primary": "AI for Science",
+      "candidates": [
+        {
+          "keyword": "AI for Science",
+          "volume_signal": "No public exact MSV; GitHub/Nature titles use AI for Science / AI4Science as the field name",
+          "source": "WebSearch SERP 2026-09-03; github.com/ai-boost/awesome-ai-for-science",
+          "serp_title_note": "Nature Co-Scientist / Robin papers and awesome-ai-for-science lists use this phrasing"
+        },
+        {
+          "keyword": "AI4S",
+          "volume_signal": "Near-zero category signal; SERP is company names (AI4S Solutions, AI4S AB)",
+          "source": "WebSearch '\"AI4S\" monthly search volume' 2026-09-03",
+          "serp_title_note": "Acronym collides with unrelated firms, not the scientific-AI category"
+        },
+        {
+          "keyword": "AI for science research",
+          "volume_signal": "ChatGPT commercial prompt ~200 people asking/mo (Keywords Everywhere)",
+          "source": "aibrandtracker.keywordseverywhere.com/prompt-category/ai-for-science-research",
+          "serp_title_note": "Journals and labs, not a higher-volume rewrite of the current head"
+        },
+        {
+          "keyword": "AI for research",
+          "volume_signal": "~8.6K/mo (Systemaic/Elicit teardown)",
+          "source": "systemaic.com/teardowns/elicit",
+          "serp_title_note": "Literature-review assistants (Elicit/Consensus), not protein/materials/SDL science"
+        }
+      ],
+      "highest_volume_same_intent": "AI for Science",
+      "verdict": "OK",
+      "recommended_primary": "AI for Science",
+      "reason": "Field titles still use 'AI for Science'. AI4S is not a search head. 'AI for research' is higher raw volume but different intent (paper Q&A vs scientific discovery)."
+    },
+    {
+      "slug": "ai-homework-helper",
+      "current_primary": "AI homework helper",
+      "candidates": [
+        {
+          "keyword": "AI homework helper",
+          "volume_signal": "~20.7K–24.1K/mo, CPC ~$1.19–$1.53 (TopAITools keyword tables)",
+          "source": "topaitoolsreview.com/tool/homework-ai; topaitoolsreview.com/tool/homeworkaiai",
+          "serp_title_note": "Free.ai, ZeroGPT, EduSolver, OpenEduCat all title pages 'AI Homework Helper'"
+        },
+        {
+          "keyword": "AI homework solver",
+          "volume_signal": "~1.84K/mo, CPC $1.48 (TopAITools homeworkaiai table); ChatGPT prompt 'best AI homework solver' ~363 asking/mo",
+          "source": "topaitoolsreview.com/tool/homeworkaiai; aibrandtracker.keywordseverywhere.com/prompt-category/ai-homework-solver",
+          "serp_title_note": "Same answer-first intent; lower cited Google volume than helper"
+        },
+        {
+          "keyword": "homework helper AI",
+          "volume_signal": "~2.54K/mo (TopAITools)",
+          "source": "topaitoolsreview.com/tool/homeworkaiai",
+          "serp_title_note": "Word-order flip; far below current"
+        },
+        {
+          "keyword": "homework AI",
+          "volume_signal": "~5.8K–9.1K/mo (TopAITools)",
+          "source": "topaitoolsreview.com/tool/homework-ai; topaitoolsreview.com/tool/thehomeworkai",
+          "serp_title_note": "Shorter/generic; mixes tutor vs solver"
+        },
+        {
+          "keyword": "Photomath",
+          "volume_signal": "Site visits ~191K–336K/mo (SeekTool/ToolMage); brand not a generic primary",
+          "source": "seektool.ai/ai/photomath-com/alternatives; toolmage.com Photomath comparisons",
+          "serp_title_note": "Camera math brand; same answer-first math slice, not the multi-subject class name"
+        }
+      ],
+      "highest_volume_same_intent": "AI homework helper",
+      "verdict": "OK",
+      "recommended_primary": "AI homework helper",
+      "reason": "Cited MSV for 'AI homework helper' (~21–24K) is an order of magnitude above 'AI homework solver' (~1.8K). SERP titles match. Keep fence vs Socratic 'AI tutor'."
+    },
+    {
+      "slug": "ai-language-learning",
+      "current_primary": "AI language learning",
+      "candidates": [
+        {
+          "keyword": "AI language learning",
+          "volume_signal": "No exact-phrase MSV found; SeekTool/OneLittleWeb treat it as a category with Duolingo ~52–56M visits",
+          "source": "seektool.ai/ranking/categories/ai_language_learning; onelittleweb.com language-learning-tools",
+          "serp_title_note": "Roundups mix 'AI language learning' with speaking-app titles"
+        },
+        {
+          "keyword": "AI language tutor",
+          "volume_signal": "No isolated MSV; SERP and blog titles use this heavily (LinguaLive, Talkio)",
+          "source": "WebSearch SERP 2026-09-03 lingualive.ai / talkio.ai blogs",
+          "serp_title_note": "Conversation-tutor framing; overlaps the ai-tutor Socratic slug"
+        },
+        {
+          "keyword": "Language AI",
+          "volume_signal": "2,400/mo US Google Ads (DataForSEO via Banger Ideas)",
+          "source": "bangerideas.com language-tutoring-application keyword table",
+          "serp_title_note": "Shorter/ambiguous vs curriculum language apps"
+        },
+        {
+          "keyword": "language learning apps",
+          "volume_signal": "49,500/mo (kwrds.ai, Sep 2026)",
+          "source": "kwrds.ai/top-keywords/language-learning",
+          "serp_title_note": "Pre-AI category; too wide"
+        },
+        {
+          "keyword": "AI tutor",
+          "volume_signal": "8,100/mo US (DataForSEO via Banger Ideas)",
+          "source": "bangerideas.com language-tutoring-application keyword table",
+          "serp_title_note": "Reserved for ai-tutor slug (Socratic K-12/subject tutoring)"
+        }
+      ],
+      "highest_volume_same_intent": "AI language learning",
+      "verdict": "OK",
+      "recommended_primary": "AI language learning",
+      "reason": "Category directories and the KB use this as the language-app class. Higher 'language learning apps' is too wide; 'AI language tutor' / 'AI tutor' collide with the Socratic tutor slug."
+    },
+    {
+      "slug": "ai-scheduling",
+      "current_primary": "AI scheduling",
+      "candidates": [
+        {
+          "keyword": "AI scheduling",
+          "volume_signal": "No exact-phrase MSV found in this pass",
+          "source": "WebSearch '\"AI scheduling\" monthly search volume' 2026-09-03",
+          "serp_title_note": "Generic; comparison pages almost never use this bare phrase as H1"
+        },
+        {
+          "keyword": "AI scheduling assistant",
+          "volume_signal": "2.4K/mo, CPC $3.18, High difficulty (MicroSaaSHQ keyword table)",
+          "source": "microsaashq.com/saas-ideas/ai-task-scheduler-114",
+          "serp_title_note": "Dule, Howie vs Clara, Simular, CalendarBridge roundups title this way"
+        },
+        {
+          "keyword": "AI scheduler",
+          "volume_signal": "~640 traffic / CPC $12.88 (navtools.ai Scheduler AI keywords)",
+          "source": "navtools.ai/tool/scheduler-ai (WebSearch snippet; fetch timed out)",
+          "serp_title_note": "Used in product copy; lower cited demand than 'assistant'"
+        },
+        {
+          "keyword": "schedule AI",
+          "volume_signal": "~540, CPC $13.31 (navtools.ai)",
+          "source": "navtools.ai/tool/scheduler-ai",
+          "serp_title_note": "Word-order flip; low volume"
+        },
+        {
+          "keyword": "AI meeting assistant",
+          "volume_signal": "3.6K/mo (MicroSaaSHQ) — mixes notes bots with scheduling",
+          "source": "microsaashq.com/keyword-research/ai-meeting-assistant",
+          "serp_title_note": "Different/adjacent intent (notes + assistant), not calendar coordination"
+        }
+      ],
+      "highest_volume_same_intent": "AI scheduling assistant",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI scheduling assistant",
+      "reason": "2026 comparison SERPs repeatedly title the class 'AI scheduling assistant' (2.4K/mo cited). Bare 'AI scheduling' has no MSV cite and is not the H1 pattern. Keep fence vs Calendly-style booking links and vs note-taker."
+    },
+    {
+      "slug": "ai-tutor",
+      "current_primary": "AI tutor",
+      "candidates": [
+        {
+          "keyword": "AI tutor",
+          "volume_signal": "8,100/mo US English Google Ads (DataForSEO); YoY −19%",
+          "source": "bangerideas.com language-tutoring-application keyword table",
+          "serp_title_note": "Code.org, Tutur, MeraTutor, UnlockGenius H1s are 'AI Tutor'"
+        },
+        {
+          "keyword": "AI tutors",
+          "volume_signal": "210/mo on tutorai.me Semrush overlay (site-specific, not global head)",
+          "source": "semrush.com/website/tutorai.me/overview/",
+          "serp_title_note": "Plural variant; not a SERP-wide head"
+        },
+        {
+          "keyword": "Socratic AI tutor",
+          "volume_signal": "No MSV; academic/topic pages",
+          "source": "emergentmind.com/topics/socratic-ai-tutor",
+          "serp_title_note": "Pedagogy descriptor, not the buyer query"
+        },
+        {
+          "keyword": "AI homework helper",
+          "volume_signal": "~21–24K/mo",
+          "source": "topaitoolsreview.com/tool/homework-ai",
+          "serp_title_note": "Answer-first class; fence vs this Socratic slug"
+        }
+      ],
+      "highest_volume_same_intent": "AI tutor",
+      "verdict": "OK",
+      "recommended_primary": "AI tutor",
+      "reason": "DataForSEO cites 8.1K/mo and product titles match. Do not steal homework-helper volume."
+    },
+    {
+      "slug": "education",
+      "current_primary": "AI Education",
+      "candidates": [
+        {
+          "keyword": "AI Education",
+          "volume_signal": "No exact MSV; SERP is AI-literacy frameworks, not tools hubs",
+          "source": "WebSearch 'AI Education' 2026-09-03 (OECD/EC AILit, AAAI, INTED)",
+          "serp_title_note": "Literacy/curriculum intent, not Alignify tools Hub"
+        },
+        {
+          "keyword": "AI in education",
+          "volume_signal": "12,100/mo, competition LOW, difficulty 24/100, CPC $0.90–$7.78 (UpperRank)",
+          "source": "upperrank.co/how-to-rank-for/ai-in-education",
+          "serp_title_note": "Established category query for EdTech/AI-in-schools content"
+        },
+        {
+          "keyword": "AI education tools",
+          "volume_signal": "No exact MSV; used as directory category (SeekTool, OneLittleWeb)",
+          "source": "seektool.ai/ranking/categories/ai_education_tools",
+          "serp_title_note": "'tools' suffix; hub-appropriate but methodology treats tools/software as inflators unless Hub needs it"
+        }
+      ],
+      "highest_volume_same_intent": "AI in education",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI in education",
+      "reason": "UpperRank cites 12.1K/mo for 'AI in education'. Bare 'AI Education' SERP is AI literacy, not the tools Hub. Do not use spoke terms (tutor/homework)."
+    },
+    {
+      "slug": "healthcare",
+      "current_primary": "AI Healthcare",
+      "candidates": [
+        {
+          "keyword": "AI Healthcare",
+          "volume_signal": "No exact MSV this pass",
+          "source": "WebSearch '\"AI Healthcare\" monthly search volume' 2026-09-03",
+          "serp_title_note": "Hits OpenAI product 'OpenAI for Healthcare' more than a tools map"
+        },
+        {
+          "keyword": "AI in healthcare",
+          "volume_signal": "Head query 27,100/mo in 2023 Dataconomy/GKP analysis (up from 9,900 in 2020); cluster monthly average then ~60.8K",
+          "source": "hitconsultant.net/2023/09/19/google-searches-for-ai-in-healthcare-up-by-300-in-3-years/",
+          "serp_title_note": "Standard industry/category phrasing; parallel to 'AI in education'"
+        },
+        {
+          "keyword": "healthcare AI",
+          "volume_signal": "Exploding Topics: search interest +500% over 5 years (index, not MSV)",
+          "source": "explodingtopics.com/blog/future-of-healthcare",
+          "serp_title_note": "Word-order flip; same hub intent"
+        },
+        {
+          "keyword": "AI medical scribe",
+          "volume_signal": "Spoke class ~6.6K category (MicroSaaSHQ)",
+          "source": "microsaashq.com/saas-ideas/ai-medical-scribe-125",
+          "serp_title_note": "Reserved for medical-scribe slug"
+        }
+      ],
+      "highest_volume_same_intent": "AI in healthcare",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI in healthcare",
+      "reason": "Cited GKP/Dataconomy volume for 'AI in healthcare' (27.1K in 2023, still the natural category query) dwarfs unsourced 'AI Healthcare'. Keep medical-scribe as the ambient-documentation spoke."
+    },
+    {
+      "slug": "hr-assistant",
+      "current_primary": "AI HR assistant",
+      "candidates": [
+        {
+          "keyword": "AI HR assistant",
+          "volume_signal": "No exact MSV; vendor and roundup H1s use this / 'HR AI assistant'",
+          "source": "WebSearch SERP 2026-09-03 (Wisq, Leena AI, Saxon, Engagedly)",
+          "serp_title_note": "Post-hire policy/helpdesk agents (Harper, Harrison), not recruiting"
+        },
+        {
+          "keyword": "HR chatbot",
+          "volume_signal": "~1,700/mo Google (Soocial; older stat); ChatGPT 'best HR chatbot' ~163 asking/mo",
+          "source": "soocial.com/hr-chatbot-statistics/; aibrandtracker.keywordseverywhere.com/prompt-category/hr-chatbot",
+          "serp_title_note": "Older synonym; ChatGPT recs mix Intercom/Zendesk with Leena/Paradox"
+        },
+        {
+          "keyword": "AI recruiting",
+          "volume_signal": "12.1K/mo (MicroSaaSHQ)",
+          "source": "microsaashq.com/keyword-research/ai-recruiting",
+          "serp_title_note": "Pre-hire employer funnel — fence"
+        }
+      ],
+      "highest_volume_same_intent": "AI HR assistant",
+      "verdict": "OK",
+      "recommended_primary": "AI HR assistant",
+      "reason": "SERP titles match the post-hire helpdesk class. 'HR chatbot' is lower/older. Do not take recruiting volume."
+    },
+    {
+      "slug": "interview-assistant",
+      "current_primary": "AI interview assistant",
+      "candidates": [
+        {
+          "keyword": "AI interview assistant",
+          "volume_signal": "No exact Google MSV; ChatGPT 'best AI interview assistant' is a tracked commercial prompt",
+          "source": "aibrandtracker interviewai.com / huru.ai; WebSearch SERP",
+          "serp_title_note": "Final Round, InterviewFox, Hedy, AceRound all H1 this phrase (candidate prep/copilot)"
+        },
+        {
+          "keyword": "AI interview",
+          "volume_signal": "~11.6K–13.9K traffic/volume (navtools.ai Interviewer.ai keyword table)",
+          "source": "navtools.ai/tool/interviewer-ai",
+          "serp_title_note": "Mixes employer AI interviewer (HireVue/Interviewer.ai) with candidate tools"
+        },
+        {
+          "keyword": "interview AI",
+          "volume_signal": "~9.1K–11.0K (navtools.ai)",
+          "source": "navtools.ai/tool/interviewer-ai",
+          "serp_title_note": "Same employer/candidate mix"
+        },
+        {
+          "keyword": "AI interviewer",
+          "volume_signal": "~1.8K–3.0K (navtools.ai)",
+          "source": "navtools.ai/tool/interviewer-ai",
+          "serp_title_note": "Employer-side screening — recruiting fence"
+        },
+        {
+          "keyword": "AI interview coach",
+          "volume_signal": "No MSV; Revarta notes the query tripled since 2025 but is prep-only",
+          "source": "revarta.com/blog/best-ai-interview-coach-2026",
+          "serp_title_note": "Subset (mock/prep), not live copilot"
+        }
+      ],
+      "highest_volume_same_intent": "AI interview assistant",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI interview assistant",
+      "reason": "'AI interview' / 'interview AI' show higher raw navtools volumes but mix employer interviewers with candidate copilots. Keep the current phrase, which SERP titles use for the candidate-side class."
+    },
+    {
+      "slug": "linkedin",
+      "current_primary": "LinkedIn AI tools",
+      "candidates": [
+        {
+          "keyword": "LinkedIn AI tools",
+          "volume_signal": "No exact MSV; first SERP is LinkedIn native Sales Navigator AI",
+          "source": "WebSearch 'LinkedIn AI tools' 2026-09-03",
+          "serp_title_note": "Native Account IQ / Lead IQ / Message Assist dominate unquoted SERP"
+        },
+        {
+          "keyword": "AI tools for LinkedIn",
+          "volume_signal": "No exact MSV; roundup H1 pattern",
+          "source": "resources.rework.com; lessie.ai/blog/ai-tools-for-linkedin; taplio.com/blog/ai-tools-linkedin",
+          "serp_title_note": "Third-party content/automation lists (Taplio, Expandi, Waalaxy) — matches KB intent"
+        },
+        {
+          "keyword": "LinkedIn automation",
+          "volume_signal": "No MSV this pass; ToS-risk outreach subclass",
+          "source": "simular.ai LinkedIn automation roundup",
+          "serp_title_note": "Narrower than branding + content + prospecting map"
+        }
+      ],
+      "highest_volume_same_intent": "LinkedIn AI tools",
+      "verdict": "OK",
+      "recommended_primary": "LinkedIn AI tools",
+      "reason": "Roundups use 'LinkedIn AI tools' / 'AI tools for LinkedIn' interchangeably with no ≥2× MSV. Stay off recruiting/HR-assistant primaries. Native Navigator pollution is expected, not a reason to rename."
+    },
+    {
+      "slug": "medical-scribe",
+      "current_primary": "AI Medical Scribe",
+      "candidates": [
+        {
+          "keyword": "AI medical scribe",
+          "volume_signal": "MicroSaaSHQ idea page 6.6K/mo; SEO primary listed as 'AI medical scribe'",
+          "source": "microsaashq.com/saas-ideas/ai-medical-scribe-125",
+          "serp_title_note": "Sunoh, Heidi, Tandem, Commure all lead with this phrase"
+        },
+        {
+          "keyword": "AI scribe",
+          "volume_signal": "6.6K/mo, CPC $2.08 (same MicroSaaSHQ table)",
+          "source": "microsaashq.com/saas-ideas/ai-medical-scribe-125",
+          "serp_title_note": "Shorter; more ambiguous outside clinical context"
+        },
+        {
+          "keyword": "ambient AI scribe",
+          "volume_signal": "No public MSV; industry/evidence jargon",
+          "source": "aimocs.com/guides/ambient; WebSearch ambient volume",
+          "serp_title_note": "Vendor/analyst language, not the consumer/clinician Google head"
+        },
+        {
+          "keyword": "AI clinical documentation",
+          "volume_signal": "'ai medical documentation' 210/mo on MicroSaaSHQ table",
+          "source": "microsaashq.com/saas-ideas/ai-medical-scribe-125",
+          "serp_title_note": "Broader EHR-doc class"
+        }
+      ],
+      "highest_volume_same_intent": "AI medical scribe",
+      "verdict": "OK",
+      "recommended_primary": "AI Medical Scribe",
+      "reason": "Buyer SERP and vendor H1s match. Bare 'AI scribe' is same 6.6K but vaguer. Keep fence vs healthcare Hub and generic note-taker."
+    },
+    {
+      "slug": "note-taker",
+      "current_primary": "AI note taker",
+      "candidates": [
+        {
+          "keyword": "AI note taker",
+          "volume_signal": "49.5K/mo, CPC $0.67, High (MicroSaaSHQ)",
+          "source": "microsaashq.com/keyword-research/ai-note-taker; microsaashq.com/saas-ideas/ai-meeting-notes-570",
+          "serp_title_note": "Meeting-bot SERP (Otter, Fireflies, Fathom, bot-free Mac apps) — matches this slug"
+        },
+        {
+          "keyword": "AI meeting notes",
+          "volume_signal": "6.6K/mo, CPC $0.76 (MicroSaaSHQ)",
+          "source": "microsaashq.com/keyword-research/ai-meeting-notes; microsaashq.com/saas-ideas/ai-meeting-notes-570",
+          "serp_title_note": "Same meeting intent, much lower volume"
+        },
+        {
+          "keyword": "AI meeting note taker",
+          "volume_signal": "8.1K/mo (MicroSaaSHQ)",
+          "source": "microsaashq.com/keyword-research/ai-meeting-note-taker",
+          "serp_title_note": "More specific; still below current"
+        },
+        {
+          "keyword": "Otter AI",
+          "volume_signal": "550K/mo (MicroSaaSHQ brand row)",
+          "source": "microsaashq.com/saas-ideas/ai-meeting-notes-570",
+          "serp_title_note": "Brand, not generic primary"
+        }
+      ],
+      "highest_volume_same_intent": "AI note taker",
+      "verdict": "OK",
+      "recommended_primary": "AI note taker",
+      "reason": "49.5K/mo is the same-intent head vs 'AI meeting notes' 6.6K. SERP is meetings, which is the fence vs notes-generator (PDF/video→study notes)."
+    },
+    {
+      "slug": "notes-generator",
+      "current_primary": "AI notes generator",
+      "candidates": [
+        {
+          "keyword": "AI notes generator",
+          "volume_signal": "No exact MSV; SeekTool category exists but is polluted with Zoom/Otter meeting tools",
+          "source": "seektool.ai/ranking/categories/ai_notes_generator",
+          "serp_title_note": "Directory name matches KB; SERP mix is why the fence exists"
+        },
+        {
+          "keyword": "PDF to notes",
+          "volume_signal": "~1.64K–1.8K/mo, CPC $0.11 (TopAITools TikoNote; Taskade keyword table)",
+          "source": "topaitoolsreview.com/tool/tikonote; aiwith.me/tools/taskade-com/",
+          "serp_title_note": "Clean same-intent long-tail (file→study notes)"
+        },
+        {
+          "keyword": "AI lecture notes",
+          "volume_signal": "NoteLM marketing page claims lecture-notes demand (not a triangulated SEO table)",
+          "source": "notelm.ai/use-cases/education/lecture-notes",
+          "serp_title_note": "Can overlap live-lecture capture (note-taker Type D)"
+        },
+        {
+          "keyword": "AI note taker",
+          "volume_signal": "49.5K/mo",
+          "source": "microsaashq.com/keyword-research/ai-note-taker",
+          "serp_title_note": "Meeting/transcript class — fence"
+        }
+      ],
+      "highest_volume_same_intent": "AI notes generator",
+      "verdict": "OK",
+      "recommended_primary": "AI notes generator",
+      "reason": "'AI note taker' is higher volume but meetings, not PDF/video→notes. 'PDF to notes' is same intent but only ~1.6–1.8K. Keep the current class name."
+    },
+    {
+      "slug": "productivity",
+      "current_primary": "AI productivity tools",
+      "candidates": [
+        {
+          "keyword": "AI productivity tools",
+          "volume_signal": "No exact-phrase MSV; OneLittleWeb/SeekTool category name; 1,519+ tools tracked",
+          "source": "onelittleweb.com/digital-market-intelligence/ai-tools/productivity/",
+          "serp_title_note": "Hub/directory label; 2026 SERP also surfaces agent/Cowork products"
+        },
+        {
+          "keyword": "AI productivity",
+          "volume_signal": "No MSV this pass",
+          "source": "WebSearch 2026-09-03",
+          "serp_title_note": "Shorter; less 'tools map' intent"
+        },
+        {
+          "keyword": "AI project management",
+          "volume_signal": "Spoke",
+          "source": "KB fence",
+          "serp_title_note": "project-management slug"
+        }
+      ],
+      "highest_volume_same_intent": "AI productivity tools",
+      "verdict": "OK",
+      "recommended_primary": "AI productivity tools",
+      "reason": "This page is the Hub; 'tools' is the category query directories use, not a vanity suffix. Do not collapse onto scheduling / note-taker / PM spokes."
+    },
+    {
+      "slug": "project-management",
+      "current_primary": "AI project management",
+      "candidates": [
+        {
+          "keyword": "AI project management",
+          "volume_signal": "No exact MSV; product H1s use this category phrasing (TaskAI, Karna, Praxis)",
+          "source": "WebSearch SERP 2026-09-03",
+          "serp_title_note": "Software category, not a job listing"
+        },
+        {
+          "keyword": "AI project manager",
+          "volume_signal": "9.9K/mo, CPC $1.01, High (MicroSaaSHQ)",
+          "source": "microsaashq.com/saas-ideas/ai-project-manager-180",
+          "serp_title_note": "Can mix software with 'hire an AI project manager' job-title intent"
+        },
+        {
+          "keyword": "AI project management tools",
+          "volume_signal": "1.9K/mo (MicroSaaSHQ); Concurate cites 7.4K global for a PM-tools GEO query",
+          "source": "microsaashq.com/saas-ideas/ai-project-manager-180; concurate.com/geo-agencies-for-project-management-companies/",
+          "serp_title_note": "Tools suffix; methodology treats as inflator vs class name"
+        }
+      ],
+      "highest_volume_same_intent": "AI project management",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI project management",
+      "reason": "'AI project manager' is 9.9K but collides with job-title searches. Product SERPs use the category 'AI project management'. Keep current."
+    },
+    {
+      "slug": "quiz-generator",
+      "current_primary": "AI quiz generator",
+      "candidates": [
+        {
+          "keyword": "AI quiz generator",
+          "volume_signal": "~3,600/mo typical, ~6,600 October peak (DataForSEO via FindSkill); MicroSaaSHQ idea cluster 12.1K; ChatGPT prompt ~1.5K asking/mo",
+          "source": "findskill.ai/learn/ai-quiz-generator/; microsaashq.com/saas-ideas/ai-quiz-generator-578; aibrandtracker prompt-category/ai-quiz-generator",
+          "serp_title_note": "Questgen, Quizgecko, Mentimeter, PDFQuiz all use this H1"
+        },
+        {
+          "keyword": "free AI quiz generator",
+          "volume_signal": "1.6K/mo (MicroSaaSHQ)",
+          "source": "microsaashq.com/saas-ideas/ai-quiz-generator-578",
+          "serp_title_note": "Modifier, not a new class"
+        },
+        {
+          "keyword": "AI quiz maker",
+          "volume_signal": "No Google MSV this pass; App Store 'quiz maker' is a different unscoped term",
+          "source": "WebSearch '\"AI quiz maker\" keyword volume'",
+          "serp_title_note": "Same-intent synonym; titles prefer generator"
+        }
+      ],
+      "highest_volume_same_intent": "AI quiz generator",
+      "verdict": "OK",
+      "recommended_primary": "AI quiz generator",
+      "reason": "DataForSEO ~3.6K (seasonal to 6.6K) plus directory/product titles. Maker/test-generator lack a ≥2× cite."
+    },
+    {
+      "slug": "recruiting",
+      "current_primary": "AI recruiting",
+      "candidates": [
+        {
+          "keyword": "AI recruiting",
+          "volume_signal": "12.1K/mo, CPC $2.49 (MicroSaaSHQ keyword page)",
+          "source": "microsaashq.com/keyword-research/ai-recruiting",
+          "serp_title_note": "Enterprise roundups: 'Best AI Recruiting Tools' (Pin, iCIMS, Humanly)"
+        },
+        {
+          "keyword": "AI recruitment",
+          "volume_signal": "No isolated MSV; UK/AU spelling in some roundups (Technova 'AI Recruitment Tools')",
+          "source": "technovapartners.com/en/insights/best-ai-recruitment-tools-2026",
+          "serp_title_note": "Same employer-side class; not shown ≥2× vs recruiting"
+        },
+        {
+          "keyword": "AI recruiting software",
+          "volume_signal": "ChatGPT prompt ~238 asking/mo (Keywords Everywhere)",
+          "source": "aibrandtracker.keywordseverywhere.com/prompt-category/ai-recruiting-software",
+          "serp_title_note": "Software suffix; same intent, lower modeled prompt demand"
+        },
+        {
+          "keyword": "AI interview assistant",
+          "volume_signal": "Candidate-side spoke",
+          "source": "intent fence",
+          "serp_title_note": "Job-seeker copilots, not TA/employer"
+        }
+      ],
+      "highest_volume_same_intent": "AI recruiting",
+      "verdict": "OK",
+      "recommended_primary": "AI recruiting",
+      "reason": "12.1K/mo cited and US roundups use recruiting. Recruitment is a spelling variant, not a proven head. Keep fences vs interview-assistant, hr-assistant, LinkedIn."
+    }
+  ]
+}

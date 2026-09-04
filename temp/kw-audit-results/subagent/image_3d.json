@@ -1,0 +1,669 @@
+{
+  "batch": "image_3d",
+  "results": [
+    {
+      "slug": "3d",
+      "current_primary": "AI 3D tools",
+      "candidates": [
+        {
+          "keyword": "AI 3D tools",
+          "volume_signal": "no isolated MSV; SERP collapses to generator products",
+          "source": "WebSearch SERP (Meshy, 3DAI Studio, Trellis/Rodin roundups)",
+          "serp_title_note": "Query 'AI 3D tools' returns AI 3D model generator landing pages, not a hub of DCC/CAD/scan."
+        },
+        {
+          "keyword": "AI 3D model generator",
+          "volume_signal": "~27k–29.4k MSV",
+          "source": "Systemaic Meshy teardown (27k); NavifyAI/navtools Meshy keywords (28.5k–29.4k)",
+          "serp_title_note": "Commercial head for the generator spoke — not the hub."
+        },
+        {
+          "keyword": "3D AI tools",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch phrase + volume queries",
+          "serp_title_note": "Same generator SERP as 'AI 3D tools'."
+        },
+        {
+          "keyword": "best 3D AI tools",
+          "volume_signal": "ChatGPT prompt demand ~0 in Keywords Everywhere sample for 'What are the best 3D AI tools?'",
+          "source": "aibrandtracker.keywordseverywhere.com/website/tripo3d.ai",
+          "serp_title_note": "Long-tail comparison phrasing, not a hub head."
+        }
+      ],
+      "highest_volume_same_intent": "AI 3D tools",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI 3D tools",
+      "reason": "Raw demand sits on 'AI 3D model generator' (~27–29k), but that is the generator spoke. Hub primary stays 'AI 3D tools' so it does not steal 3d-model-generator."
+    },
+    {
+      "slug": "3d-model-generator",
+      "current_primary": "Text-to-3D",
+      "candidates": [
+        {
+          "keyword": "Text-to-3D",
+          "volume_signal": "not listed in vendor top-keyword tables (below image-to-3D and category generator)",
+          "source": "Meshy/Tripo/3D AI Studio keyword tables on navtools/Systemaic; Creati.ai text-to-3d category is traffic not MSV",
+          "serp_title_note": "Feature pages titled 'Text to 3D'; category roundups still lead with 'AI 3D model generator'."
+        },
+        {
+          "keyword": "text to 3D",
+          "volume_signal": "no standalone MSV in snippets; ChatGPT 'best text to 3D tool' ~5/mo estimated",
+          "source": "WebSearch '\"text to 3D\" monthly search volume'; Keywords Everywhere Tripo tracker",
+          "serp_title_note": "Same-intent modality page (Meshy/Sloyd/Hyper3D Text to 3D)."
+        },
+        {
+          "keyword": "AI 3D model generator",
+          "volume_signal": "~27k–29.4k MSV; Semrush-style scrape also shows 6.6k on one meshy.ai overlay",
+          "source": "Systemaic (27k, CPC $1.70); NavifyAI 28.5k; navtools 29.4k; semtest meshy overlay 6.6k",
+          "serp_title_note": "Default SERP title pattern: Meshy, Hyper3D Rodin, eWeek 'Best AI 3D Generators' — covers text AND image."
+        },
+        {
+          "keyword": "image to 3D",
+          "volume_signal": "~33k–40k MSV (39,500 cited twice)",
+          "source": "Systemaic Meshy (39,500 / 40k); navtools Meshy 33.0k; Alpha3D/Sloyd toolbit 39.5k",
+          "serp_title_note": "High-volume modality; Hunyuan/TRELLIS often image-first. Dual-intent vs text-to-3D."
+        },
+        {
+          "keyword": "image to 3D model",
+          "volume_signal": "~32.1k–35.3k MSV",
+          "source": "Sloyd/Alpha3D toolbit (35.3k); navtools 3D AI Studio (32.1k)",
+          "serp_title_note": "Same image-to-mesh intent as 'image to 3D'."
+        }
+      ],
+      "highest_volume_same_intent": "image to 3D",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI 3D model generator",
+      "reason": "Current 'Text-to-3D' is a modality, not the category head. 'image to 3D' has the highest MSV (~33–40k) but is the other half of a dual-intent pair; SERP titles unify both under 'AI 3D model generator' (~27–29k, within ~1.5× of image-to-3D). Switch keywordEn to that umbrella, not the image-only phrase."
+    },
+    {
+      "slug": "3d-modelling",
+      "current_primary": "3D modelling",
+      "candidates": [
+        {
+          "keyword": "3D modelling",
+          "volume_signal": "App Store index 24 vs US 40; no web MSV cited",
+          "source": "ASOTools '3d model' keyword case (3d modelling 24, 3d modeling 40)",
+          "serp_title_note": "British spelling; a '3D modelling software' query drifted toward CAD (AutoCAD/SolidWorks), not DCC."
+        },
+        {
+          "keyword": "3D modeling",
+          "volume_signal": "App Store core 40; web SERP is the DCC head",
+          "source": "ASOTools; WebSearch '3D modeling'",
+          "serp_title_note": "Titles: 'Best 3D Modeling Software 2026' — Blender, Maya, 3ds Max, ZBrush, Cinema 4D."
+        },
+        {
+          "keyword": "3D modeling software",
+          "volume_signal": "9,900 (Theseolabs list); App Store 23",
+          "source": "theseolabs.com internet-games keyword list; ASOTools",
+          "serp_title_note": "Software suffix; same DCC SERP. Methodology treats software/tools suffix as index inflation."
+        },
+        {
+          "keyword": "3D modelling software",
+          "volume_signal": "no web MSV; ChatGPT 'best free 3D modelling software' appears as a sibling prompt",
+          "source": "Keywords Everywhere tinkercad.com tracker",
+          "serp_title_note": "UK spelling of the software query; weaker than US 'modeling'."
+        }
+      ],
+      "highest_volume_same_intent": "3D modeling",
+      "verdict": "SWITCH",
+      "recommended_primary": "3D modeling",
+      "reason": "Same DCC intent (Blender/Maya/ZBrush), but US '3D modeling' is the SERP title spelling and beats British 'modelling' on the only numeric pair (App Store 40 vs 24). Do not take '3D modeling software' (suffix) or CAD."
+    },
+    {
+      "slug": "3d-scanner",
+      "current_primary": "AI 3D scanner",
+      "candidates": [
+        {
+          "keyword": "AI 3D scanner",
+          "volume_signal": "no isolated MSV in snippets",
+          "source": "WebSearch phrase + '\"AI 3D scanner\" monthly search volume'",
+          "serp_title_note": "Creality Pika, Revopoint POP 4, MagiScan, KIRI Engine — hardware and phone photogrammetry both use this title."
+        },
+        {
+          "keyword": "3D scanner",
+          "volume_signal": "no exact Google MSV; Amazon/Trends show handheld 3D scanner as the hardware head",
+          "source": "Accio 'Trending 3D Scanners 2025/2026' (Google Trends: handheld >> desktop)",
+          "serp_title_note": "Generic hardware shopping (metrology + consumer), not AI-specific digitization."
+        },
+        {
+          "keyword": "3D scanner app",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch SERP (MagiScan, KIRI)",
+          "serp_title_note": "Phone photogrammetry subset of the KB."
+        },
+        {
+          "keyword": "photogrammetry",
+          "volume_signal": "no MSV in this pass",
+          "source": "KB adjacent term; not a volume hit",
+          "serp_title_note": "Technical reconstruction term, not the consumer AI-scanner query."
+        }
+      ],
+      "highest_volume_same_intent": "AI 3D scanner",
+      "verdict": "OK",
+      "recommended_primary": "AI 3D scanner",
+      "reason": "Generic '3D scanner' is the hardware category and would mix metrology SKUs. Current phrase is what product titles use for AI-assisted capture apps and devices; no same-intent alternative showed ≥2× MSV."
+    },
+    {
+      "slug": "avatar",
+      "current_primary": "Talking avatar",
+      "candidates": [
+        {
+          "keyword": "Talking avatar",
+          "volume_signal": "~720–1.8k MSV",
+          "source": "toolbit.ai talking-avatar-ai (1.8k, CPC $2.68); creati.ai TalkingAvatar (720)",
+          "serp_title_note": "Brand/tool pages; not the roundup head."
+        },
+        {
+          "keyword": "talking avatar AI",
+          "volume_signal": "~400–980 MSV",
+          "source": "toolbit 980; creati.ai 400",
+          "serp_title_note": "Same talking-head intent, lower than unprefixed talking avatar."
+        },
+        {
+          "keyword": "AI avatar generator",
+          "volume_signal": "18.1k MSV",
+          "source": "MicroSaaSHQ digital-human-ai-433 and ai-avatar-generator-305 (18.1k/mo)",
+          "serp_title_note": "Synthesia, HeyGen, Creatify, D-ID roundups — talking presenter video, not static PFP."
+        },
+        {
+          "keyword": "AI talking avatar",
+          "volume_signal": "no Google MSV; ChatGPT prompt category exists but low estimated visits",
+          "source": "aibrandtracker prompt-category/ai-talking-avatar",
+          "serp_title_note": "Same intent, not the SERP head."
+        },
+        {
+          "keyword": "AI presenter",
+          "volume_signal": "no MSV cited",
+          "source": "KB synonym; WebSearch did not return volume",
+          "serp_title_note": "Enterprise L&D synonym; roundups still say avatar generator."
+        }
+      ],
+      "highest_volume_same_intent": "AI avatar generator",
+      "verdict": "SWITCH",
+      "recommended_primary": "AI avatar generator",
+      "reason": "SERP for 'AI avatar generator' is Synthesia/HeyGen talking-video (same intent as this slug, not headshots). 18.1k vs ~1.8k for 'talking avatar' is ~10×. Keep headshot-generator fenced off."
+    },
+    {
+      "slug": "background-changer",
+      "current_primary": "AI Background Changer",
+      "candidates": [
+        {
+          "keyword": "AI background changer",
+          "volume_signal": "~4.5k–9.9k MSV",
+          "source": "TechList phot.ai (4,540); Semrush overlay mokker.ai (9,900, CPC $0.14)",
+          "serp_title_note": "Picasso IA, OpenArt, Pixelbin, Adobe Express — replace/swap background, not just cutout."
+        },
+        {
+          "keyword": "background change AI",
+          "volume_signal": "12,100 MSV",
+          "source": "Semrush overlay mokker.ai",
+          "serp_title_note": "Same replace intent; 12.1k vs 9.9k is <1.5×."
+        },
+        {
+          "keyword": "AI background remover",
+          "volume_signal": "14,800 MSV",
+          "source": "Semrush overlay removal.ai (Jul 2026)",
+          "serp_title_note": "Cutout/transparent PNG intent; KB splits changer (replace) vs remover."
+        },
+        {
+          "keyword": "background remover",
+          "volume_signal": "3.8M MSV",
+          "source": "Systemaic Photoroom teardown",
+          "serp_title_note": "Generic remove-bg head; different job from scene swap."
+        }
+      ],
+      "highest_volume_same_intent": "background change AI",
+      "verdict": "OK",
+      "recommended_primary": "AI Background Changer",
+      "reason": "Closest same-intent variant ('background change AI' 12.1k) is <1.5× vs Semrush 9.9k for the current phrase. Remover terms are higher (14.8k / 3.8M) but are cutout intent, not replace."
+    },
+    {
+      "slug": "cad",
+      "current_primary": "CAD",
+      "candidates": [
+        {
+          "keyword": "CAD",
+          "volume_signal": "no isolated MSV (too short); category name in KB",
+          "source": "KB 'CAD / 工程几何'; WebSearch",
+          "serp_title_note": "Bare CAD is AutoCAD/SolidWorks navigational + definitional."
+        },
+        {
+          "keyword": "CAD software",
+          "volume_signal": "673,000 MSV",
+          "source": "Semrush organic keywords for autodesk.com (Jun 2026) and shapr3d.com (Jul 2026)",
+          "serp_title_note": "Engineering CAD suites. Software suffix; would dwarf AI-CAD and mix generic drafting demand."
+        },
+        {
+          "keyword": "AI CAD",
+          "volume_signal": "no Google MSV; ChatGPT 'best AI CAD generator' ~110 people/mo estimated",
+          "source": "aibrandtracker prompt-category/ai-cad-generator; WebSearch SERP",
+          "serp_title_note": "Zoo, Leo AI, BuildCAD, Fusion copilots — same engineering/text-to-CAD intent as the KB."
+        },
+        {
+          "keyword": "text to CAD",
+          "volume_signal": "no MSV; product traffic not query volume",
+          "source": "WebSearch '\"text to CAD\" monthly search volume'",
+          "serp_title_note": "AI-CAD subset (Zoo/Adam), not the full CAD spoke."
+        }
+      ],
+      "highest_volume_same_intent": "CAD",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "CAD",
+      "reason": "'CAD software' at 673k is the inflated software-suffix category, not an Alignify AI-tools head. 'AI CAD' matches the page but has negligible measured demand. Keep engineering 'CAD'; do not bleed into DCC 3D."
+    },
+    {
+      "slug": "headshot-generator",
+      "current_primary": "AI Headshot Generator",
+      "candidates": [
+        {
+          "keyword": "AI headshot generator",
+          "volume_signal": "~8.1k–26.5k MSV (Semrush 22.2k; Similarweb 26.5k); MicroSaaS idea page 40.5k",
+          "source": "Semrush headshotpro.com (22,200, CPC $2.68); Oryndex Aragon Similarweb (26,520); KWVerdit 8,100; MicroSaaSHQ 40.5k",
+          "serp_title_note": "Professional LinkedIn headshot tools (HeadshotPro, Aragon)."
+        },
+        {
+          "keyword": "free AI headshot generator",
+          "volume_signal": "9,900 MSV",
+          "source": "Semrush headshotpro.com",
+          "serp_title_note": "Free modifier; same intent, lower than unprefixed generator in Semrush."
+        },
+        {
+          "keyword": "AI headshot",
+          "volume_signal": "no isolated MSV in this pass",
+          "source": "WebSearch",
+          "serp_title_note": "Shorter; still professional-photo intent."
+        },
+        {
+          "keyword": "AI professional headshot",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch volume query",
+          "serp_title_note": "Long-tail of the same SERP."
+        }
+      ],
+      "highest_volume_same_intent": "AI headshot generator",
+      "verdict": "OK",
+      "recommended_primary": "AI Headshot Generator",
+      "reason": "Semrush/Similarweb put the current phrase at ~22–27k, above free/long-tail variants. Distinct from talking-avatar and generic image-generator."
+    },
+    {
+      "slug": "image",
+      "current_primary": "AI Image",
+      "candidates": [
+        {
+          "keyword": "AI Image",
+          "volume_signal": "no isolated MSV (too broad to extract)",
+          "source": "WebSearch '\"AI image\" monthly search volume'",
+          "serp_title_note": "Bare phrase is not a stable commercial query."
+        },
+        {
+          "keyword": "AI image tools",
+          "volume_signal": "no MSV; SERP is generator roundups",
+          "source": "WebSearch 'AI image tools'",
+          "serp_title_note": "Titles become 'best AI image generators' (Zapier, Firefly vs Recraft)."
+        },
+        {
+          "keyword": "AI image generator",
+          "volume_signal": "~2.7M related (MicroSaaS); 'best AI image generator' ChatGPT demand ~280k people/mo scaled",
+          "source": "MicroSaaSHQ related keywords; Keywords Everywhere prompt-category/ai-image-generator",
+          "serp_title_note": "Generator spoke head — fence vs this hub."
+        },
+        {
+          "keyword": "AI image editor",
+          "volume_signal": "~90.5k–137k MSV",
+          "source": "toolbit PhotoEditor.ai 137.2k; Semrush logoai.com 90.5k",
+          "serp_title_note": "Editor spoke — fence."
+        }
+      ],
+      "highest_volume_same_intent": "AI Image",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Image",
+      "reason": "Hub map. Highest raw queries are image-generator / editor / enhancer spokes. Do not retarget keywordEn to those heads."
+    },
+    {
+      "slug": "image-editor",
+      "current_primary": "AI Image Editor",
+      "candidates": [
+        {
+          "keyword": "AI image editor",
+          "volume_signal": "~90.5k–137.2k MSV",
+          "source": "toolbit PhotoEditor.ai (137.2k, CPC $0.82); Semrush logoai.com (90,500)",
+          "serp_title_note": "Online AI photo/image editors; distinct from generate-from-scratch."
+        },
+        {
+          "keyword": "AI photo editor",
+          "volume_signal": "131.8k MSV",
+          "source": "toolbit PhotoEditor.ai",
+          "serp_title_note": "Near-synonym; 131.8k vs 137.2k is <1.5×."
+        },
+        {
+          "keyword": "photo editor AI",
+          "volume_signal": "14.2k MSV",
+          "source": "toolbit PhotoEditor.ai",
+          "serp_title_note": "Word-order flip; much lower."
+        },
+        {
+          "keyword": "AI image editing",
+          "volume_signal": "long-tails ~50–110 (e.g. 'ai for image editing' 110)",
+          "source": "SEO Zen Lab cluster table",
+          "serp_title_note": "Informational gerund, not the tool head."
+        }
+      ],
+      "highest_volume_same_intent": "AI image editor",
+      "verdict": "OK",
+      "recommended_primary": "AI Image Editor",
+      "reason": "Current phrase is the volume head (~91–137k), tied with 'AI photo editor' (~132k). Stay split from generator and enhancer."
+    },
+    {
+      "slug": "image-enhancer",
+      "current_primary": "AI Image Enhancer",
+      "candidates": [
+        {
+          "keyword": "AI image enhancer",
+          "volume_signal": "89.2k MSV",
+          "source": "navtools.ai VanceAI top keywords",
+          "serp_title_note": "Quality/clarity tools (VanceAI, LetsEnhance, Topaz)."
+        },
+        {
+          "keyword": "image enhancer",
+          "volume_signal": "385.3k MSV",
+          "source": "toolbit LetsEnhance; navtools VanceAI",
+          "serp_title_note": "Unprefixed generic; includes non-AI enhancers. Broader than this spoke."
+        },
+        {
+          "keyword": "enhance image",
+          "volume_signal": "200.4k MSV",
+          "source": "toolbit LetsEnhance",
+          "serp_title_note": "Verb query; mixed how-to + tools."
+        },
+        {
+          "keyword": "AI image upscaler",
+          "volume_signal": "Semrush overlays conflict: 1,900 vs 22,200",
+          "source": "imgupscaler.com Semrush copies (Jul 1.9k vs Jun 22.2k)",
+          "serp_title_note": "Resolution-only subset of enhancer (upscale vs denoise/deblur/face restore)."
+        },
+        {
+          "keyword": "image upscaler",
+          "volume_signal": "27.1k–458k depending on overlay (unreliable spread)",
+          "source": "imgupscaler.com Semrush 27.1k / 301k; AITrustList 458.8k",
+          "serp_title_note": "Upscale-only; not the full enhancer job."
+        }
+      ],
+      "highest_volume_same_intent": "AI image enhancer",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI Image Enhancer",
+      "reason": "'image enhancer' (385k) and upscaler terms are raw-higher but either drop AI or narrow to resolution. Same-intent AI head is the current phrase (~89k)."
+    },
+    {
+      "slug": "image-generator",
+      "current_primary": "AI image generator",
+      "candidates": [
+        {
+          "keyword": "AI image generator",
+          "volume_signal": "MicroSaaS related list 2.7M; ChatGPT 'best AI image generator' ~280k people/mo scaled from Google",
+          "source": "MicroSaaSHQ digital-human related keywords; Keywords Everywhere prompt-category/ai-image-generator",
+          "serp_title_note": "Zapier/eWeek-style 'best AI image generators' — Midjourney, Firefly, Ideogram, Flux."
+        },
+        {
+          "keyword": "AI art generator",
+          "volume_signal": "201k MSV",
+          "source": "MicroSaaSHQ saas-ideas/ai-art-generator-303",
+          "serp_title_note": "Art-leaning sibling; not the commercial T2I category title in 2026 roundups."
+        },
+        {
+          "keyword": "text to image",
+          "volume_signal": "no clean head MSV; 'ai image generator from text' 49.5k",
+          "source": "MicroSaaSHQ keyword-research/ai-image-generator-from-text",
+          "serp_title_note": "Technical modality; product SERPs still say image generator."
+        },
+        {
+          "keyword": "AI image generator from image",
+          "volume_signal": "90.5k MSV",
+          "source": "MicroSaaSHQ keyword-research/ai-image-generator-from-image",
+          "serp_title_note": "I2I subset, not the T2I category head."
+        }
+      ],
+      "highest_volume_same_intent": "AI image generator",
+      "verdict": "OK",
+      "recommended_primary": "AI image generator",
+      "reason": "SERP titles and related-keyword tables treat this as the T2I head. 'AI art generator' (201k) is lower and more artistic; text-to-image is the modality label, not the tool query."
+    },
+    {
+      "slug": "image-relighting",
+      "current_primary": "AI Image Relighting",
+      "candidates": [
+        {
+          "keyword": "AI image relighting",
+          "volume_signal": "no MSV in snippets",
+          "source": "WebSearch '\"AI image relighting\" monthly search volume'",
+          "serp_title_note": "Academic/product mix: PIXLRelight, TokenLight papers plus Higgsfield/Luminar Relight."
+        },
+        {
+          "keyword": "AI relighting",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch",
+          "serp_title_note": "Shorter; still niche."
+        },
+        {
+          "keyword": "IC-Light",
+          "volume_signal": "no MSV; GitHub/project traffic not query volume",
+          "source": "WebSearch IC-Light; iclightai.com",
+          "serp_title_note": "Open-source/model brand, not a generic primary."
+        },
+        {
+          "keyword": "photo relighting AI",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch volume query",
+          "serp_title_note": "Possible consumer phrasing; no volume signal to beat current."
+        }
+      ],
+      "highest_volume_same_intent": "AI Image Relighting",
+      "verdict": "AMBIGUOUS",
+      "recommended_primary": "AI Image Relighting",
+      "reason": "No usable MSV; SERP is papers + IC-Light brand, not a competing commercial phrase with ≥2× demand. Keep the precise intent label; do not switch to a model name."
+    },
+    {
+      "slug": "interior-design",
+      "current_primary": "AI interior design",
+      "candidates": [
+        {
+          "keyword": "AI interior design",
+          "volume_signal": "Treendly 27.1k/mo; navtools Interior AI 7.2k",
+          "source": "treendly.com/trend/ai-interior-design; navtools.ai/tool/interior-ai",
+          "serp_title_note": "Homeowner redesign visualization; keep split from listing staging."
+        },
+        {
+          "keyword": "interior design AI",
+          "volume_signal": "7.5k MSV",
+          "source": "navtools Interior AI",
+          "serp_title_note": "Word-order flip; ~same as navtools 7.2k."
+        },
+        {
+          "keyword": "AI room redesign",
+          "volume_signal": "17.8k MSV",
+          "source": "toolbit RoomGPT",
+          "serp_title_note": "Same homeowner redesign intent; 17.8k vs Treendly 27.1k does not beat current."
+        },
+        {
+          "keyword": "AI room design",
+          "volume_signal": "~5.4k–13.3k MSV",
+          "source": "toolbit RoomGPT 13.3k; Semrush airoomplanner 5,400",
+          "serp_title_note": "Same cluster; not ≥2× the category phrase."
+        }
+      ],
+      "highest_volume_same_intent": "AI interior design",
+      "verdict": "OK",
+      "recommended_primary": "AI interior design",
+      "reason": "Treendly puts the current category phrase at 27.1k, above room-redesign/room-design variants. Stay split from virtual-staging (listing/MLS)."
+    },
+    {
+      "slug": "logo-generator",
+      "current_primary": "AI logo generator",
+      "candidates": [
+        {
+          "keyword": "AI logo generator",
+          "volume_signal": "~49.5k–74k MSV (Jul Semrush 49.5k; Logopony/Brandmark 62.8k; Mar Semrush 74k)",
+          "source": "Semrush logoai.com Jul 2026 49,500; toolbit Logopony 62.8k; navtools Brandmark 62.8k; Semrush logoai Mar 2026 74,000",
+          "serp_title_note": "Default AI logo-tool query."
+        },
+        {
+          "keyword": "AI logo maker",
+          "volume_signal": "~18.1k–22.1k MSV",
+          "source": "Semrush logoai Mar 18,100; Logopony/Brandmark 22.1k",
+          "serp_title_note": "Same intent; clearly below generator."
+        },
+        {
+          "keyword": "logo maker AI",
+          "volume_signal": "36.5k MSV",
+          "source": "toolbit Logopony; navtools Brandmark",
+          "serp_title_note": "Same intent; still below AI logo generator."
+        },
+        {
+          "keyword": "logo generator",
+          "volume_signal": "115.4k MSV",
+          "source": "toolbit Logopony",
+          "serp_title_note": "Unprefixed generic logo makers; not AI-only."
+        }
+      ],
+      "highest_volume_same_intent": "AI logo generator",
+      "verdict": "OK",
+      "recommended_primary": "AI logo generator",
+      "reason": "AI-prefixed head (~50–74k) beats maker flips (~18–37k). Unprefixed 'logo generator' (115k) is generic non-AI demand — keep intent."
+    },
+    {
+      "slug": "poster-generator",
+      "current_primary": "AI Poster Generator",
+      "candidates": [
+        {
+          "keyword": "AI poster generator",
+          "volume_signal": "11.8k MSV",
+          "source": "creati.ai/ai-tools/ai-poster-maker top keywords",
+          "serp_title_note": "Poster/flyer AI tools."
+        },
+        {
+          "keyword": "AI poster maker",
+          "volume_signal": "10.2k MSV",
+          "source": "creati.ai same table",
+          "serp_title_note": "Same intent; 10.2k vs 11.8k <1.5×."
+        },
+        {
+          "keyword": "poster maker AI",
+          "volume_signal": "3.4k MSV",
+          "source": "creati.ai",
+          "serp_title_note": "Word-order flip, lower."
+        },
+        {
+          "keyword": "AI poster generator free",
+          "volume_signal": "2.9k MSV",
+          "source": "creati.ai",
+          "serp_title_note": "Free modifier."
+        }
+      ],
+      "highest_volume_same_intent": "AI poster generator",
+      "verdict": "OK",
+      "recommended_primary": "AI Poster Generator",
+      "reason": "Current phrase leads the same-intent set (11.8k vs maker 10.2k)."
+    },
+    {
+      "slug": "social-cards-generator",
+      "current_primary": "Social Cards Generator",
+      "candidates": [
+        {
+          "keyword": "Social Cards Generator",
+          "volume_signal": "no MSV found (likely near-zero)",
+          "source": "WebSearch '\"social cards generator\" monthly search volume'",
+          "serp_title_note": "Not a natural Google query; KB jargon for OG/Twitter cards."
+        },
+        {
+          "keyword": "OG image generator",
+          "volume_signal": "2.0k MSV, CPC $0.17",
+          "source": "dofollow.tools/product/myogimage-com keyword table",
+          "serp_title_note": "Vercel @vercel/og docs, npm, hosted OG APIs — same 1200×630 link-preview intent."
+        },
+        {
+          "keyword": "Open Graph image generator",
+          "volume_signal": "no MSV; long-tail of OG image generator",
+          "source": "WebSearch SERP (Vercel docs)",
+          "serp_title_note": "Developer spelling of the same job."
+        },
+        {
+          "keyword": "Twitter card generator",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch",
+          "serp_title_note": "Platform-specific subset."
+        }
+      ],
+      "highest_volume_same_intent": "OG image generator",
+      "verdict": "SWITCH",
+      "recommended_primary": "OG image generator",
+      "reason": "'Social Cards Generator' has no measurable demand. 'OG image generator' (~2k) is the developer/product query for the same 1200×630 share-preview job. Do not steal generic AI image generator."
+    },
+    {
+      "slug": "tattoo-generator",
+      "current_primary": "AI Tattoo Generator",
+      "candidates": [
+        {
+          "keyword": "AI tattoo generator",
+          "volume_signal": "~98,000 monthly US queries (editorial, +55% YoY)",
+          "source": "fast.io/resources/best-ai-tattoo-generators-2026",
+          "serp_title_note": "Dedicated roundups (BlackInk, Ink Studio, MyInk) — tattoo design + try-on, not generic T2I."
+        },
+        {
+          "keyword": "tattoo generator AI",
+          "volume_signal": "no separate MSV",
+          "source": "WebSearch",
+          "serp_title_note": "Same SERP, weaker title pattern."
+        },
+        {
+          "keyword": "AI tattoo design",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch volume query",
+          "serp_title_note": "Design-noun variant; roundups still title generator."
+        },
+        {
+          "keyword": "tattoo AI",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch",
+          "serp_title_note": "Ambiguous (AI tattoos as a style vs generators)."
+        }
+      ],
+      "highest_volume_same_intent": "AI tattoo generator",
+      "verdict": "OK",
+      "recommended_primary": "AI Tattoo Generator",
+      "reason": "US demand cited at ~98k for the current phrase; SERP titles match. No same-intent alternative showed a higher head."
+    },
+    {
+      "slug": "virtual-staging",
+      "current_primary": "AI virtual staging",
+      "candidates": [
+        {
+          "keyword": "AI virtual staging",
+          "volume_signal": "no isolated MSV; tool traffic 51k–60k visits is not MSV",
+          "source": "WebSearch volume query; toolbit Virtual Staging AI 60.4k visits",
+          "serp_title_note": "SaaS listing-staging products; MLS/disclosure cluster."
+        },
+        {
+          "keyword": "virtual staging",
+          "volume_signal": "5,400 MSV",
+          "source": "Semrush collov.ai organic keywords (Jan 2026 overlay)",
+          "serp_title_note": "Includes traditional (human) staging services, not only AI tools."
+        },
+        {
+          "keyword": "virtual staging AI",
+          "volume_signal": "no MSV cited",
+          "source": "WebSearch",
+          "serp_title_note": "Word-order flip of current."
+        },
+        {
+          "keyword": "AI interior design",
+          "volume_signal": "7.2k–27.1k (see interior-design)",
+          "source": "navtools / Treendly",
+          "serp_title_note": "Homeowner redesign — fence; do not merge."
+        }
+      ],
+      "highest_volume_same_intent": "AI virtual staging",
+      "verdict": "KEEP_INTENT",
+      "recommended_primary": "AI virtual staging",
+      "reason": "Unprefixed 'virtual staging' (5.4k) mixes human staging vendors. Keep the AI listing-staging phrase and stay split from interior-design."
+    }
+  ]
+}
