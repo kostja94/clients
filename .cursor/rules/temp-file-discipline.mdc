@@ -1,0 +1,27 @@
+---
+description: 临时文件必须生成在 @temp (e:\clients\temp)，禁止散落在各客户目录，且每工作日开始时清理一次
+globs:
+alwaysApply: true
+---
+
+# 临时文件纪律
+
+## 规则
+
+1. **任何一次性/中间产物**（调试脚本、截图、dump、分析输出、下载的临时素材、预览图等）一律写入
+   `e:\clients\temp\`（即 `@temp`），**严禁**生成到客户策略仓（如 `frontierrounds\`、
+   `luciusai\` 等）或任意项目源仓的目录里。
+2. 需要最终留档的成果物（SVG、PNG、脚本、报告 md）应直接生成到**正式资产目录**
+   （各客户仓的 `branding/`、`scripts/` 等），不要先落 temp 再搬运。
+3. 生成于 `@temp` 中的文件命名建议带任务线索（如 `fb_analyze.py`、`audit_xxx.json`），
+   便于当日识别与清理。
+4. **每工作日首次对话时**：主动清理 `e:\clients\temp\` 全部内容（清空即可，保留目录本身），
+   并向用户一句话汇报清理结果（删除数量）。若遇到疑似需保留的文件先询问，不擅自删除
+   其他正式位置的内容。
+
+## 适用目录示例（不得写临时文件）
+
+- `e:\clients\frontierrounds\`
+- `e:\clients\luciusai\`
+- `e:\clients\Alignify\`（仅可在其已有脚本目录放正式脚本）
+- 任何 `E:\自有部署项目\*` 部署仓
