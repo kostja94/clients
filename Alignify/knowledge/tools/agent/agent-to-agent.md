@@ -6,7 +6,7 @@
 
 **站内对照**：正式页 **`/blog/agent-to-agent`** · slug **`agent-to-agent`**
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md)（锚点 [`#agent-to-agent-tools`](../../product/alignify-keywords-tools.md#agent-to-agent-tools)）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md)（锚点 [`#agent-to-agent-tools`](../../product/alignify-keywords-tools.md#agent-to-agent-tools)）· `keywordEn`: **agent to agent**（Secondary：A2A Agent Network）
 
 ---
 

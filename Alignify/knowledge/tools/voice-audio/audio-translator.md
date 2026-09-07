@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/audio-translator](https://alignify.co/tools/audio-translator) · `/tools/audio-translator` · [alignify.co/zh/tools/audio-translator](https://alignify.co/zh/tools/audio-translator) · `/zh/tools/audio-translator` · `content/tools/zh/audio-translator.md`、`content/tools/en/audio-translator.md` · slug **`audio-translator`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#audio-translator-tools`](../../product/alignify-keywords-tools.md#audio-translator-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#audio-translator-tools`](../../product/alignify-keywords-tools.md#audio-translator-tools) · `keywordEn`: **AI Audio Translator**（Secondary：AI Audio Translation）
 
 ## 与相邻 slug 分流（避免混买混评）
 

@@ -8,7 +8,7 @@
 
 **站内对照**：[alignify.co/tools/lip-sync](https://alignify.co/tools/lip-sync) · [alignify.co/zh/tools/lip-sync](https://alignify.co/zh/tools/lip-sync) · `/tools/lip-sync` · `/zh/tools/lip-sync` · `content/tools/zh/lip-sync.md`、`content/tools/en/lip-sync.md` · slug **`lip-sync`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#lip-sync-tools`](../../product/alignify-keywords-tools.md#lip-sync-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#lip-sync-tools`](../../product/alignify-keywords-tools.md#lip-sync-tools) · `keywordEn`: **lip sync AI**（Secondary：AI lip sync）
 
 ## 与相邻 slug 分流（避免混买混评）
 

@@ -4,7 +4,7 @@
 
 **站内对照**：正式页 **`/tools/llm-for-coding`**、**`/zh/tools/llm-for-coding`** · `content/tools/en|zh/llm-for-coding.md`
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#llm-for-coding-tools`
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#llm-for-coding-tools` · `keywordEn`: **LLM for coding**（Secondary：AI Coding LLM）
 
 **Hub · 五轴分流 · 读榜清单**：[llm.md](llm.md) · **排行快照**：[llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md) §Coding
 

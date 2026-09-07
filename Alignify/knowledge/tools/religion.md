@@ -4,7 +4,7 @@
 
 **站内对照**：[alignify.co/tools/religion](https://alignify.co/tools/religion) · `/tools/religion` · [alignify.co/zh/tools/religion](https://alignify.co/zh/tools/religion) · `/zh/tools/religion` · `content/tools/zh/religion.md`、`content/tools/en/religion.md` · slug **`religion`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 [`#religion-tools`](../../keywords/alignify-keywords-tools.md#religion-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 [`#religion-tools`](../../keywords/alignify-keywords-tools.md#religion-tools) · `keywordEn`: **AI religious tools**（Secondary：AI Religion）
 
 ## 与相邻 slug 分流（避免混买混评）
 

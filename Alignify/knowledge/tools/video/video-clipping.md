@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/video-clipping](https://alignify.co/tools/video-clipping) · `/tools/video-clipping` · [alignify.co/zh/tools/video-clipping](https://alignify.co/zh/tools/video-clipping) · `/zh/tools/video-clipping` · `content/tools/zh/video-clipping.md`、`content/tools/en/video-clipping.md` · slug **`video-clipping`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-clipping-tools`](../../product/alignify-keywords-tools.md#video-clipping-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-clipping-tools`](../../product/alignify-keywords-tools.md#video-clipping-tools) · `keywordEn`: **AI video clipper**（Secondary：AI Video Clipping）
 
 **站内相邻**：[video.md](video.md)（Hub）· [video-editor.md](video-editor.md) · [video-generator.md](video-generator.md)
 

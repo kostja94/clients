@@ -4,7 +4,7 @@
 
 **站内对照**：正式页 **`/tools/llm-for-math`**、**`/zh/tools/llm-for-math`** · `content/tools/en|zh/llm-for-math.md`
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#llm-for-math-tools`
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#llm-for-math-tools` · `keywordEn`: **LLM for math**（Secondary：AI Math LLM）
 
 **Hub · 五轴分流**：[llm.md](llm.md) · **排行快照**：[llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md) §Math
 

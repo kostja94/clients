@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/workflow](https://alignify.co/tools/workflow) · slug **`workflow`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 [`#workflow-tools`](../../keywords/alignify-keywords-tools.md#workflow-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 [`#workflow-tools`](../../keywords/alignify-keywords-tools.md#workflow-tools) · `keywordEn`: **AI workflow**（Secondary：Workflow automation）
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 

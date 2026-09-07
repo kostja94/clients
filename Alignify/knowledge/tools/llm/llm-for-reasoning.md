@@ -4,7 +4,7 @@
 
 **站内对照**：正式页 **`/tools/llm-for-reasoning`**、**`/zh/tools/llm-for-reasoning`** · `content/tools/en|zh/llm-for-reasoning.md`
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#llm-for-reasoning-tools`
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#llm-for-reasoning-tools` · `keywordEn`: **reasoning model**（Secondary：AI Reasoning LLM）
 
 **Hub · HLE 完整定义 · 五轴分流**：[llm.md](llm.md) · **排行快照**：[llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md) §Reasoning
 

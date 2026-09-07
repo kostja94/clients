@@ -6,7 +6,7 @@
 
 **站内对照**：待上线 · slug **`text-translator`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（[`#text-translator-tools`](../../keywords/alignify-keywords-tools.md#text-translator-tools)）
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（[`#text-translator-tools`](../../keywords/alignify-keywords-tools.md#text-translator-tools)） · `keywordEn`: **AI translator**（Secondary：AI text translation）
 
 以下条目可任意顺序阅读；**不是**文章体例。
 

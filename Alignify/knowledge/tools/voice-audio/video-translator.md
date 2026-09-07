@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/video-translator](https://alignify.co/tools/video-translator) · `/tools/video-translator` · [alignify.co/zh/tools/video-translator](https://alignify.co/zh/tools/video-translator) · `/zh/tools/video-translator` · `content/tools/zh/video-translator.md`、`content/tools/en/video-translator.md` · slug **`video-translator`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-translator-tools`](../../product/alignify-keywords-tools.md#video-translator-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#video-translator-tools`](../../product/alignify-keywords-tools.md#video-translator-tools) · `keywordEn`: **AI Video Translator**（Secondary：AI Video Translation）
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 

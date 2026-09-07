@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/blog/inference-infrastructure](https://alignify.co/blog/inference-infrastructure) · [alignify.co/zh/blog/inference-infrastructure](https://alignify.co/zh/blog/inference-infrastructure) · 正文 md 已同步至部署仓 `alignify-by-kostja/content/blog/{en|zh}/inference-infrastructure.md`（上下文仓不再保留 JSON） · slug **`inference-infrastructure`**
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md)（待新增锚点 `#inference-infrastructure-tools`）· `keywordEn`: **AI Inference Infrastructure** · `keywordZh`: **AI推理平台（底层：AI推理基础设施）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md)（待新增锚点 `#inference-infrastructure-tools`）· `keywordEn`: **AI inference platform**（Secondary：AI Inference Infrastructure）· `keywordZh`: **AI推理平台（底层：AI推理基础设施）
 
 ## 与相邻 slug 分流
 

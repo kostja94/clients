@@ -4,7 +4,7 @@
 
 **站内对照**：[alignify.co/tools/directory](https://alignify.co/tools/directory) · `content/tools/en/directory.md` · [alignify.co/zh/tools/directory](https://alignify.co/zh/tools/directory) · `content/tools/zh/directory.md` · slug **`directory`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 `#directory-tools`
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 `#directory-tools` · `keywordEn`: **AI tools directory**（Secondary：AI Directory）
 
 ### 注：Alignify 自身定位
 

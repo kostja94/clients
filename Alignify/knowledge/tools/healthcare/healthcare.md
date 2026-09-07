@@ -4,7 +4,7 @@
 
 **站内对照**：[alignify.co/tools/healthcare](https://alignify.co/tools/healthcare) · `/tools/healthcare` · [alignify.co/zh/tools/healthcare](https://alignify.co/zh/tools/healthcare) · `/zh/tools/healthcare` · `content/tools/zh/healthcare.md`、`content/tools/en/healthcare.md` · slug **`healthcare`**
 
-**Tools 关键词与意图**：`alignify-keywords-tools.md` 中尚未配置 `#healthcare-tools` 锚点；关键词意图映射待 Tools 页上线时补入。
+**Tools 关键词与意图**：`alignify-keywords-tools.md` 中尚未配置 `#healthcare-tools` 锚点；关键词意图映射待 Tools 页上线时补入。 · `keywordEn`: **AI in healthcare**（Secondary：AI Healthcare）
 
 **与相邻 slug 分流**：`healthcare`（医疗 AI 全景）↔ `medical-scribe`（环境 AI 文书，已拆分并发布 Blog，详见 [medical-scribe.md](medical-scribe.md) — `/blog/medical-scribe`、`/zh/blog/medical-scribe`）↔ `radiology-ai`（放射学 AI，30+ 厂商，待拆分）。当前 Tools 配置中 `healthcare` 已上线；`medical-scribe` 已发布 Blog 正式页。
 

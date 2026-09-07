@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/3d-modelling](https://alignify.co/tools/3d-modelling) · [alignify.co/zh/tools/3d-modelling](https://alignify.co/zh/tools/3d-modelling) · `content/tools/en/3d-modelling.md` · `content/tools/zh/3d-modelling.md`
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#3d-modelling-tools`](../../keywords/alignify-keywords-tools.md#3d-modelling-tools)）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#3d-modelling-tools`](../../keywords/alignify-keywords-tools.md#3d-modelling-tools)）· `keywordEn`: **3D modeling**（Secondary：3D modelling）
 
 **站内相邻**：[3d.md](3d.md) · [3d-model-generator.md](3d-model-generator.md) · [3d-scanner.md](3d-scanner.md) · [cad.md](cad.md)
 

@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/zh/tools/avatar](https://alignify.co/zh/tools/avatar) · `content/tools/zh/avatar.md` · `content/tools/en/avatar.md`
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#avatar-tools`](../../keywords/alignify-keywords-tools.md#avatar-tools)）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#avatar-tools`](../../keywords/alignify-keywords-tools.md#avatar-tools)）· `keywordEn`: **AI avatar generator**（Secondary：Talking avatar）
 
 **站内相邻**：[image.md](image.md) · [image-generator.md](image-generator.md) · [headshot-generator.md](headshot-generator.md) · [image-to-video.md](../video/image-to-video.md)
 

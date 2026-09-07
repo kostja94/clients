@@ -6,7 +6,7 @@
 
 **站内对照**：待上线 Tools 页时对齐（建议 slug：`ai-scheduling`，路由 `/tools/ai-scheduling`、`/zh/tools/ai-scheduling`）。
 
-**Tools 关键词与 slug 映射**：待 `tools-pages-config.ts` 收录后补 [`alignify-keywords-tools.md`](../../keywords/alignify-keywords-tools.md) 锚点。
+**Tools 关键词与 slug 映射**：待 `tools-pages-config.ts` 收录后补 [`alignify-keywords-tools.md`](../../keywords/alignify-keywords-tools.md) 锚点 · `keywordEn`: **AI scheduling assistant**（Secondary：AI scheduling）。
 
 以下条目可任意顺序阅读；**不是**文章体例，无「第一章、第二章」叙事线。
 

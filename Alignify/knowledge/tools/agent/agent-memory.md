@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/blog/agent-memory](https://alignify.co/blog/agent-memory) · slug **`agent-memory`**
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md)（锚点 [`#agent-memory-tools`](../../product/alignify-keywords-tools.md#agent-memory-tools)）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md)（锚点 [`#agent-memory-tools`](../../product/alignify-keywords-tools.md#agent-memory-tools)）· `keywordEn`: **AI agent memory**（Secondary：Agent Memory Layer）
 
 ---
 

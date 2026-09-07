@@ -6,6 +6,8 @@
 
 **站内对照**：**待**上线 · slug **`agent-for-desktop`**
 
+**Tools 关键词与 slug 映射**：待 `tools-pages-config` 收录 slug `agent-for-desktop` 后补全 · `keywordEn`: **AI desktop agent**（Secondary：Agent on desktop / 桌面智能体）。
+
 **站内相邻**：[ai-employee.md](ai-employee.md) · [work-agent.md](work-agent.md) · [agent-skills.md](agent-skills.md) · [browser.md](browser.md) · [multi-agent.md](multi-agent.md)
 
 ---

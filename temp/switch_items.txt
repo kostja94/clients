@@ -1,0 +1,18 @@
+first item full:
+{
+ "slug": "3d",
+ "batch": "image_3d",
+ "current_primary": "AI 3D tools",
+ "final_verdict": "KEEP_INTENT",
+ "recommended_primary": "AI 3D tools",
+ "note": "Raw demand sits on 'AI 3D model generator' (~27–29k), but that is the generator spoke. Hub primary stays 'AI 3D tools' so it does not steal 3d-model-generator.",
+ "path": null
+}
+
+KEY slug: {'3d': 1, '3d-model-generator': 1, '3d-modelling': 1, '3d-scanner': 1, 'accent-conversion': 1, 'advertising-agent': 1, 'affiliate-marketing': 1, 'agent-billing': 1, 'agent-for-desktop': 1, 'agent-identity': 1, 'agent-memory': 1, 'agent-runtime': 1}
+KEY batch: {'image_3d': 19, 'voice_coding': 19, 'mkt_design_text': 21, 'agent': 22, 'llm_enterprise': 14, 'edu_hr_health': 18, 'infra_web_geo': 14, 'video': 14, 'cms_builder_misc': 19}
+KEY current_primary: {'AI 3D tools': 1, 'Text-to-3D': 1, '3D modelling': 1, 'AI 3D scanner': 1, 'AI accent conversion': 1, 'Advertising Agent': 1, 'Affiliate marketing': 1, 'AI agent billing': 1, 'Agent on desktop': 1, 'AI Agent Identity': 1, 'Agent Memory Layer': 1, 'AI Agent Runtime': 1}
+KEY final_verdict: {'KEEP_INTENT': 40, 'SWITCH': 32, 'OK': 83, 'AMBIGUOUS': 5}
+KEY recommended_primary: {'AI 3D tools': 1, 'AI 3D model generator': 1, '3D modeling': 1, 'AI 3D scanner': 1, 'AI accent conversion': 1, 'Agentic advertising': 1, 'Affiliate marketing': 1, 'AI agent billing': 1, 'AI desktop agent': 1, 'AI Agent Identity': 1, 'AI agent memory': 1, 'AI Agent Runtime': 1}
+KEY note: {"Raw demand sits on 'AI 3D model generato": 1, "Current 'Text-to-3D' is a modality, not ": 1, 'Same DCC intent (Blender/Maya/ZBrush), b': 1, "Generic '3D scanner' is the hardware cat": 1, 'Vendor and research titles repeatedly us': 1, "Current 'Advertising Agent' SERP is the ": 1, 'Current primary is the Wikipedia/Shopify': 1, "Prior same-intent deep research: 'AI age": 1, "Bing has no clean signal ('Agent on desk": 1, 'All candidates are polluted or MS fallba': 1, "Cleanest on-intent signal is 'agent memo": 1, 'Bing capped/polluted across candidates (': 1}
+KEY path: {'None': 160}

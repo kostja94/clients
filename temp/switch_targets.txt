@@ -1,0 +1,184 @@
+SWITCH total: 32
+
+### 3d-model-generator  [tools\3d-spatial\3d-model-generator.md]
+  change: Text-to-3D  ->  AI 3D model generator
+  note: Current 'Text-to-3D' is a modality, not the category head. 'image to 3D' has the highest MSV (~33–40k) but is the other half of a dual-intent pair; SE
+  H1: # AI 3D Model Generator · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Text-to-3D / Image-to-3D / 文图生 3D**——从无到有（ex nihilo）生成 **展示 mesh**；验收以 silhouette、拓扑、PBR、rig 为主。制造几何 STEP/B-Rep → [cad.md](cad.md)；实物数字化 → [3d-scanner.md](3d-scanner.md)；拓扑/UV/绑定精修 
+
+### 3d-modelling  [tools\3d-spatial\3d-modelling.md]
+  change: 3D modelling  ->  3D modeling
+  note: Same DCC intent (Blender/Maya/ZBrush), but US '3D modeling' is the SERP title spelling and beats British 'modelling' on the only numeric pair (App Sto
+  H1: # 3D 建模工具（3D Modelling） · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**3D modelling / DCC 精修**——手工操控顶点/边/面/雕刻 + AI 辅助 mesh 精修（拓扑/UV/材质/绑骨）；验收以四边面、边流、动画变形为主。text-to-3D → [3d-model-generator.md](3d-model-generator.md)；工程 CAD/BIM → [cad.md](cad.md)；实物扫描 →
+
+### advertising-agent  [tools\marketing-growth\advertising-agent.md]
+  change: Advertising Agent  ->  Agentic advertising
+  note: Current 'Advertising Agent' SERP is the BLS/Indeed sales-job title, not Alignify's autonomous ad-account Agent class. Same-intent titles already stand
+  H1: # Advertising Agent · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Advertising Agent / AI 广告投放 Agent**——以 AI Agent 形态连接广告平台 API、**自主/半自主**管理付费广告全生命周期（策略→创意→出价→优化→归因）；验收以**账户 ROAS/CPA 与自主执行深度**为主。本页为 **Advertising Agent SSOT**（完整 URL 表仅此一处）；相邻 slug 
+
+### agent-for-desktop  [tools\agent\agent-for-desktop.md]
+  change: Agent on desktop  ->  AI desktop agent
+  note: Bing has no clean signal ('Agent on desktop' = MS fallback; 'AI desktop agent' capped by generic AI). Word-order + prior audit favor 'AI desktop agent
+  H1: # 桌面智能体（Agent on Desktop）· 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Agent on desktop / 桌面智能体**——运行在桌面应用或本机运行时内、能按授权读写本地文件或在 GUI 上演进多步任务的 Agent；验收以**端点类型（本机夹 vs 云端 VM）、授权范围与 GUI 成功率**为主。本页为 **桌面 Agent 产品 SSOT**（完整 URL 表仅此一处）；知识工作委派·交付物 → [work-agent.
+
+### agent-memory  [tools\agent\agent-memory.md]
+  change: Agent Memory Layer  ->  AI agent memory
+  note: Cleanest on-intent signal is 'agent memory' (~13.1k, GitHub agentmemory/TencentDB) vs current 'Agent Memory Layer' (MS fallback, not a natural query).
+  H1: # AI Agent 记忆层 · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Agent Memory Layer / Agent 记忆层**——嵌入 Agent 运行时的持久化记忆中间件，从对话/工具输出中提取事实并在后续 turn 检索注入；验收以 **跨会话 recall、temporal validity、与 RAG/平台 Memory 的可移植性** 为主。本页为 **Agent Memory 产品 SSOT**（完整 URL
+
+### agent-to-agent  [tools\agent\agent-to-agent.md]
+  change: A2A Agent Network  ->  agent to agent
+  note: 'agent to agent' ~132k on-intent (A2A protocol/Microsoft Learn/Google) > 'A2A Agent Network' ~92.5k. Google A2A 2.17M is brand pollution — never use. 
+  H1: # Agent-to-Agent Network / Agent 互联网络 · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**A2A Agent Network / Agent 互联网络**——让两个及以上 autonomous agent 在无人类实时在场的情况下交换信息、建立关系或完成匹配的网络层产品；验收以 **节点密度、身份绑定深度、moderation 与 Type I–IV 分流** 为主。本页为 **A2A 消费/infra 网络产品 SSOT**（完整 URL 表仅此
+
+### ai-scheduling  [tools\productivity\ai-scheduling.md]
+  change: AI scheduling  ->  AI scheduling assistant
+  note: 2026 comparison SERPs repeatedly title the class 'AI scheduling assistant' (2.4K/mo cited). Bare 'AI scheduling' has no MSV cite and is not the H1 pat
+  H1: # AI 日程安排 · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**AI scheduling / AI 日程安排**——用 AI/ML 替代或缩减人工排日程决策链路，从「双方翻日历找空档」迁移到 **AI 代理自动匹配、协商、预约、提醒、重排**；与纯 booking link 的分界见 §词汇锚点。本页为 **AI 日程安排 SSOT**（完整 URL 表仅此一处）；会议记录 → [note-taker.md](note-
+
+### api  [tools\infrastructure\api.md]
+  change: Unified AI API Platform  ->  AI Gateway
+  note: Current 'Unified AI API Platform' is a constructed phrase with no MSV and almost no exact-match titles. 2026 SERPs and vendor comparisons standardize 
+  H1: # 统一 AI API 平台 · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Unified AI API Platform / 统一 AI API**——通过**单一接口**调用多模型/多模态（协议、路由、缓存、计费），验收以**TTFT、$/unit、多模态覆盖、故障转移**为主。本页为 **API 聚合与网关产品 SSOT**（完整 URL 表仅此一处）；GPU 推理部署 → [inference-infrastructure.m
+
+### audio-translator  [tools\voice-audio\audio-translator.md]
+  change: AI Audio Translation  ->  AI Audio Translator
+  note: Same-intent commercial SERP consistently uses the tool noun AI Audio Translator, not the abstract 'translation'. Bing both hit the cap, so the switch 
+  H1: # AI Audio Translation · 知识块（非线性笔记）
+
+### avatar  [tools\image\avatar.md]
+  change: Talking avatar  ->  AI avatar generator
+  note: SERP for 'AI avatar generator' is Synthesia/HeyGen talking-video (same intent as this slug, not headshots). 18.1k vs ~1.8k for 'talking avatar' is ~10
+  H1: # AI Avatar Generator · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Talking avatar / AI presenter / 数字人视频**——由**脚本或文本**驱动**虚拟形象**出镜讲解，输出为**视频**或**可嵌入播放器**；验收以**口型自然度、多语言/本地化、交付形态（MP4 vs 实时对话）** 为主。本页为 **Talking avatar / 数字人视频产品 SSOT**（完整 URL 表仅此一处）；
+
+### browser  [tools\agent\browser.md]
+  change: AI browser  ->  agentic browser
+  note: 'agentic browser' ~125k on-intent vs 'AI browser' ~61.8k on-intent; KB covers built-in agentic browsers. Switch head, keep 'AI browser' secondary.
+  H1: # AI 浏览器 · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**AI browser / 人工智能浏览器**——在地址栏、侧边栏或系统级嵌入 LLM/agent，把「打开网页 → 检索 → 摘要 → 多步操作」收拢为自然语言驱动；验收以**默认信任边界、页面 grounding 与 agent 权限**为主。本页为 **AI 浏览器产品 SSOT**（完整 URL 表仅此一处）；Agent 侧远程浏览器 → [headle
+
+### directory  [tools\chat-social\directory.md]
+  change: AI Directory  ->  AI tools directory
+  note: Cited 20.2k/mo MSV plus SERP titles repeatedly use 'AI tools directory'. Current 'AI Directory' is the same job but not the head phrase. Slug stays `d
+  H1: # AI Directory / AI 工具导航 · 知识块（非线性笔记）
+
+### ecommerce-website-builder  [tools\website-builder\ecommerce-website-builder.md]
+  change: Online store platform  ->  ecommerce website builder
+  note: AdTargeting/Google Ads: 78.7k vs no usable MSV for 'Online store platform' (nearest 3.5k). SERP titles never use the current phrase. 'Shopify alternat
+  H1: # E-commerce Website Builder / 电商建站平台 · 知识块（非线性笔记）
+  KWLINE: **Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#ecommerce-website-builder-tools`）· `keywordEn`: **Online store platform / E-commerce website builder** · `keywordZh`: **电商建站平台 / 独立站平台**
+
+### education  [tools\education\education.md]
+  change: AI Education  ->  AI in education
+  note: UpperRank cites 12.1K/mo for 'AI in education'. Bare 'AI Education' SERP is AI literacy, not the tools Hub. Do not use spoke terms (tutor/homework).
+  H1: # AI Education · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**AI Education / AI 教育工具（Hub）**——学习辅导、自适应教学、备考、教师效率与企业 upskilling 等**教育 AI 品类地图与分流**；本页 **不**重复各 Spoke 产品规格（见 §外链索引与各 Spoke SSOT）。拍照解题 → [ai-homework-helper.md](ai-homework-helper.md)
+
+### healthcare  [tools\healthcare\healthcare.md]
+  change: AI Healthcare  ->  AI in healthcare
+  note: Cited GKP/Dataconomy volume for 'AI in healthcare' (27.1K in 2023, still the natural category query) dwarfs unsourced 'AI Healthcare'. Keep medical-sc
+  H1: # AI Healthcare · 知识块（非线性笔记）
+
+### image-to-video  [tools\video\image-to-video.md]
+  change: Image-to-Video  ->  image to video AI
+  note: Cited US/global figures put 'image to video AI' at ~42–68K vs ~10K for 'image to video' / Image-to-Video — ≥2× same I2V intent, without crossing into 
+  H1: # AI Image-to-Video · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Image-to-Video / I2V / 图生视频**——输入为**已有静态图**（照片、插画、产品图），输出为含运动、视差或角色表演的短视频；验收以**运动写实、品牌/细节保真、废片率与每可用秒成本**为主。本页为 **I2V 产品 SSOT**（完整 URL 表仅此一处）；从零 T2V → [text-to-video.md](text-to-vide
+
+### inference-infrastructure  [tools\infrastructure\inference-infrastructure.md]
+  change: AI Inference Infrastructure  ->  AI inference platform
+  note: SERP for the current phrase is architecture documentation, not the hosted inference market (Together, Fireworks, Baseten, Modal). Buyer-facing pages a
+  H1: # AI 推理基础设施 · 知识块（非线性笔记）
+  KWLINE: **Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md)（待新增锚点 `#inference-infrastructure-tools`）· `keywordEn`: **AI Inference Infrastructure** · `keywordZh`: **AI推理平台（底层：AI推理基础设施）
+  NARR: **叙述主词 · 勿与…混买**：**AI Inference Infrastructure / 推理托管**——为开源或定制模型提供 **GPU 调度、推理引擎、扩缩与计费**，验收以 **tok/s、TTFT、$/1M tokens、冷启动** 为主。本页为 **推理基础设施产品 SSOT**（完整 URL 表仅此一处）；多模型 API 路由 → [api.md](api.md)；模型能力评测
+
+### lip-sync  [tools\voice-audio\lip-sync.md]
+  change: AI lip sync  ->  lip sync AI
+  note: Same-intent word-order flip. Bing proxy is ~11× (4.3k vs 48.6k) and Semrush/Navtools rows exist for lip sync AI, not for AI lip sync.
+  H1: # AI Lip Sync / AI 唇形同步 · 知识块（非线性笔记）
+  NARR: **叙述主词**：**AI lip sync / AI 唇形同步**（将音频驱动的人物面部——尤其是唇部——运动与目标语音对齐的技术与产品）。与 **AI 配音**（`video-translator`）、**语音克隆**（`voice-cloning`）、**AI 数字人**（`avatar`）、**TTS 语音合成**（`text-to-speech`）、**AI 动画**（`animatio
+
+### llm-for-coding  [tools\llm\llm-for-coding.md]
+  change: AI Coding LLM  ->  LLM for coding
+  note: Current 'AI Coding LLM' is not a natural query (no SERP titles). Titles repeatedly use 'LLM for coding' / 'best LLM for coding'. Keep the coding spoke
+  H1: # AI Coding LLM / 编程向大模型 · 知识块（非线性笔记）
+
+### llm-for-math  [tools\llm\llm-for-math.md]
+  change: AI Math LLM  ->  LLM for math
+  note: 'AI Math LLM' does not appear in SERP titles. Same-intent head is 'LLM for math' / 'best … LLM for math'. Do not merge into reasoning-model or hub LLM
+  H1: # AI Math LLM / 数学向大模型 · 知识块（非线性笔记）
+
+### llm-for-reasoning  [tools\llm\llm-for-reasoning.md]
+  change: AI Reasoning LLM  ->  reasoning model
+  note: Glimpse cites 94K/mo for 'reasoning model' vs zero title/MSV support for 'AI Reasoning LLM'. Same spoke (test-time compute / o-series / R1), not a col
+  H1: # AI Reasoning LLM / 推理向大模型 · 知识块（非线性笔记）
+
+### memory  [tools\enterprise-knowledge\memory.md]
+  change: AI Memory  ->  AI second brain
+  note: 'AI Memory' SERP is agent-memory middleware (Mem0/Zep class), which the fence forbids. Same-intent consumer head is 'AI second brain' (Mem, Obsidian, 
+  H1: # AI Memory · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**AI Memory / 个人第二大脑**——消费级 PKM 与笔记捕获、组织、对话式检索；验收以捕获摩擦、检索质量与隐私模型为主。Agent 记忆中间件（Mem0/Zep/Letta）→ [agent-memory.md](../agent/agent-memory.md)；会议转写 → [note-taker.md](../productivity/note
+
+### multimodal-llm  [tools\llm\multimodal-llm.md]
+  change: AI Multimodal LLM  ->  multimodal LLM
+  note: 'AI Multimodal LLM' is not used in titles. IBM/Azure/papers standardize on 'multimodal LLM' (MLLM). Keep the spoke — do not fold into hub LLM or image
+  H1: # AI Multimodal LLM / 多模态大模型 · 知识块（非线性笔记）
+
+### religion  [tools\religion.md]
+  change: AI Religion  ->  AI religious tools
+  note: AI Religion SERP 被 AI-as-deity 占据；AI religious tools 多信仰产品词更贴本页。
+  H1: # AI Religion · 知识块（非线性笔记）
+
+### short-drama  [tools\video\short-drama.md]
+  change: AI short drama platform  ->  AI short drama generator
+  note: 生产侧（Teleplay/Dramily/StoryShort）SERP 标题收敛于 AI short drama generator 而非 platform。
+  H1: # AI Short Drama / AI 短剧平台 · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**AI short drama platform / AI 短剧平台**——AI 驱动微短剧全流程创作（剧本→角色→分镜→视频生成→配音→多集续写）并面向竖屏消费场景分发的平台与工具；验收以**多集叙事、角色一致性、竖屏分发、投流变现**为主。本页为 **短剧创作工具 + 分发平台 + 开源框架 SSOT**（完整 URL 与定价表仅此一处）；底层 Veo/Ru
+
+### social-cards-generator  [tools\image\social-cards-generator.md]
+  change: Social Cards Generator  ->  OG image generator
+  note: 'Social Cards Generator' has no measurable demand. 'OG image generator' (~2k) is the developer/product query for the same 1200×630 share-preview job. 
+  H1: # Social Cards Generator · 知识块（非线性笔记）
+
+### text-to-video  [tools\video\text-to-video.md]
+  change: Text-to-Video  ->  text to video AI
+  note: 165K cited for 'text to video AI' vs no comparable MSV for the technical 'Text-to-Video' label. Same T2V intent; do not switch the slug to video-gener
+  H1: # AI Text-to-Video · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Text-to-Video (T2V) / 文生视频**——输入为**文本/文档**，AI 生成动态视频；验收以 **prompt 遵循度、时序一致性、原生音频** 为主。本页为 **T2V 垂直产品 SSOT**（完整 URL 表仅此一处）；通用扩散模型横评 → [video-generator.md](video-generator.md)；静态图起点 →
+
+### text-translator  [tools\text-content\text-translator.md]
+  change: AI text translation  ->  AI translator
+  note: Current 'AI text translation' has no MSV and its SERP is developer APIs. 'AI translator' is the SeekTool/DeepL head at ~12k–18k/mo. Stay text-only — d
+  H1: # AI Text Translation · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**AI text translation**——纯**文字**输入输出的跨语言转换；不涉及声学（→ audio-translator）或视频口型/字幕（→ video-translator）。本页为 **工具 URL 表 SSOT**。
+
+### video-clipping  [tools\video\video-clipping.md]
+  change: AI Video Clipping  ->  AI video clipper
+  note: Titles and a cited ~1K head query use 'clipper', not gerund 'clipping'. Same long-video→social-shorts intent; 'repurposing' is wider.
+  H1: # AI Video Clipping · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**AI Video Clipping / Repurposing**——从**长视频**自动识别高光并裁切为**多条社交短片**（9:16 等）；验收以 **叙事连贯性、说话人跟踪、传播力评分** 为主。本页为 **AI 视频剪辑/再利用产品 SSOT**（完整 URL 表仅此一处）；完整时间线剪辑与精修 → [video-editor.md](video-ed
+
+### video-translator  [tools\voice-audio\video-translator.md]
+  change: AI Video Translation  ->  AI Video Translator
+  note: Vendors and keyword tables use the tool noun (video translator / AI video translator ~4.1k–15.4k), not 'AI Video Translation'. Keep the AI prefix so w
+  H1: # AI Video Translation · 知识块（非线性笔记）
+
+### web-fetch  [tools\web-data\web-fetch.md]
+  change: Web Fetch  ->  URL to Markdown
+  note: 'Web Fetch' is an Anthropic/MCP tool label and collides with the Fetch API. Product SERPs (Jina, Firecrawl, Neo Reader) standardize on URL/website-to-
+  H1: # Web Fetch（URL 转 AI 可读内容）· 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Web Fetch**——把任意 URL 变成 **LLM / Agent 能直接消费**的干净 Markdown 或结构化文本。与 Web Scraping（批量数据管道）、Web Search API（找 URL）、headless-browser（多步交互）分属不同采购路径——见 §与相邻 slug 分流。本页为 **代表产品 URL 表 SSOT**（
+
+### workflow  [tools\agent\workflow.md]
+  change: Workflow automation  ->  AI workflow
+  note: 'AI workflow' ~45.5k on-intent (2026 reviews) > 'Workflow automation' ~28k (Zapier-class, broader non-AI). 'AI workflow automation' capped/polluted. U
+  H1: # AI Workflow · 知识块（非线性笔记）
+  NARR: **叙述主词 · 勿与…混买**：**Workflow automation / 工作流自动化**——通过预设规则在多个应用或服务之间自动传递数据、触发动作；验收以**连接器广度、逻辑路由复杂度、确定性 vs agentic 节点边界**为主。本页为 **Workflow / iPaaS 产品 SSOT**（完整 URL 表仅此一处）；Agent 技能 → [agent-skills.md](ag

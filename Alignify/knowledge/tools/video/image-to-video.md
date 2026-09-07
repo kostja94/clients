@@ -8,7 +8,7 @@
 
 **站内对照**：[alignify.co/tools/image-to-video](https://alignify.co/tools/image-to-video) · `content/tools/en/image-to-video.md` · [alignify.co/zh/tools/image-to-video](https://alignify.co/zh/tools/image-to-video) · `content/tools/zh/image-to-video.md` · slug **`image-to-video`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 `#image-to-video-tools`
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 `#image-to-video-tools` · `keywordEn`: **image to video AI**（Secondary：Image-to-Video）
 
 ---
 

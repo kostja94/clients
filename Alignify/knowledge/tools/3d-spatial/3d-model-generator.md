@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/3d-model-generator](https://alignify.co/tools/3d-model-generator) · [alignify.co/zh/tools/3d-model-generator](https://alignify.co/zh/tools/3d-model-generator) · `content/tools/en/3d-model-generator.md` · `content/tools/zh/3d-model-generator.md` · slug **`3d-model-generator`**
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#3d-model-generator-tools`](../../keywords/alignify-keywords-tools.md#3d-model-generator-tools)）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#3d-model-generator-tools`](../../keywords/alignify-keywords-tools.md#3d-model-generator-tools)）· `keywordEn`: **AI 3D model generator**（Secondary：Text-to-3D / Image-to-3D）
 
 **站内相邻**：[3d.md](3d.md) · [3d-scanner.md](3d-scanner.md) · [3d-modelling.md](3d-modelling.md) · [cad.md](cad.md) · [world-model.md](../world-model.md)
 

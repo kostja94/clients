@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/education](https://alignify.co/tools/education) · `content/tools/en|zh/education.md` · slug **`education`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 `#education-tools`
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md) 锚点 `#education-tools` · `keywordEn`: **AI in education**（Secondary：AI Education）
 
 ## 与相邻 slug 分流（Hub 级）
 

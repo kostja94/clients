@@ -6,7 +6,7 @@
 
 **站内对照**：待上线 Blog 正式页时与 slug advertising-agent、`content/blog/en|zh/advertising-agent.md` 对齐（新文走 `/blog`，见 [README.md §路由与发布策略](./README.md#路由与发布策略2026-06)）。
 
-**Tools 关键词与意图**：归属「企业销售与营销」Territory，与 affiliate-marketing、b2b、lead-generation、influencer-marketing 相邻。
+**Tools 关键词与意图**：归属「企业销售与营销」Territory，与 affiliate-marketing、b2b、lead-generation、influencer-marketing 相邻。 · `keywordEn`: **Agentic advertising**（Secondary：Advertising Agent）
 
 ## 与相邻 slug 分流（企业销售与营销集群）
 

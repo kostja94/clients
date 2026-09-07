@@ -6,7 +6,7 @@
 
 **站内对照**：待上线 Tools 页时对齐 · slug **`short-drama`** · `/tools/short-drama` · `/zh/tools/short-drama`
 
-**Tools 关键词与 slug 映射**：待 `tools-pages-config` 收录 slug `short-drama` 后补全。
+**Tools 关键词与 slug 映射**：待 `tools-pages-config` 收录 slug `short-drama` 后补全 · `keywordEn`: **AI short drama generator**（Secondary：AI short drama platform）。
 
 **站内相邻**：[video.md](video.md) · [video-generator.md](video-generator.md) · [animation-generator.md](animation-generator.md) · [filmmaking.md](filmmaking.md)
 

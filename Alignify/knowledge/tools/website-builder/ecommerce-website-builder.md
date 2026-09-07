@@ -4,7 +4,7 @@
 
 **站内对照**：待上线正式页时对齐（新文优先 **`/blog/ecommerce-website-builder`** · **`/zh/blog/ecommerce-website-builder`**）· slug **`ecommerce-website-builder`**
 
-**Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#ecommerce-website-builder-tools`）· `keywordEn`: **Online store platform / E-commerce website builder** · `keywordZh`: **电商建站平台 / 独立站平台**
+**Tools 关键词与 slug 映射**：待写入 [alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 `#ecommerce-website-builder-tools`）· `keywordEn`: **ecommerce website builder**（Secondary：Online store platform）· `keywordZh`: **电商建站平台 / 独立站平台**
 
 **主题簇**：[README.md](./README.md) · 路由 SSOT：[website-builder.md §簇级 FAQ](website-builder.md#簇级-faq)
 

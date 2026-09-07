@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/text-to-video](https://alignify.co/tools/text-to-video) · `/tools/text-to-video` · [alignify.co/zh/tools/text-to-video](https://alignify.co/zh/tools/text-to-video) · `/zh/tools/text-to-video` · `content/tools/zh/text-to-video.md`、`content/tools/en/text-to-video.md` · slug **`text-to-video`**
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#text-to-video-tools`](../../product/alignify-keywords-tools.md#text-to-video-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#text-to-video-tools`](../../product/alignify-keywords-tools.md#text-to-video-tools) · `keywordEn`: **text to video AI**（Secondary：Text-to-Video）
 
 **站内相邻**：[video.md](video.md)（Hub）· [video-generator.md](video-generator.md) · [image-to-video.md](image-to-video.md) · [video-editor.md](video-editor.md) · [video-clipping.md](video-clipping.md)
 

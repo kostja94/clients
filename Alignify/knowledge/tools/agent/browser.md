@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/browser](https://alignify.co/tools/browser) · `content/tools/en/browser.md` · `content/tools/zh/browser.md`
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#browser-tools`](../../keywords/alignify-keywords-tools.md#browser-tools)）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#browser-tools`](../../keywords/alignify-keywords-tools.md#browser-tools)）· `keywordEn`: **agentic browser**（Secondary：AI browser）
 
 **站内相邻**：[headless-browser.md](../web-data/headless-browser.md) · [search-engine.md](../search-geo/search-engine.md) · [agent-for-desktop.md](agent-for-desktop.md)
 

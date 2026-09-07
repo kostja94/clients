@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/api](https://alignify.co/tools/api) · [alignify.co/zh/tools/api](https://alignify.co/zh/tools/api) · `content/tools/en/api.md`、`content/tools/zh/api.md` · slug **`api`**
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#api-tools`](../../keywords/alignify-keywords-tools.md#api-tools)）
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../keywords/alignify-keywords-tools.md)（锚点 [`#api-tools`](../../keywords/alignify-keywords-tools.md#api-tools)）· `keywordEn`: **AI Gateway**（Secondary：Unified AI API Platform）
 
 ## 与相邻 slug 分流
 

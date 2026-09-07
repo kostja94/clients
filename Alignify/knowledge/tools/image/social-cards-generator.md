@@ -18,7 +18,7 @@
 
 ## Tools 关键词与 slug 映射
 
-尚未录入 `tools-pages-config`。
+`keywordEn`: **OG image generator**（Secondary：Social Cards Generator）· 尚未录入 `tools-pages-config`。
 
 ---
 

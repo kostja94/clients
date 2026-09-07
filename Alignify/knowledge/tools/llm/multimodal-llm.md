@@ -4,7 +4,7 @@
 
 **站内对照**：正式页 **`/tools/multimodal-llm`**、**`/zh/tools/multimodal-llm`** · `content/tools/en|zh/multimodal-llm.md`
 
-**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#multimodal-llm-tools`
+**Tools 关键词与 slug 映射**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 `#multimodal-llm-tools` · `keywordEn`: **multimodal LLM**（Secondary：AI Multimodal LLM）
 
 **Hub · 五轴分流**：[llm.md](llm.md) · **排行快照**：[llm-leaderboard-snapshots.md](../llm-leaderboard-snapshots.md) §Multimodal
 

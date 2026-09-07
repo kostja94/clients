@@ -6,7 +6,7 @@
 
 **站内对照**：[alignify.co/tools/memory](https://alignify.co/tools/memory) · `content/tools/en/memory.md` · [alignify.co/zh/tools/memory](https://alignify.co/zh/tools/memory) · `content/tools/zh/memory.md` · slug **`memory`** · 2026-06-23 重写（PKM/第二大脑；Agent 中间件改 `/blog/agent-memory`）
 
-**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#memory-tools`](../../product/alignify-keywords-tools.md#memory-tools)
+**Tools 关键词与意图**：[alignify-keywords-tools.md](../../product/alignify-keywords-tools.md) 锚点 [`#memory-tools`](../../product/alignify-keywords-tools.md#memory-tools) · `keywordEn`: **AI second brain**（Secondary：AI Memory）
 
 ## 与相邻 slug 分流
 

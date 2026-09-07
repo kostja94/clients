@@ -4,7 +4,7 @@
 
 **站内对照**：[alignify.co/blog/web-fetch](https://alignify.co/blog/web-fetch) · `/blog/web-fetch` · slug **`web-fetch`**
 
-**Tools 关键词与意图**：`alignify-keywords-tools.md` → [`#web-fetch-tools`](../../product/alignify-keywords-tools.md#web-fetch-tools)
+**Tools 关键词与意图**：`alignify-keywords-tools.md` → [`#web-fetch-tools`](../../product/alignify-keywords-tools.md#web-fetch-tools) · `keywordEn`: **URL to Markdown**（Secondary：Web Fetch）
 
 **材料范围**：公开网络检索（各产品官网、开发者文档、MCP 生态说明、行业对比文）；**未**引用 Alignify 站内 JSON 内容稿。网摘整理日期 **2026-05-12**。
 
