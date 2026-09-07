@@ -14,6 +14,8 @@
 |------|------|------|
 | [frontier-rounds-nextjs-build-plan.md](./frontier-rounds-nextjs-build-plan.md) | **完整构建 + 部署方案**：现状盘点、Next.js 迁移映射表、图片资产回填脚本、品牌换标、SEO 就位、Cloudflare（OpenNext）部署全步骤、上线验收清单 | ✅ 完成（2026-09-07） |
 | [branding/](./branding/) | **最终品牌 SVG**：`fr-icon.svg`（黑底白图）、`fr-icon-mono.svg`（透明底纯黑）、`fr-wordmark.svg`（Instrument Serif 轮廓化 wordmark） | ✅ 完成（2026-09-07） |
+| [funded-products/](./funded-products/) | **融资的 AI 产品**（24 份档案 + `_index.md`）：网站 Funding Leaderboard 上的真实融资 AI 产品，字段含累计融资/最大轮/估值/领投方/来源 URL/可信度 | ✅ 完成（2026-09-08） |
+| [funding-investors/](./funding-investors/) | **融资的投资方**（11 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司） | ✅ 完成（2026-09-08） |
 
 ## 执行进度
 
@@ -35,6 +37,15 @@
 - **处置**：`src/data/fundingRounds.ts` 置为 `[]`（保留类型与 format 工具函数）；首页改为空态引导页（H1 "The money behind frontier AI, one round at a time." + Investor Atlas / Leaderboard CTA）；footer "Sample data / illustrative" 声明删除。
 - **保留**：leaderboard（`fundingLeaderboard.ts`）与 investor 档案为另一套含真实公司 + sourceUrl 的数据，未受影响；investor 页 "Related rounds" 已有空态文案。
 - **验收**：commit `cfe6252` 经 CI 部署；线上 `/` 已无虚构公司名与 sample 声明，4 条主路由全部 200。
+
+## 站内真实数据归档（2026-09-08）
+
+将网站现有的**两套真实数据**转录为可阅读/可追溯的 Markdown 档案，落在本记录仓：
+
+- **[funded-products/](./funded-products/)** — "融资的 AI 产品"：24 家（OpenAI → Sarvam AI，按累计融资降序）。数据源 `fundingLeaderboard.ts`，每份档案含国家/赛道/累计融资/最大一轮/估值/最近融资日期/领投方/来源机构/数据可信度（Disclosed / Reported），并附 `sourceUrl` 溯源。
+- **[funding-investors/](./funding-investors/)** — "融资的投资方"：11 家（Sequoia、a16z、HongShan、Peak XV、Shunwei、Lollapalooza、YC、MiraclePlus、Elad Gil、Naval、Nat Friedman）。数据源 `investors/*.ts`，每份档案含基本档案表、投资逻辑（thesis）、投资组合（含官网链接与中文别名）、别名。
+
+> 生成方式：临时解析脚本（`@temp/parse_fr_ts.py`）忠实转录站点 TS 数据层，字段与线上页面一致，未增删事实。**注意**：若线上站点后续增删条目，可重跑该脚本刷新本目录。
 
 ## SEO/分析就位（2026-09-07）
 
