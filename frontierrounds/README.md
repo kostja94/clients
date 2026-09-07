@@ -13,7 +13,7 @@
 | 文件 | 内容 | 状态 |
 |------|------|------|
 | [frontier-rounds-nextjs-build-plan.md](./frontier-rounds-nextjs-build-plan.md) | **完整构建 + 部署方案**：现状盘点、Next.js 迁移映射表、图片资产回填脚本、品牌换标、SEO 就位、Cloudflare（OpenNext）部署全步骤、上线验收清单 | ✅ 完成（2026-09-07） |
-| [branding/](./branding/) | **品牌 SVG 资产**：`fr-icon.svg`(黑底白图)、`fr-icon-mono.svg`(透明黑)、`fr-wordmark.svg`(Instrument Serif 轮廓化)、`og-template.html`、生成脚本、字体源 | ✅ 完成（2026-09-07） |
+| [branding/](./branding/) | **最终品牌 SVG**：`fr-icon.svg`（黑底白图）、`fr-icon-mono.svg`（透明底纯黑）、`fr-wordmark.svg`（Instrument Serif 轮廓化 wordmark） | ✅ 完成（2026-09-07） |
 
 ## 执行进度
 
@@ -44,12 +44,11 @@
 
 ## 品牌系统落地：替换 Lovable favicon/icon/OG（2026-09-07）
 
-- **设计源**（本记录仓 `branding/`）：基于 Apineed+GPT-Image v3 反白小样重绘的**黑白两色** SVG——
+- **设计源**（本记录仓 `branding/`，已定稿）：基于 Apineed+GPT-Image v3 反白小样重绘的**黑白两色** SVG——
   - `fr-icon.svg`：黑圆角方块 + 白色开环（缺口右上）+ 内节点弧链 + 缺口外探点（深底/图标用）
   - `fr-icon-mono.svg`：同形，透明底纯黑（浅底/单色/可改色）
   - `fr-wordmark.svg`：品牌名 "Frontier Rounds"，Instrument Serif Regular **轮廓化 path**（不依赖字体安装）
-  - `og-template.html`：OG 封面排版模板（1200×630，可改 slogan 后 Chrome 重渲）
-  - 源 v3 小样仍存 `branding-samples/`；生成脚本见 `scripts/build_brand_svgs.py`（需完整版 Instrument Serif TTF/woff2，next/font 子集不含 F 等大写，勿复用）
+- **过程文件已清理**（2026-09-08）：branding-samples 概念小样 PNG、APINEED 生图/生成/派生脚本、OG 模板、字体源均已删除，只保留最终定稿 SVG。未来若需调整 logo 形状，直接编辑 `fr-icon.svg` 即可（几何结构见 commit 历史）。
 - **站点接入**（deploy 仓 commit `f8755b1`，已 CI 上线验收）：
   - `app/favicon.ico`（16/32/48 多尺寸**极简标**：仅开环+缺口+外探点，小尺寸可辨）+ `app/icon.png`(512) + `app/apple-icon.png`(180) —— Next 约定式自动注入 `<link rel=icon/apple-touch-icon>`
   - `app/manifest.ts`：PWA manifest（paper/ink 主题色，192+512 icon）；`public/icons/icon-192.png`
@@ -99,4 +98,4 @@
 
 ---
 
-*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-07*
+*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08*
