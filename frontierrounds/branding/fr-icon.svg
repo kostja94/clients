@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Frontier Rounds">
+  <rect x="6" y="6" width="500" height="500" rx="87.04" fill="#000000"/>
+  <path d="M 415.78 204.09 A 168.00 168.00 0 1 1 347.50 115.10" fill="none" stroke="#FFFFFF" stroke-width="54.0" stroke-linecap="round"/>
+  <path d="M 162.47 310.00 A 108.00 108.00 0 0 1 154.51 219.06" fill="none" stroke="#FFFFFF" stroke-width="22.0" stroke-linecap="round"/><path d="M 154.51 219.06 A 108.00 108.00 0 0 1 219.06 154.51" fill="none" stroke="#FFFFFF" stroke-width="22.0" stroke-linecap="round"/>
+  <circle cx="162.47" cy="310.00" r="26.0"/><circle cx="154.51" cy="219.06" r="26.0"/><circle cx="219.06" cy="154.51" r="26.0"/>
+  <circle cx="424.19" cy="126.94" r="32.0"/>
+</svg>
