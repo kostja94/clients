@@ -4,9 +4,8 @@
 > **位置**：`clients/article-zh-locale-pass-spec.md`（本文件）
 > **版本**：v1.0 · 2026-08-29
 > **关联**：
-> - [`Alignify/skills/create-article/rules/content-locale.md`](Alignify/skills/create-article/rules/content-locale.md) Part 3（Step 06）
-> - [`Alignify/skills/create-article/rules/zh-en-mixing.md`](Alignify/skills/create-article/rules/zh-en-mixing.md)
-> - [`Alignify/skills/create-article/rules/gtm-prose-voice.md`](Alignify/skills/create-article/rules/gtm-prose-voice.md)
+> - [`Alignify/skills/create-article/content-locale.md`](Alignify/skills/create-article/content-locale.md) Part 3（Step 06）
+> - [`Alignify/skills/create-article/writing-voice.md`](Alignify/skills/create-article/writing-voice.md)（英混 + 禁腔，Part B/A）
 > - [`Alignify/skills/create-article/11-final-audit.md`](Alignify/skills/create-article/11-final-audit.md)（前置：须 audit-ready 或 publish-ready）
 > - 参考实例：[`stealth-model-preview`](Alignify/knowledge/marketing/_briefs/stealth-model-preview.md) · 2026-08-29 ZH Pass
 
@@ -143,7 +142,7 @@ print(f'en/han ratio: {en/han*100:.1f}%')
 | hints | **线索** / **提示** |
 | provider | **供应商** |
 
-完整机器层见 [`locale-glossary.json`](Alignify/skills/create-article/rules/locale-glossary.json) → `naked_loanwords_zh` · `localize_required`。
+完整机器层见 [`locale-glossary.json`](Alignify/skills/create-article/locale-glossary.json) → `naked_loanwords_zh` · `localize_required`。
 
 ### 3.2 术语节（可选 · deep 模式）
 

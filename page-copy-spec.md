@@ -34,7 +34,7 @@
 ```
 页面文案生产规范（本文件）    ← 跨项目通用原则、验收框架
         ↓ 引用
-Alignify copy-quality.md      ← skills/create-article/rules/（Brief · Step 05–10）
+Alignify copy-quality.md      ← skills/create-article/（Brief · Step 05–10）
         ↓ 引用
 站点 page-playbook / templates.md  ← 类型差异参考（非施工图）
         ↓ 引用
@@ -383,7 +383,7 @@ Alignify copy-quality.md      ← skills/create-article/rules/（Brief · Step 0
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | v1.0 | 2026-08-23 | 初版：五维定义、Swap Test、篇幅层级、生产流程、验收清单、反模式 |
-| v1.2 | 2026-08-27 | Alignify 适配：→ `skills/create-article/rules/copy-quality.md` |
+| v1.2 | 2026-08-27 | Alignify 适配：→ `skills/create-article/copy-quality.md` |
 
 ---
 
