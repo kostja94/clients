@@ -95,7 +95,7 @@ YAML frontmatter
 → ## FAQ（3–6 题；≥1 题覆盖边界/异议）
 ```
 
-无 `## Related articles` 模块（与既有 61 篇一致）。
+无 `## Related articles` 模块（与既有 62 篇一致）。
 
 ---
 
@@ -119,4 +119,4 @@ YAML frontmatter
 
 ---
 
-*writing-constraints · sparki v1.0.0 · 2026-09-04*
+*writing-constraints · sparki v1.1.0 · 2026-09-04*

@@ -20,7 +20,7 @@
 | 目标 | 写法 | 示例 |
 |------|------|------|
 | 主站页面（features/solutions/creators/industries/video-editor/pricing/use-cases/api） | **绝对 URL** | `[Copy Style](https://sparki.io/features/copy-style)` |
-| 博客文章（61 篇 + 新稿） | 相对 `/blog/{slug}` | `[our long-to-short guide](/blog/long-video-to-short-video)` |
+| 博客文章（62 篇 + 新稿） | 相对 `/blog/{slug}` | `[our long-to-short guide](/blog/long-video-to-short-video)` |
 | 外链 | 完整 URL | `[CapCut](https://www.capcut.com)`（HTML 加 rel） |
 | 锚点/站内非路由 | 避免 | 不用 `#` 伪链、不用 `relative /features`（会 404） |
 
@@ -72,4 +72,4 @@
 
 ---
 
-*internal-links · sparki v1.0.0 · 2026-09-04*
+*internal-links · sparki v1.1.0 · 2026-09-04*

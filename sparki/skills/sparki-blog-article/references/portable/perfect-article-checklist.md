@@ -17,11 +17,11 @@
 
 ## Perfect-Ready 清单（Gate C 后）
 
-- [ ] Moat 已兑现（ProofLibraryRefs）
+- [ ] Moat 已兑现（对应 `references/proof-library.md` PFL 行 + 正文落点）
 - [ ] Answer Blocks 3–5 个可独立成 40–60 词段
 - [ ] Excellence 类型已标注
 - [ ] Post-publish T+7/30/90 已排期
-- [ ] flagship：Distribution Snippets 已产出
+- [ ] flagship：Excellence 单元已产出（可引用/截屏/分享 → `final-audit.md` §八 Signal of Excellence）
 
 ## Extractability + BLUF
 
@@ -29,4 +29,4 @@
 
 ---
 
-*portable · sparki v1.0 · 2026-09-04*
+*portable · sparki v1.1.0 · 2026-09-04*

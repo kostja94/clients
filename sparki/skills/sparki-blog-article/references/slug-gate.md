@@ -58,16 +58,8 @@
 
 ## Title 公式
 
-- CreatorClone：`How to Edit {Style/Content} Like {Creator}`
-- WorkflowHowTo：`How to {Task} — {Benefit/Workflow}`
-- FeatureGuide：`{X}: How to Pick the Right Workflow`
-- Comparison：`{A} vs {B} — {Frame}`；含 Sparki：`{A} vs {B} vs Sparki: …`
-- AlternativeRoundup：`{Tool} Alternative — {Why/Angle}` / `Best {Category} Alternatives`
-- CategoryPOV：问题式/观点式（`Can AI {Verb}…?`）
-- Announcement：`Introducing {Feature} — {Value}`
-
-Meta description：120–160 chars（validate 80–320）· benefit + main intent keyword + 差异化一句。
+> **Title/Meta description 模板（SSOT）→ `references/article-types.md` §5**；本文件专注 slug 命名与文件名，不重复 Title 规则。
 
 ---
 
-*slug-gate · sparki v1.0.0 · 2026-09-04*
+*slug-gate · sparki v1.1.0 · 2026-09-04*

@@ -39,6 +39,7 @@
 | AI Commentary | `https://sparki.io/features/ai-commentary` |
 | Video Resizer | `https://sparki.io/features/video-resizer` |
 | Solutions | `https://sparki.io/solutions/highlight-reels` 等（highlight-reels / youtube-to-tiktok / edit-videogen-clip / daily-vlog / panoramic-camera） |
+| Vlog hub | `https://sparki.io/vlog`（AI Vlog Editor；2026-09-09 实测上线后加入白名单） |
 | Creators | `https://sparki.io/creators/{slug}`（线上 18 页 + hub `/creators`） |
 | Industries | `https://sparki.io/industries/{slug}`（线上 21 页） |
 | Video-editor 类型页 | `https://sparki.io/video-editor/{slug}`（product-video / product-ad / product-review / ecommerce 等 + gaming） |
@@ -47,7 +48,7 @@
 
 ### B. 博客站内互链 — 相对路径 `/blog/{slug}`
 
-- 链接 **61 篇既有文章** 或新稿，一律 `/blog/{slug}`（不开新标签、不加域名）
+- 链接 **62 篇既有文章** 或新稿，一律 `/blog/{slug}`（不开新标签、不加域名）
 - 部署仓 frontmatter `slug` 不含 `/blog/`；正文链接含 `/blog/` 前缀
 
 ### C. 外链
@@ -122,21 +123,9 @@ draft: false
 
 ## 6. Sparki Voice 速查
 
-| 维度 | 要求 |
-|------|------|
-| Clear | 目标创作者能复述核心 workflow |
-| Practitioner-first | 像做过剪辑的同行在讲，不是营销稿 |
-| Evidence-led | 切点/转场/字幕观察来自真实素材；数字有来源 |
-| Category-building | 先讲清"对话式剪辑/Agent 剪辑"价值，再出现产品 |
-| Fair comparison | 每竞品 ≥1 优势；≥1 场景非 Sparki 更合适 |
-
-### 禁止
-
-- revolutionary · game-changing · unlock · seamless · magic · cutting-edge
-- 虚构开场（"Imagine you're a creator who…"）
-- 空泛句：In today's world · Let's dive in · Without further ado
-- 红人文：把个人偏好当普适结论、编造 creator 未公开说过的意图
+> **Voice 正向 5 维 + 禁词/禁腔调完整版 → `references/writing-constraints.md` §1（SSOT）**。此处仅留一句话速记：
+> 像做过的同行在讲（Practitioner-first）· 有素材证据（Evidence-led）· 禁 hype 词（revolutionary / game-changing / unlock / seamless / magic / cutting-edge）· 不虚构开场 · 不臆测红人意图。
 
 ---
 
-*project-config · sparki v1.0.0 · 2026-09-04*
+*project-config · sparki v1.1.0 · 2026-09-04*

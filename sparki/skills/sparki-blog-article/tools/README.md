@@ -13,8 +13,9 @@ python skills/sparki-blog-article/tools/frontmatter_validator.py "E:\客户部�
 # 字数硬门槛检查（叙事词数，排除 frontmatter/表格/FAQ）
 python skills/sparki-blog-article/tools/word_count_narrative.py "E:\客户部署项目\sparki-blog\content\blog\{slug}.md" --intent {creator|workflow|feature|comparison|alternative|pov|announcement}
 
-# 链接检查（空链/畸形 URL + 禁止路径前缀）
+# 链接检查（空链/畸形 URL + 禁止路径前缀 + R4/R5）
 python skills/sparki-blog-article/tools/link_checker.py "E:\客户部署项目\sparki-blog\content\blog\{slug}.md" --forbidden "/features/not-live,/pricing-beta"
+# 如需把 R5（TL;DR 最多 1 个 /blog/ 链接）升级为 FAIL，追加 --strict-r5
 ```
 
 输出格式：`PASS|FAIL|WARN | GateID | message [line N]`。FAIL 项须在 SelfCheck 表中标注修复动作。
@@ -33,8 +34,8 @@ cd E:\客户部署项目\sparki-blog && npm run validate:posts
 |------|------|---------|
 | `frontmatter_validator.py` | GateC-SEO-F | title/description/slug/category/author 必填性 + 长度合规 + slug 常青 + **slug=文件名** + category 枚举 + 图片字段（用 cover 非 image） |
 | `word_count_narrative.py` | H3 | 排除 frontmatter/表格/FAQ 后计算叙事词数，对比 §2 类型下限 |
-| `link_checker.py` | P0-G2, P0-G6 | 扫描所有 Markdown 链接，检查空链/畸形 URL/禁止路径 |
+| `link_checker.py` | P0-G2, P0-G6, R4, R5 | 扫描 Markdown 链接：空链/畸形 URL/禁止路径前缀（G2/G6）+ 同篇重复 `/blog/` slug（R4）+ TL;DR `/blog/` 链接 ≤1（R5，`--strict-r5` 转 FAIL） |
 
 ---
 
-*sparki tools · v1.0.0 · 2026-09-04*
+*sparki tools · v1.1.0 · 2026-09-04*

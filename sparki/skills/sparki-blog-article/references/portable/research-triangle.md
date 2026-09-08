@@ -1,6 +1,6 @@
 # Phase 0R — Research 三角 + 洞察合成
 
-> **随 skill 分发，不依赖仓库外路径。** · sparki portable v1.0 · 2026-09-04
+> **随 skill 分发，不依赖仓库外路径。** · sparki portable v1.1.0 · 2026-09-04
 
 ---
 
@@ -20,6 +20,7 @@ R1 项目 SSOT → R2 搜索 → R3 Fetch
 Agent 读取 skill 文件夹内项目事实来源：
 - `references/project-config.md`（品牌、G1–G7、URL 白名单）
 - `references/product-competitors.md`（产品事实 + 竞品矩阵）
+- `references/proof-library.md`（可验证 P0 claim ledger，PFL 编号）
 - `references/content-graph.md`（已有文章 + Canonical Registry）
 
 ---
@@ -78,7 +79,8 @@ Agent 读取 skill 文件夹内项目事实来源：
 
 ### R1 — Internal
 - Project config loaded: ...
-- Content graph: N articles, next NN = ...
+- Proof Library loaded: PFL-xxx verified as-of {date}
+- Content graph: N articles, slug/date conflict checked
 - Product facts verified: ...
 
 ### R2 — SERP
@@ -114,4 +116,4 @@ G0R-1–5：SSOT、SERP、Fetch、增量。 **G0R-6**：Synthesis + IG 三问。
 
 ---
 
-*portable · sparki v1.0 · 2026-09-04*
+*portable · sparki v1.1.0 · 2026-09-04*

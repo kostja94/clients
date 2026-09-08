@@ -8,7 +8,7 @@ description: >-
   types, with Mode system, Investment Score, Phase 0R research triangle, 9-Phase
   workflow, G1-G7 gates, tools/ validators, and portable/ audit bundle.
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   project: sparki.io
   locale: en
   market: US creators (default; overridable per article topic)
@@ -103,7 +103,7 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 
 > **完整配置 + G1–G7 + URL 白名单 → `references/project-config.md`**
 > **产品事实 + 竞品矩阵 → `references/product-competitors.md`**
-> **61 篇既有文章 → `references/content-graph.md`**
+> **62 篇既有文章 → `references/content-graph.md`**
 
 | 配置项 | Sparki 值 |
 |--------|-----------|
@@ -122,15 +122,8 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 
 ### G1–G7 阻断速查
 
-| # | 阻断条件 | 说明 |
-|---|---------|------|
-| G1 | 事实错误 | 产品能力/定价/数据与 sparki.io 官方矛盾 |
-| G2 | 死链 | 站内/站外链接 404 |
-| G3 | 无来源数字 | 量化 claim 无 attribution |
-| G4 | 竞品状态错误 | 竞品定价/定位/是否 AI 原生与官方矛盾 |
-| G5 | 产品能力夸大 | 定位语言 ≠ sparki.io 已实现功能 |
-| G6 | 内链指向未上线页面 | 只链 project-config §2 白名单 |
-| G7 | 品牌/合规风险 | 贬低竞品、误导性标题、创作者关联暗示 |
+> **完整定义 + 判定方法 → `references/project-config.md` §5（SSOT）**。
+> 速记：G1 事实 · G2 死链 · G3 无来源数字 · G4 竞品状态 · G5 产品夸大 · G6 未上线内链 · G7 品牌风险。任一命中 → 不得进入下一 Phase（详见 gates.md §5 / gates-master.md）。
 
 ---
 
@@ -213,7 +206,7 @@ Phase 6  ─ Delivery
 |---|------|
 | 1 | 目标 SEO 关键词 + 受众？ |
 | 2 | 发布目的（SEO / 品牌 / 转化）？ |
-| 3 | 与既有 61 篇 / 竞品内容的竞争关系（2–3 个 URL）？ |
+| 3 | 与既有 62 篇 / 竞品内容的竞争关系（2–3 个 URL）？ |
 | 4 | 文中内链的站内页面是否已上线（见 project-config §2 白名单）？ |
 | 5 | 文章类型（未给 → Agent 按 §2 推断）？ |
 | 6 | CreatorClone：具体红人 + 公开素材 URL（≥2 个视频/频道）？ |
@@ -240,11 +233,11 @@ Phase 6  ─ Delivery
 
 #### KEEP / MERGE 判定
 
-三条件满足**任意两个** → KEEP（对照 `content-graph.md` §主题簇）：
+三条件满足**任意两个** → KEEP（对照 `references/content-graph.md` §主题簇）：
 
 | 条件 | 判断方法 |
 |------|---------|
-| 搜索意图独立 | 与既有 61 篇 primary keyword 搜索池重叠 <50% |
+| 搜索意图独立 | 与既有 62 篇 primary keyword 搜索池重叠 <50% |
 | 读者阶段不同 | Awareness / Consideration / Evaluation / Activation 不重叠 |
 | 内容深度不可压缩 | 核心论证 >800 词，无法压入他文 ≤3 段 |
 
@@ -258,7 +251,7 @@ Phase 6  ─ Delivery
 > **SERP Fit → `references/portable/serp-fit-template.md`**
 
 ```
-R1 — 读 project-config + product-competitors + content-graph
+R1 — 读 project-config + product-competitors + proof-library + content-graph
     ↓
 R2 — WebSearch（primary keyword → SERP Top 5 + PAA）
     ↓
@@ -291,7 +284,7 @@ Brief 必含：Mode · ArticleType · InvestmentScore · SuccessMetric · MoatAs
 
 1. Slug 候选 = `{slug}.md` 文件名（**不含 `/blog/`、不含 NN**）；文件名必须 = frontmatter `slug`
 2. Gate B：6 问 + 12 反模式零触发
-3. `date`：目标发布日（UTC），避开 `content-graph.md` 日期占用表；每自然日 ≤1 篇
+3. `date`：目标发布日（UTC），避开 `references/content-graph.md` 日期占用表；每自然日 ≤1 篇
 4. title 45–60 / description 120–160（validate 范围 80–320）
 5. 复核 Phase 0R SERP Fit
 
@@ -350,7 +343,7 @@ cd E:\客户部署项目\sparki-blog && npm run validate:posts
 
 ### Phase 5.5 — Cross-Article Audit
 
-同批 ≥2 篇：叙事雷同 · 互链完整性 · Intro/Conclusion 互换测试 · 与 61 篇既有 slug 无混淆。
+同批 ≥2 篇：叙事雷同 · 互链完整性 · Intro/Conclusion 互换测试 · 与 62 篇既有 slug 无混淆。
 
 ---
 
@@ -368,7 +361,7 @@ cd E:\客户部署项目\sparki-blog && npm run validate:posts
 - 主关键词：{primary keyword}
 ```
 
-4. 提示人类：在部署仓 `npm run validate:posts` → build → 上线；更新 `content-graph.md` 登记表。
+4. 提示人类：在部署仓 `npm run validate:posts` → build → 上线；更新 `references/content-graph.md` 登记表。
 
 ---
 
@@ -396,6 +389,7 @@ cd E:\客户部署项目\sparki-blog && npm run validate:posts
 | `references/internal-links.md` | Phase 3, 3.5, 5 |
 | `references/slug-gate.md` | Phase 2 |
 | `references/product-competitors.md` | Phase 0R, 4, 5 |
+| `references/proof-library.md` | Phase 0R（R1 首步，PFL 验证） |
 | `references/writing-constraints.md` | Phase 4 |
 | `references/gates.md` | Phase 0, 1, 2, 5 |
 | `references/selfcheck.md` | Phase 5 |
@@ -423,8 +417,9 @@ cd E:\客户部署项目\sparki-blog && npm run validate:posts
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| **1.1.0** | 2026-09-04 | 对齐家簇 + dedupe：① content-graph 基线 61→62 回填（what-is-a-vlog / ai-video-editor 17）并同步全部 62 篇引用；② 补 portable/retro-audit.md（消除 final-audit 悬空引用）+ portable/README.md；③ 新增 references/proof-library.md（PFL/CM/PRF ledger，接入 Phase 0R R1 与 perfect-article-checklist）；④ link_checker.py 升级 R4/R5（对齐 today：重复 /blog/ slug + TL;DR 链接上限）；⑤ 去重：SKILL G1–G7 速查、project-config Voice、slug-gate Title、final-audit Category、research-triangle NN 残留均改为引用 SSOT |
 | **1.0.0** | 2026-09-04 | 首版：从 luciusai-blog-article v2.0 模板移植并全面定制为 Sparki（OpenBlog 部署仓 slug 命名、7 类路由含 CreatorClone、绝对 URL 站外规则、61 篇 content-graph 基线、category 枚举） |
 
 ---
 
-*sparki-blog-article · v1.0.0 · 2026-09-04 · self-contained · US creators*
+*sparki-blog-article · v1.1.0 · 2026-09-04 · self-contained · US creators*

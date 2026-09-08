@@ -133,7 +133,7 @@
 - [ ] 同 cluster 无矛盾/重复（单篇 N/A）
 - [ ] hub-spoke 链接完整；spoke 回链 hub
 - [ ] 跨篇产品描述一致性；Cannibalization 通过
-- [ ] Intro/Conclusion 不模板化（vs 61 篇同簇文）
+- [ ] Intro/Conclusion 不模板化（vs 62 篇同簇文）
 
 ---
 
@@ -185,4 +185,4 @@
 
 ---
 
-*selfcheck · sparki v1.0.0 · 2026-09-04*
+*selfcheck · sparki v1.1.0 · 2026-09-04*

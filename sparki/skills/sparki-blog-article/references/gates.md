@@ -69,7 +69,7 @@
 | 5 | 无禁词 | 不含 guide/complete/ultimate/diagnosis/年份 |
 | 6 | 长度合规 | 4–9 词，≤60 字符 |
 
-**额外硬性（sparki）**：文件名 = slug（无 NN）；不与 content-graph 61 篇 slug 混淆。
+**额外硬性（sparki）**：文件名 = slug（无 NN）；不与 content-graph 62 篇 slug 混淆。
 6 项 + 额外全 Pass → 继续；任一 Fail → 重选 slug。
 
 **Gate B 附加**：确定 `date`（发布日 UTC），对照 content-graph.md 日期占用，每自然日 ≤1 篇。
@@ -95,4 +95,4 @@
 
 ---
 
-*gates · sparki v1.0.0 · 2026-09-04*
+*gates · sparki v1.1.0 · 2026-09-04*

@@ -23,7 +23,7 @@ SelfCheck Pass = **audit-ready**，**不保证** publish-ready（终审 ≥70 �
 | 品牌/产品 | Sparki（sparki.io） |
 | 主域名 | sparki.io |
 | 博客前缀 | /blog/（成稿在 OpenBlog 部署仓 content/blog） |
-| Category 枚举 | Clone Edit Viral Videos / Video Editing Features / ai-video-editor / AI Video Editing / AI Tools / Editor-in-browser |
+| Category 枚举 | 见 `references/project-config.md` §3（与 SKILL.md §1 一致） |
 | 禁止内链 | 未上线主站页；相对路径的 /features 等（须绝对 URL） |
 | 待审文件 | |
 
@@ -124,4 +124,4 @@ SelfCheck Pass = **audit-ready**，**不保证** publish-ready（终审 ≥70 �
 
 ---
 
-*portable · sparki v1.0 · 2026-09-04*
+*portable · sparki v1.1.0 · 2026-09-04*

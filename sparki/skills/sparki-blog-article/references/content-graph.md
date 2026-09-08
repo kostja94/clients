@@ -1,21 +1,21 @@
 # Sparki Blog — Content Graph
 
 > 加载时机：Phase 0（选题冲突检查）· Phase 2（日期避让 / slug 冲突）· Phase 3.5 / 5.5（Cross-Article）
-> 数据源：`E:\客户部署项目\sparki-blog\content\blog\*.md` 实际 frontmatter（2026-09-04 导出基线）。
+> 数据源：`E:\客户部署项目\sparki-blog\content\blog\*.md` 实际 frontmatter（2026-09-04 导出基线；what-is-a-vlog 2026-09-04 上线，归 ai-video-editor）。
 > **维护规则**：每发一篇新稿，人类/Agent 更新本文件 §2 登记表 + §3 主题簇 + §4 Canonical + §5 日期占用。
 
 ---
 
 ## 1. 总览
 
-- 既有文章：**61 篇**（en-US）
+- 既有文章：**62 篇**（en-US）
 - 文件命名：`content/blog/{slug}.md`；**无 NN 前缀**
 - 文章类型高发段：CreatorClone 型 slug 最多（`how-to-*-like-{creator}`），其次功能/对比型
-- Category 分布：Clone Edit Viral Videos 24 · ai-video-editor 16 · Video Editing Features 12 · Editor-in-browser 4 · AI Video Editing 4 · AI Tools 1
+- Category 分布：Clone Edit Viral Videos 24 · ai-video-editor 17 · Video Editing Features 12 · Editor-in-browser 4 · AI Video Editing 4 · AI Tools 1
 
 ---
 
-## 2. 文件登记表（61 篇）
+## 2. 文件登记表（62 篇）
 
 ### 2A. Clone Edit Viral Videos（红人风格 — 24）
 
@@ -46,7 +46,7 @@
 | selena-gomez-red-eyeliner-routine | 2026-05-08 |
 | viral-travel-adventure-kara-nate | 2026-05-24 |
 
-### 2B. ai-video-editor（AI 编辑器选型/流程 — 16）
+### 2B. ai-video-editor（AI 编辑器选型/流程 — 17）
 
 | slug | date |
 |------|------|
@@ -66,6 +66,7 @@
 | seedance-clips-to-shorts-post-production-workflow | 2026-02-21 |
 | talking-head-editing-agent | 2026-01-10 |
 | tiktok-ai-video-editor | 2025-12-02 |
+| what-is-a-vlog | 2026-09-04 |
 
 ### 2C. Video Editing Features（功能/工作流 — 12）
 
@@ -173,8 +174,8 @@ Category POV（品类教育）
 
 每自然日 ≤1 篇。已占用（按簇内日期勾稽；创作新稿前如需要精确全量，读部署仓 frontmatter `date` 或使用本表 §2 各表 date 列；注意 §2 中部分日期重复——**同一日期已有 2 篇时表示历史同日多发，新稿应选择无任何文章的自然日**）。
 
-最近已占用日期（2026-08 之后）：
-- 2026-08-01 · 2026-07-31 · 2026-07-30 · 2026-07-27 · 2026-07-18 · 2026-07-01（×2）
+最近已占用日期（2026-08 及以后）：
+- 2026-09-04 · 2026-08-01 · 2026-07-31 · 2026-07-30 · 2026-07-27 · 2026-07-18 · 2026-07-01（×2）
 
 > 新稿默认 date = 目标发布日；若与上表冲突，选最近的空档自然日。
 
@@ -200,4 +201,4 @@ Category POV（品类教育）
 
 ---
 
-*content-graph · sparki v1.0.0 · 2026-09-04 · baseline 61 posts*
+*content-graph · sparki v1.1.0 · 2026-09-04 · baseline 62 posts（2026-09-04 回填 what-is-a-vlog）*
