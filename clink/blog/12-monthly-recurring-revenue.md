@@ -99,26 +99,26 @@ For teams running SaaS, the operational extension is unavoidable: MRR is only as
 
 ## FAQ
 
-**What does MRR mean?**
+### What does MRR mean?
 
 MRR stands for monthly recurring revenue—the normalized, predictable revenue a subscription business expects from active customers each month, computed by summing recurring charges and excluding one-time fees. It is the operational growth metric of SaaS and the input that ARR annualizes.
 
-**How do you calculate MRR?**
+### How do you calculate MRR?
 
 Base MRR equals the sum of recurring monthly charges from active subscriptions, or active paying accounts multiplied by average revenue per account. The useful version decomposes into new MRR plus expansion MRR minus contraction MRR minus churned MRR, which shows why the number moved rather than just how much.
 
-**What is the difference between MRR and ARR?**
+### What is the difference between MRR and ARR?
 
 MRR is the monthly view used for operations and short-term decisions; ARR is the annualized view—MRR multiplied by twelve, adjusted for the same forces—used for forecasting and valuation. They measure the same recurring revenue on different time horizons, and mixing them in one chart produces misleading comparisons.
 
-**Does MRR include annual contracts paid upfront?**
+### Does MRR include annual contracts paid upfront?
 
 It includes their monthly equivalent, not the lump sum. A $1,200 annual plan contributes $100 to MRR each month, so prepayments are normalized across the contract term to keep MRR comparable across customers on different billing cycles.
 
-**Why does my MRR not match the cash in my bank account?**
+### Why does my MRR not match the cash in my bank account?
 
 Because MRR is normalized recurring revenue, not cash flow. It excludes one-time items by design, and it counts revenue that is booked but not yet collected—renewals that failed to bill still sit in booked MRR until they convert to involuntary churn. The gap between booked and collected MRR is exactly the payment reliability question.
 
-**What is the difference between MRR and total revenue?**
+### What is the difference between MRR and total revenue?
 
 Total revenue includes everything the company bills—one-time setup fees, implementation charges, professional services—while MRR isolates only the recurring slice. A quarter heavy with onboarding projects can inflate total revenue while MRR stays flat, and rising total revenue can hide a churning subscription book, which is why SaaS teams track MRR for the health signal and total revenue for accounting.

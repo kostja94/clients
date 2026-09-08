@@ -99,26 +99,26 @@ For subscription businesses, the twist is that the revenue side of the equation 
 
 ## FAQ
 
-**What is runway in a startup?**
+### What is runway in a startup?
 
 Runway is the number of months a company can continue operating on its current cash balance before running out of money, calculated as cash on hand divided by monthly net burn. It is the survival metric of startup finance and the number that forces prioritization as it declines.
 
-**How do you calculate runway?**
+### How do you calculate runway?
 
 Runway = cash balance ÷ monthly net burn, where net burn is gross monthly cash outflow minus incoming revenue. A company with $2M in cash, $280K in monthly outflows, and $180K in monthly revenue has 20 months of runway.
 
-**What is a good runway to have?**
+### What is a good runway to have?
 
 The venture convention is 18–24 months before the next raise, because a raise takes three to six months of diligence and the next year of runway is needed to demonstrate the milestones the round prices. Below 12 months, every decision gets re-ranked by the survival deadline and negotiation leverage erodes.
 
-**What is the difference between runway and burn rate?**
+### What is the difference between runway and burn rate?
 
 Burn rate is the speed at which cash leaves—gross burn is total monthly outflow, net burn subtracts revenue. Runway is the duration the cash balance lasts at that speed: cash divided by monthly net burn. They are the speed and the time-to-empty of the same cash position.
 
-**Why does my runway keep shrinking even when I do not spend more?**
+### Why does my runway keep shrinking even when I do not spend more?
 
 Because runway is not just a cost metric—it is a revenue metric too. Renewals that fail, downgrades that arrive, and expansions that do not materialize all raise net burn without a single expense change. For subscription businesses, runway stability depends on collection reliability as much as cost discipline.
 
-**Why should runway be modeled as a range?**
+### Why should runway be modeled as a range?
 
 A single runway number assumes net burn holds steady, but for subscription businesses monthly revenue moves with renewals, expansions, downgrades, and payment failures—each changing net burn without a cost change. Model three scenarios: net burn at current levels, revenue growing at plan, and involuntary churn rising from unaddressed renewal failures. The spread between them is the real risk to discuss, and the conservative scenario should drive the raise calendar.

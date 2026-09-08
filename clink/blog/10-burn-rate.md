@@ -99,26 +99,26 @@ The operational insight follows directly: improving collection reliability impro
 
 ## FAQ
 
-**What is a good burn rate for a startup?**
+### What is a good burn rate for a startup?
 
 There is no universal good number—the right burn rate is one that converts cash into durable growth and preserves at least eighteen to twenty-four months of runway through the next raise, which is the benchmark most venture teams plan against. A high burn is acceptable when it demonstrably accelerates product, distribution, or data advantages; the red flag is high burn without improving unit economics.
 
-**What is the difference between gross burn and net burn?**
+### What is the difference between gross burn and net burn?
 
 Gross burn is total monthly cash outflow from operations, ignoring revenue, and it answers the worst-case question of how fast the company would drain cash if revenue stopped. Net burn subtracts incoming revenue and shows the actual rate the balance shrinks, which is the number used to calculate runway and set the raise calendar.
 
-**Can a profitable company still have a burn rate?**
+### Can a profitable company still have a burn rate?
 
 Yes—profit and cash are different ledgers. A company can report a profit while its cash balance declines because receivables outpace collections, or while it reinvests cash into expansion ahead of revenue; burn rate tracks the cash trajectory, not the accounting result.
 
-**Does burn rate include one-time expenses like hardware or legal fees?**
+### Does burn rate include one-time expenses like hardware or legal fees?
 
 It should, when they are cash outflows in the period—burn is a cash-basis measure, so any cash leaving the account counts. The nuance is in the revenue side: one-time infusions like a funding round or grant should be excluded from monthly revenue, otherwise they inflate net burn's mirror image and distort the runway trend.
 
-**How often should a company recalculate its burn rate?**
+### How often should a company recalculate its burn rate?
 
 Monthly, at minimum, and whenever a material event changes the picture—a funding round, a large annual contract, a round of downgrades, or a change in renewal performance. The runway number decays with every month of operations, and the teams that recompute on the same cadence as their cash statements are the ones whose board decks hold up under diligence.
 
-**Why does burn rate matter more for subscription businesses?**
+### Why does burn rate matter more for subscription businesses?
 
 Because the revenue side is not static—MRR moves with renewals, expansions, downgrades, and failed collections, so net burn changes even when costs stay flat. A spike in failed renewals converts directly into involuntary churn and shorter runway, which is why subscription teams should model burn and runway as a range across revenue scenarios rather than a single point.

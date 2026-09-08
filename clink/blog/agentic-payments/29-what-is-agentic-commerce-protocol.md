@@ -3,7 +3,6 @@ title: "What Is Agentic Commerce Protocol ACP? — Instant Checkout"
 description: "ACP is OpenAI and Stripe's open agent commerce standard—checkout APIs, delegated payment tokens, and product feeds for ChatGPT discovery."
 slug: "what-is-agentic-commerce-protocol"
 date: "2026-09-10"
-updated: "2026-08-24"
 category: "Agentic Payments"
 secondaryCategory: "Research"
 author: "Clink Team"
@@ -137,10 +136,6 @@ To see which surfaces, platforms, and PSPs are **Live versus waitlist** as of Se
 ### Is ACP the same as ChatGPT Instant Checkout?
 
 No. **Instant Checkout** was ChatGPT's in-chat purchase product (September 2025–March 2026 era); **ACP** is the underlying open protocol. As of mid-2026, OpenAI prioritizes **product discovery** via ACP feeds; standalone in-chat checkout is deprioritized, though checkout APIs remain maintained.
-
-### What happened to Instant Checkout in March 2026?
-
-OpenAI **deprioritized standalone in-chat checkout** after roughly a dozen to thirty Shopify merchants went live—far below the million-merchant pipeline announced at launch. Buyers now typically **discover in ChatGPT and checkout on merchant sites**; discovery via ACP feeds continues without a platform completion fee on merchant-owned checkout (per OpenAI merchant FAQ, mid-2026).
 
 ### What is a Shared Payment Token?
 

@@ -99,26 +99,26 @@ The number matters because it separates durable growth from acquisition-fueled g
 
 ## FAQ
 
-**What does NRR mean?**
+### What does NRR mean?
 
 NRR stands for net revenue retention, the percentage of recurring revenue a company keeps from the customers it had at the start of a period, including expansion minus contraction and churn. It is typically measured over a trailing twelve-month window and is the SaaS metric most correlated with durable growth.
 
-**How do you calculate NRR?**
+### How do you calculate NRR?
 
 The formula is (starting recurring revenue + expansion − contraction − churn) ÷ starting recurring revenue, measured over a twelve-month window. A company with $500K of starting MRR, $45K of expansion, $15K of downgrades, and $30K of churn posts NRR of 100%.
 
-**What is a good NRR?**
+### What is a good NRR?
 
 Above 100% is the threshold where the base grows on its own; the most valuable public SaaS companies cluster above 120%, while anything below 100% means churn is erasing expansion and acquisition must compensate. The useful benchmark depends on company stage and pricing model, but 110–130% is the range investors treat as a strong expansion engine.
 
-**What is the difference between NRR and GRR?**
+### What is the difference between NRR and GRR?
 
 GRR excludes expansion and measures only how much of the base revenue simply stayed; NRR includes expansion and measures whether the base grew. The spread between them is the expansion engine—wide spread and high NRR signal product-led growth, while a narrow spread signals a base that shrinks without constant acquisition.
 
-**Why is my NRR different depending on which tool I look at?**
+### Why is my NRR different depending on which tool I look at?
 
 Because NRR depends on attributing every revenue movement to the correct customer cohort over a full year. If expansion is booked to the wrong account, churned customers linger, or new customers are accidentally included, the number drifts. Clean subscription records are a prerequisite for a trustworthy NRR.
 
-**How does involuntary churn affect NRR?**
+### How does involuntary churn affect NRR?
 
 Churn inside NRR is not always a decision—a renewal that fails because a card expired or a soft decline went unretried becomes involuntary churn that sits in the churn component and quietly depresses the number. Automatic retries, payment-method update flows, and routing that keeps renewals alive on a backup path reduce that component, raising NRR without any pricing or product change.

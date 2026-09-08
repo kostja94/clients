@@ -99,26 +99,26 @@ For teams running global SaaS, the operational extension is unavoidable: ARR is 
 
 ## FAQ
 
-**What does ARR mean?**
+### What does ARR mean?
 
 ARR stands for annual recurring revenue, the annualized value of the predictable recurring revenue a subscription business expects to collect, calculated as monthly recurring revenue multiplied by twelve and adjusted for expansion, contraction, and churn. It is the standard growth and valuation metric for SaaS because it isolates the recurring core of the business from one-off income.
 
-**How do you calculate ARR?**
+### How do you calculate ARR?
 
 The base formula is ARR = MRR × 12, with the refined version adding expansion revenue and subtracting contraction and churned revenue. A company with $90K of MRR has $1.08M of base ARR; upgrades, downgrades, and cancellations in the period adjust that figure to reflect the living subscription book.
 
-**What is the difference between ARR and MRR?**
+### What is the difference between ARR and MRR?
 
 ARR is the annualized view used for forecasting, benchmarking, and investor reporting, while MRR is the monthly view used for cash and operational decisions. They measure the same recurring revenue on different time horizons—MRR is the input, ARR is the projection—and mixing them in a single chart produces misleading growth comparisons.
 
-**What is the difference between ARR and total revenue?**
+### What is the difference between ARR and total revenue?
 
 Total revenue includes all income—subscriptions, one-time fees, setup charges, professional services—while ARR includes only the recurring slice. A company's total revenue can grow while ARR stalls, or vice versa, and the recurring slice is the number investors price because it compounds predictably.
 
-**Why is my ARR different from what the billing system reports?**
+### Why is my ARR different from what the billing system reports?
 
 Because realized ARR depends on collection. Contracted ARR counts renewals that failed to bill—expired cards, insufficient funds, unretried soft declines—so the booked number and the collected number diverge by the amount of revenue lost to involuntary churn. Closing that gap is a payment infrastructure concern: automatic retries, payment-method updates, and multi-path routing determine how much of the booked value actually arrives.
 
-**How is ARR different from contract value?**
+### How is ARR different from contract value?
 
 Contract value measures what was sold, not what recurs. A $120K annual contract signed in January does not mean $120K of ARR in January—it means $10K of MRR has begun recurring, with the rest arriving over the year. ARR should lag contract signing until the revenue actually recurs, while contract value is for pipeline reporting only.

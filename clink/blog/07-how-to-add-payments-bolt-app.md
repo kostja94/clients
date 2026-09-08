@@ -3,7 +3,6 @@ title: "How to Add Payments to Bolt.new Apps — Stripe Built-in, Then Clink"
 description: "Add subscriptions and one-time payments to a Bolt.new app with native Stripe via Settings, fix four webhook failure modes, then know when Clink is the next step."
 slug: "how-to-add-payments-bolt-app"
 date: "2026-07-24"
-updated: "2026-07-23"
 category: "Product"
 author: "Clink Team"
 readingMinutes: 14

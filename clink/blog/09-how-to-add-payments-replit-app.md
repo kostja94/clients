@@ -3,7 +3,6 @@ title: "How to Add Payments to Replit Apps — Stripe, Whop, Then Clink"
 description: "Add payments on Replit with Agent-driven Stripe, Whop for instant digital sales, or Clink when the paid gate and platform-tied billing become limits."
 slug: "how-to-add-payments-replit-app"
 date: "2026-07-26"
-updated: "2026-07-23"
 category: "Product"
 author: "Clink Team"
 readingMinutes: 14

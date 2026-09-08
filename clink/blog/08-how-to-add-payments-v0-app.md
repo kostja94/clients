@@ -3,7 +3,6 @@ title: "How to Add Payments to v0 Apps — Stripe, Paddle Kit, Then Clink"
 description: "Add payments to a v0 app with Vercel Marketplace Stripe key exchange or Paddle’s Starter Kit—plus the Next.js middleware webhook signature trap."
 slug: "how-to-add-payments-v0-app"
 date: "2026-07-25"
-updated: "2026-07-23"
 category: "Product"
 author: "Clink Team"
 readingMinutes: 14

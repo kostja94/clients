@@ -1,5 +1,5 @@
 ---
-title: "Stripe Account Suspended, Closed, or Frozen — What It Means and What to Do in the First 72 Hours"
+title: "Stripe Account Suspended, Closed, or Frozen — 72-Hour Action Plan"
 description: "Stripe account suspended, closed, or frozen? Learn restriction types, payout holds vs payment pauses, and a first-72-hour action checklist for SaaS founders."
 slug: "stripe-account-suspended"
 date: "2026-09-01"
