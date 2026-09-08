@@ -1,7 +1,8 @@
-# Portable Bundle — 通用 Blog 创作 SSOT
+# Portable Bundle — 通用 Blog 创作 Rubric（本地镜像）
 
-> **Clink 本地副本** — 从 SSOT 同步，**勿手改**。维护通用规范请改 `E:\Agent执行\blog-create\references\portable\` 后重新同步。
-> **文档不含具体品牌名**；产品配置只在各项目 skill 的 `references/` 内维护。
+> 本目录是通用创作/审计 rubric 的 **clink 本地副本**，运行时**完全本地**（self-contained），不依赖任何外部路径。
+> 维护约定：通用 rubric 的母版（SSOT）由维护者单独管理；SSOT 更新后由维护者整目录同步覆盖本副本——**运行时禁止手改本目录内容**（除维护者同步外）。
+> 文档不含具体品牌名；产品配置只在 `references/` 内维护。
 
 ## 文件清单
 
@@ -19,14 +20,10 @@
 | `final-audit.md` | 发布前终审 + Signal of Excellence |
 | `retro-audit.md` | 已发稿回溯扫描 |
 
-## 同步到 client skill
+## 同步（仅维护者）
 
-```powershell
-$ssot = "E:\Agent执行\blog-create\references\portable"
-$dest = "e:\clients\{brand}\skills\{brand}-blog-article\references\portable"
-Copy-Item -Path "$ssot\*.md" -Destination $dest -Force
-```
+SSOT 更新后，将 SSOT 的 `portable/` 全部 `*.md` 覆盖到本目录（含本 README）。同步命令以维护者 SSOT 侧 README 为准。
 
-维护者更新通用规范后：先改本目录 → 再同步到各 client skill。
+---
 
-*portable-bundle · v2.1 · 2026-08-23 · SSOT: E:\Agent执行\blog-create*
+*portable-bundle · clink local mirror · self-contained · v3.0 · 2026-09-08*

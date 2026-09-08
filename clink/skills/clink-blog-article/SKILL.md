@@ -3,32 +3,32 @@ name: clink-blog-article
 description: >
   Clink L1 project skill — payment/fintech brand facts, GlossaryTerm routing,
   C1–C4 compliance gates, cluster folders (stripe-risk/agentic-payments).
-  MUST load with E:\Agent执行\blog-create (L0 engine) for full 9 Phase workflow.
+  Self-contained v3: full 9-Phase workflow inline; final audit via local
+  portable/final-audit.md. Load alone — no external engine required.
 metadata:
-  version: 2.2.0
+  version: 3.0.0
   project: clinkbill.com
   locale: en
-  self-contained: false
-  complements: blog-create
-  engine: E:\Agent执行\blog-create\SKILL.md
-  audit: E:\Agent执行\blog-audit\SKILL.md
+  market: global SaaS / AI-native payments
+  self-contained: true
   load-rule: progressive-disclosure
-  max-primary-lines: 420
+  max-primary-lines: 460
+  complements: final-audit
   forbidden-reads:
     - ../../clink.md
     - ../../clink-*.md
     - ../../blog/README.md
 ---
 
-# Clink Blog Article Creation（L1 项目层）
+# Clink Blog Article Creation（自包含）
 
 为 **https://clinkbill.com/blog/** 从选题到英文成稿。
 
-**硬性规则**：执行本 skill 时**必须同时加载 L0 引擎** `E:\Agent执行\blog-create\SKILL.md`。工作流（9 Phase + 5 Gate）、Mode、Investment Score、BLUF、Gate 回溯 → **L0**；品牌事实、类型路由、C1–C4、集群路径、Conclusion→FAQ → **本 skill（L1）**。
+**硬性规则**：本 skill **自包含**——只读本文件夹内文件（`references/`、`references/portable/`、`tools/`、`evals/`）。9 Phase + 5 Gate 工作流已内联于本文；通用 rubric 在本地 `references/portable/`。禁止读 skill 文件夹外文档（见 `forbidden-reads`），发布前终审用 `references/portable/final-audit.md`。
 
-**渐进式加载**：默认读本文件 + L0 SKILL 摘要。Phase 细节按指针读取 `references/` 或 L0 `references/portable/`（一次 ≤2 个）。禁止读 `forbidden-reads` 列表外文档。
+**渐进式加载**：Agent 默认只读本文件。Phase 需要细节时，按指针读取 `references/{file}.md` 或 `references/portable/{file}.md`（**一次最多 2 个**），读完即弃，不跨 Phase 保留。禁止一次性加载全部 references。
 
-**六角色换帽**（与 L0 一致；Phase 4 与 Phase 5 **分轮**）：
+**六角色换帽**（Phase 4 与 Phase 5 **分轮**，禁止 Draft 同轮自我放行 Gate C）：
 
 | Phase | 角色 |
 |-------|------|
@@ -41,15 +41,15 @@ metadata:
 
 ## §0 如何使用
 
-### 触发语（双 skill）
+### 触发语
 
 ```
-按 E:\Agent执行\blog-create\SKILL.md + clink-blog-article skill 执行：
-- 项目 skill：e:\clients\clink\skills\clink-blog-article
-- 关键词："{primary keyword}"
-- 类型：{BrandIntroduction|Comparison|Product|Opinion|EvaluationComparison|GlossaryTerm|IndustryNews|StripeRisk}（可选）
-- Mode：{lite|standard|flagship}（可选，默认 standard）
+按 clink-blog-article skill，为关键词 "{primary keyword}" 创建一篇
+{type} 文章。Mode：{lite|standard|flagship}（可选，默认 standard）。
+发布目的：{SEO|品牌|转化}。目标读者：{描述}。
 ```
+
+`{type}` 枚举见 §2 路由（BrandIntroduction / Comparison / Product / Opinion / EvaluationComparison / GlossaryTerm / IndustryNews / StripeRisk / AgenticPayments 簇内 Research / HowTo）。未给则 Agent 按 §2 推断。
 
 ### 输入
 
@@ -57,22 +57,22 @@ metadata:
 |------|:---:|------|
 | 主关键词 | ✅ | 决定 §2 类型路由 |
 | 文章类型 | 可选 | 未给则 Agent 按 §2 推断 |
-| Mode | 可选 | BrandIntroduction/Comparison/EvaluationComparison 默认 flagship |
-| 竞品参考 URL | 推荐 | Phase 0R |
+| Mode | 可选 | 未指定默认 standard；部分类型有默认 Mode（见 article-types §1） |
+| 竞品参考 URL | 推荐 | Phase 0R 信息增量判断 |
 
-### 输出（L0 Phase 6 + L1 约束）
+### 输出（Phase 6 交付物，按 Mode）
 
 | # | 交付物 | lite | standard | flagship |
 |---|--------|:----:|:--------:|:--------:|
 | 1 | Article Brief | ✅ | ✅ | ✅ |
-| 2 | Research Log | 简 | ✅ | ✅ |
+| 2 | Research Log（R1–R3 + Synthesis） | 简 | ✅ | ✅ 完整 |
 | 3 | 成稿 `clink/blog/[{cluster}/]NN-{slug}.md` | ✅ | ✅ | ✅ |
-| 4 | SelfCheck（H0–H4 + 12 维） | ✅ | ✅ | ✅ |
+| 4 | SelfCheck（H0–H4 + C1–C4 + 12 维） | ✅ | ✅ | ✅ |
 | 5 | Source Map | ✅ | ✅ | ✅ |
 | 6 | SERP Fit | 简 | ✅ | ✅ |
 | 7 | OG Image Prompt（1200×630） | ✅ | ✅ | ✅ |
 | 8 | Internal Link Plan | — | ✅ | ✅ |
-| 9 | 终审指令 → `E:\Agent执行\blog-audit\SKILL.md` | ✅ | ✅ | ✅ |
+| 9 | 终审指令 → `references/portable/final-audit.md` | ✅ | ✅ | ✅ |
 | 10 | Post-publish Metric Spec | — | ✅ | ✅ |
 | 11 | 提示人类更新 `blog/README.md` | ✅ | ✅ | ✅ |
 
@@ -82,143 +82,208 @@ metadata:
 
 | 场景 | 改用 |
 |------|------|
-| 仅优化 title/description | 未来 `clink-meta-title-description` |
-| 已有完整稿，仅需终审 | `E:\Agent执行\blog-audit\SKILL.md` |
-| 非 clinkbill.com 博客 | 其他项目 L1 skill + blog-create |
+| 仅优化 title/description | `references/meta-title-description.md`（禁止改正文） |
+| 已有完整稿，仅需终审 | `references/portable/final-audit.md` |
+| 已发稿回溯审计 | `references/portable/retro-audit.md` |
+| 非 clinkbill.com 博客 | 对应项目 blog skill |
 
 ---
 
 ## §1 项目配置速查
 
-> **完整配置 + G1–G7 + C1–C4 → `references/project-config.md`**
+> **完整配置 + G1–G7 + C1–C4 详表 → `references/project-config.md`**
 
 | 配置项 | Clink 值 |
 |--------|---------|
-| **blogLayout** | **cluster-folders**（见 §4 + `content-graph.md` §1B） |
-| **主域名** | clinkbill.com |
-| **博客前缀** | `/blog/` |
-| **Pillar Hub** | `what-is-clink` |
-| **下一序号 NN** | **24**（见 `content-graph.md` §1） |
+| **主域名 / 博客前缀** | clinkbill.com / `/blog/` |
+| **blogLayout** | cluster-folders（见 §4 + `content-graph.md` §1B） |
 | **品类 one-liner** | Subscription billing + multi-PSP orchestration + tax + agent payments |
 | **受众** | 全球 SaaS、AI-native、支付/RevOps 工程师 |
 | **署名默认** | `Clink Team` |
-| **禁止内链** | `/vs/*`、`/pricing`、`/for/*`、`/learn/*`、`/customers/*` |
+| **下一序号 NN** | **24**（全局连续；见 `content-graph.md`） |
+| **接入模式** | Contact Sales（无公开定价页 as-of 2026-06） |
 
-### C1–C4 阻断速查
+### C1–C4 阻断速查（详表 → project-config §4）
 
 | # | 阻断条件 |
 |---|---------|
-| C1 | 无来源的具体 Clink 费率 |
-| C2 | MoR/tax 超范围 claim 无限定语 |
+| C1 | 无来源的具体 Clink 费率（禁止编造 pricing table） |
+| C2 | MoR/tax 超范围 claim 无限定语或 as-of |
 | C3 | 证言夸大无 as-of |
-| C4 | Agentic Payments 未标 Early Access |
+| C4 | Agentic Payments 未标 Early Access（路径 `/agentic-payment`） |
 
 ---
 
 ## §2 文章类型路由（Clink 专属）
 
-> **完整路由 + H2 模板 → `references/article-types.md`**
-> **L0 Phase 流程 → `E:\Agent执行\blog-create\SKILL.md` §3**
+> **路由主表 + 词数 + H2 模板 → `references/article-types.md` §1/§3**（本文件不复述主表）
 
-### 路由速查
+**类型枚举**：BrandIntroduction · Comparison · Product · Opinion · EvaluationComparison · GlossaryTerm · IndustryNews · StripeRisk · AgenticPayments 簇内 Protocol Definition / Reference List（Research）· Merchant How-To（HowTo）。
 
-| 类型 | intent | 词数目标 | Clink 占比 | 默认 Mode | `--intent` / `--min` |
-|------|--------|----------|:---:|:---:|------|
-| BrandIntroduction | 品牌 hub | 2500–3500 | ≤30% | flagship | `brand` / `--min 2500` |
-| Comparison | 架构选型 | 2500–3500 | ≤35% | flagship | `comparison` / `--min 1600` |
-| Product | how-to / routing | 2200–3200 | ≤40% | standard | `product` / `--min 1800` |
-| Opinion | category POV | 2000–2800 | ≤35% | standard | `opinion` / `--min 1800` |
-| EvaluationComparison | clink vs X | 2500–3500 | ≤45% | flagship | `evaluation` / `--min 2500` |
-| GlossaryTerm | 财务/计费术语 | 2200–3200 | ≤15% | standard | `glossary` / `--min 1800` |
-| **IndustryNews** | 行业事件/收购 | 2000–2800 | ≤25% | standard | `opinion` / `--min 1800` |
-| **StripeRisk** | Stripe 风控/申诉 | 2200–3200 | ≤30% | standard | `product` / `--min 1800` |
+- GlossaryTerm → 读 `article-types.md` §3 + `references/glossary-terms.md`
+- AgenticPayments 簇三型 → `article-types.md` §3「AgenticPayments 簇内类型」
+- 集群归属与互链 → `content-graph.md` §1B / 推荐互链表
+- 重写/扩写 05–09（lovable-series）→ 额外读 `references/series-canonical-ownership.md`
 
-**Agentic Payments 集群**（`agentic-payments/`）：Hub `agent-payments`（04）+ 协议 definition 系列（26–29, 33）。**Industry News 集群**（`industry-news/`）：15、18。Skill Marketplace（16–17）在根目录。
-
-**GlossaryTerm**：slug 纯术语 kebab-case（**不加** `what-is-`）；`category: Glossary`。
-
-**集群双分类**（`stripe-risk/` · `agentic-payments/`）：
-
-```yaml
-category: "Stripe Risk"          # 或 "Industry News"
-secondaryCategory: "Guide"       # Research | Opinion | HowTo | Product
-```
-
-### 全类型结构硬约束
+**全类型结构硬约束**（FAQ/Conclusion 等，速查；通用模块表在 article-types §2）：
 
 | 模块 | 要求 |
 |------|------|
 | **TL;DR** | 3–5 bullets；bullet 1 = snippet 定义句 |
 | **H2** | 英文描述性标题；**不编号** |
 | **Conclusion → FAQ** | 倒数第二节 `## Conclusion`；最后一节 `## FAQ`（**6 题**） |
-| **内链** | blog 正文互链 ≥2 |
+| **内链** | blog 正文互链 ≥2（`/blog/{slug}`） |
 | **CTA** | Contact Sales / docs；≤2 次 |
 
 ---
 
-## §3 Clink Phase 叠加（在 L0 各 Phase 之上执行）
+## §3 创作工作流（9 Phase + 5 Gate）
 
-### Phase 0 — 六必问（L1 扩展）
+```
+Phase 0  ─ Intake & Gate A         (Mode + Investment Score + 六必问)
+    ↓ PASS
+Phase 0R ─ Research 三角 & Gate 0R  (R1→R2→R3→Synthesis)
+    ↓ PASS / ❌ → §3.G
+Phase 1  ─ Article Brief
+Phase 2  ─ Slug、Date、Path & Gate B
+    ↓ PASS / ❌ → §3.G
+Phase 3  ─ Outline
+Phase 3.5─ Outline 交叉检查（同批 ≥2 篇强制）
+    ↓ PASS / ❌ → §3.G
+Phase 4  ─ Draft（BLUF 三处 + 段落优先 + 渐进加载）
+    ↓
+Phase 5  ─ SelfCheck & Gate C（H0–H4 + C1–C4 + 12 维）
+    ↓ PASS / ❌ → §3.G
+Phase 5.5─ Cross-Article Audit（同批 ≥2 篇强制）
+Phase 6  ─ Delivery
+```
 
-| # | 问题 |
-|---|------|
-| 1 | 目标 SEO 关键词 + 受众？ |
-| 2 | 发布目的（品牌 / SEO / 转化）？ |
-| 3 | SERP Top 3 竞品 URL？ |
-| 4 | 内链页面是否已上线？ |
-| 5 | 与已有文章 / pipeline 关系？ |
-| 6 | **category**（Product / Comparison / Opinion / Glossary / Agentic Payments / Stripe Risk / Industry News）？ |
+---
 
-**Phase 0 首行强制输出（L0 + L1）**：
+### Phase 0 — Intake & Gate A
+
+> **Investment Score → `references/portable/investment-score.md`**
+> **Gate 细则 → `references/gates.md`**
+
+**Phase 0 首行强制输出**：
 
 ```
 ## Mode: lite | standard | flagship
-## ArticleType: BrandIntroduction | … | IndustryNews | StripeRisk
+## ArticleType: {§2 枚举}
 ## InvestmentScore: {1.0–5.0}
-## Cluster: {cluster-id | standalone}
-## File path: clink/blog/[{cluster}/]NN-{slug}.md
+## Cluster: {cluster-id | standalone}          ← content-graph §1B
+## File path: clink/blog/[{cluster}/]NN-{slug}.md   ← Phase 2 确认
 ## Category: {frontmatter category}
 ## Author: Clink Team
 ## Gate A: KEEP | MERGE → {slug} | STOP
 ```
 
-> Gate A / Investment Score → L0 portable + `references/gates.md`
+**六必问**（SSOT：`references/gates.md` §1）：
 
-### Phase 1 — Brief 扩展
+| # | 问题 |
+|---|------|
+| 1 | 主关键词 + search intent？ |
+| 2 | 目标读者（ICP）？ |
+| 3 | 发布目的（SEO / 品牌 / 转化）？ |
+| 4 | SERP Top 3 竞品 URL（供 Phase 0R）？ |
+| 5 | 与已有 blog / pipeline 关系？文中内链页面是否已上线？ |
+| 6 | category（Product / Comparison / Opinion / Glossary / Agentic Payments / Stripe Risk / Industry News）？ |
 
-L0 Brief 基础上**必加**：`Category`、`Cluster`、`Information increment ≥2`、Planned internal links、Slug candidate。范例 → `references/mini-example.md`
+**Gate A**：三条件（意图独立 / 读者阶段不同 / 深度不可压缩）满足 ≥2 → KEEP；信息增量相对 SERP Top 3 ≥2 项；Investment <3.0 → 降级或 STOP。GlossaryTerm 追加 D1–D4（见 gates.md §2）。
+
+---
+
+### Phase 0R — Research 三角 & Gate 0R
+
+> **完整流程 → `references/portable/research-triangle.md`**
+> **SERP Fit → `references/portable/serp-fit-template.md`**
+
+```
+R1 — project-config + product-competitors + content-graph
+    ↓
+R2 — Web 搜索（primary keyword → SERP Top 5 + PAA）
+    ↓
+R3 — Fetch URL（clinkbill.com/docs + SERP Top 3–5 原文）
+    ↓
+Synthesis Statement（洞察合成）+ Candidate Examples
+    ↓
+Research Log + SERP Fit → Gate 0R Pass → Phase 1
+```
+
+**Mode 差异**：lite 可简版 R2/R3；flagship 须完整 R3 Top5 + ≥2 Candidate Examples。
+
+**Degraded**（WebSearch 不可用）：标注 `Research mode: Degraded — {reason}`；P0 级 claim 不得写未验证数字。
+
+---
+
+### Phase 1 — Article Brief
+
+> **模板 + 范例 → `references/mini-example.md`**
+
+Brief 通用字段之上**必加**：`Category`、`Cluster`、`Information increment ≥2`、Planned internal links、Slug candidate。Brief 输出块见 `mini-example.md`。
+
+---
 
 ### Phase 2 — Slug、Date、Path & Gate B
 
-1. Slug → `references/slug-gate.md`（Gate B 六问）
-2. **publishDate**：`content-graph.md` 日期表；**一天一篇**
-3. **文件路径**（cluster-folders）：
+1. Slug 候选 → `references/slug-gate.md`（Gate B：6 问全 Pass + 12 反模式零触发）
+2. **Meta**：title / description → `references/meta-title-description.md`（公式 + 字符范围）
+3. **publishDate**：对照 `content-graph.md` 日期表；**一天一篇**，错开已占用日
+4. **文件路径**（cluster-folders）：
 
 ```
 读 content-graph §1B
-  → folder 有值 → clink/blog/{folder}/NN-{slug}.md
-  → standalone → clink/blog/NN-{slug}.md
+  → cluster 有 folder → clink/blog/{folder}/NN-{slug}.md
+  → standalone        → clink/blog/NN-{slug}.md
+NN 全局连续（下一号 24），子目录不重置序号。
 ```
 
-4. Frontmatter 禁止：`keywords` · `related` · `disclosure`
+5. Frontmatter 禁止：`keywords` · `related` · `disclosure` · `image`；schema 见 `article-types.md` §4
+
+---
 
 ### Phase 3 — Outline
 
-- H2 模板 → `article-types.md`
-- 内链矩阵 → `references/internal-links.md`
-- OG Image Prompt（1200×630）
+- H2 模板 → `references/article-types.md` §3
+- 内链矩阵 / 锚文本 → `references/internal-links.md`
+- OG Image Prompt（1200×630，主 prompt + 2 variant）
+
+---
+
+### Phase 3.5 — Outline 交叉检查
+
+> **检查项 → `references/portable/outline-cross-check.md`**
+
+触发：同批 ≥2 篇。检查 H2 重复、叙事弧雷同、Canonical 越界、Synthesis 冲突、内链缺口。单篇标注 `N/A — single article`。
+
+---
 
 ### Phase 4 — Draft
 
-**加载顺序**（≤2 文件/轮）：`writing-constraints.md` → `product-competitors.md` → `project-config.md`
+**加载顺序**（每次 ≤2 文件，读后即弃）：
 
-GlossaryTerm 选题 → 额外读 `references/glossary-terms.md`
+1. `references/writing-constraints.md`（Voice + BLUF + 段落优先 + 引用分级）
+2. `references/article-types.md` §3（当前类型的 H2 模板）
+3. `references/product-competitors.md`（产品事实 + 竞品公平，对比/产品文必读）
 
-改写/扩写 **05–09**（lovable-series）→ 额外读 `references/series-canonical-ownership.md`
+GlossaryTerm 选题 → 额外读 `references/glossary-terms.md`；重写 05–09 → 额外读 `references/series-canonical-ownership.md`。flagship → `references/portable/extractability-checklist.md`。
+
+**核心约束**：
+
+- **BLUF 三处**：TL;DR 下 40–60 词直接回答；每个 major H2 首段先答；FAQ 首句即答（不得复制正文）
+- **段落优先**：先 prose 后结构；禁伪列表；长段落（≥4 句）≥3；连续短段 ≤2；衔接率 ≥70%
+- **P0 数字有来源**：产品 claim 引用 clinkbill.com/docs，as-of；金融表述守 C1–C4
+- 竞品每方 ≥1 优势；外链 `rel="nofollow noopener"`
+- 模块顺序：YAML → TL;DR → H2… → Conclusion → FAQ
+
+---
 
 ### Phase 5 — SelfCheck & Gate C
 
-1. **工具预检**（从 `clink/` 根目录）：
+> **H0–H4 + C1–C4 → `references/selfcheck.md`**
+> **12 维通用 rubric → `references/portable/` 内（gates-master + final-audit 供对照）**
+
+**工具先跑**（从 `clink/` 根目录；`--intent`/`--min` 见 article-types §1，`--forbidden` 见 project-config §2）：
 
 ```bash
 python skills/clink-blog-article/tools/frontmatter_validator.py blog/{path} --keyword "{kw}"
@@ -226,71 +291,94 @@ python skills/clink-blog-article/tools/word_count_narrative.py blog/{path} --int
 python skills/clink-blog-article/tools/link_checker.py blog/{path}
 ```
 
-2. **H0–H3 + 12 维** → L0 `E:\Agent执行\blog-create\references\selfcheck.md`
-3. **H4 + C1–C4** → `references/selfcheck.md`
+**Gate C**：H0–H4 + C1–C4 + 12 维全 Pass → **audit-ready**；任一 Fail → §3.G 回溯修复 → 重跑。flagship 追加 Perfect-Ready 清单（`selfcheck.md`）。
 
-Gate C Pass → **audit-ready**；终审 → `E:\Agent执行\blog-audit\SKILL.md`
+---
+
+### Phase 5.5 — Cross-Article Audit
+
+触发：同批 ≥2 篇。检查叙事雷同 / 互链双向 / Intro-Conclusion 模板化 / 核心概念跨篇重复 / 事实矛盾 / Cannibalization。单篇跳过标注 `N/A`。
+
+---
 
 ### Phase 6 — Delivery
 
 1. 写入 `clink/blog/[{cluster}/]NN-{slug}.md`
-2. Brief + SelfCheck + Source Map + SERP Fit
-3. 复制 L0 Phase 6 终审指令（指向 **blog-audit**）
-4. 提示人类更新 `blog/README.md`；金融 claim 建议法务审定
+2. Article Brief 最终版 + SelfCheck 表 + Source Map + SERP Fit + Internal Link Plan
+3. **终审指令**（复制给用户，指向本地 rubric）：
+
+```
+请按 clink-blog-article skill 的 references/portable/final-audit.md 执行发布前终审：
+- 文件：clink/blog/[{cluster}/]NN-{slug}.md
+- 类型：{Article type}
+- 主关键词：{primary keyword}
+- SelfCheck：audit-ready
+```
+
+4. 提示人类更新 `blog/README.md`；金融 claim 建议法务审定。
+
+---
+
+### §3.G — Gate 失败回溯表
+
+| Fail 于 | 回退至 | 动作 |
+|---------|--------|------|
+| Gate A / Investment | Phase 0 | 改角度 / MERGE / STOP |
+| Gate 0R | Phase 0R | 补 R2/R3 / 降 Degraded claim |
+| Gate B | Phase 2 | 重选 slug / 改 meta |
+| Gate 3.5 / 5.5 | Phase 3 / 4 | 改 Outline 或正文差异 |
+| Gate C — 写作/事实类 | Phase 4 | EEAT / Voice / Presentation / 产品事实修复 |
+| Gate C — 结构类 | Phase 3 | 缺模块、H2 骨架不符 |
+| Gate C — Slug/Meta | Phase 2 | title/description / frontmatter |
 
 ---
 
 ## §4 集群与 frontmatter
 
-> **Cluster 注册表 → `references/content-graph.md` §1B**
-> **通用规则 → `E:\Agent执行\blog-create\references\topic-cluster-layout.md`**
+> **Cluster 完整注册表 → `references/content-graph.md` §1B**
 
 | Cluster ID | folder | Hub slug | 主 category |
 |------------|--------|----------|-------------|
 | core | *(root)* | what-is-clink | Product / Comparison / Opinion / Glossary |
 | glossary-metrics | *(root)* | burn-rate | Glossary |
 | lovable-series | *(root)* | how-to-add-payments-lovable-app | Product |
-| agentic-payments | `agentic-payments/` | agent-payments | **Agentic Payments** — 04 Hub + 26–29, 33 |
-| industry-news | `industry-news/` | stripe-openrouter-acquisition | **Industry News** — 15, 18 |
-| stripe-risk-disputes | `stripe-risk/` | what-is-stripe-dispute | **Stripe Risk** — 争议/拒付 21–23 |
-| stripe-risk-accounts | `stripe-risk/` | stripe-account-suspended | **Stripe Risk** — 账户限制 25/30/32 |
+| agentic-payments | `agentic-payments/` | agent-payments | Agentic Payments — 04 Hub + 26–29, 31, 33–36 |
+| industry-news | `industry-news/` | stripe-openrouter-acquisition | Industry News — 15, 18 |
+| stripe-risk-disputes | `stripe-risk/` | what-is-stripe-dispute | Stripe Risk — 争议/拒付 21–23 |
+| stripe-risk-accounts | `stripe-risk/` | stripe-account-suspended | Stripe Risk — 账户限制 25/30/32 |
+
+**双分类 frontmatter**（cluster 文）：
 
 ```yaml
-category: "Agentic Payments"
-secondaryCategory: "Opinion"   # 或 Product / Industry News
+category: "Agentic Payments"          # 或 Stripe Risk / Industry News
+secondaryCategory: "Research"         # Research | HowTo | Guide | Opinion | Product
 ```
 
-**内链**：永远 `/blog/{slug}`，禁止 `/blog/agentic-payments/{slug}` 或 `/blog/stripe-risk/{slug}`。
+**内链**：永远 `/blog/{slug}`，禁止 `/blog/agentic-payments/{slug}` 等子目录路径。
 
 ---
 
-## §5 Reference 索引
+## §5 Reference 索引（均在本文件夹内）
 
-| 文件 | 加载时机 | 层级 |
-|------|----------|------|
-| `E:\Agent执行\blog-create\SKILL.md` | Phase 0–6 | **L0** |
-| `E:\Agent执行\blog-audit\SKILL.md` | 终审 | **L0** |
-| `references/project-config.md` | Phase 0R, 4, 5 | L1 |
-| `references/article-types.md` | Phase 0, 2, 3, 4 | L1 |
-| `references/gates.md` | Phase 0, 2 | L1 |
-| `references/slug-gate.md` | Phase 2 | L1 |
-| `references/content-graph.md` | Phase 0, 2, 3.5, 5.5 | L1 |
-| `references/internal-links.md` | Phase 3, 3.5 | L1 |
-| `references/glossary-terms.md` | Phase 0（GlossaryTerm） | L1 |
-| `references/series-canonical-ownership.md` | Phase 4 / 5（lovable-series 05–09） | L1 |
-| `references/writing-constraints.md` | Phase 4 | L1 |
-| `references/product-competitors.md` | Phase 0R, 4 | L1 |
-| `references/selfcheck.md` | Phase 5（H4 + C1–C4） | L1 |
-| `references/mini-example.md` | Phase 1, 3 | L1 |
-| `references/portable/*` | 按 L0 指针；**同步自 SSOT** | L0 副本 |
-| `tools/` | Phase 5 | L1（Clink fork + 阈值） |
-
-**portable 同步**：
-
-```powershell
-Copy-Item "E:\Agent执行\blog-create\references\portable\*.md" `
-  "e:\clients\clink\skills\clink-blog-article\references\portable\" -Force
-```
+| 文件 | 加载时机 |
+|------|----------|
+| `references/project-config.md` | Phase 0R / 4 / 5（品牌 + G1–G7 + C1–C4 + URL 白名单） |
+| `references/article-types.md` | Phase 0 / 2 / 3 / 4（路由主表 + H2 模板 + frontmatter schema） |
+| `references/gates.md` | Phase 0 / 0R / 2 / 5（Gate 细则 + 六必问 + D1–D4） |
+| `references/content-graph.md` | Phase 0 / 2 / 3 / 5.5（文件表 + cluster + 日期 + 互链） |
+| `references/internal-links.md` | Phase 3 / 3.5 / 5 |
+| `references/glossary-terms.md` | Phase 0（GlossaryTerm） |
+| `references/series-canonical-ownership.md` | Phase 4 / 5（05–09） |
+| `references/writing-constraints.md` | Phase 4 |
+| `references/product-competitors.md` | Phase 0R / 4 / 5 |
+| `references/selfcheck.md` | Phase 5（H4 + C1–C4） |
+| `references/meta-title-description.md` | Phase 2 / title-only 任务 |
+| `references/mini-example.md` | Phase 1 / 3 |
+| `references/slug-gate.md` | Phase 2 |
+| `references/keywords.md` | Phase 0 |
+| `references/portable/*` | 按 Phase 指针（本地镜像，self-contained） |
+| `tools/` | Phase 5 |
+| `evals/` | skill 变更后回归 |
 
 ---
 
@@ -299,10 +387,11 @@ Copy-Item "E:\Agent执行\blog-create\references\portable\*.md" `
 - ❌ Glossary slug 加 `what-is-` 前缀
 - ❌ 内链写 `/blog/agentic-payments/...` 或 `/blog/stripe-risk/...`
 - ❌ 写具体 Clink 费率（C1）· MoR 全覆盖无 as-of（C2）
-- ❌ FAQ 不是最后一节 · 缺 `## Conclusion`
-- ❌ frontmatter 写 `keywords` / `related`
+- ❌ FAQ 不是最后一节 · 缺 `## Conclusion` · FAQ 不是 6 题
+- ❌ frontmatter 写 `keywords` / `related` / `image`
 - ❌ 05–09 系列违反 `references/series-canonical-ownership.md`
-- ❌ 仅加载 clink-blog-article 不加载 blog-create
+- ❌ 一次加载全部 references / 读 skill 文件夹外文档
+- ❌ Gate 未全 Pass 交付 / 混淆 SelfCheck 与终审
 
 ---
 
@@ -310,11 +399,12 @@ Copy-Item "E:\Agent执行\blog-create\references\portable\*.md" `
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| **2.0.0** | 2026-08-23 | L0+L1 拆分；cluster-folders（stripe-risk/agentic-payments）；selfcheck overlay |
+| **3.0.0** | 2026-09-08 | **自包含化**：内联完整 9 Phase 工作流；移除全部外部 L0 引擎依赖；终审指本地 `portable/final-audit.md`；type 枚举并入 AgenticPayments 簇 Research/HowTo；新增 `meta-title-description.md` + `evals/`；NN 表述改全局连续；FAQ 统一 6 题 |
 | **2.2.0** | 2026-08-24 | 恢复 `industry-news/` 集群（15, 18）；15 主 category 改为 Industry News |
 | **2.1.0** | 2026-08-24 | `agentic-payments/` 协议 definition 系列（26–29, 33） |
+| **2.0.0** | 2026-08-23 | L0+L1 拆分；cluster-folders（stripe-risk/agentic-payments）；selfcheck overlay |
 | 1.0.0 | 2026-07-21 | 自包含 monolith |
 
 ---
 
-*clink-blog-article · v2.2.0 · 2026-08-24 · L1 · engine: E:\Agent执行\blog-create · audit: E:\Agent执行\blog-audit*
+*clink-blog-article · v3.0.0 · 2026-09-08 · self-contained · engine: inline · audit: references/portable/final-audit.md*

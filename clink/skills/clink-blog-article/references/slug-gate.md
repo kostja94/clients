@@ -36,15 +36,10 @@
 
 ---
 
-## Title 公式
+## Title / Description
 
-- BrandIntroduction：`What Is Clink? — {Value Prop}`
-- Comparison：`{A} vs {B}: How to Choose {Frame}`
-- Product：`{Capability}: How {Mechanism} Recovers {Outcome}`
-- Opinion：`{Thesis}: The Case for {Category}`
-- EvaluationComparison：`Clink vs {Competitor}: {Differentiator Frame}`
-- GlossaryTerm：`What Is {Term}? — {Scope}, Explained`；**slug 用纯术语全称 kebab-case，不加 `what-is-` 前缀、不用缩写**（`burn-rate`、`monthly-recurring-revenue`、`runway`）
+> SSOT → `references/meta-title-description.md`（每类型 Title 公式 + Description 规则 + 字符范围）。本文件不复述。
 
 ---
 
-*slug-gate · v1.0.0 · 2026-07-21*
+*slug-gate · v1.1.0 · 2026-09-08 · Title 公式迁至 meta-title-description*

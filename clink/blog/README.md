@@ -2,7 +2,7 @@
 
 > Blog content for [clinkbill.com](https://clinkbill.com/) blog section.
 
-**Last updated**: 2026-09-01  
+**Last updated**: 2026-09-15  
 **Note**: All nine published articles received an S-grade structural rewrite on 2026-07-23 (slugs frozen; titles normalized to `Title — Subtitle`). Series anti-clone contract for 05–09: [`../skills/clink-blog-article/references/series-canonical-ownership.md`](../skills/clink-blog-article/references/series-canonical-ownership.md). GlossaryTerm entries (10–14) published 2026-07-27–31. Skill Marketplace 双文（16–17）published 2026-08-05/06. **Agentic Payments protocol definition 五部曲**（26–29, 33）published 2026-09-07–11. **Agentic reference list 三文**（34–36）published 2026-09-13–15. **Images removed 2026-08-11** — no article uses an `image` field.
 
 ---
@@ -94,23 +94,17 @@ blog/
 
 ## How to create new articles
 
-**双层架构**：
-
-| 层 | 路径 |
-|----|------|
-| **L0 通用引擎** | `E:\Agent执行\blog-create\SKILL.md` |
-| **L1 Clink** | [`../skills/clink-blog-article/SKILL.md`](../skills/clink-blog-article/SKILL.md) |
-| **终审** | `E:\Agent执行\blog-audit\SKILL.md` |
+**自包含 skill**：[`../skills/clink-blog-article/SKILL.md`](../skills/clink-blog-article/SKILL.md)（含完整 9 Phase 工作流 + 本地 rubric；终审用其 `references/portable/final-audit.md`）
 
 **触发语**：
 
 ```
-按 E:\Agent执行\blog-create\SKILL.md + clink-blog-article skill 执行：
-- 项目 skill：e:\clients\clink\skills\clink-blog-article
-- 关键词："{primary keyword}"
-- 类型：{BrandIntroduction|Comparison|Product|Opinion|EvaluationComparison|GlossaryTerm|IndustryNews|StripeRisk|AgenticPayments}
-- Mode：{lite|standard|flagship}
+按 clink-blog-article skill，为关键词 "{primary keyword}" 创建一篇
+{type} 文章。Mode：{lite|standard|flagship}。
+发布目的：{SEO|品牌|转化}。
 ```
+
+类型枚举与工作流见 skill SKILL.md §2/§3。
 
 **成稿路径**：`clink/blog/[{cluster}/]NN-{slug}.md`（集群见 content-graph §1B）。
 

@@ -1,19 +1,20 @@
 # Clink — Project Configuration
 
 > 加载时机：Phase 0R（R1）· Phase 4（Draft）· Phase 5（SelfCheck）
-> 主文件：SKILL.md v2.0 · L0：`E:\Agent执行\blog-create\SKILL.md`
+> 主文件：SKILL.md v3.0（自包含）
 
 ---
 
-## 0. L0 引擎与 SSOT
+## 0. 架构与 SSOT
 
-| 项 | 路径 |
+> 主文件：`SKILL.md` v3.0（自包含）
+
+| 项 | 位置 |
 |----|------|
-| **L0 工作流引擎** | `E:\Agent执行\blog-create\SKILL.md` |
-| **终审 skill** | `E:\Agent执行\blog-audit\SKILL.md` |
-| **portable SSOT** | `E:\Agent执行\blog-create\references\portable\` |
-| **blogLayout** | `cluster-folders`（`agentic-payments/` · `stripe-risk/` · 其余 root） |
-| **子目录规则** | `E:\Agent执行\blog-create\references\topic-cluster-layout.md` |
+| **创作工作流** | 内联于 `SKILL.md` §3（9 Phase + 5 Gate + 回溯） |
+| **通用 rubric（portable）** | `references/portable/`（本地镜像；维护通用规范改 SSOT 后同步，见该目录 README） |
+| **发布前终审** | `references/portable/final-audit.md` |
+| **blogLayout** | `cluster-folders`（`agentic-payments/` · `stripe-risk/` · 其余 root）→ `content-graph.md` §1B |
 
 ---
 
@@ -117,15 +118,9 @@ G1–G7 + C1–C4 全部 Pass 方可交付。
 
 ---
 
-## 5B. GlossaryTerm 叙事原则（category: Glossary）
+## 5B. GlossaryTerm 叙事原则
 
-| 原则 | 要求 |
-|------|------|
-| **教育优先** | 定义与计算章节零产品推销；Clink 仅 FAQ 前 ≤3 段 |
-| **Wirecutter 式客观** | 承认 Carta/Stripe/Investopedia 等已有内容的权威；不贬低 |
-| **工程实践深度** | 具体计算示例、术语边界表、陷阱清单——非教科书罗列 |
-| **指标簇互链** | 财务术语互相成簇（burn-rate ↔ annual-recurring-revenue），并向 blog canon（smart-routing 等）输送流量 |
-| **数据合规** | P0 数字有来源或 as-of；不写无来源的 Clink 费率（C1） |
+> Glossary 类型约束 + 叙事弧线 SSOT → `article-types.md` §3（GlossaryTerm 特有约束）；术语库 → `glossary-terms.md`。本文件不复述。
 
 ---
 
@@ -146,4 +141,4 @@ G1–G7 + C1–C4 全部 Pass 方可交付。
 
 ---
 
-*project-config · v1.0.0 · 2026-07-21*
+*project-config · v1.1.0 · 2026-09-08 · 自包含架构 · §5B 收敛至 article-types*

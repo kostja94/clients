@@ -1,6 +1,6 @@
 # Clink Blog Tools（Phase 5）
 
-Clink fork（Conclusion→FAQ 结构校验 + 类别枚举）+ SSOT 对齐的 `link_checker`。
+Clink fork：frontmatter 校验（Conclusion→FAQ 结构 + category 枚举）+ SSOT 对齐的 link_checker。
 
 ## 用法（从 `clink/` 项目根目录）
 
@@ -15,31 +15,23 @@ python skills/clink-blog-article/tools/frontmatter_validator.py blog/stripe-risk
 python skills/clink-blog-article/tools/word_count_narrative.py blog/agentic-payments/04-agent-payments.md --intent opinion --min 1800
 ```
 
-## `--intent` 与文章类型
+## 参数来源（SSOT，非重复定义）
 
-| 类型 | `--intent` | 推荐 `--min` |
-|------|------------|-------------|
-| BrandIntroduction | `brand` | 2500 |
-| Comparison | `comparison` | 1600 |
-| Product / StripeRisk | `product` | 1800 |
-| Opinion / IndustryNews | `opinion` | 1800 |
-| EvaluationComparison | `evaluation` | 2500 |
-| GlossaryTerm | `glossary` | 1800 |
+- `--intent` / `--min` 映射：`references/article-types.md` §1（每类型行含默认 Mode 与词数下限）
+- `--forbidden` 前缀：`references/project-config.md` §2（可链接白名单 + G6 禁止项）
 
 ## 脚本
 
 | 脚本 | Gate | 说明 |
 |------|------|------|
-| `frontmatter_validator.py` | F1–F8 + structure | **Clink fork**；类别含 Agentic Payments / Industry News / Stripe Risk |
-| `word_count_narrative.py` | H3 | Clink intent（brand/evaluation/glossary） |
+| `frontmatter_validator.py` | F1–F8 + structure | **Clink fork**；类别含 Agentic Payments / Industry News / Stripe Risk / secondaryCategory |
+| `word_count_narrative.py` | H3 | Clink intent（brand/comparison/product/opinion/evaluation/glossary） |
 | `link_checker.py` | G2/G6 | 内置 forbidden 前缀 |
 
-## 同步 SSOT
+## 维护
 
-```powershell
-Copy-Item "E:\Agent执行\blog-create\tools\link_checker.py" `
-  "e:\clients\clink\skills\clink-blog-article\tools\" -Force
-# frontmatter_validator / word_count 保留 Clink fork
-```
+`frontmatter_validator.py` / `word_count_narrative.py` 为 Clink fork，就地维护；`link_checker.py` 与通用 SSOT 对齐（维护通用版本后同步，见 `references/portable/README.md`）。
 
-*clink tools · v2.0 · 2026-08-23 · L1 overlay on blog-create SSOT*
+---
+
+*clink tools · v3.0 · 2026-09-08 · self-contained*

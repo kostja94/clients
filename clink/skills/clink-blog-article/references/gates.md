@@ -5,16 +5,16 @@
 
 ---
 
-## 1. Phase 0 — 六必问
+## 1. Phase 0 — 六必问（SSOT）
 
 | # | 问题 |
 |---|------|
-| 1 | 目标 SEO 关键词 + search intent？ |
-| 2 | 目标读者？（全球 SaaS / AI-native / 支付工程师 / FinOps） |
-| 3 | 发布目的？SEO / 品牌 / 转化 |
-| 4 | SERP Top 3 竞品 URL？ |
-| 5 | 与已有 blog / pipeline 关系？（hub-spoke） |
-| 6 | category：Product / Comparison / Opinion / Glossary？ |
+| 1 | 主关键词 + search intent？ |
+| 2 | 目标读者（ICP）？ |
+| 3 | 发布目的（SEO / 品牌 / 转化）？ |
+| 4 | SERP Top 3 竞品 URL（供 Phase 0R）？ |
+| 5 | 与已有 blog / pipeline 关系？文中内链页面是否已上线？ |
+| 6 | category（Product / Comparison / Opinion / Glossary / Agentic Payments / Stripe Risk / Industry News）？ |
 
 ---
 
@@ -84,6 +84,8 @@
 
 ## 6. Gate 失败回溯
 
+> 完整回溯表 → SKILL.md §3.G。
+
 | 结果 | 回退 |
 |------|------|
 | Gate A STOP | 改选题 |
@@ -94,4 +96,4 @@
 
 ---
 
-*gates · v1.0.0 · 2026-07-21*
+*gates · v1.1.0 · 2026-09-08 · 六必问统一为 SSOT 版*

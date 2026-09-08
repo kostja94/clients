@@ -72,7 +72,7 @@
 | 5 | When Stripe Alone Is the Better Fit | AB-3 | Fairness (≥1 Stripe win) | 300 | single-market |
 | 6 | Migration Path: Adding Clink Without Leaving Stripe | AB-4 | Risk of switching | 350 | docs link_psp |
 | Conclusion | — | — | Ready to act | 120–180 | CTA ≤2 |
-| FAQ | ≥3 | — | Objections | 400 | AB-1..4 |
+| FAQ | 6 题 | — | Objections | 400 | AB-1..4 |
 
 **Estimated total**: ~2800–3200 words
 **结构硬规则**：`## Conclusion` 后紧跟 `## FAQ`

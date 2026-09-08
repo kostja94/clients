@@ -1,0 +1,114 @@
+# Eval Manifest — clink-blog-article v3.0.0
+# 回归测试清单：新增规则或修改 skill 后，全部用例须重新通过。
+# 用法：人工以输入为触发语跑 agent（或按 expected 断言复核输出）。
+
+manifest:
+  version: "1.0.0"
+  skill: clink-blog-article
+  skill_version: "3.0.0"
+  created: "2026-09-08"
+  total_evals: 10
+
+evals:
+  - id: E01
+    name: "自包含 — 不加载 skill 文件夹外路径"
+    input: "按 clink-blog-article skill 创建一篇 Product 文章"
+    expected:
+      route: "clink-blog-article only"
+      assert:
+        - "workflow references only paths under clink/skills/clink-blog-article/"
+        - "does NOT load external engine or internal-net absolute paths"
+    severity: critical
+
+  - id: E02
+    name: "title-only 任务走轻量 meta 路径"
+    input: "优化 /blog/smart-routing 的 title 和 description"
+    expected:
+      route: "references/meta-title-description.md only"
+      assert:
+        - "loads meta-title-description.md only"
+        - "does NOT run full Phase 0-6"
+        - "does NOT edit H2/TL;DR/FAQ/body"
+    severity: critical
+
+  - id: E03
+    name: "具体 Clink 费率 → C1 Fail"
+    input: "Draft 含 'Clink charges 2.9% + $0.30 per transaction'"
+    expected:
+      gate_c: "C1 FAIL"
+      assert:
+        - "C1 triggered (无来源具体费率)"
+        - "draft blocked from Phase 6"
+    severity: critical
+
+  - id: E04
+    name: "Agentic Payments 未标 Early Access → C4 Fail"
+    input: "Draft 介绍 Agentic Payments 却无 Early Access 标注"
+    expected:
+      gate_c: "C4 FAIL"
+      assert:
+        - "C4 triggered"
+        - "corrective note: mark Early Access + link /agentic-payment"
+    severity: critical
+
+  - id: E05
+    name: "Glossary slug 加 what-is → Gate B Fail"
+    input: "GlossaryTerm slug candidate: /blog/what-is-burn-rate"
+    expected:
+      gate_b: "FAIL — what-is- 前缀违规"
+      assert:
+        - "slug rejected"
+        - "corrected suggestion: burn-rate (纯术语 kebab-case)"
+    severity: high
+
+  - id: E06
+    name: "Agent 协议选题 → Protocol Definition 路由 + 簇路径"
+    input: "按 clink-blog-article skill 为 'x402 agent payments' 创建 Research 文"
+    expected:
+      type: "AgenticPayments Protocol Definition (secondaryCategory Research)"
+      path: "clink/blog/agentic-payments/NN-what-is-x402.md 同级新文"
+      assert:
+        - "category: Agentic Payments + secondaryCategory: Research"
+        - "internal links ≥2 指向 hub/相邻协议/reference lists (34–36) 且路径为 /blog/{slug}"
+        - "不展开 stack 全表 (canonical)"
+    severity: high
+
+  - id: E07
+    name: "FAQ 非 6 题或缺 Conclusion → 结构 Fail"
+    input: "SelfCheck: draft 有 FAQ 3 题且无 Conclusion 节"
+    expected:
+      gate_c: "H4/structure FAIL"
+      assert:
+        - "FAQ must be fixed 6 questions and final H2"
+        - "Conclusion must be penultimate H2"
+    severity: high
+
+  - id: E08
+    name: "Merchant How-To fee/MoR 无 as-of → C2 Fail"
+    input: "Draft 写 'OpenAI takes 4%' 无日期限定"
+    expected:
+      gate_c: "C2 FAIL"
+      assert:
+        - "C2 triggered (as-of 缺失)"
+        - "requires as-of + qualifier + Contact Sales for Clink claims"
+    severity: high
+
+  - id: E09
+    name: "内链带子目录路径 → Fail"
+    input: "Draft 内链写 /blog/agentic-payments/what-is-x402"
+    expected:
+      gate_c: "link FAIL (G6/internal-links)"
+      assert:
+        - "internal link rewritten to /blog/what-is-x402"
+        - "subdirectory prefixes forbidden in URLs"
+    severity: high
+
+  - id: E10
+    name: "what is clink 新稿 → Gate A MERGE"
+    input: "按 clink-blog-article skill 创建 'what is clink' 文"
+    expected:
+      phase0_gate: "MERGE → what-is-clink"
+      assert:
+        - "conflict table match → MERGE"
+        - "no new article written"
+    severity: high

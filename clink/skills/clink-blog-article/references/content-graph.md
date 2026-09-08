@@ -1,7 +1,7 @@
 # Clink Blog — Content Graph
 
 > 加载时机：Phase 0（选题）· Phase 2（路径/日期）· Phase 5.5
-> 主文件：SKILL.md §4 · 下一序号：**24**（根目录）；agentic-payments 协议 definition 系列 **26–29, 33**
+> 主文件：SKILL.md §4 · 序号：**NN 全局连续**（子目录不重置序号；下一可用号 **24**）
 
 ---
 
@@ -24,15 +24,6 @@
 | 13 | 13-net-revenue-retention.md | net-revenue-retention | GlossaryTerm | Glossary | 2026-07-30 | what is nrr |
 | 14 | 14-runway.md | runway | GlossaryTerm | Glossary | 2026-07-31 | what is runway |
 | 15 | industry-news/15-cloudflare-wallets-agent-payments.md | cloudflare-wallets-agent-payments | IndustryNews | Industry News | 2026-08-04 | Cloudflare Wallets, agent payments |
-| 26 | agentic-payments/26-what-is-ap2-agent-payments-protocol.md | what-is-ap2-agent-payments-protocol | Research | Agentic Payments | 2026-09-07 | AP2 agent payments protocol |
-| 27 | agentic-payments/27-what-is-x402.md | what-is-x402 | Research | Agentic Payments | 2026-09-08 | x402 agent payments |
-| 28 | agentic-payments/28-what-is-machine-payments-protocol.md | what-is-machine-payments-protocol | Research | Agentic Payments | 2026-09-09 | Machine Payments Protocol MPP |
-| 29 | agentic-payments/29-what-is-agentic-commerce-protocol.md | what-is-agentic-commerce-protocol | Research | Agentic Payments | 2026-09-10 | Agentic Commerce Protocol ACP |
-| 33 | agentic-payments/33-what-is-universal-commerce-protocol.md | what-is-universal-commerce-protocol | Research | Agentic Payments | 2026-09-11 | Universal Commerce Protocol UCP |
-| 31 | agentic-payments/31-how-to-sell-on-chatgpt.md | how-to-sell-on-chatgpt | HowTo | Agentic Payments | 2026-09-12 | how to sell on ChatGPT merchant |
-| 34 | agentic-payments/34-agentic-commerce-agent-channels.md | agentic-commerce-agent-channels | Research | Agentic Payments | 2026-09-13 | agentic commerce agent channels |
-| 35 | agentic-payments/35-agentic-commerce-merchant-stack-cms.md | agentic-commerce-merchant-stack-cms | Research | Agentic Payments | 2026-09-14 | agentic commerce supported platforms CMS |
-| 36 | agentic-payments/36-agentic-commerce-merchant-stack-psp.md | agentic-commerce-merchant-stack-psp | Research | Agentic Payments | 2026-09-15 | agentic commerce supported PSP payment processors |
 | 16 | 16-what-is-skill-marketplace.md | what-is-skill-marketplace | Product | Product | 2026-08-05 | what is a skill marketplace |
 | 17 | 17-clink-launches-skill-marketplace.md | clink-launches-skill-marketplace | Product | Product | 2026-08-06 | monetize agent skills |
 | 18 | industry-news/18-stripe-openrouter-acquisition.md | stripe-openrouter-acquisition | IndustryNews | Industry News | 2026-08-18 | Stripe OpenRouter acquisition |
@@ -42,15 +33,24 @@
 | 22 | stripe-risk/22-how-to-dispute-stripe-charge.md | how-to-dispute-stripe-charge | StripeRisk | Stripe Risk | 2026-09-05 | how to dispute Stripe charge |
 | 23 | stripe-risk/23-stripe-chargeback-prevention.md | stripe-chargeback-prevention | StripeRisk | Stripe Risk | 2026-09-06 | Stripe chargeback prevention |
 | 25 | stripe-risk/25-stripe-account-suspended.md | stripe-account-suspended | StripeRisk | Stripe Risk | 2026-09-01 | Stripe account suspended |
+| 26 | agentic-payments/26-what-is-ap2-agent-payments-protocol.md | what-is-ap2-agent-payments-protocol | Research | Agentic Payments | 2026-09-07 | AP2 agent payments protocol |
+| 27 | agentic-payments/27-what-is-x402.md | what-is-x402 | Research | Agentic Payments | 2026-09-08 | x402 agent payments |
+| 28 | agentic-payments/28-what-is-machine-payments-protocol.md | what-is-machine-payments-protocol | Research | Agentic Payments | 2026-09-09 | Machine Payments Protocol MPP |
+| 29 | agentic-payments/29-what-is-agentic-commerce-protocol.md | what-is-agentic-commerce-protocol | Research | Agentic Payments | 2026-09-10 | Agentic Commerce Protocol ACP |
 | 30 | stripe-risk/30-why-stripe-closes-accounts.md | why-stripe-closes-accounts | StripeRisk | Stripe Risk | 2026-09-02 | why Stripe closed my account |
+| 31 | agentic-payments/31-how-to-sell-on-chatgpt.md | how-to-sell-on-chatgpt | HowTo | Agentic Payments | 2026-09-12 | how to sell on ChatGPT merchant |
 | 32 | stripe-risk/32-how-to-appeal-stripe-account-closure.md | how-to-appeal-stripe-account-closure | StripeRisk | Stripe Risk | 2026-09-03 | appeal Stripe account closed |
+| 33 | agentic-payments/33-what-is-universal-commerce-protocol.md | what-is-universal-commerce-protocol | Research | Agentic Payments | 2026-09-11 | Universal Commerce Protocol UCP |
+| 34 | agentic-payments/34-agentic-commerce-agent-channels.md | agentic-commerce-agent-channels | Research | Agentic Payments | 2026-09-13 | agentic commerce agent channels |
+| 35 | agentic-payments/35-agentic-commerce-merchant-stack-cms.md | agentic-commerce-merchant-stack-cms | Research | Agentic Payments | 2026-09-14 | agentic commerce supported platforms CMS |
+| 36 | agentic-payments/36-agentic-commerce-merchant-stack-psp.md | agentic-commerce-merchant-stack-psp | Research | Agentic Payments | 2026-09-15 | agentic commerce supported PSP payment processors |
 
-**下一序号：24**（根目录 pipeline；stripe-risk 账户子系列保留 25/30/32 跳号）
+**下一序号：24**（NN **全局连续**——新文不论落在哪个目录，一律取全库最小未用 NN；子目录不重置序号，亦不因簇内跳号跳过 24）
 
-**序号规则（2026-08-24）**：
-- **19–20** 根目录 Comparison（AI ARR 双文）
+**序号规则**：
 - **21–23** `stripe-risk/` 争议/拒付子系列（Hub → HowTo → Prevention）
-- **25/30/32** `stripe-risk/` 账户限制子系列（已入库，序号不变）
+- **25/30/32** `stripe-risk/` 账户限制子系列（发布日在 21–23 之前，序号保留跳号）
+- **26–29 / 31 / 33–36** `agentic-payments/`（协议 definition、merchant HowTo、reference lists；序号与日期均不连续，以实际发布为准）
 
 **S-grade rewrite (2026-07-23)**: Titles normalized to em dash form; slugs unchanged. Anti-clone contract for 05–09: `references/series-canonical-ownership.md`.
 
@@ -59,14 +59,14 @@
 ## 1B. Cluster 注册表（文件路径路由）
 
 > Phase 0/2 对照本表决定 `clink/blog/[{folder}]NN-{slug}.md`。
-> 公开 URL 始终 `/blog/{slug}`。规则详见 `E:\Agent执行\blog-create\references\topic-cluster-layout.md`。
+> 公开 URL 始终 `/blog/{slug}`。规则（NN 全局连续 + folder 归属）以本表为准，母版在通用 topic-cluster-layout。
 
 | Cluster ID | folder | Hub slug | 主 category | 说明 |
 |------------|--------|----------|-------------|------|
 | core | *(root)* | what-is-clink | Product / Comparison / Opinion | 01–03, 16–17, 19–20 |
 | glossary-metrics | *(root)* | burn-rate | Glossary | 10–14 |
 | lovable-series | *(root)* | how-to-add-payments-lovable-app | Product | 05–09 |
-| agentic-payments | `agentic-payments/` | agent-payments | Agentic Payments + secondaryCategory | 04, 26–29, 33 |
+| agentic-payments | `agentic-payments/` | agent-payments | Agentic Payments + secondaryCategory | 04, 26–29, 31, 33–36 |
 | industry-news | `industry-news/` | stripe-openrouter-acquisition | Industry News + secondaryCategory | 15, 18 |
 | stripe-risk-disputes | `stripe-risk/` | what-is-stripe-dispute | Stripe Risk + secondaryCategory | 21–23 争议/拒付 |
 | stripe-risk-accounts | `stripe-risk/` | stripe-account-suspended | Stripe Risk + secondaryCategory | 25, 30, 32 账户限制 |
@@ -250,4 +250,4 @@ Glossary cluster (category: Glossary):
 
 ---
 
-*content-graph · v2.2.0 · 2026-08-24*
+*content-graph · v3.0.0 · 2026-09-08 · 文件表按 NN 重排 · 注册表补 31/34–36 · NN 全局连续表述*
