@@ -6,7 +6,7 @@
 
 ## 概览
 
-Andreessen Horowitz — universally shortened to a16z — was founded in Menlo Park in 2009 by Marc Andreessen and Ben Horowitz and has grown into a registered investment adviser managing north of US$45B across seed, venture, growth, crypto, bio and American Dynamism funds. It is a generalist firm by charter but the most concentrated AI investor by dollars: it holds positions in the largest model labs, the compute and data layers beneath them, and hundreds of AI-native applications, and it publishes the sector's most-read research through a16z Enterprise and its Top 100 GenAI Apps series. Structurally it behaves less like a partnership and more like a platform, with in-house go-to-market, talent, policy and marketing teams attached to each fund.
+Andreessen Horowitz — universally shortened to a16z — was founded in Menlo Park in 2009 by Marc Andreessen and Ben Horowitz and has grown into a registered investment adviser managing roughly US$106B (March 2026 Form ADV) across seed, venture, growth, crypto, bio and American Dynamism funds. It is a generalist firm by charter but the most concentrated AI investor by dollars: it holds positions in the largest model labs, the compute and data layers beneath them, and hundreds of AI-native applications, and it publishes the sector's most-read research through a16z Enterprise and its Top 100 GenAI Apps series. Structurally it behaves less like a partnership and more like a platform, with in-house go-to-market, talent, policy and marketing teams attached to each fund.
 
 ## 基本档案
 
@@ -16,7 +16,7 @@ Andreessen Horowitz — universally shortened to a16z — was founded in Menlo P
 | Headquarters | Menlo Park, California |
 | Founders | Marc Andreessen, Ben Horowitz |
 | Type | Multi-stage venture platform (RIA) |
-| Assets under management | US$45B+ |
+| Assets under management | ~US$106B (Mar 2026 Form ADV) |
 | Stage | Seed to growth and pre-IPO |
 | Disclosed AI portfolio | 25+ notable companies |
 

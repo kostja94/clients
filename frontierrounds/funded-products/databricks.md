@@ -9,12 +9,12 @@
 | 名称 | Databricks |
 | 国家 / 地区 | United States |
 | 赛道 | Data & AI Platform |
-| 累计融资 | US$10B |
+| 累计融资 | US$25B |
 | 最大一轮 | US$5B |
 | 轮次标签 | Strategic |
 | 最近融资日期 | Aug 13, 2026 |
 | 估值 | US$190B |
-| 领投方 | Coatue Management; Blackstone; MGX; Sixth Street Growth |
+| 领投方 | Coatue Management; Blackstone; MGX; T. Rowe Price; Sixth Street Growth |
 | 来源机构 | CNBC |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 

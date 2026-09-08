@@ -14,8 +14,8 @@
 | 轮次标签 | Series D |
 | 最近融资日期 | Jun 3, 2026 |
 | 估值 | US$5.40B |
-| 领投方 | Lightspeed Venture Partners; Andreessen Horowitz |
-| 来源机构 | Suno / Reuters |
+| 领投方 | Bond Capital |
+| 来源机构 | Suno |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源

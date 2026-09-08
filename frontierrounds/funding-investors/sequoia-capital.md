@@ -6,7 +6,7 @@
 
 ## 概览
 
-Founded in 1972 and headquartered in Menlo Park, Sequoia Capital now covers the United States and Europe only, following the March 2024 completion of the global partnership's three-way split — it shares a name and history with HongShan in China and Peak XV in India, but the investments listed here are its own. Roelof Botha stepped down in November 2025; Alfred Lin and Pat Grady took over as co-CEOs with Doug Leone returning as chairman. Under the new leadership the firm reversed its earlier restraint on model-layer spending and now runs a barbell strategy: very large positions in Anthropic and OpenAI alongside frontier moonshots, plus the densest 2026 deal flow in agent infrastructure.
+Founded in 1972 and headquartered in Menlo Park, Sequoia Capital now covers the United States and Europe only, following the March 2024 completion of the global partnership's three-way split — it shares a name and history with HongShan in China and Peak XV in India, but the investments listed here are its own. Roelof Botha stepped down in November 2025; Alfred Lin and Pat Grady took over as co-CEOs, and in March 2026 Doug Leone returned as chairman. Under the new leadership the firm reversed its earlier restraint on model-layer spending and now runs a barbell strategy: very large positions in Anthropic and OpenAI alongside frontier moonshots, plus the densest 2026 deal flow in agent infrastructure.
 
 ## 基本档案
 
@@ -59,7 +59,7 @@ Disclosed Sequoia Capital AI investments across the model layer, infrastructure 
 | [Etched](https://www.etched.com/) | AI Silicon | Led the US$300M Series C at a US$10.3B post-money valuation for transformer-specific ASICs. |
 | [Valar Atomics](https://www.valaratomics.com/) | Nuclear Power for AI | Led a US$1B financing; partners visited the Utah desert site to watch the reactor connect to the grid. |
 | Agent infrastructure (10 deals, 2026) | Agent Infrastructure | Roughly one third of the firm's 2026 AI deals went into the agent tool stack: inference optimisation, workflow orchestration, external retrieval and agent security. |
-| [Harvey](https://www.harvey.ai/) | Legal AI | Backed across six rounds from Series A; led the US$200M G round at an US$11B valuation with roughly US$190M ARR and over 1,000 customers. |
+| [Harvey](https://www.harvey.ai/) | Legal AI | Backed across six rounds from Series A; co-led the US$200M G round at an US$11B valuation with roughly US$190M ARR and over 1,000 customers. |
 | [Commure](https://www.commure.com/) | Healthcare AI | Revenue-cycle automation for providers; ARR passed US$200M. |
 | [OpenEvidence](https://www.openevidence.com/) | Medical Search | Investment led internally by Pat Grady. |
 | Rowspace | Financial AI | Investment led internally by Alfred Lin. |

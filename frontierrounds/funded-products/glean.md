@@ -14,8 +14,8 @@
 | 轮次标签 | Series F |
 | 最近融资日期 | Jun 10, 2025 |
 | 估值 | US$7.20B |
-| 领投方 | Lightspeed Venture Partners; Sequoia Capital |
-| 来源机构 | Glean / Reuters |
+| 领投方 | Wellington Management |
+| 来源机构 | Glean |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源

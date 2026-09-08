@@ -9,7 +9,7 @@
 | 名称 | MiniMax |
 | 国家 / 地区 | China |
 | 赛道 | Foundation Models / Agents |
-| 累计融资 | US$3.22B |
+| 累计融资 | US$3.40B |
 | 最大一轮 | US$2.05B |
 | 轮次标签 | PIPE |
 | 最近融资日期 | Jul 10, 2026 |

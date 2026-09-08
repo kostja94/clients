@@ -12,15 +12,15 @@
 | 累计融资 | US$15.90B |
 | 最大一轮 | US$14.30B |
 | 轮次标签 | Strategic |
-| 最近融资日期 | Jun 10, 2025 |
+| 最近融资日期 | Jun 12, 2025 |
 | 估值 | US$29B |
 | 领投方 | Meta |
-| 来源机构 | Teahose / FundBat |
+| 来源机构 | Scale AI |
 | 数据可信度 | Reported — 权威媒体报道，未经官方完整披露 |
 
 ## 数据来源
 
-- 来源链接：<https://www.teahose.com/guides/scale-ai-valuation>
+- 来源链接：<https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution>
 - 数据层：`fundingLeaderboard.ts`（frontierrounds.com 站点部署仓）
 
 ---

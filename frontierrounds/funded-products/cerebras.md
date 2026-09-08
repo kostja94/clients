@@ -9,12 +9,12 @@
 | 名称 | Cerebras |
 | 国家 / 地区 | United States |
 | 赛道 | AI Silicon |
-| 累计融资 | US$1.80B |
+| 累计融资 | US$2.85B |
 | 最大一轮 | US$1B |
 | 轮次标签 | Series H |
 | 最近融资日期 | Feb 3, 2026 |
 | 估值 | US$23B |
-| 领投方 | Tiger Global; Benchmark; Altimeter Capital; Coatue Management |
+| 领投方 | Tiger Global |
 | 来源机构 | Cerebras |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 

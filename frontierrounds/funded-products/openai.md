@@ -14,7 +14,7 @@
 | 轮次标签 | Strategic |
 | 最近融资日期 | Mar 31, 2026 |
 | 估值 | US$852B |
-| 领投方 | Thrive Capital; Microsoft; NVIDIA |
+| 领投方 | SoftBank; Andreessen Horowitz; D. E. Shaw Ventures; MGX; TPG; T. Rowe Price |
 | 来源机构 | OpenAI |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 

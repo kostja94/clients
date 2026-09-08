@@ -9,7 +9,7 @@
 | 名称 | ElevenLabs |
 | 国家 / 地区 | United States / United Kingdom |
 | 赛道 | Voice AI |
-| 累计融资 | US$1.10B |
+| 累计融资 | US$781M |
 | 最大一轮 | US$500M |
 | 轮次标签 | Series D |
 | 最近融资日期 | Feb 4, 2026 |

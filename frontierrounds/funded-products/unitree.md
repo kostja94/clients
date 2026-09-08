@@ -9,18 +9,18 @@
 | 名称 | Unitree |
 | 国家 / 地区 | China |
 | 赛道 | Embodied AI / Robotics |
-| 累计融资 | US$904M |
+| 累计融资 | US$1.15B |
 | 最大一轮 | US$904M |
 | 轮次标签 | IPO |
 | 最近融资日期 | Aug 19, 2026 |
 | 估值 | US$9B |
 | 领投方 | Public markets |
-| 来源机构 | CB Insights / VentureCapitalTracker |
+| 来源机构 | Shanghai Stock Exchange |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源
 
-- 来源链接：<https://venturecapitaltracker.com/2026-unitree-shanghai-ipo-humanoid-robots>
+- 来源链接：<https://www.36kr.com/p/3943674198218376>
 - 数据层：`fundingLeaderboard.ts`（frontierrounds.com 站点部署仓）
 
 ---

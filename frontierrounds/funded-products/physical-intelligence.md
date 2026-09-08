@@ -12,15 +12,15 @@
 | 累计融资 | US$1.07B |
 | 最大一轮 | US$600M |
 | 轮次标签 | Series B |
-| 最近融资日期 | Mar 15, 2026 |
+| 最近融资日期 | Nov 20, 2025 |
 | 估值 | US$5.60B |
-| 领投方 | Lux Capital; Khosla Ventures; Sequoia Capital |
-| 来源机构 | CB Insights / DEPLOY |
+| 领投方 | CapitalG |
+| 来源机构 | Bloomberg |
 | 数据可信度 | Reported — 权威媒体报道，未经官方完整披露 |
 
 ## 数据来源
 
-- 来源链接：<https://www.cbinsights.com/company/physical-intelligence/financials>
+- 来源链接：<https://www.bloomberg.com/news/articles/2025-11-20/robotics-startup-physical-intelligence-valued-at-5-6-billion-in-new-funding>
 - 数据层：`fundingLeaderboard.ts`（frontierrounds.com 站点部署仓）
 
 ---

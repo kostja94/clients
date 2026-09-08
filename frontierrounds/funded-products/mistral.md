@@ -12,15 +12,15 @@
 | 累计融资 | US$4.02B |
 | 最大一轮 | US$2B |
 | 轮次标签 | Series C |
-| 最近融资日期 | Sep 18, 2025 |
-| 估值 | US$13B |
-| 领投方 | General Catalyst; Lightspeed Venture Partners |
-| 来源机构 | CB Insights |
-| 数据可信度 | Reported — 权威媒体报道，未经官方完整披露 |
+| 最近融资日期 | Sep 9, 2025 |
+| 估值 | US$13.80B |
+| 领投方 | ASML |
+| 来源机构 | Mistral AI |
+| 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源
 
-- 来源链接：<https://www.cbinsights.com/company/mistral-ai/financials>
+- 来源链接：<https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/>
 - 数据层：`fundingLeaderboard.ts`（frontierrounds.com 站点部署仓）
 
 ---

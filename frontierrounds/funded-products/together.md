@@ -14,8 +14,8 @@
 | 轮次标签 | Series C |
 | 最近融资日期 | Jul 1, 2026 |
 | 估值 | US$8.30B |
-| 领投方 | Saudi Aramco Wa'ed; Coatue Management |
-| 来源机构 | Together AI / Reuters |
+| 领投方 | Aramco Ventures |
+| 来源机构 | Together AI |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源

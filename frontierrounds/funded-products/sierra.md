@@ -13,9 +13,9 @@
 | 最大一轮 | US$950M |
 | 轮次标签 | Series E |
 | 最近融资日期 | May 4, 2026 |
-| 估值 | US$15B |
+| 估值 | US$15.80B |
 | 领投方 | Tiger Global; GV |
-| 来源机构 | Sierra / CNBC |
+| 来源机构 | Sierra |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源

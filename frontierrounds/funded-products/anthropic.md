@@ -9,7 +9,7 @@
 | 名称 | Anthropic |
 | 国家 / 地区 | United States |
 | 赛道 | AI Safety / Foundation Models |
-| 累计融资 | US$74.60B |
+| 累计融资 | US$118B |
 | 最大一轮 | US$65B |
 | 轮次标签 | Series H |
 | 最近融资日期 | May 28, 2026 |

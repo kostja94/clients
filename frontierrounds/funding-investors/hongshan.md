@@ -27,11 +27,11 @@ HongShan is the China business formerly known as Sequoia Capital China, led by N
 
 ### Every Chinese frontier lab, concentrated in MiniMax
 
-HongShan holds positions in Moonshot AI, MiniMax, Zhipu AI, Light Years Beyond and StepFun — effectively the full field of Chinese foundation-model contenders. Its heaviest single bet is MiniMax, where it wrote a US$50M sole-investor A+ round and kept adding, ending pre-IPO as the third largest financial shareholder at 3.81%.
+HongShan holds positions in Moonshot AI, MiniMax, Zhipu AI, Light Years Beyond and StepFun — effectively the full field of Chinese foundation-model contenders. Its heaviest single bet is MiniMax, where it led a US$50M A+ round and kept adding, ending pre-IPO as the third largest financial shareholder at 3.81%.
 
 ### Back early, then add on proof
 
-The firm's seed vehicle entered Unitree Robotics at Pre-A in 2020 with RMB 15M at a RMB 150M post-money valuation, then followed nearly every round to a 7.11% stake worth over RMB 2.5B on paper — the seed fund's first investment and the template for how HongShan compounds early conviction.
+The firm's seed vehicle entered Unitree Robotics at Pre-A in December 2019 with RMB 15M at a RMB 150M post-money valuation, then followed nearly every round to a 7.11% stake worth over RMB 2.5B on paper — the seed fund's first investment and the template for how HongShan compounds early conviction.
 
 ### Embodied intelligence as a jigsaw
 
@@ -50,13 +50,13 @@ Disclosed HongShan AI investments across foundation models, agents and applicati
 | 公司 | 赛道 | 备注 |
 | --- | --- | --- |
 | [Moonshot AI](https://www.moonshot.cn/) | Foundation Models | Maker of Kimi. HongShan has backed every round since the angel financing. |
-| [MiniMax](https://www.minimaxi.com/) | Foundation Models | Sole investor of a US$50M A+ round, then repeated follow-ons; third largest financial shareholder at 3.81% before listing. |
+| [MiniMax](https://www.minimaxi.com/) | Foundation Models | Led a US$50M A+ round, then repeated follow-ons; third largest financial shareholder at 3.81% before listing. |
 | [Zhipu AI](https://www.zhipuai.cn/) | Foundation Models | One of the early institutional investors in the GLM model family. |
 | Light Years Beyond | Foundation Models | Large-model startup founded by Wang Huiwen and later acquired by Meituan; HongShan was an investor. |
 | [StepFun](https://www.stepfun.com/) | Multimodal Models | One of China's multimodal model leaders; HongShan is an investor. |
 | [Monica (Manus)](https://manus.im/) | General AI Agents | Co-led the Series A; Manus went viral in March 2025 with two million users queuing within a week. |
 | [Smartmore](https://www.smartmore.com/) | Industrial AI Agents | HongShan holds 2.41% and is the sixth largest shareholder ahead of the company's IPO attempt. |
-| [Unitree Robotics](https://www.unitree.com/) | Humanoid and Quadruped Robots | Seed fund entered at Pre-A in 2020 (RMB 15M at RMB 150M post-money) and added across rounds to a 7.11% stake, over RMB 2.5B on paper. |
+| [Unitree Robotics](https://www.unitree.com/) | Humanoid and Quadruped Robots | Seed fund entered at Pre-A in December 2019 (RMB 15M at RMB 150M post-money) and added across rounds to a 7.11% stake, over RMB 2.5B on paper. |
 | [AgiBot](https://www.agibot.com/) | Embodied Foundation Models | The 'brain' position in HongShan's embodied intelligence map. |
 | [Mech-Mind](https://www.mech-mind.com/) | 3D Vision for Robots | The 'perception' position — AI-powered industrial 3D vision. |
 | [LinkerBot](https://www.linkerbot.cn/) | Dexterous Hands | The 'hands' position — dexterous robotic hands. |

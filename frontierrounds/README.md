@@ -47,6 +47,16 @@
 
 > 生成方式：临时解析脚本（`@temp/parse_fr_ts.py`）忠实转录站点 TS 数据层，字段与线上页面一致，未增删事实。**注意**：若线上站点后续增删条目，可重跑该脚本刷新本目录。
 
+## 事实核查与数据修复（2026-09-08）
+
+用 subagent 对 `funded-products/`（24 家）与 `funding-investors/`（11 家/人）档案逐项联网核查（公司存在性、金额/日期/估值/领投方、人物事实），**只依据公开来源**判定，无证据者不保留。发现的问题已同步修复线上数据层（`fundingLeaderboard.ts`、`investors/*.ts`）与本目录 md：
+
+- **融资数据纠偏（约 30 处）**：OpenAI 领投方改为官方披露财团；Anthropic 累计 US$74.6B→US$118B、xAI→US$37B、Databricks→US$25B、SSI→US$8B、ElevenLabs→US$781M、Cerebras→US$2.85B、MiniMax→US$3.4B、Unitree→US$1.15B 等累计修正；Zhipu 更正为 2026-07 IPO 后配售（US$4B / 估值 US$64B，原"2024 Series D US$420M"为过时数据）；Harvey（US$200M G 轮 / US$11B / 2026-03-25）、Abridge（Series E / US$300M / 2025-06-24）、Physical Intelligence（2025-11-20 / CapitalG）、Mistral（2025-09-09 / ASML）、Scale AI（2025-06-12）等日期/轮次/领投方修正；**弱来源一律替换为官方或权威媒体 sourceUrl**（公司 blog、Reuters/CNBC/Bloomberg/STCN/36kr 等）。
+- **机构档案修复**：a16z AUM US$45B→~US$106B（2026-03 Form ADV）；HongShan 对 Unitree 进入时点 2020→2019-12、MiniMax 轮次角色表述修正；Sequoia Doug Leone 2026-03 回归 chairman 时点、Harvey G 轮为 co-led。
+- **个人天使档案修复**：Elad Gil 组合删除 **Cursor / Runway / Glean** 三项（CB Insights/融资报道查无投资记录，其中 Runway 属同名金融科技公司混淆），补入官网自证的 **OpenAI**，披露数 ~140 → 250+；Nat Friedman 组合删除 **Ideogram**（多源交叉无 NFDG 记录），SSI 备注补 Gross 联合创始人语境，Meta 任职表述精确化（Friedman=VP of Product & Applied Research 与 Alexandr Wang 共领 MSL，NFDG 停止新投资）。
+
+> 修复原则：改前逐项复核实证，改后 TS（站点展示层）与本地 md（归档层）逐字一致；本次不涉及新增融资事件，仅修正既有条目。
+
 ## SEO/分析就位（2026-09-07）
 
 - **GSC**：网域属性 `frontierrounds.com`（Domain 验证，DNS TXT）已验证通过；sitemap.xml 含 14 个 URL（/、/leaderboard、/investors + 11 investor 档案），逐一 curl 全部 200。
@@ -109,4 +119,4 @@
 
 ---
 
-*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08*
+*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（事实核查修复）*

@@ -11,10 +11,10 @@
 | 赛道 | Foundation Models |
 | 累计融资 | US$5B |
 | 最大一轮 | US$3.50B |
-| 轮次标签 | Late-stage |
+| 轮次标签 | Series F |
 | 最近融资日期 | Jul 29, 2026 |
 | 估值 | US$35B |
-| 领投方 | Tencent; Hillhouse Investment |
+| 领投方 | National AI Industry Investment Fund |
 | 来源机构 | Bloomberg |
 | 数据可信度 | Reported — 权威媒体报道，未经官方完整披露 |
 

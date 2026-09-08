@@ -9,7 +9,7 @@
 | 名称 | xAI |
 | 国家 / 地区 | United States |
 | 赛道 | Foundation Models / AI Infrastructure |
-| 累计融资 | US$32B |
+| 累计融资 | US$37B |
 | 最大一轮 | US$20B |
 | 轮次标签 | Series E |
 | 最近融资日期 | Jan 6, 2026 |

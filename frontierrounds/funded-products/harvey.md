@@ -10,17 +10,17 @@
 | 国家 / 地区 | United States |
 | 赛道 | Legal AI |
 | 累计融资 | US$1.23B |
-| 最大一轮 | US$500M |
+| 最大一轮 | US$200M |
 | 轮次标签 | Growth |
-| 最近融资日期 | Aug 7, 2026 |
-| 估值 | US$15.50B |
+| 最近融资日期 | Mar 25, 2026 |
+| 估值 | US$11B |
 | 领投方 | GIC; Sequoia Capital |
-| 来源机构 | The Information / The Next Web |
-| 数据可信度 | Reported — 权威媒体报道，未经官方完整披露 |
+| 来源机构 | Harvey |
+| 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源
 
-- 来源链接：<https://thenextweb.com/news/harvey-legal-ai-15-5bn-valuation-500m-raise-vertical-ai>
+- 来源链接：<https://www.harvey.ai/blog/harvey-raises-growth-round-at-dollar11-billion-valuation-co-led-by-gic-and-sequoia>
 - 数据层：`fundingLeaderboard.ts`（frontierrounds.com 站点部署仓）
 
 ---

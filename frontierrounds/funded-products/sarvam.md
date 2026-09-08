@@ -14,13 +14,13 @@
 | 轮次标签 | Series B |
 | 最近融资日期 | Jun 15, 2026 |
 | 估值 | US$1.50B |
-| 领投方 | HCLTech; Bessemer Venture Partners; Peak XV Partners |
-| 来源机构 | Sarvam |
+| 领投方 | HCLTech |
+| 来源机构 | HCLTech / Sarvam |
 | 数据可信度 | Disclosed — 公司或领投方官方披露 |
 
 ## 数据来源
 
-- 来源链接：<https://www.sarvam.ai/announcing-series-b>
+- 来源链接：<https://www.hcltech.com/press-releases/sarvam-raises-234-million-first-close-300-million-series-b-15-billion-valuation>
 - 数据层：`fundingLeaderboard.ts`（frontierrounds.com 站点部署仓）
 
 ---
