@@ -15,6 +15,7 @@
 | [frontier-rounds-nextjs-build-plan.md](./frontier-rounds-nextjs-build-plan.md) | **完整构建 + 部署方案**：现状盘点、Next.js 迁移映射表、图片资产回填脚本、品牌换标、SEO 就位、Cloudflare（OpenNext）部署全步骤、上线验收清单 | ✅ 完成（2026-09-07） |
 | [branding/](./branding/) | **最终品牌 SVG**：`fr-icon.svg`（黑底白图）、`fr-icon-mono.svg`（透明底纯黑）、`fr-wordmark.svg`（Instrument Serif 轮廓化 wordmark） | ✅ 完成（2026-09-07） |
 | [funded-products/](./funded-products/) | **融资的 AI 产品**（24 份档案 + `_index.md`）：网站 Funding Leaderboard 上的真实融资 AI 产品，字段含累计融资/最大轮/估值/领投方/来源 URL/可信度 | ✅ 完成（2026-09-08） |
+| [product-histories/](./product-histories/) | **产品融资时间线**（首档：Lovable + `_index.md`）：网站 Product Histories（`/products`）逐轮融资档案，rounds[] 含每轮金额/估值/领投/参投/来源 | ✅ 完成（2026-09-08） |
 | [funding-investors/](./funding-investors/) | **融资的投资方**（17 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司）；含 2026-09-08 新增的 Llama Ventures 与 5 家 AI 专项基金（见下节） | ✅ 完成（2026-09-08） |
 
 ## 执行进度
@@ -84,6 +85,18 @@
 - **一致性**：5 份 md 与 TS 公司数逐家核对一致（16/16、19/19、73/73、66/66、59/59）；`_index.md` 12→17；typecheck 通过。
 - **口径注明**：Radical AUM 公开报道差异大（Bloomberg ~US$1.8B vs CPP >US$2.5B），档案取 ~US$2.4B 并注明两口径；Air Street 的 pre-fund 天使投资（Stripe/Niantic 等）按官网原样入档并单列一组。
 
+## 新增产品融资时间线：Lovable（2026-09-08）
+
+用户此前询问「是否有单产品的融资 timeline 页面（类似 /products 详情页）」，确认现状缺失后本次以 **Lovable** 为首档产品落地全新 section **Product Histories**（`/products`），从快照级（Leaderboard）升级到**逐轮级**数据模型：
+
+- **站点**：新增 `src/data/products/`（schema.ts + lovable.json + 薄 loader，延续 JSON 化模式）；新路由 `app/products/[slug]/page.tsx`（逐轮时间线：金额/估值/领投/参投/来源，附叙事章节）+ `app/products/page.tsx` 索引；sitemap 增 `/products` 与 `/products/lovable`；nav + 首页 CTA 加入口。
+- **数据（全部经官方 blog + TechCrunch/Reuters/Forbes/Bloomberg 核实）**：Pre-Seed US$7.5M（2024-10-07，公开库口径）→ Seed US$15M（2025-02-25，Creandum 领投）→ Series A US$200M @ US$1.8B（2025-07-17，Accel 领投，欧洲当时最大 A 轮）→ Series B US$330M @ US$6.6B（2025-12-18，CapitalG + Menlo(Anthology) 联合领投）→ **Series C US$400M @ US$13.3B（2026-08-12，Menlo Ventures 领投 + EQT Scaleup Europe Fund 联合领投）**，累计 ~US$953M。
+- **与用户提供材料的口径差异**：用户材料未给 A 轮日期（实为 2025-07-17）与 B/C 轮领投方（B=CapitalG+Menlo；C=Menlo+EQT）；C 轮日期补齐（2026-08-12）；ARR 时点细化为 Feb 2026 $400M → Jun 2026 ~$500M → Aug tracking $600M。
+- **logo**：自 `public/logos/aixVentures-lovable.png`（AIX 组合官网下载）复制为 `public/logos/lovable.png`（485×256）。
+- **质量闸门**：`validate-content.mts` 扩展 products JSON 校验（schema/logo 存在/rounds 按日期升序/slug 唯一）；`npm run validate:content` + typecheck + build（30 页 SSG，含 `/products/lovable`）全部通过。
+
+> 档案仓同步：本 README 文件清单新增 `product-histories/`（Lovable 首档 + `_index.md`），与站点 `/products/lovable` 双向一致。
+
 ## SEO/分析就位（2026-09-07）
 
 - **GSC**：网域属性 `frontierrounds.com`（Domain 验证，DNS TXT）已验证通过；sitemap.xml 含 14 个 URL（/、/leaderboard、/investors + 11 investor 档案），逐一 curl 全部 200。
@@ -146,4 +159,4 @@
 
 ---
 
-*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（新增 Llama Ventures 档案 + 扩充 5 家 AI-only 专项基金）*
+*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（新增 Lovable 产品融资时间线档案 + Product Histories 目录）*
