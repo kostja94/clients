@@ -1,6 +1,6 @@
 # 融资的投资方索引
 
-本目录收录 frontierrounds.com **Investor Atlas** 上的真实投资方档案（17 家/人），每家一份 Markdown，字段与站点一致。
+本目录收录 frontierrounds.com **Investor Atlas** 上的真实投资方档案（18 家/人），每家一份 Markdown，字段与站点一致。
 
 | 投资方 | 类型 | 定位 | 官网 | 档案 |
 | --- | --- | --- | --- | --- |
@@ -13,6 +13,7 @@
 | HongShan | 机构 | China's most systematic AI backer — from foundation models to robot hands and br | [hongshan.com](https://www.hongshan.com/) | [hongshan.md](hongshan.md) |
 | Llama Ventures | 机构 | Founder-built early-stage fund backing AI-native companies across the full intelligence st | [llamaventures.vc](https://www.llamaventures.vc/) | [llama-ventures.md](llama-ventures.md) |
 | Lollapalooza Capital | 机构 | Research-driven venture capital backing frontier AI founders | [lollapalooza.hk](https://lollapalooza.hk/) | [lollapalooza-capital.md](lollapalooza-capital.md) |
+| Menlo Ventures | 机构 | The 50-year-old firm that went all in on AI after betting the firm on Anthropic | [menlovc.com](https://menlovc.com/) | [menlo-ventures.md](menlo-ventures.md) |
 | MiraclePlus | 加速器 | China's YC-style accelerator, buying frontier technology at pre-seed prices | [miracleplus.com](https://www.miracleplus.com/) | [miracleplus.md](miracleplus.md) |
 | Nat Friedman | 个人天使 | Former GitHub CEO backing AI-native products with Daniel Gross | [nat.org](https://nat.org/) | [nat-friedman.md](nat-friedman.md) |
 | Naval Ravikant | 个人天使 | AngelList founder who turned angel investing itself into a platform | [nav.al](https://nav.al/) | [naval-ravikant.md](naval-ravikant.md) |
@@ -24,4 +25,4 @@
 
 ---
 
-*数据源：`E:\自有部署项目\frontierrounds\src\data\investors\*.ts`*
+*数据源：`E:\自有部署项目\frontierrounds\src\data\investors\profiles\*.json`*

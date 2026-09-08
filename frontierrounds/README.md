@@ -16,7 +16,7 @@
 | [branding/](./branding/) | **最终品牌 SVG**：`fr-icon.svg`（黑底白图）、`fr-icon-mono.svg`（透明底纯黑）、`fr-wordmark.svg`（Instrument Serif 轮廓化 wordmark） | ✅ 完成（2026-09-07） |
 | [funded-products/](./funded-products/) | **融资的 AI 产品**（24 份档案 + `_index.md`）：网站 Funding Leaderboard 上的真实融资 AI 产品，字段含累计融资/最大轮/估值/领投方/来源 URL/可信度 | ✅ 完成（2026-09-08） |
 | [product-histories/](./product-histories/) | **产品融资时间线**（首档：Lovable + `_index.md`）：网站 Product Histories（`/products`）逐轮融资档案，rounds[] 含每轮金额/估值/领投/参投/来源 | ✅ 完成（2026-09-08） |
-| [funding-investors/](./funding-investors/) | **融资的投资方**（17 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司）；含 2026-09-08 新增的 Llama Ventures 与 5 家 AI 专项基金（见下节） | ✅ 完成（2026-09-08） |
+| [funding-investors/](./funding-investors/) | **融资的投资方**（18 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司）；含 2026-09-08 新增的 Llama Ventures、5 家 AI 专项基金与 Menlo Ventures（见下节） | ✅ 完成（2026-09-08） |
 
 ## 执行进度
 
@@ -44,7 +44,7 @@
 将网站现有的**两套真实数据**转录为可阅读/可追溯的 Markdown 档案，落在本记录仓：
 
 - **[funded-products/](./funded-products/)** — "融资的 AI 产品"：24 家（OpenAI → Sarvam AI，按累计融资降序）。数据源 `fundingLeaderboard.ts`，每份档案含国家/赛道/累计融资/最大一轮/估值/最近融资日期/领投方/来源机构/数据可信度（Disclosed / Reported），并附 `sourceUrl` 溯源。
-- **[funding-investors/](./funding-investors/)** — "融资的投资方"：17 家（Sequoia、a16z、HongShan、Peak XV、Shunwei、Lollapalooza、Llama Ventures、Gradient、Conviction、AIX、Air Street、Radical Ventures、YC、MiraclePlus、Elad Gil、Naval、Nat Friedman）。数据源 `investors/*.ts`，每份档案含基本档案表、投资逻辑（thesis）、投资组合（含官网链接与中文别名）、别名。
+- **[funding-investors/](./funding-investors/)** — "融资的投资方"：18 家（Sequoia、a16z、HongShan、Peak XV、Shunwei、Lollapalooza、Llama Ventures、Gradient、Conviction、AIX、Air Street、Radical Ventures、Menlo Ventures、YC、MiraclePlus、Elad Gil、Naval、Nat Friedman）。数据源 `investors/profiles/*.json`，每份档案含基本档案表、投资逻辑（thesis）、投资组合（含官网链接与中文别名）、别名。
 
 > 生成方式：临时解析脚本（`@temp/parse_fr_ts.py`）忠实转录站点 TS 数据层，字段与线上页面一致，未增删事实。**注意**：若线上站点后续增删条目，可重跑该脚本刷新本目录。
 
@@ -84,6 +84,18 @@
 - **logo 资产**：新增 5 个 mark + 213 张组合 logo（总计 218 引用全部落地 `public/logos/`，来自各公司官网）；个别因官网停用/网络不可达无 logo 的公司按站点约定显示灰框（如 Air Street 12 家被并购遗留项、Conviction 3 家网络受限域名）。每家 logos 独立索引文件（`gradientLogos.ts` 等）。
 - **一致性**：5 份 md 与 TS 公司数逐家核对一致（16/16、19/19、73/73、66/66、59/59）；`_index.md` 12→17；typecheck 通过。
 - **口径注明**：Radical AUM 公开报道差异大（Bloomberg ~US$1.8B vs CPP >US$2.5B），档案取 ~US$2.4B 并注明两口径；Air Street 的 pre-fund 天使投资（Stripe/Niantic 等）按官网原样入档并单列一组。
+
+## 新增投资方档案：Menlo Ventures（2026-09-08）
+
+用户此前在 Lovable C 轮（US$400M / US$13.3B）中确认 Menlo Ventures 为领投方后要求「把 Menlo Ventures 纳入 Investor Atlas」。Menlo 官网组合实测 **245 家**（`menlovc.com/portfolio/`，官方 9 个 Focus 标签互斥核对），与预设"已有 logo 名单"交集极小——仅 Anthropic/Lovable/Suno/OpenEvidence/Wispr Flow/Pinecone/Uber 7 家真正在站，Mistral/Cerebras/Harvey/Cursor 等 24 家**并未**出现在 Menlo 官网（宁缺毋滥，不入档）。建档执行：
+
+- **档案**：`investors/profiles/menlo-ventures.json` + 本地 `menlo-ventures.md`。机构事实与投资逻辑经调研 subagent 交叉核实（Newcomer/Bloomberg/TechCrunch/官网），组合转录 subagent 实测逐家核验（logoUrl HTTP 200）后转录。
+- **组合**：AI portfolio 25 家（前沿模型 Ndea/Axiom → AI 基建 Fireworks/Modal/Neon/Pinecone/OpenRouter → 应用层 Lovable/Suno/Wispr/OpenEvidence/Chai Discovery…）+ Beyond AI 5 家（Uber/Roku/Warby Parker/Siri/Gilead，50 年历史语境）；收购标注 Graphite→Cursor、Neon→Databricks、Siri→Apple、Astrix→Cisco。Siri 无独立官网故 logo 取自 Menlo 站内资源。
+- **logo（复用优先）**：Anthropic/Lovable/Suno/OpenEvidence/Wispr Flow/Pinecone/Ndea/Prime Intellect/Slingshot/Skild/Recursion/Uber 12 家直接 resolve 共享 canonical 索引（`src/data/logos.ts`）**零下载复用**；其余 17 家新下载（官方公司站图标直连），Astrix/Roku 官网图标不可达按约定灰框。Menlo 自身 mark `menlo-mark.png` 前阶段已就位。新增条目已回写 canonical 索引（412→429）。
+- **注册**：`profiles.ts` 加入 → Investor Atlas/sitemap 自动含 `/investors/menlo-ventures`。
+- **一致性**：md 与 JSON 公司数一致（30/30）；`_index.md` 17→18；validate:content + typecheck + build（31 页 SSG）全绿。
+
+> 注：本档案为当日 Lovable B/C 轮 Menlo 领投事实的延伸建档，非官方背书口径。
 
 ## 新增产品融资时间线：Lovable（2026-09-08）
 
@@ -159,4 +171,4 @@
 
 ---
 
-*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（新增 Lovable 产品融资时间线档案 + Product Histories 目录）*
+*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（新增 Menlo Ventures 投资方档案）*
