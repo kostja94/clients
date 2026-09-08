@@ -2,7 +2,7 @@
 
 **叙述主词**：**AI fashion / AI 时尚工具**（利用生成式 AI 进行虚拟试穿、服装设计、个人造型推荐、时尚内容生成的工具与平台）。与 **AI 数字人**（`avatar`）、**通用图片生成**（`image-generator`）、**虚拟试妆/美妆**（相邻品类）交叉但**不同采购与验收维度**——本页聚焦**服装与时尚**领域的 AI 应用。
 
-**材料范围**：公开网络检索（厂商产品页、行业评测、社区讨论摘要）；**未**将 Alignify 站内 Tools 正文 JSON 当作独立事实来源复述。网摘整理日期 **2026-05-13**。
+**材料范围**：公开网络检索（厂商产品页、行业评测、社区讨论摘要）；**未**将 Alignify 站内 Tools 正文 JSON 当作独立事实来源复述。网摘整理日期 **2026-05-13**；产品外链与定价 **2026-09-08** 复核（新增 Koozee、修订 The New Black）。
 
 **站内对照**：[alignify.co/tools/fashion](https://alignify.co/tools/fashion) · [alignify.co/zh/tools/fashion](https://alignify.co/zh/tools/fashion) · `/tools/fashion` · `/zh/tools/fashion` · `content/tools/zh/fashion.md`、`content/tools/en/fashion.md` · slug **`fashion`**
 
@@ -94,6 +94,7 @@
 
 - 消费者端选型：如果你想看「这件衣服穿在我身上大概什么效果」——Google Doppl（免费、视频内容流）或 Outfits AI（个人照片试穿）。如果是管理个人衣橱+每日搭配——Klodsy 或 Dressly。
 - 电商企业端选型：如果核心需求是 SKU 准确的产品页面图——FASHN.ai（服装身份保持最佳）。如果需要 20+ SKU 用同一模特保持一致性——Modelia（10+ 图同一模特稳定性）。如果预算有限、追求极致降本——VModel（~90% 成本降低，免费层可用）。
+- 电商全流程（图 → listing → 视频）：Koozee——一张服装图产出平铺/模特/上架素材与营销视频，内置 Shopify 工作流并支持批量（2026-09 复核）。
 - 品牌内容与 Lookbook：单张创意素材 → WeShop AI 或 Fashion Diffusion AI；需要 AI 视频模特 → WearView（pose control + 视频）。
 - 独立设计师全链路：从设计灵感（The New Black AI，免费）→ AI 模特展示（VModel）→ 电商上架——完整 AI 管线成本 <$50/月。
 - 作为品牌方，确保在 AI 模特生成中保持多样性——避免只用单一体型/肤色的模特，以免引发包容性争议。
@@ -122,11 +123,12 @@
 | **Outfits AI** | 消费者虚拟试穿平台，100K+ 用户，上传照片即可无限试穿衣橱 | [outfits.ai](https://www.outfits.ai/) |
 | **Modelia** | 电商 AI 模特批量生成，10+ 图同一模特跨图稳定性最佳，Shopify 集成，视频生成 | [modelia.ai](https://www.modelia.ai/) |
 | **VModel** | 降本 ~90% 的电商模特生成，数十秒出图，多种族/体型/年龄可选，免费层可用 | [vmodel.ai](https://www.vmodel.ai/) |
+| **Koozee** | 服装电商一站式 AI 视觉：平铺图/ghost mannequin → AI 模特与虚拟试穿 → Amazon A+ 与 Shopify 上架素材 → 营销视频/海报，支持批量与 Shopify App（2026-09 复核） | [koozee.ai](https://koozee.ai/) |
 | **WeShop AI** | Kolors 架构品牌 Lookbook 生成，环境光照感知，面料垂坠自然，风格化品牌素材 | [weshop.ai](https://www.weshop.ai/) |
 | **Fashion Diffusion AI** | 全能型时尚 AI 平台——AI Shoots + 虚拟试穿 + Face Swap + Sketch-to-Render + 面料应用，Free/$29/月 | [fashiondiffusion.ai](https://www.fashiondiffusion.ai/) |
 | **Klodsy** | 最佳全能 AI 个人造型助手——衣橱照片→自动分类→搭配推荐→虚拟试穿，体型自适配 | [klodsy.com](https://www.klodsy.com/) |
 | **Dressly** | AI 色彩分析 + 身体扫描 + 虚拟试穿 + AI 造型对话，Trustpilot 好评 | [dressly.ai](https://www.dressly.ai/) |
-| **The New Black AI** | 独立设计师 AI 服装设计平台，10 万+用户，moodboard/面料图案/tech pack，完全免费 | [thenewblack.ai](https://www.thenewblack.ai/) |
+| **The New Black AI** | AI 服装设计平台：文字/草图/参考图→设计变体，扩展虚拟模特、虚拟试穿、3D、tech pack，可推送 Shopify；免费档 + 用量计费 / Shopify 从 $15/月（2026-09 复核） | [thenewblack.ai](https://www.thenewblack.ai/) |
 | **Perfect Corp.** | 美妆 AR 虚拟试妆行业龙头，实时化妆+肤色匹配，YouCam 系列 App | [perfectcorp.com](https://www.perfectcorp.com/) |
 
 ### 对比与测评（第三方；观点非官方）
