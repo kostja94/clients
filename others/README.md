@@ -13,4 +13,5 @@
 | [craveu](./craveu/craveu.md) | CraveU (含 Talkie 竞品) |
 | [crepal-ai-vlog](./crepal-ai-vlog/crepal-ai-vlog.md) | CrePal / AI |
 | [datus](./datus/datus.md) | Datus（开源 Data Engineering Agent · 合作已结束） |
+| [qveris](./qveris/qveris.md) | QVeris（AI Agent 能力路由网络 · 合作已结束 2026-09-09） |
 | [thetawave](./thetawave/readme.md) | ThetaWave（AI 笔记 · 暂停合作 2026-08-29） | 
