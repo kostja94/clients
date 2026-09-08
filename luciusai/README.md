@@ -31,6 +31,7 @@
 | [luciusai-meta-optimization-plan.md](./luciusai-meta-optimization-plan.md) | Meta 优化方案：全站 title/description 审计与优化、中文页七处同步、缺失页面 meta 预置 | ✅ 完成 |
 | [luciusai-breadcrumb-optimization-plan.md](./luciusai-breadcrumb-optimization-plan.md) | 面包屑优化方案：视觉面包屑组件、BreadcrumbList JSON-LD 全站审计与修复、Back to Blog 替换 | ✅ 完成 |
 | [luciusai-blog-migration-plan.md](./luciusai-blog-migration-plan.md) | **Blog 迁移**：现有 CMS → OpenBlog；部署于 `E:\客户部署项目\luciusai-blog` | 🚧 Phase 2 基础配置完成 |
+| [luciusai-ai-business-card-research.md](./luciusai-ai-business-card-research.md) | **AI 名片/数字名片赛道研究（英语市场）**：品类三层拆解、代表玩家、Blinq/Popl pivot 分析、与 Personal Chatbot 文档的核对与修正提醒、可直接引用的事实卡 | ✅ 完成（2026-09-07） |
 
 ---
 
@@ -80,4 +81,4 @@ Lucius 是社区原生 AI 队友——跨平台（Discord/Telegram/Slack/Lark）
 
 ---
 
-*索引随文件增补或更新维护。最后更新：2026-07-06*
+*索引随文件增补或更新维护。最后更新：2026-09-07*
