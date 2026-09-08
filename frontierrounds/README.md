@@ -15,7 +15,7 @@
 | [frontier-rounds-nextjs-build-plan.md](./frontier-rounds-nextjs-build-plan.md) | **完整构建 + 部署方案**：现状盘点、Next.js 迁移映射表、图片资产回填脚本、品牌换标、SEO 就位、Cloudflare（OpenNext）部署全步骤、上线验收清单 | ✅ 完成（2026-09-07） |
 | [branding/](./branding/) | **最终品牌 SVG**：`fr-icon.svg`（黑底白图）、`fr-icon-mono.svg`（透明底纯黑）、`fr-wordmark.svg`（Instrument Serif 轮廓化 wordmark） | ✅ 完成（2026-09-07） |
 | [funded-products/](./funded-products/) | **融资的 AI 产品**（24 份档案 + `_index.md`）：网站 Funding Leaderboard 上的真实融资 AI 产品，字段含累计融资/最大轮/估值/领投方/来源 URL/可信度 | ✅ 完成（2026-09-08） |
-| [funding-investors/](./funding-investors/) | **融资的投资方**（12 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司）；含 2026-09-08 新增的 Llama Ventures（见下节） | ✅ 完成（2026-09-08） |
+| [funding-investors/](./funding-investors/) | **融资的投资方**（17 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司）；含 2026-09-08 新增的 Llama Ventures 与 5 家 AI 专项基金（见下节） | ✅ 完成（2026-09-08） |
 
 ## 执行进度
 
@@ -43,7 +43,7 @@
 将网站现有的**两套真实数据**转录为可阅读/可追溯的 Markdown 档案，落在本记录仓：
 
 - **[funded-products/](./funded-products/)** — "融资的 AI 产品"：24 家（OpenAI → Sarvam AI，按累计融资降序）。数据源 `fundingLeaderboard.ts`，每份档案含国家/赛道/累计融资/最大一轮/估值/最近融资日期/领投方/来源机构/数据可信度（Disclosed / Reported），并附 `sourceUrl` 溯源。
-- **[funding-investors/](./funding-investors/)** — "融资的投资方"：12 家（Sequoia、a16z、HongShan、Peak XV、Shunwei、Lollapalooza、Llama Ventures、YC、MiraclePlus、Elad Gil、Naval、Nat Friedman）。数据源 `investors/*.ts`，每份档案含基本档案表、投资逻辑（thesis）、投资组合（含官网链接与中文别名）、别名。
+- **[funding-investors/](./funding-investors/)** — "融资的投资方"：17 家（Sequoia、a16z、HongShan、Peak XV、Shunwei、Lollapalooza、Llama Ventures、Gradient、Conviction、AIX、Air Street、Radical Ventures、YC、MiraclePlus、Elad Gil、Naval、Nat Friedman）。数据源 `investors/*.ts`，每份档案含基本档案表、投资逻辑（thesis）、投资组合（含官网链接与中文别名）、别名。
 
 > 生成方式：临时解析脚本（`@temp/parse_fr_ts.py`）忠实转录站点 TS 数据层，字段与线上页面一致，未增删事实。**注意**：若线上站点后续增删条目，可重跑该脚本刷新本目录。
 
@@ -67,6 +67,22 @@
 - **logo 资产**：新增 `public/logos/llama-mark.png`（官网图标）、`llama-lockup.png` 及 61 张组合公司官方 logo（`llamaLogos.ts` 索引），全部下载自该公司官网。
 - **注册**：`profiles.ts` 导入并加入 `investorProfiles`，Investor Atlas 列表/详情页、sitemap 自动包含 `/investors/llama-ventures`。
 - **同步状态**：TS 与 md 公司数一致（61/61）；typecheck 通过。
+
+## 扩充 AI-only 专项基金档案 ×5（2026-09-08）
+
+用户问「还有没有其他像 Llama 一样只投资 AI 的 VC」，据此在 Investor Atlas 补入 **5 家 100% AI 专项（AI-only）基金**——此前站内 12 家中无一家是纯 AI mandate 机构，此批恰好补上这一层，并新增欧洲/加拿大地理覆盖。全部经 5 个调研 subagent 并行转录官网数据（宁缺毋滥、零虚构），双向实施同步上线：
+
+| 档案 | 机构 | 组合转录 | 亮点 |
+| --- | --- | --- | --- |
+| `gradient.ts` / `gradient.md` | Gradient（2017 谷歌孵化，2025-10 独立，Fund V $220M，~$1.2B AUM） | 16 家（官网 Featured 视图） | 500+ AI founders；Lambda/Writer/Oura/Krea |
+| `conviction.ts` / `conviction.md` | Conviction（Sarah Guo，Fund I $101M→II $230M） | 19 家 | Harvey/OpenEvidence/Sierra 等 software 3.0 |
+| `aixVentures.ts` / `aix-ventures.md` | AIX Ventures（研究者创立，Fund II $202M） | **73 家**（=官网全量） | Perplexity/Hugging Face/Weights & Biases |
+| `airStreetCapital.ts` / `air-street-capital.md` | Air Street Capital（Benaich solo GP，Fund III $232M 欧洲最大） | **66 家**（Epoch I-III + 天使期 4 组） | State of AI Report；Synthesia/BFL/Poolside |
+| `radicalVentures.ts` / `radical-ventures.md` | Radical Ventures（多伦多，~US$2.4B AUM 全球最大 AI-dedicated） | **59 家**（The Vanguard 全量） | Cohere/Waabi/Sanctuary；Geoffrey Hinton 任 LP/advisor |
+
+- **logo 资产**：新增 5 个 mark + 213 张组合 logo（总计 218 引用全部落地 `public/logos/`，来自各公司官网）；个别因官网停用/网络不可达无 logo 的公司按站点约定显示灰框（如 Air Street 12 家被并购遗留项、Conviction 3 家网络受限域名）。每家 logos 独立索引文件（`gradientLogos.ts` 等）。
+- **一致性**：5 份 md 与 TS 公司数逐家核对一致（16/16、19/19、73/73、66/66、59/59）；`_index.md` 12→17；typecheck 通过。
+- **口径注明**：Radical AUM 公开报道差异大（Bloomberg ~US$1.8B vs CPP >US$2.5B），档案取 ~US$2.4B 并注明两口径；Air Street 的 pre-fund 天使投资（Stripe/Niantic 等）按官网原样入档并单列一组。
 
 ## SEO/分析就位（2026-09-07）
 
@@ -130,4 +146,4 @@
 
 ---
 
-*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（新增 Llama Ventures 档案）*
+*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（新增 Llama Ventures 档案 + 扩充 5 家 AI-only 专项基金）*
