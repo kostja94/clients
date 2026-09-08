@@ -94,7 +94,7 @@ Smart schedulers are tools in the first two generations of AI scheduling. They a
 
 An agentic calendar is a fourth-generation concept. Its relationship to the calendar is as a runtime — it executes the work that the schedule implies. A smart scheduler tells you *when* to do the investor update. An agentic calendar begins drafting it when the deadline approaches, pulling in previous updates for continuity. The two are not mutually exclusive; the most complete workflow would use a smart scheduler for coordination and an agentic calendar for execution on the other side of that coordination.
 
-For a detailed breakdown of how these generations evolved, see our <a href="/blog/ai-scheduling-agent">AI Scheduling Agent overview</a>, which traces the full progression from Calendly to calendar-driven agent operating systems.
+For a detailed breakdown of how these generations evolved, see our <a href="/blog/ai-scheduling-agent">AI Scheduling Agent overview</a>, which traces the full progression from Calendly to calendar-driven agent operating systems — and if you are shopping rather than studying, our ranking of the <a href="/blog/best-ai-scheduling-assistants">best AI scheduling assistants</a> scores the current tools against the same four-generation framework.
 
 ### 4.2 Agentic Calendar vs AI Note-Taker
 

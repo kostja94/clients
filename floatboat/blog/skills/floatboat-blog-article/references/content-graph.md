@@ -1,7 +1,7 @@
 # Floatboat Content Graph — Published & Draft Articles
 
 > 加载时机：Phase 0（冲突检查）· Phase 1（KEEP/MERGE）· Phase 2（路径/日期）· Phase 5.5
-> 主文件：SKILL.md §4 · 下一序号：**62**（voice 簇 62–69/71–72/74 预留）
+> 主文件：SKILL.md §4 · 下一序号：**88**（voice 簇 62–69/71–72/74 预留）
 
 ---
 
@@ -58,8 +58,20 @@
 | 73 | voice/73-what-is-a-voice-agent.md | what-is-a-voice-agent | Research/Glossary | 草稿 | what is a voice agent |
 | 75 | voice/75-voice-agent-vs-voice-dictation-for-work.md | voice-agent-vs-voice-dictation-for-work | Research | 草稿 | voice agent vs voice dictation for work |
 | 61 | 61-minimax-h3-max-infinite-ai-livestream.md | minimax-h3-max-infinite-ai-livestream | Research | 草稿 | MiniMax H3 Max live stream — infinite AI broadcast |
+| 76 | 76-gemini-3-8-flash.md | gemini-3-8-flash | Research | 可发布 | Gemini 3.8 Flash coding & agent workhorse |
+| 77 | openai/77-gpt-6-astra.md | gpt-6-astra | OpenAI/Research | 可发布 | GPT-6 Astra most-guarded frontier model |
+| 78 | file-organizer/78-what-is-an-ai-file-organizer.md | what-is-an-ai-file-organizer | Research/Glossary | 可发布 | what is an AI file organizer — Hub |
+| 79 | file-organizer/79-file-organizer-vs-file-renamer-vs-file-sorter.md | file-organizer-vs-file-renamer-vs-file-sorter | Comparison | 可发布 | file organizer vs sorter vs renamer |
+| 80 | file-organizer/80-best-ai-file-organizer.md | best-ai-file-organizer | Comparison/Ranking | 可发布 | best AI file organizer — ranked |
+| 81 | file-organizer/81-best-ai-file-renamer.md | best-ai-file-renamer | Comparison/Ranking | 可发布 | best AI file renamer — ranked |
+| 82 | file-organizer/82-do-ai-file-organizers-upload-your-files.md | do-ai-file-organizers-upload-your-files | Research/Glossary | 可发布 | AI file organizer upload / privacy — canonical |
+| 83 | file-organizer/83-ai-file-organizer-mac.md | ai-file-organizer-mac | Product | 可发布 | AI file organizer for Mac — platform |
+| 84 | file-organizer/84-ai-file-organizer-windows.md | ai-file-organizer-windows | Product | 可发布 | AI file organizer for Windows — offline |
+| 85 | file-organizer/85-clean-up-downloads-folder-with-ai.md | clean-up-downloads-folder-with-ai | Product | 可发布 | clean up Downloads folder with AI |
+| 86 | file-organizer/86-organize-receipts-and-invoices-with-ai.md | organize-receipts-and-invoices-with-ai | Product | 可发布 | organize receipts & invoices with AI |
+| 87 | 87-what-is-doubao-work.md | what-is-doubao-work | standalone/Research | 可发布 | Doubao Work ByteDance AI office agent |
 
-**下一序号：62**（voice 簇 62–69/71–72/74 预留；World Cup P03+ 待写；41–44/46/50/52 DeepSeek；45/51/53–55/61 Model 单篇）
+**下一序号：88**（voice 簇 62–69/71–72/74 预留；World Cup P03+ 待写；41–44/46/50/52 DeepSeek；45/51/53–55/61 Model 单篇）
 
 ---
 
@@ -75,12 +87,13 @@
 | floatim | `Updates/` | introducing-floatim | Product | 01（FloatIM 公告） |
 | claude | `claude/` | what-is-claude-cowork | Claude + secondaryCategory | 35–38, 47–49 |
 | deepseek | `deepseek/` | what-is-deepseek-agent | DeepSeek + secondaryCategory | 41–44, 46, 50, 52 |
-| openai | `openai/` | codex-harness-open-source | OpenAI + secondaryCategory | 30, 31, 57；GPT-5.6 模型族 + Codex Harness |
+| openai | `openai/` | codex-harness-open-source | OpenAI + secondaryCategory | 30, 31, 57, 77；GPT-5.6 模型族 + Codex Harness + GPT-6 Astra |
 | worldcup | `worldcup/` | world-cup-2026-guide | World Cup + secondaryCategory | 09–10, 17–19 |
-| model-singles | *(root)* | what-is-minimax-h3 | Research | 45, 51, 53–55, 61；45↔61 H3 / H3 Max Live 对 |
+| model-singles | *(root)* | what-is-minimax-h3 | Research | 45, 51, 53–55, 61, 76；45↔61 H3 / H3 Max Live 对；76 Gemini 3.8 Flash（55 姊妹单篇） |
 | obsidian | *(root)* | what-is-obsidian-vault | Research / Product | 39–40 |
 | model-release | *(root)* | — | Research / Product | 32, 54–55 等（不含 openai/、Updates/） |
 | voice-agent | `voice/` | what-is-voice-dictation-for-ai-agents | Research / Comparison | 58–60, 70, 73, 75；Hub 58；链 Updates/56 Flow Mode |
+| file-organizer | `file-organizer/` | what-is-an-ai-file-organizer | Research / Product / Comparison | 78–86（2026-09 AI 文件整理簇） |
 
 **standalone 判定**：不在上表 cluster 内、或仅 1 篇无 spoke 计划 → `folder = (root)`。
 
@@ -291,6 +304,40 @@ P09     P10            P11
 |------|---------------|---------|
 | MiniMax H3 定义 | what-is-minimax-h3 | 1–2 句 + link |
 | H3 Max / H3 Max Live | minimax-h3-max-infinite-ai-livestream §2 | 1–2 句 + link |
+
+## 3G. Hub-Spoke 结构（File Organizer 簇 · 新建 2026-09-09）
+
+```
+                       ┌───────────────────────────────────────────┐
+                       │  78 What Is an AI File Organizer (Hub)     │
+                       │  品类定义 + 三种形态 + 数据边界             │
+                       └──────────────────┬────────────────────────┘
+                                          │
+     ┌────────────┬────────────┬──────────┼──────────┬────────────┬────────────┬────────────┬────────────┐
+     │            │            │          │          │            │            │            │            │
+     ▼            ▼            ▼          ▼          ▼            ▼            ▼            ▼            ▼
+ 79 vs Sorter   80 Best AI   81 Best AI  82 Upload  83 AI File   84 AI File   85 Clean Up  86 Organize
+ / Renamer     File Org-    File Ren-   / Privacy  Org for Mac  Org for     Downloads   Receipts +
+ (决策)         anizer       amer        (数据边界   (平台清单)    Windows      (场景)       Invoices
+              (Ranking)    (Ranking)    canonical)               (本地离线)                (场景)
+```
+
+**发布节奏（2026 批 · backdate 已发布）**：78 (08-11) → 79 (08-12) → 80 (08-24) → 81 (08-25) → 82 (09-02) → 83 (09-05) → 84 (09-06) → 85 (09-07) → 86 (09-08)，每日一篇（顺延空闲日期），Hub 先行、平台/场景 spoke 殿后。
+
+| 概念 | Canonical slug | 引用方式 |
+|------|---------------|---------|
+| AI 文件整理器定义（三种形态 + 数据边界） | what-is-an-ai-file-organizer | 1–2 句 + link |
+| Sorter / Renamer / Organizer 分层选型 | file-organizer-vs-file-renamer-vs-file-sorter §2–3 | 1–2 句 + link |
+| AI 文件整理器排名（Mac/Windows） | best-ai-file-organizer §2–3 | 同上 |
+| AI 改名器排名（改名 ≠ 归档） | best-ai-file-renamer §2–3 | 同上 |
+| 数据边界：本地 / BYOK / 云上传 | do-ai-file-organizers-upload-your-files | 1–2 句 + link |
+| Mac 平台注意事项（Finder 标签 / iCloud / Spotlight） | ai-file-organizer-mac | 同上 |
+| Windows 本地离线工具（OneDrive 语义） | ai-file-organizer-windows | 同上 |
+| Downloads 文件夹清理流程 | clean-up-downloads-folder-with-ai | 同上 |
+| 票据 / 发票归档模板（税季友好） | organize-receipts-and-invoices-with-ai | 同上 |
+| 产品页（概念 → 工具转化） | /ai-file-organizer | 站内产品页内链 |
+
+**跨簇桥**：39/40 Obsidian 双向链（「AI 组织知识」vs「AI 组织文件」两种形态；39 vault 边界对照），与 §3D 的 `/ai-file-organizer` 产品页指向一致；82 承接 40 的数据边界承诺，作隐私 canonical。
 
 ---
 

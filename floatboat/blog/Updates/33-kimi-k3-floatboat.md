@@ -99,7 +99,7 @@ If you are new to Floatboat, the setup is three steps. Download the desktop app 
 
 For the first few weeks, a safe starting configuration routes complex client events and project reviews to K3, routine sync and coding tasks to K2.7 Code, and leaves Auto Mode on for classification. This gives you a feel for when K3's max reasoning produces noticeably better output — on high-stakes meeting briefs, on multi-document synthesis, on visual design review — without running up costs on tasks that K2.7 Code handles just as well. After two to three weeks, the routing pattern becomes intuitive.
 
-For a deeper understanding of K3's architecture, benchmarks, and what it means for the open-source AI landscape, see the full <a href="/blog/kimi-k3-open-frontier-model">Kimi K3 model overview</a>. If you want to understand the calendar-driven paradigm that makes tiered model selection useful, the <a href="/blog/what-is-agentic-calendar">agentic calendar explanation</a> covers the category from the ground up.
+For a deeper understanding of K3's architecture, benchmarks, and what it means for the open-source AI landscape, see the full <a href="/blog/kimi-k3-open-frontier-model">Kimi K3 model overview</a>. If you want to understand the calendar-driven paradigm that makes tiered model selection useful, the agentic calendar explanation covers the category from the ground up.
 
 ---
 

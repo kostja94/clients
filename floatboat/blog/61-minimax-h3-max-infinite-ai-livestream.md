@@ -116,7 +116,7 @@ The practical takeaway for builders: **platform fit is unsettled**. Mainstream l
 
 Use fal's published pricing as a floor, not a ceiling. After the launch promotion, **768p H3 Max** list pricing is **$0.08 per second of generated video** on the [product page](https://fal.ai/minimax-h3-max) — about **$288 per hour** if workers generate sixty minutes of footage every clock hour. A full day at that duty cycle approaches **$6,900** before redundancy, failed generations, or prompt-expansion overhead. Promotional rates ($0.04/s during the first two weeks) halve that figure; free daily sandbox generations are irrelevant at channel scale.
 
-Compare to Levels' cited **~$4,000/day** for Infinite Slop: the number is plausible if generation is intermittent, resolution lower, or fal subsidized compute for marketing. None of that implies a profitable creator business without sponsorship, tipping, or a downstream product funnel. Infinite AI TV is currently a **demo class**, not a default content strategy — the same way early [one-prompt HTML game](/blog/34-vibe-coding-one-prompt-html-game) experiments were demos of model capability, not game studios.
+Compare to Levels' cited **~$4,000/day** for Infinite Slop: the number is plausible if generation is intermittent, resolution lower, or fal subsidized compute for marketing. None of that implies a profitable creator business without sponsorship, tipping, or a downstream product funnel. Infinite AI TV is currently a **demo class**, not a default content strategy — the same way early [one-prompt HTML game](/blog/vibe-coding-one-prompt-html-game) experiments were demos of model capability, not game studios.
 
 ### 5.3 Moderation and NSFW Risk
 

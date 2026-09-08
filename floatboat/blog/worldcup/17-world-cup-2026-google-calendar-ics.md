@@ -30,7 +30,7 @@ There are three ways to keep a match schedule, and only one of them actively hel
 
 The ICS file is the baseline: it is free, it works everywhere, and it saves you from typing 104 events by hand. A calendar subscription goes one step further by handling the one thing a static file cannot — what happens when a match time changes.
 
-During the group stage, FIFA occasionally shifts kickoff times for broadcast optimization. If you imported a static ICS file, those changes do not appear in your calendar unless you re-import. A subscription keeps you in sync without any extra work.
+During the group stage, FIFA occasionally shifts kickoff times for broadcast optimization. If you imported a static ICS file, those changes do not appear in your calendar unless you re-import. A subscription keeps you in sync without any extra work. If you would rather not manage re-imports at all, [subscribe with FloatCup](/blog/floatcup-world-cup-2026-calendar-subscribe) — one click, with live kickoff updates for the whole tournament.
 
 ---
 

@@ -14,7 +14,7 @@ secondaryCategory: "Research"
 - It runs on **Claude Opus 4.8**, uses **Agent Identity** (organization-level service accounts, not any one person's OAuth), supports **async execution** in Anthropic-hosted sandboxes, **channel memory** across days, and optional **Ambient** proactive follow-ups.
 - Claude Tag is **not** Claude Cowork (desktop file delegation), Claude Code (terminal engineering), or Slack AI (summarize and search inside Slack). It is the **channel-collaboration** surface in Anthropic's stack.
 - Available in **beta** for **Claude Team and Enterprise** customers on Slack; it **replaces** the older Claude in Slack app, with migration completing **August 3, 2026**.
-- For a ranked list of alternatives by team job shape, see our companion piece on the <a href="/blog/best-claude-tag-alternatives">best Claude Tag alternatives</a>.
+- For a ranked list of alternatives by team job shape, see our companion piece on the best Claude Tag alternatives.
 
 ---
 
@@ -171,7 +171,7 @@ Anthropic replaces the legacy Claude in Slack app with the Claude Tag experience
 
 ### Can Claude Tag automatically prep meetings from my calendar?
 
-Only if you connect relevant tools and either `@` Claude with calendar-aware requests or configure Ambient behavior. Tag does not, by default, treat every calendar event as an automatic prep trigger the way calendar-driven agent systems do. For event-native prep and follow-up, compare Tag against calendar-runtime agents in our <a href="/blog/ai-scheduling-agent">AI scheduling agent</a> overview.
+Only if you connect relevant tools and either `@` Claude with calendar-aware requests or configure Ambient behavior. Tag does not, by default, treat every calendar event as an automatic prep trigger the way calendar-driven agent systems do. For event-native prep and follow-up, compare Tag against the calendar-runtime agents profiled in our AI scheduling agent overview.
 
 ### Is FloatIM a Claude Tag alternative?
 

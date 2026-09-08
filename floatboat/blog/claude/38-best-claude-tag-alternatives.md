@@ -10,7 +10,7 @@ secondaryCategory: "Comparison"
 
 ## TL;DR
 
-- **Claude Tag** is Anthropic's shared `@Claude` teammate inside Slack — channel memory, async execution, Agent Identity, optional Ambient follow-up. For the canonical definition, see <a href="/blog/what-is-claude-tag">what is Claude Tag</a>.
+- **Claude Tag** is Anthropic's shared `@Claude` teammate inside Slack — channel memory, async execution, Agent Identity, optional Ambient follow-up. For the canonical definition, see what is Claude Tag.
 - This is a **ranked listing** by **team job shape**, not a keyword-matched directory: who solves multiplayer delegation, governance, and platform fit — not who reused "Claude Tag alternative" in a landing page.
 - **FloatIM** ranks **#1** when you want **agent-native group chat** — multiple agents and humans in governed threads, without locking execution to Slack Enterprise and Claude Team/Enterprise billing.
 - **Viktor**, **Stilla**, **Runbear**, **Junior**, and **Operant** rank next for generalist AI employees, multi-platform reach, named ops agents, approval gates, and self-hosted governance respectively.

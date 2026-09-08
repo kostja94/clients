@@ -41,7 +41,7 @@ The United States enters the 2026 World Cup on home soil with a generation of pl
 
 The tactical identity under the current coaching staff emphasizes high pressing, quick transitions through the midfield, and width from fullbacks. The question mark is whether the US can break down organized defenses in possession — the kind of challenge Paraguay will likely present in the opening match — and whether the midfield can control tempo against technically superior opponents in later rounds.
 
-If the US wins Group D, the Round of 32 path runs through Los Angeles or Seattle, keeping the team on the West Coast. Finishing second or advancing as a third-place team sends the USMNT to a different venue path — possibly Dallas, Atlanta, or further east.
+If the US wins Group D, the Round of 32 path runs through Los Angeles or Seattle, keeping the team on the West Coast. Finishing second or advancing as a third-place team sends the USMNT to a different venue path — possibly Dallas, Atlanta, or further east. For how the bracket and third-place rules work across the whole 48-team field, see the [World Cup 2026 guide](/blog/world-cup-2026-guide).
 
 The USMNT's tournament history provides context for the expectations. The team reached the Round of 16 in 2022 (losing to the Netherlands) and the quarterfinals in 2002. Playing on home soil, with all three group matches in familiar western venues and a support base that will fill every stadium, the Round of 16 is a realistic baseline and the quarterfinals are a credible ambition. <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" rel="nofollow noopener">Source: FIFA — 2026 World Cup Hosts & Format</a>
 

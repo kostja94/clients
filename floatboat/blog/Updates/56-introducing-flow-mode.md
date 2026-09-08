@@ -82,7 +82,7 @@ That safety net matters for solo founders who draft in public: you can try an ag
 
 Floatboat remains **the proactive Agent OS that runs work from the calendar**—agents prep before meetings, execute on deadlines, and follow up after. Flow Mode does not replace that engine; it strengthens the **expression surface** where many of those outputs land.
 
-Think of a typical client day: the calendar triggers a pre-meeting brief ([prep pipeline](/blog/ai-meeting-preparation)); you join the call and capture decisions with Flow Mode's live plan; after the slot, follow-up drafts and tasks flow through the existing automation story ([follow-up pipeline](/blog/ai-follow-up-automation)). Voice gets you through the memo; batch annotations clean the long doc; versions keep experiments reversible.
+Think of a typical client day: the calendar triggers a pre-meeting brief (prep pipeline); you join the call and capture decisions with Flow Mode's live plan; after the slot, follow-up drafts and tasks flow through the existing automation story (follow-up pipeline). Voice gets you through the memo; batch annotations clean the long doc; versions keep experiments reversible.
 
 If you keep research in Obsidian or local markdown, Flow Mode also pairs naturally with the workflow in [how to use Obsidian with an AI agent](/blog/how-to-use-obsidian-with-ai-agent)—speak a draft, refine in place, and keep context in files you control rather than in a disposable chat session.
 
@@ -104,7 +104,7 @@ At no point did you export the doc to a chat box or wait until Friday to "proces
 
 **Floatboat Flow Mode** treats **AI voice dictation** as the start of co-authoring—not a shortcut to raw transcript. If your bottleneck is switching between speaking, typing, chatting, and meeting tools, the fix is not louder prompts; it is a single document stream that respects momentum.
 
-Try Flow Mode in the latest Floatboat build on [floatboat.ai](https://floatboat.ai/). If you are mapping voice input categories first, read [what is voice dictation for AI agents](/blog/what-is-voice-dictation-for-ai-agents) — Flow Mode sits in the document-centric branch of that taxonomy. If you are comparing paradigms first, read [Calendar-Driven AI vs Chat-Based AI](/blog/calendar-driven-ai-vs-chat-ai); if your week is meeting-heavy, pair this launch with the [meeting prep](/blog/ai-meeting-preparation) and [follow-up](/blog/ai-follow-up-automation) guides already on the blog.
+Try Flow Mode in the latest Floatboat build on [floatboat.ai](https://floatboat.ai/). If you are mapping voice input categories first, read [what is voice dictation for AI agents](/blog/what-is-voice-dictation-for-ai-agents) — Flow Mode sits in the document-centric branch of that taxonomy. If you are comparing paradigms first, read Calendar-Driven AI vs Chat-Based AI; if your week is meeting-heavy, pair this launch with the meeting prep and follow-up guides already on the blog.
 
 ---
 
@@ -124,7 +124,7 @@ Yes—that is the namesake behavior. Flow Mode is built so **voice input does no
 
 ### Does Flow Mode replace Floatboat's calendar-driven meeting prep and follow-up?
 
-No. Flow Mode adds a **during-meeting / during-draft** layer. [AI meeting preparation](/blog/ai-meeting-preparation) still handles pre-call context; [AI follow-up automation](/blog/ai-follow-up-automation) still structures what happens after. Flow Mode reduces the manual gap between speaking and a shippable artifact in the middle.
+No. Flow Mode adds a **during-meeting / during-draft** layer. AI meeting preparation still handles pre-call context; AI follow-up automation still structures what happens after. Flow Mode reduces the manual gap between speaking and a shippable artifact in the middle.
 
 ### What if an Agent edit goes wrong?
 

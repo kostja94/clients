@@ -12,7 +12,7 @@ secondaryCategory: "Product"
 
 - Building a DeepSeek Agent takes three practical steps: get an API key from platform.deepseek.com, pick `deepseek-v4-pro` for complex reasoning or `deepseek-v4-flash` for speed and cost, and implement the agent loop — the pattern that feeds tool call results back into context so the model can decide the next step.
 - The agent loop is the part most tutorials skip. You define tools, the model returns a tool call, your code executes it, you append the result as a `tool` role message, and you send the updated history back. Repeat until the model produces a final answer.
-- If you are building a coding agent, you probably do not need to write this loop from scratch — tools like DeepSeek-TUI and Reasonix already implement it. But understanding the loop is essential for debugging, customizing, and building agents for non-coding tasks. For an overview of what types of DeepSeek Agents exist, see [What Is a DeepSeek Agent](/blog/what-is-deepseek-agent).
+- If you are building a coding agent, you probably do not need to write this loop from scratch — tools like DeepSeek-TUI and Reasonix already implement it. But understanding the loop is essential for debugging, customizing, and building agents for non-coding tasks. For an overview of what types of DeepSeek Agents exist, see What Is a DeepSeek Agent.
 - This tutorial uses the OpenAI Python SDK (`pip install openai`) pointed at `https://api.deepseek.com`. The Node.js examples use the same SDK. If your code already calls OpenAI's API, the migration is a one-line base URL change.
 
 ---
@@ -311,7 +311,7 @@ The weather agent is a toy. But the pattern scales. Swap `get_weather` for `sear
 
 ### Why build a custom agent instead of using DeepSeek-TUI or Reasonix?
 
-DeepSeek-TUI and Reasonix are excellent terminal coding agents, but they are purpose-built for developer workflows. If your agent needs to do something other than edit code — query a proprietary database, interact with internal APIs, automate a business process — a custom agent loop gives you complete control over the tool surface. The loop pattern in this tutorial is the foundation for any domain-specific agent. If you are weighing the cost and capability trade-offs between coding with DeepSeek versus staying with Claude Code, [DeepSeek Agent vs Claude Code](/blog/deepseek-agent-vs-claude-code) covers that comparison in detail.
+DeepSeek-TUI and Reasonix are excellent terminal coding agents, but they are purpose-built for developer workflows. If your agent needs to do something other than edit code — query a proprietary database, interact with internal APIs, automate a business process — a custom agent loop gives you complete control over the tool surface. The loop pattern in this tutorial is the foundation for any domain-specific agent. If you are weighing the cost and capability trade-offs between coding with DeepSeek versus staying with Claude Code, the DeepSeek Agent vs Claude Code comparison referenced in the architecture section covers that in detail.
 
 ### Can I use DeepSeek with LangChain or LangGraph?
 

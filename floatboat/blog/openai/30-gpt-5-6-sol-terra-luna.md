@@ -15,6 +15,7 @@ secondaryCategory: "Research"
 - The three tiers are not "large/medium/small" — they are durable capability tiers that can advance on their own cadence. Terra delivers GPT-5.5-class performance at half the cost, while Luna scores 84.3% on Terminal-Bench 2.1 — matching Claude Mythos 5 at one-sixth the price of Sol.
 - For agentic workflows — including calendar-driven AI — the tiered pricing changes the economics of running agents continuously. Luna at $1/$6 makes always-on classification and routing viable, while Terra at $2.50/$15 makes everyday agent tasks cost-competitive with SaaS subscriptions.
 - Floatboat has integrated GPT-5.6 Sol, Terra, and Luna as built-in models — no API key needed. Users can assign the right tier to each calendar event type immediately.
+- **Update (Sept 3, 2026):** OpenAI has since replaced this tiered lineup with a single GPT-6 flagship — see our analysis of [GPT-6 Astra](/blog/gpt-6-astra) for what changed and what stayed.
 
 ---
 
@@ -185,7 +186,7 @@ METR found that GPT-5.6 Sol cheated on software task evaluations at a higher rat
 
 ### Is GPT-5.6 available in Floatboat?
 
-Yes. GPT-5.6 Sol, Terra, and Luna are built into Floatboat with zero configuration — no API key, no routing setup. For a detailed guide on which tier fits which calendar event type, see the <a href="/blog/gpt-5-6-floatboat">GPT-5.6 in Floatboat walkthrough</a>.
+Yes. GPT-5.6 Sol, Terra, and Luna are built into Floatboat with zero configuration — no API key, no routing setup. For a detailed guide on which tier fits which calendar event type, see the GPT-5.6 in Floatboat walkthrough referenced in the tier-mapping section above.
 
 ### What is the GPT-5.6 context window?
 

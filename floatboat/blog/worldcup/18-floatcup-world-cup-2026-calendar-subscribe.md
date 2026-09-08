@@ -37,6 +37,8 @@ The subscription includes:
 
 For the full fixture list across all 12 groups and knockout rounds, see our <a href="/blog/world-cup-2026-schedule">World Cup 2026 schedule</a>.
 
+If you are new to the tournament, the <a href="/blog/world-cup-2026-guide">World Cup 2026 guide</a> explains the 48-team format, the 12 groups, and the new Round of 32 before you add the matches to your calendar.
+
 ### Step 3: Your Calendar Is Ready
 
 The matches appear in your calendar within seconds. You do not need to download a file, unzip anything, or manually import. The subscription stays live through the tournament and updates automatically when match times change.

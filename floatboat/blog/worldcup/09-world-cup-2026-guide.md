@@ -161,7 +161,7 @@ The 2026 World Cup runs during Daylight Saving Time in North America (June–Jul
 
 And a note on Mexico: most of Mexico — including Mexico City and Guadalajara — no longer observes Daylight Saving Time as of 2023. Matches in Mexico are listed in CST (UTC-6), which is equivalent to CDT during the summer. To convert a Mexico City kickoff to Eastern time: add 2 hours.
 
-The most reliable way to avoid timezone mistakes: subscribe to a calendar that handles the conversion automatically. FloatCup and ICS imports both place every match at the correct time in your calendar's timezone.
+The most reliable way to avoid timezone mistakes: subscribe to a calendar that handles the conversion automatically. FloatCup and ICS imports both place every match at the correct time in your calendar's timezone. For step-by-step import instructions instead of subscribing, the [ICS import guide](/blog/world-cup-2026-google-calendar-ics) covers Google Calendar, Outlook, and Apple Calendar.
 
 ---
 

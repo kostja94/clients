@@ -13,7 +13,7 @@ category: "Research"
 - Each vault can hold notes, attachments, and an `.obsidian` config folder for settings, plugins, and themes. You can run multiple vaults for separate life contexts.
 - Vaults emphasize **local ownership**, **bidirectional links**, and **open formats**, so notes remain readable in any text editor and usable by other tools.
 - A vault is **not** Notion, Apple Notes, or a sync service by itself. Optional Obsidian Sync and Publish are add-ons; the core app stays free and local-first.
-- For a practical guide to pairing that local folder with desktop agents, see <a href="/blog/how-to-use-obsidian-with-ai-agent">how to use Obsidian with an AI agent</a>.
+- For a practical guide to pairing that local folder with desktop agents, see how to use Obsidian with an AI agent further below.
 
 ---
 
@@ -111,7 +111,7 @@ Pricing shape is unusually clear for the category. The <a href="https://obsidian
 
 Local Markdown is no longer a niche protest against cloud docs. It is becoming the interchange format between human note-taking and machine execution. Obsidian's roadmap in 2025–2026 expanded Bases, Web Clipper tooling, CLI automation, and sync headless clients — infrastructure that makes vaults easier to query and operate without abandoning plain files.
 
-The market split looks durable: hosted collaborative workspaces on one side, local-first personal knowledge graphs on the other, with agents and clippers bridging both. Vaults will not replace Slack or shared Notion wikis. They remain the personal layer where thinking compounds — and, increasingly, the folder agents are allowed to read when you want work done from notes you already trust.
+The market split looks durable: hosted collaborative workspaces on one side, local-first personal knowledge graphs on the other, with agents and clippers bridging both. Vaults will not replace Slack or shared Notion wikis. They remain the personal layer where thinking compounds — and, increasingly, the folder agents are allowed to read when you want work done from notes you already trust. As those agents mature, the operating model tends to polarize between chat-driven sessions and [calendar-driven AI workflows](/blog/calendar-driven-ai-vs-chat-ai) — a distinction that matters when your vault feeds meeting briefs and scheduled work rather than one-off prompts.
 
 ---
 

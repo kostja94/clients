@@ -10,7 +10,7 @@ category: "Product"
 ## TL;DR
 
 - **How to use Obsidian with an AI agent** starts with a clear split: Obsidian owns linked Markdown thinking; the agent owns cross-app execution against that folder and the rest of your desktop.
-- Treat your <a href="/blog/what-is-obsidian-vault">Obsidian vault</a> as source of truth — plain files on disk — then authorize a desktop agent to read (and, when you allow, write) that folder for the current project or calendar block.
+- Treat your Obsidian vault as source of truth — plain files on disk — then authorize a desktop agent to read (and, when you allow, write) that folder for the current project or calendar block.
 - Most "AI inside Obsidian" setups (chat plugins, clipper interpreters) help *inside* the note app. Desktop agents help when the job spans email, Drive, PDFs, Downloads, and the vault together.
 - When neighboring folders are chaotic, an on-device <a href="/ai-file-organizer">AI File Organizer</a> can negotiate a sort plan, preview the tree, and move files only after you approve — without uploading your documents.
 - Obsidian alone is enough for writing and linking. Add an agent when work must leave the courtyard room and touch the rest of the house.
@@ -92,7 +92,7 @@ The market for "Obsidian with an AI agent" is not one product. As of mid-2026 it
 
 ### 1. Floatboat — Best for calendar-driven work across the vault and other apps
 
-Floatboat ranks first when the job is not "chat with my notes" but "make Thursday's client work happen." It is a proactive agent OS on Mac and Windows: calendar events and deadlines can trigger prep and execution, local folders (including an Obsidian vault) stay in scope, and the same workspace chains into skills such as the <a href="/ai-file-organizer">AI File Organizer</a>. You keep thinking in Obsidian; Floatboat runs the courtyard — mail, files, models, and schedule — without forcing you to rebuild context in a plugin sidebar each morning. For the paradigm contrast with chat-only tools, see <a href="/blog/calendar-driven-ai-vs-chat-ai">Calendar-Driven AI vs Chat-Based AI</a>.
+Floatboat ranks first when the job is not "chat with my notes" but "make Thursday's client work happen." It is a proactive agent OS on Mac and Windows: calendar events and deadlines can trigger prep and execution, local folders (including an Obsidian vault) stay in scope, and the same workspace chains into skills such as the <a href="/ai-file-organizer">AI File Organizer</a>. You keep thinking in Obsidian; Floatboat runs the courtyard — mail, files, models, and schedule — without forcing you to rebuild context in a plugin sidebar each morning. For the paradigm contrast with chat-only tools, see Calendar-Driven AI vs Chat-Based AI.
 
 Skip Floatboat as the *first* install if you only want semantic search while writing inside Obsidian and never leave the editor. In that case start with an in-vault plugin and add a desktop runtime later.
 
@@ -177,4 +177,4 @@ If your week is meeting- and deadline-shaped and notes are only one input, start
 
 ### Should I replace Obsidian with an AI note app?
 
-Usually no, if you already value local Markdown and linking. Replace workflows that force you to redo cross-app assembly by hand — not the knowledge base that already works. For category contrast with chat-only tools, see <a href="/blog/what-is-claude-cowork">Claude Cowork</a> and calendar-driven alternatives discussed across our agent guides.
+Usually no, if you already value local Markdown and linking. Replace workflows that force you to redo cross-app assembly by hand — not the knowledge base that already works. For category contrast with chat-only tools, see the Claude Cowork definition above and the calendar-driven alternatives discussed across our agent guides.

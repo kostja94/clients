@@ -13,7 +13,7 @@ secondaryCategory: "Product"
 - DeepSeek function calling lets a DeepSeek Agent request structured actions — query a database, read a file, call an API — through the same OpenAI-compatible `tools` array used by GPT-4o and Claude. V4 Pro and V4 Flash both support up to 128 parallel tool calls per turn.
 - The wire format is standard: define tools in JSON Schema, send them with your messages, inspect `message.tool_calls`, execute locally, append results as `role: "tool"` messages, and call the API again. Strict mode (`"strict": true` via the `/beta` endpoint) enforces schema adherence when argument reliability matters.
 - Thinking mode and tool calling work together on V4 — the model can reason through which tools to call before emitting structured requests. MCP (Model Context Protocol) extends the tool surface beyond inline function definitions to external servers.
-- Production agents need a repair layer: validate JSON arguments, return structured errors the model can self-correct, and bound parallel execution. If you have not built an agent loop yet, start with [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent); this guide goes deeper on the tool-calling layer specifically.
+- Production agents need a repair layer: validate JSON arguments, return structured errors the model can self-correct, and bound parallel execution. If you have not built an agent loop yet, start with our "How to Build a DeepSeek Agent" guide; this guide goes deeper on the tool-calling layer specifically.
 
 ---
 
@@ -101,7 +101,7 @@ For agents where argument correctness is critical — billing systems, database 
 
 ## 3. The Tool Call Loop: Beyond the Basics
 
-The minimal loop from [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent) handles one tool call per turn. Production agents need three additional controls: `tool_choice`, parallel call handling, and conversation state preservation.
+The minimal loop from the "How to Build a DeepSeek Agent" guide handles one tool call per turn. Production agents need three additional controls: `tool_choice`, parallel call handling, and conversation state preservation.
 
 **`tool_choice` controls whether the model must call a tool.** The default `"auto"` lets the model decide. Set `"required"` when every turn must produce a tool call (rare — usually for forced pipeline steps). Set `"none"` on the final synthesis turn after all tools have executed, which prevents the model from calling more tools when you want a plain-text answer.
 
@@ -230,7 +230,7 @@ Function calling is the connective tissue of every DeepSeek Agent. The model's r
 
 Start with two or three well-defined tools and a sequential loop. Add strict mode when argument errors become your top failure mode. Add parallel calls when latency — not correctness — is the bottleneck. Add MCP when the tool surface outgrows inline definitions.
 
-For the full agent architecture — API setup, model selection, and the loop skeleton that this guide extends — [How to Build a DeepSeek Agent](/blog/how-to-build-deepseek-agent) walks through each step with runnable code.
+For the full agent architecture — API setup, model selection, and the loop skeleton that this guide extends — the "How to Build a DeepSeek Agent" guide walks through each step with runnable code.
 
 ---
 

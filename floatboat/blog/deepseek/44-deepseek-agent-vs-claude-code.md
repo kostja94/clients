@@ -164,7 +164,7 @@ For routine coding tasks — boilerplate, single-file changes, debugging, test w
 
 ### What about DeepSeek-TUI vs Claude Code directly?
 
-DeepSeek-TUI is a community-built terminal agent optimized for DeepSeek's pricing and architecture (RLM fan-out, MCP, sandboxed execution). Claude Code is a commercial product with a more polished workflow and native Opus integration. DeepSeek-TUI offers architectural patterns Claude Code does not (parallel sub-agents at V4 Flash pricing). Claude Code offers workflow maturity and harness features DeepSeek-TUI is still building. For a detailed breakdown of DeepSeek Agent types, see [What Is a DeepSeek Agent](/blog/what-is-deepseek-agent).
+DeepSeek-TUI is a community-built terminal agent optimized for DeepSeek's pricing and architecture (RLM fan-out, MCP, sandboxed execution). Claude Code is a commercial product with a more polished workflow and native Opus integration. DeepSeek-TUI offers architectural patterns Claude Code does not (parallel sub-agents at V4 Flash pricing). Claude Code offers workflow maturity and harness features DeepSeek-TUI is still building. For a detailed breakdown of DeepSeek Agent types, see the What Is a DeepSeek Agent taxonomy in the overview above.
 
 ### Does switching to DeepSeek in Claude Code break any features?
 
