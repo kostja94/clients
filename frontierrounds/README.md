@@ -15,7 +15,7 @@
 | [frontier-rounds-nextjs-build-plan.md](./frontier-rounds-nextjs-build-plan.md) | **完整构建 + 部署方案**：现状盘点、Next.js 迁移映射表、图片资产回填脚本、品牌换标、SEO 就位、Cloudflare（OpenNext）部署全步骤、上线验收清单 | ✅ 完成（2026-09-07） |
 | [branding/](./branding/) | **最终品牌 SVG**：`fr-icon.svg`（黑底白图）、`fr-icon-mono.svg`（透明底纯黑）、`fr-wordmark.svg`（Instrument Serif 轮廓化 wordmark） | ✅ 完成（2026-09-07） |
 | [funded-products/](./funded-products/) | **融资的 AI 产品**（24 份档案 + `_index.md`）：网站 Funding Leaderboard 上的真实融资 AI 产品，字段含累计融资/最大轮/估值/领投方/来源 URL/可信度 | ✅ 完成（2026-09-08） |
-| [funding-investors/](./funding-investors/) | **融资的投资方**（11 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司） | ✅ 完成（2026-09-08） |
+| [funding-investors/](./funding-investors/) | **融资的投资方**（12 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司）；含 2026-09-08 新增的 Llama Ventures（见下节） | ✅ 完成（2026-09-08） |
 
 ## 执行进度
 
@@ -43,7 +43,7 @@
 将网站现有的**两套真实数据**转录为可阅读/可追溯的 Markdown 档案，落在本记录仓：
 
 - **[funded-products/](./funded-products/)** — "融资的 AI 产品"：24 家（OpenAI → Sarvam AI，按累计融资降序）。数据源 `fundingLeaderboard.ts`，每份档案含国家/赛道/累计融资/最大一轮/估值/最近融资日期/领投方/来源机构/数据可信度（Disclosed / Reported），并附 `sourceUrl` 溯源。
-- **[funding-investors/](./funding-investors/)** — "融资的投资方"：11 家（Sequoia、a16z、HongShan、Peak XV、Shunwei、Lollapalooza、YC、MiraclePlus、Elad Gil、Naval、Nat Friedman）。数据源 `investors/*.ts`，每份档案含基本档案表、投资逻辑（thesis）、投资组合（含官网链接与中文别名）、别名。
+- **[funding-investors/](./funding-investors/)** — "融资的投资方"：12 家（Sequoia、a16z、HongShan、Peak XV、Shunwei、Lollapalooza、Llama Ventures、YC、MiraclePlus、Elad Gil、Naval、Nat Friedman）。数据源 `investors/*.ts`，每份档案含基本档案表、投资逻辑（thesis）、投资组合（含官网链接与中文别名）、别名。
 
 > 生成方式：临时解析脚本（`@temp/parse_fr_ts.py`）忠实转录站点 TS 数据层，字段与线上页面一致，未增删事实。**注意**：若线上站点后续增删条目，可重跑该脚本刷新本目录。
 
@@ -56,6 +56,17 @@
 - **个人天使档案修复**：Elad Gil 组合删除 **Cursor / Runway / Glean** 三项（CB Insights/融资报道查无投资记录，其中 Runway 属同名金融科技公司混淆），补入官网自证的 **OpenAI**，披露数 ~140 → 250+；Nat Friedman 组合删除 **Ideogram**（多源交叉无 NFDG 记录），SSI 备注补 Gross 联合创始人语境，Meta 任职表述精确化（Friedman=VP of Product & Applied Research 与 Alexandr Wang 共领 MSL，NFDG 停止新投资）。
 
 > 修复原则：改前逐项复核实证，改后 TS（站点展示层）与本地 md（归档层）逐字一致；本次不涉及新增融资事件，仅修正既有条目。
+
+## 新增投资方档案：Llama Ventures（2026-09-08）
+
+在「融资的投资方」目录新增第 12 家/人档案 **Llama Ventures**（同步上线 Investor Atlas，双向实施）：
+
+- **为什么入档**：用户在 Visko AI 融资报道中注意到该机构（US$10M Pre-Seed 领投方），随后在 `funding-investors` 请求创建其档案页面，并选择了「双向实施」方案。
+- **档案内容**：`investors/llamaVentures.ts` + 本地 `llama-ventures.md`。含 2024 年成立（Sunnyvale, CA）、创始人 Jack Feng（WandouLabs 联创 / iHealth CEO）与 Herman Zhou（易到用车创始人）；US$300M+ 直投基金 + US$600M+ FoF；典型支票 US$500K–5M；**官网披露的组合公司 61 家全部转录**，按官网 7 个赛道分类（Models & Research / AI Infrastructure / Enterprise Applications / Consumer & Media / Healthcare & Life Sciences / Education / Robotics & Hardware），每家含官网简介与官网链接，来源 URL 可逐个溯源。
+- **数据来源**：Llama Ventures 官网（llamaventures.vc portfolio 页结构化披露），非二手聚合。
+- **logo 资产**：新增 `public/logos/llama-mark.png`（官网图标）、`llama-lockup.png` 及 61 张组合公司官方 logo（`llamaLogos.ts` 索引），全部下载自该公司官网。
+- **注册**：`profiles.ts` 导入并加入 `investorProfiles`，Investor Atlas 列表/详情页、sitemap 自动包含 `/investors/llama-ventures`。
+- **同步状态**：TS 与 md 公司数一致（61/61）；typecheck 通过。
 
 ## SEO/分析就位（2026-09-07）
 
@@ -119,4 +130,4 @@
 
 ---
 
-*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（事实核查修复）*
+*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-08（新增 Llama Ventures 档案）*
