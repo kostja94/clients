@@ -1,9 +1,9 @@
 # 文案质量 — 五维 · Swap Test · 去模板化
 
-> **位置**：`skills/create-article/rules/copy-quality.md`  
+> **位置**：`skills/create-article/copy-quality.md`  
 > **版本**：v1.0 · 2026-08-27  
-> **跨项目原则**：[`page-copy-spec.md`](../../../../page-copy-spec.md)（仓库根 · 五维定义与通用 Swap Test）  
-> **Alignify 适配**：本文 = Brief → Step 05–10 的可执行 SSOT；**节写法** → [`sections.md`](./sections.md) · **字数硬底线** → [`word-counts.md`](./word-counts.md) · **呈现** → [`presentation.md`](./presentation.md) · **Moat/可提取** → [`extractability-checklist.md`](./extractability-checklist.md)
+> **跨项目原则**：[`page-copy-spec.md`](../../../page-copy-spec.md)（仓库根 · 五维定义与通用 Swap Test）  
+> **Alignify 适配**：本文 = Brief → Step 05–10 的可执行 SSOT；**节写法** → [`sections.md`](sections.md) · **字数硬底线** → [`word-counts.md`](word-counts.md) · **呈现** → [`presentation.md`](presentation.md) · **Moat/可提取** → [`content-locale.md`](content-locale.md)
 
 ---
 
@@ -46,14 +46,14 @@ Alignify 已从「同类型页面对齐固定 H2 模具」转为 **Brief + Answe
 
 **Step 01 / 02**：在 Brief 写入 `Copy mode: M1 | M2 | M3`（见 [附录 A](#附录-a-brief-copy-quality-字段)）。
 
-> **代号消歧**：本文 **Copy mode M1/M2/M3** = 成稿五维模式；[`internal-links.md`](./internal-links.md) Part 4.5 的 **Marketing M1–M11** = 内链条数/分布规则。**二者无关**，Brief 与 Step 07 勿混读。
+> **代号消歧**：本文 **Copy mode M1/M2/M3** = 成稿五维模式；[`internal-links.md`](internal-links.md) Part 4.5 的 **Marketing M1–M11** = 内链条数/分布规则。**二者无关**，Brief 与 Step 07 勿混读。
 
 ## 0.3 与 `templates.md` 的关系
 
 | 文档 | 角色 |
 |------|------|
-| [`templates.md`](./templates.md) Part 0 | **禁止**一比一复刻存量骨架 |
-| [`templates.md`](./templates.md) Part 2–5 | **类型差异参考**（Meta 词根、References 分型）；M2 时可对照节级建议区间 |
+| [`templates.md`](templates.md) Part 0 | **禁止**一比一复刻存量骨架 |
+| [`templates.md`](templates.md) Part 2–5 | **类型差异参考**（Meta 词根、References 分型）；M2 时可对照节级建议区间 |
 | **本文** | 验收「这篇是否只换词也能成立」 |
 
 ---
@@ -62,15 +62,15 @@ Alignify 已从「同类型页面对齐固定 H2 模具」转为 **Brief + Answe
 
 # Part 1 · 五维（Alignify 释义）
 
-完整定义见 [`page-copy-spec.md` §1](../../../../page-copy-spec.md#1-五维详解)。Alignify 映射：
+完整定义见 [`page-copy-spec.md` §1](../../../page-copy-spec.md#1-五维详解)。Alignify 映射：
 
 | 维 | Alignify 落地 | 关联文档 |
 |----|---------------|----------|
 | **一致性** | Kostja voice、JSON 侧车用法、组件计数（FAQ 7 问若采用）；**非** H2 标题机械同构 | `presentation.md` · `anatomy.md` |
-| **差异性** | 同批/同簇 Intro、Answer Block 角度、FAQ 首问、Meta 副线互不互换 | `outline-cross-check.md` · `cross-article-audit.md` |
+| **差异性** | 同批/同簇 Intro、Answer Block 角度、FAQ 首问、Meta 副线互不互换 | `cross-article-audit.md` · `meta.md` |
 | **相关性** | 每 major H2 服务 Brief Answer Block + primary intent；含本类术语与场景 | `article-brief.md` · `sections.md` Part 0 |
 | **去模板化** | Swap Test Pass；黑名单 must be 0 | 本文 Part 2 |
-| **独特性** | Moat + 品类术语 + 可证伪判断 + Source Map；自评 L0–L3 | `extractability-checklist.md` · `research-triangle.md` |
+| **独特性** | Moat + 品类术语 + 可证伪判断 + Source Map；自评 L0–L3 | `content-locale.md` · `02-research.md` |
 
 ### SERP 同句测试（M1 必做 · 挂在去模板化下）
 
@@ -116,9 +116,9 @@ Alignify 已从「同类型页面对齐固定 H2 模具」转为 **Brief + Answe
 | **L0 模板壳** | Swap Test 大面积失败 | Step 06 **不得 Pass** |
 | **L1 合格** | Swap Pass；有品类词但偏浅 | audit-ready 可过；标 P1 优化 |
 | **L2 优秀** | ≥3 项独特性来源（术语/场景/约束/对比/异议预答） | **flagship 默认目标** |
-| **L3 标杆** | 可作同类型 brief 参考 | 归档 [`templates.md`](./templates.md) 附录 B |
+| **L3 标杆** | 可作同类型 brief 参考 | 归档 [`templates.md`](templates.md) 附录 B |
 
-**独特性来源**（命中 ≥3 项 → L2）：见 [`page-copy-spec.md` §1.5](../../../../page-copy-spec.md#15-独特性uniqueness)。
+**独特性来源**（命中 ≥3 项 → L2）：见 [`page-copy-spec.md` §1.5](../../../page-copy-spec.md#15-独特性uniqueness)。
 
 ---
 
@@ -131,8 +131,8 @@ Alignify 已从「同类型页面对齐固定 H2 模具」转为 **Brief + Answe
 | 层级 | 适用 | 违规 |
 |------|------|------|
 | **A 硬底线** | 事实、合规、内链 R4、构建、段落数下限 | 必须修复 |
-| **B 强建议** | meta title/description、H1、excerpt | 应修复 · 见 [`meta.md`](./meta.md) |
-| **C 软建议** | 各 H2 / JSON 块篇幅 | 说清优先 · 数字见 [`word-counts.md`](./word-counts.md) |
+| **B 强建议** | meta title/description、H1、excerpt | 应修复 · 见 [`meta.md`](meta.md) |
+| **C 软建议** | 各 H2 / JSON 块篇幅 | 说清优先 · 数字见 [`word-counts.md`](word-counts.md) |
 
 **禁止**为贴 C 层数字删补句式；**禁止**用跨页字数对齐代替内容质量。
 
@@ -146,8 +146,8 @@ Alignify 已从「同类型页面对齐固定 H2 模具」转为 **Brief + Answe
 
 | 需求 | 读 |
 |------|-----|
-| 节级硬底线 + flagship 全文饱满度 | [`word-counts.md`](./word-counts.md) |
-| FAQ/结论等节内常用目标 | [`sections.md`](./sections.md) 各 Part + `word-counts.md` |
+| 节级硬底线 + flagship 全文饱满度 | [`word-counts.md`](word-counts.md) |
+| FAQ/结论等节内常用目标 | [`sections.md`](sections.md) 各 Part + `word-counts.md` |
 | 五维 / Swap / 模式 | **本文** |
 
 ---
@@ -171,8 +171,8 @@ M1 全部，外加：
 
 - [ ] Brief 含 `cluster hub` + `swap neighbors`（≥2）
 - [ ] 与邻页并排：Intro / FAQ 首问 / Meta 副线 **不可互换**
-- [ ] [`outline-cross-check.md`](./outline-cross-check.md) Pass（Step 05 前）
-- [ ] [`cross-article-audit.md`](./cross-article-audit.md) Pass（Step 10 · 5.5）
+- [ ] [`cross-article-audit.md`](cross-article-audit.md) Pass（Step 05 前）
+- [ ] [`cross-article-audit.md`](cross-article-audit.md) Pass（Step 10 · 5.5）
 
 ### M3 · 存量轻触
 
@@ -188,16 +188,16 @@ M1 全部，外加：
 
 | Step | 动作 | 文档 |
 |------|------|------|
-| **01 Intake** | 判定 M1/M2/M3；M2 记 Hub + 邻 slug | 本文 Part 0 · [`01-intake.md`](../01-intake.md) |
-| **02 Brief** | 填写 Copy quality 字段 | [`article-brief.md`](./article-brief.md) · 附录 A |
-| **05 Gate B** | M2：先锁定差异位（Intro、FAQ 首问角度） | [`content-locale.md`](./content-locale.md) Part 2 |
+| **01 Intake** | 判定 M1/M2/M3；M2 记 Hub + 邻 slug | 本文 Part 0 · [`01-intake.md`](01-intake.md) |
+| **02 Brief** | 填写 Copy quality 字段 | [`article-brief.md`](article-brief.md) · 附录 A |
+| **05 Gate B** | M2：先锁定差异位（Intro、FAQ 首问角度） | [`content-locale.md`](content-locale.md) Part 2 |
 | **05b 扩写** | 每 H2：事实+场景+判断；字数查 `word-counts.md` | `content-locale` · `word-counts.md` |
 | **06 / 09b** | Swap Test 抽样 + L0–L3 自评 | 本文 Part 2·4 |
 | **09c** | 双语**信息对等**（差异位对等，非句数镜像） | `content-locale` Part 5 |
-| **10 · 3.5** | Outline 交叉 + 邻页差异 | [`outline-cross-check.md`](./outline-cross-check.md) |
-| **10 · 5.5** | 五维 cross-article | [`cross-article-audit.md`](./cross-article-audit.md) |
-| **10 Gate C** | L0 阻断；H4 深度仍查 `word-counts.md` | [`selfcheck.md`](./selfcheck.md) |
-| **S 级** | 独特性 ≥ L2 + 5.5 N/A 或 Pass | [`perfect-article-checklist.md`](./perfect-article-checklist.md) |
+| **10 · 3.5** | Outline 交叉 + 邻页差异 | [`cross-article-audit.md`](cross-article-audit.md) |
+| **10 · 5.5** | 五维 cross-article | [`cross-article-audit.md`](cross-article-audit.md) |
+| **10 Gate C** | L0 阻断；H4 深度仍查 `word-counts.md` | [`quality-gates.md`](quality-gates.md) |
+| **S 级** | 独特性 ≥ L2 + 5.5 N/A 或 Pass | [`quality-gates.md`](quality-gates.md) |
 
 ---
 

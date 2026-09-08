@@ -1,10 +1,10 @@
 # Alignify 站内内链规范（唯一真相源）
 
-> **位置（2026-08-26）**：`skills/create-article/rules/internal-links.md`  
+> **位置（2026-08-26）**：`skills/create-article/internal-links.md`  
 > **站点**：[alignify.co](https://alignify.co)  
 > **部署仓正文**：`alignify-by-kostja/content/**/*.md`（Markdown + frontmatter + block 标记）  
-> **Last updated**: 2026-08-27  
-> **说明**：Alignify 所有**站内内链**与**站外外链**规则（含 Marketing M1–M11、FAQ、R1–R7、UTM、Nofollow）、编辑方法论、Tools/SEO 拓扑、邻居表与验收标准**仅在本文件维护**。存量优化**执行流程**见 [`audit-optimize/workflow.md`](../../audit-optimize/workflow.md)。
+> **Last updated**: 2026-09-09  
+> **说明**：Alignify 所有**站内内链**与**站外外链**规则（含 Marketing M1–M11、FAQ、R1–R7、UTM、Nofollow）、编辑方法论、Tools/SEO 拓扑、邻居表与验收标准**仅在本文件维护**。存量优化**执行流程**见 [`audit-optimize/workflow.md`](../audit-optimize/workflow.md)。
 
 ---
 
@@ -29,7 +29,39 @@
 | `seo-guide` | [Part 4](#part-4-seo-频道内链) |
 | `insights-analysis` | [Part 5](#part-5-insights--其他频道) |
 
-Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** create-article Step 07。
+Part 6–7 归属 [`audit-optimize`](../audit-optimize/SKILL.md)，**非** create-article Step 07。
+
+<a id="step-07-执行速查"></a>
+
+### Step 07 执行速查（并入自原 07-internal-links 壳 · 2026-09-09）
+
+> Step 7 定位 = **执行 + 交付物**：按上表读完对应类型 Part 后规划内链，成稿时产出 Internal Link Plan。存量批量优化仍走 [Part 6](#part-6-创建与存量优化工作流) → [`audit-optimize/workflow.md`](../audit-optimize/workflow.md)。
+
+- **阅读路径补充**：Brief 的 `articleType` 决定上表行；**Tools 型 blog 新文仍追加 [Part 3](#part-3-tools-类目)**（非仅 legacy `/tools/`）。
+- **分布原则（无硬性条数）**：全文以**点击意图**优先，不为凑数加链。逐区块节奏/密度建议见 [Part 1 §二（数量与密度）](#二数量与密度) · [Part 1 §三（推荐节奏）](#三分布全文均匀而非局部堆砌) · [Part 2 §1.1（唯一性与分布）](#11-唯一性与分布) · [Part 3 §1.5.1（功能意图原则替代百分比约束）](#151-分布原则替代百分比约束) · Part 4.5 [M1](#二marketing-规则-m1m11)（**无硬性条数**）。「什么是」主体段 ≤1 链/段；结论 0–2（[`sections.md`](sections.md) Part 4.4）；FAQ 内链**计入正文**、同 URL 全文 1 次（[Part 2 §1.5](#15-faq-内链规则) R4）。
+- **Brief 登记**：Brief 中 **Planned internal links** 记录预期互链与点击意图；**仅登记已上线 slug**（Gate G6 · 未发布 slug 阻断见 M11）。
+
+**Internal Link Plan（Flagship 交付物）**
+
+```markdown
+## Internal Link Plan — {slug}
+
+| # | 锚文本 | 目标 slug | 所在 section | 点击意图 |
+|---|--------|-----------|--------------|----------|
+| 1 | … | … | … | 读者此刻想搞清什么 |
+```
+
+ZH 定稿后 EN 复用相同 distinct 目标（锚文本可本地化）。上表即 Part 4.5 §七「新建 / 改版工作流」Step 2 使用的同名表。
+
+**Step 07 检查清单**
+
+- [ ] 已读 Part 1–2 + 上表对应类型 Part + Part 8
+- [ ] 每条链过点击意图三问（Marketing：Part 4.5 §一「读者想点」；Tools：Part 3 §1.3 固定区块 vs 上下文）
+- [ ] FAQ 内链（若有）遵守 R4：同 URL 全页 1 次（[Part 2 §1.5](#15-faq-内链规则)）
+- [ ] 正文外链 / References 经 `addUtmToExternalLink()`（[Part 8](#part-8-外链utm-与-nofollow) §8.1）
+- [ ] Internal Link Plan 已产出，且仅含已上线 slug
+
+下一步：[08-meta-config.md](08-meta-config.md)
 
 ---
 
@@ -181,7 +213,7 @@ Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** cr
 
 ## 七、单篇 / 批量工作流
 
-> **执行 SSOT**（审计命令、单页 loop、快照刷新）：[`audit-optimize/workflow.md`](../../audit-optimize/workflow.md)  
+> **执行 SSOT**（审计命令、单页 loop、快照刷新）：[`audit-optimize/workflow.md`](../audit-optimize/workflow.md)  
 > 本节 Part 1 §一–§六 为**编辑原则**；不在此重复维护操作清单与脚本命令。
 
 ---
@@ -222,7 +254,7 @@ Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** cr
 
 ## 十一、批量推进
 
-见 [`audit-optimize/workflow.md`](../../audit-optimize/workflow.md) §1 baseline 与 [`reverse-links.md`](../../audit-optimize/reverse-links.md)。邻居表：本文附录 B。
+见 [`audit-optimize/workflow.md`](../audit-optimize/workflow.md) §1 baseline 与 [`reverse-links.md`](../audit-optimize/reverse-links.md)。邻居表：本文附录 B。
 
 ---
 
@@ -247,7 +279,7 @@ Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** cr
 
 - **中文优先**：「什么是 XXX」章节
 - **英文优先**：「What Are XXX」章节
-- 参见 [`sections.md`](./sections.md) Part 3.1、Part 2.1
+- 参见 [`sections.md`](sections.md) Part 3.1、Part 2.1
 
 ### 1.3 内链相关性原则
 
@@ -259,13 +291,13 @@ Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** cr
 | **同质替代** | 解决同类问题的不同工具 | 变声器 ↔ 文字转语音 ↔ 声音克隆（均为人声处理） |
 | **场景延伸** | 同一使用场景下的不同需求 | 视频制作：视频编辑 + 音乐生成 |
 
-**避免**：仅因同属某大类而链接。例如音乐生成与文字转语音、声音克隆虽同属「音频」，但音乐是旋律创作、后两者是人声处理，功能边界不同，不宜作为内链目标。详见 [`sections.md`](./sections.md) Part 3.1 §内链相关性。
+**避免**：仅因同属某大类而链接。例如音乐生成与文字转语音、声音克隆虽同属「音频」，但音乐是旋律创作、后两者是人声处理，功能边界不同，不宜作为内链目标。详见 [`sections.md`](sections.md) Part 3.1 §内链相关性。
 
 ### 1.4 内链样式
 
 - **正文内链**：`.link-internal` 或 `.blog-post-content a`（非外链）
 - **样式**：`text-inherit font-medium underline underline-offset-2 decoration-foreground/30`，hover 加深下划线 `decoration-foreground/50`（由 `src/index.css` 全局控制）
-- 参见 [`sections.md`](./sections.md) Part 3.2
+- 参见 [`sections.md`](sections.md) Part 3.2
 
 ### 1.5 FAQ 内链规则
 
@@ -276,7 +308,7 @@ Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** cr
 | **计入正文** | FAQ 答案中的链与 TLDR、section、结论等**一并**计入密度（§1.6）与 R2 窗口 |
 | **R4 全文 1 次** | 同一 URL 在全页（**含 FAQ**）仅出现 **1** 次；FAQ 与正文**共享**配额 |
 | **点击意图** | 每条 FAQ 链仍须过 [Part 1 §四](#四写法链进句子不链进清单) 自检；禁止清单式堆链 |
-| **写法** | 见 [`sections.md` Part 2.2](./sections.md#part-22-faq--常见问题) |
+| **写法** | 见 [`sections.md` Part 2.2](sections.md#part-22-faq--常见问题) |
 
 **TL;DR / HowTo 步骤**：仍建议无链或极少链（见 Part 1 §二）；Marketing [M4](#m4) 对 TL;DR / HowTo 无链，**FAQ 除外**。
 
@@ -339,7 +371,7 @@ Part 6–7 归属 [`audit-optimize`](../../audit-optimize/SKILL.md)，**非** cr
 |------|------------------|
 | **避免孤立页** | 新 slug 上线后应进入 `tools-pages-config`、被聚合或随机推荐命中，并在至少一处正文或邻居表中体现 |
 | **锚文本** | 描述目标功能；忌「点击这里」；可与 keywords 表中的英文/中文短语对齐 |
-| **同一 URL 单页仅出现一次** | 见 [section-links §1.1](./internal-links.md#11-唯一性与分布) |
+| **同一 URL 单页仅出现一次** | 见 [section-links §1.1](internal-links.md#11-唯一性与分布) |
 
 ### 1.5 Tools 内链均衡分布（阅读体验优先 · 锚文本规范 · 跨板块预留）
 
@@ -487,7 +519,7 @@ Hub 合计 **106** slug（`tools-pages-config` 100 + Blog 中 `category` 映射�
 | **P2** | 中流量 ~30 | 附录 B 已列其余 slug + territory-map B 档（如 `note-taker`、`web-scraping` 邻居簇、`image-generator` 媒体链等） |
 | **P3** | 长尾 | 未列入 P0–P2 的剩余 `/tools` slug；清理 R4 / 机械指路链 |
 
-执行 Skill：[`audit-optimize`](../../audit-optimize/SKILL.md)；批次脚本：`batch-internal-links-wave.py`（`wave0_blog` / `p0` / `p1` / `p2` / `p3`）。
+执行 Skill：[`audit-optimize`](../audit-optimize/SKILL.md)；批次脚本：`batch-internal-links-wave.py`（`wave0_blog` / `p0` / `p1` / `p2` / `p3`）。
 
 #### 1.5.6 审计脚本与执行
 
@@ -534,7 +566,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 ## 三、全站组件与 Tools 相关的内链位
 
-汇总自 [section-links §三](./internal-links.md#三全站链接使用场景汇总)；Tools 编辑需重点核对：
+汇总自 [section-links §三](internal-links.md#三全站链接使用场景汇总)；Tools 编辑需重点核对：
 
 | 组件 | 说明 |
 |------|------|
@@ -549,18 +581,18 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 位置 | 规则 |
 |------|------|
-| **什么是 · 第二段** | **建议**含 **1～2 个**强相关内链，且与 TLDR 去重；全页仍以唯一性为先；见 [`sections.md`](./sections.md) Part 3.1 |
+| **什么是 · 第二段** | **建议**含 **1～2 个**强相关内链，且与 TLDR 去重；全页仍以唯一性为先；见 [`sections.md`](sections.md) Part 3.1 |
 | **邻居选题** | 优先 **附录 B** 与 keywords 表；不足时自拟并后续补 keywords |
-| **结论** | 可含内链（见 [`sections.md`](./sections.md) Part 4.4）；仍遵守唯一性 |
+| **结论** | 可含内链（见 [`sections.md`](sections.md) Part 4.4）；仍遵守唯一性 |
 | **FAQ** | **允许**站内链；**计入正文**；同 URL 全文 1 次（见 [§1.5](#15-faq-内链规则)） |
 
-**嵌入示例（音乐生成工作流）** 见本文 **附录 A**（与 [`templates.md`](./templates.md) Part 2 内链示例一致）。
+**嵌入示例（音乐生成工作流）** 见本文 **附录 A**（与 [`templates.md`](templates.md) Part 2 内链示例一致）。
 
 ---
 
 ## 五、产品链接验证与优化（Tools 页面）
 
-以下内容自 [section-links.md §四](./internal-links.md) **迁入**，今后 **Tools 产品链接质检**以本节为准；`section-links` 仅保留指向本目录的索引。
+以下内容自 [section-links.md §四](internal-links.md) **迁入**，今后 **Tools 产品链接质检**以本节为准；`section-links` 仅保留指向本目录的索引。
 
 ### 5.1 验证流程
 
@@ -587,7 +619,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 项 | 说明 |
 |----|------|
-| **新 Tools slug** | 更新 `tools-pages-config`、keywords 文档、（可选）附录 B 速查；检查 `/tools` 可达性；面包屑 `/tools/{slug}` 标签由 `TOOLS_PAGES` 自动生成（见 [technical-breadcrumb-nav](../../ops/seo-fundamentals.md)），**无需**改 `BreadcrumbNav` 手写映射 |
+| **新 Tools slug** | 更新 `tools-pages-config`、keywords 文档、（可选）附录 B 速查；检查 `/tools` 可达性；面包屑 `/tools/{slug}` 标签由 `TOOLS_PAGES` 自动生成（见 [technical-breadcrumb-nav](../ops/seo-fundamentals.md)），**无需**改 `BreadcrumbNav` 手写映射 |
 | **改邻居** | 同步 `alignify-keywords-tools.md` 与 **附录 B** |
 | **单页** | 核对 section-links 检查清单 + 本节 5.1–5.3 |
 
@@ -606,7 +638,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 ## 附录 B：相邻 Tools 速查（邻居矩阵）
 
 > **权威数据源**：各 slug 的完整意图表与「相邻 Tools」原文见 `alignify-keywords-tools.md` 对应 `#*-tools` 锚点。  
-> **用途**：写「什么是」第二段、结论、或 `content/tools/*/*.md` 中 `<a href="/zh/tools/...">` 时快速对齐已约定邻居；**未列出的 slug** 由编辑按 [section-links §1.3](./internal-links.md#13-内链相关性原则) 自拟，并可在 keywords 文档中补行。
+> **用途**：写「什么是」第二段、结论、或 `content/tools/*/*.md` 中 `<a href="/zh/tools/...">` 时快速对齐已约定邻居；**未列出的 slug** 由编辑按 [section-links §1.3](internal-links.md#13-内链相关性原则) 自拟，并可在 keywords 文档中补行。
 
 ---
 
@@ -642,7 +674,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | `authentication` | `/tools/authentication` | workflow、evaluation、app-builder、knowledge-base、agent-skills、llm、browser、web-search-api、notes-generator、productivity、api、user-research、spreadsheet、chatbot、directory；hero：`documentation`；FAQ：note-taker、recruiting、speech-to-text（附录 C §14；正文与 FAQ href 全文唯一） |
 | `documentation` | `/tools/documentation` | agent-skills、knowledge-base、vibe-coding、coding、api、workflow、web-search-api、geo、llm、ide、cli、code-completion、directory、app-builder、chatbot、website-builder、text-generator、productivity、user-research、browser、code-review；FAQ：note-taker、notes-generator、recruiting（附录 C §12） |
 | `world-model` | `/tools/world-model` | text-to-video、image-to-video、video-generator（创作向）；正文落地另含 video-editor、3d、llm、search-engine、directory、image-generator、legal（见 JSON，遵守全文唯一） |
-| `video` | `/tools/video` | video-generator、text-to-video、image-to-video、video-to-video、video-editor、video-clipping、video-effects、canvas-video、filmmaking、animation-generator、short-drama、music-video-generator（Hub 分流 + 内容分工见 [video.md](../../../knowledge/tools/video/video.md)） |
+| `video` | `/tools/video` | video-generator、text-to-video、image-to-video、video-to-video、video-editor、video-clipping、video-effects、canvas-video、filmmaking、animation-generator、short-drama、music-video-generator（Hub 分流 + 内容分工见 [video.md](../../knowledge/tools/video/video.md)） |
 | `video-generator` | `/tools/video-generator` | video、text-to-video、image-to-video、video-to-video、canvas-video、filmmaking、animation-generator（生成层 SSOT；完整旗舰模型表仅此 slug） |
 | `text-to-video` | `/tools/text-to-video` | video、video-generator、image-to-video、video-editor（输入=文本/文档；讲解视频专表在本 slug） |
 | `image-to-video` | `/tools/image-to-video` | video、video-generator、text-to-video、video-to-video、filmmaking（输入=静态图；Motion Brush 深度在本 slug） |
@@ -2475,7 +2507,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 # Part 4 · SEO 频道内链
 
-> **站点**：[alignify.co](https://alignify.co) · **关联**：[section-links.md](./internal-links.md)（全站规则）· [templates.md](./templates.md) · `alignify-keywords.md` · `src/data/site-pages-config.ts` · `alignify-keywords-seo.md`  
+> **站点**：[alignify.co](https://alignify.co) · **关联**：[section-links.md](internal-links.md)（全站规则）· [templates.md](templates.md) · `alignify-keywords.md` · `src/data/site-pages-config.ts` · `alignify-keywords-seo.md`  
 > **同目录**：本文 Part 3（Tools JSON）· 本文 Part 5（其余页面索引）
 
 **用途**：**`content/seo/en|zh/*.{md,json}`**（BlogLayout）之间的推荐链接拓扑，及与 Marketing / Tools 的**节制**跨链。全站唯一性、锚文本、样式仍以 `section-links` 为准。
@@ -2495,7 +2527,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 方向 | 典型意图 | 做法 |
 |------|----------|------|
 | **聚合 → 详情** | 从 SEO 学习入口进入专题 | `/seo/learn-seo`（及中文对应页）在正文中链向具体指南（如 `/seo/sitemap`、`/seo/robots-txt`）；站点导航「SEO」下拉已列主要 spoke |
-| **详情 → 聚合** | 回到总览换主题 | 面包屑、页脚频道；结论段可收束 **0–2** 条「下一步必读」链（须全文唯一；见 [`sections.md`](./sections.md) Part 4.4） |
+| **详情 → 聚合** | 回到总览换主题 | 面包屑、页脚频道；结论段可收束 **0–2** 条「下一步必读」链（须全文唯一；见 [`sections.md`](sections.md) Part 4.4） |
 
 ### 1.2 横向：同一工作流互补（Peer）
 
@@ -2511,7 +2543,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 类型 | Alignify 中的体现 |
 |------|-------------------|
 | **固定区块** | `Header` / `Footer` / `BreadcrumbNav`；SEO JSON 文章**无** Tools 页的 **AlsoInterestedIn** 四卡组件 |
-| **上下文内链** | `content/seo/*/*.md` 内 **`section` 的 `paragraphs`（支持 HTML 字符串）**、`comparisonSection` 的 **`introHtml`**、`html` 块、结论 HTML 等中的 `<a href="/seo/...">` 或 `<a href="/zh/seo/...">`（须遵守 [section-links](./internal-links.md) 唯一性与 §1.5） |
+| **上下文内链** | `content/seo/*/*.md` 内 **`section` 的 `paragraphs`（支持 HTML 字符串）**、`comparisonSection` 的 **`introHtml`**、`html` 块、结论 HTML 等中的 `<a href="/seo/...">` 或 `<a href="/zh/seo/...">`（须遵守 [section-links](internal-links.md) 唯一性与 §1.5） |
 
 ### 1.4 基础原则（与全站 section-links 对齐）
 
@@ -2529,9 +2561,9 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 维度 | 建议 |
 |------|------|
 | **主轴** | TLDR 的 `items` 一般为**纯文本**（无 `<a>`）；若必须在 TLDR `introduction` 内链，**≤1** 条且与后文去重 |
-| **什么是 · 末段或第二段** | **1～2** 条强相关 `/seo/...` 链；与 [`sections.md`](./sections.md) Part 3.1 及 [`templates.md`](./templates.md) Part 4 一致 |
+| **什么是 · 末段或第二段** | **1～2** 条强相关 `/seo/...` 链；与 [`sections.md`](sections.md) Part 3.1 及 [`templates.md`](templates.md) Part 4 一致 |
 | **正文中部** | `comparisonSection.introHtml`、`html`、`section` 长段落承担 **多数** distinct `/seo/...` URL；**同一 H2 内**建议 **≤3** 条不同站内链，避免单屏链接堆叠 |
-| **结论** | **0–2** 条 distinct（见 [`sections.md`](./sections.md) Part 4.4）；常与「网站结构 / 站点地图 / 内链」等收束组合；**不得**与上文重复同一 `href` |
+| **结论** | **0–2** 条 distinct（见 [`sections.md`](sections.md) Part 4.4）；常与「网站结构 / 站点地图 / 内链」等收束组合；**不得**与上文重复同一 `href` |
 | **FAQ** | **允许**答案内链；**计入正文**；同 URL 全文 1 次（见 [§1.5](#15-faq-内链规则)） |
 | **试点 href 台账** | 见本文 **附录 B**；新增试点时在附录 B 追加章节 |
 
@@ -2568,7 +2600,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 ## 三、全站组件与 SEO 页相关的内链位
 
-汇总自 [section-links §三](./internal-links.md#三全站链接使用场景汇总)；SEO JSON 编辑需重点核对：
+汇总自 [section-links §三](internal-links.md#三全站链接使用场景汇总)；SEO JSON 编辑需重点核对：
 
 | 组件 | 说明 |
 |------|------|
@@ -2586,7 +2618,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | **什么是 · 段落** | 可在字符串中内嵌 HTML `<a>`；**1～2** 条强相关链，与 TLDR 去重 |
 | **comparisonSection · introHtml** | 适合承担清单型章节的主体说明 + 分散内链（参见附录 B checklist） |
 | **html 块** | 长教程、多 H3、列表；注意唯一性 |
-| **结论** | 可含 **0–2** 条收束链；遵守 [`sections.md`](./sections.md) Part 4.4 |
+| **结论** | 可含 **0–2** 条收束链；遵守 [`sections.md`](sections.md) Part 4.4 |
 | **FAQ** | **允许**答案内链；**计入正文**；同 URL 全文 1 次 |
 | **References** | 若有，以外链权威源为主；站内链不重复计数为「正文内链」 |
 
@@ -2606,9 +2638,9 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 项 | 说明 |
 |----|------|
-| **新 SEO slug** | 更新 `src/data/site-pages-config.ts`、sitemap 相关管线（见 [technical-sitemap.md](../../ops/sitemap.md)）、`content/seo/en|zh` 成对文件（若站点多语言） |
+| **新 SEO slug** | 更新 `src/data/site-pages-config.ts`、sitemap 相关管线（见 [technical-sitemap.md](../ops/sitemap.md)）、`content/seo/en|zh` 成对文件（若站点多语言） |
 | **改内链** | 先跑全文 **href 唯一**检查；同步更新 **附录 B**（试点页） |
-| **单页抽检** | [section-links 检查清单](./internal-links.md) + 本节 §1.5 + [`templates.md`](./templates.md) Part 4 字数与 FAQ 条数 |
+| **单页抽检** | [section-links 检查清单](internal-links.md) + 本节 §1.5 + [`templates.md`](templates.md) Part 4 字数与 FAQ 条数 |
 
 ---
 
@@ -2626,7 +2658,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 ## 附录 B：试点页正文内链对照（`checklist`）
 
-> **用途**：记录 `content/seo/en|zh/checklist.md` 中 **全文唯一**的站内 `href`（分布原则见上文 §1.5；全站唯一性见 [section-links §1.1](./internal-links.md#11-唯一性与分布)），便于改版时核对 **href → 锚文本 → 区块**。  
+> **用途**：记录 `content/seo/en|zh/checklist.md` 中 **全文唯一**的站内 `href`（分布原则见上文 §1.5；全站唯一性见 [section-links §1.1](internal-links.md#11-唯一性与分布)），便于改版时核对 **href → 锚文本 → 区块**。  
 > **不含**：`pageUrl`、`BlogLayout` 元信息；FAQ 答案内链见 [§1.5](#15-faq-内链规则)。  
 > **维护**：修改 checklist JSON 内链后，**请同步更新本附录**；新增其他 SEO JSON 试点页可追加章节。
 
@@ -2935,11 +2967,11 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 # Part 4.5 · Marketing 频道内链（M1–M11）
 
-> **逐页执行表**：[`skills/audit-optimize/references/site-structure-internal-links.md`](../../../skills/audit-optimize/references/site-structure-internal-links.md) **§七** · [`marketing-internal-links-backlog.md`](../../../skills/audit-optimize/references/marketing-internal-links-backlog.md)  
-> **全站快照**：[`../../audit-optimize/references/site-structure-internal-links.md`](../../audit-optimize/references/site-structure-internal-links.md)  
+> **逐页执行表**：[`skills/audit-optimize/references/site-structure-internal-links.md`](../audit-optimize/references/site-structure-internal-links.md) **§七** · [`marketing-internal-links-backlog.md`](../audit-optimize/references/marketing-internal-links-backlog.md)  
+> **全站快照**：[`../../audit-optimize/references/site-structure-internal-links.md`](../audit-optimize/references/site-structure-internal-links.md)  
 > **Last updated**：2026-08-27
 
-> **代号消歧**：本节 **M1–M11** = Marketing **内链**规则；[`copy-quality.md`](./copy-quality.md) Part 0.2 的 **Copy mode M1/M2/M3** = 成稿五维模式。**二者无关**。
+> **代号消歧**：本节 **M1–M11** = Marketing **内链**规则；[`copy-quality.md`](copy-quality.md) Part 0.2 的 **Copy mode M1/M2/M3** = 成稿五维模式。**二者无关**。
 
 新文 `content/blog/` + `/blog/{slug}`；存量 `/marketing/` 不重迁。全站共性规则见 [Part 1–2](#part-2-全站内链规则)。
 
@@ -2977,7 +3009,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | **M6** | **高度相关** | 同一 GTM 工作流、互补策略、或经批准的跨频道任务链（见 §四） |
 | **M7** | **均匀分布** | 什么是 0–1 · 主体方法论 2–4 · 案例/框架 0–1 · 结论 0–1；**禁止**集中在「组合拳/延伸阅读」单段 |
 | **M8** | **链进句子** | 禁止「**Coding Plan + 定价溢出**：[链接]…**+ 邀请裂变**：[链接]…」式标签堆链 |
-| **M9** | **结论可含内链** | **0–2** 条；须承接上文未覆盖的**单一**下游任务；禁止清单式堆链（见 [`sections.md`](./sections.md) Part 4.4） |
+| **M9** | **结论可含内链** | **0–2** 条；须承接上文未覆盖的**单一**下游任务；禁止清单式堆链（见 [`sections.md`](sections.md) Part 4.4） |
 | **M10** | **表格/列表默认无链** | 表格内链例外须逐条过 M6；优先改正文叙述 |
 | **M11** | **只链已上线页** | Brief / Link Plan 禁止含未发布 slug；G6 阻断。姊妹篇、OSS 线等未上线 → 纯文字，不发 `href`；上线后再补反向链 |
 
@@ -2991,7 +3023,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | **B 平台战术型** | geo, reddit, x-formerly-twitter, email-marketing | 什么是：平台机制 0 · 战术节：相邻渠道 1 · 测量/合规：SEO/blog 1 · 案例：0–1 |
 | **C 项目运营型** | creator-program, referral-program, ugc-marketing, lifetime-deal | 什么是：与邻近策略区分 1 · 激励/招募：相关运营文 1–2 · 合规/定价：1 · 结论：0 |
 
-**Blog GTM / campaign 长文**（`coding-plan`, `rate-limit-reset`, `git-commit-attribution` 等）：内链按 M1–M10；**组合拳节零内链**为常见做法（非强制），链分布在架构/案例/风险节。**结构不套用固定骨架**，见 [`templates.md`](./templates.md#part-3-marketing) §3.1。
+**Blog GTM / campaign 长文**（`coding-plan`, `rate-limit-reset`, `git-commit-attribution` 等）：内链按 M1–M10；**组合拳节零内链**为常见做法（非强制），链分布在架构/案例/风险节。**结构不套用固定骨架**，见 [`templates.md`](templates.md#part-3-marketing) §3.1。
 
 ---
 
@@ -3063,17 +3095,17 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 ## 七、新建 / 改版工作流
 
-1. 查 [`site-structure-internal-links.md` §7.3–7.4](../../../skills/audit-optimize/references/site-structure-internal-links.md) 或 [`marketing-internal-links-backlog.md`](../../../skills/audit-optimize/references/marketing-internal-links-backlog.md) 该 slug 的「应链向 / 应被链自」  
-2. 写 **Internal Link Plan** 表（见 [`07-internal-links.md`](../07-internal-links.md)）— 锚文本 / 目标 / 段落 / 点击意图  
+1. 查 [`site-structure-internal-links.md` §7.3–7.4](../audit-optimize/references/site-structure-internal-links.md) 或 [`marketing-internal-links-backlog.md`](../audit-optimize/references/marketing-internal-links-backlog.md) 该 slug 的「应链向 / 应被链自」  
+2. 写 **Internal Link Plan** 表（模板见本文顶部 [Step 07 执行速查](#step-07-执行速查)）— 锚文本 / 目标 slug / 段落 / 点击意图  
 3. 落稿：先写无链正文，再按 M7 节奏插入  
 4. 自检：M1–M11 + 三问  
-5. 刷新 [`../../audit-optimize/references/site-structure-internal-links.md`](../../audit-optimize/references/site-structure-internal-links.md)
+5. 刷新 [`../../audit-optimize/references/site-structure-internal-links.md`](../audit-optimize/references/site-structure-internal-links.md)
 
 ---
 
 ## 八、与模板对齐
 
-[`templates.md`](./templates.md) Part 3 · 内链 M1–M11 见本文 Part 4.5 — 创建 checklist 须含 M1–M11。
+[`templates.md`](templates.md) Part 3 · 内链 M1–M11 见本文 Part 4.5 — 创建 checklist 须含 M1–M11。
 
 ---
 
@@ -3089,7 +3121,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 **用途**：维护 **`content/insights/zh/*.md`** 与 **`content/insights/en/*.md`**（`ArticleDocV1`，由 `ArticleFromJson` 渲染）时的推荐内链、FAQ 约束与本地化差异；与 `content/tools`、`content/seo` 专册分离（本页不写 Tools 邻居矩阵）。
 
-**编辑部知识块（非站点路由）**：可与 [knowledgehub/marketing/indie-hackers.md](../../../knowledge/marketing/indie-hackers.md) 对照；勿要求读者从 Insights 点击进 `docs/`。
+**编辑部知识块（非站点路由）**：可与 [knowledgehub/marketing/indie-hackers.md](../../knowledge/marketing/indie-hackers.md) 对照；勿要求读者从 Insights 点击进 `docs/`。
 
 ---
 
@@ -3113,7 +3145,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 规则 | 说明 |
 |------|------|
-| **FAQ 答案允许内链** | 与 [Part 2 §1.5](#15-faq-内链规则)、[`sections.md`](./sections.md) Part 2.2 一致；**计入正文**；同 URL 全文 1 次 |
+| **FAQ 答案允许内链** | 与 [Part 2 §1.5](#15-faq-内链规则)、[`sections.md`](sections.md) Part 2.2 一致；**计入正文**；同 URL 全文 1 次 |
 | **首屏 TL;DR** | 可概括内链主题，不要在 `items` 里塞 URL；具体链放在正文 `section` / `html` 字符串中 |
 
 ---
@@ -3204,7 +3236,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 2026-04-20 | 从 `insights-indie-hackers-internal-links` 合并 Indie 专册正文 |
 ### Marketing / 聚合等
 
-> **单一真相源（全站）**：[section-links.md](./internal-links.md)（唯一性、相关性、样式、组件级规则）。  
+> **单一真相源（全站）**：[section-links.md](internal-links.md)（唯一性、相关性、样式、组件级规则）。  
 > **同目录专册**：本文 Part 4（`content/seo` JSON）· 本文 Part 3（`content/tools` JSON）· 本文 Part 5（`content/insights` 七篇长文 JSON）· 本文 Part 5（stub → 总册）
 
 **用途**：**非** SEO JSON、**非** Tools JSON 的页面（Marketing、聚合页、法律页等）在 **`docs/`** 中**分散**存放的内链相关规范索引；本页**不重复**专册正文，仅便于按场景跳转。
@@ -3228,12 +3260,12 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 文档 | 用途 |
 |------|------|
-| [sections.md](./sections.md) | 章节 SSOT（Part 0–5：TL;DR / FAQ / 节型 / 结论 / Final CTA） |
-| [templates.md](./templates.md) | 四类页面结构参考（Part 2–5）；**建议非施工图** |
-| [internal-links.md](./internal-links.md) | 全站内链、外链、组件级规则 |
-| [copy-quality.md](./copy-quality.md) | 五维 · Swap Test · L0 阻断（Part 2）；篇幅 C 层（Part 3–4） |
-| [README.md](./README.md) | 规范索引 |
-| [meta.md](./meta.md) | SEO 章约束 |
+| [sections.md](sections.md) | 章节 SSOT（Part 0–5：TL;DR / FAQ / 节型 / 结论 / Final CTA） |
+| [templates.md](templates.md) | 四类页面结构参考（Part 2–5）；**建议非施工图** |
+| [internal-links.md](internal-links.md) | 全站内链、外链、组件级规则 |
+| [copy-quality.md](copy-quality.md) | 五维 · Swap Test · L0 阻断（Part 2）；篇幅 C 层（Part 3–4） |
+| [INDEX.md](INDEX.md) | 规范索引 |
+| [meta.md](meta.md) | SEO 章约束 |
 | `alignify-keywords-tools.md` | Tools 意图与「相邻 Tools」**权威表** |
 | `src/data/tools-pages-config.ts` | AlsoInterestedIn 等组件 slug 列表 |
 
@@ -3245,24 +3277,24 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 | 文档 | 与内链相关的内容（保留原因） |
 |------|------------------------------|
-| [internal-links.md](./internal-links.md) | **全站**内链唯一性、相关性、样式、FAQ 可链、组件表；主文档 |
-| [sections.md](./sections.md) | 各节写法与内链位点（Part 2–5） |
-| [templates.md](./templates.md) | 四类页面结构参考（Part 2–5） |
-| [copy-quality.md](./copy-quality.md) | 五维 · Swap Test · L0 阻断（Part 2）；篇幅 C 层（Part 3–4） |
-| [README.md](./README.md) | 规范索引 |
-| [meta.md](./meta.md) | Meta / H1 约束 |
-| [technical/technical-crawlability.md](../../ops/seo-fundamentals.md) | 孤儿页与内链 |
-| [technical/technical-indexing.md](../../ops/seo-fundamentals.md) | 索引检查项含内链 |
-| [alignify-project-context/brand-visual.md](../../../knowledge/design/aesthetic-references.md) | 内链视觉/token |
-| [alignify-project-context/seo-article-optimization-tracker.md](../../ops/gsc-optimization-plan.md) | 站内 SEO 文章 Internal Links 页进度 |
+| [internal-links.md](internal-links.md) | **全站**内链唯一性、相关性、样式、FAQ 可链、组件表；主文档 |
+| [sections.md](sections.md) | 各节写法与内链位点（Part 2–5） |
+| [templates.md](templates.md) | 四类页面结构参考（Part 2–5） |
+| [copy-quality.md](copy-quality.md) | 五维 · Swap Test · L0 阻断（Part 2）；篇幅 C 层（Part 3–4） |
+| [INDEX.md](INDEX.md) | 规范索引 |
+| [meta.md](meta.md) | Meta / H1 约束 |
+| [technical/technical-crawlability.md](../ops/seo-fundamentals.md) | 孤儿页与内链 |
+| [technical/technical-indexing.md](../ops/seo-fundamentals.md) | 索引检查项含内链 |
+| [alignify-project-context/brand-visual.md](../../knowledge/design/aesthetic-references.md) | 内链视觉/token |
+| [alignify-project-context/seo-article-optimization-tracker.md](../ops/gsc-optimization-plan.md) | 站内 SEO 文章 Internal Links 页进度 |
 | `alignify-keywords.md` | 支柱表「internal links」→ `/seo/internal-links` |
-| [knowledgehub/tools/*.md](../../../knowledge/tools/README.md) | 少数「相邻 Tools」句或外链索引（知识块，非站点内链规范） |
+| [knowledgehub/tools/*.md](../../knowledge/tools/README.md) | 少数「相邻 Tools」句或外链索引（知识块，非站点内链规范） |
 
 ---
 
 ## 四、与 `section-links` 迁出内容的关系
 
-已从 [section-links §四](./internal-links.md) **迁入 Tools 专册**的正文：**「产品链接验证与优化（Tools 页面）」** 全文 → 本文 §3 第五节。`section-links` 保留标题索引。
+已从 [section-links §四](internal-links.md) **迁入 Tools 专册**的正文：**「产品链接验证与优化（Tools 页面）」** 全文 → 本文 §3 第五节。`section-links` 保留标题索引。
 
 **未迁入、且不应迁入本目录的权威数据**：`alignify-keywords-tools.md` 各 slug 下完整「相邻 Tools」表（Tools 专册 [附录 B](#附录-b相邻-tools-速查邻居矩阵) 仅为速查，修订以 keywords 为准）。
 
@@ -3281,9 +3313,9 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 
 # Part 6 · 创建与存量优化工作流
 
-> **执行 SSOT**：[`../../audit-optimize/workflow.md`](../../audit-optimize/workflow.md) · [`../../audit-optimize/SKILL.md`](../../audit-optimize/SKILL.md)  
-> **全站快照**：[`../../audit-optimize/references/site-structure-internal-links.md`](../../audit-optimize/references/site-structure-internal-links.md)  
-> **新文 Step 7**：[`../07-internal-links.md`](../07-internal-links.md)
+> **执行 SSOT**：[`../../audit-optimize/workflow.md`](../audit-optimize/workflow.md) · [`../../audit-optimize/SKILL.md`](../audit-optimize/SKILL.md)  
+> **全站快照**：[`../../audit-optimize/references/site-structure-internal-links.md`](../audit-optimize/references/site-structure-internal-links.md)  
+> **新文 Step 7**：见本文顶部 [Step 07 执行速查](#step-07-执行速查)
 
 验收（部署仓）：`audit-tools-internal-links.py` · `verify:content-json` · `build`。存量修复编辑模式见任务 Brief（本 skill 不预设 R-LINK-ONLY）。
 
@@ -3351,7 +3383,7 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 正文 inline 引用（React/`childrenHtml`） | 经 `addUtmToExternalLink()` | `noopener noreferrer`（**正文引用不设 nofollow**，便于读者溯源） |
 | Tools 产品 H3 外链按钮 | 组件自动 | 经 `getExternalLinkRel()` |
 
-详见 [`sections.md`](./sections.md) Part 2.3 References · Part 3.3 Best Tools。
+详见 [`sections.md`](sections.md) Part 2.3 References · Part 3.3 Best Tools。
 
 ## 8.4 相关代码与组件
 
@@ -3374,4 +3406,5 @@ python3 scripts/audit-tools-internal-links.py --locale both --json > audit-resul
 | 日期 | 说明 |
 |------|------|
 | 2026-08-27 | 合并 `utm-nofollow.md` → Part 8（外链 UTM · Nofollow） |
+| 2026-09-09 | 顶部 Step 07 区并入原 `07-internal-links` 壳 → 新增 [Step 07 执行速查](#step-07-执行速查)（阅读路径补充 · 分布原则指针 · Internal Link Plan 模板 · 检查清单），原文件删除 |
 

@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 CLIENTS = Path(__file__).resolve().parents[2]  # e:/clients/Alignify
-GLOSSARY = CLIENTS / "skills/create-article/rules/locale-glossary.json"
+GLOSSARY = CLIENTS / "skills/create-article/locale-glossary.json"
 PROD = Path(r"E:/自有部署项目/alignify production")
 ZH_CHANNELS = ("blog", "marketing", "tools")
 

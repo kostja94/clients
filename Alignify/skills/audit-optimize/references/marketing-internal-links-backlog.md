@@ -1,7 +1,7 @@
 # Marketing / GTM 内链 Backlog（人工维护）
 
 > **快照与逐页出/入链**：见 [`site-structure-internal-links.md`](./site-structure-internal-links.md) **§7.3**（脚本自动生成，勿在此重复写「现状」数字）  
-> **规则 SSOT**：[`../../create-article/rules/internal-links.md`](../../create-article/rules/internal-links.md) Part 4.5（M1–M11）
+> **规则 SSOT**：[`../../create-article/internal-links.md`](../../create-article/internal-links.md) Part 4.5（M1–M11）
 
 ---
 

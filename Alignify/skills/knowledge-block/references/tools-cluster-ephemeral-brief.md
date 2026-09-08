@@ -49,5 +49,5 @@
 
 - 文首最低集见 [`../SKILL.md`](../SKILL.md)
 - 分流表 ≥4 列、链相邻 slug
-- 产品 canonical 无冲突 → [`../../create-article/rules/product-coverage.md`](../../create-article/rules/product-coverage.md)
+- 产品 canonical 无冲突 → [`../../create-article/product-coverage.md`](../../create-article/product-coverage.md)
 - **`_briefs/` 目录为空或已删**

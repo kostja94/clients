@@ -104,7 +104,7 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 | `audit-alt-text.mjs` | BestTools / HTML 图片 alt 质量审计 |
 | `screenshot-tools-images.py` | **已废弃** — 仅 12 条硬编码 backlog，请用 `screenshot-tools-products.py` |
 
-规范见 `skills/create-article/rules/sections.md` Part 3.3。
+规范见 `skills/create-article/sections.md` Part 3.3。
 
 > **2026-09-04**：APINEED 已下线同步 `POST /v1/images/generations`，`--provider apineed` 改走**异步** `POST /v1/media/generations`（`workflow: text_to_image`，提交→轮询→下载 `outputs[0].url`）。新接口**不接受 `size` 参数**，宽幅 16:9 比例靠 prompt 指定（脚本已自动注入），post trim 到 1200×630 保留。`batch-generate-og-covers.py` 同通道。
 
@@ -120,7 +120,7 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 
 | 脚本 | 用途 |
 |------|------|
-| `fix-rules-section-links.py` | 修复 `skills/create-article/rules/` 内 `../section/` 等断链 |
+| `fix-rules-section-links.py` | 修复 `skills/create-article/` 内 `../section/` 等断链 |
 | `migrate-tables-to-childrenhtml.py` | 裸 HTML / GFM 管道表 → `childrenHtml` 围栏（格式 A） |
 
 历史一次性脚本（已归档或移除）：`migrate-doc-paths.py`、`fix-format-mismatches.py`、`fix-fullpage-screenshots.py` 等。

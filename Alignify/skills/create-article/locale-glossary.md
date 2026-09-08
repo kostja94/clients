@@ -1,8 +1,8 @@
 # 双语术语与文风对照（唯一真相源）
 
-> **位置**：`skills/create-article/rules/locale-glossary.md`  
-> **机器层**：[`locale-glossary.json`](./locale-glossary.json) — `audit-locale-voice.py` 读取  
-> **协作**：成稿流程见 [`content-locale.md`](./content-locale.md)（地道 Pass · 双轨 · 09c）  
+> **位置**：`skills/create-article/locale-glossary.md`  
+> **机器层**：[`locale-glossary.json`](locale-glossary.json) — `audit-locale-voice.py` 读取  
+> **协作**：成稿流程见 [`content-locale.md`](content-locale.md)（地道 Pass · 双轨 · 09c）  
 > **版本**：v1.0 · 2026-08-27  
 > **合并自**：`terminology-glossary.md` · `terminology.md` · `marketing-glossary.json`
 
@@ -303,7 +303,7 @@
 
 ## 3.4 中文英混（Marketing / Blog · ZH）
 
-> **SSOT**：[`zh-en-mixing.md`](./zh-en-mixing.md) · 机器层 `locale-glossary.json` → `naked_loanwords_zh` · `localize_required`
+> **速查样例，非全表**。SSOT 与完整词表见 [`writing-voice.md`](writing-voice.md) Part B §2.3 · 机器层 `locale-glossary.json` → `naked_loanwords_zh` / `localize_required`
 
 | 避免（叙述） | 改用 |
 |-------------|------|
@@ -312,20 +312,18 @@
 | pay-to-remove / self-serve / customer-facing | **付费去水印** / **自助** / **面向客户** |
 | export 水印 / 可见 gate | **导出物水印** / **可见水印门槛** |
 
-**logo** 作角标通称可保留；**SynthID / C2PA / 产品名 / API / Pro** 见 §0.1 与 JSON `keep_english`。
+保留不译：**logo** 作角标通称可保留；**SynthID / C2PA / 产品名 / API / Pro** 见 §0.1 与 JSON `keep_english`。
 
 ## 3.5 GTM 相邻文禁腔（Marketing / Blog）
 
-> **SSOT**：[`gtm-prose-voice.md`](./gtm-prose-voice.md) · 机器层 `locale-glossary.json` → `forbidden_in_*` / `forbidden_regex_*`
+> **速查样例，非全表**。SSOT 与完整词表见 [`writing-voice.md`](writing-voice.md) Part A §2（中文）· §3（英文）· 机器层 `locale-glossary.json` → `forbidden_in_*` / `forbidden_regex_*`
 
 | 避免 | 改用 |
 |------|------|
 | 分轨 / 同族分流 / 载体分流 / 形态分流 | 分开算 KPI · 不是一回事 · 按载体对照 |
-| GTM 组合拳 / 标准组合拳 | 与其他 GTM 怎么配合 · 标准玩法 |
-| 姊妹篇 / 混表 / 双轨 KPI | 相关专文 · 混在一个表格里 · 两套 KPI 分开算 |
-| carrier split / split tracks / Same family as… | separate tracking · related playbook |
+| GTM 组合拳 / 姊妹篇 / 混表 / 双轨 KPI | 与其他 GTM 怎么配合 · 相关专文 · 两套 KPI 分开算 |
 
-音乐 **分轨**、Hub **选型分流**、HR **工单分流** 见 `gtm-prose-voice.md` §2.1 合法域。
+**合法域勿误杀**：音乐 **分轨**（导出分轨等行业语）、Hub **选型分流**、HR **工单分流** 见 `writing-voice.md` Part A §2.1。
 
 ## 3.6 Excerpt / Title 格式
 
@@ -375,32 +373,9 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态（站
 
 # 附录 · 禁腔对照（与 JSON 同步）
 
-> 字段源：`locale-glossary.json` → `forbidden_in_zh` / `forbidden_in_en`  
-> 地道 workflow 见 [`content-locale.md`](./content-locale.md) Part 0.2 · Part 3·4
-
-## 中文（`forbidden_in_zh`）
-
-| 避免 | 改用 |
-|------|------|
-| 该 X 用于…（连续 3 段） | 适合 / 可以 / 用来 交替 |
-| A → B → C 箭头链当正文 | 因果句 |
-| campaign 性刷新（裸用） | 促销性刷新、官方活动 |
-| 与 X 同构 | 和 X 是同一套逻辑 |
-| 抢份额 / 留人（裸用） | 抢用户、提高留存 |
-| H2 以英文短语开头 | 中文 H2 为主 |
-| Git 提交归因（Co-Author 语境） | **AI 提交署名** / **提交署名** |
-| 英文 slogan 直译 | 重写成中文读者能直读的说法 |
-| 分轨 / 同族分流 / 载体分流 / GTM 组合拳 / 姊妹篇 | 见 [`gtm-prose-voice.md`](./gtm-prose-voice.md) |
-
-## 英文（`forbidden_in_en`）
-
-| 避免 | 改用 |
-|------|------|
-| `X → Y → Z` in prose | Because / so / which means |
-| land-grab（过度） | win share during rival cap windows |
-| moat（裸用） | durable advantage / what keeps users after promos end |
-| 与 ZH 相同段落数机械对齐 | 信息对等即可 |
-| carrier split / split tracks / GTM Combos | 见 [`gtm-prose-voice.md`](./gtm-prose-voice.md) |
+> **字段源**：`locale-glossary.json` → `forbidden_in_zh` / `forbidden_in_en`（另含正则层 `forbidden_regex_zh/en`）
+> **以 JSON 为准，本附录不再人工镜像逐行词表**：术语理由与改写示例见 [`writing-voice.md`](writing-voice.md)（Part A §2–§3 · Part B §2.3）。
+> 地道 workflow 见 [`content-locale.md`](content-locale.md) Part 0.2 · Part 3·4
 
 ---
 
@@ -408,7 +383,8 @@ Navbar、Footer、BreadcrumbNav、TopBanner 所用标签及其翻译状态（站
 
 | 日期 | 说明 |
 |------|------|
-| 2026-08-27 | 新增 [`gtm-prose-voice.md`](./gtm-prose-voice.md)；locale-glossary.json v1.1 禁腔扩展 |
+| 2026-09-09 | §3.4/§3.5 标注为 writing-voice 速查样例；附录禁腔对照改为纯指针（以 JSON 为准） |
+| 2026-08-27 | 新增 [`writing-voice.md`](writing-voice.md)；locale-glossary.json v1.1 禁腔扩展 |
 | 2026-08-27 | 合并 terminology-glossary · terminology · marketing-glossary → locale-glossary（方案 A） |
 
 *locale-glossary.md · v1.0 · 2026-08-27*

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Fix broken ../section/ links in skills/create-article/rules after content/ merge."""
+"""Historical one-time script: fixed ../section/ links in skills/create-article/rules
+after the old content/ merge (2026-08). rules/ was later flattened away (2026-09);
+kept in ref/ for archive only — do not re-run."""
 from __future__ import annotations
 
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RULES = ROOT / "skills" / "create-article" / "rules"
+RULES = ROOT / "skills" / "create-article" / "rules"  # 路径已随扁平化删除；本脚本仅归档
 
 REPLACEMENTS = [
     ("../section/section-consistency.md", "../copy-quality.md"),
@@ -54,7 +56,7 @@ for fp in RULES.rglob("*.md"):
 ops = ROOT / "skills" / "ops" / "gsc-optimization-plan.md"
 if ops.exists():
     t = ops.read_text(encoding="utf-8")
-    t2 = t.replace("../section/section-optimization-playbook.md", "../create-article/rules/README.md")
+    t2 = t.replace("../section/section-optimization-playbook.md", "../create-article/README.md")
     t2 = t2.replace("content JSON", "content Markdown")
     if t2 != t:
         ops.write_text(t2, encoding="utf-8")

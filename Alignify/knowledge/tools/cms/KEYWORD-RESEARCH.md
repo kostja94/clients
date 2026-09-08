@@ -11,7 +11,7 @@
 | 1 | **SERP + 资源** | 自然头词 + 可维护资源簇？ |
 | 2 | **产品簇** | ≥2 款 vertical 产品？ |
 | 3 | **非品牌 slug** | 非单一品牌独占？ |
-| 4 | **产品池独占** | 拟选产品未被其他 slug canonical 占用？ → [`product-coverage.md`](../../skills/create-article/rules/product-coverage.md) |
+| 4 | **产品池独占** | 拟选产品未被其他 slug canonical 占用？ → [`product-coverage.md`](../../skills/create-article/product-coverage.md) |
 
 **不做 spoke**：纯品牌 · academic taxonomy · **CCMS**（不建，2026-08-28 决策）· 产品池与已有 slug **高度重叠**
 

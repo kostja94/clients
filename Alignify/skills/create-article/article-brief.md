@@ -1,7 +1,7 @@
 # Article Brief 模板（Flagship 必填）
 
 > **锁定时机**：Step 02 Gate 0R Pass 后定稿；Step 05 动笔前不得偏离 Brief 中的 One-line thesis 与 Moat。  
-> **用户确认**：Brief 中与用户决策相关的字段，须来自用户明示或聊天确认；角度、禁忌、结构等**不清楚时先问**（见 [`intake-questions.md`](./intake-questions.md)）。
+> **用户确认**：Brief 中与用户决策相关的字段，须来自用户明示或聊天确认；角度、禁忌、结构等**不清楚时先问**（见 [`01-intake.md`](01-intake.md)）。
 > **存放**：创作过程写入 `knowledge/{dir}/_briefs/{slug}.md` 或对话输出（不发布）。**外部 SSOT**（如个人知识库）时在 Brief 顶部写 `**SSOT**: {绝对路径}`，**不必**迁入 `knowledge/`。
 
 ---
@@ -47,7 +47,7 @@
 | 参照篇（可选） | {slug} · **无（Answer Blocks 驱动）** |
 | deliberate 省略 | 例：无 How To — 策略判断文 · 无对比表 — 仅 3 款产品 · 无第 4–6 款 — 垂类独占 |
 
-**Product roster**（`best-ranking` 必填 · 见 [`product-coverage.md`](./product-coverage.md)）:
+**Product roster**（`best-ranking` 必填 · 见 [`product-coverage.md`](product-coverage.md)）:
   1. {Product A}
   2. {Product B}
   3. {Product C}
@@ -55,25 +55,25 @@
 **Product dedup check**（YYYY-MM-DD）:
   - {Product A}: clear | conflict → {slug}
   - …
-| Section Plan | 见 [`sections.md`](./sections.md) Part 0 · 模板仅建议 → [`templates.md`](./templates.md) Part 0 |
+| Section Plan | 见 [`sections.md`](sections.md) Part 0 · 模板仅建议 → [`templates.md`](templates.md) Part 0 |
 
 **Answer Blocks**（3–5，各对应一个 **内容问题** 的 major H2；**非**页面模板节名）:
   1. {block-id} — 读者要搞懂什么（例：`#what-is-x` · `#vs-y` · `#cases`）
   2. …
   - **禁止**无 SSOT/用户依据硬塞 `#should-you-do-this` / go-no-go / `#author-take`——选型已在其他 Block 讲清则不必另开
-  - **嵌入演进脉络**（可选）：成熟品类在 `what-is` Block 内 1 段（术语 + 2–3 买家阶段 + 收束到本文 checklist）；**禁止**另开 `## 发展历史` H2（E51）；见 [`sections.md`](./sections.md) §2.2b
+  - **嵌入演进脉络**（可选）：成熟品类在 `what-is` Block 内 1 段（术语 + 2–3 买家阶段 + 收束到本文 checklist）；**禁止**另开 `## 发展历史` H2（E51）；见 [`sections.md`](sections.md) §2.2b
 
 **Planned H2 architecture**（**内容驱动**；从 SSOT + Answer Blocks 推导，非 Marketing 五段式）:
 | H2 / 锚点 | 目标 | Answer block |
 |-----------|------|--------------|
-| **Optional sections** | TL;DR: ☐ · FAQ: ☐ · How To: ☐ · `#author-take`: ☐ 采用 ☐ 省略 · go/no-go 矩阵: ☐ 采用 ☐ 省略（**仅** `marketing-strategy` + GTM 适用性题材，见 [`templates.md`](./templates.md#part-3-marketing) §3.2） · **Skills/runbook 预告**: ☐ 正文**禁止**（E49） · **若采用 TL;DR/FAQ/Refs → Step 08 注册三 JSON（E10）；省略 → JSON 不得留键** |
+| **Optional sections** | TL;DR: ☐ · FAQ: ☐ · How To: ☐ · `#author-take`: ☐ 采用 ☐ 省略 · go/no-go 矩阵: ☐ 采用 ☐ 省略（**仅** `marketing-strategy` + GTM 适用性题材，见 [`templates.md`](templates.md#part-3-marketing) §3.2） · **Skills/runbook 预告**: ☐ 正文**禁止**（E49） · **若采用 TL;DR/FAQ/Refs → Step 08 注册三 JSON（E10）；省略 → JSON 不得留键** |
 
 **Word count target**（叙事正文，见 word-counts.md）:
 **Planned internal links**（点击意图；无硬性条数，记录目标 slug + 段落 + 理由）:
 **Synthesis Statement**（链 Step 02）:
 **SERP Fit 摘要**（链 Step 02）:
 
-**Copy quality**（见 [`copy-quality.md`](./copy-quality.md) · 附录 A）:
+**Copy quality**（见 [`copy-quality.md`](copy-quality.md) · 附录 A）:
 - Mode: M1 | M2 | M3（默认 M1；同 Hub 簇状生产 → M2）
 - Hero fault（本页独有故障/缺口）:
 - Deliverable（本页交付物）:
@@ -84,7 +84,7 @@
 **Excellence type**（择一标注）: Depth | Objectivity | Freshness | Workflow | Proof
 **Post-publish metric**（T+7 / T+30 / T+90）:
 
-**Final CTA**（Step 08 写入 `cta-config.json` · 见 [`sections.md`](./sections.md) Part 5）:
+**Final CTA**（Step 08 写入 `cta-config.json` · 见 [`sections.md`](sections.md) Part 5）:
 - ZH title:
 - ZH description:
 - EN title:（Step 09 定稿；Step 02 可留 TBD）
@@ -101,7 +101,7 @@
 | Moat Asset | ≥1 项；正文必须兑现（Step 10 / audit 复核） |
 | Author POV | Blog 默认 ≥1 条判断**写入正文**（任意相关 H2 内）；独立 `#author-take` 须 Brief/User 明示 |
 | Answer Blocks | 3–5 个**内容问题**；每个有对应 H2；**非**模板节清单 |
-| One-line thesis | 通过「SERP 同句测试」（见 [`copy-quality.md`](./copy-quality.md) Part 1） |
+| One-line thesis | 通过「SERP 同句测试」（见 [`copy-quality.md`](copy-quality.md) Part 1） |
 | Copy quality | M1 推荐 Hero fault；M2 必填 cluster + swap neighbors |
 | SuccessMetric | 可量化（排名、CTR、内链点击、转化路径之一） |
 | Planned H2 | 主体节不可省略；TL;DR/FAQ/How To 若省略须在 Brief 写理由 |

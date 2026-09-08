@@ -1,24 +1,26 @@
 # Alignify 文章类型参考（唯一真相源）
 
-> **位置**：`skills/create-article/rules/templates.md`  
-> **Last updated**：2026-08-27  
+> **位置**：`skills/create-article/templates.md`  
+> **Last updated**：2026-09-09  
 > **说明**：本文档描述**四类存量文章**的常见模式与类型差异。**不是**正文骨架清单；**不要求**与任一现存篇目一比一复刻。  
-> **新文默认**：`content/blog/` + `/blog/{slug}`（见 [`article-types.md`](./article-types.md)）。  
-> **节怎么写** → [`sections.md`](./sections.md) · **格式/JSON** → [`anatomy.md`](./anatomy.md) · **路由/Meta 注册** → [`article-types.md`](./article-types.md)
+> **新文默认**：`content/blog/` + `/blog/{slug}`。  
+> **本文含四类型速查（原 article-types · 2026-09-09 并入）** → 见 [§四类型速查](#四类型速查meta注册)。  
+> **节怎么写** → [`sections.md`](sections.md) · **格式/JSON** → [`anatomy.md`](anatomy.md) · **路由/Meta 注册** → [§四类型速查](#四类型速查meta注册)
 
 ---
 
 ## 目录
 
 1. [Part 0 · 核心原则（必读）](#part-0-核心原则必读)
-2. [Part 1 · 全类型共性](#part-1-全类型共性)
-3. [Part 2 · Tools / best-ranking](#part-2-tools--best-ranking)
-4. [Part 3 · Marketing](#part-3-marketing)
-5. [Part 4 · SEO](#part-4-seo)
-6. [Part 5 · Insights](#part-5-insights)
-7. [附录 A · 部署仓实证](#附录-a-部署仓实证2026-08-27)
-8. [附录 B · 代表篇 H2 地图](#附录-b-代表篇-h2-地图对照用非标准)
-9. [附录 C · 各类型 A 层 checklist](#附录-c-各类型-a-层-checklist)
+2. [四类型速查（原 article-types）](#四类型速查meta注册)
+3. [Part 1 · 全类型共性](#part-1-全类型共性)
+4. [Part 2 · Tools / best-ranking](#part-2-tools--best-ranking)
+5. [Part 3 · Marketing](#part-3-marketing)
+6. [Part 4 · SEO](#part-4-seo)
+7. [Part 5 · Insights](#part-5-insights)
+8. [附录 A · 部署仓实证](#附录-a-部署仓实证2026-08-27)
+9. [附录 B · 代表篇 H2 地图](#附录-b-代表篇-h2-地图对照用非标准)
+10. [附录 C · 各类型 A 层 checklist](#附录-c-各类型-a-层-checklist)
 
 ---
 
@@ -30,7 +32,7 @@
 
 | 层级 | 含义 |
 |------|------|
-| **A 硬底线** | 违反即 Fail：结论收束 md、E44 frontmatter、FAQ 7 问（若采用）等 — 见 [`anatomy.md`](./anatomy.md) §〇、[`sections.md`](./sections.md) 附录 B |
+| **A 硬底线** | 违反即 Fail：结论收束 md、E44 frontmatter、FAQ 7 问（若采用）等 — 见 [`anatomy.md`](anatomy.md) §〇、[`sections.md`](sections.md) 附录 B |
 | **B/C 类型惯例** | 某 `articleType` **历史上常见**的做法；**可因题材调整或整节省略** |
 | **代表篇** | 对照用范例；**不是**必须复制的 H2 清单 |
 
@@ -46,7 +48,7 @@
 
 **工作流**：
 
-1. Step 01：Research + **Answer Blocks** → 画出本篇**实际** H2（[`sections.md`](./sections.md) Part 0 Section Plan）
+1. Step 01：Research + **Answer Blocks** → 画出本篇**实际** H2（[`sections.md`](sections.md) Part 0 Section Plan）
 2. 若题材新颖：在 Brief **Type Plan** 写 `articleType` + **参照篇**（可跨类型，或写「无参照，Answer Blocks 驱动」）
 3. 仅当需要时才打开本文 Part 2–5 看**类型差异**（Meta 词根、References 分型等）
 
@@ -66,10 +68,90 @@
 
 | 文档 | 职责 |
 |------|------|
-| [`article-types.md`](./article-types.md) | 四类型 × 路径 × Meta 注册表 |
-| **本文 `templates.md`** | 类型差异、常见原型、部署仓对照、**禁止误套**说明 |
-| [`sections.md`](./sections.md) | 节型写法（TL;DR、什么是、Best H3…） |
-| [`anatomy.md`](./anatomy.md) | frontmatter、block、JSON 侧车 |
+| **本文 `templates.md`** | 类型差异、常见原型、部署仓对照、**禁止误套**说明；四类型速查 / 路由与 Meta 注册（2026-09-09 并入原 article-types） |
+| [`sections.md`](sections.md) | 节型写法（TL;DR、什么是、Best H3…） |
+| [`anatomy.md`](anatomy.md) | frontmatter、block、JSON 侧车 |
+
+---
+
+<a id="四类型速查meta注册"></a>
+
+# 四类型速查（原 article-types · 2026-09-09 并入）
+
+> **来源追溯**：本节并入自原 article-types（v3.5 · 2026-08-27；2026-09-09 并入后删除），此后类型 / 路由 / Meta 注册以本文档为**唯一 SSOT**。
+> **一句话原则**：类型决定 Meta、Hub、知识块目录；**正文架构由内容决定**——[Part 0](#part-0-核心原则必读) 的 A/B/C 分层适用于全部四种类型，各类型正文节序详见对应 Part 2–5，**勿为对齐模板增删节**。
+
+## 速查表（类型 × 知识块 × 节序 Part × 存量）
+
+| 类型 | 知识块 | 正文节序 / Hub | 存量（不重迁） |
+|------|--------|----------------|----------------|
+| Tools（best-ranking） | `knowledge/tools/` | [Part 2](#part-2-tools--best-ranking) · Hub 推导：frontmatter `category` | `content/tools/` · `/tools/{slug}`（108） |
+| Marketing（marketing-strategy） | `knowledge/marketing/` | [Part 3](#part-3-marketing) · 独立 Hub | `content/marketing/` · `/marketing/{slug}`（16） |
+| SEO（seo-guide） | `knowledge/seo/` | [Part 4](#part-4-seo) · 独立 Hub | `content/seo/` · `/seo/{slug}`（38） |
+| Insights（insights-analysis） | `knowledge/insights/` | [Part 5](#part-5-insights) · 独立 Hub | `content/insights/` · `/insights/{slug}`（7） |
+
+- **路由约定（2026-08）**：新 slug（任意 articleType）统一 `content/blog/` + `/blog/{slug}`（中文 `/zh/blog/{slug}`）；存量旧路径**仅维护更新，不重迁 URL**。理由：新文大量是**全新题材**，按频道拆模板无意义；类型由 Brief `articleType` + Answer Blocks 决定，非 URL 目录（[Part 0 §0.2](#part-0-核心原则必读)）。
+- **生产现状（2026-08-27）**：blog **33** · tools **108** · marketing **16** · seo **38** · insights **7**（events 另计）；SEO / Insights 尚无 blog 新文批量——仍在存量路径 + 对应 `*-meta.ts`（与 [附录 A](#附录-a-部署仓实证2026-08-27) 同源）。
+- **已废弃**：JSON block 类型 `howToChoose` / `bestTools` / `howItWorks` / `useCases`（对应 React 组件已删除，新文禁用）。
+
+## Meta 注册（生产）
+
+| 频道 | Meta | Config | 正文路径 | URL |
+|------|------|--------|----------|-----|
+| blog 新文 | `blog-meta.ts` | `blog-pages-config.ts` | `content/blog/` | `/blog/` |
+| tools 存量 | `tools-meta.ts` | `tools-pages-config.ts` | `content/tools/` | `/tools/` |
+| marketing 存量 | `marketing-meta.ts` | — | `content/marketing/` | `/marketing/` |
+| seo 存量 | `seo-meta.ts` | — | `content/seo/` | `/seo/` |
+| insights 存量 | `insights-meta.ts` | — | `content/insights/` | `/insights/` |
+
+Marketing **双轨**：11 篇 blog 新文 + 16 篇 marketing 存量。blog-meta 有 slug 且 tools-meta 也有 → **redirect** 到 blog。新文 vs 存量的路由行文速览另见 [Part 1 §1.1](#part-1-全类型共性)。
+
+## 各类型正文结构速览（原 article-types 语义保留）
+
+> 以下为逐类型 Markdown 顺序与执行要点（**参考 only**）；完整节型差异与原型以对应 Part 为准。
+
+### Tools 型（Blog 新文）
+
+- 常见节型见 [Part 2 §2.1](#part-2-tools--best-ranking)。主体多为 Best 榜单：正文 section + 产品 H3（**默认 3 款**，见 [`product-coverage.md`](product-coverage.md)）；选型类常含 `## 如何选择…` + `###` 步骤
+- FAQ：**7 问**（`faq-data.json`，Brief 采用时）；可省略对比表、应用场景、如何工作等（Step 01 大纲说明即可）
+- 内链专规：[`internal-links.md`](internal-links.md) Part 3（create-article Step 07）；客户 Tier：[`sections.md`](sections.md) Part 3.3 §3.3.0
+- Tools 存量（108 slug）：仍走 `content/tools/` + `tools-meta.ts` + `/tools/{slug}`；TL;DR/FAQ/Refs JSON 键为 `/tools/{slug}` · `/zh/tools/{slug}`
+
+### Marketing 型（Blog 新文）
+
+常见顺序（**参考 only**；节数与是否含 TL;DR/FAQ/How To 由内容决定）：
+
+```
+[核心要点 JSON] → 概念 section → 策略/分析 sections×N → [场景] → [作者判断] → 结论 {#conclusion} → [FAQ JSON · 页底] → [References JSON]
+```
+
+- 内链专规：[`internal-links.md`](internal-links.md) Part 4.5；**禁止** frontmatter `heroHtml` / `heroContent` / `howTo:`（E44）；导语写首节 BLUF
+- **ZH/EN**：同等 flagship 深度；EN 独立重写
+
+### SEO 型（Blog 新文）
+
+常见顺序（**参考 only**；H2 因题而异）：
+
+```
+核心要点 JSON → 概念 → 操作 sections（H3）→ [场景] → 结论 → FAQ JSON(7) → [References JSON]
+```
+
+- 内链专规：[`internal-links.md`](internal-links.md) Part 4（Step 07）
+- 列表/表格：`<!-- childrenHtml:start -->` + HTML（[`anatomy.md`](anatomy.md) §四·一）
+- Meta：指南型规则组（中文 meta 不含「指南」/ 英文不含 `Guide`，见 [Part 4 §4.2](#part-4-seo)）
+- **生产路径**：38 篇均在 `content/seo/` + `seo-meta.ts` + `/seo/{slug}`（**非** blog）
+
+### Insights 型（Blog 新文）
+
+常见顺序（**参考**；H2 由 SSOT + Brief Answer Blocks 推导，**非** Marketing 收束模板）：
+
+```
+核心要点 JSON → 分析 sections×N → [案例/边界] → 结论 → FAQ JSON(7) → [References JSON]
+```
+
+- 内链专规：[`internal-links.md`](internal-links.md) Part 5（Step 07）；Meta：分析型规则组
+- 新文：`content/blog/` + `blog-meta.ts`（`articleType: insights-analysis`）；存量 7 篇：`content/insights/` + `insights-meta.ts`
+- **默认不设**：`#author-take`、`#should-you-do-this` go/no-go、How To（见 [Part 5](#part-5-insights)）；**E49**：正文禁止「细节进 future skills」meta 句
 
 ---
 
@@ -86,13 +168,15 @@
 | Meta | `blog-meta.ts` + `blog-pages-config.ts` | 对应 `*-meta.ts` |
 | 渲染 | `app/[locale]/blog/[slug]/page.tsx` 动态路由 | 各频道动态路由 |
 
-JSON 侧车键 = frontmatter `pageUrl` 去域路径（如 `/zh/blog/{slug}`）。详见 [`anatomy.md`](./anatomy.md) §二·一。
+JSON 侧车键 = frontmatter `pageUrl` 去域路径（如 `/zh/blog/{slug}`）。详见 [`anatomy.md`](anatomy.md) §二·一。
+
+> 各频道 Meta 注册文件全集（`blog-meta.ts` / `tools-meta.ts` / `marketing-meta.ts` / `seo-meta.ts` / `insights-meta.ts`）与 Marketing 双轨 redirect 规则 → [四类型速查 · Meta 注册](#四类型速查meta注册)。
 
 ## 1.2 frontmatter
 
 允许键：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `pillar` · `section` · `contentType` · `heroImage` · `heroImageAlt`
 
-**禁止（E44）**：`heroHtml` · `howTo` · `heroContent` · **废弃（E49）** `category` / `categorySecondary`（见 [`category-assignment.md`](./category-assignment.md)）
+**禁止（E44）**：`heroHtml` · `howTo` · `heroContent` · **废弃（E49）** `category` / `categorySecondary`（见 [`08-meta-config.md`](08-meta-config.md)）
 
 ## 1.3 正文壳
 
@@ -104,8 +188,8 @@ JSON 侧车键 = frontmatter `pageUrl` 去域路径（如 `/zh/blog/{slug}`）�
 
 | articleType | title 倾向 | 详见 |
 |-------------|-----------|------|
-| best-ranking | 含 **Best** / **最佳** + `（2026）：` 副线 | Part 2 · [`meta.md`](./meta.md) |
-| marketing-strategy | 策略/案例型 | [`meta.md`](./meta.md) |
+| best-ranking | 含 **Best** / **最佳** + `（2026）：` 副线 | Part 2 · [`meta.md`](meta.md) |
+| marketing-strategy | 策略/案例型 | [`meta.md`](meta.md) |
 | seo-guide | 指南型；**中文 meta 不含「指南」、英文不含 Guide** | Part 4 |
 | insights-analysis | 分析/洞察型 | Part 5 |
 
@@ -137,7 +221,7 @@ H1 / excerpt：frontmatter `title` / `description`；**H1 不写年份**。
 
 **部署仓（108 篇 EN）大致比例**：结论 100% · 什么是 ~99% · Best/榜单 ~86% · 应用场景 ~80% · 对比表 ~31% · 标准 `#how-to-choose` ~47%
 
-**嵌入演进脉络（C 层）**：成熟架构/品类选型文可在「什么是」内嵌 **1 段 + 可选 3 行阶段表**（见 [`sections.md`](./sections.md) §2.2b），收束到 checklist/对比——**禁止**独立 `## 发展历史`（E51）。全品类编年留给 hub slug。
+**嵌入演进脉络（C 层）**：成熟架构/品类选型文可在「什么是」内嵌 **1 段 + 可选 3 行阶段表**（见 [`sections.md`](sections.md) §2.2b），收束到 checklist/对比——**禁止**独立 `## 发展历史`（E51）。全品类编年留给 hub slug。
 
 → **对比表、应用场景、How To 均可省略**；Brief 写理由即可。
 
@@ -152,7 +236,7 @@ Workflow · Cost Analysis · Getting Started · Future Trends — 易与「如�
 - H1 **不写年份**；不强制 H1 含「最佳」
 - 质检：`scripts/ops/audit-tools-meta-titles.mjs`
 
-节写法 → [`sections.md`](./sections.md) Part 3.1–3.4 · 字数 → [`word-counts.md`](./word-counts.md) · 五维/Swap → [`copy-quality.md`](./copy-quality.md)
+节写法 → [`sections.md`](sections.md) Part 3.1–3.4 · 字数 → [`word-counts.md`](word-counts.md) · 五维/Swap → [`copy-quality.md`](copy-quality.md)
 
 ## 2.4 标杆对照（可选打开 md，勿复制骨架）
 
@@ -178,13 +262,13 @@ Workflow · Cost Analysis · Getting Started · Future Trends — 易与「如�
 | **B 平台战术** | geo, x-formerly-twitter | 搞清平台机制+落地 | what-is → 原则/差异 → **多个 how-to-* 散落主体** → cases → conclusion |
 | **C 事件/GTM** | rate-limit-reset, coding-plan | 判断+架构+案例 | 开篇即答 → 架构/案例 H2×N → conclusion（**通常无**独立 How To 节） |
 
-**部署仓**：16 篇仅 **~31%** 有独立 How To 型 H2；**禁止**策略/观点文硬套 step-1~N（见 [`sections.md`](./sections.md) Part 3.5）。
+**部署仓**：16 篇仅 **~31%** 有独立 How To 型 H2；**禁止**策略/观点文硬套 step-1~N（见 [`sections.md`](sections.md) Part 3.5）。
 
 ## 3.2 Marketing 类型差异（保留在本文）
 
 ### TL;DR / 什么是
 
-写法 → [`sections.md`](./sections.md) Part 2.1 / 3.1。Marketing intro 常含策略名+受众；术语密集主题须在「什么是」列**行业别名**（[`locale-glossary.md`](./locale-glossary.md) Part 2）。
+写法 → [`sections.md`](sections.md) Part 2.1 / 3.1。Marketing intro 常含策略名+受众；术语密集主题须在「什么是」列**行业别名**（[`locale-glossary.md`](locale-glossary.md) Part 2）。
 
 ### 策略适用性 / go-no-go（仅 marketing-strategy · 可选）
 
@@ -196,17 +280,17 @@ Author POV **写入**适用性/案例/结论节，**不**默认独立 `#author-t
 
 - **仅方法驱动型**（如 keyword-research）
 - 步骤内：**禁止**链接、具体产品/平台名；用「关键词挖掘工具」等泛称
-- 判据 → [`sections.md`](./sections.md) Part 3.5
+- 判据 → [`sections.md`](sections.md) Part 3.5
 
 ### References（Marketing / Blog 策略文）
 
-仅 **A 事件一手 + B 事件报道**；禁止同题第三方 playbook（类型 D）。详见 [`sections.md`](./sections.md) Part 2.3 §3.2。
+仅 **A 事件一手 + B 事件报道**；禁止同题第三方 playbook（类型 D）。详见 [`sections.md`](sections.md) Part 2.3 §3.2。
 
 ### 呈现债（Marketing blog md）
 
-E40–E42：表前冒号桥接、表后单句、列表改 prose 残留 → [`presentation.md`](./presentation.md) · `audit-marketing-md-render.py`
+E40–E42：表前冒号桥接、表后单句、列表改 prose 残留 → [`presentation.md`](presentation.md) · `audit-marketing-md-render.py`
 
-内链 M1–M11 → [`internal-links.md`](./internal-links.md) Part 4.5
+内链 M1–M11 → [`internal-links.md`](internal-links.md) Part 4.5
 
 ## 3.3 EN/ZH
 
@@ -239,7 +323,7 @@ SEO 文 H2 **因题而异**，常见模式：
 - 无 Best 产品 H3 榜单（少数对比型除外）
 - 列表/表格多用 `childrenHtml`
 - How To **可选**；可含 SEO 内链
-- 内链 → [`internal-links.md`](./internal-links.md) Part 4
+- 内链 → [`internal-links.md`](internal-links.md) Part 4
 
 代表对照：`robots-txt`（10 主题 H2）· `landing-page`（要素→优化→CRO 链）
 
@@ -260,7 +344,7 @@ SEO 文 H2 **因题而异**，常见模式：
 - **主体 H2 从 Answer Blocks 推导** — 例：定义 · 与 X 分工 · 决策对照 · 案例 · 坑/验收
 - **默认不设**：`#author-take` · `#should-you-do-this` go/no-go · How To step 节
 - **E49**：禁止「细节进 future skills」；**E50**：Author POV 融入案例/坑/结论，非独立收束节
-- 第一人称 → [`presentation.md`](./presentation.md) §Author voice
+- 第一人称 → [`presentation.md`](presentation.md) §Author voice
 
 ## 5.2 与 Marketing 边界
 
@@ -335,7 +419,7 @@ SEO 文 H2 **因题而异**，常见模式：
 
 # 附录 C · 各类型 A 层 checklist
 
-> 完整 P0 → [`quality-checklist.md`](./quality-checklist.md)
+> 完整 P0 → [`quality-gates.md`](quality-gates.md)
 
 | 检查项 | Tools | Marketing | SEO | Insights |
 |--------|-------|-----------|-----|----------|
@@ -348,6 +432,13 @@ SEO 文 H2 **因题而异**，常见模式：
 
 B/C 层偏离（无对比表、无 How To、H2 仅 5 个…）→ Brief 或 SelfCheck **一句理由**即可。
 
+**A 层硬底线补充（2026-09-09 并入自 article-types）**
+
+- FAQ 由页底 `FAQ.tsx` 全局渲染（**不在 md 流内**）；Brief 采用 FAQ → `faq-data.json` 中英文各 **7 问**、条数一致；FAQ 内链遵守 R4（[`internal-links.md`](internal-links.md) Part 2 §1.5，同 URL 全文 1 次）
+- Brief 省略 TL;DR/FAQ/Refs → 三个 JSON **不得**留对应 pathname 键
+- 禁止 frontmatter `howTo:` / `heroHtml:` / `heroContent:`（E44）；HTML 不得出现在 `---` frontmatter 之间（E45）
+- frontmatter 仅允许 [`anatomy.md`](anatomy.md) §二 白名单；节内勿留首尾空行（E48）
+
 ---
 
 ## 文档修订
@@ -355,5 +446,6 @@ B/C 层偏离（无对比表、无 How To、H2 仅 5 个…）→ Brief 或 Self
 | 日期 | 说明 |
 |------|------|
 | 2026-08-27 | 初版：合并 templates 五文件为单 SSOT；强调模板=建议、新文 /blog、禁止一比一复刻；附录部署仓实证 |
+| 2026-09-09 | 并入原 article-types（v3.5）→ Part 0 后新增「四类型速查（原 article-types）」节（速查表 · Meta 注册 · 各类型正文结构速览）；A 层硬底线补充并入附录 C；原文件删除 |
 
-*templates.md · v1.0 · 2026-08-27*
+*templates.md · v1.1 · 2026-09-09*

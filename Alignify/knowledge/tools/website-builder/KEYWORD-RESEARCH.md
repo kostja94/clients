@@ -25,7 +25,7 @@
 
 Hub 路由：[`content-management-system`](../cms/content-management-system.md)（CMS 是什么）· [`open-source-cms`](../cms/open-source-cms.md)（自托管 OSS）
 
-**成文产品数**：每 spoke 默认 **3 款** Best H3 · 全站 **一产品一 canonical** → [`product-coverage.md`](../../skills/create-article/rules/product-coverage.md)
+**成文产品数**：每 spoke 默认 **3 款** Best H3 · 全站 **一产品一 canonical** → [`product-coverage.md`](../../skills/create-article/product-coverage.md)
 
 ---
 

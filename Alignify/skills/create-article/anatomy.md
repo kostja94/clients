@@ -7,30 +7,30 @@
 
 ## 〇、内容优先原则（必读）
 
-**文章架构由内容本身决定；[`templates.md`](./templates.md) Part 0 与 [`sections.md`](./sections.md) 提供的是参考菜单，不是必填清单。**
+**文章架构由内容本身决定；[`templates.md`](templates.md) Part 0 与 [`sections.md`](sections.md) 提供的是参考菜单，不是必填清单。**
 
 | 层级 | 含义 | 示例 |
 |------|------|------|
 | **A 硬底线** | 违反即结构/SEO 错误，必须修复 | md 以 `#conclusion` 收束；禁止 frontmatter `howTo:`；Brief 采用 FAQ 则 JSON 7 问（内链若存在须 R4） |
 | **B 类型惯例** | 某 `articleType` 的常见做法，可因题材调整 | Best-ranking 通常有产品 H3 榜单；SEO 文通常有操作步骤节 |
-| **C 参考模板** | 新建页时的起点，可增删改顺序 | 下文「参考菜单」10 节；[`templates.md`](./templates.md) Part 2–5 |
+| **C 参考模板** | 新建页时的起点，可增删改顺序 | 下文「参考菜单」10 节；[`templates.md`](templates.md) Part 2–5 |
 
 **决策流程**（Step 01 / 05 前）：
 
 1. 读知识块 + Research，列出读者必须带走的信息（定义？对比？选型？场景？）
-2. 对照 [`article-types.md`](./article-types.md) 与 [`templates.md`](./templates.md) 看**常见结构**（可选；全新题材可跳过）
+2. 对照 [`templates.md`](templates.md) 的 §四类型速查看**常见结构**（可选；全新题材可跳过）
 3. 画出本篇 H2 大纲：**只保留服务读者的节**；可合并（如「如何工作」并入「什么是」）、可省略（如无对比价值则去掉对比表）
-4. 写完后用 [`quality-checklist.md`](./quality-checklist.md) 核对 **A 层**；B/C 层不足时说明理由即可
+4. 写完后用 [`quality-gates.md`](quality-gates.md) 核对 **A 层**；B/C 层不足时说明理由即可
 
 **中英 parity**：ZH/EN 的 **section 类型与顺序应对齐**（锚点 id 一致），但两边不必机械复制「是否凑满 10 节」——对齐的是**实际采用的架构**，不是模板行数。
 
-**Flagship 质量**（Alignify 每篇固定）：架构可灵活，但 **Moat、Answer Blocks、Research、BLUF、SelfCheck、终审** 不可省略。见 [`gates.md`](./gates.md) · [`article-brief.md`](./article-brief.md)。
+**Flagship 质量**（Alignify 每篇固定）：架构可灵活，但 **Moat、Answer Blocks、Research、BLUF、SelfCheck、终审** 不可省略。见 [`quality-gates.md`](quality-gates.md) · [`article-brief.md`](article-brief.md)。
 
 ---
 
 ## 一、参考菜单（Tools 类常见，非强制顺序）
 
-以下为 **best-ranking 新建页的高频结构**，其它类型见 [article-types.md](./article-types.md)。**可调整顺序、合并或省略**，只要 A 层底线满足。
+以下为 **best-ranking 新建页的高频结构**，其它类型见 [templates.md](templates.md)。**可调整顺序、合并或省略**，只要 A 层底线满足。
 
 | 序号 | 章节 | Markdown | 常见度 |
 |------|------|----------|--------|
@@ -78,14 +78,14 @@ heroImageAlt: "…"
 
 **允许键（仅此）**：`title` · `description` · `slug` · `date` · `updated` · `readingMinutes` · `pageUrl` · `locale` · `pillar` · `section` · `contentType` · `heroImage` · `heroImageAlt`
 
-**禁止键（E44）**：`heroHtml` · `howTo` · `heroContent` — 全站 md **不得**出现在 frontmatter；HTML 误入 YAML 区同样 Fail（E45）。区内首尾空行 Fail（E48）。**废弃（E49）**：`category` · `categorySecondary`。分类规则见 [`category-assignment.md`](./category-assignment.md)。送审跑 `scripts/audit/audit-frontmatter.py`；批量 normalize 跑 `scripts/ops/normalize-frontmatter.py`。
+**禁止键（E44）**：`heroHtml` · `howTo` · `heroContent` — 全站 md **不得**出现在 frontmatter；HTML 误入 YAML 区同样 Fail（E45）。区内首尾空行 Fail（E48）。**废弃（E49）**：`category` · `categorySecondary`。分类规则见 [`08-meta-config.md`](08-meta-config.md)。送审跑 `scripts/audit/audit-frontmatter.py`；批量 normalize 跑 `scripts/ops/normalize-frontmatter.py`。
 
 ### 二·一 TL;DR / FAQ / References（JSON 侧车 · 线上 SSOT · 2026-08）
 
 | 层 | SSOT | 说明 |
 |----|------|------|
 | **线上渲染** | JSON 侧车 | `src/data/tldr-data.json` · `faq-data.json` · `references-data.json` |
-| **创作流程** | Brief + Step 08 | Brief 决定采用/省略；**采用 → Step 08 注册 JSON**；内容规范见 [`sections.md`](./sections.md) Part 2 |
+| **创作流程** | Brief + Step 08 | Brief 决定采用/省略；**采用 → Step 08 注册 JSON**；内容规范见 [`sections.md`](sections.md) Part 2 |
 
 **键格式**（= frontmatter `pageUrl` 去域路径）：
 
@@ -106,7 +106,7 @@ heroImageAlt: "…"
 **Step 08 规则（E10）**：Brief 采用 TL;DR/FAQ/Refs → 注册对应 JSON（中英 pathname 键）；Brief 省略 → JSON **不得**留键。**勿**在 md 写这三节正文。
 
 md 内可留 `<!-- references injected from references-data.json -->` 占位（editorial 提示），**不能**代替 JSON 注册。
-- `pillar` / `section` / `contentType` → Taxonomy v2（见 [`category-assignment.md`](./category-assignment.md)；面包屑经 `ARTICLE_CATEGORY_MAP`）
+- `pillar` / `section` / `contentType` → Taxonomy v2（见 [`08-meta-config.md`](08-meta-config.md)；面包屑经 `ARTICLE_CATEGORY_MAP`）
 
 ### H2/H3 锚点语法
 
@@ -125,7 +125,7 @@ md 内可留 `<!-- references injected from references-data.json -->` 占位（e
 
 ## 三、章节示例
 
-各节**写法**见 [`sections.md`](./sections.md)（Part 0 选节 · Part 3 节型库）；**是否采用**见 §〇 与 Step 01 大纲。
+各节**写法**见 [`sections.md`](sections.md)（Part 0 选节 · Part 3 节型库）；**是否采用**见 §〇 与 Step 01 大纲。
 
 ### 1. 核心要点（JSON · 不写 md）
 
@@ -140,7 +140,7 @@ Brief 采用时，Step 08 注册 `tldr-data.json`：
 }
 ```
 
-英文键 `/blog/{slug}`，`title`: `"Key Takeaways"`。规则见 [`sections.md` Part 2.1](./sections.md#part-21-tldr--核心要点)。
+英文键 `/blog/{slug}`，`title`: `"Key Takeaways"`。规则见 [`sections.md` Part 2.1](sections.md#part-21-tldr--核心要点)。
 
 ### 2–7. 正文章节
 
@@ -165,7 +165,7 @@ Brief 采用时，Step 08 注册 `tldr-data.json`：
 …
 ```
 
-见 [`sections.md`](./sections.md) Part 4。
+见 [`sections.md`](sections.md) Part 4。
 
 ### 9. FAQ（JSON · 页底全局组件）
 
@@ -179,7 +179,7 @@ Brief 采用时，Step 08 注册 `faq-data.json`（**7 问**）：
 }
 ```
 
-FAQ 由 `FAQ.tsx` 渲染在正文之后；md **不写** `#faq`。规则见 [`sections.md` Part 2.2](./sections.md#part-22-faq--常见问题)。
+FAQ 由 `FAQ.tsx` 渲染在正文之后；md **不写** `#faq`。规则见 [`sections.md` Part 2.2](sections.md#part-22-faq--常见问题)。
 
 ### 10. References（JSON · 不写 md）
 
@@ -193,7 +193,7 @@ Brief 采用时，Step 08 注册 `references-data.json`：
 }
 ```
 
-规则见 [`sections.md` Part 2.3](./sections.md#part-23-references--参考文献)。
+规则见 [`sections.md` Part 2.3](sections.md#part-23-references--参考文献)。
 
 ---
 
@@ -207,7 +207,7 @@ Brief 采用时，Step 08 注册 `references-data.json`：
 | 如何选择 | 选型类常见 | 可选 | 可选 | 可选 |
 | FAQ 7 问 | 常见 | 常见 | 常见 | 常见 |
 
-详情见 [article-types.md](./article-types.md) 与 [templates.md](./templates.md)。
+详情见 [`templates.md`](templates.md)（§四类型速查 · 类型 × 路由 × Meta 注册）。
 
 ---
 

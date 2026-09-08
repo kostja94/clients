@@ -11,7 +11,7 @@
 
 - 新建或刷新 **Tools slug 知识块**（含主题簇如 `website-builder/`、`cms/`、`agent/`）
 - 两个候选词 **同意图**、需快判谁更「头」、归 Hub 还是 Spoke
-- 评估新 spoke 时：**产品池是否与已有 slug 独占冲突**（见 [`../create-article/rules/product-coverage.md`](../create-article/rules/product-coverage.md)）
+- 评估新 spoke 时：**产品池是否与已有 slug 独占冲突**（见 [`../create-article/product-coverage.md`](../create-article/product-coverage.md)）
 - 维护 README §SSOT 地图、文首 `keywordEn`、站内相邻（builder/CMS 簇 + 跨频道）
 - **新建 Tools 主题簇**（多 slug 一次规划，如 work-agent + workspace-agent）
 
@@ -22,7 +22,7 @@
 | 写 `/blog/` 或 `/tools/` 正式正文 | create-article |
 | 存量页内链优化 | audit-optimize |
 | 仅 Marketing 长文（非 KB） | create-article + `knowledge/marketing/` 长文 |
-| SEO 专册 + 外部 GSC KB | create-article + [`seo-slug-notes/`](../create-article/rules/seo-slug-notes/) · Brief 登记路径 |
+| SEO 专册 + 外部 GSC KB | create-article + [`slug-locks.md`](../create-article/slug-locks.md) Part B · Brief 登记路径 |
 
 ---
 
@@ -72,7 +72,7 @@
 | 主题簇索引 | [README §主题簇物理路径](../../knowledge/tools/README.md#主题簇物理路径2026-08-28) · [`territory-map.md`](../../knowledge/tools/territory-map.md) |
 | 用途建站 **builder/CMS 簇** SSOT | [`knowledge/tools/website-builder/README.md`](../../knowledge/tools/website-builder/README.md) · [`knowledge/tools/cms/README.md`](../../knowledge/tools/cms/README.md) |
 | **Open Source · 部署/许可** | [`references/open-source-deployment-dimension.md`](./references/open-source-deployment-dimension.md) |
-| **产品覆盖 · 垂类 · 独占** | [`../create-article/rules/product-coverage.md`](../create-article/rules/product-coverage.md) |
+| **产品覆盖 · 垂类 · 独占** | [`../create-article/product-coverage.md`](../create-article/product-coverage.md) |
 | 关键词研究概念 KB | [`knowledge/marketing/keyword-research.md`](../../knowledge/marketing/keyword-research.md) |
 | **仅调研 · 显式成文门槛** | [`references/research-only-gate.md`](./references/research-only-gate.md) |
 
@@ -107,7 +107,7 @@
 2. **窄意图**：slug 能对应 **独立产品池**
 3. **Hub 不写 H3**：概念/分流 Hub **禁止** Best 产品榜单节
 
-成文时默认 **3 款 H3** → [`../create-article/rules/product-coverage.md`](../create-article/rules/product-coverage.md)
+成文时默认 **3 款 H3** → [`../create-article/product-coverage.md`](../create-article/product-coverage.md)
 
 ---
 

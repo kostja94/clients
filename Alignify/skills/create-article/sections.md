@@ -1,9 +1,9 @@
 # Alignify 章节规范（唯一真相源）
 
-> **位置**：`skills/create-article/rules/sections.md`  
+> **位置**：`skills/create-article/sections.md`  
 > **格式**：`content/{channel}/{locale}/{slug}.md` + JSON 侧车（TL;DR / FAQ / References）  
 > **Last updated**：2026-08-27  
-> **说明**：所有章节写法、选节决策、JSON 侧车、**结论**、**Final CTA** 规则**仅在本文件维护**。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。
+> **说明**：所有章节写法、选节决策、JSON 侧车、**结论**、**Final CTA** 规则**仅在本文件维护**。结构映射见 [`anatomy.md`](anatomy.md)；内链见 [`internal-links.md`](internal-links.md)。
 
 ---
 
@@ -33,7 +33,7 @@
 
 # Part 0 · 内容优先：如何选节
 
-> **原则**：文章架构由**内容**决定；下文与 [`templates.md`](./templates.md) Part 0 均为**参考菜单**，不是必填清单。详见 [`anatomy.md`](./anatomy.md) §〇。
+> **原则**：文章架构由**内容**决定；下文与 [`templates.md`](templates.md) Part 0 均为**参考菜单**，不是必填清单。详见 [`anatomy.md`](anatomy.md) §〇。
 
 ## 选节三问（Step 01 / Brief）
 
@@ -82,7 +82,7 @@
 
 # Part 1 · 全局写法（Markdown / H1–H6）
 
-> 新文（2026-08+）：`content/blog/` 或 `content/tools/` 的 md + `<!-- block:section -->` + Markdown `##` / `###` + `{#anchor}`。详见 [`anatomy.md`](./anatomy.md) §四·一。
+> 新文（2026-08+）：`content/blog/` 或 `content/tools/` 的 md + `<!-- block:section -->` + Markdown `##` / `###` + `{#anchor}`。详见 [`anatomy.md`](anatomy.md) §四·一。
 
 ## 1.1 基本结构
 
@@ -106,15 +106,15 @@
 
 | 元素 | 来源 | 规范 |
 |------|------|------|
-| H1 | frontmatter `title` | [`meta.md`](./meta.md) §三 |
-| excerpt | frontmatter `description` | [`meta.md`](./meta.md) §四 |
+| H1 | frontmatter `title` | [`meta.md`](meta.md) §三 |
+| excerpt | frontmatter `description` | [`meta.md`](meta.md) §四 |
 | H2/H3 | 正文 `##` / `###` | kebab-case `{#id}`；ZH/EN 同 slug 用相同 id |
 
 ## 1.3 H1–H6 层级
 
 - **H1**：`[主题]：[价值]`；不写年份
 - **H2 间距**：容器 `space-y-12`；正文 H2 之间**不加** divider（E36）
-- 完整可访问性与字数见 [`meta.md`](./meta.md)、[`word-counts.md`](./word-counts.md)、[`copy-quality.md`](./copy-quality.md) Part 3
+- 完整可访问性与字数见 [`meta.md`](meta.md)、[`word-counts.md`](word-counts.md)、[`copy-quality.md`](copy-quality.md) Part 3
 
 ---
 
@@ -230,9 +230,9 @@ items 内允许 `**粗体**` 与 `[锚文本](/path)`（每 item 最多 1–2 �
 
 **渲染**：线上 `Tldr.tsx` 经 `markdownToHtml` + `applyMarkdownBoldToHtml` 输出；**禁止**只写 Markdown 链接却不走 JSON 侧车，也**禁止**在 items 里写裸 `[text](url)` 期望自动变链（须确认部署仓已含 link 渲染）。
 
-**中文叙述**（[`content-locale.md`](./content-locale.md) · [`zh-en-mixing.md`](./zh-en-mixing.md)）：TL;DR items/intro **不得**用「分叉」「fork first」等内部术语；内链锚文本用中文（如「AI 建站」），不用英文 slug 当锚文。
+**中文叙述**（[`content-locale.md`](content-locale.md) · [`writing-voice.md`](writing-voice.md)）：TL;DR items/intro **不得**用「分叉」「fork first」等内部术语；内链锚文本用中文（如「AI 建站」），不用英文 slug 当锚文。
 
-**Step 08 注册**：同步写入 `tldr-data.json`（键 = `pageUrl` 路径，如 `/zh/blog/{slug}` 或 `/tools/{slug}`）。见 [`anatomy.md`](./anatomy.md) §二·一。
+**Step 08 注册**：同步写入 `tldr-data.json`（键 = `pageUrl` 路径，如 `/zh/blog/{slug}` 或 `/tools/{slug}`）。见 [`anatomy.md`](anatomy.md) §二·一。
 
 ```markdown
 <!-- block:section -->
@@ -420,7 +420,7 @@ Step 08 注册 `tldr-data.json` 后，线上 `Tldr.tsx` 输出 ItemList Schema�
 
 ### 2.2 字数控制（搜索与 Featured Snippet 最佳实践）
 
-全文篇幅层级见 [copy-quality.md Part 3](./copy-quality.md#part-3-字数层级与章内节奏) · [`word-counts.md`](./word-counts.md)；下表为 **FAQ 答案**的常用目标，**非**刚性上限。
+全文篇幅层级见 [copy-quality.md Part 3](copy-quality.md#part-3-字数层级与章内节奏) · [`word-counts.md`](word-counts.md)；下表为 **FAQ 答案**的常用目标，**非**刚性上限。
 
 | 语言 | 问题长度 | 答案长度 | 统一性 | 依据 |
 |------|----------|----------|--------|------|
@@ -477,7 +477,7 @@ FAQ 由 `FAQ` 组件渲染，**不要**在内容里再手工加一层「区块�
 
 **文章页默认 7 问**（中英文同 slug 条数一致）。
 
-**答案格式**：首句直接回答；**允许**站内 `<a href>`（计入正文；同 URL 全文 1 次，见 [`internal-links.md` §1.5](./internal-links.md#15-faq-内链规则)）。
+**答案格式**：首句直接回答；**允许**站内 `<a href>`（计入正文；同 URL 全文 1 次，见 [`internal-links.md` §1.5](internal-links.md#15-faq-内链规则)）。
 
 ---
 
@@ -495,7 +495,7 @@ FAQ 由 `FAQ` 组件渲染，**不要**在内容里再手工加一层「区块�
 （共 7 问，中英文条数一致）
 ```
 
-**Step 08 注册**：同步写入 `faq-data.json`（键 = `pageUrl` 路径，如 `/zh/blog/{slug}`），否则线上 FAQ 组件不渲染。见 [`anatomy.md`](./anatomy.md) §二·一。
+**Step 08 注册**：同步写入 `faq-data.json`（键 = `pageUrl` 路径，如 `/zh/blog/{slug}`），否则线上 FAQ 组件不渲染。见 [`anatomy.md`](anatomy.md) §二·一。
 
 **禁止**：在 `## 常见问题 {#faq}` 前再写一层 H2；FAQ 答案中同一 URL 出现超过 1 次（R4）。
 
@@ -598,7 +598,7 @@ FAQ 组件从 `faq-data.json` 生成 FAQPage JSON-LD；Brief 采用时 Step 08 �
 <!-- references injected from references-data.json -->
 ```
 
-**Step 08 注册**：同步写入 `references-data.json`（`items[]` 字段：`title`, `url`, `source?`, `date?`, `description?`）。见 [`anatomy.md`](./anatomy.md) §二·一。
+**Step 08 注册**：同步写入 `references-data.json`（`items[]` 字段：`title`, `url`, `source?`, `date?`, `description?`）。见 [`anatomy.md`](anatomy.md) §二·一。
 
 > **禁止**用 `<!-- block:section -->` + `## 参考文献 {#references}`：会与 JSON 侧车 `References` 组件重复渲染 H2 标题。占位须用 `block:references`（无 md 标题行）。
 
@@ -608,7 +608,7 @@ FAQ 组件从 `faq-data.json` 生成 FAQPage JSON-LD；Brief 采用时 Step 08 �
 - **链接位置**：优先在被引用机构/公司名称上
 - **链接样式**：`text-primary hover:underline`
 - **链接属性**：`target="_blank"`、`rel="noopener noreferrer"`（正文引用不设 nofollow，便于读者溯源）
-- **UTM**：正文中的引用链接使用 `addUtmToExternalLink()`，参见 [`internal-links.md`](./internal-links.md#part-8-外链utm-与-nofollow) Part 8
+- **UTM**：正文中的引用链接使用 `addUtmToExternalLink()`，参见 [`internal-links.md`](internal-links.md#part-8-外链utm-与-nofollow) Part 8
 
 **说明**：md `#references` section（底部列表）使用 `getExternalLinkRel()`；正文中**手动**添加的引用链接使用 `rel="noopener noreferrer"` 即可。
 
@@ -1101,7 +1101,7 @@ node scripts/ops/normalize-references-in-json.mjs
 
 ## 三、内链规范
 
-**Tools 类目**：除本节通用规则外，已约定的相邻 Tools 速查见 [alignify-internal-links.md 附录 B](./internal-links.md#附录-b相邻-tools-速查邻居矩阵)；完整意图表见 `alignify-keywords-tools.md`。
+**Tools 类目**：除本节通用规则外，已约定的相邻 Tools 速查见 [alignify-internal-links.md 附录 B](internal-links.md#附录-b相邻-tools-速查邻居矩阵)；完整意图表见 `alignify-keywords-tools.md`。
 
 ### 3.1 位置
 
@@ -1240,12 +1240,12 @@ node scripts/ops/normalize-references-in-json.mjs
 |------|------|
 | **首段 BLUF** | Marketing / Insights 文 H2 下首段 ≥3 句，直答本节要解决的问题 |
 | **H3 粒度** | 一个 H3 = 一个可独立扫读的小论点或场景 |
-| **内链** | 任务句内嵌；每段 ≤1 链（见 [`internal-links.md`](./internal-links.md)） |
+| **内链** | 任务句内嵌；每段 ≤1 链（见 [`internal-links.md`](internal-links.md)） |
 | **How To 替代** | 策略/观点文用分析节表达落地，**不**套 step-1~N（见 [3.5](#part-35-how-to--如何选择可选) 适用范围） |
 
 ### 字数参考
 
-见 [`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md) Part 3；以说清为准，勿为凑节加空 H2。
+见 [`word-counts.md`](word-counts.md) · [`copy-quality.md`](copy-quality.md) Part 3；以说清为准，勿为凑节加空 H2。
 
 ---
 
@@ -1321,7 +1321,7 @@ node scripts/ops/normalize-references-in-json.mjs
 
 **A 层硬底线**：每个产品 H3 区块至少包含 **2 个产品**。单产品无法构成「排名/推荐」。
 
-**B 层新文默认**（`/blog/` best-ranking）：**3 款即可** — Brief 锁定 roster 后不必凑大盘点。完整规则 → [`product-coverage.md`](./product-coverage.md)。
+**B 层新文默认**（`/blog/` best-ranking）：**3 款即可** — Brief 锁定 roster 后不必凑大盘点。完整规则 → [`product-coverage.md`](product-coverage.md)。
 
 **C 层软上限**：新文 Best H3 **≤5 款**；超过须在 Brief 说明 + 用户确认。Flagship 深度来自 Moat/选型框架，**非**产品条数。
 
@@ -1460,15 +1460,9 @@ shortDescription 渲染为 `[序号]. [产品名]：[shortDescription]` 中冒�
 
 ### 5.3 Firecrawl 截图规范
 
-| 参数 | 值 | 说明 |
-|------|-----|------|
-| `fullPage` | `false` | 仅截首屏（viewport），非全页截图 |
-| `quality` | `90` | JPEG 质量（推荐 90；最低 85） |
-| 输出格式 | `.jpg` | 统一使用 JPEG |
-| 命名规则 | `{product-slug}.jpg` | 小写、连字符分隔、无 vendor 前缀 |
-| 存放路径 | `public/tools/{page-slug}/{product-slug}.jpg` | 按页面分组 |
+URL 选型、capture manifest、批量抓取脚本与质量门控以 [04-screenshots.md](04-screenshots.md) §一–§三 为 SSOT；本页 5.1 的 registry / `fullPage: false`（首屏）说明照常有效。
 
-**独立使用视频预览**（非 BestTools）：参见 [product-screenshots.md](./product-screenshots.md)
+**独立使用视频预览**（非 BestTools）：参见 [04-screenshots.md](04-screenshots.md)
 
 ---
 
@@ -1520,7 +1514,7 @@ shortDescription 渲染为 `[序号]. [产品名]：[shortDescription]` 中冒�
 
 ## 九、图片字段（md 产品块）
 
-正文产品块使用 Markdown 图片语法 `![alt](/tools/{page-slug}/{product}.jpg)`；YouTube 预览见 [product-screenshots.md](./product-screenshots.md)。
+正文产品块使用 Markdown 图片语法 `![alt](/tools/{page-slug}/{product}.jpg)`；YouTube 预览见 [04-screenshots.md](04-screenshots.md)。
 
 ---
 
@@ -1856,7 +1850,7 @@ Table 组件通过 ArticleFromJson 以两种 JSON block type 调度：
 
 ## 一、位置
 
-正文末尾，**结论之前**（Tools 页面常见顺序见 [`templates.md`](./templates.md#part-2-tools--best-ranking) §2.4）：
+正文末尾，**结论之前**（Tools 页面常见顺序见 [`templates.md`](templates.md#part-2-tools--best-ranking) §2.4）：
 
 ```
 … 应用场景 → 如何选择 → 结论 → FAQ
@@ -1995,9 +1989,9 @@ Table 组件通过 ArticleFromJson 以两种 JSON block type 调度：
 |----------|---------|
 | **Tools** | 可点名具体工具与选择建议（Intercom、OpusClip、Toolify…）；步骤覆盖选型分叉、核验与落地 |
 | **SEO** | 偏实施步骤（怎么配置、怎么验证），可含 HowTo 但不重述技术正文；纯文字 |
-| **Marketing** | **仅方法驱动型设置**（keyword-research、localization-strategy 等）；策略判断/观点文（rate-limit-reset 类）**不设**，落地用分析节表达。设置时禁止链接、产品名、工具名，用通用表述——见 [`templates.md`](./templates.md#part-3-marketing) §3.2 |
+| **Marketing** | **仅方法驱动型设置**（keyword-research、localization-strategy 等）；策略判断/观点文（rate-limit-reset 类）**不设**，落地用分析节表达。设置时禁止链接、产品名、工具名，用通用表述——见 [`templates.md`](templates.md#part-3-marketing) §3.2 |
 
-页面类型的 section 顺序与内链分布细则见 [`templates.md`](./templates.md) Part 2–3 与 [internal-links.md §3.1.5](./internal-links.md#135-tools-内链均衡分布阅读体验优先--锚文本规范--跨板块预留)。
+页面类型的 section 顺序与内链分布细则见 [`templates.md`](templates.md) Part 2–3 与 [internal-links.md §3.1.5](internal-links.md#135-tools-内链均衡分布阅读体验优先--锚文本规范--跨板块预留)。
 
 ---
 
@@ -2054,9 +2048,9 @@ npm run build
 
 ## 与其他文档的关系
 
-- **[templates.md Part 2](./templates.md#part-2-tools--best-ranking)**：Tools 特有规则仅保留「可含工具名 + 标题示例」，其余指向本文件。
-- **[templates.md Part 3 §3.2](./templates.md#part-3-marketing)**：Marketing 特有规则（禁产品名/链接）见上文 [Part 5 · 页面类型差异](#part-5--页面类型差异)。
-- **[rules/README.md](./README.md)**：组件索引表指向本文件。
+- **[templates.md Part 2](templates.md#part-2-tools--best-ranking)**：Tools 特有规则仅保留「可含工具名 + 标题示例」，其余指向本文件。
+- **[templates.md Part 3 §3.2](templates.md#part-3-marketing)**：Marketing 特有规则（禁产品名/链接）见上文 [Part 5 · 页面类型差异](#part-5--页面类型差异)。
+- **[INDEX.md](INDEX.md)**：组件索引表指向本文件。
 - **common-errors.md**：howTo 相关条目指向本文件，长期以本文为准。
 
 ---
@@ -2070,8 +2064,8 @@ npm run build
 # Part 4 · 结论
 
 > **渲染**：md 正文 `## 结论 {#conclusion}`；FAQ 在其后由页底 `FAQ.tsx` 全局渲染。  
-> **内链专规**：本节 §4.4；全站规则见 [`internal-links.md`](./internal-links.md)。  
-> **篇幅数字索引**：[`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
+> **内链专规**：本节 §4.4；全站规则见 [`internal-links.md`](internal-links.md)。  
+> **篇幅数字索引**：[`word-counts.md`](word-counts.md) · [`copy-quality.md`](copy-quality.md)
 
 <a id="part-41-定位与作用"></a>
 
@@ -2116,7 +2110,7 @@ npm run build
 
 ## 4.2.3 篇幅（软约束 · 内容优先）
 
-> **定位说明**：篇幅区间是 **C 层软建议**（见 [copy-quality.md Part 3 §3.1](./copy-quality.md#31-三级体系a--b--c)），**不是硬性红线**。审校与生成时**优先看内容**：论证完整、信息对等、无注水 > 字数达标。**切勿为贴数字删补句式**；跨页优先对齐语气与结构，正文字数允许随主题难度浮动，不强制逐字相等。
+> **定位说明**：篇幅区间是 **C 层软建议**（见 [copy-quality.md Part 3 §3.1](copy-quality.md#31-三级体系a--b--c)），**不是硬性红线**。审校与生成时**优先看内容**：论证完整、信息对等、无注水 > 字数达标。**切勿为贴数字删补句式**；跨页优先对齐语气与结构，正文字数允许随主题难度浮动，不强制逐字相等。
 
 | 语言 | 参考区间 | 结构 |
 |------|---------|------|
@@ -2159,7 +2153,7 @@ npm run build
 
 ## 4.2.4 时效核对句（策略 / 事件文）
 
-涉及厂商政策、限额、Attribution 默认、定价的案例文，**可以**提醒读者核对官方源，但须遵守 [`presentation.md`](./presentation.md) **E42**：
+涉及厂商政策、限额、Attribution 默认、定价的案例文，**可以**提醒读者核对官方源，但须遵守 [`presentation.md`](presentation.md) **E42**：
 
 - **禁止**在 `#conclusion` **之后**或结论 section **内单独成段**写「政策随产品更新；请核对 FAQ / Changelog / Usage 页」
 - **须**并入结论**最后一段**末句，与 actionable 收束同段
@@ -2350,9 +2344,9 @@ npm run build                 # 部署仓：全量构建
 
 ## 4.7 交叉引用
 
-- 结论内链全站规则：[`internal-links.md`](./internal-links.md) · 本节 Part 4.4
-- 篇幅数字索引：[`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
-- 交叉引用：[`internal-links.md`](./internal-links.md) · [`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
+- 结论内链全站规则：[`internal-links.md`](internal-links.md) · 本节 Part 4.4
+- 篇幅数字索引：[`word-counts.md`](word-counts.md) · [`copy-quality.md`](copy-quality.md)
+- 交叉引用：[`internal-links.md`](internal-links.md) · [`word-counts.md`](word-counts.md) · [`copy-quality.md`](copy-quality.md)
 
 ---
 
@@ -2431,7 +2425,7 @@ npm run build                 # 部署仓：全量构建
 1. **承接正文，不复读 Meta description** — 用结论句、Author POV 或「我会把这篇文章收成…」的提炼  
 2. **title = 可独立传播的 punchline** — 读者没读全文也能 get 核心判断  
 3. **description = 下一步行动的理由** — 为什么找 Alignify / 为什么现在动  
-4. **双语独立撰写** — EN 不是 ZH 直译；语气对齐 [`presentation.md`](./presentation.md)  
+4. **双语独立撰写** — EN 不是 ZH 直译；语气对齐 [`presentation.md`](presentation.md)  
 5. **Hub 页走 `exact`** — 仅 `/tools`、`/marketing` 等频道首页；**文章详情页一律 `slugs`**
 
 ## 5.4 Brief 必填字段（Step 02 定稿）
@@ -2466,7 +2460,7 @@ node E:\clients\Alignify\scripts\ops\merge-cta-slugs.mjs --check
 | EN 逐句翻译 ZH CTA | 独立重写 |
 | slug 键写错（如 `git-commit`） | 与 `{slug}.md` 文件名一致 |
 
-见 [`common-errors.md`](./common-errors.md) **E43**。
+见 [`common-errors.md`](common-errors.md) **E43**。
 
 ---
 
@@ -2505,11 +2499,11 @@ node E:\clients\Alignify\scripts\ops\merge-cta-slugs.mjs --check
 
 | 主题 | 文档 | 说明 |
 |------|------|------|
-| 各节字数表 | [`word-counts.md`](./word-counts.md) | TL;DR / 什么是 / 结论 / FAQ 数字索引 |
+| 各节字数表 | [`word-counts.md`](word-counts.md) | TL;DR / 什么是 / 结论 / FAQ 数字索引 |
 | Best H3 客户 Tier | 本节 Part 3.3 §3.3.0 | Tier 0/1/2 保留/突出；写法见 Part 3.3 |
-| Best 产品截图 | [`product-screenshots.md`](./product-screenshots.md) | Step 04 操作；非节写法 |
-| 跨页五维 / Swap Test | [`copy-quality.md`](./copy-quality.md) | M1/M2/M3 · 去模板化 |
-| BLUF / Author voice | [`presentation.md`](./presentation.md) | 全节通用 |
+| Best 产品截图 | [`04-screenshots.md`](04-screenshots.md) | Step 04 操作；非节写法 |
+| 跨页五维 / Swap Test | [`copy-quality.md`](copy-quality.md) | M1/M2/M3 · 去模板化 |
+| BLUF / Author voice | [`presentation.md`](presentation.md) | 全节通用 |
 
 ---
 

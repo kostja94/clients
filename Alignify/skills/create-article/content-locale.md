@@ -1,10 +1,10 @@
 # 双语正文管线（唯一真相源）
 
-> **位置**：`skills/create-article/rules/content-locale.md`  
+> **位置**：`skills/create-article/content-locale.md`  
 > **适用**：Step 05–06（中文）· Step 09–09c（英文 + 对等验收）  
-> **版本**：v1.1 · 2026-08-27  
+> **版本**：v1.2 · 2026-09-09  
 > **原则**：ZH/EN **各自 native 成稿**；**信息对等、表达独立**；**禁止**「先写一语种再翻译另一语种」。  
-> **关联**：[`presentation.md`](./presentation.md) · [`extractability-checklist.md`](./extractability-checklist.md) · [`sections.md`](./sections.md) · [`word-counts.md`](./word-counts.md) · [`copy-quality.md`](./copy-quality.md)
+> **关联**：[`presentation.md`](presentation.md) · [`sections.md`](sections.md) · [`word-counts.md`](word-counts.md) · [`copy-quality.md`](copy-quality.md) · Extractability 检查见本文件 §3.4
 
 ---
 
@@ -71,9 +71,9 @@
 | Article Brief | Step 02 定稿：One-line thesis · Moat · Answer Blocks · Planned H2 · Author POV |
 | **锚点 id 表** | Brief Section Plan：`{#kebab-case-id}` ZH/EN **必须相同** |
 | SSOT / Research | `knowledge/` 或 Brief `SSOT:` 路径 |
-| 节型规范 | [`sections.md`](./sections.md) Part 0 + 实际采用的 Part |
-| 术语 | [`locale-glossary.md`](./locale-glossary.md) · [`locale-glossary.json`](./locale-glossary.json) |
-| GTM/PLG 禁腔 | [`gtm-prose-voice.md`](./gtm-prose-voice.md)（Marketing/Blog 必过） |
+| 节型规范 | [`sections.md`](sections.md) Part 0 + 实际采用的 Part |
+| 术语 | [`locale-glossary.md`](locale-glossary.md) · [`locale-glossary.json`](locale-glossary.json) |
+| GTM/PLG 禁腔 | [`writing-voice.md`](writing-voice.md)（Marketing/Blog 必过） |
 
 ---
 
@@ -115,11 +115,11 @@ Brief 锁定（Step 02）
 |------|-----------|------|
 | 05 | Part 2 | ZH md 初稿 + 05b 扩写 |
 | 06 | Part 3 | ZH 地道化 + Extractability |
-| 07 | — | 内链（[`07-internal-links.md`](../07-internal-links.md)） |
-| 08 | — | Meta + JSON + CTA（[`08-meta-config.md`](../08-meta-config.md)） |
+| 07 | — | 内链（[`internal-links.md`](internal-links.md)） |
+| 08 | — | Meta + JSON + CTA（[`08-meta-config.md`](08-meta-config.md)） |
 | 09 | Part 4 | EN **独立**成稿 + 09b Pass |
 | 09c | Part 5 | ZH/EN 信息对等对比 |
-| 10 | — | Gate C（[`10-quality-gates.md`](../10-quality-gates.md)） |
+| 10 | — | Gate C（[`quality-gates.md`](quality-gates.md)） |
 
 ---
 
@@ -129,14 +129,14 @@ Brief 锁定（Step 02）
 
 > **前置**：Brief 定稿 + Gate 0R Pass  
 > **产出**：`content/{channel}/zh/{slug}.md`  
-> **规范**：[`presentation.md`](./presentation.md) · [`extractability-checklist.md`](./extractability-checklist.md)
+> **规范**：[`presentation.md`](presentation.md) · Extractability 检查见本文件 §3.4
 
 ## 2.1 Gate B（动笔前）
 
 - [ ] Article Brief 已锁定（Moat + Answer Blocks 3–5）
 - [ ] Planned H2 与 Brief 一致；**锚点 id 表**已写入 Brief（EN 轨复用）
-- [ ] **Outline 3.5**（Brief `BatchCount ≥2`）：[`outline-cross-check.md`](./outline-cross-check.md) Pass；**单篇** → 输出 `Outline cross-check: N/A — single article`
-- [ ] Brief **Copy quality** 已填（Mode · Hero fault；M2 含 cluster + swap neighbors）— 见 [`copy-quality.md`](./copy-quality.md) 附录 A
+- [ ] **Outline 3.5**（Brief `BatchCount ≥2`）：[`cross-article-audit.md`](cross-article-audit.md) Pass；**单篇** → 输出 `Outline cross-check: N/A — single article`
+- [ ] Brief **Copy quality** 已填（Mode · Hero fault；M2 含 cluster + swap neighbors）— 见 [`copy-quality.md`](copy-quality.md) 附录 A
 
 ## 2.2 路径
 
@@ -157,22 +157,22 @@ Brief 锁定（Step 02）
 5. **若 Brief 采用 FAQ**：Step 08 注册 `faq-data.json` **7 问** — 首句即答，与正文相似度 <30%
 6. 段落优先 — 禁伪列表（见 `presentation.md`）
 7. **含表 H2**：先 ≥3 句 BLUF → `childrenHtml` → 表后 ≥2 句（E40–E41）
-8. 节规范按**实际采用的节**查阅 [`sections.md`](./sections.md) Part 0 + Part 3.x
+8. 节规范按**实际采用的节**查阅 [`sections.md`](sections.md) Part 0 + Part 3.x
 9. **禁止**正文 meta 句：「落地细节进 skills / runbook…」（E49）
-10. **go/no-go 矩阵**仅当 Brief 勾选且 `marketing-strategy` + GTM 适用性题材（[`templates.md`](./templates.md#part-3-marketing) §3.2 — **参考菜单**，非施工图）
+10. **go/no-go 矩阵**仅当 Brief 勾选且 `marketing-strategy` + GTM 适用性题材（[`templates.md`](templates.md#part-3-marketing) §3.2 — **参考菜单**，非施工图）
 
 > **templates 用法**：只读 Part 0 + **当前 articleType 对应 Part**（Tools→2 · Marketing→3 · SEO→4 · Insights→5）的节级建议；**禁止**按模板增删 H2。
 
 ## 2.4 05b 深度扩写（动笔后、Step 06 前）
 
 - 每 major H2 含 **事实 + 场景 + 判断** 中至少两类（见 Part 0.2）
-- 对照 [`word-counts.md`](./word-counts.md) 与 [`templates.md`](./templates.md) 节级建议区间；**不足则补论证**，不堆同义句
+- 对照 [`word-counts.md`](word-counts.md) 与 [`templates.md`](templates.md) 节级建议区间；**不足则补论证**，不堆同义句
 - 从 SSOT 抽**事件时间线**与**可核实数字**，勿只留表格摘要
 - **删列表 / 改 prose 时**：同步删除孤立 `**标签：**` 行（E41）
 
 ## 2.5 05c 呈现债预检（Step 06 前）
 
-对照 [`presentation.md`](./presentation.md) §Step 06 / 10；含 `childrenHtml` 的每个 H2 人工过 E40–E42。
+对照 [`presentation.md`](presentation.md) §Step 06 / 10；含 `childrenHtml` 的每个 H2 人工过 E40–E42。
 
 **Best-ranking Meta**（Step 08）：title 含「最佳」+ `（2026）`；H1 不含最佳/年份
 
@@ -189,7 +189,7 @@ Brief 锁定（Step 02）
 - [ ] 主体节覆盖 Brief Answer Blocks
 - [ ] TL;DR / FAQ 与 Brief 一致
 - [ ] Moat 已兑现
-- [ ] **best-ranking**：产品 H3 定稿前过 [`sections.md`](./sections.md) Part 3.3 §3.3.0（客户 Tier）
+- [ ] **best-ranking**：产品 H3 定稿前过 [`sections.md`](sections.md) Part 3.3 §3.3.0（客户 Tier）
 
 ---
 
@@ -200,16 +200,16 @@ Brief 锁定（Step 02）
 ## 3.1 流程
 
 ```
-1. 术语统一（[`locale-glossary.md`](./locale-glossary.md) Part 1–2 · [`locale-glossary.json`](./locale-glossary.json)）
-2. **GTM 禁腔**（Marketing/Blog：[`gtm-prose-voice.md`](./gtm-prose-voice.md) §2 — 禁分轨/同族分流/组合拳/姊妹篇等）
-3. **中文英混 Pass**（[`zh-en-mixing.md`](./zh-en-mixing.md) — export→导出、watermark→水印、playbook/gate/rollout 等叙述层禁裸英文；表内 GTM 叙述同步中文化）
+1. 术语统一（[`locale-glossary.md`](locale-glossary.md) Part 1–2 · [`locale-glossary.json`](locale-glossary.json)）
+2. **GTM 禁腔**（Marketing/Blog：[`writing-voice.md`](writing-voice.md) Part A §2 — 禁分轨/同族分流/组合拳/姊妹篇等）
+3. **中文英混 Pass**（[`writing-voice.md`](writing-voice.md) Part B — export→导出、watermark→水印、playbook/gate/rollout 等叙述层禁裸英文；表内 GTM 叙述同步中文化）
 4. 去英译腔 — 箭头链改 prose；英文术语降频，中文主称
 4. BLUF 三处复核（B1 TL;DR · B2 每 major H2 首段 · B3 FAQ 首句）
 5. Author POV — 第一人称判断可读、可证伪
-6. Extractability — Answer Blocks 可独立成 40–60 字段（见 extractability-checklist.md）
+6. Extractability — Answer Blocks 可独立成 40–60 字段（见 §3.4）
 7. 段落节奏 — 长段≥3；伪列表清零；E40–E42
 8. FAQ vs 正文 spot-check（相似度 <30%）
-9. **Swap Test** 抽样 ≥3 处 + 独特性自评 ≥ L2（L0 不得 Pass）— 见 [`copy-quality.md`](./copy-quality.md) Part 2·4
+9. **Swap Test** 抽样 ≥3 处 + 独特性自评 ≥ L2（L0 不得 Pass）— 见 [`copy-quality.md`](copy-quality.md) Part 2·4
 10. `audit-locale-voice.py --slug {slug}`（含 `naked_loanwords` · `localize_required`；Fail 则回改）
 11. audit-marketing-md-render.py（Marketing/Blog 策略文；E40–E42）
 ```
@@ -234,6 +234,42 @@ Brief 锁定（Step 02）
 
 ---
 
+## 3.4 Extractability 检查（Step 06）
+
+> 与 Brief Answer Blocks、BLUF、SelfCheck 维度 4–5 一致；原 `extractability-checklist`（v1.0 · 2026-08-26）并入本节。Step 06 流程见 §3.1，术语见 §3.2。
+
+### Different, not better
+
+Draft 前对照 Brief **One-line thesis**：是在 paraphrase SERP Top 3，还是提供 **Top 3 没有的决策维度**？SERP 同句测试见 `copy-quality.md` Part 1。
+
+### BLUF 三处
+
+见 `presentation.md`。Step 06 润色后逐项 Pass。
+
+### Claim 原子性
+
+| 检查 | Pass |
+|------|------|
+| 段首 claim | 每段首 1–2 句即陈述该段唯一主张 |
+| 指代可解析 | 「它/上述」在同段可还原 |
+| Chunk 独立 | 随机抽 3 段，单段可答一个子问题 |
+
+### Answer Blocks（Flagship 必填）
+
+Brief 声明 3–5 个；每个对应 major H2，须可独立成 **40–60 词**段。
+
+- [ ] 每个 block 在正文有对应 H2
+- [ ] 随机抽 3 个 block，单拎可答一个子问题
+
+### Judgment 信号
+
+| Pass | Fail |
+|------|------|
+| 「适合 {场景}…」「若预算…则…」 | 裸「最佳/唯一/明显更好」 |
+| 判断句同段或前段有数据/案例/限定 | 无来源绝对化比较 |
+
+---
+
 <a id="part-4-step-09-英文独立成稿"></a>
 
 # Part 4 · Step 09 · 英文独立成稿
@@ -255,13 +291,13 @@ Brief 锁定（Step 02）
 
 - 对照 Part 0.2 英文正向/负向表；朗读一遍
 - 改 telegraphic 句与 `→`
-- **Swap Test**（英文独立轴，非翻译腔检查）— 同 [`copy-quality.md`](./copy-quality.md) Part 2
+- **Swap Test**（英文独立轴，非翻译腔检查）— 同 [`copy-quality.md`](copy-quality.md) Part 2
 - 跑 `audit-locale-voice.py --slug {slug}`
 - Marketing/Blog 策略文：跑 `audit-marketing-md-render.py`
 
 ## 4.3 字数
 
-Marketing 叙事须**饱满**（见 [`word-counts.md`](./word-counts.md)）；Best 产品段 EN ≥280 字符。
+Marketing 叙事须**饱满**（见 [`word-counts.md`](word-counts.md)）；Best 产品段 EN ≥280 字符。
 
 ## 4.4 A 层检查（09b 后）
 
@@ -275,7 +311,7 @@ Marketing 叙事须**饱满**（见 [`word-counts.md`](./word-counts.md)）；Be
 ## 4.5 B 层
 
 - [ ] Meta 已在 `*-meta.ts` 注册 en 键
-- [ ] **Final CTA**：`cta-config.json` → `slugs.{slug}.en`（见 [`sections.md`](./sections.md) Part 5）
+- [ ] **Final CTA**：`cta-config.json` → `slugs.{slug}.en`（见 [`sections.md`](sections.md) Part 5）
 
 ---
 
@@ -354,7 +390,7 @@ Fail → **不得**用同义词替换凑字数。
 
 # 附录 A · 禁腔对照速查
 
-> **SSOT**：[`locale-glossary.md`](./locale-glossary.md) 附录 · [`gtm-prose-voice.md`](./gtm-prose-voice.md)（GTM 相邻文）· `locale-glossary.json` → `forbidden_in_*` / `forbidden_regex_*`  
+> **SSOT**：[`locale-glossary.md`](locale-glossary.md) 附录 · [`writing-voice.md`](writing-voice.md)（GTM 相邻文）· `locale-glossary.json` → `forbidden_in_*` / `forbidden_regex_*`  
 > 地道 workflow 判据见 Part 0.2；Step 06/09b 须对照附录 Pass。
 
 ---
@@ -365,5 +401,6 @@ Fail → **不得**用同义词替换凑字数。
 |------|------|
 | 2026-08-27 | 合并 localization-quality · 05/06/09；新增双 Subagent 独立成稿 + 09c 对等对比 |
 | 2026-08-27 | 术语 SSOT 迁至 locale-glossary；附录 A 改指针 |
+| 2026-09-09 | 并入 extractability-checklist（Draft / Step 06 检查）为 §3.4；原文件删除 |
 
-*content-locale.md · v1.0 · 2026-08-27*
+*content-locale.md · v1.2 · 2026-09-09*

@@ -13,7 +13,7 @@ FINAL_CTA = ROOT / "final-cta.md"
 
 HEADER = """# Alignify 章节规范（唯一真相源）
 
-> **位置**：`skills/create-article/rules/sections.md`  
+> **位置**：`skills/create-article/sections.md`  
 > **格式**：`content/{channel}/{locale}/{slug}.md` + JSON 侧车（TL;DR / FAQ / References）  
 > **Last updated**：2026-08-27  
 > **说明**：所有章节写法、选节决策、JSON 侧车、**结论**、**Final CTA** 规则**仅在本文件维护**。结构映射见 [`anatomy.md`](./anatomy.md)；内链见 [`internal-links.md`](./internal-links.md)。
@@ -146,7 +146,7 @@ APPENDIX_C = """<a id="附录-c-相关文档索引"></a>
 |------|------|------|
 | 各节字数表 | [`word-counts.md`](./word-counts.md) | TL;DR / 什么是 / 结论 / FAQ 数字索引 |
 | Best H3 客户 Tier | 本节 Part 3.3 §3.3.0 | Tier 0/1/2；写法见 Part 3.3 |
-| Best 产品截图 | [`product-screenshots.md`](./product-screenshots.md) | Step 04 操作；非节写法 |
+| Best 产品截图 | [`04-screenshots.md`](./04-screenshots.md) | Step 04 操作；非节写法 |
 | 跨页五维 / Swap | [`copy-quality.md`](./copy-quality.md) |
 | BLUF / Author voice | [`presentation.md`](./presentation.md) | 全节通用 |
 
@@ -225,7 +225,7 @@ def transform_conclusion(body: str) -> str:
     # drop migration table pointing to old conclusion.md as SSOT
     text = "\n".join(out)
     text = text.replace(
-        "`skills/create-article/rules/templates.md` | 结论位置/篇幅/内链见本文件 §2/§3/§4 与各 Part",
+        "`skills/create-article/templates.md` | 结论位置/篇幅/内链见本文件 §2/§3/§4 与各 Part",
         "`sections.md` Part 4 | 结论 SSOT",
     )
     text = re.sub(

@@ -1,7 +1,7 @@
 # Page Audit — 已发稿质检（自包含）
 
 > **用途**：audit-optimize 改文后（或 retro 深审）的 P0 + 十维验收。  
-> **阈值同步**：分数线若调整，须与 [`../../create-article/rules/final-audit.md`](../../create-article/rules/final-audit.md) 保持一致。本文件完整自包含，**不必**打开 create-article SKILL。
+> **阈值同步**：分数线若调整，须与 [`../../create-article/final-audit.md`](../../create-article/final-audit.md) 保持一致。本文件完整自包含，**不必**打开 create-article SKILL。
 
 ---
 

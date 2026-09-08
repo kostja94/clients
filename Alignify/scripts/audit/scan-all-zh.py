@@ -18,7 +18,7 @@ a = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(a)  # type: ignore
 
 GLOSSARY = json.loads(
-    (CLIENTS / "skills/create-article/rules/locale-glossary.json").read_text("utf-8")
+    (CLIENTS / "skills/create-article/locale-glossary.json").read_text("utf-8")
 )
 
 

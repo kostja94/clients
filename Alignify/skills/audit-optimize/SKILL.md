@@ -19,7 +19,7 @@
 | 场景 | 改用 |
 |------|------|
 | 从零写新 slug / 整篇重写 | [`../create-article/SKILL.md`](../create-article/SKILL.md) |
-| 新稿 Step 10 后的发布前终审 | create-article [`11-final-audit.md`](../create-article/11-final-audit.md)（**新会话**） |
+| 新稿 Step 10 后的发布前终审 | create-article [`final-audit.md`](../create-article/final-audit.md)（**新会话**） |
 | 知识块选题 / 关键词 / 产品池 | [`../knowledge-block/SKILL.md`](../knowledge-block/SKILL.md) |
 | 发布后 SEO 运维（sitemap / IndexNow / GSC / OG） | [`../ops/README.md`](../ops/README.md) |
 
@@ -68,14 +68,14 @@
 
 ## 按需点读规则（非 create-article SKILL）
 
-写作 / 内链 / Meta **规则正文**仍在 `create-article/rules/`（SSOT）。本 skill **禁止**要求先读 create-article 的 `SKILL.md`。一次最多再读 **2** 个 rules 文件。
+写作 / 内链 / Meta **规则正文**仍在 `create-article/`（SSOT）。本 skill **禁止**要求先读 create-article 的 `SKILL.md`。一次最多再读 **2** 个 rules 文件。
 
 | 场景 | 点读 |
 |------|------|
-| 内链 R 规则 / Marketing M1–M11 | [`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md)（对应 Part）· 速查 [`references/rules-quickref.md`](./references/rules-quickref.md) |
-| Meta title / description | [`../create-article/rules/meta.md`](../create-article/rules/meta.md) |
-| 结构 / frontmatter 禁项 | [`../create-article/rules/anatomy.md`](../create-article/rules/anatomy.md) |
-| 双语地道 | [`../create-article/rules/content-locale.md`](../create-article/rules/content-locale.md) 对应 Part |
+| 内链 R 规则 / Marketing M1–M11 | [`../create-article/internal-links.md`](../create-article/internal-links.md)（对应 Part）· 速查 [`references/rules-quickref.md`](./references/rules-quickref.md) |
+| Meta title / description | [`../create-article/meta.md`](../create-article/meta.md) |
+| 结构 / frontmatter 禁项 | [`../create-article/anatomy.md`](../create-article/anatomy.md) |
+| 双语地道 | [`../create-article/content-locale.md`](../create-article/content-locale.md) 对应 Part |
 | 质检打分 | **本目录** [`rules/page-audit.md`](./rules/page-audit.md)（完整自包含） |
 
 ---

@@ -2,7 +2,7 @@
 
 > **Flagship**：除下表节级底线外，全文叙事须**内容饱满**（场景 + 事件 + 判断），Brief `word count target` 为参考；**禁止**为凑字加空话。  
 > **Marketing / Blog 策略文**（叙事正文 md）：建议 ZH **≥2,800 汉字** / EN **≥2,000 words** — 低于此通常说明节内缺场景或判断，须扩写而非堆词。Tools 榜单文 ZH **≥3500 字** / EN **≥2800 words**（不含 frontmatter）。  
-> **地道化**：见 [`content-locale.md`](./content-locale.md) Part 0·3·4 · [`locale-glossary.md`](./locale-glossary.md)
+> **地道化**：见 [`content-locale.md`](content-locale.md) Part 0·3·4 · [`locale-glossary.md`](locale-glossary.md)
 > **版本**：v2.3 · 2026-08-27
 
 ---
@@ -24,7 +24,7 @@
 | 如何选择 introduction | 40 字 | 40–120 字 | **仅选型/操作类**（tools、seo 视题材）采用；Marketing/Blog 策略文默认不设此节 |
 | 如何选择 steps | ×3–5 步 | 3–5 步 | 每步 `id` + `title` + description；按主题复杂度定，**不硬性 5 步** |
 | 如何选择 description/步 | 80 字 | 120–200 字 | <80 字视为 stub，不达标 |
-| 结论 | 2 段 | 2–3 段（**约 180–320 字**） | ≥2 段否则仓促；**软约束·内容优先**，非硬性红线；篇幅与例外见 [`sections.md`](./sections.md) Part 4.2.3 |
+| 结论 | 2 段 | 2–3 段（**约 180–320 字**） | ≥2 段否则仓促；**软约束·内容优先**，非硬性红线；篇幅与例外见 [`sections.md`](sections.md) Part 4.2.3 |
 | FAQ items | ×7 问 | 7 问 | 中英文各 ≥7 问 |
 | FAQ answer | 40 字 | 40–80 字 | <40 字答案不充分 |
 
@@ -47,7 +47,7 @@
 | 如何选择 introduction | 40 词 | 40–80 词 | **仅选型/操作类**采用；Marketing/Blog 策略文默认不设此节 |
 | 如何选择 steps | ×3–5 步 | 3–5 步 | 每步 `id` + `title` + description；按主题复杂度定 |
 | 如何选择 description/步 | 80 词/字符 | 100–180 词 | — |
-| 结论 | 2 段 | 2–3 段（约 120–220 词） | 软约束·内容优先，见 [`sections.md`](./sections.md) Part 4.2.3 |
+| 结论 | 2 段 | 2–3 段（约 120–220 词） | 软约束·内容优先，见 [`sections.md`](sections.md) Part 4.2.3 |
 | FAQ items | ×7 问 | 7 问 | — |
 | FAQ answer | 40 词 | 40–80 词 | — |
 

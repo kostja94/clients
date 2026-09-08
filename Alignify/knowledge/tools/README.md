@@ -2,7 +2,7 @@
 
 本目录存放与 Alignify **Tools slug**（kebab-case 文件名）同名的 `*.md` 知识块；**145 个 slug 中 136 个**已按主题簇分子目录（见 §主题簇物理路径），如 [`website-builder/`](./website-builder/README.md)、[`cms/`](./cms/README.md)、[`image/`](./image/image.md)（Hub）；**slug 与路由不变**。KB 路径：`knowledge/tools/{cluster}/{slug}.md` 或根目录 `{slug}.md`（独立 slug）。便于与历史 **`/tools/[slug]`**、新文 **`/blog/[slug]`**（2026-06 起）及关键词表锚点对照。**路由策略**见 §路由与发布策略。
 
-**正式文章创作流程**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md) · 规范 [`skills/create-article/rules/`](../../skills/create-article/rules/)
+**正式文章创作流程**：[`skills/create-article/SKILL.md`](../../skills/create-article/SKILL.md) · 规范 [`skills/create-article/`](../../skills/create-article/)
 
 **知识块维护流程**（选题 · 关键词分流 · SSOT）：[`skills/knowledge-block/SKILL.md`](../../skills/knowledge-block/SKILL.md)
 

@@ -37,13 +37,13 @@ Alignify/
 | 任务 | 入口 |
 |------|------|
 | 新建任意频道文章 | [`skills/create-article/SKILL.md`](skills/create-article/SKILL.md) |
-| 新稿发布前终审 | [`skills/create-article/11-final-audit.md`](skills/create-article/11-final-audit.md)（**新会话**） |
+| 新稿发布前终审 | [`skills/create-article/final-audit.md`](skills/create-article/final-audit.md)（**新会话**） |
 | 审核并优化老文章 | [`skills/audit-optimize/SKILL.md`](skills/audit-optimize/SKILL.md) |
 | **全站内链快照** | [`skills/audit-optimize/references/site-structure-internal-links.md`](skills/audit-optimize/references/site-structure-internal-links.md) |
 | 发布后 SEO | [`skills/ops/README.md`](skills/ops/README.md) |
 | **全站发布/更新日期** | [`skills/ops/article-dates.md`](skills/ops/article-dates.md) |
 | **SEO 周报 / 分析数据** | [`seo-weekly-report/README.md`](seo-weekly-report/README.md) |
-| 规范 SSOT | [`skills/create-article/rules/README.md`](skills/create-article/rules/README.md) |
+| 规范 SSOT | [`skills/create-article/README.md`](skills/create-article/README.md) |
 | 路径修复脚本 | [`scripts/ref/fix-rules-section-links.py`](scripts/ref/fix-rules-section-links.py) |
 
 **质量档位**：Alignify **每篇均为 flagship** — Research + Moat + SelfCheck + 终审（≥80 发布，≥90 标杆）。
@@ -52,7 +52,7 @@ Alignify/
 
 **正文格式**：`content/{channel}/{locale}/{slug}.md` — TL;DR / FAQ / References **inline**，不再使用集中 JSON。
 
-**架构原则**：正文节数与顺序由**内容**决定；`rules/anatomy.md` 与 [`templates.md`](skills/create-article/rules/templates.md) 为参考菜单，A 层硬底线（结论在 FAQ 前、FAQ 7 问等）见 [`anatomy.md`](skills/create-article/rules/anatomy.md) §〇。
+**架构原则**：正文节数与顺序由**内容**决定；`anatomy.md` 与 [`templates.md`](skills/create-article/templates.md) 为参考菜单，A 层硬底线（结论在 FAQ 前、FAQ 7 问等）见 [`anatomy.md`](skills/create-article/anatomy.md) §〇。
 
 **部署仓说明**：渲染层若仍从 `tldr-data.json` / `faq-data.json` 注入，需单独在部署仓迁移；上下文规范与审计脚本已按 inline md 对齐。
 

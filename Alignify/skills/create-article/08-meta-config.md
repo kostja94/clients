@@ -1,6 +1,6 @@
 # Step 8 — Meta + Config + Final CTA + 发布日期
 
-> **规范**：[`rules/meta.md`](./rules/meta.md) · [`rules/sections.md`](./rules/sections.md) Part 5  
+> **规范**：[`meta.md`](meta.md) · [`sections.md`](sections.md) Part 5  
 > **部署仓**：`src/data/*-meta.ts` · `*-pages-config.ts` · `*-article-images.ts` · **`src/data/cta-config.json`**  
 > **日期脚本**：`scripts/ops/next-publish-date.mjs`  
 > **锚定日**：执行 Step 08 时的**实际日历日（UTC+8）**——禁止把文档示例日期当作「今天」
@@ -17,13 +17,93 @@
 | marketing-strategy | `blog-meta.ts`（**新文**） | `blog-pages-config.ts` | — |
 | insights-analysis | `blog-meta.ts`（**新文**） | `blog-pages-config.ts` | `insights-article-images.ts` |
 
-> **存量不重迁**：仍挂在 `content/marketing/`、`content/seo/` 等的 slug 继续用对应 `*-meta.ts`；**新 slug 一律** `blog-meta.ts` + `blog-pages-config.ts`。详见 [`article-types.md`](./rules/article-types.md)。
+> **存量不重迁**：仍挂在 `content/marketing/`、`content/seo/` 等的 slug 继续用对应 `*-meta.ts`；**新 slug 一律** `blog-meta.ts` + `blog-pages-config.ts`。详见 [`templates.md`](templates.md)。
+
+---
+
+<a id="taxonomy-v2"></a>
+
+## Taxonomy 分类赋值（pillar / section / contentType）
+
+pillar / section / contentType 三个 frontmatter 字段在本步随 meta 一并注册，是 **Taxonomy v2** 的文档 SSOT。
+
+> **SSOT（部署仓）**：`src/data/taxonomy-v2.ts` · **迁移脚本**：`scripts/permanent/migrate-taxonomy-v2.py` · **Frontmatter 审计**：`scripts/audit/audit-frontmatter.py`
+
+**已废弃（E49）**：`category` · `categorySecondary` —— 全站 md 不得再出现。
+
+### 三个 frontmatter 字段
+
+| 字段 | 含义 | 必填 | 示例 |
+|------|------|------|------|
+| `pillar` | 主分类（15 值） | ✅ | `dev` · `marketing` · `seo` |
+| `section` | Hub 组 / 次主题 | 可选（events 可为空） | `dev-coding` · `content-seo` |
+| `contentType` | 文章形态（7 值） | ✅ | `tool-guide` · `strategy` · `architecture` |
+
+### pillar（15 值）
+
+| pillar | 频道 | 说明 |
+|--------|------|------|
+| `image` · `video` · `audio` · `design` · `3d` | tools | Tools Hub 产品类 |
+| `dev` · `search` · `llm` · `productivity` · `vertical` | tools | Tools Hub 技术/效率/垂直 |
+| `marketing` | marketing / blog | 增长策略；blog 中 marketingHub 文 |
+| `seo` | seo | SEO 指南 |
+| `geo` | marketing / blog | GEO 与 AI 可见度（`geo` · `ai-visibility` 等） |
+| `insights` | insights | 行业洞察 |
+| `events` | events | 活动 recap |
+
+**推导优先级**（迁移脚本 / 人工赋值一致）：
+
+1. `PILLAR_OVERRIDES`（如 blog/`ai-visibility` → `geo`）
+2. 频道默认（seo → `seo`，marketing → `marketing`，insights → `insights`，events → `events`）
+3. `section` 落在 Marketing / SEO / Insights section 集合 → 对应 pillar
+4. Tools `hubGroup` → `TOOLS_HUB_GROUP_TO_PILLAR` 映射
+5. 兜底 `dev`
+
+### section（Hub 组 ID）
+
+| 来源 | 配置 SSOT | hub 字段名 |
+|------|-----------|------------|
+| `/tools/*` | `tools-pages-config.ts` | `hubGroup` |
+| `/seo/*` | `seo-pages-config.ts` | `group` |
+| `/marketing/*` | `marketing-pages-config.ts` | `group` |
+| `/blog/*`（Tools 向） | `blog-pages-config.ts` | `toolsHubCategory` |
+| `/blog/*`（Marketing 向） | `blog-pages-config.ts` | `marketingHubCategory` |
+| `/insights/*` | 脚本内 `INSIGHTS_SECTION` 映射 | — |
+| `/events/*` | 空字符串 | — |
+
+**注意**：`marketingHubCategory: "content"` 已 normalize 为 **`content-seo`**（egc-marketing 等）。
+
+### contentType（7 值）
+
+| 值 | 适用 |
+|----|------|
+| `tool-guide` | Tools 产品榜 / 对比（默认） |
+| `how-to` | 操作教程（`how-to-*` slug 或 HOW_TO_SLUGS） |
+| `strategy` | 增长策略（`/marketing/*` 或 STRATEGY_BLOG_SLUGS） |
+| `architecture` | 架构选型（headless-cms · git-hosting 等） |
+| `reference` | SEO 参考指南 |
+| `analysis` | Insights 分析 |
+| `event` | Events recap |
+
+### 新建文章 Checklist
+
+- [ ] Brief 填写 **Hub / pillar / section / contentType**（见 [`article-brief.md`](article-brief.md)）
+- [ ] frontmatter 写 `pillar` + `contentType`；有 Hub 归属则写 `section`
+- [ ] 在对应 `*-pages-config.ts` 注册 slug → hub 映射
+- [ ] 跑 `generate-article-category-map.py` 更新面包屑 map
+- [ ] 跑 `audit-frontmatter.py` Pass
+
+### 与 UI 的关系
+
+- Hero 主 badge：`pillarLabel(pillar)`
+- Hero 次 badge：`sectionLabel(section, pillarToChannel(pillar))`
+- 面包屑：`ARTICLE_CATEGORY_MAP`（slug → pillar，由 generate 脚本生成）
 
 ---
 
 ## TL;DR / FAQ / References JSON（与 meta 同批）
 
-**线上 SSOT = JSON 侧车**（见 [`anatomy.md`](./rules/anatomy.md) §二·一）。**Brief 采用 FAQ/TL;DR/References 时**，Step 08 注册（**不写 md**）：
+**线上 SSOT = JSON 侧车**（见 [`anatomy.md`](anatomy.md) §二·一）。**Brief 采用 FAQ/TL;DR/References 时**，Step 08 注册（**不写 md**）：
 
 | 文件 | 键 | 内容 |
 |------|-----|------|
@@ -31,7 +111,7 @@
 | `src/data/faq-data.json` | 同上 pathname | `items[]` × **7** |
 | `src/data/references-data.json` | 同上 pathname | `items[]` |
 
-**键示例**：blog 新文 EN `/blog/{slug}` · ZH `/zh/blog/{slug}`；tools 存量 `/tools/{slug}` · `/zh/tools/{slug}`；seo `/seo/{slug}` · `/zh/seo/{slug}`。
+**键格式** = frontmatter `pageUrl` 去域路径（中英各一），全频道键表见 [`anatomy.md`](anatomy.md) §二·一。极简示例：blog 新文 `/blog/{slug}`（EN）· `/zh/blog/{slug}`（ZH）。
 
 **Brief 省略** TL;DR/FAQ/Refs → 三 JSON **不得**留对应键（否则页面上仍会显示）。
 
@@ -51,7 +131,7 @@
 ```
 
 - `publishDate` / `modifiedDate` 为 **slug 级** ISO 字段
-- Hub 归属由 frontmatter `pillar` + `section` 推导；**无** `routeCategory`（Taxonomy v2，见 [`category-assignment.md`](./rules/category-assignment.md)）
+- Hub 归属由 frontmatter `pillar` + `section` 推导；**无** `routeCategory`（Taxonomy v2，见下文 [Taxonomy 分类赋值](#taxonomy-v2)）
 
 ---
 
@@ -170,10 +250,10 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --list
 
 | 主题 | 位置 | 说明 |
 |------|------|------|
-| Meta title 年份 | [`rules/meta.md`](./rules/meta.md) | H1 不含年份；新鲜度由 publishDate/modifiedDate 表达 |
-| E20 / E26 | [`rules/common-errors.md`](./rules/common-errors.md) | publishDate 被改 · 新 slug 同日冲突 |
-| Brief publishDate | [`rules/intake-questions.md`](./rules/intake-questions.md) | Intake 可登记计划发布日 |
-| Insights 改版同步 | [`rules/internal-links.md`](./rules/internal-links.md) Part 5 | `blogLayout.modifiedDate` · OG · RSS |
+| Meta title 年份 | [`meta.md`](meta.md) | H1 不含年份；新鲜度由 publishDate/modifiedDate 表达 |
+| E20 / E26 | [`common-errors.md`](common-errors.md) | publishDate 被改 · 新 slug 同日冲突 |
+| Brief publishDate | [`01-intake.md`](01-intake.md) | Intake 可登记计划发布日 |
+| Insights 改版同步 | [`internal-links.md`](internal-links.md) Part 5 | `blogLayout.modifiedDate` · OG · RSS |
 | RSS / Sitemap | [`../ops/feed.md`](../ops/feed.md) · [`../ops/sitemap.md`](../ops/sitemap.md) | 按 modifiedDate；勿用 `new Date()` |
 | 脚本说明 | [`scripts/README.md`](../../scripts/README.md) | `next-publish-date.mjs` 参数 |
 | 全站日期清单 | [`../ops/article-dates.md`](../ops/article-dates.md) | 各 slug 的 publishDate / modifiedDate |
@@ -188,7 +268,7 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --list
 | meta 与 md `date` 差一天 | 三处同一日历日 |
 | legacy tools 同日改 >2 篇 modifiedDate | 错开至下一日历日 |
 
-见 [`rules/common-errors.md`](./rules/common-errors.md) **E20**、**E26**。
+见 [`common-errors.md`](common-errors.md) **E20**、**E26**。
 
 > **publish-ready 后**：新 slug 首发前复核本节日期字段已与 meta/md 一致；无需单独 Step。发布后运维 → [`../ops/README.md`](../ops/README.md)
 
@@ -213,17 +293,17 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --list
 }
 ```
 
-- Brief **Step 02** 须含 **Final CTA** 四字段（见 [`rules/article-brief.md`](./rules/article-brief.md)）
+- Brief **Step 02** 须含 **Final CTA** 四字段（见 [`article-brief.md`](article-brief.md)）
 - Step 09 EN 完稿后更新 `en.title` / `en.description`
 - 验收：`node E:\clients\Alignify\scripts\ops\merge-cta-slugs.mjs --check` → `Missing: 0`
 
-细则：[`rules/sections.md`](./rules/sections.md) Part 5
+细则：[`sections.md`](sections.md) Part 5
 
 ---
 
 ## 检查
 
-- [ ] Meta title/description 符合 [`rules/meta.md`](./rules/meta.md)
+- [ ] Meta title/description 符合 [`meta.md`](meta.md)
 - [ ] **新 slug**：`next-publish-date.mjs --check` Pass；publishDate 全站唯一
 - [ ] **改版 slug**：publishDate 未改；modifiedDate = 锚定日
 - [ ] **legacy `/tools/`**（若适用）：同日 modifiedDate 更新 ≤2 篇
@@ -233,8 +313,8 @@ node E:\clients\Alignify\scripts\ops\next-publish-date.mjs --list
 - [ ] frontmatter `pageUrl` 与频道一致
 - [ ] sitemap 自动从 config 生成，无需手改
 
-下一步：若 EN 轨尚未完成 → [`rules/content-locale.md`](./rules/content-locale.md) Part 4（Step 09）；否则 → Part 5（09c 对等对比）→ [10-quality-gates.md](./10-quality-gates.md)
+下一步：若 EN 轨尚未完成 → [`content-locale.md`](content-locale.md) Part 4（Step 09）；否则 → Part 5（09c 对等对比）→ [quality-gates.md](quality-gates.md)
 
 ---
 
-*08-meta-config · v2.0 · 2026-08-27 · 含原 Step 11 发布日期 SSOT*
+*08-meta-config · v3.0 · 2026-09-09 · 含原 Step 11 发布日期 SSOT · v3.0：并入原 category-assignment（Taxonomy 分类赋值 pillar/section/contentType）*

@@ -1,8 +1,39 @@
-# Final Audit — 发布前终审 Rubric
+# Final Audit — 发布前终审 Rubric（Step 11 入口）
 
 > SelfCheck Pass = **audit-ready**，**不保证** publish-ready。  
-> **流程入口**：[`../11-final-audit.md`](../11-final-audit.md)（须**新会话 / 另一 Agent**，禁止自写自审）。  
-> **阈值同步**：若调整分数线，须与 [`../../audit-optimize/rules/page-audit.md`](../../audit-optimize/rules/page-audit.md) 保持一致。
+> **流程入口**：本文件即 **Step 11 终审入口与 Rubric**（原 `11-final-audit` 入口壳已并入）——须在**新会话 / 另一 Agent / 人类**执行，**禁止写稿同一会话自审**，**不得跳过终审直接发布**。  
+> **前置**：Step 10 SelfCheck **全 Pass** → audit-ready；送审包齐全（见 [`quality-gates.md`](quality-gates.md) §Step 10 交付物）。  
+> **阈值同步**：若调整分数线，须与 [`../audit-optimize/rules/page-audit.md`](../audit-optimize/rules/page-audit.md) 保持一致。
+
+---
+
+## 入口与触发语（Step 11）
+
+**何时使用**
+
+- [ ] ZH + EN md 已完成  
+- [ ] Step 10 SelfCheck **全 Pass**（H0–H4 + 12 维）  
+- [ ] Source Map + SERP Fit + Brief 可查阅  
+
+**不适用**
+
+| 场景 | 改用 |
+|------|------|
+| 从选题到成稿 | 本 skill Step 01–10 |
+| 已发稿健康检查 / 内链 / 局部刷新 | audit-optimize 技能（`../audit-optimize/SKILL.md`） |
+| 成稿未过 Gate C | 回 Step 10（[`quality-gates.md`](quality-gates.md)） |
+
+**触发语（复制到新会话）**
+
+```text
+按 Alignify create-article Step 11 终审：
+- ZH：content/{channel}/zh/{slug}.md
+- EN：content/{channel}/en/{slug}.md
+- Primary keyword：{kw}
+- SelfCheck：12/12 + H0–H4 Pass
+- Brief Moat：{一行}
+- 预检：audit-marketing-md-render.py --slug {slug} 全量 blog Pass 后才开始打分
+```
 
 ---
 
@@ -20,15 +51,7 @@
 
 ## P0 Gate（任一项 → BLOCKED，不得发布）
 
-| Gate | 阻断条件 |
-|------|----------|
-| **G1** | 产品/竞品事实与官方 docs 矛盾 |
-| **G2** | 站内死链；站外大面积失效 |
-| **G3** | 量化 claim 无 attribution |
-| **G4** | 竞品状态错误 |
-| **G5** | 能力夸大 |
-| **G6** | 内链指向未上线页 |
-| **G7** | 合规/贬低风险 |
+P0 事实 Gate G1–G7 定义见 [quality-gates.md](quality-gates.md) §P0 Gate G1–G7；Alignify 结构 / Meta P0（P0-1–P0-13）见同文件 §综合质量检查表。
 
 **Alignify 结构 P0**（与 create-article P0-1–P0-13 一致）：md 以 `#conclusion` 收束、FAQ JSON 7 问（内链若存在须 R4 全文 1 次）、Meta Best/最佳、无 `howTo:`/`heroHtml:` frontmatter（E44）、Brief 与 TL;DR/FAQ/Refs JSON 一致（E10）等。
 
@@ -68,6 +91,8 @@
 
 ## 审核步骤
 
+> 本会话**只读本文件**（入口与触发语 + Rubric 合一），**不加载 Step 01–09 规范**；需要 Brief / Source Map / SERP Fit 产出物时按需读取（加载纪律见文末 §渐进加载）。
+
 0. **自动化全量预检（必跑，Fail 则修复后重跑直至 Pass）**  
    - `python ../../clients/Alignify/scripts/audit/audit-marketing-md-render.py --slug {slug}` — **全部** `content/blog/*`（**不按 category 过滤**）；blog 通道 E37 伪列表 ≥3 为 **Fail**  
    - `python ../../clients/Alignify/scripts/audit/audit-frontmatter.py`  
@@ -99,6 +124,10 @@
 1. …
 ```
 
+## 渐进加载
+
+终审会话默认**只读本文件**；需要时最多再读 **Brief / Source Map / SERP Fit** 产出物。**禁止一次性加载全部规范文档**（Step 01–09）。Fail → 按 [`quality-gates.md`](quality-gates.md) §Gate 失败回溯表 回退修复后重跑本 Step。
+
 ---
 
-*final-audit · v1.1 · 2026-09-03 · 自 audit-article 迁入 create-article*
+*final-audit · v2.0 · 2026-09-09 · 自 audit-article 迁入 create-article；并入 Step 11 入口壳（原 11-final-audit）*

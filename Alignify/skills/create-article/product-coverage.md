@@ -2,7 +2,7 @@
 
 > **版本**：v1.0 · 2026-08-28  
 > **SSOT**：新文产品 **数量** + **全站独占** + **垂类 slug 动机**  
-> **适用**：`articleType: best-ranking` / `best-ranking-legacy`；KB 选题见 [`../../../knowledge-block/SKILL.md`](../../knowledge-block/SKILL.md)
+> **适用**：`articleType: best-ranking` / `best-ranking-legacy`；KB 选题见 [`../knowledge-block/SKILL.md`](../knowledge-block/SKILL.md)
 
 ---
 
@@ -16,7 +16,7 @@ Alignify **不做**「一个大类塞满 10+ 款工具」的重复盘点。
 | 为凑篇幅写浅盘 | **3 款写深** 优于 10 款套模板 |
 | slug 太宽、产品池打架 | slug 跟 **SERP 头词 + 窄意图**（如 `blog-website-builder` 非泛 `cms`） |
 
-**KB  spoke 条件**（与 [`cms/KEYWORD-RESEARCH.md`](../../../knowledge/tools/cms/KEYWORD-RESEARCH.md) 一致）：SERP 头词 · ≥2 款 **vertical** 产品 · 非纯品牌 slug · **且** 拟选产品未被其他 slug 占用。
+**KB  spoke 条件**（与 [`cms/KEYWORD-RESEARCH.md`](../../knowledge/tools/cms/KEYWORD-RESEARCH.md) 一致）：SERP 头词 · ≥2 款 **vertical** 产品 · 非纯品牌 slug · **且** 拟选产品未被其他 slug 占用。
 
 ---
 
@@ -42,7 +42,7 @@ Alignify **不做**「一个大类塞满 10+ 款工具」的重复盘点。
 | **Canonical 文** | 完整 H3 · 可进 TL;DR / meta 代表产品 |
 | **非 canonical 文** | 内链到 canonical slug；对比表 **≤1 行**；正文 **≤1 句** 点名（无 H3、无截图、无 CTA） |
 | **Hub / 概念文** | 不写 Best H3；只分流到 spoke |
-| **Tier 1/2 客户** | 仍遵守独占；该 slug **就是** canonical（见 [`sections.md`](./sections.md) §3.3.0） |
+| **Tier 1/2 客户** | 仍遵守独占；该 slug **就是** canonical（见 [`sections.md`](sections.md) §3.3.0） |
 
 **Normalize**：大小写不敏感 · 去 Inc./Ltd. · `WordPress` = `WordPress.org` 路线按 KB 主卡 · 子品牌不自动合并（Shopify ≠ Hydrogen 除非 Brief 明示同一 canonical）。
 
@@ -87,7 +87,7 @@ Brief 必填：
 
 ## 与 meta / 对比表
 
-- Meta description：**2–3 个代表产品** — 必须来自 **本页 roster**（见 [`meta.md`](./meta.md)）
+- Meta description：**2–3 个代表产品** — 必须来自 **本页 roster**（见 [`meta.md`](meta.md)）
 - 对比表：行数 **≤ roster 款数**；无 roster 外产品行
 - FAQ：禁止用 roster 外产品作「首选推荐」
 

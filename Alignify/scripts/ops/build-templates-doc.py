@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Generate rules/templates.md SSOT."""
+"""Generate templates.md SSOT."""
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[2] / "skills" / "create-article" / "rules" / "templates.md"
 
 CONTENT = r'''# Alignify 文章类型参考（唯一真相源）
 
-> **位置**：`skills/create-article/rules/templates.md`  
+> **位置**：`skills/create-article/templates.md`  
 > **Last updated**：2026-08-27  
 > **说明**：本文档描述**四类存量文章**的常见模式与类型差异。**不是**正文骨架清单；**不要求**与任一现存篇目一比一复刻。  
-> **新文默认**：`content/blog/` + `/blog/{slug}`（见 [`article-types.md`](./article-types.md)）。  
-> **节怎么写** → [`sections.md`](./sections.md) · **格式/JSON** → [`anatomy.md`](./anatomy.md) · **路由/Meta 注册** → [`article-types.md`](./article-types.md)
+> **新文默认**：`content/blog/` + `/blog/{slug}`（见 [`templates.md`](./templates.md)）。  
+> **节怎么写** → [`sections.md`](./sections.md) · **格式/JSON** → [`anatomy.md`](./anatomy.md) · **路由/Meta 注册** → [`templates.md`](./templates.md)
 
 ---
 
@@ -72,7 +72,7 @@ CONTENT = r'''# Alignify 文章类型参考（唯一真相源）
 
 | 文档 | 职责 |
 |------|------|
-| [`article-types.md`](./article-types.md) | 四类型 × 路径 × Meta 注册表 |
+| [`templates.md`](./templates.md) | 四类型 × 路径 × Meta 注册表 |
 | **本文 `templates.md`** | 类型差异、常见原型、部署仓对照、**禁止误套**说明 |
 | [`sections.md`](./sections.md) | 节型写法（TL;DR、什么是、Best H3…） |
 | [`anatomy.md`](./anatomy.md) | frontmatter、block、JSON 侧车 |

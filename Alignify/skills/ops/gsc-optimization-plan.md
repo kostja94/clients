@@ -1,6 +1,6 @@
 # GSC 数据驱动的 SEO 监控与内容优化方案
 
-本文档定义如何利用 GSC / GA4 / Bing 数据（[`seo-weekly-report/`](../../seo-weekly-report/README.md)）系统化监控搜索表现并驱动内容优化。方案与现有审计体系（[section-optimization-playbook.md](../create-article/rules/README.md)）无缝衔接。
+本文档定义如何利用 GSC / GA4 / Bing 数据（[`seo-weekly-report/`](../../seo-weekly-report/README.md)）系统化监控搜索表现并驱动内容优化。方案与现有审计体系（[section-optimization-playbook.md](../create-article/README.md)）无缝衔接。
 
 **前置依赖**：GSC / GA4 数据通过 [`seo-weekly-report/`](../../seo-weekly-report/README.md) 直连 API 拉取；索引检查见 `scripts/ops/audit-gsc-index-health.mjs`。
 
@@ -28,7 +28,7 @@ GSC API（Google）                Bing Webmaster API（Phase 6 新增）
   效果验证（修复后双引擎数据对比验证）
 ```
 
-核心原则与 [section-optimization-playbook.md](../create-article/rules/README.md) 一致：规则先行，审计后改，分批执行，每批验证。
+核心原则与 [section-optimization-playbook.md](../create-article/README.md) 一致：规则先行，审计后改，分批执行，每批验证。
 
 ---
 
@@ -90,7 +90,7 @@ GSC API（Google）                Bing Webmaster API（Phase 6 新增）
 2. 比较同页面的 avgPosition，找出上升 > 3 位且 impressions > 100 的页面
 3. 输出：路径、本周位置、上周位置、变化幅度
 
-**产出**：需要刷新内容的页面清单。修复方式为修改对应 content Markdown（补充段落、更新信息、加内链），复用 [section-optimization-playbook.md](../create-article/rules/README.md) 的 Python 批量编辑流程。
+**产出**：需要刷新内容的页面清单。修复方式为修改对应 content Markdown（补充段落、更新信息、加内链），复用 [section-optimization-playbook.md](../create-article/README.md) 的 Python 批量编辑流程。
 
 ### Phase 4：索引健康检查（优先级 P2，工作量 中）
 
@@ -192,7 +192,7 @@ GSC 数据管道是现有内容优化体系的一个新输入端，而非替代�
 ```
 现有体系                          GSC 体系（新增）
 ────────                          ────────
-rules (skills/create-article/rules/)  ←──   信号阈值定义
+rules (skills/create-article/)  ←──   信号阈值定义
 audit-*.mjs                ←──   audit-gsc-*.mjs（复用输出格式）
 Python json.dump 批量修复  ←──   内容修复（复用已有流程）
 每批验证                    ←──   n+1 周后重新跑 GSC 审计确认改善

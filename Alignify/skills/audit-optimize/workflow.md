@@ -7,7 +7,7 @@
 ## 0. 读上下文
 
 1. [`references/site-structure-internal-links.md`](references/site-structure-internal-links.md) — 出链/入链、P0–P3 队列、**§七 Marketing/GTM 专项**  
-2. [`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md) 附录 B — 邻居矩阵  
+2. [`../create-article/internal-links.md`](../create-article/internal-links.md) 附录 B — 邻居矩阵  
 3. [`../../knowledge/tools/territory-map.md`](../../knowledge/tools/territory-map.md) — 同 Territory 选题  
 
 ---
@@ -36,7 +36,7 @@ git show HEAD:content/{channel}/{locale}/{slug}.md   # baseline
 
 ### 2.2 选链
 
-- 点击意图三问（[`internal-links.md` Part 4.5 §一](../create-article/rules/internal-links.md#一第一原则读者想点click-intent)）
+- 点击意图三问（[`internal-links.md` Part 4.5 §一](../create-article/internal-links.md#一第一原则读者想点click-intent)）
 - EN/ZH 目标 slug 对称
 - 不为主页 distinct 计数加弱相关链
 
@@ -49,7 +49,7 @@ git show HEAD:content/{channel}/{locale}/{slug}.md   # baseline
 | 结论 | 0–2 链 |
 | FAQ（`faq-data.json` 答案） | **允许内链**，算正文一部分；同 URL 全文仍只 1 次 |
 
-**编辑策略**（存量大批量修复时 SSOT 定稿）：见 [`internal-links.md`](../create-article/rules/internal-links.md) Part 6–7；本 skill 不预设 R-LINK-ONLY / R-QUALITY-REWRITE，按任务 Brief 选。
+**编辑策略**（存量大批量修复时 SSOT 定稿）：见 [`internal-links.md`](../create-article/internal-links.md) Part 6–7；本 skill 不预设 R-LINK-ONLY / R-QUALITY-REWRITE，按任务 Brief 选。
 
 ### 2.4 验收
 

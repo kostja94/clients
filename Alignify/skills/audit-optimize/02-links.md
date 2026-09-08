@@ -3,7 +3,7 @@
 > 入口：[`SKILL.md`](./SKILL.md)  
 > **执行 SSOT**：[`workflow.md`](./workflow.md)  
 > **反向互链**：[`reverse-links.md`](./reverse-links.md)  
-> **规则正文**（点读，非 create-article SKILL）：[`../create-article/rules/internal-links.md`](../create-article/rules/internal-links.md) · 速查 [`references/rules-quickref.md`](./references/rules-quickref.md)
+> **规则正文**（点读，非 create-article SKILL）：[`../create-article/internal-links.md`](../create-article/internal-links.md) · 速查 [`references/rules-quickref.md`](./references/rules-quickref.md)
 
 ---
 
