@@ -4,21 +4,25 @@
 
 ---
 
-## 1. 路由总表
+## 1. 路由总表（SSOT）
 
-| 类型 | MeDo category | 典型 intent | 词数 | 产品提及 | 正文政策 as-of |
-|------|---------------|-------------|------|----------|---------------|
-| **PillarTutorial** | Tutorial | how to build… | 2800–4000 | ≤35% | 可选 |
-| **GlossaryGuide** | Guide | what is… | 1800–2800 | ≤20% | 否 |
-| **Comparison** | Guide | best… | 2200–3200 | ≤40% | 否 |
-| **PublishGuide** | Tutorial | publish… | 2200–3000 | ≤35% | **必填** |
-| **Alternative** | Guide | vs / alternative | 2000–2800 | ≤45% | 否 |
-| **DecisionGuide** | Guide | vs / cost / free | 1800–2600 | ≤30% | 可选 |
-| **UseCase** | Tutorial / Case Study | build X app | 1500–2500 | ≤50% | 否 |
-| **Diagnosis** | Tutorial | rejection / fix | 2000–2800 | ≤25% | **必填** |
-| **Announcement** | Guide | 产品发布/更新 | 1200–1800 | 不限 | 可选 |
+> 本表为路由**唯一主表**（8 标准类型 + Announcement 特例）。SKILL.md §2 只保留类型枚举与默认 Mode 速查。
+
+| 类型 | MeDo category | 典型 intent | 词数 | 产品提及 | 默认 Mode | 正文政策 as-of |
+|------|---------------|-------------|------|----------|:---:|---------------|
+| **PillarTutorial** | Tutorial | how to build… | 2800–4000 | ≤35% | flagship | 可选 |
+| **GlossaryGuide** | Guide | what is… | 1800–2800 | ≤20% | flagship | 否 |
+| **Comparison** | Guide | best… | 2200–3200 | ≤40% | flagship | 否 |
+| **PublishGuide** | Tutorial | publish… | 2200–3000 | ≤35% | standard | **必填** |
+| **Alternative** | Guide | vs / alternative | 2000–2800 | ≤45% | standard | 否 |
+| **DecisionGuide** | Guide | vs / cost / free | 1800–2600 | ≤30% | standard | 可选 |
+| **UseCase** | Tutorial / Case Study | build X app | 1500–2500 | ≤50% | standard | 否 |
+| **Diagnosis** | Tutorial | rejection / fix | 2000–2800 | ≤25% | standard | **必填** |
+| **Announcement** | Guide | 产品发布/更新 | 1200–1800 | 不限 | lite | 可选 |
 
 **产品提及**：正文中 MeDo 名称 + 功能描述 + CTA 合计篇幅占比上限（非严格计数，Phase 5 目测）。
+
+> **默认 Mode**：路由主表指定各类型默认 Mode（SKILL.md §1B Mode 系统）。用户未指定 Mode → 用此默认值。
 
 > **正文政策 as-of**：PublishGuide / Diagnosis 须在正文含 `as of {month} {year}` 时效声明（A2 Gate），由正文承载，不入 frontmatter。
 

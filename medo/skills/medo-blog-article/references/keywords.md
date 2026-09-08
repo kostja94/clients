@@ -119,20 +119,13 @@
 
 ---
 
-## 8. Title / Description 关键词公式
+## 8. Title / Description 公式
 
-| 类型 | Title 公式（45–65 chars） | Description 要点（120–160 chars） |
-|------|---------------------------|-----------------------------------|
-| PillarTutorial | How to {action} with AI — {audience qualifier} for 2026 | benefit + primary keyword + native iOS/Android |
-| GlossaryGuide | What Is {term}? A 2026 Guide for Non-Developers | definition + who it's for + link to mobile |
-| Comparison | Best {category} in 2026: An Honest Comparison | compared dimensions + non-developer |
-| Alternative | MeDo vs {Competitor}: Which {outcome}? | both products named + decision frame |
-| PublishGuide | How to Publish an AI-Built App to the App Store in 2026 | steps + TestFlight + rejections |
-| DecisionGuide | {A} vs {B}: Which Path for AI-Built Apps? | objective trade-offs |
-| Diagnosis | {Problem} for AI-Built Apps (and How to Fix Them) | pain point + actionable fixes |
-| UseCase | How to Build a {app type} with AI | end-to-end + weekend feasible |
+> **SSOT 已迁移 → `references/meta-title-description.md`**（公式 + 字符自检 + 禁抢词 A4 提醒）。本处仅保留关键词对齐要求：
 
-**Slug**：常青，title 可含 `(2026)` 或 `for 2026`，slug 不含年份。
+**Slug**：常青，title 可含 `(2026)` 或 `for 2026`，slug 不含年份。Title 45–65 chars / Description 120–160 chars；title 须含 P0/P1 主关键词；description 写 reader benefit + 主意图关键词。
+
+> 写作 meta 时加载 `meta-title-description.md`，不在此处维护公式表。
 
 ---
 

@@ -1,0 +1,131 @@
+# Eval Manifest — medo-blog-article v2.1.0
+# 回归测试清单：新增规则或修改 skill 后，全部用例须重新通过。
+# 用法：人工以输入为触发语跑 agent（或按 expected 断言复核输出）。
+
+manifest:
+  version: "1.0.0"
+  skill: medo-blog-article
+  skill_version: "2.1.0"
+  created: "2026-09-09"
+  total_evals: 12
+
+evals:
+  - id: E01
+    name: "自包含 — 不加载 skill 文件夹外路径"
+    input: "按 medo-blog-article skill 创建一篇 GlossaryGuide 文章"
+    expected:
+      route: "medo-blog-article only"
+      assert:
+        - "workflow references only paths under medo/skills/medo-blog-article/"
+        - "does NOT load medo.md / blog/README.md (forbidden-reads)"
+    severity: critical
+
+  - id: E02
+    name: "title-only 任务走轻量 meta 路径"
+    input: "优化 /blog/02-what-is-vibe-coding 的 title 和 description"
+    expected:
+      route: "references/meta-title-description.md only"
+      assert:
+        - "loads meta-title-description.md only"
+        - "does NOT run full Phase 0-6"
+        - "does NOT edit H2/TL;DR/FAQ/body"
+    severity: critical
+
+  - id: E03
+    name: "ArticleType 路由 → 9 类内容类型（8 标准 + Announcement；非增长职能枚举）"
+    input: "Phase 0 首行强制输出 ArticleType 值"
+    expected:
+      route: "9 类内容类型（8 标准 + Announcement 特例）PillarTutorial|GlossaryGuide|Comparison|PublishGuide|Alternative|DecisionGuide|UseCase|Diagnosis|Announcement"
+      assert:
+        - "ArticleType 不填 CategoryPOV/SearchCapture 等增长职能值"
+        - "增长职能为独立字段 GrowthFunction"
+    severity: critical
+
+  - id: E04
+    name: "Native vs Web wrapper 分类错误 → A1 Fail"
+    input: "Draft 将 Lovable/Bolt 移动输出描述为原生生成器"
+    expected:
+      gate_c: "A1 FAIL"
+      assert:
+        - "A1 triggered (三分类框架: Lovable/Bolt = web wrapper)"
+        - "corrective: 对照 product-competitors.md §1 重写"
+    severity: critical
+
+  - id: E05
+    name: "政策 claim 无 as-of → A2 Fail"
+    input: "Draft 写 'Apple requires account deletion' 无日期限定"
+    expected:
+      gate_c: "A2 FAIL"
+      assert:
+        - "A2 triggered (as-of 缺失)"
+        - "requires as-of + 官方链 (citations.md P0)"
+    severity: critical
+
+  - id: E06
+    name: "Glossary slug 加年份 → Gate B Fail"
+    input: "GlossaryGuide slug candidate: what-is-vibe-coding-2026"
+    expected:
+      gate_b: "FAIL — 年份反模式 A1"
+      assert:
+        - "slug rejected"
+        - "corrected suggestion: what-is-vibe-coding (常青)"
+    severity: high
+
+  - id: E07
+    name: "FAQ 非 6 题或缺 Conclusion → 结构 Fail"
+    input: "SelfCheck: draft 有 FAQ 3 题且无 Conclusion 节"
+    expected:
+      gate_c: "structure FAIL"
+      assert:
+        - "FAQ must be fixed 6 questions"
+        - "Conclusion must be present (## Conclusion)"
+    severity: high
+
+  - id: E08
+    name: "内链带 Related articles 区块 → Fail"
+    input: "Draft 文末设 ## Related articles"
+    expected:
+      gate_c: "link FAIL (2026-08-14 起内链全为上下文内链)"
+      assert:
+        - "文末 Related 区块移除"
+        - "blog 内链改为正文自然嵌入 ≥2"
+    severity: high
+
+  - id: E09
+    name: "未跑 tools/ 即标 Pass → Gate C 要求重跑"
+    input: "SelfCheck 无工具输出直接标 H3 Pass"
+    expected:
+      gate_c: "流程 FAIL"
+      assert:
+        - "先跑 frontmatter_validator / word_count_narrative / link_checker"
+    severity: high
+
+  - id: E10
+    name: "medo vs lovable 新稿 → Gate A KEEP 且序号 29"
+    input: "按 medo-blog-article skill 为 'medo vs lovable' 创建 Alternative 文"
+    expected:
+      phase0_gate: "KEEP"
+      path: "medo/blog/29-medo-vs-lovable.md"
+      assert:
+        - "conflict table (content-graph §5) → KEEP"
+        - "下一文件序号 29 与 content-graph 一致"
+    severity: high
+
+  - id: E11
+    name: "Comparison 缺竞品优势/非 MeDo 场景 → A3 Fail"
+    input: "SelfCheck: Comparison 文无 'When X is the better choice'"
+    expected:
+      gate_c: "A3 FAIL"
+      assert:
+        - "需补 ≥1 竞品真实优势 + ≥1 非 MeDo 更合适场景"
+    severity: high
+
+  - id: E12
+    name: "工具页抢词作 H1/title → A4 Fail"
+    input: "Blog 文 H1 直接用 'AI Mobile App Builder' 抢工具页 P0 词"
+    expected:
+      gate_c: "A4 FAIL"
+      assert:
+        - "H1/title 改用长尾/场景词"
+        - "对照 keywords.md §7 禁抢词表"
+    severity: high

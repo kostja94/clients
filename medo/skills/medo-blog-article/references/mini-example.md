@@ -8,7 +8,8 @@
 
 ```
 ## Mode: standard
-## ArticleType: SearchCapture
+## ArticleType: Alternative
+## GrowthFunction: SearchCapture
 ## InvestmentScore: 4.2 — {五因子摘要：搜索需求 4 / 商业相关性 5 / 差异化 4 / 证据可得性 4 / 生命周期 4}
 ## Topic Scope: ai-mobile-app / C2 对比选择
 ## Author: Kostja
@@ -32,7 +33,8 @@ Gate A: KEEP
 ## Article Brief
 
 **Mode**: standard
-**ArticleType**: SearchCapture
+**ArticleType**: Alternative
+**GrowthFunction**: SearchCapture
 **InvestmentScore**: 4.2
 **SuccessMetric**: {可量化 — 选型页 /blog/medo-vs-lovable 排名进入 SERP Top 5 + Demo 点击}
 **MoatAssetPlanned**: 原创三分类框架（native vs cross-platform vs web wrapper）+ 双工作流并列表
@@ -164,7 +166,7 @@ This comparison is written for the non-developer who has already decided the des
 ## 7. Phase 6 交付文件名
 
 ```
-medo/blog/26-medo-vs-lovable.md
+medo/blog/29-medo-vs-lovable.md
 ```
 
-交付后提示人类更新 `blog/README.md` 文章表（#06 行）。
+交付后提示人类更新 `blog/README.md` 文章表（#29 行）；同步 bump SKILL.md §4「下一文件序号」至 30。

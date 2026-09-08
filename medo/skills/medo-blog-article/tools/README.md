@@ -23,9 +23,10 @@ python skills/medo-blog-article/tools/link_checker.py blog/NN-{slug}.md --forbid
 
 | 脚本 | Gate | 检查内容 |
 |------|------|---------|
-| `frontmatter_validator.py` | GateC-SEO-F | title/description/slug/category/secondary_category/author 必填性 + 长度合规 + slug 常青；image/keywords/related 字段已废弃（F6 检查缺失） || `word_count_narrative.py` | H3 | 排除 frontmatter/表格/FAQ 后计算叙事词数，对比 §2 类型下限 |
+| `frontmatter_validator.py` | GateC-SEO-F | title/description/slug/category/secondary_category/author 必填性 + 长度合规 + slug 常青；image/keywords/related 字段已废弃（F6 检查缺失） |
+| `word_count_narrative.py` | H3 | 排除 frontmatter/表格/FAQ 后计算叙事词数，对比 `article-types.md` §1 类型下限 |
 | `link_checker.py` | P0-G2, P0-G6 | 扫描所有 Markdown 链接，检查空链/畸形 URL/禁止路径 |
 
 ---
 
-*medo tools · v1.0 · 2026-08-14（自 vatt-blog-article v2.0.0 tools 移植，适配 MeDo 8 类阈值与 frontmatter 字段）*
+*medo tools · v1.0 · 2026-08-14（自 vatt-blog-article v2.0.0 tools 移植，适配 MeDo 9 类阈值与 frontmatter 字段）*

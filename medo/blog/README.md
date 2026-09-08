@@ -43,8 +43,7 @@ secondary_category: "Mobile App"
 
 | # | 文件 | slug | 主题 | category | 状态 |
 |---|------|------|------|----------|------|
-| 1 | [01-how-to-build-mobile-app-with-ai.md](./01-how-to-build-mobile-app-with-ai.md) | `how-to-build-mobile-app-with-ai` | 非开发者用 AI 构建移动应用完整指南 | Tutorial | ✅ |
-| 2 | [02-what-is-vibe-coding.md](./02-what-is-vibe-coding.md) | `what-is-vibe-coding` | Vibe coding 定义与 2026 现状 | Guide | ✅ |
+| 1 | [01-how-to-build-mobile-app-with-ai.md](./01-how-to-build-mobile-app-with-ai.md) | `how-to-build-mobile-app-with-ai` | 非开发者用 AI 构建移动应用完整指南 | Tutorial | ✅ | 2 | [02-what-is-vibe-coding.md](./02-what-is-vibe-coding.md) | `what-is-vibe-coding` | Vibe coding 定义与 2026 现状 | Guide | ✅ |
 | 3 | [03-best-ai-mobile-app-builders.md](./03-best-ai-mobile-app-builders.md) | `best-ai-mobile-app-builders` | AI 移动应用构建工具横向对比 | Guide | ✅ |
 | 4 | [04-publish-ai-app-app-store.md](./04-publish-ai-app-app-store.md) | `publish-ai-app-app-store` | AI 应用上架 App Store / Play Store | Tutorial | ✅ |
 | 5 | [05-medo-tanstack-frontend-migration.md](./05-medo-tanstack-frontend-migration.md) | `medo-tanstack-frontend-migration` | 平台前端从 Vite 迁移至 TanStack | Guide | ✅ |
@@ -63,6 +62,9 @@ secondary_category: "Mobile App"
 | 26 | [26-design-tokens-vs-css-variables.md](./design/26-design-tokens-vs-css-variables.md) | `design-tokens-vs-css-variables` | Design tokens vs CSS variables 选型 | Guide | ✅ |
 | 27 | [27-why-ai-websites-look-the-same.md](./design/27-why-ai-websites-look-the-same.md) | `why-ai-websites-look-the-same` | AI 网站千篇一律诊断与修复 | Guide | ✅ |
 | 28 | [28-how-to-build-design-system-with-ai.md](./design/28-how-to-build-design-system-with-ai.md) | `how-to-build-design-system-with-ai` | 用 AI 构建设计系统教程（非开发者向） | Tutorial | ✅ |
+| 37 | [37-medo-launches-ai-seo-agent.md](./features/37-medo-launches-ai-seo-agent.md) | `medo-launches-ai-seo-agent` | 内置 AI SEO Agent 功能发布（Features 产品线） | Product | ✍️ |
+| 38 | [38-medo-launches-custom-skills.md](./features/38-medo-launches-custom-skills.md) | `medo-launches-custom-skills` | MeDo Skills 生态发布（Custom Skills + `@` 唤起 + 对话内配置） | Product | ✍️ |
+| 39 | [39-built-in-seo-agents-medo-vs-lovable-vs-replit.md](./39-built-in-seo-agents-medo-vs-lovable-vs-replit.md) | `built-in-seo-agents-medo-vs-lovable-vs-replit` | 内置 SEO Agent 三方对比：MeDo vs Lovable vs Replit（Web 对比线） | Guide | ✍️ |
 
 ## 主题簇
 
@@ -132,6 +134,17 @@ secondary_category: "Mobile App"
 ```
 
 **选题方向**：AI design skills 对比（#22，已写）、frontend-design skill 定义（#23，已写）、Figma design tokens 定义（#24，已写）、DESIGN.md 格式定义（#25，已写）、design tokens vs CSS variables 选型（#26，已写）、AI 网站为什么千篇一律诊断（#27，已写）、用 AI 构建设计系统教程（#28，已写）。后续可扩展：design skills vs design tokens 边界。发布节奏：一天一篇。序号 #29 起为移动簇缓冲。
+
+### Features 产品线（`features/` 子目录）
+
+产品功能发布 Announcement，`category: "Product"`，`secondary_category: "Features"`，文章放在 [features/](./features/) 子目录。不承接长尾搜索词，价值锚点为产品里程碑宣告 + 功能认知。规划：
+- **#37** `medo-launches-ai-seo-agent`（内置 SEO Agent 功能发布；线上已有 walkthrough `built-in-seo-agent`，产品公告独立成篇、slug 不撞）
+- **#38** `medo-launches-custom-skills`（Skills 生态发布：Custom Skills + `@` 唤起 + 对话内配置）
+
+### Web 对比线 Standalone（blog 根目录）
+
+Web/可发现性主题的独立对比文，`category: "Guide"`、`secondary_category: "Web"`，落 `blog/` 根目录。承接竞品 SEO 长尾（built-in SEO agent / 平台 SEO 能力选型），反哺 #05/#37 与 walkthrough 的可发现性叙事。
+- **#39** `built-in-seo-agents-medo-vs-lovable-vs-replit`（比较三平台 2026 上线的**内置 SEO 能力层**：审计时点、修复闭环、测量层、SSR 基座、AI-search 覆盖；非整产品对比）
 
 
 ## 部署

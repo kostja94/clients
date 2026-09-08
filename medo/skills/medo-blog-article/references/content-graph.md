@@ -61,8 +61,11 @@
 | 26 | `design/26-design-tokens-vs-css-variables.md` | `design-tokens-vs-css-variables` | Design tokens vs CSS variables 选型（值层决策） | Guide | DecisionGuide | best-ai-design-skills, figma-design-tokens, what-is-design-md, what-is-frontend-design-skill, medo-components, why-ai-websites-look-the-same | ✅ |
 | 27 | `design/27-why-ai-websites-look-the-same.md` | `why-ai-websites-look-the-same` | AI 网站千篇一律诊断与修复（诊断层） | Guide | Diagnosis | best-ai-design-skills, what-is-design-md, what-is-frontend-design-skill, design-tokens-vs-css-variables, medo-components, what-is-vibe-coding | ✅ |
 | 28 | `design/28-how-to-build-design-system-with-ai.md` | `how-to-build-design-system-with-ai` | 用 AI 构建设计系统教程（非开发者向，搭建层） | Tutorial | Tutorial | best-ai-design-skills, figma-design-tokens, what-is-design-md, design-tokens-vs-css-variables, what-is-frontend-design-skill, medo-components | ✅ |
+| 39 | `39-built-in-seo-agents-medo-vs-lovable-vs-replit.md` | `built-in-seo-agents-medo-vs-lovable-vs-replit` | Web 内置 SEO Agent 三方对比（MeDo vs Lovable vs Replit；Web 对比线） | Guide | Comparison | medo-tanstack-frontend-migration, built-in-seo-agent(walkthrough), medo-launches-ai-seo-agent, features 页 | ✍️ |
 
-**下一文件序号**：**29**（#12–#21 为 Components 簇缓冲；#22–#28 为 AI Frontend Design 簇已占用）
+**下一文件序号**：**29**（#12–#21 为 Components 簇缓冲；#22–#28 为 AI Frontend Design 簇已占用；#37–#38 为 Features 产品线，见 §3B；**#39 为 Web 对比线 Standalone，见 §3C**）
+
+> **线上同步口径（2026-09-09 核对）**：本地仓库 `#01–#05、#06–#11、#20–#28` 与线上 medo.dev/blog 可公开访问页面一一对应（日期/title 可溯）。**另有 6–7 月旧批 ~25 篇（Free AI App Builder、Native App vs PWA、MeDo vs Bolt、App Store rejection、AI App Builder for Small Business 等）在线上存在但非本仓库源**，其中多篇与 §3 移动簇规划（#30/#31/#33/#35 等）疑似撞题——是否视为已覆盖需人工以 CMS 为准裁定，裁定前移动簇不新建重复 slug。
 
 ---
 
@@ -100,6 +103,31 @@
 
 ---
 
+## 3B. Features 产品线（#37–#38，features 子目录）
+
+> 产品功能发布 Announcement，`category: "Product"`，文章入 `features/` 子目录。与 keyword 簇不同——它不承接长尾搜索词，价值锚点为**产品里程碑宣告 + 功能认知 + 现有产品簇反哺**（尤其 web / AI-agent 功能，链不动移动簇的写成 Standalone）。
+
+**Features 主题簇**（`secondary_category: "Features"`，文章入 `features/` 子目录）：
+- 已规划：
+  - **#37** `medo-launches-ai-seo-agent`（Feature A：内置 SEO Agent 发布；07-22 上线，07-31 已有 walkthrough `built-in-seo-agent` → 本篇为 Product 公告，slug **不得**撞 walkthrough）
+  - **#38** `medo-launches-custom-skills`（Feature B：Skills 生态发布——Custom Skills 06-29 + `@` 唤起 08-11 + 对话内配置 09-04；聚合三迭代为一篇生态公告）
+- **成稿状态（2026-09-09）**：#37、#38 均已产稿于 `features/`（date 09-10 / 09-11），待发布；发布后更新 blog/README 状态列并同步 CMS。
+- 后续可扩展：`medo-openclaw-skill`（已另有 04-01 教程）、`medo-shared-backend`、`medo-dev-prod-environments`、`medo-aab-export` 等按需立项
+- **内链约定**：Features 产品线文章互链（#37 ↔ #38）；如有对应 walkthrough/教程则链向它（SEO Agent → `built-in-seo-agent`）；反向由既有 walkthrough 链回产品公告
+
+## 3C. Web 对比线 Standalone（#39，blog 根目录）
+
+> Web/可发现性主题的独立对比文，`category: "Guide"`、`secondary_category: "Web"`，落 `blog/` 根目录（与 Features 的 Product 公告不同，也不进移动簇）。价值锚点为**承接竞品 SEO 长尾（built-in SEO agent / 平台 SEO 能力选型）** + 反哺 #37/#38 与 SSR 迁移文的可发现性叙事。
+
+**成稿状态（2026-09-09）**：
+- **#39** `built-in-seo-agents-medo-vs-lovable-vs-replit`（date 09-12）已产稿于 `blog/`，终审 A（86/100，P0 Pass）；slug 描述三平台 **内置 SEO 能力层**（非整产品对比，避免与 #03 best-ai-mobile-app-builders、线上 MeDo vs Bolt 撞）。
+- 定位要点：比较的是三平台 2026 年新上线的 built-in SEO agent/能力（审计时点、修复闭环、测量层、SSR 基座、AI-search 覆盖），非移动簇词；MeDo 立场如实（不追踪 AI 引用层）。
+- **内链约定**：本文链 `medo-tanstack-frontend-migration`（SSR 基座）+ `built-in-seo-agent`（walkthrough）+ `medo-launches-ai-seo-agent`（#37 公告）+ `/features` CTA；反向，同族 Web 可发现性文（#05/#37/walkthrough）可回链本文作为横向对比入口。
+- 后续可扩展（候选）：`medo-vs-replit` 全产品对比、`ge-ai-search-visibility-tools`、`ssr-vs-prerendering-ai-apps` 等——立项前对照线上旧批去重。
+
+
+---
+
 ## 4. Pillar 章节拆文对照（避免重复）
 
 | Pillar 章节 | 已拆/规划独立文 | 状态 |
@@ -129,6 +157,7 @@
 | cost build app with AI | Pillar §10 摘要 | KEEP（拆文加深） |
 | app store rejection AI | 无单篇 | KEEP |
 | validate app idea | Pillar §3 摘要 | KEEP（拆文） |
+| built-in SEO agent / 平台 SEO 能力对比 | 无单篇；SERP 为各厂官方页 | KEEP — #39 已 canonical（Web 对比线） |
 
 ---
 
