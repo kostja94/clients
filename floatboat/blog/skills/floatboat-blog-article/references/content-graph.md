@@ -70,8 +70,9 @@
 | 85 | file-organizer/85-clean-up-downloads-folder-with-ai.md | clean-up-downloads-folder-with-ai | Product | 可发布 | clean up Downloads folder with AI |
 | 86 | file-organizer/86-organize-receipts-and-invoices-with-ai.md | organize-receipts-and-invoices-with-ai | Product | 可发布 | organize receipts & invoices with AI |
 | 87 | 87-what-is-doubao-work.md | what-is-doubao-work | standalone/Research | 可发布 | Doubao Work ByteDance AI office agent |
+| 88 | 88-deepseek-v4-1-flash.md | deepseek-v4-1-flash | standalone/Research | 可发布 | DeepSeek V4.1 Flash 两天内测：Flash 能否替换 Pro |
 
-**下一序号：88**（voice 簇 62–69/71–72/74 预留；World Cup P03+ 待写；41–44/46/50/52 DeepSeek；45/51/53–55/61 Model 单篇）
+**下一序号：89**（voice 簇 62–69/71–72/74 预留；World Cup P03+ 待写；41–44/46/50/52 DeepSeek；45/51/53–55/61/88 Model 单篇）
 
 ---
 

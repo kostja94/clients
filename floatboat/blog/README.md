@@ -127,7 +127,7 @@ Phase 6 — Delivery             (portable/final-audit 终审指令)
 
 **落盘规则**：成稿仅写入 `floatboat/blog/[{cluster}/]NN-{slug}.md`。**禁止**创建 `blog/schema/`（已删除）；Source Map、SelfCheck 等辅助交付物仅在对话中输出，不写入仓库。
 
-新文章文件序号：当前下一号为 **62**（见 `skills/floatboat-blog-article/references/content-graph.md` §1）。成稿后请更新下方「博客文章」表。
+新文章文件序号：当前下一号为 **89**（见 `skills/floatboat-blog-article/references/content-graph.md` §1）。成稿后请更新下方「博客文章」表。
 
 ---
 
@@ -167,6 +167,7 @@ Phase 6 — Delivery             (portable/final-audit 终审指令)
 | 17 | [17-world-cup-2026-google-calendar-ics.md](./worldcup/17-world-cup-2026-google-calendar-ics.md) | `world-cup-2026-google-calendar-ics` | World Cup/Product | ~2.6k | ✅ | P09: ICS Import Guide — Google/Outlook/Apple Calendar |
 | 18 | [18-floatcup-world-cup-2026-calendar-subscribe.md](./worldcup/18-floatcup-world-cup-2026-calendar-subscribe.md) | `floatcup-world-cup-2026-calendar-subscribe` | World Cup/Product | ~2.1k | ✅ | P10: FloatCup one-click calendar subscription + reminders |
 | 19 | [19-world-cup-2026-schedule-usa.md](./worldcup/19-world-cup-2026-schedule-usa.md) | `world-cup-2026-schedule-usa` | World Cup/Reference | ~3.0k | ✅ | P11: USA Schedule & Match Reminders — USMNT Group D |
+| 88 | [88-deepseek-v4-1-flash.md](./88-deepseek-v4-1-flash.md) | `deepseek-v4-1-flash` | Research | ~3.5k | ✅ | V4.1 Flash 两天内测：新架构 + 原生多模态 + 「Flash 能否替换 Pro」策略测试 + 9/10 降价联动 |
 
 **线上追踪**：[blog-live-articles.md](./blog-live-articles.md) 维护全部 88 篇已上线文章（slug、lastmod、集群、本地覆盖状态），从 sitemap.xml 同步。当前本地覆盖 15/88。
 
@@ -321,6 +322,7 @@ Phase 6 — Delivery             (portable/final-audit 终审指令)
 | 53 | `grok-bot` | Grok Bot | xAI agent 产品；云电脑架构 + 安全模型；与 52 双向对照桥 |
 | 54 | `glm-5-3` | GLM-5.3 | 智谱后训练 Scaling 旗舰；开源第一 + 网安涌现；与 55 对照桥 |
 | 55 | `gemini-3-7-flash` | Gemini 3.7 Flash | Google Flash 主力模型；三周迭代 + 半价；Floatboat 内置；与 54 对照桥 |
+| 88 | `deepseek-v4-1-flash` | DeepSeek V4.1 Flash | 2026-09-08 两天限时内测中间版；新架构原生多模态；问卷实测「Flash 能否替换 Pro」；9/10 过期 + Flash 降价同日生效 |
 
 **2026-08-13 事件**：DeepSeek V4 Pro 0813 GA（50）与 xAI Grok 4.6（51）几乎同时发布，两篇互为对照桥（§6/§5 双向互链）。
 **2026-08-14 事件**：Google Gemini 3.7 Flash（55，08-13 发布）与智谱 GLM-5.3（54，08-14 发布）24 小时内先后发布，两篇互为对照桥（§6/§6 双向互链）；55 为 Research 文但含「Floatboat 内置」章节。
