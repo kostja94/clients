@@ -231,4 +231,3 @@ OG 解析优先级：
 - [knowledge/design/aesthetic-references.md](../../knowledge/design/aesthetic-references.md)（Alignify SSOT）
 - Hero/OG 速查：`E:\个人知识库\设计-Design\首屏与插图美学参考-Hero-Illustration.md`
 - 2mv 参考流程：[OG-COVER-WORKFLOW.md](../../../2mv/blog/images/OG-COVER-WORKFLOW.md)
-- API 提供方质量验证（fal vs 代理）：[API-PROVIDER-QUALITY-VERIFICATION.md](../../../API-PROVIDER-QUALITY-VERIFICATION.md)
