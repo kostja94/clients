@@ -14,10 +14,8 @@ Elad Gil is a San Francisco based solo investor, former Google product lead and 
 | --- | --- |
 | Role | Solo angel and seed investor |
 | Based | San Francisco, CA |
-| Background | Google, Twitter VP; founded Color Genomics |
 | Disclosed deals | 250+ |
 | Stage | Pre-seed to growth |
-| Process | Individual decision, no committee |
 
 ## 官网
 

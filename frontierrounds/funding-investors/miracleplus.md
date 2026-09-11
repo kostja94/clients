@@ -12,12 +12,10 @@ MiraclePlus was founded in 2019 in Beijing by Lu Qi, the former Microsoft execut
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | 2019 (successor to YC China) |
+| Founded | 2019 |
 | Headquarters | Beijing |
-| Leadership | Lu Qi, founder and chairman |
-| Type | Accelerator |
+| Leadership | Lu Qi |
 | Standard deal | $300K for 7% equity |
-| Portfolio | 612 startups across 10 batches |
 
 ## 官网
 

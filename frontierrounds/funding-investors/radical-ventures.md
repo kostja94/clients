@@ -6,21 +6,16 @@
 
 ## 概览
 
-Radical Ventures is a Toronto-based venture capital firm focused exclusively on artificial intelligence. Founded in 2017 by Jordan Jacobs — co-founder of AI hub Vector Institute and Layer 6 — and Tomi Poutanen, Radical backs AI-first companies from day-zero incubation through growth and pre-IPO scaling. It is among the world's largest AI-dedicated VCs: its US$800M Venture Growth Fund (2024) was reported as the largest AI-focused fund of its kind at launch, and it held a US$650M final close on a new early-stage fund in October 2025; total AUM is reported around US$2.4B (CPP Investments cites over US$2.5B; Bloomberg cited ~US$1.8B at the 2024 growth-fund close). Radical's ~59-company 'Vanguard' portfolio spans foundation models (Cohere, Writer), robotics and embodied AI (Generalist, Waabi, Promise Robotics), AI infrastructure (Crusoe, Prime Intellect, Etched), and AI for science, health and materials (Xanadu, Latent Labs, Nabla Bio, Orbital Industries). Turing Award winner Geoffrey Hinton is an LP and advisor; Fei-Fei Li is a Scientific Partner.
+Radical Ventures is a Toronto-based venture capital firm focused exclusively on artificial intelligence. Founded in 2017 by Jordan Jacobs — co-founder of AI hub Vector Institute and Layer 6 — and Tomi Poutanen, Radical backs AI-first companies from day-zero incubation through growth and pre-IPO scaling. It is among the world's largest AI-dedicated VCs: its US$800M Venture Growth Fund (2024) was reported as the largest AI-focused fund of its kind at launch, and it held a US$650M final close on a new early-stage fund in October 2025; total AUM is reported around US$2.4B (CPP Investments cites over US$2.5B; Bloomberg cited ~US$1.8B at the 2024 growth-fund close). Radical's ~59-company 'Vanguard' portfolio spans foundation models (Cohere, Writer), robotics and embodied AI (Generalist, Waabi, Promise Robotics), AI infrastructure (Crusoe, Prime Intellect, Etched), and AI for science, health and materials (Xanadu, Latent Labs, Nabla Bio, Orbital Industries). Turing Award winner Geoffrey Hinton is an LP and advisor; Fei-Fei Li is a Scientific Partner. The firm also has offices in San Francisco and London, and its earlier funds include a ~US$550M (2023) and a ~US$325M institutional fund.
 
 ## 基本档案
 
 | 项目 | 内容 |
 | --- | --- |
 | Founded | 2017 |
-| Headquarters | Toronto, Canada (offices in San Francisco & London) |
-| Founders | Jordan Jacobs & Tomi Poutanen |
-| Type | AI-dedicated venture capital firm |
-| AUM | ≈US$2.4B (2026 public reporting; CPP Investments cites >US$2.5B, Bloomberg ~US$1.8B at 2024 growth-fund close) |
-| Funds | US$800M Venture Growth Fund I (2024); US$650M early-stage fund, final close Oct 2025; preceded by ~US$550M (2023) and ~US$325M institutional funds |
-| Stage | Seed / day-zero incubations through growth and pre-IPO scaling |
-| Typical check | ≈US$2M–US$50M across seed to growth (per public reporting; not disclosed on radical.vc) |
-| Disclosed portfolio | 59 companies on radical.vc (incl. 5 marked Acquired, 1 marked IPO) |
+| Headquarters | Toronto, Canada |
+| Funds | US$800M growth; US$650M early |
+| Typical check | ≈US$2M–US$50M |
 
 ## 官网
 

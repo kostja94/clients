@@ -6,7 +6,7 @@
 
 ## 概览
 
-General Catalyst (GC) is a global venture and "transformation" firm founded in 2000 in Cambridge, Massachusetts by Joel Cutler and David Fialkow, now led by CEO Hemant Taneja with Ken Chenault as chairman. It reports roughly US$43–45.5B in assets (US$43B+ Dec 2024 per Wikipedia; US$45.5B regulatory AUM on its July 2026 Form ADV) and has backed 800+ companies from seed to growth, including Airbnb, Stripe, Snap, HubSpot, Samsara, Gusto, Anduril and Ramp. GC is a generalist by charter — its deepest roots are in healthcare (its Health Assurance thesis) and durable category leaders — but it has become one of the most aggressive AI deployers among the big platforms: it was the lead investor in Mistral's €600M Series B (2024), entered Anthropic's cap table (2025), led the record US$1.1B round in River AI (2026, with AMP PBC) on an "American open-weight leadership" thesis, and backs Anduril, Applied Intuition, Helsing and Hippocratic AI. Its 2024 Fund XII set aside ~US$1.5B for a "Creation" strategy that builds AI-native companies in-house rather than only funding them.
+General Catalyst (GC) is a global venture and "transformation" firm founded in 2000 in Cambridge, Massachusetts by Joel Cutler and David Fialkow, now led by CEO Hemant Taneja with Ken Chenault as chairman. It reports roughly US$43–45.5B in assets (US$43B+ Dec 2024 per Wikipedia; US$45.5B regulatory AUM on its July 2026 Form ADV) and has backed 800+ companies from seed to growth, including Airbnb, Stripe, Snap, HubSpot, Samsara, Gusto, Anduril and Ramp. GC is a generalist by charter — its deepest roots are in healthcare (its Health Assurance thesis) and durable category leaders — but it has become one of the most aggressive AI deployers among the big platforms: it was the lead investor in Mistral's €600M Series B (2024), entered Anthropic's cap table (2025), led the record US$1.1B round in River AI (2026, with AMP PBC) on an "American open-weight leadership" thesis, and backs Anduril, Applied Intuition, Helsing and Hippocratic AI. Its 2024 Fund XII set aside ~US$1.5B for a "Creation" strategy that builds AI-native companies in-house rather than only funding them. The firm has additional offices in San Francisco, New York, London, Berlin, Bangalore and Washington DC, and Jeannette zu Fürstenberg serves as president.
 
 ## 基本档案
 
@@ -14,13 +14,8 @@ General Catalyst (GC) is a global venture and "transformation" firm founded in 2
 | --- | --- |
 | Founded | 2000 |
 | Headquarters | Cambridge, Massachusetts |
-| Founders | Joel Cutler; David Fialkow |
-| Type | Global multi-stage venture + transformation firm (RIA) |
-| Assets under management | US$43–45.5B (Wikipedia Dec 2024; Form ADV Jul 2026) |
-| Stage | Seed to growth and beyond |
-| Key people | Hemant Taneja (CEO); Ken Chenault (Chairman); Jeannette zu Fürstenberg (President) |
-| Backed | 800+ companies |
-| AI anchor | Anthropic (2025), Mistral (Series B lead), River AI (US$1.1B lead), Anduril, Applied Intuition, Hippocratic AI |
+| Assets under management | US$43–45.5B |
+| Key people | Hemant Taneja (CEO); Ken Chenault (Chairman) |
 
 ## 官网
 

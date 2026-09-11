@@ -6,7 +6,7 @@
 
 ## 概览
 
-Naval Ravikant co-founded AngelList and, in doing so, industrialised the asset class he invests in: syndicates and rolling funds let thousands of individuals write the kind of early cheques he had been writing personally since the mid-2000s. He is based in San Francisco, has roughly 140 disclosed personal investments including Uber and Twitter, and is as widely read for his writing on wealth and judgement as for any single deal. His exposure to the current AI wave runs mostly through AngelList's platform rather than named personal cheques, so this page separates the two.
+Naval Ravikant co-founded AngelList and, in doing so, industrialised the asset class he invests in: syndicates and rolling funds let thousands of individuals write the kind of early cheques he had been writing personally since the mid-2000s. He is based in San Francisco, has roughly 140 disclosed personal investments including Uber and Twitter, and is as widely read for his writing on wealth and judgement as for any single deal. His exposure to the current AI wave runs mostly through AngelList's platform rather than named personal cheques, so this page separates the two. Before AngelList he founded Epinions and Vast.com.
 
 ## 基本档案
 
@@ -14,10 +14,8 @@ Naval Ravikant co-founded AngelList and, in doing so, industrialised the asset c
 | --- | --- |
 | Role | Co-founder, AngelList; angel investor |
 | Based | San Francisco, CA |
-| Background | Epinions, Vast.com, AngelList |
 | Disclosed deals | ~138 |
 | Stage | Pre-seed and seed |
-| Vehicle | Personal capital plus AngelList syndicates |
 
 ## 官网
 

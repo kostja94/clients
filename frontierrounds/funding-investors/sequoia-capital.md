@@ -14,9 +14,7 @@ Founded in 1972 and headquartered in Menlo Park, Sequoia Capital now covers the 
 | --- | --- |
 | Founded | 1972 |
 | Headquarters | Menlo Park, California |
-| Leadership | Alfred Lin and Pat Grady, co-CEOs; Doug Leone, chairman |
-| Type | Venture capital partnership |
-| Stage | Seed to growth |
+| Leadership | Alfred Lin & Pat Grady (co-CEOs) |
 | Disclosed AI portfolio | 20+ companies |
 
 ## 官网

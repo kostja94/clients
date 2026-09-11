@@ -13,13 +13,9 @@ Air Street Capital is a London-based venture firm founded in 2019 by Nathan Bena
 | 项目 | 内容 |
 | --- | --- |
 | Founded | 2019 |
-| Headquarters | London, UK |
-| Founder | Nathan Benaich (solo GP) |
-| Type | AI-only venture capital; solo GP |
-| Funds | Fund III $232M (2026) - largest solo-GP venture fund in Europe |
-| Stage | Pre-Seed to growth; leads early rounds |
-| Typical check | $500K-$15M early; up to $25M growth |
-| Disclosed portfolio | 66 companies across Epoch I-III + pre-Air Street angel investments |
+| Funds | Fund III $232M (2026) |
+| Typical check | $500K–$15M; up to $25M |
+| Disclosed portfolio | 66 companies |
 
 ## 官网
 

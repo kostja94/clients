@@ -6,7 +6,7 @@
 
 ## 概览
 
-Lightspeed Venture Partners is a global multi-stage venture firm founded in 2000 and headquartered in Menlo Park, managing more than US$40B (Wikipedia lists US$50B). It operates as a federated set of regionally anchored entities — Lightspeed Management Company across the US, Europe and Israel, and Lightspeed India/SEA separately — with offices spanning Menlo Park, San Francisco, New York, Tel Aviv, London, Paris, Berlin, India and Singapore. Lightspeed began investing in AI in 2012 and says it has since backed 165 AI-native companies with more than US$5.5B committed. In December 2025 it closed more than US$9B across six vehicles — its largest fundraise ever — explicitly structured to fund capital-intensive AI: a US$3.3B Opportunity Fund III for late-stage follow-ons, US$1.8B Select VI, two early-stage funds (US$2.18B combined), a US$600M co-investment vehicle and US$1.25B in single-investor mandates. Its signature AI position is Anthropic — it led the US$3.5B Series E in 2025 and backed Series D and F — and it has written one of the largest reported VC cheques in the sector (~US$1B to Anthropic). It is also Mistral's seed lead and an every-round backer of the European champion.
+Lightspeed Venture Partners is a global multi-stage venture firm founded in 2000 and headquartered in Menlo Park, managing more than US$40B (Wikipedia lists US$50B). It operates as a federated set of regionally anchored entities — Lightspeed Management Company across the US, Europe and Israel, and Lightspeed India/SEA separately — with offices spanning Menlo Park, San Francisco, New York, Tel Aviv, London, Paris, Berlin, India and Singapore. Lightspeed began investing in AI in 2012 and says it has since backed 165 AI-native companies with more than US$5.5B committed. In December 2025 it closed more than US$9B across six vehicles — its largest fundraise ever — explicitly structured to fund capital-intensive AI: a US$3.3B Opportunity Fund III for late-stage follow-ons, US$1.8B Select VI, two early-stage funds (US$2.18B combined), a US$600M co-investment vehicle and US$1.25B in single-investor mandates. Its signature AI position is Anthropic — it led the US$3.5B Series E in 2025 and backed Series D and F — and it has written one of the largest reported VC cheques in the sector (~US$1B to Anthropic). It is also Mistral's seed lead and an every-round backer of the European champion. The firm was founded by Barry Eggers, Christopher Schaepe, Ravi Mhatre and Peter Nieh.
 
 ## 基本档案
 
@@ -14,12 +14,8 @@ Lightspeed Venture Partners is a global multi-stage venture firm founded in 2000
 | --- | --- |
 | Founded | 2000 |
 | Headquarters | Menlo Park, California |
-| Founders | Barry Eggers; Christopher Schaepe; Ravi Mhatre; Peter Nieh |
-| Type | Global multi-stage venture firm (federated structure) |
-| Assets under management | >US$40B (US$50B per Wikipedia); largest raise US$9B across six funds (Dec 2025) |
-| Stage | Seed to late-stage growth (Series F and beyond) |
-| AI track record | 165 AI-native companies; >US$5.5B committed since 2012 |
-| Key AI positions | Anthropic (Series E lead), OpenAI, xAI, Mistral, Databricks, Glean, Abridge, Skild AI, Reflection AI |
+| Assets under management | >US$40B |
+| Stage | Seed to late-stage growth |
 
 ## 官网
 

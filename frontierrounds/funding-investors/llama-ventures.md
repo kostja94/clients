@@ -15,12 +15,7 @@ Founded in 2024 and headquartered in Sunnyvale, California, Llama Ventures is an
 | Founded | 2024 |
 | Headquarters | Sunnyvale, California |
 | Founders | Jack Feng; Herman Zhou |
-| Type | Founder-built early-stage VC + fund of funds |
-| Direct fund | US$300M+ |
-| Fund of funds | US$600M+ |
 | Typical check | US$500K–US$5M |
-| Stage | Pre-seed to Series A+ |
-| Disclosed portfolio | 60+ companies |
 
 ## 官网
 

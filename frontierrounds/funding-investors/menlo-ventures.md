@@ -6,22 +6,17 @@
 
 ## 概览
 
-Founded in 1976 by H. DuBose Montgomery and headquartered in Menlo Park, Menlo Ventures is one of Silicon Valley's oldest venture firms. Its AI era is anchored by Anthropic: Menlo made its first investment in 2023 when the lab was pre-product and pre-revenue, led its Series D in 2024 with a bet-the-firm check of more than US$500M, and has invested in every round since — a position now worth roughly US$14B (per Newcomer/Bloomberg, July 2026). In July 2024 it launched the Menlo Anthology Fund with Anthropic, a ~US$100M initiative whose deployed capital has grown toward US$250M across 60+ early-stage AI companies. At its 50-year mark in June 2026 the firm raised US$3B across two new funds (Menlo Ventures XVII for seed and Series A, Menlo Inflection IV for growth), the largest raise in its history, explicitly to go 'ALL IN on AI' — backing AI leaders from infrastructure and frontier models to AI-native applications across enterprise, healthcare and consumer markets, while operating across its self-described 'Three Stages of Early' (Inception, Venture, Inflection).
+Founded in 1976 by H. DuBose Montgomery and headquartered in Menlo Park, Menlo Ventures is one of Silicon Valley's oldest venture firms. Its AI era is anchored by Anthropic: Menlo made its first investment in 2023 when the lab was pre-product and pre-revenue, led its Series D in 2024 with a bet-the-firm check of more than US$500M, and has invested in every round since — a position now worth roughly US$14B (per Newcomer/Bloomberg, July 2026). In July 2024 it launched the Menlo Anthology Fund with Anthropic, a ~US$100M initiative whose deployed capital has grown toward US$250M across 60+ early-stage AI companies. At its 50-year mark in June 2026 the firm raised US$3B across two new funds (Menlo Ventures XVII for seed and Series A, Menlo Inflection IV for growth), the largest raise in its history, explicitly to go 'ALL IN on AI' — backing AI leaders from infrastructure and frontier models to AI-native applications across enterprise, healthcare and consumer markets, while operating across its self-described 'Three Stages of Early' (Inception, Venture, Inflection). The firm has offices in Menlo Park and San Francisco, and its AI team is led by Matt Murphy, Tim Tully, Venky Ganesan, Deedy Das, Matt Kraning and Joff Redfern.
 
 ## 基本档案
 
 | 项目 | 内容 |
 | --- | --- |
 | Founded | 1976 |
-| Headquarters | Menlo Park, California (offices in Menlo Park & San Francisco) |
-| Founder | H. DuBose Montgomery (now Partner Emeritus) |
-| Type | Early-stage venture capital ('Three Stages of Early': Inception / Venture / Inflection) |
-| AUM | US$7.6B+ per menlovc.com; ~US$8.5B cited in post-raise coverage (figures conflict) |
-| Latest raise | US$3B across Menlo Ventures XVII (seed–A) & Menlo Inflection IV (growth), June 2026 — largest in 50-yr history |
-| Anthology Fund | ~US$100M launched July 2024 with Anthropic; ~US$250M deployed across 60+ companies |
-| Anthropic position | Invested every round since 2023; stake worth ~US$14B (per Newcomer/Bloomberg, Jul 2026) |
-| AI-focused partners | Matt Murphy, Tim Tully, Venky Ganesan, Deedy Das, Matt Kraning, Joff Redfern |
-| Track record | 85+ public companies, 170+ M&A exits (menlovc.com/about) |
+| Headquarters | Menlo Park, California |
+| Founder | H. DuBose Montgomery |
+| AUM | US$7.6B+ |
+| Track record | 85+ public, 170+ M&A exits |
 
 ## 官网
 

@@ -15,8 +15,6 @@ Founded in 2025 by Huiwen Wang, co-founder of Meituan (SEHK:3690), Lollapalooza 
 | Founded | 2025 |
 | Headquarters | Hong Kong |
 | Founder | Huiwen Wang — Meituan co-founder |
-| Type | Founder-led VC / family capital |
-| Stage | Early and growth |
 | Disclosed portfolio | 25+ companies |
 
 ## 官网

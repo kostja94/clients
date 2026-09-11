@@ -6,22 +6,16 @@
 
 ## 概览
 
-Gradient is an early-stage venture firm that invests exclusively in AI. Founded in 2017 in close partnership with Google — when few institutions would back an AI-only fund — it spun out as an independent firm (Grdnt LLC) in October 2025, with Google remaining a valued LP. Over nearly a decade it has backed 500+ AI founders across applied AI, infrastructure and new categories, including Lambda, Oura and Writer from their earliest days. Gradient aims to be founders' first institutional check at pre-seed and seed, focused on reinvented AI-native B2B software, AI agents, the AI developer stack, and real-world AI from biology to robotics. In March 2026 it announced an oversubscribed US$220M Fund V, bringing AUM to roughly US$1.2B across five funds. Its public portfolio page lists 130+ companies since 2017; the featured view currently shows 18.
+Gradient is an early-stage venture firm that invests exclusively in AI. Founded in 2017 in close partnership with Google — when few institutions would back an AI-only fund — it spun out as an independent firm (Grdnt LLC) in October 2025, with Google remaining a valued LP. Over nearly a decade it has backed 500+ AI founders across applied AI, infrastructure and new categories, including Lambda, Oura and Writer from their earliest days. Gradient aims to be founders' first institutional check at pre-seed and seed, focused on reinvented AI-native B2B software, AI agents, the AI developer stack, and real-world AI from biology to robotics. In March 2026 it announced an oversubscribed US$220M Fund V, bringing AUM to roughly US$1.2B across five funds. Its public portfolio page lists 130+ companies since 2017; the featured view currently shows 18. The firm is based at 560 Davis St, Suite 150 in San Francisco.
 
 ## 基本档案
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | 2017 |
-| Headquarters | San Francisco, California (560 Davis St, Suite 150) |
-| Founders | Founded inside Google in 2017; now led by Managing Partners Darian Shirazi & Zach Bratun-Glennon (owners of Grdnt LLC) |
-| Independent since | October 2025 (spun out of Google/Alphabet) |
-| Type | AI-only early-stage venture firm (pre-seed & seed) |
-| Funds | Fund V: US$220M announced 2026; ~US$1.2B AUM across five funds |
-| Stage | Pre-seed & seed — leads rounds, aims to be first institutional check |
-| Typical check | ~US$1–5M; ~US$3M average lead check targeting 10–15% ownership (per GP Darian Shirazi) |
-| Founders backed | 500+ AI founders since 2017 |
-| Disclosed portfolio | 134 companies on gradient.com/portfolio (2017–2026, 37 marked acquired); 18 shown in the default Featured view |
+| Headquarters | San Francisco, California |
+| Founders | Darian Shirazi & Zach Bratun-Glennon |
+| Typical check | ~US$1–5M; ~$3M avg; 10–15% ownership |
+| Disclosed portfolio | 134 companies (37 acquired) |
 
 ## 官网
 

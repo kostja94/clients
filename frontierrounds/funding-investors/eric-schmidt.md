@@ -12,13 +12,10 @@ Eric Schmidt ran Google from 2001 to 2011, served as executive chairman until 20
 
 | 项目 | 内容 |
 | --- | --- |
-| Role | Angel investor; ex-CEO and executive chairman of Google |
-| Based | San Francisco Bay Area, CA / Washington, DC |
-| Background | Google CEO 2001–2011; Executive Chairman to 2019 |
-| Vehicles | Hillspire (family office); Innovation Endeavors (co-founded 2010) |
-| Disclosed AI deals | 22 private AI companies since 2019 (Hillspire, per Fintrx/CNBC) |
-| Stage | Seed to growth; personal and family-office checks |
-| Focus | Frontier labs, AI safety & capability, applied deep tech, defense AI |
+| Role | Angel investor; ex-Google CEO |
+| Based | SF Bay Area / Washington, DC |
+| Vehicles | Hillspire; Innovation Endeavors |
+| Disclosed AI deals | 22 private AI companies |
 
 ## 官网
 

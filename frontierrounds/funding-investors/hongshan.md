@@ -12,11 +12,9 @@ HongShan is the China business formerly known as Sequoia Capital China, led by N
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | 2005 (independent since 2024) |
+| Founded | 2005 |
 | Headquarters | Hong Kong / Beijing, China |
-| Leadership | Neil Shen — founding and managing partner |
-| Type | Independent venture and growth firm |
-| Stage | Seed to growth |
+| Leadership | Neil Shen |
 | Disclosed AI portfolio | 26+ companies |
 
 ## 官网

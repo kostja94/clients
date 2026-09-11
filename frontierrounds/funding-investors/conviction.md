@@ -14,12 +14,8 @@ Conviction (Conviction Partners) is an AI-only venture firm founded in 2022 by S
 | --- | --- |
 | Founded | 2022 |
 | Headquarters | San Francisco Bay Area, California |
-| Founder | Sarah Guo (ex-Greylock) |
-| Type | AI-native early-stage venture firm ('Software 3.0' specialist) |
-| Funds | Fund I US$101M (2022); Fund II US$230M (closed Jan 2025) |
-| Stage | Pre-seed to Series A |
-| Typical check | US$1-25M |
-| Disclosed portfolio | 19 companies on conviction.com (as of Sep 2026) |
+| Typical check | US$1–25M |
+| Disclosed portfolio | 19 companies |
 
 ## 官网
 

@@ -14,9 +14,7 @@ Founded in 2011 by Lei Jun, founder and chairman of Xiaomi, together with Tuck L
 | --- | --- |
 | Founded | 2011 |
 | Headquarters | Beijing, China |
-| Founders | Lei Jun — Xiaomi founder; Tuck Lye Koh |
-| Type | Venture capital / ecosystem-linked fund |
-| Stage | Angel to growth |
+| Founders | Lei Jun; Tuck Lye Koh |
 | Disclosed AI portfolio | 30+ companies |
 
 ## 官网

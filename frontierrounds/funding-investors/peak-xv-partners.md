@@ -12,11 +12,9 @@ Peak XV Partners is the India and Southeast Asia business formerly known as Sequ
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | 2006 (independent since 2024) |
+| Founded | 2006 |
 | Headquarters | Bengaluru / Singapore |
-| Leadership | Shailendra Singh, managing director |
-| Type | Venture and growth partnership |
-| Stage | Seed (Surge) to growth |
+| Leadership | Shailendra Singh |
 | Disclosed AI portfolio | 12+ companies |
 
 ## 官网

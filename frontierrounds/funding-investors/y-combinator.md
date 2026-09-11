@@ -6,7 +6,7 @@
 
 ## 概览
 
-Founded in 2005 by Paul Graham, Jessica Livingston, Robert Morris and Trevor Blackwell and led today by president and CEO Garry Tan, Y Combinator is the template every other accelerator copies: two three-month batches a year in San Francisco, a standardised $500,000 deal, and a Demo Day that functions as the seed market's clearing house. Its AI position is unusual among investors — rather than concentrating capital in a handful of frontier labs, YC underwrites AI as a volume business, funding hundreds of application-layer and developer-tooling teams per year and letting the market select the winners. Since 2023 the large majority of each batch has described itself as AI-native, making YC the single widest funnel into early-stage AI.
+Founded in 2005 by Paul Graham, Jessica Livingston, Robert Morris and Trevor Blackwell and led today by president and CEO Garry Tan, Y Combinator is the template every other accelerator copies: two three-month batches a year in San Francisco, a standardised $500,000 deal, and a Demo Day that functions as the seed market's clearing house. Its AI position is unusual among investors — rather than concentrating capital in a handful of frontier labs, YC underwrites AI as a volume business, funding hundreds of application-layer and developer-tooling teams per year and letting the market select the winners. Since 2023 the large majority of each batch has described itself as AI-native, making YC the single widest funnel into early-stage AI. The standard deal is $125K for 7% equity plus a $375K uncapped SAFE.
 
 ## 基本档案
 
@@ -14,10 +14,8 @@ Founded in 2005 by Paul Graham, Jessica Livingston, Robert Morris and Trevor Bla
 | --- | --- |
 | Founded | 2005 |
 | Headquarters | San Francisco |
-| Leadership | Garry Tan, president and CEO |
-| Type | Accelerator |
-| Standard deal | $500K ($125K for 7% + $375K uncapped SAFE) |
-| Cadence | Two batches a year |
+| Leadership | Garry Tan |
+| Standard deal | $500K |
 
 ## 官网
 
