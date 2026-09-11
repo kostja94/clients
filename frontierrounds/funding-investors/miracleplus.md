@@ -6,7 +6,11 @@
 
 ## 概览
 
-MiraclePlus was founded in 2019 in Beijing by Lu Qi, the former Microsoft executive vice president and Baidu group president, as the independent successor to YC China after Y Combinator withdrew from the market. It runs the same shape of programme as its predecessor — two accelerator batches a year, a standard $300,000 cheque for 7% equity, three months of weekly partner office hours, and a Demo Day in front of more than a thousand investors — but applies it to Chinese hard-technology founders rather than consumer software. Ten batches in, the firm reports 612 funded startups, roughly 1,500 alumni founders and a combined portfolio valuation near RMB 90B, with a portfolio that skews heavily toward embodied intelligence, AI infrastructure and agent products.
+MiraclePlus is a Beijing accelerator founded in 2019 by Lu Qi as the independent successor to YC China. It runs two batches a year with a standard US$300,000 cheque for 7% equity and a Demo Day. Its portfolio skews heavily toward embodied intelligence, AI infrastructure and agent products.
+
+## 详情
+
+MiraclePlus was founded in 2019 in Beijing by Lu Qi, the former Microsoft executive vice president and Baidu group president, as the independent successor to YC China after Y Combinator withdrew from the market. Ten batches in, the firm reports 612 funded startups, roughly 1,500 alumni founders and a combined portfolio valuation near RMB 90B.
 
 ## 基本档案
 

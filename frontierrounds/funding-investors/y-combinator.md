@@ -6,7 +6,11 @@
 
 ## 概览
 
-Founded in 2005 by Paul Graham, Jessica Livingston, Robert Morris and Trevor Blackwell and led today by president and CEO Garry Tan, Y Combinator is the template every other accelerator copies: two three-month batches a year in San Francisco, a standardised $500,000 deal, and a Demo Day that functions as the seed market's clearing house. Its AI position is unusual among investors — rather than concentrating capital in a handful of frontier labs, YC underwrites AI as a volume business, funding hundreds of application-layer and developer-tooling teams per year and letting the market select the winners. Since 2023 the large majority of each batch has described itself as AI-native, making YC the single widest funnel into early-stage AI. The standard deal is $125K for 7% equity plus a $375K uncapped SAFE.
+Y Combinator, founded in 2005, is the accelerator every other copies, running two three-month batches a year and a standardised US$500,000 deal. Rather than concentrating capital in a handful of frontier labs, it underwrites AI as a volume business, funding hundreds of application-layer teams per year. Since 2023 most of each batch has been AI-native.
+
+## 详情
+
+Y Combinator was founded in 2005 by Paul Graham, Jessica Livingston, Robert Morris and Trevor Blackwell. Since 2023 the large majority of each batch has described itself as AI-native, making YC the single widest funnel into early-stage AI. The standard deal is US$125K for 7% equity plus a US$375K uncapped SAFE.
 
 ## 基本档案
 

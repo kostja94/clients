@@ -6,7 +6,11 @@
 
 ## 概览
 
-Andreessen Horowitz — universally shortened to a16z — was founded in Menlo Park in 2009 by Marc Andreessen and Ben Horowitz and has grown into a registered investment adviser managing roughly US$106B (March 2026 Form ADV) across seed, venture, growth, crypto, bio and American Dynamism funds. It is a generalist firm by charter but the most concentrated AI investor by dollars: it holds positions in the largest model labs, the compute and data layers beneath them, and hundreds of AI-native applications, and it publishes the sector's most-read research through a16z Enterprise and its Top 100 GenAI Apps series. Structurally it behaves less like a partnership and more like a platform, with in-house go-to-market, talent, policy and marketing teams attached to each fund. Its disclosed AI portfolio includes 25+ notable companies.
+Andreessen Horowitz (a16z) is the most concentrated AI investor by dollars, holding positions across the largest model labs, the compute and data layers beneath them, and hundreds of AI-native applications. Founded in 2009, it manages roughly US$106B. Its AI portfolio spans OpenAI, xAI, Mistral, Cursor, Harvey, ElevenLabs and Figure.
+
+## 详情
+
+Andreessen Horowitz is a registered investment adviser managing roughly US$106B (March 2026 Form ADV) across seed, venture, growth, crypto, bio and American Dynamism funds. It publishes the sector's most-read research through a16z Enterprise and its Top 100 GenAI Apps series, and structurally behaves less like a partnership and more like a platform, with in-house go-to-market, talent, policy and marketing teams attached to each fund.
 
 ## 基本档案
 

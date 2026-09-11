@@ -6,7 +6,11 @@
 
 ## 概览
 
-Elad Gil is a San Francisco based solo investor, former Google product lead and Twitter VP, founder of Mixer Labs and Color Genomics, and author of High Growth Handbook. He deploys personal capital with no investment committee and no fund brand to defend, which lets him commit inside days and stay with founders through hiring, pricing and org design. More than 250 disclosed investments (per CB Insights and PitchBook; other trackers count fewer) make him one of the most cited individual backers of the current AI cycle, with positions across model labs, AI search and vertical AI software.
+Elad Gil is a San Francisco-based solo investor deploying personal capital with no committee and no fund brand, letting him commit inside days. More than 250 disclosed investments make him one of the most cited individual backers of the AI cycle. His positions span model labs, AI search and vertical AI software.
+
+## 详情
+
+Elad Gil is a former Google product lead and Twitter VP, founder of Mixer Labs and Color Genomics, and author of High Growth Handbook.
 
 ## 基本档案
 

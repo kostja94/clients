@@ -6,7 +6,11 @@
 
 ## 概览
 
-AIX Ventures is a venture firm founded in 2021 by active AI practitioners - Richard Socher (Co-Founder & Managing Partner; founder/CEO of Recursive), Anthony Goldbloom (AI Partner; founder of Kaggle) and Christopher Manning (AI Partner; former Director of Stanford AI Lab) - who stay hands-on builders alongside a professional investing team. It backs only companies where AI is core to the main product, invests pre-seed to Series A, and is sector-agnostic with focus on Consumer, Developer Tools & Data, Healthcare/Life Sciences, Manufacturing & Warehousing, and SaaS. AIX manages roughly $252M across Fund I ($50M, 2021) and Fund II ($202M, February 2024), targets $1M-$5M checks, leads rounds, and reserves follow-on capital. Its site discloses 73 portfolio companies spanning developer tools, frontier labs, healthcare and consumer - among them Hugging Face, Perplexity, Weights & Biases, You.com, Replicate, Windsurf, Chroma and Ambience. The founding team also included Shaun Johnson, with Pieter Abbeel among the original practitioners, and press coverage cites initial checks of ~$500K–$2M.
+AIX Ventures is a venture firm founded in 2021 by active AI practitioners, backing companies where AI is core to the product. It invests pre-seed to Series A and manages roughly US$252M across two funds. Its 73-company portfolio spans Hugging Face, Perplexity, Weights & Biases, You.com, Replicate and Windsurf.
+
+## 详情
+
+AIX Ventures was founded in 2021 by active AI practitioners — Richard Socher (Co-Founder & Managing Partner; founder/CEO of Recursive), Anthony Goldbloom (AI Partner; founder of Kaggle) and Christopher Manning (AI Partner; former Director of Stanford AI Lab). The founding team also included Shaun Johnson, with Pieter Abbeel among the original practitioners. AIX manages roughly US$252M across Fund I (US$50M, 2021) and Fund II (US$202M, February 2024), and press coverage cites initial checks of ~US$500K–US$2M.
 
 ## 基本档案
 

@@ -6,7 +6,11 @@
 
 ## 概览
 
-Index Ventures is a transatlantic multi-stage venture and growth firm founded in 1996 in Geneva by Neil Rimer, David Rimer and Giuseppe Zocco, with its operational headquarters in London and additional offices in San Francisco, New York and Jersey. It has backed more than 1,100 companies and raised over US$15B since inception, with roughly US$11.7–13B under management across venture, growth and its Origin seed fund (most recent closings: Index XII US$800M and Growth VII US$1.5B, 2024). Index is the most successful transatlantic venture firm of its generation — Slack, Figma, Revolut, Wiz, Adyen, Datadog, Scale AI — and in the AI cycle it has become the most consistent institutional backer of Europe's flagship lab: it wrote Mistral's first institutional cheque before the company was incorporated and has participated in every round from Seed (2023) through the record €3B Series D (2026). On the US side it holds Scale AI across five rounds, plus Anthropic, Fireworks AI, Cohere and Perplexity. More than 100 of its portfolio companies have become unicorns.
+Index Ventures is a transatlantic multi-stage venture firm founded in 1996. It is the most consistent institutional backer of Mistral, writing the lab's first cheque before incorporation and participating in every round through the record €3B Series D. On the US side it holds Scale AI, Anthropic, Fireworks AI, Cohere and Perplexity.
+
+## 详情
+
+Index Ventures was founded in 1996 in Geneva by Neil Rimer, David Rimer and Giuseppe Zocco, with its operational headquarters in London and additional offices in San Francisco, New York and Jersey. It has raised over US$15B since inception, with roughly US$11.7–13B under management across venture, growth and its Origin seed fund (most recent closings: Index XII US$800M and Growth VII US$1.5B, 2024). More than 100 of its portfolio companies have become unicorns.
 
 ## 基本档案
 

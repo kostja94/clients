@@ -6,7 +6,11 @@
 
 ## 概览
 
-HongShan is the China business formerly known as Sequoia Capital China, led by Neil Shen. Sequoia announced a three-way split of its global partnership in June 2023 and completed it in March 2024, since when HongShan has been a legally and financially separate partnership from Sequoia Capital in the US and Peak XV Partners in India and Southeast Asia — the portfolio below is HongShan's alone. Its AI programme spans every Chinese frontier model lab, the full embodied-intelligence stack from brains to hands to feet, autonomous driving and vision AI, and a brain-computer interface portfolio it began assembling in 2020.
+HongShan — China's Sequoia, led by Neil Shen — spans every Chinese frontier model lab, the full embodied-intelligence stack, autonomous driving and vision AI. Its heaviest bet is MiniMax, and its seed fund entered Unitree Robotics at Pre-A. It also began assembling a brain-computer interface portfolio as early as 2020.
+
+## 详情
+
+HongShan is the China business formerly known as Sequoia Capital China. Sequoia announced a three-way split of its global partnership in June 2023 and completed it in March 2024, since when HongShan has been a legally and financially separate partnership from Sequoia Capital in the US and Peak XV Partners in India and Southeast Asia.
 
 ## 基本档案
 

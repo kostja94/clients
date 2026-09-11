@@ -6,7 +6,11 @@
 
 ## 概览
 
-Founded in 1972 and headquartered in Menlo Park, Sequoia Capital now covers the United States and Europe only, following the March 2024 completion of the global partnership's three-way split — it shares a name and history with HongShan in China and Peak XV in India, but the investments listed here are its own. Roelof Botha stepped down in November 2025; Alfred Lin and Pat Grady took over as co-CEOs, and in March 2026 Doug Leone returned as chairman. Under the new leadership the firm reversed its earlier restraint on model-layer spending and now runs a barbell strategy: very large positions in Anthropic and OpenAI alongside frontier moonshots, plus the densest 2026 deal flow in agent infrastructure.
+Sequoia Capital, founded in 1972, is one of venture's most storied firms. Under co-CEOs Alfred Lin and Pat Grady it reversed its earlier restraint on model-layer spending, committing over US$2B to Anthropic's H round while running the densest 2026 deal flow in agent infrastructure. Its AI portfolio spans Anthropic, OpenAI, xAI, Etched and Harvey.
+
+## 详情
+
+Sequoia Capital now covers the United States and Europe only, following the March 2024 completion of the global partnership's three-way split — it shares a name and history with HongShan in China and Peak XV in India, but the investments listed here are its own. Roelof Botha stepped down as CEO in November 2025, and in March 2026 Doug Leone returned as chairman.
 
 ## 基本档案
 

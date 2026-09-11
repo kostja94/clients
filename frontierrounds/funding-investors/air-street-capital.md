@@ -6,7 +6,11 @@
 
 ## 概览
 
-Air Street Capital is a London-based venture firm founded in 2019 by Nathan Benaich that invests exclusively in AI-first companies across Europe and the US. Run as a solo-GP firm, it backs frontier AI models, AI infrastructure, applied software, TechBio and science, and defence and autonomy, with portfolio highlights including Synthesia, Black Forest Labs, Poolside, Profluent, Wayve and ElevenLabs. Air Street is famous for its research franchise - the State of AI Report, Air Street Press essays, RAAIS, and spinout.fyi. In March 2026 it closed $232M Fund III - the largest solo-GP venture fund in Europe - to lead early rounds with checks from $500K to $15M plus select growth investments up to $25M. Its disclosed portfolio spans four eras from 2019 to today, with exits to Amazon, SoftBank, Meta and others.
+Air Street Capital is a solo-GP venture firm founded by Nathan Benaich that invests exclusively in AI-first companies across Europe and the US. It is famous for the State of AI Report research franchise. Its portfolio highlights include Synthesia, Black Forest Labs, Poolside, Profluent, Wayve and ElevenLabs.
+
+## 详情
+
+Air Street Capital is a London-based venture firm founded in 2019 by Nathan Benaich. Its US$232M Fund III, closed in March 2026, is the largest solo-GP venture fund in Europe.
 
 ## 基本档案
 

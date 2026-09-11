@@ -6,7 +6,11 @@
 
 ## 概览
 
-Gradient is an early-stage venture firm that invests exclusively in AI. Founded in 2017 in close partnership with Google — when few institutions would back an AI-only fund — it spun out as an independent firm (Grdnt LLC) in October 2025, with Google remaining a valued LP. Over nearly a decade it has backed 500+ AI founders across applied AI, infrastructure and new categories, including Lambda, Oura and Writer from their earliest days. Gradient aims to be founders' first institutional check at pre-seed and seed, focused on reinvented AI-native B2B software, AI agents, the AI developer stack, and real-world AI from biology to robotics. In March 2026 it announced an oversubscribed US$220M Fund V, bringing AUM to roughly US$1.2B across five funds. Its public portfolio page lists 130+ companies since 2017; the featured view currently shows 18. The firm is based at 560 Davis St, Suite 150 in San Francisco.
+Gradient is an early-stage venture firm that invests exclusively in AI, aiming to be founders' first institutional check at pre-seed and seed. Founded in partnership with Google, it has backed 500+ AI founders including Lambda, Oura and Writer. Its US$220M Fund V (March 2026) brought AUM to roughly US$1.2B.
+
+## 详情
+
+Gradient was founded in 2017 in close partnership with Google — when few institutions would back an AI-only fund — and spun out as an independent firm (Grdnt LLC) in October 2025, with Google remaining a valued LP. Over nearly a decade it has backed 500+ AI founders. The firm is based at 560 Davis St, Suite 150 in San Francisco.
 
 ## 基本档案
 

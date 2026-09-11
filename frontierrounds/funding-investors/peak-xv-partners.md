@@ -6,7 +6,11 @@
 
 ## 概览
 
-Peak XV Partners is the India and Southeast Asia business formerly known as Sequoia Capital India, renamed in 2023 and fully independent since the March 2024 completion of the global partnership's three-way split — it is a separate partnership from Sequoia Capital in the US and HongShan in China, and the portfolio below is its own. Led by Shailendra Singh from Bengaluru and Singapore, the firm manages more than US$9B across venture and growth funds and runs the Surge seed programme. Its AI strategy is deliberately application-first: rather than funding frontier parameter races, it backs sovereign-language models, data and GPU infrastructure for Indian enterprises, and AI-native software where distribution across India and Southeast Asia is the moat.
+Peak XV Partners is India and Southeast Asia's largest venture franchise, led by Shailendra Singh. Its AI strategy is deliberately application-first, backing sovereign-language models, data and GPU infrastructure, and AI-native software. Anchors include Sarvam AI, Atlan and Neysa.
+
+## 详情
+
+Peak XV Partners is the India and Southeast Asia business formerly known as Sequoia Capital India, renamed in 2023 and fully independent since the March 2024 completion of the global partnership's three-way split. The firm manages more than US$9B across venture and growth funds.
 
 ## 基本档案
 

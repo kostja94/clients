@@ -6,7 +6,7 @@
 
 ## 概览
 
-Founded in 2025 by Huiwen Wang, co-founder of Meituan (SEHK:3690), Lollapalooza Capital is a Hong Kong based, founder-led investment firm and family office that channels operator experience from building one of China's largest consumer internet platforms into AI. It combines primary market conviction with public market perspective, backing category-defining founders across large language models, AI infrastructure, consumer and enterprise AI applications, intelligent hardware, and embodied intelligence.
+Lollapalooza Capital is a Hong Kong-based, founder-led investment firm and family office founded in 2025 by Meituan co-founder Huiwen Wang. It combines primary market conviction with a public market perspective, backing category-defining founders across large language models, AI infrastructure, applications and embodied intelligence.
 
 ## 基本档案
 

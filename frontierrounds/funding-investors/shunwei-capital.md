@@ -6,7 +6,11 @@
 
 ## 概览
 
-Founded in 2011 by Lei Jun, founder and chairman of Xiaomi, together with Tuck Lye Koh, Shunwei Capital is a Beijing based venture firm investing from angel through growth stage and operating as the financial arm closest to the Xiaomi ecosystem — it typically starts with a commercial partnership before taking equity. Its AI strategy avoids the frontier parameter race, concentrating instead on embodied intelligence and robotics, silicon and compute, and vertical AI applications that can be pulled into Xiaomi hardware, which has made it one of China's most concentrated backers of humanoid robotics.
+Shunwei Capital is a Beijing-based venture firm founded in 2011 by Xiaomi's Lei Jun, operating as the financial arm closest to the Xiaomi ecosystem. Its AI strategy avoids the frontier parameter race, concentrating instead on embodied intelligence and robotics, silicon and compute, and vertical AI applications. It is one of China's most concentrated backers of humanoid robotics.
+
+## 详情
+
+Shunwei Capital invests from angel through growth stage and operates as the financial arm closest to the Xiaomi ecosystem.
 
 ## 基本档案
 

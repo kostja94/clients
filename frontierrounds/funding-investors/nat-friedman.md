@@ -6,7 +6,11 @@
 
 ## 概览
 
-Nat Friedman co-founded Xamarin, sold it to Microsoft, and ran GitHub as CEO from 2018 to 2021 through the Copilot era. He then invested as one half of NFDG alongside Daniel Gross, a two-person partnership that wrote some of the earliest cheques into voice, image, music and coding AI companies. In mid-2025 both partners joined Meta's new Superintelligence Labs — Friedman as VP of Product & Applied Research, co-leading the unit with chief AI officer Alexandr Wang, and Gross leading the AI products division — after which NFDG stopped making new investments; the positions below are the disclosed ones from the partnership's active period. He is based in the San Francisco Bay Area.
+Nat Friedman ran GitHub as CEO through the Copilot era, then invested as one half of NFDG alongside Daniel Gross. The two-person partnership wrote some of the earliest cheques into voice, image, music and coding AI companies. Its disclosed positions include ElevenLabs, Perplexity, Suno, Cursor and Safe Superintelligence.
+
+## 详情
+
+In mid-2025 Friedman joined Meta's new Superintelligence Labs as VP of Product & Applied Research, co-leading the unit with chief AI officer Alexandr Wang, after which NFDG stopped making new investments. He is based in the San Francisco Bay Area.
 
 ## 基本档案
 

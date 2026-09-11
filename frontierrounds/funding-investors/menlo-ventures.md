@@ -6,7 +6,11 @@
 
 ## 概览
 
-Founded in 1976 by H. DuBose Montgomery and headquartered in Menlo Park, Menlo Ventures is one of Silicon Valley's oldest venture firms. Its AI era is anchored by Anthropic: Menlo made its first investment in 2023 when the lab was pre-product and pre-revenue, led its Series D in 2024 with a bet-the-firm check of more than US$500M, and has invested in every round since — a position now worth roughly US$14B (per Newcomer/Bloomberg, July 2026). In July 2024 it launched the Menlo Anthology Fund with Anthropic, a ~US$100M initiative whose deployed capital has grown toward US$250M across 60+ early-stage AI companies. At its 50-year mark in June 2026 the firm raised US$3B across two new funds (Menlo Ventures XVII for seed and Series A, Menlo Inflection IV for growth), the largest raise in its history, explicitly to go 'ALL IN on AI' — backing AI leaders from infrastructure and frontier models to AI-native applications across enterprise, healthcare and consumer markets, while operating across its self-described 'Three Stages of Early' (Inception, Venture, Inflection). The firm has offices in Menlo Park and San Francisco, and its AI team is led by Matt Murphy, Tim Tully, Venky Ganesan, Deedy Das, Matt Kraning and Joff Redfern.
+Menlo Ventures is one of Silicon Valley's oldest venture firms, founded in 1976. It went all in on AI by leading Anthropic's Series D in 2024 with a bet-the-firm check of more than US$500M and investing in every round since. Its AI-era portfolio spans frontier models, inference, coding, music, voice and healthcare AI.
+
+## 详情
+
+The firm operates from offices in Menlo Park and San Francisco. Its AI-era investing is led by a six-person team — Matt Murphy, Tim Tully, Venky Ganesan, Deedy Das, Matt Kraning and Joff Redfern.
 
 ## 基本档案
 

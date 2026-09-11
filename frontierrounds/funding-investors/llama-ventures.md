@@ -6,7 +6,11 @@
 
 ## 概览
 
-Founded in 2024 and headquartered in Sunnyvale, California, Llama Ventures is an early-stage firm built by operators: co-founder Jack Feng previously built WandouLabs into a SoftBank-backed company acquired by Alibaba and later ran iHealth Labs as CEO, and co-founder Herman Zhou founded Yidao Yongche, one of China's first ride-hailing platforms, and built two listed companies. The firm runs a roughly US$300M direct-investing fund alongside a US$600M+ fund-of-funds book, writing US$500K to US$5M pre-seed through Series A+ checks. It invests across the full intelligence stack — model and research layers, AI infrastructure, enterprise and consumer applications, healthcare, education, and robotics and hardware — and has disclosed a portfolio of more than 60 AI-native companies, from foundation-model-adjacent research labs to vertical agents for construction, clinics, law firms and retailers.
+Llama Ventures is an early-stage firm founded in 2024 by operators Jack Feng and Herman Zhou. It invests across the full intelligence stack — from models and research to infrastructure, applications, healthcare, education and robotics. Its disclosed portfolio spans more than 60 AI-native companies.
+
+## 详情
+
+Llama Ventures was built by operators: co-founder Jack Feng previously built WandouLabs into a SoftBank-backed company acquired by Alibaba and later ran iHealth Labs as CEO, and co-founder Herman Zhou founded Yidao Yongche, one of China's first ride-hailing platforms, and built two listed companies. The firm runs a roughly US$300M direct-investing fund alongside a US$600M+ fund-of-funds book.
 
 ## 基本档案
 

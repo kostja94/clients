@@ -6,7 +6,11 @@
 
 ## 概览
 
-Eric Schmidt ran Google from 2001 to 2011, served as executive chairman until 2019, and has since become one of the most active individual backers of frontier AI. He invests through two vehicles: **Hillspire**, his family office, and **Innovation Endeavors**, the early-stage firm he co-founded with Dror Berman in 2010. His AI activity is concentrated and deliberate — Hillspire has made 22 investments in private AI companies since 2019, and in 2022 alone 13 of his 17 startup investments (more than three-quarters) went to AI, per data shared with CNBC by Fintrx. His positions skew toward frontier labs and capability companies (Anthropic, Mistral, Reflection AI, World Labs, General Intuition), applied deep tech he chairs or advises (SandboxAQ), and defense-adjacent autonomy — a portfolio shaped by his decade chairing the US National Security Commission on Artificial Intelligence. In 2025 he took over as CEO of Relativity Space after acquiring a controlling stake.
+Eric Schmidt, the former Google CEO, has become one of the most active individual backers of frontier AI through his family office Hillspire and Innovation Endeavors. Hillspire has made 22 investments in private AI companies since 2019. His positions span frontier labs, applied deep tech and defense-adjacent autonomy.
+
+## 详情
+
+Eric Schmidt ran Google from 2001 to 2011 and served as executive chairman until 2019. He co-founded Innovation Endeavors with Dror Berman in 2010. His AI activity is concentrated: in 2022 alone 13 of his 17 startup investments (more than three-quarters) went to AI, per data shared with CNBC by Fintrx.
 
 ## 基本档案
 

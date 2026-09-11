@@ -6,7 +6,11 @@
 
 ## 概览
 
-Conviction (Conviction Partners) is an AI-only venture firm founded in 2022 by Sarah Guo after her time as a Greylock general partner. Its thesis: we are extremely early in the translation of powerful AI models into powerful products, the AI-native 'Software 3.0' era, so it backs only companies built on frontier AI. Conviction writes US$1-25M checks from pre-seed to Series A and is often the first institutional investor. Fund I raised US$101M in 2022; Fund II closed at US$230M in January 2025, when former Sequoia partner Mike Vernal joined as General Partner. Its disclosed portfolio spans model labs, infrastructure and category-defining applications - Mistral, Harvey, Sierra, Cognition, HeyGen, Baseten, OpenEvidence and more - and it runs founder-facing programs including the No Priors podcast and the Embed grant program.
+Conviction is an AI-only venture firm founded in 2022 by Sarah Guo, backing the AI-native 'Software 3.0' era. It writes US$1–25M checks from pre-seed to Series A and is often the first institutional investor. Its portfolio spans Mistral, Harvey, Sierra, Cognition, HeyGen, Baseten and OpenEvidence.
+
+## 详情
+
+Conviction was founded in 2022 by Sarah Guo after her time as a Greylock general partner. Fund I raised US$101M in 2022; Fund II closed at US$230M in January 2025, when former Sequoia partner Mike Vernal joined as General Partner.
 
 ## 基本档案
 
