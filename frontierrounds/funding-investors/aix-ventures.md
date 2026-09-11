@@ -2,7 +2,7 @@
 
 > The AI-focused fund built for and by the industry’s best
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -27,28 +27,22 @@ AIX Ventures is a venture firm founded in 2021 by active AI practitioners - Rich
 
 ## 投资逻辑
 
-*How AIX Ventures invests in AI*
-
-### AI must be the core of the product
-
+*How AIX Ventures Invests in AI*
+### AI Must Be the Core of the Product
 “We invest in companies where AI is a core component of the main product today,” across the AI spectrum including NLP, computer vision, robotics and more. Once a company is AI-focused, AIX takes a generalist approach: an amazing founding team with insight into how to disrupt an industry, plus signs of product-market fit and revenue traction.
 
-### Practitioners, not just investors
-
+### Practitioners, Not Just Investors
 AIX believes the only way to keep up with AI is to stay in it, so its investment partners are present founders, practicing faculty and active members of the AI community. Partners include Richard Socher (Recursive), Anthony Goldbloom (Sumble) and Christopher Manning (former Director, Stanford AI Lab). This practitioner model is meant to give unmatched access to ideas, technical diligence and founder judgment.
 
-### Early stage, sector-agnostic
-
+### Early Stage, Sector-agnostic
 AIX invests from pre-seed through Series A, leads funding rounds and partners with top seed investors. It is sector-agnostic with a focus on Consumer, Developer Tools & Data, Healthcare/Life Sciences, Manufacturing & Warehousing and SaaS, and is actively interested in Future of Work applications and infrastructure.
 
-### How deals and support work
-
+### How Deals and Support Work
 Diligence runs: an intro call with the HQ team, meetings with one or more investment partners, then a diligence memo voted on by the investment committee. After investing, AIX’s practitioners help with customer introductions, key hires, business and go-to-market strategy, technical deep dives, and preparing the next round.
 
 ## 投资组合
 
-### AIX Ventures portfolio
-
+### AIX Ventures Portfolio
 The AIX Ventures portfolio of AI companies, including Hugging Face, Perplexity, Weights & Biases, You.com, Windsurf, Replicate, Ambience and more (aixventures.com/portfolio).
 
 | 公司 | 赛道 | 备注 |

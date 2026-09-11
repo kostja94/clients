@@ -2,7 +2,7 @@
 
 > Research-driven venture capital backing frontier AI founders
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC · FO） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,22 +25,18 @@ Founded in 2025 by Huiwen Wang, co-founder of Meituan (SEHK:3690), Lollapalooza 
 
 ## 投资逻辑
 
-### The name
-
+### The Name
 Taken from Charlie Munger's "Lollapalooza Effect" — the idea that several reinforcing forces acting together produce non-linear, exceptional outcomes rather than an additive one.
 
-### Investment approach
-
+### Investment Approach
 Concentrated research and patient capital. The firm blends one-on-one founder partnership with a public market lens, holding a small number of high-conviction positions instead of spraying across a category.
 
-### What it brings
-
+### What It Brings
 Operator empathy from building a company at scale, market perspective across the Chinese and global consumer internet, and long-horizon judgment on where compute, models, and hardware converge.
 
 ## 投资组合
 
 ### AI-native
-
 Companies building models, infrastructure, and applications where AI is the product itself.
 
 | 公司 | 赛道 | 备注 |
@@ -63,8 +59,7 @@ Companies building models, infrastructure, and applications where AI is the prod
 | Share AI | AI Infrastructure | Distributed compute and model sharing. |
 | ACERA | Robotics | Embodied intelligence and robotics systems. |
 
-### Adjacent and legacy
-
+### Adjacent and Legacy
 Portfolio and partner companies in hardware, internet, and software that predate or sit alongside the AI mandate.
 
 | 公司 | 赛道 | 备注 |

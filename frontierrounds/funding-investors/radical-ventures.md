@@ -2,7 +2,7 @@
 
 > Partners in the intelligence era — backing AI founders from day-zero to pre-IPO.
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -28,32 +28,25 @@ Radical Ventures is a Toronto-based venture capital firm focused exclusively on 
 
 ## 投资逻辑
 
-*How Radical Ventures invests in AI*
-
-### AI-first, from day zero to pre-IPO
-
+*How Radical Ventures Invests in AI*
+### AI-first, from Day Zero to Pre-IPO
 Radical describes AI as 'the most consequential technology in human history' and backs 'AI visionaries who will define the future of progress.' Its mandate spans day-zero incubations and early-stage seed investing through growth-stage and pre-IPO scaling, with the firm acting as sole investor at incorporation in some cases.
 
-### Two complementary fund strategies
-
+### Two Complementary Fund Strategies
 Radical's early-stage funds target nascent AI companies (latest early-stage fund: US$650M final close, October 2025), while its first Venture Growth Fund (US$800M, 2024) invests in AI-first and AI-enhanced growth companies. The US$800M fund was reported by the Financial Times as the largest of its kind for AI at the time.
 
-### Portfolio scope
-
+### Portfolio Scope
 The ~59-company portfolio disclosed on radical.vc is concentrated in applied and foundational AI: foundation models and enterprise AI, robotics and embodied AI, AI compute infrastructure and semiconductors, plus AI for health, biology, climate and space.
 
-### Radical Velocity: company building and portfolio support
-
+### Radical Velocity: Company Building and Portfolio Support
 Radical Velocity provides portfolio-exclusive resources spanning talent (scaling AI-first teams), go-to-market, compute and technology, community, brand and public affairs, and finance and governance, plus a free virtual AI Founders Masterclass for AI entrepreneurs.
 
-### Scientific partners and advisors
-
+### Scientific Partners and Advisors
 Radical's advisory bench includes Dr. Fei-Fei Li (Scientific Partner), Colin Murdoch (Senior Advisor), and — per public reporting — AI pioneer and Turing Award winner Geoffrey Hinton as LP and advisor.
 
 ## 投资组合
 
 ### The Vanguard
-
 Radical Ventures' disclosed portfolio as published on radical.vc (Companies Archive, 'The Vanguard'). Of the 59 listed companies, Radical marks CentML, Covariant, Prepared, Solver and Untether AI as Acquired, and Xanadu as IPO.
 
 | 公司 | 赛道 | 备注 |

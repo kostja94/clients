@@ -1,6 +1,6 @@
 # 融资的投资方索引
 
-本目录收录 frontierrounds.com **Investor Atlas** 上的真实投资方档案（18 家/人），每家一份 Markdown，字段与站点一致。
+本目录收录 frontierrounds.com **Investor Atlas** 上的真实投资方档案（22 家/人），每家一份 Markdown，字段与站点一致。
 
 | 投资方 | 类型 | 定位 | 官网 | 档案 |
 | --- | --- | --- | --- | --- |
@@ -9,8 +9,12 @@
 | Andreessen Horowitz | 机构 | The largest dedicated AI capital pool in venture, deployed across models, infras | [a16z.com](https://a16z.com/) | [andreessen-horowitz.md](andreessen-horowitz.md) |
 | Conviction | 机构 | Sarah Guo's AI-native venture firm for "software 3.0" founders | [conviction.com](https://www.conviction.com/) | [conviction.md](conviction.md) |
 | Elad Gil | 个人天使 | Solo angel writing early checks into the AI stack without a committee | [eladgil.com](https://eladgil.com/) | [elad-gil.md](elad-gil.md) |
+| Eric Schmidt | 个人天使 | Ex-Google CEO whose family office became a frontier-AI and defense-tech vehicle | — | [eric-schmidt.md](eric-schmidt.md) |
+| General Catalyst | 机构 | The health-care-born generalist that turned AI into a thesis of its own | [generalcatalyst.com](https://www.generalcatalyst.com/) | [general-catalyst.md](general-catalyst.md) |
 | Gradient | 机构 | The seed fund designed for founders in AI | [gradient.com](https://gradient.com/) | [gradient.md](gradient.md) |
 | HongShan | 机构 | China's most systematic AI backer — from foundation models to robot hands and br | [hongshan.com](https://www.hongshan.com/) | [hongshan.md](hongshan.md) |
+| Index Ventures | 机构 | The transatlantic firm that bankrolled Europe's AI champions from the first cheque | [indexventures.com](https://www.indexventures.com/) | [index-ventures.md](index-ventures.md) |
+| Lightspeed Venture Partners | 机构 | The $40B+ multi-stage firm that rebuilt its franchise around AI capital intensity | [lsvp.com](https://lsvp.com/) | [lightspeed-venture-partners.md](lightspeed-venture-partners.md) |
 | Llama Ventures | 机构 | Founder-built early-stage fund backing AI-native companies across the full intelligence st | [llamaventures.vc](https://www.llamaventures.vc/) | [llama-ventures.md](llama-ventures.md) |
 | Lollapalooza Capital | 机构 | Research-driven venture capital backing frontier AI founders | [lollapalooza.hk](https://lollapalooza.hk/) | [lollapalooza-capital.md](lollapalooza-capital.md) |
 | Menlo Ventures | 机构 | The 50-year-old firm that went all in on AI after betting the firm on Anthropic | [menlovc.com](https://menlovc.com/) | [menlo-ventures.md](menlo-ventures.md) |

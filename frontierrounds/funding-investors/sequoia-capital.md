@@ -2,7 +2,7 @@
 
 > The Menlo Park partnership that turned aggressive on AI after its 2025 leadership handover
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,28 +25,22 @@ Founded in 1972 and headquartered in Menlo Park, Sequoia Capital now covers the 
 
 ## 投资逻辑
 
-*How Sequoia is playing the AI cycle*
-
-### New leadership, new posture
-
+*How Sequoia Is Playing the AI Cycle*
+### New Leadership, New Posture
 After missing the early rounds of OpenAI and Anthropic under a more restrained model-layer policy, the Lin and Grady partnership set out to reclaim the top spot, mobilising the entire partnership to compete for the most contested AI deals.
 
-### Buy certainty at the model layer
-
+### Buy Certainty at the Model Layer
 Sequoia entered Anthropic in February 2026 at a US$380B post-money valuation, then committed over US$2B as co-lead of the H round that raised US$65B at a US$965B valuation, weighing an increase to roughly US$2.5B — the largest AI bet in the firm's history. It is also an early OpenAI shareholder and followed the SoftBank-led mega-rounds, and backed xAI in 2024.
 
-### Sell shovels: agents, silicon, power
-
+### Sell Shovels: Agents, Silicon, Power
 Agent infrastructure was the firm's densest category in 2026 with ten investments, close to a third of all deals — inference optimisation, workflow orchestration, retrieval and security. Alongside it sit Etched's transformer ASICs and Valar Atomics' nuclear power for data centres.
 
-### Applications that replace labour
-
+### Applications That Replace Labour
 The application book concentrates on categories where AI substitutes for billable human work: legal (Harvey, backed across six rounds to a US$11B valuation), healthcare (Commure, OpenEvidence), finance (Rowspace) and sales (Clay). Frontier moonshots such as Ineffable Intelligence and Safe Superintelligence carry the tail risk.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 Disclosed Sequoia Capital AI investments across the model layer, infrastructure and compute, vertical applications, physical AI and generative media.
 
 | 公司 | 赛道 | 备注 |
@@ -73,7 +67,6 @@ Disclosed Sequoia Capital AI investments across the model layer, infrastructure 
 | Astrocade | AI Game Content | Investor in generative game content tooling. |
 
 ### Beyond AI
-
 A selected, non-exhaustive sample from five decades of non-AI investing.
 
 | 公司 | 赛道 | 备注 |

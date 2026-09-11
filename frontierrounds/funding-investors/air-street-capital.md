@@ -2,7 +2,7 @@
 
 > Venture capital for AI-first companies
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -27,28 +27,22 @@ Air Street Capital is a London-based venture firm founded in 2019 by Nathan Bena
 
 ## 投资逻辑
 
-*How Air Street Capital invests in AI*
-
-### AI-first, only
-
+*How Air Street Capital Invests in AI*
+### AI-first, Only
 Air Street invests exclusively in AI-first companies - businesses for which advances in AI are the primary driver of product capability, competitive advantage and long-term value. It focuses on AI-first software (frontier models, AI SaaS, agents, world models), developer tools and infrastructure, TechBio and science, and defence and security, in the US and Europe.
 
-### From earliest stage, leading rounds
-
+### From Earliest Stage, Leading Rounds
 The firm invests from Pre-Seed through growth, leading early-stage rounds of $500K to $15M and selectively making growth investments of up to $25M. As a solo-GP firm, a single decision-maker enables high-conviction, fast decisions with significant capital behind the most ambitious teams.
 
-### Deep engagement on product and strategy
-
+### Deep Engagement on Product and Strategy
 Beyond capital, Air Street is known for hands-on engagement on product, technical strategy and market positioning from day one, and for backing founders it has often known for years through its network, events and prior investments.
 
-### Research and community as a moat
-
+### Research and Community as a Moat
 Air Street publishes the State of AI Report - the most widely read independent annual analysis of AI progress - essays via Air Street Press, runs the RAAIS research summit and the Air Street AI Network, and drove policy reform through spinout.fyi, using research-driven conviction to find non-consensus opportunities early.
 
 ## 投资组合
 
 ### Epoch III ('25-)
-
 Fund III vintage (announced Mar 2026): frontier AI, AI infrastructure, AI-for-science, defence and applied AI across Europe and the US.
 
 | 公司 | 赛道 | 备注 |
@@ -62,7 +56,6 @@ Fund III vintage (announced Mar 2026): frontier AI, AI infrastructure, AI-for-sc
 | [Black Forest Labs](https://bfl.ai/) | Frontier AI | Multimodal AI; open visual-intelligence models incl. FLUX (DE) |
 
 ### Epoch II ('22-'25)
-
 Fund II era: frontier evals, world models, robotics, TechBio, enterprise automation and defence/autonomy.
 
 | 公司 | 赛道 | 备注 |
@@ -84,7 +77,6 @@ Fund II era: frontier evals, world models, robotics, TechBio, enterprise automat
 | [Profluent](https://www.profluent.bio/) | TechBio | Programmable biology & protein language models (USA) |
 
 ### Epoch I ('19-'22)
-
 Fund I era: many companies since acquired (e.g. Adept -> Amazon, Graphcore -> SoftBank) or listed (Exscientia, Recursion).
 
 | 公司 | 赛道 | 备注 |
@@ -111,8 +103,7 @@ Fund I era: many companies since acquired (e.g. Adept -> Amazon, Graphcore -> So
 | [V7](https://www.v7labs.com/) | AI data infra | Computer-vision data platform (UK) |
 | [ZOE](https://joinzoe.com/) | Consumer health | Personalised nutrition from gut-microbiome science (UK) |
 
-### pre-Air Street
-
+### Pre-Air Street
 Angel and personal investments made by Nathan Benaich before founding Air Street in 2019 (Stripe, Wayve, ElevenLabs, Synthesia and more).
 
 | 公司 | 赛道 | 备注 |

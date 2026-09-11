@@ -2,7 +2,7 @@
 
 > The seed fund designed for founders in AI
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -29,24 +29,19 @@ Gradient is an early-stage venture firm that invests exclusively in AI. Founded 
 
 ## 投资逻辑
 
-*How Gradient invests in AI*
-
-### Applied AI first — be the first institutional check
-
+*How Gradient Invests in AI*
+### Applied AI First — Be the First Institutional Check
 Gradient's core areas have always centered on applied AI: with Fund V it actively invests in reinvented B2B software built AI-native from day one, AI agents reshaping how work gets done, and the AI developer stack powering the next generation of builders, leading pre-seed and seed rounds.
 
-### Across the stack, including real-world AI
-
+### Across the Stack, Including Real-world AI
 Gradient invests in every layer of AI — from infrastructure and model/tooling layers to applications — and extends into real-world AI spanning biology, materials, robotics and compute substrates, as well as open-source and small-model approaches that optimize capability against compute.
 
-### Founder-centric, collaborative and durable
-
+### Founder-centric, Collaborative and Durable
 Gradient describes itself as builders, mentors and champions for founders (founder-centric, collaborative, transparent, bold), backing founders with technical rigor, an obsession with quality, and the speed to iterate faster than the market can copy.
 
 ## 投资组合
 
 ### AI Portfolio
-
 Companies Gradient currently showcases as its featured AI portfolio on gradient.com (default Featured view of /portfolio, mirroring the homepage logo marquee). Gradient hosts no per-company logo images on its site, so logos below are each company's own official site asset. Note: two further names in the featured view — CentML (acquired by NVIDIA) and Syrup (acquired by Anaplan) — are excluded here because no official logo or live company site could be verified.
 
 | 公司 | 赛道 | 备注 |

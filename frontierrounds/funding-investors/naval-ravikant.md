@@ -2,7 +2,7 @@
 
 > AngelList founder who turned angel investing itself into a platform
 
-> 融资的投资方档案 · 类型：个人天使 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：个人天使（Angel） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,28 +25,22 @@ Naval Ravikant co-founded AngelList and, in doing so, industrialised the asset c
 
 ## 投资逻辑
 
-*How Naval Ravikant deploys capital*
-
-### Platform over portfolio
-
+*How Naval Ravikant Deploys Capital*
+### Platform Over Portfolio
 His largest contribution to AI financing is structural. AngelList syndicates, rolling funds and SPVs route retail and operator capital into early AI rounds that traditional funds would price out of reach.
 
-### Volume at the earliest stage
-
+### Volume at the Earliest Stage
 Small cheques written very early and very often, on the view that a handful of extreme outcomes carry the entire book. Ownership discipline matters less to him than access.
 
-### Judge the founder, not the model
-
+### Judge the Founder, Not the Model
 His public writing treats specific knowledge, leverage and accountability in the founder as the durable signal — a stance that transfers across technology cycles rather than being tuned to this one.
 
-### Attribution caveat
-
+### Attribution Caveat
 Syndicate deals structured on AngelList are often misreported as his personal positions. The AI entries below are limited to companies where his own involvement is documented.
 
 ## 投资组合
 
-### AI and AI-adjacent portfolio
-
+### AI and AI-adjacent Portfolio
 Documented positions where AI is now central to the product. Companies reached only through AngelList syndicates are deliberately excluded.
 
 | 公司 | 赛道 | 备注 |
@@ -55,8 +49,7 @@ Documented positions where AI is now central to the product. Companies reached o
 | Stack Overflow | Developer Data | Developer Q&A corpus that became one of the most valuable training and licensing datasets for code models. |
 | OpenAI | Foundation Models | Frequently attributed to him in secondary lists; a direct personal position is not publicly documented and should be treated as unconfirmed. |
 
-### Selected earlier bets
-
+### Selected Earlier Bets
 The angel track record, concentrated in marketplaces and networks between 2007 and 2018, that made AngelList credible.
 
 | 公司 | 赛道 | 备注 |

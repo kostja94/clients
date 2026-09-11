@@ -2,7 +2,7 @@
 
 > Solo angel writing early checks into the AI stack without a committee
 
-> 融资的投资方档案 · 类型：个人天使 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：个人天使（Angel） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,28 +25,22 @@ Elad Gil is a San Francisco based solo investor, former Google product lead and 
 
 ## 投资逻辑
 
-*How Elad Gil picks AI companies*
-
-### Speed as the edge
-
+*How Elad Gil Picks AI Companies*
+### Speed as the Edge
 With personal capital and no partnership vote, he can decide in a single meeting. In competitive AI rounds that speed is often what buys allocation ahead of institutional funds.
 
-### Both ends of the stack
-
+### Both Ends of the Stack
 He holds positions in frontier labs and in the application layer that sells to enterprises, rather than picking one side of the model-versus-app debate.
 
-### Operator coaching after the check
-
+### Operator Coaching After the Check
 The High Growth Handbook thesis in practice: he works with founders on executive hiring, org structure and pricing during the scaling phase where most AI startups break.
 
-### Category-defining, not category-crowding
-
+### Category-defining, Not Category-crowding
 He concentrates on the company most likely to define a category — AI search, AI legal, enterprise AI search — instead of spreading small checks across every entrant.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 A selection of Gil's disclosed AI positions reported in funding announcements and press coverage, spanning model labs, AI-native search and vertical software.
 
 | 公司 | 赛道 | 备注 |
@@ -58,8 +52,7 @@ A selection of Gil's disclosed AI positions reported in funding announcements an
 | Character.AI | Consumer AI | Conversational AI characters with one of the highest consumer engagement profiles in the sector. |
 | Mistral AI | Foundation Models | European open-weight model lab; he participated in its early financing. |
 
-### Selected earlier bets
-
+### Selected Earlier Bets
 A partial list of pre-AI investments that established his track record and his access to later rounds.
 
 | 公司 | 赛道 | 备注 |

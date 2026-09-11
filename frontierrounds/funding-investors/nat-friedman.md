@@ -2,7 +2,7 @@
 
 > Former GitHub CEO backing AI-native products with Daniel Gross
 
-> 融资的投资方档案 · 类型：个人天使 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：个人天使（Angel） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,28 +25,22 @@ Nat Friedman co-founded Xamarin, sold it to Microsoft, and ran GitHub as CEO fro
 
 ## 投资逻辑
 
-*How NFDG approaches AI investing*
-
-### Two people, one decision
-
+*How NFDG Approaches AI Investing*
+### Two People, One Decision
 NFDG operated as a partnership of two operators rather than a fund with an investment process. Founders got a decision from the people who would actually help them, usually within a week.
 
-### Product taste over market maps
-
+### Product Taste Over Market Maps
 The pattern across ElevenLabs, Suno and Cursor is the same: a product good enough that users adopt it before any enterprise sales motion exists.
 
-### Developer tooling as home turf
-
+### Developer Tooling as Home Turf
 Having shipped Copilot at GitHub, Friedman moved early on AI coding tools and on the inference and infrastructure layer they depend on.
 
-### Access to research labs
-
+### Access to Research Labs
 The pair's credibility with researchers — and Gross's role as co-founder of Safe Superintelligence — gave them access to frontier labs that were not raising broadly.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 Disclosed NFDG investments across generative media, AI coding tools, search and frontier research labs.
 
 | 公司 | 赛道 | 备注 |
@@ -59,8 +53,7 @@ Disclosed NFDG investments across generative media, AI coding tools, search and 
 | [Safe Superintelligence](https://ssi.inc/) | Frontier Research | Ilya Sutskever's research lab, co-founded by Daniel Gross, who led it as CEO until joining Meta in July 2025; NFDG took part in the lab's inaugural US$1B financing announced in September 2024. |
 | Figma | Design Software | Design platform now shipping generative design features across its product. |
 
-### Operating background
-
+### Operating Background
 Not investments — the companies he built and ran, which explain the access and the developer-tooling focus.
 
 | 公司 | 赛道 | 备注 |

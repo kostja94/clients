@@ -2,7 +2,7 @@
 
 > Xiaomi-affiliated venture firm betting on embodied intelligence and AI infrastructure
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC · CVC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,26 +25,21 @@ Founded in 2011 by Lei Jun, founder and chairman of Xiaomi, together with Tuck L
 
 ## 投资逻辑
 
-### Robotics first, models second
-
+### Robotics First, Models Second
 Roughly half of Shunwei's disclosed AI activity sits in embodied intelligence: humanoid and collaborative robots, autonomous industrial vehicles, robot data pipelines and surgical robotics. The firm treats the robot as the next consumer hardware entry point rather than treating the model as the product.
 
-### Ecosystem pull-through
-
+### Ecosystem Pull-through
 Deals frequently begin as supply-chain or product collaborations inside the Xiaomi ecosystem and convert into equity once the commercial relationship is proven. That sequencing gives portfolio companies distribution and manufacturing leverage that a purely financial investor cannot offer.
 
-### Full-stack coverage
-
+### Full-stack Coverage
 Alongside robotics, Shunwei funds the layers underneath and above it — compute virtualisation, general-purpose and automotive silicon, cloud, plus vertical AI applications in construction, drug discovery, finance, recruiting and industrial inspection.
 
-### Accelerating pace
-
+### Accelerating Pace
 Disclosed AI investments moved from 2 deals in 2023 to 5 in 2024, 10 in 2025 and 19 by mid-2026, with robotics accounting for the largest share of new commitments.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 Disclosed AI investments across embodied intelligence, foundation models, vertical applications, silicon and compute, and machine perception.
 
 | 公司 | 赛道 | 备注 |
@@ -88,7 +83,6 @@ Disclosed AI investments across embodied intelligence, foundation models, vertic
 | [Manycore Tech](https://www.kujiale.com/) | AI Design and Rendering | Kujiale spatial design and rendering platform; one of the Shunwei-backed companies to list in 2026. |
 
 ### Beyond AI
-
 A selected, non-exhaustive sample of Shunwei's wider consumer, hardware and internet portfolio.
 
 | 公司 | 赛道 | 备注 |

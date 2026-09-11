@@ -2,7 +2,7 @@
 
 > Founder-built early-stage fund backing AI-native companies across the full intelligence stack
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -28,28 +28,22 @@ Founded in 2024 and headquartered in Sunnyvale, California, Llama Ventures is an
 
 ## 投资逻辑
 
-*How Llama Ventures invests in AI*
-
-### Independent conviction
-
+*How Llama Ventures Invests in AI*
+### Independent Conviction
 The firm forms its views before checking the consensus, arguing that insight lives where most investors are not looking. It would rather be non-consensus and right than safely average.
 
-### Human judgment, AI-amplified
-
+### Human Judgment, AI-amplified
 AI handles the noise so the partners can focus on founders, markets and timing. Technology sharpens the process, but every conviction remains a human one.
 
-### Depth over breadth
-
+### Depth Over Breadth
 Llama goes deep in the domains it knows and stays honest about what it does not, betting on concentrated expertise and better pattern recognition rather than spreading thin.
 
-### Founder-first partnership
-
+### Founder-first Partnership
 Built by people who have raised capital, shipped products and scaled teams themselves, the firm offers capital, context and candor — hands-on with product, hiring and go-to-market when it matters, invisible when it does not.
 
 ## 投资组合
 
 ### Models & Research
-
 Frontier-adjacent research: world models, video generation, forecasting foundation models and deepfake detection.
 
 | 公司 | 赛道 | 备注 |
@@ -60,7 +54,6 @@ Frontier-adjacent research: world models, video generation, forecasting foundati
 | [Pinch](https://www.startpinch.com/) | Models & Research | Pinch develops real-time speech-translation models and products that preserve a speaker’s voice, timing, and expression across languages. |
 
 ### AI Infrastructure
-
 The compute, data and agent-native plumbing layer — inference hardware, MCP servers, agent routers and speech datasets.
 
 | 公司 | 赛道 | 备注 |
@@ -78,7 +71,6 @@ The compute, data and agent-native plumbing layer — inference hardware, MCP se
 | [smol machines](https://smolmachines.com/) | AI Infrastructure | smol machines provides fast, hardware-isolated Linux VMs through smolvm, letting teams run the same workload locally, in the cloud, or self-hosted with portable .smolmachine artifacts. |
 
 ### Enterprise Applications
-
 Vertical agents and GTM software for construction, law, retail, sales, capital and public-sector workflows.
 
 | 公司 | 赛道 | 备注 |
@@ -104,7 +96,6 @@ Vertical agents and GTM software for construction, law, retail, sales, capital a
 | [Code Four](https://www.codefour.us/) | Enterprise Applications | Code Four builds AI software for law-enforcement report drafting, body-camera and video analysis, field capture, and investigations. |
 
 ### Consumer & Media
-
 AI-native consumer products across social discovery, creation, podcasting, gaming and commerce.
 
 | 公司 | 赛道 | 备注 |
@@ -121,7 +112,6 @@ AI-native consumer products across social discovery, creation, podcasting, gamin
 | [Aesthetic AI](https://www.myaesthetic.shop/) | Consumer & Media | Aesthetic automatically turns creators’ social content into shoppable storefronts, identifies featured products, and lets creators earn from resulting sales. |
 
 ### Healthcare & Life Sciences
-
 Agentic front-desk, revenue-cycle, voice-AI and value-based-care systems for clinics, dental and pharma.
 
 | 公司 | 赛道 | 备注 |
@@ -133,7 +123,6 @@ Agentic front-desk, revenue-cycle, voice-AI and value-based-care systems for cli
 | [Toothy AI](https://www.toothy.ai/) | Healthcare & Life Sciences | Toothy AI automates dental insurance verification, billing, claims follow-up, denial correction, and payment posting with AI and revenue-cycle specialists. |
 
 ### Education
-
 Adaptive tutors, test-prep and teacher-controlled AI learning tools spanning K-12 to professional prep.
 
 | 公司 | 赛道 | 备注 |
@@ -146,7 +135,6 @@ Adaptive tutors, test-prep and teacher-controlled AI learning tools spanning K-1
 | [Excellence Learning](https://excellence-ai.com) | Education | Excellence provides teacher-controlled AI learning tools and personalized math and science support for middle- and high-school students. |
 
 ### Robotics & Hardware
-
 Embodied systems from dexterous research robots and industrial grinding automation to edge AI computers and hardware for local inference.
 
 | 公司 | 赛道 | 备注 |

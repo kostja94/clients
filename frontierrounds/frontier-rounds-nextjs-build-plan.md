@@ -422,24 +422,8 @@ npm run deploy       # = opennextjs-cloudflare build && opennextjs-cloudflare de
 
 ### B6 CI/CD（可选但推荐）
 
-`.github/workflows/deploy.yml`：
-```yaml
-name: Deploy Frontier Rounds
-on:
-  push: { branches: [main] }
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 22, cache: npm }
-      - run: npm ci
-      - run: npm run deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-```
+> 已实施版见部署仓 `.github/workflows/deploy.yml`（实际链路以 `README.md`「部署链路备忘」为准），要点：push main 触发 → `npm install --no-audit --no-fund` → `npm run validate:content` → `npm run deploy`，凭 `CLOUDFLARE_API_TOKEN` secrets 部署到 Cloudflare Workers。
+
 CF token 权限：Workers Scripts → Edit；Account ID 从 Dashboard 取。另可开 CF Workers Builds（连 git 仓，Build command `npm run build`、Deploy command `npm run deploy`）。
 
 ### B7 上线验收清单

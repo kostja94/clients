@@ -2,7 +2,7 @@
 
 > The accelerator that turned AI into a batch-scale asset class
 
-> 融资的投资方档案 · 类型：加速器 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：加速器（Accel/Inc） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,28 +25,22 @@ Founded in 2005 by Paul Graham, Jessica Livingston, Robert Morris and Trevor Bla
 
 ## 投资逻辑
 
-*How Y Combinator underwrites AI*
-
-### Volume over conviction
-
+*How Y Combinator Underwrites AI*
+### Volume Over Conviction
 YC does not try to pick the one model company that wins. It writes the same cheque into hundreds of teams per year, accepts a high failure rate, and relies on batch scale plus follow-on rights to capture outliers — the opposite of the concentrated frontier bets made by growth funds.
 
-### Application layer, not the model layer
-
+### Application Layer, Not the Model Layer
 Frontier training runs are far outside a $500K cheque. The portfolio clusters instead around products built on top of someone else's model: voice agents, coding tools, vertical copilots, and enterprise search where a small team can reach revenue inside a batch.
 
-### Developer tooling as a repeat pattern
-
+### Developer Tooling as a Repeat Pattern
 Speech, evaluation, memory and fine-tuning infrastructure recur batch after batch — Deepgram, AssemblyAI, Vellum, OpenPipe and Mem0 all sell picks and shovels to other AI builders, a category YC has funded for a decade.
 
-### Standard terms as the real product
-
+### Standard Terms as the Real Product
 The uniform deal and Demo Day remove price negotiation from the earliest stage. For founders the value is access to 1,000+ investors on a fixed date; for YC it is the ability to originate at scale without competing on valuation.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 A selection of YC-backed AI companies, from autonomy and data labelling to the voice, memory and evaluation tooling layers.
 
 | 公司 | 赛道 | 备注 |
@@ -64,8 +58,7 @@ A selection of YC-backed AI companies, from autonomy and data labelling to the v
 | [Mem0](https://mem0.ai/) | AI Tooling | Open-source memory layer giving agents persistent, retrievable user context. |
 | [Onyx](https://www.onyx.app/) | Enterprise Search | Open-source enterprise search and chat over internal company knowledge; formerly Danswer. |
 
-### Selected non-AI portfolio
-
+### Selected Non-AI Portfolio
 The pre-AI outcomes that made the batch model credible — not exhaustive, but the alumni most often cited by founders applying today.
 
 | 公司 | 赛道 | 备注 |

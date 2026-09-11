@@ -2,7 +2,7 @@
 
 > Venture firm purpose-built for AI-native 'Software 3.0' companies
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -27,24 +27,19 @@ Conviction (Conviction Partners) is an AI-only venture firm founded in 2022 by S
 
 ## 投资逻辑
 
-*How Conviction invests in AI*
-
-### Backing the 'Software 3.0' transition
-
+*How Conviction Invests in AI*
+### Backing the 'Software 3.0' Transition
 Conviction is purpose-built to serve AI-native, 'Software 3.0' companies, believing we are extremely early in the translation of powerful AI models into powerful products that transform industries. It invests only where the product itself is built on frontier AI rather than in AI bolted onto traditional software.
 
-### Early, concentrated, first-money-in
-
+### Early, Concentrated, First-money-in
 Conviction partners with what it calls the most important companies of tomorrow with US$1-25M checks, likes to invest early and is often the first investor a founder takes. It deliberately keeps a small, concentrated portfolio so it can be hands-on and serve founders deeply rather than spread thinly.
 
-### Deep networks put to work for founders
-
+### Deep Networks Put to Work for Founders
 The firm says it has a wide and deep network it puts to work for portfolio companies, understands the domain, and gravitates toward technical teams that build with velocity and pragmatism. Programs such as Embed grants, the Commit fellowship, Mixture of Experts recruiting events, a portfolio jobs board, and the No Priors and Good Company podcasts feed that ecosystem.
 
 ## 投资组合
 
 ### AI Portfolio
-
 Companies listed on conviction.com's Portfolio section (homepage, Sep 2026). The firm says it backs engineers, researchers, product folks, domain experts and dropouts, gravitating toward technical teams that build with velocity and pragmatism - plus others still in stealth.
 
 | 公司 | 赛道 | 备注 |

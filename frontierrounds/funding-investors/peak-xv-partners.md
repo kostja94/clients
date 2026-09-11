@@ -2,7 +2,7 @@
 
 > India and Southeast Asia's largest venture franchise, backing applied AI over frontier models
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,26 +25,21 @@ Peak XV Partners is the India and Southeast Asia business formerly known as Sequ
 
 ## 投资逻辑
 
-### Applied AI, not the parameter race
-
+### Applied AI, Not the Parameter Race
 The firm has said publicly it will not chase frontier model economics from India. Capital goes instead to teams applying models to workflows where Indian and Southeast Asian distribution, language coverage and cost structure create defensibility.
 
-### Sovereign models and local languages
-
+### Sovereign Models and Local Languages
 Sarvam AI is the anchor position: an Indic-language foundation model company selected under the IndiaAI Mission, with Peak XV among its earliest backers. Adjacent bets cover speech, translation and voice agents for languages global labs underserve.
 
-### Picks and shovels for enterprise adoption
-
+### Picks and Shovels for Enterprise Adoption
 Atlan for the metadata and governance layer, Neysa for GPU cloud and inference capacity — both sold into enterprises that need AI infrastructure before they can deploy models.
 
-### Surge as an AI funnel
-
+### Surge as an AI Funnel
 The Surge seed programme has become the firm's primary AI origination engine, with AI-native cohorts spanning sales, recruiting, healthcare, media and consumer tooling across India and Southeast Asia.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 Disclosed Peak XV AI investments across sovereign models, data and compute infrastructure, and AI-native applications in India and Southeast Asia.
 
 | 公司 | 赛道 | 备注 |
@@ -64,7 +59,6 @@ Disclosed Peak XV AI investments across sovereign models, data and compute infra
 | Scaler | AI Education | Upskilling platform with AI and data science programmes for working engineers. |
 
 ### Beyond AI
-
 A selection of the firm's best-known non-AI positions, included for context on scale and stage rather than as a complete list.
 
 | 公司 | 赛道 | 备注 |

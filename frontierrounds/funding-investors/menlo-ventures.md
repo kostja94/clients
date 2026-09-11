@@ -2,7 +2,7 @@
 
 > The 50-year-old firm that went all in on AI after betting the firm on Anthropic
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -29,28 +29,22 @@ Founded in 1976 by H. DuBose Montgomery and headquartered in Menlo Park, Menlo V
 
 ## 投资逻辑
 
-*How Menlo Ventures is playing the AI cycle*
-
-### The Anthropic flag-planting moment
-
+*How Menlo Ventures Is Playing the AI Cycle*
+### The Anthropic Flag-planting Moment
 Menlo's first Anthropic investment came in 2023, pre-product and pre-revenue. A year later it led the lab's Series D — a bet-the-firm check of more than US$500M, the largest in Menlo's history, structured largely through an SPV — and has invested in every round since. Menlo calls this its 'flag-planting moment: Menlo was going ALL IN on AI.'
 
-### Seed to scale, in every round that follows
-
+### Seed to Scale, in Every Round That Follows
 Menlo operates its self-described 'Three Stages of Early': Inception, Venture and the Inflection growth stage. Its June 2026 US$3B raise pairs Menlo Ventures XVII (seed to Series A) with Menlo Inflection IV (Series B and beyond), letting the firm back founders from first institutional check through every later round — as it did with Lovable (co-led the US$330M Series B, led the US$400M Series C) and Wispr (led Series A then a US$280M Series B).
 
-### The Anthology window into frontier startups
-
+### The Anthology Window into Frontier Startups
 Launched with Anthropic in July 2024, the ~US$100M Menlo Anthology Fund has grown to ~US$250M deployed across 60+ early-stage AI companies, giving the firm early access to frontier talent and credits for Claude. Early exits include Graphite (acquired by Cursor), Astrix Security (Cisco) and Fintool (Microsoft).
 
-### From infrastructure and frontier models to AI-native applications
-
+### From Infrastructure and Frontier Models to AI-native Applications
 Menlo frames its AI mandate across the full stack: infrastructure and frontier models plus AI-native applications across enterprise, healthcare and consumer markets. Its AI-era book spans model-adjacent research (Ndea, Axiom), inference and serverless compute (Fireworks, Modal, Neon, Pinecone), and breakout applications in coding (Lovable, Graphite), music (Suno), voice input (Wispr Flow) and healthcare AI (OpenEvidence, Chai Discovery, Function Health).
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 Menlo Ventures' disclosed AI-era positions — its own 'ALL IN on AI' book spanning frontier-adjacent research, AI infrastructure, and AI-native applications across enterprise, healthcare and consumer markets. Sourced from menlovc.com/portfolio and Menlo announcements; each company verified on the firm's site.
 
 | 公司 | 赛道 | 备注 |
@@ -81,8 +75,7 @@ Menlo Ventures' disclosed AI-era positions — its own 'ALL IN on AI' book spann
 | [Goodfire](https://www.goodfire.ai/) | AI Interpretability | AI interpretability research lab focused on understanding and intentionally designing advanced AI systems. |
 | [OpenHands AI](https://openhands.dev/) | AI Software Engineering | Open-source AI platform for autonomous software engineering development. |
 
-### Beyond AI — a 50-year track record
-
+### Beyond AI — a 50-year Track Record
 Menlo's best-known historical and non-AI positions, included for context on the firm's scale and mandate rather than as a complete list. All appear on menlovc.com.
 
 | 公司 | 赛道 | 备注 |

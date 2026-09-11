@@ -2,7 +2,7 @@
 
 > China's most systematic AI backer — from foundation models to robot hands and brain-computer interfaces
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,26 +25,21 @@ HongShan is the China business formerly known as Sequoia Capital China, led by N
 
 ## 投资逻辑
 
-### Every Chinese frontier lab, concentrated in MiniMax
-
+### Every Chinese Frontier Lab, Concentrated in MiniMax
 HongShan holds positions in Moonshot AI, MiniMax, Zhipu AI, Light Years Beyond and StepFun — effectively the full field of Chinese foundation-model contenders. Its heaviest single bet is MiniMax, where it led a US$50M A+ round and kept adding, ending pre-IPO as the third largest financial shareholder at 3.81%.
 
-### Back early, then add on proof
-
+### Back Early, Then Add on Proof
 The firm's seed vehicle entered Unitree Robotics at Pre-A in December 2019 with RMB 15M at a RMB 150M post-money valuation, then followed nearly every round to a 7.11% stake worth over RMB 2.5B on paper — the seed fund's first investment and the template for how HongShan compounds early conviction.
 
-### Embodied intelligence as a jigsaw
-
+### Embodied Intelligence as a Jigsaw
 Rather than picking one robot winner, HongShan funded each layer of the stack: the brain (AgiBot), perception (Mech-Mind), hands (LinkerBot), feet (Lingzu Tech), force-controlled arms (Agile Robots), warehouse and consumer robots (Hai Robotics, Narwal, AgileX) and rehabilitation robotics (Fourier).
 
-### Brain-computer interfaces, five years early
-
+### Brain-computer Interfaces, Five Years Early
 From 2020 the firm systematically backed Neuracle, NeuroXess, Zhiran Medical and SceneRay, entering a category most institutional investors only discovered around 2025 and holding it with unusually long patience.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 Disclosed HongShan AI investments across foundation models, agents and applications, embodied intelligence, autonomous driving and vision, and brain-computer interfaces.
 
 | 公司 | 赛道 | 备注 |
@@ -77,7 +72,6 @@ Disclosed HongShan AI investments across foundation models, agents and applicati
 | SceneRay | Neuromodulation | Early-stage investment in implantable neuromodulation and BCI devices. |
 
 ### Beyond AI
-
 A selected, non-exhaustive sample of the firm's wider internet and consumer track record.
 
 | 公司 | 赛道 | 备注 |

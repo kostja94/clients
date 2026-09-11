@@ -2,7 +2,7 @@
 
 > The largest dedicated AI capital pool in venture, deployed across models, infrastructure and applications
 
-> 融资的投资方档案 · 类型：机构 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：机构（VC） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -26,28 +26,22 @@ Andreessen Horowitz — universally shortened to a16z — was founded in Menlo P
 
 ## 投资逻辑
 
-*How a16z is playing the AI cycle*
-
-### Own every layer, not one bet
-
+*How a16z Is Playing the AI Cycle*
+### Own Every Layer, Not One Bet
 a16z deliberately funds the full stack in parallel: frontier and open-weight labs, GPU and inference infrastructure, vector and data tooling, and the application layer sitting on top. The firm's stated view is that value accrues at multiple layers at once during a platform shift, so concentration in a single tier is the real risk.
 
-### Applications are where the margin is
-
+### Applications Are Where the Margin Is
 Its research argues that consumer and vertical AI apps compound faster than model providers because distribution and workflow lock-in are defensible. That thesis funds Cursor, Harvey, Abridge, Sierra, Decagon and ElevenLabs — teams selling into a specific profession rather than selling tokens.
 
-### Open weights and creative tools
-
+### Open Weights and Creative Tools
 The firm has been an unusually loud backer of open models and generative media, funding Black Forest Labs, Luma, Ideogram, Civitai and World Labs on the argument that open ecosystems and creator tooling expand the market rather than commoditise it.
 
-### American Dynamism and embodied AI
-
+### American Dynamism and Embodied AI
 Through its American Dynamism fund a16z pushes AI into defence, robotics and physical industry — Figure, Skild AI, Anduril and Waymo-adjacent autonomy — treating national-interest hardware as a distinct AI category with its own capital and policy requirements.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 Disclosed a16z positions across foundation models, AI infrastructure, developer tooling, generative media, vertical applications and embodied AI.
 
 | 公司 | 赛道 | 备注 |
@@ -59,6 +53,7 @@ Disclosed a16z positions across foundation models, AI infrastructure, developer 
 | Character.AI | Consumer AI | Consumer companion and roleplay platform; a16z led its US$150M Series A. |
 | Cursor (Anysphere) | AI Coding | AI-native code editor and agent, one of the fastest-scaling software businesses in the portfolio. |
 | Windsurf | AI Coding | Agentic IDE and code completion platform formerly known as Codeium. |
+| Cognition | AI Coding | Maker of Devin, the autonomous software engineer; a16z co-led its US$2B Series E at a US$48B valuation (Sep 2026). |
 | Replit | AI Development | Browser-based development environment with agents that build and deploy full applications. |
 | ElevenLabs | Voice AI | Speech synthesis, dubbing and voice agent platform used across media and software. |
 | Black Forest Labs | Image Models | Creators of the FLUX open-weight image model family, spun out of the Stable Diffusion team. |
@@ -78,7 +73,6 @@ Disclosed a16z positions across foundation models, AI infrastructure, developer 
 | Skild AI | Robotics Foundation Models | General-purpose robot brain trained across hardware form factors. |
 
 ### Beyond AI
-
 A selection of the firm's best-known non-AI positions, included for context on scale and mandate rather than as a complete list.
 
 | 公司 | 赛道 | 备注 |

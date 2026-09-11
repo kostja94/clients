@@ -1,6 +1,6 @@
 # 融资的 AI 产品索引
 
-本目录收录 frontierrounds.com **Funding Leaderboard** 上的真实融资 AI 产品/公司档案（24 家），每家一份 Markdown，字段与站点一致并附来源 URL。
+本目录收录 frontierrounds.com **Funding Leaderboard** 上的真实融资 AI 产品/公司档案（25 家），每家一份 Markdown，字段与站点一致并附来源 URL。
 
 | 公司 | 国家/地区 | 赛道 | 累计融资 | 最大一轮 | 估值 | 最近融资 | 可信度 | 档案 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -15,6 +15,7 @@
 | Safe Superintelligence | United States | AI Safety Research | US$8B | US$5B | — | 2026-07-27 | Reported | [safe-superintelligence.md](safe-superintelligence.md) |
 | Groq | United States | AI Inference | US$4.26B | US$350M | US$3.50B | 2026-08-17 | Disclosed | [groq.md](groq.md) |
 | Mistral AI | France | Open Models | US$4.02B | US$2B | US$13.80B | 2025-09-09 | Disclosed | [mistral.md](mistral.md) |
+| Cognition | United States | AI Coding Agents | US$3.60B | US$2B | US$48B | 2026-09-08 | Disclosed | [cognition.md](cognition.md) |
 | MiniMax | China | Foundation Models / Agents | US$3.40B | US$2.05B | — | 2026-07-10 | Disclosed | [minimax.md](minimax.md) |
 | Cerebras | United States | AI Silicon | US$2.85B | US$1B | US$23B | 2026-02-03 | Disclosed | [cerebras.md](cerebras.md) |
 | Figure AI | United States | Humanoid Robotics | US$1.75B | US$1B | US$39B | 2025-09-16 | Disclosed | [figure.md](figure.md) |

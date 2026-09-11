@@ -2,7 +2,7 @@
 
 > China's YC-style accelerator, buying frontier technology at pre-seed prices
 
-> 融资的投资方档案 · 类型：加速器 · 数据来自 frontierrounds.com Investor Atlas
+> 融资的投资方档案 · 类型：加速器（Accel/Inc） · 数据来自 frontierrounds.com Investor Atlas
 
 ## 概览
 
@@ -25,28 +25,22 @@ MiraclePlus was founded in 2019 in Beijing by Lu Qi, the former Microsoft execut
 
 ## 投资逻辑
 
-*How MiraclePlus underwrites AI*
-
-### Frontier technology at the earliest price
-
+*How MiraclePlus Underwrites AI*
+### Frontier Technology at the Earliest Price
 The firm states that over 99% of its investments sit in frontier innovation fields, and it deliberately funds projects other investors consider too early or too technical — buying deep-tech risk at a fixed pre-seed valuation rather than competing in priced rounds.
 
-### Product-market fit in three months
-
+### Product-market Fit in Three Months
 The programme's stated objective is to get a company ready to face investors within three months. Partners including Lu Qi run weekly one-on-one office hours — around 100 hours per project on average — focused on the single constraint blocking traction.
 
-### Robotics and embodied intelligence
-
+### Robotics and Embodied Intelligence
 The most concentrated cluster in the portfolio: mobile robots, tactile sensing, actuators and simulation data. It reflects a view that China's manufacturing base gives embodied AI a cost and iteration advantage no software-only market can match.
 
-### Compute and agents as the second axis
-
+### Compute and Agents as the Second Axis
 Alongside hardware, the firm backs the inference and agent layer — SiliconFlow for model serving, HPC-AI Tech for distributed training, and consumer agent products such as Fellou and Macaron built by alumni founders.
 
 ## 投资组合
 
-### AI portfolio
-
+### AI Portfolio
 MiraclePlus-backed AI companies highlighted by the firm, spanning model infrastructure, embodied intelligence and agent products.
 
 | 公司 | 赛道 | 备注 |
