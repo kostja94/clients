@@ -15,7 +15,7 @@
 | 技术栈 | 主站 Next.js（App Router，`app/(static)/blog/`）；博客内容由 **Contentful** 驱动（图片 `images.ctfassets.net`），经 `/_next/image` 优化输出 |
 | 语言 | 纯英文；文章页**无 hreflang/alternate**，无 i18n 变体 |
 | 文章页 SEO | 每页 BlogPosting JSON-LD + canonical + og:title/description/image/published_time；`og:type=article`；head title 带后缀 ` - Sparki Blog` |
-| 作者 | 唯一署名 **Sparki Team**（JSON-LD 为 `Organization`） |
+| 作者 | 唯一署名 **Kostja**（JSON-LD 为 `Organization`） |
 | 日期 | JSON-LD `datePublished` 带 `+08:00` 时区（CMS 时区）；**hero/列表展示为 UTC 日期**（示例：`2026-07-19T00:00+08:00` → 展示 `July 18, 2026`） |
 | 目标 | 与 luciusai-blog 同构：OpenBlog 子目录模式独立部署，`/blog/*` 经主站 Rewrite 切流（见 [sparki-blog-migration-plan.md](./sparki-blog-migration-plan.md)） |
 
@@ -61,13 +61,13 @@ sparki.io/
 
 ### 2.1 列表页 `/blog`
 
-- H1「Blogs」；CSS grid 卡片：`aspect-[16/9]` 封面（next/image，源为 Contentful）→ 标题（H2）→ 简介（description 截断 3 行）→ 日期 + 作者（Sparki Team）。
+- H1「Blogs」；CSS grid 卡片：`aspect-[16/9]` 封面（next/image，源为 Contentful）→ 标题（H2）→ 简介（description 截断 3 行）→ 日期 + 作者（Kostja）。
 - **单页全部 61 篇**，无分页、无 Load more、无可见分类/搜索筛选（渲染后 DOM 仅含 61 张卡片与 Get Started CTA）。
 - 每张卡片无 category 标签，日期为 UTC 日期（如 `July 18, 2026`）。
 
 ### 2.2 文章页 `/blog/{slug}`
 
-- **head**：title 带 ` - Sparki Blog` 后缀；canonical；og:title/description/image/published_time/modified_time；**BlogPosting JSON-LD** 字段齐全：`headline / description / datePublished / dateModified / keywords / articleSection / author(Organization: Sparki Team) / image`。
+- **head**：title 带 ` - Sparki Blog` 后缀；canonical；og:title/description/image/published_time/modified_time；**BlogPosting JSON-LD** 字段齐全：`headline / description / datePublished / dateModified / keywords / articleSection / author(Organization: Kostja) / image`。
 - **hero 区**：H1 + 元信息行（日期 · 作者 · category chip）；封面图（hero 主图 = `og:image`）。
 - **正文容器** `.sparki-rich-content`：H2/H3、段落、ul/ol、**HTML 表格**（对比文常见，抽查 OpusClip 对比文含 3 表）、blockquote、部分文章含 `<figure><img>` 内图（抽查图文文 5 图）；无代码块、无 iframe 媒体（抽查样本内）。
 - 正文互链：站内 blog 交叉引用形如 `/blog/{slug}`（相对路径）；外部站外链接绝对 URL。
@@ -167,7 +167,7 @@ sparki.io/
 | `slug` | canonical 末段 | **文件名 = `{slug}.md`**（校验脚本强一致） |
 | `date` | JSON-LD `datePublished` | **转 UTC 后取日期**（与线上展示一致），格式 `YYYY-MM-DD` |
 | `updated` | JSON-LD `dateModified`（仅当 ≠ date） | 转 UTC 后取日期 |
-| `author` | JSON-LD `author.name` | `Sparki Team` |
+| `author` | JSON-LD `author.name` | `Kostja` |
 | `category` | JSON-LD `articleSection` | trim 尾部空格（抽样值如 `AI Tools`） |
 | `tags` | JSON-LD `keywords` | 逗号拆分、trim（未来如需标签页可直接启用） |
 | `cover` | `og:image` / hero `/_next/image` src 中 `url` 参数解码 | 下载 → `/blog/images/{slug}/{原文件名}` |

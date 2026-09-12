@@ -56,7 +56,7 @@
 - [ ] 功能事实（Copy Style/Long to Short/Caption/Commentary/Resizer）引用准确，不超上线能力
 - [ ] 定价/credits 有 "as of" + 官网来源
 - [ ] 主站链接全部绝对 URL；blog 互链 `/blog/{slug}` 相对
-- [ ] Category 取值在枚举内；author = `Sparki Team`
+- [ ] Category 取值在枚举内；author = `Kostja`
 - [ ] CreatorClone：素材级断言有出处；无代言/合作暗示
 - [ ] description 在 80–320（validate 硬性）且 120–160 最佳
 

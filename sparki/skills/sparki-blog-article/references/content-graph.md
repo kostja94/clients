@@ -8,14 +8,14 @@
 
 ## 1. 总览
 
-- 既有文章：**62 篇**（en-US）
+- 既有文章：**74 篇**（en-US，含 2026-09 food-beverage 簇 12 篇）
 - 文件命名：`content/blog/{slug}.md`；**无 NN 前缀**
 - 文章类型高发段：CreatorClone 型 slug 最多（`how-to-*-like-{creator}`），其次功能/对比型
-- Category 分布：Clone Edit Viral Videos 24 · ai-video-editor 17 · Video Editing Features 12 · Editor-in-browser 4 · AI Video Editing 4 · AI Tools 1
+- Category 分布：Clone Edit Viral Videos 24 · ai-video-editor 22 · Video Editing Features 19 · Editor-in-browser 4 · AI Video Editing 4 · AI Tools 1
 
 ---
 
-## 2. 文件登记表（62 篇）
+## 2. 文件登记表（74 篇）
 
 ### 2A. Clone Edit Viral Videos（红人风格 — 24）
 
@@ -46,7 +46,7 @@
 | selena-gomez-red-eyeliner-routine | 2026-05-08 |
 | viral-travel-adventure-kara-nate | 2026-05-24 |
 
-### 2B. ai-video-editor（AI 编辑器选型/流程 — 17）
+### 2B. ai-video-editor（AI 编辑器选型/流程 — 22）
 
 | slug | date |
 |------|------|
@@ -67,8 +67,13 @@
 | talking-head-editing-agent | 2026-01-10 |
 | tiktok-ai-video-editor | 2025-12-02 |
 | what-is-a-vlog | 2026-09-04 |
+| how-to-edit-restaurant-videos-with-ai | 2026-08-04 |
+| restaurant-video-marketing | 2026-08-05 |
+| how-to-edit-coffee-shop-videos | 2026-08-07 |
+| how-to-edit-food-truck-videos | 2026-08-12 |
+| ai-food-video-editor | 2026-08-15 |
 
-### 2C. Video Editing Features（功能/工作流 — 12）
+### 2C. Video Editing Features（功能/工作流 — 19）
 
 | slug | date |
 |------|------|
@@ -84,6 +89,13 @@
 | sparki-vs-capcut | 2026-03-29 |
 | webinar-to-social-clips-without-re-editing | 2026-04-23 |
 | youtube-caption-generator-vs-manual-cleanup | 2026-05-10 |
+| how-to-edit-food-videos-with-ai | 2026-08-06 |
+| how-to-edit-cocktail-videos | 2026-08-08 |
+| how-to-edit-bakery-videos | 2026-08-09 |
+| how-to-edit-pizza-videos | 2026-08-10 |
+| how-to-edit-bubble-tea-videos | 2026-08-11 |
+| how-to-edit-food-asmr-videos | 2026-08-13 |
+| how-to-edit-kitchen-behind-the-scenes-videos | 2026-08-14 |
 
 ### 2D. Editor-in-browser（轻量/浏览器端 — 4）
 
@@ -150,6 +162,14 @@ Category POV（品类教育）
     ├── ai-video-editor（Paradigms）、ai-video-editor-understands-your-footage
     ├── what-ai-video-editors-can-automate、the-rise-of-vibe-video-editing
     ├── gemini-3-pro-ai-video-editor、learn-video-editing-with-ai、edit-youtube-videos-with-ai-agent
+
+Food & Beverage（本地餐饮商家 — hub: /industries + 7 个 F&B 详情页）
+    ├── 流程 canonical：how-to-edit-restaurant-videos-with-ai
+    ├── 品类 POV：restaurant-video-marketing
+    ├── format canonical：how-to-edit-food-videos-with-ai
+    ├── vertical 工作流：how-to-edit-coffee-shop-videos / cocktail / bakery / pizza / bubble-tea / food-truck
+    ├── format 深钻：how-to-edit-food-asmr-videos、how-to-edit-kitchen-behind-the-scenes-videos
+    └── 选型：ai-food-video-editor
 ```
 
 **新建文章归属判断**：判断新稿属于哪个簇 → 决定 category、互链对象、是否与既有 slug 冲突。
@@ -165,6 +185,8 @@ Category POV（品类教育）
 | 字幕工作流选型 | ai-caption-generator-how-to-pick-the-right-workflow | 完整定义；caption 相关新文引用它 |
 | 解说工作流 | ai-commentary-generator-videos | 完整定义；commentary 新文引用它 |
 | Sparki vs 某工具模板 | sparki-vs-capcut | 对比结构参考；不与其主词重叠 |
+| 餐厅视频编辑流程（本地餐饮商家） | how-to-edit-restaurant-videos-with-ai | 全 food-beverage 簇 vertical 文引用；不重复展开「手机素材→Agent 剪成店招/出餐/优惠」端到端流程 |
+| 美食过程/工艺视频剪辑（plating/ASMR/拉丝/横切） | how-to-edit-food-videos-with-ai | 全簇 format 文引用；不重复展开四类感官格式分镜 |
 
 **规则**：每个核心概念只在一篇文章完整定义（canonical），其他文章引用 1–2 句 + internal link，不重新展开。
 
@@ -175,7 +197,8 @@ Category POV（品类教育）
 每自然日 ≤1 篇。已占用（按簇内日期勾稽；创作新稿前如需要精确全量，读部署仓 frontmatter `date` 或使用本表 §2 各表 date 列；注意 §2 中部分日期重复——**同一日期已有 2 篇时表示历史同日多发，新稿应选择无任何文章的自然日**）。
 
 最近已占用日期（2026-08 及以后）：
-- 2026-09-04 · 2026-08-01 · 2026-07-31 · 2026-07-30 · 2026-07-27 · 2026-07-18 · 2026-07-01（×2）
+- 2026-08-15 · 2026-08-14 · 2026-08-13 · 2026-08-12 · 2026-08-11 · 2026-08-10 · 2026-08-09 · 2026-08-08 · 2026-08-07 · 2026-08-06 · 2026-08-05 · 2026-08-04 · 2026-08-03 · 2026-08-02（food-beverage 12 篇 + vlog 2 篇，回溯占位日）
+- 2026-08-01 · 2026-07-31 · 2026-07-30 · 2026-07-27 · 2026-07-18 · 2026-07-01（×2）
 
 > 新稿默认 date = 目标发布日；若与上表冲突，选最近的空档自然日。
 

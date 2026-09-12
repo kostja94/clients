@@ -7,11 +7,17 @@
 ```
 blog/
 ├── README.md                    ← 本文件
+├── blog-structure-internal-links.md ← 全站文章结构与内链参考（14 篇本地成稿矩阵）
 ├── vlog-topic-cluster.md        ← Vlog 主题簇规划（选题、hub-spoke、发布节奏）
+├── food-beverage-topic-cluster.md ← Food & Beverage 主题簇规划（选题、hub-spoke、发布节奏）
 │
-└── vlog/                        ← Vlog 簇（AI Vlog Editor，hub /vlog）
-    ├── how-to-edit-a-vlog-with-ai.md
-    └── how-to-edit-a-travel-vlog.md
+├── vlog/                        ← Vlog 簇（AI Vlog Editor，hub /vlog）
+│   ├── how-to-edit-a-vlog-with-ai.md
+│   └── how-to-edit-a-travel-vlog.md
+│
+└── food-beverage/               ← Food & Beverage 簇（hub /industries + 7 详情页）
+    ├── README.md                ← 簇索引
+    └── *.md                     ← 12 篇成稿
 ```
 
 ## 约定
@@ -20,7 +26,7 @@ blog/
 |----|------|
 | 语言 | 正文 en-US（上线稿为英文） |
 | 命名 | `{slug}.md`；**无 NN 序号前缀**（sparki 特有，对比 luciusai/moras）；常青 slug 无年份 |
-| frontmatter | `title/description/slug/date/author/category/tags`；`category` 取枚举（ai-video-editor 等）；`author: Sparki Team` |
+| frontmatter | `title/description/slug/date/author/category/tags`；`category` 取枚举（ai-video-editor 等）；`author: Kostja` |
 | 落盘 | **成稿只放本工作区仓** `sparki/blog/{cluster}/{slug}.md`；不写入客户部署仓（部署/发布由单独流程处理） |
 | 过程产物 | Brief / SelfCheck / Source Map 等辅助交付物**只进对话，不落盘**（生成完文章后不再保留） |
 
@@ -37,7 +43,23 @@ Hub：[`/vlog`](https://sparki.io/vlog)（AI Vlog Editor）· Canonical 品类�
 | [vlog/how-to-edit-a-vlog-with-ai.md](./vlog/how-to-edit-a-vlog-with-ai.md) | `how-to-edit-a-vlog-with-ai` | WorkflowHowTo | 📝 成稿 | 双模态分类（对白 vs B-roll）+ 4 步工作流 + 工具决策表；簇内流程 canonical |
 | [vlog/how-to-edit-a-travel-vlog.md](./vlog/how-to-edit-a-travel-vlog.md) | `how-to-edit-a-travel-vlog` | WorkflowHowTo | 📝 成稿 | C1 的 travel 实例化：行程时间线 → 每地 beats → recap + Shorts |
 
-> 状态：📝 成稿（本地）→ 🚀 待发布（进入部署仓并置 `draft:false`）。当前两篇均为 📝，date 已占位（2026-09-09 / 2026-09-10 UTC，每自然日 ≤1 篇）。
+> 状态：📝 成稿（本地）→ 🚀 待发布（进入部署仓并置 `draft:false`）。当前两篇均为 📝，date 已占位（2026-08-02 / 2026-08-03 UTC，每自然日 ≤1 篇）。
+
+## Food & Beverage 簇
+
+Hub：[`/industries`](https://sparki.io/industries)（Industry Video Editor）+ 7 个 Food & Beverage 详情页（restaurant / cafe / bar / bakery / food-truck / pizza / bubble-tea）· 规划见 [`food-beverage-topic-cluster.md`](./food-beverage-topic-cluster.md)
+
+### 文章
+
+| 文件 | Slug | 类型 | 状态 | 说明 |
+|------|------|------|:---:|------|
+| （P0）`how-to-edit-restaurant-videos-with-ai` | WorkflowHowTo | 待写 | 簇流程 canonical；餐厅店招/出餐/优惠/团队视频 |
+| （P0）`restaurant-video-marketing` | CategoryPOV | 待写 | 最高量词；「视频是餐厅发现第一渠道」 |
+| （P0）`how-to-edit-food-videos-with-ai` | WorkflowHowTo | 待写 | format canonical（plating/ASMR/拉丝/横切） |
+| （P1）`how-to-edit-coffee-shop-videos` 等 6 篇 vertical | WorkflowHowTo | 待写 | cafe / bar / bakery / pizza / bubble-tea / food-truck |
+| （P2）`how-to-edit-food-asmr-videos` 等 3 篇 | 混合 | 待写 | 格式深钻 + 选型 |
+
+> 完整清单与 hub/spoke 内链图见 [`food-beverage-topic-cluster.md`](./food-beverage-topic-cluster.md)。
 
 ## 相关文档（仓外）
 

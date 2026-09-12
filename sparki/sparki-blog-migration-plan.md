@@ -28,7 +28,7 @@
 
 - **61 篇**英文文章；单页列表无分页/分类；每篇有 BlogPosting JSON-LD；纯英文无 i18n。
 - 内容源 **Contentful**（图片 `images.ctfassets.net`，页面经 `/_next/image` 优化）。
-- 作者唯一 `Sparki Team`；`articleSection`→category，`keywords`→tags；hero/列表日期 = `datePublished` 的 UTC 日期。
+- 作者唯一 `Kostja`；`articleSection`→category，`keywords`→tags；hero/列表日期 = `datePublished` 的 UTC 日期。
 - 正文为 `.sparki-rich-content`：H2/H3、表格、列表、blockquote、部分含 figure 内图；站内 blog 互链为 `/blog/{slug}`。
 - 需保持不变量：URL `/blog/{slug}`、标题/日期/作者/category/tags、站内互链、图片可访问。
 
@@ -98,7 +98,7 @@ e:\clients\sparki\（策略仓 — 本文档、site-structure；内容变更走 
 
 - **执行方式**：`scripts/export_sparki_blog.py`（Chrome headless 渲染 → JSON-LD/meta → md → 图片本地化 → frontmatter）。全部 61 slug 按 4 批并行（每批 `--jobs 2`），3 个首轮渲染超时的 slug（kylie-jenners / elysian-living / nicolelaeno）单独重试成功。
 - **产物**：`content/blog/*.md` 61 篇；`public/blog/images/{slug}/` 本地图片（md 中图片引用 144 处 + cover 均落盘，0 缺失）；Contentful 原图按 `?w=1600&q=82` 约束宽度下载。
-- **内容保真**：日期统一转 UTC 日期（frontmatter 覆盖 2025-10-31 → 2026-08-01）；category/tags/作者 `Sparki Team` 来自 JSON-LD；正文表格全部转 GFM 管道表（0 处残留原生 HTML table）；站内互链 `/blog/{slug}` 零改写、互链目标 100% 有效。
+- **内容保真**：日期统一转 UTC 日期（frontmatter 覆盖 2025-10-31 → 2026-08-01）；category/tags/作者 `Kostja` 来自 JSON-LD；正文表格全部转 GFM 管道表（0 处残留原生 HTML table）；站内互链 `/blog/{slug}` 零改写、互链目标 100% 有效。
 - **预发布门禁（已过）**：`npm run validate:posts` 61/61 ✅；`npm run build`（Next 16.3.3）SSG 70 路由全部生成 ✅；`next start` 冒烟抽查文章页：h1/正文图/3 张 GFM 表格渲染正常、`ctfassets/_next/image` 远端残留 0 ✅。
 - **留档/可复现**：渲染 HTML 缓存于 `temp/render/{slug}.html`，任意后续再导出可用 `--cache` 离线重刷（约 5s）；导出日志 `temp/export-log.jsonl`。
 - **遗留（非阻塞）**：主题仍为 vercel-geist 中性态（决策项 C 品牌化未做）；正文 CTA/站外链接按原文保留，其中少量写成 `<https://…>` 自动链接形态。
@@ -127,7 +127,7 @@ e:\clients\sparki\（策略仓 — 本文档、site-structure；内容变更走 
    theme: { preset: "vercel-geist", colorMode: "system", strategy: "hybrid" }
    ```
    - **决策项 A（taxonomy，已定）**：现网无 `/blog/category|tag/*` 路由 → 关闭页面开关、**数据仍写入 frontmatter**（未来要开分类页可直接启用）。
-   - **决策项 B（作者，已定）**：作者唯一 `Sparki Team` → `authors: true` 单作者（author box 可选关闭）。
+   - **决策项 B（作者，已定）**：作者唯一 `Kostja` → `authors: true` 单作者（author box 可选关闭）。
    - **决策项 C（主题，待做）**：现用 vercel-geist 中性起步；sparki 品牌色/字体（`text-sparki-*` tokens）以 CSS 变量对齐后再灰度 1 篇 diff。
 3. 品牌素材（✅）：logo 已下载自主站 → `public/brand/sparki-logo.png`；favicon 复用主站同名资源。
 4. `.env` / `.env.local`（✅）：`SITE_URL`、`DEPLOY_MODE=subdirectory`、`BLOG_BASE_PATH=/blog`、`ASSET_PREFIX=/blog`。

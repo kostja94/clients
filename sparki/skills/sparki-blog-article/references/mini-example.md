@@ -44,7 +44,7 @@
   - /blog/engaging-lifestyle-vlogs-spencer-barbosa（同簇）
   - https://sparki.io/features/copy-style（绝对 URL，1 次）
 **Slug candidate**: how-to-edit-morning-routine-vlogs-like-{creator}
-**Author**: Sparki Team
+**Author**: Kostja
 ```
 
 ---

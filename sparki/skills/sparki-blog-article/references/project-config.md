@@ -17,7 +17,7 @@
 | **核心功能** | Copy Style、Long to Short、AI Caption、AI Commentary、Video Resizer（+ Highlight Reels 等 solutions） |
 | **交互范式** | 对话式 Agent：沟通 → 计划 → 执行 → 多轮修订 |
 | **ICP** | 短视频创作者（Commentary/Vlog/Montage/Talking-head）、Podcast/Webinar 长改短团队、品牌/MCN、本地商家 |
-| **作者署名** | `Sparki Team`（Organization 级；`author` 必填） |
+| **作者署名** | `Kostja`（Organization 级；`author` 必填） |
 | **语言** | en-US 正文；中文仅沟通用 |
 | **联系** | enterprise@sparki.io（企业）；support@sparksview.com（Contact footer，勿当作品牌名） |
 | **Socials** | X `x.com/sparkilovesedit` · YouTube `@sparkiai_official/shorts` · Instagram `sparki_ai_official` · TikTok `sparkiai_official` · Discord `discord.gg/3cWs84Jza8` |
@@ -41,7 +41,7 @@
 | Solutions | `https://sparki.io/solutions/highlight-reels` 等（highlight-reels / youtube-to-tiktok / edit-videogen-clip / daily-vlog / panoramic-camera） |
 | Vlog hub | `https://sparki.io/vlog`（AI Vlog Editor；2026-09-09 实测上线后加入白名单） |
 | Creators | `https://sparki.io/creators/{slug}`（线上 18 页 + hub `/creators`） |
-| Industries | `https://sparki.io/industries/{slug}`（线上 21 页） |
+| Industries | `https://sparki.io/industries`（聚合页 hub）+ `https://sparki.io/industries/{slug}`（线上 21 个详情页） |
 | Video-editor 类型页 | `https://sparki.io/video-editor/{slug}`（product-video / product-ad / product-review / ecommerce 等 + gaming） |
 | Use Cases | `https://sparki.io/use-cases` |
 | API/Dev | `https://sparki.io/doc/api`、`https://sparki.io/doc/developer` |
@@ -72,7 +72,7 @@
 | `slug` | ✅ | kebab-case 小写；**必须 = 文件名（去 `.md`）**；不含 `/blog/` |
 | `date` | ✅ | 发布日 UTC `YYYY-MM-DD`；永不变 |
 | `updated` | 可选 | 最近实质性更新日；无则省略；页面只显示一个日期 |
-| `author` | ✅ | `Sparki Team` |
+| `author` | ✅ | `Kostja` |
 | `category` | ✅ | 枚举见 SKILL.md §1（validate 在 categories off 下仍要求字段存在） |
 | `tags` | 可选 | 字符串数组；3–6 个；含主词变体与长尾 |
 | `draft` | 可选 | 默认 `false`；创作期 `true`，终审通过后 `false` |
@@ -86,7 +86,7 @@ description: "140–160 chars, benefit + main intent keyword"
 slug: "kebab-case-slug"
 date: 2026-09-XX
 updated: 2026-09-XX
-author: "Sparki Team"
+author: "Kostja"
 category: "Video Editing Features"
 tags: ["primary keyword", "related variant", "use case"]
 cover: "/blog/images/{slug}/cover.png"

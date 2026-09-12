@@ -113,7 +113,7 @@ Mode：{lite|standard|flagship，未指定默认 standard}
 | **定位** | Chat-to-edit：上传素材 → 自然语言 → Agent 规划并执行 → 多轮修订；云端处理 |
 | **核心功能** | Copy Style、Long to Short、AI Caption、AI Commentary、Video Resizer（另有 Highlight Reels 等 solutions） |
 | **定价（as of）** | Free 300 credits + 3GB · Starter/Plus 月付或年付（年付约 −40%）· Enterprise（API/SLA/并发，enterprise@sparki.io） |
-| **作者** | `Sparki Team`（Organization） |
+| **作者** | `Kostja`（Organization） |
 | **日期** | `date` = 发布日（UTC `YYYY-MM-DD`），永不变；`updated` 仅实质性更新时出现 |
 | **Category 枚举** | `Clone Edit Viral Videos` · `Video Editing Features` · `ai-video-editor` · `AI Video Editing` · `AI Tools` · `Editor-in-browser` |
 | **语言** | en-US 正文；中文仅沟通 |
@@ -196,7 +196,7 @@ Phase 6  ─ Delivery
 ## ArticleType: CreatorClone | WorkflowHowTo | FeatureGuide | Comparison | AlternativeRoundup | CategoryPOV | Announcement
 ## InvestmentScore: {1.0–5.0} — {五因子摘要}
 ## Category (frontmatter): {见 §2}
-## Author: Sparki Team
+## Author: Kostja
 ## Gate A: KEEP | MERGE → {slug} | STOP
 ```
 
@@ -273,7 +273,7 @@ Research Log + SERP Fit → Gate 0R Pass → Phase 1
 
 > **模板 + 范例 → `references/mini-example.md` · `references/article-types.md`**
 
-Brief 必含：Mode · ArticleType · InvestmentScore · SuccessMetric · MoatAssetPlanned · AnswerBlocks · Working title · Primary keyword · Category · Synthesis Statement · Information increment（≥2 项）· Candidate examples · Word count target · Internal link plan · Slug candidate · Author（Sparki Team）。
+Brief 必含：Mode · ArticleType · InvestmentScore · SuccessMetric · MoatAssetPlanned · AnswerBlocks · Working title · Primary keyword · Category · Synthesis Statement · Information increment（≥2 项）· Candidate examples · Word count target · Internal link plan · Slug candidate · Author（Kostja）。
 
 ---
 

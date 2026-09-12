@@ -5,8 +5,8 @@ description: >-
   organizes by day and place, cuts a paced recap plus Shorts from the same
   footage.
 slug: how-to-edit-a-travel-vlog
-date: '2026-09-10'
-author: Sparki Team
+date: '2026-08-03'
+author: Kostja
 category: ai-video-editor
 tags:
   - how to edit a travel vlog
@@ -86,15 +86,15 @@ Working rules that hold up in practice:
 - Export vertical 9:16 for TikTok, Reels, and Shorts. Center-cropping the horizontal master wastes resolution and framing.
 - Keep captions on and proofread them — location names and local terms are exactly what transcription tools get wrong.
 
-When your source is a full trip — three hours or more of material — the batch path is what makes this viable. Sparki's long-to-short mode turns a long source into a batch of ten to twenty clips (per its [long-to-short feature page](https://sparki.io/features/long-to-short)), which maps naturally onto "one Short per stop." The general rules for what makes a clip stand alone are covered in [our long-to-short guide](/blog/long-video-to-short-video).
+When your source is a full trip — three hours or more of material — the batch path is what makes this viable. Sparki's long-to-short mode turns a long source into a batch of ten to twenty clips (per its [long-to-short mode](https://sparki.io/features/long-to-short)), which maps naturally onto "one Short per stop." The general rules for what makes a clip stand alone are covered in [our long-to-short guide](/blog/long-video-to-short-video).
 
 ## 6. Manual NLE vs AI: Where the Time Actually Goes
 
 It is worth being honest about what a manual edit still does better, because the travel creators who get the most from AI tools are the ones who keep the timeline for the right reasons.
 
-A non-linear editor — [Premiere Pro](https://www.adobe.com/products/premiere.html), [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve), Final Cut — remains the right choice when you want full control over the final few percent: frame-level trims, serious color grading, or a deliberately art-directed look. Manual tools also force you to watch your footage, which matters on your first few trips when you are still learning what you shoot well. And for quick mobile edits straight after a day out, [CapCut](https://www.capcut.com) is genuinely the fastest tool for a same-day cut with templates and auto-captions.
+A non-linear editor — <a href="https://www.adobe.com/products/premiere.html" rel="nofollow noopener">Premiere Pro</a>, <a href="https://www.blackmagicdesign.com/products/davinciresolve" rel="nofollow noopener">DaVinci Resolve</a>, Final Cut — remains the right choice when you want full control over the final few percent: frame-level trims, serious color grading, or a deliberately art-directed look. Manual tools also force you to watch your footage, which matters on your first few trips when you are still learning what you shoot well. And for quick mobile edits straight after a day out, <a href="https://www.capcut.com" rel="nofollow noopener">CapCut</a> is genuinely the fastest tool for a same-day cut with templates and auto-captions.
 
-Where manual falls apart is at travel scale. Sorting and assembling several hours of multi-day, multi-location footage by hand is where the hours go, and no amount of grading skill fixes a week lost to it. The division of labor that works: AI handles organization, structure drafting, and Shorts extraction; you keep the timeline for the moments you want to hand-finish. For music, use sources you have the rights to — a subscription library like [Epidemic Sound](https://www.epidemicsound.com) or the YouTube Audio Library — and let the editor match track pacing to the cut rather than building the cut around a track.
+Where manual falls apart is at travel scale. Sorting and assembling several hours of multi-day, multi-location footage by hand is where the hours go, and no amount of grading skill fixes a week lost to it. The division of labor that works: AI handles organization, structure drafting, and Shorts extraction; you keep the timeline for the moments you want to hand-finish. For music, use sources you have the rights to — a subscription library like <a href="https://www.epidemicsound.com" rel="nofollow noopener">Epidemic Sound</a> or the YouTube Audio Library — and let the editor match track pacing to the cut rather than building the cut around a track.
 
 ## 7. Conclusion
 

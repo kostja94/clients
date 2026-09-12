@@ -26,7 +26,7 @@
 | R4 | 碎片化 | 长段不足、伪列表堆砌（`**Bold.**` + 单句 ≥3） |
 | R5 | 空泛句 / AI 腔 | hype 词、模板化开头（writing-constraints 禁词表） |
 | R6 | 列表占比 | 是否超类型上限（article-types §1） |
-| R7 | Frontmatter | slug=文件名、category 在枚举内、author=`Sparki Team`、date 不变 |
+| R7 | Frontmatter | slug=文件名、category 在枚举内、author=`Kostja`、date 不变 |
 | R8 | 模块顺序 | YAML → TL;DR → H2 → Conclusion → FAQ；无 `## Related articles` 模块 |
 | R9 | Information Gain | vs SERP 是否仍有增量；Moat 是否被竞品抄平 |
 | R10 | Slug 合规 | 文件名 = slug、无 NN、无年份、12 反模式零触发 |

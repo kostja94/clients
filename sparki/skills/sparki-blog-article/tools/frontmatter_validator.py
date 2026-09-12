@@ -5,7 +5,7 @@ Sparki-specific:
 - filename MUST equal frontmatter `slug` (validate:posts hard rule)
 - description must be 80-320 chars (validate:posts), 120-160 recommended
 - `cover` is the featured-image field (NOT `image`)
-- author default "Sparki Team"; category must be in allowed enum (informational)
+- author default "Kostja"; category must be in allowed enum (informational)
 """
 
 from __future__ import annotations
@@ -139,10 +139,10 @@ def main() -> int:
 
     # F7: author
     if not author:
-        emit("FAIL", f"{gate}-F7", "author missing (default 'Sparki Team')")
+        emit("FAIL", f"{gate}-F7", "author missing (default 'Kostja')")
         fails += 1
-    elif author != "Sparki Team":
-        emit("WARN", f"{gate}-F7", f"author '{author}' != default 'Sparki Team'")
+    elif author != "Kostja":
+        emit("WARN", f"{gate}-F7", f"author '{author}' != default 'Kostja'")
     else:
         emit("PASS", f"{gate}-F7", "author present")
 

@@ -5,8 +5,8 @@ description: >-
   B-roll and action clips into a structured long cut plus Shorts from the
   same footage.
 slug: how-to-edit-a-vlog-with-ai
-date: '2026-09-09'
-author: Sparki Team
+date: '2026-08-02'
+author: Kostja
 category: ai-video-editor
 tags:
   - edit vlog with ai
@@ -88,7 +88,7 @@ A few working rules:
 - Use platform-native exports for TikTok, Reels, and Shorts rather than center-cropping the horizontal master — the framing should be composed for vertical, not cropped into it.
 - Keep captions on: most Shorts are watched on mute, and captions double as the retention layer.
 
-If the long video is three hours or more of source material, batch production is where the time savings really land. Sparki's long-to-short mode can turn a long source into a batch of ten to twenty clips (per its [long-to-short feature page](https://sparki.io/features/long-to-short)), which matters when you are converting an entire trip or a full shoot week. The general repurposing workflow — what to extract, how to structure a clip so it stands alone — is covered in [our long-to-short guide](/blog/long-video-to-short-video). And if the session is a multi-location trip rather than a single shoot day, [our travel-vlog editing workflow](/blog/how-to-edit-a-travel-vlog) walks through organizing footage by day and place before any of the cutting starts.
+If the long video is three hours or more of source material, batch production is where the time savings really land. Sparki's long-to-short mode can turn a long source into a batch of ten to twenty clips (per its [long-to-short mode](https://sparki.io/features/long-to-short)), which matters when you are converting an entire trip or a full shoot week. The general repurposing workflow — what to extract, how to structure a clip so it stands alone — is covered in [our long-to-short guide](/blog/long-video-to-short-video). And if the session is a multi-location trip rather than a single shoot day, [our travel-vlog editing workflow](/blog/how-to-edit-a-travel-vlog) walks through organizing footage by day and place before any of the cutting starts.
 
 ## 6. Which AI Tool Fits Your Footage
 
@@ -96,7 +96,7 @@ The honest answer to "which AI tool edits vlogs" is that it depends on what your
 
 | Your footage is mostly… | Tool family that fits | Why |
 |--------------------------|----------------------|-----|
-| Talking heads, podcasts, interviews | Transcript editors (<a href="https://www.descript.com" rel="nofollow noopener">Descript</a>, REQO, ChatCut) | Editing words is faster than scrubbing audio |
+| Talking heads, podcasts, interviews | Transcript editors (Descript, REQO, ChatCut) | Editing words is faster than scrubbing audio |
 | A finished video you want to repurpose | Clip extractors (OpusClip, Vizard, Klap) | Find and reformat the strongest standalone moments |
 | No footage — you want a video made from scratch | Generative tools (InVideo, Runway) | Script-to-video, stock or synthetic visuals |
 | Raw B-roll, action clips, mixed camera days | Agent-based editors (Sparki) | The AI needs to see and structure the footage, not read a transcript |
