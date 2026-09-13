@@ -1,0 +1,51 @@
+{
+  "name": "alignify",
+  "ctx_root": "E:\\clients\\Alignify",
+  "deploy_env": "ALIGNIFY_DEPLOY_ROOT",
+  "deploy_roots": [
+    "E:\\自有部署项目\\alignify production",
+    "D:\\部署项目\\alignify-by-kostja"
+  ],
+  "registry_path": "data/og-prompt-registry.json",
+  "briefs_root": "data/og-briefs",
+  "section_signatures_path": "data/og-section-signatures.json",
+  "output_layout": "deploy-section",
+  "staging_root": "assets/og",
+  "context_og_root": "E:\\clients\\Image Generator\\output\\alignify\\staging",
+  "default_output": "deploy",
+  "default_provider": "fal",
+  "default_section": "tools",
+  "sections": ["marketing", "seo", "tools", "blog", "insights", "events", "site", "glossary"],
+  "locales": ["en", "zh"],
+  "default_locale": "en",
+  "analyze_source": "deploy-content",
+  "url_pattern": "https://alignify.co/{section}/{slug}",
+  "page_ref_format": "{section}/{slug}",
+  "brand": {
+    "modes": ["kostja", "alignify", "logo"],
+    "wordmark_mode": "alignify",
+    "wordmark": "Alignify",
+    "wordmark_font_size": 22,
+    "salt": "brand-v35",
+    "logo": "assets/brand/icon-192x192.png",
+    "corner_safe_zones": {
+      "bottom-left": "bottom-left 140x48px",
+      "bottom-right": "bottom-right 100x100px",
+      "top-right": "top-right 100x100px"
+    }
+  },
+  "accents": {
+    "klein-blue": ["#002FA7", "Klein blue"],
+    "mars-green": ["#006B54", "Mars green"],
+    "titian-red": ["#C62828", "Titian red"],
+    "alignify-navy": ["#1e3a5f", "Alignify navy"]
+  },
+  "default_accent": "klein-blue",
+  "default_style": "editorial-collage",
+  "styles": {
+    "editorial-collage": "High-end editorial paper collage social share card, 1200x630 landscape, like a zine cover or 2mv-style editorial OG. Off-white textured paper (#F4F4F2) with torn-paper layers and halftone grain. Every visual must illustrate THIS page's topic — not generic abstract decoration.",
+    "swiss-grid": "Swiss modernist editorial poster for a B2B AI tools publication. Warm off-white paper background (#F5F2EA), subtle paper grain, modular grid, 70% negative space, one high-chroma accent color block, flat fields, no 3D mockups, no product logos, no stock photos, no glossy SaaS gradients. Clean bold sans-serif typography area for headline. 1200x630 landscape social share card composition."
+  },
+  "vibe_line": "Editorial collage quality similar to 2mv editorial OG — visual storytelling, PPT-level copy.",
+  "text_safe_zone_rules": false
+}

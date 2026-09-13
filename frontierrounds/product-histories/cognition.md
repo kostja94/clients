@@ -4,24 +4,20 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/cognition`）
 
-## 概览
+## 短摘要
 
-Cognition (Cognition AI) is the San Francisco-based startup behind Devin, the first fully autonomous AI software engineer — founded in late 2023 by competitive-programming champions Scott Wu (CEO), Steven Hao and Walden Yan, holders of ten IOI gold medals collectively. It launched Devin in March 2024 alongside a US$21M Founders Fund-led seed, then raised a ~US$175M Series A at ~US$2B within weeks. A ~US$4B Series B led by Lux Capital and 8VC followed (March 2025), then a US$400M+ Series C at US$10.2B led by Founders Fund (September 2025), a US$1B+ Series D at US$26B led by Lux/General Catalyst/8VC (May 2026), and — announced 8 September 2026 — a US$2B Series E at US$48B led by new investors Andreessen Horowitz and Accel. The valuation nearly doubled from US$26B in four months, on the back of run-rate revenue rising from US$492M (May) to ~US$900M (September). Along the way Cognition acquired the Windsurf IDE (July 2025, adding ~US$82M ARR) and counts Mercedes-Benz, NASA JPL, Goldman Sachs, Citi, the U.S. Army and Navy among its customers.
-
-## 基本档案
+Cognition is the San Francisco lab behind Devin, the first fully autonomous AI software engineer, founded in late 2023 by IOI-gold-medallist competitive programmers.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | Late 2023 (San Francisco) |
-| Headquarters | San Francisco (offices in New York, London, Singapore, Tokyo) |
+| Founded | Late 2023 |
+| Headquarters | San Francisco |
 | Founders | Scott Wu (CEO); Steven Hao (CTO); Walden Yan (CPO) — IOI gold medallists |
 | Sector | Autonomous AI software engineering (Devin) + AI-native IDE (Windsurf) |
 | Flagship products | Devin (autonomous agent); Windsurf IDE; Devin Desktop (2026) |
-| Run-rate revenue | US$492M (May 2026) → ~US$900M (Sep 2026, per Reuters) |
-| Total raised | ~US$3.6B disclosed primary equity (Series B amount undisclosed) |
-| Latest valuation | US$48B (Series E, Sep 2026) |
-| Valuation arc | ~$350M (2024) → ~$2B → ~$4B → $10.2B → $26B → $48B |
-| Key customers | Mercedes-Benz, NASA JPL, Goldman Sachs, Citi, U.S. Army/Navy, Dell, Palantir |
+| Latest valuation | US$48B (Series E) |
+| Run-rate | ~US$900M (Sep 2026) |
 
 ## 官网
 

@@ -4,22 +4,20 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/ami-labs`）
 
-## 概览
+## 短摘要
 
-Advanced Machine Intelligence Labs (AMI Labs) is the world-model research company founded by Yann LeCun, the Turing Award winner who left Meta — where he had served as chief AI scientist and founding director of FAIR — in late 2025 after 12 years. LeCun announced the venture on 19 November 2025; the Paris-headquartered company (with day-one hubs in New York, Montreal and Singapore) is run day-to-day by CEO Alexandre LeBrun. AMI is building world models on LeCun's JEPA framework (Joint Embedding Predictive Architecture), which learns abstract representations of real-world data and predicts in representation space instead of next-token or next-pixel generation — an explicit challenge to the industry's language-first consensus. On 9 March 2026 AMI announced a **~US$1.03B (≈€890M) seed round at a US$3.5B pre-money valuation — Europe's largest seed at the time** — co-led by five funds including Bezos Expeditions, with a syndicate of strategics (NVIDIA, Samsung, Toyota Ventures, Temasek) and star angels (Jeff Bezos, Eric Schmidt, Tim Berners-Lee, Mark Cuban). The ~12-person, product-less company was valued primarily on scientific credibility.
-
-## 基本档案
+Advanced Machine Intelligence Labs is Yann LeCun's world-model company, founded after he left Meta's chief AI scientist role in late 2025. It builds on his JEPA framework instead of language-first models, on scientific credibility alone, with no product shipped.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | Announced 2025-11-19; registered Paris ~2025-12-15; public Jan 2026 |
-| Headquarters | Paris (multi-hub: New York, Montreal, Singapore) |
+| Founded | Nov 2025 |
+| Headquarters | Paris (NY, Montreal, Singapore) |
 | Founder / Chairman | Yann LeCun (Turing Award 2018; ex-Meta Chief AI Scientist) |
 | CEO / Co-founder | Alexandre LeBrun (ex-CEO of Nabla; Wit.ai founder; former FAIR engineering lead) |
 | Sector | World models / JEPA / embodied & physical AI research |
-| Team | ~12 at announcement; Julia Kempe joined as Director of Research (Jun 2026) |
-| Total raised | ~US$1.03B (one disclosed round) |
-| Latest valuation | US$3.5B pre-money (Seed, Mar 2026; post ≈US$4.5B, inferred) |
+| Latest valuation | US$3.5B pre-money |
+| Team | ~12 at announcement |
 
 ## 官网
 

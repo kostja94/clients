@@ -4,25 +4,22 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/anthropic`）
 
-## 概览
+## 短摘要
 
-Anthropic is the San Francisco frontier AI lab behind the Claude model family, founded in 2021 by Dario Amodei and colleagues who left OpenAI over safety strategy. It pairs an AI-safety mission with the most aggressive capital accumulation in private-market history: a US$124M Series A (May 2021), US$580M Series B led by Alameda/FTX (April 2022), hyperscaler commitments from Google (~US$43B cumulative by 2026) and Amazon (US$8B), and a pricing ladder from Series E US$3.5B at US$61.5B (March 2025) to Series F US$13B at US$183B (September 2025), Series G US$30B at US$380B (February 2026) and Series H US$65B at US$965B (May 2026) — briefly the most valuable private company on earth. ARR reached ~US$47B by May 2026 with 500+ customers each spending over US$1M annually. A confidential S-1 was filed June 2026. Cumulative disclosed equity is ~US$118B on Frontier Rounds' conservative basis (US$144B per some trackers).
-
-## 基本档案
+Anthropic is the San Francisco frontier lab behind the Claude model family, founded in 2021 by Dario Amodei and colleagues who left OpenAI over safety. It pairs a safety mission with the most aggressive capital accumulation in private-market history.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
 | Founded | 2021 |
-| Headquarters | San Francisco, California |
+| Headquarters | San Francisco, CA |
 | Founders | Dario Amodei (CEO); Daniela Amodei (President) |
 | Sector | Frontier AI safety & research (Claude model family) |
 | Product | Claude (chat + API); 500+ customers >US$1M ARR |
-| ARR (May 2026) | ~US$47B annualized (reported) |
-| Total raised | ~US$118B disclosed equity (site basis); ~US$144B per some trackers |
-| Latest valuation | US$965B post-money (Series H, May 2026) |
-| Largest round | US$65B Series H (May 2026) — largest single private AI round until OpenAI's US$122B; among largest ever |
 | Strategic backers | Google (~US$43B cumulative commitment); Amazon (US$8B) |
-| Status | Confidential S-1 filed June 2026 |
+| Status | S-1 filed Jun 2026 |
+| Latest valuation | US$965B (Series H) |
+| ARR | ~US$47B annualized |
 
 ## 官网
 

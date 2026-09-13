@@ -19,7 +19,7 @@
   generate-og-cover.py（注入 brief + QUALITY 指令）
     → APINEED gpt-image-2 (异步 / high)
     → top-bias 裁切 → 严格 1200×630 WebP
-    → blog/images/og/{slug}/{slug}-og-en.webp
+    → E:\clients\Image Generator\output\dubbingai/{slug}/{slug}-og-en.webp
     → 目视验收 → registry status=approved
 
 阶段 B — 部署（可选）
@@ -35,8 +35,8 @@
 
 | 用途 | 路径 |
 |------|------|
-| **OG 成品（默认）** | `blog/images/og/{slug}/{slug}-og-en.webp` |
-| **元数据** | `blog/images/og/{slug}/{slug}-og-en.meta.json` |
+| **OG 成品（默认）** | `E:\clients\Image Generator\output\dubbingai\{slug}/{slug}-og-en.webp` |
+| **元数据** | `E:\clients\Image Generator\output\dubbingai\{slug}/{slug}-og-en.meta.json` |
 | **Prompt / brief** | `data/og-prompt-registry.json` · `data/og-briefs/` |
 | **规则** | `data/og-cover-rules.md` |
 
@@ -52,12 +52,12 @@ editorial-collage 默认 — 纸拼贴 zine 封面感 + gaming/streaming 年轻�
 
 ## 4. 模型与参数
 
-| 项 | 值 |
+> **Provider / 端点 / 参数 / 密钥 SSOT**：[`E:\clients\Image Generator\README.md`](../../../Image%20Generator/README.md)（fal / apineed / gitaigc 三通道）。此处只列 Dubbing AI 特有约定。
+
+| 项 | Dubbing AI 约定 |
 |----|-----|
-| **Provider** | APINEED（唯一默认） |
-| **Model** | `gpt-image-2` |
-| **Quality** | `high` |
-| **API** | 异步 `media/generations`（2026-09 起；无 `size` 参数，比例由 prompt 控制） |
+| **默认 provider** | APINEED（`--provider fal` / `--provider gitaigc` 可选） |
+| **Model / Quality** | `gpt-image-2` · `high` |
 | **最终尺寸** | **1200×630** WebP（APINEED：防御性 top bias；fal：center crop） |
 | **APINEED raw** | 直出 ~16:9 宽幅 · prompt 含 `APINEED ASPECT` 指令 · 标题 10%/8% 安全边距 |
 
@@ -90,20 +90,20 @@ python E:\clients\dubbingai\scripts\ops\analyze-og-page.py `
 ### 5.3 查看 registry
 
 ```powershell
-python E:\clients\dubbingai\scripts\ops\generate-og-cover.py --list
+python E:\clients\Image Generator\generate-og-cover.py --client dubbingai --list
 ```
 
 ### 5.4 预览 prompt
 
 ```powershell
-python E:\clients\dubbingai\scripts\ops\generate-og-cover.py `
+python E:\clients\Image Generator\generate-og-cover.py --client dubbingai `
   --slug best-ai-voice-changer --dry-run
 ```
 
 ### 5.5 生成
 
 ```powershell
-python E:\clients\dubbingai\scripts\ops\generate-og-cover.py `
+python E:\clients\Image Generator\generate-og-cover.py --client dubbingai `
   --slug best-ai-voice-changer
 ```
 
@@ -112,7 +112,7 @@ python E:\clients\dubbingai\scripts\ops\generate-og-cover.py `
 ### 5.6 批量生成（Track S 四篇）
 
 ```powershell
-python E:\clients\dubbingai\scripts\ops\batch-generate-og-covers.py `
+python E:\clients\Image Generator\batch-generate-og-covers.py --client dubbingai `
   --slugs best-ai-voice-changer,how-to-change-google-assistant-voice,how-to-change-your-voice,dubbing-ai-vs-voicemod `
   --skip-existing
 ```
@@ -121,7 +121,7 @@ python E:\clients\dubbingai\scripts\ops\batch-generate-og-covers.py `
 
 ```powershell
 $env:DUBBINGAI_DEPLOY_ROOT = "E:\path\to\dubbingai-deploy"
-python E:\clients\dubbingai\scripts\ops\generate-og-cover.py `
+python E:\clients\Image Generator\generate-og-cover.py --client dubbingai `
   --slug best-ai-voice-changer --deploy
 ```
 

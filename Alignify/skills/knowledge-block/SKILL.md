@@ -89,7 +89,7 @@
 
 ## 单篇去重门禁（Tools KB）
 
-与 [`knowledge-dedupe-spec.md`](../../../knowledge-dedupe-spec.md) · [`_TEMPLATE.md`](../../knowledge/tools/_TEMPLATE.md) §单篇去重 SSOT 一致：
+与 [`知识去重规范.md`](../../../知识去重规范.md) · [`_TEMPLATE.md`](../../knowledge/tools/_TEMPLATE.md) §单篇去重 SSOT 一致：
 
 1. **产品事实**（URL、定价、份额、benchmark 数值）→ 仅 `## 外链索引`
 2. **对比与测评** → 观点-only；产品名勿 **加粗** 重复索引（≤2 项重叠可接受，≥3 触发审计）

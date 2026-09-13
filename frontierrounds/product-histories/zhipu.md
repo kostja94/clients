@@ -4,25 +4,22 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/zhipu`）
 
-## 概览
+## 短摘要
 
-Zhipu AI (智谱, Z.ai / Zhipu Huazhang) is a Beijing-based AI company spun out of Tsinghua University's lab system, builder of the GLM foundation-model family, the ChatGLM/Zhipu Qingyan assistant and an enterprise MaaS platform. It completed eight pre-IPO funding rounds totalling over RMB 8.3B (US$1.2B+) with 50+ institutional shareholders — including VC backers (Legend Capital as largest external, Qiming, Sequoia China, Hillhouse, Shunwei, DCM) and strategic giants (Meituan, Ant, Alibaba, Tencent, Xiaomi, Kingsoft, Boss Zhipin) plus multiple local government funds — before listing on the Hong Kong Stock Exchange on 8 January 2026 (2513.HK) as the world's first publicly listed large-model company, raising ~HK$4.35B (US$560M) at a ~HK$51B market cap. Revenue doubled annually from 2022–2024 (RMB 57.4M → 124.5M → 312.4M). A post-IPO placement was reported in July 2026 at a US$4B raise and ~US$64B valuation (Frontier Rounds leaderboard basis, Reported). Zhipu then proposed an A-share listing on the STAR Market to raise RMB 15B.
-
-## 基本档案
+Zhipu AI is the Beijing lab behind the GLM foundation-model family, spun out of Tsinghua and the world's first publicly listed large-model company.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | 2019 (Tsinghua University spin-out; 北京智谱华章) |
-| Headquarters | Beijing, China (Haidian District) |
-| Origin | Tsinghua / Beijing Academy of AI (智源) ecosystem |
+| Founded | 2019 |
+| Headquarters | Beijing, China |
 | Sector | Foundation models (GLM family) + enterprise AI / MaaS |
-| Products | GLM models; ChatGLM / 智谱清言; Z.ai; enterprise platform |
-| Pre-IPO funding | 8 rounds, >RMB 8.3B cumulative; 50+ investors |
+| Products | GLM models; ChatGLM / Zhipu Qingyan; Z.ai; enterprise platform |
+| Origin | Tsinghua / Beijing Academy of AI (智源) ecosystem |
 | IPO | HKEX 2513.HK, 2026-01-08, ~HK$4.35B raised (US$560M), ~HK$51B market cap |
-| Revenue | RMB 57.4M (2022) → 124.5M (2023) → 312.4M (2024); RMB 190M H1 2025 |
-| Largest round | US$4B post-IPO placement (Jul 2026, Reported) |
-| Latest valuation | ~US$64B (post-IPO placement, Reported) |
-| Status | Listed 2513.HK; proposed A-share STAR listing (RMB 15B) |
+| Status | Listed 2513.HK |
+| Latest valuation | ~US$64B (reported) |
+| Largest round | US$4B placement |
 
 ## 官网
 

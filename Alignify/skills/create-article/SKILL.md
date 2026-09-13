@@ -69,7 +69,7 @@
     ↓
 11 Final Audit（**新会话**）— P0 + 十维 ≥80 → publish-ready → [`final-audit.md`](final-audit.md)
     ↓
-[可选] article-zh-locale-pass — 中文地道化后置轮 → [`../../../article-zh-locale-pass-spec.md`](../../../article-zh-locale-pass-spec.md)
+[可选] article-zh-locale-pass — 中文地道化后置轮 → [`../../../中文地道化规范.md`](../../../中文地道化规范.md)
     ↓
 人类发布（发布前复核 Step 08 日期字段）
 OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [`../ops/og-covers.md`](../ops/og-covers.md)
@@ -101,7 +101,7 @@ OG 封面（Step 08 后 / publish 前）— fal GPT Image 2，EN/ZH 分图 → [
 | 09–09c | [`content-locale.md`](content-locale.md) Part 4–5 | EN 独立成稿 + 对等对比 |
 | 10 | [`quality-gates.md`](quality-gates.md) §Step 10 | Gate C → audit-ready（含 Source Map 模板） |
 | 11 | [`final-audit.md`](final-audit.md) | **新会话**终审 → publish-ready |
-| —（可选） | [`../../../article-zh-locale-pass-spec.md`](../../../article-zh-locale-pass-spec.md) | ZH 地道化后置轮 |
+| —（可选） | [`../../../中文地道化规范.md`](../../../中文地道化规范.md) | ZH 地道化后置轮 |
 
 > **编号说明**：01–04 为独立步骤文档；05–06 / 09–09c → [`content-locale.md`](content-locale.md)；07 → `internal-links.md`（顶部执行速查 + 对应 Part）；10 → `quality-gates.md` §Step 10；11 → `final-audit.md`。步骤承载规则：**单步独立产出 = `NN-` 文档；多步 / 全站规范 = 裸名 SSOT**。
 

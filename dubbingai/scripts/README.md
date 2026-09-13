@@ -1,26 +1,20 @@
 # Dubbing AI scripts
 
-## OG cover generation (`ops/`)
+## OG cover generation
 
-两条**独立**流程，输出目录不同，禁止混用。
+生图管线已统一迁移到 `E:\clients\Image Generator`（见其 [README](../../Image%20Generator/README.md)）。
+本目录只保留 LLM 页面分析助手。
 
-| Script | 流程 | 输出目录 |
-|--------|------|----------|
-| `generate-og-cover.py` | AI editorial collage（APINEED → 裁切 → WebP） | `blog/images/og/` |
-| `analyze-og-page.py` | LLM brief → `data/og-briefs/` | — |
-| `batch-generate-og-covers.py` | 批量 AI collage | `blog/images/og/` |
-| `generate-og-dock.py` | **post-cover 单独流程**（PIL 叠字，无 AI 生图 API） | `blog/images/og-dock/` |
-| `og_brief_lib.py` | AI collage brief / registry | — |
-| `generate_og_cover_paths.py` | 路径 helper | — |
+| Script | 流程 | 位置 |
+|--------|------|------|
+| `generate-og-cover.py` / `batch-generate-og-covers.py` | AI editorial collage（fal / apineed / gitaigc → 裁切 → WebP） | `E:\clients\Image Generator\`（`--client dubbingai`） |
+| `ops/analyze-og-page.py` | LLM brief → `data/og-briefs/` | 本目录 |
 
 - AI collage SOP：[skills/ops/og-covers.md](../skills/ops/og-covers.md)
-- post-cover dock SOP：[skills/ops/og-docks.md](../skills/ops/og-docks.md)
+- ~~post-cover dock 流程~~（`generate-og-dock.py` / `og-docks.md` / `_vendor/post-cover`）已于 2026-09 移除（效果不佳，不再使用），代码与历史产出已删除；存档 OG 图统一在 `E:\clients\Image Generator\output\`。
 
 ```powershell
 # AI collage
 $env:APINEED_API_KEY = "..."
-python ops/generate-og-cover.py --slug best-ai-voice-changer
-
-# post-cover dock（无需 API key）
-python ops/generate-og-dock.py --slug spiderman-voice-changer-pubgm
+python "E:\clients\Image Generator\generate-og-cover.py" --client dubbingai --slug best-ai-voice-changer
 ```

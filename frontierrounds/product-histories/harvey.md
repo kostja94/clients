@@ -4,25 +4,21 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/harvey`）
 
-## 概览
+## 短摘要
 
-Harvey is the San Francisco-based AI platform for legal and professional services, founded in 2022 by former securities litigator Winston Weinberg and DeepMind/Google Brain alum Gabriel Pereyra. It built an AI "copilot" for lawyers on top of frontier models, then began training its own legal-specific models — launching its first open-weight legal model, Harvey Tenet (built from Moonshot's Kimi K3 base), in 2026. Its funding arc tracks the legal-AI category: ~US$5M seed backed by OpenAI (2022), a US$21M Series A led by Sequoia (2023), US$80M at US$715M (late 2023), US$100M at US$1.5B led by GV (July 2024), a US$300M round at US$5B (mid-2025), US$200M at US$11B led by GIC/Sequoia/Kleiner Perkins (March 2026), and — announced 9 September 2026 — a US$550M round at ~US$15.6B co-led by Lightspeed and the new firm Diffusion, alongside the acquisition of AI-agent-security startup Guardrails AI (its fourth acquisition of the year). Harvey has now raised more than US$1.5B, making it the most valuable and best-funded company in legal AI.
-
-## 基本档案
+Harvey is the San Francisco AI platform for legal and professional services, founded in 2022 and now the most valuable and best-funded company in legal AI. It trains its own open-weight legal models.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
 | Founded | 2022 |
-| Headquarters | San Francisco, California |
-| Founders | Winston Weinberg (ex-O'Melveny & Myers litigator); Gabriel Pereyra (ex-DeepMind / Google Brain / Meta AI) |
+| Headquarters | San Francisco, CA |
+| Founders | Winston Weinberg (ex-O'Melveny & Myers); Gabriel Pereyra (ex-DeepMind / Google Brain / Meta AI) |
 | Sector | Legal AI / AI for professional services |
-| Product | AI copilot + workflow for law firms; Harvey Tenet (proprietary open-weight legal model, 2026) |
-| Customers | 80% of top US law firms (per Sep 2026 reports) |
-| Revenue | ~doubled between Mar–Sep 2026 (per TNW) |
-| Total raised | >US$1.5B |
-| Latest valuation | ~US$15.6B (US$550M round, Sep 2026) |
-| Valuation arc | US$715M (2023) → US$1.5B (2024) → US$5B (2025) → US$11B (Mar 2026) → US$15.6B (Sep 2026) |
+| Product | AI copilot + workflow for law firms; Harvey Tenet (open-weight legal model, 2026) |
 | Status | Private; four acquisitions in 2026 incl. Guardrails AI |
+| Latest valuation | ~US$15.6B |
+| Customers | 80% of top US law firms |
 
 ## 官网
 

@@ -4,23 +4,21 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/xai`）
 
-## 概览
+## 短摘要
 
-xAI is the artificial-intelligence company founded by Elon Musk in March 2023 (incorporated in Nevada with 11 AI researchers) to "understand the true nature of the universe," building the Grok model family and the Colossus supercomputer — one of the world's largest AI training clusters at over 1M H100-equivalent GPUs. Its financing arc was the fastest in the frontier-lab race: ~US$135M seed (December 2023), US$6B Series B at US$24B (May 2024), US$6B Series C at US$50B (December 2024), an all-stock acquisition of X Corp in March 2025 (xAI valued at US$80B, X at US$33B), a US$10B debt-and-equity package (July 2025), a reported US$10B Series D at US$200B (September 2025), and a US$20B Series E at US$230B (January 2026) — before SpaceX acquired xAI for US$250B in an all-stock deal on 2 February 2026, making it a wholly owned subsidiary. Cumulative disclosed funding is ~US$37B on Frontier Rounds' leaderboard basis (public rounds sum higher if the September 2025 Series D is counted).
-
-## 基本档案
+xAI is Elon Musk's frontier lab behind the Grok model family and the Colossus supercomputer, founded in 2023.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | March 2023 (Nevada) |
-| Headquarters | Palo Alto / San Francisco Bay Area, California |
+| Founded | Mar 2023 |
+| Headquarters | Palo Alto / SF Bay Area |
 | Founders | Elon Musk + 11 AI researchers (incl. Igor Babuschkin, departed) |
-| Sector | Frontier foundation models + AI infrastructure (Grok; Colossus supercomputer) |
+| Sector | Frontier foundation models + AI infrastructure (Grok; Colossus) |
 | Key product | Grok assistant; Colossus training cluster (1M+ H100-equivalents) |
-| Total raised | ~US$37B+ (site basis; rounds sum higher if Series D counted) |
-| Largest round | US$20B Series E @ US$230B (Jan 2026) |
-| Valuation arc | US$5B (2023) → US$24B (2024) → US$50B (2024) → US$80B (X deal 2025) → US$230B (2026) |
-| Outcome | Acquired by SpaceX for US$250B all-stock (Feb 2026); combined ~US$1.75T after SpaceX IPO (Jun 2026) |
+| Outcome | Acquired by SpaceX (US$250B) |
+| Latest valuation | US$230B (Series E) |
+| Largest round | US$20B Series E |
 
 ## 官网
 

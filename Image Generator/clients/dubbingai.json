@@ -1,0 +1,46 @@
+{
+  "name": "dubbingai",
+  "ctx_root": "E:\\clients\\dubbingai",
+  "deploy_env": "DUBBINGAI_DEPLOY_ROOT",
+  "deploy_roots": [],
+  "registry_path": "data/og-prompt-registry.json",
+  "briefs_root": "data/og-briefs",
+  "section_signatures_path": "data/og-section-signatures.json",
+  "output_layout": "context-blog",
+  "staging_root": "",
+  "context_og_root": "E:\\clients\\Image Generator\\output\\dubbingai",
+  "default_output": "context",
+  "default_provider": "apineed",
+  "default_section": "blog",
+  "sections": ["blog"],
+  "locales": ["en"],
+  "default_locale": "en",
+  "analyze_source": "blog-md",
+  "url_pattern": "https://dubbingai.io/blog/{slug}/",
+  "page_ref_format": "blog/{slug}",
+  "brand": {
+    "modes": ["kostja", "dubbingai", "logo"],
+    "wordmark_mode": "dubbingai",
+    "wordmark": "Dubbing AI",
+    "wordmark_font_size": 20,
+    "salt": "dubbing-brand-v1",
+    "logo": "assets/brand/icon-192x192.png",
+    "corner_safe_zones": {
+      "bottom-left": "bottom-left 140x48px",
+      "bottom-right": "bottom-right 120x100px",
+      "top-right": "top-right 120x100px"
+    }
+  },
+  "accents": {
+    "dubbing-cyan": ["#22D3EE", "Dubbing cyan"],
+    "dubbing-indigo": ["#6366F1", "Dubbing indigo"],
+    "dubbing-gradient": ["#22D3EE", "cyan-to-indigo gradient"]
+  },
+  "default_accent": "dubbing-gradient",
+  "default_style": "editorial-collage",
+  "styles": {
+    "editorial-collage": "High-end editorial paper collage social share card, exactly 1200x630 landscape, like a zine cover for a gaming/streaming voice-tech blog. Off-white textured paper (#F4F4F2) with torn-paper layers and halftone grain. Accent energy: cyan (#22D3EE) to indigo (#6366F1) gradient hints — playful, not corporate SaaS. Every visual must illustrate THIS article's topic — not generic abstract decoration."
+  },
+  "vibe_line": "Editorial collage quality — visual storytelling, PPT-level copy, gaming/streaming vibe.",
+  "text_safe_zone_rules": true
+}

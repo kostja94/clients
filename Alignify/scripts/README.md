@@ -94,8 +94,7 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 | `generate-registry-from-audit.py` | 从审计 JSON 生成/合并 `tools-screenshot-registry.json` |
 | `screenshot-customer-products.py` | 客户故事精选产品截图 |
 | `screenshot-social-cards.py` | Social Cards 工具页截图 + JSON 更新 |
-| `generate-og-cover.py` | GPT Image 2 生成 OG（`--provider fal` 默认 · `--provider apineed`）；**默认直写部署仓** `public/`（`--to-staging` 仅预览） |
-| `batch-generate-og-covers.py` | 批量生图；`--workers 8` 并行（对齐 fal 并发）；`--skip-existing` 断点续跑 |
+| `generate-og-cover.py` / `batch-generate-og-covers.py` / `run-og-pipeline.py` | GPT Image 2 生成 OG（`--provider fal` 默认 · `--provider apineed` · `--provider gitaigc`）；**默认直写部署仓** `public/`（`--staging` 仅预览）→ **已统一迁移**至 `E:\clients\Image Generator\`（`--client alignify`） |
 | `migrate-og-covers.py` | 历史 staging → deploy **move**（非 copy）+ 可选注册 `OG_LOCALE_READY` |
 | `audit-og-coverage.mjs` | deploy OG 覆盖审计（`--staging` 查遗留副本） |
 | `next-publish-date.mjs` | **新 slug** 分配全站唯一 `publishDate`（`--check` / `--from` / `--list`） |
@@ -106,7 +105,8 @@ node ../../clients/Alignify/scripts/ops/audit-alt-text.mjs
 
 规范见 `skills/create-article/sections.md` Part 3.3。
 
-> **2026-09-04**：APINEED 已下线同步 `POST /v1/images/generations`，`--provider apineed` 改走**异步** `POST /v1/media/generations`（`workflow: text_to_image`，提交→轮询→下载 `outputs[0].url`）。新接口**不接受 `size` 参数**，宽幅 16:9 比例靠 prompt 指定（脚本已自动注入），post trim 到 1200×630 保留。`batch-generate-og-covers.py` 同通道。
+> **2026-09-12**：OG 生图管线（`generate-og-cover.py` / `batch-generate-og-covers.py` / `run-og-pipeline.py` / `wait-and-run-og-pipeline.py`）已统一迁移至 `E:\clients\Image Generator\`，本目录不再保留副本；调用加 `--client alignify`。新增 provider `gitaigc`（`https://gitaigc.com/v1/images/generations`，密钥 `GITAIGC_API_KEY`）。`--to-staging` 改名为 `--staging`。
+> **2026-09-04**：APINEED 已下线同步 `POST /v1/images/generations`，`--provider apineed` 改走**异步** `POST /v1/media/generations`（`workflow: text_to_image`，提交→轮询→下载 `outputs[0].url`）。新接口**不接受 `size` 参数**，宽幅 16:9 比例靠 prompt 指定（脚本已自动注入），post trim 到 1200×630 保留。
 
 #### 产品 URL 审计
 

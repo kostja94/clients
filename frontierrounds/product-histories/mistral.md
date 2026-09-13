@@ -4,11 +4,10 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/mistral`）
 
-## 概览
+## 短摘要
 
-Mistral AI is a Paris-based AI lab building open-weight frontier models, a full-stack enterprise platform and, increasingly, the European compute capacity they run on. Founded in May 2023 by Arthur Mensch, Guillaume Lample and Timothée Lacroix — alumni of Google DeepMind and Meta AI — it came out of stealth a month later with a €105M seed round led by Lightspeed, then the largest seed ever raised in Europe. Mistral went on to raise a €385M Series A led by Andreessen Horowitz (December 2023), a €600M Series B led by General Catalyst (June 2024, including a €132M debt component), a €1.7B Series C led by ASML at an €11.7B valuation (September 2025) and a record €3B Series D led by Samsung Electronics at a valuation above €21B (September 2026) — the largest equity fundraising ever completed by a European technology company. The company now operates across 20 countries, supports 125+ global enterprises (Airbus, ASML, HSBC among them), and is Europe's second-most-valuable private tech group after Revolut.
-
-## 基本档案
+Mistral AI is the Paris lab building open-weight frontier models and, increasingly, the European compute they run on, founded in 2023 by DeepMind and Meta alumni.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
@@ -17,11 +16,10 @@ Mistral AI is a Paris-based AI lab building open-weight frontier models, a full-
 | Founders | Arthur Mensch (CEO); Guillaume Lample; Timothée Lacroix |
 | Sector | Open-weight foundation models + sovereign AI platform (models, infrastructure, compute) |
 | Product launched | Mixtral 8x7B + platform beta (Dec 2023); Le Chat assistant; enterprise API / on-premises |
-| Customers | 125+ enterprises across 20 countries (Airbus, ASML, HSBC, BNP Paribas, CMA CGM, …) |
-| ARR (2026) | Tracking to exceed $1B in 2026 (CEO guidance, Sep 2026) |
-| Total raised | ~€5.8B across five equity rounds (≈US$6.6B at per-round rates; incl. €132M debt inside Series B) |
-| Latest valuation | >€21B (Series D, Sep 2026) — 2nd most valuable private tech co. in Europe |
 | Position | Largest equity fundraise ever by a European private tech company |
+| Latest valuation | >€21B (Series D) |
+| Customers | 125+ enterprises |
+| ARR | Tracking to >$1B (2026) |
 
 ## 官网
 

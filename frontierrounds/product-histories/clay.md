@@ -4,25 +4,21 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/clay`）
 
-## 概览
+## 短摘要
 
-Clay is the New York-based AI platform for sales and marketing teams — pulling prospect data from 150+ sources and running AI research agents and automated growth workflows — founded in 2017 by Kareem Amin and Nicolae Rusan (with Varun Anand joining as co-founder in 2021). It is the defining vendor of the "GTM engineering" category it helped create, growing from US$500K ARR (2022) to ~US$100M ARR (December 2025) with 10,000+ customers including OpenAI, Anthropic, Canva, Intercom and Rippling. Its funding path: BoxGroup pre-seed (2017), a US$2.5M First Round seed (2021), US$13.5M Series A led by Sequoia (2023), US$46M Series B at US$500M led by Meritech (June 2024), a US$40M Series B extension at US$1.25B (January 2025), employee tenders at US$1.5B (May 2025, Sequoia) and US$5B (January 2026, DST Global), and a US$100M Series C at US$3.1B led by CapitalG (August 2025). In August 2026 Axios reported Clay had inked a new round led by Wellington Management at a US$7B pre-money valuation — a deal not yet formally closed or publicly confirmed by the company as of 9 September 2026.
-
-## 基本档案
+Clay is the New York AI platform for sales and marketing teams that created the 'GTM engineering' category, combining prospect data, AI research agents and automated growth workflows.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | 2017 (New York; product shipped Feb 2022) |
+| Founded | 2017 |
 | Headquarters | New York, NY |
 | Founders | Kareem Amin (CEO); Nicolae Rusan; Varun Anand (COO, joined 2021) |
-| Sector | AI-powered go-to-market (GTM) platform — data, AI research agents, workflow automation |
+| Sector | AI-powered go-to-market (GTM) platform — data, AI agents, workflow automation |
 | Product | Claygent AI agents, Sculptor workflow builder, 150+ premium data sources, CRM enrichment |
-| Customers | 10,000+ (OpenAI, Anthropic, Canva, Intercom, Rippling) |
-| ARR | US$500K (2022) → ~US$100M (Dec 2025, reported) |
-| Total raised | ~US$204M primary equity across disclosed rounds |
-| Latest valuation | US$7B pre-money (reported Wellington-led round, Aug 2026, not yet confirmed) |
-| Valuation arc | US$500M (2024) → US$1.25B → US$1.5B → US$3.1B (2025) → US$5B (Jan 2026) → US$7B (reported) |
-| Status | Private; Series C Aug 2025 was "not yet touched" per founder |
+| Latest valuation | US$7B pre-money (reported) |
+| Customers | 10,000+ |
+| ARR | ~US$100M (Dec 2025) |
 
 ## 官网
 

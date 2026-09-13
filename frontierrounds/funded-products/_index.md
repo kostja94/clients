@@ -28,6 +28,7 @@
 | Suno | United States | Generative Media | US$775M | US$400M | US$5.40B | 2026-06-03 | Disclosed | [suno.md](suno.md) |
 | Glean | United States | Enterprise Search | US$768.2M | US$150M | US$7.20B | 2025-06-10 | Disclosed | [glean.md](glean.md) |
 | Abridge | United States | Healthcare AI | US$830M | US$300M | US$5.30B | 2025-06-24 | Disclosed | [abridge.md](abridge.md) |
+| Higgsfield | United States | AI Video Generation | US$538M | US$400M | US$5.40B | 2026-08-17 | Disclosed | [higgsfield.md](higgsfield.md) |
 | Sarvam AI | India | Sovereign AI | US$350M | US$300M | US$1.50B | 2026-06-15 | Disclosed | [sarvam.md](sarvam.md) |
 
 ---

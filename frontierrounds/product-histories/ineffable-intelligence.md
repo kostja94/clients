@@ -4,23 +4,21 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/ineffable-intelligence`）
 
-## 概览
+## 短摘要
 
-Ineffable Intelligence is a London-based frontier AI lab founded by David Silver, the former head of reinforcement learning at Google DeepMind and principal architect of the AlphaGo / AlphaZero / MuZero line. Registered in November 2025 (Silver became a director and formally left DeepMind in January 2026), the company exited stealth on 27 April 2026 with a **US$1.1B (≈€937M) seed round at a ≈US$5.1B post-money valuation — the largest seed round in European history** — led by Sequoia Capital and Lightspeed, with NVIDIA and Google inside the cap table. The lab is pursuing a deliberately non-LLM thesis: a "superlearner" that learns continuously from the consequences of its own actions in simulated worlds rather than from human data — the research program Silver outlined with Richard Sutton in their 2025 essay *Welcome to the Era of Experience*. It has no product, model or revenue as of September 2026; public progress so far consists of compute partnerships with NVIDIA and Google Cloud and the elevation of six senior hires to co-founder in September 2026.
-
-## 基本档案
+Ineffable Intelligence is David Silver's London frontier lab pursuing a deliberately non-LLM 'superlearner' that learns from experience rather than human data, with no product or revenue yet.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | Registered Nov 2025; Silver joined as director Jan 2026 (exited stealth Apr 2026) |
-| Headquarters | London, United Kingdom |
+| Founded | Nov 2025 |
+| Headquarters | London, UK |
 | Founder / CEO | David Silver (ex-DeepMind RL lead; UCL professor) |
 | Co-founders | Chris Apps; Wojciech Czarnecki; Lasse Espeholt; Junhyuk Oh; Alexandre Laterre; Heather Gorham (elevated Sep 2026) |
 | Sector | Frontier AI research — experience-based learning / superintelligence ('superlearner') |
 | Thesis | No pre-training on human data; RL from an agent's own experience in simulated worlds |
-| Team | ~10–20 employees across five countries (LinkedIn, Sep 2026) |
-| Total raised | ~US$1.1B (one disclosed seed round) |
-| Latest valuation | ≈US$5.1B post-money (Seed, Apr 2026) |
+| Latest valuation | ≈US$5.1B post-money |
+| Team | ~10–20 employees |
 
 ## 官网
 

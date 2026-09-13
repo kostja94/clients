@@ -21,7 +21,7 @@
 
 | 动作 | 说明 |
 |------|------|
-| 公开网络检索 | 按 `clients/web-deep-search-spec.md` |
+| 公开网络检索 | 按 `clients/网络深度调研规范.md` |
 | **对话内**输出结构化调研报告 | 执行摘要、产品地图、竞品、场景、链接 |
 | 写入 **`clients/temp/`** 临时调研稿 | 文件名 `{topic}-web-search-{YYYY-MM-DD}.md`；**非** KB SSOT |
 | **用户点名**更新已有 KB 的缺失条目 | 如「把 Skyfire 补进 agentic-payments」 |

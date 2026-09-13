@@ -175,6 +175,6 @@ Path A 与 Path B 共用 **Timeline**；Path B 不是「传统编辑台」入口
 ---
 
 > **用途**：统一产品内、营销文案、FAQ 中对「无 AI / 纯手动 / 时间线精修 / AI 可选工作流」的叫法  
-> **依据**：2026-08-24 网络检索（按 [web-deep-search-spec](../web-deep-search-spec.md) 执行）+ 2026-08-24 产品方确认（AI 可选 / 零 AI 手动）  
+> **依据**：2026-08-24 网络检索（按 [web-deep-search-spec](../网络深度调研规范.md) 执行）+ 2026-08-24 产品方确认（AI 可选 / 零 AI 手动）  
 > **引用**：[vatt.md](./vatt.md) · [vatt-features.md](./vatt-features.md) · [vatt-capabilities.md](./vatt-capabilities.md)（M10）· [vatt-site-structure.md](./vatt-site-structure.md)（FAQ Q4）  
 > **Last updated**: 2026-08-24

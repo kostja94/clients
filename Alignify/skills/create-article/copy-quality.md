@@ -2,7 +2,7 @@
 
 > **位置**：`skills/create-article/copy-quality.md`  
 > **版本**：v1.0 · 2026-08-27  
-> **跨项目原则**：[`page-copy-spec.md`](../../../page-copy-spec.md)（仓库根 · 五维定义与通用 Swap Test）  
+> **跨项目原则**：[`页面文案规范.md`](../../../页面文案规范.md)（仓库根 · 五维定义与通用 Swap Test）  
 > **Alignify 适配**：本文 = Brief → Step 05–10 的可执行 SSOT；**节写法** → [`sections.md`](sections.md) · **字数硬底线** → [`word-counts.md`](word-counts.md) · **呈现** → [`presentation.md`](presentation.md) · **Moat/可提取** → [`content-locale.md`](content-locale.md)
 
 ---
@@ -62,7 +62,7 @@ Alignify 已从「同类型页面对齐固定 H2 模具」转为 **Brief + Answe
 
 # Part 1 · 五维（Alignify 释义）
 
-完整定义见 [`page-copy-spec.md` §1](../../../page-copy-spec.md#1-五维详解)。Alignify 映射：
+完整定义见 [`页面文案规范.md` §1](../../../页面文案规范.md#1-五维详解)。Alignify 映射：
 
 | 维 | Alignify 落地 | 关联文档 |
 |----|---------------|----------|
@@ -118,7 +118,7 @@ Alignify 已从「同类型页面对齐固定 H2 模具」转为 **Brief + Answe
 | **L2 优秀** | ≥3 项独特性来源（术语/场景/约束/对比/异议预答） | **flagship 默认目标** |
 | **L3 标杆** | 可作同类型 brief 参考 | 归档 [`templates.md`](templates.md) 附录 B |
 
-**独特性来源**（命中 ≥3 项 → L2）：见 [`page-copy-spec.md` §1.5](../../../page-copy-spec.md#15-独特性uniqueness)。
+**独特性来源**（命中 ≥3 项 → L2）：见 [`页面文案规范.md` §1.5](../../../页面文案规范.md#15-独特性uniqueness)。
 
 ---
 

@@ -1,0 +1,21 @@
+{
+  "client": "alignify",
+  "slug": "image-generator",
+  "section": "tools",
+  "locale": "en",
+  "provider": "gitaigc",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "crop_bias": "center",
+  "output_size": [
+    1200,
+    630
+  ],
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "brand_mode": "alignify",
+  "brand_corner": "bottom-right",
+  "headline": "BEST AI IMAGE GENERATORS"
+}

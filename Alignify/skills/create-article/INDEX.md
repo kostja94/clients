@@ -83,7 +83,7 @@
 | 用途 | 路径 |
 |------|------|
 | 存量文审核 / 内链优化 / 刷新 | [`../audit-optimize/SKILL.md`](../audit-optimize/SKILL.md) |
-| 中文地道化后置轮（可选） | [`../../../article-zh-locale-pass-spec.md`](../../../article-zh-locale-pass-spec.md) |
+| 中文地道化后置轮（可选） | [`../../../中文地道化规范.md`](../../../中文地道化规范.md) |
 | OG 封面 | [`../ops/og-covers.md`](../ops/og-covers.md) |
 
 ---

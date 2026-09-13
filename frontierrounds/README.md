@@ -14,8 +14,8 @@
 |------|------|------|
 | [frontier-rounds-nextjs-build-plan.md](./frontier-rounds-nextjs-build-plan.md) | **完整构建 + 部署方案**：现状盘点、Next.js 迁移映射表、图片资产回填脚本、品牌换标、SEO 就位、Cloudflare（OpenNext）部署全步骤、上线验收清单 | ✅ 完成（2026-09-07） |
 | [branding/](./branding/) | **最终品牌 SVG**：`fr-icon.svg`（黑底白图）、`fr-icon-mono.svg`（透明底纯黑）、`fr-wordmark.svg`（Instrument Serif 轮廓化 wordmark） | ✅ 完成（2026-09-07） |
-| [funded-products/](./funded-products/) | **融资的 AI 产品**（25 份档案 + `_index.md`）：网站 Funding Leaderboard 上的真实融资 AI 产品，字段含累计融资/最大轮/估值/领投方/来源 URL/可信度 | ✅ 完成（2026-09-08；2026-09-10 增 Cognition） |
-| [product-histories/](./product-histories/) | **产品融资时间线**（15 份档案 + `_index.md`）：Lovable / Mistral AI / OpenAI / Anthropic / xAI / Scale AI / SSI / Zhipu / Thinking Machines Lab / Ineffable Intelligence / AMI Labs / World Labs / Harvey / Clay / Cognition。网站 Product Histories（`/products`）逐轮融资档案，rounds[] 含每轮金额/估值/领投/参投/来源 | ✅ 完成（2026-09-08 首档；2026-09-10 扩至 15） |
+| [funded-products/](./funded-products/) | **融资的 AI 产品**（26 份档案 + `_index.md`）：网站 Funding Leaderboard 上的真实融资 AI 产品，字段含累计融资/最大轮/估值/领投方/来源 URL/可信度 | ✅ 完成（2026-09-08；2026-09-10 增 Cognition；2026-09-12 增 Higgsfield） |
+| [product-histories/](./product-histories/) | **产品融资时间线**（16 份档案 + `_index.md`）：Lovable / Mistral AI / OpenAI / Anthropic / xAI / Scale AI / SSI / Zhipu / Thinking Machines Lab / Ineffable Intelligence / AMI Labs / World Labs / Harvey / Clay / Cognition / Higgsfield。网站 Product Histories（`/products`）逐轮融资档案，rounds[] 含每轮金额/估值/领投/参投/来源 | ✅ 完成（2026-09-08 首档；2026-09-10 扩至 15；2026-09-12 增 Higgsfield） |
 | [funding-investors/](./funding-investors/) | **融资的投资方**（22 份档案 + `_index.md`）：网站 Investor Atlas 上的真实投资方，字段含基本档案/投资逻辑/投资组合（全部可溯源公司）；含 2026-09-08 新增的 Llama Ventures、5 家 AI 专项基金与 Menlo Ventures，及 2026-09-09 新增的 Lightspeed/Index/General Catalyst/Eric Schmidt（见下节） | ✅ 完成（2026-09-08；2026-09-09 扩至 22） |
 
 ## 执行进度
@@ -173,6 +173,51 @@
 - **落地**：`funded-products/cognition.md`（Leaderboard 25 家，累计 US$3.60B 披露主轮口径，插在 Mistral 与 MiniMax 之间）+ `product-histories/cognition.md`（14→15 家）；部署仓 `fundingLeaderboard.json` 25 条 + `products/cognition.json` + 注册，logo 复用 canonical `conviction-cognition.png`。commit `469a659`。
 - **口径注记**：Series B 金额未披露故累计融资按披露主轮计 ~US$3.6B；Series A/B 金额估值为报道口径（公司未单独公告）；累计融资字段已注明。
 
+## 新增 Higgsfield 双档案：Leaderboard 快照 + Product Histories（2026-09-12）
+
+承接用户调研「Higgsfield 最近又融资了」：2026-08-17 完成 US$400M Series B @ US$5.4B（DST Global 领投），较 1 月 US$1.3B 估值 8 个月翻 4 倍。本次双向补齐：
+
+- **完整融资链（4 轮）**：Seed US$8M（2024-04，Menlo Ventures 领投）→ Series A US$50M（2025-09-09，GFT Ventures 领投，~US$1B reported）→ Series A 扩展 US$80M（2026-01-15，Accel / AI Capital Partners 战略领投，US$1.3B）→ Series B US$400M（2026-08-17，DST Global 领投，US$5.4B）。累计 US$538M。
+- **基本面**：Alex Mashrabov（Snap 前 GenAI 负责人、AI Factory 联创，2020 年被 Snap US$166M 收购）2023-10 创立；哈萨克斯坦首个独角兽；ARR US$10M → US$200M（Jan 2026）→ US$700M annualized（Aug 2026）；用户 11M → 15M → 30M+（200 国）。
+- **落地**：`funded-products/higgsfield.md`（Leaderboard 26 家，累计 US$538M）+ `product-histories/higgsfield.md`（15→16 家）；部署仓 `fundingLeaderboard.json` 26 条 + `products/higgsfield.json` + 注册，logo 复用 canonical `higgsfield.png`（Menlo 组合已含）。validate:content + typecheck 全绿。
+- **口径注记**：Series A 估值 ~US$1B 与 Series A 扩展领投方（Accel vs AI Capital Partners 战略领投，官方通稿未明确单一领投）为报道口径；累计融资按披露轮次合计 US$538M。
+
+## 产品页 Hero 精简：shortSummary 分层对齐 investors（2026-09-12）
+
+用户反馈 products 详情页 hero 文案过多（与之前 investors 页同病）。定位根因：products schema 仅有 `tagline` + `summary` 两层，`summary` 存 127–181 词长文被原样塞进 hero（hero 里 tagline 与 summary 两段高度重叠）；而 investors 早已分层——hero 只渲染 `shortSummary`（~53 词），长文下沉到 thesis 卡 + 独立 "In depth" section。本次对齐 investors：
+
+- **数据层**：products schema 新增 `shortSummary` 字段；16 份 JSON 逐份补写（36–63 词精炼摘要，风格对齐 investors 的 shortSummary：who + 关键动作 + 关键数字）。
+- **渲染层**：`products/[slug]/page.tsx` hero 改为仅渲染 `shortSummary`（移除 tagline + 长 summary 双段）；`summary` 长文下沉到独立 "Overview" section（对齐 investors "In depth" 的 page-shell-md + display-lg 结构）。
+- **记录仓同步**：16 份 `product-histories/*.md` 在「概览」前补「短摘要」小节，与 JSON 逐字一致（脚本从 JSON 读 shortSummary 注入，单一数据源）。
+- **校验**：validate:content + typecheck + build（68 页 SSG）全绿。
+
+## 产品页快照卡精简：facts 拆分 stats + Company Profile 下沉（2026-09-12）
+
+用户反馈 products 详情页右侧快照卡过长。定位根因：products 的 facts 语义是「档案详情」（8–11 条、value 普遍 60–114 字符长句/多值链、全站 43 个异构 label），被原样塞进 2 列窄卡；而 investors 的 facts 是「精炼 stat」（4–5 条、≤44 字符、3 列）。本次对齐 investors：
+
+- **数据层**：products schema 新增 `stats` 字段（短值快照，与 investor facts 同构）；16 份 JSON 逐份补写 4–5 条短值 stat（Founded / Headquarters / Latest valuation / 特化 1–2 条，如 Users / ARR / Revenue / Status / Outcome / Largest round）。
+- **渲染层**：`products/[slug]/page.tsx` 右侧卡改渲染 `stats`（+ 合成 Rounds recorded / Total raised）；原 `facts`（长句详情）整体下沉到独立 "Company Profile" section（page-shell-md，2 列宽版 dl）。
+- **记录仓同步**：16 份 `product-histories/*.md` 在「基本档案」前补「快照」表格（对应 stats），与 JSON 逐字一致。
+- **校验**：validate:content + typecheck + build 全绿。
+
+## 产品页信息去重：summary 弃用 + facts 精简 + shortSummary 去数字化（2026-09-12）
+
+用户连续反馈产品页文案重复。脚本量化确认：products 数据模型的 6 个字段（shortSummary/summary/stats/facts/rounds/sections）把同一批事实复制了 4–6 次（如 cognition 的「最新估值 $48B」「营收 run-rate」在 6 个字段各出现一次）。根因是 `summary`（Overview）字段 = facts + rounds 的叙述化合并，且 facts 的数字项（Latest valuation/Total raised/Valuation arc/Run-rate revenue 等）与 stats 卡、rounds 时间线重复。本次根治去重（对齐 investors 的「summary 不渲染」先例）：
+
+- **数据层**：删除 `summary` 字段（schema + 16 份 JSON）；`facts` 删除「坐标 + 纯数字」项（Founded/Headquarters/Latest valuation/Total raised/Valuation arc/Run-rate revenue/ARR/Revenue/Users/Largest round/Meta stake/Team/Employees/Customers 等，已由 stats 卡 + rounds 承载），只保留定性背景字段（Founders/Sector/Products/Status/Mission/Outcome/IPO 等）；`shortSummary` 重写为纯定位（去具体融资金额/估值/营收数字，18–39 词）。
+- **渲染层**：`products/[slug]/page.tsx` 删除 Overview（summary）区块；页面最终 = Hero（shortSummary + stats 快照卡）+ Company Profile（facts 定性）+ Funding Timeline（rounds）+ Story（sections）。generateMetadata 改引 shortSummary。
+- **记录仓同步**：16 份 `product-histories/*.md` 删除「概览」section、精简「基本档案」为定性字段、更新「短摘要」。
+- **校验**：validate:content + typecheck + build（68 页 SSG）全绿。
+
+## 产品页单一信息卡：stats+facts 合并为一张 Company Profile 卡（2026-09-12）
+
+用户反馈产品页仍有「两个表格」（hero 右侧 stats 卡 + 下方 Company Profile）。本次合并为单一卡片（对齐 investors 的「hero 右侧单一 facts 卡」模式）：
+
+- **数据层**：删除 `stats` 字段，`facts` 合并为单一数组（坐标 Founded/Headquarters → 人 Founders → 赛道 Sector → 产品 Products → 其他定性 → 数字 Latest valuation/Users/Run-rate/ARR 等，7–9 条/家）；stats 与 facts 同 label 者去重（保留 stats 短值，如 anthropic/openai/zhipu 的 Status、xai 的 Outcome）。
+- **渲染层**：`products/[slug]/page.tsx` hero 右侧卡改渲染合并后 `facts`（3 列 `md:grid-cols-3`），删除下方独立 Company Profile section。页面最终 = Hero（shortSummary + 单一 facts 卡）+ Funding Timeline + Story，**全程只有一个表格**。
+- **记录仓同步**：16 份 `product-histories/*.md` 合并「快照」+「基本档案」为单一「快照」表，删除「基本档案」section。
+- **校验**：validate:content + typecheck + build 全绿。
+
 ## 首页复活：Latest Rounds 真实数据 + 滚动跑马灯（2026-09-10）
 
 首页此前因 `fundingRounds.ts` 置空(9/7 移除虚构演示轮)长期停留在空态引导页。本次以**真实近期轮次**回填并新增滚动融资条：
@@ -245,4 +290,4 @@
 
 ---
 
-*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-09（Product Histories 扩至 8 家 + Investor Atlas 4 家；Mistral 上线）*
+*本目录为策略记录仓，不混入 Next 应用代码。最后更新：2026-09-12（新增 Higgsfield 双档案 + 产品页 Hero 短摘要分层 + 快照卡 facts 拆分 + 信息去重 + 单一信息卡；Leaderboard 26 家 / Product Histories 16 家）*

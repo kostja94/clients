@@ -1,0 +1,21 @@
+{
+  "client": "dubbingai",
+  "slug": "best-ai-voice-changer",
+  "section": "blog",
+  "locale": "en",
+  "provider": "apineed",
+  "model": "gpt-image-1",
+  "quality": "high",
+  "crop_bias": "center",
+  "output_size": [
+    1200,
+    630
+  ],
+  "raw_size": [
+    1536,
+    1024
+  ],
+  "brand_mode": "dubbingai",
+  "brand_corner": "bottom-left",
+  "headline": "BEST AI VOICE CHANGERS"
+}

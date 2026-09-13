@@ -1,6 +1,6 @@
 # Dubbing AI OG 封面规则
 
-> 脚本 SSOT：`scripts/ops/generate-og-cover.py` · registry：`data/og-prompt-registry.json`  
+> 脚本 SSOT：`Image Generator\generate-og-cover.py --client dubbingai` · registry：`data/og-prompt-registry.json`  
 > 对照 Alignify：`Alignify/skills/ops/og-covers.md`
 
 ---
@@ -104,7 +104,7 @@ APINEED 自 2026-09 起仅提供**异步接口**（`POST /v1/media/generations`�
 
 | 模式 | 路径 |
 |------|------|
-| **默认（上下文仓）** | `blog/images/og/{slug}/{slug}-og-en.webp` |
+| **默认（统一归档）** | `E:\clients\Image Generator\output\dubbingai\{slug}/{slug}-og-en.webp` |
 | **部署仓**（`--deploy`） | `{DUBBINGAI_DEPLOY_ROOT}/public/blog/images/og/{slug}/{slug}-og-en.webp` |
 
 CMS 上传时对齐 URL：`/blog/images/og/{slug}/{slug}-og-en.webp`

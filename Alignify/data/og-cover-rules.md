@@ -1,6 +1,6 @@
 # Alignify OG 封面规则（v3）
 
-> 脚本 SSOT  companion：`scripts/ops/generate-og-cover.py` · registry：`data/og-prompt-registry.json`
+> 脚本 SSOT  companion：`Image Generator\generate-og-cover.py --client alignify` · registry：`data/og-prompt-registry.json`
 
 ---
 

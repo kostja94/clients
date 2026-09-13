@@ -33,7 +33,7 @@ author: "Kostja"
 > **2026-08-11 起废弃**：`image` / `keywords` / `related` 不再写入 frontmatter（image 由 CMS 单独管理；keywords/related 由正文内链与 CMS 配置承载）。
 
 **OG 封面（1200×630）**：APINEED 生图流程 → [skills/ops/og-covers.md](../skills/ops/og-covers.md)  
-默认输出：`blog/images/og/{slug}/{slug}-og-en.webp` · CMS 上传对齐 `/blog/images/og/{slug}/`
+默认输出：`E:\clients\Image Generator\output\dubbingai\{slug}/{slug}-og-en.webp`（2026-09-12 起统一归档于 Image Generator\output\）· CMS 上传对齐 `/blog/images/og/{slug}/`
 
 ---
 

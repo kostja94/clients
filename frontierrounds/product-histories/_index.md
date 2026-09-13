@@ -21,6 +21,7 @@
 | [Harvey](https://www.harvey.ai/) | Legal AI | New Round | US$550M | ~US$15.6B | 2026-09-09 | [harvey.md](harvey.md) |
 | [Clay](https://www.clay.com/) | AI-powered go-to-market platform | New Round（待官宣） | 未披露 | US$7B pre（报道） | 2026-08-31+ | [clay.md](clay.md) |
 | [Cognition](https://cognition.com/) | Autonomous AI software engineering (Devin) | Series E | US$2B | US$48B | 2026-09-08 | [cognition.md](cognition.md) |
+| [Higgsfield](https://higgsfield.ai/) | AI video & image generation (browser-based platform) | Series B | US$400M | US$5.4B | 2026-08-17 | [higgsfield.md](higgsfield.md) |
 
 ---
 

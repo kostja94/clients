@@ -4,23 +4,21 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/thinking-machines-lab`）
 
-## 概览
+## 短摘要
 
-Thinking Machines Lab is a San Francisco-based AI research company founded by Mira Murati in February 2025, months after she stepped down as OpenAI's chief technology officer. Its founding team reads like a who's-who of frontier AI — chief scientist John Schulman (OpenAI co-founder), CTO Barret Zoph (former OpenAI VP of research, departed January 2026), Lilian Weng, Luke Metz and Andrew Tulloch among the initial ~30 researchers. The lab's mission is "collaborative general intelligence": AI systems designed to work alongside humans across science, engineering and everyday work, built to be more open, customizable and understandable than today's closed frontier models. It raised a record **US$2B seed round in July 2025** led by Andreessen Horowitz at a US$12B valuation — then the largest first round in venture history — despite shipping no product. It later released Tinker, an agent product, and Inkling, an open-weight model family (975B/41B, July 2026). A planned US$50B raise collapsed amid January 2026 leadership turmoil, and as of September 2026 the lab is reported to be in talks for a new US$5–6B round at a ≥US$40B pre-money valuation.
-
-## 基本档案
+Thinking Machines Lab is Mira Murati's San Francisco lab for 'collaborative general intelligence,' founded in 2025 after she stepped down as OpenAI's CTO. It has shipped the Inkling open-weight model family.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | February 2025 |
-| Headquarters | San Francisco, California (2300 Harrison St, Mission District) |
+| Founded | Feb 2025 |
+| Headquarters | San Francisco, CA |
 | Founder / CEO | Mira Murati (former OpenAI CTO) |
 | Key people | John Schulman (Chief Scientist, OpenAI co-founder); Soumith Chintala (CTO, from 2026) |
 | Sector | Frontier AI research — collaborative general intelligence, open-weight models |
 | Products | Tinker (agent platform, 2025); Inkling & Inkling-Small (open-weight LLMs, Jul 2026) |
-| Team | ~30 researchers at founding; ~100 employees (2026) |
-| Total raised | ~US$2B (one closed round) |
-| Latest valuation | US$12B (Seed, Jul 2025; in talks at ≥US$40B pre, Sep 2026) |
+| Latest valuation | US$12B (Seed) |
+| Team | ~100 employees (2026) |
 
 ## 官网
 

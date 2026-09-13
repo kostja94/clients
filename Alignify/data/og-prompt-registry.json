@@ -3657,19 +3657,19 @@
       "composition": "Editorial collage for headless CMS guide. HERO: structured content blocks hub with REST/GraphQL API rays to browser, phone, and email consumer frames. Secondary: generic CMS studio field panel. Tertiary: webhook arrow to Next.js SSG page frame. Title top-left. Paper torn edges. NO builder canvas, NO browser automation, NO vendor logos, NO ranking numbers.",
       "accent": "alignify-navy",
       "visual_anchors": [
-        "HERO (~55% canvas): Central content schema blocks connected by API arrows to browser frame, mobile phone, email template",
-        "Secondary: Studio/admin panel vignette with structured field list",
-        "Tertiary: Webhook/revalidate dotted line from CMS hub to Next.js SSG page frame"
+        "HERO (~55% canvas): Central content schema blocks (title, body, media fields) connected by API arrows to three consumer silhouettes — browser frame, mobile phone, email template",
+        "Secondary: Studio/admin panel vignette with structured field list (not WYSIWYG full-page canvas)",
+        "Tertiary: Webhook/revalidate dotted line from CMS hub to Next.js page frame labeled SSG/ISR"
       ],
       "anti_patterns": [
-        "Drag-and-drop website builder canvas as hero",
-        "Headless Chromium browser window",
+        "Drag-and-drop website builder canvas as hero (that's website-builder)",
+        "Headless Chromium browser window (that's headless-browser)",
         "WordPress theme live preview screenshot",
-        "Real Contentful/Sanity/Storyblok logos",
+        "Real Contentful/Sanity/Storyblok logos — generic CMS blocks only",
         "Ranking badges or numbered product list on image"
       ],
-      "status": "approved",
-      "notes": "Manual brief 2026-08-28"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-28"
     },
     {
       "section": "blog",
@@ -3683,19 +3683,19 @@
       "composition": "Same layout as EN: content schema hub + API rays to multi-channel frames + studio fields + webhook to SSG page. Title top-left Chinese headline. NO builder canvas, NO browser automation, NO vendor logos.",
       "accent": "alignify-navy",
       "visual_anchors": [
-        "HERO (~55% canvas): Central content schema blocks connected by API arrows to browser frame, mobile phone, email template",
-        "Secondary: Studio/admin panel vignette with structured field list",
-        "Tertiary: Webhook/revalidate dotted line from CMS hub to Next.js SSG page frame"
+        "HERO (~55% canvas): Central content schema blocks (title, body, media fields) connected by API arrows to three consumer silhouettes — browser frame, mobile phone, email template",
+        "Secondary: Studio/admin panel vignette with structured field list (not WYSIWYG full-page canvas)",
+        "Tertiary: Webhook/revalidate dotted line from CMS hub to Next.js page frame labeled SSG/ISR"
       ],
       "anti_patterns": [
-        "Drag-and-drop website builder canvas as hero",
-        "Headless Chromium browser window",
+        "Drag-and-drop website builder canvas as hero (that's website-builder)",
+        "Headless Chromium browser window (that's headless-browser)",
         "WordPress theme live preview screenshot",
-        "Real Contentful/Sanity/Storyblok logos",
+        "Real Contentful/Sanity/Storyblok logos — generic CMS blocks only",
         "Ranking badges or numbered product list on image"
       ],
-      "status": "approved",
-      "notes": "Manual brief 2026-08-28"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-28"
     },
     {
       "section": "blog",
@@ -11795,7 +11795,7 @@
       "style": "editorial-collage",
       "author": "Kostja",
       "headline": "AI GLOSSARY",
-      "headline_line2": "140+ TERMS",
+      "headline_line2": "155+ TERMS",
       "subtitle": "Key Terms & Definitions",
       "tagline": "ML · LLMs · Generative AI · Vision",
       "composition": "Visual-only editorial collage for AI glossary reference page (140+ terms). HERO: A–Z glossary index mockup occupying right two-thirds — left alphabet letter rail (A–Z pills), right column stacked AI term entry rows with blurred titles and definition snippets, one row with accent klein-blue left border. Secondary: open dictionary spread vignette with highlighted term block. Tertiary: floating AI term chip cloud (blurred chips for LLM, transformer, embedding, diffusion, RAG, fine-tuning). Title block top-left. Paper collage torn edges, halftone. NO three-pillar hub, NO single-term hero, NO LLM chat UI, NO knowledge-graph nodes, NO real brand/model names as text, NO extra UI labels.",
@@ -11823,7 +11823,7 @@
       "style": "editorial-collage",
       "author": "Kostja",
       "headline": "AI词汇表",
-      "headline_line2": "140+术语",
+      "headline_line2": "155+术语",
       "subtitle": "核心术语与定义",
       "composition": "Same layout as EN: AI A–Z glossary index HERO + dictionary spread + AI term chip cloud. Title top-left, NO three-pillar hub, NO LLM chat, NO extra Chinese UI labels, NO blank term rows.",
       "accent": "klein-blue",
@@ -11850,7 +11850,7 @@
       "style": "editorial-collage",
       "author": "Kostja",
       "headline": "MARKETING GLOSSARY",
-      "headline_line2": "160+ TERMS",
+      "headline_line2": "170+ TERMS",
       "subtitle": "Terms & Definitions",
       "tagline": "Growth · Conversion · Channels · B2B",
       "composition": "Visual-only editorial collage for Marketing glossary reference page (160+ terms). HERO: A–Z glossary index mockup occupying right two-thirds — left alphabet letter rail (A–Z pills), right column stacked marketing term entry rows with blurred titles and definition snippets, one row with accent titian-red left border. Secondary: open dictionary spread vignette with highlighted term block. Tertiary: floating marketing term chip cloud (blurred chips for CAC, LTV, MQL, funnel, attribution, ROAS). Title block top-left. Paper collage torn edges, halftone. NO three-pillar hub, NO affiliate dashboard, NO funnel chart as sole hero, NO single-term hero, NO real brand logos, NO extra UI labels.",
@@ -11878,7 +11878,7 @@
       "style": "editorial-collage",
       "author": "Kostja",
       "headline": "营销词汇表",
-      "headline_line2": "160+术语",
+      "headline_line2": "170+术语",
       "subtitle": "术语与定义",
       "composition": "Same layout as EN: Marketing A–Z glossary index HERO + dictionary spread + marketing term chip cloud. Title top-left, NO three-pillar hub, NO affiliate dashboard, NO extra Chinese UI labels, NO blank term rows.",
       "accent": "titian-red",
@@ -11905,7 +11905,7 @@
       "style": "editorial-collage",
       "author": "Kostja",
       "headline": "SEO GLOSSARY",
-      "headline_line2": "240+ TERMS",
+      "headline_line2": "290+ TERMS",
       "subtitle": "Terms & Definitions",
       "tagline": "Keywords · Technical SEO · Link Building",
       "composition": "Visual-only editorial collage for SEO glossary reference page (240+ terms). HERO: A–Z glossary index mockup occupying right two-thirds — left alphabet letter rail (A–Z pills), right column stacked SEO term entry rows with blurred titles and definition snippets, one row with accent mars-green left border. Secondary: open dictionary spread vignette with highlighted term block. Tertiary: floating SEO term chip cloud (blurred chips for SERP, schema, sitemap, canonical, backlink, crawl budget). Title block top-left. Paper collage torn edges, halftone. NO three-pillar hub, NO knowledge-graph nodes, NO traffic chart, NO SERP mockup hero, NO LLM chat, NO real tool logos, NO extra UI labels.",
@@ -11933,7 +11933,7 @@
       "style": "editorial-collage",
       "author": "Kostja",
       "headline": "SEO词汇表",
-      "headline_line2": "240+术语",
+      "headline_line2": "300+术语",
       "subtitle": "术语与定义",
       "composition": "Same layout as EN: SEO A–Z glossary index HERO + dictionary spread + SEO term chip cloud. Title top-left, NO three-pillar hub, NO knowledge-graph, NO SERP hero, NO extra Chinese UI labels, NO blank term rows.",
       "accent": "mars-green",
@@ -13345,8 +13345,8 @@
         "Generic SaaS funnel or CMS database cylinder diagram",
         "Platform subdomain address-bar growth (platform-subdomain-gating article)"
       ],
-      "status": "generated",
-      "notes": "LLM brief 2026-08-27 · generated 2026-08-27"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
     },
     {
       "section": "blog",
@@ -13371,8 +13371,8 @@
         "Generic SaaS funnel or CMS database cylinder diagram",
         "Platform subdomain address-bar growth (platform-subdomain-gating article)"
       ],
-      "status": "generated",
-      "notes": "LLM brief 2026-08-27 · generated 2026-08-27"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
     },
     {
       "section": "blog",
@@ -13398,8 +13398,8 @@
         "Full nginx config code block as hero",
         "Platform subdomain gating address-bar growth article visual"
       ],
-      "status": "generated",
-      "notes": "LLM brief 2026-08-27 · generated 2026-08-27"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
     },
     {
       "section": "blog",
@@ -13424,8 +13424,8 @@
         "Full nginx config code block as hero",
         "Platform subdomain gating address-bar growth article visual"
       ],
-      "status": "generated",
-      "notes": "LLM brief 2026-08-27 · generated 2026-08-27"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-27"
     },
     {
       "section": "blog",
@@ -13611,8 +13611,8 @@
         "Literal treadmill stock photo as hero",
         "Ranking list of tools or model names"
       ],
-      "status": "approved",
-      "notes": "Manual brief 2026-08-31 · ai-terminology-batch-emergence blog · OG generated 2026-08-31"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-31"
     },
     {
       "section": "blog",
@@ -13638,8 +13638,8 @@
         "Literal treadmill stock photo as hero",
         "Ranking list of tools or model names"
       ],
-      "status": "approved",
-      "notes": "Manual brief 2026-08-31 · ai-terminology-batch-emergence blog · OG generated 2026-08-31"
+      "status": "pending",
+      "notes": "LLM brief 2026-08-31"
     }
   ]
 }

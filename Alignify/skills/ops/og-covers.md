@@ -34,15 +34,7 @@
 
 ## 1b. 单仓原则
 
-**OG 图只存一处：部署仓 `public/`。** 禁止 copy 到两边各留一份。
-
-| 操作 | 说明 |
-|------|------|
-| 默认生成 | 直写 `{DEPLOY_ROOT}/public/...` |
-| `--to-staging` | 仅临时预览，用完 move 或删 |
-| `migrate-og-covers.py` | **shutil.move**，源文件删除；`--purge-duplicates` 清遗留 staging |
-
-上下文仓保留：registry · brief · 脚本 · 规则文档。**不存成品 webp**（`assets/og/` 已废弃）。
+**OG 图只存一处：部署仓 `public/`（路径规则见 §2）。** 禁止 copy 到两边各留一份；上下文仓不存成品 webp（`--staging` 临时预览写 `E:\clients\Image Generator\outputlignify\staging\`）
 
 ---
 
@@ -53,6 +45,7 @@
 | **OG 成品（唯一）** | `{DEPLOY_ROOT}/public/{section}/{slug}/{slug}-og-en.webp` · `{slug}-og-zh.webp` |
 | **品牌 logo（生成叠加用）** | `assets/brand/icon-192x192.png` |
 | **Prompt / brief（上下文仓）** | `data/og-prompt-registry.json` · `data/og-briefs/` |
+| `--staging` 临时预览 | `E:\clients\Image Generator\outputlignify\staging\{section}/{slug}/`（用完 move 或删） |
 
 **规则**
 - 不再把 `flux.jpg` 等产品截图当 OG
@@ -84,24 +77,12 @@ registry 字段：`headline` · `headline_line2` · `subtitle`（宜短）· `co
 
 ## 4. 模型与参数
 
-| 场景 | 模型 | fal 端点 |
-|------|------|----------|
-| **含标题 OG（默认）** | GPT Image 2 | `openai/gpt-image-2` |
-| 无字纯视觉 hero | flux / Codex skills | 见 [`aesthetic-references.md`](../../knowledge/design/aesthetic-references.md)；速查 `E:\个人知识库\设计-Design\首屏与插图美学参考-Hero-Illustration.md` |
+> **Provider / 端点 / 参数 / 密钥 SSOT**：[`E:\clients\Image Generator\README.md`](../../../Image%20Generator/README.md)（fal / apineed / gitaigc 三通道）。此处只列 Alignify 特有约定。
 
-**GPT Image 2 参数**
-
-```json
-{
-  "prompt": "...",
-  "image_size": { "width": 1216, "height": 632 },
-  "quality": "high",
-  "num_images": 1,
-  "output_format": "jpeg"
-}
-```
-
-生成后居中裁切为 **1200×630**。
+| 项 | Alignify 约定 |
+|------|------|
+| **默认 provider** | fal（`--provider apineed` / `--provider gitaigc` 可选） |
+| 无字纯视觉 hero | flux / Codex skills，见 [`aesthetic-references.md`](../../knowledge/design/aesthetic-references.md)；速查 `E:\个人知识库\设计-Design\首屏与插图美学参考-Hero-Illustration.md` |
 
 **语言规则（硬约束）**
 - `locale=en` → prompt 内全部可见文字英文
@@ -132,23 +113,23 @@ python E:\clients\Alignify\scripts\ops\analyze-og-page.py `
 ### 5.3 查看 registry
 
 ```powershell
-python E:\clients\Alignify\scripts\ops\generate-og-cover.py --list
+python E:\clients\Image Generator\generate-og-cover.py --client alignify --list
 ```
 
 ### 5.4 预览 prompt
 
 ```powershell
-python E:\clients\Alignify\scripts\ops\generate-og-cover.py `
+python E:\clients\Image Generator\generate-og-cover.py --client alignify `
   --slug image-generator --locale en --dry-run
 ```
 
 ### 5.5 生成（默认 → 部署仓 public/）
 
 ```powershell
-python E:\clients\Alignify\scripts\ops\generate-og-cover.py `
+python E:\clients\Image Generator\generate-og-cover.py --client alignify `
   --slug image-generator --locale en
 
-python E:\clients\Alignify\scripts\ops\generate-og-cover.py `
+python E:\clients\Image Generator\generate-og-cover.py --client alignify `
   --slug image-generator --locale zh
 ```
 
@@ -165,8 +146,8 @@ python E:\clients\Alignify\scripts\ops\migrate-og-covers.py `
 **临时预览到上下文仓**（勿长期保留）：
 
 ```powershell
-python E:\clients\Alignify\scripts\ops\generate-og-cover.py `
-  --to-staging --slug image-generator --locale en
+python E:\clients\Image Generator\generate-og-cover.py --client alignify `
+  --staging --slug image-generator --locale en
 ```
 
 ### 5.6 审计覆盖

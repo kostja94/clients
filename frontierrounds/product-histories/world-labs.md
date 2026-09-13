@@ -4,22 +4,20 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/world-labs`）
 
-## 概览
+## 短摘要
 
-World Labs is the San Francisco-based spatial intelligence company founded in early 2024 by Fei-Fei Li — the "godmother of AI," creator of ImageNet and co-director of Stanford HAI — with Justin Johnson, Ben Mildenhall and Christoph Lassner. Its mission is to build "large world models" that perceive, generate and interact with 3D space, which Li argues is as fundamental to intelligence as language. World Labs exited stealth on 13 September 2024 with **US$230M in seed funding** (two 2024 tranches reported to value it above US$1B) — one of the largest AI first rounds at the time, co-led by a16z, NEA and Radical Ventures. After shipping Marble (its 3D-world generation product, Nov 2025) and a World API (Jan 2026), it raised a **US$1B round in February 2026** anchored by a US$200M Autodesk strategic investment, with NVIDIA and AMD among the backers — the reported ~US$5B valuation was never confirmed. In July 2026 it acquired SceniX to enter robotics simulation, and in September 2026 unveiled Atlas, an "omni" world model.
-
-## 基本档案
+World Labs is Fei-Fei Li's spatial-intelligence company building 'large world models' that perceive, generate and interact with 3D space. It has unveiled the Atlas 'omni' world model.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | 2024 (reported April) |
-| Headquarters | San Francisco, California |
+| Founded | 2024 |
+| Headquarters | San Francisco, CA |
 | Founders | Fei-Fei Li (CEO); Justin Johnson; Ben Mildenhall; Christoph Lassner |
 | Sector | Spatial intelligence / large world models / 3D generation (physical AI from 2026) |
 | Products | Marble (Nov 2025); World API (Jan 2026); Spark; Atlas (Sep 2026); SceniX (acquired Jul 2026) |
-| Team | ~20 at launch; ~60–70 by mid-2026 (third-party estimates) |
-| Total raised | ~US$1.23B across two disclosed rounds |
-| Latest valuation | ~US$5B (reported, unconfirmed — Feb 2026) |
+| Latest valuation | ~US$5B (reported) |
+| Team | ~60–70 (mid-2026) |
 
 ## 官网
 

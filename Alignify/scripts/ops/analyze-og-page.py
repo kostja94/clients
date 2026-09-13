@@ -18,15 +18,18 @@ import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPT_DIR))
+IMAGE_GENERATOR = Path(r"E:\clients\Image Generator")
+sys.path.insert(0, str(IMAGE_GENERATOR))
 
-from og_brief_lib import (
+from og_brief_lib import (  # noqa: E402
     analyze_page,
     merge_brief_into_registry,
-    resolve_deploy_root,
     resolve_openai_key,
     save_brief,
 )
+from og_clients import load_client_config, resolve_deploy_root  # noqa: E402
+
+CFG = load_client_config("alignify")
 
 
 def main() -> None:
@@ -43,20 +46,22 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", help="Print brief JSON only")
     args = parser.parse_args()
 
-    deploy_root = resolve_deploy_root(args.deploy_root)
-    api_key = resolve_openai_key(args.openai_key_file)
+    deploy_root = resolve_deploy_root(CFG, args.deploy_root)
+    if deploy_root is None:
+        raise SystemExit("Deploy root not found. Set ALIGNIFY_DEPLOY_ROOT or pass --deploy-root.")
+    api_key = resolve_openai_key(CFG, args.openai_key_file)
     print(f"Analyzing {args.section}/{args.slug} via {deploy_root.name}...")
-    brief = analyze_page(args.section, args.slug, deploy_root, api_key)
+    brief = analyze_page(CFG, args.section, args.slug, deploy_root, api_key)
 
     if args.dry_run:
         print(json.dumps(brief, ensure_ascii=False, indent=2))
         return
 
-    out = save_brief(args.section, args.slug, brief)
+    out = save_brief(CFG, args.section, args.slug, brief)
     print(f"Saved brief: {out}")
 
     if args.merge_registry:
-        n = merge_brief_into_registry(brief, status="pending")
+        n = merge_brief_into_registry(CFG, brief, status="pending")
         print(f"Merged {n} registry entries (en/zh)")
 
     print("\nVisual anchors:")

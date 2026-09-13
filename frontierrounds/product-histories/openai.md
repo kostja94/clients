@@ -4,24 +4,21 @@
 
 > 产品融资时间线档案 · 类型：product · 数据来自 frontierrounds.com Product Histories（`/products/openai`）
 
-## 概览
+## 短摘要
 
-OpenAI is the San Francisco research-and-deployment lab behind ChatGPT, GPT and Sora, founded in December 2015 as a nonprofit and restructured around a capped-profit subsidiary in 2019. Its funding arc defines the AI era: a US$1B Microsoft partnership in 2019, a US$10B Microsoft commitment at a ~US$29B valuation in January 2023, a US$6.6B round at US$157B in October 2024, a US$40B round at US$300B in March 2025 (then the largest private tech deal ever), and a record US$122B close at an US$852B post-money valuation in March 2026 — anchored by Amazon (up to US$50B), Nvidia (US$30B) and SoftBank (US$30B). OpenAI generates about US$2B in monthly revenue (2026), serves 900M+ weekly ChatGPT users, and is preparing a public listing. Cumulative funding is roughly US$142B on Frontier Rounds' conservative disclosed basis; third-party trackers that include credit facilities and rumored rounds put the figure at US$180–197B.
-
-## 基本档案
+OpenAI is the lab behind ChatGPT, GPT and Sora, and the most heavily funded private company in history.
+## 快照
 
 | 项目 | 内容 |
 | --- | --- |
-| Founded | December 2015 (nonprofit); capped-profit LP 2019; PBC October 2025 |
-| Headquarters | San Francisco, California |
+| Founded | Dec 2015 |
+| Headquarters | San Francisco, CA |
 | Founders | Sam Altman, Elon Musk (departed), Greg Brockman, Ilya Sutskever (departed), Wojciech Zaremba, John Schulman et al. |
 | Sector | Frontier foundation models + products (ChatGPT, GPT, Sora) |
 | Flagship products | ChatGPT (900M+ weekly users); GPT model family; Sora |
-| Monthly revenue (2026) | ~US$2B/month; US$41.3B annualized FY2026 (reported) |
-| Total raised | ~US$142B disclosed equity (site basis); US$180–197B incl. credit/rumored (third-party) |
-| Latest valuation | US$852B post-money (US$122B round, Mar 2026) |
-| Largest round | US$122B (Mar 2026) — largest private round in history |
-| Status | Preparing IPO (confidential filing expected 2026) |
+| Status | Preparing IPO |
+| Latest valuation | US$852B (Mar 2026) |
+| Revenue | ~US$2B/month |
 
 ## 官网
 
